@@ -1220,3 +1220,4 @@ enum BreakScreensStringID
     B_MSG_BREAK_AURORA_VEIL,
 };
 
+#endif // GUARD_CONSTANTS_BATTLE_STRING_IDS_H
