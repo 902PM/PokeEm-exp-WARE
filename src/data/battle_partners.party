@@ -6,39 +6,42 @@ Gender: Male
 Music: Male
 
 === PARTNER_STEVEN ===
-Name: STEVEN
+Name: ダイゴ
 Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
 AI: Basic Trainer
 
-Metang
-Brave Nature
-Level: 42
+Metagross @ Metagrossite
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
-- Psychic
-- Reflect
-- Metal Claw
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Rock Slide
+- Thunder Punch
+- Bullet Punch
+- Earthquake
 
-Skarmory
-Impish Nature
-Level: 43
+Skarmory (M) @ Rocky Helmet
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Body Press
+- Brave Bird
+- Iron Head
+- Roost
 
-Aggron
-Adamant Nature
-Level: 44
+Aggron (M) @ Choice Band
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Head Smash
+- Iron Head
+- Earthquake
+- Ice Punch
