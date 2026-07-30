@@ -54,7 +54,7 @@
 #define CHAR_SEMICOLON         0x36
 #define CHAR_BARD_WORD_DELIMIT 0x37 // Empty space to separate words in Bard's song
 #define CHAR_V_D_ARROW         0x38
-#define CHAR_NBSP              0x39 // Non-breaking space
+#define CHAR_NBSP              0x00
 #define CHAR_ZWS               0x3A // Zero-width space
 #define CHAR_INV_QUESTION_MARK 0x51
 #define CHAR_INV_EXCL_MARK     0x52
@@ -74,7 +74,7 @@
 //
 #define CHAR_i_ACUTE           0x6F
 //
-#define CHAR_SPACER            0x77 // Empty space
+#define CHAR_SPACER            0x00 // Empty space
 //
 #define CHAR_UP_ARROW          0x79
 #define CHAR_DOWN_ARROW        0x7A
@@ -237,6 +237,7 @@
 #define EXT_CTRL_CODE_ACCENT                 0x1A
 #define EXT_CTRL_CODE_BACKGROUND             0x1B
 #define EXT_CTRL_CODE_TEXT_COLORS            0x1C
+#define EXT_CTRL_CODE_AUTO                   0x1D
 
 #define TEXT_COLOR_TRANSPARENT  0x0
 #define TEXT_COLOR_WHITE        0x1
@@ -273,9 +274,15 @@
 
 // battle placeholders are located in battle_message.h
 
-// Hiragana from 0x1-0x50, Katakana from 0x51-0xA0.
-// This excludes Japanese punctuation, which end at 0xB0
-#define JAPANESE_CHAR_END 0xA0
+// Japanese charmap ranges used by the text printer to select Japanese fonts.
+#define JAPANESE_HIRAGANA_START 0x01
+#define JAPANESE_HIRAGANA_END   0x50
+#define JAPANESE_KATAKANA_START 0x51
+#define JAPANESE_KATAKANA_END   0xA0
+#define JAPANESE_FUNCTION_START 0xAB
+#define JAPANESE_FUNCTION_END   0xB0
+#define JAPANESE_CHAR_END       JAPANESE_KATAKANA_END
+#define JAPANESE_CHAR_VU        0xF1
 
 // Note that while all dot combinations are represented in
 // the Braille font, they are not all meaningful characters.

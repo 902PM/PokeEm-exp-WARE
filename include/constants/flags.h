@@ -24,7 +24,7 @@
 #define FLAG_TEMP_B      (TEMP_FLAGS_START + 0xB)  // Unused Flag
 #define FLAG_TEMP_C      (TEMP_FLAGS_START + 0xC)  // Unused Flag
 #define FLAG_TEMP_D      (TEMP_FLAGS_START + 0xD)  // Unused Flag
-#define FLAG_TEMP_E      (TEMP_FLAGS_START + 0xE)  // When set, follower Pokémon won't be spawned
+#define FLAG_TEMP_E      (TEMP_FLAGS_START + 0xE)  // When set, follower Pokemon won't be spawned
 #define FLAG_TEMP_F      (TEMP_FLAGS_START + 0xF)  // Unused Flag
 #define FLAG_TEMP_10     (TEMP_FLAGS_START + 0x10) // Unused Flag
 #define FLAG_TEMP_11     (TEMP_FLAGS_START + 0x11)
@@ -141,7 +141,7 @@
 #define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73
-#define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
+#define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokedex.
 #define FLAG_DEFEATED_MAGMA_SPACE_CENTER     0x75 // Set when Team Magma is defeated at Mossdeep's Space Center.
 #define FLAG_MET_HIDDEN_POWER_GIVER          0x76
 
@@ -752,6 +752,42 @@
 #define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
 #define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+
+// Expansion feature test flags.
+// These aliases keep the original unused flag IDs intact while making debug
+// menu toggles easier to identify.
+#define FLAG_EXPANSION_INVERSE_BATTLE                 FLAG_UNUSED_0x264
+#define FLAG_EXPANSION_AI_VS_AI_BATTLE                FLAG_UNUSED_0x265
+#define FLAG_EXPANSION_DYNAMAX_BATTLE                 FLAG_UNUSED_0x266
+#define FLAG_EXPANSION_TERA_ORB_CHARGED               FLAG_UNUSED_0x267
+#define FLAG_EXPANSION_TERA_ORB_NO_COST               FLAG_UNUSED_0x268
+#define FLAG_EXPANSION_SLEEP_CLAUSE                   FLAG_UNUSED_0x269
+#define FLAG_EXPANSION_NO_WHITEOUT                    FLAG_UNUSED_0x26A
+#define FLAG_EXPANSION_EXP_SHARE                      FLAG_UNUSED_0x26B
+#define FLAG_EXPANSION_FORCE_SHINY                    FLAG_UNUSED_0x26C
+#define FLAG_EXPANSION_FORCE_NO_SHINY                 FLAG_UNUSED_0x26D
+#define FLAG_EXPANSION_FOLLOWERS_DISABLED             FLAG_UNUSED_0x26E
+#define FLAG_EXPANSION_FOLLOWER_HEAL_AFTER_BATTLE     FLAG_UNUSED_0x26F
+#define FLAG_EXPANSION_FOLLOWER_PARTNER_WILD_BATTLES  FLAG_UNUSED_0x270
+#define FLAG_EXPANSION_DEXNAV_SEARCHING               FLAG_UNUSED_0x271
+#define FLAG_EXPANSION_DEXNAV_GET                     FLAG_UNUSED_0x272
+#define FLAG_EXPANSION_DEXNAV_DETECTOR_MODE           FLAG_UNUSED_0x273
+#define FLAG_EXPANSION_VS_SEEKER_CHARGING             FLAG_UNUSED_0x274
+#define FLAG_EXPANSION_ORAS_DOWSING                   FLAG_UNUSED_0x275
+#define FLAG_EXPANSION_SUMMARY_SCREEN_IV_EV_INFO      FLAG_UNUSED_0x276
+#define FLAG_EXPANSION_EGG_MOVE_RELEARNER             FLAG_UNUSED_0x277
+#define FLAG_EXPANSION_TUTOR_MOVE_RELEARNER           FLAG_UNUSED_0x278
+#define FLAG_EXPANSION_NO_TRAINER_SEE                 FLAG_UNUSED_0x279
+#define FLAG_EXPANSION_NO_COLLISION                   FLAG_UNUSED_0x27A
+#define FLAG_EXPANSION_POKE_RIDER                     FLAG_UNUSED_0x27B
+
+// Compatibility aliases for the verification ROM/debug menu wording.
+#define FLAG_EXPANSION_DEXNAV_DISPLAY                 FLAG_EXPANSION_DEXNAV_GET
+#define FLAG_EXPANSION_DEXNAV_DETECT                  FLAG_EXPANSION_DEXNAV_DETECTOR_MODE
+#define FLAG_EXPANSION_FOLLOWING_MON_DISABLED         FLAG_EXPANSION_FOLLOWERS_DISABLED
+#define FLAG_EXPANSION_DISABLE_SHINY                  FLAG_EXPANSION_FORCE_NO_SHINY
+#define FLAG_EXPANSION_TRAINER_SEE_DISABLED           FLAG_EXPANSION_NO_TRAINER_SEE
+#define FLAG_EXPANSION_COLLISION_DISABLED             FLAG_EXPANSION_NO_COLLISION
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
