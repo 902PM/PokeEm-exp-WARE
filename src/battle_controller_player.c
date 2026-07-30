@@ -512,7 +512,8 @@ void HandleInputChooseTarget(enum BattlerId battler)
                     break;
                 }
 
-                if (!CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
+                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
                  || (moveTarget == TARGET_OPPONENT && IsOnPlayerSide(gMultiUsePlayerCursor)))
                     validTarget = FALSE;
 
@@ -568,7 +569,8 @@ void HandleInputChooseTarget(enum BattlerId battler)
                 if (B_SHOW_EFFECTIVENESS)
                     MoveSelectionDisplayMoveEffectiveness(CheckTypeEffectiveness(battler, gMultiUsePlayerCursor), battler);
 
-                if (!CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
+                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
                  || (moveTarget == TARGET_OPPONENT && IsOnPlayerSide(gMultiUsePlayerCursor)))
                     i = 0;
             } while (i == 0);
