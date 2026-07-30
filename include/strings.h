@@ -526,6 +526,8 @@ extern const u8 BattleFrontier_ExchangeServiceCorner_Text_IronDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_Candy_XLDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_Rare_CandyDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc[];
@@ -2139,6 +2141,7 @@ extern const u8 MoveRelearner_Text_EggMoveLWR[];
 extern const u8 MoveRelearner_Text_TMMoveLWR[];
 extern const u8 MoveRelearner_Text_TutorMoveLWR[];
 extern const u8 MoveRelearner_Text_MoveLWR[];
+extern const u8 MoveRelearner_Text_FrontierFullMoveLWR[];
 
 extern const u8 gText_Ghost[];
 extern const u8 gText_Boulderbadge[];

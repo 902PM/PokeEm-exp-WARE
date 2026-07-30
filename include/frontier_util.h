@@ -37,6 +37,7 @@ enum TrainerClassID GetFrontierOpponentClass(u16 trainerId);
 u8 GetFrontierTrainerFacilityClass(u16 trainerId);
 void GetFrontierTrainerName(u8 *dst, u16 trainerId);
 u16 GetRandomFrontierMonFromSet(u16 trainerId);
+void RestoreTemporaryFrontierLevel50BeforeSave(struct Pokemon *mon, u16 partyIndex);
 void FrontierSpeechToString(const u16 *words);
 u8 SetFacilityPtrsGetLevel(void);
 u8 GetFrontierEnemyMonLevel(enum FrontierLevelMode lvlMode);

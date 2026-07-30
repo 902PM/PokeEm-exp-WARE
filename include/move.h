@@ -99,6 +99,7 @@ struct MoveInfo
     // end of word
     u16 accuracy:7;
     u16 target:9;
+    u8 movetext;
     u8 pp;
     union {
         u8 effect;
@@ -300,6 +301,11 @@ static inline u32 GetMoveZPowerOverride(enum Move moveId)
     moveId = SanitizeMoveId(moveId);
     assertf(GetMoveCategory(moveId) != DAMAGE_CATEGORY_STATUS, "not a damaging move: %S", gMovesInfo[moveId].name);
     return gMovesInfo[moveId].zMove.powerOverride;
+}
+
+static inline u32 GetMoveText(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].movetext;
 }
 
 static inline s32 GetMovePriority(enum Move moveId)
