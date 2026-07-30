@@ -77,6 +77,7 @@
 extern u16 gSpecialVar_ItemId;
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
+#define JAPANESE_POKEMON_NAME_LENGTH 6
 
 struct SpeciesItem
 {
@@ -91,6 +92,7 @@ static union PokemonSubstruct *GetSubstruct(struct BoxPokemon *boxMon, u32 perso
 static void EncryptBoxMon(struct BoxPokemon *boxMon);
 static void DecryptBoxMon(struct BoxPokemon *boxMon);
 static void Task_PlayMapChosenOrBattleBGM(u8 taskId);
+static void SetBoxMonNicknameBytes(struct BoxPokemon *boxMon, struct PokemonSubstruct0 *substruct0, const u8 *src, bool32 nickname10);
 void TrySpecialOverworldEvo();
 
 EWRAM_DATA static u8 sLearningMoveTableID = 0;
@@ -141,7 +143,7 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     FOREACH_SPECIES_IN_HOENN_DEX_ORDER(HOENN_TO_NATIONAL)
 };
 
-// In Battle Palace, moves are chosen based on the Pokémon's nature rather than by the player
+// In Battle Palace, moves are chosen based on the Pokemon's nature rather than by the player
 // Moves are grouped into "Attack", "Defense", or "Support" (see PALACE_MOVE_GROUP_*)
 // Each nature has a certain percent chance of selecting a move from a particular group
 // and a separate percent chance for each group when at or below 50% HP
@@ -153,7 +155,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 {
     [NATURE_HARDY] =
     {
-        .name = COMPOUND_STRING("Hardy"),
+        .name = COMPOUND_STRING("がんばりや"),
         .statUp = STAT_ATK,
         .statDown = STAT_ATK,
         .backAnim = 0,
@@ -165,7 +167,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_LONELY] =
     {
-        .name = COMPOUND_STRING("Lonely"),
+        .name = COMPOUND_STRING("さみしがり"),
         .statUp = STAT_ATK,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -177,7 +179,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BRAVE] =
     {
-        .name = COMPOUND_STRING("Brave"),
+        .name = COMPOUND_STRING("ゆうかん"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPEED,
         .backAnim = 0,
@@ -189,7 +191,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_ADAMANT] =
     {
-        .name = COMPOUND_STRING("Adamant"),
+        .name = COMPOUND_STRING("いじっぱり"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -201,7 +203,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_NAUGHTY] =
     {
-        .name = COMPOUND_STRING("Naughty"),
+        .name = COMPOUND_STRING("やんちゃ"),
         .statUp = STAT_ATK,
         .statDown = STAT_SPDEF,
         .backAnim = 0,
@@ -213,7 +215,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BOLD] =
     {
-        .name = COMPOUND_STRING("Bold"),
+        .name = COMPOUND_STRING("ずぶとい"),
         .statUp = STAT_DEF,
         .statDown = STAT_ATK,
         .backAnim = 1,
@@ -225,7 +227,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_DOCILE] =
     {
-        .name = COMPOUND_STRING("Docile"),
+        .name = COMPOUND_STRING("すなお"),
         .statUp = STAT_DEF,
         .statDown = STAT_DEF,
         .backAnim = 1,
@@ -237,7 +239,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_RELAXED] =
     {
-        .name = COMPOUND_STRING("Relaxed"),
+        .name = COMPOUND_STRING("のんき"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -249,7 +251,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_IMPISH] =
     {
-        .name = COMPOUND_STRING("Impish"),
+        .name = COMPOUND_STRING("わんぱく"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -261,7 +263,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_LAX] =
     {
-        .name = COMPOUND_STRING("Lax"),
+        .name = COMPOUND_STRING("のうてんき"),
         .statUp = STAT_DEF,
         .statDown = STAT_SPDEF,
         .backAnim = 1,
@@ -273,7 +275,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_TIMID] =
     {
-        .name = COMPOUND_STRING("Timid"),
+        .name = COMPOUND_STRING("おくびょう"),
         .statUp = STAT_SPEED,
         .statDown = STAT_ATK,
         .backAnim = 2,
@@ -285,7 +287,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_HASTY] =
     {
-        .name = COMPOUND_STRING("Hasty"),
+        .name = COMPOUND_STRING("せっかち"),
         .statUp = STAT_SPEED,
         .statDown = STAT_DEF,
         .backAnim = 0,
@@ -297,7 +299,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_SERIOUS] =
     {
-        .name = COMPOUND_STRING("Serious"),
+        .name = COMPOUND_STRING("まじめ"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -309,7 +311,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_JOLLY] =
     {
-        .name = COMPOUND_STRING("Jolly"),
+        .name = COMPOUND_STRING("ようき"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPATK,
         .backAnim = 0,
@@ -321,7 +323,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_NAIVE] =
     {
-        .name = COMPOUND_STRING("Naive"),
+        .name = COMPOUND_STRING("むじゃき"),
         .statUp = STAT_SPEED,
         .statDown = STAT_SPDEF,
         .backAnim = 0,
@@ -333,7 +335,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_MODEST] =
     {
-        .name = COMPOUND_STRING("Modest"),
+        .name = COMPOUND_STRING("ひかえめ"),
         .statUp = STAT_SPATK,
         .statDown = STAT_ATK,
         .backAnim = 2,
@@ -345,7 +347,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_MILD] =
     {
-        .name = COMPOUND_STRING("Mild"),
+        .name = COMPOUND_STRING("おっとり"),
         .statUp = STAT_SPATK,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -357,7 +359,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_QUIET] =
     {
-        .name = COMPOUND_STRING("Quiet"),
+        .name = COMPOUND_STRING("れいせい"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPEED,
         .backAnim = 2,
@@ -369,7 +371,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_BASHFUL] =
     {
-        .name = COMPOUND_STRING("Bashful"),
+        .name = COMPOUND_STRING("てれや"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPATK,
         .backAnim = 2,
@@ -381,7 +383,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_RASH] =
     {
-        .name = COMPOUND_STRING("Rash"),
+        .name = COMPOUND_STRING("うっかりや"),
         .statUp = STAT_SPATK,
         .statDown = STAT_SPDEF,
         .backAnim = 1,
@@ -393,7 +395,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_CALM] =
     {
-        .name = COMPOUND_STRING("Calm"),
+        .name = COMPOUND_STRING("おだやか"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_ATK,
         .backAnim = 1,
@@ -405,7 +407,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_GENTLE] =
     {
-        .name = COMPOUND_STRING("Gentle"),
+        .name = COMPOUND_STRING("おとなしい"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_DEF,
         .backAnim = 2,
@@ -417,7 +419,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_SASSY] =
     {
-        .name = COMPOUND_STRING("Sassy"),
+        .name = COMPOUND_STRING("なまいき"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPEED,
         .backAnim = 1,
@@ -429,7 +431,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_CAREFUL] =
     {
-        .name = COMPOUND_STRING("Careful"),
+        .name = COMPOUND_STRING("しんちょう"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPATK,
         .backAnim = 2,
@@ -441,7 +443,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
     },
     [NATURE_QUIRKY] =
     {
-        .name = COMPOUND_STRING("Quirky"),
+        .name = COMPOUND_STRING("きまぐれ"),
         .statUp = STAT_SPDEF,
         .statDown = STAT_SPDEF,
         .backAnim = 1,
@@ -491,7 +493,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #define PP_UP_SHIFTS(val)           val,        (val) << 2,        (val) << 4,        (val) << 6
 #define PP_UP_SHIFTS_INV(val) (u8)~(val), (u8)~((val) << 2), (u8)~((val) << 4), (u8)~((val) << 6)
 
-// PP Up bonuses are stored for a Pokémon as a single byte.
+// PP Up bonuses are stored for a Pokemon as a single byte.
 // There are 2 bits (a value 0-3) for each move slot that
 // represent how many PP Ups have been applied.
 // The following arrays take a move slot id and return:
@@ -965,7 +967,8 @@ void SetBoxMonPerfectIVs(struct BoxPokemon *mon, u32 numPerfect)
 
 void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32 personality, struct OriginalTrainerId trainerId)
 {
-    u8 speciesName[POKEMON_NAME_LENGTH + 1];
+    u8 speciesName[POKEMON_NAME_BUFFER_SIZE];
+    enum Language language;
     u32 value;
     u16 checksum;
     bool32 isShiny;
@@ -996,8 +999,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     EncryptBoxMon(boxMon);
     SetBoxMonData(boxMon, MON_DATA_IS_SHINY, &isShiny);
     StringCopy(speciesName, GetSpeciesName(species));
+    language = IsStringNJapanese(speciesName, POKEMON_NAME_LENGTH) ? LANGUAGE_JAPANESE : gGameLanguage;
     SetBoxMonData(boxMon, MON_DATA_NICKNAME, speciesName);
-    SetBoxMonData(boxMon, MON_DATA_LANGUAGE, &gGameLanguage);
+    SetBoxMonData(boxMon, MON_DATA_LANGUAGE, &language);
     SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetBoxMonData(boxMon, MON_DATA_SPECIES, &species);
     SetBoxMonData(boxMon, MON_DATA_EXP, &gExperienceTables[gSpeciesInfo[species].growthRate][level]);
@@ -1431,8 +1435,8 @@ void CalculateMonStats(struct Pokemon *mon)
         gBattleScripting.levelUpHP = 1;
     SetMonData(mon, MON_DATA_MAX_HP, &newMaxHP);
 
-    // Since a Pokémon's maxHP data could either not have
-    // been initialized at this point or this Pokémon is
+    // Since a Pokemon's maxHP data could either not have
+    // been initialized at this point or this Pokemon is
     // just fainted, the check for oldMaxHP is important.
     if (currentHP == 0 && oldMaxHP != 0)
         return;
@@ -1673,7 +1677,7 @@ enum Move MonTryLearningNewMoveAtLevel(struct Pokemon *mon, bool32 firstMove, u3
         }
     }
 
-    //  Handler for Pokémon whose moves change upon form change.
+    //  Handler for Pokemon whose moves change upon form change.
     //  For example, if Zacian or Zamazenta should learn Iron Head,
     //  they're prevented from doing if they have Behemoth Blade/Bash,
     //  since it transforms into them while in their Crowned forms.
@@ -1949,6 +1953,42 @@ static void DecryptBoxMon(struct BoxPokemon *boxMon)
     }
 }
 
+static void SetBoxMonNicknameBytes(struct BoxPokemon *boxMon, struct PokemonSubstruct0 *substruct0, const u8 *src, bool32 nickname10)
+{
+    u32 i;
+    u8 rawNickname[POKEMON_NAME_BUFFER_SIZE];
+    u32 maxLength;
+
+    for (i = 0; i < ARRAY_COUNT(rawNickname) - 1 && src[i] != EOS; i++)
+        rawNickname[i] = src[i];
+    rawNickname[i] = EOS;
+
+    StripExtCtrlCodes(rawNickname);
+
+    maxLength = IsStringNJapanese(rawNickname, POKEMON_NAME_LENGTH)
+        ? min(JAPANESE_POKEMON_NAME_LENGTH, POKEMON_NAME_LENGTH)
+        : POKEMON_NAME_LENGTH;
+
+    if (nickname10)
+        maxLength = min(maxLength, sizeof(boxMon->nickname));
+
+    for (i = 0; i < sizeof(boxMon->nickname); i++)
+        boxMon->nickname[i] = EOS;
+
+    substruct0->nickname11 = EOS;
+    substruct0->nickname12 = EOS;
+
+    for (i = 0; i < maxLength && rawNickname[i] != EOS; i++)
+    {
+        if (i < sizeof(boxMon->nickname))
+            boxMon->nickname[i] = rawNickname[i];
+        else if (i == 10 && POKEMON_NAME_LENGTH >= 11)
+            substruct0->nickname11 = rawNickname[i];
+        else if (i == 11 && POKEMON_NAME_LENGTH >= 12)
+            substruct0->nickname12 = rawNickname[i];
+    }
+}
+
 static const u8 sSubstructOffsets[4][24] =
 {
     [SUBSTRUCT_TYPE_0] = {0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3, 1, 1, 2, 3, 2, 3},
@@ -2087,7 +2127,15 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_NICKNAME:
         case MON_DATA_NICKNAME10:
         {
-            if (IsBadEgg(boxMon))
+            if (field == MON_DATA_NICKNAME10)
+            {
+                for (retVal = 0;
+                    retVal < sizeof(boxMon->nickname) && boxMon->nickname[retVal] != EOS;
+                    data[retVal] = boxMon->nickname[retVal], retVal++) {}
+
+                data[retVal] = EOS;
+            }
+            else if (IsBadEgg(boxMon))
             {
                 for (retVal = 0;
                     retVal < POKEMON_NAME_LENGTH && gText_BadEgg[retVal] != EOS;
@@ -2100,17 +2148,15 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 StringCopy(data, gText_EggNickname);
                 retVal = StringLength(data);
             }
-            else if (boxMon->language == LANGUAGE_JAPANESE)
+            else if (boxMon->language == LANGUAGE_JAPANESE || IsStringNJapanese(boxMon->nickname, sizeof(boxMon->nickname)))
             {
                 data[0] = EXT_CTRL_CODE_BEGIN;
                 data[1] = EXT_CTRL_CODE_JPN;
 
                 for (retVal = 2, i = 0;
-                    i < 5 && boxMon->nickname[i] != EOS;
+                    i < JAPANESE_POKEMON_NAME_LENGTH && boxMon->nickname[i] != EOS;
                     data[retVal] = boxMon->nickname[i], retVal++, i++) {}
 
-                data[retVal++] = EXT_CTRL_CODE_BEGIN;
-                data[retVal++] = EXT_CTRL_CODE_ENG;
                 data[retVal] = EOS;
             }
             else
@@ -2122,9 +2168,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                     retVal++;
                 }
 
-                // Vanilla Pokémon have 0s in nickname11 and nickname12
+                // Vanilla Pokemon have 0s in nickname11 and nickname12
                 // so if both are 0 we assume that this is a vanilla
-                // Pokémon and replace them with EOS. This means that
+                // Pokemon and replace them with EOS. This means that
                 // two CHAR_SPACE at the end of a nickname are trimmed.
                 struct PokemonSubstruct0 *substruct0 = GetSubstruct0(boxMon);
                 if (field != MON_DATA_NICKNAME10 && POKEMON_NAME_LENGTH >= 12)
@@ -2646,22 +2692,8 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_NICKNAME:
         case MON_DATA_NICKNAME10:
         {
-            s32 i;
             struct PokemonSubstruct0 *substruct0 = GetSubstruct0(boxMon);
-            for (i = 0; i < min(sizeof(boxMon->nickname), POKEMON_NAME_LENGTH); i++)
-                boxMon->nickname[i] = data[i];
-            if (field != MON_DATA_NICKNAME10)
-            {
-                if (POKEMON_NAME_LENGTH >= 11)
-                    substruct0->nickname11 = data[10];
-                if (POKEMON_NAME_LENGTH >= 12)
-                    substruct0->nickname12 = data[11];
-            }
-            else
-            {
-                substruct0->nickname11 = EOS;
-                substruct0->nickname12 = EOS;
-            }
+            SetBoxMonNicknameBytes(boxMon, substruct0, data, field == MON_DATA_NICKNAME10);
             break;
         }
         case MON_DATA_SPECIES:
@@ -3483,7 +3515,7 @@ const u32 sExpCandyExperienceTable[] = {
     [EXP_30000 - 1] = 30000,
 };
 
-// Returns TRUE if the item has no effect on the Pokémon, FALSE otherwise
+// Returns TRUE if the item has no effect on the Pokemon, FALSE otherwise
 bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, u8 moveIndex, bool8 usedByAI)
 {
     u32 dataUnsigned;
@@ -3915,9 +3947,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, u8 partyIndex, 
                     }
                     case 5: // ITEM5_FRIENDSHIP_LOW
                         // Changes to friendship are given differently depending on
-                        // how much friendship the Pokémon already has.
-                        // In general, Pokémon with lower friendship receive more,
-                        // and Pokémon with higher friendship receive less.
+                        // how much friendship the Pokemon already has.
+                        // In general, Pokemon with lower friendship receive more,
+                        // and Pokemon with higher friendship receive less.
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP) < 100)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         itemEffectParam++;
@@ -4874,10 +4906,19 @@ enum NationalDexOrder HoennToNationalOrder(enum HoennDexOrder hoennNum)
 
 void EvolutionRenameMon(struct Pokemon *mon, enum Species oldSpecies, enum Species newSpecies)
 {
-    u8 language;
-    GetMonData(mon, MON_DATA_NICKNAME, gStringVar1);
-    language = GetMonData(mon, MON_DATA_LANGUAGE, &language);
-    if (language == GAME_LANGUAGE && !StringCompare(GetSpeciesName(oldSpecies), gStringVar1))
+    u32 i;
+    u8 oldSpeciesName[POKEMON_NAME_BUFFER_SIZE];
+    u32 maxLength = min(sizeof(mon->box.nickname), POKEMON_NAME_LENGTH);
+
+    GetMonData(mon, MON_DATA_NICKNAME10, gStringVar1);
+
+    for (i = 0; i < ARRAY_COUNT(oldSpeciesName) - 1 && GetSpeciesName(oldSpecies)[i] != EOS; i++)
+        oldSpeciesName[i] = GetSpeciesName(oldSpecies)[i];
+    oldSpeciesName[i] = EOS;
+    StripExtCtrlCodes(oldSpeciesName);
+    oldSpeciesName[maxLength] = EOS;
+
+    if (!StringCompare(gStringVar1, oldSpeciesName))
         SetMonData(mon, MON_DATA_NICKNAME, GetSpeciesName(newSpecies));
 }
 
@@ -5872,7 +5913,7 @@ bool8 ShouldSkipFriendshipChange(void)
 }
 
 // The below functions are for the 'MonSpritesGfxManager', a method of allocating
-// space for Pokémon sprites. These are only used for the summary screen Pokémon
+// space for Pokemon sprites. These are only used for the summary screen Pokemon
 // sprites (unless gMonSpritesGfxPtr is in use), but were set up for more general use.
 // Only the 'default' mode (MON_SPR_GFX_MODE_NORMAL) is used, which is set
 // up to allocate 4 sprites using the battler sprite templates (gBattlerSpriteTemplates).

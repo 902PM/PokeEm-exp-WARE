@@ -1201,7 +1201,7 @@ static const u8 sMatchCallWindow_Gfx[] = INCGFX_U8("graphics/pokenav/match_call/
 static const u16 sPokenavIcon_Pal[] = INCGFX_U16("graphics/pokenav/match_call/nav_icon.png", ".gbapal");
 static const u32 sPokenavIcon_Gfx[] = INCGFX_U32("graphics/pokenav/match_call/nav_icon.png", ".4bpp.smol");
 
-static const u8 sText_PokenavCallEllipsis[] = _("………………\p");
+static const u8 sText_PokenavCallEllipsis[] = _("{JPN}…………\p");
 
 #define tState      data[0]
 #define tWindowId   data[2]
@@ -1705,12 +1705,12 @@ static void PopulateMatchCallStringVar(int matchCallId, int funcId, u8 *destStr)
 
 static const struct MultiTrainerMatchCallText sMultiTrainerMatchCallTexts[] =
 {
-    { .trainerId = TRAINER_KIRA_AND_DAN_1, .text = COMPOUND_STRING("KIRA") },
-    { .trainerId = TRAINER_AMY_AND_LIV_1,  .text = COMPOUND_STRING("AMY") },
-    { .trainerId = TRAINER_JOHN_AND_JAY_1, .text = COMPOUND_STRING("JOHN") },
-    { .trainerId = TRAINER_LILA_AND_ROY_1, .text = COMPOUND_STRING("ROY") },
-    { .trainerId = TRAINER_GABBY_AND_TY_1, .text = COMPOUND_STRING("GABBY") },
-    { .trainerId = TRAINER_ANNA_AND_MEG_1, .text = COMPOUND_STRING("ANNA") },
+    { .trainerId = TRAINER_KIRA_AND_DAN_1, .text = COMPOUND_STRING("{JPN}ナツ") },
+    { .trainerId = TRAINER_AMY_AND_LIV_1,  .text = COMPOUND_STRING("{JPN}クミ") },
+    { .trainerId = TRAINER_JOHN_AND_JAY_1, .text = COMPOUND_STRING("{JPN}ゲン") },
+    { .trainerId = TRAINER_LILA_AND_ROY_1, .text = COMPOUND_STRING("{JPN}コウ") },
+    { .trainerId = TRAINER_GABBY_AND_TY_1, .text = COMPOUND_STRING("{JPN}マリ") },
+    { .trainerId = TRAINER_ANNA_AND_MEG_1, .text = COMPOUND_STRING("{JPN}ミホ") },
 };
 
 static void PopulateTrainerName(int matchCallId, u8 *destStr)

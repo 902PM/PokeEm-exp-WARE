@@ -22,7 +22,7 @@ enum
     CONDITION_SEARCH_FUNC_SELECT_MON,
 };
 
-static const u8 gText_NumberIndex[] = _("No. {DYNAMIC 0}");
+static const u8 gText_NumberIndex[] = _("{JPN}{DYNAMIC 0}ばんめ");
 
 struct Pokenav_SearchResults
 {
@@ -129,7 +129,7 @@ static const struct WindowTemplate sSearchResultListMenuWindowTemplate =
 
 static const u8 sText_MaleSymbol[] = _("{TEXT_COLORS LIGHT_RED GREEN WHITE}{BACKGROUND WHITE}♂{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}{BACKGROUND WHITE}");
 static const u8 sText_FemaleSymbol[] = _("{TEXT_COLORS LIGHT_GREEN BLUE WHITE}{BACKGROUND WHITE}♀{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}{BACKGROUND WHITE}");
-static const u8 sText_NoGenderSymbol[] = _("{UNK_SPACER}");
+static const u8 sText_NoGenderSymbol[] = _("?");
 
 bool32 PokenavCallback_Init_ConditionSearch(void)
 {
@@ -675,9 +675,9 @@ static void PrintSearchResultListMenuItems(struct Pokenav_SearchResultsGfx *gfx)
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gStringVar1);
     *gStringVar1 = EOS;
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar2, gText_NumberIndex);
-    AddTextPrinterParameterized(gfx->winid, FONT_NORMAL, gStringVar2, 4, 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(gfx->winid, FONT_NORMAL, gStringVar2, 24, 1, TEXT_SKIP_DRAW, NULL);
     ConvertIntToDecimalStringN(gStringVar1, rank, STR_CONV_MODE_RIGHT_ALIGN, 3);
-    AddTextPrinterParameterized(gfx->winid, FONT_NORMAL, gStringVar1, 34, 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(gfx->winid, FONT_NORMAL, gStringVar1, 8, 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(gfx->winid, COPYWIN_GFX);
 }
 

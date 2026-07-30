@@ -219,7 +219,7 @@ enum {
     CURSOR_AREA_IN_BOX,
     CURSOR_AREA_IN_PARTY,
     CURSOR_AREA_BOX_TITLE,
-    CURSOR_AREA_BUTTONS, // Party Pokémon and Close Box
+    CURSOR_AREA_BUTTONS, // Party Pokemon and Close Box
 };
 #define CURSOR_AREA_IN_HAND CURSOR_AREA_BOX_TITLE // Alt name for cursor area used by Move Items
 
@@ -274,13 +274,13 @@ enum {
     GFXTAG_MON_ICON,
 };
 
-// The maximum number of Pokémon icons that can appear on-screen.
+// The maximum number of Pokemon icons that can appear on-screen.
 // By default the limit is 40 (though in practice only 37 can be).
 #define MAX_MON_ICONS max(IN_BOX_COUNT + PARTY_SIZE + 1, 40)
 
 // The maximum number of item icons that can appear on-screen while
 // moving held items. 1 in the cursor, and 2 more while switching
-// between 2 Pokémon with held items
+// between 2 Pokemon with held items
 #define MAX_ITEM_ICONS 3
 
 // IDs for the item icons affine anims
@@ -318,13 +318,13 @@ enum {
     CHANGE_SHIFT,
 };
 
-// Modes for selecting and moving Pokémon in the box.
+// Modes for selecting and moving Pokemon in the box.
 // "MULTIPLE" mode allows up to an entire box to be
 // picked up at once by pressing Select then holding
 // down the A button. While holding A down, the player
-// may move the cursor around to select multiple Pokémon.
+// may move the cursor around to select multiple Pokemon.
 // This is MOVE_MODE_MULTIPLE_SELECTING. After releasing A
-// those Pokémon will be picked up and can be moved around
+// those Pokemon will be picked up and can be moved around
 // as a single unit. This is MOVE_MODE_MULTIPLE_MOVING
 enum {
     MOVE_MODE_NORMAL,
@@ -332,11 +332,11 @@ enum {
     MOVE_MODE_MULTIPLE_MOVING,
 };
 
-// IDs for the main functions for moving multiple Pokémon.
+// IDs for the main functions for moving multiple Pokemon.
 // Given as arguments to MultiMove_SetFunction
 enum {
     MULTIMOVE_START,
-    MULTIMOVE_CANCEL, // If only 1 Pokémon is grabbed
+    MULTIMOVE_CANCEL, // If only 1 Pokemon is grabbed
     MULTIMOVE_CHANGE_SELECTION,
     MULTIMOVE_GRAB_SELECTION,
     MULTIMOVE_MOVE_MONS,
@@ -618,7 +618,7 @@ static bool8 IsMenuLoading(void);
 static s16 HandleMenuInput(void);
 static void RemoveMenu(void);
 
-// Pokémon sprites
+// Pokemon sprites
 static void InitMonIconFields(void);
 static void SpriteCB_BoxMonIconScrollOut(struct Sprite *);
 static void GetIncomingBoxMonData(u8);
@@ -637,7 +637,7 @@ static void SpriteCB_HeldMon(struct Sprite *);
 static struct Sprite *CreateMonIconSprite(enum Species species, u32 personality, s16 x, s16 y, u8 oamPriority, u8 subpriority, bool32 isEgg);
 static void DestroyBoxMonIcon(struct Sprite *);
 
-// Pokémon data
+// Pokemon data
 static void MoveMon(void);
 static void PlaceMon(void);
 static void RefreshDisplayMon(void);
@@ -666,7 +666,7 @@ static void TryRefreshDisplayMon(void);
 static void ReshowDisplayMon(void);
 static void SetDisplayMonData(void *, u8);
 
-// Moving multiple Pokémon at once
+// Moving multiple Pokemon at once
 static void MultiMove_Free(void);
 static bool8 MultiMove_Init(void);
 static bool8 MultiMove_RunFunction(void);
@@ -858,20 +858,20 @@ void SetMonFormPSS(struct BoxPokemon *boxMon, enum FormChanges method);
 void SetMonFormPSS_ItemHold(struct BoxPokemon *boxMon);
 void UpdateSpeciesSpritePSS(struct BoxPokemon *boxmon);
 
-static const u8 gText_JustOnePkmn[] = _("There is just one POKéMON with you.");
-static const u8 gText_PartyFull[] = _("Your party is full!");
-static const u8 gText_Box[] = _("BOX");
+static const u8 gText_JustOnePkmn[] = _("{JPN}てもちポケモンが 1ひきしかいません!");
+static const u8 gText_PartyFull[] = _("{JPN}てもちポケモンが いっぱいです!");
+static const u8 gText_Box[] = _("{JPN}ボックス");
 
 struct {
     const u8 *text;
     const u8 *desc;
 } static const sMainMenuTexts[OPTIONS_COUNT] =
 {
-    [OPTION_WITHDRAW]   = {COMPOUND_STRING("WITHDRAW POKéMON"), COMPOUND_STRING("Move POKéMON stored in BOXES to\nyour party.")},
-    [OPTION_DEPOSIT]    = {COMPOUND_STRING("DEPOSIT POKéMON"),  COMPOUND_STRING("Store POKéMON in your party in BOXES.")},
-    [OPTION_MOVE_MONS]  = {COMPOUND_STRING("MOVE POKéMON"),     COMPOUND_STRING("Organize the POKéMON in BOXES and\nin your party.")},
-    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("MOVE ITEMS"),       COMPOUND_STRING("Move items held by any POKéMON\nin a BOX or your party.")},
-    [OPTION_EXIT]       = {COMPOUND_STRING("SEE YA!"),          COMPOUND_STRING("Return to the previous menu.")}
+    [OPTION_WITHDRAW]   = {COMPOUND_STRING("{JPN}ポケモンを つれていく"), COMPOUND_STRING("{JPN}ボックスに あずけている ポケモンを \nてもちに くわえる ことが できます ")},
+    [OPTION_DEPOSIT]    = {COMPOUND_STRING("{JPN}ポケモンを あずける"),  COMPOUND_STRING("{JPN}てもちの ポケモンを         \nボックスに あずける ことが できます   ")},
+    [OPTION_MOVE_MONS]  = {COMPOUND_STRING("{JPN}ポケモンを せいりする"),     COMPOUND_STRING("{JPN}ボックスに あずけている ポケモンや \nてもちの ポケモンを せいり できます")},
+    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("{JPN}どうぐせいり"),       COMPOUND_STRING("{JPN}ポケモンが もっている どうぐを\nせいり できます")},
+    [OPTION_EXIT]       = {COMPOUND_STRING("{JPN}さようなら"),          COMPOUND_STRING("{JPN}ひとつ まえの メニューに もどります")}
 };
 
 static const struct WindowTemplate sWindowTemplate_MainMenu =
@@ -955,7 +955,7 @@ static const u16 sTextWindows_Pal[]          = INCGFX_U16("graphics/pokemon_stor
 
 static const struct WindowTemplate sWindowTemplates[] =
 {
-    // The panel below the currently displayed Pokémon
+    // The panel below the currently displayed Pokemon
     [WIN_DISPLAY_INFO] = {
         .bg = 1,
         .tilemapLeft = 0,
@@ -1044,41 +1044,41 @@ static const struct SpriteTemplate sSpriteTemplate_DisplayMon =
     .oam = &sOamData_DisplayMon,
 };
 
-static const u8 gText_PkmnIsSelected[] = _("{DYNAMIC 0} is selected.");
+static const u8 gText_PkmnIsSelected[] = _("{DYNAMIC 0} を どうしますか?");
 
 static const struct StorageMessage sMessages[] =
 {
-    [MSG_EXIT_BOX]             = {COMPOUND_STRING("Exit from the BOX?"),         MSG_VAR_NONE},
-    [MSG_WHAT_YOU_DO]          = {COMPOUND_STRING("What do you want to do?"),    MSG_VAR_NONE},
-    [MSG_PICK_A_THEME]         = {COMPOUND_STRING("Please pick a theme."),       MSG_VAR_NONE},
-    [MSG_PICK_A_WALLPAPER]     = {COMPOUND_STRING("Pick the wallpaper."),        MSG_VAR_NONE},
+    [MSG_EXIT_BOX]             = {COMPOUND_STRING("{JPN}ボックスを しゅうりょうしますか?"),         MSG_VAR_NONE},
+    [MSG_WHAT_YOU_DO]          = {COMPOUND_STRING("{JPN}このボックスを どうしますか?"),    MSG_VAR_NONE},
+    [MSG_PICK_A_THEME]         = {COMPOUND_STRING("{JPN}どの テーマにしますか?"),       MSG_VAR_NONE},
+    [MSG_PICK_A_WALLPAPER]     = {COMPOUND_STRING("{JPN}どの かべがみにしますか?"),        MSG_VAR_NONE},
     [MSG_IS_SELECTED]          = {gText_PkmnIsSelected,                          MSG_VAR_MON_NAME_1},
-    [MSG_JUMP_TO_WHICH_BOX]    = {COMPOUND_STRING("Jump to which BOX?"),         MSG_VAR_NONE},
-    [MSG_DEPOSIT_IN_WHICH_BOX] = {COMPOUND_STRING("Deposit in which BOX?"),      MSG_VAR_NONE},
-    [MSG_WAS_DEPOSITED]        = {COMPOUND_STRING("{DYNAMIC 0} was deposited."), MSG_VAR_MON_NAME_1},
-    [MSG_BOX_IS_FULL]          = {COMPOUND_STRING("The BOX is full."),           MSG_VAR_NONE},
-    [MSG_RELEASE_POKE]         = {COMPOUND_STRING("Release this POKéMON?"),      MSG_VAR_NONE},
-    [MSG_WAS_RELEASED]         = {COMPOUND_STRING("{DYNAMIC 0} was released."),  MSG_VAR_RELEASE_MON_1},
-    [MSG_BYE_BYE]              = {COMPOUND_STRING("Bye-bye, {DYNAMIC 0}!"),      MSG_VAR_RELEASE_MON_3},
-    [MSG_MARK_POKE]            = {COMPOUND_STRING("Mark your POKéMON."),         MSG_VAR_NONE},
-    [MSG_LAST_POKE]            = {COMPOUND_STRING("That's your last POKéMON!"),  MSG_VAR_NONE},
+    [MSG_JUMP_TO_WHICH_BOX]    = {COMPOUND_STRING("{JPN}どの ボックスに ジャンプしますか?"),         MSG_VAR_NONE},
+    [MSG_DEPOSIT_IN_WHICH_BOX] = {COMPOUND_STRING("{JPN}どの ボックスに あずけますか?"),      MSG_VAR_NONE},
+    [MSG_WAS_DEPOSITED]        = {COMPOUND_STRING("{JPN}{DYNAMIC 0}  を あずけました"), MSG_VAR_MON_NAME_1},
+    [MSG_BOX_IS_FULL]          = {COMPOUND_STRING("{JPN}このボックスは いっぱいだ!"),           MSG_VAR_NONE},
+    [MSG_RELEASE_POKE]         = {COMPOUND_STRING("{JPN}ほんとうに にがしますか?"),      MSG_VAR_NONE},
+    [MSG_WAS_RELEASED]         = {COMPOUND_STRING("{JPN}{DYNAMIC 0} を そとに にがしてあげた"),  MSG_VAR_RELEASE_MON_1},
+    [MSG_BYE_BYE]              = {COMPOUND_STRING("{JPN}ばいばい {DYNAMIC 0} !"),      MSG_VAR_RELEASE_MON_3},
+    [MSG_MARK_POKE]            = {COMPOUND_STRING("{JPN}マーキングしてください"),         MSG_VAR_NONE},
+    [MSG_LAST_POKE]            = {COMPOUND_STRING("{JPN}たたかうポケモンが いなくなります!"),  MSG_VAR_NONE},
     [MSG_PARTY_FULL]           = {gText_YourPartysFull,                          MSG_VAR_NONE},
-    [MSG_HOLDING_POKE]         = {COMPOUND_STRING("You're holding a POKéMON!"),  MSG_VAR_NONE},
-    [MSG_WHICH_ONE_WILL_TAKE]  = {COMPOUND_STRING("Which one will you take?"),   MSG_VAR_NONE},
-    [MSG_CANT_RELEASE_EGG]     = {COMPOUND_STRING("You can't release an EGG."),  MSG_VAR_NONE},
-    [MSG_CONTINUE_BOX]         = {COMPOUND_STRING("Continue BOX operations?"),   MSG_VAR_NONE},
-    [MSG_CAME_BACK]            = {COMPOUND_STRING("{DYNAMIC 0} came back!"),     MSG_VAR_MON_NAME_1},
-    [MSG_WORRIED]              = {COMPOUND_STRING("Was it worried about you?"),  MSG_VAR_NONE},
-    [MSG_SURPRISE]             = {COMPOUND_STRING("… … … … !"),                  MSG_VAR_NONE},
-    [MSG_PLEASE_REMOVE_MAIL]   = {COMPOUND_STRING("Please remove the MAIL."),    MSG_VAR_NONE},
+    [MSG_HOLDING_POKE]         = {COMPOUND_STRING("{JPN}ポケモンを つかんだままですよ!"),  MSG_VAR_NONE},
+    [MSG_WHICH_ONE_WILL_TAKE]  = {COMPOUND_STRING("{JPN}つれていく ポケモンを えらんで!"),   MSG_VAR_NONE},
+    [MSG_CANT_RELEASE_EGG]     = {COMPOUND_STRING("{JPN}タマゴを にがすことは できません!"),  MSG_VAR_NONE},
+    [MSG_CONTINUE_BOX]         = {COMPOUND_STRING("{JPN}ボックスそうさを つづけますか?"),   MSG_VAR_NONE},
+    [MSG_CAME_BACK]            = {COMPOUND_STRING("{JPN}{DYNAMIC 0} は かえってきた!"),     MSG_VAR_MON_NAME_1},
+    [MSG_WORRIED]              = {COMPOUND_STRING("{JPN}しんぱい だったのかな……"),  MSG_VAR_NONE},
+    [MSG_SURPRISE]             = {COMPOUND_STRING("{JPN}……………!"),                  MSG_VAR_NONE},
+    [MSG_PLEASE_REMOVE_MAIL]   = {COMPOUND_STRING("{JPN}メールを はずして ください!"),    MSG_VAR_NONE},
     [MSG_IS_SELECTED2]         = {gText_PkmnIsSelected,                          MSG_VAR_ITEM_NAME},
-    [MSG_GIVE_TO_MON]          = {COMPOUND_STRING("GIVE to a POKéMON?"),         MSG_VAR_NONE},
-    [MSG_PLACED_IN_BAG]        = {COMPOUND_STRING("Placed item in the BAG."),    MSG_VAR_ITEM_NAME},
-    [MSG_BAG_FULL]             = {COMPOUND_STRING("The BAG is full."),           MSG_VAR_NONE},
-    [MSG_PUT_IN_BAG]           = {COMPOUND_STRING("Put this item in the BAG?"),  MSG_VAR_NONE},
-    [MSG_ITEM_IS_HELD]         = {COMPOUND_STRING("{DYNAMIC 0} is now held."),   MSG_VAR_ITEM_NAME},
-    [MSG_CHANGED_TO_ITEM]      = {COMPOUND_STRING("Changed to {DYNAMIC 0}."),    MSG_VAR_ITEM_NAME},
-    [MSG_CANT_STORE_MAIL]      = {COMPOUND_STRING("MAIL can't be stored!"),      MSG_VAR_NONE},
+    [MSG_GIVE_TO_MON]          = {COMPOUND_STRING("{JPN}どうぐを もたせますか?"),         MSG_VAR_NONE},
+    [MSG_PLACED_IN_BAG]        = {COMPOUND_STRING("{JPN}{DYNAMIC 0} を バッグへいれた!"),    MSG_VAR_ITEM_NAME},
+    [MSG_BAG_FULL]             = {COMPOUND_STRING("{JPN}バッグが いっぱいです!"),           MSG_VAR_NONE},
+    [MSG_PUT_IN_BAG]           = {COMPOUND_STRING("{JPN}どうぐを バッグに いれますか?"),  MSG_VAR_NONE},
+    [MSG_ITEM_IS_HELD]         = {COMPOUND_STRING("{JPN}{DYNAMIC 0} を もたせた!"),   MSG_VAR_ITEM_NAME},
+    [MSG_CHANGED_TO_ITEM]      = {COMPOUND_STRING("{JPN}{DYNAMIC 0} と とりかえた!"),    MSG_VAR_ITEM_NAME},
+    [MSG_CANT_STORE_MAIL]      = {COMPOUND_STRING("{JPN}メールを あずかることは できません!"),      MSG_VAR_NONE},
 };
 
 static const struct WindowTemplate sYesNoWindowTemplate =
@@ -1489,7 +1489,7 @@ static void UNUSED UnusedWriteRectDma(u16 *dest, u16 dest_left, u16 dest_top, u1
 //
 //  The below functions generally handle the PC main menu where the main
 //  options can be selected (Withdraw, Deposit, etc.), as well as exiting
-//  Pokémon Storage back to this menu.
+//  Pokemon Storage back to this menu.
 //------------------------------------------------------------------------------
 
 
@@ -1725,7 +1725,7 @@ void ResetPokemonStorageSystem(void)
 //  SECTION: Choose Box menu
 //
 //  The below functions handle the popup menu that allows the player to cycle
-//  through the boxes and select one. Used when storing Pokémon in Deposit mode
+//  through the boxes and select one. Used when storing Pokemon in Deposit mode
 //  and for the Jump feature.
 //------------------------------------------------------------------------------
 
@@ -1911,7 +1911,7 @@ static void ChooseBoxMenu_PrintInfo(void)
     center = GetStringCenterAlignXOffset(FONT_NORMAL, boxName, 64);
     AddTextPrinterParameterized3(windowId, FONT_NORMAL, center, 1, sChooseBoxMenu_TextColors, TEXT_SKIP_DRAW, boxName);
 
-    // Print #/30 for number of Pokémon in the box
+    // Print #/30 for number of Pokemon in the box
     ConvertIntToDecimalStringN(numBoxMonsText, numInBox, STR_CONV_MODE_RIGHT_ALIGN, 2);
     StringAppend(numBoxMonsText, sText_OutOf30);
     center = GetStringCenterAlignXOffset(FONT_NORMAL, numBoxMonsText, 64);
@@ -2055,7 +2055,6 @@ static void SetMonIconTransparency(void)
     SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(7, 11));
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_BG_ALL_ON | DISPCNT_OBJ_1D_MAP);
 }
-
 static void SetPokeStorageTask(TaskFunc newFunc)
 {
     gTasks[sStorage->taskId].func = newFunc;
@@ -2413,7 +2412,7 @@ static void Task_PokeStorageMain(u8 taskId)
             sStorage->state = MSTATE_MULTIMOVE_RUN;
             break;
         case INPUT_MULTIMOVE_UNABLE:
-            // When selecting/moving multiple Pokémon the
+            // When selecting/moving multiple Pokemon the
             // cursor may not wrap around the edges.
             PlaySE(SE_FAILURE);
             break;
@@ -2482,8 +2481,8 @@ static void Task_PokeStorageMain(u8 taskId)
             sStorage->state = MSTATE_HANDLE_INPUT;
         break;
     case MSTATE_MULTIMOVE_RUN_CANCEL:
-        // Began a multiple Pokémon selection but
-        // ended up selecting a single Pokémon.
+        // Began a multiple Pokemon selection but
+        // ended up selecting a single Pokemon.
         // Wait for multi move to cancel, then
         // do a normal move.
         if (!MultiMove_RunFunction())
@@ -3827,7 +3826,7 @@ static void FreePokeStorageData(void)
 //
 //  No real uniform section below. Misc functions including more initialization,
 //  showing/hiding the party menu, updating the Close Box button, printing
-//  messages, doing the mosaic effect when transitioning between Pokémon, etc.
+//  messages, doing the mosaic effect when transitioning between Pokemon, etc.
 //------------------------------------------------------------------------------
 
 
@@ -4016,15 +4015,15 @@ static void PrintDisplayMonInfo(void)
     if (sStorage->boxOption != OPTION_MOVE_ITEMS)
     {
         AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonNameText, FONT_NORMAL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonNameText, 6, 0, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonNameText, FONT_SHORT, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 12), sStorage->displayMonSpeciesName, 6, 15, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(WIN_DISPLAY_INFO, FONT_SHORT, sStorage->displayMonGenderLvlText, 10, 29, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonItemName, FONT_SMALL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonItemName, 6, 43, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonSpeciesName, FONT_NORMAL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 12), sStorage->displayMonSpeciesName, 6, 15, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_DISPLAY_INFO, FONT_SHORT, sStorage->displayMonGenderLvlText, 10, 30, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonItemName, FONT_SMALL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonItemName, 6, 44, TEXT_SKIP_DRAW, NULL);
     }
     else
     {
         AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonItemName, FONT_SMALL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonItemName, 6, 0, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonNameText, FONT_NORMAL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonNameText, 6, 13, TEXT_SKIP_DRAW, NULL);
-        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonSpeciesName, FONT_SHORT, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 12), sStorage->displayMonSpeciesName, 6, 28, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonNameText, FONT_NORMAL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 6), sStorage->displayMonNameText, 6, 12, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(WIN_DISPLAY_INFO, GetFontIdToFit(sStorage->displayMonSpeciesName, FONT_NORMAL, 0, WindowWidthPx(WIN_DISPLAY_INFO) - 12), sStorage->displayMonSpeciesName, 6, 27, TEXT_SKIP_DRAW, NULL);
         AddTextPrinterParameterized(WIN_DISPLAY_INFO, FONT_SHORT, sStorage->displayMonGenderLvlText, 10, 42, TEXT_SKIP_DRAW, NULL);
     }
 
@@ -4205,7 +4204,7 @@ static void SetPartySlotTilemaps(void)
     u8 i;
 
     // Skips first party slot, it should always be drawn
-    // as if it has a Pokémon in it
+    // as if it has a Pokemon in it
     for (i = 1; i < PARTY_SIZE; i++)
     {
         s32 species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES);
@@ -4416,11 +4415,11 @@ static void InitCursorItemIcon(void)
 
 
 //------------------------------------------------------------------------------
-//  SECTION: Pokémon sprites
+//  SECTION: Pokemon sprites
 //
-//  The below functions generally handle the Pokémon icon sprites, including
+//  The below functions generally handle the Pokemon icon sprites, including
 //  moving them with a scrolling box, shifting the party sprites, and
-//  animating released Pokémon.
+//  animating released Pokemon.
 //------------------------------------------------------------------------------
 
 
@@ -4478,7 +4477,7 @@ static void InitBoxMonSprites(u8 boxId)
     count = 0;
     boxPosition = 0;
 
-    // For each box slot, create a Pokémon icon if a species is present
+    // For each box slot, create a Pokemon icon if a species is present
     for (i = 0; i < IN_BOX_ROWS; i++)
     {
         for (j = 0; j < IN_BOX_COLUMNS; j++)
@@ -4576,7 +4575,7 @@ static void SpriteCB_BoxMonIconScrollOut(struct Sprite *sprite)
     }
 }
 
-// Sprites for Pokémon icons are destroyed during
+// Sprites for Pokemon icons are destroyed during
 // the box scroll once they've gone offscreen
 static void DestroyBoxMonIconsInColumn(u8 column)
 {
@@ -5857,7 +5856,7 @@ static struct Sprite *CreateChooseBoxArrows(u16 x, u16 y, u8 animId, u8 priority
 //  SECTION: Cursor movement
 //
 //  The functions below generally handle the cursor's movement, including
-//  moving around the box and picking up/putting down Pokémon.
+//  moving around the box and picking up/putting down Pokemon.
 //------------------------------------------------------------------------------
 
 
@@ -6219,7 +6218,7 @@ static void InitMonPlaceChange(u8 type)
     sStorage->monPlaceChangeState = 0;
 }
 
-// No Shift while moving multiple Pokémon, only grab and place
+// No Shift while moving multiple Pokemon, only grab and place
 // For both grab/place, the cursor moves down, then up
 static void InitMultiMonPlaceChange(bool8 up)
 {
@@ -6369,11 +6368,11 @@ static bool8 MonPlaceChange_CursorUp(void)
 
 
 //------------------------------------------------------------------------------
-//  SECTION: Pokémon data
+//  SECTION: Pokemon data
 //
-//  The functions below handle moving Pokémon data around while using the PC,
-//  including changing the positions of Pokémon, releasing Pokémon, viewing the
-//  summary screen, and updating the display of the currently selected Pokémon.
+//  The functions below handle moving Pokemon data around while using the PC,
+//  including changing the positions of Pokemon, releasing Pokemon, viewing the
+//  summary screen, and updating the display of the currently selected Pokemon.
 //------------------------------------------------------------------------------
 
 
@@ -6588,9 +6587,9 @@ static void TrySetCursorFistAnim(void)
 }
 
 // If the player is on the listed map (or any map, if none is specified),
-// they may not release their last Pokémon that knows the specified move.
+// they may not release their last Pokemon that knows the specified move.
 // This is to stop the player from softlocking themselves by not having
-// a Pokémon that knows a required field move.
+// a Pokemon that knows a required field move.
 struct
 {
     s8 mapGroup;
@@ -6628,7 +6627,7 @@ static void InitCanReleaseMonVars(void)
     if (!AtLeastThreeUsableMons())
     {
         // The player only has 1 or 2 usable
-        // Pokémon, this one can't be released
+        // Pokemon, this one can't be released
         sStorage->releaseStatusResolved = TRUE;
         sStorage->canReleaseMon = FALSE;
         return;
@@ -6659,13 +6658,13 @@ static void InitCanReleaseMonVars(void)
     sStorage->restrictedReleaseMonMoves = GetMonData(&sStorage->tempMon, MON_DATA_KNOWN_MOVES, (u8 *)sStorage->restrictedMoveList);
     if (sStorage->restrictedReleaseMonMoves != 0)
     {
-        // Pokémon knows at least one restricted release move
-        // Need to check if another Pokémon has this move first
+        // Pokemon knows at least one restricted release move
+        // Need to check if another Pokemon has this move first
         sStorage->releaseStatusResolved = FALSE;
     }
     else
     {
-        // Pokémon knows no restricted moves, can be released
+        // Pokemon knows no restricted moves, can be released
         sStorage->releaseStatusResolved = TRUE;
         sStorage->canReleaseMon = TRUE;
     }
@@ -6678,7 +6677,7 @@ static bool32 AtLeastThreeUsableMons(void)
     s32 i, j;
     s32 count = (sIsMonBeingMoved != FALSE);
 
-    // Check party for usable Pokémon
+    // Check party for usable Pokemon
     for (j = 0; j < PARTY_SIZE; j++)
     {
         if (GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_SANITY_HAS_SPECIES))
@@ -6688,7 +6687,7 @@ static bool32 AtLeastThreeUsableMons(void)
     if (count >= 3)
         return TRUE;
 
-    // Check PC for usable Pokémon
+    // Check PC for usable Pokemon
     for (i = 0; i < TOTAL_BOXES_COUNT; i++)
     {
         for (j = 0; j < IN_BOX_COUNT; j++)
@@ -6715,11 +6714,11 @@ static s8 RunCanReleaseMon(void)
     switch (sStorage->releaseCheckState)
     {
     case 0:
-        // Check party for other Pokémon that know any restricted
-        // moves the release Pokémon knows
+        // Check party for other Pokemon that know any restricted
+        // moves the release Pokemon knows
         for (i = 0; i < PARTY_SIZE; i++)
         {
-            // Make sure party Pokémon isn't the one we're releasing first
+            // Make sure party Pokemon isn't the one we're releasing first
             if (sStorage->releaseBoxId != TOTAL_BOXES_COUNT || sStorage->releaseBoxPos != i)
             {
                 knownMoves = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_KNOWN_MOVES, (u8 *)sStorage->restrictedMoveList);
@@ -6728,14 +6727,14 @@ static s8 RunCanReleaseMon(void)
         }
         if (sStorage->restrictedReleaseMonMoves == 0)
         {
-            // No restricted moves on release Pokémon that
+            // No restricted moves on release Pokemon that
             // aren't resolved by the party, it can be released.
             sStorage->releaseStatusResolved = TRUE;
             sStorage->canReleaseMon = TRUE;
         }
         else
         {
-            // Release Pokémon has restricted moves not resolved by the party.
+            // Release Pokemon has restricted moves not resolved by the party.
             // Continue and check the PC next
             sStorage->releaseCheckBoxId = 0;
             sStorage->releaseCheckBoxPos = 0;
@@ -6743,19 +6742,19 @@ static s8 RunCanReleaseMon(void)
         }
         break;
     case 1:
-        // Check PC for other Pokémon that know any restricted
-        // moves the release Pokémon knows
+        // Check PC for other Pokemon that know any restricted
+        // moves the release Pokemon knows
         for (i = 0; i < IN_BOX_COUNT; i++)
         {
             knownMoves = GetAndCopyBoxMonDataAt(sStorage->releaseCheckBoxId, sStorage->releaseCheckBoxPos, MON_DATA_KNOWN_MOVES, (u8 *)sStorage->restrictedMoveList);
             if (knownMoves != 0 && !(sStorage->releaseBoxId == sStorage->releaseCheckBoxId
                                   && sStorage->releaseBoxPos == sStorage->releaseCheckBoxPos))
             {
-                // Found PC Pokémon with restricted move, clear move from list
+                // Found PC Pokemon with restricted move, clear move from list
                 sStorage->restrictedReleaseMonMoves &= ~(knownMoves);
                 if (sStorage->restrictedReleaseMonMoves == 0)
                 {
-                    // No restricted moves on release Pokémon that
+                    // No restricted moves on release Pokemon that
                     // aren't resolved, it can be released.
                     sStorage->releaseStatusResolved = TRUE;
                     sStorage->canReleaseMon = TRUE;
@@ -6767,7 +6766,7 @@ static s8 RunCanReleaseMon(void)
                 sStorage->releaseCheckBoxPos = 0;
                 if (++sStorage->releaseCheckBoxId >= TOTAL_BOXES_COUNT)
                 {
-                    // Checked every Pokémon in the PC, release Pokémon is
+                    // Checked every Pokemon in the PC, release Pokemon is
                     // the sole owner of at least one restricted move.
                     // It cannot be released.
                     sStorage->releaseStatusResolved = TRUE;
@@ -6933,13 +6932,13 @@ static bool8 IsCursorInBox(void)
 
 static void TryRefreshDisplayMon(void)
 {
-    // If a Pokémon is currently being moved, don't start
+    // If a Pokemon is currently being moved, don't start
     // mosaic or update display. Keep displaying the
-    // currently held Pokémon.
+    // currently held Pokemon.
     sStorage->setMosaic = (sIsMonBeingMoved == FALSE);
     if (!sIsMonBeingMoved)
     {
-        // Update display Pokémon
+        // Update display Pokemon
         switch (sCursorArea)
         {
         case CURSOR_AREA_IN_PARTY:
@@ -8068,50 +8067,50 @@ static void InitMenu(void)
     sStorage->menuWindow.baseBlock = 92;
 }
 
-static const u8 gPCText_Give[] = _("GIVE");
+static const u8 gPCText_Give[] = _("{JPN}もたせる");
 
 static const u8 *const sMenuTexts[] =
 {
-    [MENU_CANCEL]     = COMPOUND_STRING("CANCEL"),
-    [MENU_STORE]      = COMPOUND_STRING("STORE"),
-    [MENU_WITHDRAW]   = COMPOUND_STRING("WITHDRAW"),
-    [MENU_MOVE]       = COMPOUND_STRING("MOVE"),
-    [MENU_SHIFT]      = COMPOUND_STRING("SHIFT"),
-    [MENU_PLACE]      = COMPOUND_STRING("PLACE"),
-    [MENU_SUMMARY]    = COMPOUND_STRING("SUMMARY"),
-    [MENU_RELEASE]    = COMPOUND_STRING("RELEASE"),
-    [MENU_MARK]       = COMPOUND_STRING("MARK"),
-    [MENU_JUMP]       = COMPOUND_STRING("JUMP"),
-    [MENU_WALLPAPER]  = COMPOUND_STRING("WALLPAPER"),
-    [MENU_NAME]       = COMPOUND_STRING("NAME"),
-    [MENU_TAKE]       = COMPOUND_STRING("TAKE"),
+    [MENU_CANCEL]     = COMPOUND_STRING("{JPN}やめる"),
+    [MENU_STORE]      = COMPOUND_STRING("{JPN}あずける"),
+    [MENU_WITHDRAW]   = COMPOUND_STRING("{JPN}つれていく"),
+    [MENU_MOVE]       = COMPOUND_STRING("{JPN}いれかえる"),
+    [MENU_SHIFT]      = COMPOUND_STRING("{JPN}つかむ"),
+    [MENU_PLACE]      = COMPOUND_STRING("{JPN}ここにおく"),
+    [MENU_SUMMARY]    = COMPOUND_STRING("{JPN}ようすをみる"),
+    [MENU_RELEASE]    = COMPOUND_STRING("{JPN}にがす"),
+    [MENU_MARK]       = COMPOUND_STRING("{JPN}マーキング"),
+    [MENU_JUMP]       = COMPOUND_STRING("{JPN}ジャンプ"),
+    [MENU_WALLPAPER]  = COMPOUND_STRING("{JPN}かべがみ"),
+    [MENU_NAME]       = COMPOUND_STRING("{JPN}なまえ"),
+    [MENU_TAKE]       = COMPOUND_STRING("{JPN}もたせる"),
     [MENU_GIVE]       = gPCText_Give,
     [MENU_GIVE_2]     = gPCText_Give,
-    [MENU_SWITCH]     = COMPOUND_STRING("SWITCH"),
-    [MENU_BAG]        = COMPOUND_STRING("BAG"),
-    [MENU_INFO]       = COMPOUND_STRING("INFO"),
-    [MENU_SCENERY_1]  = COMPOUND_STRING("SCENERY 1"),
-    [MENU_SCENERY_2]  = COMPOUND_STRING("SCENERY 2"),
-    [MENU_SCENERY_3]  = COMPOUND_STRING("SCENERY 3"),
-    [MENU_ETCETERA]   = COMPOUND_STRING("ETCETERA"),
-    [MENU_FRIENDS]    = COMPOUND_STRING("FRIENDS"),
-    [MENU_FOREST]     = COMPOUND_STRING("FOREST"),
-    [MENU_CITY]       = COMPOUND_STRING("CITY"),
-    [MENU_DESERT]     = COMPOUND_STRING("DESERT"),
-    [MENU_SAVANNA]    = COMPOUND_STRING("SAVANNA"),
-    [MENU_CRAG]       = COMPOUND_STRING("CRAG"),
-    [MENU_VOLCANO]    = COMPOUND_STRING("VOLCANO"),
-    [MENU_SNOW]       = COMPOUND_STRING("SNOW"),
-    [MENU_CAVE]       = COMPOUND_STRING("CAVE"),
-    [MENU_BEACH]      = COMPOUND_STRING("BEACH"),
-    [MENU_SEAFLOOR]   = COMPOUND_STRING("SEAFLOOR"),
-    [MENU_RIVER]      = COMPOUND_STRING("RIVER"),
-    [MENU_SKY]        = COMPOUND_STRING("SKY"),
-    [MENU_POLKADOT]   = COMPOUND_STRING("POLKA-DOT"),
-    [MENU_POKECENTER] = COMPOUND_STRING("POKéCENTER"),
-    [MENU_MACHINE]    = COMPOUND_STRING("MACHINE"),
-    [MENU_SIMPLE]     = COMPOUND_STRING("SIMPLE"),
-    [MENU_SELECT]     = COMPOUND_STRING("SELECT"),
+    [MENU_SWITCH]     = COMPOUND_STRING("{JPN}とりかえる"),
+    [MENU_BAG]        = COMPOUND_STRING("{JPN}バッグへ"),
+    [MENU_INFO]       = COMPOUND_STRING("{JPN}せつめい"),
+    [MENU_SCENERY_1]  = COMPOUND_STRING("{JPN}ふうけい1"),
+    [MENU_SCENERY_2]  = COMPOUND_STRING("{JPN}ふうけい2"),
+    [MENU_SCENERY_3]  = COMPOUND_STRING("{JPN}ふうけい3"),
+    [MENU_ETCETERA]   = COMPOUND_STRING("{JPN}エトセトラ"),
+    [MENU_FRIENDS]    = COMPOUND_STRING("{JPN}だいすき"),
+    [MENU_FOREST]     = COMPOUND_STRING("{JPN}もり"),
+    [MENU_CITY]       = COMPOUND_STRING("{JPN}シティ"),
+    [MENU_DESERT]     = COMPOUND_STRING("{JPN}さばく"),
+    [MENU_SAVANNA]    = COMPOUND_STRING("{JPN}サバンナ"),
+    [MENU_CRAG]       = COMPOUND_STRING("{JPN}いわやま"),
+    [MENU_VOLCANO]    = COMPOUND_STRING("{JPN}かざん"),
+    [MENU_SNOW]       = COMPOUND_STRING("{JPN}ゆきやま"),
+    [MENU_CAVE]       = COMPOUND_STRING("{JPN}どうくつ"),
+    [MENU_BEACH]      = COMPOUND_STRING("{JPN}うみべ"),
+    [MENU_SEAFLOOR]   = COMPOUND_STRING("{JPN}かいてい"),
+    [MENU_RIVER]      = COMPOUND_STRING("{JPN}かわ"),
+    [MENU_SKY]        = COMPOUND_STRING("{JPN}そら"),
+    [MENU_POLKADOT]   = COMPOUND_STRING("{JPN}みずたま"),
+    [MENU_POKECENTER] = COMPOUND_STRING("{JPN}ポケセン"),
+    [MENU_MACHINE]    = COMPOUND_STRING("{JPN}きかい"),
+    [MENU_SIMPLE]     = COMPOUND_STRING("{JPN}シンプル"),
+    [MENU_SELECT]     = COMPOUND_STRING("{JPN}なにを しますか?"),
 };
 
 static void SetMenuText(u8 textId)
@@ -8209,7 +8208,7 @@ static void RemoveMenu(void)
 //------------------------------------------------------------------------------
 //  SECTION: MultiMove
 //
-//  The functions below handle moving and selecting multiple Pokémon at once.
+//  The functions below handle moving and selecting multiple Pokemon at once.
 //  The icon sprites are moved to bg 0, and this bg is manipulated to move
 //  them as a group.
 //------------------------------------------------------------------------------
@@ -8632,7 +8631,7 @@ static u8 MultiMove_UpdateMove(void)
     return sMultiMove->bgMoveSteps;
 }
 
-// Store the Pokémon that the player is picking up
+// Store the Pokemon that the player is picking up
 static void MultiMove_GetMonsFromSelection(void)
 {
     s32 i, j;
@@ -8666,7 +8665,7 @@ static void MultiMove_GetMonsFromSelection(void)
     }
 }
 
-// The Pokémon the player has picked up have been stored, now delete
+// The Pokemon the player has picked up have been stored, now delete
 // them from their original positions
 static void MultiMove_RemoveMonsFromBox(void)
 {
@@ -9084,7 +9083,7 @@ static void MoveItemFromCursorToBag(void)
 }
 
 // The party menu is being closed, if the cursor is on
-// a Pokémon that has a held item make sure it slides
+// a Pokemon that has a held item make sure it slides
 // up along with the closing menu.
 static void MoveHeldItemWithPartyMenu(void)
 {
@@ -9300,9 +9299,9 @@ static void SetItemIconCallback(u8 id, u8 callbackId, u8 cursorArea, u8 cursorPo
         sStorage->itemIcons[id].sprite->callback = SpriteCB_ItemIcon_SwapToMon;
         break;
     case ITEM_CB_HIDE_PARTY:
-        // If cursor is on a Pokémon with a held item and
+        // If cursor is on a Pokemon with a held item and
         // the player closes the party menu, have the held
-        // item follow the Pokémon as the menu slides out
+        // item follow the Pokemon as the menu slides out
         sStorage->itemIcons[id].sprite->callback = SpriteCB_ItemIcon_HideParty;
         break;
     }
@@ -9649,7 +9648,7 @@ static void SetBoxWallpaper(u8 boxId, u8 wallpaperId)
         gPokemonStoragePtr->boxWallpapers[boxId] = wallpaperId;
 }
 
-// For moving to the next Pokémon while viewing the summary screen
+// For moving to the next Pokemon while viewing the summary screen
 s16 AdvanceStorageMonIndex(struct BoxPokemon *boxMons, u8 currIndex, u8 maxIndex, u8 mode)
 {
     s16 i;
@@ -10081,7 +10080,7 @@ static void TilemapUtil_Draw(u8 id)
 //  SECTION: UnkUtil
 //
 //  Some data transfer utility that goes functionally unused.
-//  It gets initialized with UnkUtil_Init, and run every vblank in Pokémon
+//  It gets initialized with UnkUtil_Init, and run every vblank in Pokemon
 //  Storage with UnkUtil_Run, but neither of the Add functions are ever used,
 //  so UnkUtil_Run performs no actions.
 //------------------------------------------------------------------------------
