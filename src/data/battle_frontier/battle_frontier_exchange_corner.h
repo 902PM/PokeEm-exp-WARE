@@ -31,20 +31,22 @@ static const u16 sFrontierExchangeCorner_Vitamins[] =
     ITEM_ZINC,
     ITEM_CARBOS,
     ITEM_HP_UP,
+    ITEM_EXP_CANDY_XL,
+    ITEM_RARE_CANDY,
     ITEM_LIST_END
 };
 
 static const u16 sFrontierExchangeCorner_HoldItems[] =
 {
     ITEM_LEFTOVERS,
-    ITEM_WHITE_HERB,
-    ITEM_QUICK_CLAW,
-    ITEM_MENTAL_HERB,
-    ITEM_BRIGHT_POWDER,
+    ITEM_LIFE_ORB,
+    ITEM_WEAKNESS_POLICY,
+    ITEM_FOCUS_SASH,
+    ITEM_CHOICE_SCARF,
     ITEM_CHOICE_BAND,
-    ITEM_KINGS_ROCK,
-    ITEM_FOCUS_BAND,
-    ITEM_SCOPE_LENS,
+    ITEM_CHOICE_SPECS,
+    ITEM_EVIOLITE,
+    ITEM_FLAME_ORB,
     ITEM_LIST_END
 };
 
@@ -81,6 +83,8 @@ static const u8 *const sFrontierExchangeCorner_VitaminsDescriptions[] =
     BattleFrontier_ExchangeServiceCorner_Text_ZincDesc,
     BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc,
     BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_Candy_XLDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_Rare_CandyDesc,
     gText_Exit
 };
 
