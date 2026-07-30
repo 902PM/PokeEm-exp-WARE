@@ -24,7 +24,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MAX_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_L",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION"
     },
@@ -118,7 +118,7 @@
       "x": 9,
       "y": 8,
       "elevation": 0,
-      "item": "ITEM_ULTRA_BALL",
+      "item": "ITEM_BEAST_BALL",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL"
     },
     {
@@ -126,7 +126,7 @@
       "x": 16,
       "y": 22,
       "elevation": 0,
-      "item": "ITEM_MAX_ETHER",
+      "item": "ITEM_REAPER_CLOTH",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_MAX_ETHER"
     }
   ]

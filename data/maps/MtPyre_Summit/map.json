@@ -212,7 +212,7 @@
       "x": 9,
       "y": 25,
       "elevation": 0,
-      "item": "ITEM_ZINC",
+      "item": "ITEM_BANETTITE",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_ZINC"
     },
     {
@@ -220,7 +220,7 @@
       "x": 37,
       "y": 7,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_MEDICHAMITE",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_RARE_CANDY"
     }
   ]

@@ -94,6 +94,56 @@ Route118_EventScript_StevenTrigger::
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, Route118_EventScript_Is_Treecko
+	case 1, Route118_EventScript_Is_Torchic
+	case 2, Route118_EventScript_Is_Mudkip
+	end
+
+Route118_EventScript_Is_Treecko::
+	giveitem ITEM_MEGA_RING
+	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
+	giveitem ITEM_SCEPTILITE
+	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Treecko_FULL
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Is_Treecko_FULL::
+	addpcitem ITEM_SCEPTILITE
+	msgbox Route118_Text_ItemFull, MSGBOX_DEFAULT
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Is_Torchic::
+	giveitem ITEM_MEGA_RING
+	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
+	giveitem ITEM_BLAZIKENITE
+	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Torchic_FULL
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Is_Torchic_FULL::
+	addpcitem ITEM_BLAZIKENITE
+	msgbox Route118_Text_ItemFull, MSGBOX_DEFAULT
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Is_Mudkip::
+	giveitem ITEM_MEGA_RING
+	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
+	giveitem ITEM_SWAMPERTITE
+	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Mudkip_FULL
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Is_Mudkip_FULL::
+	addpcitem ITEM_SWAMPERTITE
+	msgbox Route118_Text_ItemFull, MSGBOX_DEFAULT
+	goto Route118_EventScript_Steven_Gohome
+	end
+
+Route118_EventScript_Steven_Gohome::
+	msgbox Route118_Text_Steven_Gohome, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
@@ -244,57 +294,51 @@ Route118_EventScript_Deandre::
 	end
 
 Route118_Text_StevenQuestions:
-	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
-	.string "It's me, STEVEN!\n"
-	.string "We met in the cave near DEWFORD.\p"
-	.string "Have you met many kinds of POKéMON\n"
-	.string "since I last saw you?\p"
-	.string "There are many, many kinds of POKéMON\n"
-	.string "in this wide world of ours.\p"
-	.string "If you wanted to raise only your\n"
-	.string "favorites, that's fine.\p"
-	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
-	.string "As a TRAINER of POKéMON,\n"
-	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "{JPN}ダイゴ『やあ {PLAYER}{KUN}！\pムロタウンの どうくつで あった\nダイゴだよ！\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな？\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる？\pボクが きにする ことじゃない けどね\pそうだ! はなしを きいてもらった\nおれいに これをあげよう!$"
+
+Route118_Text_StevenQuestions_2:
+	.string "{JPN}そして\nこれも もらって くれ!$"
+
+Route118_Text_Steven_Gohome:
+	.string "{JPN}じゃあ\nまた あえると いいね$"
+
+Route118_Text_ItemFull:
+	.string "{JPN}もちものが いっぱい なので\nパソコンに てんそう された!$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
-	.string "Hmm!\n"
-	.string "A GOOD ROD is really good!\p"
-	.string "Wouldn't you agree?$"
+	.string "{JPN}うむ！\nいいつりざおは ほんとうに いいよ！\pきみも そう おもうでしょ？"
+	.string ""
+	.string "$"
 
 Route118_Text_IdenticalMindsTakeThis:
-	.string "Hmm!\n"
-	.string "We're of identical minds!\p"
-	.string "Hmm!\n"
-	.string "Take this GOOD ROD!$"
+	.string "{JPN}うむ！\nきみとは きが あうよ！\pうむ！\nいいつりざおを あげよう！"
+	.string ""
+	.string ""
+	.string "$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "Wherever there's water, try your luck\n"
-	.string "at fishing.$"
+	.string "{JPN}みずの ある ところなら\nどこでも つりを すると いいよ！"
+	.string "$"
 
 Route118_Text_DontYouLikeToFish:
-	.string "Don't you like to fish?$"
+	.string "{JPN}つりは きらい かい？$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
-	.string "Try catching all sorts of POKéMON\n"
-	.string "with your GOOD ROD.$"
+	.string "{JPN}いいつりざおで\nいろんな ポケモンを つると いいよ！"
+	.string "$"
 
 Route118_Text_CanCrossRiversWithSurf:
-	.string "Even if there isn't a boat, you can\n"
-	.string "cross rivers and the sea if you have\l"
-	.string "a POKéMON that knows SURF.\p"
-	.string "POKéMON can be counted on to do so\n"
-	.string "much!$"
+	.string "{JPN}ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの！\pポケモンって たのもしーい！"
+	.string ""
+	.string ""
+	.string ""
+	.string "$"
 
 Route118_Text_RouteSignMauville:
-	.string "ROUTE 118\n"
-	.string "{LEFT_ARROW} MAUVILLE CITY$"
+	.string "{JPN}ここは 118ばん どうろ\n{LEFT_ARROW} キンセツシティ"
+	.string "$"
 
 Route118_Text_RouteSign119:
-	.string "ROUTE 118\n"
-	.string "{UP_ARROW} ROUTE 119$"
+	.string "{JPN}ここは 118ばん どうろ\n{UP_ARROW} 119ばん どうろ"
+	.string "$"
 

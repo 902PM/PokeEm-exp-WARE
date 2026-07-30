@@ -179,7 +179,7 @@ SSAnne_2F_Corridor_Text_RivalIntro::
 	.string "{PLAYER}!\p"
 	.string "Imagine seeing you here!\n"
 	.string "{PLAYER}, were you really invited?\p"
-	.string "So how's your POKéDEX coming?\p"
+	.string "So how's your POKeDEX coming?\p"
 	.string "I already caught 40 kinds, pal.\n"
 	.string "Different kinds are everywhere.\p"
 	.string "Crawl around in grassy areas, and\n"
@@ -188,13 +188,13 @@ SSAnne_2F_Corridor_Text_RivalIntro::
 SSAnne_2F_Corridor_Text_RivalDefeat::
 	.string "Humph!\p"
 	.string "At least you're raising your\n"
-	.string "POKéMON!$"
+	.string "POKEMON!$"
 
 SSAnne_2F_Corridor_Text_RivalVictory::
-	.string "{PLAYER}..！\n"
-	.string "ふなよい　してるのか！\p"
-	.string "もっと　からだ\n"
-	.string "きたえた　ほうが　いいぜ！$"
+	.string "{PLAYER}..!\n"
+	.string "ふなよい してるのか!\p"
+	.string "もっと からだ\n"
+	.string "きたえた ほうが いいぜ!$"
 
 SSAnne_2F_Corridor_Text_RivalPostBattle::
 	.string "{RIVAL}: I heard there was a CUT\n"

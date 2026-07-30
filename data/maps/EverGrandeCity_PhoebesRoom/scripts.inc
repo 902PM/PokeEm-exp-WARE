@@ -41,13 +41,26 @@ EverGrandeCity_PhoebesRoom_EventScript_Phoebe::
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ELITE_4_PHOEBE, EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
+	goto_if_set FLAG_SYS_GAME_CLEAR,EverGrandeCity_PhoebesRoom_EventScript_Battle_Rematch
 	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_PHOEBE, EverGrandeCity_PhoebesRoom_Text_Defeat
 	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated
 	end
 
+EverGrandeCity_PhoebesRoom_EventScript_Battle_Rematch::
+	msgbox EverGrandeCity_PhoebesRoom_Text_IntroSpeech_Rematch, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_PHOEBE_1, EverGrandeCity_PhoebesRoom_Text_Defeat_Rematch
+	goto EverGrandeCity_PhoebesRoom_EventScript_Defeated_Rematch
+	end
+
 EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech::
+	goto_if_set FLAG_SYS_GAME_CLEAR,EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_Rematch
 	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech, MSGBOX_DEFAULT
+	release
+	end
+
+EverGrandeCity_PhoebesRoom_EventScript_PostBattleSpeech_Rematch::
+	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech_Rematch, MSGBOX_DEFAULT
 	release
 	end
 
@@ -58,27 +71,27 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	release
 	end
 
+EverGrandeCity_PhoebesRoom_EventScript_Defeated_Rematch::
+	setflag FLAG_DEFEATED_ELITE_4_PHOEBE
+	call PokemonLeague_EliteFour_SetAdvanceToNextRoomMetatiles
+	msgbox EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech_Rematch, MSGBOX_DEFAULT
+	release
+	end
+
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Ahahaha!\p"
-	.string "I'm PHOEBE of the ELITE FOUR.\n"
-	.string "I did my training on MT. PYRE.\p"
-	.string "While I trained, I gained the ability\n"
-	.string "to commune with GHOST-type POKéMON.\p"
-	.string "Yes, the bond I developed with POKéMON\n"
-	.string "is extremely tight.\p"
-	.string "So, come on, just try and see if you can\n"
-	.string "even inflict damage on my POKéMON!$"
+	.string "{JPN}アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "Oh, darn.\n"
-	.string "I've gone and lost.$"
+	.string "{JPN}あーあ\nまけちゃった$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "There's a definite bond between you\n"
-	.string "and your POKéMON, too.\p"
-	.string "I didn't recognize it, so it's only\n"
-	.string "natural that I lost.\p"
-	.string "Yup, I'd like to see how far your bond\n"
-	.string "will carry you.\p"
-	.string "Go ahead, move on to the next room.$"
+	.string "{JPN}あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ$"
 
+EverGrandeCity_PhoebesRoom_Text_IntroSpeech_Rematch:
+	.string "{JPN}アハハ!\pまってたよ!\pこんどの アタシは ひとあじ ちがう\nかくご きめて かかって きてね!$"
+
+EverGrandeCity_PhoebesRoom_Text_Defeat_Rematch:
+	.string "{JPN}さすがね！$"
+
+EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech_Rematch:
+	.string "{JPN}うーん ざんねん\nまた まけたか……\pだけど ちからを\nあわせて たたかったから\pアタシと ポケモンたちは\nきずなを もっと もっと\lふかめることが できた\pまた しょうぶ できること\nたのしみに してるよ!$"

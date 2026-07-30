@@ -394,7 +394,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SUN_STONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_121_REVIVE"
     },
@@ -509,7 +509,7 @@
       "x": 23,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_HP_UP",
+      "item": "ITEM_SACHET",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
     },
     {
@@ -525,7 +525,7 @@
       "x": 72,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_FULL_HEAL",
+      "item": "ITEM_ELECTIRIZER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL"
     },
     {
@@ -533,7 +533,7 @@
       "x": 68,
       "y": 8,
       "elevation": 3,
-      "item": "ITEM_MAX_REVIVE",
+      "item": "ITEM_MAGMARIZER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_MAX_REVIVE"
     }
   ]

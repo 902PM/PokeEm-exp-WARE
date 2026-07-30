@@ -114,7 +114,7 @@ OneIsland_Text_BillLetsGoSeeCelio::
 	.string "fetch me here.\p"
 	.string "He's in charge of the island's PC\n"
 	.string "network by his lonesome.\p"
-	.string "…Why am I telling you this now?\n"
+	.string "...Why am I telling you this now?\n"
 	.string "Let's just go see CELIO!$"
 
 Text_WhereDoYouWantToSail::
@@ -129,7 +129,7 @@ OneIsland_Text_LuckyToHaveCelioHere::
 	.string "My granddaughter was in a tizzy\n"
 	.string "over CELIO's friend.\p"
 	.string "Something about a famous\n"
-	.string "POKéMANIAC?\p"
+	.string "POKeMANIAC?\p"
 	.string "I'm not sure what that means, but\n"
 	.string "CELIO is quite the man!$"
 
@@ -156,12 +156,12 @@ OneIsland_Text_IslandSign::
 	.string "Friends Gather at Knot Island$"
 
 OneIsland_Text_PokemonNetCenterSign::
-	.string "Expanding the POKéMON World!\n"
-	.string "POKéMON NET CENTER$"
+	.string "Expanding the POKEMON World!\n"
+	.string "POKEMON NET CENTER$"
 
 @ Unused
 OneIsland_Text_ReturnToCinnabar::
-	.string "グレンタウンに　もどりますか？$"
+	.string "グレンタウンに もどりますか?$"
 
 OneIsland_Text_IsntWarmClimateHereGreat::
 	.string "Hi, sight-seeing, are you?\n"

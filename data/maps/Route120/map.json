@@ -403,7 +403,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_DAWN_STONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_HYPER_POTION"
     },
@@ -844,7 +844,7 @@
       "x": 0,
       "y": 86,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_EXP_CANDY_M",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_2"
     },
     {
@@ -852,7 +852,7 @@
       "x": 24,
       "y": 42,
       "elevation": 3,
-      "item": "ITEM_ZINC",
+      "item": "ITEM_EXP_CANDY_M",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_ZINC"
     },
     {

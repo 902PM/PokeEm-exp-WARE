@@ -97,11 +97,11 @@ LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
 	.string "This is really MR. FUJI's house.\p"
 	.string "He's really kind.\p"
 	.string "He looks after abandoned and\n"
-	.string "orphaned POKéMON.$"
+	.string "orphaned POKEMON.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MonsNiceToHug::
 	.string "It's so warm!\n"
-	.string "POKéMON are so nice to hug.$"
+	.string "POKEMON are so nice to hug.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_Nidorino::
 	.string "NIDORINO: Gaoo!$"
@@ -110,40 +110,40 @@ LavenderTown_VolunteerPokemonHouse_Text_Psyduck::
 	.string "PSYDUCK: Gwappa!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
-	.string "MR. FUJI: {PLAYER}…\p"
-	.string "Your POKéDEX quest is one that\n"
+	.string "MR. FUJI: {PLAYER}...\p"
+	.string "Your POKeDEX quest is one that\n"
 	.string "requires strong dedication.\p"
-	.string "Without deep love for POKéMON,\n"
+	.string "Without deep love for POKEMON,\n"
 	.string "your quest may fail.\p"
 	.string "I'm not sure if this will help you,\n"
 	.string "but I'd like you to have it.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji::
-	.string "{PLAYER} received a POKé FLUTE\n"
+	.string "{PLAYER} received a POKe FLUTE\n"
 	.string "from MR. FUJI.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute::
-	.string "Upon hearing the POKé FLUTE,\n"
-	.string "sleeping POKéMON will spring awake.\p"
-	.string "Try using it on POKéMON that are\n"
+	.string "Upon hearing the POKe FLUTE,\n"
+	.string "sleeping POKEMON will spring awake.\p"
+	.string "Try using it on POKEMON that are\n"
 	.string "sleeping obstacles.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis::
 	.string "You must make room for this!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
-	.string "MR. FUJI: Has my POKé FLUTE\n"
+	.string "MR. FUJI: Has my POKe FLUTE\n"
 	.string "helped you?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
-	.string "POKéMON FAN MAGAZINE\n"
+	.string "POKEMON FAN MAGAZINE\n"
 	.string "Monthly Grand Prize Drawing!\p"
-	.string "The application form is…\p"
+	.string "The application form is...\p"
 	.string "Gone! It's been clipped out.\n"
 	.string "Someone must have applied already.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::
-	.string "POKéMON magazines line the shelf.\p"
-	.string "POKéMON INSIDER…\p"
-	.string "POKéMON FAN…$"
+	.string "POKEMON magazines line the shelf.\p"
+	.string "POKEMON INSIDER...\p"
+	.string "POKEMON FAN...$"
 

@@ -67,15 +67,15 @@ CeladonCity_Condominiums_3F_Text_IWroteTheStory::
 CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex::
 	.string "Is that right?\p"
 	.string "I'm the game designer!\p"
-	.string "Filling up your POKéDEX is tough,\n"
+	.string "Filling up your POKeDEX is tough,\n"
 	.string "but don't quit!\p"
 	.string "When you finish, come tell me!$"
 
 CeladonCity_Condominiums_3F_Text_CompletedPokedexCongratulations::
 	.string "Wow! Excellent!\n"
-	.string "You completed your POKéDEX!\l"
+	.string "You completed your POKeDEX!\l"
 	.string "Congratulations!\l"
-	.string "…$"
+	.string "...$"
 
 CeladonCity_Condominiums_3F_Text_ItsTheGameProgram::
 	.string "It's the game program! Messing with\n"
