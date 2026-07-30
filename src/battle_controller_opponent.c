@@ -437,7 +437,20 @@ static void OpponentHandleChooseMove(enum BattlerId battler)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
         {
-            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, ChooseMoveAndTargetInBattlePalace(battler));
+            u32 chosenMoveAndTarget = ChooseMoveAndTargetInBattlePalace(battler);
+            enum Gimmick usableGimmick = gBattleStruct->gimmick.usableGimmick[battler];
+
+            if (usableGimmick != GIMMICK_NONE && !HasTrainerUsedGimmick(battler, usableGimmick))
+            {
+                SetAIUsingGimmick(battler, USE_GIMMICK);
+                gBattleStruct->gimmick.toActivate |= 1u << battler;
+                chosenMoveAndTarget |= RET_GIMMICK;
+            }
+            else
+            {
+                SetAIUsingGimmick(battler, NO_GIMMICK);
+            }
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, chosenMoveAndTarget);
         }
         else if (gAiBattleData->actionFlee)
         {
@@ -559,7 +572,8 @@ static void OpponentHandleChoosePokemon(enum BattlerId battler)
             for (chosenMonId = 0; chosenMonId < lastId; chosenMonId++)
             {
                 if (IsValidForBattle(&gParties[GetBattlerTrainer(battler)][chosenMonId])
-                 && !IsPartyMonOnFieldOrChosenToSwitch(battler, chosenMonId, battler1, battler2))
+                 && !((chosenMonId == gBattlerPartyIndexes[battler1]) && BattlersShareParty(battler, battler1))
+                 && !((chosenMonId == gBattlerPartyIndexes[battler2]) && BattlersShareParty(battler, battler2)))
                     break;
             }
         }

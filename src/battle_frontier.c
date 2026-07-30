@@ -21,6 +21,10 @@
 #include "constants/battle_frontier_mons.h"
 
 static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCount);
+static bool32 TryGetOpponentPartySlot(const struct Pokemon *mon, enum BattleTrainer *trainer, u32 *slot);
+static void ClearFacilityOpponentGimmickSources(void);
+static void MarkFrontierOpponentPartyGimmicksForTrainer(enum BattleTrainer trainer);
+static void MarkFacilityMonGimmicksForOpponent(const struct TrainerMon *fmon, const struct Pokemon *dst);
 
 // EWRAM vars.
 EWRAM_DATA const struct BattleFrontierTrainer *gFacilityTrainers = NULL;
@@ -28,6 +32,8 @@ EWRAM_DATA const struct TrainerMon *gFacilityTrainerMons = NULL;
 
 // IWRAM common
 COMMON_DATA u16 gFrontierTempParty[MAX_FRONTIER_PARTY_SIZE] = {0};
+
+EWRAM_DATA static const struct TrainerMon *sFacilityOpponentMonSources[MAX_BATTLE_TRAINERS][PARTY_SIZE] = {0};
 
 static void HandleFacilityTrainerBattleEnd(void)
 {
@@ -189,12 +195,14 @@ void FacilityTrainerBattle(struct ScriptContext *ctx)
 void FillFrontierTrainerParty(u8 monsCount)
 {
     ZeroEnemyPartyMons();
+    ClearFacilityOpponentGimmickSources();
     FillTrainerParty(TRAINER_BATTLE_PARAM.opponentA, B_TRAINER_OPPONENT_A, monsCount);
 }
 
 void FillFrontierTrainersParties(u8 monsCount)
 {
     ZeroEnemyPartyMons();
+    ClearFacilityOpponentGimmickSources();
     FillTrainerParty(TRAINER_BATTLE_PARAM.opponentA, B_TRAINER_OPPONENT_A, monsCount);
     FillTrainerParty(TRAINER_BATTLE_PARAM.opponentB, B_TRAINER_OPPONENT_B, monsCount);
 }
@@ -249,10 +257,9 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         return;
     }
 
-    // Regular battle frontier trainer.
-    // Attempt to fill the trainer's party with random Pokémon until 3 have been
-    // successfully chosen. The trainer's party may not have duplicate Pokémon species
-    // or duplicate held items.
+    // 通常のバトルフロンティアのトレーナー。
+    // 3匹のポケモンが正常に選出されるまで、ランダムなポケモンでトレーナーのパーティを埋めることを試みる。
+    // トレーナーのパーティ内で、ポケモンの種類や持たせている道具が重複することはない。
     for (bfMonCount = 0; monSet[bfMonCount] != 0xFFFF; bfMonCount++)
         ;
     i = 0;
@@ -261,12 +268,12 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     {
         u16 monId = monSet[Random() % bfMonCount];
 
-        // "High tier" Pokémon are only allowed on open level mode
-        // 20 is not a possible value for level here
+        // 「高ランク」のポケモンは、オープンレベルモードでのみ使用可能です
+        // ここでは、レベルの値として20は指定できません
         if ((level == FRONTIER_MAX_LEVEL_50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
             continue;
 
-        // Ensure this Pokémon species isn't a duplicate.
+        // このポケモン種が重複していないことを確認する。
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_SPECIES) == gFacilityTrainerMons[monId].species)
@@ -275,7 +282,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // Ensure this Pokemon's held item isn't a duplicate.
+        // このポケモンの持ち物が重複していないことを確認する。
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) != ITEM_NONE
@@ -285,8 +292,8 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // Ensure this exact Pokémon index isn't a duplicate. This check doesn't seem necessary
-        // because the species and held items were already checked directly above.
+        // この特定のポケモンインデックスが重複していないことを確認する。
+        // ただし、種族や持ち物は直前ですでに確認済みであるため、このチェックは不要と思われる。
         for (j = 0; j < i; j++)
         {
             if (chosenMonIndices[j] == monId)
@@ -297,13 +304,89 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
         chosenMonIndices[i] = monId;
 
-        // Place the chosen Pokémon into the trainer's party.
+        // 選択したポケモンをトレーナーのパーティに加える。
         CreateFacilityMon(&gFacilityTrainerMons[monId], level, fixedIV, otID, 0, &gParties[trainer][i]);
 
-        // The Pokémon was successfully added to the trainer's party, so it's safe to move on to
-        // the next party slot.
+        // ポケモンがトレーナーのパーティに正常に追加されたため、
+        // 次のパーティスロットへ進んでも問題ありません。
         i++;
     }
+}
+
+static bool32 TryGetOpponentPartySlot(const struct Pokemon *mon, enum BattleTrainer *trainer, u32 *slot)
+{
+    u32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (mon == &gParties[B_TRAINER_OPPONENT_A][i])
+        {
+            *trainer = B_TRAINER_OPPONENT_A;
+            *slot = i;
+            return TRUE;
+        }
+        if (mon == &gParties[B_TRAINER_OPPONENT_B][i])
+        {
+            *trainer = B_TRAINER_OPPONENT_B;
+            *slot = i;
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
+static void ClearFacilityOpponentGimmickSources(void)
+{
+    memset(sFacilityOpponentMonSources, 0, sizeof(sFacilityOpponentMonSources));
+}
+
+static void MarkFrontierOpponentPartyGimmicksForTrainer(enum BattleTrainer trainer)
+{
+    u32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        const struct TrainerMon *fmon = sFacilityOpponentMonSources[trainer][i];
+
+        if (fmon == NULL || GetMonData(&gParties[trainer][i], MON_DATA_SPECIES_OR_EGG) == SPECIES_NONE)
+            continue;
+
+        if (fmon->dynamaxLevel > 0 && fmon->shouldUseDynamax)
+            gBattleStruct->opponentMonCanDynamax |= 1 << i;
+        if (fmon->teraType > 0)
+            gBattleStruct->opponentMonCanTera |= 1 << i;
+    }
+}
+
+void MarkFrontierOpponentPartyGimmicks(void)
+{
+    if (gBattleStruct == NULL || !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER) || (gBattleTypeFlags & BATTLE_TYPE_LINK))
+        return;
+
+    gBattleStruct->opponentMonCanDynamax = 0;
+    gBattleStruct->opponentMonCanTera = 0;
+    MarkFrontierOpponentPartyGimmicksForTrainer(B_TRAINER_OPPONENT_A);
+    MarkFrontierOpponentPartyGimmicksForTrainer(B_TRAINER_OPPONENT_B);
+}
+
+static void MarkFacilityMonGimmicksForOpponent(const struct TrainerMon *fmon, const struct Pokemon *dst)
+{
+    enum BattleTrainer trainer;
+    u32 slot;
+
+    if (!TryGetOpponentPartySlot(dst, &trainer, &slot))
+        return;
+
+    sFacilityOpponentMonSources[trainer][slot] = fmon;
+
+    if (gBattleStruct == NULL)
+        return;
+
+    if (fmon->dynamaxLevel > 0 && fmon->shouldUseDynamax)
+        gBattleStruct->opponentMonCanDynamax |= 1 << slot;
+    if (fmon->teraType > 0)
+        gBattleStruct->opponentMonCanTera |= 1 << slot;
 }
 
 void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32 otID, u32 flags, struct Pokemon *dst)
@@ -325,7 +408,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     CreateMonWithIVs(dst, fmon->species, level, personality, OTID_STRUCT_PRESET(otID), fixedIV);
 
     friendship = MAX_FRIENDSHIP;
-    // Give the chosen Pokémon its specified moves.
+    // Give the chosen Pokemon its specified moves.
     for (j = 0; j < MAX_MON_MOVES; j++)
     {
         move = fmon->moves[j];
@@ -334,7 +417,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 
         SetMonMoveSlot(dst, move, j);
         if (GetMoveEffect(move) == EFFECT_FRUSTRATION)
-            friendship = 0;  // Frustration is more powerful the lower the Pokémon's friendship is.
+            friendship = 0;  // Frustration is more powerful the lower the Pokemon's friendship is.
     }
 
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
@@ -368,6 +451,9 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     if (fmon->iv)
         SetMonData(dst, MON_DATA_IVS, &(fmon->iv));
 
+    if (fmon->nickname != NULL)
+        SetMonData(dst, MON_DATA_NICKNAME, fmon->nickname);
+
     if (fmon->isShiny)
     {
         u32 data = TRUE;
@@ -389,6 +475,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         SetMonData(dst, MON_DATA_TERA_TYPE, &data);
     }
 
+    MarkFacilityMonGimmicksForOpponent(fmon, dst);
 
     SetMonData(dst, MON_DATA_POKEBALL, &ball);
     CalculateMonStats(dst);

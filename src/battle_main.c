@@ -6,6 +6,7 @@
 #include "battle_arena.h"
 #include "battle_controllers.h"
 #include "battle_end_turn.h"
+#include "battle_frontier.h"
 #include "battle_hold_effects.h"
 #include "battle_interface.h"
 #include "battle_main.h"
@@ -89,7 +90,7 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void);
 static void CB2_HandleStartMultiPartnerBattle(void);
 static void CB2_HandleStartMultiBattle(void);
 static void CB2_HandleStartBattle(void);
-static void TryCorrectShedinjaLanguage(struct Pokemon *mon);
+static void TryCorrectJapaneseNicknameLanguage(struct Pokemon *mon);
 static enum BattleTrainer GetBattlerTrainerFromParty(struct Pokemon *party);
 static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum);
 static void BattleMainCB1(void);
@@ -143,8 +144,8 @@ EWRAM_DATA u16 gBattle_WIN0V = 0;
 EWRAM_DATA u16 gBattle_WIN1H = 0;
 EWRAM_DATA u16 gBattle_WIN1V = 0;
 EWRAM_DATA u8 gDisplayedStringBattle[425] = {0}; // Increased in size to fit Juan's defeat text (SootopolisCity_Gym_1F_Text_JuanDefeat)
-EWRAM_DATA u8 gBattleTextBuff1[TEXT_BUFF_ARRAY_COUNT] = {0};
-EWRAM_DATA u8 gBattleTextBuff2[TEXT_BUFF_ARRAY_COUNT] = {0};
+EWRAM_DATA u8 gBattleTextBuff1[TEXT_BUFF_ARRAY_COUNT + 13] = {0};
+EWRAM_DATA u8 gBattleTextBuff2[TEXT_BUFF_ARRAY_COUNT + 13] = {0};
 EWRAM_DATA u8 gBattleTextBuff3[TEXT_BUFF_ARRAY_COUNT + 13] = {0};   // expanded for stupidly long z move names
 EWRAM_DATA u32 gBattleTypeFlags = 0;
 EWRAM_DATA u8 gBattleEnvironment = 0;
@@ -301,123 +302,123 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 // [TRAINER_CLASS_XYZ] = { _("name"), <money=5>, <ball=BALL_POKE> }
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
-    [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{PKMN} TRAINER") },
-    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{PKMN} TRAINER") },
-    [TRAINER_CLASS_HIKER] = { _("HIKER"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
-    [TRAINER_CLASS_TEAM_AQUA] = { _("TEAM AQUA") },
-    [TRAINER_CLASS_PKMN_BREEDER] = { _("{PKMN} BREEDER"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
-    [TRAINER_CLASS_COOLTRAINER] = { _("COOLTRAINER"), 12, BALL_ULTRA },
-    [TRAINER_CLASS_BIRD_KEEPER] = { _("BIRD KEEPER"), 8 },
-    [TRAINER_CLASS_COLLECTOR] = { _("COLLECTOR"), 15, BALL_PREMIER },
-    [TRAINER_CLASS_SWIMMER_M] = { _("SWIMMER♂"), 2, BALL_DIVE },
-    [TRAINER_CLASS_TEAM_MAGMA] = { _("TEAM MAGMA") },
-    [TRAINER_CLASS_EXPERT] = { _("EXPERT"), 10 },
-    [TRAINER_CLASS_AQUA_ADMIN] = { _("AQUA ADMIN"), 10 },
-    [TRAINER_CLASS_BLACK_BELT] = { _("BLACK BELT"), 8, BALL_ULTRA },
-    [TRAINER_CLASS_AQUA_LEADER] = { _("AQUA LEADER"), 20, BALL_MASTER },
-    [TRAINER_CLASS_HEX_MANIAC] = { _("HEX MANIAC"), 6 },
-    [TRAINER_CLASS_AROMA_LADY] = { _("AROMA LADY"), 10 },
-    [TRAINER_CLASS_RUIN_MANIAC] = { _("RUIN MANIAC"), 15 },
-    [TRAINER_CLASS_INTERVIEWER] = { _("INTERVIEWER"), 12 },
-    [TRAINER_CLASS_TUBER_F] = { _("TUBER"), 1 },
-    [TRAINER_CLASS_TUBER_M] = { _("TUBER"), 1 },
-    [TRAINER_CLASS_LADY] = { _("LADY"), 50 },
-    [TRAINER_CLASS_BEAUTY] = { _("BEAUTY"), 20, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_GREAT : BALL_POKE },
-    [TRAINER_CLASS_RICH_BOY] = { _("RICH BOY"), 50 },
-    [TRAINER_CLASS_POKEMANIAC] = { _("POKéMANIAC"), 15 },
-    [TRAINER_CLASS_GUITARIST] = { _("GUITARIST"), 8 },
-    [TRAINER_CLASS_KINDLER] = { _("KINDLER"), 8 },
-    [TRAINER_CLASS_CAMPER] = { _("CAMPER"), 4 },
-    [TRAINER_CLASS_PICNICKER] = { _("PICNICKER"), 4 },
-    [TRAINER_CLASS_BUG_MANIAC] = { _("BUG MANIAC"), 15 },
-    [TRAINER_CLASS_PSYCHIC] = { _("PSYCHIC"), 6 },
-    [TRAINER_CLASS_GENTLEMAN] = { _("GENTLEMAN"), 20, BALL_LUXURY },
-    [TRAINER_CLASS_ELITE_FOUR] = { _("ELITE FOUR"), 25, BALL_ULTRA },
-    [TRAINER_CLASS_LEADER] = { _("LEADER"), 25, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
-    [TRAINER_CLASS_SCHOOL_KID] = { _("SCHOOL KID") },
-    [TRAINER_CLASS_SR_AND_JR] = { _("SR. AND JR."), 4 },
-    [TRAINER_CLASS_WINSTRATE] = { _("WINSTRATE"), 10 },
-    [TRAINER_CLASS_POKEFAN] = { _("POKéFAN"), 20 },
-    [TRAINER_CLASS_YOUNGSTER] = { _("YOUNGSTER"), 4 },
-    [TRAINER_CLASS_CHAMPION] = { _("CHAMPION"), 50, BALL_ULTRA },
-    [TRAINER_CLASS_FISHERMAN] = { _("FISHERMAN"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_DIVE : BALL_LURE },
-    [TRAINER_CLASS_TRIATHLETE] = { _("TRIATHLETE"), 10 },
-    [TRAINER_CLASS_DRAGON_TAMER] = { _("DRAGON TAMER"), 12 },
-    [TRAINER_CLASS_NINJA_BOY] = { _("NINJA BOY"), 3 },
-    [TRAINER_CLASS_BATTLE_GIRL] = { _("BATTLE GIRL"), 6 },
-    [TRAINER_CLASS_PARASOL_LADY] = { _("PARASOL LADY"), 10 },
-    [TRAINER_CLASS_SWIMMER_F] = { _("SWIMMER♀"), 2, BALL_DIVE },
-    [TRAINER_CLASS_TWINS] = { _("TWINS"), 3 },
-    [TRAINER_CLASS_SAILOR] = { _("SAILOR"), 8 },
-    [TRAINER_CLASS_COOLTRAINER_2] = { _("COOLTRAINER"), 5, BALL_ULTRA },
-    [TRAINER_CLASS_MAGMA_ADMIN] = { _("MAGMA ADMIN"), 10 },
-    [TRAINER_CLASS_RIVAL] = { _("{PKMN} TRAINER"), 15 },
-    [TRAINER_CLASS_BUG_CATCHER] = { _("BUG CATCHER"), 4 },
-    [TRAINER_CLASS_PKMN_RANGER] = { _("{PKMN} RANGER"), 12 },
-    [TRAINER_CLASS_MAGMA_LEADER] = { _("MAGMA LEADER"), 20, BALL_MASTER },
-    [TRAINER_CLASS_LASS] = { _("LASS"), 4 },
-    [TRAINER_CLASS_YOUNG_COUPLE] = { _("YOUNG COUPLE"), 8 },
-    [TRAINER_CLASS_OLD_COUPLE] = { _("OLD COUPLE"), 10 },
-    [TRAINER_CLASS_SIS_AND_BRO] = { _("SIS AND BRO"), 3 },
-    [TRAINER_CLASS_SALON_MAIDEN] = { _("SALON MAIDEN"), 5, BALL_ULTRA },
-    [TRAINER_CLASS_DOME_ACE] = { _("DOME ACE") },
-    [TRAINER_CLASS_PALACE_MAVEN] = { _("PALACE MAVEN") },
-    [TRAINER_CLASS_ARENA_TYCOON] = { _("ARENA TYCOON") },
-    [TRAINER_CLASS_FACTORY_HEAD] = { _("FACTORY HEAD") },
-    [TRAINER_CLASS_PIKE_QUEEN] = { _("PIKE QUEEN") },
-    [TRAINER_CLASS_PYRAMID_KING] = { _("PYRAMID KING") },
-    [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} TRAINER") },
+    [TRAINER_CLASS_PKMN_TRAINER_1] = { _("ポケモントレーナー") },
+    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("ポケモントレーナー") },
+    [TRAINER_CLASS_HIKER] = { _("やまおとこ"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
+    [TRAINER_CLASS_TEAM_AQUA] = { _("アクアだん") },
+    [TRAINER_CLASS_PKMN_BREEDER] = { _("ポケモンブリーダー"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
+    [TRAINER_CLASS_COOLTRAINER] = { _("エリートトレーナー"), 12, BALL_ULTRA },
+    [TRAINER_CLASS_BIRD_KEEPER] = { _("とりつかい"), 8 },
+    [TRAINER_CLASS_COLLECTOR] = { _("ポケモンコレクター"), 15, BALL_PREMIER },
+    [TRAINER_CLASS_SWIMMER_M] = { _("かいパンやろう"), 2, BALL_DIVE },
+    [TRAINER_CLASS_TEAM_MAGMA] = { _("マグマだん") },
+    [TRAINER_CLASS_EXPERT] = { _("たつじん"), 10 },
+    [TRAINER_CLASS_AQUA_ADMIN] = { _("アクアだんかんぶ"), 10 },
+    [TRAINER_CLASS_BLACK_BELT] = { _("カラテおう"), 8, BALL_ULTRA },
+    [TRAINER_CLASS_AQUA_LEADER] = { _("アクアだんリーダー"), 20, BALL_MASTER },
+    [TRAINER_CLASS_HEX_MANIAC] = { _("オカルトマニア"), 6 },
+    [TRAINER_CLASS_AROMA_LADY] = { _("アロマなおねえさん"), 10 },
+    [TRAINER_CLASS_RUIN_MANIAC] = { _("いせきマニア"), 15 },
+    [TRAINER_CLASS_INTERVIEWER] = { _("インタビュアー"), 12 },
+    [TRAINER_CLASS_TUBER_F] = { _("うきわガール"), 1 },
+    [TRAINER_CLASS_TUBER_M] = { _("うきわボーイ"), 1 },
+    [TRAINER_CLASS_LADY] = { _("おじょうさま"), 50 },
+    [TRAINER_CLASS_BEAUTY] = { _("おとなのおねえさん"), 20, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_GREAT : BALL_POKE },
+    [TRAINER_CLASS_RICH_BOY] = { _("おぼっちゃま"), 50 },
+    [TRAINER_CLASS_POKEMANIAC] = { _("かいじゅうマニア"), 15 },
+    [TRAINER_CLASS_GUITARIST] = { _("ギタリスト"), 8 },
+    [TRAINER_CLASS_KINDLER] = { _("キャンプファイヤー"), 8 },
+    [TRAINER_CLASS_CAMPER] = { _("キャンプボーイ"), 4 },
+    [TRAINER_CLASS_PICNICKER] = { _("ピクニックガール"), 4 },
+    [TRAINER_CLASS_BUG_MANIAC] = { _("こんちゅうマニア"), 15 },
+    [TRAINER_CLASS_PSYCHIC] = { _("サイキッカー"), 6 },
+    [TRAINER_CLASS_GENTLEMAN] = { _("ジェントルマン"), 20, BALL_LUXURY },
+    [TRAINER_CLASS_ELITE_FOUR] = { _("してんのう"), 25, BALL_ULTRA },
+    [TRAINER_CLASS_LEADER] = { _("ジムリーダー"), 25, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
+    [TRAINER_CLASS_SCHOOL_KID] = { _("じゅくがえり") },
+    [TRAINER_CLASS_SR_AND_JR] = { _("センパイとコウハイ"), 4 },
+    [TRAINER_CLASS_WINSTRATE] = { _("カチヌキさんち"), 10 },
+    [TRAINER_CLASS_POKEFAN] = { _("だいすきクラブ"), 20 },
+    [TRAINER_CLASS_YOUNGSTER] = { _("たんぱんこぞう"), 4 },
+    [TRAINER_CLASS_CHAMPION] = { _("チャンピオン"), 50, BALL_ULTRA },
+    [TRAINER_CLASS_FISHERMAN] = { _("つりびと"), 10, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_DIVE : BALL_LURE },
+    [TRAINER_CLASS_TRIATHLETE] = { _("トライアスリート"), 10 },
+    [TRAINER_CLASS_DRAGON_TAMER] = { _("ドラゴンつかい"), 12 },
+    [TRAINER_CLASS_NINJA_BOY] = { _("ニンジャごっこ"), 3 },
+    [TRAINER_CLASS_BATTLE_GIRL] = { _("バトルガール"), 6 },
+    [TRAINER_CLASS_PARASOL_LADY] = { _("パラソルおねえさん"), 10 },
+    [TRAINER_CLASS_SWIMMER_F] = { _("ビキニのおねえさん"), 2, BALL_DIVE },
+    [TRAINER_CLASS_TWINS] = { _("ふたごちゃん"), 3 },
+    [TRAINER_CLASS_SAILOR] = { _("ふなのり"), 8 },
+    [TRAINER_CLASS_COOLTRAINER_2] = { _("エリートレーナー"), 5, BALL_ULTRA },
+    [TRAINER_CLASS_MAGMA_ADMIN] = { _("マグマだんかんぶ"), 10 },
+    [TRAINER_CLASS_RIVAL] = { _("ポケモントレーナー"), 15 },
+    [TRAINER_CLASS_BUG_CATCHER] = { _("むしとりしょうねん"), 4 },
+    [TRAINER_CLASS_PKMN_RANGER] = { _("ポケモンレンジャー"), 12 },
+    [TRAINER_CLASS_MAGMA_LEADER] = { _("マグマだんリーダー"), 20, BALL_MASTER },
+    [TRAINER_CLASS_LASS] = { _("ミニスカート"), 4 },
+    [TRAINER_CLASS_YOUNG_COUPLE] = { _("ラブラブカップル"), 8 },
+    [TRAINER_CLASS_OLD_COUPLE] = { _("きんこんしき"), 10 },
+    [TRAINER_CLASS_SIS_AND_BRO] = { _("うみきょうだい"), 3 },
+    [TRAINER_CLASS_SALON_MAIDEN] = { _("タワータイクーン"), 5, BALL_ULTRA },
+    [TRAINER_CLASS_DOME_ACE] = { _("ドームスーパースター") },
+    [TRAINER_CLASS_PALACE_MAVEN] = { _("パレスガーディアン") },
+    [TRAINER_CLASS_ARENA_TYCOON] = { _("アリーナキャプテン") },
+    [TRAINER_CLASS_FACTORY_HEAD] = { _("ファクトリーヘッド") },
+    [TRAINER_CLASS_PIKE_QUEEN] = { _("チューブクイーン") },
+    [TRAINER_CLASS_PYRAMID_KING] = { _("ピラミッドキング") },
+    [TRAINER_CLASS_RS_PROTAG] = { _("ポケモントレーナー") },
 
-    [TRAINER_CLASS_YOUNGSTER_FRLG] =       { _("YOUNGSTER"), 4 },
-    [TRAINER_CLASS_BUG_CATCHER_FRLG] =     { _("BUG CATCHER"), 3 },
-    [TRAINER_CLASS_LASS_FRLG] =            { _("LASS"), 4 },
-    [TRAINER_CLASS_SAILOR_FRLG] =          { _("SAILOR"), 8 },
-    [TRAINER_CLASS_CAMPER_FRLG] =          { _("CAMPER"), 5 },
-    [TRAINER_CLASS_PICNICKER_FRLG] =       { _("PICNICKER"), 5 },
-    [TRAINER_CLASS_POKEMANIAC_FRLG] =      { _("POKéMANIAC"), 12 },
-    [TRAINER_CLASS_SUPER_NERD_FRLG] =      { _("SUPER NERD"), 6 },
-    [TRAINER_CLASS_HIKER_FRLG] =           { _("HIKER"), 9 },
-    [TRAINER_CLASS_BIKER_FRLG] =           { _("BIKER"), 5 },
-    [TRAINER_CLASS_BURGLAR_FRLG] =         { _("BURGLAR"), 22 },
-    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("ENGINEER"), 12 },
-    [TRAINER_CLASS_FISHERMAN_FRLG] =       { _("FISHERMAN"), 9, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_DIVE : BALL_LURE },
-    [TRAINER_CLASS_SWIMMER_M_FRLG] =       { _("SWIMMER♂"), 1 },
-    [TRAINER_CLASS_CUE_BALL_FRLG] =        { _("CUE BALL"), 6 },
-    [TRAINER_CLASS_GAMER_FRLG] =           { _("GAMER"), 18 },
-    [TRAINER_CLASS_BEAUTY_FRLG] =          { _("BEAUTY"), 18 },
-    [TRAINER_CLASS_SWIMMER_F_FRLG] =       { _("SWIMMER♀"), 1, BALL_DIVE },
-    [TRAINER_CLASS_PSYCHIC_FRLG] =         { _("PSYCHIC"), 5 },
-    [TRAINER_CLASS_ROCKER_FRLG] =          { _("ROCKER"), 6 },
-    [TRAINER_CLASS_JUGGLER_FRLG] =         { _("JUGGLER"), 10 },
-    [TRAINER_CLASS_TAMER_FRLG] =           { _("TAMER"), 10 },
-    [TRAINER_CLASS_BIRD_KEEPER_FRLG] =     { _("BIRD KEEPER"), 6 },
-    [TRAINER_CLASS_BLACK_BELT_FRLG] =      { _("BLACK BELT"), 6, BALL_ULTRA },
-    [TRAINER_CLASS_RIVAL_EARLY_FRLG] =     { _("RIVAL"), 4 },
-    [TRAINER_CLASS_SCIENTIST_FRLG] =       { _("SCIENTIST"), 12 },
-    [TRAINER_CLASS_BOSS_FRLG] =            { _("BOSS"), 25 },
-    [TRAINER_CLASS_LEADER_FRLG] =          { _("LEADER"), 25 },
-    [TRAINER_CLASS_TEAM_ROCKET_FRLG] =     { _("TEAM ROCKET"), 8 },
-    [TRAINER_CLASS_COOLTRAINER_FRLG] =     { _("COOLTRAINER"), 9, BALL_ULTRA },
-    [TRAINER_CLASS_ELITE_FOUR_FRLG] =      { _("ELITE FOUR"), 25, BALL_ULTRA },
-    [TRAINER_CLASS_GENTLEMAN_FRLG] =       { _("GENTLEMAN"), 18, BALL_LUXURY },
-    [TRAINER_CLASS_RIVAL_LATE_FRLG] =      { _("RIVAL"), 9 },
-    [TRAINER_CLASS_CHAMPION_FRLG] =        { _("CHAMPION"), 25 },
-    [TRAINER_CLASS_CHANNELER_FRLG] =       { _("CHANNELER"), 8 },
-    [TRAINER_CLASS_TWINS_FRLG] =           { _("TWINS"), 3 },
-    [TRAINER_CLASS_COOL_COUPLE_FRLG] =     { _("COOL COUPLE"), 6 },
-    [TRAINER_CLASS_YOUNG_COUPLE_FRLG] =    { _("YOUNG COUPLE"), 7 },
-    [TRAINER_CLASS_CRUSH_KIN_FRLG] =       { _("CRUSH KIN"), 6 },
-    [TRAINER_CLASS_SIS_AND_BRO_FRLG] =     { _("SIS AND BRO"), 1 },
-    [TRAINER_CLASS_PKMN_PROF_FRLG] =       { _("{PKMN} PROF."), 25 },
-    [TRAINER_CLASS_PLAYER_FRLG] =          { _("{PKMN} TRAINER"), 1 },
-    [TRAINER_CLASS_CRUSH_GIRL_FRLG] =      { _("CRUSH GIRL"), 6 },
-    [TRAINER_CLASS_TUBER_FRLG] =           { _("TUBER"), 1 },
-    [TRAINER_CLASS_PKMN_BREEDER_FRLG] =    { _("{PKMN} BREEDER"), 7, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
-    [TRAINER_CLASS_PKMN_RANGER_FRLG] =     { _("{PKMN} RANGER"), 9 },
-    [TRAINER_CLASS_AROMA_LADY_FRLG] =      { _("AROMA LADY"), 7 },
-    [TRAINER_CLASS_RUIN_MANIAC_FRLG] =     { _("RUIN MANIAC"), 12 },
-    [TRAINER_CLASS_LADY_FRLG] =            { _("LADY"), 50 },
-    [TRAINER_CLASS_PAINTER_FRLG] =         { _("PAINTER"), 4 },
+    [TRAINER_CLASS_YOUNGSTER_FRLG] =       { _("たんぱんこぞう"), 4 },
+    [TRAINER_CLASS_BUG_CATCHER_FRLG] =     { _("むしとりしょうねん"), 3 },
+    [TRAINER_CLASS_LASS_FRLG] =            { _("ミニスカート"), 4 },
+    [TRAINER_CLASS_SAILOR_FRLG] =          { _("ふなのり"), 8 },
+    [TRAINER_CLASS_CAMPER_FRLG] =          { _("キャンプボーイ"), 5 },
+    [TRAINER_CLASS_PICNICKER_FRLG] =       { _("ピクニックガール"), 5 },
+    [TRAINER_CLASS_POKEMANIAC_FRLG] =      { _("かいじゅうマニア"), 12 },
+    [TRAINER_CLASS_SUPER_NERD_FRLG] =      { _("りかけいのおとこ"), 6 },
+    [TRAINER_CLASS_HIKER_FRLG] =           { _("やまおとこ"), 9 },
+    [TRAINER_CLASS_BIKER_FRLG] =           { _("ぼうそうぞく"), 5 },
+    [TRAINER_CLASS_BURGLAR_FRLG] =         { _("どろぼう"), 22 },
+    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("でんきやのオヤジ"), 12 },
+    [TRAINER_CLASS_FISHERMAN_FRLG] =       { _("つりびと"), 9, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_DIVE : BALL_LURE },
+    [TRAINER_CLASS_SWIMMER_M_FRLG] =       { _("かいパンやろう"), 1 },
+    [TRAINER_CLASS_CUE_BALL_FRLG] =        { _("スキンヘッズ"), 6 },
+    [TRAINER_CLASS_GAMER_FRLG] =           { _("ギャンブラー"), 18 },
+    [TRAINER_CLASS_BEAUTY_FRLG] =          { _("おとなのおねえさん"), 18 },
+    [TRAINER_CLASS_SWIMMER_F_FRLG] =       { _("ビキニのおねえさん"), 1, BALL_DIVE },
+    [TRAINER_CLASS_PSYCHIC_FRLG] =         { _("サイキッカー"), 5 },
+    [TRAINER_CLASS_ROCKER_FRLG] =          { _("でんきグループ"), 6 },
+    [TRAINER_CLASS_JUGGLER_FRLG] =         { _("ジャグラー"), 10 },
+    [TRAINER_CLASS_TAMER_FRLG] =           { _("もうじゅうつかい"), 10 },
+    [TRAINER_CLASS_BIRD_KEEPER_FRLG] =     { _("とりつかい"), 6 },
+    [TRAINER_CLASS_BLACK_BELT_FRLG] =      { _("カラテおう"), 6, BALL_ULTRA },
+    [TRAINER_CLASS_RIVAL_EARLY_FRLG] =     { _("ライバル"), 4 },
+    [TRAINER_CLASS_SCIENTIST_FRLG] =       { _("けんきゅういん"), 12 },
+    [TRAINER_CLASS_BOSS_FRLG] =            { _("ロケットだんボス"), 25 },
+    [TRAINER_CLASS_LEADER_FRLG] =          { _("ジムリーダー"), 25 },
+    [TRAINER_CLASS_TEAM_ROCKET_FRLG] =     { _("ロケットだん"), 8 },
+    [TRAINER_CLASS_COOLTRAINER_FRLG] =     { _("エリートトレーナー"), 9, BALL_ULTRA },
+    [TRAINER_CLASS_ELITE_FOUR_FRLG] =      { _("してんのう"), 25, BALL_ULTRA },
+    [TRAINER_CLASS_GENTLEMAN_FRLG] =       { _("ジェントルマン"), 18, BALL_LUXURY },
+    [TRAINER_CLASS_RIVAL_LATE_FRLG] =      { _("ライバル"), 9 },
+    [TRAINER_CLASS_CHAMPION_FRLG] =        { _("チャンピオン"), 25 },
+    [TRAINER_CLASS_CHANNELER_FRLG] =       { _("きとうし"), 8 },
+    [TRAINER_CLASS_TWINS_FRLG] =           { _("ふたごちゃん"), 3 },
+    [TRAINER_CLASS_COOL_COUPLE_FRLG] =     { _("エリートカップル"), 6 },
+    [TRAINER_CLASS_YOUNG_COUPLE_FRLG] =    { _("ラブラブカップル"), 7 },
+    [TRAINER_CLASS_CRUSH_KIN_FRLG] =       { _("かくとうきょうだい"), 6 },
+    [TRAINER_CLASS_SIS_AND_BRO_FRLG] =     { _("うみきょうだい"), 1 },
+    [TRAINER_CLASS_PKMN_PROF_FRLG] =       { _("ポケモンはかせ"), 25 },
+    [TRAINER_CLASS_PLAYER_FRLG] =          { _("ポケモントレーナー"), 1 },
+    [TRAINER_CLASS_CRUSH_GIRL_FRLG] =      { _("かくとうむすめ"), 6 },
+    [TRAINER_CLASS_TUBER_FRLG] =           { _("うきわガール"), 1 },
+    [TRAINER_CLASS_PKMN_BREEDER_FRLG] =    { _("ポケモンブリーダー"), 7, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_HEAL : BALL_FRIEND },
+    [TRAINER_CLASS_PKMN_RANGER_FRLG] =     { _("ポケモンレンジャー"), 9 },
+    [TRAINER_CLASS_AROMA_LADY_FRLG] =      { _("アロマなおねえさん"), 7 },
+    [TRAINER_CLASS_RUIN_MANIAC_FRLG] =     { _("いせきマニア"), 12 },
+    [TRAINER_CLASS_LADY_FRLG] =            { _("おじょうさま"), 50 },
+    [TRAINER_CLASS_PAINTER_FRLG] =         { _("えかき"), 4 },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -454,13 +455,13 @@ static void (*const sEndTurnFuncsTable[])(void) =
     [B_OUTCOME_MON_TELEPORTED]    = HandleEndTurn_FinishBattle,
 };
 
-const u8 gStatusConditionString_PoisonJpn[] = _("どく$$$$$");
-const u8 gStatusConditionString_SleepJpn[] = _("ねむり$$$$");
-const u8 gStatusConditionString_ParalysisJpn[] = _("まひ$$$$$");
-const u8 gStatusConditionString_BurnJpn[] = _("やけど$$$$");
-const u8 gStatusConditionString_IceJpn[] = _("こおり$$$$");
-const u8 gStatusConditionString_ConfusionJpn[] = _("こんらん$$$");
-const u8 gStatusConditionString_LoveJpn[] = _("メロメロ$$$");
+const u8 gStatusConditionString_PoisonJpn[] = _("どく");
+const u8 gStatusConditionString_SleepJpn[] = _("ねむり");
+const u8 gStatusConditionString_ParalysisJpn[] = _("まひ");
+const u8 gStatusConditionString_BurnJpn[] = _("やけど");
+const u8 gStatusConditionString_IceJpn[] = _("こおり");
+const u8 gStatusConditionString_ConfusionJpn[] = _("こんらん");
+const u8 gStatusConditionString_LoveJpn[] = _("メロメロ");
 
 const u8 *const gStatusConditionStringsTable[][2] =
 {
@@ -478,6 +479,7 @@ void CB2_InitBattle(void)
     if (!gTestRunnerEnabled)
         MoveSaveBlocks_ResetHeap();
     AllocateBattleResources();
+    MarkFrontierOpponentPartyGimmicks();
     AllocateBattleSpritesData();
     AllocateMonSpritesGfx();
     RecordedBattle_ClearFrontierPassFlag();
@@ -958,10 +960,10 @@ static void CB2_HandleStartBattle(void)
         }
         break;
     case 3:
-        // Link battle, send/receive party Pokémon 2 at a time
+        // Link battle, send/receive party Pokemon 2 at a time
         if (IsLinkTaskFinished())
         {
-            // Send Pokémon 1-2
+            // Send Pokemon 1-2
             SendBlock(BitmaskAllOtherLinkPlayers(), gParties[B_TRAINER_PLAYER], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -969,7 +971,7 @@ static void CB2_HandleStartBattle(void)
     case 4:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv Pokémon 1-2
+            // Recv Pokemon 1-2
             ResetBlockReceivedFlags();
             memcpy(gParties[B_TRAINER_OPPONENT_A], gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
@@ -978,7 +980,7 @@ static void CB2_HandleStartBattle(void)
     case 7:
         if (IsLinkTaskFinished())
         {
-            // Send Pokémon 3-4
+            // Send Pokemon 3-4
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_PLAYER][2], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -986,7 +988,7 @@ static void CB2_HandleStartBattle(void)
     case 8:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv Pokémon 3-4
+            // Recv Pokemon 3-4
             ResetBlockReceivedFlags();
             memcpy(&gParties[B_TRAINER_OPPONENT_A][2], gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
@@ -995,7 +997,7 @@ static void CB2_HandleStartBattle(void)
     case 11:
         if (IsLinkTaskFinished())
         {
-            // Send Pokémon 5-6
+            // Send Pokemon 5-6
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_PLAYER][4], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1003,7 +1005,7 @@ static void CB2_HandleStartBattle(void)
     case 12:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv Pokémon 5-6
+            // Recv Pokemon 5-6
             ResetBlockReceivedFlags();
             memcpy(&gParties[B_TRAINER_OPPONENT_A][4], gBlockRecvBuffer[enemyMultiplayerId], sizeof(struct Pokemon) * 2);
 
@@ -1011,6 +1013,11 @@ static void CB2_HandleStartBattle(void)
         }
         break;
     case 15:
+        for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
+        {
+            for (u32 i = 0; i < PARTY_SIZE; i++)
+                TryCorrectJapaneseNicknameLanguage(&gParties[trainer][i]);
+        }
         InitBattleControllers();
         RecordedBattle_SetTrainerInfo();
         gBattleCommunication[SPRITES_INIT_STATE1] = 0;
@@ -1062,7 +1069,7 @@ static void CB2_HandleStartBattle(void)
                 gBattleTypeFlags |= BATTLE_TYPE_LINK_IN_BATTLE;
         }
         break;
-    // Introduce short delays between sending party Pokémon for link
+    // Introduce short delays between sending party Pokemon for link
     case 5:
     case 9:
     case 13:
@@ -1164,10 +1171,10 @@ static void CB2_HandleStartMultiPartnerBattle(void)
         }
         break;
     case 3:
-        // Link battle, send/receive party Pokémon in groups
+        // Link battle, send/receive party Pokemon in groups
         if (IsLinkTaskFinished())
         {
-            // Send Pokémon 1-2
+            // Send Pokemon 1-2
             SendBlock(BitmaskAllOtherLinkPlayers(), gParties[B_TRAINER_PLAYER], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1175,7 +1182,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 4:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv partner's Pokémon 1-2, put each player's mons in their own party
+            // Recv partner's Pokemon 1-2, put each player's mons in their own party
             ResetBlockReceivedFlags();
             memcpy(gParties[B_TRAINER_PLAYER], gBlockRecvBuffer[playerMultiplayerId], sizeof(struct Pokemon) * 2);
             memcpy(gParties[B_TRAINER_PARTNER], gBlockRecvBuffer[partnerMultiplayerId], sizeof(struct Pokemon) * 2);
@@ -1185,7 +1192,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 5:
         if (IsLinkTaskFinished())
         {
-            // Send Pokémon 3
+            // Send Pokemon 3
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_PLAYER][2], sizeof(struct Pokemon));
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1193,7 +1200,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 6:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv partner's Pokémon 3, put each player's mon in their own party
+            // Recv partner's Pokemon 3, put each player's mon in their own party
             ResetBlockReceivedFlags();
             memcpy(&gParties[B_TRAINER_PLAYER][2], gBlockRecvBuffer[playerMultiplayerId], sizeof(struct Pokemon));
             memcpy(&gParties[B_TRAINER_PARTNER][2], gBlockRecvBuffer[partnerMultiplayerId], sizeof(struct Pokemon));
@@ -1203,7 +1210,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 7:
         if (IsLinkTaskFinished())
         {
-            // Send opponent A Pokémon 1-2 to partner
+            // Send opponent A Pokemon 1-2 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), gParties[B_TRAINER_OPPONENT_A], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1211,7 +1218,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 8:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent A Pokémon 1-2 (if not master)
+            // Recv opponent A Pokemon 1-2 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(gParties[B_TRAINER_OPPONENT_A], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1221,7 +1228,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 9:
         if (IsLinkTaskFinished())
         {
-            // Send opponent A Pokémon 3-4 to partner
+            // Send opponent A Pokemon 3-4 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_OPPONENT_A][2], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1229,7 +1236,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 10:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent A Pokémon 3-4 (if not master)
+            // Recv opponent A Pokemon 3-4 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(&gParties[B_TRAINER_OPPONENT_A][2], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1239,7 +1246,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 11:
         if (IsLinkTaskFinished())
         {
-            // Send opponent A Pokémon 5-6 to partner
+            // Send opponent A Pokemon 5-6 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_OPPONENT_A][4], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1247,7 +1254,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 12:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent A Pokémon 5-6 (if not master)
+            // Recv opponent A Pokemon 5-6 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(&gParties[B_TRAINER_OPPONENT_A][4], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1258,7 +1265,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 13:
         if (IsLinkTaskFinished())
         {
-            // Send opponent B Pokémon 1-2 to partner
+            // Send opponent B Pokemon 1-2 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), gParties[B_TRAINER_OPPONENT_B], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1266,7 +1273,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 14:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent B Pokémon 1-2 (if not master)
+            // Recv opponent B Pokemon 1-2 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(gParties[B_TRAINER_OPPONENT_B], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1276,7 +1283,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 15:
         if (IsLinkTaskFinished())
         {
-            // Send opponent B Pokémon 3-4 to partner
+            // Send opponent B Pokemon 3-4 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_OPPONENT_B][2], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1284,7 +1291,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 16:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent B Pokémon 3-4 (if not master)
+            // Recv opponent B Pokemon 3-4 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(&gParties[B_TRAINER_OPPONENT_B][2], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1294,7 +1301,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 17:
         if (IsLinkTaskFinished())
         {
-            // Send opponent B Pokémon 5-6 to partner
+            // Send opponent B Pokemon 5-6 to partner
             SendBlock(BitmaskAllOtherLinkPlayers(), &gParties[B_TRAINER_OPPONENT_B][4], sizeof(struct Pokemon) * 2);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1302,7 +1309,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
     case 18:
         if ((GetBlockReceivedStatus() & 3) == 3)
         {
-            // Recv opponent B Pokémon 5-6 (if not master)
+            // Recv opponent B Pokemon 5-6 (if not master)
             ResetBlockReceivedFlags();
             if (GetMultiplayerId() != 0)
                 memcpy(&gParties[B_TRAINER_OPPONENT_B][4], gBlockRecvBuffer[0], sizeof(struct Pokemon) * 2);
@@ -1310,7 +1317,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
             {
                 for (u32 i = 0; i < PARTY_SIZE; i++)
-                    TryCorrectShedinjaLanguage(&gParties[trainer][i]);
+                    TryCorrectJapaneseNicknameLanguage(&gParties[trainer][i]);
             }
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1675,7 +1682,7 @@ static void CB2_HandleStartMultiBattle(void)
             {
                 for (u32 i = 0; i < MULTI_PARTY_SIZE; i++)
                 {
-                    TryCorrectShedinjaLanguage(&gParties[trainerParty][i]);
+                    TryCorrectJapaneseNicknameLanguage(&gParties[trainerParty][i]);
                 }
             }
 
@@ -1898,9 +1905,9 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             if (trainer->battleType != TRAINER_BATTLE_TYPE_SINGLES)
                 personalityValue = 0x80;
             else if (trainer->gender == TRAINER_GENDER_FEMALE)
-                personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
+                personalityValue = 0x78; // Use personality more likely to result in a female Pokemon
             else
-                personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
+                personalityValue = 0x88; // Use personality more likely to result in a male Pokemon
 
             personalityValue += personalityHash << 8;
             if (partyData[monIndex].gender == TRAINER_MON_MALE)
@@ -2599,16 +2606,16 @@ static void AskRecordBattle(void)
     }
 }
 
-static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
+static void TryCorrectJapaneseNicknameLanguage(struct Pokemon *mon)
 {
-    u8 nickname[POKEMON_NAME_LENGTH + 1];
+    u8 nickname[POKEMON_NAME_BUFFER_SIZE];
     enum Language language = LANGUAGE_JAPANESE;
 
-    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA
+    if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
      && GetMonData(mon, MON_DATA_LANGUAGE) != language)
     {
-        GetMonData(mon, MON_DATA_NICKNAME, nickname);
-        if (StringCompareWithoutExtCtrlCodes(nickname, sText_ShedinjaJpnName) == 0)
+        GetMonData(mon, MON_DATA_NICKNAME10, nickname);
+        if (IsStringNJapanese(nickname, POKEMON_NAME_LENGTH))
             SetMonData(mon, MON_DATA_LANGUAGE, &language);
     }
 }
@@ -2944,7 +2951,7 @@ static void SpriteCB_TrainerThrowObject_Main(struct Sprite *sprite)
 }
 
 // Sprite callback for a trainer back pic to throw an object
-// (Wally throwing a ball, throwing Pokéblocks/balls in the Safari Zone)
+// (Wally throwing a ball, throwing Pokeblocks/balls in the Safari Zone)
 void SpriteCB_TrainerThrowObject(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, 1);
@@ -3005,6 +3012,14 @@ static void BattleStartClearSetData(void)
     memset(&gSideTimers, 0, sizeof(gSideTimers));
     memset(&gBattleResults, 0, sizeof(gBattleResults));
     ClearSetBScriptingStruct();
+
+    // Battle text buffers must be initialized with EOS, not 0.
+    // 0 is a valid character code in Pokémon text encoding, so zero-filled
+    // unused buffers can be read past their end until EOS is found.
+    memset(gBattleTextBuff1, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gBattleTextBuff2, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gBattleTextBuff3, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gDisplayedStringBattle, EOS, sizeof(gDisplayedStringBattle));
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
@@ -3073,8 +3088,7 @@ static void BattleStartClearSetData(void)
     gBattleStruct->wildVictorySong = 0;
     gBattleStruct->moneyMultiplier = 1;
 
-    gBattleStruct->givenExpMons[0] = 0;
-    gBattleStruct->givenExpMons[1] = 0;
+    gBattleStruct->givenExpMons = 0;
     gBattleStruct->palaceFlags = 0;
 
     gBattleResults.shinyWildMon = IsMonShiny(&gParties[B_TRAINER_OPPONENT_A][0]);
@@ -3708,7 +3722,7 @@ static void TryDoEventsBeforeFirstTurn(void)
     {
     case FIRST_TURN_EVENTS_START:
         LoadIndicatorSpritesGfx();
-        // Set invalid mons as absent(for example when starting a double battle with only one Pokémon).
+        // Set invalid mons as absent(for example when starting a double battle with only one Pokemon).
         if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
         {
             for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
@@ -3847,6 +3861,8 @@ static void TryDoEventsBeforeFirstTurn(void)
         gBattleStruct->eventState.faintedAction = 0;
         gBattleStruct->eventState.endTurn = 0;
 
+        memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
+
         if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
         {
             StopCryAndClearCrySongs();
@@ -3978,7 +3994,7 @@ u8 IsRunningFromBattleImpossible(enum BattlerId battler)
         return BATTLE_RUN_FORBIDDEN;
     }
     if (GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT && WILD_DOUBLE_BATTLE
-        && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))) // The second Pokémon cannot run from a double wild battle, unless it's the only alive mon.
+        && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))) // The second Pokemon cannot run from a double wild battle, unless it's the only alive mon.
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CANT_ESCAPE;
         return BATTLE_RUN_FORBIDDEN;
@@ -5147,7 +5163,7 @@ static bool32 TryDoMoveEffectsBeforeMoves(void)
     return FALSE;
 }
 
-// In gen7, priority and speed are recalculated during the turn in which a Pokémon mega evolves
+// In gen7, priority and speed are recalculated during the turn in which a Pokemon mega evolves
 static void TryChangeTurnOrder(void)
 {
     enum BattlerId i, j;
@@ -5547,6 +5563,13 @@ static void HandleEndTurn_FinishBattle(void)
         RecordedBattle_SetPlaybackFinished();
         if (gTestRunnerEnabled)
             TestRunner_Battle_AfterLastTurn();
+        // Clear battle mon species to avoid a bug on the next battle that causes
+        // healthboxes loading incorrectly due to it trying to create a Mega Indicator
+        // if the previous battler would've had it.
+        for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT; i++)
+        {
+            gBattleMons[i].species = SPECIES_NONE;
+        }
 
         // Set Battle Controllers to BATTLE_CONTROLLER_NONE
         for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT; i++)
@@ -5567,7 +5590,6 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
 {
     if (!gPaletteFade.active)
     {
-        memset(&gBattleMons, 0, sizeof(struct BattlePokemon) * MAX_BATTLERS_COUNT);
         gIsFishingEncounter = FALSE;
         gIsSurfingEncounter = FALSE;
         if (gDexNavSpecies && (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT))
