@@ -1,58 +1,54 @@
 MoveRelearner_Text_WouldLearnNewMoves:
-	.string "Hi, I'm the Move Relearner.\n"
-	.string "Would you like to learn new moves?$"
+	.string "{JPN}こちらは わざマニアです\n"
+	.string "{JPN}わざを おもいださせますか?$"
 
 MoveRelearner_Text_LevelUpMoves:
-	.string "Level Up Moves$"
+	.string "{JPN}レベルアップわざ$"
 
 MoveRelearner_Text_EggMoves:
-	.string "Egg Moves$"
+	.string "{JPN}タマゴわざ$"
 
 MoveRelearner_Text_TMMoves:
-	.string "TM Moves$"
+	.string "{JPN}わざマシンわざ$"
 
 MoveRelearner_Text_TutormoveMoves:
-	.string "Tutor Moves$"
+	.string "{JPN}おしえわざ$"
 
 MoveRelearner_Text_SeeYa:
-	.string "See ya!$"
+	.string "{JPN}やめる$"
 
 MoveRelearner_Text_AnythingElse:
-	.string "Is there anything else I may do for you?$"
+	.string "{JPN}ほかに ごようけんは?$"
 
 MoveRelearner_Text_ChoosePkmn:
-	.string "Please choose your Pokémon.$"
+	.string "{JPN}おもいださせる ポケモンを えらんでください$"
 
 MoveRelearner_Text_HaveNoPkmn:
-	.string "You have no Pokémon.$"
+	.string "{JPN}ポケモンを もっていません!$"
 
 MoveRelearner_Text_CantTeachMoveToEgg:
-	.string "Sorry…\n"
-	.string "But an Egg can't learn moves.$"
+	.string "{JPN}もうしわけありません……\nタマゴには わざは おしえられません$"
 
 MoveRelearner_Text_CantTeachMoveToPkmn:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that Pokémon.$"
+	.string "{JPN}もうしわけありません……\pその ポケモンに\nおしえられる わざは ありません$"
 
 MoveRelearner_Text_LevelUpMoveLWR::
-	.string "level up move$"
+	.string "{JPN}レベルアップわざ$"
 
 MoveRelearner_Text_EggMoveLWR::
-	.string "egg move$"
+	.string "{JPN}タマゴわざ$"
 
 MoveRelearner_Text_TMMoveLWR::
-	.string "TM move$"
+	.string "{JPN}わざマシンわざ$"
 
 MoveRelearner_Text_TutorMoveLWR::
-	.string "tutor move$"
+	.string "{JPN}おしえわざ$"
 
 MoveRelearner_Text_MoveLWR::
-	.string "move$"
+	.string "{JPN}わざ$"
 
 MoveRelearner_Text_WhichXmoveShouldTeach:
-	.string "Which {STR_VAR_3} should I teach?$"
+	.string "{JPN}どのポケモンに {STR_VAR_3}を おしえますか?$"
 
 MoveRelearner_Text_ThankYouComeAgain:
-	.string "Thank you for using our services.\n"
-	.string "Please come again!$"
+	.string "{JPN}ごりよう ありがとうございます!\nまた おまちしております!$"
