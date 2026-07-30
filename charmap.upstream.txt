@@ -1,5 +1,3 @@
-@ 未定義関係は後から実装しやすいように詳細横に置いてるよ
-
 ' '         = 00
 'À'         = 01
 'Á'         = 02
@@ -48,7 +46,7 @@ LV          = 34
 '='         = 35
 ';'         = 36
 V_D_ARROW   = 38
-NBSP        = 00
+NBSP        = 39
 '~'         = 39
 '¿'         = 51
 '¡'         = 52
@@ -61,11 +59,11 @@ POKEBLOCK   = 55 56 57 58 59
 ')'         = 5D
 'â'         = 68
 'í'         = 6F
-UNK_SPACER  = 00
-UP_ARROW    = F9 00
-DOWN_ARROW  = F9 01
-LEFT_ARROW  = F9 02
-RIGHT_ARROW = F9 03
+UNK_SPACER  = 77
+UP_ARROW    = 79
+DOWN_ARROW  = 7A
+LEFT_ARROW  = 7B
+RIGHT_ARROW = 7C
 SUPER_E     = 84
 '<'         = 85
 '>'         = 86
@@ -83,11 +81,9 @@ SUPER_RE    = A0
 '!'         = AB
 '?'         = AC
 '.'         = AD
-'．'         = AD
 '-'         = AE
 '_'         = AE @ For autogenerating strings based on label names. Not using {UNDERSCORE} on purpose due to how bad it looks.
 '·'         = AF
-'・'        = AF
 '…'         = B0
 '“'         = B1
 '”'         = B2
@@ -163,18 +159,6 @@ SUPER_RE    = A0
 EMOJI_DIZZYEGG = F9 FF
 TALL_PLUS   = FC 0C FB
 '$'         = FF
-
-@ Japanese punctuation
-'　' = 00
-'！' = AB
-'？' = AC
-'。' = AD
-'ー' = AE
-'円' = B7
-JPN_PLUS = FF 04
-
-STRING = FD
-
 
 @ Hiragana
 'あ' = 01
@@ -339,17 +323,109 @@ STRING = FD
 'ペ' = 9E
 'ポ' = 9F
 'ッ' = A0
-'ヴ' = F1
+
+// ふるいの
+// 未定義関係は後から実装しやすいように詳細横に置いてるよ
+
+' ' = 00
+'　' = 00
+'0' = A1
+'1' = A2
+'2' = A3
+'3' = A4
+'4' = A5
+'5' = A6
+'6' = A7
+'7' = A8
+'8' = A9
+'9' = AA
+'！' = AB
+'!' = AB
+'？' = AC
+'?' = AC
+'。' = AD
+'ー' = AE
+'−' = AE
+'-' = AE
+'・' = AF
+'…' = B0
 '『' = B1
 '』' = B2
+'('  = B1
+')'  = B2
 '「' = B3
 '」' = B4
+'♂' = B5
+'♀' = B6
+'円' = B7
+'¥' = B7
+'.' = B8
+'×' = B9
+'/' = BA
+'\'' = F2 @ アポストロフィ
+',' = F3 @ カンマ
+V_D_ARROW   = F4 @ バトルの時の矢印？↕これ
+'&'         = F5 @ ＆
+'%' = F6 @ パーセント。これは絶対作れよ
+'％' = F6
 
+'A' = BB
+'B' = BC
+'C' = BD
+'D' = BE
+'E' = BF
+'F' = C0
+'G' = C1
+'H' = C2
+'I' = C3
+'J' = C4
+'K' = C5
+'L' = C6
+'M' = C7
+'N' = C8
+'O' = C9
+'P' = CA
+'Q' = CB
+'R' = CC
+'S' = CD
+'T' = CE
+'U' = CF
+'V' = D0
+'W' = D1
+'X' = D2
+'Y' = D3
+'Z' = D4
 
-@ Full-width variants of existing ASCII punctuation.
-'＝' = 35
-'；' = 36
-'＿' = AE
+'a' = D5
+'b' = D6
+'c' = D7
+'d' = D8
+'e' = D9
+'f' = DA
+'g' = DB
+'h' = DC
+'i' = DD
+'j' = DE
+'k' = DF
+'l' = E0
+'m' = E1
+'n' = E2
+'o' = E3
+'p' = E4
+'q' = E5
+'r' = E6
+'s' = E7
+'t' = E8
+'u' = E9
+'v' = EA
+'w' = EB
+'x' = EC
+'y' = ED
+'z' = EE
+'▶' = EF
+':' = F0
+'$' = FF
+STRING = FD
 
 @ string placeholders
 PLAYER         = FD 01
@@ -481,7 +557,6 @@ SPEAKER = FC 19
 ACCENT = FC 1A @ same as FC 01. sets accent color
 BACKGROUND = FC 1B @ same as FC 01. sets background color
 TEXT_COLORS = FC 1C @ takes 3 colors: text base color, shadow and accent
-AUTO = FC 1D
 
 @ Speaker names, the order must be matching with include/constants/speaker_names.h
 NAME_NONE = 00
