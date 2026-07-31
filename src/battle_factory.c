@@ -100,7 +100,7 @@ static const u8 sFixedIVTable[][2] =
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_HOUNDOUR,    FRONTIER_MON_FURRET_1}, 		// 3 - 29
+    {FRONTIER_MON_HOUNDOUR,    FRONTIER_MON_DELCATTY_1},	// 3 - 29
     {FRONTIER_MON_DELCATTY_1,  FRONTIER_MON_CLOYSTER_1}, 	// 16 - 78
     {FRONTIER_MON_DELCATTY_2,  FRONTIER_MON_CLOYSTER_2}, 	// 79 - 141
     {FRONTIER_MON_DUGTRIO_1,   FRONTIER_MON_SLAKING_1}, 	// 142 - 230
@@ -784,13 +784,13 @@ u64 GetAiScriptsInBattleFactory(void)
         int challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
 
         if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_FRONTIER_BRAIN)
-            return AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY;
+            return AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
         else if (challengeNum < 2)
             return 0;
         else if (challengeNum < 4)
-            return AI_FLAG_CHECK_BAD_MOVE;
+            return AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_TERA | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
         else
-            return AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY;
+            return AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
     }
 }
 
