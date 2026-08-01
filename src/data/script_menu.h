@@ -160,23 +160,23 @@ static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q2[] =
 {
-    {COMPOUND_STRING("60円")},
-    {COMPOUND_STRING("55円")},
-    {COMPOUND_STRING("なにもない")},
+    {COMPOUND_STRING("{JPN}60えん")},
+    {COMPOUND_STRING("{JPN}55えん")},
+    {COMPOUND_STRING("のこらない")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q3[] =
 {
-    {COMPOUND_STRING("もっと たかくなる。")},
-    {COMPOUND_STRING("もっと やすくなる。")},
+    {COMPOUND_STRING("もっと たかくなる")},
+    {COMPOUND_STRING("もっと やすくなる")},
     {COMPOUND_STRING("おなじねだん")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q1[] =
 {
-    {COMPOUND_STRING("おとこ")},
-    {COMPOUND_STRING("おんな")},
-    {COMPOUND_STRING("どちらでもない")},
+    {COMPOUND_STRING("だんせい")},
+    {COMPOUND_STRING("じょせい")},
+    {COMPOUND_STRING("どっちでもない")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q2[] =
@@ -188,37 +188,37 @@ static const struct MenuAction MultichoiceList_Mechadoll4_Q2[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll4_Q3[] =
 {
-    {COMPOUND_STRING("なし")},
-    {COMPOUND_STRING("1")},
-    {COMPOUND_STRING("2")},
+    {COMPOUND_STRING("いない")},
+    {COMPOUND_STRING("ひとり")},
+    {COMPOUND_STRING("ふたり")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q1[] =
 {
-    {COMPOUND_STRING("2")},
-    {COMPOUND_STRING("3")},
-    {COMPOUND_STRING("4")},
+    {COMPOUND_STRING("{JPN}2ひき")},
+    {COMPOUND_STRING("{JPN}3ひき")},
+    {COMPOUND_STRING("{JPN}4ひき")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q2[] =
 {
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
+    {COMPOUND_STRING("{JPN}6つ")},
+    {COMPOUND_STRING("{JPN}7つ")},
+    {COMPOUND_STRING("{JPN}8つ")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 {
-    {COMPOUND_STRING("6")},
-    {COMPOUND_STRING("7")},
-    {COMPOUND_STRING("8")},
+    {COMPOUND_STRING("{JPN}6にん")},
+    {COMPOUND_STRING("{JPN}7にん")},
+    {COMPOUND_STRING("{JPN}8にん")},
 };
 
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
-    {COMPOUND_STRING("おいしいみず{CLEAR_TO 72}200円")},
-    {COMPOUND_STRING("サイコソーダ{CLEAR_TO 72}300円")},
-    {COMPOUND_STRING("ミックスオレ{CLEAR_TO 72}350円")},
+    {COMPOUND_STRING("おいしいみず 200円")},
+    {COMPOUND_STRING("サイコソーダ 300円")},
+    {COMPOUND_STRING("ミックスオレ 350円")},
     {gText_Exit},
 };
 
@@ -265,33 +265,33 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 
 static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 {
-    {COMPOUND_STRING("キモリドール  1000まい")},
+    {COMPOUND_STRING("キモリドール   1000まい")},
     {COMPOUND_STRING("アチャモドール  1000まい")},
-    {COMPOUND_STRING("ミズゴロウドール  1000まい")},
+    {COMPOUND_STRING("ミズゴロウドール 1000まい")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_GameCornerTMs[] =
 {
-    {COMPOUND_STRING("わざマシン32{CLEAR_TO 72}1500まい")},
-    {COMPOUND_STRING("わざマシン29{CLEAR_TO 72}3500まい")},
-    {COMPOUND_STRING("わざマシン35{CLEAR_TO 72}4000まい")},
-    {COMPOUND_STRING("わざマシン24{CLEAR_TO 72}4000まい")},
-    {COMPOUND_STRING("わざマシン13{CLEAR_TO 72}4000まい")},
+    {COMPOUND_STRING("わざマシン32  1500まい")},
+    {COMPOUND_STRING("わざマシン29  3500まい")},
+    {COMPOUND_STRING("わざマシン35  4000まい")},
+    {COMPOUND_STRING("わざマシン24  4000まい")},
+    {COMPOUND_STRING("わざマシン13  4000まい")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
-    {COMPOUND_STRING("  50まい    1,000円")},
-    {COMPOUND_STRING("500まい  10,000円")},
+    {COMPOUND_STRING("{JPN}  50まい    1,000円")},
+    {COMPOUND_STRING("{JPN}500まい  10,000円")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_HowsFishing[] =
 {
-    {COMPOUND_STRING("いいかんじ")},
-    {COMPOUND_STRING("いまいち")},
+    {COMPOUND_STRING("ばつぐん")},
+    {COMPOUND_STRING("あんまり")},
 };
 
 const u8 gText_LilycoveCity[] = _("ミナモシティ");
@@ -444,9 +444,9 @@ static const struct MenuAction MultichoiceList_ShardsRYBG[] =
     {gText_Exit},
 };
 
-const u8 gText_Opponent[] = _("あいて");
-const u8 gText_Tourney_Tree[] = _("トーナメント");
-const u8 gText_ReadyToStart[] = _("じゅんびOK");
+const u8 gText_Opponent[] = _("たいせん あいて");
+const u8 gText_Tourney_Tree[] = _("トーナメントひょう");
+const u8 gText_ReadyToStart[] = _("じゅんび かんりょう");
 const u8 gText_Record2[] = _("きろくする");
 const u8 gText_Rest[] = _("やすむ");
 const u8 gText_Retire[] = _("リタイア");
@@ -532,8 +532,8 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecordBerry[] =
 
 static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 {
-    {COMPOUND_STRING("ポケモンジャンプ")},
-    {COMPOUND_STRING("ドードリオの きのみどり")},
+    {COMPOUND_STRING("ミニポケモンでジャンプ")},
+    {COMPOUND_STRING("ドードリオのきのみどり")},
     {gText_Exit},
 };
 
@@ -556,7 +556,7 @@ static const struct MenuAction MultichoiceList_ContestRank[] =
 static const struct MenuAction MultichoiceList_FrontierItemChoose[] =
 {
     {COMPOUND_STRING("バトルバッグ")},
-    {COMPOUND_STRING("もちもの")},
+    {COMPOUND_STRING("もたせたどうぐ")},
     {gText_Exit},
 };
 
@@ -589,9 +589,9 @@ static const struct MenuAction MultichoiceList_ForcedStartMenu[] =
 
 static const struct MenuAction MultichoiceList_FrontierGamblerBet[] =
 {
-    {COMPOUND_STRING("  5BP")},
-    {COMPOUND_STRING("10BP")},
-    {COMPOUND_STRING("15BP")},
+    {COMPOUND_STRING("{JPN}  5BP")},
+    {COMPOUND_STRING("{JPN}10BP")},
+    {COMPOUND_STRING("{JPN}15BP")},
     {gText_Exit},
 };
 
@@ -826,13 +826,13 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     {COMPOUND_STRING("ブースター")},
     {COMPOUND_STRING("サンダース")},
     {COMPOUND_STRING("シャワーズ")},
-    {COMPOUND_STRING("みるのを やめる。")}
+    {COMPOUND_STRING("みるのを やめる")}
 };
 
 static const u8 gText_SeviiIslands[] = _("ナナシマ");
-static const u8 gText_OneIsland[] = _("1のしま");
-static const u8 gText_TwoIsland[] = _("2のしま");
-static const u8 gText_ThreeIsland[] = _("3のしま");
+static const u8 gText_OneIsland[] = _("{JPN}1のしま");
+static const u8 gText_TwoIsland[] = _("{JPN}2のしま");
+static const u8 gText_ThreeIsland[] = _("{JPN}3のしま");
 static const u8 gText_Vermilion[] = _("クチバ");
 
 static const struct MenuAction sMultichoiceList_Island23[] = {
@@ -925,11 +925,11 @@ static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
-    {COMPOUND_STRING("TM13{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
-    {COMPOUND_STRING("TM23{CLEAR_TO 72}{FONT_SMALL}3,500コイン")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
-    {COMPOUND_STRING("TM30{CLEAR_TO 72}{FONT_SMALL}4,500コイン")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
+    {COMPOUND_STRING("わざマシン13{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
+    {COMPOUND_STRING("わざマシン23{CLEAR_TO 72}{FONT_SMALL}3,500コイン")},
+    {COMPOUND_STRING("わざマシン24{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
+    {COMPOUND_STRING("わざマシン30{CLEAR_TO 72}{FONT_SMALL}4,500コイン")},
+    {COMPOUND_STRING("わざマシン35{CLEAR_TO 72}{FONT_SMALL}4,000コイン")},
     {sText_NoThanks}
 };
 
@@ -943,24 +943,24 @@ static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
 };
 
 static const struct MenuAction sMultichoiceList_DeptStoreElevator[] = {
-    {COMPOUND_STRING("5F")},
-    {COMPOUND_STRING("4F")},
-    {COMPOUND_STRING("3F")},
-    {COMPOUND_STRING("2F")},
-    {COMPOUND_STRING("1F")},
+    {COMPOUND_STRING("{JPN}5かい")},
+    {COMPOUND_STRING("{JPN}4かい")},
+    {COMPOUND_STRING("{JPN}3かい")},
+    {COMPOUND_STRING("{JPN}2かい")},
+    {COMPOUND_STRING("{JPN}1かい")},
     {gText_Exit}
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerCoinPurchaseCounter[] = {
-    {COMPOUND_STRING("{FONT_SMALL} 50まい{CLEAR_TO 69}1,000円")},
-    {COMPOUND_STRING("{FONT_SMALL}500まい{CLEAR_TO 64}10,000円")},
+    {COMPOUND_STRING("{JPN}{FONT_SMALL} 50まい{CLEAR_TO 69}1,000円")},
+    {COMPOUND_STRING("{JPN}{FONT_SMALL}500まい{CLEAR_TO 64}10,000円")},
     {gText_Exit}
 };
 
 static const struct MenuAction sMultichoiceList_LinkedDirectUnion[] = {
-    {COMPOUND_STRING("つうしんプレイ")},
-    {COMPOUND_STRING("ダイレクトコーナー")},
-    {COMPOUND_STRING("ユニオンルーム")},
+    {COMPOUND_STRING("つうしんで あそぶには")},
+    {COMPOUND_STRING("ダイレクト コーナー")},
+    {COMPOUND_STRING("ユニオン ルーム")},
     {gText_Exit}
 };
 
@@ -1307,11 +1307,11 @@ const u8 *const gStdStrings[] =
     [STDSTRING_SUPER] = COMPOUND_STRING("スーパー"),
     [STDSTRING_HYPER] = COMPOUND_STRING("ハイパー"),
     [STDSTRING_MASTER] = COMPOUND_STRING("マスター"),
-    [STDSTRING_COOL2] = COMPOUND_STRING("かっこよさ"),
-    [STDSTRING_BEAUTY2] = COMPOUND_STRING("うつくしさ"),
-    [STDSTRING_CUTE2] = COMPOUND_STRING("かわいさ"),
-    [STDSTRING_SMART2] = COMPOUND_STRING("かしこさ"),
-    [STDSTRING_TOUGH2] = COMPOUND_STRING("たくましさ"),
+    [STDSTRING_COOL2] = COMPOUND_STRING("かっこいい"),
+    [STDSTRING_BEAUTY2] = COMPOUND_STRING("うつくしい"),
+    [STDSTRING_CUTE2] = COMPOUND_STRING("かわいい"),
+    [STDSTRING_SMART2] = COMPOUND_STRING("かしこそうな"),
+    [STDSTRING_TOUGH2] = COMPOUND_STRING("たくましい"),
     [STDSTRING_ITEMS] = COMPOUND_STRING("どうぐ"),
     [STDSTRING_KEYITEMS] = COMPOUND_STRING("たいせつなもの"),
     [STDSTRING_POKEBALLS] = COMPOUND_STRING("ボール"),
@@ -1320,7 +1320,7 @@ const u8 *const gStdStrings[] =
     [STDSTRING_SINGLE] = COMPOUND_STRING("シングル"),
     [STDSTRING_DOUBLE] = COMPOUND_STRING("ダブル"),
     [STDSTRING_MULTI] = COMPOUND_STRING("マルチ"),
-    [STDSTRING_MULTI_LINK] = COMPOUND_STRING("つうしんマルチ"),
+    [STDSTRING_MULTI_LINK] = COMPOUND_STRING("つうしん マルチ"),
     [STDSTRING_BATTLE_TOWER] = gText_BattleTower2,
     [STDSTRING_BATTLE_DOME] = gText_BattleDome,
     [STDSTRING_BATTLE_FACTORY] = gText_BattleFactory,
@@ -1415,8 +1415,8 @@ static const u8 *const sSeagallopDestStrings[] = {
     [SEAGALLOP_ONE_ISLAND]     = gText_OneIsland,
     [SEAGALLOP_TWO_ISLAND]     = gText_TwoIsland,
     [SEAGALLOP_THREE_ISLAND]   = gText_ThreeIsland,
-    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("4のしま"),
-    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("5のしま"),
-    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("6のしま"),
-    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("7のしま"),
+    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("{JPN}4のしま"),
+    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("{JPN}5のしま"),
+    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("{JPN}6のしま"),
+    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("{JPN}7のしま"),
 };
