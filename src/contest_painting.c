@@ -42,7 +42,7 @@ static void PrintContestPaintingCaption(u8, u8);
 static void VBlankCB_ContestPainting(void);
 static void _InitContestMonPixels(u8 *spriteGfx, u16 *palette, u16 (*destPixels)[64][64]);
 
-const u8 gContestHallPaintingCaption[] = _("{JPN}{STR_VAR_1}\n{STR_VAR_2} の {STR_VAR_3}");
+const u8 gContestHallPaintingCaption[] = _("{JPN}{STR_VAR_1}\n{STR_VAR_2} {JPN}の {STR_VAR_3}");
 
 static const u16 sPictureFramePalettes[]          = INCGFX_U16("graphics/picture_frame/bg.pal", ".gbapal");
 static const u32 sPictureFrameTiles_Cool[]        = INCGFX_U32("graphics/picture_frame/cool.png", ".4bpp.smol");

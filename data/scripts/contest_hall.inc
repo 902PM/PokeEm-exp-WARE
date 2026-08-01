@@ -1426,7 +1426,7 @@ ContestHall_Text_GettingStartedParticipantsAsFollowsLink:
 	.string "{JPN}しかい『はい! これより\nおともだち 4にん つうしんの\lポケモン {STR_VAR_2}が\lはじまります!\pしゅつじょう される トレーナーと\nポケモンの みなさんは こちら!$"
 
 ContestHall_Text_EntryXTrainersMon:
-	.string "{JPN}しかい『エントリーナンバー {STR_VAR_2}ばん!\n{STR_VAR_1}さんの {STR_VAR_3} です!$"
+	.string "{JPN}しかい『エントリーナンバー {STR_VAR_2}ばん!\n{STR_VAR_1}{JPN}さんの {STR_VAR_3} です!$"
 
 ContestHall_Text_SeenContestantsAudienceWillVote:
 	.string "{JPN}しかい『さあ\nポケモンの しょうかいが おわりました\l1じ しんさに はいりましょう!\pかいじょうの おきゃくさまに よる\nポケモンの にんき とうひょうです!\pでは さっそく はじめましょう!\nとうひょう おねがいします!$"
@@ -1450,7 +1450,7 @@ ContestHall_Text_WeWillNowDeclareWinner:
 	.string "{JPN}しんさいん『では… はっぴょう します!$"
 
 ContestHall_Text_CongratsTrainerXandMon:
-	.string "{JPN}しかい『エントリーナンバー {STR_VAR_2}ばん\n{STR_VAR_3}さん! そして {STR_VAR_1}!\lおめでとう ございます!$"
+	.string "{JPN}しかい『エントリーナンバー {STR_VAR_2}ばん\n{STR_VAR_3}{JPN}さん! そして {STR_VAR_1}!\lおめでとう ございます!$"
 
 ContestHall_Text_CongratsPleaseCompeteAgain:
 	.string "{JPN}しかい『おめでとう ございます!\nまた さんか してくださいね!$"

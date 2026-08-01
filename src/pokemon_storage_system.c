@@ -8110,7 +8110,7 @@ static const u8 *const sMenuTexts[] =
     [MENU_POKECENTER] = COMPOUND_STRING("{JPN}ポケセン"),
     [MENU_MACHINE]    = COMPOUND_STRING("{JPN}きかい"),
     [MENU_SIMPLE]     = COMPOUND_STRING("{JPN}シンプル"),
-    [MENU_SELECT]     = COMPOUND_STRING("{JPN}なにを しますか?"),
+    [MENU_SELECT]     = COMPOUND_STRING("{JPN}わざを おもいだす"),
 };
 
 static void SetMenuText(u8 textId)
