@@ -357,163 +357,82 @@ BattleFrontier_BattleArenaLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleArenaLobby_Text_WelcomeToBattleArena:
-	.string "{JPN}トレーナーの とうしを ためす ばしょ!!\pバトルアリーナへ\nようこそ おいでなされた!\pこちらでは かちぬきチームバトルの\nあんないを しておりますぞ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーの とうしを ためす ばしょ!!\pバトルアリーナへ\nようこそ おいでなされた!\pこちらでは かちぬきチームバトルの\nあんないを しておりますぞ!$"
 
 BattleFrontier_BattleArenaLobby_Text_WishToTakeChallenge:
-	.string "{JPN}バトルアリーナに\nちょうせん されますかな?"
-	.string "$"
+	.string "{JPN}バトルアリーナに\nちょうせん されますかな?$"
 
 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge:
-	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!"
-	.string "$"
+	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
-	.string "{JPN}バトルアリーナは かちぬきチームバトルを\nおこなう しせつですぞ!\pさんかする かたには しゅつじょう させる\n3ひきの ポケモンと たたかいに だす\lじゅんばんを きめて いただきますぞ!\pたたかいの あいだは\nこの じゅんばん どおりに\lポケモンを だすことに なりますな!\pたたかいに いちど だした ポケモンは\nけっちゃくが つくまで\lこうたい させる ことが できませぬ!\pさらに 3ターン いないに\nたたかいの けっちゃくが つかなければ\lはんていと なりますぞ!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lレポートを かかないと\lつづけて ちょうせんが できないので\lおきをつけ くだされ!\pみごと 7にんぬきを なされた あかつきには\nバトルポイントを おおくり いたしますぞ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}バトルアリーナは かちぬきチームバトルを\nおこなう しせつですぞ!\pさんかする かたには しゅつじょう させる\n3ひきの ポケモンと たたかいに だす\lじゅんばんを きめて いただきますぞ!\pたたかいの あいだは\nこの じゅんばん どおりに\lポケモンを だすことに なりますな!\pたたかいに いちど だした ポケモンは\nけっちゃくが つくまで\lこうたい させる ことが できませぬ!\pさらに 3ターン いないに\nたたかいの けっちゃくが つかなければ\lはんていと なりますぞ!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lレポートを かかないと\lつづけて ちょうせんが できないので\lおきをつけ くだされ!\pみごと 7にんぬきを なされた あかつきには\nバトルポイントを おおくり いたしますぞ!$"
 
 BattleFrontier_BattleArenaLobby_Text_OkayToSave:
-	.string "{JPN}バトルアリーナへ おつれする まえに\nレポートを かきますが よろしいですかな?"
-	.string "$"
+	.string "{JPN}バトルアリーナへ おつれする まえに\nレポートを かきますが よろしいですかな?$"
 
 BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
-	.string "{JPN}バトルアリーナには\nレベル50と オープンレベルと ありますが\lどちらに まいられますかな?"
-	.string ""
-	.string "$"
+	.string "{JPN}バトルアリーナには\nレベル50と オープンレベルと ありますが\lどちらに まいられますかな?$"
 
 BattleFrontier_BattleArenaLobby_Text_SelectThreeMons:
-	.string "{JPN}では さんかする ポケモンを\n3ひき おえらび くだされ!"
-	.string "$"
+	.string "{JPN}では さんかする ポケモンを\n3ひき おえらび くだされ!$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませぬ!\pさんかする ためには\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして くだされ!\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませぬ!\pさんかする ためには\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして くだされ!\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsEnd:
-	.string "{JPN}じゅんびが できましたら\nまた おこし くだされ!"
-	.string "$"
+	.string "{JPN}じゅんびが できましたら\nまた おこし くだされ!$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50:
-	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませぬ!\pさんかする ためには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして くだされ!\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませぬ!\pさんかする ためには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして くだされ!\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!$"
 
 BattleFrontier_BattleArenaLobby_Text_GuideYouToArena:
-	.string "{JPN}では バトルアリーナへ\nおつれいたしますぞ!"
-	.string "$"
+	.string "{JPN}では バトルアリーナへ\nおつれいたしますぞ!$"
 
 BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown:
-	.string "{JPN}おきゃくじん!\pぜんかい レポートを かいて\nしゅうりょう しませんでしたな?\pざんねんですが その ばあい\nちょうせんは むこうと なりますぞ!\pまた はじめから\nちょうせん してくだされ!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくじん!\pぜんかい レポートを かいて\nしゅうりょう しませんでしたな?\pざんねんですが その ばあい\nちょうせんは むこうと なりますぞ!\pまた はじめから\nちょうせん してくだされ!!$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnSevenWins:
-	.string "{JPN}7にんぬき たっせい\nおみごとで ございました!"
-	.string "$"
+	.string "{JPN}7にんぬき たっせい\nおみごとで ございました!$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordAchievement:
-	.string "{JPN}せいせきを レポートに かきますので\nおまちくだされ!"
-	.string "$"
+	.string "{JPN}せいせきを レポートに かきますので\nおまちくだされ!$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize:
-	.string "{JPN}7にんぬきを たっせい されましたので\nこの しょうひんを おうけとり くだされ!"
-	.string "$"
+	.string "{JPN}7にんぬきを たっせい されましたので\nこの しょうひんを おうけとり くだされ!$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_ReceivedPrize:
-	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 @ Unused
 BattleFrontier_BattleArenaLobby_Text_BagFullReturnForPrize:
-	.string "{JPN}……おおっ!\nどうぐが いっぱいの ようですな!\pどうぐを せいりしてから\nまた おこしくだされ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}……おおっ!\nどうぐが いっぱいの ようですな!\pどうぐを せいりしてから\nまた おこしくだされ!$"
 
 BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave:
-	.string "{JPN}おつかれさまでした!\pせいせきを レポートに かきますので\nおまちくだされ!"
-	.string "$"
+	.string "{JPN}おつかれさまでした!\pせいせきを レポートに かきますので\nおまちくだされ!$"
 
 BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2:
-	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!"
-	.string "$"
+	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!$"
 
 BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
-	.string "{JPN}おまちしておりました!\pバトルアリーナに おつれする まえに\nレポートを かきますので おまちくだされ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おまちしておりました!\pバトルアリーナに おつれする まえに\nレポートを かきますので おまちくだされ!$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
-	.string "{JPN}バトルアリーナで\nさいごに おこなった たたかいを\lフロンティアパスに きろく されますかな?"
-	.string "$"
+	.string "{JPN}バトルアリーナで\nさいごに おこなった たたかいを\lフロンティアパスに きろく されますかな?$"
 
 BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
-	.string "{JPN}はんていで まけちゃった……\pまもる ばっかりで\nせめなかったのが よくなかった みたい……"
-	.string ""
-	.string "$"
+	.string "{JPN}はんていで まけちゃった……\pまもる ばっかりで\nせめなかったのが よくなかった みたい……$"
 
 BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked:
-	.string "{JPN}はんていで かったぜ!\pあいての ポケモンに\nわざを かくじつに あてたのが よかったぜ!"
-	.string ""
-	.string "$"
+	.string "{JPN}はんていで かったぜ!\pあいての ポケモンに\nわざを かくじつに あてたのが よかったぜ!$"
 
 BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw:
-	.string "{JPN}はんていで ひきわけ だったよ\pじかんぎれに なったときに\nあいて ポケモンと のこりの HPが\lおなじ くらい だったからねぇ……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}はんていで ひきわけ だったよ\pじかんぎれに なったときに\nあいて ポケモンと のこりの HPが\lおなじ くらい だったからねぇ……$"
 
 BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant:
-	.string "{JPN}バトルアリーナでは ポケモンの じゅんばんが\nとっても だいじ なのよ!\pたとえば 1ばんめの ポケモンの\nじゃくてん となる タイプに たいして\pこうかばつぐんの わざを もっている\nポケモンを 2ばんめに いれておけば\lいいチームに なると おもうわ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}バトルアリーナでは ポケモンの じゅんばんが\nとっても だいじ なのよ!\pたとえば 1ばんめの ポケモンの\nじゃくてん となる タイプに たいして\pこうかばつぐんの わざを もっている\nポケモンを 2ばんめに いれておけば\lいいチームに なると おもうわ!$"
 
 BattleFrontier_BattleArenaLobby_Text_RulesAreListed:
 	.string "{JPN}かちぬきチームバトルの\nルールが かかれている!$"
@@ -522,59 +441,19 @@ BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading:
 	.string "{JPN}どの せつめいを よみますか?$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules:
-	.string "{JPN}かちぬきチームバトルは ふつうの たたかいと\nちがい とくべつな ルールが あります\pまず 1かいの たたかいは\n3ターンで しゅうりょうと なります\p3ターンで しょうぶが つかないときは\nしんぱんに よる はんていに なります\pはんていは ポケモンの たたかいかたを\nみて しょうはいを けってい します\pまた しょうぶの けっちゃくが つくまで\nポケモンの こうたいは できません"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}かちぬきチームバトルは ふつうの たたかいと\nちがい とくべつな ルールが あります\pまず 1かいの たたかいは\n3ターンで しゅうりょうと なります\p3ターンで しょうぶが つかないときは\nしんぱんに よる はんていに なります\pはんていは ポケモンの たたかいかたを\nみて しょうはいを けってい します\pまた しょうぶの けっちゃくが つくまで\nポケモンの こうたいは できません$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
-	.string "{JPN}1つめの はんてい ポイントである\n「こころ」は\lせめる きもちを みられます\pどれだけ トレーナーが こうげきする わざを\nめいれい したかに よって\lひょうかが かわります"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}1つめの はんてい ポイントである\n「こころ」は\lせめる きもちを みられます\pどれだけ トレーナーが こうげきする わざを\nめいれい したかに よって\lひょうかが かわります$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
-	.string "{JPN}2つめの はんてい ポイントである\n「わざ」は ポケモンの わざが\lうまく できたかを みられます\pわざが せいこう すると\nひょうかは あがります\pわざが しっぱい すると\nひょうかは さがります\pさらに あいてに わざを あてたときは\n「こうかはばつぐん」で あがり\l「こうかはいまひとつ」などで さがります\pまた 「まもる」や 「みきり」は\nだしても ひょうかは あがりません\pあいての 「まもる」や 「みきり」で\nわざを だせなくても\lひょうかは さがりません"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}2つめの はんてい ポイントである\n「わざ」は ポケモンの わざが\lうまく できたかを みられます\pわざが せいこう すると\nひょうかは あがります\pわざが しっぱい すると\nひょうかは さがります\pさらに あいてに わざを あてたときは\n「こうかはばつぐん」で あがり\l「こうかはいまひとつ」などで さがります\pまた 「まもる」や 「みきり」は\nだしても ひょうかは あがりません\pあいての 「まもる」や 「みきり」で\nわざを だせなくても\lひょうかは さがりません$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules:
-	.string "{JPN}3つめの はんてい ポイントである\n「からだ」は たいせん したあとの\lポケモンの HPを みられます\pたいせんが はじまる まえの\nHPと くらべて\lたいせんごの HPが どれだけ あるかで\lひょうかが かわります"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}3つめの はんてい ポイントである\n「からだ」は たいせん したあとの\lポケモンの HPを みられます\pたいせんが はじまる まえの\nHPと くらべて\lたいせんごの HPが どれだけ あるかで\lひょうかが かわります$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon:
-	.string "{JPN}アリーナキャプテンからの きんぼし!\nならびに 7にんぬき たっせい!\lまこと みごとで ございました!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アリーナキャプテンからの きんぼし!\nならびに 7にんぬき たっせい!\lまこと みごとで ございました!$"
 
 BattleFrontier_BattleArenaLobby_Text_PleaseAcceptBattlePoints:
-	.string "{JPN}おきゃくじんの ふくつの とうしを たたえ\nバトルポイントを さしあげましょう!"
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくじんの ふくつの とうしを たたえ\nバトルポイントを さしあげましょう!$"

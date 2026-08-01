@@ -437,11 +437,7 @@ BattleFrontier_BattleDomeLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle:
-	.string "{JPN}トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nシングル バトルトーナメントの\lごあんないを しております"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nシングル バトルトーナメントの\lごあんないを しております$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge:
 	.string "{JPN}シングル バトルトーナメントに\nちょうせん しますか?"
@@ -451,236 +447,123 @@ BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
 	.string "{JPN}またの ごりようを おまちして おります$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
-	.string "{JPN}シングル バトルトーナメントは\nシングルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきずつで たいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pバトルポイントが もらえますので\nがんばって くださいね!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}シングル バトルトーナメントは\nシングルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきずつで たいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pバトルポイントが もらえますので\nがんばって くださいね!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね!$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge:
-	.string "{JPN}バトルドームへ ごあんないする まえに\nレポートを かきますが よろしいですか?"
-	.string "$"
+	.string "{JPN}バトルドームへ ごあんないする まえに\nレポートを かきますが よろしいですか?$"
 
 BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
-	.string "{JPN}トーナメントには\nレベル50と オープンレベルと ありますが\lどちらに ちょうせん しますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}トーナメントには\nレベル50と オープンレベルと ありますが\lどちらに ちょうせん しますか?$"
 
 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons:
-	.string "{JPN}それでは さんかする ポケモンを\n3ひき おえらび ください"
-	.string "$"
+	.string "{JPN}それでは さんかする ポケモンを\n3ひき おえらび ください$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "{JPN}おきゃくさま!\pさんかできる ポケモンが 3ひき いません!\pまた もたせる どうぐも\nすべて ちがう どうぐに してください!\pなお タマゴ{STR_VAR_1}さんか させる ことは できません!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさま!\pさんかできる ポケモンが 3ひき いません!\pまた もたせる どうぐも\nすべて ちがう どうぐに してください!\pなお タマゴ{STR_VAR_1}さんか させる ことは できません!$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd:
 	.string "{JPN}じゅんびが できましたら\nまた おこし ください$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50:
-	.string "{JPN}おきゃくさま!\pさんかできる ポケモンが 3ひき いません!\pさんかする ためには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして ください\pまた もたせる どうぐも\nすべて ちがう どうぐに してください!\pなお タマゴ{STR_VAR_1}さんか させる ことは できません!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさま!\pさんかできる ポケモンが 3ひき いません!\pさんかする ためには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして ください\pまた もたせる どうぐも\nすべて ちがう どうぐに してください!\pなお タマゴ{STR_VAR_1}さんか させる ことは できません!$"
 
 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome:
-	.string "{JPN}それでは バトルドームへ\nごあんない します!"
-	.string "$"
+	.string "{JPN}それでは バトルドームへ\nごあんない します!$"
 
 BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting:
-	.string "{JPN}おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさま!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね?\pもうしわけ ありませんが そのばあい\nちょうせんは むこうと なります$"
 
 BattleFrontier_BattleDomeLobby_Text_CongratsForWinningTourney:
-	.string "{JPN}バトルトーナメント ゆうしょう\nおめでとう ございます!"
-	.string "$"
+	.string "{JPN}バトルトーナメント ゆうしょう\nおめでとう ございます!$"
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_HereIsYourPrize:
-	.string "{JPN}ゆうしょう されましたので\nこの しょうひんを さしあげます!"
-	.string "$"
+	.string "{JPN}ゆうしょう されましたので\nこの しょうひんを さしあげます!$"
 
 @ Used by Verdanturf Tent
 BattleFrontier_BattleDomeLobby_Text_ReceivedPrize:
-	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 @ Unused
 BattleFrontier_BattleDomeLobby_Text_BagFullMakeRoom:
-	.string "{JPN}……あら どうぐが いっぱいですね\pどうぐを せいりしてから\nまたおこしください"
-	.string ""
-	.string "$"
+	.string "{JPN}……あら どうぐが いっぱいですね\pどうぐを せいりしてから\nまたおこしください$"
 
 BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying:
 	.string "{JPN}おつかれさまでした!$"
 
 BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved:
-	.string "{JPN}せいせきを レポートに かきますので\nおまちください"
-	.string "$"
+	.string "{JPN}せいせきを レポートに かきますので\nおまちください$"
 
 BattleFrontier_BattleDomeLobby_Text_WeveBeenWaitingForYou:
 	.string "{JPN}おまちしておりました!$"
 
 BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2:
-	.string "{JPN}バトルドームへ ごあんないする まえに\nレポートを かきますが よろしいですか?"
-	.string "$"
+	.string "{JPN}バトルドームへ ごあんないする まえに\nレポートを かきますが よろしいですか?$"
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
-	.string "{JPN}トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nダブル バトルトーナメントの\lごあんないを しております"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nダブル バトルトーナメントの\lごあんないを しております$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
-	.string "{JPN}ダブル バトルトーナメントに\nちょうせん しますか?"
-	.string "$"
+	.string "{JPN}ダブル バトルトーナメントに\nちょうせん しますか?$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
-	.string "{JPN}ダブル バトルトーナメントは\nダブルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきによる ダブルバトルの\lたいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pゆうしょうされると バトルポイントが\nもらえますので がんばってください!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ダブル バトルトーナメントは\nダブルバトルで おこなわれる\lトーナメントたいかい です\pさんかする かたには しゅつじょう させる\nポケモンを 3ひき えらんで いただきます\pしあいでは 3ひきの てもち ポケモンから\n1ひきを ひかえにして\l2ひきによる ダブルバトルの\lたいせんを おこないます\pだす ポケモンは たいせん あいての\nポケモンを よくみて えらんで くださいね\pトーナメントを 4かい かちすすむと\nみごと ゆうしょうと なります\pゆうしょうされると バトルポイントが\nもらえますので がんばってください!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lちゃんと レポートを かかないと\lつづけて ちょうせんが できないので\lきをつけて くださいね$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLv50:
-	.string "{JPN}ぜんかい おこなわれた レベル50\nシングル バトルトーナメントの けっかだ!"
-	.string "$"
+	.string "{JPN}ぜんかい おこなわれた レベル50\nシングル バトルトーナメントの けっかだ!$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLv50:
-	.string "{JPN}ぜんかい おこなわれた レベル50\nダブル バトルトーナメントの けっかだ!"
-	.string "$"
+	.string "{JPN}ぜんかい おこなわれた レベル50\nダブル バトルトーナメントの けっかだ!$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsSinglesLvOpen:
-	.string "{JPN}ぜんかい おこなわれた オープンレベル\nシングル バトルトーナメントの けっかだ!"
-	.string "$"
+	.string "{JPN}ぜんかい おこなわれた オープンレベル\nシングル バトルトーナメントの けっかだ!$"
 
 BattleFrontier_BattleDomeLobby_Text_PrevTourneyResultsDoublesLvOpen:
-	.string "{JPN}ぜんかい おこなわれた オープンレベル\nダブル バトルトーナメントの けっかだ!"
-	.string "$"
+	.string "{JPN}ぜんかい おこなわれた オープンレベル\nダブル バトルトーナメントの けっかだ!$"
 
 BattleFrontier_BattleDomeLobby_Text_LastWinnerWasTough:
-	.string "{JPN}きみは みた?\nぜんかいの バトルトーナメント!\pゆうしょう した\n{STR_VAR_1}は ほんと つよかったんだよ\pパソコンの よこに ある モニターで\nけっかを みてみると いいよ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}きみは みた?\nぜんかいの バトルトーナメント!\pゆうしょう した\n{STR_VAR_1}は ほんと つよかったんだよ\pパソコンの よこに ある モニターで\nけっかを みてみると いいよ$"
 
 BattleFrontier_OutsideWest_Text_LongDreamedAboutBattleFrontier:
-	.string "{JPN}バトルフロンティア……\nわたしの ゆめ だった……"
-	.string "$"
+	.string "{JPN}バトルフロンティア……\nわたしの ゆめ だった……$"
 
 @ Functionally unused
 BattleFrontier_OutsideWest_Text_BattleDomeSign2:
-	.string "{JPN}ここは バトルドーム\nめざせ むてきの スーパースター!"
-	.string "$"
+	.string "{JPN}ここは バトルドーム\nめざせ むてきの スーパースター!$"
 
 @ Functionally unused
 BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction:
-	.string "{JPN}ここは ??????\nただいま けんせつちゅう!"
-	.string "$"
+	.string "{JPN}ここは ??????\nただいま けんせつちゅう!$"
 
 BattleFrontier_BattleDomeLobby_Text_WinnersGainReputation:
-	.string "{JPN}バトルドームで れんぱを つづけていくと\nその うわさを ききつけて\lつよい トレーナーが あつまって くるの\pれんぱを つづけてこそ\nしんの スーパースター ね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}バトルドームで れんぱを つづけていくと\nその うわさを ききつけて\lつよい トレーナーが あつまって くるの\pれんぱを つづけてこそ\nしんの スーパースター ね!$"
 
 BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound:
-	.string "{JPN}1かいせんで いきなり\nゆうしょうこうほと あたっちゃって\lもう ボコボコに やられたよ……"
-	.string ""
-	.string "$"
+	.string "{JPN}1かいせんで いきなり\nゆうしょうこうほと あたっちゃって\lもう ボコボコに やられたよ……$"
 
 BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully:
-	.string "{JPN}この ポケモンを ひかえに していれば\nかてたんだよなー\pしあいに だす ポケモン えらびは\nあいての ポケモンを よく みることが\lほんとうに たいせつだよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}この ポケモンを ひかえに していれば\nかてたんだよなー\pしあいに だす ポケモン えらびは\nあいての ポケモンを よく みることが\lほんとうに たいせつだよ!$"
 
 BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker:
-	.string "{JPN}おめでとう ございます!\pみごと ドームスーパースターを たおし\nバトルトーナメントに\lゆうしょう されましたね!"
-	.string ""
-	.string "$"
+	.string "{JPN}おめでとう ございます!\pみごと ドームスーパースターを たおし\nバトルトーナメントに\lゆうしょう されましたね!$"
 
 BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints:
-	.string "{JPN}おきゃくさまの\nうつくしい せんりゃくを たたえ\lバトルポイントを さしあげます!"
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさまの\nうつくしい せんりゃくを たたえ\lバトルポイントを さしあげます!$"
 
 BattleFrontier_BattleDomeLobby_Text_RecordLastMatch:
-	.string "{JPN}バトルドームで\nさいごに おこなった たたかいを\lフロンティアパスに きろく されますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}バトルドームで\nさいごに おこなった たたかいを\lフロンティアパスに きろく されますか?$"
 
 BattleFrontier_BattleDomeLobby_Text_RulesAreListed:
-	.string "{JPN}バトルトーナメントの\nルールが かかれている!"
-	.string "$"
+	.string "{JPN}バトルトーナメントの\nルールが かかれている!$"
 
 BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading:
 	.string "{JPN}どの せつめいを よみますか?$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules:
-	.string "{JPN}トーナメントの くみあわせは\nトレーナーが つれている\lポケモンの ちからを みて つくられます\pさいしょから つよい トレーナーどうしは\nあたらないように なっています"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トーナメントの くみあわせは\nトレーナーが つれている\lポケモンの ちからを みて つくられます\pさいしょから つよい トレーナーどうしは\nあたらないように なっています$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree:
-	.string "{JPN}トーナメントひょうは\nしあいまえの ひかえしつで\lかかりいんが みせてくれます\pトーナメントひょう には\n「ぜんかいの しあいけっか」\p「トレーナーの もっている\n ポケモンの じょうほう」\p「トレーナーの たたかいかた」\p……などの じょうほうが かかれているので\nしっかりと みましょう"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トーナメントひょうは\nしあいまえの ひかえしつで\lかかりいんが みせてくれます\pトーナメントひょう には\n「ぜんかいの しあいけっか」\p「トレーナーの もっている\n ポケモンの じょうほう」\p「トレーナーの たたかいかた」\p……などの じょうほうが かかれているので\nしっかりと みましょう$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules:
-	.string "{JPN}トーナメントの しあいで\nおなじターンで どうじに たおれて\lダブルノックアウトに なった ときは\lしあいを みていた しんぱんだんに よる\lはんていで しょうしゃを けってい します"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トーナメントの しあいで\nおなじターンで どうじに たおれて\lダブルノックアウトに なった ときは\lしあいを みていた しんぱんだんに よる\lはんていで しょうしゃを けってい します$"

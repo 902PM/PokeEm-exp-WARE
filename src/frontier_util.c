@@ -2107,9 +2107,9 @@ static void AppendCaughtBannedMonSpeciesName(enum Species species, u8 count, s32
     if (count == 1)
         ;
     else if (numBannedMonsCaught == count)
-        StringAppend(gStringVar1, gText_SpaceAndSpace);
+        StringAppend(gStringVar1, gText_Space2);
     else if (numBannedMonsCaught > count)
-        StringAppend(gStringVar1, gText_CommaSpace);
+        StringAppend(gStringVar1, gText_Space2);
     if (count == 3)
         StringAppend(gStringVar1, gText_NewLine2);
     else if (count == 6)
@@ -2251,6 +2251,7 @@ static void CheckPartyIneligibility(void)
         if (totalCaughtBanned == 0)
         {
             StringAppend(gStringVar1, gText_FrontierFacilityAreInelegible);
+            StringAppend(gStringVar1, gText_NewLine2);
         }
         else
         {
@@ -2264,7 +2265,16 @@ static void CheckPartyIneligibility(void)
             for (i = 0; i < totalPartyBanned; i++)
                 AppendCaughtBannedMonSpeciesName(partyBanned[i], i+1, totalPartyBanned);
         }
-        gSpecialVar_0x8005 = totalCaughtBanned;
+        if (totalPartyBanned > 0 && totalPartyBanned < 3)
+        {
+            StringAppend(gStringVar1, gText_FrontierFacilityAreInelegible);
+            StringAppend(gStringVar1, gText_NewLine2);
+        }
+        if (totalPartyBanned > 2)
+        {
+            StringAppend(gStringVar1, gText_FrontierFacilityAreInelegible);
+            StringAppend(gStringVar1, gText_LineBreak);
+        }
     }
     else
     {
