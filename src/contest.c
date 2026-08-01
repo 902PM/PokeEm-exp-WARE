@@ -2835,7 +2835,8 @@ void CreateContestMonFromParty(u8 partyIndex)
     s16 smart;
     s16 tough;
 
-    StringCopy(name, gSaveBlock2Ptr->playerName);
+    StringCopy(name, COMPOUND_STRING("{JPN}"));
+    StringAppend(name, gSaveBlock2Ptr->playerName);
     if (gLinkContestFlags & LINK_CONTEST_FLAG_IS_LINK)
         StripPlayerNameForLinkContest(name);
     memcpy(gContestMons[gContestPlayerMonIndex].trainerName, name, PLAYER_NAME_LENGTH + 1);
