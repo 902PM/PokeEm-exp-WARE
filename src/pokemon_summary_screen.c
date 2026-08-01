@@ -3612,8 +3612,7 @@ static void PrintMonTrainerMemo(void)
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
 }
 
-static const u8 sText_NatureSuffixNa[] = _("な ");
-static const u8 sText_NatureSuffixPlain[] = _(" ");
+static const u8 sText_NatureSuffixNa[] = _("な");
 
 static bool32 SummaryNatureUsesPlainSuffix(u8 nature)
 {
@@ -3634,12 +3633,11 @@ static void BufferNatureString(void)
     StringCopy(gStringVar3, gNaturesInfo[sumStruct->summary.nature].name);
 
     if (SummaryNatureUsesPlainSuffix(sumStruct->summary.nature))
-        StringAppend(gStringVar3, sText_NatureSuffixPlain);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
     else
-        StringAppend(gStringVar3, sText_NatureSuffixNa);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, sText_NatureSuffixNa);
 
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gStringVar3);
-    DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
 }
 
 static void GetMetLevelString(u8 *output)
