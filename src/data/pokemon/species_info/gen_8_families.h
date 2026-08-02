@@ -5169,10 +5169,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 3,
         .weight = 5,
         .description = COMPOUND_STRING(
-            "It launches swarms of missiles,\n"
-            "each made of cream and loaded with\n"
-            "100,000 kilocalories. Get hit by one of\n"
-            "these, and your head will swim."),
+            "{JPN}むげんに あふれだす クリームの\nからだは うける しょうげきが\nつよいほど かたく かたまるのだ。"),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
