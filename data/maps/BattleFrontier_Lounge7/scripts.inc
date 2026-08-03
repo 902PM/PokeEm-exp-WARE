@@ -33,10 +33,10 @@ BattleFrontier_Lounge7_EventScript_ChooseLeftTutorMove::
 	case 3, BattleFrontier_Lounge7_EventScript_MegaPunch
 	case 4, BattleFrontier_Lounge7_EventScript_MegaKick
 	case 5, BattleFrontier_Lounge7_EventScript_BodySlam
-	case 6, BattleFrontier_Lounge7_EventScript_RockSlide
-	case 7, BattleFrontier_Lounge7_EventScript_Counter
-	case 8, BattleFrontier_Lounge7_EventScript_ThunderWave
-	case 9, BattleFrontier_Lounge7_EventScript_SwordsDance
+	case 6, BattleFrontier_Lounge7_EventScript_ThunderWave
+	case 7, BattleFrontier_Lounge7_EventScript_SwordsDance
+	case 8, BattleFrontier_Lounge7_EventScript_RockSlide
+	case 9, BattleFrontier_Lounge7_EventScript_Counter
 	case 10, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
@@ -56,70 +56,70 @@ BattleFrontier_Lounge7_EventScript_ChooseNewLeftTutorMove::
 	case 3, BattleFrontier_Lounge7_EventScript_MegaPunch
 	case 4, BattleFrontier_Lounge7_EventScript_MegaKick
 	case 5, BattleFrontier_Lounge7_EventScript_BodySlam
-	case 6, BattleFrontier_Lounge7_EventScript_RockSlide
-	case 7, BattleFrontier_Lounge7_EventScript_Counter
-	case 8, BattleFrontier_Lounge7_EventScript_ThunderWave
-	case 9, BattleFrontier_Lounge7_EventScript_SwordsDance
+	case 6, BattleFrontier_Lounge7_EventScript_ThunderWave
+	case 7, BattleFrontier_Lounge7_EventScript_SwordsDance
+	case 8, BattleFrontier_Lounge7_EventScript_RockSlide
+	case 9, BattleFrontier_Lounge7_EventScript_Counter
 	case 10, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
 BattleFrontier_Lounge7_EventScript_Softboiled::
-	setvar VAR_0x8008, 16
-	setvar VAR_0x8005, MOVE_SOFT_BOILED
+	setvar VAR_0x8008, 4
+	setvar VAR_0x8005, MOVE_BUG_BITE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_SeismicToss::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SEISMIC_TOSS
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8005, MOVE_ROOST
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_DreamEater::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_DREAM_EATER
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8005, MOVE_SCALD
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MegaPunch::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_MEGA_PUNCH
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8005, MOVE_IRON_HEAD
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MegaKick::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_MEGA_KICK
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_DRAGON_PULSE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_BodySlam::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_BODY_SLAM
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_FLIP_TURN
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_RockSlide::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_ROCK_SLIDE
+	setvar VAR_0x8008, 16
+	setvar VAR_0x8005, MOVE_POLTERGEIST
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Counter::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_COUNTER
+	setvar VAR_0x8008, 16
+	setvar VAR_0x8005, MOVE_DRACO_METEOR
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_ThunderWave::
-	setvar VAR_0x8008, 48
+	setvar VAR_0x8008, 12
 	setvar VAR_0x8005, MOVE_THUNDER_WAVE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_SwordsDance::
-	setvar VAR_0x8008, 48
+	setvar VAR_0x8008, 12
 	setvar VAR_0x8005, MOVE_SWORDS_DANCE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
@@ -150,15 +150,15 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleFrontier_Lounge7_EventScript_DefenseCurl
-	case 1, BattleFrontier_Lounge7_EventScript_Snore
-	case 2, BattleFrontier_Lounge7_EventScript_MudSlap
-	case 3, BattleFrontier_Lounge7_EventScript_Swift
-	case 4, BattleFrontier_Lounge7_EventScript_IcyWind
-	case 5, BattleFrontier_Lounge7_EventScript_Endure
-	case 6, BattleFrontier_Lounge7_EventScript_PsychUp
-	case 7, BattleFrontier_Lounge7_EventScript_IcePunch
-	case 8, BattleFrontier_Lounge7_EventScript_ThunderPunch
-	case 9, BattleFrontier_Lounge7_EventScript_FirePunch
+	case 1, BattleFrontier_Lounge7_EventScript_IcePunch
+	case 2, BattleFrontier_Lounge7_EventScript_ThunderPunch
+	case 3, BattleFrontier_Lounge7_EventScript_FirePunch
+	case 4, BattleFrontier_Lounge7_EventScript_Snore
+	case 5, BattleFrontier_Lounge7_EventScript_MudSlap
+	case 6, BattleFrontier_Lounge7_EventScript_Swift
+	case 7, BattleFrontier_Lounge7_EventScript_IcyWind
+	case 8, BattleFrontier_Lounge7_EventScript_Endure
+	case 9, BattleFrontier_Lounge7_EventScript_PsychUp
 	case 10, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
@@ -173,75 +173,75 @@ BattleFrontier_Lounge7_EventScript_ChooseNewRightTutorMove::
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 	switch VAR_RESULT
 	case 0, BattleFrontier_Lounge7_EventScript_DefenseCurl
-	case 1, BattleFrontier_Lounge7_EventScript_Snore
-	case 2, BattleFrontier_Lounge7_EventScript_MudSlap
-	case 3, BattleFrontier_Lounge7_EventScript_Swift
-	case 4, BattleFrontier_Lounge7_EventScript_IcyWind
-	case 5, BattleFrontier_Lounge7_EventScript_Endure
-	case 6, BattleFrontier_Lounge7_EventScript_PsychUp
-	case 7, BattleFrontier_Lounge7_EventScript_IcePunch
-	case 8, BattleFrontier_Lounge7_EventScript_ThunderPunch
-	case 9, BattleFrontier_Lounge7_EventScript_FirePunch
+	case 1, BattleFrontier_Lounge7_EventScript_IcePunch
+	case 2, BattleFrontier_Lounge7_EventScript_ThunderPunch
+	case 3, BattleFrontier_Lounge7_EventScript_FirePunch
+	case 4, BattleFrontier_Lounge7_EventScript_Snore
+	case 5, BattleFrontier_Lounge7_EventScript_MudSlap
+	case 6, BattleFrontier_Lounge7_EventScript_Swift
+	case 7, BattleFrontier_Lounge7_EventScript_IcyWind
+	case 8, BattleFrontier_Lounge7_EventScript_Endure
+	case 9, BattleFrontier_Lounge7_EventScript_PsychUp
 	case 10, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	case MULTI_B_PRESSED, BattleFrontier_Lounge7_EventScript_ExitTutorMoveSelect
 	end
 
 BattleFrontier_Lounge7_EventScript_DefenseCurl::
-	setvar VAR_0x8008, 16
-	setvar VAR_0x8005, MOVE_DEFENSE_CURL
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8005, MOVE_DRAIN_PUNCH
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Snore::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SNORE
+	setvar VAR_0x8008, 8
+	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_MudSlap::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_MUD_SLAP
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_DUAL_CHOP
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Swift::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_SWIFT
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_DUAL_WINGBEAT
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_IcyWind::
-	setvar VAR_0x8008, 24
-	setvar VAR_0x8005, MOVE_ICY_WIND
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_EARTH_POWER
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_Endure::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_ENDURE
+	setvar VAR_0x8008, 12
+	setvar VAR_0x8005, MOVE_HYPER_VOICE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_PsychUp::
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8005, MOVE_PSYCH_UP
+	setvar VAR_0x8008, 16
+	setvar VAR_0x8005, MOVE_OUTRAGE
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_IcePunch::
-	setvar VAR_0x8008, 48
+	setvar VAR_0x8008, 8
 	setvar VAR_0x8005, MOVE_ICE_PUNCH
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_ThunderPunch::
-	setvar VAR_0x8008, 48
+	setvar VAR_0x8008, 8
 	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
 
 BattleFrontier_Lounge7_EventScript_FirePunch::
-	setvar VAR_0x8008, 48
+	setvar VAR_0x8008, 8
 	setvar VAR_0x8005, MOVE_FIRE_PUNCH
 	goto BattleFrontier_Lounge7_EventScript_ConfirmMoveSelection
 	end
@@ -338,28 +338,28 @@ BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful:
 	.string "{JPN}わたしが まだ たんぱんこぞう だったころ\nつよく うつくしい かのじょ たちは\lトレーナー みんなの アイドル でした\pいまも その わざの キレは\nおとろえる どころか\lますます みがきが かかっている ようです\pだが…… なぜか こう おもうのです……\pじかんと いうものは\nざんこくな もの ですね……$"
 
 BattleFrontier_Lounge7_Text_SoftboiledDesc::
-	.string "{JPN}キズついた からだを\nたいりょくの\nはんぶん かいふく$"
+	.string "{JPN}あいてが きのみを\nもっているとき たべて\nそのこうかを うけられる$"
 
 BattleFrontier_Lounge7_Text_SeismicTossDesc::
-	.string "{JPN}いんりょくを りよう\nレベル ぶんの\nダメージを あたえる$"
+	.string "{JPN}じめんに おりて\nたいりょくの\nはんぶんだけ かいふくする$"
 
 BattleFrontier_Lounge7_Text_DreamEaterDesc::
-	.string "{JPN}ねている てきに\nあたえた ダメージの\nはんぶんを かいふく$"
+	.string "{JPN}あつくにえたぎる みずを\nはっしゃ\nやけどに することがある$"
 
 BattleFrontier_Lounge7_Text_MegaPunchDesc::
-	.string "{JPN}ものすごい ちからを\nこめた パンチで\nてきを こうげき$"
+	.string "{JPN}はがねのような あたまで\nこうげき てきを\nひるませることがある$"
 
 BattleFrontier_Lounge7_Text_MegaKickDesc::
-	.string "{JPN}ものすごい ちからを\nこめた キックで\nてきを こうげき$"
+	.string "{JPN}おおきな くちから\nしょうげきはをまきおこして\nてきを こうげきする$"
 
 BattleFrontier_Lounge7_Text_BodySlamDesc::
-	.string "{JPN}たおれこみ こうげき\nてきを まひ させる\nことが ある$"
+	.string "{JPN}こうげき したあと\nものすごい スピードで\nもどってきて いれかわる$"
 
 BattleFrontier_Lounge7_Text_RockSlideDesc::
-	.string "{JPN}いわで こうげき\nてきを ひるませる\nことが ある$"
+	.string "{JPN}てきのどうぐを あやつって\nこうげき どうぐを\nもっていないとしっぱいする$"
 
 BattleFrontier_Lounge7_Text_CounterDesc::
-	.string "{JPN}ぶつりこうげきの\nダメージを\nばいにして かえす$"
+	.string "{JPN}てんくうから いんせきを\nおとすが とくこうが\nがくっと さがってしまう$"
 
 BattleFrontier_Lounge7_Text_ThunderWaveDesc::
 	.string "{JPN}よわい でんげきを\nぶつけて あいてを\nまひ させる$"
@@ -368,25 +368,25 @@ BattleFrontier_Lounge7_Text_SwordsDanceDesc::
 	.string "{JPN}たたかいの おどりで\nこうげきを グーンと\nあげる$"
 
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
-	.string "{JPN}からだを まるめて\nぼうぎょを あげる$"
+	.string "{JPN}こぶしから てきのちからを\nすいとる ダメージの\nはんぶんの HPをかいふく$"
 
 BattleFrontier_Lounge7_Text_SnoreDesc::
-	.string "{JPN}ねている とき だけ\nつかえる わざ\nいびきで こうげき$"
+	.string "{JPN}くりかえし うつことで\nこぶしを かたくし\nじぶんの こうげきをあげる$"
 
 BattleFrontier_Lounge7_Text_MudSlapDesc::
-	.string "{JPN}ドロを かけて\nめいちゅうりつを\nさげる$"
+	.string "{JPN}からだの かたいぶぶんで\nたたいて 2かい\nれんぞくで こうげきする$"
 
 BattleFrontier_Lounge7_Text_SwiftDesc::
-	.string "{JPN}だれも よけることの\nできない ほしがたの\nこうせんで こうげき$"
+	.string "{JPN}つばさを あいてに\nぶつけて 2かい\nれんぞくで こうげきする$"
 
 BattleFrontier_Lounge7_Text_IcyWindDesc::
-	.string "{JPN}すごい れいきで\nこうげき\nすばやさを さげる$"
+	.string "{JPN}てきへ だいちのちからを\nほうしゅつ てきの\nとくぼうをさげることがある$"
 
 BattleFrontier_Lounge7_Text_EndureDesc::
-	.string "{JPN}そのターンで\nこうげき されても\nたいりょくが1のこる$"
+	.string "{JPN}おおごえの しんどうで\nてきに ダメージを\nあたえる$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
-	.string "{JPN}あいての\nほじょこうかを\nじぶんに コピーする$"
+	.string "{JPN}2ー3ターンのあいだ\nあばれつづける あばれた\nあとは こんらんしてしまう$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
 	.string "{JPN}つめたい パンチで\nてきを こおらせる\nことが ある$"
