@@ -2391,7 +2391,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 11;
+        task->tNumItems = 16;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2401,7 +2401,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 6;
+        task->tNumItems = 16;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2553,10 +2553,6 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("{JPN}ヒノアラシドール  80BP"),
         COMPOUND_STRING("{JPN}チコリータドール  80BP"),
         COMPOUND_STRING("{JPN}ワニノコドール   80BP"),
-        gText_Exit
-    },
-    [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =
-    {
         COMPOUND_STRING("{JPN}ラプラスドール  128BP"),
         COMPOUND_STRING("{JPN}カビゴンドール  128BP"),
         COMPOUND_STRING("{JPN}フシギバナドール 256BP"),
@@ -2564,14 +2560,33 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("{JPN}カメックスドール 256BP"),
         gText_Exit
     },
+    [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =
+    {
+        COMPOUND_STRING("{JPN}ジュカインナイト     1BP"),
+        COMPOUND_STRING("{JPN}バシャーモナイト     1BP"),
+        COMPOUND_STRING("{JPN}ラグラージナイト     1BP"),
+        COMPOUND_STRING("{JPN}ヤドランナイト     64BP"),
+        COMPOUND_STRING("{JPN}ガルーラナイト     64BP"),
+        COMPOUND_STRING("{JPN}カイリュナイト     64BP"),
+        COMPOUND_STRING("{JPN}メタグロスナイト    64BP"),
+        COMPOUND_STRING("{JPN}ムクホークナイト    64BP"),
+        COMPOUND_STRING("{JPN}ガブリアスナイト    64BP"),
+        COMPOUND_STRING("{JPN}ルカリオナイト     64BP"),
+        COMPOUND_STRING("{JPN}ドリュウズナイト    64BP"),
+        COMPOUND_STRING("{JPN}シャンデラナイト    64BP"),
+        COMPOUND_STRING("{JPN}ブリガロナイト     64BP"),
+        COMPOUND_STRING("{JPN}マフォクシナイト    64BP"),
+        COMPOUND_STRING("{JPN}ゲッコウガナイト    64BP"),
+        gText_Exit
+    },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR] =
     {
-        COMPOUND_STRING("{JPN}タウリン       1BP"),
-        COMPOUND_STRING("{JPN}リゾチウム      1BP"),
-        COMPOUND_STRING("{JPN}ブロムヘキシン    1BP"),
-        COMPOUND_STRING("{JPN}キトサン       1BP"),
-        COMPOUND_STRING("{JPN}インドメタシン    1BP"),
-        COMPOUND_STRING("{JPN}マックスアップ    1BP"),
+        COMPOUND_STRING("{JPN}タウリン        1BP"),
+        COMPOUND_STRING("{JPN}リゾチウム       1BP"),
+        COMPOUND_STRING("{JPN}ブロムヘキシン     1BP"),
+        COMPOUND_STRING("{JPN}キトサン        1BP"),
+        COMPOUND_STRING("{JPN}インドメタシン     1BP"),
+        COMPOUND_STRING("{JPN}マックスアップ     1BP"),
         COMPOUND_STRING("{JPN}けいけんアメXL   24BP"),
         COMPOUND_STRING("{JPN}ふしぎなアメ     48BP"),
         gText_Exit
@@ -3128,16 +3143,7 @@ static void FillFrontierExchangeCornerWindowAndItemIcon(enum ScrollMulti menu, u
             break;
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2:
             AddTextPrinterParameterized2(0, FONT_NORMAL, sFrontierExchangeCorner_Decor2Descriptions[selection], 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
-            if (sFrontierExchangeCorner_Decor2[selection] == ITEM_LIST_END)
-            {
-                ShowFrontierExchangeCornerItemIcon(sFrontierExchangeCorner_Decor2[selection]);
-            }
-            else
-            {
-                FreeSpriteTilesByTag(TAG_ITEM_ICON);
-                FreeSpritePaletteByTag(TAG_ITEM_ICON);
-                sScrollableMultichoice_ItemSpriteId = AddDecorationIconObject(sFrontierExchangeCorner_Decor2[selection], 33, 88, 0, TAG_ITEM_ICON, TAG_ITEM_ICON);
-            }
+            ShowFrontierExchangeCornerItemIcon(sFrontierExchangeCorner_Decor2[selection]);
             break;
         case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
             AddTextPrinterParameterized2(0, FONT_NORMAL, sFrontierExchangeCorner_VitaminsDescriptions[selection], 0, NULL, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);

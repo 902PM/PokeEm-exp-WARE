@@ -95,7 +95,12 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1::
 	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_CyndaquilDoll
 	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_ChikoritaDoll
 	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_TotodileDoll
-	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll
+	case 11, BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll
+	case 12, BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll
+	case 13, BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll
+	case 14, BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll
+	case 15, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
@@ -146,6 +151,26 @@ BattleFrontier_ExchangeServiceCorner_EventScript_TotodileDoll::
 	setitemandprice DECOR_TOTODILE_DOLL, 80
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
+BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
+	setitemandprice DECOR_LAPRAS_DOLL, 128
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
+
+BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll::
+	setitemandprice DECOR_SNORLAX_DOLL, 128
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
+
+BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll::
+	setitemandprice DECOR_VENUSAUR_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
+
+BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
+	setitemandprice DECOR_CHARIZARD_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
+
+BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
+	setitemandprice DECOR_BLASTOISE_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
+
 BattleFrontier_ExchangeServiceCorner_EventScript_DecorClerk2::
 	lock
 	faceplayer
@@ -160,40 +185,90 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2::
 	special ShowScrollableMultichoice
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
-	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll
-	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll
-	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll
-	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll
-	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll
-	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone1
+	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone2
+	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone3
+	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone4
+	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone5
+	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone6
+	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone7
+	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone8
+	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone9
+	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone10
+	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone11
+	case 11, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone12
+	case 12, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone13
+	case 13, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone14
+	case 14, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone15
+	case 15, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
 BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2::
-	bufferdecorationname STR_VAR_1, VAR_0x8009
+	bufferitemname STR_VAR_1, VAR_0x8009
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
-	setitemandprice DECOR_LAPRAS_DOLL, 128
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone1::
+	setitemandprice ITEM_SCEPTILITE, 1
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll::
-	setitemandprice DECOR_SNORLAX_DOLL, 128
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone2::
+	setitemandprice ITEM_BLAZIKENITE, 1
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll::
-	setitemandprice DECOR_VENUSAUR_DOLL, 256
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone3::
+	setitemandprice ITEM_SWAMPERTITE, 1
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
-	setitemandprice DECOR_CHARIZARD_DOLL, 256
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone4::
+	setitemandprice ITEM_SLOWBRONITE, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
-	setitemandprice DECOR_BLASTOISE_DOLL, 256
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone5::
+	setitemandprice ITEM_KANGASKHANITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone6::
+	setitemandprice ITEM_DRAGONINITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone7::
+	setitemandprice ITEM_METAGROSSITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone8::
+	setitemandprice ITEM_STARAPTITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone9::
+	setitemandprice ITEM_GARCHOMPITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone10::
+	setitemandprice ITEM_LUCARIONITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone11::
+	setitemandprice ITEM_EXCADRITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone12::
+	setitemandprice ITEM_CHANDELURITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone13::
+	setitemandprice ITEM_CHESNAUGHTITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone14::
+	setitemandprice ITEM_DELPHOXITE, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone15::
+	setitemandprice ITEM_GRENINJITE, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk::
@@ -429,6 +504,51 @@ BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
 	.string "{JPN}おおきな ぬいぐるみ\nマットや つくえの うえに おくもの$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_1Desc::
+	.string "{JPN}ジュカインに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_2Desc::
+	.string "{JPN}バシャーモに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_3Desc::
+	.string "{JPN}ラグラージに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_4Desc::
+	.string "{JPN}ヤドランに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_5Desc::
+	.string "{JPN}ガルーラに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_6Desc::
+	.string "{JPN}カイリューに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_7Desc::
+	.string "{JPN}メタグロスに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_8Desc::
+	.string "{JPN}ムクホークに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_9Desc::
+	.string "{JPN}ガブリアスに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_10Desc::
+	.string "{JPN}ルカリオに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_11Desc::
+	.string "{JPN}ドリュウズに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_12Desc::
+	.string "{JPN}シャンデラに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_13Desc::
+	.string "{JPN}ブリガロンに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_14Desc::
+	.string "{JPN}マフォクシーに もたせると\nせんとうちゅうに メガシンカ できる$"
+
+BattleFrontier_ExchangeServiceCorner_Text_MegaStone_15Desc::
+	.string "{JPN}ゲッコウガに もたせると\nせんとうちゅうに メガシンカ できる$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
 	.string "{JPN}こうげきの きそポイントを あげる$"
