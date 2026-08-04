@@ -26,7 +26,6 @@
 
 // EV Cap Configs
 #define B_EV_CAP_TYPE                   EV_CAP_NONE   // [EV_CAP_NONE, EV_CAP_FLAG_LIST, EV_CAP_VARIABLE, EV_CAP_NO_GAIN]適用するEV上限のタイプを選択します
-#define B_EV_CAP_VARIABLE               12 // `B_EV_CAP_TYPE`が`EV_CAP_VARIABLE`に設定されている場合に努力値上限の算出に使用されるイベント変数
 #define B_EV_CAP_VARIABLE               8 // `B_EV_CAP_TYPE`が`EV_CAP_VARIABLE`に設定されている場合に努力値上限の算出に使用されるイベント変数
 
 #define B_EV_ITEMS_CAP                  FALSE // TRUEに設定した場合、努力値を上昇させるアイテムを使用して努力値の上限を超えることはできません。
