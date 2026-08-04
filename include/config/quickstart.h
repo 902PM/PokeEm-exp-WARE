@@ -6,11 +6,11 @@
 #define GENDER_RANDOM            2
 
 // Quickstart Settings
-#define ENABLE_QUICKSTART            FALSE  // If TRUE press SELECT to start a new game from the titlescreen (Disabled on Release Builds)
-#define QUICKSTART_HUD               TRUE  // Displays a small hud element on the titlescreen when Quickstart is enabled
+#define ENABLE_QUICKSTART            FALSE  // TRUEの場合、タイトル画面でSELECTを押すと新しいゲームを開始できます（リリースビルドでは無効）。
+#define QUICKSTART_HUD               TRUE  // クイックスタートが有効な場合、タイトル画面に小さなHUDを表示します。
 #define QUICKSTART_GENDER            GENDER_FEMALE
 
-#define QUICKSTART_HUD_X             (DISPLAY_WIDTH - 32) // Quickstart HUD X Position
-#define QUICKSTART_HUD_Y             (16)                 // Quickstart HUD Y Position
+#define QUICKSTART_HUD_X             (DISPLAY_WIDTH - 32) // クイックスタートHUDのX位置
+#define QUICKSTART_HUD_Y             (16)                 // クイックスタートHUDのY位置
 
 #endif // GUARD_CONFIG_QUICKSTART_H

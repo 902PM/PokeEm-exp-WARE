@@ -1,204 +1,204 @@
 #ifndef GUARD_CONFIG_BATTLE_H
 #define GUARD_CONFIG_BATTLE_H
 
-// Calculation settings
-#define B_CRIT_CHANCE               GEN_LATEST // Chances of a critical hit landing. See CalcCritChanceStage. Gen6+ chances guarantee that Farfetch'd and Sirfetch'd always get critical hits while holding a Leek and using high-crit ratio moves.
-#define B_CRIT_MULTIPLIER           GEN_3 // In Gen6+, critical hits multiply damage by 1.5 instead of 2.
-#define B_PARALYSIS_SPEED           GEN_LATEST // In Gen7+, Speed is decreased by 50% instead of 75%.
-#define B_CONFUSION_SELF_DMG_CHANCE GEN_LATEST // In Gen7+, confusion has a 33.3% of self-damage, instead of 50%.
-#define B_MULTI_HIT_CHANCE          GEN_LATEST // In Gen5+, multi-hit moves have different %. See SetRandomMultiHitCounter for values.
-#define B_WHITEOUT_MONEY            GEN_LATEST // In Gen4+, the amount of money lost by losing a battle is determined by the amount of badges earned. Previously, it would cut the current money by half. (While this change was also in FRLG, for the sake of simplicity, setting this to GEN_3 will result in RSE behavior.)
-#define B_LIGHT_BALL_ATTACK_BOOST   GEN_LATEST // In Gen4+, Light Ball doubles the power of physical moves in addition to special moves.
+// 戦闘計算設定
+#define B_CRIT_CHANCE               GEN_LATEST // 急所に当たる確率。CalcCritChanceStageを参照。第6世代以降の仕様では、カモネギやネギガナイトがながねぎを持った状態で急所ランクの高い技を使用すると、必ず急所に当たります。
+#define B_CRIT_MULTIPLIER           GEN_3 // 第6世代以降、急所ヒット時のダメージ倍率は2倍ではなく1.5倍になります。
+#define B_PARALYSIS_SPEED           GEN_LATEST // 第7世代以降、マヒは素早さが75%ではなく50%低下する。
+#define B_CONFUSION_SELF_DMG_CHANCE GEN_LATEST // 第7世代以降、こんらん状態での自傷確率は50%ではなく33.3%になっています。
+#define B_MULTI_HIT_CHANCE          GEN_LATEST // 第5世代以降、連続攻撃技の確率が異なります。具体的な数値については `SetRandomMultiHitCounter` を参照してください。
+#define B_WHITEOUT_MONEY            GEN_LATEST // 第4世代以降、バトルに敗北した際に失う金額は、獲得したバッジの数によって決まります。それ以前の作品では、所持金が半分になっていました。（この変更はFRLGでも導入されていましたが、設定を「GEN_3」にすると、簡略化のためRSEの挙動になります。）
+#define B_LIGHT_BALL_ATTACK_BOOST   GEN_LATEST // 第4世代以降、「でんきだま」は特殊技だけでなく物理技の威力も2倍にします。
 
-// Experience settings
-#define B_EXP_CATCH                 GEN_LATEST // In Gen6+, Pokemon get experience from catching.
-#define B_TRAINER_EXP_MULTIPLIER    GEN_LATEST // In Gen7+, trainer battles no longer give a 1.5 multiplier to EXP gain.
-#define B_SPLIT_EXP                 GEN_LATEST // In Gen6+, all participating mon get full experience.
-#define B_SCALED_EXP                GEN_LATEST // In Gen5 and Gen7+, experience is weighted by level difference.
-#define B_UNEVOLVED_EXP_MULTIPLIER  GEN_LATEST // In Gen6+, if the Pokemon is at or past the level where it would be able to evolve, but it has not, it gets a ~1.2 multiplier to EXP gain. Only applies to Pokemon with EVO_LEVEL method.
-#define B_LEVEL_UP_NOTIFICATION     GEN_LATEST // In Gen9+, if the Pokemon gets enough experience to level up multiple times, the message is only displayed once.
+// 経験値設定
+#define B_EXP_CATCH                 GEN_LATEST // 第6世代以降、ポケモンは捕獲することでも経験値を得られるようになりました。
+#define B_TRAINER_EXP_MULTIPLIER    GEN_3 // 第7世代以降、トレーナー戦で獲得できる経験値に1.5倍の補正はかからなくなりました。
+#define B_SPLIT_EXP                 GEN_LATEST // 第6世代以降では、参加したすべてのポケモンがフルで経験値を獲得します。
+#define B_SCALED_EXP                GEN_LATEST // 第5世代および第7世代以降では、獲得経験値はレベル差に応じて補正されます。
+#define B_UNEVOLVED_EXP_MULTIPLIER  GEN_LATEST // 第6世代以降、進化可能なレベルに達しているにもかかわらず進化していないポケモンは、獲得経験値に約1.2倍の補正がかかります。この仕様は、進化条件が「レベルアップ（EVO_LEVEL）」であるポケモンにのみ適用されます。
+#define B_LEVEL_UP_NOTIFICATION     GEN_LATEST // 第9世代以降では、ポケモンがレベルアップに必要な経験値を十分に獲得し、複数回レベルアップする場合でも、メッセージは1回しか表示されません。
 
-// Stat settings
-#define B_BADGE_BOOST               GEN_LATEST // In Gen4+, Gym Badges no longer boost a Pokemon's stats. (Gen2 does not include the additional boost to the type matching the gym the badge is from)
-#define B_FRIENDSHIP_BOOST          FALSE      // In LGPE only, all stats except HP are boosted up to 10% based on Friendship. Unlike B_BADGE_BOOST, these boosts are accounted when calculating base stats.
-#define B_MAX_LEVEL_EV_GAINS        GEN_LATEST // In Gen5+, Lv100 Pokemon can obtain Effort Values normally.
-#define B_RECALCULATE_STATS         GEN_LATEST // In Gen5+, the stats of the Pokemon who participate in battle are recalculated at the end of each battle.
+// ステータス設定
+#define B_BADGE_BOOST               GEN_LATEST // 第4世代以降、ジムバッジはポケモンのステータスを上昇させなくなりました。（第2世代における、そのバッジのジムのタイプと一致するポケモンの能力上昇効果は含まれません）
+#define B_FRIENDSHIP_BOOST          FALSE      // ピカブイ限定の仕様として、HP以外のすべてのステータスが「なかよし度」に応じて最大10%上昇します。B_BADGE_BOOST（バッジによる補正）とは異なり、これらの上昇分は基礎ステータスの計算時に反映されます。
+#define B_MAX_LEVEL_EV_GAINS        GEN_LATEST // 第5世代以降では、レベル100のポケモンも通常通り努力値を獲得できます。
+#define B_RECALCULATE_STATS         GEN_LATEST // 第5世代以降では、戦闘に参加したポケモンのステータスが、各戦闘の終了時に再計算されます。
 
-// Damage settings
-#define B_BURN_DAMAGE               GEN_LATEST // In Gen7+, burn damage is 1/16th of max HP instead of 1/8th. Also applies to Frostbite.
-#define B_BURN_FACADE_DMG           GEN_3 // In Gen6+, burn's effect of lowering the Attack stat no longer applies to Facade.
-#define B_BINDING_DAMAGE            GEN_LATEST // In Gen6+, binding damage is 1/8 of max HP instead of 1/16. (With Binding Band, 1/6 and 1/8 respectively.)
-#define B_PSYWAVE_DMG               GEN_LATEST // Psywave's damage formula. See DoFixedDamageMoveCalc for details.
-#define B_PAYBACK_SWITCH_BOOST      GEN_LATEST // In Gen5+, if the opponent switches out, Payback's damage will no longer be doubled.
-#define B_HIDDEN_POWER_DMG          GEN_3 // In Gen6+, Hidden Power's base power was set to always be 60. Before, it was determined by the mon's IVs.
-#define B_ROUGH_SKIN_DMG            GEN_LATEST // In Gen4+, Rough Skin contact damage is 1/8th of max HP instead of 1/16th. This will also affect Iron Barbs.
-#define B_KNOCK_OFF_DMG             GEN_LATEST // In Gen6+, Knock Off deals 50% more damage when knocking off an item.
-#define B_SPORT_DMG_REDUCTION       GEN_LATEST // In Gen5+, Water/Mud Sport reduce Fire/Electric Damage by 67% instead of 50%.
-#define B_EXPLOSION_DEFENSE         GEN_3 // In Gen5+, Self-Destruct and Explosion don't halve the targets' defense.
-#define B_PARENTAL_BOND_DMG         GEN_LATEST // In Gen7+, Parental Bond's second hit does 25% of the initial hits damage. Before, it did 50%.
-#define B_MULTIPLE_TARGETS_DMG      GEN_LATEST // In Gen4+, damage dealt by moves that hit multiple targets at once is reduced to 75%. In Gen3, it was 50%, unless the move hit the entire field, in which case there was no reduction.
+// ダメージ設定
+#define B_BURN_DAMAGE               GEN_6 // 第7世代以降、やけどによるダメージは最大HPの1/8ではなく1/16になりました。これは「しもやけ」にも同様に適用されます。
+#define B_BURN_FACADE_DMG           GEN_LATEST // 第6世代以降、やけどによる攻撃力低下の効果は「からげんき」には適用されなくなりました。
+#define B_BINDING_DAMAGE            GEN_LATEST // 第6世代以降、拘束ダメージは最大HPの1/16ではなく1/8になります（「しめつけバンド」を持たせている場合は、それぞれ1/6と1/8になります）。
+#define B_PSYWAVE_DMG               GEN_LATEST // 「サイコウェーブ」のダメージ計算式。詳細は DoFixedDamageMoveCalc を参照してください。
+#define B_PAYBACK_SWITCH_BOOST      GEN_LATEST // 第5世代以降では、相手が交代した場合、「しっぺがえし」のダメージは2倍にならなくなりました。
+#define B_HIDDEN_POWER_DMG          GEN_3 // 第6世代以降、「めざめるパワー」の威力は常に60に固定されるようになりました。それ以前は、ポケモンの個体値によって威力が決まっていました。
+#define B_ROUGH_SKIN_DMG            GEN_LATEST // 第4世代以降、「さめはだ」による接触ダメージは最大HPの1/16ではなく1/8になります。これは「てつのトゲ」にも同様に適用されます。
+#define B_KNOCK_OFF_DMG             GEN_LATEST // 第6世代以降、「はたきおとす」は相手の持ち物をはたき落とす際、ダメージが50%増加します。
+#define B_SPORT_DMG_REDUCTION       GEN_LATEST // 第5世代以降、「みずあそび」や「どろあそび」によるほのお・でんきタイプの技のダメージ軽減率は、50%ではなく67%になっています。
+#define B_EXPLOSION_DEFENSE         GEN_3 // 第5世代以降、「じばく」や「だいばくはつ」は、相手の防御を半分にしません。
+#define B_PARENTAL_BOND_DMG         GEN_LATEST // 第7世代以降、「おやこあい」による2回目の攻撃のダメージは、1回目の攻撃の25%になりました。それ以前は50%でした。
+#define B_MULTIPLE_TARGETS_DMG      GEN_LATEST // 第4世代以降、複数の対象を同時に攻撃する技のダメージは75%に軽減されます。第3世代では50%でしたが、フィールド全体を攻撃する技の場合は軽減されませんでした。
 
-// Type settings
-#define B_GHOSTS_ESCAPE             GEN_3 // In Gen6+, abilities like Shadow Tag or moves like Mean Look fail on Ghost-type Pokemon. They can also escape any Wild Battle.
-#define B_PARALYZE_ELECTRIC         GEN_3 // In Gen6+, Electric-type Pokemon can't be paralyzed.
-#define B_POWDER_GRASS              GEN_3 // In Gen6+, Grass-type Pokemon are immune to powder and spore moves.
-#define B_UPDATED_TYPE_MATCHUPS     GEN_LATEST // Updates Type matchups. src/data/types_info.h for details.
-#define B_PRANKSTER_DARK_TYPES      GEN_3 // In Gen7+, Prankster-elevated status moves do not affect Dark type Pokemon.
-#define B_SHEER_COLD_IMMUNITY       GEN_3 // In Gen7+, Ice-types are immune to Sheer Cold
-#define B_ROOST_PURE_FLYING         GEN_4 // In Gen5+, Roost makes pure Flying-types into Normal-type.
-#define B_STATUS_TYPE_IMMUNITY      GEN_LATEST // In Gen1, Pokemon were immune to paralysis/freeze/burn side effects of attacking moves, if they shared a type with the move.
+// タイプ設定
+#define B_GHOSTS_ESCAPE             GEN_3 // 第6世代以降、「かげふみ」などの特性や「くろいまなざし」などの技は、ゴーストタイプのポケモンに対しては効果がありません。また、野生のポケモンとのバトルから逃げることも可能です。
+#define B_PARALYZE_ELECTRIC         GEN_3 // 第6世代以降、でんきタイプのポケモンはまひ状態になりません。
+#define B_POWDER_GRASS              GEN_3 // 第6世代以降、くさタイプのポケモンは粉・胞子技を無効化します。
+#define B_UPDATED_TYPE_MATCHUPS     GEN_LATEST // タイプ相性を更新しました。詳細は src/data/types_info.h を参照。
+#define B_PRANKSTER_DARK_TYPES      GEN_3 // 第7世代以降、「いたずらごころ」によって優先度が上がった変化技は、あくタイプのポケモンには無効です。
+#define B_SHEER_COLD_IMMUNITY       GEN_3 // 第7世代以降、こおりタイプは「ぜったいれいど」を無効化します。
+#define B_ROOST_PURE_FLYING         GEN_4 // 第5世代以降、「はねやすめ」は純粋なひこうタイプのポケモンをノーマルタイプに変化させます。
+#define B_STATUS_TYPE_IMMUNITY      GEN_LATEST // 第1世代では、攻撃技と同じタイプを持つポケモンは、その技の追加効果である「まひ」「こおり」「やけど」を受けませんでした。
 
-// Turn settings
-#define B_BINDING_TURNS             GEN_LATEST // In Gen5+, binding moves last for 4-5 turns instead of 2-5 turns. (With Grip Claw, 7 and 5 turns respectively.)
-#define B_UPROAR_TURNS              GEN_LATEST // In Gen5+, Uproar lasts for 3 turns instead of 2-5 turns.
-#define B_UPROAR_IGNORE_SOUNDPROOF  GEN_LATEST // In Gen5+, Uproar status ignores Soundproof.
-#define B_DISABLE_TURNS             GEN_LATEST // Disable's turns. See Cmd_disablelastusedattack.
-#define B_TAILWIND_TURNS            GEN_LATEST // In Gen5+, Tailwind lasts 4 turns instead of 3.
-#define B_SLEEP_TURNS               GEN_LATEST // In Gen5+, sleep lasts for 2-4 turns instead of 2-5 turns.
-#define B_TAUNT_TURNS               GEN_LATEST // In Gen5+, Taunt lasts 3 turns if the user acts before the target, or 4 turns if the target acted before the user. In Gen3, taunt lasts 2 turns and in Gen 4, 3-5 turns.
-#define B_ENCORE_TURNS              GEN_LATEST // In Gen5+, Encore lasts 3 turns if the target hasn't yet moved this turn, or 4 turns if it has. In Gen4, it lasts 3-7 turns. In Gen2-3, 2-6 turns.
-#define B_SPORT_TURNS               GEN_LATEST // In Gen6+, Water/Mud Sport last 5 turns, even if the user switches out.
-#define B_MEGA_EVO_TURN_ORDER       GEN_LATEST // In Gen7, a Pokemon's Speed after Mega Evolution is used to determine turn order, not its Speed before.
-#define B_RECALC_TURN_AFTER_ACTIONS GEN_LATEST // In Gen8+, switching/using a move affects the current turn's order of actions, better known as dynamic speed.
-#define B_FAINT_SWITCH_IN           GEN_LATEST // In Gen4+, sending out a new Pokemon after the previous one fainted happens at the end of the turn. Before, it would happen after each action.
+// ターン設定
+#define B_BINDING_TURNS             GEN_LATEST // 第5世代以降、拘束技の継続ターン数は2～5ターンではなく4～5ターンになりました（「しめつけバンド」を持たせている場合は、それぞれ7ターンと5ターンになります）。
+#define B_UPROAR_TURNS              GEN_LATEST // 第5世代以降、「さわぐ」の継続ターン数は2～5ターンではなく3ターンになりました。
+#define B_UPROAR_IGNORE_SOUNDPROOF  GEN_LATEST // 第5世代以降、「さわぐ」状態の効果は特性「ぼうおん」を無視します。
+#define B_DISABLE_TURNS             GEN_LATEST // 「かなしばり」のターン。Cmd_disablelastusedattack を参照してください。
+#define B_TAILWIND_TURNS            GEN_LATEST // 第5世代以降、「おいかぜ」の持続ターン数は3ターンから4ターンになりました。
+#define B_SLEEP_TURNS               GEN_LATEST // 第5世代以降では、ねむりの継続ターン数が2〜5ターンから2〜4ターンに変更されました。
+#define B_TAUNT_TURNS               GEN_LATEST // 第5世代以降では、「ちょうはつ」の効果は、使用者が対象より先に行動した場合は3ターン、対象が使用者より先に行動した場合は4ターン持続します。第3世代では2ターン、第4世代では3～5ターン持続します。
+#define B_ENCORE_TURNS              GEN_LATEST // 第5世代以降、「アンコール」の効果は、対象がそのターンにまだ行動していない場合は3ターン、すでに行動済みの場合は4ターン持続します。第4世代では3～7ターン、第2・3世代では2～6ターン持続します。
+#define B_SPORT_TURNS               GEN_LATEST // 第6世代以降、「みずあそび」や「どろあそび」の効果は、使用者が交代しても5ターンの間持続します。
+#define B_MEGA_EVO_TURN_ORDER       GEN_LATEST // 第7世代では、行動順を決定する際、メガシンカ前の素早さではなく、メガシンカ後の素早さが参照されます。
+#define B_RECALC_TURN_AFTER_ACTIONS GEN_LATEST // 第8世代以降では、交代や技の使用がそのターンの行動順に影響を及ぼします。これは一般的に「ダイナミック・スピード」として知られています。
+#define B_FAINT_SWITCH_IN           GEN_LATEST // 第4世代以降では、前のポケモンがひんしになった後に新しいポケモンを出す処理はターンの最後に行われますが、それ以前は各行動の直後に行われていました。
 
-// Move data settings
-#define B_UPDATED_MOVE_DATA         GEN_LATEST // Updates move data in gMovesInfo, including Power, Accuracy, PP, stat changes, targets and chances of secondary effects.
-#define B_UPDATED_MOVE_TYPES        GEN_LATEST // Updates move types.
-#define B_UPDATED_MOVE_FLAGS        GEN_LATEST // Updates move flags.
-#define B_PHYSICAL_SPECIAL_SPLIT    GEN_LATEST // In Gens1-3, the move's type determines if it will do physical or special damage. The split icon in the summary will reflect this.
-#define B_RECOIL_IF_MISS_DMG        GEN_LATEST // In Gen5+, Jump Kick and High Jump Kick will always do half of the user's max HP when missing.
-#define B_KLUTZ_FLING_INTERACTION   GEN_LATEST // In Gen5+, Pokemon with the Klutz ability can't use Fling.
-#define B_UPDATED_CONVERSION        GEN_LATEST // In Gen6+, Conversion changes the user's type to match their first move's. Before, it would choose a move at random.
-#define B_UPDATED_CONVERSION_2      GEN_LATEST // In Gen5+, Conversion 2 changes the user's type to a type that resists the last move used by the selected target. Before, it would consider the last move being successfully hit by. Additionally, Struggle is considered Normal type before Gen 5.
-#define B_PP_REDUCED_BY_SPITE       GEN_LATEST // In Gen4+, Spite reduces the foe's last move's PP by 4, instead of 2 to 5.
-#define B_EXTRAPOLATED_MOVE_FLAGS   TRUE       // Adds move flags to moves that they don't officially have but would likely have if they were in the latest core series game.
-#define B_HIDDEN_POWER_COUNTER      GEN_LATEST // Prior to Gen4, Counter and Mirror Coat treat Hidden Power as Physical regardless of type.
-#define B_MODERN_TRICK_CHOICE_LOCK  GEN_LATEST // In Gen5+, if a Choice Item is swapped for a Choice Item, the Trick/Switcheroo user can pick another move, and then they'll be locked into it.
-#define B_PROTECT_FAILURE_RATE      GEN_LATEST // In Gen5+, protect moves fails 1/3 of the time instead of 1/2
+// ワザデータ設定
+#define B_UPDATED_MOVE_DATA         GEN_LATEST // 更新処理により、威力、命中率、PP、能力変化、対象、追加効果の発生確率など、gMovesInfo内のデータが更新されます。
+#define B_UPDATED_MOVE_TYPES        GEN_LATEST // 技タイプをアップデート
+#define B_UPDATED_MOVE_FLAGS        GEN_LATEST // 技フラグをアップデート
+#define B_PHYSICAL_SPECIAL_SPLIT    GEN_LATEST // 第1〜3世代では、物理ダメージを与えるか特殊ダメージを与えるかは、技のタイプによって決まります。ステータス画面の「分類」アイコンには、この仕様が反映されます。
+#define B_RECOIL_IF_MISS_DMG        GEN_LATEST // 第5世代以降、「とびげり」と「とびひざげり」は外すと、必ず使用者の最大HPの半分のダメージを受けます。
+#define B_KLUTZ_FLING_INTERACTION   GEN_LATEST // 第5世代以降、特性「ぶきよう」を持つポケモンは「なげつける」を使うことができません。
+#define B_UPDATED_CONVERSION        GEN_LATEST // 第6世代以降、「テクスチャー」は使用者のタイプを「覚えている技の1番目」のタイプと同じものに変化させるようになりました。それ以前は、ランダムに技が選ばれていました。
+#define B_UPDATED_CONVERSION_2      GEN_LATEST // 第5世代以降、「テクスチャー2」は、選択した相手が直前に使用した技に対して耐性を持つタイプへと、自身のタイプを変化させる技となりました。それ以前の世代では、自身が直前に受けた技（実際に命中した技）が対象となっていました。なお、第5世代より前では、「わるあがき」はノーマルタイプの技として扱われます。
+#define B_PP_REDUCED_BY_SPITE       GEN_LATEST // 第4世代以降、「うらみ」は相手が最後に使った技のPPを2～5ではなく4減らす。
+#define B_EXTRAPOLATED_MOVE_FLAGS   TRUE       // 公式には設定されていないものの、最新のメインシリーズ作品に登場していればおそらく持っているであろう「技フラグ」を、各技に追加します。
+#define B_HIDDEN_POWER_COUNTER      GEN_LATEST // 第4世代以前では、「カウンター」と「ミラーコート」は、タイプにかかわらず「めざめるパワー」を物理技として扱います。
+#define B_MODERN_TRICK_CHOICE_LOCK  GEN_LATEST // 第5世代以降では、「こだわり」系アイテム同士を「トリック」や「すりかえ」で交換した場合、その技の使い手は別の技を選択でき、その後はその技に固定されることになります。
+#define B_PROTECT_FAILURE_RATE      GEN_LATEST // 第5世代以降、「まもる」などの技が失敗する確率は1/2ではなく1/3になりました。
 
-// Ability data settings
-#define B_UPDATED_ABILITY_DATA      GEN_LATEST // Affects flags
+// 特性データ設定
+#define B_UPDATED_ABILITY_DATA      GEN_LATEST // フラグに影響します
 
-// Move accuracy settings
-#define B_TOXIC_NEVER_MISS          GEN_LATEST // In Gen6+, if Toxic is used by a Poison-type Pokemon, it will never miss.
-#define B_MINIMIZE_DMG_ACC          GEN_LATEST // In Gen6+, moves that causes double damage to minimized Pokemon will also skip accuracy checks.
-#define B_BLIZZARD_HAIL             GEN_LATEST // In Gen4+, Blizzard bypasses accuracy checks if it's hailing.
-#define B_SHEER_COLD_ACC            GEN_3 // In Gen7+, Sheer Cold's base chance of hitting is reduced to 20% if the user isn't Ice-typed.
+// 技の命中率設定
+#define B_TOXIC_NEVER_MISS          GEN_LATEST // 第6世代以降、毒タイプのポケモンが「どくどく」を使用した場合、必中。
+#define B_MINIMIZE_DMG_ACC          GEN_LATEST // 第6世代以降、「ちいさくなる」状態のポケモンに対して2倍のダメージを与える技は、必中になる。
+#define B_BLIZZARD_HAIL             GEN_LATEST // 第4世代以降では、あられ状態の際、「ふぶき」必中。
+#define B_SHEER_COLD_ACC            GEN_3 // 第7世代以降、使用者がこおりタイプでない場合、「ぜったいれいど」の基本命中率は20%に低下します。
 
-// Move stat change settings
-#define B_FELL_STINGER_STAT_RAISE   GEN_LATEST // In Gen7+, it raises Atk by 3 stages instead of 2 if it causes the target to faint.
-#define B_KINGS_SHIELD_LOWER_ATK    GEN_LATEST // In Gen8+, it lowers Atk by 1 stage instead of 2 of opponents that hit it.
-#define B_SPEED_BUFFING_RAPID_SPIN  GEN_LATEST // In Gen8+, Rapid Spin raises the user's Speed by 1 stage.
-#define B_CHARGE_SPDEF_RAISE        GEN_LATEST // In Gen5+, Charge raises the user's Special Defense by 1 stage.
-#define B_MINIMIZE_EVASION          GEN_LATEST // In Gen5+, Minimize raises evasion by 2 stages instead of 1.
-#define B_GROWTH_STAT_RAISE         GEN_LATEST // In Gen5+, Under the effects of the sun, it raises them by 2 stages each instead.
-#define B_FOCUS_ENERGY_CRIT_RATIO   GEN_LATEST // In Gen3+, Focus Energy increases critical hit ratio by 2 instead of 1.
-#define B_PSYCH_UP_CRIT_RATIO       GEN_LATEST // In Gen6+, Psych Up also copies the target's critical hit ratio.
+// ステータス変化技の設定
+#define B_FELL_STINGER_STAT_RAISE   GEN_LATEST // 第7世代以降では、対象をひんし状態にした場合、攻撃が2段階ではなく3段階上昇します。（とどめばり）
+#define B_KINGS_SHIELD_LOWER_ATK    GEN_LATEST // 第8世代以降では、攻撃してきた相手の攻撃を2段階ではなく1段階下げます。（キングシールド）
+#define B_SPEED_BUFFING_RAPID_SPIN  GEN_LATEST // 第8世代以降、「こうそくスピン」は使用者の素早さを1段階上昇させる。
+#define B_CHARGE_SPDEF_RAISE        GEN_LATEST // 第5世代以降、「じゅうでん」は使用者の特防を1段階上昇させる。
+#define B_MINIMIZE_EVASION          GEN_LATEST // 第5世代以降、「ちいさくなる」は回避率を1段階ではなく2段階上昇させる。
+#define B_GROWTH_STAT_RAISE         GEN_LATEST // 第5世代以降、晴れ状態では、それぞれ2段階上昇するようになります。（せいちょう）
+#define B_FOCUS_ENERGY_CRIT_RATIO   GEN_LATEST // 第3世代以降、「きあいだめ」による急所率の上昇幅は1段階ではなく2段階になります。
+#define B_PSYCH_UP_CRIT_RATIO       GEN_LATEST // 第6世代以降、「じこあんじ」は対象の急所率もコピーする。
 
-// Other move settings
-#define B_INCINERATE_GEMS           GEN_LATEST // In Gen6+, Incinerate can destroy Gems.
-#define B_CAN_SPITE_FAIL            GEN_LATEST // In Gen4+, Spite can no longer fail if the foe's last move only has 1 remaining PP.
-#define B_CRASH_IF_TARGET_IMMUNE    GEN_LATEST // In Gen4+, moves with crash damage will crash if the user attacks a target that is immune due to their typing.
-#define B_MEMENTO_FAIL              GEN_LATEST // In Gen4+, Memento no longer fails if the target already has -6 Attack and Special Attack. Additionally, in Gen5+, it fails if there is no target, or if the target is protected or behind a Substitute.
-#define B_PARTING_SHOT_SWITCH       GEN_LATEST // In Gen7+, the user won't switch out if Parting Shot fails to lower the target's stats.
-#define B_BATON_PASS_TRAPPING       GEN_LATEST // In Gen5+, Baton Pass does not keep trapping effects on other battlers when the user switches out.
-#define B_GLARE_GHOST               GEN_LATEST // In Gen4+, Glare can hit Ghost-type Pokemon normally.
-#define B_SKILL_SWAP                GEN_LATEST // In Gen4+, Skill Swap triggers switch-in abilities after use.
-#define B_BRICK_BREAK               GEN_LATEST // In Gen4+, you can destroy your own side's screens. In Gen 5+, screens are not removed if the target is immune.
-#define B_WISH_HP_SOURCE            GEN_LATEST // In Gen5+, Wish heals half of the user's max HP instead of the target's.
-#define B_RAMPAGE_CONFUSION         GEN_LATEST // In Gen5+, Rampage is canceled after the move (as opposed to End Turn) and a failed rampage move will cancel the counter unless it is the last turn
-#define B_HEAL_BLOCKING             GEN_LATEST // In Gen5+, Heal Block prevents healing by Black Sludge, Leftovers, Shell Bell. Affected Pokemon will not consume held HP-restoring Berries or Berry Juice.
-                                               // Draining abilities will not heal but will prevent damage. In Gen6+, Heal Block prevents the use of most HP-draining moves.
-#define B_ROOTED_GROUNDING          GEN_LATEST // In Gen4+, Ingrain causes the affected Pokemon to become grounded.
-#define B_METRONOME_MOVES           GEN_LATEST // This config will determine up to which generation will Metronome pull moves from.
-#define B_TELEPORT_BEHAVIOR         GEN_LATEST // In LGPE onwards (Gen8+ here), Teleport allows the user to swap out with another party member.
-#define B_BEAT_UP                   GEN_LATEST // In Gen5+, Beat Up uses a different formula to calculate its damage, and deals Dark-type damage. Prior to Gen 5, each hit also announces the party member's name.
-#define B_DARK_VOID_FAIL            GEN_LATEST // In Gen7+, only Darkrai can use Dark Void.
-#define B_HIT_THAW                  GEN_LATEST // In Gen6+, damaging moves that thaw the user will thaw the target. In Gen 3+, Fire-type moves thaw the target. In Gen 1-2, damaging moves that can burn will thaw the target, regardless if they can be burned or not.
-#define B_HEALING_WISH_SWITCH       GEN_LATEST // In Gen5+, the mon receiving Healing Wish is sent out at the end of the turn.
-                                               // Additionally, in gen8+ the Healing Wish's effect will be stored until the user switches into a statused or hurt mon.
-#define B_DEFOG_EFFECT_CLEARING     GEN_LATEST // In Gen5+, Defog does not lower Evasion of target behind Subsitute. In Gen6+, Defog clears Spikes, Toxic Spikes, Stealth Rock and Sticky Web from both sides. In Gen8+, Defog also clears active Terrain.
-#define B_STOCKPILE_RAISES_DEFS     GEN_LATEST // CONFIG DOES NOT WORK! In Gen4+, Stockpile also raises Defense and Sp. Defense stats. Once Spit Up / Swallow is used, these stat changes are lost.
-#define B_TRANSFORM_SEMI_INV_FAIL   GEN_LATEST // In Gen2+, Transform fails if the target is semi-invulnerable.
-#define B_TRANSFORM_TARGET_FAIL     GEN_LATEST // In Gen2+, Transform fails if the target is already transformed.
-#define B_TRANSFORM_USER_FAIL       GEN_LATEST // In Gen5+, Transform fails if the user is already transformed.
-#define B_TRANSFORM_SUBSTITUTE_FAIL GEN_LATEST // In Gen5+, Transform fails if the target is behind a Substitute.
-#define B_TRANSFORM_SHINY           GEN_LATEST // In Gen4+, Transform will copy the shiny state of the opponent instead of maintaining its own shiny state.
-#define B_TRANSFORM_CATCH_RATE      GEN_LATEST // In Gen3 and Geb 4, Transform'ed will have the catch rate of the tranformed species but they will keep their original catch rate in other generations
-#define B_TRANSFORM_BATTLE_REWARDS  GEN_LATEST // In Gen3 and Gen 4, a Transform'ed Pokemon will give the xp and ev yield of its copied species whereas it gives the xp and ev yield of the original species in other gens
-#define B_TRANSFORM_FORM_CHANGES    GEN_LATEST // In Gen5+, Transformed Pokemon cannot change forms.
-#define B_WIDE_GUARD                GEN_LATEST // In Gen5 only, Wide Guard has a chance to fail if used consecutively.
-#define B_QUICK_GUARD               GEN_LATEST // In Gen5 only, Quick Guard has a chance to fail if used consecutively.
-#define B_IMPRISON                  GEN_LATEST // In Gen5+, Imprison doesn't fail if opposing Pokemon don't have any moves the user knows.
-#define B_TAUNT_ME_FIRST            GEN_LATEST // In Gen5+, Taunt does not block Me First.
-#define B_ALLY_SWITCH_FAIL_CHANCE   GEN_LATEST // In Gen9+, using Ally Switch consecutively decreases the chance of success for each consecutive use.
-#define B_SKETCH_BANS               GEN_LATEST // In Gen9+, Sketch is unable to copy more moves than in previous generations.
-#define B_KNOCK_OFF_REMOVAL         GEN_LATEST // In Gen5+, Knock Off removes the foe's item instead of rendering it unusable.
-#define B_HEAL_BELL_SOUNDPROOF      GEN_LATEST // In Gen5, Heal Bell affects all mons with Soundproof.  In Gen6-8 it affects inactive mons, but not battlers. In Gen9 it always affects the user.
-#define B_CHARGE                    GEN_LATEST // In Gen9+, Charge status is lost regardless of the typing of the next move.
-#define B_POWDER_STATUS_HEAVY_RAIN  GEN_LATEST // In Gen7+, Powder doesn't damage the user of a Fire type move in heavy rain.
-#define B_AFTER_YOU_TURN_ORDER      GEN_LATEST // In Gen8+, After You doesn't fail if the turn order wouldn't change after use.
-#define B_QUASH_TURN_ORDER          GEN_LATEST // In Gen8+, Quash-affected battlers move according to speed order. Before Gen8, Quash-affected battlers move in the order they were affected by Quash.
-#define B_DESTINY_BOND_FAIL         GEN_LATEST // In Gen7+, Destiny Bond fails if used repeatedly.
-#define B_FORESIGHT_FAIL            GEN_LATEST // In Gen2 and Gen5+, Foresight fails if used against a target already under its effect.
-#define B_MIRACLE_EYE_FAIL          GEN_LATEST // In Gen5+, Miracle Eye fails if used against a target already under its effect.
-#define B_PURSUIT_TARGET            GEN_LATEST // In Gen4+, Pursuit attacks a switching opponent even if they weren't targeting them. Before Gen4, Pursuit only attacks a switching opponent that it originally targeted.
-#define B_SKIP_RECHARGE             GEN_LATEST // In Gen1, recharging moves such as Hyper Beam skip the recharge if the target gets KO'd
-#define B_ENCORE_TARGET             GEN_LATEST // In Gen5+, encored moves are allowed to choose a target
-#define B_TIME_OF_DAY_HEALING_MOVES GEN_LATEST // In Gen2, Morning Sun, Moonlight, and Synthesis heal twice as much HP based off the time of day. Also changes how much they heal. Evening affects Moonlight.
-                                               // If OW_TIMES_OF_DAY is set to Gen 3, then Morning Sun is boosted during the day.
-#define B_DREAM_EATER_LIQUID_OOZE   GEN_LATEST // In Gen5+, Dream Eater is affected by Liquid Ooze.
-#define B_DREAM_EATER_SUBSTITUTE    GEN_LATEST // In Gen5+, Dream Eater can successfully hit and drain from a Substitute.
-#define B_SNATCH                    GEN_LATEST // In Gen5+, Snatch no longer steals moves that were already stolen by another Pokemon's Snatch on the same turn.
-#define B_FOCUS_PUNCH_FAILURE       GEN_LATEST // To determine if Focus is lost, in Gen4-, check if the current move is Focus Punch.
-                                               // In Gens 5-6, check if the selected move is Focus Punch.
-                                               // In Gen7+, check if the current move and the selected move are Focus Punch.
-                                               // Also in Gen4-, the check for Focus Punch fail will occur after effects like pp consumption and flinching while it happens before in Gen5+
-#define B_COUNTER_MIRROR_COAT_ALLY  GEN_LATEST // In Gen5+, an ally's attack does not count for uses of Counter/Mirror Coat/Metal Burst. In Gen4-, if the last attack taken was from an ally, Counter/Mirror Coat/Metal Burst would fail.
-#define B_COUNTER_TRY_HIT_PARTNER   GEN_LATEST // In Gen5+, if the user of the last attack is not on the field, it will be redirected to the partner. In Gen4-, Counter/Mirror Coat/Metal Burst would fail.
-#define B_RAGE_BUILDS               GEN_LATEST // In Gen4+, Rage's effect only sets in when it successfully hits. In Gen3, Rage's effect sets in regardless of whether it hits, misses or fails.
-#define B_CHECK_USER_FAILURE        GEN_LATEST // In Gen5+, The user no longer checks it's own failure, e.g. Soundproof will not block it's own Perish Song
-#define B_ABSORB_MESSAGE            GEN_LATEST // In Gen5+, no absorb message is played if user is already at full hp.
-#define B_UPROAR                    GEN_LATEST // In Gen5+, Uproar awakens all battlers on the first turn if successful. In Gens 3-4, Uproar allows every battler to awaken before their action or at the end of a turn.
+// その他技設定
+#define B_INCINERATE_GEMS           GEN_LATEST // 第6世代以降、「やきつくす」は「ジュエル」を破壊できます。
+#define B_CAN_SPITE_FAIL            GEN_LATEST // 第4世代以降、「うらみ」は、相手が最後に使用した技の残りPPが1であっても失敗しなくなりました。
+#define B_CRASH_IF_TARGET_IMMUNE    GEN_LATEST // 第4世代以降、反動ダメージを伴う技は、タイプ相性によって無効化する相手に対して使用した場合でも、反動ダメージが発生します。
+#define B_MEMENTO_FAIL              GEN_LATEST // 第4世代以降、「おきみやげ」は対象の「こうげき」と「とくこう」が既に-6段階の状態であっても失敗しなくなりました。また、第5世代以降は、対象が存在しない場合や、対象が「まもる」状態または「みがわり」状態である場合には失敗します。
+#define B_PARTING_SHOT_SWITCH       GEN_LATEST // 第7世代以降、「すてゼリフ」が相手の能力を下げることに失敗した場合、使用者は交代しません。
+#define B_BATON_PASS_TRAPPING       GEN_LATEST // 第5世代以降、「バトンタッチ」を使用しても、使用者が交代する際に他のポケモンに対する拘束状態の効果は引き継がれません。
+#define B_GLARE_GHOST               GEN_LATEST // 第4世代以降、「にらみつける」はゴーストタイプのポケモンにも通常通り命中するようになりました。
+#define B_SKILL_SWAP                GEN_LATEST // 第4世代以降、「スキルスワップ」の使用後、場に出た際に発動する特性が発動します。
+#define B_BRICK_BREAK               GEN_LATEST // 第4世代以降では、自陣の壁を破壊することができます。第5世代以降では、対象がその効果を無効化する場合でも、壁は解除されません。（かわらわり）
+#define B_WISH_HP_SOURCE            GEN_LATEST // 第5世代以降、「ねがいごと」は対象の最大HPではなく、使用者の最大HPの半分を回復します。
+#define B_RAMPAGE_CONFUSION         GEN_LATEST // 第5世代以降、「げきりん」は技の使用直後に終了します（ターン終了時ではありません）。また、技が失敗した場合、最終ターンでなければカウントはリセットされます。
+#define B_HEAL_BLOCKING             GEN_LATEST // 第5世代以降、「かいふくふうじ」は「くろいヘドロ」、「たべのこし」、「かいがらのすず」による回復を防ぎます。効果を受けているポケモンは、持っているHP回復用のきのみや「きのみジュース」を消費しません。
+                                               // HPを吸収する技は、HPを回復させる効果は発揮しませんが、ダメージを防ぐことはできます。第6世代以降では、「かいふくふうじ」状態になると、HPを吸収する技の大部分が使用できなくなります。
+#define B_ROOTED_GROUNDING          GEN_LATEST // 第4世代以降、「ねをはる」は、効果を受けたポケモンを地面にいる状態にします。
+#define B_METRONOME_MOVES           GEN_LATEST // この設定は、「ゆびをふる」で技が選ばれる対象となる世代の範囲を決定します。
+#define B_TELEPORT_BEHAVIOR         GEN_LATEST // ピカブイ以降（ここでは第8世代以降を指します）、「テレポート」を使うと、手持ちの別のポケモンと交代できるようになりました。
+#define B_BEAT_UP                   GEN_LATEST // 第5世代以降、「ふくろだたき」のダメージ計算式は変更され、あくタイプのダメージを与えるようになりました。第5世代より前は、攻撃が当たるたびに、その技を繰り出すパーティメンバーの名前が表示されていました。
+#define B_DARK_VOID_FAIL            GEN_4 // 第7世代以降では、ダークライのみが「ダークホール」を使用できます。
+#define B_HIT_THAW                  GEN_LATEST // 第6世代以降では、使用者のこおり状態を解除する効果を持つダメージ技は、相手のこおり状態も解除します。第3世代以降では、ほのおタイプの技は相手のこおり状態を解除します。第1・2世代では、やけど状態にする可能性のあるダメージ技は、相手がやけど状態になり得るかどうかにかかわらず、相手のこおり状態を解除します。
+#define B_HEALING_WISH_SWITCH       GEN_LATEST // 第5世代以降、「いやしのねがい」を受けるポケモンは、ターンの終了時に場に出ます。
+                                               // さらに、第8世代以降では、「いやしのねがい」の効果は、状態異常またはダメージを受けたポケモンが場に出るまで保持されます。
+#define B_DEFOG_EFFECT_CLEARING     GEN_LATEST // 第5世代以降、「きりばらい」は「みがわり」状態の相手の回避率を下げません。第6世代以降、「きりばらい」は双方の場の「まきびし」「どくびし」「ステルスロック」「ねばねばネット」を除去します。第8世代以降、「きりばらい」は展開中の「フィールド」も解除します。
+#define B_STOCKPILE_RAISES_DEFS     GEN_LATEST // この設定は機能しません！第4世代以降では、「たくわえる」は防御と特防の能力も上昇させます。「はきだす」や「のみこむ」を使用すると、これらの能力変化は失われます。
+#define B_TRANSFORM_SEMI_INV_FAIL   GEN_LATEST // 第2世代以降、対象が隠れている状態の場合、「へんしん」は失敗します。
+#define B_TRANSFORM_TARGET_FAIL     GEN_LATEST // 第2世代以降、対象が既に変身している場合、「へんしん」は失敗します。
+#define B_TRANSFORM_USER_FAIL       GEN_LATEST // 第5世代以降、使用者が既に変身している場合、「へんしん」は失敗します。
+#define B_TRANSFORM_SUBSTITUTE_FAIL GEN_LATEST // 第5世代以降、対象が「みがわり」状態にある場合、「へんしん」は失敗します。
+#define B_TRANSFORM_SHINY           GEN_LATEST // 第4世代以降、「へんしん」を使用すると、自身の「色違い」の状態を維持するのではなく、相手の「色違い」の状態をコピーするようになります。
+#define B_TRANSFORM_CATCH_RATE      GEN_LATEST // 第3世代と第4世代では、変身したポケモンは変身後のポケモンの捕獲率になりますが、それ以外の世代では元の捕獲率が維持されます。
+#define B_TRANSFORM_BATTLE_REWARDS  GEN_LATEST // 第3・第4世代では、「へんしん」したポケモンはコピー先の種族に応じた経験値と努力値を与えますが、それ以外の世代では、元の種族に応じた経験値と努力値を与えます。
+#define B_TRANSFORM_FORM_CHANGES    GEN_LATEST // 第5世代以降では、「へんしん」したポケモンはフォルムチェンジできません。
+#define B_WIDE_GUARD                GEN_LATEST // 第5世代に限り、「ワイドガード」は連続して使用すると失敗する可能性があります。
+#define B_QUICK_GUARD               GEN_LATEST // 第5世代に限り、「ファストガード」を連続して使用すると失敗する可能性があります。
+#define B_IMPRISON                  GEN_LATEST // 第5世代以降、「ふういん」は、相手のポケモンが使用者と同じ技を覚えていなくても失敗しません。
+#define B_TAUNT_ME_FIRST            GEN_LATEST // 第5世代以降、「ちょうはつ」は「さきどり」を防ぎません。
+#define B_ALLY_SWITCH_FAIL_CHANCE   GEN_LATEST // 第9世代以降、「サイドチェンジ」を連続して使用すると、使用するたびに成功率が低下します。
+#define B_SKETCH_BANS               GEN_LATEST // 第9世代以降、「スケッチ」でコピーできる技の数は、それ以前の世代と比べて増えてはいません。
+#define B_KNOCK_OFF_REMOVAL         GEN_LATEST // 第5世代以降、「はたきおとす」は相手の持ち物を無効化するのではなく、除去するようになりました。
+#define B_HEAL_BELL_SOUNDPROOF      GEN_LATEST // 第5世代では、「いやしのすず」は特性「ぼうおん」を持つすべてのポケモンに効果が及びます。第6～8世代では、控えのポケモンには効果がありますが、場に出ているポケモンには効果がありません。第9世代では、常に使用者自身に効果が及びます。
+#define B_CHARGE                    GEN_8 // 第9世代以降では、次に出す技のタイプにかかわらず、「じゅうでん」状態は解除されます。
+#define B_POWDER_STATUS_HEAVY_RAIN  GEN_LATEST // 第7世代以降、大雨の状況下では、「こな」技はほのおタイプの技の使い手にダメージを与えません。
+#define B_AFTER_YOU_TURN_ORDER      GEN_LATEST // 第8世代以降、使用しても行動順が変わらない場合でも、「おさきにどうぞ」は失敗しません。
+#define B_QUASH_TURN_ORDER          GEN_LATEST // 第8世代以降、「さきおくり」を受けたポケモンは素早さ順に行動します。第8世代より前は、「さきおくり」を受けた順に行動していました。
+#define B_DESTINY_BOND_FAIL         GEN_LATEST // 第7世代以降、「みちづれ」を連続して使用すると失敗します。
+#define B_FORESIGHT_FAIL            GEN_LATEST // 第2世代および第5世代以降において、すでに「みやぶる」の効果を受けている対象に対して使用した場合、失敗します。
+#define B_MIRACLE_EYE_FAIL          GEN_LATEST // 第5世代以降、「ミラクルアイ」は、既に対象がその効果を受けている状態で使用すると失敗します。
+#define B_PURSUIT_TARGET            GEN_LATEST // 第4世代以降、「おいうち」は、たとえ攻撃対象として指定していなかった相手であっても、交代する相手を攻撃します。第4世代より前は、元々攻撃対象として指定していた相手が交代する場合にのみ、「おいうち」による攻撃が行われていました。
+#define B_SKIP_RECHARGE             GEN_LATEST // 第1世代では、「はかいこうせん」のような「はんどうで うごけない」技において、対象をひんしにした場合、行動不能にならない。
+#define B_ENCORE_TARGET             GEN_LATEST // 第5世代以降、アンコール状態の技でも対象を選択できます。
+#define B_TIME_OF_DAY_HEALING_MOVES GEN_2 // 第2世代では、時間帯に応じて「あさのひざし」「つきのひかり」「こうごうせい」の回復量が2倍になります。また、回復量そのものも変更されています。「つきのひかり」は夕方の時間帯の影響を受けます。
+                                               // OW_TIMES_OF_DAYがGen 3に設定されている場合、昼間は「あさのひざし」の効果が強化されます。
+#define B_DREAM_EATER_LIQUID_OOZE   GEN_LATEST // 第5世代以降、「ゆめくい」は「ヘドロえき」の影響を受けます。
+#define B_DREAM_EATER_SUBSTITUTE    GEN_LATEST // 第5世代以降、「ゆめくい」は「みがわり」状態の相手にも命中し、HPを吸収することができます。
+#define B_SNATCH                    GEN_LATEST // 第5世代以降、「よこどり」は、同じターンに別のポケモンの「よこどり」によって既に奪われた技を奪うことはできなくなりました。
+#define B_FOCUS_PUNCH_FAILURE       GEN_LATEST // 集中状態が解除されたかどうかを判定するには、第4世代以前の仕様において、"現在の技"が「きあいパンチ」であるかを確認してください。
+                                               // 第5・6世代において、"選択された技"が「きあいパンチ」かどうかを確認してください。
+                                               // 第7世代以降、"現在の技と選択された技"が「きあいパンチ」であるかを確認してください。
+                                               // また、第4世代以前では「きあいパンチ」の失敗判定はPP消費やひるみといった効果の処理後に行われますが、第5世代以降ではそれらの処理の前に行われます。
+#define B_COUNTER_MIRROR_COAT_ALLY  GEN_LATEST // 第5世代以降では、味方からの攻撃は「カウンター」「ミラーコート」「メタルバースト」の判定対象に含まれません。一方、第4世代以前では、直前に受けた攻撃が味方からのものであった場合、これらの技は失敗していました。
+#define B_COUNTER_TRY_HIT_PARTNER   GEN_LATEST // 第5世代以降、直前の攻撃の使い手が場にいない場合、その攻撃は味方のポケモンに向けられます。一方、第4世代以前では、「カウンター」「ミラーコート」「メタルバースト」は失敗します。
+#define B_RAGE_BUILDS               GEN_LATEST // 第4世代以降、「いかり」の効果は攻撃が命中した時にのみ発動します。一方、第3世代では、命中・回避・失敗のいずれであっても効果が発動します。
+#define B_CHECK_USER_FAILURE        GEN_LATEST // 第5世代以降、技の失敗判定を自分自身に対して行うことはなくなりました（例：「ぼうおん」の特性を持つポケモンが「ほろびのうた」を使っても、その効果が自分自身によって無効化されることはありません）。
+#define B_ABSORB_MESSAGE            GEN_LATEST // 第5世代以降、使用者のHPが既に満タンの場合、吸収時のメッセージは表示されません。
+#define B_UPROAR                    GEN_LATEST // 第5世代以降、「さわぐ」が成功すると、その最初のターンにすべてのバトル参加者が目を覚まします。一方、第3・4世代では、「さわぐ」の効果により、各バトル参加者は自身の行動前またはターンの終了時に目を覚まします。
 
-// Ability settings
-#define B_GALE_WINGS                GEN_LATEST // In Gen7+ requires full HP to trigger.
-#define B_STANCE_CHANGE_FAIL        GEN_LATEST // In Gen7+, Stance Change fails if the Pokemon is unable to use a move because of confusion, paralysis, etc. In Gen6, it doesn't.
-#define B_SHADOW_TAG_ESCAPE         GEN_LATEST // In Gen4+, if both sides have a Pokemon with Shadow Tag, all battlers can escape. Before, neither side could escape this situation.
-#define B_MOODY_ACC_EVASION         GEN_LATEST // In Gen8+, Moody CANNOT raise Accuracy and Evasion anymore.
-#define B_FLASH_FIRE_FROZEN         GEN_LATEST // In Gen5+, Flash Fire can trigger even when frozen, when it couldn't before.
-#define B_SYNCHRONIZE_TOXIC         GEN_LATEST // In Gen5+, if a Pokemon with Synchronize is badly poisoned, the opponent will also become badly poisoned. Previously, the opponent would become regular poisoned.
-#define B_UPDATED_INTIMIDATE        GEN_LATEST // In Gen8+, Intimidate doesn't work on opponents with the Inner Focus, Scrappy, Own Tempo or Oblivious abilities. It also activates Rattled.
-#define B_OBLIVIOUS_TAUNT           GEN_LATEST // In Gen6+, Pokemon with Oblivious can't be taunted.
-#define B_STURDY                    GEN_LATEST // In Gen5+, Sturdy causes the Pokemon to have 1 HP remaining if another Pokemon's attack or confusion damage would have brought it from full health to 0 HP.
-#define B_PLUS_MINUS_INTERACTION    GEN_LATEST // In Gen5+, Plus and Minus can be activated with themselves and the opposite ability. Before, only the opposing ability could activate it.
-#define B_WEATHER_FORMS             GEN_LATEST // In Gen5+, Castform and Cherrim revert to their base form upon losing their respective ability. Cherrim needs Flower Gift to swap forms.
-#define B_SYMBIOSIS_GEMS            GEN_LATEST // In Gen7+, Symbiosis passes an item after a gem-boosted attack. Previously, items are passed before the gem-boosted attack hits, making the item effect apply.
-#define B_REDIRECT_ABILITY_IMMUNITY GEN_LATEST // In Gen5+, Pokemon with Lightning Rod/Storm Drain become immune to Electric/Water-type moves and increase their Sp. Attack by 1 stage on top of the redirecting effect.
-#define B_REDIRECT_ABILITY_ALLIES   GEN_LATEST // In Gen4+, Lightning Rod/Storm Drain redirect ally's moves as well.
-#define B_LEAF_GUARD_PREVENTS_REST  GEN_LATEST // In Gen5+, Leaf Guard prevents the use of Rest in harsh sunlight.
-#define B_TRANSISTOR_BOOST          GEN_8 // In Gen9+, Transistor will only boost Electric-type moves by 1.3x as opposed to 1.5x.
-#define B_ILLUMINATE_EFFECT         GEN_LATEST // In Gen9+, Illuminate prevents accuracy reductions and ignores the target's evasion.
-#define B_WEAK_ARMOR_SPEED          GEN_LATEST // In Gen7+, Weak Armor raises Speed by 2 stages instead of 1 when hit by a physical move.
-#define B_PROTEAN_LIBERO            GEN_LATEST // In Gen9+, Protean and Libero change the user's type only once per Battle.
-#define B_INTREPID_SWORD            GEN_LATEST // In Gen9+, Intrepid Sword raises Attack by one stage only once per Battle.
-#define B_DAUNTLESS_SHIELD          GEN_LATEST // In Gen9+, Dauntless Shield raises Defense by one stage only once per Battle.
-#define B_DISGUISE_HP_LOSS          GEN_7 // In Gen8+, when a Disguised Mimikyu's Disguise is busted, upon changing to its Busted Form it loses HP equal to 1/8 of its maximum HP.
-#define B_ABILITY_TRIGGER_CHANCE    GEN_LATEST // In Gen3, Shed Skin, Cute Charm, Flame Body, Static and Poison Point have a 1/3 chance to trigger. In Gen 4+ it's 30%.
-                                               // In Gen3, Effect Spore has a 10% chance to sleep, poison or paralyze, with an equal chance.
-                                               // In Gen4, it's 30%. In Gen5+ it has 11% to sleep, 9% chance to poison and 10% chance to paralyze.
-#define B_PICKUP_WILD               GEN_LATEST // In Gen9+, Pickup allows its user to pickup its own used item at the end of the turn in wild battles.
-#define B_MAGIC_GUARD               GEN_LATEST // In Gen4 only, Magic Guard ignores immobilization caused by paralysis
-#define B_BATTLE_BOND               GEN_LATEST // In Gen9+, Battle Bond increases Atk, SpAtk and Speed by one stage, once per battle
-#define B_ATE_MULTIPLIER            GEN_LATEST // In Gen7+, -ate abilities (Aerilate, Galvanize, Normalize, Pixilate, Refrigerate) multiply damage by 1.2. Otherwise, it's 1.3, except Normalize which has no multiplier.
-#define B_DEFIANT_STICKY_WEB        GEN_LATEST // In Gen9+, Defiant activates on Sticky Web regardless of who set it up. In Gen8, Defiant does not activate on Sticky Web set up by an ally after Court Change swaps its side.
-#define B_MIRROR_ARMOR_STICKY_WEB   GEN_LATEST // In Gen9+, Mirror Armor does not reflect the Sticky Web stat change even if the original Sticky Web user is still on the field
-#define B_POWDER_OVERCOAT           GEN_LATEST // In Gen6+, Overcoat blocks powder and spore moves from affecting the user.
-#define B_INFILTRATOR_SUBSTITUTE    GEN_LATEST // In Gen6+, Infiltrator bypasses Substitute when using a move, excluding Transform and Sky Drop.
-#define B_DANCER_ORDER              GEN_LATEST // In Gen8+, Dancer activations are based on Speed order including modifiers. In Gen7, Dancer activates from the slowest to fastest battler based on the battler's unmodified Speed stat.
+// 特性設定
+#define B_GALE_WINGS                GEN_6 // 第7世代以降、発動にはHPが満タンである必要があります。（はやてのつばさ）
+#define B_STANCE_CHANGE_FAIL        GEN_LATEST // 第7世代以降、混乱や麻痺などが原因で技を出せない場合、「バトルスイッチ」は発動しません。一方、第6世代では発動します。
+#define B_SHADOW_TAG_ESCAPE         GEN_LATEST // 第4世代以降では、双方が特性「かげふみ」を持つポケモンを出している場合、すべてのポケモンが交代や逃走を行えるようになりました。それ以前は、この状況下ではどちらも交代や逃走ができませんでした。
+#define B_MOODY_ACC_EVASION         GEN_7 // 第8世代以降、「ムラっけ」で命中率と回避率を上げることはできなくなりました。
+#define B_FLASH_FIRE_FROZEN         GEN_LATEST // 第5世代以降、「もらいび」はこおり状態でも発動し、こおり状態は回復しません。
+#define B_SYNCHRONIZE_TOXIC         GEN_LATEST // 第5世代以降、「シンクロ」を持つポケモンがもうどく状態になった場合、相手ももうどく状態になります。それ以前の世代では、相手は通常のどく状態になっていました。
+#define B_UPDATED_INTIMIDATE        GEN_LATEST // 第8世代以降、「いかく」は特性「せいしんりょく」「きもったま」「マイペース」「どんかん」を持つ相手には効果がありません。また、戦闘中に発動します。
+#define B_OBLIVIOUS_TAUNT           GEN_LATEST // 第6世代以降、「どんかん」を持つポケモンは「ちょうはつ」を受けません。
+#define B_STURDY                    GEN_LATEST // 第5世代以降、「がんじょう」を持つポケモンは、他のポケモンの攻撃や混乱によるダメージを受けてHPが満タンの状態から0になるような場合でも、HPが1残るようになります。
+#define B_PLUS_MINUS_INTERACTION    GEN_LATEST // 第5世代以降、特性「プラス」や「マイナス」は、自分自身や対となる特性によって発動できるようになりました。それ以前は、対となる特性によってのみ発動していました。
+#define B_WEATHER_FORMS             GEN_LATEST // 第5世代以降、ポワルンとチェリムはそれぞれの特性を失うと、基本の姿に戻ります。チェリムが姿を変えるには、「フラワーギフト」が必要です。
+#define B_SYMBIOSIS_GEMS            GEN_6 // 第7世代以降、「きょうせい」は「ジュエル」で強化された後に持ち物を渡すようになりました。それ以前は「ジュエル」で強化される前に持ち物が渡されていたため、その持ち物の効果が適用されていました。
+#define B_REDIRECT_ABILITY_IMMUNITY GEN_LATEST // 第5世代以降、「ひらいしん」や「よびみず」を持つポケモンは、技を自分に引き寄せる効果に加え、電気タイプや水タイプの技を無効化し、特攻を1段階上昇させるようになりました。
+#define B_REDIRECT_ABILITY_ALLIES   GEN_LATEST // 第4世代以降、「ひらいしん」や「よびみず」は、味方の技も引き寄せるようになりました。
+#define B_LEAF_GUARD_PREVENTS_REST  GEN_LATEST // 第5世代以降、「リーフガード」は晴れ状態で「ねむる」の使用すると失敗します。
+#define B_TRANSISTOR_BOOST          GEN_8 // 第9世代以降、「トランジスタ」によるでんきタイプの技の威力上昇率は、1.5倍ではなく1.3倍になります。
+#define B_ILLUMINATE_EFFECT         GEN_LATEST // 第9世代以降、「はっこう」は命中率低下を防ぎ、相手の回避率を無視します。
+#define B_WEAK_ARMOR_SPEED          GEN_LATEST // 第7世代以降、「くだけるよろい」は物理技を受けた際、素早さが1段階ではなく2段階上昇するようになりました。
+#define B_PROTEAN_LIBERO            GEN_6 // 第9世代以降、「へんげんじざい」と「リベロ」によるタイプ変化は、1回のバトルにつき1回のみ発生します。
+#define B_INTREPID_SWORD            GEN_8 // 第9世代以降、「ふとうのけん」は、戦闘中に一度だけ攻撃を1段階上昇させます。
+#define B_DAUNTLESS_SHIELD          GEN_8 // 第9世代以降、「ふくつのたて」は、戦闘中に一度だけ防御を1段階上昇させます。
+#define B_DISGUISE_HP_LOSS          GEN_7 // 第8世代以降、「ばけのかわ」は最大HPの1/8を消費するようになりました。
+#define B_ABILITY_TRIGGER_CHANCE    GEN_LATEST // 第3世代では、「だっぴ」「メロメロボディ」「ほのおのからだ」「せいでんき」「どくのトゲ」が発動する確率は1/3ですが、第4世代以降は30%になっています。
+                                               // 第3世代において、特性「ほうし」は10%の確率で相手を「ねむり」「どく」「まひ」のいずれかの状態異常にし、それぞれの確率は等しくなっています。
+                                               // 第4世代では30%ですが、第5世代以降では、眠り状態にする確率が11%、毒状態にする確率が9%、麻痺状態にする確率が10%となっています。
+#define B_PICKUP_WILD               GEN_LATEST // 第9世代以降、特性「ものひろい」を持つポケモンは、野生のポケモンとのバトルにおいて、ターン終了時に自身が使用した持ち物を拾うことができます。
+#define B_MAGIC_GUARD               GEN_LATEST // 第4世代限定で、「マジックガード」は「まひ」による行動不能を無効化します。
+#define B_BATTLE_BOND               GEN_7 // 第9世代以降、「きずなへんげ」は戦闘中に一度だけ、攻撃・特攻・素早さを1段階上昇させます。
+#define B_ATE_MULTIPLIER            GEN_6 // 第7世代以降、「〇〇スキン」はダメージを1.2倍にします。それ以外の世代では1.3倍となりますが、ノーマルスキンには倍率補正がかかりません。
+#define B_DEFIANT_STICKY_WEB        GEN_LATEST // 第9世代以降、「まけんき」は誰が「ねばねばネット」を設置したかにかかわらず発動します。一方、第8世代では、「コートチェンジ」で設置場所が入れ替わった後、味方が設置した「ねばねばネット」に対しては「まけんき」が発動しません。
+#define B_MIRROR_ARMOR_STICKY_WEB   GEN_8 // 第9世代以降、「ミラーアーマー」は、たとえ「ねばねばネット」の使い手がまだ場に残っていたとしても、「ねばねばネット」による能力変化を跳ね返しません。
+#define B_POWDER_OVERCOAT           GEN_LATEST // 第6世代以降、「ぼうじん」は粉や胞子を使う技の効果を無効化します。
+#define B_INFILTRATOR_SUBSTITUTE    GEN_LATEST // 第6世代以降、「すりぬけ」は技の使用時に「みがわり」を無視します（ただし、「へんしん」と「フリーフォール」は除きます）。
+#define B_DANCER_ORDER              GEN_LATEST // 第8世代以降、「おどりこ」の発動順は、能力補正を含めた素早さの順序に基づきます。一方、第7世代では、補正のかかっていない素早さの数値に基づき、素早さが低いポケモンから高いポケモンの順に発動します。
 
-// Various volatile timers
+// さまざまな技の効果ターン数
 #define B_CONFUSION_TURNS    5
 #define B_UPROAR_TURN_COUNT  5
 #define B_RAMPAGE_TURNS      3
@@ -213,212 +213,213 @@
 #define B_HEAL_BLOCK_TIMER   5
 #define B_LASER_FOCUS_TIMER  2
 #define B_THROAT_CHOP_TIMER  2
-#define B_WRAP_TURNS         7 // Max number of turns with Grip Claw
+#define B_WRAP_TURNS         7 // 「ねばりのかぎつめ」による最大ターン数
 #define B_SYRUP_BOMB_TIMER   3
 #define B_TORMENT_TIMER      3
 
-// Item settings
-#define B_CONFUSE_BERRIES_HEAL      GEN_7 // In Gens3-6, Figy and similar berries restore 1/8th of HP and trigger at half HP. In Gen7 they restore half HP, triggering at 25% HP. In Gen8 they heal 1/3rd of HP.
-#define B_X_ITEMS_BUFF              GEN_LATEST // In Gen7+, the X Items raise a stat by 2 stages instead of 1.
-#define B_X_ITEMS_CROSSUSE          TRUE       // In Gen3, you can only use X item on the current battler, but in Gen7 you can use an X item on any friendly battler in double battles (we are not sure in which gen the change occured)
-#define B_MENTAL_HERB               GEN_LATEST // In Gen5+, the Mental Herb cures Taunt, Encore, Torment, Heal Block, and Disable in addition to Infatuation from before.
-#define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE       // If TRUE, trainers can steal/swap your items (non-berries are restored after battle). In vanilla games, trainers cannot steal items outside of facilities.
-#define B_RETURN_STOLEN_NPC_ITEMS   GEN_4 // In Gen5+, Thief and Covet no longer steal items from NPCs.
-#define B_STEAL_WILD_ITEMS          GEN_LATEST // In Gen9+, Thief and Covet steal a wild Pokemon's item and send it to the bag. In Gens2-8, the stolen item would be held by the Thief/Covet user.
-#define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // In Gen9+, all non-berry items are restored after battle.
-#define B_SOUL_DEW_BOOST            GEN_LATEST // In Gens3-6, Soul Dew boosts Latis' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
-#define B_NET_BALL_MODIFIER         GEN_LATEST // In Gen7+, Net Ball's catch multiplier is x5 instead of x3.
-#define B_DIVE_BALL_MODIFIER        GEN_LATEST // In Gen4+, Dive Ball's effectiveness increases by x3.5 when Surfing or Fishing.
-#define B_NEST_BALL_MODIFIER        GEN_LATEST // Nest Ball's formula varies depending on the Gen. See Cmd_handleballthrow.
-#define B_REPEAT_BALL_MODIFIER      GEN_LATEST // In Gen7+, Repeat Ball's catch multiplier is x3.5 instead of x3.
-#define B_TIMER_BALL_MODIFIER       GEN_LATEST // In Gen5+, Timer Ball's effectiveness increases by x0.3 per turn instead of x0.1
-#define B_DUSK_BALL_MODIFIER        GEN_6 // In Gen7+, Dusk Ball's catch multiplier is x3 instead of x3.5.
-#define B_QUICK_BALL_MODIFIER       GEN_LATEST // In Gen5+, Quick Ball's catch multiplier is x5 instead of x4.
-#define B_LURE_BALL_MODIFIER        GEN_7 // In Gen8+, Lure Ball's catch multiplier is x4. In Gen7, it's x5. In Gen6 and earlier, it's x3.
-#define B_HEAVY_BALL_MODIFIER       GEN_LATEST // In Gen7+, Heavy Ball's ranges change. See Cmd_handleballthrow.
-#define B_DREAM_BALL_MODIFIER       GEN_LATEST // In Gen8+, Dream Ball's catch multiplier is x4 when the target is asleep or has the ability Comatose.
-#define B_SPORT_BALL_MODIFIER       GEN_7 // In Gen8+, Sport Ball's catch multiplier was reduced from x1.5 to x1.
-#define B_SAFARI_BALL_MODIFIER      GEN_7 // In Gen8+, Safari Ball's catch multiplier was reduced from x1.5 to x1.
-#define B_FRIEND_BALL_MODIFIER      GEN_7 // In Gen8+, Friend Ball's friendship boost was reduced from 200 to 150.
-#define B_SERENE_GRACE_BOOST        GEN_LATEST // In Gen5+, Serene Grace boosts the added flinch chance of King's Rock and Razor Fang.
-#define B_IRON_BALL                 GEN_LATEST // In Gen5+, Flying-type Pokemon holding Iron Ball take x1 damage from Ground-type moves regardless of their other types, except during Inverse Battles or if the Pokemon is grounded by any other effect.
+// アイテム設定
+#define B_CONFUSE_BERRIES_HEAL      GEN_7 // 第3～6世代では、フィラのみなどのきのみはHPを1/8回復し、HPが半分になった時に発動します。第7世代ではHPを半分回復し、HPが25%になった時に発動します。第8世代ではHPを1/3回復します。
+#define B_X_ITEMS_BUFF              GEN_LATEST // 第7世代以降、戦闘アイテムはステータスを1段階ではなく2段階上昇させます。
+#define B_X_ITEMS_CROSSUSE          TRUE       // 第3世代では戦闘アイテムは現在バトルに出ているポケモンにしか使えませんが、第7世代のダブルバトルでは味方のどのポケモンにも使用できます（どの世代でこの変更が行われたのかは定かではありません）。
+#define B_MENTAL_HERB               GEN_LATEST // 第5世代以降、「メンタルハーブ」は従来の「メロメロ」に加え、「ちょうはつ」「アンコール」「かなしばり」「いちゃもん」「かいふくふうじ」の状態も治すようになりました。
+#define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE       // TRUEの場合、トレーナーがプレイヤーの持ち物を盗んだり交換したりできるようになります（きのみ以外のアイテムは戦闘後に元に戻ります）。通常のゲーム（バニラ）では、特定の施設以外でトレーナーがアイテムを盗むことはありません。
+#define B_RETURN_STOLEN_NPC_ITEMS   GEN_4 // 第5世代以降、「どろぼう」や「ほしがる」ではNPCからアイテムを盗めなくなりました。
+#define B_STEAL_WILD_ITEMS          GEN_LATEST // 第9世代以降、「どろぼう」や「ほしがる」で野生のポケモンの持ち物を奪うと、そのアイテムはバッグに送られます。一方、第2世代から第8世代までは、奪ったアイテムは技を使用したポケモンが持ち物として所持する仕様でした。
+#define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // 第9世代以降、きのみ以外のすべての持ち物は戦闘後に元に戻ります。
+#define B_SOUL_DEW_BOOST            GEN_3 // 第3～6世代では、「こころのしずく」はラティ兄妹の特攻と特防を上昇させます。一方、第7世代以降は、エスパータイプとドラゴンタイプの技の威力を上昇させる効果に変更されました。
+#define B_NET_BALL_MODIFIER         GEN_LATEST // 第7世代以降、ネットボールの捕獲倍率は3倍ではなく5倍になっています。
+#define B_DIVE_BALL_MODIFIER        GEN_LATEST // 第4世代以降、ダイブボールは「なみのり」中または釣り中に使用すると、効果が3.5倍になります。
+#define B_NEST_BALL_MODIFIER        GEN_LATEST // ネストボールの計算式は世代によって異なります。Cmd_handleballthrow を参照してください。
+#define B_REPEAT_BALL_MODIFIER      GEN_LATEST // 第7世代以降、リピートボールの捕獲倍率は3倍ではなく3.5倍になっています。
+#define B_TIMER_BALL_MODIFIER       GEN_LATEST // 第5世代以降、タイマーボールの捕獲率は1ターンにつき0.1倍ではなく0.3倍ずつ上昇する。
+#define B_DUSK_BALL_MODIFIER        GEN_6 // 第7世代以降、ダークボールの捕獲倍率は3.5倍ではなく3倍になっています。
+#define B_QUICK_BALL_MODIFIER       GEN_LATEST // 第5世代以降、クイックボールの捕獲倍率は4倍ではなく5倍になっています。
+#define B_LURE_BALL_MODIFIER        GEN_7 // 第8世代以降、ルアーボールの捕獲倍率は4倍です。第7世代では5倍、第6世代以前は3倍です。
+#define B_HEAVY_BALL_MODIFIER       GEN_LATEST // 第7世代以降、ヘビーボールの適用範囲（重さの判定基準）が変更されています。Cmd_handleballthrow を参照してください。
+#define B_DREAM_BALL_MODIFIER       GEN_LATEST // 第8世代以降、対象が「ねむり」状態であるか、特性「ぜったいねむり」を持っている場合、ドリームボールの捕獲倍率は4倍になります。
+#define B_SPORT_BALL_MODIFIER       GEN_7 // 第8世代以降、コンペボールの捕獲倍率は1.5倍から1倍に引き下げられました。
+#define B_SAFARI_BALL_MODIFIER      GEN_7 // 第8世代以降、サファリボールの捕獲倍率は1.5倍から1倍に引き下げられました。
+#define B_FRIEND_BALL_MODIFIER      GEN_7 // 第8世代以降、フレンドボールによるなつき度の上昇幅が200から150に引き下げられました。
+#define B_SERENE_GRACE_BOOST        GEN_LATEST // 第5世代以降、「てんのめぐみ」は「おうじゃのしるし」や「するどいキバ」による追加のひるみ確率を上昇させます。
+#define B_IRON_BALL                 GEN_LATEST // 第5世代以降、「くろいてっきゅう」を持ったひこうタイプのポケモンは、逆さバトル中や他の効果で地面に接地している場合を除き、他のタイプにかかわらず、じめんタイプの技は等倍になります。
 
 // フラグ設定
 // 以下の機能を使用するには、include/constants/flags.h に定義されているフラグの「0」を別の値（未使用のフラグが望ましい）に変更してください。
 // 例：FLAG_UNUSED_0x264 を分かりやすい名前に変更し、以下で使用することができます。
 
-// Badge boost flags
-#define B_FLAG_BADGE_BOOST_ATTACK   FLAG_BADGE01_GET // If this flag is set and B_BADGE_BOOST == GEN_3, it will multiply the player's Pokemon's Attack by x1.1
-#define B_FLAG_BADGE_BOOST_DEFENSE  FLAG_BADGE05_GET // If this flag is set and B_BADGE_BOOST == GEN_3, it will multiply the player's Pokemon's Defense by x1.1
-#define B_FLAG_BADGE_BOOST_SPEED    FLAG_BADGE03_GET // If this flag is set and B_BADGE_BOOST == GEN_3, it will multiply the player's Pokemon's Speed by x1.1
-#define B_FLAG_BADGE_BOOST_SPATK    FLAG_BADGE07_GET // If this flag is set and B_BADGE_BOOST == GEN_3, it will multiply the player's Pokemon's Sp. Atk by x1.1
-#define B_FLAG_BADGE_BOOST_SPDEF    FLAG_BADGE07_GET // If this flag is set and B_BADGE_BOOST == GEN_3, it will multiply the player's Pokemon's Sp. Def by x1.1
-// Other battle flags
+// バッジ設定
+#define B_FLAG_BADGE_BOOST_ATTACK   FLAG_BADGE01_GET // このフラグが設定されており、かつ B_BADGE_BOOST == GEN_3 である場合、プレイヤーのポケモンの「こうげき」に1.1倍の補正がかかります。
+#define B_FLAG_BADGE_BOOST_DEFENSE  FLAG_BADGE05_GET // このフラグが設定されており、かつ B_BADGE_BOOST == GEN_3 である場合、プレイヤーのポケモンの防御力が1.1倍になります。
+#define B_FLAG_BADGE_BOOST_SPEED    FLAG_BADGE03_GET // このフラグが設定されており、かつ B_BADGE_BOOST == GEN_3 である場合、プレイヤーのポケモンの素早さに1.1倍の補正がかかります。
+#define B_FLAG_BADGE_BOOST_SPATK    FLAG_BADGE07_GET // このフラグが設定されており、かつ B_BADGE_BOOST == GEN_3 である場合、プレイヤーのポケモンの特攻に1.1倍の補正がかかります。
+#define B_FLAG_BADGE_BOOST_SPDEF    FLAG_BADGE07_GET // このフラグが設定されており、かつ B_BADGE_BOOST == GEN_3 である場合、プレイヤーのポケモンの特防に 1.1 倍の補正がかかります。
+
+// その他バトル設定
 #define B_FLAG_INVERSE_BATTLE       FLAG_EXPANSION_INVERSE_BATTLE     // このフラグが設定されている場合、戦闘におけるタイプの相性が逆転します。例えば、炎タイプは水タイプに対して「効果はばつぐん」となります。
 #define B_FLAG_AI_VS_AI_BATTLE      FLAG_EXPANSION_AI_VS_AI_BATTLE    // このフラグが設定されている場合、次回の戦闘ではプレイヤーのポケモンがAIによって操作されます。
 #define B_FLAG_DYNAMAX_BATTLE       FLAG_EXPANSION_DYNAMAX_BATTLE     // このフラグが設定されている場合、すべてのトレーナーがバトル中にダイマックスできるようになります。
 #define B_FLAG_TERA_ORB_CHARGED     FLAG_EXPANSION_TERA_ORB_CHARGED   // このフラグが設定されると、テラスタルオーブがチャージされます。設定後は、回復時に自動的にセットされ、テラスタルを行うと解除されます。
-#define B_FLAG_TERA_ORB_NO_COST     FLAG_EXPANSION_TERA_ORB_NO_COST   // このフラグが設定されている場合、テラスタルを行ってもテラスタルオーブのチャージは消費されません。『スカーレット・バイオレット』では、テラパゴスに関するイベントの後にこの状態になります。
-#define B_FLAG_SLEEP_CLAUSE         FLAG_EXPANSION_SLEEP_CLAUSE       // If this flag is set, sleep clause is enabled; if the player / AI has already put a Pokemon on the opponent's side to sleep and it is still sleeping, another one can't be put to sleep. AI requires AI_FLAG_CHECK_BAD_MOVE to understand.
+#define B_FLAG_TERA_ORB_NO_COST     FLAG_EXPANSION_TERA_ORB_NO_COST   // このフラグが設定されている場合、テラスタルを行ってもテラスタルオーブのチャージは消費されません。SVでは、テラパゴスに関するイベントの後にこの状態になります。
+#define B_FLAG_SLEEP_CLAUSE         FLAG_EXPANSION_SLEEP_CLAUSE       // このフラグが設定されている場合、「ねむり状態に関する制限（Sleep Clause）」が有効になります。つまり、プレイヤーやAIが相手のポケモンをすでに「ねむり状態」にしており、そのポケモンがまだ眠っている間は、別のポケモンを「ねむり状態」にすることはできません。AIがこのルールを認識して動作するには、`AI_FLAG_CHECK_BAD_MOVE` フラグが必要です。
 #define B_FLAG_NO_WHITEOUT          FLAG_EXPANSION_NO_WHITEOUT        // このフラグが設定されている場合、トレーナー戦で全滅（ホワイトアウト）することはありません。ただし、手持ちのポケモンは自動的に回復しない点にご注意ください。
 
 // 変数設定
 // 以下の機能を使用するには、include/constants/vars.h で定義されている変数のうち、0 が割り当てられているもの（できれば未使用のもの）を書き換えてください。
 // 例: VAR_UNUSED_0x404E を分かりやすい名前に変更し、以下で使用することができます。
-#define B_VAR_WILD_AI_FLAGS         VAR_EXPANSION_WILD_AI_FLAGS     // If not 0, you can use this var to add to default wild AI flags. IMPORTANT: NOT usable with flags above (1 << 15)
-                                          // This var should never remain non-zero long enough for the player to save.
-                                          // For better wild AI handling, edit GetWildAiFlags() in src/battle_ai_main.c
+#define B_VAR_WILD_AI_FLAGS         VAR_EXPANSION_WILD_AI_FLAGS     // 0以外の場合、この変数をデフォルトの野生AIフラグに追加できます。(1 << 15)を超えるフラグには使用できませんのでご注意ください。
+                                          // この変数が、プレイヤーがセーブできるほどの時間、非ゼロのままになるようなことはあってはなりません。
+                                          // 野生ポケモンのAIの挙動を改善するには、src/battle_ai_main.c 内の GetWildAiFlags() を編集してください。
 
-#define B_VAR_DIFFICULTY            VAR_EXPANSION_DIFFICULTY     // If not 0, you can use this var to control which difficulty version of a Trainer is loaded. This should be manually set by the developer using Script_SetDifficulty AFTER NewGameInitData has run.
+#define B_VAR_DIFFICULTY            VAR_EXPANSION_DIFFICULTY     // 0以外の値を設定すると、この変数を使用して、読み込むトレーナーの難易度バージョンを制御できます。この変数は、`NewGameInitData`の実行後に、開発者が`Script_SetDifficulty`を使用して手動で設定する必要があります。
 
-// No bag settings
+// バッグなし設定
 #define NO_BAG_RESTRICTION       0
 #define NO_BAG_AGAINST_TRAINER   1
 #define NO_BAG_IN_BATTLE         2
 #define NO_BAG_INVALID_VALUE     3
 
-#define B_VAR_NO_BAG_USE         VAR_EXPANSION_NO_BAG_USE     // If 1, the ability to use the bag in battle is disabled in trainer battles. If 2, it is also disabled in wild battles.
+#define B_VAR_NO_BAG_USE         VAR_EXPANSION_NO_BAG_USE     // 1の場合、トレーナー戦でのバッグの使用が無効になります。2の場合、野生のポケモンとの戦闘でも無効になります。
 
-// Sky Battles
-#define B_FLAG_SKY_BATTLE                 0     // If this flag has a value, the player will be able to engage in scripted Sky Battles.
-#define B_VAR_SKY_BATTLE                  0     // If this var has a value, the game will remember the positions of Pokemon used in Sky Battles.
-#define B_SKY_BATTLE_STRICT_ELIGIBILITY   FALSE // If TRUE, Sky Battles will use the eligibility from Pokemon XY. If FALSE, all Flying-types or Pokemon with Levitate are allowed.
+// スカイバトル
+#define B_FLAG_SKY_BATTLE                 0     // このフラグに値が設定されている場合、プレイヤーはスクリプト制御されたスカイバトルを行うことができます。
+#define B_VAR_SKY_BATTLE                  0     // このフラグに値が設定されている場合、スカイバトルで使用されたポケモンの位置がゲームに記憶されます。
+#define B_SKY_BATTLE_STRICT_ELIGIBILITY   FALSE // TRUEの場合、スカイバトルの参加条件はXYの仕様が適用されます。FALSEの場合、すべてのひこうタイプ、または特性「ふゆう」を持つポケモンが参加可能です。
 
 // Flag and Var settings
-#define B_RESET_FLAGS_VARS_AFTER_WHITEOUT TRUE // If TRUE, Overworld_ResetBattleFlagsAndVars will reset battle-related Flags and Vars when the player whites out.
+#define B_RESET_FLAGS_VARS_AFTER_WHITEOUT TRUE // TRUEの場合、プレイヤーが全滅した際に `Overworld_ResetBattleFlagsAndVars` が戦闘関連のフラグと変数をリセットします。
 
 // Ingame partner flag
-#define B_SHOW_PARTNER_TARGET             FALSE // Shows the battler partner will target.
+#define B_SHOW_PARTNER_TARGET             FALSE // パートナーがターゲットにするポケモンを表示します。
 
 // Move description menu
 #define B_SHOW_MOVE_DESCRIPTION     TRUE       // バトル中に技の説明を表示します。
 
-// Weather settings
-// Search for 'rain', 'sunny day', and 'hail' for move-specific or species-specific weather interactions.
+// 天気設定
+// 「雨」、「晴れ」、「あられ」で検索して、特定の技やポケモンに関連する天候の相互作用を確認してください。
 #define B_ICE_WEATHER_BOTH              0
 #define B_ICE_WEATHER_HAIL              1
 #define B_ICE_WEATHER_SNOW              2
 
-#define B_ABILITY_WEATHER               GEN_5 // In Gen6+, ability-induced weather lasts 5 turns. Before, it lasted until the battle ended or until it was changed by a move or a different weather-affecting ability.
-#define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // In Gen4+, Sandstorm weather multiplies the Sp. Defense of Rock-type Pokemon by x1.5.
-#define B_SANDSTORM_SOLAR_BEAM          GEN_LATEST // In Gen3+, Sandstorm decreases the power of Solar Beam, when it didn't before.
-#define B_OVERWORLD_FOG                 GEN_3 // In Gen8+, overworld Fog summons Misty Terrain in battle. In Gen4 only, overworld Fog summons the unique fog weather condition in battle.
-#define B_OVERWORLD_SNOW                GEN_LATEST // In Gen9+, overworld Snow will summon snow instead of hail in battle.
-#define B_SNOW_WARNING                  GEN_LATEST // In Gen9+, Snow Warning will summon snow instead of hail.
-#define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_BOTH // Toggles Hail move effects to Snow and vice versa.
+#define B_ABILITY_WEATHER               GEN_5 // 第6世代以降、特性によって発生する天候は5ターンの間持続します。それ以前は、戦闘が終了するか、技や別の天候特性によって天候が変化するまで持続していました。
+#define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // 第4世代以降、砂嵐の天候によって Sp が倍増します。いわタイプのポケモンの防御力が1.5倍になる。
+#define B_SANDSTORM_SOLAR_BEAM          GEN_LATEST // 第3世代以降、砂嵐によってソーラー ビームの出力が低下します。
+#define B_OVERWORLD_FOG                 GEN_4 // 第8世代以降、フィールド上の「霧」は戦闘中に「ミストフィールド」を発生させます。一方、第4世代に限っては、フィールド上の「霧」は戦闘中に「霧」という特殊な天候状態を発生させます。
+#define B_OVERWORLD_SNOW                GEN_8 // 第9世代以降、フィールド上の天候が「雪」の場合、戦闘では「あられ」ではなく「ゆき」が発生します。
+#define B_SNOW_WARNING                  GEN_8 // 第9世代以降、「ゆきふらし」は「あられ」の代わりに「ゆき」を降らせるようになります。
+#define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_BOTH // 「あられ」状態と「ゆき」状態を共存させます。
 
-// Terrain settings
-#define B_TERRAIN_BG_CHANGE         TRUE       // If set to TRUE, terrain moves permanently change the default battle background until the effect fades.
-#define B_THUNDERSTORM_TERRAIN      TRUE       // If TRUE, overworld Thunderstorm generates Rain and Electric Terrain as in Gen 8.
-#define B_TERRAIN_TYPE_BOOST        GEN_7 // In Gen8, damage is boosted by 30% instead of 50%.
-#define B_SECRET_POWER_EFFECT       GEN_LATEST // Secret Power's effects change depending on terrain and generation. See MOVE_EFFECT_SECRET_POWER's case in `SetMoveEffect`.
-#define B_SECRET_POWER_ANIMATION    GEN_LATEST // Secret Power's animations change depending on terrain and generation.
-#define B_NATURE_POWER_MOVES        GEN_LATEST // Nature Power calls different moves depending on terrain and generation. See gBattleEnvironmentInfo.
-#define B_CAMOUFLAGE_TYPES          GEN_LATEST // Camouflage changes the user to different types depending on terrain and generation. See sTerrainToType.
-#define B_NEW_TERRAIN_BACKGROUNDS   TRUE       // If set to TRUE, uses new terrain backgrounds for Electric, Misty, Grassy and Psychic Terrain.
+// ◯◯フィールド設定
+#define B_TERRAIN_BG_CHANGE         TRUE       // TRUEの場合、地形変化の技は、その効果が切れるまでデフォルトの戦闘背景を永続的に変更します。
+#define B_THUNDERSTORM_TERRAIN      TRUE       // TRUEの場合、オーバーワールドの雷雨は第8世代と同様に、雨とエレキフィールドを発生させます。
+#define B_TERRAIN_TYPE_BOOST        GEN_7 // 第8世代では、ダメージの補正は50%ではなく30%になります。（◯◯フィールド）
+#define B_SECRET_POWER_EFFECT       GEN_LATEST // 「ひみつのちから」の効果は、地形や世代によって変化します。`SetMoveEffect` 内の `MOVE_EFFECT_SECRET_POWER` の処理を​​参照してください。
+#define B_SECRET_POWER_ANIMATION    GEN_LATEST // 「ひみつのちから」の演出は、地形や世代によって変化します。
+#define B_NATURE_POWER_MOVES        GEN_LATEST // 「しぜんのちから」は、地形や世代によって繰り出す技が異なります。gBattleEnvironmentInfo を参照してください。
+#define B_CAMOUFLAGE_TYPES          GEN_LATEST // 「ほごしょく」は、地形や世代に応じて使用者のタイプを変化させます。sTerrainToType を参照してください。
+#define B_NEW_TERRAIN_BACKGROUNDS   TRUE       // TRUEの場合、エレキフィールド、ミストフィールド、グラスフィールド、サイコフィールドに新しい地形の背景が使用されます。
 
-// Interface settings
-#define B_FAST_INTRO_PKMN_TEXT              TRUE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokemon, as opposing to waiting for the animation to end.
-#define B_FAST_INTRO_NO_SLIDE               FALSE // If set to TRUE, the slide animation that happens at the beginning of the battle is skipped.
-#define B_FAST_HP_DRAIN                     TRUE  // If set to TRUE, HP bars will move faster.
-#define B_FAST_EXP_GROW                     TRUE  // If set to TRUE, EXP bars will move faster.
-#define B_SHOW_TARGETS                      TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokemon, will be shown before selecting a move.
-#define B_SHOW_CATEGORY_ICON                TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
-#define B_HIDE_HEALTHBOX_IN_ANIMS           TRUE  // If set to TRUE, hides healthboxes during move animations.
-#define B_WAIT_TIME_MULTIPLIER              16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
-#define B_QUICK_MOVE_CURSOR_TO_RUN          FALSE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
-#define B_RUN_TRAINER_BATTLE                TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
-#define B_MOVE_DESCRIPTION_BUTTON           L_BUTTON // If set to a button other than B_LAST_USED_BALL_BUTTON, pressing this button will open the move description menu
-#define B_SHOW_USELESS_Z_MOVE_INFO          TRUE  // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
-#define B_ANIMATE_MON_AFTER_KO              TRUE // If set to TRUE, if a Pokemon on the opposite site faints, the non-fainted Pokemon will display a victory animation.
-#define B_ANIMATE_MON_AFTER_FAILED_POKEBALL TRUE  // If set to TRUE, if a Pokemon on the opposite side breaks out of a thrown Poke Ball, the wild Pokemon will display its animation.
+// インターフェイス
+#define B_FAST_INTRO_PKMN_TEXT              TRUE  // TRUEの場合、対戦開始時のテキストは、ポケモンのアニメーションの終了を待つのではなく、アニメーションと同時に表示されます。
+#define B_FAST_INTRO_NO_SLIDE               FALSE // TRUEの場合、戦闘開始時のスライドアニメーションがスキップされます。
+#define B_FAST_HP_DRAIN                     TRUE  // TRUEの場合、HPバーの動きが速くなります。
+#define B_FAST_EXP_GROW                     TRUE  // TRUEの場合、経験値バーの動きが速くなります。
+#define B_SHOW_TARGETS                      TRUE  // TRUEの場合、2体または3体のポケモンにヒットする技について、技を選択する前にすべての有効なターゲットが表示されます。
+#define B_SHOW_CATEGORY_ICON                TRUE  // TRUEの場合、ステータス画面や技の思い出し画面で、技の分類を示すアイコンが表示されます。
+#define B_HIDE_HEALTHBOX_IN_ANIMS           TRUE  // TRUEの場合、技アニメーション中にヘルスボックスが非表示になります。
+#define B_WAIT_TIME_MULTIPLIER              16    // 戦闘中のテキスト表示時間を決定します。デフォルト値は16です。値を小さくすると、戦闘の進行が速くなります。
+#define B_QUICK_MOVE_CURSOR_TO_RUN          FALSE // TRUEの場合、野生のポケモンとの遭遇時にバトルオプションでBボタンを押した際、カーソルが「にげる」オプションに移動します。
+#define B_RUN_TRAINER_BATTLE                FALSE  // TRUEの場合、プレイヤーはトレーナーから逃げることができます。これは全滅として扱われます。
+#define B_MOVE_DESCRIPTION_BUTTON           L_BUTTON // B_LAST_USED_BALL_BUTTON 以外のボタンに設定した場合、そのボタンを押すと技の説明メニューが開きます。
+#define B_SHOW_USELESS_Z_MOVE_INFO          TRUE  // TRUEの場合、新しい世代の補助技のような追加効果を持たないZワザは、「追加効果なし」と表示されるようになります。
+#define B_ANIMATE_MON_AFTER_KO              FALSE // TRUEの場合、敵(自分・相手関わらず)が倒れた時に勝利アニメーションを表示する。
+#define B_ANIMATE_MON_AFTER_FAILED_POKEBALL TRUE  // TRUEの場合、相手がボールから登場したときにアニメーションを表示します。
 #define B_SHOW_DYNAMAX_MESSAGE              TRUE  // TRUEに設定すると、ダイマックスまたはキョダイマックスの完了後に、追加のバトルメッセージが表示されます。(原作にはメッセージはありません。)
-#define B_HPBAR_COLOR_THRESHOLD             GEN_LATEST // In Gen 5+, HP bar color thresholds were changed to be based on the actual HP values instead of the pixel length of the HP bar, leading to more accurate HP bar colors.
+#define B_HPBAR_COLOR_THRESHOLD             GEN_LATEST // 第5世代以降、HPバーの色の変化基準は、HPバーのピクセルの長さに基づくものから、実際のHP値に基づくものへと変更され、より正確な色で表示されるようになりました。
 
-// Catching settings
-#define B_SEMI_INVULNERABLE_CATCH       GEN_LATEST // In Gen4+, you cannot throw a ball against a Pokemon that is in a semi-invulnerable state (dig/fly/etc)
-#define B_CATCHING_CHARM_BOOST          100        // % boost in Critical Capture odds if player has the Catching Charm.
-#define B_INCAPACITATED_CATCH_BONUS     GEN_LATEST // In Gen5+, the catch rate bonus for a mon with sleep or freeze is 2.5x. In Gen4 and below its only a 2x bonus.
-#define B_LOW_LEVEL_CATCH_BONUS         GEN_LATEST // In Gen8, a bonus is added to the catch rate if catching a mon lower than level 20. In Gen9, the bonus is only applied to mons lower than level 13.
-#define B_MISSING_BADGE_CATCH_MALUS     GEN_3 // In Gen9, a penalty is added to the catch rate if trying to catch a mon 5 levels above the current obedience level, based on the number of gym badges obtained.
-#define B_CRITICAL_CAPTURE              TRUE       // If set to TRUE, Critical Capture will be enabled.
-#define B_CRITICAL_CAPTURE_LOCAL_DEX    TRUE       // If set to FALSE, Critical Capture % is based off of the National Pokedex estimated by enabled generations.
-#define B_CRITICAL_CAPTURE_IF_OWNED     GEN_LATEST // In Gen9, a capture appear critical if the Pokemon you are trying to catch already has a dex entry (has already been caught)
+// 捕獲設定
+#define B_SEMI_INVULNERABLE_CATCH       GEN_3 // 第4世代以降では、半無敵状態（「あなをほる」や「そらをとぶ」など）にあるポケモンに対してボールを投げることはできません。
+#define B_CATCHING_CHARM_BOOST          100        // ゆれないおまもりを所持している場合、クリティカルキャッチの発生率がX%上昇します。
+#define B_INCAPACITATED_CATCH_BONUS     GEN_LATEST // 第5世代以降では、ポケモンが「ねむり」または「こおり」状態の際の捕獲率ボーナスは2.5倍ですが、第4世代以前では2倍にとどまります。
+#define B_LOW_LEVEL_CATCH_BONUS         GEN_8 // 第8世代では、レベル20未満のポケモンを捕まえる際に捕獲率へのボーナスが加算されます。一方、第9世代では、このボーナスはレベル13未満のポケモンにのみ適用されます。
+#define B_MISSING_BADGE_CATCH_MALUS     GEN_3 // 第9世代では、現在の捕獲レベルより5レベル上のモンを捕獲しようとすると、獲得したジムバッジの数に基づいて捕獲率にペナルティが追加されます。
+#define B_CRITICAL_CAPTURE              TRUE       // TRUEの場合、捕獲クリティカルが有効になります。
+#define B_CRITICAL_CAPTURE_LOCAL_DEX    TRUE       // FALSEの場合、捕獲クリティカル率は、有効化された世代に基づく全国図鑑のデータをもとに算出されます。
+#define B_CRITICAL_CAPTURE_IF_OWNED     GEN_LATEST // 第9世代では、捕まえようとしているポケモンがすでに図鑑に登録されている（過去に捕獲したことがある）場合、捕獲時に捕獲クリティカルが発生することがあります。
 
-#define B_LAST_USED_BALL            TRUE       // If TRUE, the "last used ball" feature from Gen 7 will be implemented
-#define B_LAST_USED_BALL_BUTTON     R_BUTTON   // If last used ball is implemented, this button (or button combo) will trigger throwing the last used ball.
-#define B_LAST_USED_BALL_CYCLE      TRUE       // If TRUE, then holding B_LAST_USED_BALL_BUTTON while pressing the D-Pad cycles through the balls
-#define B_CATCH_SWAP_INTO_PARTY     GEN_LATEST // In Gen 7+, the option to swap the caught wild mon to the party will appear, allowing you to send a different mon to the box.
-#define B_CATCH_SWAP_CHECK_HMS      TRUE       // If TRUE, the catch swap feature above will prevent returning mons to the box if they know HMs.
+#define B_LAST_USED_BALL            TRUE       // TRUEの場合、第7世代の「最後に使ったボール」機能が実装されます。
+#define B_LAST_USED_BALL_BUTTON     R_BUTTON   // 「最後に使用したボール」の機能が実装されている場合、このボタン（またはボタンの組み合わせ）を押すと、最後に使用したボールが投げられます。
+#define B_LAST_USED_BALL_CYCLE      TRUE       // TRUEの場合、B_LAST_USED_BALL_BUTTONを押しながら十字キーを押すと、ボールが切り替わります。
+#define B_CATCH_SWAP_INTO_PARTY     GEN_6 // 第7世代以降、捕獲した野生のポケモンを手持ちに加えるかどうかの選択肢が表示され、代わりに別のポケモンをボックスへ送ることができます。
+#define B_CATCH_SWAP_CHECK_HMS      TRUE       // TRUEの場合、上記の「捕獲時手持ちに入れる」機能は、秘伝技を覚えているポケモンをボックスに戻すのを防ぎます。
 
-// Other settings
-#define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // In Gen4+, multi battles end when the Player and also their Partner don't have any more Pokemon to fight.
-#define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // In Gen6+, Pokemon that qualify for evolution after battle will evolve even if the player loses.
-#define B_AFFECTION_MECHANICS           TRUE       // In Gen6+, there's a stat called affection that can trigger different effects in battle. From LGPE onwards, those effects use friendship instead.
-#define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // In Gen7+, trainers will use certain types of Poke Balls depending on their trainer class.
-#define B_TRAINER_MON_RANDOM_ABILITY    TRUE      // If this is set to TRUE a random legal ability will be generated for a trainer mon
-#define B_OBEDIENCE_MECHANICS           GEN_3 // In PLA+ (here Gen8+), obedience restrictions also apply to non-outsider Pokemon, albeit based on their level met rather than actual level
-#define B_USE_FROSTBITE                 FALSE      // In PLA, Frostbite replaces Freeze. Enabling this flag does the same here. Moves can still be cherry-picked to either Freeze or Frostbite. Freeze-Dry, Secret Power & Tri Attack depend on this config.
-#define B_TOXIC_REVERSAL                GEN_LATEST // In Gen5+, bad poison will change to regular poison at the end of battles.
-#define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // In Gen4+, trying to catch a Trainer's Pokemon does not consume the Poke Ball.
-#define B_SLEEP_CLAUSE                  FALSE      // Enables Sleep Clause all the time in every case, overriding B_FLAG_SLEEP_CLAUSE. Use that for modularity.
-#define B_PARTNER_MONS_MARKED_SEEN      TRUE      // If TRUE, if your double battle partner sends out a Pokemon you haven't encountered yet, it will be marked as SEEN in your Pokedex.
-#define B_MULTI_HALF_TEAMS              FALSE      // If TRUE, trainers will be capped at 3 Pokemon each when there are 2 trainers on one side in a battle. If FALSE, per-battle capping may still be set using `Multi Party: Half` in `trainers.party`
+// その他設定２
+#define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // 第4世代以降のマルチバトルでは、プレイヤーとパートナーの双方が戦えるポケモンをすべて失った時点でバトルが終了します。
+#define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // 第6世代以降、戦闘後に進化条件を満たしたポケモンは、たとえプレイヤーが敗北しても進化します。
+#define B_AFFECTION_MECHANICS           TRUE       // 第6世代以降、バトル中に様々な効果を発動させる「なかよし度」というステータスが存在しますが、ピカブイ以降では、代わりに「なつき度」が使用されるようになりました。
+#define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // 第7世代以降、トレーナーはそのトレーナーのクラスに応じて特定の種類のボールを使用します。
+#define B_TRAINER_MON_RANDOM_ABILITY    TRUE      // これをTRUEに設定すると、トレーナーのポケモンにランダムな合法的な特性が生成されます。
+#define B_OBEDIENCE_MECHANICS           GEN_3 // レジェアル（ここでは第8世代以降）においても、交換したポケモンに対して「言うことを聞かなくなる」制限が適用されますが、その判定基準は現在のレベルではなく、入手時のレベルに基づいています。
+#define B_USE_FROSTBITE                 FALSE      // レジェアルでは、こおり状態の代わりにしもやけ状態が採用されています。このフラグを有効にすると、同様の挙動になります。技ごとにこおりにするかしもやけにするかを選択することも可能です。「フリーズドライ」、「ひみつのちから」、「トライアタック」の挙動はこの設定に依存します。
+#define B_TOXIC_REVERSAL                GEN_LATEST // 第5世代以降、戦闘終了時にもうどくが通常のどくに変化します。
+#define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // 第4世代以降、トレーナーのポケモンを捕まえようとしても、モンスターボールは消費されません。
+#define B_SLEEP_CLAUSE                  FALSE      // B_FLAG_SLEEP_CLAUSEの設定にかかわらず、常にSleep Clauseを有効にします。モジュール性を高めるためにこれを使用してください。
+#define B_PARTNER_MONS_MARKED_SEEN      TRUE      // TRUEの場合、ダブルバトルのパートナーがまだ遭遇したことのないポケモンを繰り出すと、そのポケモンは図鑑に「見つけたポケモン」として記録されます。
+#define B_MULTI_HALF_TEAMS              FALSE      // TRUEの場合、戦闘で片側に2人のトレーナーがいる場合、トレーナーはそれぞれ3匹のポケモンに制限されます。 FALSE の場合、「trainers.party」の「Multi Party: Half」を使用して戦闘ごとの上限を設定できます。
 
-#define NUM_BEEPS_GEN_LATEST            4                    // Loops 4 times
-#define NUM_BEEPS_GEN_3                 -1                   // Loops infinitely
-#define NUM_BEEPS_OFF                   0                    // Doesn't play at all
-#define B_NUM_LOW_HEALTH_BEEPS          NUM_BEEPS_GEN_LATEST // This controls the number of times the "low health" beep will loop. Setting this value to NUM_BEEPS_OFF will disable the beep, while NUM_BEEPS_GEN_3 will loop infinitely. You can set this to any number you want, the defines listed are just for ease of use.
+#define NUM_BEEPS_GEN_LATEST            4                    // 4回繰り返す（HP赤の点滅音）
+#define NUM_BEEPS_GEN_3                 -1                   // 無限
+#define NUM_BEEPS_OFF                   0                    // 再生しない
+#define B_NUM_LOW_HEALTH_BEEPS          NUM_BEEPS_GEN_LATEST // これは、HP赤の時の点滅音が繰り返される回数を制御します。この値を `NUM_BEEPS_OFF` に設定するとビープ音は無効になり、`NUM_BEEPS_GEN_3` に設定すると無限に繰り返されます。任意の数値を設定可能であり、ここに挙げた定義はあくまで利便性のためのものです。
 
-// Animation Settings
-#define B_NEW_SWORD_PARTICLE            FALSE    // If set to TRUE, it updates Swords Dance's particle.
-#define B_NEW_LEECH_SEED_PARTICLE       FALSE    // If set to TRUE, it updates Leech Seed's animation particle.
-#define B_NEW_HORN_ATTACK_PARTICLE      FALSE    // If set to TRUE, it updates Horn Attack's horn particle.
-#define B_NEW_ROCKS_PARTICLE            FALSE    // If set to TRUE, it updates rock particles.
-#define B_NEW_LEAF_PARTICLE             FALSE    // If set to TRUE, it updates leaf particle.
-#define B_NEW_EMBER_PARTICLES           FALSE    // If set to TRUE, it updates Ember's fire particle.
-#define B_NEW_MEAN_LOOK_PARTICLE        FALSE    // If set to TRUE, it updates Mean Look's eye particle.
-#define B_NEW_TEETH_PARTICLE            FALSE    // If set to TRUE, it updates Bite/Crunch teeth particle.
-#define B_NEW_HANDS_FEET_PARTICLE       FALSE    // If set to TRUE, it updates chop/kick/punch particles.
-#define B_NEW_SPIKES_PARTICLE           FALSE    // If set to TRUE, it updates Spikes particle.
-#define B_NEW_FLY_BUBBLE_PARTICLE       FALSE    // If set to TRUE, it updates Fly's 'bubble' particle.
-#define B_NEW_CURSE_NAIL_PARTICLE       FALSE    // If set to TRUE, it updates Curse's nail.
-#define B_NEW_BATON_PASS_BALL_PARTICLE  FALSE    // If set to TRUE, it updates Baton Pass' Poke Ball sprite.
-#define B_NEW_MORNING_SUN_STAR_PARTICLE FALSE    // If set to TRUE, it updates Morning Sun's star particles.
-#define B_NEW_IMPACT_PALETTE            FALSE    // If set to TRUE, it updates the basic 'hit' palette.
-#define B_NEW_SURF_PARTICLE_PALETTE     FALSE    // If set to TRUE, it updates Surf's wave palette.
+// アニメーション設定
+#define B_NEW_SWORD_PARTICLE            FALSE    // TRUEの場合、「つるぎのまい」のパーティクルがアップデートされる。
+#define B_NEW_LEECH_SEED_PARTICLE       FALSE    // TRUEの場合、「やどりぎのタネ」のパーティクルがアップデートされる。
+#define B_NEW_HORN_ATTACK_PARTICLE      FALSE    // TRUEの場合、「つのでつく 」の角のパーティクルがアップデートされる。
+#define B_NEW_ROCKS_PARTICLE            TRUE    // TRUEの場合、岩のパーティクルをアップデートされる。
+#define B_NEW_LEAF_PARTICLE             TRUE    // TRUEの場合、葉っぱのパーティクルをアップデートされる。
+#define B_NEW_EMBER_PARTICLES           FALSE    // TRUEの場合、「ひのこ」の炎のパーティクルがアップデートされる。。
+#define B_NEW_MEAN_LOOK_PARTICLE        FALSE    // TRUEの場合、「くろいまなざし」の目のパーティクルがアップデートされる。
+#define B_NEW_TEETH_PARTICLE            FALSE    // TRUEの場合、「かみつく」/「かみくだく」の歯のパーティクルがアップデートされる。
+#define B_NEW_HANDS_FEET_PARTICLE       FALSE    // TRUEの場合、チョップ、キック、パンチのパーティクルがアップデートされる。
+#define B_NEW_SPIKES_PARTICLE           FALSE    // TRUEの場合、「まきびし」のパーティクルがアップデートされる。
+#define B_NEW_FLY_BUBBLE_PARTICLE       FALSE    // TRUEの場合、「そらをとぶ」のバブルのパーティクルがアップデートされる。
+#define B_NEW_CURSE_NAIL_PARTICLE       TRUE    // TRUEの場合、「のろい」のツメがアップデートされる。
+#define B_NEW_BATON_PASS_BALL_PARTICLE  TRUE    // TRUEの場合、「バトンタッチ」のボールのグラフィックがアップデートされる。
+#define B_NEW_MORNING_SUN_STAR_PARTICLE TRUE    // TRUEの場合、「あさのひざし」の星のパーティクルがアップデートされる。
+#define B_NEW_IMPACT_PALETTE            TRUE    // TRUEの場合、基本的な「ヒット」パレットがアップデートされる。
+#define B_NEW_SURF_PARTICLE_PALETTE     FALSE    // TRUEの場合、「なみのり」の波パレットがアップデートされる。
 
-// Poke Ball animation and sounds
-#define B_ENEMY_THROW_BALLS          GEN_LATEST  // In GEN_6+, enemy Trainers throw Poke Balls into battle instead of them just appearing on the ground and opening.
-#define B_ENEMY_THROW_BALLS_SOUND    GEN_LATEST  // In GEN_5+, enemy Trainer's Poke Balls make a sound when thrown to send out a Pokemon. This can only be used when B_ENEMY_THROW_BALLS is set to GEN_6 or later.
-#define B_PLAYER_THROW_BALLS_SOUND   GEN_LATEST  // In GEN_5+, the player's Poke Balls make a sound when thrown to send out a Pokemon.
+// モンスターボールのアニメーションとサウンド
+#define B_ENEMY_THROW_BALLS          GEN_LATEST  // 第6世代以降、敵のトレーナーがモンスターボールを地面に置いて開かせるのではなく、バトル中にボールを投げ入れるようになりました。
+#define B_ENEMY_THROW_BALLS_SOUND    GEN_LATEST  // 第5世代以降の仕様では、敵トレーナーがポケモンを出すためにモンスターボールを投げる際、効果音が再生されます。この機能は、`B_ENEMY_THROW_BALLS` が `GEN_6` 以降に設定されている場合にのみ有効です。
+#define B_PLAYER_THROW_BALLS_SOUND   GEN_LATEST  // 第5世代以降、ポケモンを繰り出すためにモンスターボールを投げると、そのボールから音が鳴るようになっています。
 
-#define SHOW_TYPES_NEVER    0                    // Never shows types in battle
-#define SHOW_TYPES_ALWAYS   1                    // Always show types in battle
-#define SHOW_TYPES_CAUGHT   2                    // Only show types if you've caught a species of the mon.
-#define SHOW_TYPES_SEEN     3                    // Only show types if you've seen a species of the mon.
-#define B_SHOW_TYPES        SHOW_TYPES_NEVER     // When to show type indicators next to Pokemon health bars in battle, while choosing a move after selecting a target Pokemon.
+#define SHOW_TYPES_NEVER    0                    // 戦闘中にタイプが表示されない。
+#define SHOW_TYPES_ALWAYS   1                    // バトル中に常にタイプを表示する。
+#define SHOW_TYPES_CAUGHT   2                    // 捕まえたことがある場合のみ、タイプを表示する。
+#define SHOW_TYPES_SEEN     3                    // 一度でも見かけた場合のみ、タイプを表示する
+#define B_SHOW_TYPES        SHOW_TYPES_NEVER     // バトル中、ターゲットとなるポケモンを選択した後、技を選ぶ際にポケモンのHPバーの横へタイプアイコンを表示するタイミング。
 
-#define SHOW_EFFECTIVENESS_NEVER    0           // Never show effectiveness when selecting moves.
-#define SHOW_EFFECTIVENESS_ALWAYS   1           // Always show effectiveness when selecting moves.
-#define SHOW_EFFECTIVENESS_CAUGHT   2           // Only show effectiveness if you've caught a species of the mon.
-#define SHOW_EFFECTIVENESS_SEEN     3           // Only show effectiveness if you've seen a species of the mon.
-#define B_SHOW_EFFECTIVENESS        SHOW_EFFECTIVENESS_SEEN // If not SHOW_EFFECTIVENESS_NEVER, the PP string is replaced by a type effectiveness indicator based off the moves and the opposing side.
+#define SHOW_EFFECTIVENESS_NEVER    0           // 技を選択する際、相性は表示しない。
+#define SHOW_EFFECTIVENESS_ALWAYS   1           // 技を選択する際、相性を常に表示する。
+#define SHOW_EFFECTIVENESS_CAUGHT   2           // 捕まえたことがある場合のみ、相性を表示。
+#define SHOW_EFFECTIVENESS_SEEN     3           // 見たことがある場合にのみ、相性を表示。
+#define B_SHOW_EFFECTIVENESS        SHOW_EFFECTIVENESS_SEEN // SHOW_EFFECTIVENESS_NEVER でない場合、PPは、技と相手の情報を基にしたタイプ相性に置き換えられます。
 
-// Pokemon battle sprite settings
-#define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // In Gen4+, all enemy Pokemon will have a shadow drawn beneath them.
+// ポケモンのバトル用スプライト設定
+#define B_ENEMY_MON_SHADOW_STYLE        GEN_LATEST // 第4世代以降、すべての敵ポケモンの足元に影が描画されます。
 
-//  Battle UI settings
-#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_LATEST  //  In Gen 4+ move slots cannot be rearranged in battle
+//  バトルUI設定
+#define B_MOVE_REARRANGEMENT_IN_BATTLE  GEN_1  //  第4世代以降、戦闘中に技の並び順を変更することはできません。
 
-#define B_POOL_SETTING_CONSISTENT_RNG       FALSE    // If set to true, the same trainer will always generate the same pool on the same save file
-#define B_POOL_SETTING_USE_FIXED_SEED       FALSE    // If set to true, will use the fixed seed defined in B_POOL_SETTING_FIXED_SEED
-#define B_POOL_SETTING_FIXED_SEED           0x1D4127 // "Random" number, unless a mistake was made, it's へだら in Emerald charmap which should spell he-da-ra
-#define B_POOL_RULE_SPECIES_CLAUSE          FALSE    // Only pick a single Pokemon of a unique NatDex number
-#define B_POOL_RULE_EXCLUDE_FORMS           FALSE    // Exclude different forms from the Species Clause
-#define B_POOL_RULE_ITEM_CLAUSE             FALSE    // Only allow each item to be picked once
-#define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE    // Exclude items listed in poolItemClauseExclusions
-#define B_POOL_RULE_MEGA_STONE_CLAUSE       FALSE    // Pick only 1 mon with mega stone
-#define B_POOL_RULE_Z_CRYSTAL_CLAUSE        FALSE    // Pick only 1 mon with Z-crystal
+#define B_POOL_SETTING_CONSISTENT_RNG       FALSE    // TRUEの場合、同じセーブデータにおいて、同じトレーナーが常に同じプールを乱数生成するようになります。
+#define B_POOL_SETTING_USE_FIXED_SEED       FALSE    // TRUEの場合、B_POOL_SETTING_FIXED_SEEDで定義された固定シードが使用されます。
+#define B_POOL_SETTING_FIXED_SEED           0x1D4127 // 「ランダム」な数値についてですが、間違いでなければ、JP-EMの文字コード表『へだら』になります。
+#define B_POOL_RULE_SPECIES_CLAUSE          FALSE    // 全国図鑑番号が異なるポケモンを1匹だけ選ぶ。
+#define B_POOL_RULE_EXCLUDE_FORMS           FALSE    // 「SPECIES_CLAUSE」から異なる形態を除外する
+#define B_POOL_RULE_ITEM_CLAUSE             TRUE    // 各アイテムの選択を1回のみ許可する。
+#define B_POOL_RULES_USE_ITEM_EXCLUSIONS    FALSE    // poolItemClauseExclusions に記載されている項目を除外する
+#define B_POOL_RULE_MEGA_STONE_CLAUSE       FALSE    // メガストーンを持たせるポケモンは1匹だけ選ぶ。
+#define B_POOL_RULE_Z_CRYSTAL_CLAUSE        FALSE    // Zクリスタルを持たせるポケモンを1匹だけ選ぶ。
 
 #endif // GUARD_CONFIG_BATTLE_H

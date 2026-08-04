@@ -51,35 +51,35 @@
 #define SHOULD_SWITCH_INTIMIDATE_STATS_RAISED_PERCENTAGE            10
 #define SHOULD_SWITCH_WISH_PASSING_PERCENTAGE                       50
 
-// AI switchin considerations
-#define ALL_MOVES_BAD_STATUS_MOVES_BAD                          FALSE // If the AI has no moves that affect the target, ShouldSwitchIfAllMovesBad can prompt a switch. Enabling this config will ignore status moves that can affect the target when making this decision.
-#define AI_BAD_SCORE_THRESHOLD                                  90 // Move scores beneath this threshold are considered "bad" when deciding switching
-#define AI_GOOD_SCORE_THRESHOLD                                 100 // Move scores above this threshold are considered "good" when deciding switching
-#define ALL_MOVES_BAD_NEEDS_GOOD_SWITCHIN                       FALSE // AI will only trigger ShouldSwitchIfAllMovesBad if they have a good switchin
-#define ALL_SCORES_BAD_NEEDS_GOOD_SWITCHIN                      FALSE // AI will only trigger ShouldSwitchIfAllScoresBad if they have a good switchin
-#define AI_DEFENSIVE_KO_THRESHOLD                               3 // AI must be able to take more than this many hits before being KO'd before being considered a "defensive mon"
-#define AI_TYPE_MATCHUP_THRESHOLD                               UQ_4_12(2.0) // AI must have a better matchup than this to be considered good; 2.0 is the default "Neutral" matchup from GetBattlerTypeMatchup
-#define AI_WISH_HEAL_THRESHOLD                                  4 // Fraction of HP AI must restore to be considered a good recipient of Wish, treated as a fraction denominator (ie. 4 = 1/4 = 25% HP)
-#define AI_SWITCHIN_DAMAGE_THRESHOLD                            0 // Damage AI must exceed to be considered an acceptable switchin candidate. Keep this *very low*, as it's used as a fallback case before giving up.
-#define AI_REVERSE_BATTLER_LOGIC_ORDER_CHANCE                   50 // Chance to reverse the order of mons when running AI logic in double battles. For example if both mons want to switch and there's only one mon to switch in, the first mon processed will get to switch; setting this above zero controls the chance of switching which slot is processed first
+// AIへの『いれかえ』に関する検討事項
+#define ALL_MOVES_BAD_STATUS_MOVES_BAD                          FALSE // AIが敵に影響を与える技を一つも持っていない場合、『ShouldSwitchIfAllMovesBad』によって交代が促されることがあります。この設定を有効にすると、交代の判断を行う際、対象に影響を及ぼし得る変化技は無視されるようになります。
+#define AI_BAD_SCORE_THRESHOLD                                  70 // 『いれかえ』を判断する際、この閾値を下回る技評価は『不可』とみなされます。
+#define AI_GOOD_SCORE_THRESHOLD                                 100 // 『いれかえ』を判断する際、この閾値を超える技評価は『良』とみなされます。
+#define ALL_MOVES_BAD_NEEDS_GOOD_SWITCHIN                       FALSE // AI は、適切な『いれかえ』がある場合にのみ ShouldSwitchIfAllMovesBad をトリガーします
+#define ALL_SCORES_BAD_NEEDS_GOOD_SWITCHIN                      FALSE // AI は、適切な『いれかえ』がある場合にのみ ShouldSwitchIfAllScoresBad をトリガーします
+#define AI_DEFENSIVE_KO_THRESHOLD                               3 // 防御型ポケモンと見なされるためには、AIが撃破されるまでに、これ以上の回数の攻撃に耐えられる必要があります。
+#define AI_TYPE_MATCHUP_THRESHOLD                               UQ_4_12(2.0) // AIが「優秀」とみなされるには、これよりも有利な相性である必要があります。2.0は、GetBattlerTypeMatchupにおけるデフォルトの等倍な相性値です。
+#define AI_WISH_HEAL_THRESHOLD                                  4 // 「ねがいごと」の適切な対象とみなされるためにAIが回復すべきHPの割合（分母として扱われる。例：4 = 1/4 = HPの25%）
+#define AI_SWITCHIN_DAMAGE_THRESHOLD                            0 // 安全な交代先として認められるには、AIが算出する被ダメージ量が一定の基準を下回る必要があります。この値は、他の選択肢を断念した際の「最後の手段」として使われるため、**極めて低く**設定してください。
+#define AI_REVERSE_BATTLER_LOGIC_ORDER_CHANCE                   50 // ダブルバトルでAIのロジックを実行する際、ポケモンの処理順序を入れ替えるための設定です。例えば、2匹のポケモンが交代しようとしていて、交代先が1匹しかいない場合、先に処理されたポケモンが交代することになります。この値を0より大きく設定することで、どちらのスロットを先に処理するかを入れ替える確率を制御できます。
 
-// AI held item-based move scoring
-#define LOW_ACCURACY_THRESHOLD                                  75 // Moves with accuracy equal OR below this value are considered low accuracy
+// AIの持ち物に基づいた技の評価
+#define LOW_ACCURACY_THRESHOLD                                  75 // この値以下の命中率を持つ技は、命中率が低いとみなされます。
 
-// AI move scoring
-#define STATUS_MOVE_FOCUS_PUNCH_CHANCE                          50 // Chance the AI will use a status move if the player's best move is Focus Punch
-#define BOOST_INTO_HAZE_CHANCE                                  0 // Chance the AI will use a stat boosting move if the player has used Haze
-#define SHOULD_RECOVER_CHANCE                                   50 // Chance the AI will give recovery moves score increase if less than ENABLE_RECOVERY_THRESHOLD and in no immediate danger
-#define ENABLE_RECOVERY_THRESHOLD                               60 // HP percentage beneath which SHOULD_RECOVER_CHANCE is active
-#define SUCKER_PUNCH_CHANCE                                     50 // Chance for the AI to not use Sucker Punch if the player has a status move
-#define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // Additional chance for the AI to not use Sucker Punch if actively predicting a status move if SUCKER_PUNCH_CHANCE fails
-#define PRIORITIZE_LAST_CHANCE_CHANCE                           50 // Chance the AI will prioritize Last Chance (priority move in the face of being outsped and KO'd) over Slow KO
-#define LAST_MON_PREFERS_NOT_SACRIFICE                          FALSE // Whether the AI will be hesitant to use self-sacrificing moves (Explosion, Final Gambit) with their last mon
-#define EXPLOSION_LOWER_HP_THRESHOLD                            10 // HP percentage at or beneath which the AI has a 90% chance to explode; otherwise scales between this and higher threshold
-#define EXPLOSION_HIGHER_HP_THRESHOLD                           90 // HP percentage at or above which the AI has a 0% chance to explode; otherwise scales between this and lower threshold
-#define EXPLOSION_MINIMUM_CHANCE                                0 // Lowest possible percent chance of the AI using explosion based on its current HP
-#define EXPLOSION_MAXIMUM_CHANCE                                90 // Highest possible percent chance of the AI using explosion based on its current HP
-#define FINAL_GAMBIT_CHANCE                                     50 // Chance for AI to consider using Final Gambit if it outspeeds the player and thinks it has more HP
+// AIの技評価
+#define STATUS_MOVE_FOCUS_PUNCH_CHANCE                          70 // プレイヤーの最適解が「きあいパンチ」である場合、AIが変化技を使用する確率
+#define BOOST_INTO_HAZE_CHANCE                                  0 // プレイヤーが「くろいきり」を使用した際、AIが能力を上げる技を使用する確率
+#define SHOULD_RECOVER_CHANCE                                   50 // AIが回復技にスコア加算を行う条件：現在の値が `ENABLE_RECOVERY_THRESHOLD` 未満であり、かつ差し迫った危険がないこと。
+#define ENABLE_RECOVERY_THRESHOLD                               30 // SHOULD_RECOVER_CHANCEが有効になるHPの割合
+#define SUCKER_PUNCH_CHANCE                                     50 // プレイヤーが変化技を持っている場合、AIが「ふいうち」を使わない可能性
+#define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // SUCKER_PUNCH_CHANCEの判定に外れた場合でも、相手が変化技を使うと積極的に予測した際に、AIが「ふいうち」を使用しない確率が追加。
+#define PRIORITIZE_LAST_CHANCE_CHANCE                           50 // AIが低速撃破よりも相手に先手を取られ撃破されそうな状況で優先的に発動する技を優先する可能性。
+#define LAST_MON_PREFERS_NOT_SACRIFICE                          FALSE // AIが最後のポケモンで自己犠牲的な技（じばく系、いのちがけ）を使うことを躊躇するかどうか
+#define EXPLOSION_LOWER_HP_THRESHOLD                            10 // AIが90%の確率で自爆するHPの割合（閾値）。それ以上のHPでは、この閾値と最大閾値の間で確率が変動する。
+#define EXPLOSION_HIGHER_HP_THRESHOLD                           100 // AIが自爆する確率が0%となるHPの割合（これ以上の場合は自爆しない）。それ未満の場合は、この閾値と最低閾値の間で確率が変動する。
+#define EXPLOSION_MINIMUM_CHANCE                                0 // 現在のHPに基づいた、AIが「だいばくはつ」を使用する最低確率
+#define EXPLOSION_MAXIMUM_CHANCE                                90 // 現在のHPに基づき、AIが「だいばくはつ」を使用する可能性が最大確率
+#define FINAL_GAMBIT_CHANCE                                     50 // AIがプレイヤーより素早く、かつ自身のHPの方が多いと判断した場合、「いのちがけ」の使用を検討する可能性
 #define SHOULD_PIVOT_BREAK_SASH_CHANCE                          50 // 「マルチスケイル」や「きあいのタスキ」といった効果を無効化しつつ、有利な状況で交代（スイッチイン）できる際に、`ShouldPivot` が `true` を返す可能性があります。
 #define FAKE_OUT_SAVE_ALLY_CHANCE                               50 // 味方が対戦相手2体から素早くKOされそうな際、AIが「ねこだまし」で妨害して味方を救うチャンス
 
@@ -110,7 +110,7 @@
 
 // AIのテラスタル発生率
 #define AI_CONSERVE_TERA_CHANCE_PER_MON                         10 // 「smart tera flag 」を持つAIが、防御面でのメリットを考慮する前にテラスタルしないと判断する確率は、*(X-1)となります（ここでXは、テラスタル可能な生存ポケモンの数です）。
-#define AI_TERA_PREDICT_CHANCE                                  40 // 「テラスタルすればきのみ等でKOを免れるが、別の技でKOされるリスクもある」という状況において、AIが「smart tera flag （テラスタルによる生存）」を選択する可能性。
+#define AI_TERA_PREDICT_CHANCE                                  40 // 「テラスタルすればきのみ等でKOを免れるが、別の技でKOされるリスクもある」という状況において、AIが「smart tera flag」を選択する可能性。
 
 // AI_FLAG_PP_STALL_PREVENTION 設定
 #define PP_STALL_DISREGARD_MOVE_PERCENTAGE                      50 // PP消費なしで技を使用した際の確率:1回の判定あたりの確率
@@ -121,14 +121,14 @@
 
 // AI_FLAG_ASSUME_STATUS_MOVES 設定
 #define ASSUME_STATUS_MOVES_HAS_TUNING                  TRUE // フラグは、ステータス変化技の種類によって異なるレートを持ちます。
-                                                             // falseに設定すると、「ねこだまし」や「いかりのまえば」に対しても通知されなくなります。
+                                                             // FALSEに設定すると、「ねこだまし」や「いかりのまえば」に対しても通知されなくなります。
 #define ASSUME_STATUS_HIGH_ODDS                         90 // 「キノコのほうし」のように、そのポケモンが覚えている可能性が極めて高い技をAIが認識する機会
 #define ASSUME_STATUS_MEDIUM_ODDS                       70 // 「まもる」のように、そのポケモンが覚えている可能性がそれなりにある技をAIが認識するチャンス
-#define ASSUME_STATUS_LOW_ODDS                          40 // AIが、「なりきり（Entrainment）」のような、そのポケモンが覚える可能性はあるものの実際には採用されにくい「ニッチな技」を認識するチャンス。
+#define ASSUME_STATUS_LOW_ODDS                          40 // AIが、「なりきり」のような、そのポケモンが覚える可能性はあるものの実際には採用されにくい「ニッチな技」を認識するチャンス。
 #define ASSUME_ALL_STATUS_ODDS                          25 // AIが何らかの状態変化技を使用する機会。
 
 // AI_FLAG_SMART_SWITCHING 設定
-#define SMART_SWITCHING_OMNISCIENT                              FALSE // AIは、他の「全知（omniscience）」設定にかかわらず、切り替え計算に全知の能力を使用します。
+#define SMART_SWITCHING_OMNISCIENT                              FALSE // AIは、他の「全知」設定にかかわらず、切り替え計算に全知の能力を使用します。
 
 // AI_FLAG_RANDOMIZE_SWITCHIN settings
 #define RANDOMIZE_SWITCHIN_ANY_VALID                            TRUE // AIにとって適切な候補となるポケモンがいない場合、パーティ順の最後にあるポケモンをデフォルトで選ぶのではなく、有効な選択肢すべての中からランダムに選出します。

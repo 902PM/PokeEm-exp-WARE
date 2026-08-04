@@ -1,13 +1,13 @@
 #ifndef GUARD_CONFIG_MAP_PREVIEW_H
 #define GUARD_CONFIG_MAP_PREVIEW_H
 
-#define MPS_ENABLE_MAP_PREVIEWS     IS_FRLG // Enables map previews.
+#define MPS_ENABLE_MAP_PREVIEWS     IS_FRLG // マップのプレビューを有効にします。
 
-#define MPS_DURATION_LONG       120 // This is the number of frames the map preview will last when the player enters the map for the first time.
-#define MPS_DURATION_SHORT      40  // This is the number of frames the map preview will last if the player has visited the map before.
-#define MPS_DURATION_NO_FLAG    40  // This is the number of frames the map preview will last if the map's flagId is MPS_FLAG_NULL.
-#define MPS_BASIC_FADE_SPEED    1   // This sets the speed that the map preview fades to black when MPS_TYPE_BASIC is used.
-                                    // Numbers less than 1 will have a shorter fade time (negative numbers can be used).
-                                    // Numbers greater than 1 will have a longer fade time.
+#define MPS_DURATION_LONG       120 // これは、プレイヤーが初めてマップに入った際にマップのプレビューが表示されるフレーム数です。
+#define MPS_DURATION_SHORT      40  // これは、プレイヤーが以前にそのマップを訪れたことがある場合に、マップのプレビューが表示されるフレーム数です。
+#define MPS_DURATION_NO_FLAG    40  // これは、マップの flagId が MPS_FLAG_NULL である場合にマッププレビューが継続するフレーム数です。
+#define MPS_BASIC_FADE_SPEED    1   // これは、MPS_TYPE_BASICが使用される際に、マッププレビューが黒色へフェードアウトする速度を設定します。
+                                    // 1未満の数値を指定すると、フェード時間が短くなります（負の数も使用可能です）。
+                                    // 1より大きい数値を指定すると、フェード時間が長くなります。
 
 #endif // GUARD_CONFIG_MAP_PREVIEW_H

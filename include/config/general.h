@@ -53,12 +53,12 @@
 // Compatibility definition for other projects to detect pokeemerald-expansion
 #define RHH_EXPANSION
 
-// Legacy branch-based defines included for backwards compatibility
+// 後方互換性のために、レガシーなブランチベースの定義が含まれています。
 #define BATTLE_ENGINE
 #define POKEMON_EXPANSION
 #define ITEM_EXPANSION
 
-// Generation constants used in configs to define behavior.
+// 動作を定義するために設定で使用される世代の定数。
 #define GEN_1 0
 #define GEN_2 1
 #define GEN_3 2
@@ -69,21 +69,21 @@
 #define GEN_8 7
 #define GEN_9 8
 #define GEN_COUNT 9
-// Changing GEN_LATEST's value to a different Generation will change every default setting that uses it at once.
+// GEN_LATESTの値を別の世代に変更すると、それを使用しているすべてのデフォルト設定が一括して変更されます。
 #define GEN_LATEST GEN_9
 
 // General settings
-#define EXPANSION_INTRO              FALSE    // If TRUE, a custom RHH intro will play after the vanilla copyright screen.
-#define PHONEMES_SHARED              FALSE   // If TRUE, bard phonemes all reference the same sound (sound/direct_sound_samples/phonemes/shared.bin) to save ROM space.
+#define EXPANSION_INTRO              FALSE    // TRUEの場合、原作の著作権表示画面の後に、カスタムRHHイントロが再生されます。
+#define PHONEMES_SHARED              FALSE   // TRUEの場合、ROM容量を節約するため、すべてのオヤジの音源は同一のサウンド（sound/direct_sound_samples/phonemes/shared.bin）を参照します。
 
-// Measurement system constants to be used for UNITS
-#define UNITS_IMPERIAL               0       // Inches, feet, pounds
-#define UNITS_METRIC                 1       // meters, kilograms
+// UNITSに使用する測定システムの定数
+#define UNITS_IMPERIAL               0       // インチ、フィート、ポンド
+#define UNITS_METRIC                 1       // メートル、キログラム
 
 #define UNITS                        UNITS_METRIC
-#define CHAR_DEC_SEPARATOR           CHAR_PERIOD // CHAR_PERIOD is used as a decimal separator only in the UK and the US. The rest of the world uses CHAR_COMMA.
+#define CHAR_DEC_SEPARATOR           CHAR_COMMA // CHAR_PERIODが小数点記号として使用されるのは、英国と米国のみです。それ以外の国ではCHAR_COMMAが使用されます。
 
-// Naming Screen
-#define AUTO_LOWERCASE_KEYBOARD      GEN_LATEST  // Starting in GEN_6, after entering the first uppercase character, the keyboard switches to lowercase letters.
+// 名前入力画面
+#define AUTO_LOWERCASE_KEYBOARD      GEN_LATEST  // 第6世代以降、最初の大文字を入力すると、キーボードは小文字入力に切り替わります。
 
 #endif // GUARD_CONFIG_GENERAL_H
