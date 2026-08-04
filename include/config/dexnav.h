@@ -2,7 +2,7 @@
 #define GUARD_CONFIG_DEXNAV_H
 
 #define DEXNAV_ENABLED                FALSE   // DexNavが有効かどうか。TRUEの場合、以下のフラグや変数はすべて非ゼロである必要があります。
-#define USE_DEXNAV_SEARCH_LEVELS      FALSE  /* 警告: セーブブロックの容量を超える可能性があります！ 1種につき1バイト必要です */ */
+#define USE_DEXNAV_SEARCH_LEVELS      FALSE  // * 警告: セーブブロックの容量を超える可能性があります！ 1種につき1バイト必要です */ */
 
 // フラグ／変数の定義
 #define DN_FLAG_SEARCHING             FLAG_EXPANSION_DEXNAV_SEARCHING      // ポケモンのサーチ中
