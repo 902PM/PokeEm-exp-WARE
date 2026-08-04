@@ -396,7 +396,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LUXURY_BALL] =
     {
         .name = ITEM_NAME("{JPN}ゴージャスボール"),
-        .price = (I_PRICE >= GEN_8) ? 3000 : 1000,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "{JPN}つかまえた ポケモンが\n"
             "{JPN}なつき やすくなる\n"
@@ -412,7 +412,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LEVEL_BALL] =
     {
         .name = ITEM_NAME("{JPN}レベルボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}ポケモンの レベルが\n"
             "{JPN}ひくいほど つかまえ\n"
@@ -428,7 +428,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LURE_BALL] =
     {
         .name = ITEM_NAME("{JPN}ルアーボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}つりざおで つりあげた\n"
             "{JPN}ポケモンを つかまえ\n"
@@ -444,7 +444,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MOON_BALL] =
     {
         .name = ITEM_NAME("{JPN}ムーンボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}つきのいしで しんかする\n"
             "{JPN}ポケモンが つかまえ\n"
@@ -460,7 +460,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_FRIEND_BALL] =
     {
         .name = ITEM_NAME("{JPN}フレンドボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}つかまえた ポケモンが\n"
             "{JPN}すぐに なついて\n"
@@ -476,7 +476,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LOVE_BALL] =
     {
         .name = ITEM_NAME("{JPN}ラブラブボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}せいべつが ちがう\n"
             "{JPN}ポケモンを つかまえ\n"
@@ -492,7 +492,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_FAST_BALL] =
     {
         .name = ITEM_NAME("{JPN}スピードボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}すばやさの たかい\n"
             "{JPN}ポケモンが つかまえ\n"
@@ -508,7 +508,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_HEAVY_BALL] =
     {
         .name = ITEM_NAME("{JPN}ヘビーボール"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}たいじゅうの おもい\n"
             "{JPN}ポケモンを つかまえ\n"
@@ -524,7 +524,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_DREAM_BALL] =
     {
         .name = ITEM_NAME("{JPN}ドリームボール"),
-        .price = 0,
+        .price = 300,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
             "{JPN}ねむり じょうたいの\n"
@@ -561,7 +561,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_SPORT_BALL] =
     {
         .name = ITEM_NAME("{JPN}コンペボール"),
-        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}むしとりたいかいの\n"
             "{JPN}なかで つかう\n"
@@ -577,7 +577,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PARK_BALL] =
     {
         .name = ITEM_NAME("{JPN}パークボール"),
-        .price = 0,
+        .price = 300,
         .description = COMPOUND_STRING(
             "{JPN}パルパークの\n"
             "{JPN}なかで つかう\n"

@@ -51,9 +51,6 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
-static const u8 sText_SavNumber[] = _("{JPN}ひき");
-static const u8 sText_SavCount[] = _("{JPN}こ");
-
 // Menu actions
 enum
 {
@@ -1440,7 +1437,7 @@ static void ShowSaveInfoWindow(void)
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingBadges, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
     xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x4E);
-    StringAppend(gStringVar4, sText_SavCount);
+    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}こ"));
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
@@ -1449,8 +1446,8 @@ static void ShowSaveInfoWindow(void)
         yOffset += 16;
         AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPokedex, 0, yOffset, TEXT_SKIP_DRAW, NULL);
         BufferSaveMenuText(SAVE_MENU_CAUGHT, gStringVar4, color);
-        xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x50);
-        StringAppend(gStringVar4, sText_SavNumber);
+        xOffset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x58);
+        StringAppend(gStringVar4, COMPOUND_STRING("{JPN}ひき"));
         AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
     }
 
