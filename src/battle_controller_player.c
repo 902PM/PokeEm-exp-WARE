@@ -933,7 +933,7 @@ static void RefreshMoveSelectionAfterGimmickChange(enum BattlerId battler)
     MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
     if (B_SHOW_EFFECTIVENESS)
         MoveSelectionDisplayMoveEffectiveness(CheckTargetTypeEffectiveness(battler), battler);
-    MoveSelectionDisplayPpNumber(battler);
+    MoveSelectionDisplayPPNumber(battler);
     MoveSelectionDisplayMoveType(battler);
 }
 
