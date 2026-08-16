@@ -2758,6 +2758,14 @@ u16 GetFrontierBrainMonMove(u8 monId, u8 moveSlotId)
     return sFrontierBrainsMons[facility][symbol][monId].moves[moveSlotId];
 }
 
+u8 GetFrontierBrainMonGnder(u8 monId)
+{
+    s32 facility = VarGet(VAR_FRONTIER_FACILITY);
+    s32 symbol = GetFronterBrainSymbol();
+
+    return sFrontierBrainsMons[facility][symbol][monId].gender;
+}
+
 u8 GetFrontierBrainMonNature(u8 monId)
 {
     s32 facility = VarGet(VAR_FRONTIER_FACILITY);
