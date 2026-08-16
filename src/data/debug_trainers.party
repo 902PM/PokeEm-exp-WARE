@@ -12,98 +12,163 @@ Start Debug Battle action is selected.
 */
 
 === DEBUG_TRAINER_PLAYER ===
-Name: Player
-Class: Pkmn Trainer 1
-Pic: Brendan
-Gender: Male
-Music: Male
+Name: {PLAYER}
+Class: Champion
+Pic: May
+Gender: Female
+Music: Female
 
-
-ヴィクトリア (Pheromosa) @	Fightinium Z
-Adamant Nature
+Mewtwo @ Mewtwonite Y
 Level: 100
-Dynamax Level: 10
-Tera Type: Steel
+Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Close Combat
-- Poison Jab
-- Drill Run
-- Throat Chop
-
-レッちゃん (Rayquaza) @	Covert Cloak
-Lonely Nature
-Level: 100
-Dynamax Level: 10
-Tera Type: Normal
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Dragon Ascent
-- Draco Meteor
-- Dragon Dance
-- Extreme Speed
-
-ぽんかん (Ogerpon) @	Hearthflame Mask
-Lonely Nature
-Level: 100
-Dynamax Level: 10
-Tera Type: Fire
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Ivy Cudgel
-- Horn Leech
-- Knock Off
-- Encore
-
-ラプラス (Lapras)
-Ability: Shell Armor
-Modest Nature
-Level: 100
-Dynamax Level: 10
-Gigantamax: Yes
-Tera Type: Water
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs:  252 Def / 252 SpA
+EVs: 6 HP / 252 SpA / 252 Spe
+Nature: Timid
+Ball: Master
+- Psystrike
 - Ice Beam
-- Surf
-- Ice Shard
+- Thunderbolt
+- Earth Power
+
+Kyogre @ Blue Orb
+Level: 100
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Nature: Timid
+Ball: Dive
+- Origin Pulse
 - Thunder
+- Ice Beam
+- Muddy Water
+
+Kyurem White @ Assault Vest
+Level: 100
+Ability: Turboblaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Nature: Modest
+Ball: Luxury
+- Freeze Dry
+- Fusion Flare
+- Earth Power
+- Dragon Pulse
+
+Zacian @ Rusted Sword
+Level: 100
+Ability: Intrepid Sword
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Nature: Jolly
+Ball: Heavy
+- Behemoth Blade
+- Sacred Sword
+- Play Rough
+- Swords Dance
+
+Necrozma Ultra @ Ultranecrozium Z
+Level: 100
+Ability: Neuroforce
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Nature: Modest
+Ball: Beast
+- Photon Geyser
+- Moongeist Beam
+- Earth Power
+- Flash Cannon
+
+Miraidon @ Electric Seed
+Level: 100
+Ability: Hadron Engine
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Nature: Timid
+Ball: Beast
+- Electro Drift
+- Draco Meteor
+- Volt Switch
+- Dazzling Gleam
 
 === DEBUG_TRAINER_AI ===
-Name: デバッグ
-AI: Smart Trainer
-Class: Rival
-Battle Type: Singles
+Name: ダイゴ
+Class: Champion
 Pic: Steven
 Gender: Male
 Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon / Will Suicide / Prefer Status Moves
+Mugshot: Yellow
 
-Metang
-Brave Nature
-Level: 42
+Skarmory (M) @ Rocky Helmet
+Level: 100
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Bold
+Ball: Heavy
+- Whirlwind
+- Stealth Rock
+- Roost
+- Drill Peck
+
+Claydol (M) @ Light Clay
+Level: 100
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Reflect
 - Light Screen
 - Psychic
-- Reflect
-- Metal Claw
+- Explosion
 
-Skarmory
-Impish Nature
-Level: 43
+Aggron (M) @ Life Orb
+Level: 100
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Head Smash
+- Earthquake
+- Iron Head
+- Power-Up Punch
 
-Aggron
-Adamant Nature
-Level: 44
+Cradily (M) @ Power Herb
+Level: 100
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+EVs: 252 HP / 252 SpA / 6 Spe
+Nature: Modest
+Ball: Heavy
+- Giga Drain
+- Meteor Beam
+- Leech Seed
+- Substitute
+
+Armaldo (M) @ Choice Band
+Level: 100
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- X-Scissor
+- Stone Edge
+- Earthquake
+- Liquidation
+
+Metagross @ Metagrossite
+Level: 100
+Ability: Clear Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Nature: Adamant
+Ball: Heavy
+- Meteor Mash
+- Thunder Punch
+- Bullet Punch
+- Earthquake
