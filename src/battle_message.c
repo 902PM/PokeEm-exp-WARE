@@ -517,7 +517,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNEAGERFORMORE]                     = COMPOUND_STRING("{JPN}{B_SCR_NAME_WITH_PREFIX}は まだまだ やるきだ!"),
     [STRINGID_DEFEATEDOPPONENTBYREFEREE]            = COMPOUND_STRING("{JPN}{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に かった！"),
     [STRINGID_LOSTTOOPPONENTBYREFEREE]              = COMPOUND_STRING("{JPN}{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}に まけた！"),
-    [STRINGID_TIEDOPPONENTBYREFEREE]                = COMPOUND_STRING("{JPN}{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}と ひきまわけた！"),
+    [STRINGID_TIEDOPPONENTBYREFEREE]                = COMPOUND_STRING("{JPN}{B_PLAYER_MON1_NAME}は はんていで\nあいての {B_OPPONENT_MON1_NAME}と ひきわけた！"),
     [STRINGID_QUESTIONFORFEITMATCH]                 = COMPOUND_STRING("{JPN}しょうぶを あきらめて こうさんしますか?"),
     [STRINGID_FORFEITEDMATCH]                       = COMPOUND_STRING("{JPN}こうさんしました……"),
     [STRINGID_PKMNTRANSFERREDSOMEONESPC]            = gText_PkmnTransferredSomeonesPC,
@@ -1546,7 +1546,7 @@ const u8 *const gRefereeStringsTable[] =
     [B_MSG_REF_PLAYER_WON]         = COMPOUND_STRING("{JPN}しんぱん『はんてい {B_BUFF1} たい {B_BUFF2}\nしょうしゃ！ {B_PLAYER_NAME}の  {B_PLAYER_MON1_NAME}！\p"),
     [B_MSG_REF_OPPONENT_WON]       = COMPOUND_STRING("{JPN}しんぱん『はんてい {B_BUFF1} たい {B_BUFF2}\nしょうしゃ！ {B_TRAINER1_NAME}の  {B_OPPONENT_MON1_NAME}！\p"),
     [B_MSG_REF_DRAW]               = COMPOUND_STRING("{JPN}しんぱん『はんてい 3 たい 3\nひきわけーーー!\p"),
-    [B_MSG_REF_COMMENCE_BATTLE]    = COMPOUND_STRING("{JPN}しんぱん『{B_PLAYER_MON1_NAME} VS {B_OPPONENT_MON1_NAME}しょうぶ! はじめーーー!!"),
+    [B_MSG_REF_COMMENCE_BATTLE]    = COMPOUND_STRING("{JPN}しんぱん『{B_PLAYER_MON1_NAME} VS {B_OPPONENT_MON1_NAME}\nしょうぶ! はじめーーー!!"),
 };
 
 static const u8 sText_Trainer1Fled[] = _( "{PLAY_SE SE_FLEE}{B_TRAINER1_CLASS}の {B_TRAINER1_NAME}は\nにげだした！");
