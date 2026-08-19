@@ -1,6 +1,5 @@
 MoveRelearner_Text_WouldLearnNewMoves:
-	.string "{JPN}こちらは わざマニアです\n"
-	.string "{JPN}わざを おもいださせますか?$"
+	.string "{JPN}こちらは わざマニアです\nわざを おもいださせますか?$"
 
 MoveRelearner_Text_LevelUpMoves:
 	.string "{JPN}レベルアップわざ$"

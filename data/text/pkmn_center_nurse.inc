@@ -1,47 +1,23 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "{JPN}おつかれさまです!\n"
-	.string "{JPN}ポケモン センター です\p"
-	.string "{JPN}ここでは ポケモンの\n"
-	.string "{JPN}たいりょく かいふくを します\p"
-	.string "{JPN}あなたの ポケモンを\n"
-	.string "{JPN}やすませて あげますか?$"
+	.string "{JPN}おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを\nやすませて あげますか?$"
 
 gText_IllTakeYourPkmn::
-	.string "{JPN}それでは\n"
-	.string "{JPN}おあずかり いたします!$"
+	.string "{JPN}それでは\nおあずかり いたします!$"
 
 gText_RestoredPkmnToFullHealth::
-	.string "{JPN}おまちどおさま!\p"
-	.string "{JPN}おあずかり した ポケモンは\n"
-	.string "{JPN}みんな げんきに なりましたよ!$"
+	.string "{JPN}おまちどおさま!\pおあずかり した ポケモンは\nみんな げんきに なりましたよ!$"
 
 gText_WeHopeToSeeYouAgain::
-	.string "{JPN}またの\n"
-	.string "{JPN}ごりようを おまち してます!$"
+	.string "{JPN}またの\nごりようを おまち してます!$"
 
 gText_WelcomeCutShort::
-	.string "{JPN}おつかれさまです!\n"
-	.string "{JPN}ポケモン センター です\p"
-	.string "{JPN}ここでは ポケモンの\n"
-	.string "{JPN}たいりょく かいふくを します\p"
-	.string "{JPN}あなたの ポケモンを……$"
+	.string "{JPN}おつかれさまです!\nポケモン センター です\pここでは ポケモンの\nたいりょく かいふくを します\pあなたの ポケモンを……$"
 
 gText_NoticesGoldCard::
-	.string "{JPN}そ それは……\n"
-	.string "{JPN}ひょっとして ゴールドカード!?\p"
-	.string "{JPN}ああ…… きんいろが まぶしい!\n"
-	.string "{JPN}4つの ほしが かがやかしい!\p"
-	.string "{JPN}わたしも これまでに\n"
-	.string "{JPN}シルバーカードの トレーナーさんなら\l"
-	.string "{JPN}なんにんか みてきましたが\l"
-	.string "{JPN}ゴールドカードを おもちの かたは\l"
-	.string "{JPN}{PLAYER}さんが はじめて ですよ!\p"
-	.string "{JPN}さあ {PLAYER}さんの\n"
-	.string "{JPN}ポケモンを やすませて あげましょう!$"
+	.string "{JPN}そ それは……\nひょっとして ゴールドカード!?\pああ…… きんいろが まぶしい!\n4つの ほしが かがやかしい!\pわたしも これまでに\nシルバーカードの トレーナーさんなら\lなんにんか みてきましたが\lゴールドカードを おもちの かたは\l{PLAYER}さんが はじめて ですよ!\pさあ {PLAYER}さんの\nポケモンを やすませて あげましょう!$"
 
 gText_YouWantTheUsual::
-	.string "{JPN}{PLAYER}さん おつかれさまです!\n"
-	.string "{JPN}いつもので よろしい ですね!$"
+	.string "{JPN}{PLAYER}さん おつかれさまです!\nいつもので よろしい ですね!$"
 
 gText_IllTakeYourPkmn2::
 	.string "{JPN}では おあずかりさせて いただきます!$"

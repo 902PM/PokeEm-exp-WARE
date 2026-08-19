@@ -1,17 +1,14 @@
 Text_BootUpPC:
-	.string "{JPN}{PLAYER}は\n"
-	.string "{JPN}パソコンの スイッチを いれた$"
+	.string "{JPN}{PLAYER}は\nパソコンの スイッチを いれた$"
 
 gText_WhichPCShouldBeAccessed::
-	.string "{JPN}どこの パソコンに せつぞく して\n"
-	.string "{JPN}つうしん しますか?$"
+	.string "{JPN}どこの パソコンに せつぞく して\nつうしん しますか?$"
 
 gText_AccessedSomeonesPC::
 	.string "{JPN}だれかの パソコンに せつぞく した!$"
 
 gText_StorageSystemOpened::
-	.string "{JPN}ポケモンの あずかり システムを\n"
-	.string "{JPN}よびだした!$"
+	.string "{JPN}ポケモンの あずかり システムを\nよびだした!$"
 
 gText_AccessedPlayersPC::
 	.string "{JPN}{PLAYER}の パソコンに せつぞくした!$"

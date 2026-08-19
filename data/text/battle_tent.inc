@@ -1,326 +1,159 @@
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "{JPN}バトルテント ハジツゲかいじょうへ\n"
-	.string "{JPN}ようこそ おいでなされた!\p"
-	.string "{JPN}こちらでは かちぬきチームバトルの\n"
-	.string "{JPN}あんないを しておりますぞ!$"
+	.string "{JPN}バトルテント ハジツゲかいじょうへ\nようこそ おいでなされた!\pこちらでは かちぬきチームバトルの\nあんないを しておりますぞ!$"
 
 FallarborTown_BattleTentLobby_Text_TakeChallenge:
-	.string "{JPN}かちぬきチームバトルに\n"
-	.string "{JPN}ちょうせん されますかな?$"
+	.string "{JPN}かちぬきチームバトルに\nちょうせん されますかな?$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge:
-	.string "{JPN}またの ちょうせんを\n"
-	.string "{JPN}おまちして おりますぞ!$"
+	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!$"
 
 FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
-	.string "{JPN}バトルテント ハジツゲかいじょうでは\n"
-	.string "{JPN}かちぬきチームバトルを\l"
-	.string "{JPN}おこなって おりますぞ!\p"
-	.string "{JPN}さんかする かたには しゅつじょう させる\n"
-	.string "{JPN}3ひきの ポケモンと たたかいに だす\l"
-	.string "{JPN}じゅんばんを きめて いただきますぞ!\p"
-	.string "{JPN}たたかいの あいだは\n"
-	.string "{JPN}この じゅんばん どおりに\l"
-	.string "{JPN}ポケモンを だすことに なりますな!\p"
-	.string "{JPN}たたかいに いちど だした ポケモンは\n"
-	.string "{JPN}けっちゃくが つくまで\l"
-	.string "{JPN}こうたいさせる ことが できませぬ!\p"
-	.string "{JPN}さらに 3ターン いないに\n"
-	.string "{JPN}たたかいの けっちゃくが つかなければ\l"
-	.string "{JPN}はんていと なりますぞ!\p"
-	.string "{JPN}また とちゅうで ちょうせんを\n"
-	.string "{JPN}ちゅうだんしたい ばあいは\l"
-	.string "{JPN}レポートを かかないと\l"
-	.string "{JPN}つづけて ちょうせんが できないので\l"
-	.string "{JPN}おきをつけ くだされ!\p"
-	.string "{JPN}みごと 3にんぬきを なされた あかつきには\n"
-	.string "{JPN}すてきな しょうひんを\l"
-	.string "{JPN}おおくり いたしますぞ!$"
+	.string "{JPN}バトルテント ハジツゲかいじょうでは\nかちぬきチームバトルを\lおこなって おりますぞ!\pさんかする かたには しゅつじょう させる\n3ひきの ポケモンと たたかいに だす\lじゅんばんを きめて いただきますぞ!\pたたかいの あいだは\nこの じゅんばん どおりに\lポケモンを だすことに なりますな!\pたたかいに いちど だした ポケモンは\nけっちゃくが つくまで\lこうたいさせる ことが できませぬ!\pさらに 3ターン いないに\nたたかいの けっちゃくが つかなければ\lはんていと なりますぞ!\pまた とちゅうで ちょうせんを\nちゅうだんしたい ばあいは\lレポートを かかないと\lつづけて ちょうせんが できないので\lおきをつけ くだされ!\pみごと 3にんぬきを なされた あかつきには\nすてきな しょうひんを\lおおくり いたしますぞ!$"
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "{JPN}バトルテントへ おつれする まえに\n"
-	.string "{JPN}レポートを かきますが よろしいですかな?$"
+	.string "{JPN}バトルテントへ おつれする まえに\nレポートを かきますが よろしいですかな?$"
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "{JPN}レベル50と レベル100の へやが\n"
-	.string "{JPN}ありますが どちらに まいられますかな?$"
+	.string "{JPN}レベル50と レベル100の へやが\nありますが どちらに まいられますかな?$"
 
 FallarborTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "{JPN}では ちょうせんする ポケモンを\n"
-	.string "{JPN}3ひき おえらび くだされ!$"
+	.string "{JPN}では ちょうせんする ポケモンを\n3ひき おえらび くだされ!$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
-	.string "{JPN}おきゃくじん!!\p"
-	.string "{JPN}さんかできる ポケモンが\n"
-	.string "{JPN}3ひき おりませんぬ!\p"
-	.string "{JPN}また もたせる どうぐも\n"
-	.string "{JPN}すべて ちがう どうぐに してくだされ!\p"
-	.string "{JPN}なお タマゴ{STR_VAR_1} さんか させる ことは できませぬ!\p"
-	.string "{JPN}じゅんびが できましたら\n"
-	.string "{JPN}また おこし くだされ!$"
+	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませんぬ!\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!\pじゅんびが できましたら\nまた おこし くだされ!$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "{JPN}おきゃくじん!!\p"
-	.string "{JPN}さんかできる ポケモンが\n"
-	.string "{JPN}3ひき おりませぬ!\p"
-	.string "{JPN}さんかする ためには\n"
-	.string "{JPN}すべて ちがう しゅるいの ポケモンを\l"
-	.string "{JPN}3ひき よういして くだされ\p"
-	.string "{JPN}また もたせる どうぐも\n"
-	.string "{JPN}すべて ちがう どうぐに してくだされ!\p"
-	.string "{JPN}なお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!\p"
-	.string "{JPN}じゅんびが できましたら\n"
-	.string "{JPN}また おこし くだされ!$"
+	.string "{JPN}おきゃくじん!!\pさんかできる ポケモンが\n3ひき おりませぬ!\pさんかする ためには\nすべて ちがう しゅるいの ポケモンを\l3ひき よういして くだされ\pまた もたせる どうぐも\nすべて ちがう どうぐに してくだされ!\pなお タマゴ{STR_VAR_1}さんか させる ことは できませぬ!\pじゅんびが できましたら\nまた おこし くだされ!$"
 
 FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent:
-	.string "{JPN}では バトルテントへ\n"
-	.string "{JPN}おつれいたしますぞ!$"
+	.string "{JPN}では バトルテントへ\nおつれいたしますぞ!$"
 
 FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "{JPN}おきゃくじん!\p"
-	.string "{JPN}ぜんかい レポートを かいて\n"
-	.string "{JPN}しゅうりょう しませんでしたな?\p"
-	.string "{JPN}ざんねんですが その ばあい\n"
-	.string "{JPN}ちょうせんは むこうと なりますぞ!\p"
-	.string "{JPN}また はじめから\n"
-	.string "{JPN}ちょうせん してくだされ!!$"
+	.string "{JPN}おきゃくじん!\pぜんかい レポートを かいて\nしゅうりょう しませんでしたな?\pざんねんですが その ばあい\nちょうせんは むこうと なりますぞ!\pまた はじめから\nちょうせん してくだされ!!$"
 
 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers:
-	.string "{JPN}3にんぬき たっせい\n"
-	.string "{JPN}おみごとで ございました!$"
+	.string "{JPN}3にんぬき たっせい\nおみごとで ございました!$"
 
 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame:
-	.string "{JPN}レポートを かきますので\n"
-	.string "{JPN}おまちくだされ!$"
+	.string "{JPN}レポートを かきますので\nおまちくだされ!$"
 
 FallarborTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "{JPN}3にんぬきを たっせい されましたので\n"
-	.string "{JPN}この しょうひんを おうけとり くだされ!$"
+	.string "{JPN}3にんぬきを たっせい されましたので\nこの しょうひんを おうけとり くだされ!$"
 
 FallarborTown_BattleTentLobby_Text_ReceivedPrize:
-	.string "{JPN}{PLAYER}は\n"
-	.string "{JPN}{STR_VAR_1}を もらった！$"
+	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize:
-	.string "{JPN}……おおっ!\n"
-	.string "{JPN}どうぐが いっぱいの ようですな!\p"
-	.string "{JPN}どうぐを せいりしてから\n"
-	.string "{JPN}また おこしくだされ!$"
+	.string "{JPN}……おおっ!\nどうぐが いっぱいの ようですな!\pどうぐを せいりしてから\nまた おこしくだされ!$"
 
 FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving:
-	.string "{JPN}おつかれさまでした!\p"
-	.string "{JPN}レポートを かきますので\n"
-	.string "{JPN}おまちくだされ!$"
+	.string "{JPN}おつかれさまでした!\pレポートを かきますので\nおまちくだされ!$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2:
-	.string "{JPN}またの ちょうせんを\n"
-	.string "{JPN}おまちして おりますぞ!$"
+	.string "{JPN}またの ちょうせんを\nおまちして おりますぞ!$"
 
 FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
-	.string "{JPN}バトルテントに おつれする まえに\n"
-	.string "{JPN}レポートを かきますので おまちくだされ!$"
+	.string "{JPN}おまちしておりました!\pバトルテントに おつれする まえに\nレポートを かきますので おまちくだされ!$"
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "{JPN}バトルテント\n"
-	.string "{JPN}シダケかいじょうへ ようこそ\p"
-	.string "{JPN}ここでは トレーナーの\n"
-	.string "{JPN}しんらいの こころを ためしておる$"
+	.string "{JPN}バトルテント\nシダケかいじょうへ ようこそ\pここでは トレーナーの\nしんらいの こころを ためしておる$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "{JPN}バトルテント シダケかいじょうに\n"
-	.string "{JPN}ちょうせん するか?$"
+	.string "{JPN}バトルテント シダケかいじょうに\nちょうせん するか?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "{JPN}バトルテント シダケかいじょうでの\n"
-	.string "{JPN}たたかいには まもらなければ ならない\l"
-	.string "{JPN}ひとつの おきてが ある\p"
-	.string "{JPN}ここでは ポケモンは\n"
-	.string "{JPN}いれかえ しか できない!\p"
-	.string "{JPN}それいがいの めいれいは\n"
-	.string "{JPN}いっさい きんし して おるのだ!\p"
-	.string "{JPN}ポケモンには おのれの せいかくの ままに\n"
-	.string "{JPN}かんがえ こうどう して もらう!\p"
-	.string "{JPN}おぬしは じぶんの\n"
-	.string "{JPN}ポケモンたちを しんじて\l"
-	.string "{JPN}たたかいを みまもって やれ\p"
-	.string "{JPN}みごと 3にんの トレーナーを\n"
-	.string "{JPN}うちやぶることが できれば\l"
-	.string "{JPN}しょうひんを さしあげよう\p"
-	.string "{JPN}また とちゅうで ちょうせんを\n"
-	.string "{JPN}ちゅうだん したい ときは\l"
-	.string "{JPN}きちんと レポートを かかないと\l"
-	.string "{JPN}つづけて ちょうせん できん からな\l"
-	.string "{JPN}きを つけてくれ……$"
+	.string "{JPN}バトルテント シダケかいじょうでの\nたたかいには まもらなければ ならない\lひとつの おきてが ある\pここでは ポケモンは\nいれかえ しか できない!\pそれいがいの めいれいは\nいっさい きんし して おるのだ!\pポケモンには おのれの せいかくの ままに\nかんがえ こうどう して もらう!\pおぬしは じぶんの\nポケモンたちを しんじて\lたたかいを みまもって やれ\pみごと 3にんの トレーナーを\nうちやぶることが できれば\lしょうひんを さしあげよう\pまた とちゅうで ちょうせんを\nちゅうだん したい ときは\lきちんと レポートを かかないと\lつづけて ちょうせん できん からな\lきを つけてくれ……$"
 
 VerdanturfTown_BattleTentLobby_Text_ReturnFortified:
-	.string "{JPN}おのれの こころと ポケモンを きたえたら\n"
-	.string "{JPN}また くるがよい……$"
+	.string "{JPN}おのれの こころと ポケモンを きたえたら\nまた くるがよい……$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "{JPN}レベル50の へやと レベル100の へやが\n"
-	.string "{JPN}あるが どちらに ちょうせん するのだ?$"
+	.string "{JPN}レベル50の へやと レベル100の へやが\nあるが どちらに ちょうせん するのだ?$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
-	.string "{JPN}おぬし……\p"
-	.string "{JPN}ちょうせん できる ポケモンが\n"
-	.string "{JPN}3ひき おらんぞ!\p"
-	.string "{JPN}ちょうせん するには\n"
-	.string "{JPN}すべて ちがう しゅるいの ポケモンを\l"
-	.string "{JPN}3ひき ようい してくれ\p"
-	.string "{JPN}また もたせる どうぐも\n"
-	.string "{JPN}すべて ちがう もので なければ いかん\p"
-	.string "{JPN}なお タマゴ{STR_VAR_1}ちょうせん させる ことは できん!\p"
-	.string "{JPN}じゅんびを ととのえてから また きなさい$"
+	.string "{JPN}おぬし……\pちょうせん できる ポケモンが\n3ひき おらんぞ!\pちょうせん するには\nすべて ちがう しゅるいの ポケモンを\l3ひき ようい してくれ\pまた もたせる どうぐも\nすべて ちがう もので なければ いかん\pなお タマゴ{STR_VAR_1}ちょうせん させる ことは できん!\pじゅんびを ととのえてから また きなさい$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "{JPN}おぬし……\p"
-	.string "{JPN}ちょうせん できる ポケモンが\n"
-	.string "{JPN}3ひき おらんぞ!\p"
-	.string "{JPN}ちょうせん するには\n"
-	.string "{JPN}すべて ちがう しゅるいの ポケモンを\p"
-	.string "{JPN}3ひき ようい してくれ\p"
-	.string "{JPN}また もたせる どうぐも\n"
-	.string "{JPN}すべて ちがう もので なければ いかん\p"
-	.string "{JPN}そして タマゴ{STR_VAR_1}ちょうせん\n"
-	.string "{JPN}させる ことは できん!\p"
-	.string "{JPN}じゅんびを ととえてから また きなさい$"
+	.string "{JPN}おぬし……\pちょうせん できる ポケモンが\n3ひき おらんぞ!\pちょうせん するには\nすべて ちがう しゅるいの ポケモンを\p3ひき ようい してくれ\pまた もたせる どうぐも\nすべて ちがう もので なければ いかん\pそして タマゴ{STR_VAR_1}ちょうせん\nさせる ことは できん!\pじゅんびを ととえてから また きなさい$"
 
 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "{JPN}では ちょうせんする ポケモンを\n"
-	.string "{JPN}3ひき えらんでくれ$"
+	.string "{JPN}では ちょうせんする ポケモンを\n3ひき えらんでくれ$"
 
 VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "{JPN}バトルテントへ むかうまえに\n"
-	.string "{JPN}レポートを かくが よろしいか?$"
+	.string "{JPN}バトルテントへ むかうまえに\nレポートを かくが よろしいか?$"
 
 VerdanturfTown_BattleTentLobby_Text_NowFollowMe:
-	.string "{JPN}それでは\n"
-	.string "{JPN}わしに ついてこい……$"
+	.string "{JPN}それでは\nわしに ついてこい……$"
 
 VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded:
-	.string "{JPN}よいものを みせて もらった\p"
-	.string "{JPN}それでは レポートを かこう……\n"
-	.string "{JPN}しばし またれよ……"
+	.string "{JPN}よいものを みせて もらった\pそれでは レポートを かこう……\nしばし またれよ……$"
 
 VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak:
-	.string "{JPN}3にんぬき たっせい とは……\p"
-	.string "{JPN}おぬしと ポケモンの こころの きずなは\n"
-	.string "{JPN}まことの ようじゃな……$"
+	.string "{JPN}3にんぬき たっせい とは……\pおぬしと ポケモンの こころの きずなは\nまことの ようじゃな……$"
 
 VerdanturfTown_BattleTentLobby_Text_FeatWillBeRecorded:
-	.string "{JPN}レポートに かくぞ\n"
-	.string "{JPN}しばし またれよ……$"
+	.string "{JPN}レポートに かくぞ\nしばし またれよ……$"
 
 VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "{JPN}3にんぬきの あかしに\n"
-	.string "{JPN}こちらを さしあげよう……$"
+	.string "{JPN}3にんぬきの あかしに\nこちらを さしあげよう……$"
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "{JPN}バトルテント カイナかいじょうへ\n"
-	.string "{JPN}ようこそ!\p"
-	.string "{JPN}バトルトレードの\n"
-	.string "{JPN}ごあんないは こちらです!$"
+	.string "{JPN}バトルテント カイナかいじょうへ\nようこそ!\pバトルトレードの\nごあんないは こちらです!$"
 
 SlateportCity_BattleTentLobby_Text_TakeChallenge:
-	.string "{JPN}バトルトレードに\n"
-	.string "{JPN}ちょうせん しますか?$"
+	.string "{JPN}バトルトレードに\nちょうせん しますか?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
-	.string "{JPN}バトルテント カイナかいじょうでは\n"
-	.string "{JPN}レンタルポケモンを つかった\l"
-	.string "{JPN}バトルトレード という イベントを\l"
-	.string "{JPN}おこなっています!\p"
-	.string "{JPN}まずは バトルトレード せんようの\n"
-	.string "{JPN}ポケモン 3ひきを おかし します!\p"
-	.string "{JPN}つぎに そちらの 3ひきの ポケモンを\n"
-	.string "{JPN}つかって シングルバトルを\l"
-	.string "{JPN}おこなって いただきます!\p"
-	.string "{JPN}みごと たたかいに しょうりすると\n"
-	.string "{JPN}たたかった トレーナーと ポケモンを\l"
-	.string "{JPN}トレード することが できます!\p"
-	.string "{JPN}トレードと たたかいを くりかえし\n"
-	.string "{JPN}みごと 3れんしょう したら\l"
-	.string "{JPN}すてきな しょうひんを さしあげます!\p"
-	.string "{JPN}なお とちゅうで ちょうせんを\n"
-	.string "{JPN}ちゅうだん したい ときには\l"
-	.string "{JPN}きちんと レポートを かかないと\l"
-	.string "{JPN}つづけて ちょうせんが できません!\p"
-	.string "{JPN}くれぐれも きをつけて くださいね!$"
+	.string "{JPN}バトルテント カイナかいじょうでは\nレンタルポケモンを つかった\lバトルトレード という イベントを\lおこなっています!\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの 3ひきの ポケモンを\nつかって シングルバトルを\lおこなって いただきます!\pみごと たたかいに しょうりすると\nたたかった トレーナーと ポケモンを\lトレード することが できます!\pトレードと たたかいを くりかえし\nみごと 3れんしょう したら\lすてきな しょうひんを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ときには\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!$"
 
 SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit:
 	.string "{JPN}またの ごりようを おまちしていますよ!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_WhichLevelMode:
-	.string "{JPN}レベル50と レベル100の イベント\n"
-	.string "{JPN}どちらに ちょうせん しますか?$"
+	.string "{JPN}レベル50と レベル100の イベント\nどちらに ちょうせん しますか?$"
 
 SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "{JPN}では ちょうせんを はじめる まえに\n"
-	.string "{JPN}レポートを かきますが よろしいですか?$"
+	.string "{JPN}では ちょうせんを はじめる まえに\nレポートを かきますが よろしいですか?$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping:
-	.string "{JPN}それでは ポケモンを\n"
-	.string "{JPN}おあずかり します!$"
+	.string "{JPN}それでは ポケモンを\nおあずかり します!$"
 
 SlateportCity_BattleTentLobby_Text_StepThisWay:
 	.string "{JPN}さあさあ こちらに どうぞ!$"
 
 SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults:
-	.string "{JPN}おつかれさまでした!\p"
-	.string "{JPN}レンタルポケモンと\n"
-	.string "{JPN}おあずかり していた ポケモンを\l"
-	.string "{JPN}こうかん します!\p"
-	.string "{JPN}レポートを かきますので\n"
-	.string "{JPN}しょうしょう おまちください!$"
+	.string "{JPN}おつかれさまでした!\pレンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!\pレポートを かきますので\nしょうしょう おまちください!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnMonsExchangeRentals:
-	.string "{JPN}レンタルポケモンと\n"
-	.string "{JPN}おあずかり していた ポケモンを\l"
-	.string "{JPN}こうかん します!$"
+	.string "{JPN}レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!$"
 
 SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons:
-	.string "{JPN}3れんしょう おめでとう ございます!\p"
-	.string "{JPN}レンタルポケモンと\n"
-	.string "{JPN}おあずかり していた ポケモンを\l"
-	.string "{JPN}こうかん します!\p"
-	.string "{JPN}レポートを かきますので\n"
-	.string "{JPN}しょうしょう おまちください!$"
+	.string "{JPN}3れんしょう おめでとう ございます!\pレンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!\pレポートを かきますので\nしょうしょう おまちください!$"
 
 SlateportCity_BattleTentLobby_Text_AwardYouThisPrize:
-	.string "{JPN}3れんしょうを きねんして"
-	.string "{JPN}こちらを さしあげます!$"
+	.string "{JPN}3れんしょうを きねんして\nこちらを さしあげます!$"
 
 SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom:
-	.string "{JPN}おやや?\n"
-	.string "{JPN}どうぐが いっぱい ですねー\p"
-	.string "{JPN}どうぐを せいり してから\n"
-	.string "{JPN}また きてください!$"
+	.string "{JPN}おやや?\nどうぐが いっぱい ですねー\pどうぐを せいり してから\nまた きてください!$"
 
 SlateportCity_BattleTentLobby_Text_BeenWaitingForYou:
-	.string "{JPN}ちょうせんを さいかいする まえに\n"
-	.string "{JPN}レポートを かきます!$"
+	.string "{JPN}おまちして おりましたよ!\pちょうせんを さいかいする まえに\nレポートを かきます!$"
 
 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "{JPN}おきゃくさまー!!\p"
-	.string "{JPN}ぜんかい ちゃんと レポートを かいて\n"
-	.string "{JPN}しゅうりょう しませんでしたね!\p"
-	.string "{JPN}ざんねんですが\n"
-	.string "{JPN}ちょうせんは むこうと なります!$"
+	.string "{JPN}おきゃくさまー!!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しませんでしたね!\pざんねんですが\nちょうせんは むこうと なります!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnPersonalMons:
-	.string "{JPN}おきゃくさまの ポケモンを\n"
-	.string "{JPN}おかえしします!$"
+	.string "{JPN}おきゃくさまの ポケモンを\nおかえしします!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReceivedPrize:
-	.string "{JPN}{PLAYER}は\n"
-	.string "{JPN}{STR_VAR_1}を もらった！$"
+	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_RulesAreListed:
@@ -331,49 +164,23 @@ SlateportCity_BattleTentLobby_Text_ReadWhichHeading:
 	.string "{JPN}どの せつめいを よみますか?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
-	.string "{JPN}バトルトレードで つかうことの できる\n"
-	.string "{JPN}ポケモンは 3ひき まで です\p"
-	.string "{JPN}レンタルするとき トレードするとき\n"
-	.string "{JPN}どちらの ときも\l"
-	.string "{JPN}おなじ しゅるいの ポケモンを\l"
-	.string "{JPN}2ひき いじょう もつことは できません$"
+	.string "{JPN}バトルトレードで つかうことの できる\nポケモンは 3ひき まで です\pレンタルするとき トレードするとき\nどちらの ときも\lおなじ しゅるいの ポケモンを\l2ひき いじょう もつことは できません$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules:
-	.string "{JPN}トレードが できる あいては\n"
-	.string "{JPN}あなたが たたかいで\l"
-	.string "{JPN}たおした トレーナーです\p"
-	.string "{JPN}トレードで うけとる ことが できるのは\n"
-	.string "{JPN}トレーナーが つかっていた ポケモンです$"
+	.string "{JPN}トレードが できる あいては\nあなたが たたかいで\lたおした トレーナーです\pトレードで うけとる ことが できるのは\nトレーナーが つかっていた ポケモンです$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules:
-	.string "{JPN}いちど たたかいに かつ たびに\n"
-	.string "{JPN}1かい 1ひき だけ ポケモンを\l"
-	.string "{JPN}トレード することが できます\p"
-	.string "{JPN}1かいの ちょうせんで\n"
-	.string "{JPN}トレードが できるのは\l"
-	.string "{JPN}2にんめの トレーナーまで です$"
+	.string "{JPN}いちど たたかいに かつ たびに\n1かい 1ひき だけ ポケモンを\lトレード することが できます\p1かいの ちょうせんで\nトレードが できるのは\l2にんめの トレーナーまで です$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
-	.string "{JPN}トレードを おこなう ときには\n"
-	.string "{JPN}2つ ちゅういする ことが あります\p"
-	.string "{JPN}その1 トレードを おこなう ときは\n"
-	.string "{JPN}あいてから うけとる ポケモンの\l"
-	.string "{JPN}つよさは かくにん できません\p"
-	.string "{JPN}その2 ちょうせんを はじめた ときに\n"
-	.string "{JPN}かりた レンタルポケモンの じゅんばんが\l"
-	.string "{JPN}トレードの あとの たたかいにも\l"
-	.string "{JPN}ひきつがれます$"
+	.string "{JPN}トレードを おこなう ときには\n2つ ちゅういする ことが あります\pその1 トレードを おこなう ときは\nあいてから うけとる ポケモンの\lつよさは かくにん できません\pその2 ちょうせんを はじめた ときに\nかりた レンタルポケモンの じゅんばんが\lトレードの あとの たたかいにも\lひきつがれます$"
 
 SlateportCity_BattleTentLobby_Text_ExplainMonRules:
-	.string "{JPN}バトルテント カイナの ポケモンは\n"
-	.string "{JPN}すべて レンタルポケモン です\p"
-	.string "{JPN}レンタルポケモンの レベルは\n"
-	.string "{JPN}すべて 30に なります$"
+	.string "{JPN}バトルテント カイナの ポケモンは\nすべて レンタルポケモン です\pレンタルポケモンの レベルは\nすべて 30に なります$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "{JPN}バトルテント シダケかいじょうの\n"
-	.string "{JPN}ルールが かかれている!$"
+	.string "{JPN}バトルテント シダケ かいじょうの\nルールが かかれてる!$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
@@ -381,72 +188,26 @@ VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "{JPN}バトルテント シダケかいじょう では\n"
-	.string "{JPN}ポケモンたちが じぶんで\l"
-	.string "{JPN}かんがえ たたかいます\p"
-	.string "{JPN}じゅんすいな やせいの ときとは ちがって\n"
-	.string "{JPN}ひとと くらしている ポケモンは\l"
-	.string "{JPN}せいかくに よって どんな こうどうを\l"
-	.string "{JPN}するかが かわるのです$"
+	.string "{JPN}バトルテント シダケかいじょう では\nポケモンたちが じぶんで\lかんがえ たたかいます\pじゅんすいな やせいの ときとは ちがって\nひとと くらしている ポケモンは\lせいかくに よって どんな こうどうを\lするかが かわるのです$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules:
-	.string "{JPN}とにかく こうげきが\n"
-	.string "{JPN}すきな せいかく\p"
-	.string "{JPN}じぶんの みを まもることが\n"
-	.string "{JPN}すきな せいかく\p"
-	.string "{JPN}あいてを こまらせたり\n"
-	.string "{JPN}かわったことが すきな せいかく\p"
-	.string "{JPN}ポケモンは せいかくに よって\n"
-	.string "{JPN}すきで とくいな わざと\l"
-	.string "{JPN}きらいで にがてな わざが ちがいます$"
+	.string "{JPN}とにかく こうげきが\nすきな せいかく\pじぶんの みを まもることが\nすきな せいかく\pあいてを こまらせたり\nかわったことが すきな せいかく\pポケモンは せいかくに よって\nすきで とくいな わざと\lきらいで にがてな わざが ちがいます$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
-	.string "{JPN}あいてに むかって じぶんから\n"
-	.string "{JPN}ちょくせつ ダメージを あたえる\l"
-	.string "{JPN}こうげきの わざ\p"
-	.string "{JPN}たたかいの じゅんびや キズついた からだの\n"
-	.string "{JPN}かいふくを する ぼうぎょの わざ\p"
-	.string "{JPN}あいての のうりょくを さげたり\n"
-	.string "{JPN}どくや まひに したり など\l"
-	.string "{JPN}すこし かわった ことを する わざ\p"
-	.string "{JPN}ポケモンは すべての わざを\n"
-	.string "{JPN}おおきく 3つの しゅるいに わけて\l"
-	.string "{JPN}どんな わざを だすか かんがえて います$"
+	.string "{JPN}あいてに むかって じぶんから\nちょくせつ ダメージを あたえる\lこうげきの わざ\pたたかいの じゅんびや キズついた からだの\nかいふくを する ぼうぎょの わざ\pあいての のうりょくを さげたり\nどくや まひに したり など\lすこし かわった ことを する わざ\pポケモンは すべての わざを\nおおきく 3つの しゅるいに わけて\lどんな わざを だすか かんがえて います$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "{JPN}トレーナーの めいれいを うけて いない\n"
-	.string "{JPN}ポケモンは うまく わざを\l"
-	.string "{JPN}だせない ことが あります\p"
-	.string "{JPN}ポケモンは きらいな わざを\n"
-	.string "{JPN}つかうのは とくいでは ありません\p"
-	.string "{JPN}せいかくに あわない わざ ばかりを\n"
-	.string "{JPN}おぼえさせて いると たたかいで\l"
-	.string "{JPN}ポケモンが じぶんの ちからを はっき\l"
-	.string "{JPN}できない ことが おおく なります$"
+	.string "{JPN}トレーナーの めいれいを うけて いない\nポケモンは うまく わざを\lだせない ことが あります\pポケモンは きらいな わざを\nつかうのは とくいでは ありません\pせいかくに あわない わざ ばかりを\nおぼえさせて いると たたかいで\lポケモンが じぶんの ちからを はっき\lできない ことが おおく なります$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules:
-	.string "{JPN}ポケモンの せいかくの なかには\n"
-	.string "{JPN}ピンチに なることで もともとの\l"
-	.string "{JPN}せいかくとは ちがう タイプの\l"
-	.string "{JPN}わざを つかう ように\l"
-	.string "{JPN}なるものが あります\p"
-	.string "{JPN}ピンチに なって すこし かわった\n"
-	.string "{JPN}こうどうを はじめた ポケモンには\l"
-	.string "{JPN}じゅうぶん ちゅうい しましょう$"
+	.string "{JPN}ポケモンの せいかくの なかには\nピンチに なることで もともとの\lせいかくとは ちがう タイプの\lわざを つかう ように\lなるものが あります\pピンチに なって すこし かわった\nこうどうを はじめた ポケモンには\lじゅうぶん ちゅうい しましょう$"
 
 BattleTentLobby_Text_ExplainLevelRules:
-	.string "{JPN}バトルテントでは\n"
-	.string "{JPN}あなたの ポケモンの レベルに あわせて\l"
-	.string "{JPN}たいせんする トレーナーの ポケモンの\l"
-	.string "{JPN}レベルが かわります\p"
-	.string "{JPN}ただし レベル30より ひくい レベルの\n"
-	.string "{JPN}ポケモンを つれた トレーナーが\l"
-	.string "{JPN}とうじょう することは ありません$"
+	.string "{JPN}バトルテントでは\nあなたの ポケモンの レベルに あわせて\lたいせんする トレーナーの ポケモンの\lレベルが かわります\pただし レベル30より ひくい レベルの\nポケモンを つれた トレーナーが\lとうじょう することは ありません$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "{JPN}バトルテント シダケかいじょうの\n"
-	.string "{JPN}ルールが かかれている!$"
+	.string "{JPN}バトルテント シダケかいじょうの\nルールが かかれている!$"

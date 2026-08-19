@@ -1,7 +1,5 @@
 Text_WouldYouLikeToMixRecords:
-	.string "{JPN}おともだちと レポートを\n"
-	.string "{JPN}まぜますか?$"
+	.string "{JPN}おともだちと レポートを\nまぜますか?$"
 
 Text_WeHopeToSeeYouAgain:
-	.string "{JPN}またの\n"
-	.string "{JPN}ごりようを おまち してます!$"
+	.string "{JPN}またの\nごりようを おまち してます!$"
