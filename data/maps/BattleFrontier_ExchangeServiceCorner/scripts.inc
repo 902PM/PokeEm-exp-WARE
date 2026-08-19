@@ -584,7 +584,7 @@ BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
 	.string "{JPN}じゃくてんを つかれると こうげきと\nとくこうが それぞれ ぐーんと あがる$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
-	.string "{JPN}もたせると HPが\nまんたんのとき いちげきでは\nたおされなくなる$"
+	.string "{JPN}もたせると HPが まんたんのとき\nいちげきでは たおされなくなる$"
 
 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
 	.string "{JPN}もたせると すばやさは あがるが\nおなじ わざしか だせなくなる$"
