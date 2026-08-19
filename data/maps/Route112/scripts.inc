@@ -107,35 +107,25 @@ Route112_EventScript_Shayla::
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:
-	.string "{JPN}なあ おい リーダーは ほんとうに\nアイツを めざめさせる つもりか?"
-	.string "$"
+	.string "{JPN}なあ おい リーダーは ほんとうに\nアイツを めざめさせる つもりか?$"
 
 Route112_Text_YeahWeNeedMeteorite:
-	.string "{JPN}そうらしいな…… だが そのためには\nいんせきが ひつよう なんだってよ"
-	.string "$"
+	.string "{JPN}そうらしいな…… だが そのためには\nいんせきが ひつよう なんだってよ$"
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
-	.string "{JPN}ははーん それで さっき\nなかまが ハジツゲに むかったのか"
-	.string "$"
+	.string "{JPN}ははーん それで さっき\nなかまが ハジツゲに むかったのか$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
-	.string "{JPN}ああ かれらが もどってくる までは\nだれも ここを とおすな! ってよ"
-	.string "$"
+	.string "{JPN}ああ かれらが もどってくる までは\nだれも ここを とおすな! ってよ$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
-	.string "{JPN}うーむ…… キンセツに いきたいのだが……\nこの だんさを おりてしまうと\lフエンに もどるのは たいへん だよな……"
-	.string ""
-	.string "$"
+	.string "{JPN}うーむ…… キンセツに いきたいのだが……\nこの だんさを おりてしまうと\lフエンに もどるのは たいへん だよな……$"
 
 Route112_Text_MtChimneyCableCarSign:
-	.string "{JPN}「えんとつやま ロープウェイ のりば」\n{UP_ARROW} このさき すぐ!"
-	.string "$"
+	.string "{JPN}「えんとつやま ロープウェイ のりば」\n{UP_ARROW} このさき すぐ!$"
 
 Route112_Text_MtChimneySign:
-	.string "{JPN}「えんとつやま」\pフエンタウンや ちょうじょう へは\nロープウェイを ごりよう ください"
-	.string ""
-	.string "$"
+	.string "{JPN}「えんとつやま」\pフエンタウンや ちょうじょう へは\nロープウェイを ごりよう ください$"
 
 Route112_Text_RouteSignLavaridge:
-	.string "{JPN}ここは 112ばん どうろ\n{LEFT_ARROW} フエンタウン"
-	.string "$"
+	.string "{JPN}ここは 112ばん どうろ\n{LEFT_ARROW} フエンタウン$"

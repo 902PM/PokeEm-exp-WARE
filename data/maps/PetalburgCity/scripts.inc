@@ -698,65 +698,37 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "{JPN}うちの ミツルは どこまで\nあそびに いっちゃったの かしら……\pもう そろそろ シダケタウンに\nでかける じかん だって いうのに……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}うちの ミツルは どこまで\nあそびに いっちゃったの かしら……\pもう そろそろ シダケタウンに\nでかける じかん だって いうのに……$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "{JPN}きみ! もしかして……\nトレーナーに なりたて かい?\pぼくら ポケモン トレーナーは\nあたらしい まちに とうちゃく したら\pまずは そこに どんな ジムがあるのか\nかくにん しておく ものなんだ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}きみ! もしかして……\nトレーナーに なりたて かい?\pぼくら ポケモン トレーナーは\nあたらしい まちに とうちゃく したら\pまずは そこに どんな ジムがあるのか\nかくにん しておく ものなんだ!$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
 	.string "{JPN}ほら ここが トウカシティの ジムさ!$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "{JPN}これが ジムの かんばん だから\nかたちを よく おぼえておくと いいね!"
-	.string "$"
+	.string "{JPN}これが ジムの かんばん だから\nかたちを よく おぼえておくと いいね!$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "{JPN}ぼくの かおが すいめんに うつってる……\pきぼうに あふれた\nかがやく えがお……\pふあんと たたかう\nしずかな ちんもく……\pきみの かおは どんなふうに うつってる?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぼくの かおが すいめんに うつってる……\pきぼうに あふれた\nかがやく えがお……\pふあんと たたかう\nしずかな ちんもく……\pきみの かおは どんなふうに うつってる?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "{JPN}ポケモンを すでに 6ぴき もってるときに\nあたらしく ポケモンを つかまえる\pすると パソコン つうしんで じどうてきに\nボックスに おくられるのだよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ポケモンを すでに 6ぴき もってるときに\nあたらしく ポケモンを つかまえる\pすると パソコン つうしんで じどうてきに\nボックスに おくられるのだよ!$"
 
 PetalburgCity_Text_GymSign:
-	.string "{JPN}トウカ シティ ポケモンジム\nリーダー センリ\lつよさを おいもとめる おとこ!"
-	.string ""
-	.string "$"
+	.string "{JPN}トウカ シティ ポケモンジム\nリーダー センリ\lつよさを おいもとめる おとこ!$"
 
 PetalburgCity_Text_CitySign:
-	.string "{JPN}ここは トウカ シティ\nしぜんと ひとが ふれあう まち"
-	.string "$"
+	.string "{JPN}ここは トウカ シティ\nしぜんと ひとが ふれあう まち$"
 
 PetalburgCity_Text_WallyHouseSign:
 	.string "{JPN}「ミツルの いえ」$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "{JPN}きみ! その いでたちは……\nポケモン トレーナーさん かい?"
-	.string "$"
+	.string "{JPN}きみ! その いでたちは……\nポケモン トレーナーさん かい?$"
 
 PetalburgCity_Text_WellMaybeNot:
-	.string "{JPN}…… …… ……\pいや それにしては\nふくが あまり よごれて いない……\pデビューしたての トレーナーか\nあるいは ふつうの おこさま…… かな?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}…… …… ……\pいや それにしては\nふくが あまり よごれて いない……\pデビューしたての トレーナーか\nあるいは ふつうの おこさま…… かな?$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "{JPN}わたしは さいのうある トレーナーを\nさがし もとめて\lかくちを たびして いるんだ\pよびとめたりして すまなかったね"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしは さいのうある トレーナーを\nさがし もとめて\lかくちを たびして いるんだ\pよびとめたりして すまなかったね$"

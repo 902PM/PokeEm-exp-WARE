@@ -9,17 +9,11 @@ MtPyre_4F_EventScript_Tasha::
 	end
 
 MtPyre_4F_Text_TashaIntro:
-	.string "{JPN}こわいものが すきで……\nすきで すきで たまらない……\pあたし ここに いると\nこわくて ふるえるの……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}こわいものが すきで……\nすきで すきで たまらない……\pあたし ここに いると\nこわくて ふるえるの……$"
 
 MtPyre_4F_Text_TashaDefeat:
 	.string "{JPN}まけるのは きらい……$"
 
 MtPyre_4F_Text_TashaPostBattle:
-	.string "{JPN}こわいもの みたさで\nここから はなれられないの……\pねえ……\nあなたも いっしょに いない……?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}こわいもの みたさで\nここから はなれられないの……\pねえ……\nあなたも いっしょに いない……?$"
 

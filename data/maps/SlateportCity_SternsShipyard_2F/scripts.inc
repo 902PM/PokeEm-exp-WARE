@@ -10,12 +10,7 @@ SlateportCity_SternsShipyard_2F_EventScript_Scientist2::
 	end
 
 SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding:
-	.string "{JPN}おおきな ふねを つくる というのは\nのりものを つくる というよりも\lたてものを つくるのに にているんだよ"
-	.string ""
-	.string "$"
+	.string "{JPN}おおきな ふねを つくる というのは\nのりものを つくる というよりも\lたてものを つくるのに にているんだよ$"
 
 SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy:
-	.string "{JPN}おもたい てつで できている ふねが\nうみに うくなんて ふしぎ だろう?\pあれは 「ふりょく」 という げんりを\nおうよう しているんだ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おもたい てつで できている ふねが\nうみに うくなんて ふしぎ だろう?\pあれは 「ふりょく」 という げんりを\nおうよう しているんだ$"

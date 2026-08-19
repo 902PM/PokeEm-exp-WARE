@@ -323,91 +323,53 @@ BattleFrontier_BattleFactoryLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleFactoryLobby_Text_WelcomeForSingleBattle:
-	.string "{JPN}トレーナーの ちしきを はかる ばしょ!!\nバトルファクトリーに ようこそ!\pバトルトレード シングルへの\nごあんないは こちらです!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーの ちしきを はかる ばしょ!!\nバトルファクトリーに ようこそ!\pバトルトレード シングルへの\nごあんないは こちらです!$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeSinglesChallenge:
-	.string "{JPN}バトルトレード シングルに\nちょうせん しますか?"
-	.string "$"
+	.string "{JPN}バトルトレード シングルに\nちょうせん しますか?$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSinglesChallenge:
-	.string "{JPN}こちらでは レンタルポケモンを つかった\nバトルトレード シングル という\lイベントを おこなって います!\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの ポケモンを\nつかって シングルバトルを\lおこなって いただきます!\pたたかいに しょうりすると いちど だけ\nポケモンを トレード できます!\pトレードと たたかいを くりかえし\nみごと 7れんしょう したら\lバトルポイントを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ばあいは\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}こちらでは レンタルポケモンを つかった\nバトルトレード シングル という\lイベントを おこなって います!\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの ポケモンを\nつかって シングルバトルを\lおこなって いただきます!\pたたかいに しょうりすると いちど だけ\nポケモンを トレード できます!\pトレードと たたかいを くりかえし\nみごと 7れんしょう したら\lバトルポイントを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ばあいは\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!$"
 
 BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit:
 	.string "{JPN}またの ごりようを おまちしていますよ!$"
 
 BattleFrontier_BattleFactoryLobby_Text_WhichLevelMode:
-	.string "{JPN}レベル50と オープンレベルの イベント\nどちらに ちょうせん しますか?"
-	.string "$"
+	.string "{JPN}レベル50と オープンレベルの イベント\nどちらに ちょうせん しますか?$"
 
 BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge:
-	.string "{JPN}では ちょうせんを はじめる まえに\nレポートを かきますが よろしいですか?"
-	.string "$"
+	.string "{JPN}では ちょうせんを はじめる まえに\nレポートを かきますが よろしいですか?$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping:
-	.string "{JPN}それでは ポケモンを\nおあずかり します!"
-	.string "$"
+	.string "{JPN}それでは ポケモンを\nおあずかり します!$"
 
 BattleFrontier_BattleFactoryLobby_Text_StepThisWay:
 	.string "{JPN}さあさあ こちらに どうぞ!$"
 
 BattleFrontier_BattleFactoryLobby_Text_ReturnMonsSaveResults:
-	.string "{JPN}おつかれさまでした!\pレンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!\pせいせきを レポートに かきますので\nしょうしょう おまちください!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おつかれさまでした!\pレンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!\pせいせきを レポートに かきますので\nしょうしょう おまちください!$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_ReturnMons:
-	.string "{JPN}レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!"
-	.string "$"
+	.string "{JPN}レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん します!$"
 
 BattleFrontier_BattleFactoryLobby_Text_CongratsSevenWins:
-	.string "{JPN}バトルトレード 7せん とっぱ\nおめでとう ございます!"
-	.string "$"
+	.string "{JPN}バトルトレード 7せん とっぱ\nおめでとう ございます!$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_AwardBattlePointsForStreak:
-	.string "{JPN}7れんしょうを きねんして\nバトルポイントを さしあげます!"
-	.string "$"
+	.string "{JPN}7れんしょうを きねんして\nバトルポイントを さしあげます!$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_MaxBattlePoints:
-	.string "{JPN}おやや?\pバトルポイントが いっぱい ですねー\pポイントを ごりようしてから\nまた きてください!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おやや?\pバトルポイントが いっぱい ですねー\pポイントを ごりようしてから\nまた きてください!$"
 
 BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume:
-	.string "{JPN}おまちしておりましたよ!\pちょうせんを さいかいする まえに\nレポートを かきます!"
-	.string ""
-	.string "$"
+	.string "{JPN}おまちしておりましたよ!\pちょうせんを さいかいする まえに\nレポートを かきます!$"
 
 BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting:
-	.string "{JPN}おきゃくさまー!!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しません でしたね!\pざんねんですが\nちょうせんは むこうと なります!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさまー!!\pぜんかい ちゃんと レポートを かいて\nしゅうりょう しません でしたね!\pざんねんですが\nちょうせんは むこうと なります!$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_WellReturnMons:
@@ -415,97 +377,44 @@ BattleFrontier_BattleFactoryLobby_Text_WellReturnMons:
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_ReceivedPrizeItem:
-	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 BattleFrontier_BattleFactoryLobby_Text_WelcomeForDoubleBattle:
-	.string "{JPN}トレーナーの ちしきを はかる ばしょ!!\nバトルファクトリーに ようこそ!\pバトルトレード ダブルの\nごあんないは こちらです!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーの ちしきを はかる ばしょ!!\nバトルファクトリーに ようこそ!\pバトルトレード ダブルの\nごあんないは こちらです!$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge:
-	.string "{JPN}バトルトレード ダブルに\nちょうせん しますか?"
-	.string "$"
+	.string "{JPN}バトルトレード ダブルに\nちょうせん しますか?$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge:
-	.string "{JPN}こちらでは レンタルポケモンを つかった\nバトルトレード ダブル という\lイベントを おこなって います\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの ポケモンを\nつかって ダブルバトルを\lおこなって いただきます!\pたたかいに しょうりすると いちど だけ\nポケモンを トレード できます!\pトレードと たたかいを くりかえし\nみごと 7れんしょうを したら\lバトルポイントを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ときには\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}こちらでは レンタルポケモンを つかった\nバトルトレード ダブル という\lイベントを おこなって います\pまずは バトルトレード せんようの\nポケモン 3ひきを おかし します!\pつぎに そちらの ポケモンを\nつかって ダブルバトルを\lおこなって いただきます!\pたたかいに しょうりすると いちど だけ\nポケモンを トレード できます!\pトレードと たたかいを くりかえし\nみごと 7れんしょうを したら\lバトルポイントを さしあげます!\pなお とちゅうで ちょうせんを\nちゅうだん したい ときには\lきちんと レポートを かかないと\lつづけて ちょうせんが できません!\pくれぐれも きをつけて くださいね!$"
 
 BattleFrontier_BattleFactoryLobby_Text_CongratsForDefeatingHead:
-	.string "{JPN}ファクトリーヘッドへの しょうり!\nならびに 7れんしょう たっせい\lおめでとう ございます!"
-	.string ""
-	.string "$"
+	.string "{JPN}ファクトリーヘッドへの しょうり!\nならびに 7れんしょう たっせい\lおめでとう ございます!$"
 
 BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints:
-	.string "{JPN}おきゃくさまの ふかい ちしきを たたえ\nバトルポイントを さしあげます!"
-	.string ""
-	.string "$"
+	.string "{JPN}おきゃくさまの ふかい ちしきを たたえ\nバトルポイントを さしあげます!$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave:
-	.string "{JPN}レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん しましょう!\pせいせきを レポートに かきますので\nしょうしょう おまちください!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}レンタルポケモンと\nおあずかり していた ポケモンを\lこうかん しましょう!\pせいせきを レポートに かきますので\nしょうしょう おまちください!$"
 
 BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch:
-	.string "{JPN}バトルファクトリーで\nさいごに おこなった たたかいを\lフロンティアパスに きろく いたしますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}バトルファクトリーで\nさいごに おこなった たたかいを\lフロンティアパスに きろく いたしますか?$"
 
 BattleFrontier_BattleFactoryLobby_Text_NeedKnowledgeOfMonsMoves:
-	.string "{JPN}ちょっと! キミ!\pポケモンを そだてなくても\nちょうせん できる から らくしょうー!\pとか おもってない?\pここは ポケモンと そのわざに\nかんする ちしきが ないと\lかちぬけない ひじょうに きびしー\lところ なのよ!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ちょっと! キミ!\pポケモンを そだてなくても\nちょうせん できる から らくしょうー!\pとか おもってない?\pここは ポケモンと そのわざに\nかんする ちしきが ないと\lかちぬけない ひじょうに きびしー\lところ なのよ!!$"
 
 BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon:
-	.string "{JPN}しゅるいに だまされて よわいポケモンと\nこうかん しちゃった……\pボロまけ……"
-	.string ""
-	.string "$"
+	.string "{JPN}しゅるいに だまされて よわいポケモンと\nこうかん しちゃった……\pボロまけ……$"
 
 BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons:
-	.string "{JPN}ダメダメねー!\pトレーナーが いいポケモン もってたら\nたたかいの あいだに\lチェック しとかなきゃ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ダメダメねー!\pトレーナーが いいポケモン もってたら\nたたかいの あいだに\lチェック しとかなきゃ!$"
 
 BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints:
-	.string "{JPN}ここの スタッフさぁ たたかいの まえに\nつぎに たたかう トレーナーのこと\lちょっとだけ おしえて くれるだろー?\pでも オレ いい おとな なのに\nあいつらの せつめいの いみが\lぜんぜん わからないんだ よう"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ここの スタッフさぁ たたかいの まえに\nつぎに たたかう トレーナーのこと\lちょっとだけ おしえて くれるだろー?\pでも オレ いい おとな なのに\nあいつらの せつめいの いみが\lぜんぜん わからないんだ よう$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_RentalMonsAreVaried:
-	.string "{JPN}ぼくってー バッチリー つよいけどー\nすっごくー あきっぽい からさー\lとりあえずー\lばんばん トレード しながらー\lたたかってたのさー\lそしたらさー\lつづけてー バトルトレードにー\lちょうせん したときー\lレンタル してくれるー\lポケモンのー\lしゅるいがさー\lなんかさー\lちょっとさー\lちがったんだよねー"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぼくってー バッチリー つよいけどー\nすっごくー あきっぽい からさー\lとりあえずー\lばんばん トレード しながらー\lたたかってたのさー\lそしたらさー\lつづけてー バトルトレードにー\lちょうせん したときー\lレンタル してくれるー\lポケモンのー\lしゅるいがさー\lなんかさー\lちょっとさー\lちがったんだよねー$"
 
 BattleFrontier_BattleFactoryLobby_Text_RulesAreListed:
 	.string "{JPN}バトルトレードの ルールが かかれている!$"
@@ -514,38 +423,16 @@ BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading:
 	.string "{JPN}どの せつめいを よみますか?$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules:
-	.string "{JPN}バトルトレードで つかうことの できる\nポケモンは 3ひき まで です\pレンタルするとき トレードするとき\nどちらの とき でも\lおなじ しゅるいの ポケモンを\l2ひき いじょう もつことは できません"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}バトルトレードで つかうことの できる\nポケモンは 3ひき まで です\pレンタルするとき トレードするとき\nどちらの とき でも\lおなじ しゅるいの ポケモンを\l2ひき いじょう もつことは できません$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules:
-	.string "{JPN}トレードが できる あいては\nあなたが たたかいで\lたおした トレーナーです\pトレードで うけとる ことが できるのは\nトレーナーが つかっていた ポケモンです"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレードが できる あいては\nあなたが たたかいで\lたおした トレーナーです\pトレードで うけとる ことが できるのは\nトレーナーが つかっていた ポケモンです$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNumberRules:
-	.string "{JPN}いちど たたかいに かつ たびに\n1かい 1ひき だけ ポケモンを\lトレード することが できます\p1かいの ちょうせんで\nトレードが できるのは\l6にんめの トレーナーまで です"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いちど たたかいに かつ たびに\n1かい 1ひき だけ ポケモンを\lトレード することが できます\p1かいの ちょうせんで\nトレードが できるのは\l6にんめの トレーナーまで です$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules:
-	.string "{JPN}トレードを おこなう ときには\n2つ ちゅういする ことが あります\pその1 トレードを おこなう ときは\nあいてから うけとる ポケモンの\lつよさは かくにん できません\pその2 ちょうせんを はじめた ときに\nかりた レンタルポケモンの じゅんばんが\lトレードの あとの たたかいにも\lひきつがれます"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレードを おこなう ときには\n2つ ちゅういする ことが あります\pその1 トレードを おこなう ときは\nあいてから うけとる ポケモンの\lつよさは かくにん できません\pその2 ちょうせんを はじめた ときに\nかりた レンタルポケモンの じゅんばんが\lトレードの あとの たたかいにも\lひきつがれます$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainOpenLvRules:
-	.string "{JPN}オープンレベルの ちょうせんでは\nレンタルできる ポケモンも\lあいての トレーナーが つかう ポケモンも\lすべて レベル100に なります"
-	.string ""
-	.string "$"
+	.string "{JPN}オープンレベルの ちょうせんでは\nレンタルできる ポケモンも\lあいての トレーナーが つかう ポケモンも\lすべて レベル100に なります$"

@@ -240,71 +240,35 @@ BattleFrontier_BattleFactoryBattleRoom_EventScript_ScientistsFaceBattle::
 	return
 
 BattleFrontier_BattleFactoryBattleRoom_Text_GetAMoveOn:
-	.string "{JPN}ほらほら! はやく きなっ!"
-	.string "$"
+	.string "{JPN}ほらほら! はやく きなっ!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NolandImFactoryHead:
-	.string "{JPN}おれの なまえは ダツラ!\nいちおう ここの せきにんしゃで\lファクトリーヘッド ってのを やってる!\pおめえの バトルトレードの\nデータは みせて もらったぜ!\pまあまあ いいスジ してる みてぇ だが\nまだまだ あたまが カッテぇ なぁ!\pイイかー? ちしき っつうのは\nただ ほんを よんだり\lつくえに むかってる だけじゃ\lなーんにも みには ならねぇんだぜ!\pじぶんの こころと からだで じっさいに\nたいけん して みねぇと なあ……\pおれも おめえと おんなじ じょうけん!\nレンタルポケモンで たたかう!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おれの なまえは ダツラ!\nいちおう ここの せきにんしゃで\lファクトリーヘッド ってのを やってる!\pおめえの バトルトレードの\nデータは みせて もらったぜ!\pまあまあ いいスジ してる みてぇ だが\nまだまだ あたまが カッテぇ なぁ!\pイイかー? ちしき っつうのは\nただ ほんを よんだり\lつくえに むかってる だけじゃ\lなーんにも みには ならねぇんだぜ!\pじぶんの こころと からだで じっさいに\nたいけん して みねぇと なあ……\pおれも おめえと おんなじ じょうけん!\nレンタルポケモンで たたかう!!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ShakeOutKnowledgeBringItOn:
-	.string "{JPN}ありったけの ちしき ふりしぼって\nかかって こいやっ!"
-	.string "$"
+	.string "{JPN}ありったけの ちしき ふりしぼって\nかかって こいやっ!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass:
-	.string "{JPN}ダツラ『イイぜ!\nフロンティアパス かしな!"
-	.string "$"
+	.string "{JPN}ダツラ『イイぜ!\nフロンティアパス かしな!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol:
-	.string "{JPN}フロンティアパスに\nノウレッジシンボルが きざまれた!"
-	.string "$"
+	.string "{JPN}フロンティアパスに\nノウレッジシンボルが きざまれた!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred:
-	.string "{JPN}へっ…… おもしれぇじゃ ねえか……\pつぎに あうときゃー\nおれも マジで いく からな!\pしっかり べんきょう しとけよ!!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}へっ…… おもしれぇじゃ ねえか……\pつぎに あうときゃー\nおれも マジで いく からな!\pしっかり べんきょう しとけよ!!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_HarderLookThanLastTime:
-	.string "{JPN}ダツラ『オース! どうよー? ちょうしはー?\nしっかり べんきょう してるか?\p…… お?\pおめえ まえに あった ときより\nちょっと イイ ツラしてるじゃ ねえか!\pこりゃ たのしみ だねー!\nワクワクして きたぜ! おい!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ダツラ『オース! どうよー? ちょうしはー?\nしっかり べんきょう してるか?\p…… お?\pおめえ まえに あった ときより\nちょっと イイ ツラしてるじゃ ねえか!\pこりゃ たのしみ だねー!\nワクワクして きたぜ! おい!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_AllRightBringItOn:
-	.string "{JPN}よっしゃ!! バチッと こい!!"
-	.string "$"
+	.string "{JPN}よっしゃ!! バチッと こい!!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_OutOfMyLeagueLetsSeePass:
-	.string "{JPN}ダツラ『なんだよ! おめえー!!\nすっげぇ ことに なってんじゃ ねぇかよ!\pったく フロンティアパス よこしな!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ダツラ『なんだよ! おめえー!!\nすっげぇ ことに なってんじゃ ねぇかよ!\pったく フロンティアパス よこしな!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_KnowledgeSymbolTookGoldenShine:
-	.string "{JPN}ノウレッジシンボルが\nきんいろに かがやいた!"
-	.string "$"
+	.string "{JPN}ノウレッジシンボルが\nきんいろに かがやいた!$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou:
-	.string "{JPN}ちっくしょー!!\pつぎは ぜってぇに まけねぇ からな!\nまた やろうぜっ!!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ちっくしょー!!\pつぎは ぜってぇに まけねぇ からな!\nまた やろうぜっ!!$"
 

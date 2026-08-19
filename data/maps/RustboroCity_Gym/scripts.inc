@@ -104,183 +104,76 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 	end
 
 RustboroCity_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\pいきなり だが きみぃ!\nチャンピオンを めざして みないか!\pぼくは トレーナー じゃないけど\nかつ ために ばっちり\lアドバイス できる!\pよし きまった! いっしょに\nポケモン チャンピオン めざそう!\pトレーナーの もくてき といえば\nジムバッジを あつめること だろう\lだが ジムリーダーは てごわい!\pそこで ぼくの でばん というわけだ!\nきみに ばっちり アドバイス するよ!\pここの ジムリーダー ツツジは\nいわタイプの ポケモンの つかいて!\pいわタイプは がんじょう だけど\nみずタイプや くさタイプの\lこうげきは にがて なんだよ!\pジムリーダーに かてたら\nまた ぼくに はなしかけて くれよ!\pじゃ きばってこォー!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}げんき しとぉや!!\pいきなり だが きみぃ!\nチャンピオンを めざして みないか!\pぼくは トレーナー じゃないけど\nかつ ために ばっちり\lアドバイス できる!\pよし きまった! いっしょに\nポケモン チャンピオン めざそう!\pトレーナーの もくてき といえば\nジムバッジを あつめること だろう\lだが ジムリーダーは てごわい!\pそこで ぼくの でばん というわけだ!\nきみに ばっちり アドバイス するよ!\pここの ジムリーダー ツツジは\nいわタイプの ポケモンの つかいて!\pいわタイプは がんじょう だけど\nみずタイプや くさタイプの\lこうげきは にがて なんだよ!\pジムリーダーに かてたら\nまた ぼくに はなしかけて くれよ!\pじゃ きばってこォー!!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}うおォ! みごとな しょうり!!\nぼくの おうえんが よかったのか!?\pよし! きみの\nトレーナーカードを みたまえ!\pさっき てにいれた ストーンバッジが\nきちんと きろく されている だろう\pつまり……\pきみは チャンピオンへの かいだんを\nいっぽ のぼったんだ!\pごったましィー!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}うおォ! みごとな しょうり!!\nぼくの おうえんが よかったのか!?\pよし! きみの\nトレーナーカードを みたまえ!\pさっき てにいれた ストーンバッジが\nきちんと きろく されている だろう\pつまり……\pきみは チャンピオンへの かいだんを\nいっぽ のぼったんだ!\pごったましィー!!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "{JPN}ジム トレーナーを なめるなよ!\nじつりょくの ちがいを みせてやる!"
-	.string "$"
+	.string "{JPN}ジム トレーナーを なめるなよ!\nじつりょくの ちがいを みせてやる!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
 	.string "{JPN}じつりょくが ちがいすぎた……!$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "{JPN}いわタイプの おそろしさ\nまだまだ こんな ものじゃない!"
-	.string "$"
+	.string "{JPN}いわタイプの おそろしさ\nまだまだ こんな ものじゃない!$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "{JPN}ボクに かてる じつりょくが ないと\nツツジさん には ぜったい かなわないよ!"
-	.string "$"
+	.string "{JPN}ボクに かてる じつりょくが ないと\nツツジさん には ぜったい かなわないよ!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
 	.string "{JPN}すごい じつりょくだ!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "{JPN}ツツジさんは ボクの すうばい つよい!\nゆだん しない ほうが いいよ!"
-	.string "$"
+	.string "{JPN}ツツジさんは ボクの すうばい つよい!\nゆだん しない ほうが いいよ!$"
 
 RustboroCity_Gym_Text_MarcIntro:
-	.string "{JPN}こんな まちなか でも\nいわタイプで おおあばれだ!"
-	.string "$"
+	.string "{JPN}こんな まちなか でも\nいわタイプで おおあばれだ!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
-	.string "{JPN}おおーっ!\nいきの いい ちょうせんしゃ だな!"
-	.string "$"
+	.string "{JPN}おおーっ!\nいきの いい ちょうせんしゃ だな!$"
 
 RustboroCity_Gym_Text_MarcPostBattle:
-	.string "{JPN}わかくして いわタイプに\nめを つける なんて\lうちの ジムリーダーは センスが いいぜ!"
-	.string ""
-	.string "$"
+	.string "{JPN}わかくして いわタイプに\nめを つける なんて\lうちの ジムリーダーは センスが いいぜ!$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "{JPN}わたくし カナズミ ポケモンジム\nリーダーの ツツジ といいます\pトレーナーズ スクールで\nまなんだこと しょうぶに いかしたくて\lジムリーダーに なったの\pあなた どのような ポケモンで\nどんなふうに たたかうのか\lわたくしに おしえて くださるかしら?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたくし カナズミ ポケモンジム\nリーダーの ツツジ といいます\pトレーナーズ スクールで\nまなんだこと しょうぶに いかしたくて\lジムリーダーに なったの\pあなた どのような ポケモンで\nどんなふうに たたかうのか\lわたくしに おしえて くださるかしら?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
-	.string "{JPN}わたくし まけたのね……\pもっと おおくの ことを\nまなぶ ひつようが あるみたい……\pわかりましたわ\pポケモンリーグの きまりでは\nジムリーダーに かった トレーナーに\lこれを わたすことに なっています\pどうぞ ポケモンリーグ こうにんの\nストーンバッジ うけとって ください"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたくし まけたのね……\pもっと おおくの ことを\nまなぶ ひつようが あるみたい……\pわかりましたわ\pポケモンリーグの きまりでは\nジムリーダーに かった トレーナーに\lこれを わたすことに なっています\pどうぞ ポケモンリーグ こうにんの\nストーンバッジ うけとって ください$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER}は ツツジから\n"
-	.string "ストーンバッジを もらった!$"
+	.string "{JPN}{PLAYER}は ツツジから\nストーンバッジを もらった!$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "{JPN}ストーンバッジ には あなたの\nポケモンの こうげきりょくを\lたかめる こうかが あるの\pあと たたかっていない ときでも\nひでんわざの いあいぎり が\lつかえるようにも なるわ\pそれから……\nこれも もっていって ください"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ストーンバッジ には あなたの\nポケモンの こうげきりょくを\lたかめる こうかが あるの\pあと たたかっていない ときでも\nひでんわざの いあいぎり が\lつかえるようにも なるわ\pそれから……\nこれも もっていって ください$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "{JPN}その わざマシン39の なかには\nがんせきふうじが はいっているわ\pいわを あいてに むかって おとして\nダメージを あたえる だけでなくて\lすばやさも さげる わざ なの\pちなみに\nわざマシンを つかえば ポケモンに\lいっしゅんで わざを おしえられるの\pただし つかいすて だから\nつかうときは よく かんがえてね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}その わざマシン39の なかには\nがんせきふうじが はいっているわ\pいわを あいてに むかって おとして\nダメージを あたえる だけでなくて\lすばやさも さげる わざ なの\pちなみに\nわざマシンを つかえば ポケモンに\lいっしゅんで わざを おしえられるの\pただし つかいすて だから\nつかうときは よく かんがえてね$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "{JPN}それだけ つよいなら\nほかの ポケモンジムにも\lちょうせん したら どうかしら?\pおおくの トレーナーと\nしょうぶを することで\lさまざまなこと まなべるはずよ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}それだけ つよいなら\nほかの ポケモンジムにも\lちょうせん したら どうかしら?\pおおくの トレーナーと\nしょうぶを することで\lさまざまなこと まなべるはずよ$"
 
 RustboroCity_Gym_Text_GymStatue:
 	.string "{JPN}カナズミシティ ポケモンジム$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "{JPN}カナズミシティ ポケモンジム\pツツジ にんてい トレーナー!\n{PLAYER}"
-	.string ""
-	.string "$"
+	.string "{JPN}カナズミシティ ポケモンジム\pツツジ にんてい トレーナー!\n{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
-	.string "{JPN}…… …… ……\n…… …… …… ピッ!\pツツジ『あっ {PLAYER}さん ですか?\nわたくし カナズミの ツツジです!\pトウキさんから ききましたよぉ\nあなた すごい いきおいで\lかちすすんで いるらしい ですね!\pこちらも まけっぱなしでは いられません\nもういちど ジムを きたえなおして\lいつかまた ちょうせんを うけますよ!\pそのひが くるのを\nどうぞ まっていて くださいね!\p…… …… ……\n…… …… …… ツー"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}…… …… ……\n…… …… …… ピッ!\pツツジ『あっ {PLAYER}さん ですか?\nわたくし カナズミの ツツジです!\pトウキさんから ききましたよぉ\nあなた すごい いきおいで\lかちすすんで いるらしい ですね!\pこちらも まけっぱなしでは いられません\nもういちど ジムを きたえなおして\lいつかまた ちょうせんを うけますよ!\pそのひが くるのを\nどうぞ まっていて くださいね!\p…… …… ……\n…… …… …… ツー$"
 
 RustboroCity_Gym_Text_RegisteredRoxanne:
-	.string "{JPN}ジムリーダー ツツジを\nポケナビに とうろく した!"
-	.string "$"
+	.string "{JPN}ジムリーダー ツツジを\nポケナビに とうろく した!$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "{JPN}ツツジ『また おめにかかれましたね\nジムリーダーの ツツジ です\pあれから おたがいに\nいくつもの しょうぶを けいけんし\lどれほど つよく なれたのか……\pさあ おてあわせ ねがいます!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ツツジ『また おめにかかれましたね\nジムリーダーの ツツジ です\pあれから おたがいに\nいくつもの しょうぶを けいけんし\lどれほど つよく なれたのか……\pさあ おてあわせ ねがいます!$"
 
 RustboroCity_Gym_Text_RoxanneRematchDefeat:
-	.string "{JPN}くうぅ……\nまたしても わたくしの まけ……"
-	.string "$"
+	.string "{JPN}くうぅ……\nまたしても わたくしの まけ……$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "{JPN}ツツジ『まだまだ ポケモン しょうぶは\nまなぶことが たくさん あるのですね\pわたくし…… ポケモン しょうぶが\nますます すきに なりましたよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ツツジ『まだまだ ポケモン しょうぶは\nまなぶことが たくさん あるのですね\pわたくし…… ポケモン しょうぶが\nますます すきに なりましたよ!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "{JPN}ツツジ『また おめにかかれましたね\nジムリーダーの ツツジ です\pあれから おたがいに\nいくつもの しょうぶを けいけんし\lどれほど つよく なれたのか……\p……あら? たたかえる ポケモンを\n1ひきしか もっていませんね\pどうぞ 2ひき いじょうの\nポケモンを もって きてください"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ツツジ『また おめにかかれましたね\nジムリーダーの ツツジ です\pあれから おたがいに\nいくつもの しょうぶを けいけんし\lどれほど つよく なれたのか……\p……あら? たたかえる ポケモンを\n1ひきしか もっていませんね\pどうぞ 2ひき いじょうの\nポケモンを もって きてください$"

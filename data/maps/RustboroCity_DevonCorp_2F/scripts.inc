@@ -269,110 +269,55 @@ RustboroCity_DevonCorp_2F_EventScript_WorkOnNext::
 	end
 
 RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon:
-	.string "{JPN}いま ポケモンと はなせる どうぐを\nかいはつ しているのですが……\pなかなか うまく いかないね"
-	.string ""
-	.string "$"
+	.string "{JPN}いま ポケモンと はなせる どうぐを\nかいはつ しているのですが……\pなかなか うまく いかないね$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
-	.string "{JPN}いま しんがたの モンスターボールを\nかいはつ しているのですが……\pなかなか うまく いかないね"
-	.string ""
-	.string "$"
+	.string "{JPN}いま しんがたの モンスターボールを\nかいはつ しているのですが……\pなかなか うまく いかないね$"
 
 RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
-	.string "{JPN}しんがたの モンスターボールが\nついに かんせい したのです!\pリピートボールを つかうと\nいちど つかまえた ポケモンが\lつかまえやすく なります!\pタイマーボールは ポケモンとの\nたたかいが ながびけば ながびくほど\lつかまえやすく なります!\pどちらも わがしゃの じしんさく\nぜひ つかって ください!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}しんがたの モンスターボールが\nついに かんせい したのです!\pリピートボールを つかうと\nいちど つかまえた ポケモンが\lつかまえやすく なります!\pタイマーボールは ポケモンとの\nたたかいが ながびけば ながびくほど\lつかまえやすく なります!\pどちらも わがしゃの じしんさく\nぜひ つかって ください!$"
 
 RustboroCity_DevonCorp_2F_Text_IMadePokenav:
-	.string "{JPN}ポケナビを つくったのは わたし!\pいやー あんな すごいモノを つくれると\nかいはつしゃ みょうりに つきますね!"
-	.string ""
-	.string "$"
+	.string "{JPN}ポケナビを つくったのは わたし!\pいやー あんな すごいモノを つくれると\nかいはつしゃ みょうりに つきますね!$"
 
 RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
-	.string "{JPN}おお! それは ポケナビ!\pポケモンの きもちを しりたい\nという しゃちょうの アイデアを\lじつげん したのです!\pくわしい せつめいを しましょうか?\p…… いやいや\nそのうちに わかるでしょう!\lどんどん ポケナビを つかってくださいね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おお! それは ポケナビ!\pポケモンの きもちを しりたい\nという しゃちょうの アイデアを\lじつげん したのです!\pくわしい せつめいを しましょうか?\p…… いやいや\nそのうちに わかるでしょう!\lどんどん ポケナビを つかってくださいね!$"
 
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
-	.string "{JPN}いま ポケモンが みている\nゆめを うつしだす どうぐを\lかいはつ しているのですが……\pなかなか うまく いかないね"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いま ポケモンが みている\nゆめを うつしだす どうぐを\lかいはつ しているのですが……\pなかなか うまく いかないね$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
-	.string "{JPN}いま ポケモンの かせきを\nさいせい する そうちを\lかいはつ していたのですが……\pなかなか うまく いきましたよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いま ポケモンの かせきを\nさいせい する そうちを\lかいはつ していたのですが……\pなかなか うまく いきましたよ!$"
 
 RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
-	.string "{JPN}きみの もっている それは\nポケモンの かせき!?\pよければ わたしが つくった\nカセキ さいせい マシンで\lいきかえらせて みましょうか?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}きみの もっている それは\nポケモンの かせき!?\pよければ わたしが つくった\nカセキ さいせい マシンで\lいきかえらせて みましょうか?$"
 
 RustboroCity_DevonCorp_2F_Text_OhIsThatSo:
-	.string "{JPN}あー そうですか\pデボンの ぎじゅつは すごいのにな……"
-	.string "$"
+	.string "{JPN}あー そうですか\pデボンの ぎじゅつは すごいのにな……$"
 
 RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne:
-	.string "{JPN}なんとまあ!\nかせきを ふたつも もってるんですか!\pでも わたしの マシンでは\nひとつづつ しか さいせい できません\pどちらの かせきを かして くれますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}なんとまあ!\nかせきを ふたつも もってるんですか!\pでも わたしの マシンでは\nひとつづつ しか さいせい できません\pどちらの かせきを かして くれますか?$"
 
 RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher:
-	.string "{JPN}わかりました!\nでは さっそく……\p{PLAYER}は デボンの けんきゅういんに\n{STR_VAR_1}を あずけた!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わかりました!\nでは さっそく……\p{PLAYER}は デボンの けんきゅういんに\n{STR_VAR_1}を あずけた!$"
 
 RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime:
-	.string "{JPN}わたしが つくった\nカセキ さいせい マシンは すごいのですが\lじかんが かかるのが けってん……\pすこし そこらへんを\nけんがく なされては いかがですか?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしが つくった\nカセキ さいせい マシンは すごいのですが\lじかんが かかるのが けってん……\pすこし そこらへんを\nけんがく なされては いかがですか?$"
 
 RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife:
-	.string "{JPN}おまたせ しました!\nカセキが いきかえり ましたよ!\pカセキは おおむかしの ポケモン\n{STR_VAR_2} でしたよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おまたせ しました!\nカセキが いきかえり ましたよ!\pカセキは おおむかしの ポケモン\n{STR_VAR_2} でしたよ!$"
 
 RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
-	.string "{JPN}{PLAYER}は デボンの けんきゅういんから\n{STR_VAR_2}を うけとった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は デボンの けんきゅういんから\n{STR_VAR_2}を うけとった!$"
 
 @ Unused
 RustboroCity_DevonCorp_2F_Text_TooManyPokemon:
-	.string "{JPN}あー ポケモン いっぱいで\nもてないですね"
-	.string "$"
+	.string "{JPN}あー ポケモン いっぱいで\nもてないですね$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature:
-	.string "{JPN}いま ポケナビに ついかする きのうを\nかいはつ しているのですが……\pなかなか うまく いかないね"
-	.string ""
-	.string "$"
+	.string "{JPN}いま ポケナビに ついかする きのうを\nかいはつ しているのですが……\pなかなか うまく いかないね$"
 
 RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
-	.string "{JPN}さーて つぎは どんな そうちを\nかいはつ しようかな……\pうちの かいしゃは ひらめいた アイデアを\nどんどん じつげん させて くれるから\lけんきゅうしゃ みょうりに つきますよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}さーて つぎは どんな そうちを\nかいはつ しようかな……\pうちの かいしゃは ひらめいた アイデアを\nどんどん じつげん させて くれるから\lけんきゅうしゃ みょうりに つきますよ!$"
 
 

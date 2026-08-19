@@ -125,35 +125,25 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "{JPN}オレも グラードンを みたいのに\nまだ シッポすら みせて もらえなくて\pイライラ してるんだ……\pあっ!\nグラードンのこと いっちゃった!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレも グラードンを みたいのに\nまだ シッポすら みせて もらえなくて\pイライラ してるんだ……\pあっ!\nグラードンのこと いっちゃった!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "{JPN}やっぱり れいせいな きもちを\nうしなって いたら かてないな……"
-	.string "$"
+	.string "{JPN}やっぱり れいせいな きもちを\nうしなって いたら かてないな……$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
 	.string "{JPN}そういえば グラードンには\nシッポなんて あるんだろうか……?$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "{JPN}ふはは もうすぐ! もうすぐだ!\nオレたちの もくてきが じつげん する!"
-	.string ""
-	.string "$"
+	.string "{JPN}ふはは もうすぐ! もうすぐだ!\nオレたちの もくてきが じつげん する!$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "{JPN}ぐうう ここまで きていながら!"
-	.string "$"
+	.string "{JPN}ぐうう ここまで きていながら!$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "{JPN}マツブサさまー!\nしんにゅうしゃが そっちにー!"
-	.string "$"
+	.string "{JPN}マツブサさまー!\nしんにゅうしゃが そっちにー!$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "{JPN}まだまだー!\nかんたんには おくへ いかせない!"
-	.string "$"
+	.string "{JPN}まだまだー!\nかんたんには おくへ いかせない!$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
 	.string "{JPN}オレって たおすの かんたん だった?$"
@@ -162,62 +152,25 @@ MagmaHideout_4F_Text_Grunt13PostBattle:
 	.string "{JPN}も もう ひとしょうぶ…… がくっ$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "{JPN}ウヒョ!\nここまで きたんだから おしえて やろう\pそうさ このさきには\nグラードンが ねむって いるのさ!\pマツブサさまは たったいま\nグラードンの ところへ いった!\pもうすぐ ねむりから めをさますぞ!\nウヒョ! ウヒョヒョ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ウヒョ!\nここまで きたんだから おしえて やろう\pそうさ このさきには\nグラードンが ねむって いるのさ!\pマツブサさまは たったいま\nグラードンの ところへ いった!\pもうすぐ ねむりから めをさますぞ!\nウヒョ! ウヒョヒョ!$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "{JPN}やられちまったい…… ウヒョ"
-	.string "$"
+	.string "{JPN}やられちまったい…… ウヒョ$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "{JPN}……と こんな ぐあいに おまえと\nあそんで やっている あいだに\lマツブサさまが グラードンを…… ウヒョ"
-	.string "$"
+	.string "{JPN}……と こんな ぐあいに おまえと\nあそんで やっている あいだに\lマツブサさまが グラードンを…… ウヒョ$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "{JPN}マツブサ『マグマに ねむる グラードンよ\nなにをしても めざめなかった おまえが\lもとめて いたのは あいいろのたま……\pそうなんだろう?\pさあ ここに もってきて やったぞ\nこの かがやきで めを さませ!\pそして ほんとうの ちからを\nわたしに みせて おくれ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『マグマに ねむる グラードンよ\nなにをしても めざめなかった おまえが\lもとめて いたのは あいいろのたま……\pそうなんだろう?\pさあ ここに もってきて やったぞ\nこの かがやきで めを さませ!\pそして ほんとうの ちからを\nわたしに みせて おくれ!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "{JPN}マツブサ『……グラードン!\nいったい どうしたと いうんだ!?\pあいいろのたまでは だめだと いうのか?\pグラードンよ!\nどこへ きえて しまったんだ……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『……グラードン!\nいったい どうしたと いうんだ!?\pあいいろのたまでは だめだと いうのか?\pグラードンよ!\nどこへ きえて しまったんだ……$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "{JPN}マツブサ『おまえか!\pあっちでも こっちでも ちょこちょこと\nうろつき まわって いたようだが\pなるほど おまえが なにか\nこざいくを していたんだな……!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『おまえか!\pあっちでも こっちでも ちょこちょこと\nうろつき まわって いたようだが\pなるほど おまえが なにか\nこざいくを していたんだな……!$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "{JPN}おまえは なぜ そんなに\nポケモンを うまく あつかえるのだ……"
-	.string "$"
+	.string "{JPN}おまえは なぜ そんなに\nポケモンを うまく あつかえるのだ……$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "{JPN}マツブサ『グラードンが にげだしたの には\nなにか わけがある……\lそう いいたいの だろう?\p…… …… ……\n…… …… ……\pふん……\nそれぐらい わたしも わかっていたさ\pグラードンが いなくなって しまえば\nもう こんな やまに ようはない\pわたしは グラードンを おいかけるから\nおまえとも ここで おわかれだな!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『グラードンが にげだしたの には\nなにか わけがある……\lそう いいたいの だろう?\p…… …… ……\n…… …… ……\pふん……\nそれぐらい わたしも わかっていたさ\pグラードンが いなくなって しまえば\nもう こんな やまに ようはない\pわたしは グラードンを おいかけるから\nおまえとも ここで おわかれだな!$"

@@ -88,69 +88,38 @@ FortreeCity_Movement_KecleonFlee:
 	step_end
 
 FortreeCity_Text_SawGiganticPokemonInSky:
-	.string "{JPN}だれも しんじて くれないけど\nおおきな ポケモンが からだを くねらせ\lそらを とんでいるのを みたんだ……\pそいつは 131ばん すいどうの ほうへ\nとんでいったよ……\p……ところで\nなんか きみ コゲくさいね\pかざんに でも いってきた?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}だれも しんじて くれないけど\nおおきな ポケモンが からだを くねらせ\lそらを とんでいるのを みたんだ……\pそいつは 131ばん すいどうの ほうへ\nとんでいったよ……\p……ところで\nなんか きみ コゲくさいね\pかざんに でも いってきた?$"
 
 FortreeCity_Text_SomethingBlockingGym:
-	.string "{JPN}ポケモンジムに いきたいのに\nなにかが みちを ふさいでいるのよ!\pせっかく 120ばん どうろで\nポケモン そだてて きたのに!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ポケモンジムに いきたいのに\nなにかが みちを ふさいでいるのよ!\pせっかく 120ばん どうろで\nポケモン そだてて きたのに!$"
 
 FortreeCity_Text_ThisTimeIllBeatWinona:
-	.string "{JPN}あたしの じまんの ポケモンで\nこんどこそ ナギさんに かってみせるわ!"
-	.string "$"
+	.string "{JPN}あたしの じまんの ポケモンで\nこんどこそ ナギさんに かってみせるわ!$"
 
 FortreeCity_Text_TreesGrowByDrinkingRainwater:
-	.string "{JPN}あめが じめんに すいこまれて\nその みずを すって きがそだつ……\pみずと つちが りょうほう あるから\nこの ヒワマキシティも あるのよね"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あめが じめんに すいこまれて\nその みずを すって きがそだつ……\pみずと つちが りょうほう あるから\nこの ヒワマキシティも あるのよね$"
 
 FortreeCity_Text_EveryoneHealthyAndLively:
-	.string "{JPN}このまちは きのうえに\nいえを たてて くらしている……\pそのせいか みんな げんきで\nイキイキと している のですよ\pわしも このまちに きてから\n30ねんほど わかがえった きぶんです"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}このまちは きのうえに\nいえを たてて くらしている……\pそのせいか みんな げんきで\nイキイキと している のですよ\pわしも このまちに きてから\n30ねんほど わかがえった きぶんです$"
 
 FortreeCity_Text_BugPokemonComeThroughWindow:
-	.string "{JPN}きのうえで くらすのは いいんだけど\pときどき まどの そとから\nむしポケモンが はいって きたりして\lびっくり しちゃうんだよね"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}きのうえで くらすのは いいんだけど\pときどき まどの そとから\nむしポケモンが はいって きたりして\lびっくり しちゃうんだよね$"
 
 FortreeCity_Text_PokemonThatEvolveWhenTraded:
-	.string "{JPN}ともだちと こうかんを すると\nしんか する ポケモンが いるんだって!"
-	.string "$"
+	.string "{JPN}ともだちと こうかんを すると\nしんか する ポケモンが いるんだって!$"
 
 FortreeCity_Text_SomethingUnseeable:
 	.string "{JPN}みえない なにかが いるようだ$"
 
 FortreeCity_Text_UnseeableUseDevonScope:
-	.string "{JPN}みえない なにかが いるようだ\pデボンスコープを つかいますか?"
-	.string "$"
+	.string "{JPN}みえない なにかが いるようだ\pデボンスコープを つかいますか?$"
 
 FortreeCity_Text_UsedDevonScopePokemonFled:
-	.string "{JPN}{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて にげだした!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}{PLAYER}は\nデボンスコープを つかった!\pとうめいに なっていた\nポケモンの すがたが まるわかりだ!\pポケモンは\nおどろいて にげだした!$"
 
 FortreeCity_Text_CitySign:
-	.string "{JPN}ここは ヒワマキ シティ\nきの うえで しぜんと たわむれる まち"
-	.string ""
-	.string "$"
+	.string "{JPN}ここは ヒワマキ シティ\nきの うえで しぜんと たわむれる まち$"
 
 FortreeCity_Text_GymSign:
-	.string "{JPN}ヒワマキ シティ ポケモンジム\nリーダー ナギ\lせかいに はばたく とりつかい!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ヒワマキ シティ ポケモンジム\nリーダー ナギ\lせかいに はばたく とりつかい!$"
 

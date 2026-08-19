@@ -349,120 +349,55 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
-	.string "{JPN}あああ なんという ことだ!\pピーコちゃんと さんぽを していたら\nいきなり おかしな やつが やってきて\pわしの かわいい ピーコちゃんが\nうばわれて しまったのじゃ!\pうおー! ピーコちゃーん!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あああ なんという ことだ!\pピーコちゃんと さんぽを していたら\nいきなり おかしな やつが やってきて\pわしの かわいい ピーコちゃんが\nうばわれて しまったのじゃ!\pうおー! ピーコちゃーん!$"
 
 Route116_Text_WantToDigTunnel:
-	.string "{JPN}ぬぉー!!\pトンネル ほりてー!!"
-	.string "$"
+	.string "{JPN}ぬぉー!!\pトンネル ほりてー!!$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
-	.string "{JPN}ぬぉー!!\nなんて ことだ!?\pどうぐも なにも つかわずに\nトンネルを ほっていたのに\lへんな おとこに おいだされた!\pあの トンネルには\nおおきな ものおとに はんのう して\lさわぎだす ポケモンが いる\pだから きかいを つかっての\nかいはつ こうじを やめたのに……\pへんに さわぎを おこされると\nポケモンが おびえないか しんぱいだ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぬぉー!!\nなんて ことだ!?\pどうぐも なにも つかわずに\nトンネルを ほっていたのに\lへんな おとこに おいだされた!\pあの トンネルには\nおおきな ものおとに はんのう して\lさわぎだす ポケモンが いる\pだから きかいを つかっての\nかいはつ こうじを やめたのに……\pへんに さわぎを おこされると\nポケモンが おびえないか しんぱいだ!$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
-	.string "{JPN}ぬぉー!!\pへんな おとこが とびだしていった!\nこれで トンネルを ほれるよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}ぬぉー!!\pへんな おとこが とびだしていった!\nこれで トンネルを ほれるよ!$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
-	.string "{JPN}ああっ!\nきみは!!\pトウカのもりで たすけてくれた だけでなく\nぬすまれた にもつを とりかえし\lはたまた カイナへの とどけものを\lこころよく ひきうけてくれた ひと!!\pクスノキかんちょう から\n「にもつが とどいた」と\lれんらくが ありましたよ!\pどうも ありがとう なのです!\nかんしゃ かんげき あめ あられ なのです\pそんな すてきな トレーナーさんに\nグッド ニュース!\pさいきん わがしゃ では\nあたらしい モンスターボールの\lかいはつに せいこう したのです!\pかんしゃの きもちとして\nトレーナーさんにも プレゼント なのよね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ああっ!\nきみは!!\pトウカのもりで たすけてくれた だけでなく\nぬすまれた にもつを とりかえし\lはたまた カイナへの とどけものを\lこころよく ひきうけてくれた ひと!!\pクスノキかんちょう から\n「にもつが とどいた」と\lれんらくが ありましたよ!\pどうも ありがとう なのです!\nかんしゃ かんげき あめ あられ なのです\pそんな すてきな トレーナーさんに\nグッド ニュース!\pさいきん わがしゃ では\nあたらしい モンスターボールの\lかいはつに せいこう したのです!\pかんしゃの きもちとして\nトレーナーさんにも プレゼント なのよね!$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "{JPN}あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あたらしい モンスターボールは\nカナズミの フレンドリィ ショップで\lうってますからね!\pぜひ つかって みてください!\nではでは……$"
 
 Route116_Text_BagIsJamPacked:
-	.string "{JPN}どうぐ いっぱいで\nリピートボール あげられないね"
-	.string "$"
+	.string "{JPN}どうぐ いっぱいで\nリピートボール あげられないね$"
 
 Route116_Text_TokenOfAppreciation:
-	.string "{JPN}にもつを とどけてくれた ことへの\nかんしゃの きもちとして\lトレーナーさん にも あたらしい\lモンスターボールを プレゼント なのよね!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}にもつを とどけてくれた ことへの\nかんしゃの きもちとして\lトレーナーさん にも あたらしい\lモンスターボールを プレゼント なのよね!$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
-	.string "{JPN}メガネを おとしたんだ……\nきみも さがすの てつだってよ"
-	.string "$"
+	.string "{JPN}メガネを おとしたんだ……\nきみも さがすの てつだってよ$"
 
 Route116_Text_MayISeeThoseGlasses:
-	.string "{JPN}その メガネ……?\nちょっと みせてよ!"
-	.string "$"
+	.string "{JPN}その メガネ……?\nちょっと みせてよ!$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "{JPN}うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……\pここには ぼくの メガネ ないのかなあ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……\pここには ぼくの メガネ ないのかなあ$"
 
 Route116_Text_CantFindGlassesNotHere:
-	.string "{JPN}うーむ……\nどうにも メガネが みつからないんだ\lここには ぼくの メガネ ないのかなあ"
-	.string ""
-	.string "$"
+	.string "{JPN}うーむ……\nどうにも メガネが みつからないんだ\lここには ぼくの メガネ ないのかなあ$"
 
 Route116_Text_NotWhatImLookingFor:
-	.string "{JPN}うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……"
-	.string ""
-	.string "$"
+	.string "{JPN}うーむ……\nこれは くろいメガネ だね\lぼくが さがしているのと ちがうなあ……$"
 
 Route116_Text_RouteSignRustboro:
-	.string "{JPN}ここは 116ばん どうろ\n{LEFT_ARROW} カナズミシティ"
-	.string "$"
+	.string "{JPN}ここは 116ばん どうろ\n{LEFT_ARROW} カナズミシティ$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "{JPN}カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました"
-	.string ""
-	.string "$"
+	.string "{JPN}カナズミと シダケを むすぶ\n「カナシダ トンネル」\pかいつう こうじは ちゅうしに なりました$"
 
 Route116_Text_TunnelersRestHouse:
 	.string "{JPN}トンネルこうじ さぎょういん つめしょ$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
-	.string "{JPN}おとくな けいじばん!\pポケモンが しんか しそうなとき\nBボタンを おすと\lびっくりして しんかを やめます!\pこれを しんかキャンセルと いいます"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おとくな けいじばん!\pポケモンが しんか しそうなとき\nBボタンを おすと\lびっくりして しんかを やめます!\pこれを しんかキャンセルと いいます$"
 
 Route116_Text_TrainerTipsBagHasPockets:
-	.string "{JPN}おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おとくな けいじばん!!\pバッグには いくつかの ポケットが あり\nいれる どうぐの しゅるい によって\lそれぞれの ポケットに\lオートで ぶんるい されます\pまさに トレーナーの ひつじゅひん です!$"

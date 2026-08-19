@@ -134,32 +134,19 @@ Route113_EventScript_Wyatt::
 	end
 
 Route113_Text_AshCanBeFashionedIntoGlass:
-	.string "{JPN}ワハハ!!\nいまの かがくりょくは すごいですぞ!\pなんと この かざんばいを\nガラスに かえることが できるのです!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ワハハ!!\nいまの かがくりょくは すごいですぞ!\pなんと この かざんばいを\nガラスに かえることが できるのです!$"
 
 Route113_Text_FunWalkingThroughAsh:
-	.string "{JPN}かざんばい つもった くさむらの うえ\nあるくと どこを とおったか わかるから\lたのしく なっちゃう!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}かざんばい つもった くさむらの うえ\nあるくと どこを とおったか わかるから\lたのしく なっちゃう!$"
 
 Route113_Text_RouteSign111:
-	.string "{JPN}ここは 113ばん どうろ\n{RIGHT_ARROW} 111ばん どうろ"
-	.string "$"
+	.string "{JPN}ここは 113ばん どうろ\n{RIGHT_ARROW} 111ばん どうろ$"
 
 Route113_Text_RouteSignFallarbor:
-	.string "{JPN}ここは 113ばん どうろ\n{LEFT_ARROW} ハジツゲタウン"
-	.string "$"
+	.string "{JPN}ここは 113ばん どうろ\n{LEFT_ARROW} ハジツゲタウン$"
 
 Route113_Text_TrainerTipsRegisterKeyItems:
-	.string "{JPN}おとくな けいじばん!!\pバッグの たいせつなものに いれた\nどうぐを とうろく しておくと\lセレクトボタンを おすだけで\lつかえるように なって べんり です!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おとくな けいじばん!!\pバッグの たいせつなものに いれた\nどうぐを とうろく しておくと\lセレクトボタンを おすだけで\lつかえるように なって べんり です!$"
 
 Route113_Text_GlassWorkshopSign:
-	.string "{JPN}「ガラスざいくの おみせ」\nかざんばい から ガラスの どうぐ"
-	.string "$"
+	.string "{JPN}「ガラスざいくの おみせ」\nかざんばい から ガラスの どうぐ$"

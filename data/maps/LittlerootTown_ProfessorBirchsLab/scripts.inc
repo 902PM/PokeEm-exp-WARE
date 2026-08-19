@@ -657,334 +657,154 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall::
 	end
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork:
-	.string "{JPN}え? オダマキはかせ?\p"
-	.string "{JPN}はかせ なら フィールドワークに\n"
-	.string "{JPN}でかけていて いませんよ\p"
-	.string "{JPN}……あ フィールドワークって いうのは\p"
-	.string "{JPN}じっさいに のやまへ でかけていって\n"
-	.string "{JPN}けんきゅうを すること ですね!\p"
-	.string "{JPN}はかせは つくえのうえで けんきゅうを\n"
-	.string "{JPN}するよりも じっさいに そとへ とびだして\l"
-	.string "{JPN}たいけんする タイプのひと なんです!$"
+	.string "{JPN}え? オダマキはかせ?\pはかせ なら フィールドワークに\nでかけていて いませんよ\p……あ フィールドワークって いうのは\pじっさいに のやまへ でかけていって\nけんきゅうを すること ですね!\pはかせは つくえのうえで けんきゅうを\nするよりも じっさいに そとへ とびだして\lたいけんする タイプのひと なんです!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
-	.string "{JPN}はかせは つくえのうえで けんきゅうを\n"
-	.string "{JPN}するよりも じっさいに そとへ とびだして\l"
-	.string "{JPN}たいけんする タイプのひと なんです!$"
+	.string "{JPN}はかせは つくえのうえで けんきゅうを\nするよりも じっさいに そとへ とびだして\lたいけんする タイプのひと なんです!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
-	.string "{JPN}オダマキはかせは\n"
-	.string "{JPN}ポケモンが どこに すんでいるのか\l"
-	.string "{JPN}ぶんぷの ちょうさを なさっています\p"
-	.string "{JPN}{RIVAL}さんは すきな おとうさんの\n"
-	.string "{JPN}ポケモンが どこに すんでいるのか\l"
-	.string "{JPN}おてつだいを なさって いるのですよ$"
+	.string "{JPN}オダマキはかせは\nポケモンが どこに すんでいるのか\lぶんぷの ちょうさを なさっています\p{RIVAL}さんは すきな おとうさんの\nおてつだいを なさって いるのですよ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
-	.string "{JPN}オダマキ『……さて {PLAYER}{KUN}!\p"
-	.string "{JPN}きみのことは おとうさん から\n"
-	.string "{JPN}いつも きかされていたよ!\p"
-	.string "{JPN}きみは まだ じぶんの ポケモンを\n"
-	.string "{JPN}もったことが ないんだって?\p"
-	.string "{JPN}それにしては さっきの たたかいぶり\n"
-	.string "{JPN}なかなか みごと だったよ!\p"
-	.string "{JPN}やっぱり きみには おとうさんの\n"
-	.string "{JPN}ちが ながれて いるんだな!\p"
-	.string "{JPN}そうそう! たすけてくれた おれいに\n"
-	.string "{JPN}さっきの ポケモンは わたしから\l"
-	.string "{JPN}きみへの プレゼントに しよう!\p"
-	.string "{JPN}{PLAYER}は\n"
-	.string "{JPN}{STR_VAR_1}を もらった!$"
+	.string "{JPN}オダマキ『……さて {PLAYER}{KUN}!\pきみのことは おとうさん から\nいつも きかされていたよ!\pきみは まだ じぶんの ポケモンを\nもったことが ないんだって?\pそれにしては さっきの たたかいぶり\nなかなか みごと だったよ!\pやっぱり きみには おとうさんの\nちが ながれて いるんだな!\pそうそう! たすけてくれた おれいに\nさっきの ポケモンは わたしから\lきみへの プレゼントに しよう!\p{PLAYER}は\n{STR_VAR_1}を もらった!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
-	.string "{JPN}オダマキ『せっかく だから {STR_VAR_1}に\n"
-	.string "{JPN}ニックネームを つけてみては どうだい?$"
+	.string "{JPN}オダマキ『せっかく だから {STR_VAR_1}に\nニックネームを つけてみては どうだい?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "{JPN}オダマキ『これから さらに\n"
-	.string "{JPN}けいけんを つんで いけば\l"
-	.string "{JPN}いい トレーナーに なれそうだ!\p"
-	.string "{JPN}ちょうど うちの {RIVAL}も\n"
-	.string "{JPN}わたしを てつだい ながら\l"
-	.string "{JPN}ポケモンの ちょうさを しているんだ\p"
-	.string "{JPN}{PLAYER}{KUN} いちど\n"
-	.string "{JPN}あいに いったら どうだろう?$"
+	.string "{JPN}オダマキ『これから さらに\nけいけんを つんで いけば\lいい トレーナーに なれそうだ!\pちょうど うちの {RIVAL}も\nわたしを てつだい ながら\lポケモンの ちょうさを しているんだ\p{PLAYER}{KUN} いちど\nあいに いったら どうだろう?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
-	.string "{JPN}オダマキ『そうか!\n"
-	.string "{JPN}それは {RIVAL}も よろこぶぞ!\p"
-	.string "{JPN}トレーナーが どんな ものか\n"
-	.string "{JPN}おしえてもらうと いいぞ!$"
+	.string "{JPN}オダマキ『そうか!\nそれは {RIVAL}も よろこぶぞ!\pトレーナーが どんな ものか\nおしえてもらうと いいぞ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
-	.string "{JPN}オダマキ『そんなこと いわずに\n"
-	.string "{JPN}あいに いったら どうだろう?$"
+	.string "{JPN}オダマキ『そんなこと いわずに\nあいに いったら どうだろう?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
-	.string "{JPN}オダマキ『{RIVAL} だったら\n"
-	.string "{JPN}いえに かえってるんじゃ ないのか?\p"
-	.string "{JPN}それとも また どこかの くさむらに\n"
-	.string "{JPN}もぐりこんで いるのかも……\p"
-	.string "{JPN}もしも きみの ポケモンが キズついたら\n"
-	.string "{JPN}じぶんの いえで やすむと いいぞ!$"
+	.string "{JPN}オダマキ『{RIVAL} だったら\nいえに かえってるんじゃ ないのか?\pそれとも また どこかの くさむらに\nもぐりこんで いるのかも……\pもしも きみの ポケモンが キズついたら\nじぶんの いえで やすむと いいぞ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
-	.string "{JPN}オダマキ『おっ {PLAYER}{KUN}!\p"
-	.string "{JPN}はじめてで {RIVAL}に\n"
-	.string "{JPN}かつ だなんて すごいじゃないか!\p"
-	.string "{JPN}{RIVAL}は かなり まえから\n"
-	.string "{JPN}わたしの けんきゅうを てつだっていて\l"
-	.string "{JPN}トレーナーれきは けっこう ながいんだよ!\p"
-	.string "{JPN}うむ! {PLAYER}{KUN} にも\n"
-	.string "{JPN}けんきゅうの ために とりよせた\l"
-	.string "{JPN}この ポケモンずかんを あげよう!$"
+	.string "{JPN}オダマキ『おっ {PLAYER}{KUN}!\pはじめてで {RIVAL}に\nかつ だなんて すごいじゃないか!\p{RIVAL}は かなり まえから\nわたしの けんきゅうを てつだっていて\lトレーナーれきは けっこう ながいんだよ!\pうむ! {PLAYER}{KUN} にも\nけんきゅうの ために とりよせた\lこの ポケモンずかんを あげよう!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
-	.string "{JPN}{PLAYER}は\n"
-	.string "{JPN}ポケモンずかんを もらった!$"
+	.string "{JPN}{PLAYER}は\nポケモンずかんを もらった!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
-	.string "{JPN}オダマキ『その ポケモンずかんは\n"
-	.string "{JPN}きみが であった ポケモンを\p"
-	.string "{JPN}じどうてきに きろく していってくれる\n"
-	.string "{JPN}ハイテクな どうぐ なんだ!\p"
-	.string "{JPN}{RIVAL}も その ずかんを もっていて\n"
-	.string "{JPN}あちこちに あそびに いくんだな\p"
-	.string "{JPN}で めずらしい ポケモンを つかまえて\n"
-	.string "{JPN}ずかんに きろく できるとだね\p"
-	.string "{JPN}フィールドワークを している わたしを\n"
-	.string "{JPN}さがしだしては みせて くれるんだよ!$"
+	.string "{JPN}オダマキ『その ポケモンずかんは\nきみが であった ポケモンを\pじどうてきに きろく していってくれる\nハイテクな どうぐ なんだ!\p{RIVAL}も その ずかんを もっていて\nあちこちに あそびに いくんだな\pで めずらしい ポケモンを つかまえて\nずかんに きろく できるとだね\pフィールドワークを している わたしを\nさがしだしては みせて くれるんだよ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
-	.string "{JPN}オダマキ『きみの ゆくてには\n"
-	.string "{JPN}たくさんの ポケモンが まっているよ!\p"
-	.string "{JPN}あー はやく フィールドワークに\n"
-	.string "{JPN}いきたく なってきたぞ!$"
+	.string "{JPN}オダマキ『きみの ゆくてには\nたくさんの ポケモンが まっているよ!\pあー はやく フィールドワークに\nいきたく なってきたぞ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
-	.string "{JPN}ハルカ『{PLAYER}{KUN}も\n"
-	.string "{JPN}ポケモンずかん もらったんだね!\p"
-	.string "{JPN}よかったね! あたしと いっしょだよ!\n"
-	.string "{JPN}じゃあ あたしは これを あげる!$"
+	.string "{JPN}ハルカ『{PLAYER}{KUN}も\nポケモンずかん もらったんだね!\pよかったね! あたしと いっしょだよ!\nじゃあ あたしは これを あげる!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
-	.string "{JPN}ハルカ『ポケモンが\n"
-	.string "{JPN}たくさん いると たのしいよ!\p"
-	.string "{JPN}あたし いろんな ポケモン さがしたいから\n"
-	.string "{JPN}いろんな ところを さがすわ!\p"
-	.string "{JPN}そして かわいい ポケモンが いたら\n"
-	.string "{JPN}モンスターボールで つかまえちゃう!$"
+	.string "{JPN}ハルカ『ポケモンが\nたくさん いると たのしいよ!\pあたし いろんな ポケモン さがしたいから\nいろんな ところを さがすわ!\pそして かわいい ポケモンが いたら\nモンスターボールで つかまえちゃう!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 	.string "{JPN}あら? バッグ いっぱいだよ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
-	.string "{JPN}ハルカ『こんどは どこまで\n"
-	.string "{JPN}ポケモンを さがしに いこうかな?$"
+	.string "{JPN}ハルカ『こんどは どこまで\nポケモンを さがしに いこうかな?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
-	.string "{JPN}ユウキ『ふうん {PLAYER}も\n"
-	.string "{JPN}ポケモンずかん もらったのか\p"
-	.string "{JPN}じゃあ オレは これ やるよ$"
+	.string "{JPN}ユウキ『ふうん {PLAYER}も\nポケモンずかん もらったのか\pじゃあ オレは これ やるよ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
-	.string "{JPN}ユウキ『ポケモンが\n"
-	.string "{JPN}たくさん いると たのしいからな\p"
-	.string "{JPN}オレ いろんな ポケモン さがすため\n"
-	.string "{JPN}いろんな ところに いくんだ\p"
-	.string "{JPN}そして かっこいい ポケモンが いたら\n"
-	.string "{JPN}モンスターボールで つかまえるんだ$"
+	.string "{JPN}ユウキ『ポケモンが\nたくさん いると たのしいからな\pオレ いろんな ポケモン さがすため\nいろんな ところに いくんだ\pそして かっこいい ポケモンが いたら\nモンスターボールで つかまえるんだ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
 	.string "{JPN}おや? バッグ いっぱいだよ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
-	.string "{JPN}ユウキ『こんどは どこに\n"
-	.string "{JPN}ポケモン さがしに いこうかな……$"
+	.string "{JPN}ユウキ『こんどは どこに\nポケモン さがしに いこうかな……$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
-	.string "{JPN}なんか すごそうな マシンだ!\n"
-	.string "{JPN}はかせが けんきゅうに つかうのかな?$"
+	.string "{JPN}なんか すごそうな マシンだ!\nはかせが けんきゅうに つかうのかな?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
-	.string "{JPN}けんきゅうに つかわれている パソコンだ!\n"
-	.string "{JPN}…… さわるのは やめておこう$"
+	.string "{JPN}けんきゅうに つかわれている パソコンだ!\n…… さわるのは やめておこう$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
-	.string "{JPN}ポケモンに ついて かかれた\n"
-	.string "{JPN}ほんが いっぱい ある!$"
+	.string "{JPN}ポケモンに ついて かかれた\nほんが いっぱい ある!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
 	.string "{JPN}むずかしそうな ほんが おいてある!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
-	.string "{JPN}オダマキ『……さて\p"
-	.string "{JPN}{PLAYER}{KUN}と {RIVAL}に ポケモンの\n"
-	.string "{JPN}ちょうさを おねがい していた わけだが\p"
-	.string "{JPN}きみたちの どりょくの おかげで\n"
-	.string "{JPN}いろんな ことが わかってきた!\p"
-	.string "{JPN}どうやら ホウエンちほう には\n"
-	.string "{JPN}それいがいの ちほうの ポケモンも\l"
-	.string "{JPN}せいそく している らしいんだ!\p"
-	.string "{JPN}それだけ ホウエンちほうは\n"
-	.string "{JPN}ゆたかな しぜんに めぐまれている\l"
-	.string "{JPN}という ことなんだろうな!\p"
-	.string "{JPN}というわけで きみたちの ずかんを\n"
-	.string "{JPN}ぜんこくばんに バージョンアップ\l"
-	.string "{JPN}してあげようと おもう!\p"
-	.string "{JPN}さあ ずかんを かしておくれ!$"
+	.string "{JPN}オダマキ『……さて\p{PLAYER}{KUN}と {RIVAL}に ポケモンの\nちょうさを おねがい していた わけだが\pきみたちの どりょくの おかげで\nいろんな ことが わかってきた!\pどうやら ホウエンちほう には\nそれいがいの ちほうの ポケモンも\lせいそく している らしいんだ!\pそれだけ ホウエンちほうは\nゆたかな しぜんに めぐまれている\lという ことなんだろうな!\pというわけで きみたちの ずかんを\nぜんこくばんに バージョンアップ\lしてあげようと おもう!\pさあ ずかんを かしておくれ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
-	.string "{JPN}ハルカ『えへへー!\p"
-	.string "{JPN}あたしの ずかんまで\n"
-	.string "{JPN}ぜんこくばんに してもらえる なんて\p"
-	.string "{JPN}{PLAYER}{KUN}が たくさん ポケモンを\n"
-	.string "{JPN}しらべてくれた おかげだね!$"
+	.string "{JPN}ハルカ『えへへー!\pあたしの ずかんまで\nぜんこくばんに してもらえる なんて\p{PLAYER}{KUN}が たくさん ポケモンを\nしらべてくれた おかげだね!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
-	.string "{JPN}ユウキ『オレ はりきって ホウエンじゅうの\n"
-	.string "{JPN}ポケモンのこと しらべたからな\p"
-	.string "{JPN}{PLAYER}も ずかんを ぜんこくばんに\n"
-	.string "{JPN}してもらえて ラッキーだったな!$"
+	.string "{JPN}ユウキ『オレ はりきって ホウエンじゅうの\nポケモンのこと しらべたからな\p{PLAYER}も ずかんを ぜんこくばんに\nしてもらえて ラッキーだったな!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
 	.string "{JPN}オダマキ『ホイ できたぞ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
-	.string "{JPN}{PLAYER}の ポケモンずかんが\n"
-	.string "{JPN}ぜんこくばんに バージョンアップ した!$"
+	.string "{JPN}{PLAYER}の ポケモンずかんが\nぜんこくばんに バージョンアップ した!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
-	.string "{JPN}オダマキ『いいかい?\n"
-	.string "{JPN}チャンピオンに なったから といって\l"
-	.string "{JPN}ポケモンの みちに おわりは ないんだ\p"
-	.string "{JPN}まだ あしを ふみいれていない くさむらは\n"
-	.string "{JPN}いつまでも きみを まっているよ!$"
+	.string "{JPN}オダマキ『いいかい?\nチャンピオンに なったから といって\lポケモンの みちに おわりは ないんだ\pまだ あしを ふみいれていない くさむらは\nいつまでも きみを まっているよ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayTakeBreakFromFieldwork:
-	.string "{JPN}ハルカ『さーて フィールドワークは\n"
-	.string "{JPN}ちょっとだけ おやすみして\p"
-	.string "{JPN}しばらくは ここで\n"
-	.string "{JPN}はかせの おてつだいでも しよっかなー$"
+	.string "{JPN}ハルカ『さーて フィールドワークは\nちょっとだけ おやすみして\pしばらくは ここで\nはかせの おてつだいでも しよっかなー$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanTakeBreakFromFieldwork:
-	.string "{JPN}ユウキ『オレは とりあえず\n"
-	.string "{JPN}フィールドワークは おやすみだな!\p"
-	.string "{JPN}しばらくは ここで\n"
-	.string "{JPN}はかせの てつだいでも してるよ!$"
+	.string "{JPN}ユウキ『オレは とりあえず\nフィールドワークは おやすみだな!\pしばらくは ここで\nはかせの てつだいでも してるよ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
-	.string "{JPN}オダマキ『おお {PLAYER}{KUN}!\n"
-	.string "{JPN}ちょっと ずかんを みせて もらうよ\p"
-	.string "{JPN}…… …… ……\n"
-	.string "{JPN}…… …… ……\p"
-	.string "{JPN}……うむ やはり まちがいない!\n"
-	.string "{JPN}キミは ほんとうに ホウエンちほうの\l"
-	.string "{JPN}ずかんを かんせい させたんだな!\p"
-	.string "{JPN}いやー たいしたもんだ!\p"
-	.string "{JPN}きみの その すばらしい はたらきに\n"
-	.string "{JPN}かんしゃの きもちを こめて\l"
-	.string "{JPN}わたしから プレゼントを おくろう!\p"
-	.string "{JPN}それは……\p"
-	.string "{JPN}ほかの ちほうでしか みつからない\n"
-	.string "{JPN}めずらしい ポケモンだよ!\p"
-	.string "{JPN}3ひきの なかから\n"
-	.string "{JPN}すきなものを 1ひきだけ あげよう!$"
+	.string "{JPN}オダマキ『おお {PLAYER}{KUN}!\nちょっと ずかんを みせて もらうよ\p…… …… ……\n…… …… ……\p……うむ やはり まちがいない!\nキミは ほんとうに ホウエンちほうの\lずかんを かんせい させたんだな!\pいやー たいしたもんだ!\pきみの その すばらしい はたらきに\nかんしゃの きもちを こめて\lわたしから プレゼントを おくろう!\pそれは……\pほかの ちほうでしか みつからない\nめずらしい ポケモンだよ!\p3ひきの なかから\nすきなものを 1ひきだけ あげよう!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
-	.string "{JPN}オダマキ『ほかの ちほうでしか\n"
-	.string "{JPN}みつからない めずらしい ポケモンだよ!\p"
-	.string "{JPN}3ひきの なかから\n"
-	.string "{JPN}すきなものを 1ひきだけ あげよう!$"
+	.string "{JPN}オダマキ『ほかの ちほうでしか\nみつからない めずらしい ポケモンだよ!\p3ひきの なかから\nすきなものを 1ひきだけ あげよう!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "{JPN}オダマキ『ほのおの ポケモン ヒノアラシに\n"
-	.string "{JPN}めを つけるとは やはり するどいな!\p"
-	.string "{JPN}じゃあ ヒノアラシで いいんだね?$"
+	.string "{JPN}オダマキ『ほのおの ポケモン ヒノアラシに\nめを つけるとは やはり するどいな!\pじゃあ ヒノアラシで いいんだね?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
-	.string "{JPN}オダマキ『みずの ポケモン ワニノコか\n"
-	.string "{JPN}うーむ いいものを えらぶじゃないか!\p"
-	.string "{JPN}よし ワニノコで いいんだね?$"
+	.string "{JPN}オダマキ『みずの ポケモン ワニノコか\nうーむ いいものを えらぶじゃないか!\pよし ワニノコで いいんだね?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "{JPN}オダマキ『くさの ポケモン チコリータか\n"
-	.string "{JPN}さすがだ わかってるなあ!\p"
-	.string "{JPN}ならば チコリータで けっていだね?$"
+	.string "{JPN}オダマキ『くさの ポケモン チコリータか\nさすがだ わかってるなあ!\pならば チコリータで けっていだね?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
-	.string "{JPN}オダマキ『じっくり かんがえて\n"
-	.string "{JPN}きめると いいよ\l"
-	.string "{JPN}どれも きちょうな ポケモン だからね$"
+	.string "{JPN}オダマキ『じっくり かんがえて\nきめると いいよ\lどれも きちょうな ポケモン だからね$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
-	.string "{JPN}オダマキ『なるほど!\n"
-	.string "{JPN}いい ポケモンを えらんだね!$"
+	.string "{JPN}オダマキ『なるほど!\nいい ポケモンを えらんだね!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
-	.string "{JPN}{PLAYER}は オダマキはかせ から\n"
-	.string "{JPN}{STR_VAR_1}を もらった!$"
+	.string "{JPN}{PLAYER}は オダマキはかせ から\n{STR_VAR_1}を もらった!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
-	.string "{JPN}もらった {STR_VAR_1}に\n"
-	.string "{JPN}ニックネームを つけますか?$"
+	.string "{JPN}もらった {STR_VAR_1}に\nニックネームを つけますか?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
-	.string "{JPN}オダマキ『{PLAYER}{KUN} いいかい?\n"
-	.string "{JPN}ホウエンの ずかんが かんせい しても\l"
-	.string "{JPN}ポケモンの みちに おわりは ないんだ\p"
-	.string "{JPN}まだ あしを ふみいれていない くさむらは\n"
-	.string "{JPN}いつまでも きみを まっているよ!$"
+	.string "{JPN}オダマキ『{PLAYER}{KUN} いいかい?\nホウエンの ずかんが かんせい しても\lポケモンの みちに おわりは ないんだ\pまだ あしを ふみいれていない くさむらは\nいつまでも きみを まっているよ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "{JPN}やくそくの 1ひきは もう もらったから\n"
-	.string "{JPN}のこりには さわらないで おこう!$"
+	.string "{JPN}やくそくの 1ひきは もう もらったから\nのこりには さわらないで おこう!$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
-	.string "{JPN}おや? それいじょう\n"
-	.string "{JPN}ポケモンを もてない みたいだな$"
+	.string "{JPN}おや? それいじょう\nポケモンを もてない みたいだな$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
-	.string "{JPN}ハルカ『{PLAYER}{KUN}は\n"
-	.string "{JPN}このあと…… どうする つもり?\p"
-	.string "{JPN}ポケモン しょうぶの みちを きわめる?\p"
-	.string "{JPN}それとも ぜんこく ずかんの\n"
-	.string "{JPN}かんせいを めざすの?\p"
-	.string "{JPN}あたしは ここで\n"
-	.string "{JPN}はかせの おてつだいを つづけるわ$"
+	.string "{JPN}ハルカ『{PLAYER}{KUN}は\nこのあと…… どうする つもり?\pポケモン しょうぶの みちを きわめる?\pそれとも ぜんこく ずかんの\nかんせいを めざすの?\pあたしは ここで\nはかせの おてつだいを つづけるわ$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
-	.string "{JPN}ユウキ『オレは ポケモン あつめるより\n"
-	.string "{JPN}これは! と おもった 1ひきを\l"
-	.string "{JPN}じっくり そだてるのが すきなのさ!$"
+	.string "{JPN}ユウキ『オレは ポケモン あつめるより\nこれは! と おもった 1ひきを\lじっくり そだてるのが すきなのさ!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
-	.string "{JPN}ハルカ『あっ {PLAYER}{KUN}!\n"
-	.string "{JPN}バトルフロンティア っていう ところには\l"
-	.string "{JPN}もう いってみた?$"
+	.string "{JPN}ハルカ『あっ {PLAYER}{KUN}!\nバトルフロンティア っていう ところには\lもう いってみた?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "{JPN}ユウキ『やあ {PLAYER}か!\n"
-	.string "{JPN}バトルフロンティア って ところには\l"
-	.string "{JPN}もう いってみたか?$"
+	.string "{JPN}ユウキ『やあ {PLAYER}か!\nバトルフロンティア って ところには\lもう いってみたか?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
-	.string "{JPN}…… …… ……\n"
-	.string "{JPN}…… …… …… ピッ!\p"
-	.string "{JPN}エニシダ『やあやあ {PLAYER}{KUN}!\n"
-	.string "{JPN}わたしだよ エニシダだよ!\p"
-	.string "{JPN}いま タイドリップごうに のってるんだけど\n"
-	.string "{JPN}やっぱり うみは きもちが いいねえー\p"
-	.string "{JPN}ところで……\p"
-	.string "{JPN}きみを しょうたい したい ばしょが\n"
-	.string "{JPN}あるんだけど どうだい?\p"
-	.string "{JPN}もし きょうみが あるなら\n"
-	.string "{JPN}カイナか ミナモの ふねのりばから\l"
-	.string "{JPN}ふねに のっておくれ!\p"
-	.string "{JPN}くわしいことは あったときに おしえよう\n"
-	.string "{JPN}じゃあな まってるぞ!\p"
-	.string "{JPN}…… …… ……\n"
-	.string "{JPN}…… …… …… ツー$"
+	.string "{JPN}…… …… ……\n…… …… …… ピッ!\pエニシダ『やあやあ {PLAYER}{KUN}!\nわたしだよ エニシダだよ!\pいま タイドリップごうに のってるんだけど\nやっぱり うみは きもちが いいねえー\pところで……\pきみを しょうたい したい ばしょが\nあるんだけど どうだい?\pもし きょうみが あるなら\nカイナか ミナモの ふねのりばから\lふねに のっておくれ!\pくわしいことは あったときに おしえよう\nじゃあな まってるぞ!\p…… …… ……\n…… …… …… ツー$"

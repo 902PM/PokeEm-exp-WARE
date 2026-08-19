@@ -460,212 +460,94 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy:
-	.string "{JPN}おじさん『このこは ポケモンの おかげで\nげんきに なれたような もんだけど\lちょっと げんきに なりすぎ なんだ……"
-	.string ""
-	.string "$"
+	.string "{JPN}おじさん『このこは ポケモンの おかげで\nげんきに なれたような もんだけど\lちょっと げんきに なりすぎ なんだ……$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
-	.string "{JPN}ミツル『おじさん おねがい だから!\pじぶんが どれくらい つよくなったか\nこのジムで ためして みたいんだ!\pね ね いいでしょう!?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『おじさん おねがい だから!\pじぶんが どれくらい つよくなったか\nこのジムで ためして みたいんだ!\pね ね いいでしょう!?$"
 
 MauvilleCity_Text_UncleYourePushingIt:
-	.string "{JPN}おじさん『まあまあ ミツルくん!\pたしかに ポケモンと いっしょに\nくらすように なってから\lきみは ずいぶん げんきに なった!\pだからって いきなり ポケモンジムに\nちょうせん なんて むり してないかい?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おじさん『まあまあ ミツルくん!\pたしかに ポケモンと いっしょに\nくらすように なってから\lきみは ずいぶん げんきに なった!\pだからって いきなり ポケモンジムに\nちょうせん なんて むり してないかい?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
-	.string "{JPN}ミツル『むり なんか してません\pぼくと ラルトスが ちからを あわせれば\nだれにだって かてる はずです!"
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『むり なんか してません\pぼくと ラルトスが ちからを あわせれば\nだれにだって かてる はずです!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
-	.string "{JPN}ミツル『あっ! {PLAYER}さん!\pぼく あれから つよくなったんだ!\pそれを {PLAYER}さんにも\nおじさんにも わかって もらいたいんです!\p{PLAYER}さん おねがいです!\nぼくと しょうぶ してください"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『あっ! {PLAYER}さん!\pぼく あれから つよくなったんだ!\pそれを {PLAYER}さんにも\nおじさんにも わかって もらいたいんです!\p{PLAYER}さん おねがいです!\nぼくと しょうぶ してください$"
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
-	.string "{JPN}ミツル『{PLAYER}さんが\nぼくと しょうぶ してくれないと……\pおじさんに ぼくが つよくなったこと\nわかって もらえないよ……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『{PLAYER}さんが\nぼくと しょうぶ してくれないと……\pおじさんに ぼくが つよくなったこと\nわかって もらえないよ……$"
 
 MauvilleCity_Text_UncleCanYouBattleWally:
-	.string "{JPN}おじさん『{PLAYER}{KUN}とやら\nわるいけど ミツルくんと\lしょうぶ してあげて くれないかな?\pこのままだと なにを いっても\nきいて もらえそうに ないよ"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おじさん『{PLAYER}{KUN}とやら\nわるいけど ミツルくんと\lしょうぶ してあげて くれないかな?\pこのままだと なにを いっても\nきいて もらえそうに ないよ$"
 
 MauvilleCity_Text_WallyPleaseBattleMe:
-	.string "{JPN}ミツル『{PLAYER}さん おねがいです!\nぼくと しょうぶ してください"
-	.string "$"
+	.string "{JPN}ミツル『{PLAYER}さん おねがいです!\nぼくと しょうぶ してください$"
 
 MauvilleCity_Text_WallyHereICome:
-	.string "{JPN}ミツル『ありがとう {PLAYER}さん\pそれでは…… いきますね!"
-	.string "$"
+	.string "{JPN}ミツル『ありがとう {PLAYER}さん\pそれでは…… いきますね!$"
 
 MauvilleCity_Text_WallyDefeat:
-	.string "{JPN}ミツル『…… …… …… ……\p…… …… …… ……\pぼくの まけ です……"
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『…… …… …… ……\p…… …… …… ……\pぼくの まけ です……$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
-	.string "{JPN}ミツル『おじさん……\nぼく シダケに もどります"
-	.string "$"
+	.string "{JPN}ミツル『おじさん……\nぼく シダケに もどります$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
-	.string "{JPN}{PLAYER}さん ありがとう\nやっぱり トレーナーって すごいんですね\pただ ポケモンを もっていて\nたたかわせる だけじゃ ほんとうの いみで\lトレーナーには なれないんだ……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}{PLAYER}さん ありがとう\nやっぱり トレーナーって すごいんですね\pただ ポケモンを もっていて\nたたかわせる だけじゃ ほんとうの いみで\lトレーナーには なれないんだ……$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
-	.string "{JPN}おじさん『ミツルくん\nそんなに しょげることは ないよ\pこれから もっともっと\nつよくなれば いいじゃないか!\pさあ うちに かえろう\nみんな まってるよ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おじさん『ミツルくん\nそんなに しょげることは ないよ\pこれから もっともっと\nつよくなれば いいじゃないか!\pさあ うちに かえろう\nみんな まってるよ$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
-	.string "{JPN}おじさん『なるほど ミツルくんが\nポケモンを つかまえるのを\lみまもって くれたのは {PLAYER}{KUN}!\lきみ だったんだね\pよかったら シダケにも\nあそびに きてくれないか?\lミツルくん きっと よろこぶから"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
-
+	.string "{JPN}おじさん『なるほど ミツルくんが\nポケモンを つかまえるのを\lみまもって くれたのは {PLAYER}{KUN}!\lきみ だったんだね\pよかったら シダケにも\nあそびに きてくれないか?\lミツルくん きっと よろこぶから$"
 
 MauvilleCity_Text_WallyPokenavCall:
-	.string "{JPN}…… …… ……\n…… …… …… ピッ!\pミツル『あっ {PLAYER}さん!\nあのね おじさんが ぼくのために\lポケナビを てにいれて くれたんです!\pこれで いつでも {PLAYER}さんと\nれんらくが とれますね!\p…… …… ……\n…… …… …… ツー"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}…… …… ……\n…… …… …… ピッ!\pミツル『あっ {PLAYER}さん!\nあのね おじさんが ぼくのために\lポケナビを てにいれて くれたんです!\pこれで いつでも {PLAYER}さんと\nれんらくが とれますね!\p…… …… ……\n…… …… …… ツー$"
 
 MauvilleCity_Text_RegisteredWally:
-	.string "{JPN}ミツルを\nポケナビに とうろく した!"
-	.string "$"
+	.string "{JPN}ミツルを\nポケナビに とうろく した!$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "{JPN}エニシダ『へへ……\nいまの しょうぶ みていたよ!\pきみは あの ミツルくん とかいう\nしょうねんと ともだち なんだろう?\pそれなのに てかげん せずに たたかい\nみごとに うちまかした……\pうん! それでこそ ほんとうの\nポケモン しょうぶ と いうものだ!\pわたしは そういう トレーナーが\nだいすきだなー!\p…… …… ……\nこれからも おうえん しているよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}エニシダ『へへ……\nいまの しょうぶ みていたよ!\pきみは あの ミツルくん とかいう\nしょうねんと ともだち なんだろう?\pそれなのに てかげん せずに たたかい\nみごとに うちまかした……\pうん! それでこそ ほんとうの\nポケモン しょうぶ と いうものだ!\pわたしは そういう トレーナーが\nだいすきだなー!\p…… …… ……\nこれからも おうえん しているよ!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "{JPN}テッセン『おお {PLAYER}{KUN}\nげんきそうに しておるのう\lわっはははは! いいこと じゃよ!\pよしっ! きめた!\n{PLAYER}{KUN}に おねがいを するぞい!\pじつは この キンセツには\nニューキンセツ という ちかとしが ある\pで {PLAYER}{KUN} には\nそこの はつでんそうちの スイッチを\lきってきて ほしいんじゃよ!\pさいきん はつでんそうちが\nぼうそうぎみで なにかと あぶないからのう\pほら これが ニューキンセツの\nとびらを あける カギじゃ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}テッセン『おお {PLAYER}{KUN}\nげんきそうに しておるのう\lわっはははは! いいこと じゃよ!\pよしっ! きめた!\n{PLAYER}{KUN}に おねがいを するぞい!\pじつは この キンセツには\nニューキンセツ という ちかとしが ある\pで {PLAYER}{KUN} には\nそこの はつでんそうちの スイッチを\lきってきて ほしいんじゃよ!\pさいきん はつでんそうちが\nぼうそうぎみで なにかと あぶないからのう\pほら これが ニューキンセツの\nとびらを あける カギじゃ!$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "{JPN}テッセン『なーに\nおまえさんなら だいじょうぶ じゃ\pちなみに ニューキンセツの いりぐちは\n110ばんどうろで なみのりを して\lすぐの ところに あるからのう\pでは よろしく たのんだぞ!\nわっはははは!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}テッセン『なーに\nおまえさんなら だいじょうぶ じゃ\pちなみに ニューキンセツの いりぐちは\n110ばんどうろで なみのりを して\lすぐの ところに あるからのう\pでは よろしく たのんだぞ!\nわっはははは!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "{JPN}テッセン『わっはははは!\pさすがは {PLAYER}{KUN}! おまえさんに\nたのんで せいかい じゃったよ!\pこれは おれいじゃ\n10まんボルトの わざマシン\lえんりょせずに もっていくが いいぞ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}テッセン『わっはははは!\pさすがは {PLAYER}{KUN}! おまえさんに\nたのんで せいかい じゃったよ!\pこれは おれいじゃ\n10まんボルトの わざマシン\lえんりょせずに もっていくが いいぞ!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "{JPN}テッセン『わっはははは!\pわかものの たのもしい すがたを みるのは\nよろこばしい こと じゃな!"
-	.string ""
-	.string "$"
+	.string "{JPN}テッセン『わっはははは!\pわかものの たのもしい すがたを みるのは\nよろこばしい こと じゃな!$"
 
 MauvilleCity_Text_NurseHurtMonBackToHealth:
-	.string "{JPN}ポケモンしょうぶを するのも いいけど\pもしも じぶんの ポケモンが\nたたかいで きずついたり したなら\lやさしく いたわって あげなきゃね!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ポケモンしょうぶを するのも いいけど\pもしも じぶんの ポケモンが\nたたかいで きずついたり したなら\lやさしく いたわって あげなきゃね!$"
 
 MauvilleCity_Text_AllSortsOfPeopleComeThrough:
-	.string "{JPN}この まちは とうざい なんぼく に\nみちが つうじて いるから\lいろんな ひとが やってきます!"
-	.string ""
-	.string "$"
+	.string "{JPN}この まちは とうざい なんぼく に\nみちが つうじて いるから\lいろんな ひとが やってきます!$"
 
 MauvilleCity_Text_RydelVeryGenerous:
-	.string "{JPN}あなた サイクルショップ には\nもう いってみた?\pあそこの ごしゅじんの カゼノさんは\nすごく きまえが いいのよね!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あなた サイクルショップ には\nもう いってみた?\pあそこの ごしゅじんの カゼノさんは\nすごく きまえが いいのよね!$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
-	.string "{JPN}じてんしゃに のっていても\nやせいの ポケモンは とびだしてくるよ!"
-	.string "$"
+	.string "{JPN}じてんしゃに のっていても\nやせいの ポケモンは とびだしてくるよ!$"
 
 MauvilleCity_Text_CitySign:
-	.string "{JPN}ここは キンセツ シティ\nあかるく かがやく たのしい まち"
-	.string "$"
+	.string "{JPN}ここは キンセツ シティ\nあかるく かがやく たのしい まち$"
 
 MauvilleCity_Text_GymSign:
-	.string "{JPN}キンセツ シティ ポケモンジム\nリーダー テッセン\lあっかるい でんげき オヤジ!"
-	.string ""
-	.string "$"
+	.string "{JPN}キンセツ シティ ポケモンジム\nリーダー テッセン\lあっかるい でんげき オヤジ!$"
 
 MauvilleCity_Text_BikeShopSign:
-	.string "{JPN}じゃりみち はしれば こころも はずむ!\n「サイクルショップ カゼノ」"
-	.string "$"
+	.string "{JPN}じゃりみち はしれば こころも はずむ!\n「サイクルショップ カゼノ」$"
 
 MauvilleCity_Text_GameCornerSign:
-	.string "{JPN}だれもが あそべる すてきな スポット!\n「キンセツ ゲームコーナー」"
-	.string "$"
+	.string "{JPN}だれもが あそべる すてきな スポット!\n「キンセツ ゲームコーナー」$"
 
 MauvilleCity_Text_ExplainTV:
-	.string "{JPN}ねえ きみ\nテレビって チェック してるかい?\pさいきんに なって おもしろい\nばんぐみが きゅうに ふえたんだぜ!\pいいよね テレビって\nいきなり ともだちの ことが\lしょうかい されたり\pしらない うちに じぶんが\nテレビに でていたり するんだよ\pこんど ぼくも テレビに\nうつんない かなー\pきみも こんどから\nちゃんと チェックを してみなよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ねえ きみ\nテレビって チェック してるかい?\pさいきんに なって おもしろい\nばんぐみが きゅうに ふえたんだぜ!\pいいよね テレビって\nいきなり ともだちの ことが\lしょうかい されたり\pしらない うちに じぶんが\nテレビに でていたり するんだよ\pこんど ぼくも テレビに\nうつんない かなー\pきみも こんどから\nちゃんと チェックを してみなよ!$"
 
 MauvilleCity_Text_BeenCheckingOutTV:
-	.string "{JPN}やあ!\nテレビは ちゃんと チェック してる?"
-	.string "$"
+	.string "{JPN}やあ!\nテレビは ちゃんと チェック してる?$"

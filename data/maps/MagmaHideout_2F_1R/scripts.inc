@@ -22,50 +22,34 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 	end
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
-	.string "{JPN}むむむ!\pここに はいって これるのは\nマグマだんの メンバー だけのはず!\pなのに あなたは\nマグマだんの ふくを きていない……\pえーい あやしい やつめ!\nわたしと しょうぶ しなさい!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}むむむ!\pここに はいって これるのは\nマグマだんの メンバー だけのはず!\pなのに あなたは\nマグマだんの ふくを きていない……\pえーい あやしい やつめ!\nわたしと しょうぶ しなさい!$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
-	.string "{JPN}あわわわ……\nマグマだんの プライドが……"
-	.string "$"
+	.string "{JPN}あわわわ……\nマグマだんの プライドが……$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
-	.string "{JPN}さむがりの ひとは\nマグマだんに はいると いいわよ"
-	.string "$"
+	.string "{JPN}さむがりの ひとは\nマグマだんに はいると いいわよ$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
-	.string "{JPN}こらこら!\pオレの めのまえを だまって\nすどおり させる わけには いかねーぞ!"
-	.string ""
-	.string "$"
+	.string "{JPN}こらこら!\pオレの めのまえを だまって\nすどおり させる わけには いかねーぞ!$"
 
 MagmaHideout_2F_1R_Text_Grunt3Defeat:
-	.string "{JPN}うはっ! まけましたっ!"
-	.string "$"
+	.string "{JPN}うはっ! まけましたっ!$"
 
 MagmaHideout_2F_1R_Text_Grunt3PostBattle:
-	.string "{JPN}こんなことなら すどおり していって\nもらうほうが よかったかも……"
-	.string "$"
+	.string "{JPN}こんなことなら すどおり していって\nもらうほうが よかったかも……$"
 
 MagmaHideout_2F_1R_Text_Grunt4Intro:
-	.string "{JPN}やや! あやしい やつめ!"
-	.string "$"
+	.string "{JPN}やや! あやしい やつめ!$"
 
 MagmaHideout_2F_1R_Text_Grunt4Defeat:
 	.string "{JPN}ぬおお……$"
 
 MagmaHideout_2F_1R_Text_Grunt4PostBattle:
-	.string "{JPN}しょうぶに まけたのに\nまだ ここを ぐるぐる まわる\lひつようが あるんだろうか?"
-	.string ""
-	.string "$"
+	.string "{JPN}しょうぶに まけたのに\nまだ ここを ぐるぐる まわる\lひつようが あるんだろうか?$"
 
 MagmaHideout_2F_1R_Text_Grunt5Intro:
-	.string "{JPN}むむ! あやしい やつめ!"
-	.string "$"
+	.string "{JPN}むむ! あやしい やつめ!$"
 
 MagmaHideout_2F_1R_Text_Grunt5Defeat:
 	.string "{JPN}うぬぬ……$"

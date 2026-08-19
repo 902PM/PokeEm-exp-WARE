@@ -440,8 +440,7 @@ BattleFrontier_BattleDomeLobby_Text_WelcomeSingleBattle:
 	.string "{JPN}トレーナーの せんりゃくを ためす ばしょ!\nバトルドームへ ようこそ!\pこちらでは\nシングル バトルトーナメントの\lごあんないを しております$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeSinglesChallenge:
-	.string "{JPN}シングル バトルトーナメントに\nちょうせん しますか?"
-	.string "$"
+	.string "{JPN}シングル バトルトーナメントに\nちょうせん しますか?$"
 
 BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain:
 	.string "{JPN}またの ごりようを おまちして おります$"

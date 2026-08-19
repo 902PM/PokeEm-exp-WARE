@@ -17,37 +17,20 @@ MagmaHideout_1F_EventScript_Grunt2::
 	end
 
 MagmaHideout_1F_Text_Grunt1Intro:
-	.string "{JPN}マグマだんは ごうれいが かかったとき\nはやく せいれつした じゅんばんで\lじゅうような ばしょの\lけいびを まかせて もらえるんだぜ!\pオレが こんな すみっこに いるのは\nちこく ばっかり してるからさ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マグマだんは ごうれいが かかったとき\nはやく せいれつした じゅんばんで\lじゅうような ばしょの\lけいびを まかせて もらえるんだぜ!\pオレが こんな すみっこに いるのは\nちこく ばっかり してるからさ!$"
 
 MagmaHideout_1F_Text_Grunt1Defeat:
-	.string "{JPN}トレーニングにも ちこくする オレだ!\nわれながら よわいぜ……"
-	.string ""
-	.string "$"
+	.string "{JPN}トレーニングにも ちこくする オレだ!\nわれながら よわいぜ……$"
 
 MagmaHideout_1F_Text_Grunt1PostBattle:
-	.string "{JPN}わかったよ こんどから もうすこし\nがんばって みるよ……"
-	.string "$"
+	.string "{JPN}わかったよ こんどから もうすこし\nがんばって みるよ……$"
 
 MagmaHideout_1F_Text_Grunt2Intro:
-	.string "{JPN}リーダーに いわれた とおり\nえんとつやまを どんどん ほっていたら\lとんでもねえモンが でちまった!\pなにが でたかって?\pふははは!\nオレを たおせたら おしえて やるよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}リーダーに いわれた とおり\nえんとつやまを どんどん ほっていたら\lとんでもねえモンが でちまった!\pなにが でたかって?\pふははは!\nオレを たおせたら おしえて やるよ!$"
 
 MagmaHideout_1F_Text_Grunt2Defeat:
-	.string "{JPN}むぐぅ…… たおされちまった!"
-	.string "$"
+	.string "{JPN}むぐぅ…… たおされちまった!$"
 
 MagmaHideout_1F_Text_Grunt2PostBattle:
-	.string "{JPN}やっぱり おしえるの やーめた!\nどうせ おくまで いけば わかることさ!\pおまえも あとに おたのしみを\nのこして おいたほうが いいだろ?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}やっぱり おしえるの やーめた!\nどうせ おくまで いけば わかることさ!\pおまえも あとに おたのしみを\nのこして おいたほうが いいだろ?$"
 

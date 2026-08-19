@@ -42,24 +42,16 @@ MauvilleCity_House2_EventScript_DeclineTrade::
 	end
 
 MauvilleCity_House2_Text_BuyHarborMailAtSlateport:
-	.string "{JPN}あたしが じてんしゃに のれたら\nカイナに いくのも すぐなのに……\pそして カイナの フレンドリィショップで\nハーバーメールを かえるのに……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あたしが じてんしゃに のれたら\nカイナに いくのも すぐなのに……\pそして カイナの フレンドリィショップで\nハーバーメールを かえるのに……$"
 
 MauvilleCity_House2_Text_TradeHarborMailForCoinCase:
-	.string "{JPN}それ! ハーバーメールでしょ!\nコインケースと こうかん してくれない?"
-	.string "$"
+	.string "{JPN}それ! ハーバーメールでしょ!\nコインケースと こうかん してくれない?$"
 
 MauvilleCity_House2_Text_IllTradeYouCoinCase:
-	.string "うれしい!\n"
-	.string "じゃ コインケースと こうかんね!$"
+	.string "{JPN}うれしい!\nじゃ コインケースと こうかんね!$"
 
 MauvilleCity_House2_Text_UseCoinCaseAtGameCorner:
-	.string "{JPN}コインケースが あれば ゲームコーナーで\nルーレットや スロットを たのしめるわ!"
-	.string "$"
+	.string "{JPN}コインケースが あれば ゲームコーナーで\nルーレットや スロットを たのしめるわ!$"
 
 MauvilleCity_House2_Text_ThatsDisappointing:
-	.string "{JPN}そう…… ざんねん ね\pコインケースが あれば ゲームコーナーで\nルーレットや スロットを たのしめるのに……"
-	.string ""
-	.string "$"
+	.string "{JPN}そう…… ざんねん ね\pコインケースが あれば ゲームコーナーで\nルーレットや スロットを たのしめるのに……$"

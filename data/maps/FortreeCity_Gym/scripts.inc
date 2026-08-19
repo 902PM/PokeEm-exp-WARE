@@ -135,185 +135,100 @@ FortreeCity_Gym_EventScript_GymStatue::
 	end
 
 FortreeCity_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pヒワマキシティ ジムの リーダー ナギは\nひこうタイプ ポケモンの つかいてだ!\pこの かいてんとびら だらけの\nジムの おくで\pかのじょは あらたな チャレンジャーが\nはばたこうと するのを まっている!\pじゃ きばってこォー!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pヒワマキシティ ジムの リーダー ナギは\nひこうタイプ ポケモンの つかいてだ!\pこの かいてんとびら だらけの\nジムの おくで\pかのじょは あらたな チャレンジャーが\nはばたこうと するのを まっている!\pじゃ きばってこォー!!$"
 
 FortreeCity_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}えんやっと きみは はばたいたッ!"
-	.string "$"
+	.string "{JPN}えんやっと きみは はばたいたッ!$"
 
 FortreeCity_Gym_Text_JaredIntro:
-	.string "{JPN}かれいな とりポケモンの たたかいを\nみせて やるぜっ!"
-	.string "$"
+	.string "{JPN}かれいな とりポケモンの たたかいを\nみせて やるぜっ!$"
 
 FortreeCity_Gym_Text_JaredDefeat:
-	.string "{JPN}きみ…… つよいんだな……"
-	.string "$"
+	.string "{JPN}きみ…… つよいんだな……$"
 
 FortreeCity_Gym_Text_JaredPostBattle:
-	.string "{JPN}トレーナーは あたまの かいてんも\nはやく なければ つとまらないぜ!\pきみは リーダーの ところまで\nちゃんと たどりつく ことが できるかい?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}トレーナーは あたまの かいてんも\nはやく なければ つとまらないぜ!\pきみは リーダーの ところまで\nちゃんと たどりつく ことが できるかい?$"
 
 FortreeCity_Gym_Text_EdwardoIntro:
-	.string "{JPN}とりポケモンを あいする ものは\nこの ジムを もくひょうと している!\pヒワマキ ジムの いちいん として\nまける わけには いかないんだ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}とりポケモンを あいする ものは\nこの ジムを もくひょうと している!\pヒワマキ ジムの いちいん として\nまける わけには いかないんだ!$"
 
 FortreeCity_Gym_Text_EdwardoDefeat:
-	.string "{JPN}オレには にが おもすぎたか……!"
-	.string "$"
+	.string "{JPN}オレには にが おもすぎたか……!$"
 
 FortreeCity_Gym_Text_EdwardoPostBattle:
-	.string "{JPN}せかいは ひろい\nつよい トレーナーは たくさん いる\pオレも ここで しゅぎょうを つづけて\nつよくなって みせるよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}せかいは ひろい\nつよい トレーナーは たくさん いる\pオレも ここで しゅぎょうを つづけて\nつよくなって みせるよ!$"
 
 FortreeCity_Gym_Text_FlintIntro:
-	.string "{JPN}ジムリーダーの ナギさんの\nてを わずらわせるまでも ない!\pきみの あいては オレで じゅうぶん!"
-	.string ""
-	.string "$"
+	.string "{JPN}ジムリーダーの ナギさんの\nてを わずらわせるまでも ない!\pきみの あいては オレで じゅうぶん!$"
 
 FortreeCity_Gym_Text_FlintDefeat:
-	.string "{JPN}ナギさん…… まけました……!"
-	.string "$"
+	.string "{JPN}ナギさん…… まけました……!$"
 
 FortreeCity_Gym_Text_FlintPostBattle:
-	.string "{JPN}ナギさんは かわいくて つよい……\nほんと さいこうの リーダーだよ!\p……ポッ"
-	.string ""
-	.string "$"
+	.string "{JPN}ナギさんは かわいくて つよい……\nほんと さいこうの リーダーだよ!\p……ポッ$"
 
 FortreeCity_Gym_Text_AshleyIntro:
-	.string "{JPN}ナギさんの おしえを うけた あたし!\nそう かんたんに たおされないわ!"
-	.string "$"
+	.string "{JPN}ナギさんの おしえを うけた あたし!\nそう かんたんに たおされないわ!$"
 
 FortreeCity_Gym_Text_AshleyDefeat:
 	.string "{JPN}たおされ ちゃった……$"
 
 FortreeCity_Gym_Text_AshleyPostBattle:
-	.string "{JPN}ナギさんが いてくれるから\nヒワマキの ひとは あんしんして くらせるの"
-	.string "$"
+	.string "{JPN}ナギさんが いてくれるから\nヒワマキの ひとは あんしんして くらせるの$"
 
 FortreeCity_Gym_Text_HumbertoIntro:
-	.string "{JPN}ナギさまが たたかわれる ときの\nあの りりしい おかお……\pおまえ なんかにゃ みせられないぜ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ナギさまが たたかわれる ときの\nあの りりしい おかお……\pおまえ なんかにゃ みせられないぜ!$"
 
 FortreeCity_Gym_Text_HumbertoDefeat:
-	.string "{JPN}うう!\nおれでは とめられ なかった"
-	.string "$"
+	.string "{JPN}うう!\nおれでは とめられ なかった$"
 
 FortreeCity_Gym_Text_HumbertoPostBattle:
-	.string "{JPN}ナギさまに みとれて\nボロまけ しないように\lちゅういするんだな!"
-	.string ""
-	.string "$"
+	.string "{JPN}ナギさまに みとれて\nボロまけ しないように\lちゅういするんだな!$"
 
 FortreeCity_Gym_Text_DariusIntro:
-	.string "{JPN}ひこうタイプ って いっても\nいろんな ポケモンが いるんだぜ!\lおまえ それ わかってる?"
-	.string ""
-	.string "$"
+	.string "{JPN}ひこうタイプ って いっても\nいろんな ポケモンが いるんだぜ!\lおまえ それ わかってる?$"
 
 FortreeCity_Gym_Text_DariusDefeat:
 	.string "{JPN}なかなか わかってるな!$"
 
 FortreeCity_Gym_Text_DariusPostBattle:
-	.string "{JPN}ぼくは まけたけど\nナギ リーダーの ポケモンは\lほんと てごわいぞ!"
-	.string ""
-	.string "$"
+	.string "{JPN}ぼくは まけたけど\nナギ リーダーの ポケモンは\lほんと てごわいぞ!$"
 
 FortreeCity_Gym_Text_WinonaIntro:
-	.string "{JPN}わたしは この ヒワマキ ジムで\nリーダーを している ナギ……\pとりポケモンと こころを かよわし\nいっしょに おおぞらを まい……\pどんな くるしい しょうぶも\nゆうがに かってみせる……\pさあ わたしと ポケモンが おりなす\nかれいな まいを みせましょう!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしは この ヒワマキ ジムで\nリーダーを している ナギ……\pとりポケモンと こころを かよわし\nいっしょに おおぞらを まい……\pどんな くるしい しょうぶも\nゆうがに かってみせる……\pさあ わたしと ポケモンが おりなす\nかれいな まいを みせましょう!$"
 
 FortreeCity_Gym_Text_WinonaDefeat:
-	.string "{JPN}わたしより かれいに\nポケモンを たたかわせる ひと……\lはじめて であいました……\pその じつりょくを みとめ\nこの ジムバッジを おわたしします!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしより かれいに\nポケモンを たたかわせる ひと……\lはじめて であいました……\pその じつりょくを みとめ\nこの ジムバッジを おわたしします!$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge:
-	.string "{JPN}{PLAYER}は ナギから\nフェザーバッジを もらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は ナギから\nフェザーバッジを もらった!$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis:
-	.string "{JPN}フェザーバッジを つけてると\nひとから もらった ポケモンでも\lレベル70までの ポケモンなら\lいうことを すなおに きいてくれます!\pひでんわざの そらをとぶ を\nつかえる ようにも なります!\pそして これを\nあなたに プレゼント します"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}フェザーバッジを つけてると\nひとから もらった ポケモンでも\lレベル70までの ポケモンなら\lいうことを すなおに きいてくれます!\pひでんわざの そらをとぶ を\nつかえる ようにも なります!\pそして これを\nあなたに プレゼント します$"
 
 FortreeCity_Gym_Text_ExplainAerialAce:
-	.string "{JPN}わざマシン40の なかみは\nつばめがえし!\pその すばやさ……\nどんな ポケモンでも\lよけることは できないでしょう!\p…… …… ……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わざマシン40の なかみは\nつばめがえし!\pその すばやさ……\nどんな ポケモンでも\lよけることは できないでしょう!\p…… …… ……$"
 
 FortreeCity_Gym_Text_RegisteredWinona:
-	.string "{JPN}ジムリーダー ナギを\nポケナビに とうろく した!"
-	.string "$"
+	.string "{JPN}ジムリーダー ナギを\nポケナビに とうろく した!$"
 
 FortreeCity_Gym_Text_WinonaPostBattle:
-	.string "{JPN}あなたには まけました けど\pわたしは これからも\nとりポケモンに こだわって いきます"
-	.string "$"
+	.string "{JPN}あなたには まけました けど\pわたしは これからも\nとりポケモンに こだわって いきます$"
 
 FortreeCity_Gym_Text_GymStatue:
 	.string "{JPN}ヒワマキシティ ポケモンジム$"
 
 FortreeCity_Gym_Text_GymStatueCertified:
-	.string "{JPN}ヒワマキシティ ポケモンジム\pナギ にんてい トレーナー!\n{PLAYER}"
-	.string ""
-	.string "$"
+	.string "{JPN}ヒワマキシティ ポケモンジム\pナギ にんてい トレーナー!\n{PLAYER}$"
 
 FortreeCity_Gym_Text_WinonaPreRematch:
-	.string "{JPN}ナギ『ひとは ちじょうに いる かぎり\nいんりょくから のがれることは できない\pでも ぜんりょくで はばたけば\nそらを とぶことは できるのです\pチャンピオンにまで のぼりつめた\nあなたの じつりょく\lもういちど みせて いただきますわ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ナギ『ひとは ちじょうに いる かぎり\nいんりょくから のがれることは できない\pでも ぜんりょくで はばたけば\nそらを とぶことは できるのです\pチャンピオンにまで のぼりつめた\nあなたの じつりょく\lもういちど みせて いただきますわ!$"
 
 FortreeCity_Gym_Text_WinonaRematchDefeat:
 	.string "{JPN}やはり とどかなかった……$"
 
 FortreeCity_Gym_Text_WinonaPostRematch:
-	.string "{JPN}ナギ『たとえ しょうぶに まけても\nこころの つばさが おれて いなければ\lなんどでも うかび あがれる……\pわたしは そう しんじて いますよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ナギ『たとえ しょうぶに まけても\nこころの つばさが おれて いなければ\lなんどでも うかび あがれる……\pわたしは そう しんじて いますよ!$"
 
 FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
-	.string "{JPN}ナギ『ひとは ちじょうに いる かぎり\nいんりょくから のがれることは できない\pでも ぜんりょくで はばたけば\nそらを とぶことは できるのです\pチャンピオンにまで のぼりつめた\nあなたの じつりょく\lもういちど みせて いただきますわ!\n……あら? たたかえる ポケモンを\n1ひきしか もっていませんね\pせめて 2ひき いじょうの\nポケモンを もって また きてください"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ナギ『ひとは ちじょうに いる かぎり\nいんりょくから のがれることは できない\pでも ぜんりょくで はばたけば\nそらを とぶことは できるのです\pチャンピオンにまで のぼりつめた\nあなたの じつりょく\lもういちど みせて いただきますわ!\n……あら? たたかえる ポケモンを\n1ひきしか もっていませんね\pせめて 2ひき いじょうの\nポケモンを もって また きてください$"

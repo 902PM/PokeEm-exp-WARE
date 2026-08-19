@@ -422,196 +422,74 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "{JPN}くっそー! マグマだんの れんちゅうに\nさきを こされて しまったが\pオレたちだって まけちゃ いないぜ!"
-	.string ""
-	.string "$"
+	.string "{JPN}くっそー! マグマだんの れんちゅうに\nさきを こされて しまったが\pオレたちだって まけちゃ いないぜ!$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "{JPN}おまえ…… にげていった マグマだんが\nもどって きたのかと おもったんだよ"
-	.string "$"
+	.string "{JPN}おまえ…… にげていった マグマだんが\nもどって きたのかと おもったんだよ$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "{JPN}たしかに おまえは つよいな……\nだけど おれたちは たくさん いるんだぞ!"
-	.string "$"
+	.string "{JPN}たしかに おまえは つよいな……\nだけど おれたちは たくさん いるんだぞ!$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "{JPN}おっ ざんねん だったな!\pもうすこし はやく ここにくれば\nあの よわっちょろい マグマだんとの\lしょうぶで すんだ はずなのに\pいまごろ きた おかげで\nつよい オレたちが あいてだぜ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おっ ざんねん だったな!\pもうすこし はやく ここにくれば\nあの よわっちょろい マグマだんとの\lしょうぶで すんだ はずなのに\pいまごろ きた おかげで\nつよい オレたちが あいてだぜ!$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "{JPN}うーむ…… マグマだんに\nあいてを させれば よかった……"
-	.string "$"
+	.string "{JPN}うーむ…… マグマだんに\nあいてを させれば よかった……$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "{JPN}なにも しらないくせに\nオレたちの じゃまを するんじゃないぜ!"
-	.string "$"
+	.string "{JPN}なにも しらないくせに\nオレたちの じゃまを するんじゃないぜ!$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "{JPN}おまえ…… えんとつやまで あったな!\pどっちの だんいん でもないのに\nなぜ こんな ところに いるんだ!?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おまえ…… えんとつやまで あったな!\pどっちの だんいん でもないのに\nなぜ こんな ところに いるんだ!?$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "{JPN}ぐぐぐ……\nじゃまを するなら マグマだんに しろ……"
-	.string "$"
+	.string "{JPN}ぐぐぐ……\nじゃまを するなら マグマだんに しろ……$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "{JPN}まあいいさ じかんは かせげた!\pリーダーの もくてきの もの\nうばえた はずだぜ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}まあいいさ じかんは かせげた!\pリーダーの もくてきの もの\nうばえた はずだぜ!$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "{JPN}あっ わかった!\nあんた マグマだんに はいろうと したけど\lいれて もらえなかったんでしょ!\pはん! うちら アクアだんに だって\nいれてやんないよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あっ わかった!\nあんた マグマだんに はいろうと したけど\lいれて もらえなかったんでしょ!\pはん! うちら アクアだんに だって\nいれてやんないよ!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "{JPN}そうしたら アクアだんに いれて\nやらない ことも ないよ……"
-	.string "$"
+	.string "{JPN}そうしたら アクアだんに いれて\nやらない ことも ないよ……$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "{JPN}リーダーと あたしたち だんいんとの\nみごとな コンビネーション ってわけさ!"
-	.string "$"
+	.string "{JPN}リーダーと あたしたち だんいんとの\nみごとな コンビネーション ってわけさ!$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "{JPN}アオギリ『マグマだんの マツブサに\nさきを こされて しまったが\lわれわれも ようじは すませたぜ!\pおくりびやまに まつられて いた\nべにいろのたま……\lたしかに アオギリが いただいた!\pふふふ……\nこれで われわれの もくてきも\lはたせると いうものだ……\pさあ!\nここは ひきあげるぞ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アオギリ『マグマだんの マツブサに\nさきを こされて しまったが\lわれわれも ようじは すませたぜ!\pおくりびやまに まつられて いた\nべにいろのたま……\lたしかに アオギリが いただいた!\pふふふ……\nこれで われわれの もくてきも\lはたせると いうものだ……\pさあ!\nここは ひきあげるぞ!$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "{JPN}ああ なんという ことだ……!\pあいいろのたま だけではなく\nべにいろのたま までもが\lうばわれて しまうとは……\pあいいろのたまと べにいろのたまが\nはなればなれに なって しまうなど\lけっして あっては ならないこと……\pあの おとこたちは ふたつのたまで\nいったい なにを するきなのか……\p…… …… ……\n…… …… ……\pそういえば さいしょに あらわれて\nあいいろのたまを うばって いった\lマグマだん とやらが\lこんなものを おとしていった……\pこれが なんなのか わたしには わからん\pおまえさん よかったら こいつを\nもらって おくれ……\pもしかすると なにかの やくに\nたつのでは ないだろうか……!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ああ なんという ことだ……!\pあいいろのたま だけではなく\nべにいろのたま までもが\lうばわれて しまうとは……\pあいいろのたまと べにいろのたまが\nはなればなれに なって しまうなど\lけっして あっては ならないこと……\pあの おとこたちは ふたつのたまで\nいったい なにを するきなのか……\p…… …… ……\n…… …… ……\pそういえば さいしょに あらわれて\nあいいろのたまを うばって いった\lマグマだん とやらが\lこんなものを おとしていった……\pこれが なんなのか わたしには わからん\pおまえさん よかったら こいつを\nもらって おくれ……\pもしかすると なにかの やくに\nたつのでは ないだろうか……!$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "{JPN}あやしげな ふたりの おとこに うばわれた\nあいいろのたまと べにいろのたま……\pふたつが はなればなれ では\nきっと よくないことが おこる……"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あやしげな ふたりの おとこに うばわれた\nあいいろのたまと べにいろのたま……\pふたつが はなればなれ では\nきっと よくないことが おこる……$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "{JPN}なんと……\nグラードンと カイオーガが\lめざめて しまったと いうのか……\pかつて 2ひきの ポケモンの\nいかりを しずめたのが\lあいいろのたまと べにいろのたまだと\lそう いわれておる……\pそして そのたまの しんの もちぬしが\nどこかに いると いうのだが……\pそれが ひと なのか\nあるいは ポケモン なのか\pこればっかりは\nだれにも わからんのだよ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}なんと……\nグラードンと カイオーガが\lめざめて しまったと いうのか……\pかつて 2ひきの ポケモンの\nいかりを しずめたのが\lあいいろのたまと べにいろのたまだと\lそう いわれておる……\pそして そのたまの しんの もちぬしが\nどこかに いると いうのだが……\pそれが ひと なのか\nあるいは ポケモン なのか\pこればっかりは\nだれにも わからんのだよ……$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "{JPN}ふたつのたまを うばった おとこたちが\nみずから かえしに くるとは……\pあの ふたり……\nあんがい わるいやつでは ないのかもな"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ふたつのたまを うばった おとこたちが\nみずから かえしに くるとは……\pあの ふたり……\nあんがい わるいやつでは ないのかもな$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "{JPN}だいちと うみと おおぞらの けしん……\pそれが ちょうこだいポケモンの\nしょうたい とも いわれておる……\pわしら にんげんや ポケモンに\nいのちが あるように\lこの せかいだって いきている……\pちょうこだいポケモンは わしたちに\nそのことを おしえて くれたのさ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}だいちと うみと おおぞらの けしん……\pそれが ちょうこだいポケモンの\nしょうたい とも いわれておる……\pわしら にんげんや ポケモンに\nいのちが あるように\lこの せかいだって いきている……\pちょうこだいポケモンは わしたちに\nそのことを おしえて くれたのさ……$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "{JPN}おくりびやまは ポケモンの たましいを\nなぐさめる ための ところ……\pここは たかい ばしょに あって\nホウエンを みわたす ことが できるから\lポケモンたちの たましいも\lやすらぎを おぼえるの じゃろう……\pおまえさんが ここに きたのも\nなにかの えん……\pホウエンちほうに つたわる はなしを\nきいて いきなされ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おくりびやまは ポケモンの たましいを\nなぐさめる ための ところ……\pここは たかい ばしょに あって\nホウエンを みわたす ことが できるから\lポケモンたちの たましいも\lやすらぎを おぼえるの じゃろう……\pおまえさんが ここに きたのも\nなにかの えん……\pホウエンちほうに つたわる はなしを\nきいて いきなされ……$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "{JPN}とおい とおい おおむかしの こと……\pせかいでは りくと うみの ポケモンが\nはげしい たたかいを くりひろげていた\pりくの ポケモンは\nだいちを もりあげ じめんを ひろげ\pうみの ポケモンは\nあらなみを おこして うみを ひろげた\p2ひきの たたかいは おわることなく\nこの せかいは もえさかる ほのおと\lふきあれる あらしで うめつくされた\pそれを しずめたのが\nあいいろのたま と べにいろのたま……\pふたつの たまから ひろがる ひかりが\n2ひきの いかりを しずめた\pそして おとなしくなった 2ひきは\nかいてい ふかく もぐっていき\lやがて そのすがたを けしたのじゃ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}とおい とおい おおむかしの こと……\pせかいでは りくと うみの ポケモンが\nはげしい たたかいを くりひろげていた\pりくの ポケモンは\nだいちを もりあげ じめんを ひろげ\pうみの ポケモンは\nあらなみを おこして うみを ひろげた\p2ひきの たたかいは おわることなく\nこの せかいは もえさかる ほのおと\lふきあれる あらしで うめつくされた\pそれを しずめたのが\nあいいろのたま と べにいろのたま……\pふたつの たまから ひろがる ひかりが\n2ひきの いかりを しずめた\pそして おとなしくなった 2ひきは\nかいてい ふかく もぐっていき\lやがて そのすがたを けしたのじゃ……$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "{JPN}そうかね……\nまあ それも よいじゃろう……"
-	.string "$"
+	.string "{JPN}そうかね……\nまあ それも よいじゃろう……$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "{JPN}マツブサ『{PLAYER}……\p…… …… ……\n…… …… ……"
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『{PLAYER}……\p…… …… ……\n…… …… ……$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "{JPN}ホウエンに のこされた いいつたえを\nかたりつぐのが わたしの やくめ\pそして いま\nルネで おこった じけんは まくを とじ\lいいつたえは また ぬりかえられた……\pあらたな ホウエンの いいつたえを\nきいて いきなされ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ホウエンに のこされた いいつたえを\nかたりつぐのが わたしの やくめ\pそして いま\nルネで おこった じけんは まくを とじ\lいいつたえは また ぬりかえられた……\pあらたな ホウエンの いいつたえを\nきいて いきなされ……$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "{JPN}とおい とおい おおむかしの こと……\pせかいでは りくと うみの ポケモンが\nはげしい たたかいを くりひろげていた\pくの ポケモンは\nだいちを もりあげ じめんを ひろげ\pうみの ポケモンは\nあらなみを おこして うみを ひろげた\p2ひきの たたかいは おわることなく\nこの せかいは もえさかる ほのおと\lふきあれる あらしで うめつくされた\pそのとき!\nあらしの なかから まいおりて きたのが\lおおぞらの ポケモン……\pその みどりに かがやく ポケモンは\n2ひきの いかりを しずめると\lまた どこかへと とびさって いった\pどこか とおい\nそらの かなたへ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}とおい とおい おおむかしの こと……\pせかいでは りくと うみの ポケモンが\nはげしい たたかいを くりひろげていた\pくの ポケモンは\nだいちを もりあげ じめんを ひろげ\pうみの ポケモンは\nあらなみを おこして うみを ひろげた\p2ひきの たたかいは おわることなく\nこの せかいは もえさかる ほのおと\lふきあれる あらしで うめつくされた\pそのとき!\nあらしの なかから まいおりて きたのが\lおおぞらの ポケモン……\pその みどりに かがやく ポケモンは\n2ひきの いかりを しずめると\lまた どこかへと とびさって いった\pどこか とおい\nそらの かなたへ……$"
 

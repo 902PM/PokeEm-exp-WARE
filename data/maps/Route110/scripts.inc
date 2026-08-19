@@ -739,251 +739,130 @@ Route110_Movement_BirchExit4:
 	step_end
 
 Route110_Text_WeCantTalkAboutAquaActivities:
-	.string "{JPN}アクアだんの かつどうは\nいまは まだ だれにも いえないのだ"
-	.string "$"
+	.string "{JPN}アクアだんの かつどうは\nいまは まだ だれにも いえないのだ$"
 
 Route110_Text_KickUpARuckus:
-	.string "{JPN}はやく カイナに いって\nひとあばれ したいんだよな"
-	.string "$"
+	.string "{JPN}はやく カイナに いって\nひとあばれ したいんだよな$"
 
 Route110_Text_MyFirstJobInAqua:
-	.string "{JPN}アクアだんに はいって\nはじめての しごと だぜ…… どきどき"
-	.string "$"
+	.string "{JPN}アクアだんに はいって\nはじめての しごと だぜ…… どきどき$"
 
 Route110_Text_AquaActionsBringSmiles:
-	.string "{JPN}アクアだんの かつどうは\nきっと みんなを えがおに するだろう"
-	.string "$"
+	.string "{JPN}アクアだんの かつどうは\nきっと みんなを えがおに するだろう$"
 
 Route110_Text_MayLetsBattle:
-	.string "{JPN}ハルカ『{PLAYER}{KUN} ひさしぶり!\pいろいろ ポケモン さがしてる あいだに\nあたしの ポケモンも つよくなったんだ!\pだから……\nちょっと しょうぶ しようよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハルカ『{PLAYER}{KUN} ひさしぶり!\pいろいろ ポケモン さがしてる あいだに\nあたしの ポケモンも つよくなったんだ!\pだから……\nちょっと しょうぶ しようよ!$"
 
 Route110_Text_MayDefeated:
-	.string "{JPN}あっちゃー!\nおもってたより つよいよ!"
-	.string "$"
+	.string "{JPN}あっちゃー!\nおもってたより つよいよ!$"
 
 Route110_Text_MayTakeThis:
-	.string "{JPN}ハルカ『{PLAYER}{KUN}も\nポケモン そだててるんだね!\pうん じゃあ これは\nあたしからの プレゼントよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハルカ『{PLAYER}{KUN}も\nポケモン そだててるんだね!\pうん じゃあ これは\nあたしからの プレゼントよ!$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "{JPN}ハルカ『それは ダウジングマシン!\pダウジングマシンを つかうと\nめには みえなくても おちている\lどうぐが あると はんのう して\lおとで おしえて くれるのよ!\pじゃあ {PLAYER}{KUN}\nまた どこかで あおうね!\pまけた あたしが いうのも なんだけど\nそのときまでに もっと ポケモン\lそだてて おいた ほうが いいかもよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハルカ『それは ダウジングマシン!\pダウジングマシンを つかうと\nめには みえなくても おちている\lどうぐが あると はんのう して\lおとで おしえて くれるのよ!\pじゃあ {PLAYER}{KUN}\nまた どこかで あおうね!\pまけた あたしが いうのも なんだけど\nそのときまでに もっと ポケモン\lそだてて おいた ほうが いいかもよ!$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "{JPN}ユウキ『{PLAYER}か\nこんなところに いたんだ\lちょうしは どう?\pポケモン そだててるか どうか\nオレが たしかめて やるよ"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ユウキ『{PLAYER}か\nこんなところに いたんだ\lちょうしは どう?\pポケモン そだててるか どうか\nオレが たしかめて やるよ$"
 
 Route110_Text_BrendanDefeated:
-	.string "{JPN}ふうん……\nなかなか やるね"
-	.string "$"
+	.string "{JPN}ふうん……\nなかなか やるね$"
 
 Route110_Text_BrendanTakeThis:
-	.string "{JPN}ユウキ『{PLAYER}も いつのまにか\nポケモン そだててたのか……\pよし!\nこれを やるよ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ユウキ『{PLAYER}も いつのまにか\nポケモン そだててたのか……\pよし!\nこれを やるよ$"
 
 Route110_Text_BrendanExplainItemfinder:
-	.string "{JPN}ユウキ『そいつは ダウジングマシン\pつかうと めには みえなくても\nおちている どうぐが あると\lはんのう して おとで おしえてくれる\pじゃ オレ あたらしい\nポケモンを さがしに いくから"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ユウキ『そいつは ダウジングマシン\pつかうと めには みえなくても\nおちている どうぐが あると\lはんのう して おとで おしえてくれる\pじゃ オレ あたらしい\nポケモンを さがしに いくから$"
 
 Route110_Text_RideBikeAtFullSpeed:
-	.string "{JPN}この サイクリング ロードを\nじてんしゃで はしりぬけたら\lだんぜん きもち よさそうだね!"
-	.string ""
-	.string "$"
+	.string "{JPN}この サイクリング ロードを\nじてんしゃで はしりぬけたら\lだんぜん きもち よさそうだね!$"
 
 Route110_Text_HairStreamsBehindMe:
-	.string "{JPN}どう? かぜになびく わたしの くろかみ!\pこのため だけに かみを のばしたの!"
-	.string "$"
+	.string "{JPN}どう? かぜになびく わたしの くろかみ!\pこのため だけに かみを のばしたの!$"
 
 Route110_Text_YouGotBikeFromRydel:
-	.string "{JPN}おっ! その じてんしゃ\nミスターカゼノに もらったんだね!\pみれば わかるよ\nだって きみの じてんしゃに……\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\n……って かいて あるんだもん!\pあっちこっち のりまわして\nせんでん してあげると いいね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おっ! その じてんしゃ\nミスターカゼノに もらったんだね!\pみれば わかるよ\nだって きみの じてんしゃに……\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\nカゼノ カゼノ カゼノ カゼノ カゼノ\pカゼノ カゼノ カゼノ カゼノ カゼノ\n……って かいて あるんだもん!\pあっちこっち のりまわして\nせんでん してあげると いいね!$"
 
 Route110_Text_TwoRoads:
-	.string "{JPN}うえと した 2つの どうろ……\pにんげんと ポケモン\nそれぞれの どうろ だと おもえば\lこれもあり なのかも しれんのう"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}うえと した 2つの どうろ……\pにんげんと ポケモン\nそれぞれの どうろ だと おもえば\lこれもあり なのかも しれんのう$"
 
 Route110_Text_WalkOnTheLowRoad:
-	.string "{JPN}あたしは じてんしゃ もってない からねえ\nしたの みちを のんびり あるいて いくよ"
-	.string "$"
+	.string "{JPN}あたしは じてんしゃ もってない からねえ\nしたの みちを のんびり あるいて いくよ$"
 
 Route110_Text_BikeTechniques:
-	.string "{JPN}いろんな テクニックを おぼえると\nますます じてんしゃが たのしくなる!\pテクニックを つかわないと\nすすめない ばしょも あるしね!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いろんな テクニックを おぼえると\nますます じてんしゃが たのしくなる!\pテクニックを つかわないと\nすすめない ばしょも あるしね!$"
 
 Route110_Text_WhichShouldIChoose:
-	.string "{JPN}サイクリングロードで キンセツを めざすか\nしたの みちで ポケモンを さがすか\lどっちに しようかな?"
-	.string ""
-	.string "$"
+	.string "{JPN}サイクリングロードで キンセツを めざすか\nしたの みちで ポケモンを さがすか\lどっちに しようかな?$"
 
 Route110_Text_CyclingChallengeResultSummary:
-	.string "{JPN}ぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!$"
 
 Route110_Text_ChallengeReactionBest:
-	.string "{JPN}ブラボー!! すばらしい!!\pきみは じてんしゃを こころから\nあいしている! たましいを ゆさぶられたよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}ブラボー!! すばらしい!!\pきみは じてんしゃを こころから\nあいしている! たましいを ゆさぶられたよ!$"
 
 Route110_Text_ChallengeReactionGood:
-	.string "{JPN}なかなかの テクニックを もってるな!\pまあ スピードを だしすぎて\nアクシデントを おこさないように しなよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}なかなかの テクニックを もってるな!\pまあ スピードを だしすぎて\nアクシデントを おこさないように しなよ!$"
 
 Route110_Text_ChallengeReactionOk:
-	.string "{JPN}まだ みじゅくな ぶぶんも あるようだが\nせっかくの じてんしゃを\lたのしむ きもちを わすれないで くれよ"
-	.string ""
-	.string "$"
+	.string "{JPN}まだ みじゅくな ぶぶんも あるようだが\nせっかくの じてんしゃを\lたのしむ きもちを わすれないで くれよ$"
 
 Route110_Text_ChallengeReactionBad:
-	.string "{JPN}おいおい なんだか\nあぶなっかしい うんてん してるなあ\lもっと れんしゅう しろよな"
-	.string ""
-	.string "$"
+	.string "{JPN}おいおい なんだか\nあぶなっかしい うんてん してるなあ\lもっと れんしゅう しろよな$"
 
 Route110_Text_ChallengeReactionWorst:
-	.string "{JPN}うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?"
-	.string ""
-	.string "$"
+	.string "{JPN}うむむ…… うむむむ……\pきみには じてんしゃは むいていない かもな\nミスターカゼノに かえしたら どうだね?$"
 
 Route110_Text_RatedForNumberOfCollisions:
-	.string "{JPN}この サイクリングロード!\pキンセツから カイナに むかって\nマッハじてんしゃで はしりぬける\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}この サイクリングロード!\pキンセツから カイナに むかって\nマッハじてんしゃで はしりぬける\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!$"
 
 Route110_Text_AlwaysAimHigher:
-	.string "{JPN}どんな けっか だろうが さらに\nうえを めざしての チャレンジ まってるよ!"
-	.string "$"
+	.string "{JPN}どんな けっか だろうが さらに\nうえを めざしての チャレンジ まってるよ!$"
 
 Route110_Text_AcroBikesDoNotQualify:
-	.string "{JPN}この サイクリング ロードでは\nマッハじてんしゃ で はしりぬけた\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!\pダートじてんしゃ だと まがりやすいから\nきろくは はかって あげないよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}この サイクリング ロードでは\nマッハじてんしゃ で はしりぬけた\lレーサーの ぶつかった かいすうと\lかかった タイムを はかって いるんだ!\pダートじてんしゃ だと まがりやすいから\nきろくは はかって あげないよ!$"
 
 Route110_Text_SlateportCitySign:
-	.string "{JPN}ここは 110ばん どうろ\n{DOWN_ARROW} カイナシティ"
-	.string "$"
+	.string "{JPN}ここは 110ばん どうろ\n{DOWN_ARROW} カイナシティ$"
 
 Route110_Text_CyclingRoadSign:
 	.string "{JPN}「シーサイド サイクリング ロード」$"
 
 Route110_Text_AquaWasHere:
-	.string "{JPN}「アクアだん さんじょう!」\p……と かんばんに らくがき されているが\nそのもじの うえに べつのペンキで\p「マグマだん さんじょう!」\n……と かかれている"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}「アクアだん さんじょう!」\p……と かんばんに らくがき されているが\nそのもじの うえに べつのペンキで\p「マグマだん さんじょう!」\n……と かかれている$"
 
 Route110_Text_Route103Sign:
-	.string "{JPN}ここは 110ばん どうろ\n{LEFT_ARROW} 103ばん どうろ"
-	.string "$"
+	.string "{JPN}ここは 110ばん どうろ\n{LEFT_ARROW} 103ばん どうろ$"
 
 Route110_Text_SeasideParkingSign:
 	.string "{JPN}「シーサイド パーキング」$"
 
 Route110_Text_MauvilleCitySign:
-	.string "{JPN}ここは 110ばん どうろ\n{UP_ARROW} キンセツシティ"
-	.string "$"
+	.string "{JPN}ここは 110ばん どうろ\n{UP_ARROW} キンセツシティ$"
 
 Route110_Text_TrainerTipsPrlzSleep:
-	.string "{JPN}おとくな けいじばん!!\pポケモンを ねむらせたり まひさせると\nあいての じゆうを うばえます!\pこれは ポケモンしょうぶの\nじゅうような テクニック です!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おとくな けいじばん!!\pポケモンを ねむらせたり まひさせると\nあいての じゆうを うばえます!\pこれは ポケモンしょうぶの\nじゅうような テクニック です!$"
 
 Route110_Text_TrainerTipsRegisterItems:
-	.string "{JPN}おとくな けいじばん!!\pバッグに いれた どうぐは\nセレクトボタンを おすと じゅんばんを\lいれかえる ことが できます!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おとくな けいじばん!!\pバッグに いれた どうぐは\nセレクトボタンを おすと じゅんばんを\lいれかえる ことが できます!$"
 
 Route110_Text_TrickHouseSign:
-	.string "{JPN}ここより {RIGHT_ARROW}へ3ぽ {UP_ARROW}へ2ほ ゆけば\nそこは すてきな 「カラクリやしき」!"
-	.string "$"
+	.string "{JPN}ここより {RIGHT_ARROW}へ3ぽ {UP_ARROW}へ2ほ ゆけば\nそこは すてきな 「カラクリやしき」!$"
 
 Route110_Text_BestRecord:
-	.string "{JPN}いままでの さいこう きろく……\pぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いままでの さいこう きろく……\pぶつかった かいすう\n …… {STR_VAR_1}!\pかかった タイム\n …… {STR_VAR_2}!$"
 
 Route110_Text_ThereIsNoRecord:
-	.string "{JPN}いままでの さいこう きろく……\p…… だれも ちょうせん していないのか\nなにも きろく されていない!"
-	.string ""
-	.string "$"
+	.string "{JPN}いままでの さいこう きろく……\p…… だれも ちょうせん していないのか\nなにも きろく されていない!$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "{JPN}オダマキ『おお {PLAYER}{KUN}!\nこんな ところに いたのかい!\pえーと うちの {RIVAL}は……"
-	.string ""
-	.string "$"
+	.string "{JPN}オダマキ『おお {PLAYER}{KUN}!\nこんな ところに いたのかい!\pえーと うちの {RIVAL}は……$"
 
 Route110_Text_HeardYouInstallMatchCall:
-	.string "{JPN}そうか!\nきみたちは べつこうどう なんだね\pまあ それは いいとして……\nそうそう! きみの ポケナビに\lエントリーコールが セットされたって?\pならば わたしも とうろく しておこう!\pそうすれば きみと はなれていても\nいつでも ポケモンずかんの ひょうかを\lしてあげられる からね!\p…… …… ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}そうか!\nきみたちは べつこうどう なんだね\pまあ それは いいとして……\nそうそう! きみの ポケナビに\lエントリーコールが セットされたって?\pならば わたしも とうろく しておこう!\pそうすれば きみと はなれていても\nいつでも ポケモンずかんの ひょうかを\lしてあげられる からね!\p…… …… ……$"
 
 Route110_Text_RegisteredBirchInPokenav:
-	.string "{JPN}オダマキはかせを\nポケナビに とうろく した!"
-	.string "$"
+	.string "{JPN}オダマキはかせを\nポケナビに とうろく した!$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "{JPN}オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オダマキ『{PLAYER}{KUN}……\p{RIVAL}のこと よろしく たのむよ\n…… …… ……\pじゃあ わたしは これで しつれいする\nまたな {PLAYER}{KUN}!$"

@@ -148,118 +148,82 @@ JaggedPass_EventScript_Autumn::
 	end
 
 JaggedPass_Text_EricIntro:
-	.string "{JPN}えんとつやまの デコボコさんどう\nまさに わたしが もとめていた やま!\lこの デコボコした ところが たまらん!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}えんとつやまの デコボコさんどう\nまさに わたしが もとめていた やま!\lこの デコボコした ところが たまらん!$"
 
 JaggedPass_Text_EricDefeat:
 	.string "{JPN}まけて くやしいぞ!$"
 
 JaggedPass_Text_EricPostBattle:
-	.string "{JPN}たしかに ポケモンでは まけた……\pだが やまを あいする きもちなら\nわたしの ほうが まさっているだろ!"
-	.string ""
-	.string "$"
+	.string "{JPN}たしかに ポケモンでは まけた……\pだが やまを あいする きもちなら\nわたしの ほうが まさっているだろ!$"
 
 JaggedPass_Text_DianaIntro:
-	.string "{JPN}ここは きがるに のぼって いけないもの\nちょっと ピクニックむき じゃないわ"
-	.string "$"
+	.string "{JPN}ここは きがるに のぼって いけないもの\nちょっと ピクニックむき じゃないわ$"
 
 JaggedPass_Text_DianaDefeat:
-	.string "{JPN}あーん もう!\nしたが デコボコだから……"
-	.string "$"
+	.string "{JPN}あーん もう!\nしたが デコボコだから……$"
 
 JaggedPass_Text_DianaPostBattle:
-	.string "{JPN}こんな デコボコしたところ\nじてんしゃで じょうずに のぼっていく\lひとも いるのよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}こんな デコボコしたところ\nじてんしゃで じょうずに のぼっていく\lひとも いるのよ!$"
 
 JaggedPass_Text_DianaRegister:
-	.string "{JPN}また ここに くることって あるかな?\nそしたら わたしと しょうぶしてね!"
-	.string "$"
+	.string "{JPN}また ここに くることって あるかな?\nそしたら わたしと しょうぶしてね!$"
 
 JaggedPass_Text_DianaRematchIntro:
-	.string "{JPN}どんな みちも ピクニックは たのしい!\nポケモンも いっしょ だしね!"
-	.string "$"
+	.string "{JPN}どんな みちも ピクニックは たのしい!\nポケモンも いっしょ だしね!$"
 
 JaggedPass_Text_DianaRematchDefeat:
-	.string "{JPN}まけたのは\nしたが デコボコだからよ!"
-	.string "$"
+	.string "{JPN}まけたのは\nしたが デコボコだからよ!$"
 
 JaggedPass_Text_DianaPostRematch:
-	.string "{JPN}まけたことは さっさと わすれて\nこの デコボコみちを たのしんじゃお!"
-	.string "$"
+	.string "{JPN}まけたことは さっさと わすれて\nこの デコボコみちを たのしんじゃお!$"
 
 JaggedPass_Text_EthanIntro:
-	.string "{JPN}この デコボコさんどうは あるきにくい!\nポケモンを きたえるのに むいてるよ!"
-	.string "$"
+	.string "{JPN}この デコボコさんどうは あるきにくい!\nポケモンを きたえるのに むいてるよ!$"
 
 JaggedPass_Text_EthanDefeat:
-	.string "{JPN}あしばを きにしてる うちに\nおわっちゃった かんじだ……"
-	.string "$"
+	.string "{JPN}あしばを きにしてる うちに\nおわっちゃった かんじだ……$"
 
 JaggedPass_Text_EthanPostBattle:
-	.string "{JPN}ぼくも ダートじてんしゃ もっていれば\nだんさを とびこえて いけるのにな"
-	.string "$"
+	.string "{JPN}ぼくも ダートじてんしゃ もっていれば\nだんさを とびこえて いけるのにな$"
 
 JaggedPass_Text_EthanRegister:
-	.string "{JPN}もうちょっと デコボコに なれたら\nこんどこそ かつぞ!\lぼくを ポケナビに とうろく しといてよ"
-	.string ""
-	.string "$"
+	.string "{JPN}もうちょっと デコボコに なれたら\nこんどこそ かつぞ!\lぼくを ポケナビに とうろく しといてよ$"
 
 JaggedPass_Text_EthanRematchIntro:
-	.string "{JPN}デコボコに なれちゃったから\nちかごろだと うたいながら のぼるのさ!"
-	.string "$"
+	.string "{JPN}デコボコに なれちゃったから\nちかごろだと うたいながら のぼるのさ!$"
 
 JaggedPass_Text_EthanRematchDefeat:
-	.string "{JPN}やっぱり デコボコだと\nたたかいにくいよ……"
-	.string "$"
+	.string "{JPN}やっぱり デコボコだと\nたたかいにくいよ……$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "{JPN}ぼくも キンセツで カゼノさんから\nダートじてんしゃ もらおうかな"
-	.string "$"
+	.string "{JPN}ぼくも キンセツで カゼノさんから\nダートじてんしゃ もらおうかな$"
 
 JaggedPass_Text_GruntIntro:
-	.string "{JPN}うわっ!? ……なんだ おまえ!\pオレが\n  こんな\l    ところで\lなにを\l  してるか\l    なんて\lおまえにゃ カンケー\lな い だ ろ が!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}うわっ!? ……なんだ おまえ!\pオレが\n  こんな\l    ところで\lなにを\l  してるか\l    なんて\lおまえにゃ カンケー\lな い だ ろ が!$"
 
 JaggedPass_Text_GruntDefeat:
-	.string "{JPN}うぐぐ……\pはやく\n  アジトに\l    にげこめば\l      よかった……"
-	.string ""
-	.string "$"
+	.string "{JPN}うぐぐ……\pはやく\n  アジトに\l    にげこめば\l      よかった……$"
 
 JaggedPass_Text_GoWhereverYouWant:
-	.string "{JPN}わかった わかった!\nキミが つよいのは みとめて やるよ!\pオレのことは きにせず\nすきな ところへ いきな!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わかった わかった!\nキミが つよいのは みとめて やるよ!\pオレのことは きにせず\nすきな ところへ いきな!$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-	.string "{JPN}あ! マグマのしるしに はんのうして……\nおおきな いわが……\lブルブルと しんどう している!"
-	.string "$"
+	.string "{JPN}あ! マグマのしるしに はんのうして……\nおおきな いわが……\lブルブルと しんどう している!$"
 
 JaggedPass_Text_JulioIntro:
-	.string "{JPN}じてんしゃで いっきに\nおりて くると こわいぃぃ!"
-	.string "$"
+	.string "{JPN}じてんしゃで いっきに\nおりて くると こわいぃぃ!$"
 
 JaggedPass_Text_JulioDefeat:
 	.string "{JPN}ガッタガタ$"
 
 JaggedPass_Text_JulioPostBattle:
-	.string "{JPN}じてんしゃが おもいっきり\nバウンド して おしりが イタイ……"
-	.string "$"
+	.string "{JPN}じてんしゃが おもいっきり\nバウンド して おしりが イタイ……$"
 
 JaggedPass_Text_AutumnIntro:
-	.string "{JPN}まいにち ここを のぼっているわ\nパワーには じしん あるんだから!"
-	.string "$"
+	.string "{JPN}まいにち ここを のぼっているわ\nパワーには じしん あるんだから!$"
 
 JaggedPass_Text_AutumnDefeat:
-	.string "{JPN}んー おっかしいな……"
-	.string "$"
+	.string "{JPN}んー おっかしいな……$"
 
 JaggedPass_Text_AutumnPostBattle:
-	.string "{JPN}すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?"
-	.string "$"
+	.string "{JPN}すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?$"

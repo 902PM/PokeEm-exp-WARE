@@ -95,58 +95,28 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "{JPN}ハギ『こらこら!\nまて まて ピーコちゃん!"
-	.string "$"
+	.string "{JPN}ハギ『こらこら!\nまて まて ピーコちゃん!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
-	.string "{JPN}おや? きみは たしか ピーコちゃんを\nたすけて くれた {PLAYER}{KUN}!\lそのせつは せわに なったのう!\p……なぬ? ふねに のりたい とな?\pふむふむ?\nムロに てがみを とどけて\lカイナへ にもつを とどける……\lなんだか いそがしいのう きみは\pじゃが それくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おや? きみは たしか ピーコちゃんを\nたすけて くれた {PLAYER}{KUN}!\lそのせつは せわに なったのう!\p……なぬ? ふねに のりたい とな?\pふむふむ?\nムロに てがみを とどけて\lカイナへ にもつを とどける……\lなんだか いそがしいのう きみは\pじゃが それくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
-	.string "{JPN}ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!"
-	.string "$"
+	.string "{JPN}ハギ『ムロタウン か\pよっしゃ! いくぞ ピーコちゃん!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "{JPN}ハギ『そうかね\nたのまれごとは いいのかね?\pまあ ふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハギ『そうかね\nたのまれごとは いいのかね?\pまあ ふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "{JPN}ハギ『きみの いいたいことは わかっとる!\pムロに てがみを とどけて\nカイナへ にもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハギ『きみの いいたいことは わかっとる!\pムロに てがみを とどけて\nカイナへ にもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "{JPN}ハギ『きみの いいたいことは わかっとる!\pカイナの クスノキさんに\nにもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハギ『きみの いいたいことは わかっとる!\pカイナの クスノキさんに\nにもつを とどけるんだろう\pそれくらい おやすい ごようだ!\nわしに まかせて おきなさい!\lでは まず ムロに むかうとするか!$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "{JPN}ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?"
-	.string ""
-	.string "$"
+	.string "{JPN}ハギ『やあ! きみのため なら\nいつでも ふねを だそう!\pきみが いきたいのは どこ かな?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
-	.string "{JPN}ハギ『そうか…… きみは\nピーコちゃんの いのちの おんじんだ\pふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ハギ『そうか…… きみは\nピーコちゃんの いのちの おんじんだ\pふねに のる ひつようが あるときは\nいつでも えんりょなく いっておくれ!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
 	.string "{JPN}ピーコちゃん『ピー ピひょろー!$"

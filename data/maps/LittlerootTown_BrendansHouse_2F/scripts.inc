@@ -270,31 +270,16 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "{JPN}かべの とけいが とまっている……\p"
-	.string "{JPN}じかんを あわせて おかなくちゃ!$"
+	.string "{JPN}かべの とけいが とまっている……\pじかんを あわせて おかなくちゃ!$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "{JPN}ママ『{PLAYER}\n"
-	.string "{JPN}どう あたらしい へやは?\p"
-	.string "{JPN}うん! きれいに かたづいてるわね!\n"
-	.string "{JPN}したも もう かたづいたわ\l"
-	.string "{JPN}ポケモンが いると ほんとうに らくね!\p"
-	.string "{JPN}そうだ! つくえの うえの ものも\n"
-	.string "{JPN}だいじょうぶか みておいてね$"
+	.string "{JPN}ママ『{PLAYER}\nどう あたらしい へやは?\pうん! きれいに かたづいてるわね!\nしたも もう かたづいたわ\lポケモンが いると ほんとうに らくね!\pそうだ! つくえの うえの ものも\nだいじょうぶか みておいてね$"
 
 PlayersHouse_2F_Text_Notebook:
-	.string "{JPN}{PLAYER}は ノートを ひらいた!\p"
-	.string "{JPN}たんけんの こころえ その1\n"
-	.string "{JPN}スタートボタンで メニューが ひらく!\p"
-	.string "{JPN}たんけんの こころえ その2\n"
-	.string "{JPN}ポケモン レポートで きろく できる!\p"
-	.string "{JPN}あとは まっしろ だ……$"
+	.string "{JPN}{PLAYER}は ノートを ひらいた!\pたんけんの こころえ その1\nスタートボタンで メニューが ひらく!\pたんけんの こころえ その2\nポケモン レポートで きろく できる!\pあとは まっしろ だ……$"
 
 Common_Text_LookCloserAtMap:
-	.string "{JPN}{PLAYER}は {REGION}の\n"
-	.string "{JPN}タウンマップに かおを ちかづけた!$"
+	.string "{JPN}{PLAYER}は {REGION}の\nタウンマップに かおを ちかづけた!$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "{JPN}ゲームキューブが ある!\p"
-	.string "{JPN}コントローラの かわりに\n"
-	.string "{JPN}ゲームボーイ アドバンスが つながってる!$"
+	.string "{JPN}ゲームキューブが ある!\pコントローラの かわりに\nゲームボーイ アドバンスが つながってる!$"

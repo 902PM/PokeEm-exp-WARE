@@ -33,67 +33,41 @@ MtPyre_3F_EventScript_RematchGabrielle::
 	end
 
 MtPyre_3F_Text_WilliamIntro:
-	.string "{JPN}あらたかな やまの ちからで\nサイコパワーの アップした わたしに\lこどもの おまえが かてるかな!?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あらたかな やまの ちからで\nサイコパワーの アップした わたしに\lこどもの おまえが かてるかな!?$"
 
 MtPyre_3F_Text_WilliamDefeat:
 	.string "{JPN}アップ アップ……$"
 
 MtPyre_3F_Text_WilliamPostBattle:
-	.string "{JPN}わたしの サイコパワーは かくじつに\nつよく なっている はずなのに……"
-	.string "$"
+	.string "{JPN}わたしの サイコパワーは かくじつに\nつよく なっている はずなのに……$"
 
 MtPyre_3F_Text_KaylaIntro:
-	.string "{JPN}おほほほほっ!\pここは あなたの ような こどもが\nくる ばしょ では ないのよっ!"
-	.string ""
-	.string "$"
+	.string "{JPN}おほほほほっ!\pここは あなたの ような こどもが\nくる ばしょ では ないのよっ!$"
 
 MtPyre_3F_Text_KaylaDefeat:
 	.string "{JPN}あっさり まけたわっ……!$"
 
 MtPyre_3F_Text_KaylaPostBattle:
-	.string "{JPN}まだまだ しゅぎょうが たりないのね……\nさんちょうを めざすわよ……!\pファイト! わたし!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}まだまだ しゅぎょうが たりないのね……\nさんちょうを めざすわよ……!\pファイト! わたし!$"
 
 MtPyre_3F_Text_GabrielleIntro:
 	.string "{JPN}あなたは なぜ ここへ……?$"
 
 MtPyre_3F_Text_GabrielleDefeat:
-	.string "{JPN}すごいわ!\nあなたは すてきな トレーナーさんね"
-	.string "$"
+	.string "{JPN}すごいわ!\nあなたは すてきな トレーナーさんね$"
 
 MtPyre_3F_Text_GabriellePostBattle:
-	.string "{JPN}いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて おいて くださいね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて おいて くださいね$"
 
 MtPyre_3F_Text_GabrielleRegister:
-	.string "{JPN}あなたの ポケモンが そだったら\nみてみたいわ……\lさあ ポケナビを だして"
-	.string ""
-	.string "$"
+	.string "{JPN}あなたの ポケモンが そだったら\nみてみたいわ……\lさあ ポケナビを だして$"
 
 MtPyre_3F_Text_GabrielleRematchIntro:
-	.string "{JPN}あら あなたは……\nそだてた ポケモン みせてくれるの?"
-	.string ""
-	.string "$"
+	.string "{JPN}あら あなたは……\nそだてた ポケモン みせてくれるの?$"
 
 MtPyre_3F_Text_GabrielleRematchDefeat:
-	.string "{JPN}ほんとうに すごいわ!\nあなたは すてきね"
-	.string "$"
+	.string "{JPN}ほんとうに すごいわ!\nあなたは すてきね$"
 
 MtPyre_3F_Text_GabriellePostRematch:
-	.string "{JPN}いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて くれて いたのね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いまはもう いない ポケモン\nいま いっしょに いる ポケモン\pそれに\nこれから であう ポケモン……\pすべて たいせつな ポケモン なのよ\nおぼえて くれて いたのね$"
 

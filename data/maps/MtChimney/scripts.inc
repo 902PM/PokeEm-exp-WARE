@@ -542,122 +542,58 @@ MtChimney_EventScript_SawyerRematch::
 	end
 
 MtChimney_Text_MeteoriteWillActivateVolcano:
-	.string "{JPN}いんせきに ひめられた ちから\pこの そうちで ぞうふく すれば\nたちまちの うちに えんとつやまの\lかざん かつどうは かっぱつになる……\pその エネルギーが\nかこうの おくふかくに はたらきかけ\lそして ふふふ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いんせきに ひめられた ちから\pこの そうちで ぞうふく すれば\nたちまちの うちに えんとつやまの\lかざん かつどうは かっぱつになる……\pその エネルギーが\nかこうの おくふかくに はたらきかけ\lそして ふふふ……$"
 
 MtChimney_Text_MaxieIntro:
-	.string "{JPN}マツブサ『ん? だれだ おまえは\p…… …… ……\n…… …… ……\pさいきん アクアだんの かつどうを\nじゃまする こどもがいる と\lアオギリの やつが ぼやいて いたが\lそれは おまえの ことか\p……ふん!\nわれわれ マグマだんの じゃまも\lしてくれようって わけだな!\pいいか? いきものは りくちに あがり\nしんかを くりかえしてきた\pそう だいちこそが すべてなのだ!\pだから われわれ マグマだんは\nだいちを ふやすことで\lひとと ポケモンの はってんを めざす!\pそのために ひつよう なのが\nこのやまに ねむる アイツ……\pおっと! そんなことまで\nおまえが しる ひつようは なかったな\pそんなことより\nわれわれの じゃまを したら どうなるか\lおまえに わからせて やろう!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『ん? だれだ おまえは\p…… …… ……\n…… …… ……\pさいきん アクアだんの かつどうを\nじゃまする こどもがいる と\lアオギリの やつが ぼやいて いたが\lそれは おまえの ことか\p……ふん!\nわれわれ マグマだんの じゃまも\lしてくれようって わけだな!\pいいか? いきものは りくちに あがり\nしんかを くりかえしてきた\pそう だいちこそが すべてなのだ!\pだから われわれ マグマだんは\nだいちを ふやすことで\lひとと ポケモンの はってんを めざす!\pそのために ひつよう なのが\nこのやまに ねむる アイツ……\pおっと! そんなことまで\nおまえが しる ひつようは なかったな\pそんなことより\nわれわれの じゃまを したら どうなるか\lおまえに わからせて やろう!$"
 
 MtChimney_Text_MaxieDefeat:
-	.string "{JPN}なに!?\pこの マツブサとも あろう ものが\nゆだん したか!?"
-	.string "$"
+	.string "{JPN}なに!?\pこの マツブサとも あろう ものが\nゆだん したか!?$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
-	.string "{JPN}マツブサ『まあ いい\nこのばは ひとまず あきらめよう……\pだが マグマだんの かつどうは\nこれで おわったわけでは ないのだ!\pふふふ……\pいんせきなど つかわなくとも\nあの たまが てにはいれば ふふふ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マツブサ『まあ いい\nこのばは ひとまず あきらめよう……\pだが マグマだんの かつどうは\nこれで おわったわけでは ないのだ!\pふふふ……\pいんせきなど つかわなくとも\nあの たまが てにはいれば ふふふ……$"
 
 MtChimney_Text_TabithaIntro:
-	.string "{JPN}ウヒョヒョ!\pおまえ ここまで きたのか!\pだけど おそかったぜ\nりゅうせいのたきで みつけた\lいんせきは リーダーに わたしたからな!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ウヒョヒョ!\pおまえ ここまで きたのか!\pだけど おそかったぜ\nりゅうせいのたきで みつけた\lいんせきは リーダーに わたしたからな!$"
 
 MtChimney_Text_TabithaDefeat:
-	.string "{JPN}ウヒョヒョ……\pオレが まけても リーダーが ちゃんと\nアイツを めざめさせて……"
-	.string ""
-	.string "$"
+	.string "{JPN}ウヒョヒョ……\pオレが まけても リーダーが ちゃんと\nアイツを めざめさせて……$"
 
 MtChimney_Text_TabithaPostBattle:
-	.string "{JPN}リーダー! はやく!\nいんせきの パワーを アイツに!\pウヒョヒョ……!"
-	.string ""
-	.string "$"
+	.string "{JPN}リーダー! はやく!\nいんせきの パワーを アイツに!\pウヒョヒョ……!$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "{JPN}オレら マグマだんは\nみんなの ために がんばってるんだ!\pだって アイツの ちからで\nだいちが ふえれば みんなも\lすむところが ふえて うれしいだろ?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレら マグマだんは\nみんなの ために がんばってるんだ!\pだって アイツの ちからで\nだいちが ふえれば みんなも\lすむところが ふえて うれしいだろ?$"
 
 MtChimney_Text_Grunt2Defeat:
-	.string "{JPN}あれー?\nオレ まけたのー!?"
-	.string "$"
+	.string "{JPN}あれー?\nオレ まけたのー!?$"
 
 MtChimney_Text_Grunt2PostBattle:
-	.string "{JPN}オレらの リーダーは\n「みんなが よろこぶ ことだ」って\lいってるんだ!\pなのに なんで みんな ジャマするんだ?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレらの リーダーは\n「みんなが よろこぶ ことだ」って\lいってるんだ!\pなのに なんで みんな ジャマするんだ?$"
 
 MtChimney_Text_Grunt1Intro:
-	.string "{JPN}りくちが ふえて くれたら\nおおきな マイホーム だって もてるわ!\pようがんの うえに ひっこし するのよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}りくちが ふえて くれたら\nおおきな マイホーム だって もてるわ!\pようがんの うえに ひっこし するのよ!$"
 
 MtChimney_Text_Grunt1Defeat:
 	.string "{JPN}わたしの マイホームの ゆめが……$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "{JPN}あんた なんか うみに プカプカ\nうかんで いれば いいのよ!"
-	.string "$"
+	.string "{JPN}あんた なんか うみに プカプカ\nうかんで いれば いいのよ!$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
-	.string "{JPN}アクアだんの やつらめ……\nいちいち オレたちの じゃまを しやがって!"
-	.string "$"
+	.string "{JPN}アクアだんの やつらめ……\nいちいち オレたちの じゃまを しやがって!$"
 
 MtChimney_Text_MeteoritesPackAmazingPower:
 	.string "{JPN}いんせきには すごい パワーが あるのだ!$"
 
 MtChimney_Text_YouBetterNotMessWithUs:
-	.string "{JPN}オレたちの じゃまを するな!\pアイツを ふっかつ させるのは\nみんなの ために やってること なんだ!"
-	.string ""
-	.string "$"
+	.string "{JPN}オレたちの じゃまを するな!\pアイツを ふっかつ させるのは\nみんなの ために やってること なんだ!$"
 
 MtChimney_Text_AquasNameSimilar:
-	.string "{JPN}オレたちは マグマだん!\pやつらは アクアだん!\pにたような なまえを つけやがって\nいまいましい やつらだ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレたちは マグマだん!\pやつらは アクアだん!\pにたような なまえを つけやがって\nいまいましい やつらだ!$"
 
 MtChimney_Text_DouseThemInFire:
-	.string "{JPN}よーし!\nほのおを ぶっかけてやれー!!"
-	.string "$"
+	.string "{JPN}よーし!\nほのおを ぶっかけてやれー!!$"
 
 MtChimney_Text_KeepMakingMoreLand:
 	.string "{JPN}もっと もっと だいちを ふやすぜ!!$"
@@ -666,188 +602,121 @@ MtChimney_Text_Bufoh:
 	.string "{JPN}ぶふぉー!!$"
 
 MtChimney_Text_ArchieGoStopTeamMagma:
-	.string "{JPN}アオギリ『むむむ {PLAYER}!\nやっぱり ここにも あらわれたか!\pほら! マグマだんの れんちゅうが\nなにを たくらんで いるのか みてみろ!\pやつらは うばった いんせきの パワーを\nかざんに ながしこもうと しているんだ!\pそんなことを したら\nかざんが だいふんか するじゃないか!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アオギリ『むむむ {PLAYER}!\nやっぱり ここにも あらわれたか!\pほら! マグマだんの れんちゅうが\nなにを たくらんで いるのか みてみろ!\pやつらは うばった いんせきの パワーを\nかざんに ながしこもうと しているんだ!\pそんなことを したら\nかざんが だいふんか するじゃないか!$"
 
 MtChimney_Text_ArchieIHaveMyHandsFull:
-	.string "{JPN}アオギリ『うーむ むむむ!\pマツブサの やつを とめに いきたいが\nさすがの おれも\l3にん どうじに あいてを していては\lてが はなせない!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アオギリ『うーむ むむむ!\pマツブサの やつを とめに いきたいが\nさすがの おれも\l3にん どうじに あいてを していては\lてが はなせない!$"
 
 MtChimney_Text_ArchieThankYou:
-	.string "{JPN}アオギリ『{PLAYER}…… たすかったよ\nおまえの おかげで マグマだんの\lはかいかつどうを ふせぐことが できた\pだが おまえは……\nどちらの みかた なんだ……\pまあ いい\pわれわれは ひきつづき\nマグマだんを おいかけると しよう!\p{PLAYER} おまえとは また\nどこかで あうことに なりそうだな……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アオギリ『{PLAYER}…… たすかったよ\nおまえの おかげで マグマだんの\lはかいかつどうを ふせぐことが できた\pだが おまえは……\nどちらの みかた なんだ……\pまあ いい\pわれわれは ひきつづき\nマグマだんを おいかけると しよう!\p{PLAYER} おまえとは また\nどこかで あうことに なりそうだな……$"
 
 MtChimney_Text_MagmaOutnumbersUs:
-	.string "{JPN}くそう マグマだんが おおすぎる……\nこのままでは まずいぞ!"
-	.string "$"
+	.string "{JPN}くそう マグマだんが おおすぎる……\nこのままでは まずいぞ!$"
 
 MtChimney_Text_LessHabitatForWaterPokemon:
-	.string "{JPN}だいちを ふやしたら\nみずポケモンが すむ ばしょが\lへってしまう じゃねーか!"
-	.string "$"
+	.string "{JPN}だいちを ふやしたら\nみずポケモンが すむ ばしょが\lへってしまう じゃねーか!$"
 
 MtChimney_Text_MagmasNameSimilar:
-	.string "{JPN}オレたちは アクアだん!\pやつらは マグマだん!\pまぎらわしい なまえを つけやがって\nしゃくにさわる やつらだ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレたちは アクアだん!\pやつらは マグマだん!\pまぎらわしい なまえを つけやがって\nしゃくにさわる やつらだ!$"
 
 MtChimney_Text_Bushaa:
 	.string "{JPN}ぷしゃー!!$"
 
 MtChimney_Text_LavaCookiesJust200:
-	.string "{JPN}えんとつやま めいぶつ\nフエンせんべい ひとつ 200えん!\lかって おいきよ"
-	.string ""
-	.string "$"
+	.string "{JPN}えんとつやま めいぶつ\nフエンせんべい ひとつ 200えん!\lかって おいきよ$"
 
 MtChimney_Text_ThankYouDear:
 	.string "{JPN}どうも ありがとね$"
 
 MtChimney_Text_YouveNotGotTheMoney:
-	.string "{JPN}おやまあ おかねが なくちゃ\nものは かえないよ"
-	.string "$"
+	.string "{JPN}おやまあ おかねが なくちゃ\nものは かえないよ$"
 
 MtChimney_Text_OhFineThen:
 	.string "{JPN}あら そうかい$"
 
 MtChimney_Text_MeteoriteFittedOnMachine:
-	.string "{JPN}なぞの そうちに\nいんせきが はめられている……\pなにかの エネルギーを\nためている さいちゅうの ようだ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}なぞの そうちに\nいんせきが はめられている……\pなにかの エネルギーを\nためている さいちゅうの ようだ$"
 
 MtChimney_Text_RemoveTheMeteorite:
-	.string "{JPN}なぞの そうちに\nいんせきが はめられている……\pいんせきを とりますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}なぞの そうちに\nいんせきが はめられている……\pいんせきを とりますか?$"
 
 MtChimney_Text_PlayerRemovedMeteorite:
-	.string "{JPN}{PLAYER}は いんせきを\nそうちから とりはずした!"
-	.string "$"
+	.string "{JPN}{PLAYER}は いんせきを\nそうちから とりはずした!$"
 
 MtChimney_Text_PlayerLeftMeteorite:
-	.string "{JPN}{PLAYER}は いんせきを\nそのままに しておいた"
-	.string "$"
+	.string "{JPN}{PLAYER}は いんせきを\nそのままに しておいた$"
 
 MtChimney_Text_MachineMakesNoResponse:
-	.string "{JPN}なぞの そうち……\nまったく はんのう しない……"
-	.string "$"
+	.string "{JPN}なぞの そうち……\nまったく はんのう しない……$"
 
 MtChimney_Text_RouteSign:
-	.string "{JPN}{DOWN_ARROW} デコボコさんどう\nとおりぬけると フエンタウン"
-	.string "$"
+	.string "{JPN}{DOWN_ARROW} デコボコさんどう\nとおりぬけると フエンタウン$"
 
 MtChimney_Text_ShelbyIntro:
-	.string "{JPN}おんせんに つかって\nリフレッシュ してきたからねえ\lいまの あたしゃあ つよいよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}おんせんに つかって\nリフレッシュ してきたからねえ\lいまの あたしゃあ つよいよ!$"
 
 MtChimney_Text_ShelbyDefeat:
-	.string "{JPN}おんや まぁ\nたいした もんだよ"
-	.string "$"
+	.string "{JPN}おんや まぁ\nたいした もんだよ$"
 
 MtChimney_Text_ShelbyPostBattle:
-	.string "{JPN}まけて しもうたら\nたつじん とは いえないねえ"
-	.string "$"
+	.string "{JPN}まけて しもうたら\nたつじん とは いえないねえ$"
 
 MtChimney_Text_ShelbyRegister:
-	.string "{JPN}マゴと たたかってる ようで たのしかった\nよかったら また あいてを しておくれ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マゴと たたかってる ようで たのしかった\nよかったら また あいてを しておくれ!$"
 
 MtChimney_Text_ShelbyRematchIntro:
-	.string "{JPN}ポケモンと こころを ひとつに できれば\nすばらしいことが できそうじゃの"
-	.string ""
-	.string "$"
+	.string "{JPN}ポケモンと こころを ひとつに できれば\nすばらしいことが できそうじゃの$"
 
 MtChimney_Text_ShelbyRematchDefeat:
-	.string "{JPN}おんや まぁ\nたいした もんだよ"
-	.string "$"
+	.string "{JPN}おんや まぁ\nたいした もんだよ$"
 
 MtChimney_Text_ShelbyPostRematch:
-	.string "{JPN}おまえさんの こころと\nポケモンの こころは ひとつ なのかもな"
-	.string "$"
+	.string "{JPN}おまえさんの こころと\nポケモンの こころは ひとつ なのかもな$"
 
 MtChimney_Text_MelissaIntro:
-	.string "{JPN}なんだか もえあがってきて\nたたかいたくて たまらないのっ!"
-	.string "$"
+	.string "{JPN}なんだか もえあがってきて\nたたかいたくて たまらないのっ!$"
 
 MtChimney_Text_MelissaDefeat:
 	.string "{JPN}あつい たたかい だったわ$"
 
 MtChimney_Text_MelissaPostBattle:
-	.string "{JPN}えんとつやまの あつさが\nおんなを もえあがらせるの"
-	.string "$"
+	.string "{JPN}えんとつやまの あつさが\nおんなを もえあがらせるの$"
 
 MtChimney_Text_SheilaIntro:
-	.string "{JPN}せっかく えんとつやまに きたんだから\nここでも ポケモンを たたかわせたいの!"
-	.string "$"
+	.string "{JPN}せっかく えんとつやまに きたんだから\nここでも ポケモンを たたかわせたいの!$"
 
 MtChimney_Text_SheilaDefeat:
-	.string "{JPN}その たたかいかた\nまさに えんとつやま だいふんか!"
-	.string "$"
+	.string "{JPN}その たたかいかた\nまさに えんとつやま だいふんか!$"
 
 MtChimney_Text_SheilaPostBattle:
-	.string "{JPN}せっかく えんとつやまに きたんだから\nかんこう だけじゃ もったいないわ\pしょうぶも たのしみたいし\nおみやげに せんべい かわなきゃ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}せっかく えんとつやまに きたんだから\nかんこう だけじゃ もったいないわ\pしょうぶも たのしみたいし\nおみやげに せんべい かわなきゃ!$"
 
 MtChimney_Text_ShirleyIntro:
-	.string "{JPN}おんせんに はいったら\nちょうし バッチリ なのよね!\lぜったい かてるわ!"
-	.string ""
-	.string "$"
+	.string "{JPN}おんせんに はいったら\nちょうし バッチリ なのよね!\lぜったい かてるわ!$"
 
 MtChimney_Text_ShirleyDefeat:
-	.string "{JPN}うーん ゆざめ しちゃう"
-	.string "$"
+	.string "{JPN}うーん ゆざめ しちゃう$"
 
 MtChimney_Text_ShirleyPostBattle:
-	.string "{JPN}もういちど おんせんに はいらなきゃ!\nあなたも いっしょに はいる?\pなんてねっ!"
-	.string ""
-	.string "$"
+	.string "{JPN}もういちど おんせんに はいらなきゃ!\nあなたも いっしょに はいる?\pなんてねっ!$"
 
 MtChimney_Text_SawyerIntro:
-	.string "{JPN}ここは いい やまだ!\nあっつい おねいさんたちが いっぱいだあ!"
-	.string "$"
+	.string "{JPN}ここは いい やまだ!\nあっつい おねいさんたちが いっぱいだあ!$"
 
 MtChimney_Text_SawyerDefeat:
 	.string "{JPN}おおっ あんたも あついねぇ!$"
 
 MtChimney_Text_SawyerPostBattle:
-	.string "{JPN}いまから あつい おねいさんたちを つれて\nフエンおんせん でも いこうかな"
-	.string "$"
+	.string "{JPN}いまから あつい おねいさんたちを つれて\nフエンおんせん でも いこうかな$"
 
 MtChimney_Text_SawyerRegister:
-	.string "{JPN}あつい トレーナーは すきだなあ!\nポケナビに とうろくしても いいかい"
-	.string "$"
+	.string "{JPN}あつい トレーナーは すきだなあ!\nポケナビに とうろくしても いいかい$"
 
 MtChimney_Text_SawyerRematchIntro:
-	.string "{JPN}あっつい おねいさん たちに\nかこまれて しあわせな おれは まけんぜ!"
-	.string "$"
+	.string "{JPN}あっつい おねいさん たちに\nかこまれて しあわせな おれは まけんぜ!$"
 
 MtChimney_Text_SawyerRematchDefeat:
-	.string "{JPN}おおっ やっぱり\nあんたの ほうが あついねぇ!"
-	.string "$"
+	.string "{JPN}おおっ やっぱり\nあんたの ほうが あついねぇ!$"
 
 MtChimney_Text_SawyerPostRematch:
-	.string "{JPN}しかし ほんとに あついや……\nふく いっぱい きすぎちゃった かな"
-	.string "$"
+	.string "{JPN}しかし ほんとに あついや……\nふく いっぱい きすぎちゃった かな$"

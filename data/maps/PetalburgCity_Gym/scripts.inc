@@ -1138,456 +1138,218 @@ PetalburgCity_Gym_EventScript_GymStatue::
 	end
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
-	.string "{JPN}パパ『ん?\p{PLAYER}じゃ ないか!\nそうか ひっこしが おわったんだね\pそれにしても\nよく ここまで ひとりで これたな\pなるほど……\nポケモンと いっしょ なのか\pふむ…… じゃあ {PLAYER}も\nわたしの ように\lポケモントレーナーに なるのか\pそれは たのしみ だな!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『ん?\p{PLAYER}じゃ ないか!\nそうか ひっこしが おわったんだね\pそれにしても\nよく ここまで ひとりで これたな\pなるほど……\nポケモンと いっしょ なのか\pふむ…… じゃあ {PLAYER}も\nわたしの ように\lポケモントレーナーに なるのか\pそれは たのしみ だな!$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
-	.string "{JPN}あの…… ぼく……\nポケモンが ほしいん ですけど……"
-	.string "$"
+	.string "{JPN}あの…… ぼく……\nポケモンが ほしいん ですけど……$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "{JPN}パパ『ん? きみは…… たしか\nミツルくんと いったよね"
-	.string "$"
+	.string "{JPN}パパ『ん? きみは…… たしか\nミツルくんと いったよね$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
-	.string "{JPN}ミツル『ぼく きょうから シダケタウンの\nしんせきの うちに いくんですけど\pひとりじゃ さみしいから ポケモンを\nつれて いこうかと おもって……\pでも いままで じぶんで ポケモンを\nつかまえた ことが ないから\lどう やったら いいのか……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『ぼく きょうから シダケタウンの\nしんせきの うちに いくんですけど\pひとりじゃ さみしいから ポケモンを\nつれて いこうかと おもって……\pでも いままで じぶんで ポケモンを\nつかまえた ことが ないから\lどう やったら いいのか……$"
 
 PetalburgCity_Gym_Text_DadHmISee:
 	.string "{JPN}パパ『……ふむ なるほど$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
-	.string "{JPN}パパ『{PLAYER}! はなしは きいたね\pミツルくんが ぶじに\nポケモンを つかまえられるか\lみまもって あげるんだ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}! はなしは きいたね\pミツルくんが ぶじに\nポケモンを つかまえられるか\lみまもって あげるんだ$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "{JPN}ミツルくん\nわたしの ポケモンを かして あげよう!\pミツルは\nジグザグマを あずかった!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツルくん\nわたしの ポケモンを かして あげよう!\pミツルは\nジグザグマを あずかった!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
-	.string "{JPN}ミツル『わあ……\nポケモンだぁ……!\pパパ『うむ……\nモンスターボールは あげるから\lがんばって　みなさい!\pミツルは\nモンスターボールを もらった!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『わあ……\nポケモンだぁ……!\pパパ『うむ……\nモンスターボールは あげるから\lがんばって　みなさい!\pミツルは\nモンスターボールを もらった!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "{JPN}ミツル『おじさん ありがとう!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
-	.string "{JPN}{PLAYER}さん……\nぼくと いっしょに きてくれますよね"
-	.string "$"
+	.string "{JPN}{PLAYER}さん……\nぼくと いっしょに きてくれますよね$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
 	.string "{JPN}パパ『うまく いったかい?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
-	.string "{JPN}ミツル『おじさん\nおかりした ポケモン おかえし します\p{PLAYER}さん いっしょに きてくれて\nどうも ありがとう……\pポケモンを つかまえることが できたのは\nふたりの おかげです!\lつかまえた ポケモン たいせつに しますね\p……あ! おかあさんが まってるから\nぼくは もう いかなきゃ!\pじゃあね {PLAYER}さん!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ミツル『おじさん\nおかりした ポケモン おかえし します\p{PLAYER}さん いっしょに きてくれて\nどうも ありがとう……\pポケモンを つかまえることが できたのは\nふたりの おかげです!\lつかまえた ポケモン たいせつに しますね\p……あ! おかあさんが まってるから\nぼくは もう いかなきゃ!\pじゃあね {PLAYER}さん!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
-	.string "{JPN}パパ『さて……\p{PLAYER}! ポケモントレーナー として\nつよく なりたいのなら\lわたしの アドバイスを ききなさい\pまずは この さきにある\nカナズミシティに いくんだ\pそこで ツツジ という ジムリーダーと\nたたかうと いい!\pそうやって かくちの ポケモンジムで\nジムリーダーを たおして\lジムバッジを あつめて いくんだ\pもちろん わたしも ジムリーダーだ\nいずれ {PLAYER}と しょうぶ するだろう\pだが それは {PLAYER}が\nつよくなってからの はなし だよ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『さて……\p{PLAYER}! ポケモントレーナー として\nつよく なりたいのなら\lわたしの アドバイスを ききなさい\pまずは この さきにある\nカナズミシティに いくんだ\pそこで ツツジ という ジムリーダーと\nたたかうと いい!\pそうやって かくちの ポケモンジムで\nジムリーダーを たおして\lジムバッジを あつめて いくんだ\pもちろん わたしも ジムリーダーだ\nいずれ {PLAYER}と しょうぶ するだろう\pだが それは {PLAYER}が\nつよくなってからの はなし だよ$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
-	.string "{JPN}パパ『ん? カナズミの\nポケモンジムには いかないのか?\pまだまだ かけだしの トレーナーと\nたたかっても おもしろく ないからな\p{PLAYER}には もっと つよくなって\nわたしの まえに あらわれて ほしいんだ\pそうだな ジムバッジを\n4つ あつめられたら そのときは\l{PLAYER}と しょうぶ しよう!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『ん? カナズミの\nポケモンジムには いかないのか?\pまだまだ かけだしの トレーナーと\nたたかっても おもしろく ないからな\p{PLAYER}には もっと つよくなって\nわたしの まえに あらわれて ほしいんだ\pそうだな ジムバッジを\n4つ あつめられたら そのときは\l{PLAYER}と しょうぶ しよう!$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
-	.string "{JPN}パパ『なるほど……\nカナズミの ジムリーダーに かったのか\pだが まだまだ {PLAYER}より\nつよい トレーナーは いっぱい いる\pうみの むこう ムロタウンには\nトウキ という ジムリーダーが いる\lかれとも しょうぶ してみると いい"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『なるほど……\nカナズミの ジムリーダーに かったのか\pだが まだまだ {PLAYER}より\nつよい トレーナーは いっぱい いる\pうみの むこう ムロタウンには\nトウキ という ジムリーダーが いる\lかれとも しょうぶ してみると いい$"
 
 PetalburgCity_Gym_Text_YouHaveGottenStronger:
-	.string "{JPN}パパ『ふむ……\n{PLAYER}は つよくなって いるな\pその バッジの かずを みれば わかるよ"
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『ふむ……\n{PLAYER}は つよくなって いるな\pその バッジの かずを みれば わかるよ$"
 
 PetalburgCity_Gym_Text_NormanIntro:
-	.string "{JPN}パパ『そうか……\nジムバッジを 4つ あつめたのか\pでは やくそく どおり\nポケモンしょうぶ だな……\p{PLAYER}……\pわたしは いま こうして\nじぶんの こどもと\lしんけん しょうぶ できることが\lうれしくて たまらない!\pだが しょうぶは しょうぶ!\pわたしは ジムリーダーとして\nぜんりょくを つくす!\l{PLAYER}も ほんきで かかってくるんだ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『そうか……\nジムバッジを 4つ あつめたのか\pでは やくそく どおり\nポケモンしょうぶ だな……\p{PLAYER}……\pわたしは いま こうして\nじぶんの こどもと\lしんけん しょうぶ できることが\lうれしくて たまらない!\pだが しょうぶは しょうぶ!\pわたしは ジムリーダーとして\nぜんりょくを つくす!\l{PLAYER}も ほんきで かかってくるんだ!$"
 
 PetalburgCity_Gym_Text_NormanDefeat:
-	.string "{JPN}……!\pまさか……\pまさか {PLAYER}に……\p{PLAYER}に まける とは……\p……わかった! きまりは きまりだ!\nこれを わたそう"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}……!\pまさか……\pまさか {PLAYER}に……\p{PLAYER}に まける とは……\p……わかった! きまりは きまりだ!\nこれを わたそう$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge:
-	.string "{JPN}{PLAYER}は パパから\nバランスバッジを もらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は パパから\nバランスバッジを もらった!$"
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
-	.string "{JPN}パパ『その バランスバッジで\n{PLAYER}の ポケモンの\lぼうぎょりょくが たかくなる\pひでんわざの なみのり を\nおぼえた ポケモンが いるなら\lみずのうえを すすめるように なる\pこれは わたしからの おくりもの\n{PLAYER}なら つかいこなせるだろう!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『その バランスバッジで\n{PLAYER}の ポケモンの\lぼうぎょりょくが たかくなる\pひでんわざの なみのり を\nおぼえた ポケモンが いるなら\lみずのうえを すすめるように なる\pこれは わたしからの おくりもの\n{PLAYER}なら つかいこなせるだろう!$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-	.string "{JPN}パパ『わざマシン42は からげんき\pどくや まひ やけどに なると\nわざの いりょくが ばいに なる!\pピンチを チャンスに\nかえることが できるかも しれないな"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『わざマシン42は からげんき\pどくや まひ やけどに なると\nわざの いりょくが ばいに なる!\pピンチを チャンスに\nかえることが できるかも しれないな$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
-	.string "{JPN}パパ『ジムリーダーとして\nいいようが ないくらい くやしい……\pだが おや としては\nうれしいような さびしいような\lふしぎな きもち だ……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『ジムリーダーとして\nいいようが ないくらい くやしい……\pだが おや としては\nうれしいような さびしいような\lふしぎな きもち だ……$"
 
 PetalburgCity_Gym_Text_PleaseComeWithMe:
-	.string "{JPN}おお いたいた {PLAYER}{KUN}!\pちょっと きてくれないか\nきみに わたしたい ものが あるんだ!"
-	.string ""
-	.string "$"
+	.string "{JPN}おお いたいた {PLAYER}{KUN}!\pちょっと きてくれないか\nきみに わたしたい ものが あるんだ!$"
 
 PetalburgCity_Gym_Text_LetMeBorrowPlayer:
-	.string "{JPN}なあ センリさん いいだろう?\pおたくの {PLAYER}{KUN}を\nちょっと おかりして いくよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}なあ センリさん いいだろう?\pおたくの {PLAYER}{KUN}を\nちょっと おかりして いくよ!$"
 
 PetalburgCity_Gym_Text_DadGoingToKeepTraining:
-	.string "{JPN}パパ『{PLAYER}! たまには ママにも\nあいに いって あげるんだぞ!\pわたしは ここで\nじぶんを きたえなおす!\p{PLAYER}に まけた ままでは\nトレーナーとして くやしすぎる からな"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}! たまには ママにも\nあいに いって あげるんだぞ!\pわたしは ここで\nじぶんを きたえなおす!\p{PLAYER}に まけた ままでは\nトレーナーとして くやしすぎる からな$"
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
-	.string "{JPN}パパ『{PLAYER}!\nちょうしは どうだ?\pポケモンは おくが ふかい!\nわたしは いくら しゅぎょう しても\lたりなく おもっている ところだよ"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}!\nちょうしは どうだ?\pポケモンは おくが ふかい!\nわたしは いくら しゅぎょう しても\lたりなく おもっている ところだよ$"
 
 PetalburgCity_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pこの ジムは へやにいる トレーナーを\nたおせば おくの とびらが ひらくッ!\p……おっと! この へやは すでに\nとびらが ひらく ように なってるから\lぼくを たおしたり しないで くれよ!\pこの トウカジムの トレーナーたちは\nいろんな わざを つかってくるぞ!\pちなみに ここから いけるのは\nひだり…… すばやさの へや\lみぎ…… めいちゅうの へや だ!\pとびらにも かいてあるから それを\nよんでから すすむんだ\pさあ! すきな ほうを えらんだら\nきばってこォー!!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pこの ジムは へやにいる トレーナーを\nたおせば おくの とびらが ひらくッ!\p……おっと! この へやは すでに\nとびらが ひらく ように なってるから\lぼくを たおしたり しないで くれよ!\pこの トウカジムの トレーナーたちは\nいろんな わざを つかってくるぞ!\pちなみに ここから いけるのは\nひだり…… すばやさの へや\lみぎ…… めいちゅうの へや だ!\pとびらにも かいてあるから それを\nよんでから すすむんだ\pさあ! すきな ほうを えらんだら\nきばってこォー!!$"
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}{PLAYER}は じぶんの パパさえも\nのりこえて しまったのか!?\pこらァ びっくり たまげたッ!!"
-	.string ""
-	.string "$"
+	.string "{JPN}{PLAYER}は じぶんの パパさえも\nのりこえて しまったのか!?\pこらァ びっくり たまげたッ!!$"
 
 PetalburgCity_Gym_Text_RandallIntro:
-	.string "{JPN}あいてよりも さきに こうげき できる……\pそれだけで しょうぶは\nかなり ゆうりに なるだろう?"
-	.string ""
-	.string "$"
+	.string "{JPN}あいてよりも さきに こうげき できる……\pそれだけで しょうぶは\nかなり ゆうりに なるだろう?$"
 
 PetalburgCity_Gym_Text_RandallDefeat:
 	.string "{JPN}すばらしい しょうぶ だった……!$"
 
 PetalburgCity_Gym_Text_RandallPostBattle:
-	.string "{JPN}おくの へやに すすみたまえ!\nさらなる しれんが きみを まっている\pひだりは こんらんの へや!\nみぎは まもりの へや だ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おくの へやに すすみたまえ!\nさらなる しれんが きみを まっている\pひだりは こんらんの へや!\nみぎは まもりの へや だ!$"
 
 PetalburgCity_Gym_Text_RandallPostBadge:
-	.string "{JPN}だれに かとうとも\nだれに まけようとも\lおのれと ポケモンを きたえつづける……\pそれが ジムリーダー なのさ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}だれに かとうとも\nだれに まけようとも\lおのれと ポケモンを きたえつづける……\pそれが ジムリーダー なのさ$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
-	.string "{JPN}ここは こんらんの へや!\pきみと ポケモンの きずな\nみせて もらうよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}ここは こんらんの へや!\pきみと ポケモンの きずな\nみせて もらうよ!$"
 
 PetalburgCity_Gym_Text_ParkerDefeat:
-	.string "{JPN}こんらん させきれなかった\nふかい きずなを もっているね……"
-	.string "$"
+	.string "{JPN}こんらん させきれなかった\nふかい きずなを もっているね……$"
 
 PetalburgCity_Gym_Text_ParkerPostBattle:
-	.string "{JPN}つぎは ちからの へや!\nその こうげきりょくに たえられるかい?"
-	.string "$"
+	.string "{JPN}つぎは ちからの へや!\nその こうげきりょくに たえられるかい?$"
 
 PetalburgCity_Gym_Text_ParkerPostBadge:
-	.string "{JPN}ジムリーダーが きみに まけてから\nくんれんが さらに きびしく なったよ!"
-	.string "$"
+	.string "{JPN}ジムリーダーが きみに まけてから\nくんれんが さらに きびしく なったよ!$"
 
 PetalburgCity_Gym_Text_GeorgeIntro:
-	.string "{JPN}あとすこしで たおせると おもったとき\nあいての たいりょくが かいふく する\lそれが どんなに つらい ことか……\pその つらさ あじわってもらうよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あとすこしで たおせると おもったとき\nあいての たいりょくが かいふく する\lそれが どんなに つらい ことか……\pその つらさ あじわってもらうよ!$"
 
 PetalburgCity_Gym_Text_GeorgeDefeat:
-	.string "{JPN}かいふく しきれなかった……\nすごい こうげきりょく だ……"
-	.string "$"
+	.string "{JPN}かいふく しきれなかった……\nすごい こうげきりょく だ……$"
 
 PetalburgCity_Gym_Text_GeorgePostBattle:
-	.string "{JPN}さすがは ジムリーダーの こども……\pいや! トレーナーの さいのうは\nどりょくで つちかわれる もの……\pきみに まけたのは ぼくの どりょくが\nたりなかった から なんだ……!\pさあ つぎは いちげきの へや だ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}さすがは ジムリーダーの こども……\pいや! トレーナーの さいのうは\nどりょくで つちかわれる もの……\pきみに まけたのは ぼくの どりょくが\nたりなかった から なんだ……!\pさあ つぎは いちげきの へや だ!$"
 
 PetalburgCity_Gym_Text_GeorgePostBadge:
-	.string "{JPN}ポケモンジムで しゅぎょうを かさね\nいつかは ジムリーダーに なってみせるよ"
-	.string "$"
+	.string "{JPN}ポケモンジムで しゅぎょうを かさね\nいつかは ジムリーダーに なってみせるよ$"
 
 PetalburgCity_Gym_Text_BerkeIntro:
-	.string "{JPN}ジムリーダーの こども だからって\nてかげんは しない!\pきゅうしょに あたる こわさ\nとくと あじわって もらうよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ジムリーダーの こども だからって\nてかげんは しない!\pきゅうしょに あたる こわさ\nとくと あじわって もらうよ!$"
 
 PetalburgCity_Gym_Text_BerkeDefeat:
 	.string "{JPN}きみの つよさは ほんものだ……!$"
 
 PetalburgCity_Gym_Text_BerkePostBattle:
-	.string "{JPN}きみの パパは ほんとうに つよい\nそんけいに あたいする トレーナーだ!\pそして きみにも\nきみの パパと おなじ\lかがやきを かんじる……\pおやこ ふたりが のうりょくを きそう\nさいこうの めいしょうぶを みせてくれ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}きみの パパは ほんとうに つよい\nそんけいに あたいする トレーナーだ!\pそして きみにも\nきみの パパと おなじ\lかがやきを かんじる……\pおやこ ふたりが のうりょくを きそう\nさいこうの めいしょうぶを みせてくれ!$"
 
 PetalburgCity_Gym_Text_BerkePostBadge:
-	.string "{JPN}きみの パパが ジムリーダーに なってから\nトウカの トレーナーたちも つよくなった"
-	.string "$"
+	.string "{JPN}きみの パパが ジムリーダーに なってから\nトウカの トレーナーたちも つよくなった$"
 
 PetalburgCity_Gym_Text_MaryIntro:
-	.string "{JPN}ふふふ……\nここは めいちゅうの へや!\pすべての こうげきが あたるのって\nけっこう いやな ものよ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ふふふ……\nここは めいちゅうの へや!\pすべての こうげきが あたるのって\nけっこう いやな ものよ$"
 
 PetalburgCity_Gym_Text_MaryDefeat:
 	.string "{JPN}あなたの ほうが いちまい うわてね……$"
 
 PetalburgCity_Gym_Text_MaryPostBattle:
-	.string "{JPN}おくで さらに てごわい トレーナーが\nあなたを まっている\pひだりは まもりの へや\nみぎは かいふくの へや よ\pあなたの ポケモンの\nこうげきりょくが とわれるわ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}おくで さらに てごわい トレーナーが\nあなたを まっている\pひだりは まもりの へや\nみぎは かいふくの へや よ\pあなたの ポケモンの\nこうげきりょくが とわれるわ$"
 
 PetalburgCity_Gym_Text_MaryPostBadge:
-	.string "{JPN}あなたは わたしたち トレーナーが\nなにを めざしているか しってる?\p……それはね ポケモンと\nこころを ひとつに する ことよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あなたは わたしたち トレーナーが\nなにを めざしているか しってる?\p……それはね ポケモンと\nこころを ひとつに する ことよ!$"
 
 PetalburgCity_Gym_Text_AlexiaIntro:
-	.string "{JPN}まもりが かたければ かたいほど\nおもいきった こうげきが できるのよ"
-	.string "$"
+	.string "{JPN}まもりが かたければ かたいほど\nおもいきった こうげきが できるのよ$"
 
 PetalburgCity_Gym_Text_AlexiaDefeat:
 	.string "{JPN}まもりきれなかった……$"
 
 PetalburgCity_Gym_Text_AlexiaPostBattle:
-	.string "{JPN}あなたには たいせつな ことを\nおしえて もらった きが するわ……\pさあ すすみなさい!\nひだりは ちからの へや\lみぎは いちげきの へや\pともに こうげきを とくいと しているわ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あなたには たいせつな ことを\nおしえて もらった きが するわ……\pさあ すすみなさい!\nひだりは ちからの へや\lみぎは いちげきの へや\pともに こうげきを とくいと しているわ!$"
 
 PetalburgCity_Gym_Text_AlexiaPostBadge:
 	.string "{JPN}どう? なみのりは つかってる?$"
 
 PetalburgCity_Gym_Text_JodyIntro:
-	.string "{JPN}ぜんりょくで あなたを たおせと\nジムリーダーから いわれている……\pたとえ その あいてが\nリーダーの こども だとしても!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぜんりょくで あなたを たおせと\nジムリーダーから いわれている……\pたとえ その あいてが\nリーダーの こども だとしても!$"
 
 PetalburgCity_Gym_Text_JodyDefeat:
 	.string "{JPN}ぜんりょくを だしたのに……!$"
 
 PetalburgCity_Gym_Text_JodyPostBattle:
-	.string "{JPN}あなたの ポケモンの つかいかた……\nどことなく おとうさんに にているわ\pさあ! この おくには ジムリーダー\nあなたの おとうさんが まっているわ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あなたの ポケモンの つかいかた……\nどことなく おとうさんに にているわ\pさあ! この おくには ジムリーダー\nあなたの おとうさんが まっているわ!$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
-	.string "{JPN}ポケモンを つよく するのも いいけど\pしょうぶの ゆくえを きめるのは\nそのひと じしんの ポケモンに たいする\lきもち なのよね……!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ポケモンを つよく するのも いいけど\pしょうぶの ゆくえを きめるのは\nそのひと じしんの ポケモンに たいする\lきもち なのよね……!$"
 
 PetalburgCity_Gym_Text_DoorAppearsLocked:
-	.string "{JPN}いまは まだ この とびらは\nとざされて いる ようだ……"
-	.string "$"
+	.string "{JPN}いまは まだ この とびらは\nとざされて いる ようだ……$"
 
 PetalburgCity_Gym_Text_EnterSpeedRoom:
-	.string "{JPN}このさき すばやさの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき すばやさの へや\p……と かいてある\nおくに すすみますか?$"
 
 @ Unused
 PetalburgCity_Gym_Text_DoorAppearsLocked2:
-	.string "{JPN}いまは まだ この とびらは\nとざされて いる ようだ……"
-	.string "$"
+	.string "{JPN}いまは まだ この とびらは\nとざされて いる ようだ……$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "{JPN}このさき めいちゅうの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき めいちゅうの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "{JPN}このさき こんらんの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき こんらんの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
-	.string "{JPN}このさき まもりの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき まもりの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterRecoveryRoom:
-	.string "{JPN}このさき かいふくの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき かいふくの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterStrengthRoom:
-	.string "{JPN}このさき ちからの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき ちからの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "{JPN}このさき いちげきの へや\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string "$"
+	.string "{JPN}このさき いちげきの へや\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
-	.string "{JPN}このさき ジムリーダー\pどんな ポケモンが まっているか は\nじぶんの めで たしかめよ!\p……と かいてある\nおくに すすみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}このさき ジムリーダー\pどんな ポケモンが まっているか は\nじぶんの めで たしかめよ!\p……と かいてある\nおくに すすみますか?$"
 
 PetalburgCity_Gym_Text_GymStatue:
 	.string "{JPN}トウカシティ ポケモンジム$"
 
 PetalburgCity_Gym_Text_GymStatueCertified:
-	.string "{JPN}トウカシティ ポケモンジム\pセンリ にんてい トレーナー!\n{PLAYER}"
-	.string ""
-	.string "$"
+	.string "{JPN}トウカシティ ポケモンジム\pセンリ にんてい トレーナー!\n{PLAYER}$"
 
 PetalburgCity_Gym_Text_NormanPreRematch:
-	.string "{JPN}パパ『{PLAYER}……\nやはり あらわれたな……\pおまえに しょうぶを いどまれて\nこの わたしが ことわる はずがない\pわかっているな?\pジムの なかでは おたがいに\nおやこで あることなど かんけいない\p……いや おやこ だからこそ\nぜんりょくで ぶつかるんだ\lそうだろ? {PLAYER}!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}……\nやはり あらわれたな……\pおまえに しょうぶを いどまれて\nこの わたしが ことわる はずがない\pわかっているな?\pジムの なかでは おたがいに\nおやこで あることなど かんけいない\p……いや おやこ だからこそ\nぜんりょくで ぶつかるんだ\lそうだろ? {PLAYER}!$"
 
 PetalburgCity_Gym_Text_NormanRematchDefeat:
-	.string "{JPN}はは はは……\nぜんりょくを だしすぎた…… かな?"
-	.string "$"
+	.string "{JPN}はは はは……\nぜんりょくを だしすぎた…… かな?$"
 
 PetalburgCity_Gym_Text_NormanPostRematch:
-	.string "{JPN}パパ『{PLAYER}……\nおまえの ゆめは なんだ?\pわたしの ゆめは……\nははは……\lじつは もう かなったんだよ"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}……\nおまえの ゆめは なんだ?\pわたしの ゆめは……\nははは……\lじつは もう かなったんだよ$"
 
 PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
-	.string "{JPN}パパ『{PLAYER}……\nやはり あらわれたな……\pおまえに しょうぶを いどまれて\nこの わたしが ことわる はずがない\pわかっているな?\pジムの なかでは おたがいに\nおやこで あることなど かんけいない……\p……うん? なんだ {PLAYER}\nおまえは たたかえる ポケモンを\l1ひきしか もっていないのか\pわるいけれど 2ひき いじょうの\nポケモンを もって また きておくれ"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}パパ『{PLAYER}……\nやはり あらわれたな……\pおまえに しょうぶを いどまれて\nこの わたしが ことわる はずがない\pわかっているな?\pジムの なかでは おたがいに\nおやこで あることなど かんけいない……\p……うん? なんだ {PLAYER}\nおまえは たたかえる ポケモンを\l1ひきしか もっていないのか\pわるいけれど 2ひき いじょうの\nポケモンを もって また きておくれ$"

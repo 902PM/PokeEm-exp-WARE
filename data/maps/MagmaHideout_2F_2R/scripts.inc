@@ -22,57 +22,38 @@ MagmaHideout_2F_2R_EventScript_Grunt8::
 	end
 
 MagmaHideout_2F_2R_Text_Grunt15Intro:
-	.string "{JPN}あなたに うらみは ないけど\nこれも めいれい だからね!"
-	.string "$"
+	.string "{JPN}あなたに うらみは ないけど\nこれも めいれい だからね!$"
 
 MagmaHideout_2F_2R_Text_Grunt15Defeat:
 	.string "{JPN}わたしは まけたけど……$"
 
 MagmaHideout_2F_2R_Text_Grunt15PostBattle:
-	.string "{JPN}とんでもないものを ほりだした!\nあいいろのたまも てにいれた!\pあとは リーダーが……\nふふふ…… ふはははは!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}とんでもないものを ほりだした!\nあいいろのたまも てにいれた!\pあとは リーダーが……\nふふふ…… ふはははは!$"
 
 MagmaHideout_2F_2R_Text_Grunt6Intro:
-	.string "{JPN}オレって あつがり なんだよ\nもしかして アクアだんに はいったほうが\lよかったのかな?"
-	.string "$"
+	.string "{JPN}オレって あつがり なんだよ\nもしかして アクアだんに はいったほうが\lよかったのかな?$"
 
 MagmaHideout_2F_2R_Text_Grunt6Defeat:
-	.string "{JPN}やっぱり オレ\nマグマだんには むいてないかも……"
-	.string "$"
+	.string "{JPN}やっぱり オレ\nマグマだんには むいてないかも……$"
 
 MagmaHideout_2F_2R_Text_Grunt6PostBattle:
-	.string "{JPN}こんなところに いると\nうみが こいしく なったり しないか?"
-	.string "$"
+	.string "{JPN}こんなところに いると\nうみが こいしく なったり しないか?$"
 
 MagmaHideout_2F_2R_Text_Grunt7Intro:
-	.string "{JPN}ときどき じひびきが きこえるんだよ\pそれって かざんの しんどう かな?\nそれとも グラ……\pおっとっと なんでもないよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ときどき じひびきが きこえるんだよ\pそれって かざんの しんどう かな?\nそれとも グラ……\pおっとっと なんでもないよ!$"
 
 MagmaHideout_2F_2R_Text_Grunt7Defeat:
-	.string "{JPN}うーむ\nかざんのように あついな きみは!"
-	.string "$"
+	.string "{JPN}うーむ\nかざんのように あついな きみは!$"
 
 MagmaHideout_2F_2R_Text_Grunt7PostBattle:
-	.string "{JPN}オレは たまたま おまえに まけたが\nマグマだんの もくてきは\lまもなく たっせい されるのさ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オレは たまたま おまえに まけたが\nマグマだんの もくてきは\lまもなく たっせい されるのさ!$"
 
 MagmaHideout_2F_2R_Text_Grunt8Intro:
-	.string "{JPN}マグマのしるしを どこかに おとした\nって おおさわぎ してるやつが いたけど\p……あ! もしかして\nそれ ひろったの おまえ?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マグマのしるしを どこかに おとした\nって おおさわぎ してるやつが いたけど\p……あ! もしかして\nそれ ひろったの おまえ?$"
 
 MagmaHideout_2F_2R_Text_Grunt8Defeat:
 	.string "{JPN}うーん なんて やつだ……$"
 
 MagmaHideout_2F_2R_Text_Grunt8PostBattle:
-	.string "{JPN}なんか…… オレたちの けいかく\nしっぱい するような きが してきたよ"
-	.string "$"
+	.string "{JPN}なんか…… オレたちの けいかく\nしっぱい するような きが してきたよ$"
 

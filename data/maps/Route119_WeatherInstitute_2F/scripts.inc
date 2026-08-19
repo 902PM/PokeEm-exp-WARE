@@ -204,123 +204,69 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "{JPN}この けんきゅうじょで うみだされた\nポケモンは てんきと かんけいある って\lきいたから いただきに きたのさ!"
-	.string ""
-	.string "$"
+	.string "{JPN}この けんきゅうじょで うみだされた\nポケモンは てんきと かんけいある って\lきいたから いただきに きたのさ!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
 	.string "{JPN}こんな こどもに じゃま されるのか!?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
-	.string "{JPN}ここで うみだされた ポケモンが\nもし てんきを じゆうに あやつれるなら\lぜったい アクアだんに ひつよう だぜ!"
-	.string ""
-	.string "$"
+	.string "{JPN}ここで うみだされた ポケモンが\nもし てんきを じゆうに あやつれるなら\lぜったい アクアだんに ひつよう だぜ!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "{JPN}おれたち アクアだん!\nめずらしい ものが ある ところなら\lどこにでも あらわれる!"
-	.string ""
-	.string "$"
+	.string "{JPN}おれたち アクアだん!\nめずらしい ものが ある ところなら\lどこにでも あらわれる!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
 	.string "{JPN}こいつは まいった!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "{JPN}アクアだんの りそうを しらないくせに\nじゃま するんじゃ ないよ!"
-	.string ""
-	.string "$"
+	.string "{JPN}アクアだんの りそうを しらないくせに\nじゃま するんじゃ ないよ!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "{JPN}あなたも てんきに かんけいのある\nポケモンを さがしに きたの?\pだめよ!\nあたしたちが さきに いただくんだから!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}あなたも てんきに かんけいのある\nポケモンを さがしに きたの?\pだめよ!\nあたしたちが さきに いただくんだから!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
 	.string "{JPN}んもー ポケモンがー$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "{JPN}ふん いいさ!\pあたしたちが ほんとうに ほしいのは\nもっと ほかに…… イヒヒヒ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ふん いいさ!\pあたしたちが ほんとうに ほしいのは\nもっと ほかに…… イヒヒヒ$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
-	.string "{JPN}オーッホッホ!\pわれわれ アクアだんの\nじゃまを しようと いうの!?\pもう こわいものしらず といおうか\nただの おろかものと いおうか……\pかわいすぎて にくらしく なっちゃう!\nやっつけて あげるわね!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}オーッホッホ!\pわれわれ アクアだんの\nじゃまを しようと いうの!?\pもう こわいものしらず といおうか\nただの おろかものと いおうか……\pかわいすぎて にくらしく なっちゃう!\nやっつけて あげるわね!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
-	.string "{JPN}オーッホッホ!\nつよくて にくらしく なっちゃうわ!"
-	.string "$"
+	.string "{JPN}オーッホッホ!\nつよくて にくらしく なっちゃうわ!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "{JPN}マグマだん だけでも めざわり なのに\nあなた どうして わたしたちの まわりを\lチョロチョロ かぎまわって いるの!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マグマだん だけでも めざわり なのに\nあなた どうして わたしたちの まわりを\lチョロチョロ かぎまわって いるの!$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
-	.string "{JPN}たいへんです!\pたったいま マグマだんの れんちゅうが\nてんきけんきゅうじょを つうかして\lおくりびやま ほうめんに\lむかって いきました!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}たいへんです!\pたったいま マグマだんの れんちゅうが\nてんきけんきゅうじょを つうかして\lおくりびやま ほうめんに\lむかって いきました!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
-	.string "{JPN}なんですって!\pえーい こうしちゃ いられない\nわれわれも おくりびやまに いそぐわよ!\pオーッホッホ!\nマグマだんめ まってなさーい!"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}なんですって!\pえーい こうしちゃ いられない\nわれわれも おくりびやまに いそぐわよ!\pオーッホッホ!\nマグマだんめ まってなさーい!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-	.string "{JPN}ありがとうよ\nきみの おかげで たすかったよ\pおれいと いっては なんだが\nこの ポケモンを もらって おくれ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ありがとうよ\nきみの おかげで たすかったよ\pおれいと いっては なんだが\nこの ポケモンを もらって おくれ$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
-	.string "{JPN}あら? それいじょう\nポケモンを もてないようだよ"
-	.string "$"
+	.string "{JPN}あら? それいじょう\nポケモンを もてないようだよ$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 	.string "{JPN}{PLAYER}は\nポワルンを もらった!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "{JPN}そいつは そのときの てんきに よって\nすがたを かえる ポケモン なんだよ\pけんきゅうじょ には たくさん いるから\nえんりょせずに もらって おくれよ"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}そいつは そのときの てんきに よって\nすがたを かえる ポケモン なんだよ\pけんきゅうじょ には たくさん いるから\nえんりょせずに もらって おくれよ$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "{JPN}わたしも ながい あいだ\nあめの けんきゅうを してるが\lてんきを じゆうじざいに かえるだなんて\lにんげんには むりな はなし だよ"
-	.string ""
-	.string "$"
+	.string "{JPN}わたしも ながい あいだ\nあめの けんきゅうを してるが\lてんきを じゆうじざいに かえるだなんて\lにんげんには むりな はなし だよ$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
-	.string "{JPN}わたしは ホウエンちほうの てんきを\nかんそく しています\pげんざい {STR_VAR_1}で\nひでりが はっせい しています!\pということは\n{STR_VAR_1}の どこかに……?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしは ホウエンちほうの てんきを\nかんそく しています\pげんざい {STR_VAR_1}で\nひでりが はっせい しています!\pということは\n{STR_VAR_1}の どこかに……?$"
 
 Route119_WeatherInstitute_2F_Text_KyogreWeather:
-	.string "{JPN}わたしは ホウエンちほうの てんきを\nかんそく しています\pげんざい {STR_VAR_1}で\nはげしい おおあめが ふっています!\pということは\n{STR_VAR_1}の どこかに……?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}わたしは ホウエンちほうの てんきを\nかんそく しています\pげんざい {STR_VAR_1}で\nはげしい おおあめが ふっています!\pということは\n{STR_VAR_1}の どこかに……?$"
 
 Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
-	.string "{JPN}いじょう きしょうは\nもう かんそく されなく なりました\pたまに あめが ふっても\nそれは めぐみのあめと いえるでしょう! "
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いじょう きしょうは\nもう かんそく されなく なりました\pたまに あめが ふっても\nそれは めぐみのあめと いえるでしょう! $"
 

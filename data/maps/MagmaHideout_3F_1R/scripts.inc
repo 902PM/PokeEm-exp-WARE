@@ -12,32 +12,20 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "{JPN}なんで オレは こんなところの\nたんとう なんだよ!\pひだりのみみ が あつい じゃねーか!"
-	.string ""
-	.string "$"
+	.string "{JPN}なんで オレは こんなところの\nたんとう なんだよ!\pひだりのみみ が あつい じゃねーか!$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
 	.string "{JPN}あつくて ヘロヘロ……$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "{JPN}こんな マグマだらけの かざんの なかで\nフードを かぶってる オレたち へん?"
-	.string "$"
+	.string "{JPN}こんな マグマだらけの かざんの なかで\nフードを かぶってる オレたち へん?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "{JPN}アタシたちは リーダーが めざしている\nすばらしい もくてきを\lじつげん するために あつまったの!\pアクアだん だろうが\nとおりすがりの おこさま だろうが\lじゃまを するなら ゆるさないわ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アタシたちは リーダーが めざしている\nすばらしい もくてきを\lじつげん するために あつまったの!\pアクアだん だろうが\nとおりすがりの おこさま だろうが\lじゃまを するなら ゆるさないわ!$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "{JPN}ひえー あなどれない ひと!"
-	.string "$"
+	.string "{JPN}ひえー あなどれない ひと!$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "{JPN}いい? ただしいのは マグマだんよ!\nアクアだんの いうことなんか\lうそ ばっかりだから しんじちゃ ダメよ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}いい? ただしいのは マグマだんよ!\nアクアだんの いうことなんか\lうそ ばっかりだから しんじちゃ ダメよ!$"
 

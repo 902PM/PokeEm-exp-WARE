@@ -177,41 +177,16 @@ MauvilleCity_BikeShop_EventScript_ExitAcroHandbook::
 	end
 
 MauvilleCity_BikeShop_Text_RydelGreeting:
-	.string "{JPN}……おや? こりゃまた ずいぶん\nげんきそうな おきゃくさんが きたのう!\pわたしは ひとよんで ミスターカゼノ\nこの サイクルショップの オーナーさ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}……おや? こりゃまた ずいぶん\nげんきそうな おきゃくさんが きたのう!\pわたしは ひとよんで ミスターカゼノ\nこの サイクルショップの オーナーさ!$"
 
 MauvilleCity_BikeShop_Text_DidYouComeFromFarAway:
-	.string "{JPN}カゼノ『きみの ランニングシューズ\nものすごく よごれて いるけど\lどこか とおくから やってきたのかい?"
-	.string ""
-	.string "$"
+	.string "{JPN}カゼノ『きみの ランニングシューズ\nものすごく よごれて いるけど\lどこか とおくから やってきたのかい?$"
 
 MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
-	.string "{JPN}カゼノ『そうかい?\nじゃあ わたしの じてんしゃは\lひつよう なさそうだね"
-	.string ""
-	.string "$"
+	.string "{JPN}カゼノ『そうかい?\nじゃあ わたしの じてんしゃは\lひつよう なさそうだね$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
-	.string "{JPN}カゼノ『フムフム……\pなんと ミシロタウンから はるばると!?\nすごい とおく じゃないか?\pわたしの じてんしゃが あれば\nここちよい かぜを かんじながら\lらくに いろんな ところへ いけるのに!\pよーし!\nきみに じてんしゃを あげよう!\pいや ちょっと まて!\pじてんしゃ には 2しゅるいの\nタイプが あるのを わすれとった!\pそれはな……\nマッハじてんしゃと ダートじてんしゃだ!\pマッハじてんしゃは\nぜんしんで かぜを かんじたい ひとに!\pダートじてんしゃは\nテクニックを たのしみたい ひとに!\pおじさん しんせつ だから\nきみの すきな ほうを あげちゃうよ!\pさあ! どちらを えらぶ?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}カゼノ『フムフム……\pなんと ミシロタウンから はるばると!?\nすごい とおく じゃないか?\pわたしの じてんしゃが あれば\nここちよい かぜを かんじながら\lらくに いろんな ところへ いけるのに!\pよーし!\nきみに じてんしゃを あげよう!\pいや ちょっと まて!\pじてんしゃ には 2しゅるいの\nタイプが あるのを わすれとった!\pそれはな……\nマッハじてんしゃと ダートじてんしゃだ!\pマッハじてんしゃは\nぜんしんで かぜを かんじたい ひとに!\pダートじてんしゃは\nテクニックを たのしみたい ひとに!\pおじさん しんせつ だから\nきみの すきな ほうを あげちゃうよ!\pさあ! どちらを えらぶ?$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
 	.string "{JPN}{PLAYER}は\nマッハじてんしゃを えらんだ!$"
@@ -220,108 +195,49 @@ MauvilleCity_BikeShop_Text_ChoseAcroBike:
 	.string "{JPN}{PLAYER}は\nダートじてんしゃを えらんだ!$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "{JPN}カゼノ『もしも べつの タイプと\nこうかん したくなった ときには\lいつでも わたしに こえを かけてくれ!"
-	.string ""
-	.string "$"
+	.string "{JPN}カゼノ『もしも べつの タイプと\nこうかん したくなった ときには\lいつでも わたしに こえを かけてくれ!$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
-	.string "{JPN}カゼノ『おや? ちがう タイプの\nじてんしゃに のりかえたく なったのかな?"
-	.string "$"
+	.string "{JPN}カゼノ『おや? ちがう タイプの\nじてんしゃに のりかえたく なったのかな?$"
 
 MauvilleCity_BikeShop_Text_IllSwitchBikes:
-	.string "{JPN}カゼノ『じゃあ きみが いま もっている\nじてんしゃを こうかん してあげよう!"
-	.string "$"
+	.string "{JPN}カゼノ『じゃあ きみが いま もっている\nじてんしゃを こうかん してあげよう!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{JPN}{PLAYER}は マッハじてんしゃを\nダートじてんしゃに かえてもらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は マッハじてんしゃを\nダートじてんしゃに かえてもらった!$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
-	.string "{JPN}{PLAYER}は ダートじてんしゃを\nマッハじてんしゃに かえてもらった!"
-	.string "$"
+	.string "{JPN}{PLAYER}は ダートじてんしゃを\nマッハじてんしゃに かえてもらった!$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
-	.string "{JPN}カゼノ『そうか そうか!\nきにいってくれて うれしいぞ!"
-	.string "$"
+	.string "{JPN}カゼノ『そうか そうか!\nきにいってくれて うれしいぞ!$"
 
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
-	.string "{JPN}……おや?\nきみに あげた じてんしゃ どうした?\pそうか パソコンに あずけてあるのか\pパソコンから とりだして もってきたら\nこうかんして あげる からな!\pきみの ぼうけんに……\nおいかぜが ふくことを いのってるよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}……おや?\nきみに あげた じてんしゃ どうした?\pそうか パソコンに あずけてあるのか\pパソコンから とりだして もってきたら\nこうかんして あげる からな!\pきみの ぼうけんに……\nおいかぜが ふくことを いのってるよ!$"
 
 MauvilleCity_BikeShop_Text_HandbooksAreInBack:
-	.string "{JPN}ぼくは ここで はたらき ながら\nじてんしゃの べんきょうを してるんだ\pじてんしゃの のりかたで\nなにか わからないことが あったら\pおくのへやに かいせつしょが あるから\nそれを よんでみると いいよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぼくは ここで はたらき ながら\nじてんしゃの べんきょうを してるんだ\pじてんしゃの のりかたで\nなにか わからないことが あったら\pおくのへやに かいせつしょが あるから\nそれを よんでみると いいよ!$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
-	.string "{JPN}マッハじてんしゃの\nかいせつしょが おいてある!\pどの ページを よもうかな?"
-	.string ""
-	.string "$"
+	.string "{JPN}マッハじてんしゃの\nかいせつしょが おいてある!\pどの ページを よもうかな?$"
 
 MauvilleCity_BikeShop_Text_HowToRideMachBike:
-	.string "{JPN}じてんしゃに のって じゅうじボタンを\nおしたほうに じてんしゃは はしります!\pすこし はしっていく うちに\nスピードが あがっていく でしょう!\pとまりたいときは じゅうじボタンから\nてを はなせば スピードが おちて\lしぜんに とまって くれるはずです!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}じてんしゃに のって じゅうじボタンを\nおしたほうに じてんしゃは はしります!\pすこし はしっていく うちに\nスピードが あがっていく でしょう!\pとまりたいときは じゅうじボタンから\nてを はなせば スピードが おちて\lしぜんに とまって くれるはずです!\p……べつの ページを よみますか?$"
 
 MauvilleCity_BikeShop_Text_HowToTurnMachBike:
-	.string "{JPN}マッハじてんしゃは スピードが はやくて\nきゅうに とまることは できません\pだから かどを まがるときには\nちょっとした コツが ひつようです!\pまがりたい かどの すこし てまえで\nじゅうじボタンから てを はなして\lスピードを おとして まがりましょう!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}マッハじてんしゃは スピードが はやくて\nきゅうに とまることは できません\pだから かどを まがるときには\nちょっとした コツが ひつようです!\pまがりたい かどの すこし てまえで\nじゅうじボタンから てを はなして\lスピードを おとして まがりましょう!\p……べつの ページを よみますか?$"
 
 MauvilleCity_BikeShop_Text_SandySlopes:
-	.string "{JPN}ホウエンちほうには ところどころに\nちいさな すなのさかが あります!\pそこは すなが くずれやすい ために\nふつうは のぼることが できませんが\pマッハじてんしゃに のっていれば\nのぼることが できるのです!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ホウエンちほうには ところどころに\nちいさな すなのさかが あります!\pそこは すなが くずれやすい ために\nふつうは のぼることが できませんが\pマッハじてんしゃに のっていれば\nのぼることが できるのです!\p……べつの ページを よみますか?$"
 
 MauvilleCity_BikeShop_Text_AcroHandbookWhichPage:
-	.string "{JPN}ダートじてんしゃの\nかいせつしょが おいてある!\pどの ページを よもうかな?"
-	.string ""
-	.string "$"
+	.string "{JPN}ダートじてんしゃの\nかいせつしょが おいてある!\pどの ページを よもうかな?$"
 
 MauvilleCity_BikeShop_Text_Wheelies:
-	.string "{JPN}じてんしゃに のって Bボタンを おすと\nそのばで ぜんりんが もちあがります!\pそのままで じゅうじボタンを おせば\nぜんりんを あげた じょうたいで\lはしることが できるのです!\pそれが ウイリーという テクニック!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}じてんしゃに のって Bボタンを おすと\nそのばで ぜんりんが もちあがります!\pそのままで じゅうじボタンを おせば\nぜんりんを あげた じょうたいで\lはしることが できるのです!\pそれが ウイリーという テクニック!\p……べつの ページを よみますか?$"
 
 MauvilleCity_BikeShop_Text_BunnyHops:
-	.string "{JPN}Bボタンを おしたままに していると\nウイリーしながら そのばで ピョンピョン\lとびはねることが できます!\pそれが ダニエルという テクニック!\pダニエルのまま はしることも できます!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}Bボタンを おしたままに していると\nウイリーしながら そのばで ピョンピョン\lとびはねることが できます!\pそれが ダニエルという テクニック!\pダニエルのまま はしることも できます!\p……べつの ページを よみますか?$"
 
 MauvilleCity_BikeShop_Text_Jumps:
-	.string "{JPN}ダートじてんしゃに のっているとき\nじゅうじボタンと Bボタンを\lどうじに おすと ジャンプします!\pよこへ おせば よこに ジャンプ!\pうしろへ おせば ジャンプしながら\nほうこうを かえることが できます!\p……べつの ページを よみますか?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ダートじてんしゃに のっているとき\nじゅうじボタンと Bボタンを\lどうじに おすと ジャンプします!\pよこへ おせば よこに ジャンプ!\pうしろへ おせば ジャンプしながら\nほうこうを かえることが できます!\p……べつの ページを よみますか?$"

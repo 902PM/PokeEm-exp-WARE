@@ -269,157 +269,79 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3::
 	end
 
 SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
-	.string "{JPN}はい? クスノキは わたし だが……?\pおお! それは デボンの ツワブキさんに\nたのんで おいた パーツだね!\pいやー どうも ごくろうさま!\nおかげで しゅっぱつ できそうだ……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}はい? クスノキは わたし だが……?\pおお! それは デボンの ツワブキさんに\nたのんで おいた パーツだね!\pいやー どうも ごくろうさま!\nおかげで しゅっぱつ できそうだ……$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
-	.string "{JPN}へへへ その パーツ\nおれたちが いただくぜ!"
-	.string "$"
+	.string "{JPN}へへへ その パーツ\nおれたちが いただくぜ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 	.string "{JPN}クスノキ『だ だれだ きみたちは!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "{JPN}おれたち アクアだん!\pリーダーが そのパーツを ほしがってるんだ!\nなにも いわずに よこせ!"
-	.string ""
-	.string "$"
+	.string "{JPN}おれたち アクアだん!\pリーダーが そのパーツを ほしがってるんだ!\nなにも いわずに よこせ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
-	.string "{JPN}うわー!\nこどもに やられちまった!"
-	.string "$"
+	.string "{JPN}うわー!\nこどもに やられちまった!$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
-	.string "{JPN}やばい……\nリーダーに おこられちまうぞ……"
-	.string "$"
+	.string "{JPN}やばい……\nリーダーに おこられちまうぞ……$"
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
-	.string "{JPN}ふん! だらしない やつめ!\nここは おれに まかせてもらうぜ!"
-	.string "$"
+	.string "{JPN}ふん! だらしない やつめ!\nここは おれに まかせてもらうぜ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
-	.string "{JPN}なんだと!\nおれも まけてしまった!"
-	.string "$"
+	.string "{JPN}なんだと!\nおれも まけてしまった!$"
 
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
-	.string "{JPN}ど どうしよう……\nパーツを うばえないと まずくないか?\pうむ……\nまさか こどもに じゃま されるなんて\lこれっぽっちも おもってなかったぜ"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ど どうしよう……\nパーツを うばえないと まずくないか?\pうむ……\nまさか こどもに じゃま されるなんて\lこれっぽっちも おもってなかったぜ$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
-	.string "{JPN}パーツを うばうのに\nいつまで かかっているのかと おもえば\lこんな こどもに じゃま されていたのか?"
-	.string ""
-	.string "$"
+	.string "{JPN}パーツを うばうのに\nいつまで かかっているのかと おもえば\lこんな こどもに じゃま されていたのか?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "{JPN}れわれは\nうみを あいする アクアだん!\pそして おれは\nアクアだんの リーダー アオギリだ\pわれわれの じゃまをする おまえは……\nま まさか!\lマグマだんの なかま なのか!?\pいや それにしては\nみにつけている ふくが ちがうな\p…… …… ……\n…… …… ……\pポケモンも ひとも すべての いのちは\nうみから うまれた……\pだから アクアだんは\nうみを ふやそうと しているのだよ\pどうだい?\nとても すばらしい ことだろう?\pまあ いい……\nまだ わかい おまえに\lわれわれの りそうなど わかるまい……\pだが このさきも われわれの\nかつどうを じゃまする つもりなら\lただでは すまさない からな!\pそれだけは おぼえて おくのだ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}れわれは\nうみを あいする アクアだん!\pそして おれは\nアクアだんの リーダー アオギリだ\pわれわれの じゃまをする おまえは……\nま まさか!\lマグマだんの なかま なのか!?\pいや それにしては\nみにつけている ふくが ちがうな\p…… …… ……\n…… …… ……\pポケモンも ひとも すべての いのちは\nうみから うまれた……\pだから アクアだんは\nうみを ふやそうと しているのだよ\pどうだい?\nとても すばらしい ことだろう?\pまあ いい……\nまだ わかい おまえに\lわれわれの りそうなど わかるまい……\pだが このさきも われわれの\nかつどうを じゃまする つもりなら\lただでは すまさない からな!\pそれだけは おぼえて おくのだ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
-	.string "{JPN}クスノキ『きみは……\nそうか {PLAYER}{KUN} というのか……\pいやあ あぶない ところ だった!\nたすけてくれて ありがとうよ!\pおっと そうだった!\nデボンに たのんでおいた パーツを\lもってきて くれたの わすれていたよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『きみは……\nそうか {PLAYER}{KUN} というのか……\pいやあ あぶない ところ だった!\nたすけてくれて ありがとうよ!\pおっと そうだった!\nデボンに たのんでおいた パーツを\lもってきて くれたの わすれていたよ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
-	.string "{JPN}クスノキ『おっと!\nこうしちゃ いられない!\pそろそろ かいてい ちょうさに\nしゅっぱつ する じかんだ!\pわたしは これで しつれい するけど\nきみは ゆっくり かんないを\lけんぶつ していって くれたまえ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『おっと!\nこうしちゃ いられない!\pそろそろ かいてい ちょうさに\nしゅっぱつ する じかんだ!\pわたしは これで しつれい するけど\nきみは ゆっくり かんないを\lけんぶつ していって くれたまえ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip:
-	.string "{JPN}ふねの もけいを みておると\nムロの ちかくに ある\lすてられぶねを おもいだすのう……"
-	.string ""
-	.string "$"
+	.string "{JPN}ふねの もけいを みておると\nムロの ちかくに ある\lすてられぶねを おもいだすのう……$"
 
 SlateportCity_OceanicMuseum_2F_Text_DontRunInMuseum:
-	.string "{JPN}はくぶつかんの なかを\nはしり まわるんじゃ ありませんよッ!"
-	.string "$"
+	.string "{JPN}はくぶつかんの なかを\nはしり まわるんじゃ ありませんよッ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WantToRideSubmarine:
-	.string "{JPN}せんすいてい かっこいー!\nおれも のりてーよ!"
-	.string "$"
+	.string "{JPN}せんすいてい かっこいー!\nおれも のりてーよ!$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample1:
-	.string "{JPN}「すいしつ サンプル 1」\nと かかれた ラベルが はってある!\pうみは みんな つながって いるのに\nちいきに よって すこし ちがうらしい"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}「すいしつ サンプル 1」\nと かかれた ラベルが はってある!\pうみは みんな つながって いるのに\nちいきに よって すこし ちがうらしい$"
 
 SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample2:
-	.string "{JPN}「すいしつ サンプル 2」\nと かかれた ラベルが はってある!\pちいきが ちがえば うみの みずの\nしょっぱさも ちがったり するのかな?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}「すいしつ サンプル 2」\nと かかれた ラベルが はってある!\pちいきが ちがえば うみの みずの\nしょっぱさも ちがったり するのかな?$"
 
 SlateportCity_OceanicMuseum_2F_Text_PressureExperiment:
-	.string "{JPN}ゴムで できた ボールが\nふくらんだり しぼんだり している!\p「うみの そこには すいあつ といって\n みずじたいの おもさが かかります」\p「あさい ところでは すいあつも かるく\n ふかい ところでは なんまんトン もの\l すいあつが かかるのです」"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ゴムで できた ボールが\nふくらんだり しぼんだり している!\p「うみの そこには すいあつ といって\n みずじたいの おもさが かかります」\p「あさい ところでは すいあつも かるく\n ふかい ところでは なんまんトン もの\l すいあつが かかるのです」$"
 
 SlateportCity_OceanicMuseum_2F_Text_HoennModel:
-	.string "{JPN}「ホウエン ちほうの もけい」\pホウエンちほう ぜんたいの ミニチュアだ!\nミシロタウンは どのへん だろう?"
-	.string ""
-	.string "$"
+	.string "{JPN}「ホウエン ちほうの もけい」\pホウエンちほう ぜんたいの ミニチュアだ!\nミシロタウンは どのへん だろう?$"
 
 SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay:
-	.string "{JPN}かいすいの ながれに ついての てんじだ!\p「うみの そこに ちかい ところ では\n みずの おんどや えんぶんの ちがいで\l うみの みずが ながれて いきます」"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}かいすいの ながれに ついての てんじだ!\p「うみの そこに ちかい ところ では\n みずの おんどや えんぶんの ちがいで\l うみの みずが ながれて いきます」$"
 
 SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay:
-	.string "{JPN}かいすいの ながれに ついての てんじだ!\p「うみの ひょうめん あたり では\n かぜの ちからに よって\l うみの みずが ながれて いきます」"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}かいすいの ながれに ついての てんじだ!\p「うみの ひょうめん あたり では\n かぜの ちからに よって\l うみの みずが ながれて いきます」$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSTidalReplica:
-	.string "{JPN}「れんらくせん タイドリップごう」\pこれは げんざい クスノキ ぞうせんじょで\nつくられている ふねの もけい です!"
-	.string ""
-	.string "$"
+	.string "{JPN}「れんらくせん タイドリップごう」\pこれは げんざい クスノキ ぞうせんじょで\nつくられている ふねの もけい です!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SubmarineReplica:
-	.string "{JPN}「せんすいてい かいえん 1ごう」\pうみの そこを ちょうさ するための\nこうせいのう せんすいていの もけい です!"
-	.string ""
-	.string "$"
+	.string "{JPN}「せんすいてい かいえん 1ごう」\pうみの そこを ちょうさ するための\nこうせいのう せんすいていの もけい です!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SumbersibleReplica:
-	.string "{JPN}「せんすい ポッド」\pかいていで さぎょうを するための\nむじん こがたポッドの もけい です!"
-	.string ""
-	.string "$"
+	.string "{JPN}「せんすい ポッド」\pかいていで さぎょうを するための\nむじん こがたポッドの もけい です!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
-	.string "{JPN}「サント・アンヌ ごう」\pせかいを いっしゅう している\nごうか きゃくせんの もけい です!"
-	.string ""
-	.string "$"
+	.string "{JPN}「サント・アンヌ ごう」\pせかいを いっしゅう している\nごうか きゃくせんの もけい です!$"

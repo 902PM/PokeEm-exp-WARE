@@ -381,26 +381,16 @@ SlateportCity_Harbor_EventScript_TradedScanner::
 	end
 
 SlateportCity_Harbor_Text_FerryServiceUnavailable:
-	.string "{JPN}えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……"
-	.string ""
-	.string "$"
+	.string "{JPN}えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
-	.string "{JPN}れんらくせんを ごりよう ですね!\nチケットは おもち でしょうか?"
-	.string "$"
+	.string "{JPN}れんらくせんを ごりよう ですね!\nチケットは おもち でしょうか?$"
 
 SlateportCity_Harbor_Text_YouMustHaveTicket:
-	.string "{JPN}{PLAYER}は\nチケットを もっていない!\p……もうしわけ ありません!\pふねに のれるのは\nチケットの ある かた だけです"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}{PLAYER}は\nチケットを もっていない!\p……もうしわけ ありません!\pふねに のれるのは\nチケットの ある かた だけです$"
 
 SlateportCity_Harbor_Text_FlashedTicketWhereTo:
-	.string "{JPN}{PLAYER}は\nふねのチケットを みせた!\pはい! けっこう です!\pいきさきは どちら でしょう?"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}{PLAYER}は\nふねのチケットを みせた!\pはい! けっこう です!\pいきさきは どちら でしょう?$"
 
 SlateportCity_Harbor_Text_SailAnotherTime:
 	.string "{JPN}また ごりよう ください!$"
@@ -418,104 +408,40 @@ SlateportCity_Harbor_Text_WhereWouldYouLikeToGo:
 	.string "{JPN}いきさきは どちら でしょう?$"
 
 SlateportCity_Harbor_Text_LoveToGoDeepUnderwaterSomeday:
-	.string "{JPN}うみの そこ かあ……\nいったい どんなふう なのかな?\pおれも いつか もぐってみたいぜ!"
-	.string ""
-	.string "$"
+	.string "{JPN}うみの そこ かあ……\nいったい どんなふう なのかな?\pおれも いつか もぐってみたいぜ!$"
 
 SlateportCity_Harbor_Text_AbnormalWeather:
-	.string "{JPN}ふねを あんぜんに すすめる ためには\nてんきを りかいする ひつようが ある!\pそういえば てんきけんきゅうじょの\nひとが いってたけど\pさいきん かくちで いじょうきしょうが\nかんそく されている らしいな!\pきみも けんきゅうじょに いって\nはなしを きいてみると いいぞ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ふねを あんぜんに すすめる ためには\nてんきを りかいする ひつようが ある!\pそういえば てんきけんきゅうじょの\nひとが いってたけど\pさいきん かくちで いじょうきしょうが\nかんそく されている らしいな!\pきみも けんきゅうじょに いって\nはなしを きいてみると いいぞ!$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-	.string "{JPN}ぼくも クスノキ かんちょうと いっしょに\nかいてい ちょうさに いきたかった!\pでも せんすいていの なかは せまいから\nぼくが のったら かんちょうが\lのれなく なっちゃうんだよね……"
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}ぼくも クスノキ かんちょうと いっしょに\nかいてい ちょうさに いきたかった!\pでも せんすいていの なかは せまいから\nぼくが のったら かんちょうが\lのれなく なっちゃうんだよね……$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
-	.string "{JPN}クスノキ『あいつらは……\pいぜん はくぶつかんで\nデボンのにもつを うばおうと していた……"
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『あいつらは……\pいぜん はくぶつかんで\nデボンのにもつを うばおうと していた……$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "{JPN}アオギリ『おや? また きみか……\pわざわざ ここまで おいかけて くるとは\nごくろうな ことだな……\pだが もう だれにも\nわれわれを とめられない\pとめられると おもうなら\nミナモの アジトまで くるかね?\lフフフ……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}アオギリ『おや? また きみか……\pわざわざ ここまで おいかけて くるとは\nごくろうな ことだな……\pだが もう だれにも\nわれわれを とめられない\pとめられると おもうなら\nミナモの アジトまで くるかね?\lフフフ……$"
 
 SlateportCity_Harbor_Text_CaptSternWhyStealMySubmarine:
-	.string "{JPN}クスノキ『なぜ……\pアクアだんの れんちゅうが\nわたしの せんすいてい\l「かいえん 1ごう」を うばうのだろう?\pまさか かれらも\nかいていに ねむる ポケモンを……\pだが わたしが おいかけても\nあんな れんちゅうに かてる わけない……"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『なぜ……\pアクアだんの れんちゅうが\nわたしの せんすいてい\l「かいえん 1ごう」を うばうのだろう?\pまさか かれらも\nかいていに ねむる ポケモンを……\pだが わたしが おいかけても\nあんな れんちゅうに かてる わけない……$"
 
 SlateportCity_Harbor_Text_TeamAquaLeftNeedDive:
-	.string "{JPN}クスノキ『ああ {PLAYER}{KUN}……\pそうか…… アクアだんは\nしゅっぱつ して しまったか……\pいや きにしなくて いいよ\nきみの せきにん では ないからね\pせんすいていを おいかけるのは\nふつうの ひとには むりな はなし だよ\pポケモンに ダイビング といって\nうみに もぐれる わざを おしえないと……\pトクサネに いけば\nダイビングを する ひとが おおいから\lおしえて もらえるかも しれないけどね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『ああ {PLAYER}{KUN}……\pそうか…… アクアだんは\nしゅっぱつ して しまったか……\pいや きにしなくて いいよ\nきみの せきにん では ないからね\pせんすいていを おいかけるのは\nふつうの ひとには むりな はなし だよ\pポケモンに ダイビング といって\nうみに もぐれる わざを おしえないと……\pトクサネに いけば\nダイビングを する ひとが おおいから\lおしえて もらえるかも しれないけどね$"
 
 SlateportCity_Harbor_Text_NeedDiveToCatchSub:
-	.string "{JPN}クスノキ『せんすいていを おいかけるのは\nふつうの ひとには むりな はなし だよ\pポケモンに ダイビング といって\nうみに もぐれる わざを おしえないと……\pトクサネに いけば\nダイビングを する ひとが おおいから\lおしえて もらえるかも しれないけどね"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『せんすいていを おいかけるのは\nふつうの ひとには むりな はなし だよ\pポケモンに ダイビング といって\nうみに もぐれる わざを おしえないと……\pトクサネに いけば\nダイビングを する ひとが おおいから\lおしえて もらえるかも しれないけどね$"
 
 SlateportCity_Harbor_Text_WontBeLongBeforeWeFinishFerry:
-	.string "{JPN}クスノキ『そうだ! ハギろうじんが\nぞうせんじょに きてくれたんだ!\pよーし! これで れんらくせんが\nかんせい するのも もうすぐ だぞ!"
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『そうだ! ハギろうじんが\nぞうせんじょに きてくれたんだ!\pよーし! これで れんらくせんが\nかんせい するのも もうすぐ だぞ!$"
 
 SlateportCity_Harbor_Text_FinishedMakingFerry:
-	.string "{JPN}クスノキ『{PLAYER}{KUN}!\pれんらくせん タイドリップごうが\nついに かんせい したんだ!\pきみの しりあいの ハギろうじんが\nてつだって くれたからだよ\pぜひ のってみてよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『{PLAYER}{KUN}!\pれんらくせん タイドリップごうが\nついに かんせい したんだ!\pきみの しりあいの ハギろうじんが\nてつだって くれたからだよ\pぜひ のってみてよ!$"
 
 SlateportCity_Harbor_Text_WouldYouTradeScanner:
-	.string "{JPN}クスノキ『おや?\n{PLAYER}{KUN}が もってる それは……\pたんちき だね!\nそれがあると ちょうさが はかどりそうだ\p{PLAYER}{KUN}! ぼくの もってる\nしんかいのキバか しんかいのウロコと\lたんちきを こうかん してくれないかな?"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『おや?\n{PLAYER}{KUN}が もってる それは……\pたんちき だね!\nそれがあると ちょうさが はかどりそうだ\p{PLAYER}{KUN}! ぼくの もってる\nしんかいのキバか しんかいのウロコと\lたんちきを こうかん してくれないかな?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
-	.string "{JPN}クスノキ『そうかい?\n{PLAYER}{KUN}が もっていても\lつかいみちが ないと おもうけどな……\pまあ いいや\nたんちきを こうかん したくなったら\lまた はなしかけてよ!"
-	.string ""
-	.string ""
-	.string ""
-	.string ""
-	.string "$"
+	.string "{JPN}クスノキ『そうかい?\n{PLAYER}{KUN}が もっていても\lつかいみちが ないと おもうけどな……\pまあ いいや\nたんちきを こうかん したくなったら\lまた はなしかけてよ!$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
 	.string "{JPN}クスノキ『しんかいのキバが いいんだね?$"
@@ -527,9 +453,7 @@ SlateportCity_Harbor_Text_WhichOneDoYouWant:
 	.string "{JPN}クスノキ『どっちに するんだい?$"
 
 SlateportCity_Harbor_Text_HandedScannerToStern:
-	.string "{JPN}{PLAYER}は クスノキかんちょうに\nたんちきを わたした!"
-	.string "$"
+	.string "{JPN}{PLAYER}は クスノキかんちょうに\nたんちきを わたした!$"
 
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
-	.string "{JPN}クスノキ『{PLAYER}{KUN} ありがとう!\nこれで けんきゅうが はかどるよ"
-	.string "$"
+	.string "{JPN}クスノキ『{PLAYER}{KUN} ありがとう!\nこれで けんきゅうが はかどるよ$"
