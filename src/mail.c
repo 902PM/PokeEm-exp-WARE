@@ -86,7 +86,7 @@ static void CB2_WaitForPaletteExitOnKeyPress(void);
 static void CB2_ExitOnKeyPress(void);
 static void CB2_ExitMailReadFreeVars(void);
 
-static const u8 sText_FromSpace[] = _("From ");
+static const u8 sText_FromSpace[] = _(" より");
 
 static const struct BgTemplate sBgTemplates[] = {
     {
@@ -653,7 +653,8 @@ static void BufferMailText(void)
     }
 
     // Buffer the signature
-    ptr = StringCopy(sMailRead->playerName, sMailRead->mail->playerName);
+    ptr = StringCopy(sMailRead->playerName, COMPOUND_STRING("{JPN}"));
+    StringAppend(ptr, sMailRead->mail->playerName);
     if (!sMailRead->international)
     {
         // Never reached

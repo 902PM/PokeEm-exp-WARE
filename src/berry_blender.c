@@ -258,12 +258,12 @@ static const u8 sText_WasMade[] = _("{JPN} ができた！");
 
 static const u8 *const sBlenderOpponentsNames[] =
 {
-    [BLENDER_MISTER] = COMPOUND_STRING(" おじさん"),
-    [BLENDER_LADDIE] = COMPOUND_STRING(" おとこのこ"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("おんなのこ"),
-    [BLENDER_MASTER] = COMPOUND_STRING("めいじん"),
-    [BLENDER_DUDE]   = COMPOUND_STRING(" おにいさん"),
-    [BLENDER_MISS]   = COMPOUND_STRING("おばさん"),
+    [BLENDER_MISTER] = COMPOUND_STRING("{JPN}おじさん"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("{JPN} おとこのこ"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("{JPN}おんなのこ"),
+    [BLENDER_MASTER] = COMPOUND_STRING("{JPN}めいじん"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("{JPN} おにいさん"),
+    [BLENDER_MISS]   = COMPOUND_STRING("{JPN}おばさん"),
 };
 
 static const u8 sText_CommunicationStandby[] = _("{JPN}つうしんたいきちゅうです");
@@ -275,8 +275,8 @@ static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("{JPN}は ポロッ�
 static const u8 sText_BlendingResults[] = _("{JPN}まぜたけっか");
 static const u8 sText_SpaceBerry[] = _("のみ");
 static const u8 sText_Time[] = _("じかん:");
-static const u8 sText_Min[] = _("ふん");
-static const u8 sText_Sec[] = _("びょう");
+static const u8 sText_Min[] = _("{JPN}ふん");
+static const u8 sText_Sec[] = _("{JPN}びょう");
 static const u8 sText_MaximumSpeed[] = _("さいこうそくど");
 static const u8 sText_RPM[] = _("{JPN}rpm");
 static const u8 sText_Dot[] = _(".");
@@ -1220,7 +1220,8 @@ static void InitLocalPlayers(u8 opponentsNum)
     case 1:
         gInGameOpponentsNo = 1;
         sBerryBlender->numPlayers = 2;
-        StringCopy(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
+    StringCopy(gLinkPlayers[0].name, COMPOUND_STRING("{JPN}"));
+    StringAppend(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
 
         if (!FlagGet(FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER))
             StringCopy(gLinkPlayers[1].name, sBlenderOpponentsNames[BLENDER_MASTER]);

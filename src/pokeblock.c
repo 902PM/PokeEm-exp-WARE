@@ -131,7 +131,7 @@ static void CreateTossPokeblockYesNoMenu(u8);
 static void TossPokeblock(u8);
 
 static const u8 sText_StowCase[] = _("{JPN}ケースをしまう");
-static const u8 sText_LvVar1[] = _("{JPN}{LV}{STR_VAR_1}");
+static const u8 sText_LvVar1[] = _("{ENG}{LV}{STR_VAR_1}");
 static const u8 sText_ThrowAwayVar1[] = _("{JPN}{STR_VAR_1}を\nすてても よろしいですか?");
 static const u8 sText_Var1ThrownAway[] = _("{JPN}{STR_VAR_1}を\nすてました");
 
