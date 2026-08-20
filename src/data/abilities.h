@@ -2458,7 +2458,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FIRE_MANE] =
     {
         .name = _("ほのおのたてがみ"),
-        .description = COMPOUND_STRING("ほのおわざが つよくなる"),
+        .description = COMPOUND_STRING("{JPN}ほのおわざが つよくなる"),
     },
 
     [ABILITY_317] =

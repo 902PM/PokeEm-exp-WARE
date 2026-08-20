@@ -570,7 +570,7 @@
     },
     {
       "id": "MAPSEC_MIRAGE_ISLAND",
-      "name": "{JPN}MIRAGE ISLAND",
+      "name": "{JPN}マボロシじま",
       "x": 17,
       "y": 10,
       "width": 1,
@@ -602,7 +602,7 @@
     },
     {
       "id": "MAPSEC_FIERY_PATH2",
-      "name": "{JPN}FIERY PATH",
+      "name": "{JPN}ほのおのぬけみち",
       "x": 7,
       "y": 3,
       "width": 1,
@@ -618,7 +618,7 @@
     },
     {
       "id": "MAPSEC_JAGGED_PASS2",
-      "name": "{JPN}JAGGED PASS",
+      "name": "{JPN}デコボコさんどう",
       "x": 7,
       "y": 2,
       "width": 1,
