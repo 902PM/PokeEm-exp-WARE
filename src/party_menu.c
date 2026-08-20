@@ -505,11 +505,11 @@ static void Task_FirstBattleEnterParty_WaitFadeNormal(u8 taskId);
 static u8 CombinedToIndividualPartyId(u8 index);
 static u8 IndividualToCombinedPartyId(u8 index, enum BattlerId battler);
 
-static const u8 sText_askText[] = _("{STR_VAR_1}の とくせいを\n{STR_VAR_2}に かえますか？");
-static const u8 sText_doneText[] = _("{STR_VAR_1}の とくせいは\n{STR_VAR_2}に なった！{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BasePointsResetToZero[] = _("{STR_VAR_1}の きそポイントが\nすべて 0に なった！{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CannotSendMonToBoxHM[] = _("ひでんわざを おぼえているので\nボックスへ おくれません。{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CannotSendMonToBoxPartner[] = _("あなたの ポケモンでは ないので\nボックスへ おくれません。{PAUSE_UNTIL_PRESS}");
+static const u8 sText_askText[] = _("{JPN}{STR_VAR_1}の とくせいを\n{STR_VAR_2}に かえますか?");
+static const u8 sText_doneText[] = _("{JPN}{STR_VAR_1}の とくせいが\n{STR_VAR_2}に へんかした！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BasePointsResetToZero[] = _("{JPN}{STR_VAR_1}の きそポイントが\nまっさらに なった!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CannotSendMonToBoxHM[] = _("{JPN}ひでんわざを おぼえているので\nボックスへ おくることが できません!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CannotSendMonToBoxPartner[] = _("{JPN}じぶんの ポケモンでは ないので\nボックスへ おくることが できません!{PAUSE_UNTIL_PRESS}");
 
 // static const data
 #include "data/party_menu.h"
@@ -5139,8 +5139,8 @@ void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
 
 void Task_Mint(u8 taskId)
 {
-    static const u8 sText_askText[] = _("{STR_VAR_1}の のうりょくに\nえいきょうするかも。つかいますか？");
-    static const u8 sText_doneText[] = _("{STR_VAR_2}の こうかで\n{STR_VAR_1}の のうりょくが かわったかも！{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_askText[] = _("{JPN}{STR_VAR_1}の のうりょくを\nへんかさせますか?");
+    static const u8 sText_doneText[] = _("{JPN}{STR_VAR_2}の こうかで\n{STR_VAR_1}の のうりょくに へんかが おきたようだ!{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
 
     switch (tState)
@@ -6092,7 +6092,7 @@ static void BufferMonStatsToTaskData(struct Pokemon *mon, s16 *data)
 
 void Task_DynamaxCandy(u8 taskId)
 {
-    static const u8 sText_doneText[] = _("{STR_VAR_1}の ダイマックスレベルが\n1 あがった！{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_doneText[] = _("{JPN}{STR_VAR_1}の ダイマックスレベルが\n1 あがった！{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
 
     switch (tState)

@@ -650,11 +650,11 @@ static void SpriteCB_ReelTimeDuck(struct Sprite *);
 static void SpriteCB_ReelTimeSmoke(struct Sprite *);
 static void SpriteCB_PikaPowerBolt(struct Sprite *);
 
-static const u8 sText_QuitTheGame[] = _("ゲームを やめますか？");
-static const u8 sText_YouveGot9999Coins[] = _("コインが 9,999まい あります。");
-static const u8 sText_YouveRunOutOfCoins[] = _("コインが なくなりました。\nゲームオーバー！");
-static const u8 sText_YouDontHaveThreeCoins[] = _("コインが 3まい ありません。");
-static const u8 sText_ReelTimeHelp[] = _("リールタイム\nマークを ねらって\nとめる チャンス！\nあたえられた かいすうだけ\nリールタイムは つづきます。\nビッグボーナスで おわります。");
+static const u8 sText_QuitTheGame[] = _("{JPN}ゲームを やめますか？");
+static const u8 sText_YouveGot9999Coins[] = _("{JPN}コインが 9999まい\nたまって います");
+static const u8 sText_YouveRunOutOfCoins[] = _("{JPN}コインが ありません\nゲームを しゅうりょうします");
+static const u8 sText_YouDontHaveThreeCoins[] = _("{JPN}コインが 3まい ありません!");
+static const u8 sText_ReelTimeHelp[] = _("{ENG}BD{JPN}タイム\nじっくり ねらえば どんな マークも\nとめられる チャンスゲームだ!\nちゅうせん された かいすうだけ\n{ENG}BD{JPN}タイムが つづくぞ!\nビッグボーナスがでると しゅうりょう");
 
 // Ewram variables
 static EWRAM_DATA u16 *sMenuGfx = NULL;
