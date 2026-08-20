@@ -462,7 +462,7 @@ static const u8 *const sCantTradeMonTexts[] = {
 
 ALIGNED(4) static const u8 sText_TradeOfferRejected[] = _("{JPN}こうかんを\nことわられ ました\p");
 ALIGNED(4) static const u8 sText_EggTrade[] = _("{JPN}   タマゴのこうかん");
-ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("{JPN}   {DPAD_UPDOWN}えらぶ：{A_BUTTON}さんかする：{B_BUTTON}やめる");
+ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("{JPN}   {DPAD_UPDOWN}えらぶ:{A_BUTTON}さんかする:{B_BUTTON}やめる");
 ALIGNED(4) static const u8 sText_ChooseTrainer[] = _("{JPN}ともだちを えらんでください");
 ALIGNED(4) static const u8 sText_ChooseTrainerSingleBattle[] = _("{JPN} シングルバトルをする ともだちを\nえらんでください");
 ALIGNED(4) static const u8 sText_ChooseTrainerDoubleBattle[] = _("{JPN}  ダブルバトルをする ともだちを\nえらんでください");
@@ -565,7 +565,7 @@ static const u8 *const sCardColorTexts[] = {
     sText_ItsGoldCard
 };
 
-ALIGNED(4) static const u8 sText_TrainerCardInfoPage1[] = _("{JPN}{DYNAMIC 0} の {DYNAMIC 1}の\nトレーナーカードを みせてもらった\l{DYNAMIC 2}\pポケモンずかん {DYNAMIC 3}\nプレイ じかん {DYNAMIC 4}：{DYNAMIC 5}\p");
+ALIGNED(4) static const u8 sText_TrainerCardInfoPage1[] = _("{JPN}{DYNAMIC 0} の {DYNAMIC 1}の\nトレーナーカードを みせてもらった\l{DYNAMIC 2}\pポケモンずかん {DYNAMIC 3}\nプレイ じかん {DYNAMIC 4}:{DYNAMIC 5}\p");
 ALIGNED(4) static const u8 sText_TrainerCardInfoPage2[] = _("{JPN} たいせん かち{DYNAMIC 0}まけ{DYNAMIC 2}\nこうかん {DYNAMIC 3}かい\p「{DYNAMIC 4} {DYNAMIC 5}\n {DYNAMIC 6} {DYNAMIC 7}\p");
 ALIGNED(4) static const u8 sText_GladToMeetYouMale[] = _("{JPN}{DYNAMIC 1}「これからも よろしく!{PAUSE 60}");
 ALIGNED(4) static const u8 sText_GladToMeetYouFemale[] = _("{JPN}{DYNAMIC 1}「これからも よろしくね!{PAUSE 60}");
