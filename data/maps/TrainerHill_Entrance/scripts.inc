@@ -121,7 +121,6 @@ TrainerHill_Entrance_EventScript_AttendantEnd::
 TrainerHill_Entrance_EventScript_EntryTrigger::
 	lockall
 	applymovement LOCALID_PLAYER, TrainerHill_Entrance_Movement_PlayerFaceAttendant
-	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_Closed
 	msgbox TrainerHill_Entrance_Text_WelcomeToTrainerHill, MSGBOX_DEFAULT
 	trainerhill_getsaved
 	call_if_eq VAR_RESULT, FALSE, TrainerHill_Entrance_EventScript_SaveGame
@@ -221,7 +220,6 @@ TrainerHill_Entrance_EventScript_Records::
 	end
 
 TrainerHill_Entrance_EventScript_Man::
-	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_ManTrainerHillClosed
 	msgbox TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead, MSGBOX_NPC
 	end
 
@@ -230,7 +228,6 @@ TrainerHill_Entrance_EventScript_ManTrainerHillClosed::
 	end
 
 TrainerHill_Entrance_EventScript_Girl::
-	goto_if_unset FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_GirlTrainerHillClosed
 	msgbox TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop, MSGBOX_NPC
 	end
 
@@ -255,13 +252,13 @@ TrainerHill_Entrance_Pokemart_Basic:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_WISE_GLASSES
 	pokemartlistend
 
 TrainerHill_Entrance_EventScript_ExpandedPokemart::
@@ -277,13 +274,13 @@ TrainerHill_Entrance_Pokemart_Expanded:
 	.2byte ITEM_FULL_RESTORE
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_REVIVE
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_LINKING_CORD
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_WISE_GLASSES
 	pokemartlistend
 
 TrainerHill_Entrance_Text_StillGettingReady:
@@ -362,12 +359,14 @@ TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
 	.string "{JPN}どんな くみあわせの トレーナーが\nまっているのか!\pどんな やつがきても\nおれが たおしてみせるぜ!$"
 
 TrainerHill_Entrance_Text_CantWaitToTestTheWaters:
-	.string "{JPN}あそこに タイムボードが\nあるでしょ?\pわたしは ともだちと どっちがはやく\nいちばん うえまで いけるか\lタイムを きそってるのよ!$"
+	.string "I heard tough TRAINERS come to this\n"
+	.string "TRAINER HILL from all over.\p"
+	.string "I can't wait to test the waters!\p"
+	.string "I'll knock aside anyone that stands\n"
+	.string "in my way!$"
 
 TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop:
-	.string "Do you see the Time Board over there?\p"
-	.string "My friends and I are trying to see who\n"
-	.string "can reach the top in the least time.$"
+	.string "{JPN}あそこに タイムボードが\nあるでしょ?\pわたしは ともだちと どっちがはやく\nいちばん うえまで いけるか\lタイムを きそってるのよ!$"
 
 TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen:
 	.string "Do you know when they're opening\n"
