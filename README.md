@@ -15,7 +15,7 @@ EXPの内容<br>
 →ただし、テラスタルとか期待通りの動きするとは限らない。ダイマも終わったら引っ込めがち。<br>
 １１．フロンティアの景品や教え技を実用的にし、↑と戦えるポケモンが育成できるように調整。<br>
 １２．クリア後のトレーナーが少なくて、経験値稼ぎがリーグぐらいな問題をXLアメを各所の景品にすることで解決。<br>
-１３．１０に合わせて、ストーリー中にけいけんおまもりとひかるおまもりが手に入るように調整。<br>
+１３．１２に合わせて、ストーリー中にけいけんおまもりとひかるおまもりが手に入るように調整。<br>
 <br>
 # 現状抱えているバグ(フォーク元からのものも含む)
 
@@ -36,9 +36,21 @@ EXPの内容<br>
 
 - (バグではないが)AIが先制技大好きすぎて、先制技入れたポケモンとの戦闘がつまんない（敵が自分の攻撃で確1でやられない場面なのに、先制技打って微ダメだけ与えてくる。）
 
-# About `pokeemerald-expansion`
+# 考え中
 
-![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
+- ダイマックスのバランスがイかれてる。HPが増えて、耐えられて、殴られて、やられる。メガシンカじゃ、倒しきれない。
+
+- ミントとか、とくせいパッチ、つながりのヒモとかいう現代の便利アイテムの配置
+
+- 日本版のフォントが恋しい。特に戦闘画面。
+
+- ひみつきちのPCでグッズ置くウインドウがバグって『いあ0うう0』とかいうホラーみたいな文字で埋め尽くされてしまった。
+
+- かんたんかいわのソートがアルファベット順（これに関しては入力画面のアレをまるごと切り替える必要あり）
+
+- 『ふしぎなもらいもの』と『ふしぎなできごと』がeリーダー+が発売されていないせいで、ごっそり消えている。
+
+# About `pokeemerald-expansion`
 
 <!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
 
