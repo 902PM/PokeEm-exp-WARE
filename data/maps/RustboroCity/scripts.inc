@@ -1064,10 +1064,10 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
 	.string "{JPN}さっきの あやしい やつは\nむこうの トンネルの ほうに\lにげていったと おもうのですよ$"
 
 RustboroCity_Text_YouGotItThankYou:
-	.string "{JPN}ああ! どうでした\nデボンのにもつ は……?\pそうですか!\nとりかえして くれたのですか!\pきみは ほんとうに\nすごい トレーナー ですね!\p……そうだ! おれいに また\nスーパーボールを あげちゃおう!$"
+	.string "{JPN}ああ! どうでした\nデボンのにもつ は……?\pそうですか!\nとりかえして くれたのですか!\pきみは ほんとうに\nすごい トレーナー ですね!\p……そうだ! おれいに\nこれを あげちゃおう!$"
 
 RustboroCity_Text_YoureLoadedWithItems:
-	.string "{JPN}どうぐ いっぱいで\nスーパーボール あげられないね$"
+	.string "{JPN}どうぐ いっぱいで\nあげられないね$"
 
 RustboroCity_Text_PleaseComeWithMe:
 	.string "{JPN}きみ! きみ!\nわたしに ついてきて ください!$"
