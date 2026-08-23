@@ -5146,9 +5146,7 @@ bool32 ShouldUseZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
             switch (zEffect)
             {
             case Z_EFFECT_NONE:
-                if (GetMovePower(chosenMove) == 0)
-                    return FALSE;
-                break;
+                return FALSE;
             case Z_EFFECT_RESET_STATS:
                 if (CountNegativeStatStages(battlerAtk) > 1)
                     return TRUE;
