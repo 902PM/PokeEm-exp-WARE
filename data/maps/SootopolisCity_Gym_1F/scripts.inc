@@ -184,10 +184,10 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "{JPN}ユーは しっていますか?\pミクリに ポケモンを おしえたのは\nなにをかくそう このアダン……\lすなわち わたくし だということを\pいちどは ジムリーダーから みをひき\nこのジムも かれに まかせて いましたが\lちょっとした リーズン……\lすなわち りゆうが できましてね\lもういちど カムバック したのです\p……おっと\nおしゃべりは これくらいにして\lそろそろ しょうぶを はじめましょう\pさあ ぞんぶんに ごらんなさい\nわたしと ポケモンが おりなす\lみずの イリュージョンを!$"
 
-@ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
-@ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
-@ after, as well as the otherwise unused array after that. One wonders if that's the reason for
-@ the existence of that unused array of ints.
+@ 注：この勝利時のテキストは、実際にはバッファオーバーフローを引き起こします。
+@ 格納先のバッファ `gDisplayedStringBattle` に対して約50バイト長すぎて、その直後にある `gBattleTextBuffs` や、
+@ さらにその後に続く（本来は未使用の）配列の領域を上書きしてしまっているのです。
+@ その未使用の整数型配列(unused array of ints)が存在するのは、もしかするとこのためなのかもしれません。
 SootopolisCity_Gym_1F_Text_JuanDefeat:
 	.string "{JPN}たははは! ユー アー ウィナー!\nすなわち わたくしの まけです\pユーには だれにも まけない\nさいのうの きらめきが かんじられます!\pしかし わたくしや ミクリに くらべると\nちょっと はなやかさが たりませんな!\pわたしの ふくでも\nかして あげましょうか?\p…… …… ……\n…… …… ……\pはっはっは ジョークですよ!\nユーには ふくの かわりに\lこの レインバッジを さしあげましょう!$"
 

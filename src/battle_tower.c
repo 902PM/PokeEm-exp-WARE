@@ -67,6 +67,9 @@ static void ValidateApprenticesChecksums(void);
 static void SetNextBattleTentOpponent(void);
 static void ClearBattleTowerRecord(struct EmeraldBattleTowerRecord *record);
 static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount);
+#if FREE_BATTLE_TOWER_E_READER == FALSE
+static void SetEReaderTrainerChecksum(struct BattleTowerEReaderTrainer *ereaderTrainer);
+#endif //FREE_BATTLE_TOWER_E_READER
 
 #include "data/battle_frontier/battle_frontier_trainer_mons.h"
 #include "data/battle_frontier/battle_frontier_trainers.h"
@@ -2089,4 +2092,29 @@ void TrySetLinkBattleTowerEnemyPartyLevel(void)
             }
         }
     }
+}
+
+#if FREE_BATTLE_TOWER_E_READER == FALSE
+static void SetEReaderTrainerChecksum(struct BattleTowerEReaderTrainer *ereaderTrainer)
+{
+    s32 i;
+
+    ereaderTrainer->checksum = 0;
+    for (i = 0; i < (sizeof(struct BattleTowerEReaderTrainer) - 4) / 4; i++) // - 4, because of the last field being the checksum itself.
+        ereaderTrainer->checksum += ((u32 *)ereaderTrainer)[i];
+}
+#endif //FREE_BATTLE_TOWER_E_READER
+
+void ConvertEReaderTrainerClassToFacilityClass(void)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sRubyFacilityClassToEmerald); i++)
+    {
+        if (sRubyFacilityClassToEmerald[i][0] == gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass)
+            break;
+    }
+
+    gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass = sRubyFacilityClassToEmerald[i][1];
+    SetEReaderTrainerChecksum(&gSaveBlock2Ptr->frontier.ereaderTrainer);
 }

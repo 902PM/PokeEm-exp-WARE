@@ -141,7 +141,7 @@ MossdeepCity_StevensHouse_EventScript_Letter::
 	releaseall
 	end
 
-@ Unused, leftover from RS
+@ 未使用。RSからの残留物。
 MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	finditem ITEM_HM_DIVE
 	setflag FLAG_RECEIVED_HM_DIVE
@@ -162,7 +162,7 @@ MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 	.string "{JPN}{PLAYER}は\nダンバルを てにいれた!$"
 
-@ Unused
+@ 未使用
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
 	.string "{JPN}これいじょう ポケモンを もてない!$"
 

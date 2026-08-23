@@ -30,7 +30,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown::
 	setobjectxyperm LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, 13, 3
 	end
 
-@ Functionally unused. See comment on MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
+@ 未使用。MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast のコメントを参照。
 MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardRight::
 	setobjectxyperm LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, 14, 2
 	end
@@ -245,8 +245,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
 	release
 	end
 
-@ Functionally unused by mistake. The movement is handled anyway after the switch (see above)
-@ This also means VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE can never be 3
+@ プログラマーのミスにより使用されていません。スイッチ後に動作は処理されます（上記参照）。
+@ VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE が絶対に 3 になることはありません。
 MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast::
 	applymovement LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast
 	waitmovement 0
@@ -260,14 +260,15 @@ MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest:
 	unlock_facing_direction
 	step_end
 
-@ Functionally unused. See above
+@ 未使用。上記参照。
 MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast:
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
 	step_end
 
-@ This was meant to only handle the player facing North, but by mistake(?) it also handles the player facing East
+@ 本来はプレイヤーが北を向いている場合のみを処理するはずでしたが、
+@ プログラムミス（あるいは手違いで）東を向いている場合も処理するようになっています。
 MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 	face_left
 	lock_facing_direction

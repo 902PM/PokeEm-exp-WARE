@@ -1,5 +1,5 @@
-@ NOTE: Route 109's sail to Dewford script references local IDs from Dewford's map.
-@  These are labeled in DewfordTown/scripts.inc
+@ 注: 109番道路からムロタウンへ向かう船のスクリプトは、ムロタウンのマップ上のローカルIDを参照しています。
+@  これらは DewfordTown/scripts.inc で定義されています。
 
 Route109_MapScripts::
 	.byte 0

@@ -10,7 +10,8 @@ PetalburgCity_Gym_OnLoad:
 	call_if_ge VAR_PETALBURG_GYM_STATE, 7, PetalburgCity_Gym_EventScript_UnlockAllDoors
 	end
 
-@ NOTE: Strength and OHKO rooms are misleading. Both are more accurately Critical-Hit
+@ 注：StrengthルームとOHKOルームは誤解を招く表現です。どちらもより正確にはCritical-Hitルームです。
+@ Strengthがちからのへや、OHKOはいちげきのへやでーす。
 PetalburgCity_Gym_EventScript_OpenUnlockedDoors::
 	setvar VAR_0x8005, 1
 	call PetalburgCity_Gym_EventScript_OpenGymEntranceDoors

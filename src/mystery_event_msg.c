@@ -1,8 +1,8 @@
 #include "global.h"
 
-const u8 gText_MysteryEventBerry[] = _("{JPN}{STR_VAR_2}のみを てに いれた!\nトウカジムの パパから うけとろう!");
-const u8 gText_MysteryEventBerryTransform[] = _("{JPN}{STR_VAR_1}のみは\n{STR_VAR_2}のみに へんかした!");
-const u8 gText_MysteryEventBerryObtained[] = _("{JPN}{STR_VAR_1}のみは すでに\nはいっていた");
+const u8 gText_MysteryEventBerry[] = _("{JPN}{STR_VAR_2}を てに いれた!\nトウカジムの パパから うけとろう!");
+const u8 gText_MysteryEventBerryTransform[] = _("{JPN}{STR_VAR_1}は\n{STR_VAR_2}のみに へんかした!");
+const u8 gText_MysteryEventBerryObtained[] = _("{JPN}{STR_VAR_1}は すでに\nはいっていた");
 const u8 gText_MysteryEventSpecialRibbon[] = _("{JPN}てもちのポケモンに\nとくべつなリボンが あたえられた!");
 const u8 gText_MysteryEventNationalDex[] = _("{JPN}ずかんに ぜんこくモードが\nついか された!");
 const u8 gText_MysteryEventRareWord[] = _("{JPN}めずらしい ことばを ついかしました");

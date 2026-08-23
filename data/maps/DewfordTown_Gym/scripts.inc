@@ -22,7 +22,7 @@ DewfordTown_Gym_EventScript_SetLightsOn::
 	setflashlevel 0
 	return
 
-@ Brightest
+@ 明るさ最大
 DewfordTown_Gym_EventScript_SetFlashLevel1::
 	setflashlevel 1
 	return
@@ -47,7 +47,7 @@ DewfordTown_Gym_EventScript_SetFlashLevel6::
 	setflashlevel 6
 	return
 
-@ Darkest
+@ 暗さ最大
 DewfordTown_Gym_EventScript_SetFlashLevel7::
 	setflashlevel 7
 	return
@@ -67,7 +67,7 @@ DewfordTown_Gym_EventScript_BrightenRoom::
 DewfordTown_Gym_EventScript_NoLightChange::
 	return
 
-@ NOTE: A little confusingly, a larger animateflash param value is a smaller flash radius
+@ 注：紛らわしいが、`animateflash` パラメータの値を大きくすると、フラッシュの輪は小さくなる。
 DewfordTown_Gym_EventScript_AnimateFlash1Trainer::
 	playse SE_SWITCH
 	animateflash 6

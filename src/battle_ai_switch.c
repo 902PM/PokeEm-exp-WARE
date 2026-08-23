@@ -1413,15 +1413,15 @@ bool32 ShouldSwitch(enum BattlerId battler)
         return FALSE;
 
     // custom switching logic
-    // NOTE: needs to always end with `return SetSwitchinAndSwitch` or `return FALSE`
-    if (gDynamicAiSwitchFunc != NULL && gDynamicAiSwitchFunc(&switchContext)) // Create custom AI functions for specific battles via "setdynamicswitchaifunc" cmd
+    // 注: 常に `return SetSwitchinAndSwitch` または `return FALSE` で終わる必要があります。
+    if (gDynamicAiSwitchFunc != NULL && gDynamicAiSwitchFunc(&switchContext)) // 「setdynamicswitchaifunc」コマンドを使用して、特定の戦闘向けのカスタムAI関数を作成します。
         return TRUE;
 
-    // NOTE: The sequence of the below functions matter! Do not change unless you have carefully considered the outcome.
-    // Since the order is sequential, and some of these functions prompt switch to specific party members.
+    // 注：以下の関数の順序は重要です！変更しないでください。
+    // 順序が決まっており、一部の機能では特定のパーティメンバーへの入れ替えが促されるためです。
 
-    // FindMon functions can prompt a switch to specific party members that override GetMostSuitableMonToSwitchInto
-    // The rest can prompt a switch to party member returned by GetMostSuitableMonToSwitchInto
+    // FindMon系の関数は、`GetMostSuitableMonToSwitchInto` の結果を上書きして特定のパーティメンバーへの入れ替えを促すことができる。
+    // それ以外の関数は、`GetMostSuitableMonToSwitchInto` が返すパーティメンバーへの入れ替えを促すことができる。
     if (ShouldSwitchIfWonderGuard(&switchContext))
         return TRUE;
     if ((gAiThinkingStruct->aiFlags[switchContext.battler] & AI_FLAG_SMART_SWITCHING) && (CanMonSurviveHazardSwitchin(&switchContext) == FALSE))
@@ -1493,7 +1493,7 @@ bool32 ShouldStayInToUseMove(struct SwitchAiContext *switchContext)
         aiMoveEffect = GetMoveEffect(aiMove);
         if (aiMoveEffect == EFFECT_REVIVAL_BLESSING || IsSwitchOutEffect(aiMoveEffect))
         {
-            // Palafin should not stay in for a hit escape move if it can't use it effectively (slower or no target)
+            // イルカマンは、交代技を効果的に使えない（相手より遅い、または対象がいない）状況では、無理に居座ってその技を使うべきではありません。
             if (gBattleMons[switchContext->battler].species == SPECIES_PALAFIN_ZERO
              && gAiLogicData->abilities[switchContext->battler] == ABILITY_ZERO_TO_HERO
              && aiMoveEffect == EFFECT_HIT_ESCAPE
@@ -1521,7 +1521,7 @@ void ModifySwitchAfterMoveScoring(enum BattlerId battler)
     if (!CanBattlerConsiderSwitch(battler))
         return;
 
-    // Sequence Switching AI never switches mid-battle
+    // Sequence Switching AIは、戦闘中に入れ替えを行うことはありません。
     if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SEQUENCE_SWITCHING)
         return;
 
@@ -1536,7 +1536,7 @@ void ModifySwitchAfterMoveScoring(enum BattlerId battler)
 
 bool32 IsSwitchinValid(enum BattlerId battler)
 {
-    // Edge case: See if partner already chose to switch into the same mon
+    // 例外ケース：パートナーが既に同じポケモンに入れ替えることを選択しているかどうかを確認する
     if (IsDoubleBattle())
     {
         enum BattlerId partner = GetPartnerBattler(battler);
@@ -1568,7 +1568,7 @@ static u32 GetSwitchinSingleUseItemHealing(enum BattlerId battler, enum BattlerI
     u32 maxHP = gBattleMons[battler].maxHP;
     s32 itemHeal = 0;
 
-    // Check if we're at a single use healing item threshold
+    // 回復アイテムの閾値に達しているか確認する
     if (currentHP <= 0
      || gAiLogicData->abilities[battler] == ABILITY_KLUTZ
      || (gAiLogicData->abilities[opposingBattler] == ABILITY_UNNERVE && GetItemPocket(aiItem) == POCKET_BERRIES))
@@ -1607,7 +1607,7 @@ static u32 GetSwitchinSingleUseItemHealing(enum BattlerId battler, enum BattlerI
     return itemHeal;
 }
 
-// Gets hazard damage
+// トラップダメージの取得
 static u32 GetSwitchinHazardsDamage(enum BattlerId battler)
 {
     u8 tSpikesLayers;
@@ -1618,17 +1618,17 @@ static u32 GetSwitchinHazardsDamage(enum BattlerId battler)
     u32 spikesDamage = 0, tSpikesDamage = 0, hazardDamage = 0;
     enum BattleSide side = GetBattlerSide(battler);
 
-    // Check ways mon might avoid all hazards
+    // ポケモンがあらゆるトラップを回避できる方法を確認する
     if (ability != ABILITY_MAGIC_GUARD || (heldItemEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS &&
         !((gFieldStatuses & STATUS_FIELD_MAGIC_ROOM) || ability == ABILITY_KLUTZ)))
     {
-        // Stealth Rock
+        // ステロ
         if (IsHazardOnSide(side, HAZARDS_STEALTH_ROCK) && heldItemEffect != HOLD_EFFECT_HEAVY_DUTY_BOOTS)
             hazardDamage += GetStealthHazardDamage(TYPE_SIDE_HAZARD_POINTED_STONES, battler);
-        // G-Max Steelsurge
+        // キョダイコウジン
         if (IsHazardOnSide(side, HAZARDS_STEELSURGE) && heldItemEffect != HOLD_EFFECT_HEAVY_DUTY_BOOTS)
             hazardDamage += GetStealthHazardDamage(TYPE_SIDE_HAZARD_SHARP_STEEL, battler);
-        // Spikes
+        // まきびし
         if (IsHazardOnSide(side, HAZARDS_SPIKES) && AI_IsBattlerGrounded(battler))
         {
             spikesDamage = maxHP / ((5 - gSideTimers[GetBattlerSide(battler)].spikesAmount) * 2);
@@ -1666,7 +1666,7 @@ static u32 GetSwitchinHazardsDamage(enum BattlerId battler)
     return hazardDamage;
 }
 
-// Gets damage / healing from weather
+// 天候によるダメージ/回復の値を取得
 static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
 {
     s32 weatherImpact = 0, maxHP = gBattleMons[battler].maxHP;
@@ -1674,7 +1674,7 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
     enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
     u32 weather = AI_GetSwitchinWeather(battler);
 
-    // Damage
+    // ダメージ
     if (holdEffect != HOLD_EFFECT_SAFETY_GOGGLES && ability != ABILITY_MAGIC_GUARD && ability != ABILITY_OVERCOAT)
     {
         if ((weather  & B_WEATHER_HAIL)
@@ -1702,7 +1702,7 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
             weatherImpact = 1;
     }
 
-    // Healing
+    // 回復
     if (weather  & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
     {
         if (ability == ABILITY_DRY_SKIN)
@@ -1728,14 +1728,14 @@ static s32 GetSwitchinWeatherImpact(enum BattlerId battler)
     return weatherImpact;
 }
 
-// Gets one turn of recurring healing
+// 毎ターン回復するものの情報を取得
 static u32 GetSwitchinRecurringHealing(enum BattlerId battler)
 {
     u32 recurringHealing = 0, maxHP = gBattleMons[battler].maxHP;
     enum Ability ability = gAiLogicData->abilities[battler];
     enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
 
-    // Items
+    // アイテム
     if (ability != ABILITY_KLUTZ)
     {
         if (holdEffect == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battler, TYPE_POISON))
@@ -1750,9 +1750,9 @@ static u32 GetSwitchinRecurringHealing(enum BattlerId battler)
             if (recurringHealing == 0)
                 recurringHealing = 1;
         }
-    } // Intentionally omitting Shell Bell for its inconsistency
+    } // 安定性に欠けるため、意図的にかいがらのすずを入れていません。
 
-    // Abilities
+    // とくせい
     if (ability == ABILITY_POISON_HEAL && (gBattleMons[battler].status1 & STATUS1_POISON))
     {
         u32 healing = maxHP / 8;
@@ -1763,14 +1763,14 @@ static u32 GetSwitchinRecurringHealing(enum BattlerId battler)
     return recurringHealing;
 }
 
-// Gets one turn of recurring damage
+// 毎ターンダメージの情報を取得
 static u32 GetSwitchinRecurringDamage(enum BattlerId battler)
 {
     u32 passiveDamage = 0, maxHP = gBattleMons[battler].maxHP;
     enum Ability ability = gAiLogicData->abilities[battler];
     enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
 
-    // Items
+    // アイテム
     if (ability != ABILITY_MAGIC_GUARD && ability != ABILITY_KLUTZ)
     {
         if (holdEffect == HOLD_EFFECT_BLACK_SLUDGE && !IS_BATTLER_OF_TYPE(battler, TYPE_POISON))
@@ -1795,7 +1795,7 @@ static u32 GetSwitchinRecurringDamage(enum BattlerId battler)
     return passiveDamage;
 }
 
-// Gets one turn of status damage
+// 毎ターン状態異常ダメージの情報を取得
 static u32 GetSwitchinStatusDamage(enum BattlerId battler)
 {
     u8 tSpikesLayers = gSideTimers[GetBattlerSide(battler)].toxicSpikesAmount;
@@ -1804,7 +1804,7 @@ static u32 GetSwitchinStatusDamage(enum BattlerId battler)
     u32 maxHP = gBattleMons[battler].maxHP;
     u32 statusDamage = 0;
 
-    // Status condition damage
+    // 状態異常ダメージ
     if ((status != 0) && ability != ABILITY_MAGIC_GUARD)
     {
         if (status & STATUS1_BURN)
@@ -1844,24 +1844,24 @@ static u32 GetSwitchinStatusDamage(enum BattlerId battler)
         }
     }
 
-    // Apply hypothetical poisoning from Toxic Spikes, which means the first turn of damage already added in GetSwitchinHazardsDamage
-    // Do this last to skip one iteration of Poison / Toxic damage, and start counting Toxic damage one turn later.
+    // どくびしによる仮想的な毒ダメージを適用します。つまり、最初のターンのダメージはすでに `GetSwitchinHazardsDamage` に含まれています。
+    // これを最後に行うことで、毒や猛毒によるダメージの発生を1回分スキップし、ダメージのカウント開始を1ターン遅らせることができます。
     if (tSpikesLayers != 0 && IsSwitchinTSpikesAffected(battler))
     {
         if (tSpikesLayers == 1)
         {
-            gBattleMons[battler].status1 = STATUS1_POISON; // Assign "hypothetical" status to the switchin candidate so we can get the damage it would take from TSpikes
+            gBattleMons[battler].status1 = STATUS1_POISON; // 交代候補に仮想ステータスを割り当て、どくびしによる被ダメージを算出できるようにします。
         }
         if (tSpikesLayers == 2)
         {
-            gBattleMons[battler].status1 = STATUS1_TOXIC_POISON; // Assign "hypothetical" status to the switchin candidate so we can get the damage it would take from TSpikes
+            gBattleMons[battler].status1 = STATUS1_TOXIC_POISON; // 交代候補に仮想ステータスを割り当て、どくびしによる被ダメージを算出できるようにします。
             gBattleMons[battler].status1 += STATUS1_TOXIC_TURN(1);
         }
     }
     return statusDamage;
 }
 
-// Gets number of hits to KO factoring in hazards, healing held items, status, weather, and incoming heals
+// トラップ、回復効果の持ち物、状態異常、天候、確定数等の情報を取得
 static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const struct IncomingHealInfo *healInfo, u32 originalHp)
 {
     u32 hazardDamage = GetSwitchinHazardsDamage(battler);
@@ -1870,7 +1870,7 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
 
     if (healInfo->healAfterHazards)
     {
-        // Heal happens after entry damage
+        // 登場時のダメージ後の回復
         if (hazardDamage >= originalHp)
             return 1;
         startingHP = gBattleMons[battler].maxHP;
@@ -1882,7 +1882,7 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
         startingHP = hazardCheckHp - hazardDamage;
     }
 
-    s32 weatherImpact = GetSwitchinWeatherImpact(battler); // Signed to handle both damage and healing in the same value
+    s32 weatherImpact = GetSwitchinWeatherImpact(battler); // ダメージと回復の両方を同じ値で処理するように設定されています。
     u32 recurringDamage = GetSwitchinRecurringDamage(battler);
     u32 recurringHealing = GetSwitchinRecurringHealing(battler);
     u32 statusDamage = GetSwitchinStatusDamage(battler);
@@ -1895,37 +1895,37 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
     s32 currentHP = startingHP, singleUseItemHeal = 0;
     bool32 applyWishNow = healInfo->healEndOfTurn && healInfo->wishCounter == 1;
 
-    // No damage being dealt
+    // ダメージなし
     if ((damageTaken + statusDamage + recurringDamage <= recurringHealing) || damageTaken + statusDamage + recurringDamage == 0)
         return hitsToKO;
 
-    // Mon fainted to hazards
+    // トラップによる瀕死
     if (startingHP == 0)
         return 1;
 
-    // Find hits to KO
+    // 倒せる技を見つける
     while (currentHP > 0)
     {
-        // Remove weather damage when it would run out
+        // 天候によるダメージが終了する際に、そのダメージを取り除きます。
         if (weatherImpact != 0 && weatherDuration == 0)
             weatherImpact = 0;
 
-        // Take attack damage for the turn
+        // そのターンの攻撃ダメージを受ける
         currentHP = currentHP - damageTaken;
 
-        // One shot prevention effects
+        // 一撃死を防ぐ効果
         if (damageTaken >= maxHP && startingHP == maxHP && (heldItemEffect == HOLD_EFFECT_FOCUS_SASH || (!opponentCanBreakMold && GetConfig(B_STURDY) >= GEN_5 && ability == ABILITY_STURDY)) && hitsToKO < 1)
             currentHP = 1;
 
-        // If mon is still alive, apply weather impact first, as it might KO the mon before it can heal with its item (order is weather -> item -> status)
+        // そのポケモンがまだ生き残っている場合、まずは天候によるダメージを適用します。持ち物で回復する前に、天候ダメージで倒れてしまう可能性があるからです。 (order is weather -> item -> status)
         if (currentHP > 0)
             currentHP = currentHP - weatherImpact;
 
-        // Check if we're at a single use healing item threshold
+        // 回復アイテムの閾値に達しているか確認
         if (usedSingleUseHealingItem == FALSE)
         {
             singleUseItemHeal = GetSwitchinSingleUseItemHealing(battler, opposingBattler, currentHP);
-            // If we used one, apply it without overcapping our maxHP
+            // それを使用する場合、最大HPを超えないように適用してください。
             if (singleUseItemHeal > 0)
             {
                 if ((currentHP + singleUseItemHeal) > maxHP)
@@ -1936,11 +1936,11 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
             }
         }
 
-        // Healing from items occurs before status so we can do the rest in one line
+        // アイテムによる回復はステータス反映の前に行われるため、残りの処理は1行で記述できます。
         if (currentHP > 0)
             currentHP = currentHP + recurringHealing - recurringDamage - statusDamage;
 
-        // Wish healing happens at the end of the turn when it is due this turn.
+        // ねがいごとによる回復は、その回復が行われるべきターンの終了時に発生します。
         if (applyWishNow && currentHP > 0)
         {
             currentHP += healInfo->healAmount;
@@ -1949,18 +1949,18 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
             applyWishNow = FALSE;
         }
 
-        // Recalculate toxic damage if needed
+        // 必要に応じて、毒ダメージを再計算
         if (gBattleMons[battler].status1 & STATUS1_TOXIC_POISON)
             statusDamage = GetSwitchinStatusDamage(battler);
 
-        // Reduce weather duration
+        // 天候の効果ターンを減らす
         if (weatherDuration != 0)
             weatherDuration--;
 
         hitsToKO++;
     }
 
-    // Disguise will always add an extra hit to KO
+    // ばけのかわは、確1の攻撃を確2とします。
     if (!opponentCanBreakMold && IsMimikyuDisguised(battler))
         hitsToKO++;
 
@@ -1969,11 +1969,11 @@ static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const st
 
 static uq4_12_t GetTypeMatchupAgainstTypes(enum BattlerId opposingBattler, enum Type defType1, enum Type defType2)
 {
-    // Check type matchup
+    // タイプの相性を確認
     uq4_12_t typeEffectiveness1 = UQ_4_12(1.0), typeEffectiveness2 = UQ_4_12(1.0);
     enum Type atkType1 = gBattleMons[opposingBattler].types[0], atkType2 = gBattleMons[opposingBattler].types[1];
 
-    // Add each independent defensive type matchup together
+    // それぞれの独立した防御タイプ相性を合計
     typeEffectiveness1 = uq4_12_multiply(typeEffectiveness1, (GetTypeModifier(atkType1, defType1)));
     if (defType2 != defType1)
         typeEffectiveness1 = uq4_12_multiply(typeEffectiveness1, (GetTypeModifier(atkType1, defType2)));
@@ -2006,17 +2006,17 @@ static u32 GetSwitchinCandidate(u32 switchinCategory, enum BattlerId battler, in
     if (switchinCategory == 0)
         return PARTY_SIZE;
 
-    // Randomize between eligible mons
+    // 対象のポケモンからランダムに選ぶ
     if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_RANDOMIZE_SWITCHIN)
     {
-        // This split is necessary because the test system can't handle multiple calls with the same random tag in the same turn
+        // この分割が必要なのは、テストシステムが同一ターン内で同じランダムタグを使用した複数の呼び出しを処理できないためです。
         if (switchType == SWITCH_AFTER_KO)
             return RandomBitIndex(RNG_AI_RANDOM_SWITCHIN_POST_KO, switchinCategory); // Can't pass this anything with no set bits
         else
             return RandomBitIndex(RNG_AI_RANDOM_SWITCHIN_MID_BATTLE, switchinCategory); // Can't pass this anything with no set bits
     }
 
-    // Pick last eligible mon in party order
+    // パーティの並び順で、条件を満たす最後のポケモンを選ぶ
     for (s32 monIndex = (lastId-1); monIndex >= 0; monIndex--)
     {
         if (switchinCategory & (1 << monIndex))
@@ -2031,17 +2031,17 @@ static u32 GetValidSwitchinCandidate(u32 validMonIds, enum BattlerId battler, u3
     if (validMonIds == 0)
         return PARTY_SIZE;
 
-    // Randomize between valid mons
+    // 有効なポケモンの中からランダムに選ぶ
     if ((gAiThinkingStruct->aiFlags[battler] & AI_FLAG_RANDOMIZE_SWITCHIN) && RANDOMIZE_SWITCHIN_ANY_VALID)
     {
-        // This split is necessary because the test system can't handle multiple calls with the same random tag in the same turn
+        // この分割が必要なのは、テストシステムが同一ターン内で同じランダムタグを使用した複数の呼び出しを処理できないためです。
         if (switchType == SWITCH_AFTER_KO)
             return RandomBitIndex(RNG_AI_RANDOM_VALID_SWITCHIN_POST_KO, validMonIds); // Can't pass this anything with no set bits
         else
             return RandomBitIndex(RNG_AI_RANDOM_VALID_SWITCHIN_MID_BATTLE, validMonIds); // Can't pass this anything with no set bits
     }
 
-    // Pick last valid mon in party order
+    // パーティ順で、有効な最後のモンスターを選択する
     for (s32 monIndex = (lastId-1); monIndex > 0; monIndex--)
     {
         if (validMonIds & (1 << monIndex))
@@ -2063,7 +2063,7 @@ static s32 GetMaxDamagePlayerCouldDealToSwitchin(enum BattlerId battler, enum Ba
         if (playerMove != MOVE_NONE && !IsBattleMoveStatus(playerMove) && GetMoveEffect(playerMove) != EFFECT_FOCUS_PUNCH && gBattleMons[opposingBattler].pp[moveIndex] > 0)
         {
             damageTaken = AI_GetDamage(opposingBattler, battler, moveIndex, AI_SWITCHIN_DEFENDING, gAiLogicData);
-            if (playerMove == gBattleStruct->choicedMove[opposingBattler]) // If player is choiced, only care about the choice locked move
+            if (playerMove == gBattleStruct->choicedMove[opposingBattler]) // プレイヤーがこだわっている状態にある場合、その効果で固定された技のみを考慮します。
             {
                 *bestPlayerMove = playerMove;
                 return damageTaken;
@@ -2086,7 +2086,7 @@ static s32 GetMaxPriorityDamagePlayerCouldDealToSwitchin(enum BattlerId battler,
 
     for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
     {
-        // If player is choiced into a non-priority move, AI understands that it can't deal priority damage
+        // プレイヤーがこだわりアイテム等の効果で優先度のない技に固定されている場合、AIは優先度付きのダメージを与えられないことを認識します。
         if (gBattleStruct->choicedMove[opposingBattler] != MOVE_NONE && GetMovePriority(gBattleStruct->choicedMove[opposingBattler]) < 1)
             break;
         playerMove = SMART_SWITCHING_OMNISCIENT ? gBattleMons[opposingBattler].moves[moveIndex] : playerMoves[moveIndex];
@@ -2094,7 +2094,7 @@ static s32 GetMaxPriorityDamagePlayerCouldDealToSwitchin(enum BattlerId battler,
             && playerMove != MOVE_NONE && !IsBattleMoveStatus(playerMove) && GetMoveEffect(playerMove) != EFFECT_FOCUS_PUNCH && gBattleMons[opposingBattler].pp[moveIndex] > 0)
         {
             damageTaken = AI_GetDamage(opposingBattler, battler, moveIndex, AI_SWITCHIN_DEFENDING, gAiLogicData);
-            if (playerMove == gBattleStruct->choicedMove[opposingBattler]) // If player is choiced, only care about the choice locked move
+            if (playerMove == gBattleStruct->choicedMove[opposingBattler]) // プレイヤーがこだわっている状態にある場合、その効果で固定された技のみを考慮します。
             {
                 *bestPlayerPriorityMove = playerMove;
                 return damageTaken;
@@ -2134,7 +2134,7 @@ static inline bool32 IsFreeSwitch(enum SwitchType switchType, enum BattlerId bat
 {
     bool32 movedSecond = GetBattlerTurnOrderNum(battlerSwitchingOut) > GetBattlerTurnOrderNum(opposingBattler) ? TRUE : FALSE;
 
-    // Switch out effects
+    // 交代時の効果
     if (!IsDoubleBattle()) // Not handling doubles' additional complexity
     {
         if (IsSwitchOutEffect(GetMoveEffect(gCurrentMove)) && movedSecond)
