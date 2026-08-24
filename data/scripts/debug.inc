@@ -131,34 +131,28 @@ Debug_FlagsNotSetOverworldConfigMessage::
 	goto Debug_MessageEnd
 
 Debug_FlagsNotSetOverworldConfigMessage_Text:
-	.string "きのうが つかえません!\n"
-	.string "つかえるフラグを せっていしてください:\l"
-	.string "コンフィグ オーバーワールド!$"
+	.string "{JPN}この きのうは つかえません!\n{ENG}include/config/overworld.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_FlagsNotSetBattleConfigMessage::
 	message Debug_FlagsNotSetBattleConfigMessage_Text
 	goto Debug_MessageEnd
 
 Debug_FlagsNotSetBattleConfigMessage_Text:
-	.string "きのうが つかえません!\n"
-	.string "つかえるフラグを せっていしてください:\l"
-	.string "コンフィグ バトル!$"
+	.string "{JPN}この きのうは つかえません!\n{ENG}include/config/battle.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_VarsNotSetBattleConfigMessage::
 	message Debug_VarsNotSetBattleConfigMessage_Text
 	goto Debug_MessageEnd
 
 Debug_VarsNotSetBattleConfigMessage_Text:
-	.string "きのうが つかえません!\n"
-	.string "つかえるへんすうを せっていしてください:\l"
-	.string "コンフィグ バトル!$"
+	.string "{JPN}この きのうは つかえません!\n{ENG}include/config/battle.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_BoxFilledMessage::
 	message Debug_BoxFilledMessage_Text
 	goto Debug_MessageEnd
 
 Debug_BoxFilledMessage_Text:
-	.string "ボックスを うめました!$"
+	.string "{JPN}ボックスを うめました!$"
 
 Debug_EventScript_CheckEVs::
 	lockall
@@ -175,10 +169,10 @@ Debug_EventScript_CheckEVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveEVs:
-	.string "こうげき: {STR_VAR_1}, とくこう: {STR_VAR_2}, すばやさ: {STR_VAR_3}$"
+	.string "{JPN}こうげき EVs: {STR_VAR_1}, とくこう EVs: {STR_VAR_2}, すばやさ EVs: {STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveEVs:
-	.string "HP: {STR_VAR_1}, ぼうぎょ: {STR_VAR_2}, とくぼう: {STR_VAR_3}$"
+	.string "{JPN}HP EVs: {STR_VAR_1}, ぼうぎょ EVs: {STR_VAR_2}, とくぼう EVs: {STR_VAR_3}$"
 
 Debug_EventScript_CheckIVs::
 	lockall
@@ -195,10 +189,10 @@ Debug_EventScript_CheckIVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveIVs:
-	.string "こうげき: {STR_VAR_1}, とくこう: {STR_VAR_2}, すばやさ: {STR_VAR_3}$"
+	.string "{JPN}こうげき IVs: {STR_VAR_1}, とくこう IVs: {STR_VAR_2}, すばやさ IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveIVs:
-	.string "HP: {STR_VAR_1}, ぼうぎょ: {STR_VAR_2}, とくぼう: {STR_VAR_3}$"
+	.string "{JPN}HP IVs: {STR_VAR_1}, ぼうぎょ IVs: {STR_VAR_2}, とくぼう IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
     dynmultichoice 0, 0, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, EventScript_ExampleScript_Text_1, EventScript_ExampleScript_Text_2, EventScript_ExampleScript_Text_3
@@ -255,20 +249,16 @@ Debug_CheckSaveBlock::
 	end
 
 Debug_SaveBlock1Size::
-	.string "セーブブロック1: {STR_VAR_1}バイト/{STR_VAR_2}バイト.\n"
-	.string "あき: {STR_VAR_3}バイト.$"
+	.string "{JPN}セーブブロック1: {ENG}{STR_VAR_1}B/{STR_VAR_2}B\n{JPN}あき: {ENG}{STR_VAR_3}B$"
 
 Debug_SaveBlock2Size::
-	.string "セーブブロック2: {STR_VAR_1}バイト/{STR_VAR_2}バイト.\n"
-	.string "あき: {STR_VAR_3}バイト.$"
+	.string "{JPN}セーブブロック2: {ENG}{STR_VAR_1}B/{STR_VAR_2}B\n{JPN}あき: {ENG}{STR_VAR_3}B$"
 
 Debug_SaveBlock3Size::
-	.string "セーブブロック3: {STR_VAR_1}バイト/{STR_VAR_2}バイト.\n"
-	.string "あき: {STR_VAR_3}バイト.$"
+	.string "{JPN}セーブブロック3: {ENG}{STR_VAR_1}B/{STR_VAR_2}B\n{JPN}あき: {ENG}{STR_VAR_3}B$"
 
 Debug_PokemonStorageSize::
-	.string "ポケモンボックス: {STR_VAR_1}バイト/{STR_VAR_2}バイト.\n"
-	.string "あき: {STR_VAR_3}バイト.$"
+	.string "{JPN}ポケモンボックス: {ENG}{STR_VAR_1}B/{STR_VAR_2}B\n{JPN}あき: {ENG}{STR_VAR_3}B$"
 
 Debug_CheckROMSpace::
 	callnative CheckROMSize
@@ -277,8 +267,7 @@ Debug_CheckROMSpace::
 	end
 
 Debug_ROMSize::
-	.string "ロムサイズ: {STR_VAR_1}メガバイト/32メガバイト.\n"
-	.string "あき: {STR_VAR_2}メガバイト.$"
+	.string "{JPN}ロムサイズ: {ENG}{STR_VAR_1}MB/32MB\n{JPN}あき: {ENG}{STR_VAR_2}MB$"
 
 Debug_HatchAnEgg::
 	lockall
@@ -304,10 +293,10 @@ DebugScript_HatchAnEgg_CantForceHatch::
 	end
 
 DebugScript_Text_EmptyParty::
-	.string "ポケモンも タマゴも いません.$"
+	.string "{JPN}ポケモンも タマゴも いません!$"
 
 DebugScript_HatchAnEgg_Text_NotAnEgg::
-	.string "それは ポケモンの タマゴではありません.$"
+	.string "{JPN}それは タマゴじゃ ないよ$"
 
 DebugScript_ZeroDaycareMons::
 	msgbox DebugText_DaycareNoPokemon, MSGBOX_DEFAULT
@@ -325,13 +314,13 @@ DebugScript_DaycareMonsNotCompatible::
 	end
 
 DebugText_DaycareNoPokemon:
-	.string "そだてやに ポケモンが いません.$"
+	.string "{JPN}そだてやに ポケモンが いません$"
 
 DebugText_DaycareOnePokemon:
-	.string "そだてやの ポケモンは 1ひきだけです.$"
+	.string "{JPN}そだてやの ポケモンが 1ひきだけです$"
 
 DebugText_DaycarePokemonNotCompatible:
-	.string "そだてやの ポケモンは\nタマゴを みつけられません!$"
+	.string "{JPN}あずけられている ポケモンでは\nタマゴが できません!$"
 
 Debug_ShowExpansionVersion::
 	callnative BufferExpansionVersion
@@ -340,7 +329,7 @@ Debug_ShowExpansionVersion::
 	end
 
 Debug_ExpansionVersion:
-	.string "pokeemerald-expansion {STR_VAR_1}$"
+	.string "{ENG}pokeemerald-expansion {STR_VAR_1}$"
 
 Debug_Follower_NPC_Not_Enabled::
 	msgbox Debug_Enable_To_Use_Follower_NPCs, MSGBOX_DEFAULT
@@ -348,7 +337,7 @@ Debug_Follower_NPC_Not_Enabled::
 	end
 
 Debug_Enable_To_Use_Follower_NPCs:
-	.string "きのうが つかえません.\nインクルード コンフィグ フォロワーを\lオンに してください.$"
+	.string "{JPN}この きのうは つかえません!\n{ENG}include/config/follower_npc.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_Follower_NPC_Event_Script::
 	lock
@@ -358,7 +347,7 @@ Debug_Follower_NPC_Event_Script::
 	end
 
 Debug_Follower_NPC_Test_Message:
-	.string "これは つれあるきテストです.$"
+	.string "つれあるき テスト です$"
 
 Debug_EventScript_Steven_Multi::
 	call MossdeepCity_SpaceCenter_2F_EventScript_ChoosePartyForMultiBattle
@@ -379,8 +368,7 @@ Debug_BerryPestsDisabled::
 	end
 
 DebugText_BerryPestsDisabled:
-	.string "きのみのむしが オフです.\n"
-	.string "きのみに むしを つけられません.$"
+	.string "{ENG}OW_BERRY_PESTS{JPN}が オフです\nきのみに むしを つけられません$"
 
 Debug_BerryWeedsDisabled::
 	msgbox DebugText_BerryWeedsDisabled, MSGBOX_DEFAULT
@@ -388,8 +376,7 @@ Debug_BerryWeedsDisabled::
 	end
 
 DebugText_BerryWeedsDisabled:
-	.string "きのみのくさが オフです.\n"
-	.string "きのみに くさを はやせません.$"
+	.string "{ENG}OW_BERRY_WEEDS{JPN}が オフです\nきのみに くさを はやせません$"
 
 Debug_EventScript_InflictStatus1::
 	lockall
@@ -586,85 +573,85 @@ Debug_EventScript_InflictStatus1_Party_Frostbite:
 	end
 
 Debug_EventScript_InflictStatus1_Text_Single:
-	.string "1ひき$"
+	.string "{JPN}1ひき$"
 
 Debug_EventScript_InflictStatus1_Text_PartyWide:
-	.string "てもちぜんたい$"
+	.string "{JPN}てもちぜんたい$"
 
 Debug_EventScript_InflictStatus1_Text_Close:
-	.string "とじる$"
+	.string "{JPN}とじる$"
 
 Debug_EventScript_InflictStatus1_Text_Poison:
-	.string "どく$"
+	.string "{JPN}どく$"
 
 Debug_EventScript_InflictStatus1_Text_Paralysis:
-	.string "まひ$"
+	.string "{JPN}まひ$"
 
 Debug_EventScript_InflictStatus1_Text_Sleep:
-	.string "ねむり$"
+	.string "{JPN}ねむり$"
 
 Debug_EventScript_InflictStatus1_Text_Burn:
-	.string "やけど$"
+	.string "{JPN}やけど$"
 
 Debug_EventScript_InflictStatus1_Text_Freeze:
-	.string "こおり$"
+	.string "{JPN}こおり$"
 
 Debug_EventScript_InflictStatus1_Text_Frostbite:
-	.string "しもやけ$"
+	.string "{JPN}しもやけ$"
 
 Debug_EventScript_InflictStatus1_Text_KO:
-	.string "ひんし$"
+	.string "{JPN}ひんし$"
 
 Debug_EventScript_ChangeNature_Text_Hardy:
-	.string "がんばりや$"
+	.string "{JPN}がんばりや$"
 Debug_EventScript_ChangeNature_Text_Lonely:
-	.string "さみしがり$"
+	.string "{JPN}さみしがり$"
 Debug_EventScript_ChangeNature_Text_Brave:
-	.string "ゆうかん$"
+	.string "{JPN}ゆうかん$"
 Debug_EventScript_ChangeNature_Text_Adamant:
-	.string "いじっぱり$"
+	.string "{JPN}いじっぱり$"
 Debug_EventScript_ChangeNature_Text_Naughty:
-	.string "やんちゃ$"
+	.string "{JPN}やんちゃ$"
 Debug_EventScript_ChangeNature_Text_Bold:
-	.string "ずぶとい$"
+	.string "{JPN}ずぶとい$"
 Debug_EventScript_ChangeNature_Text_Docile:
-	.string "すなお$"
+	.string "{JPN}すなお$"
 Debug_EventScript_ChangeNature_Text_Relaxed:
-	.string "のんき$"
+	.string "{JPN}のんき$"
 Debug_EventScript_ChangeNature_Text_Impish:
-	.string "わんぱく$"
+	.string "{JPN}わんぱく$"
 Debug_EventScript_ChangeNature_Text_Lax:
-	.string "のうてんき$"
+	.string "{JPN}のうてんき$"
 Debug_EventScript_ChangeNature_Text_Timid:
-	.string "おくびょう$"
+	.string "{JPN}おくびょう$"
 Debug_EventScript_ChangeNature_Text_Hasty:
-	.string "せっかち$"
+	.string "{JPN}せっかち$"
 Debug_EventScript_ChangeNature_Text_Serious:
-	.string "まじめ$"
+	.string "{JPN}まじめ$"
 Debug_EventScript_ChangeNature_Text_Jolly:
-	.string "ようき$"
+	.string "{JPN}ようき$"
 Debug_EventScript_ChangeNature_Text_Naive:
-	.string "むじゃき$"
+	.string "{JPN}むじゃき$"
 Debug_EventScript_ChangeNature_Text_Modest:
-	.string "ひかえめ$"
+	.string "{JPN}ひかえめ$"
 Debug_EventScript_ChangeNature_Text_Mild:
-	.string "おっとり$"
+	.string "{JPN}おっとり$"
 Debug_EventScript_ChangeNature_Text_Quiet:
-	.string "れいせい$"
+	.string "{JPN}れいせい$"
 Debug_EventScript_ChangeNature_Text_Bashful:
-	.string "てれや$"
+	.string "{JPN}てれや$"
 Debug_EventScript_ChangeNature_Text_Rash:
-	.string "うっかりや$"
+	.string "{JPN}うっかりや$"
 Debug_EventScript_ChangeNature_Text_Calm:
-	.string "おだやか$"
+	.string "{JPN}おだやか$"
 Debug_EventScript_ChangeNature_Text_Gentle:
-	.string "おとなしい$"
+	.string "{JPN}おとなしい$"
 Debug_EventScript_ChangeNature_Text_Sassy:
-	.string "なまいき$"
+	.string "{JPN}なまいき$"
 Debug_EventScript_ChangeNature_Text_Careful:
-	.string "しんちょう$"
+	.string "{JPN}しんちょう$"
 Debug_EventScript_ChangeNature_Text_Quirky:
-	.string "きまぐれ$"
+	.string "{JPN}きまぐれ$"
 
 Debug_EventScript_EWRAMCounters::
 	callnative CheckEWRAMCounters
@@ -673,8 +660,7 @@ Debug_EventScript_EWRAMCounters::
 	end
 
 Debug_EventScript_EWRAMCounters_Text::
-	.string "つれあるきほすう: {STR_VAR_1}.\n"
-	.string "つりチェイン: {STR_VAR_2}.$"
+	.string "つれあるき ほすう: {STR_VAR_1}\nれんぞく つり: {STR_VAR_2}$"
 
 Debug_EventScript_FontTest_Text_1::
 	.string "{FONT_SMALL_NARROWER}"                 @ Edit this to test your font
@@ -826,12 +812,10 @@ Debug_EventScript_FakeRTCNotEnabled::
 	end
 
 Debug_EventScript_FakeRTCNotEnabled_Text_0:
-	.string "Fake RTCが\nオンではありません.コンフィグで\lオンに してください$"
-
+	.string "{JPN}Fake RTCが オンでは ありません!\n{ENG}include/config/overworld.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_EventScript_TellTheTime_Text_0:
-	.string "ひづけと じこく:\n"
-	.string "{STR_VAR_1}, {STR_VAR_2}:{STR_VAR_3}$"
+	.string "ひづけと じこく:\n{STR_VAR_1}, {STR_VAR_2}:{STR_VAR_3}$"
 
 DebugEventScript_PrintWeekday_Text_0:
 	.string "じかんたい: {STR_VAR_1}$"

@@ -654,7 +654,7 @@ static const u8 sText_QuitTheGame[] = _("{JPN}ゲームを やめますか？");
 static const u8 sText_YouveGot9999Coins[] = _("{JPN}コインが 9999まい\nたまって います");
 static const u8 sText_YouveRunOutOfCoins[] = _("{JPN}コインが ありません\nゲームを しゅうりょうします");
 static const u8 sText_YouDontHaveThreeCoins[] = _("{JPN}コインが 3まい ありません!");
-static const u8 sText_ReelTimeHelp[] = _("{ENG}BD{JPN}タイム\nじっくり ねらえば どんな マークも\nとめられる チャンスゲームだ!\nちゅうせん された かいすうだけ\n{ENG}BD{JPN}タイムが つづくぞ!\nビッグボーナスがでると しゅうりょう");
+static const u8 sText_ReelTimeHelp[] = _("{JPN}BDタイム\nじっくり ねらえば どんな マークも\nとめられる チャンスゲームだ!\nちゅうせん された かいすうだけ\nBDタイムが つづくぞ!\nビッグボーナスがでると しゅうりょう");
 
 // Ewram variables
 static EWRAM_DATA u16 *sMenuGfx = NULL;

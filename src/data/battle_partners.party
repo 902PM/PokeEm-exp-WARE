@@ -11,7 +11,7 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
-AI: Basic Trainer
+AI: Smart Trainer
 
 Metagross @ Metagrossite
 Level: 50
@@ -19,6 +19,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Atk / 6 Spe
 Nature: Adamant
 Ball: Heavy
+Shiny: Yes
 - Rock Slide
 - Thunder Punch
 - Bullet Punch

@@ -776,7 +776,7 @@ u64 GetAiScriptsInBattleFactory(void)
 
     if (lvlMode == FRONTIER_LVL_TENT)
     {
-        return 0;
+        return AI_FLAG_BASIC_TRAINER;
     }
     else
     {
@@ -786,7 +786,7 @@ u64 GetAiScriptsInBattleFactory(void)
         if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_FRONTIER_BRAIN)
             return AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
         else if (challengeNum < 2)
-            return 0;
+            return AI_FLAG_BASIC_TRAINER;
         else if (challengeNum < 4)
             return AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_TERA | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
         else
