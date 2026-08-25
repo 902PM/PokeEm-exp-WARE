@@ -577,26 +577,26 @@ BattleFrontier_ExchangeServiceCorner_Text_Rare_CandyDesc::
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
 	.string "{JPN}もたせると たいりょくが せんとうの あいだ\nすこしずつ かいふくする$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
+BattleFrontier_ExchangeServiceCorner_Text_LifeorbDesc::
 	.string "{JPN}こうげきする たびに HPが へってしまうが\nわざのいりょくが あがる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
+BattleFrontier_ExchangeServiceCorner_Text_WeaknesspolicyDesc::
 	.string "{JPN}じゃくてんを つかれると こうげきと\nとくこうが それぞれ ぐーんと あがる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
+BattleFrontier_ExchangeServiceCorner_Text_FocussashDesc::
 	.string "{JPN}もたせると HPが まんたんのとき\nいちげきでは たおされなくなる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc::
 	.string "{JPN}もたせると すばやさは あがるが\nおなじ わざしか だせなくなる$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
 	.string "{JPN}こうげきの いりょくが あがるが\nおなじ わざしか だせなくなる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
 	.string "{JPN}とくこうの いりょくが あがるが\nおなじ わざしか だせなくなる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
+BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc::
 	.string "{JPN}もたせると しんかまえ ポケモンの\nぼうぎょと とくぼうが あがる$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
+BattleFrontier_ExchangeServiceCorner_Text_FlameorbDesc::
 	.string "{JPN}もたせると せんとうちゅうに\nやけど じょうたいに なる$"

@@ -121,13 +121,13 @@ static const u8 *const sFrontierExchangeCorner_VitaminsDescriptions[] =
 static const u8 *const sFrontierExchangeCorner_HoldItemsDescriptions[] =
 {
     BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_LifeorbDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_WeaknesspolicyDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_FocussashDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_FlameorbDesc,
     gText_Exit
 };
