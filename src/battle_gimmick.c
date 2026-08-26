@@ -16,7 +16,7 @@
 
 #include "data/gimmicks.h"
 
-// Populates gBattleStruct->gimmick.usableGimmick for each battler.
+// 各戦闘参加者について、gBattleStruct->gimmick.usableGimmick に値を設定します。
 void AssignUsableGimmicks(void)
 {
     for (enum BattlerId battler = 0; battler < gBattlersCount; ++battler)
@@ -33,16 +33,16 @@ void AssignUsableGimmicks(void)
     }
 }
 
-// Returns whether a battler is able to use a gimmick. Checks consumption and gimmick specific functions.
+// 戦闘参加者がギミックを使用可能かどうかを返す。コストの消費や、ギミック固有の機能に関する条件をチェック。
 bool32 CanActivateGimmick(enum BattlerId battler, enum Gimmick gimmick)
 {
     return gGimmicksInfo[gimmick].CanActivate != NULL && gGimmicksInfo[gimmick].CanActivate(battler);
 }
 
-// Returns whether the player has a gimmick selected while in the move selection menu.
+// 技選択メニューにおいて、プレイヤーがギミックを選択しているかどうかを返す。
 bool32 IsGimmickSelected(enum BattlerId battler, enum Gimmick gimmick)
 {
-    // There's no player select in tests, but some gimmicks need to test choice before they are fully activated.
+    // テスト段階ではプレイヤー選択機能はありませんが、一部のギミックについては、完全に有効化する前に選択の動作をテストする必要があります。
     #if TESTING
     return (gBattleStruct->gimmick.toActivate & (1u << battler)) && gBattleStruct->gimmick.usableGimmick[battler] == gimmick;
     #else
@@ -50,31 +50,31 @@ bool32 IsGimmickSelected(enum BattlerId battler, enum Gimmick gimmick)
     #endif
 }
 
-// Sets a battler as having a gimmick active using their party index.
+// パーティ内のインデックスを使用して、戦闘参加者のギミックを有効な状態に設定。
 void SetActiveGimmick(enum BattlerId battler, enum Gimmick gimmick)
 {
     gBattleStruct->gimmick.activeGimmick[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]] = gimmick;
 }
 
-// Returns a battler's active gimmick, if any.
+// 戦闘参加者が現在有効なギミックを持っている場合、それを返す。
 enum Gimmick GetActiveGimmick(enum BattlerId battler)
 {
     return gBattleStruct->gimmick.activeGimmick[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]];
 }
 
-// Returns whether a trainer mon is intended to use an unrestrictive gimmick via .useGimmick (i.e Tera).
+// トレーナーのポケモンが.useGimmickを介して、制約のないギミック（テラスタルなど）を使用する設定になっているかを返す。
 bool32 ShouldTrainerBattlerUseGimmick(enum BattlerId battler, enum Gimmick gimmick)
 {
-    // There are no trainer party settings in battles, but the AI needs to know which gimmick to use.
+    // バトルにおけるトレーラーのパーティ設定はありませんが、AIはどのギミックを使用すべきかを判断する必要があります。
     #if TESTING
     return gimmick == TestRunner_Battle_GetChosenGimmick(GetBattlerTrainer(battler), gBattlerPartyIndexes[battler]);
     #else
-    // The player can bypass these checks because they can choose through the controller.
+    // プレイヤーはコントローラーで選択できるため、これらのチェックを回避できます。
     if (IsOnPlayerSide(battler) && !((gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
     {
         return TRUE;
     }
-    // Check the trainer party data to see if a gimmick is intended.
+    // トレーナーの手持ちデータから、ギミックがあるか確認。
     else
     {
         if (gimmick == GIMMICK_TERA && gBattleStruct->opponentMonCanTera & 1 << gBattlerPartyIndexes[battler])
@@ -87,7 +87,7 @@ bool32 ShouldTrainerBattlerUseGimmick(enum BattlerId battler, enum Gimmick gimmi
     return FALSE;
 }
 
-// Returns whether a trainer has used a gimmick during a battle.
+// トレーナーがバトル中に既にギミックを使用したかを返す。
 bool32 HasTrainerUsedGimmick(enum BattlerId battler, enum Gimmick gimmick)
 {
     if (IsDoubleBattle() && (IsPartnerMonFromSameTrainer(battler) || (gimmick == GIMMICK_DYNAMAX)))
@@ -101,7 +101,7 @@ bool32 HasTrainerUsedGimmick(enum BattlerId battler, enum Gimmick gimmick)
     return gBattleStruct->gimmick.activated[battler][gimmick];
 }
 
-// Sets a gimmick as used by a trainer with checks for Multi Battles.
+// マルチバトルでのチェックを含め、トレーナーが使用するギミックを設定。
 void SetGimmickAsActivated(enum BattlerId battler, enum Gimmick gimmick)
 {
     gBattleStruct->gimmick.activated[battler][gimmick] = TRUE;
@@ -131,7 +131,7 @@ void CreateGimmickTriggerSprite(enum BattlerId battler)
 {
     const struct GimmickInfo * gimmick = &gGimmicksInfo[gBattleStruct->gimmick.usableGimmick[battler]];
 
-    // Exit if there shouldn't be a sprite produced.
+    // スプライトが生成されない場合は離脱。
     if (!IsOnPlayerSide(battler)
      || gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_NONE
      || gimmick->triggerSheet == NULL
@@ -255,7 +255,7 @@ static void SpriteCb_GimmickTrigger(struct Sprite *sprite)
 #undef tBattler
 #undef tHide
 
-// for sprite data fields
+// スプライトデータフィールド用
 #define tBattler        data[0]
 #define tPosX           data[2]
 #define tLevelXDelta    data[3] // X position depends whether level has 3, 2 or 1 digit

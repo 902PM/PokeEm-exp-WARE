@@ -435,7 +435,7 @@ void ComputeAiBattlerDecisions(enum BattlerId battler)
 
 void ReconsiderGimmick(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
 {
-    // After choosing a move for battlerAtk assuming that a gimmick will be used, reconsider whether the gimmick is necessary.
+    // ギミックの使用を前提としてbattlerAtkの技を選択した後、そのギミックが本当に必要かどうかを再検討。
 
     if (gBattleStruct->gimmick.usableGimmick[battlerAtk] == GIMMICK_Z_MOVE && !ShouldUseZMove(battlerAtk, battlerDef, move))
         SetAIUsingGimmick(battlerAtk, NO_GIMMICK);
