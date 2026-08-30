@@ -307,6 +307,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_POISON_PUPPETEER,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
+// ここまで伝説。下から一般人
     [FRONTIER_MON_RATICATE_1] = {
         .species = SPECIES_RATICATE,
         .moves = {MOVE_DOUBLE_EDGE, MOVE_SUCKER_PUNCH, MOVE_ENDEAVOR, MOVE_FLAME_WHEEL},
@@ -446,11 +447,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SHEDINJA,
         .moves = {MOVE_SWORDS_DANCE, MOVE_SHADOW_CLAW, MOVE_SHADOW_SNEAK, MOVE_X_SCISSOR},
         .heldItem = ITEM_SAFETY_GOGGLES,
-        .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
-        .nature = NATURE_ADAMANT,
-        .ball = BALL_DUSK,
         .ability = ABILITY_WONDER_GUARD,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
+        .nature = NATURE_ADAMANT,
+        .ball = BALL_DUSK,
     },
     [FRONTIER_MON_BELLOSSOM] = {
         .species = SPECIES_BELLOSSOM,
@@ -463,7 +464,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
-// 未使用
+// 1未使用
     [FRONTIER_MON_TOGEPI] = {
         .species = SPECIES_HITMONTOP,
         .moves = {MOVE_CLOSE_COMBAT, MOVE_MACH_PUNCH, MOVE_BULLDOZE, MOVE_TRIPLE_AXEL},
@@ -475,7 +476,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_LUXURY,
     },
-// 未使用
+// 2未使用
     [FRONTIER_MON_SPINARAK] = {
         .species = SPECIES_BIBAREL,
         .moves = {MOVE_SWORDS_DANCE, MOVE_DOUBLE_EDGE, MOVE_ROLLOUT, MOVE_BULLDOZE},
@@ -487,7 +488,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_PREMIER,
 },
-// 未使用
+// 3未使用
     [FRONTIER_MON_MARILL] = {
         .species = SPECIES_KRICKETUNE,
         .moves = {MOVE_FELL_STINGER, MOVE_STICKY_WEB, MOVE_NIGHT_SLASH, MOVE_POUNCE},
@@ -499,7 +500,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_NET,
     },
-// 未使用
+// 4未使用
     [FRONTIER_MON_HOPPIP] = {
         .species = SPECIES_VESPIQUEN,
         .moves = {MOVE_ATTACK_ORDER, MOVE_HEAL_ORDER, MOVE_DEFEND_ORDER, MOVE_AIR_SLASH},
@@ -511,7 +512,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_NET,
     },
-// 未使用
+// 5未使用
     [FRONTIER_MON_SLUGMA] = {
         .species = SPECIES_WORMADAM_SANDY,
         .moves = {MOVE_EARTHQUAKE, MOVE_FISSURE, MOVE_ROCK_BLAST, MOVE_TOXIC},
@@ -523,7 +524,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_NET,
     },
-// 未使用
+// 6未使用
     [FRONTIER_MON_SWINUB] = {
         .species = SPECIES_PACHIRISU,
         .moves = {MOVE_NUZZLE, MOVE_U_TURN, MOVE_SUPER_FANG, MOVE_MUD_SHOT},
@@ -540,13 +541,14 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SMEARGLE,
         .moves = {MOVE_LIGHT_THAT_BURNS_THE_SKY, MOVE_CLANGOROUS_SOULBLAZE, MOVE_10000000_VOLT_THUNDERBOLT, MOVE_GUARDIAN_OF_ALOLA},
         .heldItem = ITEM_QUICK_CLAW,
+        .ability = ABILITY_MOODY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
         .nature = NATURE_MODEST,
-        .ability = ABILITY_MOODY,
         .gender = TRAINER_MON_MALE,
         .ball = BALL_CHERISH,
     },
-// 未使用
+// 7未使用
     [FRONTIER_MON_PIDGEY] = {
         .species = SPECIES_CHERRIM_OVERCAST,
         .moves = {MOVE_SOLAR_BLADE, MOVE_PLAY_ROUGH, MOVE_WEATHER_BALL, MOVE_GROWTH},
@@ -558,7 +560,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_FEMALE,
     },
-// 未使用
+// 8未使用
     [FRONTIER_MON_RATTATA] = {
         .species = SPECIES_PURUGLY,
         .moves = {MOVE_SUCKER_PUNCH, MOVE_FRUSTRATION, MOVE_FAKE_OUT, MOVE_KNOCK_OFF},
@@ -570,7 +572,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
-// 未使用
+// 9未使用
     [FRONTIER_MON_WYNAUT] = {
         .species = SPECIES_SKUNTANK,
         .moves = {MOVE_FURY_SWIPES, MOVE_TOXIC, MOVE_SUBSTITUTE, MOVE_FOUL_PLAY},
@@ -583,7 +585,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .teraType = TYPE_NORMAL,
         .ball = BALL_FRIEND,
     },
-// 未使用
+// 10未使用
     [FRONTIER_MON_SKITTY] = {
         .species = SPECIES_CARNIVINE,
         .moves = {MOVE_POWER_WHIP, MOVE_CRUNCH, MOVE_BUG_BITE, MOVE_KNOCK_OFF},
@@ -595,7 +597,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_SAFARI,
     },
-// 未使用
+// 11未使用
     [FRONTIER_MON_SPEAROW] = {
         .species = SPECIES_LUMINEON,
         .moves = {MOVE_WHIRLPOOL, MOVE_CHARM, MOVE_SUBSTITUTE, MOVE_AQUA_RING},
@@ -608,7 +610,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .teraType = TYPE_GROUND,
     },
-// 未使用
+// 12未使用
     [FRONTIER_MON_HOOTHOOT] = {
         .species = SPECIES_WATCHOG,
         .moves = {MOVE_HYPNOSIS, MOVE_SUBSTITUTE, MOVE_BATON_PASS, MOVE_FOCUS_PUNCH},
@@ -620,7 +622,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_PREMIER,
     },
-// 未使用
+// 13未使用
     [FRONTIER_MON_DIGLETT] = {
         .species = SPECIES_STOUTLAND,
         .moves = {MOVE_GIGA_IMPACT, MOVE_PLAY_ROUGH, MOVE_WILD_CHARGE, MOVE_FIRE_FANG},
@@ -632,7 +634,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_LUXURY,
     },
-// 未使用
+// 14未使用
     [FRONTIER_MON_LEDYBA] = {
         .species = SPECIES_MUSHARNA,
         .moves = {MOVE_HEALING_WISH, MOVE_MEMENTO, MOVE_MISTY_EXPLOSION, MOVE_REVIVAL_BLESSING},
@@ -644,7 +646,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DREAM,
     },
-// 未使用
+// 15未使用
     [FRONTIER_MON_NINCADA] = {
         .species = SPECIES_UNFEZANT,
         .moves = {MOVE_SUBSTITUTE, MOVE_BRAVE_BIRD, MOVE_GIGA_IMPACT, MOVE_NIGHT_SLASH},
@@ -658,7 +660,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .dynamaxLevel = 10,
         .ball = BALL_LUXURY,
     },
-// 未使用
+// 16未使用
     [FRONTIER_MON_SURSKIT] = {
         .species = SPECIES_GIGALITH,
         .moves = {MOVE_STONE_EDGE, MOVE_EARTHQUAKE, MOVE_SMACK_DOWN, MOVE_EXPLOSION},
@@ -670,7 +672,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 17未使用
     [FRONTIER_MON_JIGGLYPUFF] = {
         .species = SPECIES_BASCULIN_RED_STRIPED,
         .moves = {MOVE_FINAL_GAMBIT, MOVE_HEAD_SMASH, MOVE_REST, MOVE_WAVE_CRASH},
@@ -682,7 +684,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_MALE,
     },
-// 未使用
+// 18未使用
     [FRONTIER_MON_TAILLOW] = {
         .species = SPECIES_MARACTUS,
         .moves = {MOVE_GIGA_DRAIN, MOVE_PETAL_DANCE, MOVE_WEATHER_BALL, MOVE_ROUND},
@@ -704,7 +706,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 19未使用
     [FRONTIER_MON_NIDORAN_M] = {
         .species = SPECIES_SWANNA,
         .moves = {MOVE_HURRICANE, MOVE_CHILLING_WATER, MOVE_TRAILBLAZE, MOVE_FEATHER_DANCE},
@@ -716,7 +718,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_FEMALE,
     },
-// 未使用
+// 20未使用
     [FRONTIER_MON_NIDORAN_F] = {
         .species = SPECIES_VANILLUXE,
         .moves = {MOVE_BLIZZARD, MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_AURORA_VEIL},
@@ -728,7 +730,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_FEMALE,
     },
-// 未使用
+// 21未使用
     [FRONTIER_MON_KIRLIA] = {
         .species = SPECIES_BEARTIC,
         .moves = {MOVE_LIQUIDATION, MOVE_CLOSE_COMBAT, MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE},
@@ -740,7 +742,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_SWIFT_SWIM,
         .gender = TRAINER_MON_MALE,
     },
-// 未使用
+// 22未使用
     [FRONTIER_MON_MAREEP] = {
         .species = SPECIES_BEHEEYEM,
         .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_DARK_PULSE, MOVE_ENERGY_BALL},
@@ -751,7 +753,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_ANALYTIC,
         .ball = BALL_DREAM,
     },
-// 未使用
+// 23未使用
     [FRONTIER_MON_MEDITITE] = {
         .species = SPECIES_SAWSBUCK_SPRING,
         .moves = {MOVE_DOUBLE_EDGE, MOVE_HORN_LEECH, MOVE_THUNDER_WAVE, MOVE_JUMP_KICK},
@@ -763,7 +765,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_SAFARI,
     },
-// 未使用
+// 24未使用
     [FRONTIER_MON_SLAKOTH] = {
         .species = SPECIES_ESCAVALIER,
         .moves = {MOVE_MEGAHORN, MOVE_IRON_HEAD, MOVE_RAZOR_SHELL, MOVE_KNOCK_OFF},
@@ -774,7 +776,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_SHELL_ARMOR,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 25未使用
     [FRONTIER_MON_PARAS] = {
         .species = SPECIES_JELLICENT,
         .moves = {MOVE_STRENGTH_SAP, MOVE_SCALD, MOVE_SHADOW_BALL, MOVE_ACID_ARMOR},
@@ -786,7 +788,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DIVE,
     },
-// 未使用
+// 26未使用
     [FRONTIER_MON_EKANS] = {
         .species = SPECIES_STUNFISK_GALAR,
         .moves = {MOVE_SNAP_TRAP, MOVE_DIG, MOVE_COUNTER, MOVE_SUCKER_PUNCH},
@@ -807,7 +809,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_IMPOSTER,
         .ball = BALL_LUXURY,
     },
-// 未使用
+// 27未使用
     [FRONTIER_MON_BARBOACH] = {
         .species = SPECIES_KLINKLANG,
         .moves = {MOVE_GEAR_GRIND, MOVE_WILD_CHARGE, MOVE_SUBSTITUTE, MOVE_SHIFT_GEAR},
@@ -818,7 +820,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_CLEAR_BODY,
     },
-// 未使用
+// 28未使用
     [FRONTIER_MON_MEOWTH] = {
         .species = SPECIES_ACCELGOR,
         .moves = {MOVE_FINAL_GAMBIT, MOVE_SUBSTITUTE, MOVE_REVERSAL, MOVE_U_TURN},
@@ -829,7 +831,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_UNBURDEN,
     },
-// 未使用
+// 29未使用
     [FRONTIER_MON_PINECO] = {
         .species = SPECIES_BOUFFALANT,
         .moves = {MOVE_MEGAHORN, MOVE_HEAD_CHARGE, MOVE_TAUNT, MOVE_ZEN_HEADBUTT},
@@ -841,7 +843,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_SAP_SIPPER,
         .gender = TRAINER_MON_MALE,
     },
-// 未使用
+// 30未使用
     [FRONTIER_MON_TRAPINCH] = {
         .species = SPECIES_DRUDDIGON,
         .moves = {MOVE_STEALTH_ROCK, MOVE_GLARE, MOVE_TAUNT, MOVE_ROCK_TOMB},
@@ -853,7 +855,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_BEAST,
     },
-// 未使用
+// 31未使用
     [FRONTIER_MON_SPHEAL] = {
         .species = SPECIES_SIGILYPH,
         .moves = {MOVE_AIR_SLASH, MOVE_STORED_POWER, MOVE_HEAT_WAVE, MOVE_COSMIC_POWER},
@@ -865,7 +867,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_TINTED_LENS,
         .isShiny = TRUE,
     },
-// 未使用
+// 32未使用
     [FRONTIER_MON_HORSEA] = {
         .species = SPECIES_BRAVIARY,
         .moves = {MOVE_CLOSE_COMBAT, MOVE_IRON_HEAD, MOVE_ZEN_HEADBUTT, MOVE_U_TURN},
@@ -878,7 +880,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .teraType = TYPE_FIGHTING,
     },
-// 未使用
+// 33未使用
     [FRONTIER_MON_SHROOMISH] = {
         .species = SPECIES_BRAVIARY_HISUI,
         .moves = {MOVE_ESPER_WING, MOVE_AIR_CUTTER, MOVE_TERA_BLAST, MOVE_U_TURN},
@@ -891,7 +893,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .teraType = TYPE_FIGHTING,
         .ball = BALL_FAST,
     },
-// 未使用
+// 34未使用
     [FRONTIER_MON_SHUPPET] = {
         .species = SPECIES_DEDENNE,
         .moves = {MOVE_THUNDER, MOVE_DAZZLING_GLEAM, MOVE_GRASS_KNOT, MOVE_TERA_BLAST},
@@ -904,7 +906,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .teraType = TYPE_FIRE,
         .ball = BALL_LOVE,
     },
-// 未使用
+// 35未使用
     [FRONTIER_MON_DUSKULL] = {
         .species = SPECIES_TREVENANT,
         .moves = {MOVE_HORN_LEECH, MOVE_LEECH_SEED, MOVE_CURSE, MOVE_PROTECT},
@@ -916,7 +918,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_DUSK,
     },
-// 未使用
+// 36未使用
     [FRONTIER_MON_ELECTRIKE] = {
         .species = SPECIES_GUMSHOOS,
         .moves = {MOVE_THRASH, MOVE_PSYCHIC_FANGS, MOVE_U_TURN, MOVE_CRUNCH},
@@ -928,7 +930,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_DUSK,
     },
-// 未使用
+// 37未使用
     [FRONTIER_MON_VULPIX] = {
         .species = SPECIES_VIKAVOLT,
         .moves = {MOVE_THUNDERBOLT, MOVE_BUG_BUZZ, MOVE_FLASH_CANNON, MOVE_AIR_SLASH},
@@ -940,7 +942,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
         .gender = TRAINER_MON_MALE,
     },
-// 未使用。ピカチュウは他にもあるので表記ブレさせる。
+// 38未使用。ピカチュウは他にもあるので表記ブレさせる。
     [FRONTIER_MON_PICACHU] = {
         .species = SPECIES_ORICORIO_POM_POM,
         .moves = {MOVE_REVELATION_DANCE, MOVE_AIR_SLASH, MOVE_QUIVER_DANCE, MOVE_BATON_PASS},
@@ -953,7 +955,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .teraType = TYPE_FAIRY,
     },
-// 未使用
+// 39未使用
     [FRONTIER_MON_SANDSHREW] = {
         .species = SPECIES_RIBOMBEE,
         .moves = {MOVE_STICKY_WEB, MOVE_MOONBLAST, MOVE_POUNCE, MOVE_STRUGGLE_BUG},
@@ -965,7 +967,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_FEMALE,
     },
-// 未使用
+// 40未使用
     [FRONTIER_MON_POLIWAG] = {
         .species = SPECIES_LYCANROC_MIDDAY,
         .moves = {MOVE_ACCELEROCK, MOVE_PLAY_ROUGH, MOVE_CLOSE_COMBAT, MOVE_CRUNCH},
@@ -977,7 +979,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 41未使用
     [FRONTIER_MON_BELLSPROUT] = {
         .species = SPECIES_WISHIWASHI_SOLO,
         .moves = {MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_ICE_SPINNER},
@@ -989,7 +991,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_DIVE,
     },
-// 未使用
+// 42未使用
     [FRONTIER_MON_GEODUDE] = {
         .species = SPECIES_MUDSDALE,
         .moves = {MOVE_STEALTH_ROCK, MOVE_HEAVY_SLAM, MOVE_EARTHQUAKE, MOVE_ROAR},
@@ -1001,7 +1003,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_STAMINA,
         .gender = TRAINER_MON_MALE,
     },
-// 未使用
+// 43未使用
     [FRONTIER_MON_DRATINI] = {
         .species = SPECIES_ARAQUANID,
         .moves = {MOVE_LIQUIDATION, MOVE_STICKY_WEB, MOVE_ENDURE, MOVE_MIRROR_COAT},
@@ -1013,7 +1015,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_DIVE,
     },
-// 未使用
+// 44未使用
     [FRONTIER_MON_SNUBBULL] = {
         .species = SPECIES_PALOSSAND,
         .moves = {MOVE_SHADOW_BALL, MOVE_STOCKPILE, MOVE_SPIT_UP, MOVE_SHORE_UP},
@@ -1025,7 +1027,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .isShiny = TRUE,
         .ball = BALL_LUXURY,
     },
-// 未使用
+// 45未使用
     [FRONTIER_MON_REMORAID] = {
         .species = SPECIES_PYUKUMUKU,
         .moves = {MOVE_PAIN_SPLIT, MOVE_RECOVER, MOVE_TOXIC, MOVE_MIRROR_COAT},
@@ -1037,7 +1039,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DIVE,
     },
-// 未使用
+// 46未使用
     [FRONTIER_MON_LARVITAR] = {
         .species = SPECIES_MINIOR_METEOR_RED,
         .moves = {MOVE_ACROBATICS, MOVE_EARTHQUAKE, MOVE_SUBSTITUTE, MOVE_SHELL_SMASH},
@@ -1047,7 +1049,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 47未使用
     [FRONTIER_MON_BALTOY] = {
         .species = SPECIES_KOMALA,
         .moves = {MOVE_WOOD_HAMMER, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_SUCKER_PUNCH},
@@ -1059,7 +1061,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_COMATOSE,
         .gender = TRAINER_MON_FEMALE,
     },
-// 未使用
+// 48未使用
     [FRONTIER_MON_SNORUNT] = {
         .species = SPECIES_TURTONATOR,
         .moves = {MOVE_DRACO_METEOR, MOVE_BURNING_JEALOUSY, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE},
@@ -1071,7 +1073,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 49未使用
     [FRONTIER_MON_BAGON] = {
         .species = SPECIES_LURANTIS,
         .moves = {MOVE_LEAF_STORM, MOVE_GIGA_DRAIN, MOVE_SUNNY_DAY, MOVE_POLLEN_PUFF},
@@ -1083,7 +1085,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
-// 未使用
+// 50未使用
     [FRONTIER_MON_BELDUM] = {
         .species = SPECIES_AROMATISSE,
         .moves = {MOVE_TRICK_ROOM, MOVE_MOONBLAST, MOVE_ENERGY_BALL, MOVE_GYRO_BALL},
@@ -1117,7 +1119,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
-// 未使用
+// 51未使用
     [FRONTIER_MON_MANKEY] = {
         .species = SPECIES_BRUXISH,
         .moves = {MOVE_WAVE_CRASH, MOVE_TRICK_ROOM, MOVE_AQUA_JET, MOVE_TAUNT},
@@ -1184,7 +1186,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_FAST,
     },
-// 未使用
+// 52未使用
     [FRONTIER_MON_CORPHISH] = {
         .species = SPECIES_MORPEKO_FULL_BELLY,
         .moves = {MOVE_AURA_WHEEL, MOVE_FAKE_OUT, MOVE_TAUNT, MOVE_PROTECT},
@@ -1196,7 +1198,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
-// 未使用
+// 53未使用
     [FRONTIER_MON_CHARMANDER] = {
         .species = SPECIES_CRAMORANT,
         .moves = {MOVE_SURF, MOVE_ROOST, MOVE_STOCKPILE, MOVE_ENDURE},
@@ -1208,7 +1210,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_MALE,
     },
-// 未使用
+// 54未使用
     [FRONTIER_MON_CYNDAQUIL] = {
         .species = SPECIES_SANDACONDA,
         .moves = {MOVE_EARTHQUAKE, MOVE_BODY_PRESS, MOVE_GLARE, MOVE_STEALTH_ROCK},
@@ -1220,7 +1222,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_HEAVY,
     },
-// 未使用
+// 55未使用
     [FRONTIER_MON_ABRA] = {
         .species = SPECIES_COALOSSAL,
         .moves = {MOVE_ANCIENT_POWER, MOVE_BURN_UP, MOVE_SOLAR_BEAM, MOVE_EARTH_POWER},
@@ -1350,7 +1352,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .teraType = TYPE_WATER,
         .ball = BALL_DIVE,
     },
-// 未使用参照されていない
+// 56未使用参照されていない
     [FRONTIER_MON_HARIYAMA_1] = {
         .species = SPECIES_HARIYAMA,
         .moves = {MOVE_CROSS_CHOP, MOVE_ROCK_SLIDE, MOVE_COUNTER, MOVE_FAKE_OUT},
@@ -1359,7 +1361,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_ADAMANT,
         .ball = BALL_POKE
     },
-// 未使用参照されていない
+// 57未使用参照されていない
     [FRONTIER_MON_HARIYAMA_2] = {
         .species = SPECIES_HARIYAMA,
         .moves = {MOVE_CROSS_CHOP, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH},
@@ -1368,7 +1370,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_QUIET,
         .ball = BALL_POKE
     },
-// 未使用参照されていない
+// 58未使用参照されていない
     [FRONTIER_MON_EXPLOUD_1] = {
         .species = SPECIES_EXPLOUD,
         .moves = {MOVE_HYPER_VOICE, MOVE_SHADOW_BALL, MOVE_SLEEP_TALK, MOVE_REST},
@@ -1377,7 +1379,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_IMPISH,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 59未使用参照されていない
     [FRONTIER_MON_EXPLOUD_2] = {
         .species = SPECIES_EXPLOUD,
         .moves = {MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_COUNTER},
@@ -1386,7 +1388,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_QUIRKY,
         .ball = BALL_POKE
     },
-// 未使用参照されていない
+// 60未使用参照されていない
     [FRONTIER_MON_EXPLOUD_3] = {
         .species = SPECIES_EXPLOUD,
         .moves = {MOVE_OVERHEAT, MOVE_ICE_BEAM, MOVE_THUNDER_PUNCH, MOVE_EXTRASENSORY},
@@ -1395,7 +1397,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST,
         .ball = BALL_POKE
     },
-// 未使用参照されていない
+// 61未使用参照されていない
     [FRONTIER_MON_BRELOOM_1] = {
         .species = SPECIES_BRELOOM,
         .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_HEADBUTT, MOVE_COUNTER},
@@ -1404,7 +1406,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_JOLLY,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 62未使用参照されていない
     [FRONTIER_MON_BRELOOM_2] = {
         .species = SPECIES_BRELOOM,
         .moves = {MOVE_GIGA_DRAIN, MOVE_LEECH_SEED, MOVE_FOCUS_PUNCH, MOVE_SPORE},
@@ -1413,7 +1415,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 63未使用参照されていない
     [FRONTIER_MON_SHIFTRY_1] = {
         .species = SPECIES_SHIFTRY,
         .moves = {MOVE_GIGA_DRAIN, MOVE_FEINT_ATTACK, MOVE_QUICK_ATTACK, MOVE_FAKE_OUT},
@@ -1422,7 +1424,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_QUIET,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 64未使用参照されていない
     [FRONTIER_MON_SHIFTRY_2] = {
         .species = SPECIES_SHIFTRY,
         .moves = {MOVE_LEECH_SEED, MOVE_DIG, MOVE_DOUBLE_TEAM, MOVE_REST},
@@ -1431,7 +1433,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_IMPISH,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 65未使用参照されていない
     [FRONTIER_MON_LUDICOLO_1] = {
         .species = SPECIES_LUDICOLO,
         .moves = {MOVE_SURF, MOVE_RAIN_DANCE, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH},
@@ -1440,7 +1442,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_QUIET,
         .ball = BALL_POKE,
     },
-// 未使用参照されていない
+// 66未使用参照されていない
     [FRONTIER_MON_LUDICOLO_2] = {
         .species = SPECIES_LUDICOLO,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH},
@@ -1605,6 +1607,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_HUGE_POWER,
         .gender = TRAINER_MON_MALE,
+        .friendship = 0,
     },
     [FRONTIER_MON_VIVILLON] = {
         .species = SPECIES_VIVILLON_ELEGANT,
@@ -1684,6 +1687,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_CHEEK_POUCH,
         .gender = TRAINER_MON_MALE,
+        .friendship = 0,
     },
     [FRONTIER_MON_FLAPPLE] = {
         .species = SPECIES_FLAPPLE,
@@ -1747,42 +1751,44 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_SPINDA] = {
         .species = SPECIES_SPINDA,
-        .moves = {MOVE_DIZZY_PUNCH, MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FEINT_ATTACK},
+        .moves = {MOVE_SUPERPOWER, MOVE_DOUBLE_EDGE, MOVE_ZEN_HEADBUTT, MOVE_FAKE_OUT},
         .heldItem = ITEM_SITRUS_BERRY,
-        .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
-        .nature = NATURE_RELAXED,
-        .ball = BALL_POKE
+        .ability = ABILITY_CONTRARY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 252, 0, 6, 0, 0),
+        .nature = NATURE_ADAMANT,
+        .ball = BALL_PREMIER
     },
     [FRONTIER_MON_ARCTOVISH] = {
         .species = SPECIES_ARCTOVISH,
         .moves = {MOVE_FISHIOUS_REND, MOVE_ICICLE_CRASH, MOVE_AURORA_VEIL, MOVE_SUPER_FANG},
         .heldItem = ITEM_LIFE_ORB,
+        .ability = ABILITY_SLUSH_RUSH,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 6),
         .nature = NATURE_ADAMANT,
         .ball = BALL_DIVE,
-        .ability = ABILITY_SLUSH_RUSH,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
     [FRONTIER_MON_OINKOLOGNE_M] = {
         .species = SPECIES_OINKOLOGNE_M,
         .moves = {MOVE_STOMPING_TANTRUM, MOVE_BODY_PRESS, MOVE_YAWN, MOVE_STUFF_CHEEKS},
         .heldItem = ITEM_SALAC_BERRY,
+        .ability = ABILITY_LINGERING_AROMA,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 204, 54, 0, 0),
         .nature = NATURE_ADAMANT,
         .ball = BALL_PREMIER,
-        .ability = ABILITY_LINGERING_AROMA,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .teraType = TYPE_GROUND,
     },
     [FRONTIER_MON_OINKOLOGNE_F] = {
         .species = SPECIES_OINKOLOGNE_F,
         .moves = {MOVE_BODY_PRESS, MOVE_STOCKPILE, MOVE_REST, MOVE_SLEEP_TALK},
         .heldItem = ITEM_SITRUS_BERRY,
+        .ability = ABILITY_AROMA_VEIL,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 6, 0, 0),
         .nature = NATURE_IMPISH,
         .ball = BALL_PREMIER,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_AROMA_VEIL,
         .teraType = TYPE_FIGHTING,
     },
     [FRONTIER_MON_SPIDOPS] = {
@@ -1839,7 +1845,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_ANGER_SHELL,
         .gender = TRAINER_MON_MALE,
-        .isShiny = FALSE,
     },
     [FRONTIER_MON_RABSCA] = {
         .species = SPECIES_RABSCA,
@@ -1850,7 +1855,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_SYNCHRONIZE,
         .gender = TRAINER_MON_MALE,
-        .isShiny = FALSE,
         .ball = BALL_NET,
     },
     [FRONTIER_MON_TATSUGIRI] = {
@@ -1993,6 +1997,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_SNIPER,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_MALE,
+        .friendship = 0,
     },
     [FRONTIER_MON_ARBOK] = {
         .species = SPECIES_ARBOK,
@@ -2065,19 +2070,20 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_VOLBEAT,
         .moves = {MOVE_TAIL_GLOW, MOVE_BATON_PASS, MOVE_SUBSTITUTE, MOVE_ENCORE},
         .heldItem = ITEM_SALAC_BERRY,
+        .ability = ABILITY_PRANKSTER,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 0, 76, 42, 0, 140),
         .nature = NATURE_TIMID,
         .ball = BALL_NET,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_PRANKSTER,
     },
     [FRONTIER_MON_ILLUMISE_1] = {
         .species = SPECIES_ILLUMISE,
         .moves = {MOVE_INFESTATION, MOVE_ENCORE, MOVE_LIGHT_SCREEN, MOVE_ROOST},
         .heldItem = ITEM_ROCKY_HELMET,
-        .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
-        .nature = NATURE_RELAXED,
         .ability = ABILITY_PRANKSTER,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 204, 0, 0, 52),
+        .nature = NATURE_RELAXED,
         .ball = BALL_NET,
     },
     [FRONTIER_MON_SANDACONDA] = {
@@ -2212,7 +2218,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_WOBBUFFET,
         .moves = {MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_ENCORE, MOVE_DESTINY_BOND},
         .heldItem = ITEM_MENTAL_HERB,
-        .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 6),
         .nature = NATURE_CALM,
         .ability = ABILITY_SHADOW_TAG,
         .gender = TRAINER_MON_MALE,
@@ -2672,7 +2679,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_IRON_FIST,
         .gender = TRAINER_MON_FEMALE,
-        .isShiny = FALSE,
         .teraType = TYPE_ELECTRIC,
     },
     [FRONTIER_MON_GUMSHOOS] = {
@@ -2933,7 +2939,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DIVE,
     },
-// 作ってない
+// 67作ってない
     [FRONTIER_MON_CRAWDAUNT_1] = {
         .species = SPECIES_CRAWDAUNT,
         .moves = {MOVE_BUBBLE_BEAM, MOVE_VISE_GRIP, MOVE_KNOCK_OFF, MOVE_PROTECT},
@@ -2953,6 +2959,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_TINTED_LENS,
         .gender = TRAINER_MON_MALE,
     },
+// 68作ってない
     [FRONTIER_MON_GRUMPIG_1] = {
         .species = SPECIES_GRUMPIG,
         .moves = {MOVE_PSYCHIC, MOVE_ICY_WIND, MOVE_GRASS_KNOT, MOVE_POWER_GEM},
@@ -3182,6 +3189,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_DEFIANT,
         .gender = TRAINER_MON_FEMALE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .friendship = 0,
     },
     [FRONTIER_MON_SKUNTANK] = {
         .species = SPECIES_SKUNTANK,
@@ -3245,20 +3253,20 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_VOLBEAT,
         .moves = {MOVE_TAIL_GLOW, MOVE_BATON_PASS, MOVE_TAUNT, MOVE_ENCORE},
         .heldItem = ITEM_FOCUS_SASH,
+        .ability = ABILITY_PRANKSTER,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 0, 76, 180, 0, 0),
         .nature = NATURE_TIMID,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_PRANKSTER,
+        .ball = BALL_NET,
         .teraType = TYPE_DARK,
     },
     [FRONTIER_MON_ILLUMISE_2] = {
         .species = SPECIES_ILLUMISE,
         .moves = {MOVE_ENCORE, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN, MOVE_CHARM},
         .heldItem = ITEM_EJECT_BUTTON,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(244, 0, 252, 0, 0, 14),
         .nature = NATURE_BOLD,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_PRANKSTER,
         .ball = BALL_NET,
     },
@@ -3358,9 +3366,10 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_MARACTUS,
         .moves = {MOVE_GIGA_DRAIN, MOVE_PETAL_DANCE, MOVE_WEATHER_BALL, MOVE_ROUND},
         .heldItem = ITEM_SALAC_BERRY,
-        .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-        .nature = NATURE_MODEST,
         .ability = ABILITY_STORM_DRAIN,
+        .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
+        .nature = NATURE_MODEST,
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
@@ -3396,6 +3405,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .ball = BALL_LUXURY,
     },
+// 誰からも参照されていない
     [FRONTIER_MON_PLUSLE] = {
         .species = SPECIES_PLUSLE,
         .moves = {MOVE_THUNDERBOLT, MOVE_THUNDER_WAVE, MOVE_SEISMIC_TOSS, MOVE_WISH},
@@ -3404,6 +3414,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE,
         .ball = BALL_POKE,
     },
+// 誰からも参照されていない
     [FRONTIER_MON_MINUN] = {
         .species = SPECIES_MINUN,
         .moves = {MOVE_THUNDERBOLT, MOVE_ATTRACT, MOVE_CHARM, MOVE_WISH},
@@ -3471,7 +3482,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SUDOWOODO,
         .moves = {MOVE_HEAD_SMASH, MOVE_EARTHQUAKE, MOVE_LOW_KICK, MOVE_TRAILBLAZE},
         .heldItem = ITEM_CHOICE_SCARF,
-        .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
+        .ev = TRAINER_PARTY_EVS(252, 252, 6, 0, 0, 0),
         .nature = NATURE_ADAMANT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_STURDY,
@@ -3919,11 +3930,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_PROBOPASS,
         .moves = {MOVE_FLASH_CANNON, MOVE_POWER_GEM, MOVE_EARTH_POWER, MOVE_ZAP_CANNON},
         .heldItem = ITEM_STEELIUM_Z,
+        .ability = ABILITY_STURDY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
         .nature = NATURE_MODEST,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_STURDY,
+        .ball = BALL_HEAVY,
     },
     [FRONTIER_MON_MAMOSWINE_3] = {
         .species = SPECIES_MAMOSWINE,
@@ -4092,7 +4103,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .gender = TRAINER_MON_MALE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
-// 作ってない
+// 69作ってない
     [FRONTIER_MON_CRAWDAUNT_2] = {
         .species = SPECIES_CRAWDAUNT,
         .moves = {MOVE_GUILLOTINE, MOVE_FRUSTRATION, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE},
@@ -4116,11 +4127,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_GRUMPIG,
         .moves = {MOVE_PSYCHIC, MOVE_CHILLING_WATER, MOVE_CHARGE_BEAM, MOVE_FLASH_CANNON},
         .heldItem = ITEM_LUM_BERRY,
+        .ability = ABILITY_THICK_FAT,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST,
         .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_THICK_FAT,
     },
     [FRONTIER_MON_TORKOAL_2] = {
         .species = SPECIES_TORKOAL,
@@ -4566,6 +4577,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_MOODY,
         .gender = TRAINER_MON_MALE,
         .ball = BALL_LUXURY,
+        .friendship = 0,
     },
     [FRONTIER_MON_ABOMASNOW_1] = {
         .species = SPECIES_ABOMASNOW,
@@ -4628,13 +4640,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_MALAMAR,
         .moves = {MOVE_SUPERPOWER, MOVE_POISON_JAB, MOVE_BATON_PASS, MOVE_TRICK},
         .heldItem = ITEM_CHOICE_BAND,
-        .ev = TRAINER_PARTY_EVS(252, 252, 0, 6, 0, 0),
-        .nature = NATURE_ADAMANT,
-        .ball = BALL_POKE,
-        .friendship = 0,
         .ability = ABILITY_CONTRARY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 252, 0, 6, 0, 0),
+        .nature = NATURE_ADAMANT,
         .gender = TRAINER_MON_FEMALE,
+        .ball = BALL_DUSK,
     },
     [FRONTIER_MON_ELECTABUZZ_1] = {
         .species = SPECIES_ELECTABUZZ,
@@ -4720,7 +4731,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ball = BALL_LOVE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_TECHNICIAN,
-        .isShiny = FALSE,
         .gender = TRAINER_MON_FEMALE,
     },
     [FRONTIER_MON_CARRACOSTA] = {
@@ -5028,7 +5038,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_SHELL_ARMOR,
         .gender = TRAINER_MON_MALE,
-        .isShiny = FALSE,
         .ball = BALL_SAFARI,
         .teraType = TYPE_WATER,
     },
@@ -5060,10 +5069,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_AVALUGG,
         .moves = {MOVE_AVALANCHE, MOVE_CURSE, MOVE_RECOVER, MOVE_EARTHQUAKE},
         .heldItem = ITEM_COVERT_CLOAK,
-        .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 252, 0),
+        .ability = ABILITY_ICE_BODY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(212, 44, 252, 0, 0, 0),
         .nature = NATURE_IMPISH,
         .ball = BALL_HEAVY,
-        .ability = ABILITY_ICE_BODY,
         .gender = TRAINER_MON_MALE,
         .shouldUseDynamax = TRUE,
         .dynamaxLevel = 10,
@@ -5081,23 +5091,25 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_ESPEON_1] = {
         .species = SPECIES_ESPEON,
-        .moves = {MOVE_PSYSHOCK, MOVE_ALLURING_VOICE, MOVE_TRICK, MOVE_DAZZLING_GLEAM},
-        .heldItem = ITEM_CHOICE_SPECS,
-        .ev = TRAINER_PARTY_EVS(0, 0, 170, 170, 0, 170),
-        .nature = NATURE_MODEST,
+        .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_TERA_BLAST, MOVE_POWER_GEM},
+        .heldItem = ITEM_LIFE_ORB,
         .ability = ABILITY_MAGIC_BOUNCE,
+        .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(68, 0, 28, 156, 0, 170),
+        .nature = NATURE_MODEST,
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
+        .teraType = TYPE_FIGHT,
     },
     [FRONTIER_MON_UMBREON_1] = {
         .species = SPECIES_UMBREON,
         .moves = {MOVE_FOUL_PLAY, MOVE_PROTECT, MOVE_MOONLIGHT, MOVE_TOXIC},
         .heldItem = ITEM_RED_CARD,
+        .ability = ABILITY_INNER_FOCUS,
         .ev = TRAINER_PARTY_EVS(252, 0, 6, 0, 0, 252),
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .nature = NATURE_CAREFUL,
         .ball = BALL_DUSK,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_INNER_FOCUS,
         .gender = TRAINER_MON_MALE,
     },
     [FRONTIER_MON_AROMATISSE] = {
@@ -5300,6 +5312,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SLAKING,
         .moves = {MOVE_GIGA_IMPACT, MOVE_FIRE_PUNCH, MOVE_SHADOW_CLAW, MOVE_SWAGGER},
         .heldItem = ITEM_PUNCHING_GLOVE,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
         .ball = BALL_PREMIER,
@@ -5388,12 +5401,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_ZOROARK,
         .moves = {MOVE_COUNTER, MOVE_NIGHT_DAZE, MOVE_FLAMETHROWER, MOVE_SUCKER_PUNCH},
         .heldItem = ITEM_FOCUS_SASH,
+        .ability = ABILITY_ILLUSION,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
         .nature = NATURE_HASTY,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_ILLUSION,
         .gender = TRAINER_MON_MALE,
+        .ball = BALL_DUSK,
     },
     [FRONTIER_MON_DUSCLOPS_1] = {
         .species = SPECIES_DUSCLOPS,
@@ -5700,9 +5713,10 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_ALTARIA,
         .moves = {MOVE_ALLURING_VOICE, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_COTTON_GUARD},
         .heldItem = ITEM_THROAT_SPRAY,
-        .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
-        .nature = NATURE_MODEST,
         .ability = ABILITY_CLOUD_NINE,
+        .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
+        .nature = NATURE_MODEST,
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
@@ -5726,7 +5740,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ball = BALL_LOVE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_SPEED_BOOST,
-        .isShiny = FALSE,
         .gender = TRAINER_MON_FEMALE,
         .teraType = TYPE_DARK,
     },
@@ -5756,12 +5769,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_ARMALDO,
         .moves = {MOVE_X_SCISSOR, MOVE_STONE_EDGE, MOVE_EARTHQUAKE, MOVE_LOW_KICK},
         .heldItem = ITEM_BUGINIUM_Z,
+        .ability = ABILITY_SWIFT_SWIM,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 13),
         .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
         .nature = NATURE_JOLLY,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 13),
-        .ability = ABILITY_SWIFT_SWIM,
         .gender = TRAINER_MON_MALE,
+        .ball = BALL_NET,
     },
     [FRONTIER_MON_CETITAN] = {
         .species = SPECIES_CETITAN,
@@ -5890,7 +5903,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 6, 0, 0),
         .nature = NATURE_ADAMANT,
-        .ball = BALL_POKE,
+        .ball = BALL_DIVE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_OBLIVIOUS,
         .gender = TRAINER_MON_FEMALE,
@@ -6062,12 +6075,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_MALAMAR,
         .moves = {MOVE_SUPERPOWER, MOVE_ZEN_HEADBUTT, MOVE_KNOCK_OFF, MOVE_TRICK_ROOM},
         .heldItem = ITEM_MALAMARITE,
+        .ability = ABILITY_CONTRARY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 252, 6, 0, 0, 0),
         .nature = NATURE_BRAVE,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-        .ability = ABILITY_CONTRARY,
         .gender = TRAINER_MON_FEMALE,
+        .ball = BALL_DUSK,
     },
     [FRONTIER_MON_DECIDUEYE_1] = {
         .species = SPECIES_DECIDUEYE,
@@ -6474,7 +6487,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_TORRENT,
         .gender = TRAINER_MON_MALE,
-        .isShiny = FALSE,
         .gigantamaxFactor = TRUE,
         .shouldUseDynamax = TRUE,
         .dynamaxLevel = 10,
@@ -6794,12 +6806,13 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_MAGMORTAR,
         .moves = {MOVE_FIRE_BLAST, MOVE_TERA_BLAST, MOVE_THUNDERBOLT, MOVE_MACH_PUNCH},
         .heldItem = ITEM_LIFE_ORB,
-        .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 0, 0),
-        .nature = NATURE_QUIET,
         .ability = ABILITY_VITAL_SPIRIT,
+        .ev = TRAINER_PARTY_EVS(196, 0, 60, 0, 252, 0),
+        .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+        .nature = NATURE_QUIET,
         .gender = TRAINER_MON_FEMALE,
-        .teraType = TYPE_GRASS,
         .ball = BALL_LUXURY,
+        .teraType = TYPE_GRASS,
     },
     [FRONTIER_MON_CRADILY_1] = {
         .species = SPECIES_CRADILY,
@@ -7038,7 +7051,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .isShiny = TRUE,
         .ball = BALL_PREMIER,
     },
-// 誰からも参照されず
+// 70誰からも参照されず
     [FRONTIER_MON_GARDEVOIR_5] = {
         .species = SPECIES_GARDEVOIR,
         .moves = {MOVE_PSYCHIC, MOVE_MOONBLAST, MOVE_MYSTICAL_FIRE, MOVE_DESTINY_BOND},
@@ -7089,10 +7102,10 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_VENUSAUR,
         .moves = {MOVE_EARTH_POWER, MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER, MOVE_SYNTHESIS},
         .heldItem = ITEM_VENUSAURITE,
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
-        .nature = NATURE_MODEST,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_CHLOROPHYLL,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
+        .nature = NATURE_MODEST,
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_FRIEND,
     },
@@ -7233,12 +7246,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SCEPTILE,
         .moves = {MOVE_ENERGY_BALL, MOVE_SUBSTITUTE, MOVE_ENDURE, MOVE_ENDEAVOR},
         .heldItem = ITEM_GRASS_GEM,
+        .ability = ABILITY_UNBURDEN,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(108, 0, 116, 100, 124, 62),
         .nature = NATURE_TIMID,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_UNBURDEN,
         .gender = TRAINER_MON_MALE,
+        .ball = BALL_BEAST,
     },
     [FRONTIER_MON_CHARIZARD_2] = {
         .species = SPECIES_CHARIZARD,
@@ -7314,7 +7327,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .teraType = TYPE_WATER,
         .ball = BALL_DIVE,
     },
-// 変更してもいいヤツ
+// 71変更してもいいヤツ
     [FRONTIER_MON_SNORLAX_3] = {
         .species = SPECIES_SNORLAX,
         .moves = {MOVE_FRUSTRATION, MOVE_EARTHQUAKE, MOVE_CURSE, MOVE_REST},
@@ -7325,6 +7338,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_THICK_FAT,
         .ball = BALL_HEAVY,
         .gender = TRAINER_MON_MALE,
+        .friendship = 0,
     },
     [FRONTIER_MON_KINGDRA_1] = {
         .species = SPECIES_KINGDRA,
@@ -7392,7 +7406,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_TIMID,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_INFILTRATOR,
-        .isShiny = FALSE,
         .gender = TRAINER_MON_MALE,
         .ball = BALL_MOON,
     },
@@ -7464,10 +7477,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SCOLIPEDE,
         .moves = {MOVE_LEECH_LIFE, MOVE_GUNK_SHOT, MOVE_EARTHQUAKE, MOVE_SWORDS_DANCE},
         .heldItem = ITEM_SCOLIPITE,
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
+        .ability = ABILITY_SPEED_BOOST,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(182, 156, 0, 172, 0, 0),
         .nature = NATURE_JOLLY,
         .ball = BALL_NET,
-        .ability = ABILITY_SPEED_BOOST,
         .gender = TRAINER_MON_MALE,
     },
     [FRONTIER_MON_DUSCLOPS_2] = {
@@ -7957,7 +7971,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .gender = TRAINER_MON_FEMALE,
-        .isShiny = FALSE,
         .ball = BALL_DUSK,
         .ability = ABILITY_FLASH_FIRE,
     },
@@ -8054,12 +8067,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_NINETALES,
         .moves = {MOVE_SOLAR_BEAM, MOVE_FIRE_BLAST, MOVE_PSYCHIC, MOVE_HIDDEN_POWER},
         .heldItem = ITEM_GRASS_GEM,
+        .ability = ABILITY_DROUGHT,
+        .iv = TRAINER_PARTY_IVS(31, 2, 30, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
         .nature = NATURE_TIMID,
-        .ball = BALL_POKE,
-        .iv = TRAINER_PARTY_IVS(31, 2, 30, 31, 31, 31),
-        .ability = ABILITY_DROUGHT,
         .gender = TRAINER_MON_FEMALE,
+        .ball = BALL_LUXURY,
         .isShiny = TRUE,
     },
     [FRONTIER_MON_RHYPERIOR] = {
@@ -8294,12 +8307,14 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_BLAZIKEN,
         .moves = {MOVE_HIGH_JUMP_KICK, MOVE_FLARE_BLITZ, MOVE_STONE_EDGE, MOVE_QUICK_ATTACK},
         .heldItem = ITEM_BLAZIKENITE,
-        .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 0),
-        .nature = NATURE_JOLLY,
         .ability = ABILITY_SPEED_BOOST,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
+        .nature = NATURE_JOLLY,
         .gender = TRAINER_MON_MALE,
         .ball = BALL_LEVEL,
     },
+// 適当
     [FRONTIER_MON_WALREIN_4] = {
         .species = SPECIES_WALREIN,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_EARTHQUAKE, MOVE_SHEER_COLD},
@@ -8351,9 +8366,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_DRIZZLE,
         .gender = TRAINER_MON_FEMALE,
-        .gigantamaxFactor = FALSE,
-        .shouldUseDynamax = FALSE,
-        .dynamaxLevel = 0,
         .ball = BALL_DIVE,
         .isShiny = TRUE,
     },
@@ -8389,7 +8401,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_MOXIE,
         .ball = BALL_DUSK,
     },
-// 変更してもいいヤツ
+// 72変更してもいいヤツ
     [FRONTIER_MON_SNORLAX_4] = {
         .species = SPECIES_SNORLAX,
         .moves = {MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_YAWN, MOVE_CURSE},
@@ -8399,7 +8411,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ball = BALL_PREMIER,
         .ability = ABILITY_THICK_FAT,
         .gender = TRAINER_MON_MALE,
-        .isShiny = FALSE,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
     [FRONTIER_MON_KINGDRA_2] = {
@@ -8465,7 +8476,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_ADAMANT,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ability = ABILITY_THERMAL_EXCHANGE,
-        .isShiny = FALSE,
         .gender = TRAINER_MON_MALE,
         .ball = BALL_DIVE,
     },
@@ -9020,10 +9030,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_URSALUNA_3] = {
         .species = SPECIES_URSALUNA_BLOODMOON,
         .moves = {MOVE_BLOOD_MOON, MOVE_EARTH_POWER, MOVE_MOONBLAST, MOVE_VACUUM_WAVE},
-        .heldItem = ITEM_ASSAULT_VEST,
-        .ev = TRAINER_PARTY_EVS(170, 170, 0, 0, 170, 0),
-        .nature = NATURE_MODEST,
         .ability = ABILITY_MINDS_EYE,
+        .heldItem = ITEM_ASSAULT_VEST,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(148, 0, 0, 0, 252, 108),
+        .nature = NATURE_MODEST,
         .teraType = TYPE_FAIRY,
         .ball = BALL_MOON,
     },
@@ -9043,10 +9054,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_LUCARIO,
         .moves = {MOVE_CLOSE_COMBAT, MOVE_ICE_PUNCH, MOVE_EARTHQUAKE, MOVE_BULLET_PUNCH},
         .heldItem = ITEM_FOCUS_SASH,
-        .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
+        .ability = ABILITY_INNER_FOCUS,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
         .nature = NATURE_ADAMANT,
         .ball = BALL_BEAST,
-        .ability = ABILITY_INNER_FOCUS,
         .gender = TRAINER_MON_MALE,
     },
     [FRONTIER_MON_LUCARIO_3] = {
@@ -9101,9 +9113,10 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_GARDEVOIR,
         .moves = {MOVE_HYPER_VOICE, MOVE_MYSTICAL_FIRE, MOVE_THUNDERBOLT, MOVE_DESTINY_BOND},
         .heldItem = ITEM_GARDEVOIRITE,
-        .ev = TRAINER_PARTY_EVS(252, 0, 0, 252, 0, 0),
-        .nature = NATURE_TIMID,
         .ability = ABILITY_TRACE,
+        .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+        .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+        .nature = NATURE_TIMID,
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_LOVE,
     },
@@ -9123,9 +9136,10 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_GARDEVOIR,
         .moves = {MOVE_HYPER_VOICE, MOVE_THUNDERBOLT, MOVE_PSYSHOCK, MOVE_SHADOW_SNEAK},
         .heldItem = ITEM_GARDEVOIRITE,
-        .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
-        .nature = NATURE_MODEST,
         .ability = ABILITY_TRACE,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+        .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
+        .nature = NATURE_MODEST,
         .gender = TRAINER_MON_FEMALE,
         .isShiny = TRUE,
         .ball = BALL_LOVE,
@@ -9247,26 +9261,26 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_SNORLAX,
         .moves = {MOVE_GIGA_IMPACT, MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM},
         .heldItem = ITEM_SNORLIUM_Z,
+        .ability = ABILITY_THICK_FAT,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 6, 0, 0),
         .nature = NATURE_ADAMANT,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ability = ABILITY_THICK_FAT,
         .ball = BALL_HEAVY,
     },
     [FRONTIER_MON_SNORLAX_2] = {
         .species = SPECIES_SNORLAX,
         .moves = {MOVE_BELLY_DRUM, MOVE_DARKEST_LARIAT, MOVE_FIRE_PUNCH, MOVE_FACADE},
         .heldItem = ITEM_FIGY_BERRY,
+        .ability = ABILITY_GLUTTONY,
+        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
         .ev = TRAINER_PARTY_EVS(180, 0, 252, 76, 0, 0),
         .nature = NATURE_IMPISH,
         .ball = BALL_SPORT,
-        .ability = ABILITY_GLUTTONY,
         .gender = TRAINER_MON_MALE,
         .isShiny = TRUE,
         .gigantamaxFactor = TRUE,
         .shouldUseDynamax = TRUE,
         .dynamaxLevel = 10,
-        .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     },
     [FRONTIER_MON_VOLCARONA_2] = {
         .species = SPECIES_VOLCARONA,
