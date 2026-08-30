@@ -219,7 +219,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
     if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
-        // Normal battle frontier trainer.
+        // 通常のバトルフロンティアのトレーナー
         fixedIV = GetFrontierTrainerFixedIvs(trainerId);
         monSet = gFacilityTrainers[trainerId].monSet;
     }
@@ -238,7 +238,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
     {
-        // Record mixed player.
+        // レコードのトレーナー
         for (j = 0, i = 0; i < monCount; j++, i++)
         {
             if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j].species != SPECIES_NONE
@@ -251,14 +251,14 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else
     {
-        // Apprentice.
+        // 弟子
         for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
             CreateApprenticeMon(&gParties[trainer][i], &gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE], i);
         return;
     }
 
     // 通常のバトルフロンティアのトレーナー。
-    // 3匹のポケモンが正常に選出されるまで、ランダムなポケモンでトレーナーのパーティを埋めることを試みる。
+    // 3匹のポケモンが選出されるまで、ランダムにトレーナーのパーティを埋める。
     // トレーナーのパーティ内で、ポケモンの種類や持たせている道具が重複することはない。
     for (bfMonCount = 0; monSet[bfMonCount] != 0xFFFF; bfMonCount++)
         ;
@@ -268,8 +268,8 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     {
         u16 monId = monSet[Random() % bfMonCount];
 
-        // 「高ランク」のポケモンは、オープンレベルモードでのみ使用可能です
-        // ここでは、レベルの値として20は指定できません
+        // 『HIGH_TIER』はオープンレベルにのみ、出現する。(includeのFRONTIER_MONS_HIGH_TIERの番号が閾値)
+        // ここでの20という数値は、有効な値ではありません。(意味がありません)
         if ((level == FRONTIER_MAX_LEVEL_50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
             continue;
 

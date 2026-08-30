@@ -1976,7 +1976,7 @@ static void InitDomeTrainers(void)
             DOME_TRAINERS[i].trainerId = trainerId;
         }
 
-        // Choose party
+        // パーティを選択
         for (j = 0; j < FRONTIER_PARTY_SIZE; j++)
         {
             do
@@ -1984,7 +1984,7 @@ static void InitDomeTrainers(void)
                 monId = GetRandomFrontierMonFromSet(trainerId);
                 for (k = 0; k < j; k++)
                 {
-                    // Make sure the mon is valid.
+                    // ポケモンが有効であることを確認。
                     int alreadySelectedMonId = DOME_MONS[i][k];
                     if (alreadySelectedMonId == monId
                         || species[0] == gFacilityTrainerMons[monId].species
@@ -2003,10 +2003,10 @@ static void InitDomeTrainers(void)
         DOME_TRAINERS[i].forfeited = FALSE;
     }
 
-    // rankingScores is used to determine the seed (ranking) of the trainers
-    // rankingScores[0] is for the player, rankingScores[1-15] are for the opponent trainers
+    // rankingScoresは、トレーナーの順位を決定するために使用。
+    // rankingScores[0] はプレイヤー, rankingScores[1-15] は敵トレーナー用
 
-    // Calculate player's ranking score
+    // プレイヤーのrankingScoresを計算
     monTypesBits = 0;
     rankingScores[0] = 0;
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
@@ -2497,27 +2497,27 @@ static int GetTypeEffectivenessPoints(enum Move move, int targetSpecies, int mod
     return typePower;
 }
 
-// Duplicate of GetFrontierTrainerFixedIvs
-// NOTE: In CreateDomeOpponentMon a tournament trainer ID (0-15) is passed instead, resulting in all IVs of 3
-//       To fix, see CreateDomeOpponentMon
+// GetFrontierTrainerFixedIvsの複製
+// 注: CreateDomeOpponentMonでは代わりにトーナメント用トレーナーID（0～15）が渡されるため、
+// 個体値がすべて3になってしまいます。修正方法についてはCreateDomeOpponentMonを参照してください。
 static u8 GetDomeTrainerMonIvs(u16 trainerId)
 {
     u8 fixedIv;
 
     if (trainerId <= FRONTIER_TRAINER_JILL)         // 0 - 99
-        fixedIv = 3;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_CHLOE)   // 100 - 119
-        fixedIv = 6;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_SOFIA)   // 120 - 139
-        fixedIv = 9;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_JAZLYN)  // 140 - 159
-        fixedIv = 12;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_ALISON)  // 160 - 179
-        fixedIv = 15;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_LAMAR)   // 180 - 199
-        fixedIv = 18;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_TESS)    // 200 - 219
-        fixedIv = 21;
+        fixedIv = 31;
     else                                            // 220+ (- 299)
         fixedIv = MAX_PER_STAT_IVS;
 
@@ -5701,7 +5701,7 @@ static void BufferLastDomeWinnerName(void)
     CopyDomeTrainerName(gStringVar1, DOME_TRAINERS[i].trainerId);
 }
 
-// For showing the previous tourney results before the player has entered a challenge
+// プレイヤーがチャレンジする前に、過去のトーナメント結果を表示する
 static void InitRandomTourneyTreeResults(void)
 {
     int i, j, k;
@@ -5759,7 +5759,7 @@ static void InitRandomTourneyTreeResults(void)
                 monId = GetRandomFrontierMonFromSet(trainerId);
                 for (k = 0; k < j; k++)
                 {
-                    // Make sure the mon is valid.
+                    // ポケモンが有効であることを確認。
                     int alreadySelectedMonId = DOME_MONS[i][k];
                     if (alreadySelectedMonId == monId
                         || species[0] == gFacilityTrainerMons[monId].species
@@ -5798,7 +5798,7 @@ static void InitRandomTourneyTreeResults(void)
             monTypesBits |= 1u << GetSpeciesType(gFacilityTrainerMons[DOME_MONS[i][j]].species, 1);
         }
 
-        // Because GF hates temporary vars, trainerId acts like monTypesCount here.
+        // GFは一時変数を嫌うため、ここでは trainerId が monTypesCount のような役割をしている。
         for (trainerId = 0, j = 0; j < 32; j++)
         {
             if (monTypesBits & 1)
@@ -5846,7 +5846,7 @@ static int TrainerIdToTournamentId(u16 trainerId)
     return i;
 }
 
-// The same as the above one, but has global scope.
+// 上記のものと同様だが、グローバルスコープを持つ。
 int TrainerIdToDomeTournamentId(u16 trainerId)
 {
     int i;
@@ -5870,7 +5870,7 @@ static u8 GetOpposingNPCTournamentIdByRound(u8 tournamentId, u8 round)
         return tournamentIds[0];
 }
 
-// Determines which trainers won in the NPC vs NPC battles
+// NPC対NPCのバトルで勝敗を決定する。
 static void DecideRoundWinners(u8 roundId)
 {
     int i;

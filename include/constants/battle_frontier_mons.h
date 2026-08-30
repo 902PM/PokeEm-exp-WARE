@@ -859,7 +859,7 @@
 #define FRONTIER_MON_LATIOS_1       848
 #define FRONTIER_MON_LATIOS_2       849
 
-#define FRONTIER_MONS_HIGH_TIER     849 // Mons above this point can only appear > level 50
+#define FRONTIER_MONS_HIGH_TIER     881 // Mons above this point can only appear > level 50
 
 #define FRONTIER_MON_HAXORUS_1      850
 #define FRONTIER_MON_KOMMO_O_1      851
@@ -885,8 +885,8 @@
 #define FRONTIER_MON_ARTICUNO_2     871
 #define FRONTIER_MON_ZAPDOS_1       872
 #define FRONTIER_MON_ZAPDOS_2       873
-#define FRONTIER_MON_MOLTRES_3      874
-#define FRONTIER_MON_MOLTRES_4      875
+#define FRONTIER_MON_MOLTRES_2      874
+#define FRONTIER_MON_MOLTRES_3      875
 #define FRONTIER_MON_RAIKOU_1       876
 #define FRONTIER_MON_RAIKOU_2       877
 #define FRONTIER_MON_ENTEI_1        878

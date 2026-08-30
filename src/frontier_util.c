@@ -2915,26 +2915,26 @@ bool8 IsFrontierTrainerFemale(u16 trainerId)
         return FALSE;
 }
 
-// Frontier Trainer parties are roughly scaled in difficulty with higher trainer IDs, so scale IVs as well
-// Duplicated in Battle Dome as GetDomeTrainerMonIvs
+// フロンティアのトレーナーのパーティはトレーナーIDが高くなるにつれて強化されていく。それに合わせて個体値も強化される。
+// バトルドームでは GetDomeTrainerMonIvs として複製されている。（てかこの機能いる？）
 u8 GetFrontierTrainerFixedIvs(u16 trainerId)
 {
     u8 fixedIv;
 
     if (trainerId <= FRONTIER_TRAINER_JILL)         // 0 - 99
-        fixedIv = 3;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_CHLOE)   // 100 - 119
-        fixedIv = 6;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_SOFIA)   // 120 - 139
-        fixedIv = 9;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_JAZLYN)  // 140 - 159
-        fixedIv = 12;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_ALISON)  // 160 - 179
-        fixedIv = 15;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_LAMAR)   // 180 - 199
-        fixedIv = 18;
+        fixedIv = 31;
     else if (trainerId <= FRONTIER_TRAINER_TESS)    // 200 - 219
-        fixedIv = 21;
+        fixedIv = 31;
     else                                            // 220+ (- 299)
         fixedIv = MAX_PER_STAT_IVS;
 
