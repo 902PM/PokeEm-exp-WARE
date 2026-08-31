@@ -222,7 +222,7 @@ const struct FrontierBrain gFrontierBrainInfo[NUM_FRONTIER_FACILITIES] =
             COMPOUND_STRING("{JPN}おい! あきらめるんじゃ ない!\nさあ たつんだ! がんばるんだ!!") //Gold
         },
         .battledBit = {1 << 12, 1 << 13},
-        .streakAppearances = {21, 70, 35, 0},
+        .streakAppearances = {21, 49, 35, 0},
     },
 };
 
@@ -335,7 +335,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
 		.ball = BALL_BEAST,
 	        .gender = 0,
                 .evs = {6, 0, 0, 252, 252, 0},
-                .moves = {MOVE_BLAST_BURN, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_SOLAR_BEAM},
+                .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_SOLAR_BEAM},
             },
         },
         // Gold Symbol.
@@ -446,7 +446,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
 		.ball = BALL_DIVE,
         	.teraType = TYPE_FAIRY,
                 .evs = {252, 0, 92, 28, 6, 132},
-                .moves = {MOVE_SCALD, MOVE_CALM_MIND, MOVE_ROAR, MOVE_SHEER_COLD},
+                .moves = {MOVE_SCALD, MOVE_CALM_MIND, MOVE_ICE_BEAM, MOVE_SHEER_COLD},
             },
         },
     },
@@ -479,7 +479,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_SHEDINJA,
-                .heldItem = ITEM_BRIGHT_POWDER,
+                .heldItem = ITEM_SAFETY_GOGGLES,
                 .fixedIV = MAX_PER_STAT_IVS,
         	.nature = NATURE_ADAMANT,
         	.ball = BALL_DUSK,
