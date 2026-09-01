@@ -160,4 +160,12 @@
 // Configuration
 #define OW_AMBIENT_CRIES                OW_AMBIENT_CRIES_OWE_PRIORITY // 環境音としての鳴き声を再生するかどうか、またその再生方法を選択します。原作と同様に、どの設定を選んだ場合でも、陸地や水上のエンカウントテーブルが設定されたマップにいなければ、鳴き声は再生されません。
 
+
+// Daily Seed
+#define OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES     FALSE // If TRUE, use daily seed to compute mirage island chance and lottery corner tickets.
+                                                          // This has a side effect of removing the deterministic/anti save scumming aspect of the mirage island randomisation
+
+// Script Config
+#define OW_CHECK_FOR_TOTAL_EVS TRUE        // If FALSE, givemon and createmon will not check for total EVs when generating a new Pokemon
+
 #endif // GUARD_CONFIG_OVERWORLD_H

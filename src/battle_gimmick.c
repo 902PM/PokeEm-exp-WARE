@@ -71,17 +71,14 @@ bool32 ShouldTrainerBattlerUseGimmick(enum BattlerId battler, enum Gimmick gimmi
     #else
     // プレイヤーはコントローラーで選択できるため、これらのチェックを回避できます。
     if (IsOnPlayerSide(battler) && !((gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
-    {
         return TRUE;
-    }
-    // トレーナーの手持ちデータから、ギミックがあるか確認。
-    else
-    {
-        if (gimmick == GIMMICK_TERA && gBattleStruct->opponentMonCanTera & 1 << gBattlerPartyIndexes[battler])
-            return TRUE;
-        if (gimmick == GIMMICK_DYNAMAX && gBattleStruct->opponentMonCanDynamax & 1 << gBattlerPartyIndexes[battler])
-            return TRUE;
-    }
+
+    // トレーナーのパーティデータを読み込む際、ギミックを使用しないことを示すために、struct Pokemonに無効な値を読み込みます。
+    struct Pokemon *mon = GetBattlerMon(battler);
+    if (gimmick == GIMMICK_TERA && GetMonData(mon, MON_DATA_TERA_TYPE) != TYPE_MYSTERY)
+        return TRUE;
+    if (gimmick == GIMMICK_DYNAMAX && GetMonData(mon, MON_DATA_DYNAMAX_LEVEL) != BLOCK_AI_DYNAMAX)
+        return TRUE;
     #endif
 
     return FALSE;
@@ -166,16 +163,18 @@ bool32 IsGimmickTriggerSpriteActive(void)
 {
     if (GetSpriteTileStartByTag(TAG_GIMMICK_TRIGGER_TILE) == 0xFFFF)
         return FALSE;
-    else if (IndexOfSpritePaletteTag(TAG_GIMMICK_TRIGGER_PAL) != 0xFF)
+
+    if (IndexOfSpritePaletteTag(TAG_GIMMICK_TRIGGER_PAL) != 0xFF)
         return TRUE;
-    else
-        return FALSE;
+
+    return FALSE;
 }
 
 bool32 IsGimmickTriggerSpriteMatchingBattler(enum BattlerId battler)
 {
     if (battler == gSprites[gBattleStruct->gimmick.triggerSpriteId].tBattler)
         return TRUE;
+
     return FALSE;
 }
 
@@ -287,7 +286,7 @@ static inline u32 GetIndicatorSpriteId(u32 healthboxId)
 
 const u32 *GetIndicatorSpriteSrc(enum BattlerId battler)
 {
-    u32 gimmick = GetActiveGimmick(battler);
+    enum Gimmick gimmick = GetActiveGimmick(battler);
 
     if (IsBattlerPrimalReverted(battler))
     {
@@ -296,23 +295,19 @@ const u32 *GetIndicatorSpriteSrc(enum BattlerId battler)
         else
             return (u32 *)&sAlphaIndicatorGfx;
     }
-    else if (gimmick == GIMMICK_TERA) // special case
-    {
+
+    if (gimmick == GIMMICK_TERA) // special case
         return (u32 *)sTeraIndicatorDataPtrs[GetBattlerTeraType(battler)];
-    }
-    else if (gGimmicksInfo[gimmick].indicatorData != NULL)
-    {
+
+    if (gGimmicksInfo[gimmick].indicatorData != NULL)
         return (u32 *)gGimmicksInfo[gimmick].indicatorData;
-    }
-    else
-    {
-        return NULL;
-    }
+
+    return NULL;
 }
 
 u32 GetIndicatorPalTag(enum BattlerId battler)
 {
-    u32 gimmick = GetActiveGimmick(battler);
+    enum Gimmick gimmick = GetActiveGimmick(battler);
     if (IsBattlerPrimalReverted(battler))
         return TAG_MISC_INDICATOR_PAL;
     else if (gGimmicksInfo[gimmick].indicatorPalTag != 0)

@@ -24,8 +24,7 @@ void ActivateTera(enum BattlerId battler)
     SetGimmickAsActivated(battler, GIMMICK_TERA);
 
     // テラオーブのチャージを消費。
-    if (B_FLAG_TERA_ORB_CHARGED != 0
-        && (B_FLAG_TERA_ORB_NO_COST == 0 || !FlagGet(B_FLAG_TERA_ORB_NO_COST))
+    if (IsTeraOrbCharged()
         && IsOnPlayerSide(battler)
         && !(IsDoubleBattle() && !IsPartnerMonFromSameTrainer(battler)))
     {
@@ -58,6 +57,14 @@ void ApplyBattlerVisualsForTeraAnim(enum BattlerId battler)
     BlendPalette(OBJ_PLTT_ID(battler), 16, 16, RGB_WHITEALPHA);
 }
 
+// テラスタルオーブがチャージされているかを返す。
+bool32 IsTeraOrbCharged(void)
+{
+    if (FlagGet(B_FLAG_TERA_ORB_NO_COST) || B_TERA_ORB_ALWAYS_CHARGED)
+        return TRUE;
+    return FlagGet(B_FLAG_TERA_ORB_CHARGED);
+}
+
 // トレーナーがテラスタル可能かどうかを返す。
 bool32 CanTerastallize(enum BattlerId battler)
 {
@@ -78,11 +85,7 @@ bool32 CanTerastallize(enum BattlerId battler)
     {
         return FALSE;
     }
-    else if (FlagGet(B_FLAG_TERA_ORB_NO_COST))
-    {
-        // テラオーブが消費されていない場合、HasTrainerUsedGimmickへ進む。
-    }
-    else if (!FlagGet(B_FLAG_TERA_ORB_CHARGED))
+    else if (!IsTeraOrbCharged())
     {
         return FALSE;
     }
