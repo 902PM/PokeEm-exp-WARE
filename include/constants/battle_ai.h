@@ -18,6 +18,7 @@
 // 新機能：トレーナーのハンデフラグ
 #define AI_FLAG_NEGATE_UNAWARE              AI_FLAG(10)  // AIは、「ワンダールーム」や「かたやぶり」などの効果を打ち消す要素を認識していません。
 #define AI_FLAG_WILL_SUICIDE                AI_FLAG(11)  // AIは「だいばくはつ」「じばく」「いのちがけ」などを使用します。// 新規：トレーナーの行動指針フラグ
+// 新機能：トレーナー戦略フラグ
 #define AI_FLAG_PREFER_STATUS_MOVES         AI_FLAG(12)  // AIは変化技に対してスコアボーナスを得ます。変化技ばかりを使用するのを防ぐため、AI_FLAG_CHECK_BAD_MOVEと併用すべきです。
 #define AI_FLAG_STALL                       AI_FLAG(13)  // AIは戦闘を長引かせ（ストール）、継続ダメージや拘束（トラップ）などを優先する。（未実装）
 #define AI_FLAG_SMART_SWITCHING             AI_FLAG(14)  // AIには、より多くの切り替えチェックが含まれています。AI_FLAG_SMART_MON_CHOICESが自動的に含まれます。
@@ -40,6 +41,9 @@
 #define AI_FLAG_KNOW_OPPONENT_PARTY         AI_FLAG(31)  // AIはプレイヤーのパーティ内の全ポケモン（種族）を把握していますが、技・持ち物・特性については、実際に確認（目撃）しない限り把握していません。
 #define AI_FLAG_RANDOMIZE_SWITCHIN          AI_FLAG(32)  //AIは、特定のカテゴリにおける交代可能な候補の中からランダムに選択を行います（パーティの最後尾にいるポケモンを選ぶのではなく）。
 #define AI_FLAG_RANDOMIZE_PARTY_INDICES     AI_FLAG(33)  // AIは、先頭のポケモンを含め、手持ちのポケモンの並び順をランダムに変更します。これは厳密にはAIのフラグというわけではなく、TPPの機能を動作させるための仕組みです。
+#define AI_FLAG_ABILITY_OMNISCIENCE         AI_FLAG(34)  // AIはプレイヤーのポケモンの特性を把握しています。
+#define AI_FLAG_ITEM_OMNISCIENCE            AI_FLAG(35)  // AIはプレイヤーの持ち物を把握しています。
+#define AI_FLAG_MOVE_OMNISCIENCE            AI_FLAG(36)  // AIはプレイヤーのポケモンの技を把握しています。
 
 // 以下のオプションがあれば、BASIC/SMART_TRAINERとして機能させるには十分です。これら以外に追加を行うと、フラグの設定次第でトレーナーの性能が低下したり、逆に向上したりする可能性があります。
 #define AI_FLAG_BASIC_TRAINER         (AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY)

@@ -370,7 +370,6 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("{JPN}そうでん"),        VOLATILE_ELECTRIFIED},
     {COMPOUND_STRING("{JPN}どろあそび"),           VOLATILE_MUD_SPORT},
     {COMPOUND_STRING("{JPN}みずあそび"),         VOLATILE_WATER_SPORT},
-    {COMPOUND_STRING("{JPN}むげんこんらん"), VOLATILE_INFINITE_CONFUSION},
     {COMPOUND_STRING("{JPN}しおづけ"),          VOLATILE_SALT_CURE},
     {COMPOUND_STRING("{JPN}みずあめボム"),         VOLATILE_SYRUP_BOMB},
     {COMPOUND_STRING("{JPN}きょけんとつげき"),        VOLATILE_GLAIVE_RUSH},
@@ -384,14 +383,12 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("{JPN}ふういん"),           VOLATILE_IMPRISON},
     {COMPOUND_STRING("{JPN}おんねん"),             VOLATILE_GRUDGE},
     {COMPOUND_STRING("{JPN}いえき"),        VOLATILE_GASTRO_ACID},
-    {COMPOUND_STRING("{JPN}さしおさえ"),            VOLATILE_EMBARGO},
+    {COMPOUND_STRING("{JPN}さしおさえ"),            VOLATILE_EMBARGO_TIMER},
     {COMPOUND_STRING("{JPN}うちおとす"),         VOLATILE_SMACK_DOWN},
     {COMPOUND_STRING("{JPN}テレキネシス"),        VOLATILE_TELEKINESIS},
     {COMPOUND_STRING("{JPN}ミラクルアイ"),        VOLATILE_MIRACLE_EYE},
-    {COMPOUND_STRING("{JPN}でんじふゆう"),        VOLATILE_MAGNET_RISE},
-    {COMPOUND_STRING("{JPN}かいふくふうじ"),         VOLATILE_HEAL_BLOCK},
+    {COMPOUND_STRING("{JPN}かいふくふうじ"),         VOLATILE_HEAL_BLOCK_TIMER},
     {COMPOUND_STRING("{JPN}アクアリング"),          VOLATILE_AQUA_RING},
-    {COMPOUND_STRING("{JPN}とぎすます"),        VOLATILE_LASER_FOCUS},
     {COMPOUND_STRING("{JPN}パワートリック"),        VOLATILE_POWER_TRICK},
 };
 
@@ -773,7 +770,7 @@ static void PutMovesPointsText(struct BattleDebugMenu *data)
     if (gAiLogicData->shouldSwitch & (1u << data->aiBattlerId))
     {
         struct Pokemon *party = GetBattlerParty(data->aiBattlerId);
-        u32 switchMon = GetMonData(&party[gAiLogicData->mostSuitableMonId[data->aiBattlerId]], MON_DATA_SPECIES);
+        enum Species switchMon = GetMonData(&party[gAiLogicData->mostSuitableMonId[data->aiBattlerId]], MON_DATA_SPECIES);
         AddTextPrinterParameterized3(data->aiMovesWindowId, FONT_NORMAL, 74, 79, sTextColorTable[COLORID_RED], 0, COMPOUND_STRING("{JPN}いれかえさき "));
         AddTextPrinterParameterized3(data->aiMovesWindowId, FONT_NORMAL, 74 + 68, 79, sTextColorTable[COLORID_RED], 0, gSpeciesInfo[switchMon].speciesName);
     }
@@ -2170,11 +2167,7 @@ static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
     [HOLD_EFFECT_RESTORE_PP]       = COMPOUND_STRING("{JPN}PP かいふく"),
     [HOLD_EFFECT_CURE_CONFUSION]   = COMPOUND_STRING("{JPN}こんらん かいふく"),
     [HOLD_EFFECT_CURE_STATUS]      = COMPOUND_STRING("{JPN}ステータス リセット"),
-    [HOLD_EFFECT_CONFUSE_SPICY]    = COMPOUND_STRING("{JPN}こんらんのみ からい"),
-    [HOLD_EFFECT_CONFUSE_DRY]      = COMPOUND_STRING("{JPN}こんらんのみ しぶい"),
-    [HOLD_EFFECT_CONFUSE_SWEET]    = COMPOUND_STRING("{JPN}こんらんのみ あまい"),
-    [HOLD_EFFECT_CONFUSE_BITTER]   = COMPOUND_STRING("{JPN}こんらんのみ にがい"),
-    [HOLD_EFFECT_CONFUSE_SOUR]     = COMPOUND_STRING("{JPN}こんらんのみ すっぱい"),
+    [HOLD_EFFECT_CONFUSE_FLAVOR]   = COMPOUND_STRING("{JPN}こんらんのみ"),
     [HOLD_EFFECT_ATTACK_UP]        = COMPOUND_STRING("{JPN}こうげきアップ"),
     [HOLD_EFFECT_DEFENSE_UP]       = COMPOUND_STRING("{JPN}ぼうぎょアップ"),
     [HOLD_EFFECT_SPEED_UP]         = COMPOUND_STRING("{JPN}すばやさアップ"),

@@ -68,7 +68,8 @@
 #define GEN_7 6
 #define GEN_8 7
 #define GEN_9 8
-#define GEN_COUNT 9
+#define GEN_CHAMPIONS GEN_9 + 1
+#define GEN_COUNT GEN_CHAMPIONS + 1
 // GEN_LATESTの値を別の世代に変更すると、それを使用しているすべてのデフォルト設定が一括して変更されます。
 #define GEN_LATEST GEN_9
 

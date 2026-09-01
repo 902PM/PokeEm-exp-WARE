@@ -9,6 +9,7 @@
 #include "data.h"
 #include "decompress.h"
 #include "graphics.h"
+#include "image_processing_effects.h"
 #include "link.h"
 #include "m4a.h"
 #include "main.h"
@@ -41,6 +42,7 @@
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/rgb.h"
+#include "constants/script_menu.h"
 #include "constants/songs.h"
 
 // This file's functions.
@@ -385,6 +387,17 @@ const u8 gText_AttractedCrowdsAttention[] = _("{JPN}かんきゃくの\nちゅ�
 const u8 gText_CrowdContinuesToWatchMon[] = _("{JPN}かんきゃくは\n{STR_VAR_3}を みつづけている!{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}");
 const u8 gText_MonsMoveIsIgnored[] = _("{JPN}{STR_VAR_1}の {STR_VAR_2}は\nめを むけられなかった…{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}");
 
+static const u32 sPictureFrameTiles_Cool[]     = INCGFX_U32("graphics/picture_frame/cool.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Beauty[]   = INCGFX_U32("graphics/picture_frame/beauty.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Cute[]     = INCGFX_U32("graphics/picture_frame/cute.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Smart[]    = INCGFX_U32("graphics/picture_frame/smart.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Tough[]    = INCGFX_U32("graphics/picture_frame/tough.png", ".4bpp.smol");
+static const u32 sPictureFrameTilemap_Cool[]   = INCGFX_U32("graphics/picture_frame/cool_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Beauty[] = INCGFX_U32("graphics/picture_frame/beauty_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Cute[]   = INCGFX_U32("graphics/picture_frame/cute_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Smart[]  = INCGFX_U32("graphics/picture_frame/smart_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Tough[]  = INCGFX_U32("graphics/picture_frame/tough_map.bin", ".smolTM");
+
 static const u8 sSliderHeartYPositions[CONTESTANT_COUNT] =
 {
     36, 76, 116, 156
@@ -677,52 +690,97 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
 {
     [CONTEST_CATEGORY_COOL] =
     {
-        .name = COMPOUND_STRING("かっこよさ"),
-        .condition = COMPOUND_STRING("かっこいい"),
-        .generic = COMPOUND_STRING("かっこいい わざ"),
-        .negativeTrait = COMPOUND_STRING("モジモジ"),
+         .name = COMPOUND_STRING("{JPN}かっこよさ"),
+        .condition = COMPOUND_STRING("{JPN}かっこいい"),
+        .generic = COMPOUND_STRING("{JPN}かっこいい わざ"),
+        .negativeTrait = COMPOUND_STRING("{JPN}モジモジ"),
+        .ribbon = MON_DATA_COOL_RIBBON,
+        .imageEffect = IMAGE_EFFECT_OUTLINE_COLORED,
+        .paintingTiles = sPictureFrameTiles_Cool,
+        .paintingTilemap = sPictureFrameTilemap_Cool,
         .palette = 13,
         .tile = 0x4040,
+        .resultsTilemap = gContestResultsTitle_Cool_Tilemap,
+        .stdString = STDSTRING_COOL,
+        .text = gText_Cool,
+        .tvShowState = CONTESTLIVE_STATE_COOL,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_COOL,
     },
 
     [CONTEST_CATEGORY_BEAUTY] =
     {
-        .name = COMPOUND_STRING("うつくしさ"),
-        .condition = COMPOUND_STRING("うつくしい"),
-        .generic = COMPOUND_STRING("うつくしい わざ"),
-        .negativeTrait = COMPOUND_STRING("ドキドキ"),
+        .name = COMPOUND_STRING("{JPN}うつくしさ"),
+        .condition = COMPOUND_STRING("{JPN}うつくしい"),
+        .generic = COMPOUND_STRING("{JPN}うつくしい わざ"),
+        .negativeTrait = COMPOUND_STRING("{JPN}ドキドキ"),
+        .ribbon = MON_DATA_BEAUTY_RIBBON,
+        .imageEffect = IMAGE_EFFECT_SHIMMER,
+        .paintingTiles = sPictureFrameTiles_Beauty,
+        .paintingTilemap = sPictureFrameTilemap_Beauty,
         .palette = 14,
         .tile = 0x4045,
+        .resultsTilemap = gContestResultsTitle_Beauty_Tilemap,
+        .stdString = STDSTRING_BEAUTY,
+        .text = gText_Beauty,
+        .tvShowState = CONTESTLIVE_STATE_BEAUTIFUL,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_BEAUTIFUL,
     },
 
     [CONTEST_CATEGORY_CUTE] =
     {
-        .name = COMPOUND_STRING("かわいさ"),
-        .condition = COMPOUND_STRING("かわいい"),
-        .generic = COMPOUND_STRING("かわいい わざ"),
-        .negativeTrait = COMPOUND_STRING("デレデレ"),
+        .name = COMPOUND_STRING("{JPN}かわいさ"),
+        .condition = COMPOUND_STRING("{JPN}かわいい"),
+        .generic = COMPOUND_STRING("{JPN}かわいい わざ"),
+        .negativeTrait = COMPOUND_STRING("{JPN}デレデレ"),
+        .ribbon = MON_DATA_CUTE_RIBBON,
+        .imageEffect = IMAGE_EFFECT_POINTILLISM,
+        .paintingTiles = sPictureFrameTiles_Cute,
+        .paintingTilemap = sPictureFrameTilemap_Cute,
         .palette = 14,
         .tile = 0x404A,
+        .resultsTilemap = gContestResultsTitle_Cute_Tilemap,
+        .stdString = STDSTRING_CUTE,
+        .text = gText_Cute,
+        .tvShowState = CONTESTLIVE_STATE_CUTE,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_CUTE,
     },
 
     [CONTEST_CATEGORY_SMART] =
     {
-        .name = COMPOUND_STRING("かしこさ"),
-        .condition = COMPOUND_STRING("かしこい"),
-        .generic = COMPOUND_STRING("かしこい わざ"),
-        .negativeTrait = COMPOUND_STRING("オロオロ"),
+        .name = COMPOUND_STRING("{JPN}かしこさ"),
+        .condition = COMPOUND_STRING("{JPN}かしこい"),
+        .generic = COMPOUND_STRING("{JPN}かしこい わざ"),
+        .negativeTrait = COMPOUND_STRING("{JPN}オロオロ"),
+        .ribbon = MON_DATA_SMART_RIBBON,
+        .imageEffect = IMAGE_EFFECT_CHARCOAL,
+        .paintingTiles = sPictureFrameTiles_Smart,
+        .paintingTilemap = sPictureFrameTilemap_Smart,
         .palette = 15,
         .tile = 0x406A,
+        .resultsTilemap = gContestResultsTitle_Smart_Tilemap,
+        .stdString = STDSTRING_SMART,
+        .text = gText_Smart,
+        .tvShowState = CONTESTLIVE_STATE_SMART,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_SMART,
     },
 
     [CONTEST_CATEGORY_TOUGH] =
     {
-        .name = COMPOUND_STRING("たくましさ"),
-        .condition = COMPOUND_STRING("たくましい"),
-        .generic = COMPOUND_STRING("たくましい わざ"),
-        .negativeTrait = COMPOUND_STRING("ビクビク"),
+        .name = COMPOUND_STRING("{JPN}たくましさ"),
+        .condition = COMPOUND_STRING("{JPN}たくましい"),
+        .generic = COMPOUND_STRING("{JPN}たくましい わざ"),
+        .negativeTrait = COMPOUND_STRING("{JPN}ビクビク"),
+        .ribbon = MON_DATA_TOUGH_RIBBON,
+        .imageEffect = IMAGE_EFFECT_GRAYSCALE_LIGHT,
+        .paintingTiles = sPictureFrameTiles_Tough,
+        .paintingTilemap = sPictureFrameTilemap_Tough,
         .palette = 13,
         .tile = 0x408A,
+        .resultsTilemap = gContestResultsTitle_Tough_Tilemap,
+        .stdString = STDSTRING_TOUGH,
+        .text = gText_Tough,
+        .tvShowState = CONTESTLIVE_STATE_TOUGH,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_TOUGH,
     },
 
     [CONTEST_CATEGORIES_COUNT] =
@@ -5913,32 +5971,6 @@ static void SetConestLiveUpdateTVData(void)
     ContestLiveUpdates_SetWinnerAppealFlag(winnerFlag);
     ContestLiveUpdates_SetWinnerMoveUsed(gContestResources->tv[winner].move);
     ContestLiveUpdates_SetLoserData(loserFlag, loser);
-}
-
-// Unused
-void ContestDebugToggleBitfields(bool8 loserFlags)
-{
-    if (eContestDebugMode == CONTEST_DEBUG_MODE_OFF)
-    {
-        if (!loserFlags)
-            eContestDebugMode = CONTEST_DEBUG_MODE_PRINT_WINNER_FLAGS;
-        else
-            eContestDebugMode = CONTEST_DEBUG_MODE_PRINT_LOSER_FLAGS;
-    }
-    else
-    {
-        eContestDebugMode = CONTEST_DEBUG_MODE_OFF;
-    }
-
-    if (eContestDebugMode == CONTEST_DEBUG_MODE_OFF)
-    {
-        DrawContestantWindowText();
-        SwapMoveDescAndContestTilemaps();
-    }
-    else
-    {
-        ContestDebugPrintBitStrings();
-    }
 }
 
 static void ContestDebugPrintBitStrings(void)

@@ -44,6 +44,7 @@
 #define I_ORAS_DOWSING_FLAG         FLAG_EXPANSION_ORAS_DOWSING // ORASの「ダウジングマシン」の機能を有効にするには、0を未使用のフラグに置き換えてください。
 #define I_ORAS_DOWSING_SOUNDS       TRUE        // TRUE の場合、ダウジングマシンは隠しアイテムの距離に基づいて音を鳴らします。
 #define I_ORAS_DOWSING_COLOR_PAL    15          // アイテムとの距離に応じて変化する、パレット内の色。
+
 // ORASのダウジングマシンにおける距離・アニメーションの数値
 #define I_ORAS_DOWSING_COLOR_NONE   RGB_GRAY
 #define I_ORAS_DOWSING_COLOR_SLOW   RGB2GBA(56, 120, 255)

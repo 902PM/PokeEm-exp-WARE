@@ -22,13 +22,12 @@
 // 進化設定
 #define P_FRIENDSHIP_EVO_THRESHOLD   GEN_LATEST  // 第8世代以降、なつき度で進化するポケモンは、なつき度が220ではなく160以上になると進化するようになりました。
 
-// 孵化設定
+// タマゴ設定
 #define P_NIDORAN_M_DITTO_BREED        GEN_LATEST                // 第5世代以降、ニドラン♂をメタモンと預け屋に預けてタマゴを作ると、ニドラン♀が生まれるようになりました。それ以前は、オスしか生まれませんでした。この変更はバルビートにも適用されています。
 #define P_INCENSE_BREEDING             GEN_LATEST                // 第9世代以降、世代をまたいで登場した「ベイビィポケモン」は、タマゴから入手する際に親に「おこう」を持たせる必要がなくなりました。
 #define P_EGG_HATCH_LEVEL              GEN_LATEST                // 第4世代以降、ポケモンはタマゴから孵化する際、レベル5ではなくレベル1になります。
-#define P_BALL_INHERITING              GEN_LATEST                // 第6世代以降、預かり屋で入手できるタマゴは、♀のモンスターボールを引き継ぐようになりました。第7世代からは、♀と同じ種族であれば、♂のボールも引き継ぐことが可能になりました。
-#define P_TM_INHERITANCE               GEN_3                // 第6世代以降、♂から子へわざマシンが引き継がれることはなくなりました。
-#define P_MOTHER_EGG_MOVE_INHERITANCE  GEN_LATEST                // 第6世代以降は、♀もタマゴ技を遺伝させることができます。
+#define P_BALL_INHERITANCE             GEN_LATEST                // 第6世代以降、預かり屋で入手できるタマゴは、♀のモンスターボールを引き継ぐようになりました。第7世代からは、♀と同じ種族であれば、♂のボールも引き継ぐことが可能になりました。
+#define P_MOVE_INHERITANCE             GEN_LATEST                // 第6世代より前では、タマゴは♂親のタマゴ技、♂親のわざマシン技、両親が共通して覚えるレベルアップ技の順で技を遺伝していました。第6世代以降は、両親が共通して覚えるレベルアップ技、♂親のタマゴ技、♀親のタマゴ技の順で技を遺伝するようになりました。
 #define P_NATURE_INHERITANCE           GEN_LATEST                // 第3世代では、かわらずのいしを持たせると、メタモンや♀が50%の確率で性格を遺伝させることができました。第4世代からは、どのポケモンでも性格を遺伝させられるようになりました。第5世代以降（正確にはBW2）、その確率は100%になっています。
 #define P_ABILITY_INHERITANCE          GEN_LATEST                // BW2では、オスと交配させた際、メスのポケモンが特性を遺伝させる確率は80%です。第6世代以降は、通常の特性なら80%、夢特性なら60%の確率で遺伝し、メタモンと交配させる場合は（性別を問わず）特性を遺伝させることができます。なお、BWにおける『夢特性は60%、通常の特性はランダムで遺伝する』という仕様は除外されています。
 #define P_EGG_MOVE_TRANSFER            GEN_LATEST                // 第8世代以降、同じ種類のポケモン2匹を預かり屋に預けた際、片方がタマゴ技を覚えていてもう片方の技スロットに空きがあれば、空きのあるポケモンはそのタマゴ技を覚えることができます。第9世代では、「ものまねハーブ」を持たせたポケモンであれば、種類が異なっていても相手からタマゴ技を覚えることが可能です。
@@ -80,5 +79,12 @@
 // Sound related settings
 #define P_MODIFIED_MEGA_CRIES            P_MEGA_EVOLUTIONS  // TRUEの場合、個別のメガシンカ用鳴き声（ROM容量の約3%を使用）が使用されます。FALSEの場合、P_MODIFIED_MEGA_CRY_MODEによる変更を除き、すべてのメガシンカで共通の鳴き声が使用されます。デフォルトでは、メガシンカが有効かどうかに基づいて設定されます。
 #define P_MODIFIED_MEGA_CRY_MODE         CRY_MODE_HIGH_PITCH
+
+// Pokédex
+#define DONT_SKIP_GAPS                   0              // Does not skip any gaps in the Pokédex.
+#define SKIP_GAPS_EXCEPT_ONE             1              // Skips all gaps in the Pokédex other than one blank entry in between seen entries.
+#define SKIP_GAPS_EXCEPT_BEFORE_AFTER    2              // Skips all gaps in the Pokédex other than one before and after seen entries. Most similar to whats seen in Pokémon SV.
+#define SKIP_ALL_GAPS                    3              // Skips all gaps in the Pokédex.
+#define P_SKIP_POKEDEX_GAPS              DONT_SKIP_GAPS // Pokémon SV skip large gaps in the Pokédex.
 
 #endif // GUARD_CONFIG_POKEMON_H

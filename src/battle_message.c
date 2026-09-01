@@ -529,7 +529,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TRAINER2WINTEXT]                      = COMPOUND_STRING("{JPN}{B_TRAINER2_WIN_TEXT}"),
     [STRINGID_ENDUREDSTURDY]                        = COMPOUND_STRING("{JPN}{B_DEF_NAME_WITH_PREFIX}は\n{B_DEF_ABILITY}で こうげきを こらえた！"),
     [STRINGID_POWERHERB]                            = COMPOUND_STRING("{JPN}{B_LAST_ITEM}で\nちからが みなぎった!"),
-    [STRINGID_HURTBYITEM]                           = COMPOUND_STRING("{JPN}{B_ATK_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nいのちが すこし けずられた!"),
+    [STRINGID_HURTBYITEM]                           = COMPOUND_STRING("{JPN}{B_ATK_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nダメージを うけた!"),
     [STRINGID_GRAVITYINTENSIFIED]                   = COMPOUND_STRING("{JPN}じゅうりょくが つよくなった!"),
     [STRINGID_TARGETWOKEUP]                         = COMPOUND_STRING("{JPN}{B_EFF_NAME_WITH_PREFIX}は\nめを さました!"),
     [STRINGID_TAILWINDBLEW]                         = COMPOUND_STRING("{JPN}{B_ATK_TEAM2}に おいかぜが ふきはじめた!"),
@@ -905,8 +905,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_MOSTLYINEFFECTIVETWOFOES]             = COMPOUND_STRING("{JPN}{B_DEF_NAME_WITH_PREFIX2} と {B_DEF_PARTNER_NAME}に\nこうかは かなりいまひとつだ"),
     [STRINGID_CRITICALHITONDEF]                     = COMPOUND_STRING("{JPN}{B_DEF_NAME_WITH_PREFIX2}の\nきゅうしょに あたった!"),
     [STRINGID_S]                                    = COMPOUND_STRING(""),
-    [STRINGID_LOSTSOMEOFITSHP]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} lost some of its HP!"),
-    [STRINGID_BELCHCANTUSE]                         = COMPOUND_STRING("{JPN}B_ATK_NAME_WITH_PREFIX}は\nきのみを たべていないので わざが だせない!\p"),
+    [STRINGID_LOSTSOMEOFITSHP]                      = COMPOUND_STRING("{JPN}{B_ATK_NAME_WITH_PREFIX}は {B_LAST_ITEM}で\nいのちが すこし けずられた!"),
+    [STRINGID_BELCHCANTUSE]                         = COMPOUND_STRING("{JPN}{B_ATK_NAME_WITH_PREFIX}は\nきのみを たべていないので わざが だせない!\p"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
