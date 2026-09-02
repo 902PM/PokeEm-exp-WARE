@@ -6,7 +6,6 @@
 #include "battle_arena.h"
 #include "battle_controllers.h"
 #include "battle_end_turn.h"
-#include "battle_frontier.h"
 #include "battle_hold_effects.h"
 #include "battle_interface.h"
 #include "battle_main.h"
@@ -475,7 +474,6 @@ void CB2_InitBattle(void)
     if (!gTestRunnerEnabled)
         MoveSaveBlocks_ResetHeap();
     AllocateBattleResources();
-    MarkFrontierOpponentPartyGimmicks();
     AllocateBattleSpritesData();
     AllocateMonSpritesGfx();
     RecordedBattle_ClearFrontierPassFlag();
