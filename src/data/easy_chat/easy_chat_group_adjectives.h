@@ -1,217 +1,217 @@
 const struct EasyChatWordInfo gEasyChatGroup_Adjectives[] = {
     [EC_INDEX(EC_WORD_WANDERING)] =
     {
-        .text = COMPOUND_STRING("うろうろ"),
+        .text = COMPOUND_STRING("{JPN}うろうろ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ANTICIPATION),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RICKETY)] =
     {
-        .text = COMPOUND_STRING("がたがた"),
+        .text = COMPOUND_STRING("{JPN}がたがた"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AWESOME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK_SOLID)] =
     {
-        .text = COMPOUND_STRING("カチカチ"),
+        .text = COMPOUND_STRING("{JPN}カチカチ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BREAK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUNGRY)] =
     {
-        .text = COMPOUND_STRING("がつがつ"),
+        .text = COMPOUND_STRING("{JPN}がつがつ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DESTROYED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TIGHT)] =
     {
-        .text = COMPOUND_STRING("ぎゅうぎゅう"),
+        .text = COMPOUND_STRING("{JPN}ぎゅうぎゅう"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DROOLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TICKLISH)] =
     {
-        .text = COMPOUND_STRING("クスクス"),
+        .text = COMPOUND_STRING("{JPN}クスクス"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCITING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TWIRLING)] =
     {
-        .text = COMPOUND_STRING("くるくる"),
+        .text = COMPOUND_STRING("{JPN}くるくる"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIERY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPIRALING)] =
     {
-        .text = COMPOUND_STRING("グルグル"),
+        .text = COMPOUND_STRING("{JPN}グルグル"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HAPPILY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIRSTY)] =
     {
-        .text = COMPOUND_STRING("ごくごく"),
+        .text = COMPOUND_STRING("{JPN}ごくごく"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOPELESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOLLING)] =
     {
-        .text = COMPOUND_STRING("ごろごろ"),
+        .text = COMPOUND_STRING("{JPN}ごろごろ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUNGRY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SILKY)] =
     {
-        .text = COMPOUND_STRING("さらさら"),
+        .text = COMPOUND_STRING("{JPN}さらさら"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INCREASING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SADLY)] =
     {
-        .text = COMPOUND_STRING("しくしく"),
+        .text = COMPOUND_STRING("{JPN}しくしく"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOLLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOPELESS)] =
     {
-        .text = COMPOUND_STRING("ぜんぜん"),
+        .text = COMPOUND_STRING("{JPN}ぜんぜん"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOVEY_DOVEY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_USELESS)] =
     {
-        .text = COMPOUND_STRING("ダメダメ"),
+        .text = COMPOUND_STRING("{JPN}ダメダメ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RICKETY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DROOLING)] =
     {
-        .text = COMPOUND_STRING("だらだら"),
+        .text = COMPOUND_STRING("{JPN}だらだら"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RIPPED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCITING)] =
     {
-        .text = COMPOUND_STRING("ドキドキ"),
+        .text = COMPOUND_STRING("{JPN}ドキドキ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK_SOLID),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THICK)] =
     {
-        .text = COMPOUND_STRING("どんどん"),
+        .text = COMPOUND_STRING("{JPN}どんどん"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SADLY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMOOTH)] =
     {
-        .text = COMPOUND_STRING("なでなで"),
+        .text = COMPOUND_STRING("{JPN}なでなで"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SCATTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SLIMY)] =
     {
-        .text = COMPOUND_STRING("ぬるぬる"),
+        .text = COMPOUND_STRING("{JPN}ぬるぬる"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHAKY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIN)] =
     {
-        .text = COMPOUND_STRING("はあはあ"),
+        .text = COMPOUND_STRING("{JPN}はあはあ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHREDDED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BREAK)] =
     {
-        .text = COMPOUND_STRING("バキバキ"),
+        .text = COMPOUND_STRING("{JPN}バキバキ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SILKY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VORACIOUS)] =
     {
-        .text = COMPOUND_STRING("ぱくぱく"),
+        .text = COMPOUND_STRING("{JPN}ぱくぱく"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SLIMY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SCATTER)] =
     {
-        .text = COMPOUND_STRING("パラパラ"),
+        .text = COMPOUND_STRING("{JPN}パラパラ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMOOTH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AWESOME)] =
     {
-        .text = COMPOUND_STRING("バリバリ"),
+        .text = COMPOUND_STRING("{JPN}バリバリ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SPIRALING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WIMPY)] =
     {
-        .text = COMPOUND_STRING("ふにゃふにゃ"),
+        .text = COMPOUND_STRING("{JPN}ふにゃふにゃ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THICK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WOBBLY)] =
     {
-        .text = COMPOUND_STRING("ふらふら"),
+        .text = COMPOUND_STRING("{JPN}ふらふら"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHAKY)] =
     {
-        .text = COMPOUND_STRING("ブルブル"),
+        .text = COMPOUND_STRING("{JPN}ブルブル"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIRSTY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RIPPED)] =
     {
-        .text = COMPOUND_STRING("べろべろ"),
+        .text = COMPOUND_STRING("{JPN}べろべろ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TICKLISH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHREDDED)] =
     {
-        .text = COMPOUND_STRING("ボロボロ"),
+        .text = COMPOUND_STRING("{JPN}ボロボロ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TIGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INCREASING)] =
     {
-        .text = COMPOUND_STRING("ますます"),
+        .text = COMPOUND_STRING("{JPN}ますます"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TWIRLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YET)] =
     {
-        .text = COMPOUND_STRING("まだまだ"),
+        .text = COMPOUND_STRING("{JPN}まだまだ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_USELESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DESTROYED)] =
     {
-        .text = COMPOUND_STRING("めちゃめちゃ"),
+        .text = COMPOUND_STRING("{JPN}めちゃめちゃ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VORACIOUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIERY)] =
     {
-        .text = COMPOUND_STRING("メラメラ"),
+        .text = COMPOUND_STRING("{JPN}メラメラ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WANDERING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOVEY_DOVEY)] =
     {
-        .text = COMPOUND_STRING("ラブラブ"),
+        .text = COMPOUND_STRING("{JPN}ラブラブ"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WIMPY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HAPPILY)] =
     {
-        .text = COMPOUND_STRING("るんるん"),
+        .text = COMPOUND_STRING("{JPN}るんるん"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WOBBLY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ANTICIPATION)] =
     {
-        .text = COMPOUND_STRING("わくわく"),
+        .text = COMPOUND_STRING("{JPN}わくわく"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YET),
         .enabled = TRUE,
     },

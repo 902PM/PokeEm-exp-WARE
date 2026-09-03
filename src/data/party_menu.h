@@ -785,7 +785,7 @@ static const u16 sUnusedData[] =
     0x0121, 0x013b, 0x000f, 0x0013, 0x0039, 0x0046, 0x0094, 0x00f9, 0x007f, 0x0123,
 };
 
-static const u8 sText_Trade4[] = _("つうしん");
+static const u8 sText_Trade4[] = _("{JPN}つうしん");
 
 struct
 {
@@ -793,34 +793,34 @@ struct
     TaskFunc func;
 } static const sCursorOptions[MENU_FIELD_MOVES] =
 {
-    [MENU_SUMMARY]         = {COMPOUND_STRING("つよさをみる"),          CursorCb_Summary},
-    [MENU_SWITCH]          = {COMPOUND_STRING("ならびかえ"),        CursorCb_Switch},
+    [MENU_SUMMARY]         = {COMPOUND_STRING("{JPN}つよさをみる"),          CursorCb_Summary},
+    [MENU_SWITCH]          = {COMPOUND_STRING("{JPN}ならびかえ"),        CursorCb_Switch},
     [MENU_CANCEL1]         = {gText_Cancel2,                      CursorCb_Cancel1},
-    [MENU_ITEM]            = {COMPOUND_STRING("もちもの"),        CursorCb_Item},
-    [MENU_GIVE]            = {COMPOUND_STRING("もたせる"),        CursorCb_Give},
-    [MENU_TAKE_ITEM]       = {COMPOUND_STRING("あずかる"),            CursorCb_TakeItem},
-    [MENU_MOVE_ITEM]       = {COMPOUND_STRING("いどう"),          CursorCb_MoveItem},
-    [MENU_MAIL]            = {COMPOUND_STRING("メール"),          CursorCb_Mail},
-    [MENU_TAKE_MAIL]       = {COMPOUND_STRING("メールを とる"),            CursorCb_TakeMail},
-    [MENU_READ]            = {COMPOUND_STRING("メールを よむ"),            CursorCb_Read},
+    [MENU_ITEM]            = {COMPOUND_STRING("{JPN}もちもの"),        CursorCb_Item},
+    [MENU_GIVE]            = {COMPOUND_STRING("{JPN}もたせる"),        CursorCb_Give},
+    [MENU_TAKE_ITEM]       = {COMPOUND_STRING("{JPN}あずかる"),            CursorCb_TakeItem},
+    [MENU_MOVE_ITEM]       = {COMPOUND_STRING("{JPN}いどう"),          CursorCb_MoveItem},
+    [MENU_MAIL]            = {COMPOUND_STRING("{JPN}メール"),          CursorCb_Mail},
+    [MENU_TAKE_MAIL]       = {COMPOUND_STRING("{JPN}メールを とる"),            CursorCb_TakeMail},
+    [MENU_READ]            = {COMPOUND_STRING("{JPN}メールを よむ"),            CursorCb_Read},
     [MENU_CANCEL2]         = {gText_Cancel2,                      CursorCb_Cancel2},
-    [MENU_SHIFT]           = {COMPOUND_STRING("いれかえる"),        CursorCb_SendMon},
-    [MENU_SEND_OUT]        = {COMPOUND_STRING("せんとうにだす"),            CursorCb_SendMon},
-    [MENU_ENTER]           = {COMPOUND_STRING("さんかする"),          CursorCb_Enter},
-    [MENU_NO_ENTRY]        = {COMPOUND_STRING("さんかしない"),          CursorCb_NoEntry},
-    [MENU_STORE]           = {COMPOUND_STRING("かいふくする"),          CursorCb_Store},
+    [MENU_SHIFT]           = {COMPOUND_STRING("{JPN}いれかえる"),        CursorCb_SendMon},
+    [MENU_SEND_OUT]        = {COMPOUND_STRING("{JPN}せんとうにだす"),            CursorCb_SendMon},
+    [MENU_ENTER]           = {COMPOUND_STRING("{JPN}さんかする"),          CursorCb_Enter},
+    [MENU_NO_ENTRY]        = {COMPOUND_STRING("{JPN}さんかしない"),          CursorCb_NoEntry},
+    [MENU_STORE]           = {COMPOUND_STRING("{JPN}かいふくする"),          CursorCb_Store},
     [MENU_REGISTER]        = {gText_Register,                     CursorCb_Register},
     [MENU_TRADE1]          = {sText_Trade4,                       CursorCb_Trade1},
     [MENU_TRADE2]          = {sText_Trade4,                       CursorCb_Trade2},
-    [MENU_TOSS]            = {COMPOUND_STRING("すてる"),          CursorCb_Toss},
-    [MENU_CATALOG_BULB]    = {COMPOUND_STRING("でんきゅう"),      CursorCb_CatalogBulb},
-    [MENU_CATALOG_OVEN]    = {COMPOUND_STRING("でんしレンジ"),  CursorCb_CatalogOven},
-    [MENU_CATALOG_WASHING] = {COMPOUND_STRING("せんたくき"), CursorCb_CatalogWashing},
-    [MENU_CATALOG_FRIDGE]  = {COMPOUND_STRING("れいぞうこ"),    CursorCb_CatalogFridge},
-    [MENU_CATALOG_FAN]     = {COMPOUND_STRING("せんぷうき"),    CursorCb_CatalogFan},
-    [MENU_CATALOG_MOWER]   = {COMPOUND_STRING("しばかりき"),      CursorCb_CatalogMower},
-    [MENU_CHANGE_FORM]     = {COMPOUND_STRING("フォルムチェンジ"),     CursorCb_ChangeForm},
-    [MENU_CHANGE_ABILITY]  = {COMPOUND_STRING("とくせいへんこう"),  CursorCb_ChangeAbility},
+    [MENU_TOSS]            = {COMPOUND_STRING("{JPN}すてる"),          CursorCb_Toss},
+    [MENU_CATALOG_BULB]    = {COMPOUND_STRING("{JPN}でんきゅう"),      CursorCb_CatalogBulb},
+    [MENU_CATALOG_OVEN]    = {COMPOUND_STRING("{JPN}でんしレンジ"),  CursorCb_CatalogOven},
+    [MENU_CATALOG_WASHING] = {COMPOUND_STRING("{JPN}せんたくき"), CursorCb_CatalogWashing},
+    [MENU_CATALOG_FRIDGE]  = {COMPOUND_STRING("{JPN}れいぞうこ"),    CursorCb_CatalogFridge},
+    [MENU_CATALOG_FAN]     = {COMPOUND_STRING("{JPN}せんぷうき"),    CursorCb_CatalogFan},
+    [MENU_CATALOG_MOWER]   = {COMPOUND_STRING("{JPN}しばかりき"),      CursorCb_CatalogMower},
+    [MENU_CHANGE_FORM]     = {COMPOUND_STRING("{JPN}フォルムチェンジ"),     CursorCb_ChangeForm},
+    [MENU_CHANGE_ABILITY]  = {COMPOUND_STRING("{JPN}とくせいへんこう"),  CursorCb_ChangeAbility},
 };
 
 static const u8 sPartyMenuAction_SummarySwitchCancel[] = {MENU_SUMMARY, MENU_SWITCH, MENU_CANCEL1};

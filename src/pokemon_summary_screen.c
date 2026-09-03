@@ -4796,10 +4796,10 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 static inline void ShowUtilityPrompt(s16 mode)
 {
     const u8* promptText = NULL;
-    const u8* gText_SkillPageIvs = COMPOUND_STRING("こたい");
-    const u8* gText_SkillPageEvs = COMPOUND_STRING("きそ");
-    const u8* gText_SkillPageStats = COMPOUND_STRING("のうりょく");
-    const u8* gText_Rename = COMPOUND_STRING("なまえ");
+    const u8* gText_SkillPageIvs = COMPOUND_STRING("{JPN}こたい");
+    const u8* gText_SkillPageEvs = COMPOUND_STRING("{JPN}きそ");
+    const u8* gText_SkillPageStats = COMPOUND_STRING("{JPN}のうりょく");
+    const u8* gText_Rename = COMPOUND_STRING("{JPN}なまえ");
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {
