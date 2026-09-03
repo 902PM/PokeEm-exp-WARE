@@ -5,11 +5,11 @@
 #define USE_DEXNAV_SEARCH_LEVELS      FALSE  // * 警告: セーブブロックの容量を超える可能性があります！ 1種につき1バイト必要です */ */
 
 // フラグ／変数の定義
-#define DN_FLAG_SEARCHING             FLAG_EXPANSION_DEXNAV_SEARCHING      // ポケモンのサーチ中
-#define DN_FLAG_DEXNAV_GET            FLAG_EXPANSION_DEXNAV_DISPLAY  // スタートメニューにずかんナビが表示されます。
-#define DN_FLAG_DETECTOR_MODE         FLAG_EXPANSION_DEXNAV_DETECT   // プレイヤーが隠されたポケモンを見つけられるようにする
-#define DN_VAR_SPECIES                VAR_EXPANSION_DEXNAV_SPECIES         // ずかんナビのポケモンを登録
-#define DN_VAR_STEP_COUNTER           VAR_EXPANSION_DEXNAV_STEP_COUNTER    // 隠れているポケモンを見つける手順
+#define DN_FLAG_SEARCHING             0      	// ポケモンのサーチ中
+#define DN_FLAG_DEXNAV_GET            0  	// スタートメニューにずかんナビが表示されます。
+#define DN_FLAG_DETECTOR_MODE         0   	// プレイヤーが隠されたポケモンを見つけられるようにする
+#define DN_VAR_SPECIES                0         // ずかんナビのポケモンを登録
+#define DN_VAR_STEP_COUNTER           0    	// 隠れているポケモンを見つける手順
 
 // サーチパラメータ
 #define DEXNAV_TIMEOUT                  15  // タイムアウトは15秒です。最大1092秒まで許容されます。

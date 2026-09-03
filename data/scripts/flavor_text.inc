@@ -184,7 +184,7 @@ Text_Telephone::
 
 Text_Computer::
 	.string "It's all complicated words and\n"
-	.string "numbers that make no sense...$"
+	.string "numbers that make no sense…$"
 
 Text_AdvertisingPoster::
 	.string "It's an advertising poster about\n"
@@ -195,8 +195,8 @@ Text_TastyFood::
 	.string "It might get the stomach growling!$"
 
 Text_TrashBin::
-	.string "Inside this...\n"
-	.string "......\p"
+	.string "Inside this…\n"
+	.string "……\p"
 	.string "There's nothing here!$"
 
 Text_Cup::
@@ -207,7 +207,7 @@ Text_PolishedWindow::
 	.string "The window is very well polished.$"
 
 Text_BeautifulSkyWindow::
-	.string "Outside the window...\p"
+	.string "Outside the window…\p"
 	.string "The sky looks fantastically\n"
 	.string "beautiful.$"
 
@@ -229,7 +229,7 @@ Text_VideoGame::
 
 Text_Burglary::
 	.string "There are obvious signs of burglary\n"
-	.string "here...$"
+	.string "here…$"
 
 Text_PlayerFacingTVScreen::
 	.string "There's a POKEMON on TV!\n"

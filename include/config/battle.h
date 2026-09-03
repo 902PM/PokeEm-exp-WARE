@@ -292,11 +292,11 @@
 // 変数設定
 // 以下の機能を使用するには、include/constants/vars.h で定義されている変数のうち、0 が割り当てられているもの（できれば未使用のもの）を書き換えてください。
 // 例: VAR_UNUSED_0x404E を分かりやすい名前に変更し、以下で使用することができます。
-#define B_VAR_WILD_AI_FLAGS         VAR_EXPANSION_WILD_AI_FLAGS     // 0以外の場合、この変数をデフォルトの野生AIフラグに追加できます。(1 << 15)を超えるフラグには使用できませんのでご注意ください。
+#define B_VAR_WILD_AI_FLAGS         0     // 0以外の場合、この変数をデフォルトの野生AIフラグに追加できます。(1 << 15)を超えるフラグには使用できませんのでご注意ください。
                                           // この変数が、プレイヤーがセーブできるほどの時間、非ゼロのままになるようなことはあってはなりません。
                                           // 野生ポケモンのAIの挙動を改善するには、src/battle_ai_main.c 内の GetWildAiFlags() を編集してください。
 
-#define B_VAR_DIFFICULTY            VAR_EXPANSION_DIFFICULTY     // 0以外の値を設定すると、この変数を使用して、読み込むトレーナーの難易度バージョンを制御できます。この変数は、`NewGameInitData`の実行後に、開発者が`Script_SetDifficulty`を使用して手動で設定する必要があります。
+#define B_VAR_DIFFICULTY            0     // 0以外の値を設定すると、この変数を使用して、読み込むトレーナーの難易度バージョンを制御できます。この変数は、`NewGameInitData`の実行後に、開発者が`Script_SetDifficulty`を使用して手動で設定する必要があります。
 
 // バッグなし設定
 #define NO_BAG_RESTRICTION       0
