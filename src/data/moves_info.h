@@ -1803,6 +1803,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}すいとる"),
         .description = COMPOUND_STRING("{JPN}てきに あたえた ダメージの\nはんぶん たいりょくを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 20,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -1828,6 +1829,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}メガドレイン"),
         .description = COMPOUND_STRING("{JPN}てきに あたえた ダメージの\nはんぶん たいりょくを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -1879,7 +1881,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING("{JPN}いっきに からだを せいちょうさせて\nとくこうを あげる"),
         .effect = EFFECT_GROWTH,
         .power = 0,
-        .type = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? TYPE_GRASS : TYPE_NORMAL,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_CHAMPIONS ? TYPE_GRASS : TYPE_NORMAL,
         .accuracy = 0,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 40,
         .target = TARGET_USER,
@@ -3624,6 +3626,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}きゅうけつ"),
         .description = COMPOUND_STRING("{JPN}てきに あたえた ダメージの\nはんぶん たいりょくを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 80 : 20,
         .type = TYPE_BUG,
         .accuracy = 100,
@@ -5222,6 +5225,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}ギガドレイン"),
         .description = COMPOUND_STRING("{JPN}てきに あたえた ダメージの\nはんぶん たいりょくを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 75 : 60,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -10456,6 +10460,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}ドレインパンチ"),
         .description = COMPOUND_STRING("{JPN}こぶしから てきのちからを すいとる\nダメージのはんぶんの HPをかいふく"),
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 75 : 60,
         .type = TYPE_FIGHTING,
         .accuracy = 100,
@@ -13455,6 +13460,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}ウッドホーン"),
         .description = COMPOUND_STRING("{JPN}てきに あたえた ダメージの\nはんぶん たいりょくを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 75,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -14413,6 +14419,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}パラボラチャージ"),
         .description = COMPOUND_STRING("{JPN}ぜんいんに こうげき あたえた\nダメージの はんぶんを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 65 : 50,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
@@ -14579,6 +14586,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}ドレインキッス"),
         .description = COMPOUND_STRING("{JPN}キッスによって てきのHPをすいとる\nダメージの たいはんを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 50,
         .type = TYPE_FAIRY,
         .accuracy = 100,
@@ -15503,6 +15511,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}デスウイング"),
         .description = COMPOUND_STRING("{JPN}ねらいを さだめた てきから\nHPを すいとり じぶんを かいふく"),
+        .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FLYING,
         .accuracy = 100,
@@ -17127,6 +17136,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}いきいきバブル"),
         .description = COMPOUND_STRING("{JPN}みずの かたまりをぶつけて こうげき\nダメージのはんぶんの HPをかいふくする"),
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 60 : 90,
         .type = TYPE_WATER,
         .accuracy = 100,
@@ -17773,7 +17783,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING("{JPN}トラバサミで とらえて しばらくの\nあいだ てきを はさんで こうげき"),
         .effect = EFFECT_HIT,
         .power = 35,
-        .type = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? TYPE_STEEL : TYPE_GRASS,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_CHAMPIONS ? TYPE_STEEL : TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
         .target = TARGET_SELECTED,
@@ -20291,6 +20301,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}むねんのつるぎ"),
         .description = COMPOUND_STRING("{JPN}みれんを けんさきにこめて きりつける\nダメージの はんぶんを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_FIRE,
         .accuracy = 100,
@@ -20604,6 +20615,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}シャカシャカほう"),
         .description = COMPOUND_STRING("{JPN}かきまぜた おちゃの たいほうは\nダメージの はんぶんを かいふくする"),
+        .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_GRASS,
         .accuracy = 90,

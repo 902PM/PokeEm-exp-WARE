@@ -162,10 +162,10 @@
 
 
 // Daily Seed
-#define OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES     FALSE // If TRUE, use daily seed to compute mirage island chance and lottery corner tickets.
-                                                          // This has a side effect of removing the deterministic/anti save scumming aspect of the mirage island randomisation
+#define OW_USE_DAILY_SEED_FOR_VANILLA_VARIABLES     FALSE // TRUEの場合、その日のシード値を使用して、マボロシじまの出現確率とくじ引きコーナーの計算します。
+                                                          // これには、マボロシじまのランダム生成における決定論的あるいはセーブ＆ロードによるやり直しを防ぐという側面を排除してしまうという副作用があります。
 
 // Script Config
-#define OW_CHECK_FOR_TOTAL_EVS TRUE        // If FALSE, givemon and createmon will not check for total EVs when generating a new Pokemon
+#define OW_CHECK_FOR_TOTAL_EVS TRUE        // FALSEの場合、givemonとcreatemonは新しいポケモンを生成する際に合計努力値をチェックしません。
 
 #endif // GUARD_CONFIG_OVERWORLD_H
