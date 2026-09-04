@@ -89,11 +89,11 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "{JPN}さすがは ここまで\nやってきた ポケモン トレーナー\lひつような もの わかっている ようだな\pそう! トレーナーに\nひつよう なのは ただしい こころ!\pポケモンは トレーナーの\nただしい こころに ふれて\lものごとの ぜんあくを はんだんし\lただしい こころに ふれて つよくなる!\pさあ つぎに すすめ!\nチャンピオンが まって おるぞ!!$"
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech_Rematch:
-	.string "{JPN}まっておったぞ!\pわしと わしの ポケモンの\nすべてを ここに しめす!\pさあ!\nこころを かまえ\lしかと うけとめるが いい!$"
+	.string "{JPN}まっておったぞ!\pわしと わしの ポケモンの\nすべてを ここに しめす!\pさあ! こころを かまえ\nしかと うけとめるが いい!$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat_Rematch:
 	.string "{JPN}みごと!!$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech_Rematch:
-	.string "{JPN}おまえの こころ みせてもらった!\pわしから つげる ことは もうない!\pゆけい! トレーナー!\nむねをはって つぎへ すすめ!$"
+	.string "{JPN}おまえの こころ みせてもらった!\nわしから つげる ことは もうない!\pゆけい! トレーナー!\nむねをはって つぎへ すすめ!$"
 

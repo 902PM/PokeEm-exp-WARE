@@ -94,7 +94,7 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "{JPN}まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!$"
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech_Rematch:
-	.string "{JPN}よっ! まってたぜ!\nいまの オマエ だったら\lオレらも ホンキが だせる からな!\pへへっ……\pたのしい しょうぶに なりそうだな!\pさいこうの たたかい はじめようぜ!$"
+	.string "{JPN}よっ! まってたぜ!\pいまの オマエ だったら\nオレらも ホンキが だせる からな!\pへへっ……\pたのしい しょうぶに なりそうだな!\nさいこうの たたかい はじめようぜ!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat_Rematch:
 	.string "{JPN}やれやれ また まけちまったか$"

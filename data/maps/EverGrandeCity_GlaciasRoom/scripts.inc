@@ -94,4 +94,4 @@ EverGrandeCity_GlaciasRoom_Text_Defeat_Rematch:
 	.string "{JPN}ほんとうに あつい……$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech_Rematch:
-	.string "{JPN}ウフフ……\pわたくしの こころまで とかすつもり?\pまあ それも かまいません けれど\pともかく つぎに すすみなさい\nゲンジも あなたを まっています$"
+	.string "{JPN}ウフフ……\pわたくしの こころまで とかすつもり?\nまあ それも かまいません けれど\pともかく つぎに すすみなさい\nゲンジも あなたを まっています$"
