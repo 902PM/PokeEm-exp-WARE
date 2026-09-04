@@ -3823,7 +3823,7 @@ static void PrintHeldItemName(void)
     }
 
     fontId = GetFontIdToFit(text, FONT_NORMAL, 0, WindowTemplateWidthPx(&sPageSkillsTemplate[PSS_DATA_WINDOW_SKILLS_HELD_ITEM]) - 8);
-    x = GetStringCenterAlignXOffset(fontId, text, 72) + 6;
+    x = 6;
     PrintTextOnWindowWithFont(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_HELD_ITEM), text, x, 1, 0, 0, fontId);
 }
 
@@ -3843,7 +3843,7 @@ static void PrintRibbonCount(void)
         text = gStringVar4;
     }
 
-    x = GetStringCenterAlignXOffset(FONT_NORMAL, text, 70) + 6;
+    x = 6;
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT), text, x, 1, 0, 0);
 }
 
@@ -3978,6 +3978,7 @@ static void PrintExpPointsNextLevel(void)
     int x;
     u32 expToNextLevel;
 
+    PrintTextOnWindow(windowId, COMPOUND_STRING("{JPN}あと"), 0, 17, 0, 0);
     ConvertIntToDecimalStringN(gStringVar1, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
     x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 42) + 2;
     PrintTextOnWindow(windowId, gStringVar1, x, 1, 0, 0);
