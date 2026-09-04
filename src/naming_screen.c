@@ -40,17 +40,16 @@ enum {
     INPUT_DPAD_RIGHT,
     INPUT_A_BUTTON,
     INPUT_B_BUTTON,
-    INPUT_L_BUTTON,
     INPUT_R_BUTTON,
     INPUT_SELECT,
     INPUT_START,
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 18
+#define KBCOL_COUNT 20
 #define NAMING_SCREEN_MAX_INPUT_CHARS 6
-#define KEYBOARD_TEXT_X 4
-#define KEYBOARD_CURSOR_BASE_X 32
+#define KEYBOARD_TEXT_X 0
+#define KEYBOARD_CURSOR_BASE_X 28
 
 enum {
     GFXTAG_BACK_BUTTON,
@@ -93,17 +92,17 @@ enum {
 // The constants for the pages are needlessly complicated because GF didn't keep the indexing order consistent
 // This set is used for sNamingScreen->currentPage. It uses the order that the pages are cycled in
 enum {
-    KBPAGE_JAPANESE,
-    KBPAGE_ENGLISH,
-    KBPAGE_SYMBOLS,
+    KBPAGE_HIRAGANA,
+    KBPAGE_KATAKANA,
+    KBPAGE_EIGO,
     KBPAGE_COUNT,
 };
 
 // This set is used for initializing a page's keyboard text and getting its number of columns
 enum {
-    KEYBOARD_JAPANESE,
-    KEYBOARD_ENGLISH,
-    KEYBOARD_SYMBOLS,
+    KEYBOARD_HIRAGANA,
+    KEYBOARD_KATAKANA,
+    KEYBOARD_EIGO,
 };
 
 enum {
@@ -221,7 +220,7 @@ static const u8 *const sTransferredToPCMessages[] =
 };
 
 
-static const u8 sText_RivalsName[] = _("{JPN}ライバルの なまえは?");
+static const u8 sText_RivalsName[] = _("{JPN}ライバル の なまえは?");
 static const u8 sText_AlphabetUpperLower[] = _("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz！");
 
 static const struct BgTemplate sBgTemplates[] =
@@ -392,45 +391,32 @@ enum {
 // Empty cells are zero and are ignored by the character handler.
 static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] =
 {
-    [KEYBOARD_JAPANESE] =
+    [KEYBOARD_HIRAGANA] =
     {
-        {JP_HIRA_A, JP_HIRA_I, JP_HIRA_U, JP_HIRA_E, JP_HIRA_O, 0, JP_HIRA_NA, JP_HIRA_NI, JP_HIRA_NU, JP_HIRA_NE, JP_HIRA_NO, 0, JP_HIRA_RA, JP_HIRA_RI, JP_HIRA_RU, JP_HIRA_RE, JP_HIRA_RO},
-        {JP_HIRA_KA, JP_HIRA_KI, JP_HIRA_KU, JP_HIRA_KE, JP_HIRA_KO, 0, JP_HIRA_HA, JP_HIRA_HI, JP_HIRA_FU, JP_HIRA_HE, JP_HIRA_HO, 0, JP_HIRA_WA, 0, JP_HIRA_WO, 0, JP_HIRA_N},
-        {JP_HIRA_SA, JP_HIRA_SHI, JP_HIRA_SU, JP_HIRA_SE, JP_HIRA_SO, 0, JP_HIRA_MA, JP_HIRA_MI, JP_HIRA_MU, JP_HIRA_ME, JP_HIRA_MO},
-        {JP_HIRA_TA, JP_HIRA_CHI, JP_HIRA_TSU, JP_HIRA_TE, JP_HIRA_TO, 0, JP_HIRA_YA, 0, JP_HIRA_YU, 0, JP_HIRA_YO, 0, 0, 0, CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_HYPHEN},
+        {JP_HIRA_A, JP_HIRA_I, JP_HIRA_U, JP_HIRA_E, JP_HIRA_O, CHAR_SPACE, JP_HIRA_NA, JP_HIRA_NI, JP_HIRA_NU, JP_HIRA_NE, JP_HIRA_NO, CHAR_SPACE, JP_HIRA_YA, JP_HIRA_YU, JP_HIRA_YO, CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_SPACE, CHAR_SPACE},
+        {JP_HIRA_KA, JP_HIRA_KI, JP_HIRA_KU, JP_HIRA_KE, JP_HIRA_KO, CHAR_SPACE, JP_HIRA_HA, JP_HIRA_HI, JP_HIRA_FU, JP_HIRA_HE, JP_HIRA_HO, CHAR_SPACE,JP_HIRA_WA, JP_HIRA_WO, JP_HIRA_N, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE},
+        {JP_HIRA_SA, JP_HIRA_SHI, JP_HIRA_SU, JP_HIRA_SE, JP_HIRA_SO, CHAR_SPACE, JP_HIRA_MA, JP_HIRA_MI, JP_HIRA_MU, JP_HIRA_ME, JP_HIRA_MO, CHAR_SPACE,JP_HIRA_SMALL_YA, JP_HIRA_SMALL_YU, JP_HIRA_SMALL_YO, JP_HIRA_SMALL_TSU, CHAR_HYPHEN, CHAR_SPACE, CHAR_SPACE},
+        {JP_HIRA_TA, JP_HIRA_CHI, JP_HIRA_TSU, JP_HIRA_TE, JP_HIRA_TO, CHAR_SPACE, JP_HIRA_RA, JP_HIRA_RI, JP_HIRA_RU, JP_HIRA_RE, JP_HIRA_RO, CHAR_SPACE,JP_HIRA_SMALL_A, JP_HIRA_SMALL_I, JP_HIRA_SMALL_U, JP_HIRA_SMALL_E, JP_HIRA_SMALL_O, CHAR_SPACE, CHAR_SPACE},
     },
-    [KEYBOARD_ENGLISH] =
+    [KEYBOARD_KATAKANA] =
     {
-        {0, 0, 0, 0, CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9},
-        {0, 0, CHAR_A, CHAR_B, CHAR_C, CHAR_D, CHAR_E, CHAR_F, CHAR_G, CHAR_H, CHAR_I, CHAR_J, CHAR_K, CHAR_L, CHAR_M},
-        {0, 0, 0, CHAR_N, CHAR_O, CHAR_P, CHAR_Q, CHAR_R, CHAR_S, CHAR_T, CHAR_U, CHAR_V, CHAR_W, CHAR_X, CHAR_Y, CHAR_Z},
-        {0},
+        {JP_TO_KATA(JP_HIRA_A), JP_TO_KATA(JP_HIRA_I), JP_TO_KATA(JP_HIRA_U), JP_TO_KATA(JP_HIRA_E), JP_TO_KATA(JP_HIRA_O), CHAR_SPACE, JP_TO_KATA(JP_HIRA_NA), JP_TO_KATA(JP_HIRA_NI), JP_TO_KATA(JP_HIRA_NU), JP_TO_KATA(JP_HIRA_NE), JP_TO_KATA(JP_HIRA_NO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_YA), JP_TO_KATA(JP_HIRA_YU), JP_TO_KATA(JP_HIRA_YO), CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_SPACE, CHAR_SPACE},
+        {JP_TO_KATA(JP_HIRA_KA), JP_TO_KATA(JP_HIRA_KI), JP_TO_KATA(JP_HIRA_KU), JP_TO_KATA(JP_HIRA_KE), JP_TO_KATA(JP_HIRA_KO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_HA), JP_TO_KATA(JP_HIRA_HI), JP_TO_KATA(JP_HIRA_FU), JP_TO_KATA(JP_HIRA_HE), JP_TO_KATA(JP_HIRA_HO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_WA), JP_TO_KATA(JP_HIRA_WO), JP_TO_KATA(JP_HIRA_N), CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE},
+        {JP_TO_KATA(JP_HIRA_SA), JP_TO_KATA(JP_HIRA_SHI), JP_TO_KATA(JP_HIRA_SU), JP_TO_KATA(JP_HIRA_SE), JP_TO_KATA(JP_HIRA_SO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_MA), JP_TO_KATA(JP_HIRA_MI), JP_TO_KATA(JP_HIRA_MU), JP_TO_KATA(JP_HIRA_ME), JP_TO_KATA(JP_HIRA_MO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_SMALL_YA), JP_TO_KATA(JP_HIRA_SMALL_YU), JP_TO_KATA(JP_HIRA_SMALL_YO), JP_TO_KATA(JP_HIRA_SMALL_TSU), CHAR_HYPHEN, CHAR_SPACE, CHAR_SPACE},
+        {JP_TO_KATA(JP_HIRA_TA), JP_TO_KATA(JP_HIRA_CHI), JP_TO_KATA(JP_HIRA_TSU), JP_TO_KATA(JP_HIRA_TE), JP_TO_KATA(JP_HIRA_TO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_RA), JP_TO_KATA(JP_HIRA_RI), JP_TO_KATA(JP_HIRA_RU), JP_TO_KATA(JP_HIRA_RE), JP_TO_KATA(JP_HIRA_RO), CHAR_SPACE, JP_TO_KATA(JP_HIRA_SMALL_A), JP_TO_KATA(JP_HIRA_SMALL_I), JP_TO_KATA(JP_HIRA_SMALL_U), JP_TO_KATA(JP_HIRA_SMALL_E), JP_TO_KATA(JP_HIRA_SMALL_O), CHAR_SPACE, CHAR_SPACE},
     },
-    [KEYBOARD_SYMBOLS] =
+    [KEYBOARD_EIGO] =
     {
-        {0, 0, 0, 0, 0, 0, CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_PERIOD, CHAR_HYPHEN, CHAR_BULLET, CHAR_ELLIPSIS},
-        {0},
-        {0},
-        {0},
+        {CHAR_A, CHAR_B, CHAR_C, CHAR_D, CHAR_E, CHAR_F, CHAR_G, CHAR_H, CHAR_I, CHAR_J, CHAR_K, CHAR_L, CHAR_M, CHAR_N, CHAR_O, CHAR_P, CHAR_Q, CHAR_R, CHAR_S},
+        {CHAR_T, CHAR_U, CHAR_V, CHAR_W, CHAR_X, CHAR_Y, CHAR_Z, CHAR_SPACE, CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9, CHAR_SPACE},
+        {CHAR_a, CHAR_b, CHAR_c, CHAR_d, CHAR_e, CHAR_f, CHAR_g, CHAR_h, CHAR_i, CHAR_j, CHAR_k, CHAR_l, CHAR_m, CHAR_n, CHAR_o, CHAR_p, CHAR_q, CHAR_r, CHAR_s},
+        {CHAR_t, CHAR_u, CHAR_v, CHAR_w, CHAR_x, CHAR_y, CHAR_z, CHAR_SPACE, CHAR_PERIOD, CHAR_BULLET, CHAR_ELLIPSIS, CHAR_DBL_QUOTE_LEFT, CHAR_DBL_QUOTE_RIGHT, CHAR_SGL_QUOTE_LEFT, CHAR_SGL_QUOTE_RIGHT, CHAR_SLASH, CHAR_MALE, CHAR_FEMALE, CHAR_SPACE},    
     }
-};
-
-static const u8 sKeyboardActions[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] =
-{
-    [KEYBOARD_JAPANESE] =
-    {
-        [2] = {[12] = KEY_ACTION_VOICED, [14] = KEY_ACTION_SEMIVOICED, [16] = KEY_ACTION_SMALL},
-        [3] = {[12] = KEY_ACTION_JAPANESE_SHIFT},
-    },
-    [KEYBOARD_ENGLISH] =
-    {
-        [2] = {[1] = KEY_ACTION_ENGLISH_SHIFT},
-    },
 };
 
 static const u8 sPageColumnXPos[KBCOL_COUNT] =
 {
-    0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136
+    0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144
 };
 
 static const struct NamingScreenTemplate *const sNamingScreenTemplates[];
@@ -490,7 +476,6 @@ static void CreateTextEntrySprites(void);
 static void CreateInputTargetIcon(void);
 static u8 HandleKeyboardEvent(void);
 static u8 SwapKeyboardPage(void);
-static bool8 ToggleCurrentKeyboardMode(void);
 static bool8 TransformPreviousCharacter(u8);
 static u8 GetInputEvent(void);
 static void SetInputState(u8);
@@ -510,7 +495,6 @@ static void DrawTextEntry(void);
 static void PrintKeyboardKeys(u8, u8);
 static bool8 IsNamingScreenJapaneseChar(u8);
 static void BuildSingleCharText(u8 *, u8);
-static void DrawCurrentKeyboardPage(void);
 static void DrawKeyboardPageOnDeck(void);
 static void PrintControls(void);
 static void CB2_NamingScreen(void);
@@ -520,7 +504,7 @@ static void VBlankCB_NamingScreen(void);
 static void NamingScreen_ShowBgs(void);
 static bool8 IsWideLetter(u8);
 
-static const u8 sText_MoveOkBack[] = _("{ENG}L {JPN}きりかえ  {ENG}R {JPN}きりかえ  {ENG}A {JPN}けってい  {ENG}B {JPN}もどる");
+static const u8 sText_MoveOkBack[] = _("{DPAD_NONE} {JPN}いどう  {R_BUTTON} へんかん {A_BUTTON} けってい  {B_BUTTON} もどる");
 
 void DoNamingScreen(u8 templateNum, u8 *destBuffer, u16 monSpeciesOrPlayerGender, u16 monGender, u32 monPersonality, MainCallback returnCallback)
 {
@@ -717,16 +701,16 @@ static void Task_NamingScreen(u8 taskId)
 
 static const u8 sPageToNextKeyboardId[KBPAGE_COUNT] =
 {
-    [KBPAGE_JAPANESE] = KEYBOARD_ENGLISH,
-    [KBPAGE_ENGLISH]  = KEYBOARD_SYMBOLS,
-    [KBPAGE_SYMBOLS]  = KEYBOARD_JAPANESE
+    [KBPAGE_HIRAGANA] = KEYBOARD_KATAKANA,
+    [KBPAGE_KATAKANA]  = KEYBOARD_EIGO,
+    [KBPAGE_EIGO]  = KEYBOARD_HIRAGANA
 };
 
 static const u8 sPageToKeyboardId[KBPAGE_COUNT] =
 {
-    [KBPAGE_JAPANESE] = KEYBOARD_JAPANESE,
-    [KBPAGE_ENGLISH]  = KEYBOARD_ENGLISH,
-    [KBPAGE_SYMBOLS]  = KEYBOARD_SYMBOLS
+    [KBPAGE_HIRAGANA] = KEYBOARD_HIRAGANA,
+    [KBPAGE_KATAKANA]  = KEYBOARD_KATAKANA,
+    [KBPAGE_EIGO]  = KEYBOARD_EIGO
 };
 
 static u8 CurrentPageToNextKeyboardId(void)
@@ -742,13 +726,13 @@ static u8 CurrentPageToKeyboardId(void)
 static bool8 MainState_FadeIn(void)
 {
     DrawBgTilemap(3, gNamingScreenBackground_Tilemap);
-    sNamingScreen->currentPage = KBPAGE_JAPANESE;
+    sNamingScreen->currentPage = KBPAGE_HIRAGANA;
     DrawBgTilemap(2, gNamingScreenKeyboardLower_Tilemap);
     DrawBgTilemap(1, gNamingScreenKeyboardUpper_Tilemap);
-    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_2], KEYBOARD_ENGLISH);
-    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_1], KEYBOARD_JAPANESE);
-    NamingScreen_Dummy(2, KEYBOARD_ENGLISH);
-    NamingScreen_Dummy(1, KEYBOARD_JAPANESE);
+    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_2], KEYBOARD_KATAKANA);
+    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_1], KEYBOARD_HIRAGANA);
+    NamingScreen_Dummy(2, KEYBOARD_KATAKANA);
+    NamingScreen_Dummy(1, KEYBOARD_HIRAGANA);
     DrawTextEntry();
     DrawTextEntryBox();
     PrintControls();
@@ -1419,20 +1403,20 @@ static bool8 PageSwapSprite_SlideOn(struct Sprite *sprite)
 }
 
 static const u16 sPageSwapPalTags[] = {
-    [KBPAGE_JAPANESE] = PALTAG_PAGE_SWAP_UPPER,
-    [KBPAGE_ENGLISH]  = PALTAG_PAGE_SWAP_LOWER,
-    [KBPAGE_SYMBOLS]  = PALTAG_PAGE_SWAP_OTHERS
+    [KBPAGE_HIRAGANA] = PALTAG_PAGE_SWAP_UPPER,
+    [KBPAGE_KATAKANA]  = PALTAG_PAGE_SWAP_LOWER,
+    [KBPAGE_EIGO]  = PALTAG_PAGE_SWAP_OTHERS
 };
 
-static const u8 sText_PageSwapEnglish[] = _("えいじ");
-static const u8 sText_PageSwapSymbols[] = _("きごう");
-static const u8 sText_PageSwapJapanese[] = _("にほん");
+static const u8 sText_PageSwapEnglish[] = _("{JPN}カ ナ");
+static const u8 sText_PageSwapSymbols[] = _("{JPN}ABC");
+static const u8 sText_PageSwapJapanese[] = _("{JPN}か な");
 
 static const u8 *const sPageSwapLabels[] =
 {
-    [KBPAGE_JAPANESE] = sText_PageSwapEnglish,
-    [KBPAGE_ENGLISH]  = sText_PageSwapSymbols,
-    [KBPAGE_SYMBOLS]  = sText_PageSwapJapanese
+    [KBPAGE_HIRAGANA] = sText_PageSwapEnglish,
+    [KBPAGE_KATAKANA]  = sText_PageSwapSymbols,
+    [KBPAGE_EIGO]  = sText_PageSwapJapanese
 };
 
 static const u8 sPageSwapTextColors[3] = {0, 1, 2};
@@ -1626,17 +1610,13 @@ static bool8 HandleKeyboardEvent(void)
     u8 input = GetInputEvent();
     u8 keyRole = GetKeyRoleAtCursorPos();
 
-    if (input == INPUT_L_BUTTON)
+    if (input == INPUT_SELECT)
     {
-        return ToggleCurrentKeyboardMode();
+        return SwapKeyboardPage();
     }
     else if (input == INPUT_R_BUTTON)
     {
         return TransformPreviousCharacter(KEY_ACTION_NONE);
-    }
-    else if (input == INPUT_SELECT)
-    {
-        return SwapKeyboardPage();
     }
     else if (input == INPUT_B_BUTTON)
     {
@@ -1659,12 +1639,12 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
     TryStartButtonFlash(BUTTON_COUNT, FALSE, FALSE);
     if (input == INPUT_A_BUTTON)
     {
-        u8 result = AddTextCharacter();
+        u8 textFull = AddTextCharacter();
 
-        if (result != 0)
+        if (textFull != 0)
         {
             SquishCursor();
-            if (result == 2)
+            if (textFull == 2)
             {
                 SetInputState(INPUT_STATE_OVERRIDE);
                 sNamingScreen->state = STATE_MOVE_TO_OK_BUTTON;
@@ -1770,8 +1750,6 @@ static void Input_Enabled(struct Task *task)
         task->tKeyboardEvent = INPUT_A_BUTTON;
     else if (JOY_NEW(B_BUTTON))
         task->tKeyboardEvent = INPUT_B_BUTTON;
-    else if (JOY_NEW(L_BUTTON))
-        task->tKeyboardEvent = INPUT_L_BUTTON;
     else if (JOY_NEW(R_BUTTON))
         task->tKeyboardEvent = INPUT_R_BUTTON;
     else if (JOY_NEW(SELECT_BUTTON))
@@ -1966,11 +1944,6 @@ static void DrawGenderIcon(void)
     }
 }
 
-static u8 GetKeyboardActionAtPos(s16 x, s16 y)
-{
-    return sKeyboardActions[CurrentPageToKeyboardId()][y][x];
-}
-
 static bool8 IsKeyboardHiragana(u8 ch)
 {
     return ch >= JAPANESE_HIRAGANA_START && ch <= JAPANESE_HIRAGANA_END;
@@ -2012,12 +1985,12 @@ static u8 GetCharAtKeyboardPos(s16 x, s16 y)
 {
     u8 ch = sKeyboardChars[CurrentPageToKeyboardId()][y][x];
 
-    if (sNamingScreen->currentPage == KBPAGE_JAPANESE
+    if (sNamingScreen->currentPage == KBPAGE_HIRAGANA
      && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
      && IsKeyboardHiragana(ch))
         ch = JP_TO_KATA(ch);
 
-    if (sNamingScreen->currentPage == KBPAGE_ENGLISH
+    if (sNamingScreen->currentPage == KBPAGE_KATAKANA
      && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
      && IsKeyboardUppercaseLetter(ch))
         ch += CHAR_a - CHAR_A;
@@ -2027,29 +2000,14 @@ static u8 GetCharAtKeyboardPos(s16 x, s16 y)
 
 static u8 GetDisplayCharAtKeyboardPos(u8 page, s16 x, s16 y)
 {
-    u8 action = sKeyboardActions[page][y][x];
     u8 ch = sKeyboardChars[page][y][x];
 
-    switch (action)
-    {
-    case KEY_ACTION_JAPANESE_SHIFT:
-        return sNamingScreen->japaneseMode == JAPANESE_MODE_HIRAGANA ? JP_TO_KATA(JP_HIRA_A) : JP_HIRA_A;
-    case KEY_ACTION_ENGLISH_SHIFT:
-        return sNamingScreen->englishMode == ENGLISH_MODE_UPPER ? CHAR_a : CHAR_A;
-    case KEY_ACTION_SMALL:
-        return sNamingScreen->japaneseMode == JAPANESE_MODE_HIRAGANA ? JP_TO_KATA(JP_HIRA_SMALL_A) : JP_HIRA_SMALL_A;
-    case KEY_ACTION_VOICED:
-        return sNamingScreen->japaneseMode == JAPANESE_MODE_HIRAGANA ? JP_HIRA_DA : JP_TO_KATA(JP_HIRA_DA);
-    case KEY_ACTION_SEMIVOICED:
-        return sNamingScreen->japaneseMode == JAPANESE_MODE_HIRAGANA ? JP_HIRA_PA : JP_TO_KATA(JP_HIRA_PA);
-    }
-
-    if (page == KEYBOARD_JAPANESE
+    if (page == KEYBOARD_HIRAGANA
      && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
      && IsKeyboardHiragana(ch))
         ch = JP_TO_KATA(ch);
 
-    if (page == KEYBOARD_ENGLISH
+    if (page == KEYBOARD_KATAKANA
      && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
      && IsKeyboardUppercaseLetter(ch))
         ch += CHAR_a - CHAR_A;
@@ -2105,25 +2063,6 @@ static void DeleteTextCharacter(void)
     if (keyRole == KEY_ROLE_CHAR || keyRole == KEY_ROLE_BACKSPACE)
         TryStartButtonFlash(BUTTON_BACK, FALSE, TRUE);
     PlaySE(SE_BALL);
-}
-
-static bool8 ToggleCurrentKeyboardMode(void)
-{
-    switch (sNamingScreen->currentPage)
-    {
-    case KBPAGE_JAPANESE:
-        sNamingScreen->japaneseMode ^= 1;
-        DrawCurrentKeyboardPage();
-        PlaySE(SE_SELECT);
-        return FALSE;
-    case KBPAGE_ENGLISH:
-        sNamingScreen->englishMode ^= 1;
-        DrawCurrentKeyboardPage();
-        PlaySE(SE_SELECT);
-        return FALSE;
-    default:
-        return FALSE;
-    }
 }
 
 struct KanaTransformCycle
@@ -2256,10 +2195,10 @@ static bool8 TransformPreviousCharacter(u8 action)
     index = GetPreviousTextCaretPosition();
     ch = sNamingScreen->textBuffer[index];
 
-    if (sNamingScreen->currentPage == KBPAGE_SYMBOLS && action == KEY_ACTION_NONE)
+    if (sNamingScreen->currentPage == KBPAGE_EIGO && action == KEY_ACTION_NONE)
         return FALSE;
 
-    if (sNamingScreen->currentPage == KBPAGE_ENGLISH && action == KEY_ACTION_NONE)
+    if (sNamingScreen->currentPage == KBPAGE_KATAKANA && action == KEY_ACTION_NONE)
     {
         if (IsKeyboardUppercaseLetter(ch))
             ch += CHAR_a - CHAR_A;
@@ -2285,20 +2224,9 @@ static u8 AddTextCharacter(void)
 {
     s16 x;
     s16 y;
-    u8 action;
     u8 ch;
 
     GetCursorPos(&x, &y);
-    action = GetKeyboardActionAtPos(x, y);
-    if (action == KEY_ACTION_JAPANESE_SHIFT || action == KEY_ACTION_ENGLISH_SHIFT)
-    {
-        ToggleCurrentKeyboardMode();
-        return 1;
-    }
-    if (action == KEY_ACTION_SMALL || action == KEY_ACTION_VOICED || action == KEY_ACTION_SEMIVOICED)
-    {
-        return TransformPreviousCharacter(action) ? 1 : 0;
-    }
 
     ch = GetCharAtKeyboardPos(x, y);
     if (ch == 0)
@@ -2402,16 +2330,16 @@ ALIGNED(4) static const u8 sTextColorStruct[3][4] =
 
 static const u8 sFillValues[KBPAGE_COUNT] =
 {
-    [KEYBOARD_JAPANESE] = PIXEL_FILL(13),
-    [KEYBOARD_ENGLISH]  = PIXEL_FILL(14),
-    [KEYBOARD_SYMBOLS]  = PIXEL_FILL(15)
+    [KEYBOARD_HIRAGANA] = PIXEL_FILL(13),
+    [KEYBOARD_KATAKANA]  = PIXEL_FILL(14),
+    [KEYBOARD_EIGO]  = PIXEL_FILL(15)
 };
 
 static const u8 *const sKeyboardTextColors[KBPAGE_COUNT] =
 {
-    [KEYBOARD_JAPANESE] = sTextColorStruct[0],
-    [KEYBOARD_ENGLISH]  = sTextColorStruct[1],
-    [KEYBOARD_SYMBOLS]  = sTextColorStruct[2]
+    [KEYBOARD_HIRAGANA] = sTextColorStruct[0],
+    [KEYBOARD_KATAKANA]  = sTextColorStruct[1],
+    [KEYBOARD_EIGO]  = sTextColorStruct[2]
 };
 
 static void PrintKeyboardKeys(u8 window, u8 page)
@@ -2442,41 +2370,17 @@ static void PrintKeyboardKeys(u8 window, u8 page)
 
 static const u32 *const sKeyboardPageTilemaps[] =
 {
-    [KBPAGE_JAPANESE] = gNamingScreenKeyboardUpper_Tilemap,
-    [KBPAGE_ENGLISH]  = gNamingScreenKeyboardLower_Tilemap,
-    [KBPAGE_SYMBOLS]  = gNamingScreenKeyboardSymbols_Tilemap
+    [KBPAGE_HIRAGANA]  = gNamingScreenKeyboardUpper_Tilemap,
+    [KBPAGE_KATAKANA]  = gNamingScreenKeyboardLower_Tilemap,
+    [KBPAGE_EIGO]      = gNamingScreenKeyboardSymbols_Tilemap
 };
 
 static const u32 *const sNextKeyboardPageTilemaps[] =
 {
-    [KBPAGE_JAPANESE] = gNamingScreenKeyboardLower_Tilemap,
-    [KBPAGE_ENGLISH]  = gNamingScreenKeyboardSymbols_Tilemap,
-    [KBPAGE_SYMBOLS]  = gNamingScreenKeyboardUpper_Tilemap
+    [KBPAGE_EIGO]       = gNamingScreenKeyboardUpper_Tilemap,
+    [KBPAGE_HIRAGANA]   = gNamingScreenKeyboardLower_Tilemap, // lower
+    [KBPAGE_KATAKANA]   = gNamingScreenKeyboardSymbols_Tilemap  // symbols
 };
-
-static void DrawCurrentKeyboardPage(void)
-{
-    u8 bg;
-    u8 windowId;
-    u8 bg1Priority = GetGpuReg(REG_OFFSET_BG1CNT) & 3;
-    u8 bg2Priority = GetGpuReg(REG_OFFSET_BG2CNT) & 3;
-
-    if (bg1Priority < bg2Priority)
-    {
-        bg = 1;
-        windowId = sNamingScreen->windows[WIN_KB_PAGE_1];
-    }
-    else
-    {
-        bg = 2;
-        windowId = sNamingScreen->windows[WIN_KB_PAGE_2];
-    }
-
-    DrawBgTilemap(bg, sKeyboardPageTilemaps[sNamingScreen->currentPage]);
-    PrintKeyboardKeys(windowId, CurrentPageToKeyboardId());
-    NamingScreen_Dummy(bg, CurrentPageToKeyboardId());
-    CopyBgTilemapBufferToVram(bg);
-}
 
 // There are always 2 keyboard pages drawn, the current page and the one that will shown next if the player swaps
 // When the page swap is complete this function invisibly replaces the old page with the new next one
@@ -2595,14 +2499,14 @@ static void UNUSED Debug_NamingScreenNickname(void)
 // Forward-declared variables
 //--------------------------------------------------
 
-// Initial pages below are overwritten with KBPAGE_JAPANESE in MainState_FadeIn().
+// Initial pages below are overwritten with KBPAGE_HIRAGANA in MainState_FadeIn().
 static const struct NamingScreenTemplate sPlayerNamingScreenTemplate =
 {
     .copyExistingString = FALSE,
     .maxChars = PLAYER_NAME_LENGTH,
     .iconFunction = 1,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
     .title = COMPOUND_STRING("{JPN}あなた の なまえは?"),
 };
@@ -2613,7 +2517,7 @@ static const struct NamingScreenTemplate sPCBoxNamingTemplate =
     .maxChars = BOX_NAME_LENGTH,
     .iconFunction = 2,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 19,
     .title = COMPOUND_STRING("{JPN}ボックス の なまえは?"),
 };
@@ -2624,9 +2528,9 @@ static const struct NamingScreenTemplate sMonNamingScreenTemplate =
     .maxChars = POKEMON_NAME_LENGTH,
     .iconFunction = 3,
     .addGenderIcon = TRUE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
-    .title = COMPOUND_STRING("{JPN}{STR_VAR_1}の ニックネームは?"),
+    .title = COMPOUND_STRING("{JPN}{STR_VAR_1} の ニックネームは?"),
 };
 
 static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
@@ -2635,7 +2539,7 @@ static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
     .maxChars = WALDA_PHRASE_LENGTH,
     .iconFunction = 4,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 11,
     .title = COMPOUND_STRING("{JPN}おじさんに ことばを おしえよう"),
 };
@@ -2646,7 +2550,7 @@ static const struct NamingScreenTemplate sCodeScreenTemplate =
     .maxChars = CODE_NAME_LENGTH,
     .iconFunction = 5,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
     .title = COMPOUND_STRING("{JPN}コードを いれよう"),
 };
@@ -2657,7 +2561,7 @@ static const struct NamingScreenTemplate sRivalNamingScreenTemplate =
     .maxChars = PLAYER_NAME_LENGTH,
     .iconFunction = 6,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_JAPANESE,
+    .initialPage = KBPAGE_HIRAGANA,
     .title = sText_RivalsName,
 };
 

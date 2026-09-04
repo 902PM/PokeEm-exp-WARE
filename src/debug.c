@@ -3631,24 +3631,6 @@ void DebugAction_TimeMenu_RedoDailyEvents(u8 taskId)
 
 // *******************************
 // Actions PCBag
-struct DebugGenerationRange
-{
-    enum NationalDexOrder first;
-    enum NationalDexOrder last;
-};
-
-static const struct DebugGenerationRange sDebugGenerationRanges[] =
-{
-    { NATIONAL_DEX_BULBASAUR,   NATIONAL_DEX_MEW },
-    { NATIONAL_DEX_CHIKORITA,   NATIONAL_DEX_CELEBI },
-    { NATIONAL_DEX_TREECKO,     NATIONAL_DEX_DEOXYS },
-    { NATIONAL_DEX_TURTWIG,     NATIONAL_DEX_ARCEUS },
-    { NATIONAL_DEX_VICTINI,     NATIONAL_DEX_GENESECT },
-    { NATIONAL_DEX_CHESPIN,     NATIONAL_DEX_VOLCANION },
-    { NATIONAL_DEX_ROWLET,      NATIONAL_DEX_MELMETAL },
-    { NATIONAL_DEX_GROOKEY,     NATIONAL_DEX_ENAMORUS },
-    { NATIONAL_DEX_SPRIGATITO,  NATIONAL_DEX_PECHARUNT },
-};
 
 static enum Species GetNextSpecies(enum Species species)
 {
@@ -3721,26 +3703,6 @@ static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId)
         PlayBGM(GetCurrentMapMusic());
 
     Debug_DestroyMenu_Full_Script(taskId, Debug_BoxFilledMessage);
-}
-
-static bool32 Debug_IsSpeciesInGeneration(enum Species species, const struct DebugGenerationRange *range)
-{
-    enum NationalDexOrder natDexNum = gSpeciesInfo[species].natDexNum;
-
-    return IsSpeciesEnabled(species)
-        && natDexNum >= range->first
-        && natDexNum <= range->last;
-}
-
-static void Debug_ClearPCBoxes(void)
-{
-    u32 boxId, boxPosition;
-
-    for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
-    {
-        for (boxPosition = 0; boxPosition < IN_BOX_COUNT; boxPosition++)
-            ZeroBoxMonAt(boxId, boxPosition);
-    }
 }
 
 static void DebugAction_PCBag_Fill_PCItemStorage(u8 taskId)

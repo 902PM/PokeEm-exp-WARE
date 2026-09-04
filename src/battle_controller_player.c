@@ -1826,9 +1826,9 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     }
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[7] = _("ぶんるい");
-    u8 pwr_desc[7] = _("いりょく");
-    u8 acc_desc[7] = _("めいちゅう");
+    u8 cat_desc[] = _("{JPN}ぶんるい");
+    u8 pwr_desc[] = _("{JPN}いりょく");
+    u8 acc_desc[] = _("{JPN}めいちゅう");
     u8 cat_start[] = _("{CLEAR_TO 3}");
     u8 pwr_start[] = _("{CLEAR_TO 56}");
     u8 acc_start[] = _("{CLEAR_TO 108}");
@@ -2047,8 +2047,8 @@ static void HandleChooseActionAfterDma3(enum BattlerId battler)
         {
             if (DEBUG_AI_DELAY_TIMER)
             {
-                static const u8 sFramesText[] = _("フレーム かんがえた\n");
-                static const u8 sCyclesText[] = _("サイクル");
+                static const u8 sFramesText[] = _("{JPN}しこうフレーム\n");
+                static const u8 sCyclesText[] = _("{JPN}サイクル");
                 ConvertIntToDecimalStringN(gDisplayedStringBattle, gBattleStruct->aiDelayFrames, STR_CONV_MODE_RIGHT_ALIGN, 3);
                 u8* end = StringAppend(gDisplayedStringBattle, sFramesText);
                 ConvertIntToDecimalStringN(end, gBattleStruct->aiDelayCycles, STR_CONV_MODE_RIGHT_ALIGN, 8);
@@ -2083,20 +2083,20 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     enum BattlerId partner = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
     if (B_SHOW_PARTNER_TARGET && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && IsBattlerAlive(partner))
     {
-        StringCopy(gStringVar1, COMPOUND_STRING("なかまの わざ:\n"));
+        StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なかまの わざ:\n"));
         enum Move move = GetBattlerChosenMove(partner);
         StringAppend(gStringVar1, GetMoveName(move));
         enum MoveTarget moveTarget = GetBattlerMoveSelectionTargetType(partner, move);
         if (moveTarget == TARGET_SELECTED || moveTarget == TARGET_SMART)
         {
             if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_LEFT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" ？{UP_ARROW}"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" ー{UP_ARROW}"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_RIGHT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}？"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}ー"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_LEFT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}？"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}ー"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_RIGHT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" ？{DOWN_ARROW}"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" ー{DOWN_ARROW}"));
         }
         else if (moveTarget == TARGET_USER_AND_ALLY)
         {
