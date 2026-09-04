@@ -282,9 +282,9 @@ static const u8 sText_RPM[] = _("{JPN}rpm");
 static const u8 sText_Dot[] = _(".");
 static const u8 sText_NewLine[] = _("\n");
 static const u8 sText_Ranking[] = _("{JPN}ランキング");
-static const u8 sText_TheLevelIs[] = _("レベル");
-static const u8 sText_TheFeelIs[] = _("で なめらかさは");
-static const u8 sText_Dot2[] = _("だ");
+static const u8 sText_TheLevelIs[] = _("{JPN}レベル");
+static const u8 sText_TheFeelIs[] = _("{JPN}で なめらかさは");
+static const u8 sText_Dot2[] = _("{JPN}だ");
 
 static const u8 sText_SavingDontTurnOff2[] = _("{JPN}ポケモンレポートに かきこんでいます    \nでんげんを きらないで ください      ");
 static const u8 sText_BlenderMaxSpeedRecord[] = _("{JPN}きのみブレンダー\nさいこうそくど ランキング！");

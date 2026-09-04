@@ -300,7 +300,6 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId);
 
 static void DebugAction_PCBag_Fill_PCBoxes_Fast(u8 taskId);
 static void DebugAction_PCBag_Fill_PCBoxes_Slow(u8 taskId);
-static void DebugAction_PCBag_Fill_PCBoxes_Generation(u8 taskId, const void *params);
 static void DebugAction_PCBag_Fill_PCItemStorage(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketItems(u8 taskId);
 static void DebugAction_PCBag_Fill_PocketPokeBalls(u8 taskId);
@@ -609,15 +608,6 @@ static const struct DebugMenuOption sDebugMenu_Actions_PCBag_Fill[] =
 {
     { COMPOUND_STRING("{JPN}ボックスを すばやく うめる"),        DebugAction_PCBag_Fill_PCBoxes_Fast },
     { COMPOUND_STRING("{JPN}ボックスを ゆっくり うめる"), DebugAction_PCBag_Fill_PCBoxes_Slow },
-    { COMPOUND_STRING("{JPN}1せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)0 },
-    { COMPOUND_STRING("{JPN}2せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)1 },
-    { COMPOUND_STRING("{JPN}3せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)2 },
-    { COMPOUND_STRING("{JPN}4せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)3 },
-    { COMPOUND_STRING("{JPN}5せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)4 },
-    { COMPOUND_STRING("{JPN}6せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)5 },
-    { COMPOUND_STRING("{JPN}7せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)6 },
-    { COMPOUND_STRING("{JPN}8せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)7 },
-    { COMPOUND_STRING("{JPN}9せだいを ボックスへ"), DebugAction_PCBag_Fill_PCBoxes_Generation, (void *)8 },
     { COMPOUND_STRING("{JPN}パソコンどうぐを うめる") ,            DebugAction_PCBag_Fill_PCItemStorage },
     { COMPOUND_STRING("{JPN}どうぐポケットを うめる"),         DebugAction_PCBag_Fill_PocketItems },
     { COMPOUND_STRING("{JPN}ボールポケットを うめる"),    DebugAction_PCBag_Fill_PocketPokeBalls },
@@ -2626,9 +2616,9 @@ static void DebugSelectionStep_MovesConfirm(u8 taskId)
     }
 }
 
-UPDATE_GENERIC_INPUT(Level, レベル)
-UPDATE_GENERIC_INPUT(OutbreakProbability, かくりつ)
-UPDATE_GENERIC_INPUT(OutbreakDaysLeft, のこり)
+UPDATE_GENERIC_INPUT(Level, {JPN}レベル)
+UPDATE_GENERIC_INPUT(OutbreakProbability, {JPN}かくりつ)
+UPDATE_GENERIC_INPUT(OutbreakDaysLeft, {JPN}のこり)
 
 static const struct DebugSelectionStep sSpeciesSelectionStep = {
     .stepUpdate = DebugSelectionStep_UpdateSpecies,
@@ -3178,7 +3168,7 @@ static void DebugSelectionStep_UpdateItem(u8 taskId, u8 digits, u32 min, u32 max
     DebugNativeStep_PrintWindowSelection(taskId);
 }
 
-UPDATE_GENERIC_INPUT(Quantity, かず)
+UPDATE_GENERIC_INPUT(Quantity, {JPN}かず)
 
 static bool32 DebugSelection_GiveItem_Complete(u8 taskId)
 {
@@ -3216,7 +3206,7 @@ static bool32 DebugSelection_GiveSimplePokemon_OnComplete(u8 taskId)
 {
     ScriptGiveMon(DebugSelection_GetData(taskId, 0), DebugSelection_GetData(taskId, 1), ITEM_NONE);
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(SE_SUCCESS);
+    PlaySE(MUS_LEVEL_UP);
     return TRUE;
 }
 
@@ -3506,7 +3496,7 @@ static bool32 DebugSelection_GiveEggPokemon_OnComplete(u8 taskId)
 {
     ScriptGiveEgg(DebugSelection_GetData(taskId, 0));
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(SE_SUCCESS);
+    PlaySE(MUS_LEVEL_UP);
     return TRUE;
 }
 
@@ -3541,7 +3531,7 @@ static bool32 DebugSelection_GiveDecoration_Complete(u8 taskId)
 {
     DecorationAdd(DebugSelection_GetData(taskId, 0));
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(SE_SUCCESS);
+    PlaySE(MUS_LEVEL_UP);
     return TRUE;
 }
 
@@ -3588,7 +3578,7 @@ static void DebugAction_Give_DayCareEgg(u8 taskId)
         Debug_DestroyMenu_Full_Script(taskId, DebugScript_OneDaycareMons);
     else if (GetDaycareCompatibilityScore(&gSaveBlock1Ptr->daycare) == PARENTS_INCOMPATIBLE) // not compatible parents
         Debug_DestroyMenu_Full_Script(taskId, DebugScript_DaycareMonsNotCompatible);
-    else // 2 Pokemon which can have a Pokemon baby together
+    else // 2 Pokémon which can have a Pokémon baby together
         TriggerPendingDaycareEgg();
 }
 
@@ -3751,39 +3741,6 @@ static void Debug_ClearPCBoxes(void)
         for (boxPosition = 0; boxPosition < IN_BOX_COUNT; boxPosition++)
             ZeroBoxMonAt(boxId, boxPosition);
     }
-}
-
-static void DebugAction_PCBag_Fill_PCBoxes_Generation(u8 taskId, const void *params)
-{
-    u32 generation = (u32)params;
-    u32 boxId = 0;
-    u32 boxPosition = 0;
-    enum Species species;
-    struct BoxPokemon boxMon;
-    const struct DebugGenerationRange *range = &sDebugGenerationRanges[generation];
-
-    Debug_ClearPCBoxes();
-
-    for (species = SPECIES_BULBASAUR; species < NUM_SPECIES && boxId < TOTAL_BOXES_COUNT; species++)
-    {
-        if (!Debug_IsSpeciesInGeneration(species, range))
-            continue;
-
-        CreateBoxMon(&boxMon, species, 100, Random32(), OTID_STRUCT_PLAYER_ID);
-        SetBoxMonIVs(&boxMon, USE_RANDOM_IVS);
-        GiveBoxMonInitialMoveset(&boxMon);
-        SetBoxMonAt(boxId, boxPosition, &boxMon);
-
-        if (++boxPosition >= IN_BOX_COUNT)
-        {
-            boxPosition = 0;
-            boxId++;
-        }
-    }
-
-    FlagSet(FLAG_SYS_POKEMON_GET);
-    Debug_DestroyMenu_Full(taskId);
-    ScriptContext_Enable();
 }
 
 static void DebugAction_PCBag_Fill_PCItemStorage(u8 taskId)

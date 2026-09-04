@@ -853,7 +853,7 @@ const u8 gText_FrontierFacilityIncluding[] = _("");
 const u8 gText_FrontierFacilityAreInelegible[] = _("{JPN}は");
 
 const u8 gText_YesNo[] = _("{JPN}はい\nいいえ");
-const u8 gText_SelectorArrow3[] = _("{JPN}▶");
+const u8 gText_SelectorArrow3[] = _("▶");
 const u8 gText_Peekaboo[] = _("{JPN}ばあ！");
 const u8 gText_CommErrorCheckConnections[] = _("{JPN}  つうしん エラーが はっせいしました\n   しゅうへんきき との せつぞくを\n 　  きちんと かくにん してから\n   でんげんを いれなおしてください");
 const u8 gText_CommErrorEllipsis[] = _("{JPN}つうしんエラーが はっせいしました");

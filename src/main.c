@@ -40,7 +40,7 @@ const enum GameVersion gGameVersion = GAME_VERSION;
 
 const enum Language gGameLanguage = GAME_LANGUAGE; // English
 
-const char BuildDateTime[] = "2005 02 21 11:10";
+const char BuildDateTime[] = "2004 06 30 18:43";
 
 const IntrFunc gIntrTableTemplate[] =
 {

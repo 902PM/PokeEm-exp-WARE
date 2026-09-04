@@ -88,7 +88,7 @@ static void CB2_PreInitIngamePlayerPartnerBattle(void);
 static void CB2_HandleStartMultiPartnerBattle(void);
 static void CB2_HandleStartMultiBattle(void);
 static void CB2_HandleStartBattle(void);
-static void TryCorrectJapaneseNicknameLanguage(struct Pokemon *mon);
+static void TryCorrectShedinjaLanguage(struct Pokemon *mon);
 static void BattleMainCB1(void);
 static void CB2_EndLinkBattle(void);
 static void EndLinkBattleInSteps(void);
@@ -258,7 +258,7 @@ static const struct ScanlineEffectParams sIntroScanlineParams32Bit =
     &REG_BG3HOFS, SCANLINE_EFFECT_DMACNT_32BIT, 1
 };
 
-static const u8 sText_ShedinjaJpnName[] = _("ヌケニン"); // Nukenin
+static const u8 sText_ShedinjaJpnName[] = _("{JPN}ヌケニン"); // Nukenin
 
 const struct OamData gOamData_BattleSpriteOpponentSide =
 {
@@ -297,123 +297,123 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 // [TRAINER_CLASS_XYZ] = { _("name"), <money=5>, <ball=BALL_POKE> }
 const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
 {
-    [TRAINER_CLASS_PKMN_TRAINER_1] = { _("ポケモントレーナー") },
-    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("ポケモントレーナー") },
-    [TRAINER_CLASS_HIKER] = { _("やまおとこ"), 10, BALL_HEAVY },
-    [TRAINER_CLASS_TEAM_AQUA] = { _("アクアだん"), 5, BALL_DUSK },
-    [TRAINER_CLASS_PKMN_BREEDER] = { _("ポケモンブリーダー"), 10, BALL_FRIEND },
-    [TRAINER_CLASS_COOLTRAINER] = { _("エリートトレーナー"), 12, BALL_BEAST },
-    [TRAINER_CLASS_BIRD_KEEPER] = { _("とりつかい"), 8, BALL_FAST },
-    [TRAINER_CLASS_COLLECTOR] = { _("ポケモンコレクター"), 15, BALL_PREMIER },
-    [TRAINER_CLASS_SWIMMER_M] = { _("かいパンやろう"), 2, BALL_DIVE },
-    [TRAINER_CLASS_TEAM_MAGMA] = { _("マグマだん"), 5, BALL_DUSK },
-    [TRAINER_CLASS_EXPERT] = { _("たつじん"), 10, BALL_LUXURY },
-    [TRAINER_CLASS_AQUA_ADMIN] = { _("アクアだんかんぶ"), 10, BALL_LUXURY },
-    [TRAINER_CLASS_BLACK_BELT] = { _("カラテおう"), 8, BALL_LUXURY },
-    [TRAINER_CLASS_AQUA_LEADER] = { _("アクアだんリーダー"), 20, BALL_DIVE },
-    [TRAINER_CLASS_HEX_MANIAC] = { _("オカルトマニア"), 6, BALL_DUSK },
-    [TRAINER_CLASS_AROMA_LADY] = { _("アロマなおねえさん"), 10, BALL_LOVE },
-    [TRAINER_CLASS_RUIN_MANIAC] = { _("いせきマニア"), 15, BALL_HEAVY },
-    [TRAINER_CLASS_INTERVIEWER] = { _("インタビュアー"), 12, BALL_QUICK },
-    [TRAINER_CLASS_TUBER_F] = { _("うきわガール"), 1, BALL_DIVE },
-    [TRAINER_CLASS_TUBER_M] = { _("うきわボーイ"), 1, BALL_DIVE },
-    [TRAINER_CLASS_LADY] = { _("おじょうさま"), 50, BALL_LUXURY },
-    [TRAINER_CLASS_BEAUTY] = { _("おとなのおねえさん"), 20, BALL_LUXURY },
-    [TRAINER_CLASS_RICH_BOY] = { _("おぼっちゃま"), 50, BALL_LUXURY },
-    [TRAINER_CLASS_POKEMANIAC] = { _("かいじゅうマニア"), 15, BALL_BEAST },
-    [TRAINER_CLASS_GUITARIST] = { _("ギタリスト"), 8, BALL_FAST },
-    [TRAINER_CLASS_KINDLER] = { _("キャンプファイヤー"), 8, BALL_LEVEL },
-    [TRAINER_CLASS_CAMPER] = { _("キャンプボーイ"), 4, BALL_SPORT },
-    [TRAINER_CLASS_PICNICKER] = { _("ピクニックガール"), 4, BALL_SPORT },
-    [TRAINER_CLASS_BUG_MANIAC] = { _("こんちゅうマニア"), 15, BALL_NET },
-    [TRAINER_CLASS_PSYCHIC] = { _("サイキッカー"), 6, BALL_DREAM },
-    [TRAINER_CLASS_GENTLEMAN] = { _("ジェントルマン"), 20, BALL_LUXURY },
-    [TRAINER_CLASS_ELITE_FOUR] = { _("してんのう"), 25 },
-    [TRAINER_CLASS_LEADER] = { _("ジムリーダー"), 25 },
-    [TRAINER_CLASS_SCHOOL_KID] = { _("じゅくがえり"), 5, BALL_TIMER },
-    [TRAINER_CLASS_SR_AND_JR] = { _("センパイとコウハイ"), 4, BALL_FRIEND },
-    [TRAINER_CLASS_WINSTRATE] = { _("カチヌキさんち"), 10 },
-    [TRAINER_CLASS_POKEFAN] = { _("だいすきクラブ"), 20, BALL_LOVE },
-    [TRAINER_CLASS_YOUNGSTER] = { _("たんぱんこぞう"), 4 },
-    [TRAINER_CLASS_CHAMPION] = { _("チャンピオン"), 50 },
-    [TRAINER_CLASS_FISHERMAN] = { _("つりびと"), 10, BALL_LURE },
-    [TRAINER_CLASS_TRIATHLETE] = { _("トライアスリート"), 10, BALL_SPORT },
-    [TRAINER_CLASS_DRAGON_TAMER] = { _("ドラゴンつかい"), 12, BALL_BEAST },
-    [TRAINER_CLASS_NINJA_BOY] = { _("ニンジャごっこ"), 3, BALL_NEST },
-    [TRAINER_CLASS_BATTLE_GIRL] = { _("バトルガール"), 6, BALL_FAST },
-    [TRAINER_CLASS_PARASOL_LADY] = { _("パラソルおねえさん"), 10, BALL_LOVE },
-    [TRAINER_CLASS_SWIMMER_F] = { _("ビキニのおねえさん"), 2, BALL_DIVE },
-    [TRAINER_CLASS_TWINS] = { _("ふたごちゃん"), 3, BALL_FRIEND },
-    [TRAINER_CLASS_SAILOR] = { _("ふなのり"), 8, BALL_DIVE },
-    [TRAINER_CLASS_COOLTRAINER_2] = { _("エリートレーナー"), 5, BALL_BEAST },
-    [TRAINER_CLASS_MAGMA_ADMIN] = { _("マグマだんかんぶ"), 10, BALL_DUSK },
-    [TRAINER_CLASS_RIVAL] = { _("ポケモントレーナー"), 15 },
-    [TRAINER_CLASS_BUG_CATCHER] = { _("むしとりしょうねん"), 4, BALL_NET },
-    [TRAINER_CLASS_PKMN_RANGER] = { _("ポケモンレンジャー"), 12, BALL_NEST },
-    [TRAINER_CLASS_MAGMA_LEADER] = { _("マグマだんリーダー"), 20, BALL_HEAVY },
-    [TRAINER_CLASS_LASS] = { _("ミニスカート"), 4, BALL_LOVE },
-    [TRAINER_CLASS_YOUNG_COUPLE] = { _("ラブラブカップル"), 8, BALL_LOVE },
-    [TRAINER_CLASS_OLD_COUPLE] = { _("きんこんしき"), 10, BALL_LUXURY },
-    [TRAINER_CLASS_SIS_AND_BRO] = { _("うみきょうだい"), 3, BALL_DIVE },
-    [TRAINER_CLASS_SALON_MAIDEN] = { _("タワータイクーン"), 5, BALL_LUXURY },
-    [TRAINER_CLASS_DOME_ACE] = { _("ドームスーパースター"), 5, BALL_CHERISH },
-    [TRAINER_CLASS_PALACE_MAVEN] = { _("パレスガーディアン"), 5, BALL_MOON },
-    [TRAINER_CLASS_ARENA_TYCOON] = { _("アリーナキャプテン"), 5, BALL_LUXURY },
-    [TRAINER_CLASS_FACTORY_HEAD] = { _("ファクトリーヘッド"), 5, BALL_PREMIER },
-    [TRAINER_CLASS_PIKE_QUEEN] = { _("チューブクイーン"), 5, BALL_LUXURY },
-    [TRAINER_CLASS_PYRAMID_KING] = { _("ピラミッドキング"), 5, BALL_HEAVY },
-    [TRAINER_CLASS_RS_PROTAG] = { _("ポケモントレーナー") },
+    [TRAINER_CLASS_PKMN_TRAINER_1] = { _("{JPN}ポケモントレーナー") },
+    [TRAINER_CLASS_PKMN_TRAINER_2] = { _("{JPN}ポケモントレーナー") },
+    [TRAINER_CLASS_HIKER] = { _("{JPN}やまおとこ"), 10, BALL_HEAVY },
+    [TRAINER_CLASS_TEAM_AQUA] = { _("{JPN}アクアだん"), 5, BALL_DUSK },
+    [TRAINER_CLASS_PKMN_BREEDER] = { _("{JPN}ポケモンブリーダー"), 10, BALL_FRIEND },
+    [TRAINER_CLASS_COOLTRAINER] = { _("{JPN}エリートトレーナー"), 12, BALL_BEAST },
+    [TRAINER_CLASS_BIRD_KEEPER] = { _("{JPN}とりつかい"), 8, BALL_FAST },
+    [TRAINER_CLASS_COLLECTOR] = { _("{JPN}ポケモンコレクター"), 15, BALL_PREMIER },
+    [TRAINER_CLASS_SWIMMER_M] = { _("{JPN}かいパンやろう"), 2, BALL_DIVE },
+    [TRAINER_CLASS_TEAM_MAGMA] = { _("{JPN}マグマだん"), 5, BALL_DUSK },
+    [TRAINER_CLASS_EXPERT] = { _("{JPN}たつじん"), 10, BALL_LUXURY },
+    [TRAINER_CLASS_AQUA_ADMIN] = { _("{JPN}アクアだんかんぶ"), 10, BALL_LUXURY },
+    [TRAINER_CLASS_BLACK_BELT] = { _("{JPN}カラテおう"), 8, BALL_LUXURY },
+    [TRAINER_CLASS_AQUA_LEADER] = { _("{JPN}アクアだんリーダー"), 20, BALL_DIVE },
+    [TRAINER_CLASS_HEX_MANIAC] = { _("{JPN}オカルトマニア"), 6, BALL_DUSK },
+    [TRAINER_CLASS_AROMA_LADY] = { _("{JPN}アロマなおねえさん"), 10, BALL_LOVE },
+    [TRAINER_CLASS_RUIN_MANIAC] = { _("{JPN}いせきマニア"), 15, BALL_HEAVY },
+    [TRAINER_CLASS_INTERVIEWER] = { _("{JPN}インタビュアー"), 12, BALL_QUICK },
+    [TRAINER_CLASS_TUBER_F] = { _("{JPN}うきわガール"), 1, BALL_DIVE },
+    [TRAINER_CLASS_TUBER_M] = { _("{JPN}うきわボーイ"), 1, BALL_DIVE },
+    [TRAINER_CLASS_LADY] = { _("{JPN}おじょうさま"), 50, BALL_LUXURY },
+    [TRAINER_CLASS_BEAUTY] = { _("{JPN}おとなのおねえさん"), 20, BALL_LUXURY },
+    [TRAINER_CLASS_RICH_BOY] = { _("{JPN}おぼっちゃま"), 50, BALL_LUXURY },
+    [TRAINER_CLASS_POKEMANIAC] = { _("{JPN}かいじゅうマニア"), 15, BALL_BEAST },
+    [TRAINER_CLASS_GUITARIST] = { _("{JPN}ギタリスト"), 8, BALL_FAST },
+    [TRAINER_CLASS_KINDLER] = { _("{JPN}キャンプファイヤー"), 8, BALL_LEVEL },
+    [TRAINER_CLASS_CAMPER] = { _("{JPN}キャンプボーイ"), 4, BALL_SPORT },
+    [TRAINER_CLASS_PICNICKER] = { _("{JPN}ピクニックガール"), 4, BALL_SPORT },
+    [TRAINER_CLASS_BUG_MANIAC] = { _("{JPN}こんちゅうマニア"), 15, BALL_NET },
+    [TRAINER_CLASS_PSYCHIC] = { _("{JPN}サイキッカー"), 6, BALL_DREAM },
+    [TRAINER_CLASS_GENTLEMAN] = { _("{JPN}ジェントルマン"), 20, BALL_LUXURY },
+    [TRAINER_CLASS_ELITE_FOUR] = { _("{JPN}してんのう"), 25 },
+    [TRAINER_CLASS_LEADER] = { _("{JPN}ジムリーダー"), 25 },
+    [TRAINER_CLASS_SCHOOL_KID] = { _("{JPN}じゅくがえり"), 5, BALL_TIMER },
+    [TRAINER_CLASS_SR_AND_JR] = { _("{JPN}センパイとコウハイ"), 4, BALL_FRIEND },
+    [TRAINER_CLASS_WINSTRATE] = { _("{JPN}カチヌキさんち"), 10 },
+    [TRAINER_CLASS_POKEFAN] = { _("{JPN}だいすきクラブ"), 20, BALL_LOVE },
+    [TRAINER_CLASS_YOUNGSTER] = { _("{JPN}たんぱんこぞう"), 4 },
+    [TRAINER_CLASS_CHAMPION] = { _("{JPN}チャンピオン"), 50 },
+    [TRAINER_CLASS_FISHERMAN] = { _("{JPN}つりびと"), 10, BALL_LURE },
+    [TRAINER_CLASS_TRIATHLETE] = { _("{JPN}トライアスリート"), 10, BALL_SPORT },
+    [TRAINER_CLASS_DRAGON_TAMER] = { _("{JPN}ドラゴンつかい"), 12, BALL_BEAST },
+    [TRAINER_CLASS_NINJA_BOY] = { _("{JPN}ニンジャごっこ"), 3, BALL_NEST },
+    [TRAINER_CLASS_BATTLE_GIRL] = { _("{JPN}バトルガール"), 6, BALL_FAST },
+    [TRAINER_CLASS_PARASOL_LADY] = { _("{JPN}パラソルおねえさん"), 10, BALL_LOVE },
+    [TRAINER_CLASS_SWIMMER_F] = { _("{JPN}ビキニのおねえさん"), 2, BALL_DIVE },
+    [TRAINER_CLASS_TWINS] = { _("{JPN}ふたごちゃん"), 3, BALL_FRIEND },
+    [TRAINER_CLASS_SAILOR] = { _("{JPN}ふなのり"), 8, BALL_DIVE },
+    [TRAINER_CLASS_COOLTRAINER_2] = { _("{JPN}エリートレーナー"), 5, BALL_BEAST },
+    [TRAINER_CLASS_MAGMA_ADMIN] = { _("{JPN}マグマだんかんぶ"), 10, BALL_DUSK },
+    [TRAINER_CLASS_RIVAL] = { _("{JPN}ポケモントレーナー"), 15 },
+    [TRAINER_CLASS_BUG_CATCHER] = { _("{JPN}むしとりしょうねん"), 4, BALL_NET },
+    [TRAINER_CLASS_PKMN_RANGER] = { _("{JPN}ポケモンレンジャー"), 12, BALL_NEST },
+    [TRAINER_CLASS_MAGMA_LEADER] = { _("{JPN}マグマだんリーダー"), 20, BALL_HEAVY },
+    [TRAINER_CLASS_LASS] = { _("{JPN}ミニスカート"), 4, BALL_LOVE },
+    [TRAINER_CLASS_YOUNG_COUPLE] = { _("{JPN}ラブラブカップル"), 8, BALL_LOVE },
+    [TRAINER_CLASS_OLD_COUPLE] = { _("{JPN}きんこんしき"), 10, BALL_LUXURY },
+    [TRAINER_CLASS_SIS_AND_BRO] = { _("{JPN}うみきょうだい"), 3, BALL_DIVE },
+    [TRAINER_CLASS_SALON_MAIDEN] = { _("{JPN}タワータイクーン"), 5, BALL_LUXURY },
+    [TRAINER_CLASS_DOME_ACE] = { _("{JPN}ドームスーパースター"), 5, BALL_CHERISH },
+    [TRAINER_CLASS_PALACE_MAVEN] = { _("{JPN}パレスガーディアン"), 5, BALL_MOON },
+    [TRAINER_CLASS_ARENA_TYCOON] = { _("{JPN}アリーナキャプテン"), 5, BALL_LUXURY },
+    [TRAINER_CLASS_FACTORY_HEAD] = { _("{JPN}ファクトリーヘッド"), 5, BALL_PREMIER },
+    [TRAINER_CLASS_PIKE_QUEEN] = { _("{JPN}チューブクイーン"), 5, BALL_LUXURY },
+    [TRAINER_CLASS_PYRAMID_KING] = { _("{JPN}ピラミッドキング"), 5, BALL_HEAVY },
+    [TRAINER_CLASS_RS_PROTAG] = { _("{JPN}ポケモントレーナー") },
 
-    [TRAINER_CLASS_YOUNGSTER_FRLG] =       { _("たんぱんこぞう"), 4 },
-    [TRAINER_CLASS_BUG_CATCHER_FRLG] =     { _("むしとりしょうねん"), 3, BALL_NET },
-    [TRAINER_CLASS_LASS_FRLG] =            { _("ミニスカート"), 4, BALL_LOVE },
-    [TRAINER_CLASS_SAILOR_FRLG] =          { _("ふなのり"), 8, BALL_DIVE },
-    [TRAINER_CLASS_CAMPER_FRLG] =          { _("キャンプボーイ"), 5, BALL_SPORT },
-    [TRAINER_CLASS_PICNICKER_FRLG] =       { _("ピクニックガール"), 5, BALL_LOVE },
-    [TRAINER_CLASS_POKEMANIAC_FRLG] =      { _("かいじゅうマニア"), 12, BALL_BEAST },
-    [TRAINER_CLASS_SUPER_NERD_FRLG] =      { _("りかけいのおとこ"), 6, BALL_TIMER },
-    [TRAINER_CLASS_HIKER_FRLG] =           { _("やまおとこ"), 9, BALL_HEAVY },
-    [TRAINER_CLASS_BIKER_FRLG] =           { _("ぼうそうぞく"), 5, BALL_DUSK },
-    [TRAINER_CLASS_BURGLAR_FRLG] =         { _("どろぼう"), 22, BALL_CHERISH },
-    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("でんきやのオヤジ"), 12, BALL_FAST },
-    [TRAINER_CLASS_FISHERMAN_FRLG] =       { _("つりびと"), 9, BALL_LURE },
-    [TRAINER_CLASS_SWIMMER_M_FRLG] =       { _("かいパンやろう"), 1, BALL_DIVE },
-    [TRAINER_CLASS_CUE_BALL_FRLG] =        { _("スキンヘッズ"), 6, BALL_DUSK },
-    [TRAINER_CLASS_GAMER_FRLG] =           { _("ギャンブラー"), 18, BALL_CHERISH },
-    [TRAINER_CLASS_BEAUTY_FRLG] =          { _("おとなのおねえさん"), 18, BALL_LUXURY },
-    [TRAINER_CLASS_SWIMMER_F_FRLG] =       { _("ビキニのおねえさん"), 1, BALL_DIVE },
-    [TRAINER_CLASS_PSYCHIC_FRLG] =         { _("サイキッカー"), 5, BALL_DREAM },
-    [TRAINER_CLASS_ROCKER_FRLG] =          { _("でんきグループ"), 6, BALL_FAST },
-    [TRAINER_CLASS_JUGGLER_FRLG] =         { _("ジャグラー"), 10, BALL_FAST },
-    [TRAINER_CLASS_TAMER_FRLG] =           { _("もうじゅうつかい"), 10, BALL_BEAST },
-    [TRAINER_CLASS_BIRD_KEEPER_FRLG] =     { _("とりつかい"), 6, BALL_FAST },
-    [TRAINER_CLASS_BLACK_BELT_FRLG] =      { _("カラテおう"), 6, BALL_LUXURY },
-    [TRAINER_CLASS_RIVAL_EARLY_FRLG] =     { _("ライバル"), 4 },
-    [TRAINER_CLASS_SCIENTIST_FRLG] =       { _("けんきゅういん"), 12, BALL_REPEAT },
-    [TRAINER_CLASS_BOSS_FRLG] =            { _("ロケットだんボス"), 25, BALL_MASTER },
-    [TRAINER_CLASS_LEADER_FRLG] =          { _("ジムリーダー"), 25 },
-    [TRAINER_CLASS_TEAM_ROCKET_FRLG] =     { _("ロケットだん"), 8, BALL_DUSK },
-    [TRAINER_CLASS_COOLTRAINER_FRLG] =     { _("エリートトレーナー"), 9, BALL_BEAST },
-    [TRAINER_CLASS_ELITE_FOUR_FRLG] =      { _("してんのう"), 25, BALL_BEAST },
-    [TRAINER_CLASS_GENTLEMAN_FRLG] =       { _("ジェントルマン"), 18, BALL_LUXURY },
-    [TRAINER_CLASS_RIVAL_LATE_FRLG] =      { _("ライバル"), 9 },
-    [TRAINER_CLASS_CHAMPION_FRLG] =        { _("チャンピオン"), 25 },
-    [TRAINER_CLASS_CHANNELER_FRLG] =       { _("きとうし"), 8, BALL_DUSK },
-    [TRAINER_CLASS_TWINS_FRLG] =           { _("ふたごちゃん"), 3, BALL_FRIEND },
-    [TRAINER_CLASS_COOL_COUPLE_FRLG] =     { _("エリートカップル"), 6, BALL_LOVE },
-    [TRAINER_CLASS_YOUNG_COUPLE_FRLG] =    { _("ラブラブカップル"), 7, BALL_LOVE },
-    [TRAINER_CLASS_CRUSH_KIN_FRLG] =       { _("かくとうきょうだい"), 6, BALL_LUXURY },
-    [TRAINER_CLASS_SIS_AND_BRO_FRLG] =     { _("うみきょうだい"), 1, BALL_DIVE },
-    [TRAINER_CLASS_PKMN_PROF_FRLG] =       { _("ポケモンはかせ"), 25 },
-    [TRAINER_CLASS_PLAYER_FRLG] =          { _("ポケモントレーナー"), 1 },
-    [TRAINER_CLASS_CRUSH_GIRL_FRLG] =      { _("かくとうむすめ"), 6, BALL_FAST },
-    [TRAINER_CLASS_TUBER_FRLG] =           { _("うきわガール"), 1, BALL_DIVE },
-    [TRAINER_CLASS_PKMN_BREEDER_FRLG] =    { _("ポケモンブリーダー"), 7, BALL_FRIEND },
-    [TRAINER_CLASS_PKMN_RANGER_FRLG] =     { _("ポケモンレンジャー"), 9, BALL_NEST },
-    [TRAINER_CLASS_AROMA_LADY_FRLG] =      { _("アロマなおねえさん"), 7, BALL_LOVE },
-    [TRAINER_CLASS_RUIN_MANIAC_FRLG] =     { _("いせきマニア"), 12, BALL_HEAVY },
-    [TRAINER_CLASS_LADY_FRLG] =            { _("おじょうさま"), 50, BALL_LUXURY },
-    [TRAINER_CLASS_PAINTER_FRLG] =         { _("えかき"), 4, BALL_LUXURY },
+    [TRAINER_CLASS_YOUNGSTER_FRLG] =       { _("{JPN}たんぱんこぞう"), 4 },
+    [TRAINER_CLASS_BUG_CATCHER_FRLG] =     { _("{JPN}むしとりしょうねん"), 3, BALL_NET },
+    [TRAINER_CLASS_LASS_FRLG] =            { _("{JPN}ミニスカート"), 4, BALL_LOVE },
+    [TRAINER_CLASS_SAILOR_FRLG] =          { _("{JPN}ふなのり"), 8, BALL_DIVE },
+    [TRAINER_CLASS_CAMPER_FRLG] =          { _("{JPN}キャンプボーイ"), 5, BALL_SPORT },
+    [TRAINER_CLASS_PICNICKER_FRLG] =       { _("{JPN}ピクニックガール"), 5, BALL_LOVE },
+    [TRAINER_CLASS_POKEMANIAC_FRLG] =      { _("{JPN}かいじゅうマニア"), 12, BALL_BEAST },
+    [TRAINER_CLASS_SUPER_NERD_FRLG] =      { _("{JPN}りかけいのおとこ"), 6, BALL_TIMER },
+    [TRAINER_CLASS_HIKER_FRLG] =           { _("{JPN}やまおとこ"), 9, BALL_HEAVY },
+    [TRAINER_CLASS_BIKER_FRLG] =           { _("{JPN}ぼうそうぞく"), 5, BALL_DUSK },
+    [TRAINER_CLASS_BURGLAR_FRLG] =         { _("{JPN}どろぼう"), 22, BALL_CHERISH },
+    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("{JPN}でんきやのオヤジ"), 12, BALL_FAST },
+    [TRAINER_CLASS_FISHERMAN_FRLG] =       { _("{JPN}つりびと"), 9, BALL_LURE },
+    [TRAINER_CLASS_SWIMMER_M_FRLG] =       { _("{JPN}かいパンやろう"), 1, BALL_DIVE },
+    [TRAINER_CLASS_CUE_BALL_FRLG] =        { _("{JPN}スキンヘッズ"), 6, BALL_DUSK },
+    [TRAINER_CLASS_GAMER_FRLG] =           { _("{JPN}ギャンブラー"), 18, BALL_CHERISH },
+    [TRAINER_CLASS_BEAUTY_FRLG] =          { _("{JPN}おとなのおねえさん"), 18, BALL_LUXURY },
+    [TRAINER_CLASS_SWIMMER_F_FRLG] =       { _("{JPN}ビキニのおねえさん"), 1, BALL_DIVE },
+    [TRAINER_CLASS_PSYCHIC_FRLG] =         { _("{JPN}サイキッカー"), 5, BALL_DREAM },
+    [TRAINER_CLASS_ROCKER_FRLG] =          { _("{JPN}でんきグループ"), 6, BALL_FAST },
+    [TRAINER_CLASS_JUGGLER_FRLG] =         { _("{JPN}ジャグラー"), 10, BALL_FAST },
+    [TRAINER_CLASS_TAMER_FRLG] =           { _("{JPN}もうじゅうつかい"), 10, BALL_BEAST },
+    [TRAINER_CLASS_BIRD_KEEPER_FRLG] =     { _("{JPN}とりつかい"), 6, BALL_FAST },
+    [TRAINER_CLASS_BLACK_BELT_FRLG] =      { _("{JPN}カラテおう"), 6, BALL_LUXURY },
+    [TRAINER_CLASS_RIVAL_EARLY_FRLG] =     { _("{JPN}ライバル"), 4 },
+    [TRAINER_CLASS_SCIENTIST_FRLG] =       { _("{JPN}けんきゅういん"), 12, BALL_REPEAT },
+    [TRAINER_CLASS_BOSS_FRLG] =            { _("{JPN}ロケットだんボス"), 25, BALL_MASTER },
+    [TRAINER_CLASS_LEADER_FRLG] =          { _("{JPN}ジムリーダー"), 25 },
+    [TRAINER_CLASS_TEAM_ROCKET_FRLG] =     { _("{JPN}ロケットだん"), 8, BALL_DUSK },
+    [TRAINER_CLASS_COOLTRAINER_FRLG] =     { _("{JPN}エリートトレーナー"), 9, BALL_BEAST },
+    [TRAINER_CLASS_ELITE_FOUR_FRLG] =      { _("{JPN}してんのう"), 25, BALL_BEAST },
+    [TRAINER_CLASS_GENTLEMAN_FRLG] =       { _("{JPN}ジェントルマン"), 18, BALL_LUXURY },
+    [TRAINER_CLASS_RIVAL_LATE_FRLG] =      { _("{JPN}ライバル"), 9 },
+    [TRAINER_CLASS_CHAMPION_FRLG] =        { _("{JPN}チャンピオン"), 25 },
+    [TRAINER_CLASS_CHANNELER_FRLG] =       { _("{JPN}きとうし"), 8, BALL_DUSK },
+    [TRAINER_CLASS_TWINS_FRLG] =           { _("{JPN}ふたごちゃん"), 3, BALL_FRIEND },
+    [TRAINER_CLASS_COOL_COUPLE_FRLG] =     { _("{JPN}エリートカップル"), 6, BALL_LOVE },
+    [TRAINER_CLASS_YOUNG_COUPLE_FRLG] =    { _("{JPN}ラブラブカップル"), 7, BALL_LOVE },
+    [TRAINER_CLASS_CRUSH_KIN_FRLG] =       { _("{JPN}かくとうきょうだい"), 6, BALL_LUXURY },
+    [TRAINER_CLASS_SIS_AND_BRO_FRLG] =     { _("{JPN}うみきょうだい"), 1, BALL_DIVE },
+    [TRAINER_CLASS_PKMN_PROF_FRLG] =       { _("{JPN}ポケモンはかせ"), 25 },
+    [TRAINER_CLASS_PLAYER_FRLG] =          { _("{JPN}ポケモントレーナー"), 1 },
+    [TRAINER_CLASS_CRUSH_GIRL_FRLG] =      { _("{JPN}かくとうむすめ"), 6, BALL_FAST },
+    [TRAINER_CLASS_TUBER_FRLG] =           { _("{JPN}うきわガール"), 1, BALL_DIVE },
+    [TRAINER_CLASS_PKMN_BREEDER_FRLG] =    { _("{JPN}ポケモンブリーダー"), 7, BALL_FRIEND },
+    [TRAINER_CLASS_PKMN_RANGER_FRLG] =     { _("{JPN}ポケモンレンジャー"), 9, BALL_NEST },
+    [TRAINER_CLASS_AROMA_LADY_FRLG] =      { _("{JPN}アロマなおねえさん"), 7, BALL_LOVE },
+    [TRAINER_CLASS_RUIN_MANIAC_FRLG] =     { _("{JPN}いせきマニア"), 12, BALL_HEAVY },
+    [TRAINER_CLASS_LADY_FRLG] =            { _("{JPN}おじょうさま"), 50, BALL_LUXURY },
+    [TRAINER_CLASS_PAINTER_FRLG] =         { _("{JPN}えかき"), 4, BALL_LUXURY },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -450,13 +450,13 @@ static void (*const sEndTurnFuncsTable[])(void) =
     [B_OUTCOME_MON_TELEPORTED]    = HandleEndTurn_FinishBattle,
 };
 
-const u8 gStatusConditionString_PoisonJpn[] = _("どく");
-const u8 gStatusConditionString_SleepJpn[] = _("ねむり");
-const u8 gStatusConditionString_ParalysisJpn[] = _("まひ");
-const u8 gStatusConditionString_BurnJpn[] = _("やけど");
-const u8 gStatusConditionString_IceJpn[] = _("こおり");
-const u8 gStatusConditionString_ConfusionJpn[] = _("こんらん");
-const u8 gStatusConditionString_LoveJpn[] = _("メロメロ");
+const u8 gStatusConditionString_PoisonJpn[] = _("{JPN}どく");
+const u8 gStatusConditionString_SleepJpn[] = _("{JPN}ねむり");
+const u8 gStatusConditionString_ParalysisJpn[] = _("{JPN}まひ");
+const u8 gStatusConditionString_BurnJpn[] = _("{JPN}やけど");
+const u8 gStatusConditionString_IceJpn[] = _("{JPN}こおり");
+const u8 gStatusConditionString_ConfusionJpn[] = _("{JPN}こんらん");
+const u8 gStatusConditionString_LoveJpn[] = _("{JPN}メロメロ");
 
 const u8 *const gStatusConditionStringsTable[][2] =
 {
@@ -993,11 +993,6 @@ static void CB2_HandleStartBattle(void)
         }
         break;
     case 15:
-        for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
-        {
-            for (u32 i = 0; i < PARTY_SIZE; i++)
-                TryCorrectJapaneseNicknameLanguage(&gParties[trainer][i]);
-        }
         InitBattleControllers();
         RecordedBattle_SetTrainerInfo();
         gBattleCommunication[SPRITES_INIT_STATE1] = 0;
@@ -1297,7 +1292,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
             for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
             {
                 for (u32 i = 0; i < PARTY_SIZE; i++)
-                    TryCorrectJapaneseNicknameLanguage(&gParties[trainer][i]);
+                    TryCorrectShedinjaLanguage(&gParties[trainer][i]);
             }
             gBattleCommunication[MULTIUSE_STATE]++;
         }
@@ -1662,7 +1657,7 @@ static void CB2_HandleStartMultiBattle(void)
             {
                 for (u32 i = 0; i < MULTI_PARTY_SIZE; i++)
                 {
-                    TryCorrectJapaneseNicknameLanguage(&gParties[trainerParty][i]);
+                    TryCorrectShedinjaLanguage(&gParties[trainerParty][i]);
                 }
             }
 
@@ -2366,16 +2361,16 @@ static void AskRecordBattle(void)
     }
 }
 
-static void TryCorrectJapaneseNicknameLanguage(struct Pokemon *mon)
+static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
 {
     u8 nickname[POKEMON_NAME_BUFFER_SIZE];
     enum Language language = LANGUAGE_JAPANESE;
 
-    if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA
      && GetMonData(mon, MON_DATA_LANGUAGE) != language)
     {
-        GetMonData(mon, MON_DATA_NICKNAME10, nickname);
-        if (IsStringNJapanese(nickname, POKEMON_NAME_LENGTH))
+        GetMonData(mon, MON_DATA_NICKNAME, nickname);
+        if (StringCompareWithoutExtCtrlCodes(nickname, sText_ShedinjaJpnName) == 0)
             SetMonData(mon, MON_DATA_LANGUAGE, &language);
     }
 }
@@ -2783,6 +2778,14 @@ static void BattleStartClearSetData(void)
     memset(&gBattleResults, 0, sizeof(gBattleResults));
     ClearSetBScriptingStruct();
 
+    // Battle text buffers must be initialized with EOS, not 0.
+    // 0 is a valid character code in Pokémon text encoding, so zero-filled
+    // unused buffers can be read past their end until EOS is found.
+    memset(gBattleTextBuff1, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gBattleTextBuff2, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gBattleTextBuff3, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
+    memset(gDisplayedStringBattle, EOS, sizeof(gDisplayedStringBattle));
+
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
         gBattleStruct->battlerState[i].isFirstTurn = 2;
@@ -3026,10 +3029,6 @@ void SwitchInClearSetData(enum BattlerId battler, struct Volatiles *volatilesCop
         gBattleMons[battler].volatiles.battlerPreventingEscape = volatilesCopy->battlerPreventingEscape;
         gBattleMons[battler].volatiles.embargoTimer = volatilesCopy->embargoTimer;
         gBattleMons[battler].volatiles.healBlockTimer = volatilesCopy->healBlockTimer;
-        if (IsTelekinesisBannedSpecies(gBattleMons[battler].species))
-            gBattleMons[battler].volatiles.telekinesis = FALSE;
-        else
-            gBattleMons[battler].volatiles.telekinesisTimer = volatilesCopy->telekinesisTimer;
     }
     else if (effect == EFFECT_SHED_TAIL)
     {
@@ -3575,6 +3574,8 @@ static void TryDoEventsBeforeFirstTurn(void)
         gBattleScripting.moveendState = 0;
         gBattleStruct->eventState.faintedAction = 0;
         gBattleStruct->eventState.endTurn = 0;
+
+        memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
 
         if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
         {
@@ -4463,9 +4464,6 @@ s32 GetChosenMovePriority(enum BattlerId battler, enum Ability ability)
     gProtectStructs[battler].pranksterElevated = FALSE;
     if (gProtectStructs[battler].noValidMoves)
         move = MOVE_STRUGGLE;
-    else if (gLockedMoves[battler] != MOVE_NONE
-          && (gBattleMons[battler].volatiles.multipleTurns || gBattleMons[battler].volatiles.rechargeTimer > 0))
-        move = gLockedMoves[battler];
     else if (gBattleMons[battler].volatiles.encoredMove != MOVE_NONE && GetConfig(B_ENCORE_PRIORITY) >= GEN_CHAMPIONS)
         move = gBattleMons[battler].volatiles.encoredMove;
     else
@@ -5317,6 +5315,13 @@ static void HandleEndTurn_FinishBattle(void)
         RecordedBattle_SetPlaybackFinished();
         if (gTestRunnerEnabled)
             TestRunner_Battle_AfterLastTurn();
+        // Clear battle mon species to avoid a bug on the next battle that causes
+        // healthboxes loading incorrectly due to it trying to create a Mega Indicator
+        // if the previous battler would've had it.
+        for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT; i++)
+        {
+            gBattleMons[i].species = SPECIES_NONE;
+        }
 
         // Set Battle Controllers to BATTLE_CONTROLLER_NONE
         for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT; i++)
@@ -5337,7 +5342,6 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
 {
     if (!gPaletteFade.active)
     {
-        memset(&gBattleMons, 0, sizeof(struct BattlePokemon) * MAX_BATTLERS_COUNT);
         gIsFishingEncounter = FALSE;
         gIsSurfingEncounter = FALSE;
         if (gDexNavSpecies && (gBattleOutcome == B_OUTCOME_WON || gBattleOutcome == B_OUTCOME_CAUGHT))
