@@ -5078,7 +5078,13 @@ bool32 AI_CanContactBypassProtect(enum BattlerId battlerAtk, enum BattlerId batt
 bool32 IsConsideringZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
 {
     if (GetMovePower(move) == 0 && GetMoveZEffect(move) == Z_EFFECT_NONE)
+    {
         return FALSE;
+    }
+    else if (!IsViableZMove(battlerAtk, move))
+    {
+        return FALSE;
+    }
 
     return gBattleStruct->gimmick.usableGimmick[battlerAtk] == GIMMICK_Z_MOVE && ShouldUseZMove(battlerAtk, battlerDef, move);
 }

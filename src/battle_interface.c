@@ -38,8 +38,8 @@
 #define HEALTHBOX_BG_INDEX 2
 
 enum
-{   // Corresponds to gHealthboxElementsGfxTable (and the tables after it) in graphics.c
-    // These are indexes into the tables, which are filled with 8x8 square pixel data.
+{   // graphics.c 内の gHealthboxElementsGfxTable（およびそれに続くテーブル）に対応しています。
+    // これらは、8x8の正方形ピクセルデータが格納されたテーブルへのインデックスです。
     HEALTHBOX_GFX_0, //hp bar [black section]
     HEALTHBOX_GFX_1, //hp bar "H"
     HEALTHBOX_GFX_2, //hp bar "P"
@@ -508,13 +508,13 @@ static const struct OamData sOamData_StatusSummaryBalls =
 
 static const struct SpriteTemplate sStatusSummaryBarSpriteTemplates[2] =
 {
-    { // Player
+    { // プレイヤー
         .tileTag = TAG_STATUS_SUMMARY_BAR_TILE,
         .paletteTag = TAG_STATUS_SUMMARY_BAR_PAL,
         .oam = &sOamData_64x32,
         .callback = SpriteCB_StatusSummaryBar_Enter
     },
-    { // Opponent
+    { // 相手
         .tileTag = TAG_STATUS_SUMMARY_BAR_TILE,
         .paletteTag = TAG_STATUS_SUMMARY_BAR_PAL,
         .oam = &sOamData_64x32,
@@ -577,26 +577,26 @@ static const union TextColor sHealthBoxTextColor =
     .accent = 0
 };
 
-// Because the healthbox is too large to fit into one sprite, it is divided into two sprites.
-// healthboxLeft  or healthboxMain  is the left part that is used as the 'main' sprite.
-// healthboxRight or healthboxOther is the right part of the healthbox.
-// There's also the third sprite under name of healthbarSprite that refers to the healthbar visible on the healtbox.
+// HPボックスは1つのスプライトに収めるには大きすぎるため、2つのスプライトに分割されています。
+// healthboxLeft または healthboxMain は、メインのスプライトとして使用される左側の部分です。
+// healthboxRightまたはhealthboxOtherは、healthboxの右側の部分です。
+// HPボックス上に表示されるHPバーに対応する、`healthbarSprite`という名前の3つ目のスプライトもあります。
 
-// data fields for healthboxMain
-// oam.affineParam holds healthboxRight spriteId
+// healthboxMainのデータフィールド
+// oam.affineParamはhealthboxRightのspriteIdをもっています。
 #define hMain_HealthBarSpriteId     data[5]
 #define hMain_Battler               data[6]
 #define hMain_Data7                 data[7]
 
-// data fields for healthboxRight
+// healthboxRight用データフィールド
 #define hOther_HealthBoxSpriteId    data[5]
 
-// data fields for healthbar
+// HPバーのデータフィールド
 #define hBar_HealthBoxSpriteId      data[5]
 #define hBar_Data6                  data[6]
 
-// This function is here to cover a specific case - one player's mon in a 2 vs 1 double battle. In this scenario - display singles layout.
-// The same goes for a 2 vs 1 where opponent has only one Pokémon.
+// この関数は、2対1のダブルバトルにおけるプレイヤー側のポケモンという特定のケースに対応するためのものです。この状況では、シングルバトルのレイアウトを表示します。
+// 相手のポケモンが1匹だけの2対1の状況でも、同様です。
 enum BattleCoordTypes GetBattlerCoordsIndex(enum BattlerId battler)
 {
     if (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT && gPartiesCount[B_TRAINER_PLAYER] == 1 && !(gBattleTypeFlags & BATTLE_TYPE_MULTI))
@@ -730,7 +730,7 @@ static const u8 *GetHealthboxElementGfxPtr(u8 elementId)
     return gHealthboxElementsGfxTable[elementId];
 }
 
-// Syncs the position of healthbar accordingly with the healthbox.
+// HPバーの位置をHPボックスに合わせて同期させます。
 static void SpriteCB_HealthBar(struct Sprite *sprite)
 {
     u8 healthboxSpriteId = sprite->hBar_HealthBoxSpriteId;
@@ -877,7 +877,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
     u32 spriteId = gSprites[healthboxSpriteId].oam.affineParam;
 
-    // Don't print Lv char if mon has a gimmick with an indicator active.
+    // 有効なインジケーターを伴うギミックを持つポケモンの場合、Lvの文字を表示しない。
     if (GetIndicatorPalTag(battler) != TAG_NONE)
     {
         ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
@@ -916,22 +916,22 @@ static void PrintHpOnHealthbox(u32 spriteId, s16 currHp, s16 maxHp, u32 bgColor,
     u32 width;
     u8 text[2 * HP_MAX_DIGITS + 2], *txtPtr;
 
-    // To fit 4 digit HP values we need to modify a bit the way hp is printed on Healthbox.
-    // HP_RIGHT_SPRITE_CHARS chars can fit on the right healthbox, the rest goes to the left one
+    // 4桁のHPを収めるには、HPボックス上でのHPの表示方法を少し変更する必要があります。
+    // HP_RIGHT_SPRITE_CHARS 文字分は右側のHPボックスに収まり、残りは左側のボックスに表示されます。
     txtPtr = ConvertIntToDecimalStringN(text, currHp, STR_CONV_MODE_RIGHT_ALIGN, HP_MAX_DIGITS);
     *txtPtr++ = CHAR_SLASH;
     txtPtr = ConvertIntToDecimalStringN(txtPtr, maxHp, STR_CONV_MODE_LEFT_ALIGN, HP_MAX_DIGITS);
 
     u32 spriteId2 = gSprites[spriteId].oam.affineParam;
 
-    //  Don't assume that healthbox sprites don't have data in the fields used for sprite printing
-    //  and set up temporary values with what's needed
+    //  ヘルスボックスのスプライトが、スプライト描画に使用される
+    //  フィールドにデータを持っていないと決めつけず、必要な一時的な値を設定してください。
     s16 savedValue1 = gSprites[spriteId].data[1];
     s16 savedValue2 = gSprites[spriteId2].data[1];
     gSprites[spriteId].data[1] = spriteId2;
     gSprites[spriteId2].data[1] = SPRITE_NONE;
 
-    //  Clear out old text first
+    // 古いテキストを消去
     FillSpriteRectColor(spriteId, xOffset + 40, yOffset + 8, 56, 8, bgColor);
 
     width = GetStringWidth(HP_FONT, text, -1) + GetFontAttribute(HP_FONT, FONTATTR_LETTER_SPACING);
@@ -989,7 +989,7 @@ UNUSED static void UpdateOpponentHpTextDoubles(u32 healthboxSpriteId, u32 barSpr
     u32 i, var;
     enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
 
-    if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // don't print text if only bars are visible
+    if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // バーのみが表示されている場合テキストを表示しない
     {
         memcpy(text, sEmptyWhiteText_TransparentHighlight, sizeof(sEmptyWhiteText_TransparentHighlight));
         if (maxOrCurrent == HP_CURRENT)
@@ -1028,7 +1028,7 @@ UNUSED static void UpdateOpponentHpTextDoubles(u32 healthboxSpriteId, u32 barSpr
     }
 }
 
-// Same with this one.
+// これも同じ
 UNUSED static void UpdateOpponentHpTextSingles(u32 healthboxSpriteId, s16 value, u32 maxOrCurrent)
 {
     u8 text[32];
@@ -1036,7 +1036,7 @@ UNUSED static void UpdateOpponentHpTextSingles(u32 healthboxSpriteId, s16 value,
     enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
 
     memcpy(text, sEmptyWhiteText_GrayHighlight, sizeof(sEmptyWhiteText_GrayHighlight));
-    if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // don't print text if only bars are visible
+    if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // バーのみが表示されている場合はテキストを表示しない
     {
         if (maxOrCurrent == HP_CURRENT)
             var = 21;
@@ -1087,11 +1087,11 @@ void UpdateHpTextInHealthbox(u32 healthboxSpriteId, u32 maxOrCurrent, s16 currHp
     }
     case BATTLE_COORDS_SINGLES:
     {
-        if (IsOnPlayerSide(battler)) // Player
+        if (IsOnPlayerSide(battler)) // プレイヤー
         {
             PrintHpOnHealthbox(healthboxSpriteId, currHp, maxHp, HEALTHBOX_BG_INDEX, 0, 16);
         }
-        else // Opponent
+        else // 相手
         {
             if (B_HP_PERCENTAGE_DISPLAY)
             {
@@ -1121,18 +1121,18 @@ static void UpdateHpTextInHealthboxInDoubles(u32 healthboxSpriteId, u32 maxOrCur
 
     if (IsOnPlayerSide(battler))
     {
-        if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // don't print text if only bars are visible
+        if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // バーのみが表示されている場合はテキストを表示しない
         {
             PrintHpOnHealthbox(healthboxSpriteId, currHp, maxHp, HEALTHBOX_BG_INDEX, 0, 8);
-            // Clears the end of the healthbar gfx.
+            // HPバーのグラフィックの末尾部分を消去します。
             CpuCopy32(GetHealthboxElementGfxPtr(HEALTHBOX_GFX_PLAYER_FRAME_END),
                           (void *)(OBJ_VRAM0 + 0x680) + (gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP),
                            0x20);
-            // Erases HP bar leftover.
+            // 残ったHPバーを消去
             FillHealthboxObject((void *)(OBJ_VRAM0) + (gSprites[barSpriteId].oam.tileNum * TILE_SIZE_4BPP), 0, 2);
         }
     }
-    else // Opponent
+    else // 相手
     {
         if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars) // don't print text if only bars are visible
         {
@@ -1152,7 +1152,7 @@ static void UpdateHpTextInHealthboxInDoubles(u32 healthboxSpriteId, u32 maxOrCur
     }
 }
 
-// Prints mon's nature, catch and flee rate. Probably used to test pokeblock-related features.
+// ポケモンの性格、捕獲率、逃走率を表示します。おそらく、ポケブロック関連の機能のテストに使用されていたものでしょう。
 UNUSED static void PrintSafariMonInfo(u8 healthboxSpriteId, struct Pokemon *mon)
 {
     u8 text[23];
@@ -1200,7 +1200,7 @@ UNUSED static void PrintSafariMonInfo(u8 healthboxSpriteId, struct Pokemon *mon)
     text[11] = CHAR_SLASH;
     RenderTextHandleBold(gMonSpritesGfxPtr->barFontGfx, FONT_BOLD, text);
 
-    j = healthBarSpriteId; // Needed to match for some reason.
+    j = healthBarSpriteId; // 何らかの理由で、一致させる必要がありました。
     for (j = 0; j < 5; j++)
     {
         if (j <= 1)
@@ -1241,14 +1241,14 @@ void SwapHpBarsWithHpText(void)
                 if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
                     continue;
 
-                if (noBars == TRUE) // bars to text
+                if (noBars == TRUE) // バーをテキストに変換
                 {
                     healthBarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
 
                     CpuFill32(0, (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * TILE_SIZE_4BPP), 0x100);
                     UpdateHpTextInHealthboxInDoubles(gHealthboxSpriteIds[i], HP_BOTH, currHp, maxHp);
                 }
-                else // text to bars
+                else // テキストをバーに変換
                 {
                     FillSpriteRectColor(gHealthboxSpriteIds[i], 32, 16, 32, 8, HEALTHBOX_BG_INDEX);
                     FillSpriteRectColor(gSprites[gHealthboxSpriteIds[i]].oam.affineParam, 0, 16, 32, 8, HEALTHBOX_BG_INDEX);
@@ -1264,14 +1264,14 @@ void SwapHpBarsWithHpText(void)
                 if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
                     continue;
 
-                if (noBars == TRUE) // bars to text
+                if (noBars == TRUE) // バーをテキストに変換
                 {
                     healthBarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
 
                     CpuFill32(0, (void *)(OBJ_VRAM0 + gSprites[healthBarSpriteId].oam.tileNum * 32), 0x100);
                     UpdateHpTextInHealthboxInDoubles(gHealthboxSpriteIds[i], HP_BOTH, currHp, maxHp);
                 }
-                else // text to bars
+                else // テキストをバーに変換
                 {
                     FillSpriteRectColor(gHealthboxSpriteIds[i], 32, 16, 32, 8, HEALTHBOX_BG_INDEX);
                     FillSpriteRectColor(gSprites[gHealthboxSpriteIds[i]].oam.affineParam, 0, 16, 32, 8, HEALTHBOX_BG_INDEX);
@@ -1410,18 +1410,18 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
             {
                 if (partyInfo[i].hp == HP_EMPTY_SLOT)
                 {
-                    // empty slot or an egg
+                    // 空きスロット、またはタマゴ
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 1;
                     gSprites[ballIconSpritesIds[i]].data[7] = 1;
                 }
                 else if (partyInfo[i].hp == 0)
                 {
-                    // fainted mon
+                    // ひんしポケモン
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 3;
                 }
                 else if (partyInfo[i].status != 0)
                 {
-                    // mon with major status
+                    // 状態異常ポケモン
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 2;
                 }
             }
@@ -1432,7 +1432,7 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
             {
                 if (partyInfo[j].hp == HP_EMPTY_SLOT)
                 {
-                     // empty slot or an egg
+                     // 空きスロット、またはタマゴ
                     gSprites[ballIconSpritesIds[var]].oam.tileNum += 1;
                     gSprites[ballIconSpritesIds[var]].data[7] = 1;
                     var--;
@@ -1440,17 +1440,17 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
                 }
                 else if (partyInfo[j].hp == 0)
                 {
-                    // fainted mon
+                    // ひんしポケモン
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 3;
                 }
                 else if (gBattleTypeFlags & BATTLE_TYPE_ARENA && gBattleStruct->arenaLostPlayerMons & (1u << j))
                 {
-                    // fainted arena mon
+                    // ひんしポケモン（バトルアリーナ）
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 3;
                 }
                 else if (partyInfo[j].status != 0)
                 {
-                    // mon with primary status
+                    // 状態異常ポケモン
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 2;
                 }
                 i++;
@@ -1465,18 +1465,18 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
             {
                 if (partyInfo[i].hp == HP_EMPTY_SLOT)
                 {
-                    // empty slot or an egg
+                    // 空きスロット、またはタマゴ
                     gSprites[ballIconSpritesIds[var]].oam.tileNum += 1;
                     gSprites[ballIconSpritesIds[var]].data[7] = 1;
                 }
                 else if (partyInfo[i].hp == 0)
                 {
-                    // fainted mon
+                    // ひんしポケモン
                     gSprites[ballIconSpritesIds[var]].oam.tileNum += 3;
                 }
                 else if (partyInfo[i].status != 0)
                 {
-                    // mon with primary status
+                    // 状態異常ポケモン
                     gSprites[ballIconSpritesIds[var]].oam.tileNum += 2;
                 }
                 var--;
@@ -1488,7 +1488,7 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
             {
                 if (partyInfo[j].hp == HP_EMPTY_SLOT)
                 {
-                    // empty slot or an egg
+                    // 空きスロット、またはタマゴ
                     gSprites[ballIconSpritesIds[i]].oam.tileNum += 1;
                     gSprites[ballIconSpritesIds[i]].data[7] = 1;
                     i++;
@@ -1496,17 +1496,17 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
                 }
                 else if (partyInfo[j].hp == 0)
                 {
-                     // fainted mon
+                     // ひんしポケモン
                     gSprites[ballIconSpritesIds[PARTY_SIZE - 1 - var]].oam.tileNum += 3;
                 }
                 else if (gBattleTypeFlags & BATTLE_TYPE_ARENA && gBattleStruct->arenaLostOpponentMons & (1u << j))
                 {
-                     // fainted arena mon
+                     // ひんしポケモン（バトルアリーナ）
                     gSprites[ballIconSpritesIds[PARTY_SIZE - 1 - var]].oam.tileNum += 3;
                 }
                 else if (partyInfo[j].status != 0)
                 {
-                     // mon with primary status
+                     // 状態異常ポケモン
                     gSprites[ballIconSpritesIds[PARTY_SIZE - 1 - var]].oam.tileNum += 2;
                 }
                 var++;
@@ -1532,7 +1532,7 @@ u8 CreatePartyStatusSummarySprites(enum BattlerId battler, struct HpAndStatus *p
     return taskId;
 }
 
-// Slide the party summary tray back offscreen
+// パーティ画面を画面外へスライド
 void Task_HidePartyStatusSummary(u8 taskId)
 {
     u8 ballIconSpriteIds[PARTY_SIZE];
@@ -1811,8 +1811,8 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         break;
     }
 
-    //  Don't assume that healthbox sprites don't have data in the fields used for sprite printing
-    //  and set up temporary values with what's needed
+    //  HPボックスのスプライトが、スプライト描画に使用されるフィールドにデータを持っていないと決めつけず、
+    //  必要な一時的な値を設定してください。
     s16 savedValue1 = gSprites[healthboxSpriteId].data[1];
     s16 savedValue2 = gSprites[healthboxSpriteId2].data[1];
     gSprites[healthboxSpriteId].data[1] = healthboxSpriteId2;
@@ -2148,7 +2148,7 @@ s32 MoveBattleBar(enum BattlerId battler, u8 healthboxSpriteId, u8 whichBar, u8 
 {
     s32 currentBarValue;
 
-    if (whichBar == HEALTH_BAR) // health bar
+    if (whichBar == HEALTH_BAR) // HPバー
     {
         u16 hpFraction = B_FAST_HP_DRAIN == FALSE ? 1 : max(gBattleSpritesDataPtr->battleBars[battler].maxValue / (B_HEALTHBAR_PIXELS / 2), 1);
         currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battler].maxValue,
@@ -2157,7 +2157,7 @@ s32 MoveBattleBar(enum BattlerId battler, u8 healthboxSpriteId, u8 whichBar, u8 
                     &gBattleSpritesDataPtr->battleBars[battler].currValue,
                     B_HEALTHBAR_PIXELS / 8, hpFraction);
     }
-    else // exp bar
+    else // 経験値バー
     {
         u16 expFraction = GetScaledExpFraction(gBattleSpritesDataPtr->battleBars[battler].oldValue,
                     gBattleSpritesDataPtr->battleBars[battler].receivedValue,
@@ -2228,7 +2228,7 @@ static void MoveBattleBarGraphically(enum BattlerId battler, u8 whichBar)
             break;
         default:
         case HP_BAR_RED:
-            if (maxValue > 1) // handling for wonder guard
+            if (maxValue > 1) // ふしぎなまもり
                 barElementId = HEALTHBOX_GFX_HP_BAR_RED;
             else
                 barElementId = HEALTHBOX_GFX_HP_BAR_GREEN;
@@ -2276,7 +2276,7 @@ static s32 CalcNewBarValue(s32 maxValue, s32 oldValue, s32 receivedValue, s32 *c
     s32 ret, newValue;
     scale *= 8;
 
-    if (*currValue == -32768) // first function call
+    if (*currValue == -32768) // 最初の関数呼び出し
     {
         if (maxValue < scale)
             *currValue = Q_24_8(oldValue);
@@ -2292,15 +2292,15 @@ static s32 CalcNewBarValue(s32 maxValue, s32 oldValue, s32 receivedValue, s32 *c
     }
     else
     {
-        if (newValue == *currValue) // we're done, the bar's value has been updated
+        if (newValue == *currValue) // 完了。バーの値が更新。
             return -1;
     }
 
-    if (maxValue < scale) // handle cases of max var having less pixels than the whole bar
+    if (maxValue < scale) // 最大値の画素数がバー全体よりも少ないケースを処理する
     {
         s32 toAdd = Q_24_8(maxValue) / scale;
 
-        if (receivedValue < 0) // fill bar right
+        if (receivedValue < 0) // 右側のバーを埋める
         {
             *currValue += toAdd;
             ret = Q_24_8_TO_INT(*currValue);
@@ -2310,11 +2310,11 @@ static s32 CalcNewBarValue(s32 maxValue, s32 oldValue, s32 receivedValue, s32 *c
                 ret = newValue;
             }
         }
-        else // move bar left
+        else // 左側のバーを埋める
         {
             *currValue -= toAdd;
             ret = Q_24_8_TO_INT(*currValue);
-            // try round up
+            // 切り上げ
             if ((*currValue & 0xFF) > 0)
                 ret++;
             if (ret <= newValue)
@@ -2326,14 +2326,14 @@ static s32 CalcNewBarValue(s32 maxValue, s32 oldValue, s32 receivedValue, s32 *c
     }
     else
     {
-        if (receivedValue < 0) // fill bar right
+        if (receivedValue < 0) // 右側のバーを埋める
         {
             *currValue += toAdd;
             if (*currValue > newValue)
                 *currValue = newValue;
             ret = *currValue;
         }
-        else // move bar left
+        else // 左側のバーを埋める
         {
             *currValue -= toAdd;
             if (*currValue < newValue)
@@ -2356,7 +2356,7 @@ static u8 CalcBarFilledPixels(s32 maxValue, s32 oldValue, s32 receivedValue, s32
     for (i = 0; i < scale; i++)
         pixelsArray[i] = 0;
 
-    // Safe Div, because 2vs1 battles can have maxValue 0.
+    // 2対1の戦闘では最大値が 0 になる可能性があるため。（ゼロ除算の回避）
     if (maxValue < totalPixels)
         pixels = SAFE_DIV(*currValue * totalPixels, maxValue) >> 8;
     else
@@ -2432,12 +2432,12 @@ u8 GetHPBarLevel(s16 hp, s16 maxhp)
         maxValue = maxhp;
     }
 
-    if (currValue > (maxValue * 50 / 100)) // more than 50% hp
+    if (currValue > (maxValue * 50 / 100)) // HP50%以上
         return HP_BAR_GREEN;
-    else if (currValue > (maxValue * 20 / 100)) // more than 20% hp
+    else if (currValue > (maxValue * 20 / 100)) // HP20%以上
         return HP_BAR_YELLOW;
     else if (currValue > 0)
-        return HP_BAR_RED; // 20% or less
+        return HP_BAR_RED; // HP20%以下
 
     return HP_BAR_EMPTY;
 }
@@ -2494,7 +2494,7 @@ enum
 
 enum
 {
-    TAG_ABILITY_POP_UP = 0xD720, // Only used for the SpritePalette, the rest below is for the SpriteSheets.
+    TAG_ABILITY_POP_UP = 0xD720, // SpritePaletteにのみ使用されます。それ以降はSpriteSheets用です。
     TAG_ABILITY_POP_UP_PLAYER1 = TAG_ABILITY_POP_UP,
     TAG_ABILITY_POP_UP_OPPONENT1,
     TAG_ABILITY_POP_UP_PLAYER2,
@@ -2526,7 +2526,7 @@ static const struct OamData sOamData_AbilityPopUp =
 
 static const struct SpriteTemplate sSpriteTemplate_AbilityPopUp =
 {
-    .tileTag = TAG_NONE, // Changed on the fly.
+    .tileTag = TAG_NONE, // その場で変更。
     .paletteTag = TAG_ABILITY_POP_UP,
     .oam = &sOamData_AbilityPopUp,
     .callback = SpriteCb_AbilityPopUp
@@ -2534,16 +2534,16 @@ static const struct SpriteTemplate sSpriteTemplate_AbilityPopUp =
 
 static const s16 sAbilityPopUpCoordsDoubles[MAX_BATTLERS_COUNT][2] =
 {
-    { 24, 80}, // Player left
-    {178, 19}, // Opponent left
-    { 24, 97}, // Player right
-    {178, 36}, // Opponent right
+    { 24, 80}, // プレイヤー左
+    {178, 19}, // 相手左
+    { 24, 97}, // プレイヤー右
+    {178, 36}, // 相手右
 };
 
 static const s16 sAbilityPopUpCoordsSingles[MAX_BATTLERS_COUNT][2] =
 {
-    { 24, 97}, // Player
-    {178, 57}, // Opponent
+    { 24, 97}, // プレイヤー
+    {178, 57}, // 相手
 };
 
 static void PrintOnAbilityPopUp(const u8 *str, u32 spriteId1, u32 spriteId2, u32 x, u32 y, bool32 isName)
@@ -2689,10 +2689,10 @@ void CreateAbilityPopUp(enum BattlerId battler, enum Ability ability, bool32 isD
         gSprites[spriteIds[1]].sIsPlayerSide = TRUE;
     }
 
-    gSprites[spriteIds[1]].oam.tileNum += 32; // Second half of the pop up tiles.
+    gSprites[spriteIds[1]].oam.tileNum += 32; // ポップアップタイルの後半部分。
 
-    // Create only one instance, as it's only used for
-    // tracking the SpriteSheet(s) and SpritePalette.
+    // SpriteSheetやSpritePaletteの追跡にのみ使用されるため、
+    // インスタンスは1つだけ作成してください。
     if (!IsAnyAbilityPopUpActive())
         CreateTask(Task_FreeAbilityPopUpGfx, 5);
 
@@ -2883,7 +2883,7 @@ void FreeAbilityPopUpGfx(void)
 #undef sBattlerId
 #undef sIsMain
 
-// last used ball
+// 最後に使用したボール
 
 static const struct OamData sOamData_LastUsedBall =
 {
@@ -3001,10 +3001,10 @@ void TryAddLastUsedBallItemSprites(void)
     if (gLastThrownBall == 0
       || (gLastThrownBall != 0 && !CheckBagHasItem(gLastThrownBall, 1)))
     {
-        // we're out of the last used ball, so just set it to the first ball in the bag
+        // 最後に使ったボールがなくなったので、バッグに入っている最初のボールに設定。
         u16 firstBall;
 
-        // we have to compact the bag first bc it is typically only compacted when you open it
+        // バッグは開いた時にしか（間を）詰めないため、まずはバッグを詰める必要があります。
         CompactItemsInBagPocket(POCKET_POKE_BALLS);
 
         firstBall = GetBagItemId(POCKET_POKE_BALLS, 0);
@@ -3015,7 +3015,7 @@ void TryAddLastUsedBallItemSprites(void)
     if (!CanThrowLastUsedBall())
         return;
 
-    // ball
+    // ボール
     if (gBattleStruct->ballSpriteIds[0] == MAX_SPRITES)
     {
         gBattleStruct->ballSpriteIds[0] = AddItemIconSprite(102, 102, gBallToDisplay);
@@ -3029,7 +3029,7 @@ void TryAddLastUsedBallItemSprites(void)
         }
     }
 
-    // window
+    // ウィンドウ
     LoadSpritePalette(&sSpritePalette_AbilityPopUp);
     if (GetSpriteTileStartByTag(TAG_LAST_BALL_WINDOW) == 0xFFFF)
         LoadSpriteSheet(&sSpriteSheet_LastUsedBallWindow);
@@ -3044,7 +3044,7 @@ void TryAddLastUsedBallItemSprites(void)
         gLastUsedBallMenuPresent = TRUE;
     }
     if (B_LAST_USED_BALL_CYCLE == TRUE)
-        ArrowsChangeColorLastBallCycle(0); //Default the arrows to be invisible
+        ArrowsChangeColorLastBallCycle(0); // 矢印をデフォルトで非表示にする
 }
 
 static void DestroyLastUsedBallWinGfx(struct Sprite *sprite)
@@ -3118,7 +3118,7 @@ static void SpriteCB_LastUsedBall(struct Sprite *sprite)
 {
     if (sprite->sHide)
     {
-        if (sprite->y < LAST_USED_BALL_Y) // Used to recover from an incomplete bounce before hiding the window
+        if (sprite->y < LAST_USED_BALL_Y) // ウィンドウを非表示にする前に、不完全なバウンスから復帰するために使用。
             sprite->y++;
 
         if (sprite->x != LAST_USED_BALL_X_0)
@@ -3160,14 +3160,14 @@ static void TryHideOrRestoreLastUsedBall(u8 caseId)
 
     switch (caseId)
     {
-    case 0: // hide
+    case 0: // 非表示
         if (gBattleStruct->ballSpriteIds[0] != MAX_SPRITES)
             gSprites[gBattleStruct->ballSpriteIds[0]].sHide = TRUE;
         if (gBattleStruct->ballSpriteIds[1] != MAX_SPRITES)
             gSprites[gBattleStruct->ballSpriteIds[1]].sHide = TRUE;
         gLastUsedBallMenuPresent = FALSE;
         break;
-    case 1: // restore
+    case 1: // 表示
         if (gBattleStruct->ballSpriteIds[0] != MAX_SPRITES)
             gSprites[gBattleStruct->ballSpriteIds[0]].sHide = FALSE;
         if (gBattleStruct->ballSpriteIds[1] != MAX_SPRITES)
@@ -3176,7 +3176,7 @@ static void TryHideOrRestoreLastUsedBall(u8 caseId)
         break;
     }
     if (B_LAST_USED_BALL_CYCLE == TRUE)
-        ArrowsChangeColorLastBallCycle(0); //Default the arrows to be invisible
+        ArrowsChangeColorLastBallCycle(0); // 矢印をデフォルトで非表示にする
 }
 
 void TryHideLastUsedBall(void)
@@ -3204,7 +3204,7 @@ void TryRestoreLastUsedBall(void)
 
 static void SpriteCB_LastUsedBallBounce(struct Sprite *sprite)
 {
-    if ((sprite->sTimer++ % 4) != 0)  // Change the image every 4 frame
+    if ((sprite->sTimer++ % 4) != 0)  // 4フレームごとに画像を切り替え。
         return;
     if (sprite->sBounce)
     {

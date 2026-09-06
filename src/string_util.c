@@ -124,7 +124,7 @@ u16 StringLength(const u8 *str)
 
 u16 StringLineLength(const u8 *str)
 {
-    u16 length = 0;
+    u16 i = 0, length = 0;
 
     while (str[length] != EOS)
     {
@@ -135,6 +135,7 @@ u16 StringLineLength(const u8 *str)
         case CHAR_NEWLINE:
             return length;
         default:
+            i++;
             length++;
             break;
         }
@@ -169,6 +170,17 @@ s32 StringCompareN(const u8 *str1, const u8 *str2, u32 n)
     }
 
     return *str1 - *str2;
+}
+
+bool8 IsStringLengthAtLeast(const u8 *str, s32 n)
+{
+    u32 i;
+
+    for (i = 0; i < n; i++)
+        if (str[i] && str[i] != EOS)
+            return TRUE;
+
+    return FALSE;
 }
 
 u8 *ConvertIntToDecimalStringN(u8 *dest, s32 value, enum StringConvertMode mode, u8 n)
@@ -663,6 +675,21 @@ u8 *WriteColorChangeControlCode(u8 *dest, enum TextColorType colorType, u8 color
 bool32 IsStringJapanese(u8 *str)
 {
     while (*str != EOS)
+    {
+        if (*str <= JAPANESE_CHAR_END)
+            if (*str != CHAR_SPACE)
+                return TRUE;
+        str++;
+    }
+
+    return FALSE;
+}
+
+bool32 IsStringNJapanese(u8 *str, s32 n)
+{
+    s32 i;
+
+    for (i = 0; *str != EOS && i < n; i++)
     {
         if (*str <= JAPANESE_CHAR_END)
             if (*str != CHAR_SPACE)

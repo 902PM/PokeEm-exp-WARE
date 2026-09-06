@@ -15,6 +15,7 @@
 #include "item.h"
 #include "link.h"
 #include "menu.h"
+#include "move.h"
 #include "palette.h"
 #include "recorded_battle.h"
 #include "string_util.h"
@@ -2728,7 +2729,16 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
             StringCopy(gBattleTextBuff3, gTypesInfo[*(&gBattleStruct->stringMoveType)].generic);
         else
             StringCopy(gBattleTextBuff3, GetMoveName(gBattleMsgDataPtr->currentMove));
-        stringPtr = sText_AttackerUsedX;
+        if (GetMoveText(gBattleMsgDataPtr->currentMove) == 0)
+            stringPtr = sText_ExclamationMark;
+        else if (GetMoveText(gBattleMsgDataPtr->currentMove) == 1)
+            stringPtr = sText_ExclamationMark2;
+        else if (GetMoveText(gBattleMsgDataPtr->currentMove) == 2)
+            stringPtr = sText_ExclamationMark3;
+        else if (GetMoveText(gBattleMsgDataPtr->currentMove) == 3)
+            stringPtr = sText_ExclamationMark4;
+        else
+            stringPtr = sText_ExclamationMark5;
         break;
     case STRINGID_BATTLEEND: // battle end
         if (gBattleTextBuff1[0] & B_OUTCOME_LINK_BATTLE_RAN)

@@ -220,7 +220,7 @@ struct DebugMenuListData
 {
     const struct DebugMenuOption *subMenuItems[DEBUG_MAX_SUB_MENU_LEVELS];
     struct ListMenuItem listItems[DEBUG_MAX_MENU_ITEMS + 1];
-    u8 itemNames[DEBUG_MAX_MENU_ITEMS + 1][26];
+    u8 itemNames[DEBUG_MAX_MENU_ITEMS + 1][64];
     enum DebugMenuTypes menuType:2;
     u32 padding:30;
     s16 data[8];

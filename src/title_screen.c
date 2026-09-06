@@ -32,10 +32,10 @@ enum {
 };
 
 #define VERSION_BANNER_RIGHT_TILEOFFSET 64
-#define VERSION_BANNER_LEFT_X 98
-#define VERSION_BANNER_RIGHT_X 162
+#define VERSION_BANNER_LEFT_X 162
+#define VERSION_BANNER_RIGHT_X 226
 #define VERSION_BANNER_Y 2
-#define VERSION_BANNER_Y_GOAL 66
+#define VERSION_BANNER_Y_GOAL 48
 #define START_BANNER_X 128
 
 #define CLEAR_SAVE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_UP)
@@ -612,7 +612,7 @@ void CB2_InitTitleScreen(void)
         LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
         LoadCompressedSpriteSheet(&sSpriteSheet_PressStart[0]);
         LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
-        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
+        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), 6 * PLTT_SIZE_4BPP);
         LoadSpritePalette(&sSpritePalette_PressStart[0]);
         gMain.state = 2;
         break;
@@ -634,7 +634,7 @@ void CB2_InitTitleScreen(void)
         break;
     case 4:
         PanFadeAndZoomScreen(DISPLAY_WIDTH / 2, DISPLAY_HEIGHT / 2, 0x100, 0);
-        SetGpuReg(REG_OFFSET_BG2X_L, -29 * 256);
+        SetGpuReg(REG_OFFSET_BG2X_L, -10 * 256);
         SetGpuReg(REG_OFFSET_BG2X_H, -1);
         SetGpuReg(REG_OFFSET_BG2Y_L, -32 * 256);
         SetGpuReg(REG_OFFSET_BG2Y_H, -1);
@@ -772,6 +772,7 @@ static void Task_TitleScreenPhase2(u8 taskId)
     yPos = gTasks[taskId].tBg2Y * 256;
     SetGpuReg(REG_OFFSET_BG2Y_L, yPos);
     SetGpuReg(REG_OFFSET_BG2Y_H, yPos / 0x10000);
+    SetGpuReg(REG_OFFSET_BG2X_L, -1 * 256);
 
     gTasks[taskId].data[5] = 15; // Unused
     gTasks[taskId].data[6] = 6;  // Unused

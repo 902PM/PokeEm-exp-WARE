@@ -70,6 +70,8 @@ struct EnigmaBerryInfo
 struct EnigmaBerry
 {
     struct EnigmaBerryInfo berry;
+    u8 description1[45];
+    u8 description2[45];
     u8 itemEffect[BERRY_ITEM_EFFECT_COUNT];
     enum HoldEffect holdEffect:8;
     u8 holdEffectParam;
