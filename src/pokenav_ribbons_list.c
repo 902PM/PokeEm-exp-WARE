@@ -122,7 +122,7 @@ static const struct WindowTemplate sRibbonsMonListWindowTemplate =
 
 static const u8 sText_MaleSymbol[] = _("{TEXT_COLORS LIGHT_RED GREEN WHITE}{BACKGROUND WHITE}♂{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}{BACKGROUND WHITE}");
 static const u8 sText_FemaleSymbol[] = _("{TEXT_COLORS LIGHT_GREEN BLUE WHITE}{BACKGROUND WHITE}♀{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}{BACKGROUND WHITE}");
-static const u8 sText_NoGenderSymbol[] = _("?");
+static const u8 sText_NoGenderSymbol[] = _("{UNK_SPACER}");
 
 bool32 PokenavCallback_Init_MonRibbonList(void)
 {
@@ -663,7 +663,6 @@ static void UpdateIndexNumberDisplay(struct Pokenav_RibbonsMonMenu *menu)
     CopyWindowToVram(menu->winid, COPYWIN_GFX);
 }
 
-// ここ、左の[X/MAX]の所
 static void DrawListIndexNumber(s32 windowId, s32 index, s32 max)
 {
     u8 strbuf[16];
@@ -672,7 +671,7 @@ static void DrawListIndexNumber(s32 windowId, s32 index, s32 max)
     u8 *ptr = strbuf;
     ptr = ConvertIntToDecimalStringN(ptr, index, STR_CONV_MODE_RIGHT_ALIGN, 3);
     *ptr++ = CHAR_SLASH;
-    ConvertIntToDecimalStringN(ptr, max, STR_CONV_MODE_RIGHT_ALIGN, 7);
+    ConvertIntToDecimalStringN(ptr, max, STR_CONV_MODE_RIGHT_ALIGN, 3);
     x = GetStringCenterAlignXOffset(FONT_NORMAL, strbuf, 56);
     AddTextPrinterParameterized(windowId, FONT_NORMAL, strbuf, x, 1, TEXT_SKIP_DRAW, NULL);
 }
@@ -744,7 +743,6 @@ static void BufferRibbonMonInfoText(struct PokenavListItem *listItem, u8 *dest)
     *s++ = CHAR_EXTRA_SYMBOL;
     *s++ = CHAR_LV_2;
     ConvertIntToDecimalStringN(s, level, STR_CONV_MODE_LEFT_ALIGN, 3);
-    dest = GetStringClearToWidth(dest, FONT_NORMAL, gStringVar1, 50);
-    ConvertIntToDecimalStringN(dest, item->data, STR_CONV_MODE_LEFT_ALIGN, 0);
-    StringAppend(dest, COMPOUND_STRING("こ"));
+    dest = GetStringClearToWidth(dest, FONT_NORMAL, gStringVar1, 54);
+    ConvertIntToDecimalStringN(dest, item->data, STR_CONV_MODE_RIGHT_ALIGN, 2);
 }

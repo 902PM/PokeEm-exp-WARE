@@ -52,91 +52,132 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
-	.string "{JPN}ジムリーダー アダンさまに おしえてもらった\nかれいな テクニックを みせたげる!$"
+	.string "I'll show you the sublime techniques\n"
+	.string "I learned from our LEADER JUAN!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "{JPN}アダンさま ごめんね……$"
+	.string "Please forgive me, JUAN…$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "{JPN}すべての ゆかに ヒビを いれると\nなにかが おこるわよ$"
+	.string "Watch what happens if you crack all\n"
+	.string "the floor tiles.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
-	.string "{JPN}せっかく ここまで これたのに\nあたしに まけるから\lアダンさまに あえないわね!$"
+	.string "You came all the way here, but you won't\n"
+	.string "get to see JUAN.\p"
+	.string "Not if you lose to me, you won't!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
-	.string "{JPN}つよい じゃない!!\nかわいい みために だまされたわ$"
+	.string "You're strong!\n"
+	.string "I was fooled by your cute looks!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "{JPN}あなたなら アダンさまと たたかっても\nいちげきで やられなくて すむかもね$"
+	.string "You might be good enough to avoid\n"
+	.string "being wiped out in one hit by JUAN.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "{JPN}アダンさまの たたかう すがた……\pその うつくしさに こころ うばわれ\nわたくしも ポケモンを はじめましてよ$"
+	.string "The sight of JUAN conducting\n"
+	.string "a battle…\p"
+	.string "The very beauty of it compelled me to\n"
+	.string "become a TRAINER.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
-	.string "{JPN}たたかう すがたの\nうつくしさで まけましたわ……$"
+	.string "You battled with more beauty than\n"
+	.string "I could muster…$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
-	.string "{JPN}あなたさまの たたかう すがたも\nすばらしくってよ\pああっ……!\nポケモンに であえて よかったですわ$"
+	.string "The grace you bring to battle is\n"
+	.string "fabulous.\p"
+	.string "Oh… I'm so fortunate to have found\n"
+	.string "POKéMON.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieIntro:
-	.string "{JPN}おねえさんが しょうぶの きびしさ\nいろいろと おしえて あげちゃおっかな$"
+	.string "I should teach you how harsh battles\n"
+	.string "can be.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieDefeat:
-	.string "{JPN}なんだ\nつよいんだ$"
+	.string "Oh.\n"
+	.string "You're strong.$"
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "{JPN}いいこと おしえて あげるね\pアダンさまに あいたいのなら\nすべての ゆかを 1かいずつ\lあるいて いけば いいの$"
+	.string "I'll tell you something good.\p"
+	.string "If you want to reach JUAN, you\n"
+	.string "need to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "{JPN}ホウエンちほうで いちばん\nレベルの たかい ポケモンジム……\pそれが ここ ルネジムよ!$"
+	.string "The POKéMON GYM of the highest level\n"
+	.string "in the HOENN region…\p"
+	.string "That's the SOOTOPOLIS GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
-	.string "{JPN}なんて レベルの たかい……$"
+	.string "What a high level you are!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
-	.string "{JPN}レベルの たかい ジムに いることに\nまんぞく しないで\lほかにも しゅぎょうに いくほうが\lつよくなれそうだし なにより たのしそうね$"
+	.string "Rather than being satisfied by being\n"
+	.string "in a strong GYM, I imagine training in\l"
+	.string "other places will make you stronger.\l"
+	.string "But above all, it looks more fun.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
-	.string "{JPN}アダンさまと いっしょに\nポケモンを きたえて いるの\pかんたんに たおせると おもわないでね$"
+	.string "I train my POKéMON together with\n"
+	.string "JUAN.\p"
+	.string "Don't think I'm a pushover.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
-	.string "{JPN}たおされちゃった……$"
+	.string "I was beaten…$"
 
 SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
-	.string "{JPN}あなた みどころ あると おもうの\nいっしょに ここで ポケモン きたえない?$"
+	.string "I think you have potential.\n"
+	.string "Why don't you stay and train with us?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "{JPN}こおりの うえでの ひとふでがき\pそれが できる トレーナーは\nエレガントに うつくしいのよ!$"
+	.string "A graceful glide across the ice while\n"
+	.string "crossing no lines…\p"
+	.string "A TRAINER putting on that performance\n"
+	.string "would be elegantly beautiful!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
-	.string "{JPN}ちょっとー!?$"
+	.string "Well, excuse me?!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
-	.string "{JPN}あたりまえ だけど\nポケモンの つよさに\lおとなも こどもも かんけい ないよ$"
+	.string "This is really obvious, but how strong\n"
+	.string "you are as a TRAINER has nothing to do\l"
+	.string "with how young or old you are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "{JPN}ポケモンと いっしょに いると\nじかんが あっ というまに すぎるのよ!$"
+	.string "When I'm with my POKéMON, the time\n"
+	.string "flies by before you can say, “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
-	.string "{JPN}あっ!$"
+	.string "Oops!$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-	.string "{JPN}まけた しょうぶも\nあっ というまに わすれたい……$"
+	.string "I wish I could forget about lost causes\n"
+	.string "before I can manage an “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "{JPN}すっごく めずらしい ポケモンちゃんで\nたたかって あげても いいわよー!$"
+	.string "I can battle with really rare POKéMON\n"
+	.string "if you'd like.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "{JPN}ちょっと!\nポケモンちゃんも ちゃんと みてくれた?$"
+	.string "Oh, there now! Did you have a good look\n"
+	.string "at my POKéMON?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "{JPN}わたしが このジムに いるのは\nアダンさんが わたしの ポケモンちゃんを\lほめて くれたから なのよぉ\pあーあ ダンナに であうまえに\nアダンさんに であっていれば いまごろは…$"
+	.string "I came to this GYM because JUAN\n"
+	.string "praised me for my darling POKéMON.\p"
+	.string "Oh, if only I'd met JUAN years ago\n"
+	.string "when I was younger…$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
-	.string "{JPN}うふふ……\nその ひっしな おかおが ステキよ$"
+	.string "Giggle…\n"
+	.string "Your grim look is so charming.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaDefeat:
-	.string "{JPN}あら\nてかげん しすぎて しまいましたわ……$"
+	.string "Oh, dear.\n"
+	.string "I went much too easy on you.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
-	.string "{JPN}あなたでは アダンさまには\nきっと はが たちませんわよ うふふ……$"
+	.string "You couldn't lay a finger on JUAN,\n"
+	.string "I'm sure. Giggle…$"
+

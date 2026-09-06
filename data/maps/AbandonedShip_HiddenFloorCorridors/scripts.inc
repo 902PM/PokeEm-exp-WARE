@@ -132,17 +132,24 @@ AbandonedShip_HiddenFloorCorridors_EventScript_TheDoorIsOpen::
 	end
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked:
-	.string "{JPN}カギが かかっている\pとびらには 1ごうしつと かかれている$"
+	.string "The door is locked.\p"
+	.string "“RM. 1” is painted on the door.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked:
-	.string "{JPN}カギが かかっている\pとびらには 2ごうしつと かかれている$"
+	.string "The door is locked.\p"
+	.string "“RM. 2” is painted on the door.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked:
-	.string "{JPN}カギが かかっている\pとびらには 4ごうしつと かかれている$"
+	.string "The door is locked.\p"
+	.string "“RM. 4” is painted on the door.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked:
-	.string "{JPN}カギが かかっている\pとびらには 6ごうしつと かかれている$"
+	.string "The door is locked.\p"
+	.string "“RM. 6” is painted on the door.$"
 
 AbandonedShip_HiddenFloorCorridors_Text_InsertedKey:
-	.string "{JPN}{PLAYER}は\nカギを つかった!\pさしこんだ カギは ぬけなくなったが\nとびらは ひらいた!$"
+	.string "{PLAYER} inserted and turned the\n"
+	.string "KEY.\p"
+	.string "The inserted KEY stuck fast,\n"
+	.string "but the door opened.$"
 

@@ -627,103 +627,152 @@ MauvilleCity_GameCorner_EventScript_NoCoinCase::
 	end
 
 MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner:
-	.string "{JPN}いらっしゃいませ!\nキンセツ ゲームコーナー です!$"
+	.string "This is MAUVILLE GAME CORNER.$"
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins:
-	.string "{JPN}ゲームよう コイン ですね?\pあら? コインを いれる\nコインケースが ありませんよ$"
+	.string "Okay, you wanted some COINS for\n"
+	.string "the games?\p"
+	.string "But you don't have a COIN CASE for\n"
+	.string "stowing the COINS.$"
 
 MauvilleCity_GameCorner_Text_WereYouLookingForCoins:
-	.string "{JPN}ゲームよう コイン ですね?\p50まい 1000えんに なります!\nコインを かいますか?$"
+	.string "Were you looking for COINS?\p"
+	.string "It's ¥1000 for 50 COINS.\n"
+	.string "Would you like some?$"
 
 MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins:
-	.string "{JPN}はい ありがとう ございます!\nコイン です! どうぞ!$"
+	.string "Thank you very much!\n"
+	.string "Here are your COINS!$"
 
 MauvilleCity_GameCorner_Text_DontHaveEnoughMoney:
-	.string "{JPN}あの……\nおかねが たりないようです$"
+	.string "Um… You don't appear to have\n"
+	.string "enough money…$"
 
 MauvilleCity_GameCorner_Text_CoinCaseIsFull:
-	.string "{JPN}あら?\nコインケースが まんたん ですね$"
+	.string "Oh?\n"
+	.string "Your COIN CASE is full.$"
 
 MauvilleCity_GameCorner_Text_DontNeedCoinsThen:
-	.string "{JPN}…… いりませんか!\nそれでは また きてくださいね!$"
+	.string "Oh… You don't need COINS, then?\n"
+	.string "Good luck on your adventure!$"
 
 MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes:
-	.string "{JPN}いらっしゃいませ!\pこちらでは ゲームで ためた コインを\nおすきな けいひんと こうかん します!$"
+	.string "Welcome.\p"
+	.string "You can exchange your COINS for\n"
+	.string "prizes here.$"
 
 MauvilleCity_GameCorner_Text_WhichPrize:
-	.string "{JPN}どれが いいですか?$"
+	.string "Which prize would you like?$"
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX:
-	.string "{JPN}{STR_VAR_1}「{STR_VAR_2}」で\nいいですね?$"
+	.string "So your choice is\n"
+	.string "the {STR_VAR_1} {STR_VAR_2}?$"
 
 MauvilleCity_GameCorner_Text_SendToYourHomePC:
-	.string "{JPN}どうも ありがとう!\nじたくの パソコンに おくって おきますね!$"
+	.string "Thank you!\n"
+	.string "We'll send it to your PC at home.$"
 
 MauvilleCity_GameCorner_Text_NotEnoughCoins:
-	.string "{JPN}コインが たりませんね$"
+	.string "You don't have enough COINS.$"
 
 @ Unused
 MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
-	.string "{JPN}{STR_VAR_1} を\nいれる ばしょが いっぱいですよ$"
+	.string "There isn't any room available for\n"
+	.string "placing {STR_VAR_1}.$"
 
 MauvilleCity_GameCorner_Text_OhIsThatSo:
-	.string "{JPN}あら そうですか\nコイン ためて きてくださいね!$"
+	.string "Oh, is that so? \n"
+	.string "You need to save some COINS before\l"
+	.string "coming back here.$"
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsX:
-	.string "{JPN}{STR_VAR_1}で\nいいですね?$"
+	.string "So your choice is {STR_VAR_1}?$"
 
 MauvilleCity_GameCorner_Text_HereYouGo:
-	.string "{JPN}はい どうぞ!$"
+	.string "Here you go!$"
 
 @ Unused
 MauvilleCity_GameCorner_Text_CantCarryAnyMore:
-	.string "{JPN}それいじょう もてない ですよ$"
+	.string "Oh, you can't carry any more than that.$"
 
 MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne:
-	.string "{JPN}うっかり おんなじ\nぬいぐるみを もらっちゃった!\pひとつ あなたに わけてあげようか?$"
+	.string "I made a mistake and got two of\n"
+	.string "the same DOLLS.\p"
+	.string "Would you like one of them?$"
 
 MauvilleCity_GameCorner_Text_HereYouGo2:
-	.string "{JPN}はい どうぞ!$"
+	.string "Here you go!$"
 
 MauvilleCity_GameCorner_Text_YouWantItButNotNow:
-	.string "{JPN}えー ほしいけど\nいまは ダメなのー?$"
+	.string "Huh?\n"
+	.string "You want it, but not right now?$"
 
 MauvilleCity_GameCorner_Text_DontBeNegative:
-	.string "{JPN}そんなこと いわずに もらってよ!$"
+	.string "Oh, don't be so negative!\n"
+	.string "You can have this!$"
 
 MauvilleCity_GameCorner_Text_CantWinJackpot:
-	.string "{JPN}ほしい けいひんが あるから\nおおあたり ねらってるのよ!$"
+	.string "There's a prize I want, but I can't win\n"
+	.string "the jackpot.$"
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor:
-	.string "{JPN}ここで あそぶには\nコインケースが ひつよう だぞ!\pほしかったら となりの いえの\nおねえさんに いってみたら どうだ?$"
+	.string "Hey, kid, if you want to play here,\n"
+	.string "you need a COIN CASE.\p"
+	.string "I think the young lady next door\n"
+	.string "had one. Go see her!$"
 
 MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins:
-	.string "{JPN}きょうは かちまくって いるからな!\nきみにも コインを わけて あげよう!$"
+	.string "My luck can only last so long.\n"
+	.string "This is too much for me.\l"
+	.string "Here, take some COINS!$"
 
 MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone:
-	.string "{JPN}おじさんは キンセツに くると\nいつも ゲームコーナーで あそぶんだ\pなんだか ほかに くらべて\nでやすいような きが するんだな$"
+	.string "MAUVILLE has something for\n"
+	.string "everyone.\p"
+	.string "For me, it's the GAME CORNER.$"
 
 MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates:
-	.string "{JPN}ルーレットは あそぶ テーブルで\nレートが ちがうんじゃよ\pもっている コインの かずで\nあそぶ テーブルを えらぶと いいぞ!$"
+	.string "The ROULETTE tables have different\n"
+	.string "rates.\p"
+	.string "Check your COINS if you're going to\n"
+	.string "pick a table.$"
 
 MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime:
-	.string "{JPN}ひー スロットを してると\nしごとを わすれてしまうー$"
+	.string "It's easy to lose track of time in here. \n"
+	.string "I should get back to work.$"
 
 MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay:
-	.string "{JPN}この ゲームコーナーでは\nコインを つかって あそぶのよ$"
+	.string "COINS are needed to play here\n"
+	.string "in the GAME CORNER.$"
 
 MauvilleCity_GameCorner_Text_RouletteOnlyLuck:
-	.string "{JPN}この ルーレット という やつは\nおおきく ねらおうと すると\lなかなか かてないくせに\lなかなか やめられない こまった やつだよ$"
+	.string "This ROULETTE thing…\n"
+	.string "It's rather demanding.\p"
+	.string "Win or lose, it's only by luck.$"
 
 MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed:
-	.string "{JPN}スロットは コイン 1まいから あそべるけど\n3まい かけた ほうが いいんじゃない?\pおおあたりの かくりつが アップするからね!$"
+	.string "Up to three COINS can be used to play\n"
+	.string "the SLOTS.$"
 
 MauvilleCity_GameCorner_Text_DifficultToStopOn7:
-	.string "{JPN}キミは 「7」を ねらって とめられる?\pBDタイム っていう チャンスゲームのとき\n「7」を ねらって ばっちり とめられれば\lコインを たくさん ふやせるよ$"
+	.string "It's very difficult to make it stop\n"
+	.string "right on “7.”\p"
+	.string "If it stops on “7” during the REEL TIME\n"
+	.string "bonus game, you'll receive extra COINS.$"
 
 MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
-	.string "{JPN}スロットの おとくな じょうほう\nあなたに おしえて あげるわね!\pイナズマが たくさん たまっているほど\nBDタイムの かいすうが ふえやすいの!\pさいこう 5かいの BDタイムの ゲームで\nレギュラーボーナスを 4かい あててから\pビッグボーナスを あてることが できれば\nコインを 660まいも かせげるわ!$"
+	.string "Here's some information for you\n"
+	.string "about the SLOTS.\p"
+	.string "The more lightning bolts you stock,\n"
+	.string "the more REEL TIME chances you get.\p"
+	.string "In a game with the maximum five\n"
+	.string "REEL TIME chances…\p"
+	.string "It is possible to receive four regular\n"
+	.string "bonuses, then a big bonus.\p"
+	.string "That would total 660 COINS, but it's\n"
+	.string "very difficult to get.$"
 
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
-	.string "{JPN}コインケースを\nもっていないので あそべません!$"
+	.string "You can't play if you don't have\n"
+	.string "a COIN CASE.$"
 

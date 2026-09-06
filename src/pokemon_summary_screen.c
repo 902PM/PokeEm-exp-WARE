@@ -767,7 +767,7 @@ static const TaskFunc sTextPrinterTasks[] =
     [PSS_PAGE_CONTEST_MOVES] = Task_PrintContestMoves
 };
 
-static const u8 sText_Relearn[] = _("{JPN}{START_BUTTON} おもいだす"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+static const u8 sText_Relearn[] = _("{START_BUTTON} RELEARN"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
@@ -1720,11 +1720,11 @@ static void HandleMoveRelearnerInput(u8 taskId)
     {
         sMonSummaryScreen->callback = CB2_InitLearnMove;
         gRelearnMode = sMonSummaryScreen->currPageIndex;
-        gSpecialVar_MonBoxPos = sMonSummaryScreen->curMonIndex;
         if (sMonSummaryScreen->isBoxMon)
         {
             gSpecialVar_0x8004 = PC_MON_CHOSEN;
             gSpecialVar_MonBoxPos = sMonSummaryScreen->curMonIndex;
+            gSpecialVar_MonBoxId = StorageGetCurrentBox();
         }
         else
         {
@@ -3533,7 +3533,7 @@ static void PrintMonAbilityName(void)
 static void PrintMonAbilityDescription(void)
 {
     enum Ability ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
-    PrintTextOnWindowWithFont(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0, FONT_SMALL);
+    PrintTextOnWindowToFit(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0);
 }
 
 static void BufferMonTrainerMemo(void)
@@ -3593,32 +3593,11 @@ static void PrintMonTrainerMemo(void)
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
 }
 
-static const u8 sText_NatureSuffixNa[] = _("な");
-
-static bool32 SummaryNatureUsesPlainSuffix(u8 nature)
-{
-    switch (nature)
-    {
-    case NATURE_BOLD:   // ずぶとい
-    case NATURE_GENTLE: // おとなしい
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
 static void BufferNatureString(void)
 {
     struct PokemonSummaryScreenData *sumStruct = sMonSummaryScreen;
-
-    StringCopy(gStringVar3, gNaturesInfo[sumStruct->summary.nature].name);
-
-    if (SummaryNatureUsesPlainSuffix(sumStruct->summary.nature))
-        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
-    else
-        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, sText_NatureSuffixNa);
-
-    DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gStringVar3);
+    DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gNaturesInfo[sumStruct->summary.nature].name);
+    DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
 }
 
 static void GetMetLevelString(u8 *output)
@@ -3823,7 +3802,7 @@ static void PrintHeldItemName(void)
     }
 
     fontId = GetFontIdToFit(text, FONT_NORMAL, 0, WindowTemplateWidthPx(&sPageSkillsTemplate[PSS_DATA_WINDOW_SKILLS_HELD_ITEM]) - 8);
-    x = 6;
+    x = GetStringCenterAlignXOffset(fontId, text, 72) + 6;
     PrintTextOnWindowWithFont(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_HELD_ITEM), text, x, 1, 0, 0, fontId);
 }
 
@@ -3843,7 +3822,7 @@ static void PrintRibbonCount(void)
         text = gStringVar4;
     }
 
-    x = 6;
+    x = GetStringCenterAlignXOffset(FONT_NORMAL, text, 70) + 6;
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT), text, x, 1, 0, 0);
 }
 
@@ -3978,7 +3957,6 @@ static void PrintExpPointsNextLevel(void)
     int x;
     u32 expToNextLevel;
 
-    PrintTextOnWindow(windowId, COMPOUND_STRING("{JPN}あと"), 0, 17, 0, 0);
     ConvertIntToDecimalStringN(gStringVar1, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
     x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 42) + 2;
     PrintTextOnWindow(windowId, gStringVar1, x, 1, 0, 0);
@@ -4797,10 +4775,10 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 static inline void ShowUtilityPrompt(s16 mode)
 {
     const u8* promptText = NULL;
-    const u8* gText_SkillPageIvs = COMPOUND_STRING("{JPN}こたい");
-    const u8* gText_SkillPageEvs = COMPOUND_STRING("{JPN}きそ");
-    const u8* gText_SkillPageStats = COMPOUND_STRING("{JPN}のうりょく");
-    const u8* gText_Rename = COMPOUND_STRING("{JPN}なまえ");
+    const u8* gText_SkillPageIvs = COMPOUND_STRING("IVs");
+    const u8* gText_SkillPageEvs = COMPOUND_STRING("EVs");
+    const u8* gText_SkillPageStats = COMPOUND_STRING("STATS");
+    const u8* gText_Rename = COMPOUND_STRING("RENAME");
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {

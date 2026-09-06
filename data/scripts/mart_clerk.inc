@@ -1,11 +1,13 @@
 gText_HowMayIServeYou::
-	.string "{JPN}ようこそ!\pおかいもの ですね!$"
+	.string "Welcome!\p"
+	.string "How may I serve you?$"
 
 gText_PleaseComeAgain::
-	.string "{JPN}またどうぞ!$"
+	.string "Please come again!$"
 
 gText_PlayerWhatCanIDoForYou::
-	.string "{JPN}{PLAYER}{KUN} いらっしゃい!\pおかいものね!$"
+	.string "{PLAYER}{KUN}, welcome!\p"
+	.string "What can I do for you?$"
 
 Pokemart_DefaultItemList::
 	.2byte ITEM_ULTRA_BALL

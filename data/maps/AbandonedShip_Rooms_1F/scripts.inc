@@ -32,35 +32,46 @@ AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
 	end
 
 AbandonedShip_Rooms_1F_Text_TakingALookAround:
-	.string "{JPN}こういった ふねは めずらしいので\nけんがく しておるのですよ\pフムフム……\nほかにも へやが ありそうですな$"
+	.string "Ships of this sort are rare, so I'm\n"
+	.string "taking a look around.\p"
+	.string "Hmhm…\n"
+	.string "There appear to be other cabins…$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaIntro:
-	.string "{JPN}あら こんな ところまで きて\nキミも ものずきね!$"
+	.string "What on earth would compel you to\n"
+	.string "come here? You must be curious!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaDefeat:
-	.string "{JPN}ものずき だけじゃ なくて\nつよいのか……$"
+	.string "Not just curious, but also strong…$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostBattle:
-	.string "{JPN}となりのへやの おじさん\nけんがく だなんて あやしいわ\pわたしに きが あるんじゃない かしら$"
+	.string "The man next door…\p"
+	.string "He says he's just sightseeing,\n"
+	.string "but I don't know about that.$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRegister:
-	.string "{JPN}つよい トレーナーの キミを\nきねんに とうろく させて ちょうだいね!$"
+	.string "You're such a tough TRAINER!\n"
+	.string "Let me register you as a memento!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro:
-	.string "{JPN}こんな ところまで なんども きて\nほんとに ものずきね キミって!$"
+	.string "What on earth would compel you to\n"
+	.string "come back? You must really be curious!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat:
-	.string "{JPN}ちょっと つよすぎない?$"
+	.string "Aren't you too strong?$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostRematch:
-	.string "{JPN}あの おじさん ぜったい\nわたしの ことを みているのよ!\lわざとらしすぎるわ!$"
+	.string "I'm sure that man's up to something!\n"
+	.string "He just acts so suspiciously!$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusIntro:
-	.string "{JPN}わーっ!\nみつかった…… って あれ?$"
+	.string "Waaah!\n"
+	.string "I've been found! …Huh?$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusDefeat:
-	.string "{JPN}なんだ\nかあちゃん じゃ なかったのか$"
+	.string "Oh, you're not my mom.$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
-	.string "{JPN}かあちゃんに しかられて\nここまで にげて きたんだ\lボクが ここに いるのは ないしょだぞ!$"
+	.string "I'm in trouble with my mom, so I ran.\n"
+	.string "Keep it a secret where I am!$"
 

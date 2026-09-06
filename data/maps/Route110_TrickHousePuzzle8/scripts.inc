@@ -28,31 +28,44 @@ Route110_TrickHousePuzzle8_EventScript_Leroy::
 	end
 
 Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened::
-	.string "{JPN}{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま あいしてる」\p…… …… ……\pかぎの はずれる おとがした!$"
+	.string "{PLAYER} wrote down the secret code\n"
+	.string "on the door.\p"
+	.string "“TRICK MASTER I love.”\n"
+	.string "… … … … … … … …\p"
+	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle8_Text_VincentIntro:
-	.string "{JPN}ここまで こられる トレーナーは\nそうは いないよな!$"
+	.string "Not many TRAINERS have made it\n"
+	.string "this far.$"
 
 Route110_TrickHousePuzzle8_Text_VincentDefeat:
-	.string "{JPN}つまり キミも\nすごいって ことだよな…$"
+	.string "That must mean you're tough, too…$"
 
 Route110_TrickHousePuzzle8_Text_VincentPostBattle:
-	.string "{JPN}えっ ポケモンリーグの チャンピオンに\nかったって? す すごい……!$"
+	.string "You've beaten the POKéMON LEAGUE\n"
+	.string "CHAMPION? That's too much!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraIntro:
-	.string "{JPN}わたしと しょうぶ できるなんて\nあなた しあわせよ!$"
+	.string "Consider yourself lucky to be\n"
+	.string "battling me!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraDefeat:
-	.string "{JPN}そんな わたしが\nまけるなんて……!$"
+	.string "This isn't right!\n"
+	.string "I can't lose!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraPostBattle:
-	.string "{JPN}わたしに かつなんて きせきよ!\nじまん できる ことだわ!$"
+	.string "It's a miracle that you beat me.\n"
+	.string "You can brag about it.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyIntro:
-	.string "{JPN}あなたも カラクリやしきに\nちょうせん しつづけて いるんですね!$"
+	.string "You've been slugging through the TRICK\n"
+	.string "HOUSE challenge, too.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyDefeat:
-	.string "{JPN}なるほど……\nすばらしい センスですね!$"
+	.string "I see…\n"
+	.string "You possess an extraordinary style.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyPostBattle:
-	.string "{JPN}あなた みたいな ひとが きてくれて\nカラクリだいおうも まんぞく でしょうね!$"
+	.string "Seeing someone like you should please\n"
+	.string "the TRICK MASTER.$"
+

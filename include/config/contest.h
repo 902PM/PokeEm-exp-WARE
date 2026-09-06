@@ -1,12 +1,12 @@
 #ifndef GUARD_CONFIG_CONTEST_H
 #define GUARD_CONFIG_CONTEST_H
 
-// コンテストデータを隠す
-#define C_HIDE_CONTEST_DATA         FALSE      // TRUEの場合、ステータス画面でコンテストデータを非表示にし、わざ思い出しに変更します。
-                                               // 注意：この設定を行ってもコンテストデータは削除されず、ユーザーから非表示になるだけです。この設定を有効にしても、セーブデータの互換性が損なわれることはありません。
+// Contest data hiding
+#define C_HIDE_CONTEST_DATA         FALSE      // If TRUE, hides contest data in summary screen and move relearner.
+                                               // NOTE: This does not remove the contest data, it only hides it from the user! Enabling this config will not break save compatibility.
 
-// 技データ設定
-#define C_UPDATED_MOVE_CATEGORIES   GEN_3 // コンテストのカテゴリをアップデート
-#define C_UPDATED_MOVE_EFFECTS      GEN_3 // コンテストの効果をアップデート
+// Move data settings
+#define C_UPDATED_MOVE_CATEGORIES   GEN_LATEST // Updates contest category.
+#define C_UPDATED_MOVE_EFFECTS      GEN_LATEST // Updates contest effects.
 
 #endif // GUARD_CONFIG_CONTEST_H

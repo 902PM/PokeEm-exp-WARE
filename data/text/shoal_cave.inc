@@ -1,26 +1,53 @@
 ShoalCave_LowTideEntranceRoom_Text_AreYouPlanningOnGoingInThere:
-	.string "{JPN}このさきに すすむのかね?\pもし よかったら\nあさせのしおと あさせのかいがらを\lあつめてきて くれないか\pざいりょうが あつまったら\nわたしが いいもの つくるんだがね$"
+	.string "Are you planning on going deep\n"
+	.string "in there?\p"
+	.string "How about bringing me back some\n"
+	.string "SHOAL SALT and SHOAL SHELLS?\p"
+	.string "I can make you something good if\n"
+	.string "you bring me the ingredients.$"
 
 ShoalCave_LowTideEntranceRoom_Text_BringMe4ShoalSaltAndShells:
-	.string "{JPN}あさせのしおと あさせのかいがら\nそれぞれ 4つ あれば\lかいがらのすずが つくれるんだが……\pかいがらのすずの ざいりょう なら\nまいにち とれるよ$"
+	.string "If you bring me four each of the\n"
+	.string "SHOAL SALT and SHOAL SHELLS,\l"
+	.string "I can make you a SHELL BELL…\p"
+	.string "You can get those ingredients\n"
+	.string "every day.$"
 
 ShoalCave_LowTideEntranceRoom_Text_WouldYouLikeShellBell:
-	.string "{JPN}お! あさせのしおと あさせのかいがら!\nりょうも じゅうぶんだ!\pこれで かいがらのすず\nつくっても いいかね?$"
+	.string "Oh, hey! SHOAL SALT and SHOAL SHELLS!\n"
+	.string "And enough of them, too!\p"
+	.string "Would you like me to make you\n"
+	.string "a SHELL BELL with them?$"
 
 ShoalCave_LowTideEntranceRoom_Text_MakeShellBellRightAway:
-	.string "{JPN}かいがらのすず\nさっそく つくらせて もらうよ\p…… …… ……\n…… …… ……\pよし できたっ!$"
+	.string "All righty, then! I'll make you\n"
+	.string "a SHELL BELL right away.\p"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "There! Done!$"
 
 ShoalCave_LowTideEntranceRoom_Text_ExplainShellBell:
-	.string "{JPN}ポケモンに もたせてあげると よろこぶよ\pなんたって かいがらのすずの ねいろは\nてんか いっぴん だからね\pかいがらのすずの ざいりょう なら\nまいにち とれるから\lそろえば また つくらせて もらうよ$"
+	.string "Have a POKéMON hold on to that.\n"
+	.string "It'll love it, that's for certain.\p"
+	.string "Why, the SHELL BELL's chime…\n"
+	.string "It's simply sublime!\p"
+	.string "You can get its ingredients every day,\n"
+	.string "so I can make you more.$"
 
 ShoalCave_LowTideEntranceRoom_Text_WantedToMakeShellBell:
-	.string "{JPN}そうかね……\nかいがらのすず つくりたかった……$"
+	.string "Oh… Is that so…\n"
+	.string "I wanted to make a SHELL BELL…$"
 
 ShoalCave_LowTideEntranceRoom_Text_NoSpaceInYourBag:
-	.string "{JPN}つくっても バッグが いっぱいで\nもてない ようだね……\pせいりして また くると いいよ$"
+	.string "You don't have space in your BAG\n"
+	.string "if I were to make it for you.\p"
+	.string "You should make room and come back\n"
+	.string "for a SHELL BELL.$"
 
 ShoalCave_Text_WasShoalSaltNowNothing:
-	.string "{JPN}あさせのしおを とった あと……\nいまは なにも ない……$"
+	.string "There was some SHOAL SALT here.\n"
+	.string "But, there's nothing here now.$"
 
 ShoalCave_Text_WasShoallShellNowNothing:
-	.string "{JPN}あさせのかいがらを みつけた あと……\nいまは なにも ない……$"
+	.string "There was a SHOAL SHELL here.\n"
+	.string "But, there's nothing here now.$"

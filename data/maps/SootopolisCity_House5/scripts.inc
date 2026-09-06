@@ -10,7 +10,11 @@ SootopolisCity_House5_EventScript_Girl::
 	end
 
 SootopolisCity_House5_Text_SootopolisMtPyreConnection:
-	.string "{JPN}この ルネシティと おくりびやまは\nなにかの かんけいが あるらしい……\pむかし いた けんきゅうじょで\nそんなことを ともだちと しらべていたよ$"
+	.string "There appears to be some connection\n"
+	.string "between SOOTOPOLIS and MT. PYRE.\p"
+	.string "My friends and I did some research on\n"
+	.string "it at the lab where I used to work.$"
 
 SootopolisCity_House5_Text_BrotherUsedToStudySea:
-	.string "{JPN}おにいちゃん\nむかし うみの けんきゅうを してたんだ$"
+	.string "My big brother used to study the sea.$"
+

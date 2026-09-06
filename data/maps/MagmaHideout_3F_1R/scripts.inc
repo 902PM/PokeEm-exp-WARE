@@ -12,20 +12,32 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	end
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
-	.string "{JPN}なんで オレは こんなところの\nたんとう なんだよ!\pひだりのみみ が あつい じゃねーか!$"
+	.string "What did I do to deserve this guard\n"
+	.string "posting?\p"
+	.string "My left ear is burning up!$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
-	.string "{JPN}あつくて ヘロヘロ……$"
+	.string "I'm getting heat exhaustion…$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "{JPN}こんな マグマだらけの かざんの なかで\nフードを かぶってる オレたち へん?$"
+	.string "Do you think it's odd that we're wearing\n"
+	.string "hoods in this magma-filled volcano?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "{JPN}アタシたちは リーダーが めざしている\nすばらしい もくてきを\lじつげん するために あつまったの!\pアクアだん だろうが\nとおりすがりの おこさま だろうが\lじゃまを するなら ゆるさないわ!$"
+	.string "We joined so we can help our leader\n"
+	.string "achieve his fantastic vision.\p"
+	.string "I don't care if you're with TEAM AQUA\n"
+	.string "or if you're just some kid passing by.\p"
+	.string "No one interferes with us and gets\n"
+	.string "away with it!$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "{JPN}ひえー あなどれない ひと!$"
+	.string "Oh, no!\n"
+	.string "You're not to be trusted at all!$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "{JPN}いい? ただしいのは マグマだんよ!\nアクアだんの いうことなんか\lうそ ばっかりだから しんじちゃ ダメよ!$"
+	.string "Listen to me.\n"
+	.string "TEAM MAGMA is right!\p"
+	.string "Don't listen to TEAM AQUA.\n"
+	.string "Don't believe their lies!$"
 

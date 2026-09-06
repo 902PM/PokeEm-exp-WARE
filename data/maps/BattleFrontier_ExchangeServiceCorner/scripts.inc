@@ -95,12 +95,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1::
 	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_CyndaquilDoll
 	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_ChikoritaDoll
 	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_TotodileDoll
-	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll
-	case 11, BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll
-	case 12, BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll
-	case 13, BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll
-	case 14, BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll
-	case 15, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
@@ -151,26 +146,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_TotodileDoll::
 	setitemandprice DECOR_TOTODILE_DOLL, 80
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
-BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
-	setitemandprice DECOR_LAPRAS_DOLL, 128
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
-
-BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll::
-	setitemandprice DECOR_SNORLAX_DOLL, 128
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
-
-BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll::
-	setitemandprice DECOR_VENUSAUR_DOLL, 256
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
-
-BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
-	setitemandprice DECOR_CHARIZARD_DOLL, 256
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
-
-BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
-	setitemandprice DECOR_BLASTOISE_DOLL, 256
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
-
 BattleFrontier_ExchangeServiceCorner_EventScript_DecorClerk2::
 	lock
 	faceplayer
@@ -185,90 +160,40 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2::
 	special ShowScrollableMultichoice
 	special CloseFrontierExchangeCornerItemIconWindow
 	switch VAR_RESULT
-	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone1
-	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone2
-	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone3
-	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone4
-	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone5
-	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone6
-	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone7
-	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone8
-	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone9
-	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone10
-	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone11
-	case 11, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone12
-	case 12, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone13
-	case 13, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone14
-	case 14, BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone15
-	case 15, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 0, BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll
+	case 1, BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll
+	case 2, BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll
+	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll
+	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll
+	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
 BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2::
-	bufferitemname STR_VAR_1, VAR_0x8009
+	bufferdecorationname STR_VAR_1, VAR_0x8009
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone1::
-	setitemandprice ITEM_SCEPTILITE, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
+	setitemandprice DECOR_LAPRAS_DOLL, 128
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone2::
-	setitemandprice ITEM_BLAZIKENITE, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll::
+	setitemandprice DECOR_SNORLAX_DOLL, 128
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone3::
-	setitemandprice ITEM_SWAMPERTITE, 1
+BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll::
+	setitemandprice DECOR_VENUSAUR_DOLL, 256
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone4::
-	setitemandprice ITEM_SLOWBRONITE, 64
+BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
+	setitemandprice DECOR_CHARIZARD_DOLL, 256
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone5::
-	setitemandprice ITEM_KANGASKHANITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone6::
-	setitemandprice ITEM_DRAGONINITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone7::
-	setitemandprice ITEM_METAGROSSITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone8::
-	setitemandprice ITEM_STARAPTITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone9::
-	setitemandprice ITEM_GARCHOMPITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone10::
-	setitemandprice ITEM_LUCARIONITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone11::
-	setitemandprice ITEM_EXCADRITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone12::
-	setitemandprice ITEM_CHANDELURITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone13::
-	setitemandprice ITEM_CHESNAUGHTITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone14::
-	setitemandprice ITEM_DELPHOXITE, 64
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
-
-BattleFrontier_ExchangeServiceCorner_EventScript_MegaStone15::
-	setitemandprice ITEM_GRENINJITE, 64
+BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
+	setitemandprice DECOR_BLASTOISE_DOLL, 256
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk::
@@ -291,9 +216,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	case 3, BattleFrontier_ExchangeServiceCorner_EventScript_Zinc
 	case 4, BattleFrontier_ExchangeServiceCorner_EventScript_Carbos
 	case 5, BattleFrontier_ExchangeServiceCorner_EventScript_HPUp
-	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_Candy_XL
-	case 7, BattleFrontier_ExchangeServiceCorner_EventScript_Rare_Candy
-	case 8, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 6, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
@@ -326,14 +249,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Carbos::
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HPUp::
 	setitemandprice ITEM_HP_UP, 1
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
-
-BattleFrontier_ExchangeServiceCorner_EventScript_Candy_XL::
-	setitemandprice ITEM_EXP_CANDY_XL, 24
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
-
-BattleFrontier_ExchangeServiceCorner_EventScript_Rare_Candy::
-	setitemandprice ITEM_RARE_CANDY, 48
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 
@@ -372,39 +287,39 @@ BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem::
 	end
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers::
-	setitemandprice ITEM_LEFTOVERS, 20
+	setitemandprice ITEM_LEFTOVERS, 48
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_WhiteHerb::
-	setitemandprice ITEM_LIFE_ORB, 25
+	setitemandprice ITEM_WHITE_HERB, 48
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_QuickClaw::
-	setitemandprice ITEM_WEAKNESS_POLICY, 20
+	setitemandprice ITEM_QUICK_CLAW, 48
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MentalHerb::
-	setitemandprice ITEM_FOCUS_SASH, 15
+	setitemandprice ITEM_MENTAL_HERB, 48
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Brightpowder::
-	setitemandprice ITEM_CHOICE_SCARF, 25
+	setitemandprice ITEM_BRIGHT_POWDER, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceBand::
-	setitemandprice ITEM_CHOICE_BAND, 25
+	setitemandprice ITEM_CHOICE_BAND, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_KingsRock::
-	setitemandprice ITEM_CHOICE_SPECS, 25
+	setitemandprice ITEM_KINGS_ROCK, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_FocusBand::
-	setitemandprice ITEM_EVIOLITE, 20
+	setitemandprice ITEM_FOCUS_BAND, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ScopeLens::
-	setitemandprice ITEM_FLAME_ORB, 16
+	setitemandprice ITEM_SCOPE_LENS, 64
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Man::
@@ -430,173 +345,175 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 	end
 
 BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
-	.string "{JPN}ひきかえサービス コーナーへ\nようこそ!\pこちらでは おきゃくさまの ためた\nバトルポイントと すてきな けいひんを\lこうかん いたします!\pでは けいひんを おえらび ください!$"
+	.string "Hello, this is the EXCHANGE SERVICE\n"
+	.string "CORNER.\p"
+	.string "We exchange the Battle Points you\n"
+	.string "have collected for lovely prizes.\p"
+	.string "Please choose a prize from this list.$"
 
 @ Unused
 BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
-	.string "{JPN}では けいひんを おえらび ください$"
+	.string "Please choose a prize from this list.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase:
-	.string "{JPN}{STR_VAR_1}で よろしい ですか?$"
+	.string "You've chosen the {STR_VAR_1}.\n"
+	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
-	.string "{JPN}ありがとう ございます!\pごじたくの パソコンに\nおおくりして おきますね$"
+	.string "Thank you!\n"
+	.string "We'll send it to your PC at home.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
-	.string "{JPN}どうぞ おうけとりください!$"
+	.string "Here is your prize!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
-	.string "{JPN}おきゃくさま……\nバトルポイントが たりません……$"
+	.string "I'm so sorry…\n"
+	.string "You don't have enough Battle Points…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
-	.string "{JPN}おきゃくさま……\nパソコンが いっぱいの ようです……$"
+	.string "I'm so sorry…\n"
+	.string "Your PC appears to be full…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
-	.string "{JPN}おきゃくさま……\nそれいじょう もつことは できません……$"
+	.string "I'm so sorry…\n"
+	.string "You don't have space to hold it…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
-	.string "{JPN}ありがとう ございました\pバトルポイントが たまりましたら\nまた おこしください$"
+	.string "Thank you very much.\p"
+	.string "Please visit us when you have\n"
+	.string "saved up Battle Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
-	.string "{JPN}いいなぁー ほしいなぁー\nかわいい クッションー\lおおきい ぬいぐるみー\lちいさい ぬいぐるみー\lみんな みんな ほっしい なぁー$"
+	.string "Oh, they're so nice!\n"
+	.string "I wish I had them!\l"
+	.string "Cute cushions!\l"
+	.string "Big plush DOLLS!\l"
+	.string "Little plush DOLLS!\l"
+	.string "I wish I had them all!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
-	.string "{JPN}まかせといてって!\pあんたの ほしいもん だったら\nなんでも とって きたるよ!!$"
+	.string "Leave it to your mommy!\p"
+	.string "If it's anything you want, I'll go\n"
+	.string "through anything to get it, honey!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
-	.string "{JPN}ここの どうぐが あれば\nおれの ポケモンも\lもっと つよくなる! ん! まちがいない!$"
+	.string "If I can get hold of the items here,\n"
+	.string "my POKéMON will get tougher.\p"
+	.string "You bet they will!\n"
+	.string "No question about it!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
-	.string "{JPN}あーっ!? なんだぁーっ?\pなーに おれの ぬいぐるみ みてんだっ!\nほしければ じぶんで てにいれろよっ!\pねっ ねっ ムチュール ちゃん!$"
+	.string "Hah?\n"
+	.string "What are you gawking at?\p"
+	.string "I don't like you staring at my plush\n"
+	.string "doll like that.\p"
+	.string "If you want it, go get one yourself!\n"
+	.string "Isn't that right, SMOOCHUM?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
-	.string "{JPN}しってる?\pどこの しせつでも そうだけど\nきろくを のばしていくと\lもらえる バトルポイントって\lだんだん ふえて いくんだよ!$"
+	.string "Did you know?\p"
+	.string "If you stretch your record at any of\n"
+	.string "the BATTLE facilities, they start\l"
+	.string "giving you more and more Battle Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
-	.string "{JPN}ムチュールが プリント されている\nおおきなポスター$"
+	.string "A large poster with a SMOOCHUM print.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
-	.string "{JPN}ムチュールの クッション\nマットや つくえの うえに おくもの$"
+	.string "A SMOOCHUM cushion.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
-	.string "{JPN}ムチュールの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A SMOOCHUM DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
-	.string "{JPN}トゲピーの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A TOGEPI DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
-	.string "{JPN}ニャースの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A MEOWTH DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-	.string "{JPN}ピッピの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A CLEFAIRY DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
-	.string "{JPN}メタモンの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A DITTO DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-	.string "{JPN}ヒノアラシの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A CYNDAQUIL DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-	.string "{JPN}チコリータの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A CHIKORITA DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
-	.string "{JPN}ワニノコの ぬいぐるみ\nマットや つくえの うえに おくもの$"
+	.string "A TOTODILE DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-	.string "{JPN}おおきな ぬいぐるみ\nマットや つくえの うえに おくもの$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_1Desc::
-	.string "{JPN}ジュカインに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_2Desc::
-	.string "{JPN}バシャーモに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_3Desc::
-	.string "{JPN}ラグラージに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_4Desc::
-	.string "{JPN}ヤドランに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_5Desc::
-	.string "{JPN}ガルーラに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_6Desc::
-	.string "{JPN}カイリューに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_7Desc::
-	.string "{JPN}メタグロスに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_8Desc::
-	.string "{JPN}ムクホークに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_9Desc::
-	.string "{JPN}ガブリアスに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_10Desc::
-	.string "{JPN}ルカリオに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_11Desc::
-	.string "{JPN}ドリュウズに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_12Desc::
-	.string "{JPN}シャンデラに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_13Desc::
-	.string "{JPN}ブリガロンに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_14Desc::
-	.string "{JPN}マフォクシーに もたせると\nせんとうちゅうに メガシンカ できる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MegaStone_15Desc::
-	.string "{JPN}ゲッコウガに もたせると\nせんとうちゅうに メガシンカ できる$"
+	.string "A large DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
-	.string "{JPN}こうげきの きそポイントを あげる$"
+	.string "Raises the stat ATTACK of one\n"
+	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "{JPN}とくこうの きそポイントを あげる$"
+	.string "Raises the stat SP. ATK of one\n"
+	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
-	.string "{JPN}ぼうぎょの きそポイントを あげる$"
+	.string "Raises the stat DEFENSE of one\n"
+	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc::
-	.string "{JPN}とくぼうの きそポイントを あげる$"
+	.string "Raises the stat SP. DEF of one\n"
+	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::
-	.string "{JPN}すばやさの きそポイントを あげる$"
+	.string "Raises the stat SPEED of one\n"
+	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc::
-	.string "{JPN}たいりょくの きそポイントを あげる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_Candy_XLDesc::
-	.string "{JPN}あたえると ポケモン 1ひきの\nけいけんちが とても ふえる$"
-
-BattleFrontier_ExchangeServiceCorner_Text_Rare_CandyDesc::
-	.string "{JPN}ポケモンの レベルを\n1 あげる$"
+	.string "Raises the HP of one POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
-	.string "{JPN}もたせると たいりょくが せんとうの あいだ\nすこしずつ かいふくする$"
+	.string "A hold item that gradually restores\n"
+	.string "HP in battle.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_LifeorbDesc::
-	.string "{JPN}こうげきする たびに HPが へってしまうが\nわざのいりょくが あがる$"
+BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
+	.string "A hold item that restores any\n"
+	.string "lowered stat.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WeaknesspolicyDesc::
-	.string "{JPN}じゃくてんを つかれると こうげきと\nとくこうが それぞれ ぐーんと あがる$"
+BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
+	.string "A hold item that occasionally allows\n"
+	.string "the first strike.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_FocussashDesc::
-	.string "{JPN}もたせると HPが まんたんのとき\nいちげきでは たおされなくなる$"
+BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
+	.string "A hold item that snaps POKéMON out\n"
+	.string "of infatuation.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc::
-	.string "{JPN}もたせると すばやさは あがるが\nおなじ わざしか だせなくなる$"
+BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
+	.string "A hold item that casts a glare to\n"
+	.string "reduce accuracy.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "{JPN}こうげきの いりょくが あがるが\nおなじ わざしか だせなくなる$"
+	.string "Raises a move's power, but permits\n"
+	.string "only that move.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
-	.string "{JPN}とくこうの いりょくが あがるが\nおなじ わざしか だせなくなる$"
+BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
+	.string "A hold item that may cause flinching\n"
+	.string "when the foe is hit.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc::
-	.string "{JPN}もたせると しんかまえ ポケモンの\nぼうぎょと とくぼうが あがる$"
+BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
+	.string "A hold item that occasionally\n"
+	.string "prevents fainting.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_FlameorbDesc::
-	.string "{JPN}もたせると せんとうちゅうに\nやけど じょうたいに なる$"
+BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
+	.string "A hold item that raises the\n"
+	.string "critical-hit rate.$"

@@ -3,7 +3,6 @@
 
 void SetEnigmaBerry(u8 *src);
 bool32 IsEnigmaBerryValid(void);
-bool32 WasEnigmaBerryReceivedCorrectly(u8 *src);
 const struct BerryInfo *GetBerryInfo(enum BerryId berry);
 struct BerryTree *GetBerryTreeInfo(u8 id);
 bool32 ObjectEventInteractionWaterBerryTree(void);

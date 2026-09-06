@@ -1,33 +1,50 @@
 gText_PkmnTransferredSomeonesPC::
-	.string "{JPN}{STR_VAR_2}は だれかのパソコンの\nボックス『{STR_VAR_1}』に\lてんそう された!$"
+	.string "{STR_VAR_2} was transferred to\n"
+	.string "SOMEONE'S PC.\p"
+	.string "It was placed in \n"
+	.string "BOX “{STR_VAR_1}.”$"
 
 gText_PkmnTransferredLanettesPC::
+	.string "{STR_VAR_2} was transferred to\n"
 #if IS_FRLG
-	.string "{JPN}{STR_VAR_2}は マサキのパソコンの\n"
+	.string "BILL'S PC.\p"
 #else
-	.string "{JPN}{STR_VAR_2}は マユミのパソコンの\n"
+	.string "LANETTE'S PC.\p"
 #endif
-	.string "ボックス『{STR_VAR_1}』に\lてんそう された!$"
+	.string "It was placed in \n"
+	.string "BOX “{STR_VAR_1}.”$"
 
 gText_PkmnTransferredSomeonesPCBoxFull::
-	.string "{JPN}だれかのパソコンの\nボックス『{STR_VAR_3}』が\lいっぱいだ!!\p{STR_VAR_2}は\nボックス『{STR_VAR_1}』に\lてんそう された!$"
+	.string "BOX “{STR_VAR_3}” on\n"
+	.string "SOMEONE'S PC was full.\p"
+	.string "{STR_VAR_2} was transferred to\n"
+	.string "BOX “{STR_VAR_1}.”$"
 
 gText_PkmnTransferredLanettesPCBoxFull::
+	.string "BOX “{STR_VAR_3}” on\n"
 #if IS_FRLG
-	.string "{JPN}マサキのパソコンの\n"
+	.string "BILL'S PC was full.\p"
 #else
-	.string "{JPN}マユミのパソコンの\n"
+	.string "LANETTE'S PC was full.\p"
 #endif
-	.string "ボックス『{STR_VAR_3}』が\nいっぱいだ!!{STR_VAR_2}は\nボックス『{STR_VAR_1}』に\lてんそう された!$"
+	.string "{STR_VAR_2} was transferred to\n"
+	.string "BOX “{STR_VAR_1}.”$"
 
 gText_PkmnSentToPCAfterCatch::
-	.string "{JPN}{STR_VAR_2}は {B_PC_CREATOR_NAME}のパソコンの\nボックス『{STR_VAR_1}』に\lてんそう された!$"
+	.string "{STR_VAR_2} was sent to\n"
+	.string "{B_PC_CREATOR_NAME} PC.\p"
+	.string "It was placed in \n"
+	.string "BOX “{STR_VAR_1}”.$"
 
 gText_PlayerObtainedTheMon::
-	.string "{JPN}{PLAYER}は {STR_VAR_1}を\nてにいれた!$"
+	.string "{PLAYER} obtained\n"
+	.string "the {STR_VAR_1}!$"
 
 gText_NoMoreRoomForPokemon::
-	.string "{JPN}ポケモンを もちきれません!\pボックスも いっぱいで\nてんそう できません$"
+	.string "There's no more room for POKéMON!\p"
+	.string "The POKéMON BOXES are full and\n"
+	.string "can't accept any more!$"
 
 gText_NicknameThisPokemon::
-	.string "{JPN}{STR_VAR_1}に\nニックネームを つけますか?$"
+	.string "Do you want to give a nickname to\n"
+	.string "this {STR_VAR_1}?$"

@@ -124,10 +124,10 @@ static const u16 sListWindow_Pal[] = INCGFX_U16("graphics/pokenav/match_call/lis
 static const u16 sPokeball_Pal[] = INCGFX_U16("graphics/pokenav/match_call/pokeball.pal", ".gbapal");
 static const u32 sPokeball_Gfx[] = INCGFX_U32("graphics/pokenav/match_call/pokeball.png", ".4bpp.smol");
 
-static const u8 gText_NumberRegistered[] = _("{JPN}とうろく にんずう");
-static const u8 gText_NumberOfBattles[] = _("{JPN}たいせん かいすう");
-static const u8 gText_TrainerCloseBy[] = _("{JPN}ちかくに いるみたいだから\nちょくせつ あって はなそう!");
-static const u8 gText_Unknown[] = _("{JPN}ふめい");
+static const u8 gText_NumberRegistered[] = _("No. registered");
+static const u8 gText_NumberOfBattles[] = _("No. of battles");
+static const u8 gText_TrainerCloseBy[] = _("That TRAINER is close by.\nTalk to the TRAINER in person!");
+static const u8 gText_Unknown[] = _("UNKNOWN");
 
 static const struct BgTemplate sMatchCallBgTemplates[3] =
 {
@@ -204,13 +204,13 @@ static const struct WindowTemplate sMatchCallInfoBoxWindowTemplate =
 
 static const u8 *const sMatchCallOptionTexts[MATCH_CALL_OPTION_COUNT] =
 {
-    [MATCH_CALL_OPTION_CALL]   = COMPOUND_STRING("{JPN}よびだし"),
-    [MATCH_CALL_OPTION_CHECK]  = COMPOUND_STRING("{JPN}しょうさい"),
-    [MATCH_CALL_OPTION_CANCEL] = COMPOUND_STRING("{JPN}やめる")
+    [MATCH_CALL_OPTION_CALL]   = COMPOUND_STRING("CALL"),
+    [MATCH_CALL_OPTION_CHECK]  = COMPOUND_STRING("CHECK"),
+    [MATCH_CALL_OPTION_CANCEL] = COMPOUND_STRING("CANCEL")
 };
 
 // The series of 5 dots that appear when someone is called with Match Call
-static const u8 sText_CallingDots[] = _("{JPN}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・\p");
+static const u8 sText_CallingDots[] = _("·{PAUSE 4}·{PAUSE 4}·{PAUSE 4}·{PAUSE 4}·\p");
 
 static const struct WindowTemplate sCallMsgBoxWindowTemplate =
 {
@@ -1005,7 +1005,7 @@ static void PrintNumberOfBattles(u16 windowId)
 static void PrintMatchCallInfoLabel(u16 windowId, const u8 *str, int top)
 {
     int y = top * 16 + 1;
-    AddTextPrinterParameterized(windowId, FONT_NARROW, str, 22, y, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(windowId, FONT_NARROW, str, 2, y, TEXT_SKIP_DRAW, NULL);
 }
 
 static void PrintMatchCallInfoNumber(u16 windowId, const u8 *str, int top)
@@ -1026,7 +1026,7 @@ static void PrintMatchCallLocation(struct Pokenav_MatchCallGfx *gfx, int delta)
     else
         StringCopy(mapName, gText_Unknown);
 
-    x = GetStringRightAlignXOffset(FONT_NARROW, mapName, 86);
+    x = GetStringCenterAlignXOffset(FONT_NARROW, mapName, 88);
     FillWindowPixelBuffer(gfx->locWindowId, PIXEL_FILL(1));
     AddTextPrinterParameterized(gfx->locWindowId, FONT_NARROW, mapName, x, 1, 0, NULL);
 }

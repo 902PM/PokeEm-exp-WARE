@@ -125,52 +125,99 @@ MagmaHideout_4F_EventScript_Tabitha::
 	end
 
 MagmaHideout_4F_Text_Grunt11Intro:
-	.string "{JPN}オレも グラードンを みたいのに\nまだ シッポすら みせて もらえなくて\pイライラ してるんだ……\pあっ!\nグラードンのこと いっちゃった!$"
+	.string "I want to see GROUDON, too, but they\n"
+	.string "won't let me see even its tail…\p"
+	.string "It's got me feeling really frustrated.\p"
+	.string "Oh, no!\n"
+	.string "I blabbed about GROUDON!$"
 
 MagmaHideout_4F_Text_Grunt11Defeat:
-	.string "{JPN}やっぱり れいせいな きもちを\nうしなって いたら かてないな……$"
+	.string "I guess it's impossible to win if one\n"
+	.string "doesn't have a calm mind…$"
 
 MagmaHideout_4F_Text_Grunt11PostBattle:
-	.string "{JPN}そういえば グラードンには\nシッポなんて あるんだろうか……?$"
+	.string "I wonder if GROUDON even has a tail?$"
 
 MagmaHideout_4F_Text_Grunt12Intro:
-	.string "{JPN}ふはは もうすぐ! もうすぐだ!\nオレたちの もくてきが じつげん する!$"
+	.string "Fuhahaha!\n"
+	.string "Soon! Very soon!\l"
+	.string "Our grand objective will be achieved!$"
 
 MagmaHideout_4F_Text_Grunt12Defeat:
-	.string "{JPN}ぐうう ここまで きていながら!$"
+	.string "Grrr…\n"
+	.string "I've come so far, but now this?$"
 
 MagmaHideout_4F_Text_Grunt12PostBattle:
-	.string "{JPN}マツブサさまー!\nしんにゅうしゃが そっちにー!$"
+	.string "MAXIE, sir!\n"
+	.string "An intruder is headed your way!$"
 
 MagmaHideout_4F_Text_Grunt13Intro:
-	.string "{JPN}まだまだー!\nかんたんには おくへ いかせない!$"
+	.string "You're not finished yet!\n"
+	.string "You're not getting by me easily!$"
 
 MagmaHideout_4F_Text_Grunt13Defeat:
-	.string "{JPN}オレって たおすの かんたん だった?$"
+	.string "Was I that easy to knock down?$"
 
 MagmaHideout_4F_Text_Grunt13PostBattle:
-	.string "{JPN}も もう ひとしょうぶ…… がくっ$"
+	.string "C-come on, one more match…$"
 
 MagmaHideout_4F_Text_TabithaIntro:
-	.string "{JPN}ウヒョ!\nここまで きたんだから おしえて やろう\pそうさ このさきには\nグラードンが ねむって いるのさ!\pマツブサさまは たったいま\nグラードンの ところへ いった!\pもうすぐ ねむりから めをさますぞ!\nウヒョ! ウヒョヒョ!$"
+	.string "Hehehe!\n"
+	.string "You made it this far, so I'll tell you!\p"
+	.string "That's right!\n"
+	.string "Up ahead, GROUDON is sleeping!\p"
+	.string "MAXIE went to GROUDON just seconds\n"
+	.string "ago!\p"
+	.string "It's going to awaken real soon!\n"
+	.string "Hehe! Hehehe!$"
 
 MagmaHideout_4F_Text_TabithaDefeat:
-	.string "{JPN}やられちまったい…… ウヒョ$"
+	.string "Taken down again…\n"
+	.string "Hehe…$"
 
 MagmaHideout_4F_Text_TabithaPostBattle:
-	.string "{JPN}……と こんな ぐあいに おまえと\nあそんで やっている あいだに\lマツブサさまが グラードンを…… ウヒョ$"
+	.string "…And while you wasted time with me,\n"
+	.string "MAXIE should have awakened GROUDON…$"
 
 MagmaHideout_4F_Text_MaxieAwakenGroudon:
-	.string "{JPN}マツブサ『マグマに ねむる グラードンよ\nなにをしても めざめなかった おまえが\lもとめて いたのは あいいろのたま……\pそうなんだろう?\pさあ ここに もってきて やったぞ\nこの かがやきで めを さませ!\pそして ほんとうの ちからを\nわたしに みせて おくれ!$"
+	.string "MAXIE: GROUDON…\p"
+	.string "Nothing could awaken you from your\n"
+	.string "sleep bathed in magma…\p"
+	.string "This BLUE ORB is what you sought.\n"
+	.string "Wasn't it?\p"
+	.string "I have brought you the BLUE ORB.\n"
+	.string "Let its shine awaken you!\p"
+	.string "And show me…\n"
+	.string "Show me the full extent of your power!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
-	.string "{JPN}マツブサ『……グラードン!\nいったい どうしたと いうんだ!?\pあいいろのたまでは だめだと いうのか?\pグラードンよ!\nどこへ きえて しまったんだ……$"
+	.string "MAXIE: GROUDON!\n"
+	.string "What's wrong?\p"
+	.string "Wasn't the BLUE ORB the key?\p"
+	.string "GROUDON!\n"
+	.string "Where have you gone…$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "{JPN}マツブサ『おまえか!\pあっちでも こっちでも ちょこちょこと\nうろつき まわって いたようだが\pなるほど おまえが なにか\nこざいくを していたんだな……!$"
+	.string "MAXIE: Oh, so it was you?\p"
+	.string "I've seen you poking around uninvited\n"
+	.string "here and there…\p"
+	.string "I get it now!\n"
+	.string "You must have pulled a cheap stunt!$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "{JPN}おまえは なぜ そんなに\nポケモンを うまく あつかえるのだ……$"
+	.string "What makes you so adept at handling\n"
+	.string "POKéMON?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "{JPN}マツブサ『グラードンが にげだしたの には\nなにか わけがある……\lそう いいたいの だろう?\p…… …… ……\n…… …… ……\pふん……\nそれぐらい わたしも わかっていたさ\pグラードンが いなくなって しまえば\nもう こんな やまに ようはない\pわたしは グラードンを おいかけるから\nおまえとも ここで おわかれだな!$"
+	.string "MAXIE: There has to be some reason\n"
+	.string "why GROUDON fled…\p"
+	.string "That's what you're trying to say,\n"
+	.string "aren't you?\p"
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Humph…\n"
+	.string "You think I didn't know that?\p"
+	.string "With GROUDON gone, there is no longer\n"
+	.string "any need for this blasted volcano.\p"
+	.string "I am going after GROUDON, so this\n"
+	.string "is where we part!$"

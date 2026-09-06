@@ -30,7 +30,7 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown::
 	setobjectxyperm LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, 13, 3
 	end
 
-@ 未使用。MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast のコメントを参照。
+@ Functionally unused. See comment on MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast
 MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardRight::
 	setobjectxyperm LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, 14, 2
 	end
@@ -245,8 +245,8 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsWest::
 	release
 	end
 
-@ プログラマーのミスにより使用されていません。スイッチ後に動作は処理されます（上記参照）。
-@ VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE が絶対に 3 になることはありません。
+@ Functionally unused by mistake. The movement is handled anyway after the switch (see above)
+@ This also means VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE can never be 3
 MossdeepCity_SpaceCenter_1F_EventScript_MoveGruntFromStairsEast::
 	applymovement LOCALID_SPACE_CENTER_1F_STAIR_GRUNT, MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast
 	waitmovement 0
@@ -260,15 +260,14 @@ MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsWest:
 	unlock_facing_direction
 	step_end
 
-@ 未使用。上記参照。
+@ Functionally unused. See above
 MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairsEast:
 	lock_facing_direction
 	walk_right
 	unlock_facing_direction
 	step_end
 
-@ 本来はプレイヤーが北を向いている場合のみを処理するはずでしたが、
-@ プログラムミス（あるいは手違いで）東を向いている場合も処理するようになっています。
+@ This was meant to only handle the player facing North, but by mistake(?) it also handles the player facing East
 MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 	face_left
 	lock_facing_direction
@@ -277,85 +276,149 @@ MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 	step_end
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent:
-	.string "{JPN}もうすぐ ロケットが はっしゃ するぞ!$"
+	.string "The rocket's launch is imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber:
-	.string "{JPN}ロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!$"
+	.string "The rocket launched safely!\n"
+	.string "That's successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent:
-	.string "{JPN}こんな さわぎの とちゅう だけど……\pもうすぐ ロケットが はっしゃ するぞ!$"
+	.string "I know that things are a little\n"
+	.string "haywire right now, but…\p"
+	.string "The rocket's launch is imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber:
-	.string "{JPN}こんな さわぎの とちゅう だけど……\pロケットが はっしゃ したよ!\nこれで {STR_VAR_1}かい うちあげ せいこうだ!$"
+	.string "I know that things are a little\n"
+	.string "haywire right now, but…\p"
+	.string "The rocket launched safely!\n"
+	.string "That's successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
-	.string "{JPN}ロケットを はっしゃ するには\n1パーセントの ミスも ゆるされない\p99パーセント だいじょうぶ でも\n1パーセント ダメなら\lすべてが ダメになる きびしい ものだ\pそれでも やりとげようと するのは\nそこに ロマンが つまっている からだな$"
+	.string "A rocket launch demands perfection.\n"
+	.string "Not even a 1% margin of error is allowed.\p"
+	.string "Even if it's 99% okay, the whole thing\n"
+	.string "is useless if 1% happens to be no good.\p"
+	.string "Despite that, we never stop trying.\n"
+	.string "Why? It's a dream that never ends.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "{JPN}マグマだんの やつらが\nこの うちゅうセンターを ねらっている\pだが そんなこと ぐらいで\nロケットの はっしゃを\lやめるわけには いかないんだ!$"
+	.string "Those MAGMA thugs have their sights\n"
+	.string "set on our SPACE CENTER.\p"
+	.string "But we can't allow anything that minor\n"
+	.string "to interfere with our rocket launch!$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
-	.string "{JPN}かいがんを さんぽ していて\nこれを みつけたんだけど\lぼくは いらないから きみに あげる!$"
+	.string "I was taking a stroll down the beach\n"
+	.string "when I found this.\p"
+	.string "It's not anything I need, so you can\n"
+	.string "have it.$"
 
 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
-	.string "{JPN}むかしから ホウエンちほうは\nいんせきの おおい ばしょ として\lゆうめい なんだよね$"
+	.string "The HOENN region has been famous for \n"
+	.string "its meteor showers for a long time.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "{JPN}マグマだんに ロケットねんりょうを\nうばわれる わけには いかない!\pでも かいがんで みつけた このいしは\nきみに あげるよ!$"
+	.string "TEAM MAGMA can't be allowed to steal\n"
+	.string "the rocket fuel.\p"
+	.string "Oh, by the way, you can have this stone\n"
+	.string "I found on the beach.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
-	.string "{JPN}マグマだんを おっぱらわなきゃ\nかいがんの さんぽ どころじゃないね!$"
+	.string "With TEAM MAGMA around, I guess\n"
+	.string "strolls on the beach aren't safe.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
-	.string "{JPN}ひとに よっては\nポケモンは うちゅうから やってきた!\lって いうよね! ほんとう かなー？$"
+	.string "Some people claim that POKéMON came\n"
+	.string "from space. Could it be true?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "{JPN}マグマだん なんて\nアクアだんが やっつければ いいのよ!\pでも そうすると こんどは\nアクアだんが おおきなかおを するのよね$"
+	.string "TEAM AQUA should take care of\n"
+	.string "TEAM MAGMA!\p"
+	.string "But if they did that, TEAM AQUA will\n"
+	.string "become bold and brazen, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
-	.string "{JPN}でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pたまげた もん だわい$"
+	.string "A giant chunk of metal bursts through\n"
+	.string "the skies and flies into space…\p"
+	.string "It boggles my mind!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
-	.string "{JPN}でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pそんな わしのゆめを ジャマする\nマグマだんめ! ぬぬぬ ゆるさん!$"
+	.string "A giant chunk of metal bursts through\n"
+	.string "the skies and flies into space…\p"
+	.string "But TEAM MAGMA wants to spoil\n"
+	.string "that dream of mine!\p"
+	.string "I'm not having any of that!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "{JPN}ダイゴ『{PLAYER}{KUN} そこにある\nよこくじょうは もう よんだかい？\pマグマだんは このしまに ある\nロケットねんりょうを ねらっている!\pなにに つかうのか しらないけど\nかれらに わたす わけには いかないよ!\pボクは もうすこし ここで\nみはって いるから きみは まちでも\lけんぶつ してきたら どうかな$"
+	.string "STEVEN: {PLAYER}{KUN}, have you read that\n"
+	.string "proclamation already?\p"
+	.string "TEAM MAGMA is coming after the rocket\n"
+	.string "fuel on this island.\p"
+	.string "I don't know what they'd need it for,\n"
+	.string "but they can't be allowed to take it.\p"
+	.string "I'll keep an eye on things for\n"
+	.string "a while longer.\p"
+	.string "In the meantime, why don't you go\n"
+	.string "check out the town?$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "{JPN}やくそく どおり ロケットねんりょうを\nちょうだいしに きたわよ!$"
+	.string "As promised, we've come for\n"
+	.string "the rocket fuel!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "{JPN}ねんりょうぎれ……$"
+	.string "Ran out of fuel…$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
-	.string "{JPN}わたしに かった ぐらいで\nちょうしに のってちゃ ダメよ!$"
+	.string "Don't think you're on a roll just\n"
+	.string "because you've beaten me!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
-	.string "{JPN}ちゃんと よこく してから きたんだ!\nオレたちゃ ひきょうものじゃ ないぜ!$"
+	.string "We gave you fair warning!\n"
+	.string "There's nothing sneaky about us!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
-	.string "{JPN}うーむ…… ひきょうな てを\nつかえば よかった……$"
+	.string "Grrr…\n"
+	.string "We should've used sneaky treachery…$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
-	.string "{JPN}わかったよ こんど くるときは\nいきなり くるように するよ……$"
+	.string "Okay, I get it already! The next time,\n"
+	.string "we'll come unannounced.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "{JPN}うちゅうセンターに ちょぞう してある\nロケットの ねんりょうは\lぜんぶ オレたちが いただいて いくぜ!$"
+	.string "The rocket fuel the SPACE CENTER has\n"
+	.string "in storage--that's what we're after.\p"
+	.string "We mean to take every last bit of it!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "{JPN}コップいっぱいで いいから\nねんりょう くれない？$"
+	.string "Please, can you spare some fuel?\n"
+	.string "Even a chintzy cup will do!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "{JPN}ねんりょうの つかいみち？\nそんなこと オレは しらん!\l2かいに いる リーダーに きいてくれ!$"
+	.string "What are we going to do with\n"
+	.string "the rocket fuel?\p"
+	.string "How would I know?\n"
+	.string "Ask our leader upstairs!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "{JPN}リーダーから だれも ここを とおすな\nって いわれてるんだよ!$"
+	.string "Our leader said no one, but no one,\n"
+	.string "gets past me!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
-	.string "{JPN}あっ あっ あっ$"
+	.string "Ack! Ack! Aaack!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "{JPN}リーダーには オレが さいごまで\nもちばを はなれなかった って\lいっといて くれよ!$"
+	.string "Please, tell our leader that\n"
+	.string "I never abandoned my post.\l"
+	.string "That I stayed to the bitter end…$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
-	.string "{JPN}これは……\nはんこう よこくじょう？\p「うちゅうセンターの みなさん\n いかが おすごしで しょうか\p ロケットの ねんりょうは\n まもなく われわれが いただきます\l イヤだと いっても ムダなのでーす\p もっと りくちを!\n              マグマだん$"
+	.string "This is…\n"
+	.string "An intent-to-steal notice?\p"
+	.string "“To the staff of the SPACE CENTER:\n"
+	.string "How are you? We are doing fine.\p"
+	.string "“We will soon visit you to take your\n"
+	.string "rocket fuel.\p"
+	.string "“Please don't try to stop us.\n"
+	.string "We will take the fuel no matter what.\p"
+	.string "“Let there be more land!\n"
+	.string "                                          TEAM MAGMA”$"

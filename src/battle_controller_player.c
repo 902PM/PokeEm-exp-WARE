@@ -92,9 +92,6 @@ static void Task_UpdateLvlInHealthbox(u8);
 static void PrintLinkStandbyMsg(void);
 
 static void ReloadMoveNames(enum BattlerId battler);
-static void RefreshMoveSelectionAfterGimmickChange(enum BattlerId battler);
-static bool32 TryToggleRequestedGimmick(enum BattlerId battler, enum Gimmick gimmick);
-static bool32 TryToggleMegaOrZMoveGimmick(enum BattlerId battler, enum Move move);
 static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId battlerDef);
 static u32 CheckTargetTypeEffectiveness(enum BattlerId battler);
 static void MoveSelectionDisplayMoveEffectiveness(u32 foeEffectiveness, enum BattlerId battler);
@@ -512,8 +509,7 @@ void HandleInputChooseTarget(enum BattlerId battler)
                     break;
                 }
 
-                if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
-                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                if (!CanTargetBattler(battler, gMultiUsePlayerCursor, move)
                  || (moveTarget == TARGET_OPPONENT && IsOnPlayerSide(gMultiUsePlayerCursor)))
                     validTarget = FALSE;
 
@@ -569,8 +565,7 @@ void HandleInputChooseTarget(enum BattlerId battler)
                 if (B_SHOW_EFFECTIVENESS)
                     MoveSelectionDisplayMoveEffectiveness(CheckTypeEffectiveness(battler, gMultiUsePlayerCursor), battler);
 
-                if (gAbsentBattlerFlags & (1u << gMultiUsePlayerCursor)
-                 || !CanTargetBattler(battler, gMultiUsePlayerCursor, move)
+                if (!CanTargetBattler(battler, gMultiUsePlayerCursor, move)
                  || (moveTarget == TARGET_OPPONENT && IsOnPlayerSide(gMultiUsePlayerCursor)))
                     i = 0;
             } while (i == 0);
@@ -867,10 +862,6 @@ void HandleInputChooseMove(enum BattlerId battler)
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
-    else if (!gBattleStruct->zmove.viewing && !gBattleStruct->descriptionSubmenu
-          && JOY_NEW(SELECT_BUTTON) && TryToggleRequestedGimmick(battler, GIMMICK_DYNAMAX))
-    {
-    }
     else if (B_MOVE_REARRANGEMENT_IN_BATTLE < GEN_4 && JOY_NEW(SELECT_BUTTON) && !gBattleStruct->zmove.viewing && !gBattleStruct->descriptionSubmenu)
     {
         if (gNumberOfMovesToChoose > 1 && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
@@ -908,86 +899,25 @@ void HandleInputChooseMove(enum BattlerId battler)
             MoveSelectionDisplayMoveType(battler);
         }
     }
-    else if (JOY_NEW(R_BUTTON) && TryToggleMegaOrZMoveGimmick(battler, moveInfo->moves[gMoveSelectionCursor[battler]]))
-    {
-    }
     else if (JOY_NEW(B_MOVE_DESCRIPTION_BUTTON) &&
         !(B_MOVE_DESCRIPTION_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A))
     {
         gBattleStruct->descriptionSubmenu = TRUE;
         TryMoveSelectionDisplayMoveDescription(battler);
     }
-    else if (JOY_NEW(START_BUTTON) && TryToggleRequestedGimmick(battler, GIMMICK_TERA))
+    else if (JOY_NEW(START_BUTTON))
     {
+        if (gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_NONE
+            && !HasTrainerUsedGimmick(battler, gBattleStruct->gimmick.usableGimmick[battler])
+            && !(gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_Z_MOVE
+                 && GetUsableZMove(battler, moveInfo->moves[gMoveSelectionCursor[battler]]) == MOVE_NONE))
+        {
+            gBattleStruct->gimmick.playerSelect ^= 1;
+            ReloadMoveNames(battler);
+            ChangeGimmickTriggerSprite(gBattleStruct->gimmick.triggerSpriteId, gBattleStruct->gimmick.playerSelect);
+            PlaySE(SE_SELECT);
+        }
     }
-}
-
-static void RefreshMoveSelectionAfterGimmickChange(enum BattlerId battler)
-{
-    gBattleStruct->zmove.viewing = FALSE;
-    MoveSelectionDestroyCursorAt(battler);
-    MoveSelectionDisplayMoveNames(battler);
-    MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
-    if (B_SHOW_EFFECTIVENESS)
-        MoveSelectionDisplayMoveEffectiveness(CheckTargetTypeEffectiveness(battler), battler);
-    MoveSelectionDisplayPPNumber(battler);
-    MoveSelectionDisplayMoveType(battler);
-}
-
-static bool32 TryToggleRequestedGimmick(enum BattlerId battler, enum Gimmick gimmick)
-{
-    bool32 selectGimmick;
-
-    if (!CanActivateGimmick(battler, gimmick))
-        return FALSE;
-
-    selectGimmick = !(gBattleStruct->gimmick.playerSelect
-                   && gBattleStruct->gimmick.usableGimmick[battler] == gimmick);
-
-    // Shortcut buttons choose one pending gimmick at a time; activation still uses the existing battle checks.
-    gBattleStruct->gimmick.usableGimmick[battler] = gimmick;
-    gBattleStruct->gimmick.playerSelect = selectGimmick;
-    if (gimmick == GIMMICK_Z_MOVE)
-    {
-        struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-        AssignUsableZMoves(battler, moveInfo->moves);
-        gBattleStruct->zmove.viable = (gBattleStruct->zmove.possibleZMoves[battler] & (1u << gMoveSelectionCursor[battler])) != 0;
-    }
-    DestroyGimmickTriggerSprite();
-    CreateGimmickTriggerSprite(battler);
-    if (gBattleStruct->gimmick.triggerSpriteId != 0xFF)
-        ChangeGimmickTriggerSprite(gBattleStruct->gimmick.triggerSpriteId, selectGimmick);
-    if (gimmick == GIMMICK_Z_MOVE && selectGimmick)
-        ReloadMoveNames(battler);
-    else
-        RefreshMoveSelectionAfterGimmickChange(battler);
-    PlaySE(SE_SELECT);
-
-    return TRUE;
-}
-
-static bool32 TryToggleMegaOrZMoveGimmick(enum BattlerId battler, enum Move move)
-{
-    static const enum Gimmick sMegaOrZMoveGimmicks[] =
-    {
-        GIMMICK_MEGA,
-        GIMMICK_ULTRA_BURST,
-        GIMMICK_Z_MOVE,
-    };
-
-    for (u32 i = 0; i < ARRAY_COUNT(sMegaOrZMoveGimmicks); i++)
-    {
-        enum Gimmick gimmick = sMegaOrZMoveGimmicks[i];
-
-        if (!CanActivateGimmick(battler, gimmick))
-            continue;
-        if (gimmick == GIMMICK_Z_MOVE && GetUsableZMove(battler, move) == MOVE_NONE)
-            continue;
-
-        return TryToggleRequestedGimmick(battler, gimmick);
-    }
-
-    return FALSE;
 }
 
 static void ReloadMoveNames(enum BattlerId battler)
@@ -999,7 +929,14 @@ static void ReloadMoveNames(enum BattlerId battler)
     }
     else
     {
-        RefreshMoveSelectionAfterGimmickChange(battler);
+        gBattleStruct->zmove.viewing = FALSE;
+        MoveSelectionDestroyCursorAt(battler);
+        MoveSelectionDisplayMoveNames(battler);
+        MoveSelectionCreateCursorAt(gMoveSelectionCursor[battler], 0);
+        if (B_SHOW_EFFECTIVENESS)
+            MoveSelectionDisplayMoveEffectiveness(CheckTargetTypeEffectiveness(battler), battler);
+        MoveSelectionDisplayPPNumber(battler);
+        MoveSelectionDisplayMoveType(battler);
     }
 }
 
@@ -1353,12 +1290,12 @@ static void Intro_TryShinyAnimShowHealthbox(enum BattlerId battler)
     bool32 bgmRestored = FALSE;
     bool32 battlerAnimsDone = FALSE;
 
-    // Start shiny animation if applicable for 1st Pokemon
+    // Start shiny animation if applicable for 1st Pokémon
     if (!gBattleSpritesDataPtr->healthBoxesData[battler].triedShinyMonAnim
      && !gBattleSpritesDataPtr->healthBoxesData[battler].ballAnimActive)
         TryShinyAnimation(battler, GetBattlerMon(battler));
 
-    // Start shiny animation if applicable for 2nd Pokemon
+    // Start shiny animation if applicable for 2nd Pokémon
     if (!gBattleSpritesDataPtr->healthBoxesData[GetPartnerBattler(battler)].triedShinyMonAnim
      && !gBattleSpritesDataPtr->healthBoxesData[GetPartnerBattler(battler)].ballAnimActive)
         TryShinyAnimation(GetPartnerBattler(battler), GetBattlerMon(GetPartnerBattler(battler)));
@@ -1826,9 +1763,9 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     }
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[] = _("{JPN}ぶんるい");
-    u8 pwr_desc[] = _("{JPN}いりょく");
-    u8 acc_desc[] = _("{JPN}めいちゅう");
+    u8 cat_desc[7] = _("CAT: ");
+    u8 pwr_desc[7] = _("PWR: ");
+    u8 acc_desc[7] = _("ACC: ");
     u8 cat_start[] = _("{CLEAR_TO 3}");
     u8 pwr_start[] = _("{CLEAR_TO 56}");
     u8 acc_start[] = _("{CLEAR_TO 108}");
@@ -2047,8 +1984,8 @@ static void HandleChooseActionAfterDma3(enum BattlerId battler)
         {
             if (DEBUG_AI_DELAY_TIMER)
             {
-                static const u8 sFramesText[] = _("{JPN}しこうフレーム\n");
-                static const u8 sCyclesText[] = _("{JPN}サイクル");
+                static const u8 sFramesText[] = _(" frames thinking\n");
+                static const u8 sCyclesText[] = _(" cycles");
                 ConvertIntToDecimalStringN(gDisplayedStringBattle, gBattleStruct->aiDelayFrames, STR_CONV_MODE_RIGHT_ALIGN, 3);
                 u8* end = StringAppend(gDisplayedStringBattle, sFramesText);
                 ConvertIntToDecimalStringN(end, gBattleStruct->aiDelayCycles, STR_CONV_MODE_RIGHT_ALIGN, 8);
@@ -2083,20 +2020,20 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     enum BattlerId partner = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
     if (B_SHOW_PARTNER_TARGET && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && IsBattlerAlive(partner))
     {
-        StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なかまの わざ:\n"));
+        StringCopy(gStringVar1, COMPOUND_STRING("Partner will use:\n"));
         enum Move move = GetBattlerChosenMove(partner);
         StringAppend(gStringVar1, GetMoveName(move));
         enum MoveTarget moveTarget = GetBattlerMoveSelectionTargetType(partner, move);
         if (moveTarget == TARGET_SELECTED || moveTarget == TARGET_SMART)
         {
             if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_LEFT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" ー{UP_ARROW}"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_OPPONENT_RIGHT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}ー"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_LEFT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}ー"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
             else if (gAiBattleData->chosenTarget[partner] == B_POSITION_PLAYER_RIGHT)
-                StringAppend(gStringVar1, COMPOUND_STRING(" ー{DOWN_ARROW}"));
+                StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
         }
         else if (moveTarget == TARGET_USER_AND_ALLY)
         {
@@ -2171,8 +2108,8 @@ void PlayerHandleChooseMove(enum BattlerId battler)
     {
         struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
-        gBattleStruct->gimmick.playerSelect = FALSE;
         InitMoveSelectionsVarsAndStrings(battler);
+        gBattleStruct->gimmick.playerSelect = FALSE;
         TryToAddMoveInfoWindow();
 
         AssignUsableZMoves(battler, moveInfo->moves);

@@ -100,10 +100,10 @@ static void InitPlayerTrainerId(void)
 // L=A isnt set here for some reason.
 static void SetDefaultOptions(void)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
+    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
-    gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
-    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET;
+    gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
+    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
 }
@@ -146,18 +146,6 @@ void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
     SetDefaultOptions();
-}
-
-void SetExpansionTestFlags(void)
-{
-    // Verification ROM convenience flags. Do not enable flags that disable
-    // normal play features or force shiny behavior here.
-    FlagSet(FLAG_EXPANSION_DYNAMAX_BATTLE);
-    FlagSet(FLAG_EXPANSION_TERA_ORB_CHARGED);
-    FlagSet(FLAG_EXPANSION_TERA_ORB_NO_COST);
-    FlagSet(FLAG_EXPANSION_EXP_SHARE);
-    FlagSet(FLAG_EXPANSION_DEXNAV_DISPLAY);
-    FlagSet(FLAG_EXPANSION_DEXNAV_DETECT);
 }
 
 void ResetMenuAndMonGlobals(void)
@@ -246,7 +234,6 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
-    SetExpansionTestFlags();
 }
 
 static void ResetMiniGamesRecords(void)

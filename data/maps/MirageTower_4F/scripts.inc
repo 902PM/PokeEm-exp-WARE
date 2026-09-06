@@ -59,14 +59,20 @@ MirageTower_4F_EventScript_CollapseMirageTower::
 	end
 
 MirageTower_4F_Text_TakeRootFossil:
-	.string "{JPN}ねっこのカセキを みつけた!\pこの カセキを とると\nあしもとが くずれて しまいそうだ……\pねっこのカセキを とりますか?$"
+	.string "You found the ROOT FOSSIL.\p"
+	.string "If this FOSSIL is taken, the ground\n"
+	.string "around it will likely crumble away…\p"
+	.string "Take the ROOT FOSSIL anyway?$"
 
 MirageTower_4F_Text_LeftRootFossilAlone:
-	.string "{JPN}{PLAYER}は ねっこのカセキを\nそのままに しておいた$"
+	.string "{PLAYER} left the ROOT FOSSIL alone.$"
 
 MirageTower_4F_Text_TakeClawFossil:
-	.string "{JPN}ツメのカセキを みつけた!\pこの カセキを とると\nあしもとが くずれて しまいそうだ……\pツメのカセキを とりますか?$"
+	.string "You found the CLAW FOSSIL.\p"
+	.string "If this FOSSIL is taken, the ground\n"
+	.string "around it will likely crumble away…\p"
+	.string "Take the CLAW FOSSIL anyway?$"
 
 MirageTower_4F_Text_LeaveClawFossilAlone:
-	.string "{JPN}{PLAYER}は ツメのカセキを\nそのままに しておいた$"
+	.string "{PLAYER} left the CLAW FOSSIL alone.$"
 

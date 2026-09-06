@@ -18,7 +18,7 @@ CeladonCity_Hotel_EventScript_BeautyBrother::
 	end
 
 CeladonCity_Hotel_Text_ThisHotelIsForPeople::
-	.string "POKEMON?\n"
+	.string "POKéMON?\n"
 	.string "No, this is a hotel for people.\p"
 	.string "We're full up, unfortunately.$"
 

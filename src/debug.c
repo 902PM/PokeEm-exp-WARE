@@ -220,7 +220,7 @@ struct DebugMenuListData
 {
     const struct DebugMenuOption *subMenuItems[DEBUG_MAX_SUB_MENU_LEVELS];
     struct ListMenuItem listItems[DEBUG_MAX_MENU_ITEMS + 1];
-    u8 itemNames[DEBUG_MAX_MENU_ITEMS + 1][64];
+    u8 itemNames[DEBUG_MAX_MENU_ITEMS + 1][26];
     enum DebugMenuTypes menuType:2;
     u32 padding:30;
     s16 data[8];
@@ -441,63 +441,63 @@ static const struct DebugSelection sPartnerSelection;
 
 // Text
 // General
-static const u8 sDebugText_Arrow[] =          _("{CLEAR_TO 110}{RIGHT_ARROW}");
-static const u8 sDebugText_True[] =          _("{JPN}オン");
-static const u8 sDebugText_False[] =         _("{JPN}オフ");
-static const u8 sDebugText_Colored_True[] =  _("{JPN}{COLOR GREEN}オン");
-static const u8 sDebugText_Colored_False[] = _("{JPN}{COLOR RED}オフ");
+static const u8 sDebugText_Arrow[] =         _("{CLEAR_TO 110}{RIGHT_ARROW}");
+static const u8 sDebugText_True[] =          _("TRUE");
+static const u8 sDebugText_False[] =         _("FALSE");
+static const u8 sDebugText_Colored_True[] =  _("{COLOR GREEN}TRUE");
+static const u8 sDebugText_Colored_False[] = _("{COLOR RED}FALSE");
 static const u8 sDebugText_Dashes[] =        _("---");
 static const u8 sDebugText_Empty[] =         _("");
-static const u8 sDebugText_Continue[] =      _("{JPN}つづける");
+static const u8 sDebugText_Continue[] =      _("Continue…");
 
 //Time Menu
 
 static const u8 *const gDayNameStringsTable[WEEKDAY_COUNT] = {
-    COMPOUND_STRING("{JPN}にちようび"),
-    COMPOUND_STRING("{JPN}げつようび"),
-    COMPOUND_STRING("{JPN}かようび"),
-    COMPOUND_STRING("{JPN}すいようび"),
-    COMPOUND_STRING("{JPN}もくようび"),
-    COMPOUND_STRING("{JPN}きんようび"),
-    COMPOUND_STRING("{JPN}どようび"),
+    COMPOUND_STRING("Sunday"),
+    COMPOUND_STRING("Monday"),
+    COMPOUND_STRING("Tuesday"),
+    COMPOUND_STRING("Wednesday"),
+    COMPOUND_STRING("Thursday"),
+    COMPOUND_STRING("Friday"),
+    COMPOUND_STRING("Saturday"),
 };
 
 static const u8 *const gTimeOfDayStringsTable[TIMES_OF_DAY_COUNT] = {
-    COMPOUND_STRING("{JPN}あさ"),
-    COMPOUND_STRING("{JPN}ひる"),
-    COMPOUND_STRING("{JPN}ゆうがた"),
-    COMPOUND_STRING("{JPN}よる"),
+    COMPOUND_STRING("Morning"),
+    COMPOUND_STRING("Day"),
+    COMPOUND_STRING("Evening"),
+    COMPOUND_STRING("Night"),
 };
 
 // Follower NPC
 
 static const u8 *const gFollowerNPCStringsTable[DEBUG_FNPC_COUNT] = {
-    COMPOUND_STRING("{JPN}ユウキ"),
-    COMPOUND_STRING("{JPN}ハルカ"),
-    COMPOUND_STRING("{JPN}ダイゴ"),
-    COMPOUND_STRING("{JPN}ミツル"),
-    COMPOUND_STRING("{JPN}レッド"),
-    COMPOUND_STRING("{JPN}リーフ"),
+    COMPOUND_STRING("Brendan"),
+    COMPOUND_STRING("May"),
+    COMPOUND_STRING("Steven"),
+    COMPOUND_STRING("Wally"),
+    COMPOUND_STRING("Red"),
+    COMPOUND_STRING("Leaf"),
 };
 
 // Give Menu
-static const u8 sDebugText_PokemonShiny[] =             _("{JPN}いろちがい:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}");
-static const u8 sDebugText_IVs[] =                      _("{JPN}こたいち {STR_VAR_1}:{CLEAR_TO 90}\n{ENG}    {STR_VAR_3}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}");
-static const u8 sDebugText_EVs[] =                      _("{JPN}どりょくち {STR_VAR_1}:{CLEAR_TO 90}\n{ENG}    {STR_VAR_3}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}");
+static const u8 sDebugText_PokemonShiny[] =             _("Shiny:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}");
+static const u8 sDebugText_IVs[] =                      _("IV {STR_VAR_1}:{CLEAR_TO 90}\n    {STR_VAR_3}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}");
+static const u8 sDebugText_EVs[] =                      _("EV {STR_VAR_1}:{CLEAR_TO 90}\n    {STR_VAR_3}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}");
 // Sound Menu
-static const u8 sDebugText_Sound_SFX_ID[] =             _("{JPN}こうかおん: {STR_VAR_3}   {START_BUTTON} とめる\n{STR_VAR_1}    \n{STR_VAR_2}");
-static const u8 sDebugText_Sound_Music_ID[] =           _("{JPN}おんがく: {STR_VAR_3}   {START_BUTTON} とめる\n{STR_VAR_1}    \n{STR_VAR_2}");
+static const u8 sDebugText_Sound_SFX_ID[] =             _("SFX ID: {STR_VAR_3}   {START_BUTTON} Stop\n{STR_VAR_1}    \n{STR_VAR_2}");
+static const u8 sDebugText_Sound_Music_ID[] =           _("Music ID: {STR_VAR_3}   {START_BUTTON} Stop\n{STR_VAR_1}    \n{STR_VAR_2}");
 
 const u8 *const gText_DigitIndicator[] =
 {
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+1{RIGHT_ARROW}        "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+10{RIGHT_ARROW}       "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+100{RIGHT_ARROW}      "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+1000{RIGHT_ARROW}     "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+10000{RIGHT_ARROW}    "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+100000{RIGHT_ARROW}   "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+1000000{RIGHT_ARROW}  "),
-    COMPOUND_STRING("{ENG}{LEFT_ARROW}+10000000{RIGHT_ARROW} "),
+    COMPOUND_STRING("{LEFT_ARROW}+1{RIGHT_ARROW}        "),
+    COMPOUND_STRING("{LEFT_ARROW}+10{RIGHT_ARROW}       "),
+    COMPOUND_STRING("{LEFT_ARROW}+100{RIGHT_ARROW}      "),
+    COMPOUND_STRING("{LEFT_ARROW}+1000{RIGHT_ARROW}     "),
+    COMPOUND_STRING("{LEFT_ARROW}+10000{RIGHT_ARROW}    "),
+    COMPOUND_STRING("{LEFT_ARROW}+100000{RIGHT_ARROW}   "),
+    COMPOUND_STRING("{LEFT_ARROW}+1000000{RIGHT_ARROW}  "),
+    COMPOUND_STRING("{LEFT_ARROW}+10000000{RIGHT_ARROW} "),
 };
 
 static const s32 sPowersOfTen[] =
@@ -558,229 +558,229 @@ static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu_Create[] 
 
 static const struct DebugMenuOption sDebugMenu_Actions_TimeMenu[] =
 {
-    { COMPOUND_STRING("{JPN}じこくを かくにん"),         DebugAction_ExecuteScript, Debug_EventScript_TellTheTime },
-    { COMPOUND_STRING("{JPN}じかんたいを かくにん"),  DebugAction_ExecuteScript, Debug_EventScript_PrintTimeOfDay },
-    { COMPOUND_STRING("{JPN}じかんたいを かえる"),  DebugAction_OpenSubMenuFakeRTC, sDebugMenu_Actions_TimeMenu_TimesOfDay },
-    { COMPOUND_STRING("{JPN}ようびを かえる"),      DebugAction_OpenSubMenuFakeRTC, sDebugMenu_Actions_TimeMenu_Weekdays },
-    { COMPOUND_STRING("{JPN}デイリーイベント リセット"), DebugAction_TimeMenu_RedoDailyEvents },
-    { COMPOUND_STRING("{JPN}かべどけいを みる"), DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_CheckWallClock },
-    { COMPOUND_STRING("{JPN}かべどけいを あわせる"),   DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_SetWallClock },
+    { COMPOUND_STRING("Get time…"),         DebugAction_ExecuteScript, Debug_EventScript_TellTheTime },
+    { COMPOUND_STRING("Get time of day…"),  DebugAction_ExecuteScript, Debug_EventScript_PrintTimeOfDay },
+    { COMPOUND_STRING("Set time of day…"),  DebugAction_OpenSubMenuFakeRTC, sDebugMenu_Actions_TimeMenu_TimesOfDay },
+    { COMPOUND_STRING("Set weekday…"),      DebugAction_OpenSubMenuFakeRTC, sDebugMenu_Actions_TimeMenu_Weekdays },
+    { COMPOUND_STRING("Redo daily events"), DebugAction_TimeMenu_RedoDailyEvents },
+    { COMPOUND_STRING("Check wall clock…"), DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_CheckWallClock },
+    { COMPOUND_STRING("Set wall clock…"),   DebugAction_ExecuteScript, PlayersHouse_2F_EventScript_SetWallClock },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_BerryFunctions[] =
 {
-    { COMPOUND_STRING("{JPN}きのみのきを けす"),      DebugAction_BerryFunctions_ClearAll },
-    { COMPOUND_STRING("{JPN}きのみのきを みのらせる"),      DebugAction_BerryFunctions_Ready },
-    { COMPOUND_STRING("{JPN}きのみのきを そだてる"),       DebugAction_BerryFunctions_NextStage },
-    { COMPOUND_STRING("{JPN}むしを つける"), DebugAction_BerryFunctions_Pests },
-    { COMPOUND_STRING("{JPN}ざっそうを はやす"), DebugAction_BerryFunctions_Weeds },
+    { COMPOUND_STRING("Clear map trees"),      DebugAction_BerryFunctions_ClearAll },
+    { COMPOUND_STRING("Ready map trees"),      DebugAction_BerryFunctions_Ready },
+    { COMPOUND_STRING("Grow map trees"),       DebugAction_BerryFunctions_NextStage },
+    { COMPOUND_STRING("Give map trees pests"), DebugAction_BerryFunctions_Pests },
+    { COMPOUND_STRING("Give map trees weeds"), DebugAction_BerryFunctions_Weeds },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu[] =
 {
-    { COMPOUND_STRING("{JPN}つれあるきを つくる"),  DebugAction_OpenSubMenuCreateFollowerNPC, sDebugMenu_Actions_FollowerNPCMenu_Create },
-    { COMPOUND_STRING("{JPN}つれあるきを けす"), DebugAction_DestroyFollowerNPC },
+    { COMPOUND_STRING("Create Follower"),  DebugAction_OpenSubMenuCreateFollowerNPC, sDebugMenu_Actions_FollowerNPCMenu_Create },
+    { COMPOUND_STRING("Destroy Follower"), DebugAction_DestroyFollowerNPC },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
 {
-    { COMPOUND_STRING("{JPN}そらをとぶ"),              DebugAction_Util_Fly },
-    { COMPOUND_STRING("{JPN}マップワープ"),            DebugAction_Selection_Init, &sWarpSelection },
-    { COMPOUND_STRING("{JPN}てんきを かえる"),         DebugAction_Selection_Init, &sSetWeatherSelection },
-    { COMPOUND_STRING("{JPN}フォントテスト"),          DebugAction_ExecuteScript, Debug_EventScript_FontTest },
-    { COMPOUND_STRING("{JPN}じかんきのう"),            DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
-    { COMPOUND_STRING("{JPN}スタッフロールを みる"),    DebugAction_Util_WatchCredits },
-    { COMPOUND_STRING("{JPN}チートスタート"),           DebugAction_Util_CheatStart },
-    { COMPOUND_STRING("{JPN}きのみきのう"),             DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
-    { COMPOUND_STRING("{JPN}EWRAMカウンタ"),            DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
-    { COMPOUND_STRING("{JPN}つれあるきNPC"),            DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
-    { COMPOUND_STRING("{JPN}ポケモン ランダマイザー"),   DebugAction_Selection_Init, &sSpeciesGeneratorSelection },
-    { COMPOUND_STRING("{JPN}どうぐ ランダマイザー"),     DebugAction_Selection_Init, &sItemGeneratorSelection },
-    { COMPOUND_STRING("{JPN}ミツルチュートリアル"),      DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
-    { COMPOUND_STRING("{JPN}ダイゴとマルチバトル"),      DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
+    { COMPOUND_STRING("Fly to map…"),               DebugAction_Util_Fly },
+    { COMPOUND_STRING("Warp to map warp…"),         DebugAction_Selection_Init, &sWarpSelection},
+    { COMPOUND_STRING("Set weather…"),              DebugAction_Selection_Init, &sSetWeatherSelection },
+    { COMPOUND_STRING("Font Test…"),                DebugAction_ExecuteScript, Debug_EventScript_FontTest },
+    { COMPOUND_STRING("Time Functions…"),           DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
+    { COMPOUND_STRING("Watch credits…"),            DebugAction_Util_WatchCredits },
+    { COMPOUND_STRING("Cheat start"),               DebugAction_Util_CheatStart },
+    { COMPOUND_STRING("Berry Functions…"),          DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
+    { COMPOUND_STRING("EWRAM Counters…"),           DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
+    { COMPOUND_STRING("Follower NPC…"),             DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
+    { COMPOUND_STRING("Test Species Randomizer"),   DebugAction_Selection_Init, &sSpeciesGeneratorSelection },
+    { COMPOUND_STRING("Test Item Randomizer"),      DebugAction_Selection_Init, &sItemGeneratorSelection },
+    { COMPOUND_STRING("Wally Tutorial"),            DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
+    { COMPOUND_STRING("Steven Multi"),              DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_PCBag_Fill[] =
 {
-    { COMPOUND_STRING("{JPN}ボックスを すばやく うめる"),        DebugAction_PCBag_Fill_PCBoxes_Fast },
-    { COMPOUND_STRING("{JPN}ボックスを ゆっくり うめる"), DebugAction_PCBag_Fill_PCBoxes_Slow },
-    { COMPOUND_STRING("{JPN}パソコンどうぐを うめる") ,            DebugAction_PCBag_Fill_PCItemStorage },
-    { COMPOUND_STRING("{JPN}どうぐポケットを うめる"),         DebugAction_PCBag_Fill_PocketItems },
-    { COMPOUND_STRING("{JPN}ボールポケットを うめる"),    DebugAction_PCBag_Fill_PocketPokeBalls },
-    { COMPOUND_STRING("{JPN}わざマシンポケットを うめる"),          DebugAction_PCBag_Fill_PocketTMHM },
-    { COMPOUND_STRING("{JPN}きのみポケットを うめる"),       DebugAction_PCBag_Fill_PocketBerries },
-    { COMPOUND_STRING("{JPN}たいせつなものを うめる"),     DebugAction_PCBag_Fill_PocketKeyItems },
+    { COMPOUND_STRING("Fill PC Boxes Fast"),        DebugAction_PCBag_Fill_PCBoxes_Fast },
+    { COMPOUND_STRING("Fill PC Boxes Slow (LAG!)"), DebugAction_PCBag_Fill_PCBoxes_Slow },
+    { COMPOUND_STRING("Fill PC Items") ,            DebugAction_PCBag_Fill_PCItemStorage },
+    { COMPOUND_STRING("Fill Pocket Items"),         DebugAction_PCBag_Fill_PocketItems },
+    { COMPOUND_STRING("Fill Pocket Poké Balls"),    DebugAction_PCBag_Fill_PocketPokeBalls },
+    { COMPOUND_STRING("Fill Pocket TMHM"),          DebugAction_PCBag_Fill_PocketTMHM },
+    { COMPOUND_STRING("Fill Pocket Berries"),       DebugAction_PCBag_Fill_PocketBerries },
+    { COMPOUND_STRING("Fill Pocket Key Items"),     DebugAction_PCBag_Fill_PocketKeyItems },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_PCBag[] =
 {
-    { COMPOUND_STRING("{JPN}パソコンを ひらく"),           DebugAction_ExecuteScript, EventScript_PC },
-    { COMPOUND_STRING("{JPN}うめる"),               DebugAction_OpenSubMenu, sDebugMenu_Actions_PCBag_Fill },
-    { COMPOUND_STRING("{JPN}バッグを からにする"),           DebugAction_PCBag_ClearBag },
-    { COMPOUND_STRING("{JPN}ボックスを からにする"), DebugAction_PCBag_ClearBoxes },
+    { COMPOUND_STRING("Access PC"),           DebugAction_ExecuteScript, EventScript_PC },
+    { COMPOUND_STRING("Fill…"),               DebugAction_OpenSubMenu, sDebugMenu_Actions_PCBag_Fill },
+    { COMPOUND_STRING("Clear Bag"),           DebugAction_PCBag_ClearBag },
+    { COMPOUND_STRING("Clear Storage Boxes"), DebugAction_PCBag_ClearBoxes },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_EditPokemon[] =
 {
-    { COMPOUND_STRING("{JPN}じょうたいを ふよ"),    DebugAction_ExecuteScript, Debug_EventScript_InflictStatus1 },
-    { COMPOUND_STRING("{JPN}ポケモンを ひんしにする"),      DebugAction_ExecuteScript, Debug_EventScript_KoPokemon },
-    { COMPOUND_STRING("{JPN}せいかくを かえる"),  DebugAction_ExecuteScript, Debug_EventScript_SetHiddenNature },
-    { COMPOUND_STRING("{JPN}なかよしどを かえる"),     DebugAction_ExecuteScript, Debug_EventScript_SetFriendship },
-    { COMPOUND_STRING("{JPN}とくせいを かえる"),        DebugAction_ExecuteScript, Debug_EventScript_SetAbility },
+    { COMPOUND_STRING("Inflict Status1"),    DebugAction_ExecuteScript, Debug_EventScript_InflictStatus1 },
+    { COMPOUND_STRING("Faint Pokemon"),      DebugAction_ExecuteScript, Debug_EventScript_KoPokemon },
+    { COMPOUND_STRING("Set Hidden Nature"),  DebugAction_ExecuteScript, Debug_EventScript_SetHiddenNature },
+    { COMPOUND_STRING("Set Friendship"),     DebugAction_ExecuteScript, Debug_EventScript_SetFriendship },
+    { COMPOUND_STRING("Set Ability"),        DebugAction_ExecuteScript, Debug_EventScript_SetAbility },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Party[] =
 {
-    { COMPOUND_STRING("{JPN}わざおもいだし"),     DebugAction_ExecuteScript, Common_EventScript_MoveRelearner },
-    { COMPOUND_STRING("{JPN}タマゴを かえす"),       DebugAction_ExecuteScript, Debug_HatchAnEgg },
-    { COMPOUND_STRING("{JPN}てもちを かいふく"),         DebugAction_Party_HealParty },
-    { COMPOUND_STRING("{JPN}ポケモンを へんこう"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_EditPokemon },
-    { COMPOUND_STRING("{JPN}どりょくちを みる"),          DebugAction_ExecuteScript, Debug_EventScript_CheckEVs },
-    { COMPOUND_STRING("{JPN}こたいちを みる"),          DebugAction_ExecuteScript, Debug_EventScript_CheckIVs },
-    { COMPOUND_STRING("{JPN}ポケルスを つける"),       DebugAction_ExecuteScript, Debug_EventScript_GivePokerus },
-    { COMPOUND_STRING("{JPN}ポケルスを けす"),      DebugAction_Party_ClearPokerus},
-    { COMPOUND_STRING("{JPN}てもちを けす"),        DebugAction_Party_ClearParty },
-    { COMPOUND_STRING("{JPN}てもちを セット"),          DebugAction_Party_SetParty },
-    { COMPOUND_STRING("{JPN}デバッグバトルを はじめる"), DebugAction_Party_BattleSingle },
+    { COMPOUND_STRING("Move Relearner"),     DebugAction_ExecuteScript, Common_EventScript_MoveRelearner },
+    { COMPOUND_STRING("Hatch an Egg"),       DebugAction_ExecuteScript, Debug_HatchAnEgg },
+    { COMPOUND_STRING("Heal party"),         DebugAction_Party_HealParty },
+    { COMPOUND_STRING("Edit Pokemon"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_EditPokemon },
+    { COMPOUND_STRING("Check EVs"),          DebugAction_ExecuteScript, Debug_EventScript_CheckEVs },
+    { COMPOUND_STRING("Check IVs"),          DebugAction_ExecuteScript, Debug_EventScript_CheckIVs },
+    { COMPOUND_STRING("Give Pokerus"),       DebugAction_ExecuteScript, Debug_EventScript_GivePokerus },
+    { COMPOUND_STRING("Clear Pokerus"),      DebugAction_Party_ClearPokerus},
+    { COMPOUND_STRING("Clear Party"),        DebugAction_Party_ClearParty },
+    { COMPOUND_STRING("Set Party"),          DebugAction_Party_SetParty },
+    { COMPOUND_STRING("Start Debug Battle"), DebugAction_Party_BattleSingle },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Give[] =
 {
-    { COMPOUND_STRING("{JPN}どうぐを もらう"),    DebugAction_Selection_Init, &sGiveItemSelection },
-    { COMPOUND_STRING("{JPN}ポケモン かんたん"),   DebugAction_Selection_Init, &sSimplePokemonSelection },
-    { COMPOUND_STRING("{JPN}ポケモン くわしく"), DebugAction_Selection_Init, &sComplexPokemonSelection },
-    { COMPOUND_STRING("{JPN}タマゴを もらう"),          DebugAction_Selection_Init, &sEggPokemonSelection },
-    { COMPOUND_STRING("{JPN}もようがえグッズを もらう"),  DebugAction_Selection_Init, &sGiveDecorationSelection },
-    { COMPOUND_STRING("{JPN}おこづかいを さいだいにする"),         DebugAction_Give_MaxMoney },
-    { COMPOUND_STRING("{JPN}コインを さいだいにする"),         DebugAction_Give_MaxCoins },
-    { COMPOUND_STRING("{JPN}BPを さいだいにする"), DebugAction_Give_MaxBattlePoints },
-    { COMPOUND_STRING("{JPN}そだてやの タマゴ"),       DebugAction_Give_DayCareEgg },
+    { COMPOUND_STRING("Give item XYZ…"),    DebugAction_Selection_Init, &sGiveItemSelection },
+    { COMPOUND_STRING("Pokémon (Basic)"),   DebugAction_Selection_Init, &sSimplePokemonSelection },
+    { COMPOUND_STRING("Pokémon (Complex)"), DebugAction_Selection_Init, &sComplexPokemonSelection },
+    { COMPOUND_STRING("Give Egg"),          DebugAction_Selection_Init, &sEggPokemonSelection },
+    { COMPOUND_STRING("Give Decoration…"),  DebugAction_Selection_Init, &sGiveDecorationSelection },
+    { COMPOUND_STRING("Max Money"),         DebugAction_Give_MaxMoney },
+    { COMPOUND_STRING("Max Coins"),         DebugAction_Give_MaxCoins },
+    { COMPOUND_STRING("Max Battle Points"), DebugAction_Give_MaxBattlePoints },
+    { COMPOUND_STRING("Daycare Egg"),       DebugAction_Give_DayCareEgg },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Player[] =
 {
-    { COMPOUND_STRING("{JPN}なまえを へんこう"),    DebugAction_Player_Name },
-    { COMPOUND_STRING("{JPN}せいべつを かえる"),  DebugAction_Player_Gender },
-    { COMPOUND_STRING("{JPN}トレーナーIDを かえる"), DebugAction_Player_Id },
+    { COMPOUND_STRING("Player name"),    DebugAction_Player_Name },
+    { COMPOUND_STRING("Toggle gender"),  DebugAction_Player_Gender },
+    { COMPOUND_STRING("New Trainer ID"), DebugAction_Player_Id },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Scripts[] =
 {
-    { COMPOUND_STRING("{JPN}スクリプト 1"), DebugAction_ExecuteScript, Debug_EventScript_Script_1 },
-    { COMPOUND_STRING("{JPN}スクリプト 2"), DebugAction_ExecuteScript, Debug_EventScript_Script_2 },
-    { COMPOUND_STRING("{JPN}スクリプト 3"), DebugAction_ExecuteScript, Debug_EventScript_Script_3 },
-    { COMPOUND_STRING("{JPN}スクリプト 4"), DebugAction_ExecuteScript, Debug_EventScript_Script_4 },
-    { COMPOUND_STRING("{JPN}スクリプト 5"), DebugAction_ExecuteScript, Debug_EventScript_Script_5 },
-    { COMPOUND_STRING("{JPN}スクリプト 6"), DebugAction_ExecuteScript, Debug_EventScript_Script_6 },
-    { COMPOUND_STRING("{JPN}スクリプト 7"), DebugAction_ExecuteScript, Debug_EventScript_Script_7 },
-    { COMPOUND_STRING("{JPN}スクリプト 8"), DebugAction_ExecuteScript, Debug_EventScript_Script_8 },
+    { COMPOUND_STRING("Script 1"), DebugAction_ExecuteScript, Debug_EventScript_Script_1 },
+    { COMPOUND_STRING("Script 2"), DebugAction_ExecuteScript, Debug_EventScript_Script_2 },
+    { COMPOUND_STRING("Script 3"), DebugAction_ExecuteScript, Debug_EventScript_Script_3 },
+    { COMPOUND_STRING("Script 4"), DebugAction_ExecuteScript, Debug_EventScript_Script_4 },
+    { COMPOUND_STRING("Script 5"), DebugAction_ExecuteScript, Debug_EventScript_Script_5 },
+    { COMPOUND_STRING("Script 6"), DebugAction_ExecuteScript, Debug_EventScript_Script_6 },
+    { COMPOUND_STRING("Script 7"), DebugAction_ExecuteScript, Debug_EventScript_Script_7 },
+    { COMPOUND_STRING("Script 8"), DebugAction_ExecuteScript, Debug_EventScript_Script_8 },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Trainers[] =
 {
-    { COMPOUND_STRING("{JPN}マップないのトレーナー"), DebugAction_Selection_Init, &sTrainerFromMapSelection},
-    { COMPOUND_STRING("{JPN}トレーナー 1: {STR_VAR_1}"), DebugAction_Selection_Init, &sTrainer1Selection},
-    { COMPOUND_STRING("{JPN}トレーナー 2: {STR_VAR_1}"), DebugAction_Selection_Init, &sTrainer2Selection},
-    { COMPOUND_STRING("{JPN}パートナー: {STR_VAR_1}"), DebugAction_Selection_Init, &sPartnerSelection},
-    { COMPOUND_STRING("{JPN}ダブルバトル: {STR_VAR_1}"), DebugAction_ToggleFlag, DebugAction_Trainers_SwitchDoublesFlag },
-    { COMPOUND_STRING("{JPN}さいせん {ENG}{STR_VAR_1}/{STR_VAR_2}"), DebugAction_ToggleFlag, DebugAction_Trainers_SetRematch },
-    { COMPOUND_STRING("{JPN}さいせんじゅんび {STR_VAR_1}"), DebugAction_ToggleFlag, DebugAction_Trainers_SetRematchReadiness },
-    { COMPOUND_STRING("{JPN}バトル かいし"), DebugAction_Trainers_TryBattle },
-    { COMPOUND_STRING("{JPN}バトルサーチャーを チャージ"), DebugAction_Trainers_RechargeVsSeeker },
+    { COMPOUND_STRING("Choose trainer from map"), DebugAction_Selection_Init, &sTrainerFromMapSelection},
+    { COMPOUND_STRING("Trainer 1: {STR_VAR_1}"), DebugAction_Selection_Init, &sTrainer1Selection},
+    { COMPOUND_STRING("Trainer 2: {STR_VAR_1}"), DebugAction_Selection_Init, &sTrainer2Selection},
+    { COMPOUND_STRING("Partner: {STR_VAR_1}"), DebugAction_Selection_Init, &sPartnerSelection},
+    { COMPOUND_STRING("Double Battle: {STR_VAR_1}"), DebugAction_ToggleFlag, DebugAction_Trainers_SwitchDoublesFlag },
+    { COMPOUND_STRING("Matches {STR_VAR_1}/{STR_VAR_2}"), DebugAction_ToggleFlag, DebugAction_Trainers_SetRematch },
+    { COMPOUND_STRING("Rematch Ready {STR_VAR_1}"), DebugAction_ToggleFlag, DebugAction_Trainers_SetRematchReadiness },
+    { COMPOUND_STRING("Try Battle"), DebugAction_Trainers_TryBattle },
+    { COMPOUND_STRING("Recharge VS Seeker"), DebugAction_Trainers_RechargeVsSeeker },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_MassOutbreak[] =
 {
-    { COMPOUND_STRING("{JPN}きぞんの たいりょうはっせい"), DebugAction_Selection_Init, &sStaticMassOutbreakSelection },
-    { COMPOUND_STRING("{JPN}たいりょうはっせい しゅうりょう"), DebugAction_Outbreak_ClearActive },
-    { COMPOUND_STRING("{JPN}ポケモン: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakSpeciesSelection },
-    { COMPOUND_STRING("{JPN}マップ: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakLocationSelection },
-    { COMPOUND_STRING("{JPN}レベル: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakLevelSelection },
-    { COMPOUND_STRING("{JPN}わざ"), DebugAction_Selection_Init, &sMassOutbreakMovesSelection },
-    { COMPOUND_STRING("{JPN}かくりつ: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakProbabilitySelection },
-    { COMPOUND_STRING("{JPN}のこり: {STR_VAR_1}にち"), DebugAction_Selection_Init, &sMassOutbreakDaysLeftSelection },
-    { COMPOUND_STRING("{JPN}カスタム たいりょうはっせい"), DebugAction_Selection_Init, &sDynamicMassOutbreakSelection },
+    { COMPOUND_STRING("Set Static Outbreak"), DebugAction_Selection_Init, &sStaticMassOutbreakSelection },
+    { COMPOUND_STRING("Clear Active Outbreak"), DebugAction_Outbreak_ClearActive },
+    { COMPOUND_STRING("Species: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakSpeciesSelection },
+    { COMPOUND_STRING("Map: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakLocationSelection },
+    { COMPOUND_STRING("Level: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakLevelSelection },
+    { COMPOUND_STRING("Moves"), DebugAction_Selection_Init, &sMassOutbreakMovesSelection },
+    { COMPOUND_STRING("Probability: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakProbabilitySelection },
+    { COMPOUND_STRING("Days Left: {STR_VAR_1}"), DebugAction_Selection_Init, &sMassOutbreakDaysLeftSelection },
+    { COMPOUND_STRING("Set Dynamic Outbreak"), DebugAction_Selection_Init, &sDynamicMassOutbreakSelection },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Encounters[] =
 {
-    { COMPOUND_STRING("{JPN}たいりょうはっせい"), DebugAction_OpenOutbreakMenu, sDebugMenu_Actions_MassOutbreak },
+    { COMPOUND_STRING("Mass outbreak…"), DebugAction_OpenOutbreakMenu, sDebugMenu_Actions_MassOutbreak },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Sound[] =
 {
-    { COMPOUND_STRING("{JPN}こうかおん"),   DebugAction_Sound_SE },
-    { COMPOUND_STRING("{JPN}おんがく"), DebugAction_Sound_MUS },
+    { COMPOUND_STRING("SFX…"),   DebugAction_Sound_SE },
+    { COMPOUND_STRING("Music…"), DebugAction_Sound_MUS },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_ROMInfo2[] =
 {
-    { COMPOUND_STRING("{JPN}セーブブロックようりょう"),  DebugAction_ExecuteScript, Debug_CheckSaveBlock },
-    { COMPOUND_STRING("{JPN}ロムようりょう"),         DebugAction_ExecuteScript, Debug_CheckROMSpace },
-    { COMPOUND_STRING("{JPN}げんざいの バージョン"), DebugAction_ExecuteScript, Debug_ShowExpansionVersion },
+    { COMPOUND_STRING("Save Block space"),  DebugAction_ExecuteScript, Debug_CheckSaveBlock },
+    { COMPOUND_STRING("ROM space"),         DebugAction_ExecuteScript, Debug_CheckROMSpace },
+    { COMPOUND_STRING("Expansion Version"), DebugAction_ExecuteScript, Debug_ShowExpansionVersion },
     { NULL }
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Flags[] =
 {
-    [DEBUG_FLAGVAR_MENU_ITEM_FLAGS]                = { COMPOUND_STRING("{JPN}フラグ セット"),                     DebugAction_Selection_Init, &sToggleFlagSelection },
-    [DEBUG_FLAGVAR_MENU_ITEM_VARS]                 = { COMPOUND_STRING("{JPN}へんすう セット"),                      DebugAction_Selection_Init, &sSetVarSelection},
-    [DEBUG_FLAGVAR_MENU_ITEM_DEXFLAGS_ALL]         = { COMPOUND_STRING("{JPN}ずかん すべて オン"),                 DebugAction_FlagsVars_PokedexFlags_All },
-    [DEBUG_FLAGVAR_MENU_ITEM_DEXFLAGS_RESET]       = { COMPOUND_STRING("{JPN}ずかんフラグ リセット"),               DebugAction_FlagsVars_PokedexFlags_Reset },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKEDEX]       = { COMPOUND_STRING("{JPN}{STR_VAR_1}ずかんを もらった"),         DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchDex },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_NATDEX]        = { COMPOUND_STRING("{JPN}{STR_VAR_1}ぜんこくずかんに きりかえ"),    DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchNatDex },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKENAV]       = { COMPOUND_STRING("{JPN}{STR_VAR_1}ポケナビを もらった"),         DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchPokeNav },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_MATCH_CALL]    = { COMPOUND_STRING("{JPN}{STR_VAR_1}エントリーコール ついか"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchMatchCall },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES]     = { COMPOUND_STRING("{JPN}{STR_VAR_1}ランニングシューズ オン"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_RunningShoes },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS]     = { COMPOUND_STRING("{JPN}{STR_VAR_1}そらをとぶフラグ すべて オン"),       DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleFlyFlags },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL]    = { COMPOUND_STRING("{JPN}{STR_VAR_1}すべてのバッジを かくとく"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleBadgeFlags },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR]    = { COMPOUND_STRING("{JPN}{STR_VAR_1}ゲームクリアフラグ"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleGameClear },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS] = { COMPOUND_STRING("{JPN}{STR_VAR_1}フロンティアパスを もらった"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleFrontierPass },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION]     = { COMPOUND_STRING("{JPN}{STR_VAR_1}あたりはんてい オフ"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_CollisionOnOff },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_ENCOUNTER]     = { COMPOUND_STRING("{JPN}{STR_VAR_1}エンカウント オフ"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_EncounterOnOff },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_TRAINER_SEE]   = { COMPOUND_STRING("{JPN}{STR_VAR_1}トレーナーしせん オフ"), DebugAction_ToggleFlag, DebugAction_FlagsVars_TrainerSeeOnOff },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING]      = { COMPOUND_STRING("{JPN}{STR_VAR_1}ほかく オフ"),    DebugAction_ToggleFlag, DebugAction_FlagsVars_CatchingOnOff },
-    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BAG_USE]       = { COMPOUND_STRING("{JPN}{STR_VAR_1}バッグしよう オフ"),     DebugAction_ToggleFlag, DebugAction_FlagsVars_BagUseOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_FLAGS]                = { COMPOUND_STRING("Set Flag XYZ…"),                     DebugAction_Selection_Init, &sToggleFlagSelection },
+    [DEBUG_FLAGVAR_MENU_ITEM_VARS]                 = { COMPOUND_STRING("Set Var XYZ…"),                      DebugAction_Selection_Init, &sSetVarSelection},
+    [DEBUG_FLAGVAR_MENU_ITEM_DEXFLAGS_ALL]         = { COMPOUND_STRING("Pokédex Flags All"),                 DebugAction_FlagsVars_PokedexFlags_All },
+    [DEBUG_FLAGVAR_MENU_ITEM_DEXFLAGS_RESET]       = { COMPOUND_STRING("Pokédex Flags Reset"),               DebugAction_FlagsVars_PokedexFlags_Reset },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKEDEX]       = { COMPOUND_STRING("Toggle {STR_VAR_1}Pokédex"),         DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchDex },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_NATDEX]        = { COMPOUND_STRING("Toggle {STR_VAR_1}National Dex"),    DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchNatDex },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_POKENAV]       = { COMPOUND_STRING("Toggle {STR_VAR_1}PokéNav"),         DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchPokeNav },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_MATCH_CALL]    = { COMPOUND_STRING("Toggle {STR_VAR_1}Match Call"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_SwitchMatchCall },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES]     = { COMPOUND_STRING("Toggle {STR_VAR_1}Running Shoes"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_RunningShoes },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS]     = { COMPOUND_STRING("Toggle {STR_VAR_1}Fly Flags"),       DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleFlyFlags },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL]    = { COMPOUND_STRING("Toggle {STR_VAR_1}All badges"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleBadgeFlags },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR]    = { COMPOUND_STRING("Toggle {STR_VAR_1}Game clear"),      DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleGameClear },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS] = { COMPOUND_STRING("Toggle {STR_VAR_1}Frontier Pass"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_ToggleFrontierPass },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION]     = { COMPOUND_STRING("Toggle {STR_VAR_1}Collision OFF"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_CollisionOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_ENCOUNTER]     = { COMPOUND_STRING("Toggle {STR_VAR_1}Encounter OFF"),   DebugAction_ToggleFlag, DebugAction_FlagsVars_EncounterOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_TRAINER_SEE]   = { COMPOUND_STRING("Toggle {STR_VAR_1}Trainer See OFF"), DebugAction_ToggleFlag, DebugAction_FlagsVars_TrainerSeeOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_CATCHING]      = { COMPOUND_STRING("Toggle {STR_VAR_1}Catching OFF"),    DebugAction_ToggleFlag, DebugAction_FlagsVars_CatchingOnOff },
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BAG_USE]       = { COMPOUND_STRING("Toggle {STR_VAR_1}Bag Use OFF"),     DebugAction_ToggleFlag, DebugAction_FlagsVars_BagUseOnOff },
     { NULL }
 };
 
 static const u8 *const sDebugMenu_Actions_BagUse_Options[] =
 {
-    COMPOUND_STRING("{JPN}バッグなし: {STR_VAR_1}むこう"),
-    COMPOUND_STRING("{JPN}バッグなし: {STR_VAR_1}トレーナーせん"),
-    COMPOUND_STRING("{JPN}バッグなし: {STR_VAR_1}ゆうこう"),
-    COMPOUND_STRING("{JPN}バッグなし: {STR_VAR_1}ふせいなあたい"),
+    COMPOUND_STRING("No Bag: {STR_VAR_1}Inactive"),
+    COMPOUND_STRING("No Bag: {STR_VAR_1}VS Trainers"),
+    COMPOUND_STRING("No Bag: {STR_VAR_1}Active"),
+    COMPOUND_STRING("No Bag: {STR_VAR_1}Invalid value"),
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
 {
-    { COMPOUND_STRING("{JPN}べんりきのう"),    DebugAction_OpenSubMenu, sDebugMenu_Actions_Utilities, },
-    { COMPOUND_STRING("{JPN}パソコン/バッグ"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_PCBag, },
-    { COMPOUND_STRING("{JPN}てもち"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Party, },
-    { COMPOUND_STRING("{JPN}わたす"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Give, },
-    { COMPOUND_STRING("{JPN}プレイヤー"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
-    { COMPOUND_STRING("{JPN}スクリプト"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
-    { COMPOUND_STRING("{JPN}トレーナー"),     DebugAction_OpenSubMenuTrainers, sDebugMenu_Actions_Trainers, },
-    { COMPOUND_STRING("{JPN}エンカウント"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_Encounters, },
-    { COMPOUND_STRING("{JPN}フラグ へんすう"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },
-    { COMPOUND_STRING("{JPN}サウンドテスト"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Sound, },
-    { COMPOUND_STRING("{JPN}ロムじょうほう"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_ROMInfo2, },
-    { COMPOUND_STRING("{JPN}もどる"),        DebugAction_Cancel, },
+    { COMPOUND_STRING("Utilities…"),    DebugAction_OpenSubMenu, sDebugMenu_Actions_Utilities, },
+    { COMPOUND_STRING("PC/Bag…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_PCBag, },
+    { COMPOUND_STRING("Party…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Party, },
+    { COMPOUND_STRING("Give X…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Give, },
+    { COMPOUND_STRING("Player…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
+    { COMPOUND_STRING("Scripts…"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
+    { COMPOUND_STRING("Trainers…"),     DebugAction_OpenSubMenuTrainers, sDebugMenu_Actions_Trainers, },
+    { COMPOUND_STRING("Encounters…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_Encounters, },
+    { COMPOUND_STRING("Flags & Vars…"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },
+    { COMPOUND_STRING("Sound…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Sound, },
+    { COMPOUND_STRING("ROM Info…"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_ROMInfo2, },
+    { COMPOUND_STRING("Cancel"),        DebugAction_Cancel, },
     { NULL }
 };
 
@@ -1366,21 +1366,21 @@ static u32 Debug_GenerateListTrainerMenu(const struct DebugMenuOption *items)
             break;
         case 2:
             if (trainer2Id == TRAINER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なし"));
+                StringCopy(gStringVar1, COMPOUND_STRING("None"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, trainer2Id, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
         case 3:
             if (partnerId == PARTNER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なし"));
+                StringCopy(gStringVar1, COMPOUND_STRING("None"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, partnerId, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
         case 4:
             if (sDebugMenuListData->data[5] || trainer2Id != TRAINER_NONE || partnerId != PARTNER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}{COLOR GREEN} オン"));
+                StringCopy(gStringVar1, COMPOUND_STRING("{COLOR GREEN} TRUE"));
             else
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}{COLOR RED} オフ"));
+                StringCopy(gStringVar1, COMPOUND_STRING("{COLOR RED} FALSE"));
             break;
         case 5:
             if (!isRealFight)
@@ -1391,10 +1391,10 @@ static u32 Debug_GenerateListTrainerMenu(const struct DebugMenuOption *items)
             if (rematchTableId == -1)
             {
                 if (HasTrainerBeenFought(trainer1Id))
-                    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}1"));
+                    StringCopy(gStringVar1, COMPOUND_STRING("1"));
                 else
-                    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}0"));
-                StringCopy(gStringVar2, COMPOUND_STRING("{JPN}1"));
+                    StringCopy(gStringVar1, COMPOUND_STRING("0"));
+                StringCopy(gStringVar2, COMPOUND_STRING("1"));
             }
             else
             {
@@ -1409,9 +1409,9 @@ static u32 Debug_GenerateListTrainerMenu(const struct DebugMenuOption *items)
                 break;
             }
             if (GetActiveTrainerRematches(rematchTableId))
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}{COLOR GREEN} オン"));
+                StringCopy(gStringVar1, COMPOUND_STRING("{COLOR GREEN} TRUE"));
             else
-                StringCopy(gStringVar1, COMPOUND_STRING("{JPN}{COLOR RED} オフ"));
+                StringCopy(gStringVar1, COMPOUND_STRING("{COLOR RED} FALSE"));
             break;
         case 8:
             if (FREE_MATCH_CALL || I_VS_SEEKER_CHARGING == 0)
@@ -1653,25 +1653,16 @@ static u32 Debug_GenerateListFlagsMenu(const struct DebugMenuOption *items)
 static void DebugTask_HandleMenuInput_General(u8 taskId)
 {
     const struct DebugMenuOption *options = Debug_GetCurrentCallbackMenu();
-    s32 input = ListMenu_ProcessInput(gTasks[taskId].tMenuTaskId);
+    u32 input = ListMenu_ProcessInput(gTasks[taskId].tMenuTaskId);
+    struct DebugMenuOption option = options[input];
 
     if (JOY_NEW(A_BUTTON))
     {
-        struct DebugMenuOption option;
-
-        if (options == NULL)
-            return;
-
-        if (input == LIST_NOTHING_CHOSEN || input == LIST_CANCEL)
-            return;
-
-        option = options[input];
-
         PlaySE(SE_SELECT);
         if (option.action != NULL)
         {
-            if (option.actionParams != NULL)
-                ((DebugFuncWithParams)option.action)(taskId, option.actionParams);
+            if (option.actionParams  != NULL)
+                 ((DebugFuncWithParams)option.action)(taskId, option.actionParams);
             else
                 ((DebugFunc)option.action)(taskId);
         }
@@ -1946,7 +1937,7 @@ static void DebugSelectionStep_UpdateWeather(u8 taskId, u8 digits, u32 min, u32 
             gTasks[taskId].tInput++;
     }
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}てんきID: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Weather ID: {STR_VAR_3}"));
     StringCopy(gStringVar2, GetWeatherName(gTasks[taskId].tInput));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -2018,8 +2009,8 @@ static void DebugAction_Util_CheatStart(u8 taskId)
 
 void BufferExpansionVersion(struct ScriptContext *ctx)
 {
-    static const u8 sText_Released[] = _("\nリリースビルド");
-    static const u8 sText_Unreleased[] = _("\nかいはつビルド");
+    static const u8 sText_Released[] = _("\nRelease Build");
+    static const u8 sText_Unreleased[] = _("\nDevelopment Build");
     u8 *string = gStringVar1;
     *string++ = CHAR_v;
     string = ConvertIntToDecimalStringN(string, EXPANSION_VERSION_MAJOR, STR_CONV_MODE_LEFT_ALIGN, 3);
@@ -2297,7 +2288,7 @@ static void DebugSelectionStep_UpdateMapTrainer(u8 taskId, u8 digits, u32 min, u
     StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Local ID: {STR_VAR_3}"));
     u8 *end;
     if (trainerId == TRAINER_NONE)
-        end = StringCopy(gStringVar2, COMPOUND_STRING("{JPN}トレーナーじゃない"));
+        end = StringCopy(gStringVar2, COMPOUND_STRING("Not a Trainer"));
     else
         end = StringCopy(gStringVar2, GetTrainerNameFromId(trainerId));
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
@@ -2346,7 +2337,7 @@ static void DebugSelectionStep_PrepareTrainerDisplay(u8 taskId, u8 digits, u32 t
     StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("ID: {STR_VAR_3}"));
     u8 *end;
     if (gTasks[taskId].tInput == TRAINER_NONE )
-        end = StringCopy(gStringVar2, COMPOUND_STRING("{JPN}なし"));
+        end = StringCopy(gStringVar2, COMPOUND_STRING("None"));
     else
         end = StringCopy(gStringVar2, GetTrainerNameFromId(trainerId));
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
@@ -2578,7 +2569,7 @@ static void DebugSelectionStep_UpdateSpecies(u8 taskId, u8 digits, u32 min, u32 
     }
     gTasks[taskId].tInput = species;
     ConvertIntToDecimalStringN(gStringVar3, species, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}ポケモン: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Species: {STR_VAR_3}"));
     u8 *end = StringCopy(gStringVar2, GetSpeciesName(species));
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
@@ -2591,10 +2582,10 @@ static void DebugSelectionStep_UpdateMoves(u8 taskId, u8 digits, u32 min, u32 ma
     u32 moveId = gTasks[taskId].tInput;
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tSubstep + 1, STR_CONV_MODE_LEADING_ZEROS, 1);
     ConvertIntToDecimalStringN(gStringVar3, moveId, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}わざ {STR_VAR_2}: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Move {STR_VAR_2}: {STR_VAR_3}"));
     u8 *end;
     if (moveId == MOVES_COUNT)
-        end = StringCopy(gStringVar2, COMPOUND_STRING("{JPN}デフォルト"));
+        end = StringCopy(gStringVar2, COMPOUND_STRING("Default"));
     else
         end = StringCopy(gStringVar2, GetMoveName(moveId));
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
@@ -2616,9 +2607,9 @@ static void DebugSelectionStep_MovesConfirm(u8 taskId)
     }
 }
 
-UPDATE_GENERIC_INPUT(Level, {JPN}レベル)
-UPDATE_GENERIC_INPUT(OutbreakProbability, {JPN}かくりつ)
-UPDATE_GENERIC_INPUT(OutbreakDaysLeft, {JPN}のこり)
+UPDATE_GENERIC_INPUT(Level, Level)
+UPDATE_GENERIC_INPUT(OutbreakProbability, Probability)
+UPDATE_GENERIC_INPUT(OutbreakDaysLeft, Days Left)
 
 static const struct DebugSelectionStep sSpeciesSelectionStep = {
     .stepUpdate = DebugSelectionStep_UpdateSpecies,
@@ -2853,9 +2844,9 @@ static const struct DebugSelection sToggleFlagSelection = {
 static void DebugSelectionStep_PrepareVarDisplay(u32 varId)
 {
     u8 *end;
-    end = StringCopy(gStringVar1, COMPOUND_STRING("{JPN}へんすう: 0x"));
+    end = StringCopy(gStringVar1, COMPOUND_STRING("Var: 0x"));
     ConvertIntToHexStringN(end, varId, STR_CONV_MODE_LEFT_ALIGN, 4);
-    end = StringCopy(gStringVar2, COMPOUND_STRING("{JPN}あたい: "));
+    end = StringCopy(gStringVar2, COMPOUND_STRING("Val: "));
     ConvertIntToDecimalStringN(end, VarGet(varId), STR_CONV_MODE_LEADING_ZEROS, 5);
 }
 
@@ -3151,7 +3142,7 @@ static void DebugSelectionStep_UpdateItem(u8 taskId, u8 digits, u32 min, u32 max
     u32 itemId = gTasks[taskId].tInput;
     Debug_DisplayItemIcon(taskId, itemId);
     ConvertIntToDecimalStringN(gStringVar3, itemId, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("ID: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Item ID: {STR_VAR_3}"));
     u8* end = CopyItemName(itemId, gStringVar2);
     enum Move moveId = ItemIdToBattleMoveId(itemId);
     if (moveId != MOVE_NONE)
@@ -3161,20 +3152,20 @@ static void DebugSelectionStep_UpdateItem(u8 taskId, u8 digits, u32 min, u32 max
     }
     else if (CheckIfItemIsTMHMOrEvolutionStone(itemId) == ITEM_IS_TM_HM)
     {
-        end = StringCopy(end, COMPOUND_STRING("{JPN}なし"));
+        end = StringCopy(end, COMPOUND_STRING(" None"));
     }
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
 
-UPDATE_GENERIC_INPUT(Quantity, {JPN}かず)
+UPDATE_GENERIC_INPUT(Quantity, Quantity)
 
 static bool32 DebugSelection_GiveItem_Complete(u8 taskId)
 {
     AddBagItem(DebugSelection_GetData(taskId, 0), DebugSelection_GetData(taskId, 1));
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(MUS_LEVEL_UP);
+    PlaySE(SE_SUCCESS);
     return TRUE;
 }
 
@@ -3206,7 +3197,7 @@ static bool32 DebugSelection_GiveSimplePokemon_OnComplete(u8 taskId)
 {
     ScriptGiveMon(DebugSelection_GetData(taskId, 0), DebugSelection_GetData(taskId, 1), ITEM_NONE);
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(MUS_LEVEL_UP);
+    PlaySE(SE_SUCCESS);
     return TRUE;
 }
 
@@ -3226,14 +3217,14 @@ static void DebugSelectionStep_UpdateGender(u8 taskId, u8 digits, u32 min, u32 m
     enum Species species = DebugSelection_GetData(taskId, 0);
     u32 gender = GetGenderFromSpeciesAndPersonality(species, gTasks[taskId].tInput);
     if (gender == MON_FEMALE)
-        StringCopy(gStringVar1, COMPOUND_STRING("♀"));
+        StringCopy(gStringVar1, COMPOUND_STRING("FEMALE"));
     else if (gender == MON_MALE)
-        StringCopy(gStringVar1, COMPOUND_STRING("♂"));
+        StringCopy(gStringVar1, COMPOUND_STRING("MALE"));
     else
-        StringCopy(gStringVar1, COMPOUND_STRING("{JPN}ふめい"));
+        StringCopy(gStringVar1, COMPOUND_STRING("GENDERLESS"));
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringExpandPlaceholders(gStringVar2, COMPOUND_STRING("{STR_VAR_1} ({STR_VAR_3})"));
-    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}せいべつち:"));
+    StringCopy(gStringVar1, COMPOUND_STRING("Gender Value:"));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
@@ -3247,7 +3238,7 @@ static void DebugSelectionStep_GenderConfirm(u8 taskId)
 
 static void DebugSelectionStep_UpdateShinyness(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("{JPN}いろちがい:"));
+    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("Shiny:"));
 }
 
 static u32 DebugSelectionStep_GetMaxAbility(u8 taskId)
@@ -3278,7 +3269,7 @@ static void DebugSelectionStep_UpdateAbility(u8 taskId, u8 digits, u32 min, u32 
     }
 
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}とくせい:"));
+    StringCopy(gStringVar1, COMPOUND_STRING("Ability:"));
     StringCopy(gStringVar2, gAbilitiesInfo[abilities[gTasks[taskId].tInput]].name);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -3299,7 +3290,7 @@ static void DebugSelectionStep_AbilityConfirm(u8 taskId)
 static void DebugSelectionStep_UpdateNature(u8 taskId, u8 digits, u32 min, u32 max)
 {
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}せいかく: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Nature: {STR_VAR_3}"));
     StringCopy(gStringVar2, gNaturesInfo[gTasks[taskId].tInput].name);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -3308,7 +3299,7 @@ static void DebugSelectionStep_UpdateNature(u8 taskId, u8 digits, u32 min, u32 m
 static void DebugSelectionStep_UpdateIVs(u8 taskId, u8 digits, u32 min, u32 max)
 {
     StringCopy(gStringVar3, gStatNamesTable[gTasks[taskId].tSubstep]);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{STR_VAR_3} こたいち:"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{STR_VAR_3} IV:"));
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -3317,7 +3308,7 @@ static void DebugSelectionStep_UpdateIVs(u8 taskId, u8 digits, u32 min, u32 max)
 static void DebugSelectionStep_UpdateEVs(u8 taskId, u8 digits, u32 min, u32 max)
 {
     StringCopy(gStringVar3, gStatNamesTable[gTasks[taskId].tSubstep]);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{STR_VAR_3} どりょくち:"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{STR_VAR_3} EV:"));
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -3325,12 +3316,12 @@ static void DebugSelectionStep_UpdateEVs(u8 taskId, u8 digits, u32 min, u32 max)
 
 static void DebugSelectionStep_UpdateDynamaxLevel(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    DebugSelectionStep_PrintGenericInput(taskId, digits, COMPOUND_STRING("{JPN}ダイマックスレベル:"));
+    DebugSelectionStep_PrintGenericInput(taskId, digits, COMPOUND_STRING("Dynamax Level:"));
 }
 
 static void DebugSelectionStep_UpdateGigantamaxFactor(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("{JPN}キョダイマックス:"));
+    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("Gmax Factor:"));
 }
 
 static void DebugSelectionStep_UpdateTeraType(u8 taskId, u8 digits, u32 min, u32 max)
@@ -3343,7 +3334,7 @@ static void DebugSelectionStep_UpdateTeraType(u8 taskId, u8 digits, u32 min, u32
             gTasks[taskId].tInput++;
     }
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}テラスタイプ: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Tera Type: {STR_VAR_3}"));
     StringCopy(gStringVar2, gTypesInfo[gTasks[taskId].tInput].name);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -3496,7 +3487,7 @@ static bool32 DebugSelection_GiveEggPokemon_OnComplete(u8 taskId)
 {
     ScriptGiveEgg(DebugSelection_GetData(taskId, 0));
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(MUS_LEVEL_UP);
+    PlaySE(SE_SUCCESS);
     return TRUE;
 }
 
@@ -3520,7 +3511,7 @@ static void DebugSelectionStep_UpdateDecoration(u8 taskId, u8 digits, u32 min, u
         DEBUG_ICON_TAG, DEBUG_ICON_TAG);
 
     ConvertIntToDecimalStringN(gStringVar3, decorationId, STR_CONV_MODE_LEADING_ZEROS, digits);
-    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("{JPN}かぐID: {STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Decor ID: {STR_VAR_3}"));
     u8* end = StringCopy(gStringVar2, gDecorations[decorationId].name);
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
@@ -3531,7 +3522,7 @@ static bool32 DebugSelection_GiveDecoration_Complete(u8 taskId)
 {
     DecorationAdd(DebugSelection_GetData(taskId, 0));
     DebugSelectionStep_ReturnToGiveMenu(taskId);
-    PlaySE(MUS_LEVEL_UP);
+    PlaySE(SE_SUCCESS);
     return TRUE;
 }
 
@@ -4660,7 +4651,7 @@ static void DebugSelectionStep_UpdateFriendship(u8 taskId, u8 digits, u32 min, u
     ConvertIntToDecimalStringN(gStringVar1, DebugSelection_GetData(taskId, 0), STR_CONV_MODE_LEADING_ZEROS, digits);
     ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringExpandPlaceholders(gStringVar2, COMPOUND_STRING("{STR_VAR_1} {RIGHT_ARROW} {STR_VAR_3}"));
-    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なかよし:"));
+    StringCopy(gStringVar1, COMPOUND_STRING("Friendship:"));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
@@ -4708,7 +4699,7 @@ void DebugNative_Party_SetFriendship(void)
 
 static void DebugSelectionStep_UpdatePokerusStrain(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}かぶ:"));
+    StringCopy(gStringVar1, COMPOUND_STRING("Strain:"));
     ConvertIntToDecimalStringN(gStringVar2, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
@@ -4716,13 +4707,13 @@ static void DebugSelectionStep_UpdatePokerusStrain(u8 taskId, u8 digits, u32 min
 
 static void DebugSelectionStep_UpdatePokerusDaysLeft(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    StringCopy(gStringVar1, COMPOUND_STRING("{JPN}のこりにっすう:"));
+    StringCopy(gStringVar1, COMPOUND_STRING("Days Left:"));
     s16 daysLeft = gTasks[taskId].tInput;
     u16 strain = DebugSelection_GetData(taskId, gTasks[taskId].tStepsDataIndex - 1);
     ConvertIntToDecimalStringN(gStringVar2, daysLeft, STR_CONV_MODE_LEADING_ZEROS, digits);
 
     if (daysLeft == 0 && strain == 0)
-        StringCopy(gStringVar3, COMPOUND_STRING("{JPN}ポケルスなし"));
+        StringCopy(gStringVar3, COMPOUND_STRING("No Pokerus"));
     else if (daysLeft == 0)
         StringCopy(gStringVar3, COMPOUND_STRING("Inactive"));
     else

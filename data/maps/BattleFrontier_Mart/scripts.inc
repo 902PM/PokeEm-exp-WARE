@@ -13,19 +13,19 @@ BattleFrontier_Mart_EventScript_Clerk::
 
 	.align 2
 BattleFrontier_Mart_Pokemart:
-	.2byte ITEM_DREAM_BALL
-	.2byte ITEM_DIVE_BALL
-	.2byte ITEM_DUSK_BALL
-	.2byte ITEM_QUICK_BALL
-	.2byte ITEM_HEAL_BALL
-	.2byte ITEM_SPORT_BALL
-	.2byte ITEM_HEAVY_BALL
-	.2byte ITEM_FAST_BALL
-	.2byte ITEM_LOVE_BALL
-	.2byte ITEM_FRIEND_BALL
-	.2byte ITEM_MOON_BALL
-	.2byte ITEM_LURE_BALL
-	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_REVIVE
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_IRON
+	.2byte ITEM_ZINC
+	.2byte ITEM_CARBOS
+	.2byte ITEM_HP_UP
 	pokemartlistend
 
 BattleFrontier_Mart_EventScript_OldMan::
@@ -45,11 +45,21 @@ BattleFrontier_Mart_EventScript_Boy::
 	end
 
 BattleFrontier_Mart_Text_ChaperonGrandson:
-	.string "{JPN}わたしらは マゴの つきそいで\nここに きたんだが\lせっかく だから きねんに\lなにか おみやげをと おもってな$"
+	.string "We came here to chaperon our\n"
+	.string "grandson.\p"
+	.string "But since we're here, we thought\n"
+	.string "we should get some souvenirs.$"
 
 BattleFrontier_Mart_Text_ProteinMakeNiceGift:
-	.string "{JPN}ネエ じいさん\nこれなんか いいんじゃ ないかねえ?\lた… う… タウリ……ソ って いうやつ\pなんだか おいしそうよ$"
+	.string "Dear, what do you think of this?\n"
+	.string "Wouldn't this make a nice gift?\p"
+	.string "It's…PRO…TE…IN?\n"
+	.string "It sounds delicious, doesn't it?$"
 
 BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
-	.string "{JPN}バトルフロンティアの しせつでは\nせんとうちゅうに どうぐが つかえない\lルールの ところが おおいんだよね\lきびしいなー$"
+	.string "A lot of the BATTLE FRONTIER's\n"
+	.string "facilities don't allow the use of items\l"
+	.string "during battles.\p"
+	.string "That rule makes things tougher than\n"
+	.string "they already are!$"
 

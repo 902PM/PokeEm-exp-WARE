@@ -257,94 +257,165 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pキンセツシティの ジムリーダー テッセンは\nでんきタイプ ポケモンの つかいてだ!\pみずタイプの ポケモンで むかうと\nビリビリ しびれさせられるぞ!\pしかも スイッチで あけたり する\nけったいな とびらを\lジムに つくって しまったんだ!\pきばってこー な!$"
+	.string "Hey, how's it going, CHAMPION-\n"
+	.string "bound {PLAYER}?\p"
+	.string "WATTSON, the LEADER of MAUVILLE\n"
+	.string "GYM, uses ELECTRIC-type POKéMON.\p"
+	.string "If you challenge him with WATER-type\n"
+	.string "POKéMON, he'll zap them! Bzzt!\p"
+	.string "And, he's put in switch-controlled\n"
+	.string "doors all over his GYM! Eccentric!\p"
+	.string "Hey, go for it!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}こりゃ びっくり たまげたッ!\nきみの おかげで とびらは ひらかれた!$"
+	.string "Whoa, you're electrifying!\n"
+	.string "You've powered the door open!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "{JPN}しびれる オレの ハートが\nきみの やぼうを ふんさい するっ!$"
+	.string "My electric soul, it'll shatter your\n"
+	.string "dreams whole, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "{JPN}しびれる たたかい だったぜ……$"
+	.string "That was plugged in, amped up,\n"
+	.string "over-driven electric, man!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "{JPN}ポケモンも ロックも ハートが すべて\nいぇーい!$"
+	.string "POKéMON and rock, it's all about heart,\n"
+	.string "whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "{JPN}テッセンさんに きたえられた この オレが\nそう かんたんに まける はずがねえ!$"
+	.string "I trained under WATTSON!\n"
+	.string "There ain't no way I'll lose easily!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "{JPN}キュ キュイィィィン……$"
+	.string "Unplugged and turned off…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "{JPN}このジムの リーダー テッセンさんは\nきみの おやじが うまれる まえから\lポケモンと たたかってきた つわものさ!$"
+	.string "WATTSON, our GYM LEADER, has been\n"
+	.string "around for a long, long time.\p"
+	.string "He was battling even before your\n"
+	.string "daddy was born, that tough coot.$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "{JPN}この ポケモンジムは\nしかけが あって たのしいな!$"
+	.string "This GYM's got puzzles!\n"
+	.string "Isn't it fun?$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "{JPN}まけると たのしくないよ$"
+	.string "It's no fun to lose…$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "{JPN}テッセンさんは スイッチを つかった\nしかけを つくるのが しゅみ なんだって!$"
+	.string "WATTSON says he likes setting up\n"
+	.string "little traps with switches.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "{JPN}あたしの みりょくと\nポケモンの わざで しびれさせちゃう!$"
+	.string "With my charm and my POKéMON's moves,\n"
+	.string "you'll be shocked!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "{JPN}あなたの つよさに しびれたわ!$"
+	.string "I'm shocked by your power!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "{JPN}この キンセツシティは\nテッセンさんが つくったって はなし\pあなたや わたしが\nうまれる まえからの トレーナーだもの\lきっと いろんな ことを しってるわ$"
+	.string "I've heard that MAUVILLE was founded\n"
+	.string "by WATTSON.\p"
+	.string "He was a TRAINER long before we\n"
+	.string "became TRAINERS.\l"
+	.string "He must know all sorts of things!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "{JPN}ぼく ひかるもの だーいすき なんだ!$"
+	.string "I love shiny things!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "{JPN}ああ…\nめのまえが チカ チカ$"
+	.string "Oh…\n"
+	.string "My eyes are frazzled…$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "{JPN}キンセツジムも テッセンさんの おデコも\nピカピカ ひかってて うれしいな!$"
+	.string "MAUVILLE GYM's WATTSON has a shiny\n"
+	.string "forehead. It makes me happy!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "{JPN}まちを かいぞうする けいかくは\nあきらめた わし じゃが\pいまは このジムの とびらの しかけを\nつくることに うちこんで おるのじゃ!\p……あれ? おまえさん\nなんで わしの まえに いるんじゃ?\pなにー! とびらの しかけを\nくぐりぬけて きたと いうのかっ!\pわっはははは! こりゃ おもしろい!\pならば この キンセツ ポケモン ジムの\nリーダー テッセンが\lポケモンで しびれさせて やるぞい!$"
+	.string "I've given up on my plans to convert\n"
+	.string "the city, I have.\p"
+	.string "And so, I put my time into making\n"
+	.string "door traps in my GYM.\p"
+	.string "Oh? Now, what are you doing here?\p"
+	.string "What's that? You say you've gotten\n"
+	.string "past all my rigged doors?\p"
+	.string "Wahahahah!\n"
+	.string "Now, that is amusing!\p"
+	.string "Then, I, WATTSON, the LEADER of\n"
+	.string "MAUVILLE GYM, shall electrify you!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "{JPN}わっはははは! わしの まけじゃ!\nおまえさんには しびれた わい\lこの バッジ もっていくが いいぞ!$"
+	.string "Wahahahah!\n"
+	.string "Fine, I lost!\p"
+	.string "You ended up giving me a thrill!\n"
+	.string "Take this BADGE!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{JPN}{PLAYER}は テッセンから\nダイナモバッジを もらった!$"
+	.string "{PLAYER} received the DYNAMO BADGE\n"
+	.string "from WATTSON.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "{JPN}ダイナモバッジを もっておると\nひでんの いわくだきが\lつかえるように なるんじゃ!\pそれに おまえさんの ポケモン\nいっそう すばやく なるぞい!\pうむ……\nこれも もっていくが いいぞ!$"
+	.string "With the DYNAMO BADGE, POKéMON can\n"
+	.string "use ROCK SMASH out of battle.\p"
+	.string "And, it will make your POKéMON a little\n"
+	.string "bit faster, too.\p"
+	.string "Hmm…\n"
+	.string "You should take this, too!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "{JPN}その わざマシン34 には\nでんげきは が はいっておる!\pかならず めいちゅう する\nたのもしい わざ なんじゃよ!\p…… …… ……$"
+	.string "That TM34 there contains SHOCK WAVE.\p"
+	.string "It's a trustworthy move that never\n"
+	.string "misses! You can count on it!\p"
+	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "{JPN}ジムリーダー テッセンを\nポケナビに とうろく した!$"
+	.string "Registered GYM LEADER WATTSON\n"
+	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "{JPN}みどころの ある わかものの しゅつげん\nじつに たのもしい ことじゃ!$"
+	.string "I swell with optimism, seeing a promising\n"
+	.string "young TRAINER like you!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "{JPN}わっはははは!\nわかものよ もっともっと がんばるんじゃ!$"
+	.string "Wahahahah!\n"
+	.string "Go forth and endeavor, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "{JPN}キンセツシティ ポケモンジム$"
+	.string "MAUVILLE CITY POKéMON GYM$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "{JPN}キンセツシティ ポケモンジム\pテッセン にんてい トレーナー!\n{PLAYER}$"
+	.string "MAUVILLE CITY POKéMON GYM\p"
+	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "{JPN}テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\pひばな バチバチ いわせて やるから\nかくご するんじゃぞ!$"
+	.string "WATTSON: Ah-ha! Here at last!\n"
+	.string "I know what you want.\l"
+	.string "You want to battle my POKéMON!\p"
+	.string "Wahahahaha!\p"
+	.string "I'll make sparks fly from you!\n"
+	.string "Don't say I didn't warn you!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
-	.string "{JPN}ふぅ バッテリーぎれ じゃ……$"
+	.string "Oof…\n"
+	.string "Our batteries ran dry…$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "{JPN}テッセン『わしゃ じゅうでんの しなおしだ\pたいせいを たてなおしたら\nまた きみの ちょうせんを うけるから\lしばらく してから きておくれ……$"
+	.string "WATTSON: We'll have to recharge our\n"
+	.string "batteries again.\p"
+	.string "When we're fully charged up, we'll\n"
+	.string "gladly accept your challenge.\p"
+	.string "So, come back again sometime,\n"
+	.string "won't you?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "{JPN}テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\p……ありゃ? たたかえる ポケモンを\n1ひきしか もっておらん ようだな\pすまんが 2ひき いじょうの\nポケモンを もって きておくれ!$"
+	.string "WATTSON: Ah-ha! Here at last!\n"
+	.string "I know what you want.\l"
+	.string "You want to battle my POKéMON!\p"
+	.string "Wahahahaha!\p"
+	.string "Oops! Wait!\n"
+	.string "You've only one POKéMON with you!\p"
+	.string "Come see me with two or more\n"
+	.string "POKéMON, all right?$"
+

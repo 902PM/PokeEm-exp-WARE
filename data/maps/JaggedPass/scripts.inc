@@ -148,82 +148,119 @@ JaggedPass_EventScript_Autumn::
 	end
 
 JaggedPass_Text_EricIntro:
-	.string "{JPN}えんとつやまの デコボコさんどう\nまさに わたしが もとめていた やま!\lこの デコボコした ところが たまらん!$"
+	.string "MT. CHIMNEY's JAGGED PASS…\p"
+	.string "Now this is what I've always wanted\n"
+	.string "in a mountain.\p"
+	.string "This jagged bumpiness…\n"
+	.string "It rocks my soul!$"
 
 JaggedPass_Text_EricDefeat:
-	.string "{JPN}まけて くやしいぞ!$"
+	.string "Losing left me bitter!$"
 
 JaggedPass_Text_EricPostBattle:
-	.string "{JPN}たしかに ポケモンでは まけた……\pだが やまを あいする きもちなら\nわたしの ほうが まさっているだろ!$"
+	.string "Yes, I did lose at POKéMON…\p"
+	.string "But, when it comes to the love of\n"
+	.string "the mountains, I have you beat!$"
 
 JaggedPass_Text_DianaIntro:
-	.string "{JPN}ここは きがるに のぼって いけないもの\nちょっと ピクニックむき じゃないわ$"
+	.string "This place isn't your casual hike.\n"
+	.string "It's not suited for a picnic.$"
 
 JaggedPass_Text_DianaDefeat:
-	.string "{JPN}あーん もう!\nしたが デコボコだから……$"
+	.string "Ohhh, no!\n"
+	.string "The ground is too bumpy…$"
 
 JaggedPass_Text_DianaPostBattle:
-	.string "{JPN}こんな デコボコしたところ\nじてんしゃで じょうずに のぼっていく\lひとも いるのよ!$"
+	.string "Did you know?\p"
+	.string "Some people cleverly ride their\n"
+	.string "bicycles up this horribly bumpy pass.$"
 
 JaggedPass_Text_DianaRegister:
-	.string "{JPN}また ここに くることって あるかな?\nそしたら わたしと しょうぶしてね!$"
+	.string "Will you ever be back in this area?\n"
+	.string "If you do return, I'd like a rematch.$"
 
 JaggedPass_Text_DianaRematchIntro:
-	.string "{JPN}どんな みちも ピクニックは たのしい!\nポケモンも いっしょ だしね!$"
+	.string "Picnics are fun wherever you go.\n"
+	.string "Just like POKéMON!$"
 
 JaggedPass_Text_DianaRematchDefeat:
-	.string "{JPN}まけたのは\nしたが デコボコだからよ!$"
+	.string "I only lost because the ground is\n"
+	.string "too bumpy!$"
 
 JaggedPass_Text_DianaPostRematch:
-	.string "{JPN}まけたことは さっさと わすれて\nこの デコボコみちを たのしんじゃお!$"
+	.string "I'll forget about losing and just\n"
+	.string "enjoy this bumpy hike.$"
 
 JaggedPass_Text_EthanIntro:
-	.string "{JPN}この デコボコさんどうは あるきにくい!\nポケモンを きたえるのに むいてるよ!$"
+	.string "JAGGED PASS is hard to walk on.\n"
+	.string "It's a good place for training.$"
 
 JaggedPass_Text_EthanDefeat:
-	.string "{JPN}あしばを きにしてる うちに\nおわっちゃった かんじだ……$"
+	.string "It was all over while we were still\n"
+	.string "trying to find a good footing…$"
 
 JaggedPass_Text_EthanPostBattle:
-	.string "{JPN}ぼくも ダートじてんしゃ もっていれば\nだんさを とびこえて いけるのにな$"
+	.string "If I had an ACRO BIKE, I'd be able to\n"
+	.string "jump ledges.$"
 
 JaggedPass_Text_EthanRegister:
-	.string "{JPN}もうちょっと デコボコに なれたら\nこんどこそ かつぞ!\lぼくを ポケナビに とうろく しといてよ$"
+	.string "When I get more used to this bumpiness,\n"
+	.string "I'll be sure to win!\p"
+	.string "Can you register me in your POKéNAV?$"
 
 JaggedPass_Text_EthanRematchIntro:
-	.string "{JPN}デコボコに なれちゃったから\nちかごろだと うたいながら のぼるのさ!$"
+	.string "I got used to this bumpiness.\n"
+	.string "I sing while I climb now.$"
 
 JaggedPass_Text_EthanRematchDefeat:
-	.string "{JPN}やっぱり デコボコだと\nたたかいにくいよ……$"
+	.string "It's still not easy to battle on this\n"
+	.string "bumpy ground…$"
 
 JaggedPass_Text_EthanPostRematch:
-	.string "{JPN}ぼくも キンセツで カゼノさんから\nダートじてんしゃ もらおうかな$"
+	.string "I should get an ACRO BIKE from RYDEL\n"
+	.string "in MAUVILLE CITY…$"
 
 JaggedPass_Text_GruntIntro:
-	.string "{JPN}うわっ!? ……なんだ おまえ!\pオレが\n  こんな\l    ところで\lなにを\l  してるか\l    なんて\lおまえにゃ カンケー\lな い だ ろ が!$"
+	.string "Wah!\n"
+	.string "What are you doing here?\p"
+	.string "What am I doing in a place like this?\p"
+	.string "What business is it of yours?$"
 
 JaggedPass_Text_GruntDefeat:
-	.string "{JPN}うぐぐ……\pはやく\n  アジトに\l    にげこめば\l      よかった……$"
+	.string "Urrrgh…\p"
+	.string "I should've ducked into our HIDEOUT\n"
+	.string "right away…$"
 
 JaggedPass_Text_GoWhereverYouWant:
-	.string "{JPN}わかった わかった!\nキミが つよいのは みとめて やるよ!\pオレのことは きにせず\nすきな ところへ いきな!$"
+	.string "Okay, oh-kay!\n"
+	.string "I admit it--you're strong!\p"
+	.string "Don't worry about me.\n"
+	.string "Go wherever you want!$"
 
 JaggedPass_Text_BoulderShakingInResponseToEmblem:
-	.string "{JPN}あ! マグマのしるしに はんのうして……\nおおきな いわが……\lブルブルと しんどう している!$"
+	.string "Oh! This boulder is shaking in response\n"
+	.string "to the MAGMA EMBLEM!$"
 
 JaggedPass_Text_JulioIntro:
-	.string "{JPN}じてんしゃで いっきに\nおりて くると こわいぃぃ!$"
+	.string "Aiyeeh! It's awfully scary to shoot\n"
+	.string "down the mountain in one go!$"
 
 JaggedPass_Text_JulioDefeat:
-	.string "{JPN}ガッタガタ$"
+	.string "I feel like I'm falling apart…$"
 
 JaggedPass_Text_JulioPostBattle:
-	.string "{JPN}じてんしゃが おもいっきり\nバウンド して おしりが イタイ……$"
+	.string "My bicycle bounced around so much,\n"
+	.string "my rear end's sore…$"
 
 JaggedPass_Text_AutumnIntro:
-	.string "{JPN}まいにち ここを のぼっているわ\nパワーには じしん あるんだから!$"
+	.string "I climb this hill every day.\n"
+	.string "I have confidence in my strength!$"
 
 JaggedPass_Text_AutumnDefeat:
-	.string "{JPN}んー おっかしいな……$"
+	.string "Hmm…\n"
+	.string "What went wrong?$"
 
 JaggedPass_Text_AutumnPostBattle:
-	.string "{JPN}すこし のぼった ところにある\nおかしな でっぱりは なにかしら……?$"
+	.string "What is that odd rock protrusion\n"
+	.string "a little up the hill from here?$"
+

@@ -505,11 +505,11 @@ static void Task_FirstBattleEnterParty_WaitFadeNormal(u8 taskId);
 static u8 CombinedToIndividualPartyId(u8 index);
 static u8 IndividualToCombinedPartyId(u8 index, enum BattlerId battler);
 
-static const u8 sText_askText[] = _("{JPN}{STR_VAR_1}の とくせいを\n{STR_VAR_2}に かえますか?");
-static const u8 sText_doneText[] = _("{JPN}{STR_VAR_1}の とくせいが\n{STR_VAR_2}に へんかした！{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BasePointsResetToZero[] = _("{JPN}{STR_VAR_1}の きそポイントが\nまっさらに なった!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CannotSendMonToBoxHM[] = _("{JPN}ひでんわざを おぼえているので\nボックスへ おくることが できません!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CannotSendMonToBoxPartner[] = _("{JPN}じぶんの ポケモンでは ないので\nボックスへ おくることが できません!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_askText[] = _("Would you like to change {STR_VAR_1}'s\nability to {STR_VAR_2}?");
+static const u8 sText_doneText[] = _("{STR_VAR_1}'s ability became\n{STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbecause it knows a HM move.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CannotSendMonToBoxPartner[] = _("Cannot send a mon that doesn't\nbelong to you to the box.{PAUSE_UNTIL_PRESS}");
 
 // static const data
 #include "data/party_menu.h"
@@ -2408,8 +2408,8 @@ static void CreateCancelConfirmWindows(bool8 chooseHalf)
         {
             confirmWindowId = AddWindow(&sConfirmButtonWindowTemplate);
             FillWindowPixelBuffer(confirmWindowId, PIXEL_FILL(0));
-            mainOffset = GetStringCenterAlignXOffset(FONT_NORMAL, gMenuText_Confirm, 48);
-            AddTextPrinterParameterized4(confirmWindowId, FONT_NORMAL, mainOffset, 1, 0, 0, sFontColorTable[0], TEXT_SKIP_DRAW, gMenuText_Confirm);
+            mainOffset = GetStringCenterAlignXOffset(FONT_SMALL, gMenuText_Confirm, 48);
+            AddTextPrinterParameterized4(confirmWindowId, FONT_SMALL, mainOffset, 1, 0, 0, sFontColorTable[0], TEXT_SKIP_DRAW, gMenuText_Confirm);
             PutWindowTilemap(confirmWindowId);
             CopyWindowToVram(confirmWindowId, COPYWIN_GFX);
             cancelWindowId = AddWindow(&sMultiCancelButtonWindowTemplate);
@@ -2425,13 +2425,13 @@ static void CreateCancelConfirmWindows(bool8 chooseHalf)
         // Branches are functionally identical. Second branch is never reached, Spin Trade wasnt fully implemented
         if (gPartyMenu.menuType != PARTY_MENU_TYPE_SPIN_TRADE)
         {
-            mainOffset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Cancel, 48);
-            AddTextPrinterParameterized3(cancelWindowId, FONT_NORMAL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel);
+            mainOffset = GetStringCenterAlignXOffset(FONT_SMALL, gText_Cancel, 48);
+            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel);
         }
         else
         {
-            mainOffset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Cancel2, 48);
-            AddTextPrinterParameterized3(cancelWindowId, FONT_NORMAL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel2);
+            mainOffset = GetStringCenterAlignXOffset(FONT_SMALL, gText_Cancel2, 48);
+            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, mainOffset + offset, 1, sFontColorTable[0], TEXT_SKIP_DRAW, gText_Cancel2);
         }
         PutWindowTilemap(cancelWindowId);
         CopyWindowToVram(cancelWindowId, COPYWIN_GFX);
@@ -2678,7 +2678,10 @@ static void DisplayParty4DigitsHP(struct PartyMenuBox *menuBox, const u8 *str, c
 static void DisplayPartyPokemonHP(u16 hp, u16 maxhp, struct PartyMenuBox *menuBox)
 {
     bool32 fourDigits = (maxhp >= 1000);
-	ConvertIntToDecimalStringN(gStringVar1, hp, STR_CONV_MODE_RIGHT_ALIGN, fourDigits ? 4 : 3);
+    u8 *strOut = ConvertIntToDecimalStringN(gStringVar1, hp, STR_CONV_MODE_RIGHT_ALIGN, fourDigits ? 4 : 3);
+
+    strOut[0] = CHAR_SLASH;
+    strOut[1] = EOS;
 
     if (fourDigits)
         DisplayParty4DigitsHP(menuBox, gStringVar1, &menuBox->infoRects->dimensions[12], 10);
@@ -5136,8 +5139,8 @@ void ItemUseCB_AbilityPatch(u8 taskId, TaskFunc task)
 
 void Task_Mint(u8 taskId)
 {
-    static const u8 sText_askText[] = _("{JPN}{STR_VAR_1}の のうりょくを\nへんかさせますか?");
-    static const u8 sText_doneText[] = _("{JPN}{STR_VAR_2}の こうかで\n{STR_VAR_1}の のうりょくに へんかが おきたようだ!{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_askText[] = _("It might affect {STR_VAR_1}'s stats.\nAre you sure you want to use it?");
+    static const u8 sText_doneText[] = _("{STR_VAR_1}'s stats may have changed due\nto the effects of the {STR_VAR_2}!{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
 
     switch (tState)
@@ -6098,7 +6101,7 @@ static void BufferMonStatsToTaskData(struct Pokemon *mon, s16 *data)
 
 void Task_DynamaxCandy(u8 taskId)
 {
-    static const u8 sText_doneText[] = _("{JPN}{STR_VAR_1}の ダイマックスレベルが\n1 あがった！{PAUSE_UNTIL_PRESS}");
+    static const u8 sText_doneText[] = _("{STR_VAR_1}'s Dynamax Level\nincreased by 1!{PAUSE_UNTIL_PRESS}");
     s16 *data = gTasks[taskId].data;
 
     switch (tState)

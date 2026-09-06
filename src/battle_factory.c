@@ -97,29 +97,27 @@ static const u8 sFixedIVTable[][2] =
     {31, 31},
 };
 
-// ここがレンタルポケモンの周回ごとの範囲。
-// ８種類あって、１周増えていく事に範囲が設定されている。８周が最大。
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_BASTIODON,    FRONTIER_MON_BRUXISH},		// 3 - 29
-    {FRONTIER_MON_BRUXISH,  FRONTIER_MON_CLOYSTER_1},		// 16 - 78
-    {FRONTIER_MON_DELCATTY,  FRONTIER_MON_CLOYSTER_2},		// 79 - 141
-    {FRONTIER_MON_DONDOZO,   FRONTIER_MON_SLAKING_1},		// 142 - 230
-    {FRONTIER_MON_PALAFIN,   FRONTIER_MON_SLAKING_2},		// 231 - 319
-    {FRONTIER_MON_GRENINJA_2,   FRONTIER_MON_SLAKING_3}, 	// 320 - 408
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1}, 		// 409 - 497
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1},		// 142 - 587
+    {FRONTIER_MON_GRIMER,     FRONTIER_MON_FURRET_1},   // 110 - 199
+    {FRONTIER_MON_DELCATTY_1, FRONTIER_MON_CLOYSTER_1}, // 162 - 266
+    {FRONTIER_MON_DELCATTY_2, FRONTIER_MON_CLOYSTER_2}, // 267 - 371
+    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MON_SLAKING_1},  // 372 - 467
+    {FRONTIER_MON_DUGTRIO_2,  FRONTIER_MON_SLAKING_2},  // 468 - 563
+    {FRONTIER_MON_DUGTRIO_3,  FRONTIER_MON_SLAKING_3},  // 564 - 659
+    {FRONTIER_MON_DUGTRIO_4,  FRONTIER_MON_SLAKING_4},  // 660 - 755
+    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MONS_HIGH_TIER}, // 372 - 849
 
     // Open level
-    {FRONTIER_MON_DONDOZO,   FRONTIER_MON_SLAKING_1},		// 142 - 230
-    {FRONTIER_MON_PALAFIN,   FRONTIER_MON_SLAKING_2},		// 231 - 319
-    {FRONTIER_MON_GRENINJA_2,   FRONTIER_MON_SLAKING_3}, 	// 320 - 408
-    {FRONTIER_MON_DUGTRIO,   FRONTIER_MON_SLAKING_4},		// 409 - 497
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1}, 		// 142 - 619
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1}, 		// 142 - 619
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1}, 		// 142 - 619
-    {FRONTIER_MON_DONDOZO,   NUM_FRONTIER_MONS - 1}, 		// 142 - 619
+    {FRONTIER_MON_DUGTRIO_1, FRONTIER_MON_SLAKING_1}, // 372 - 467
+    {FRONTIER_MON_DUGTRIO_2, FRONTIER_MON_SLAKING_2}, // 468 - 563
+    {FRONTIER_MON_DUGTRIO_3, FRONTIER_MON_SLAKING_3}, // 564 - 659
+    {FRONTIER_MON_DUGTRIO_4, FRONTIER_MON_SLAKING_4}, // 660 - 755
+    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+    {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
 };
 
 // code
@@ -429,7 +427,7 @@ static void GenerateInitialRentalMons(void)
     i = 0;
     while (i != PARTY_SIZE)
     {
-        if (i < rentalRank) // プレイヤーのレンタル回数が多いほど、より優れたポケモンの中から初期レンタル用ポケモンが生成されるようになります。『より優れたポケモン』の基準とは。
+        if (i < rentalRank) // The more times the player has rented, the more initial rentals are generated from a better set of Pokémon
             monId = GetFactoryMonId(factoryLvlMode, challengeNum, TRUE);
         else
             monId = GetFactoryMonId(factoryLvlMode, challengeNum, FALSE);
@@ -437,7 +435,7 @@ static void GenerateInitialRentalMons(void)
         if (gFacilityTrainerMons[monId].species == SPECIES_UNOWN)
             continue;
 
-        // 同じ種類のポケモンを重複させない。
+        // Cannot have two Pokémon of the same species.
         for (j = firstMonId; j < firstMonId + i; j++)
         {
             u16 existingMonId = monIds[j];
@@ -454,7 +452,7 @@ static void GenerateInitialRentalMons(void)
         if (j != firstMonId + i)
             continue;
 
-        // 同じ種類の持ち物を重複させない。
+        // Cannot have two same held items.
         for (j = firstMonId; j < firstMonId + i; j++)
         {
             if (heldItems[j] != ITEM_NONE && heldItems[j] == gFacilityTrainerMons[monId].heldItem)
@@ -475,10 +473,10 @@ static void GenerateInitialRentalMons(void)
     }
 }
 
-// 対戦相手のパーティにおいて、最も多く含まれるタイプが１つであるかどうかを判定します。
-// もし最多のタイプが2つあり同数となる場合は、特定のタイプに偏りがないとみなされ、
-// 結果としてNUMBER_OF_MON_TYPES が返されます。
-// 尺余り。
+// Determines if the upcoming opponent has a single most-common
+// type in its party. If there are two different types that are
+// tied, then the opponent is deemed to have no preferred type,
+// and NUMBER_OF_MON_TYPES is the result.
 static void GetOpponentMostCommonMonType(void)
 {
     u8 i;
@@ -625,14 +623,14 @@ static void RestorePlayerPartyHeldItems(void)
     }
 }
 
-// 対戦相手のポケモンの個体値を取得。
-// 周回するごとに個体値が高くなり、７人目のトレーナーは１段階上の個体値を持っています。
-// ジンダイは例外で、現在の周回の２段階上の個体値を使用します。
-// FillFactoryFrontierTrainerPartyにおける不備により（原作のプログラムミス）、
-// 通常のトレーナーの個体値を決定する際に使用される周回数が、
-// バトルファクトリーのものではなくバトルタワーのものになっています。
-// 尺余り
-// 尺余り
+// Get the IV to use for the opponent's pokémon.
+// The IVs get higher for each subsequent challenge and for
+// the last trainer in each challenge. Noland is an exception
+// to this, as he uses the IVs that would be used by the regular
+// trainers 2 challenges ahead of the current one.
+// Due to a mistake in FillFactoryFrontierTrainerParty, the
+// challenge number used to determine the IVs for regular trainers
+// is Battle Tower's instead of Battle Factory's.
 u8 GetFactoryMonFixedIV(u8 challengeNum, bool8 isLastBattle)
 {
     u8 ivSet;
@@ -778,7 +776,7 @@ u64 GetAiScriptsInBattleFactory(void)
 
     if (lvlMode == FRONTIER_LVL_TENT)
     {
-        return AI_FLAG_BASIC_TRAINER;
+        return 0;
     }
     else
     {
@@ -786,13 +784,13 @@ u64 GetAiScriptsInBattleFactory(void)
         int challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
 
         if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_FRONTIER_BRAIN)
-            return AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
+            return AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY;
         else if (challengeNum < 2)
-            return AI_FLAG_BASIC_TRAINER;
+            return 0;
         else if (challengeNum < 4)
-            return AI_FLAG_BASIC_TRAINER | AI_FLAG_SMART_TERA | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
+            return AI_FLAG_CHECK_BAD_MOVE;
         else
-            return AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
+            return AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY;
     }
 }
 
@@ -805,7 +803,7 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
 
     if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
-    // プログラムミスにより、バトルファクトリーの個体値を決定するのに使われている周回数が、バトルタワーを参照している。
+    // By mistake Battle Tower's Level 50 challenge number is used to determine the IVs for Battle Factory.
     #ifdef BUGFIX
         enum FrontierLevelMode lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
         u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
@@ -817,7 +815,7 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
         if (gSaveBlock2Ptr->frontier.curChallengeBattleNum < FRONTIER_STAGES_PER_CHALLENGE - 1)
             fixedIV = GetFactoryMonFixedIV(challengeNum, FALSE);
         else
-            fixedIV = GetFactoryMonFixedIV(challengeNum, TRUE); // ７人目のトレーナーは、それまでより高い個体値を使用する。
+            fixedIV = GetFactoryMonFixedIV(challengeNum, TRUE); // Last trainer in challenge uses higher IVs
     }
     else if (trainerId == TRAINER_EREADER)
     {

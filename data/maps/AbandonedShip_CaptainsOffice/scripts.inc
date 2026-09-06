@@ -23,11 +23,19 @@ AbandonedShip_CaptainsOffice_EventScript_ThisIsSSCactus::
 	end
 
 AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner:
-	.string "{JPN}クスノキ かんちょうに たのまれてね\nこのふねの ちょうさを しているんだ\pついでに たんちきを さがしてきて\nほしいって いわれたんだけど\lみあたらないなあ……$"
+	.string "I'm investigating this ship on behalf\n"
+	.string "of CAPT. STERN.\p"
+	.string "He also asked me to find a SCANNER,\n"
+	.string "but I haven't had any success…$"
 
 AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner:
-	.string "{JPN}あ! たんちき じゃないか!\p……よかったら それ\nクスノキ かんちょうに\lわたしてきて くれないかなあ\pもうすこし このふね しらべたいんだ$"
+	.string "Oh! That's a SCANNER!\p"
+	.string "Listen, can I get you to deliver that\n"
+	.string "to CAPT. STERN?\p"
+	.string "I want to investigate this ship a\n"
+	.string "little more.$"
 
 AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus:
-	.string "{JPN}この ふねは カクタスごうと いってね\nちょいと むかしの ふね らしいんだ$"
+	.string "This ship is called S.S. CACTUS.\n"
+	.string "It seems to be from an earlier era.$"
 

@@ -218,7 +218,7 @@ FuchsiaCity_SafariZone_Entrance_Text_PlaySafariGameFor500::
 FuchsiaCity_SafariZone_Entrance_Text_ThatllBe500WeOnlyUseSpecialBalls::
 	.string "That'll be ¥500, please!\p"
 	.string "We only use a special kind of \n"
-	.string "POKe BALLS here.$"
+	.string "POKé BALLS here.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PlayerReceived30SafariBalls::
 	.string "{PLAYER} received 30 SAFARI BALLS\n"
@@ -261,15 +261,15 @@ FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone::
 	.string "The SAFARI ZONE actually has\n"
 	.string "four zones in it.\p"
 	.string "Each zone has different kinds of\n"
-	.string "POKEMON, even some rare ones.\p"
+	.string "POKéMON, even some rare ones.\p"
 	.string "Use the supplied SAFARI BALLS to\n"
 	.string "catch them.\p"
 	.string "You can also throw BAIT or ROCKS\n"
 	.string "besides the SAFARI BALLS.\p"
-	.string "If you throw BAIT, the POKEMON\n"
+	.string "If you throw BAIT, the POKéMON\n"
 	.string "becomes less likely to flee, but\l"
 	.string "harder to catch.\p"
-	.string "If you throw ROCKS, the POKEMON\n"
+	.string "If you throw ROCKS, the POKéMON\n"
 	.string "becomes more likely to flee, but\l"
 	.string "easier to catch.\p"
 	.string "When you run out of time or SAFARI\n"

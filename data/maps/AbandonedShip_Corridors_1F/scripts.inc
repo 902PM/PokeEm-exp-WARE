@@ -11,13 +11,16 @@ AbandonedShip_Corridors_1F_EventScript_Charlie::
 	end
 
 AbandonedShip_Corridors_1F_Text_CharlieIntro:
-	.string "{JPN}ふねの なかでも\nうきわ もっていたら おかしい?$"
+	.string "What's so funny about having my inner\n"
+	.string "tube aboard the ship?$"
 
 AbandonedShip_Corridors_1F_Text_CharlieDefeat:
-	.string "{JPN}うわぁ つよーい!$"
+	.string "Whoa, you overwhelmed me!$"
 
 AbandonedShip_Corridors_1F_Text_CharliePostBattle:
-	.string "{JPN}うきわを もったままだと\nモンスターボール なげにくいよ$"
+	.string "It's not easy throwing POKé BALLS\n"
+	.string "while hanging on to an inner tube!$"
 
 AbandonedShip_Corridors_1F_Text_IsntItFunHere:
-	.string "{JPN}ここって おもしろいね!\nいるだけで ワクワク してくるよ!$"
+	.string "Isn't it fun here?\n"
+	.string "I get excited just being here!$"

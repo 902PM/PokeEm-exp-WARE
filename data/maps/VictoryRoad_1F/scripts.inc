@@ -119,64 +119,100 @@ VictoryRoad_1F_EventScript_Katelynn::
 	end
 
 VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore:
-	.string "{JPN}ミツル『あっ! {PLAYER}さん!\pぼくが こんな ところに いるなんて\nおどろいた でしょ!\pぼくが ここまで これたのは\n{PLAYER}さんの おかげだよ!\pあのとき {PLAYER}さんに まけたから\nぼくは つよく なれたんだ!\p……だけど!\nぼくは もう まけない\pぼくに ゆうきと げんきを くれた\nポケモンの ためにも かつんだ!\pそれでは…… いきますよ!$"
+	.string "WALLY: Hi! {PLAYER}!\p"
+	.string "I bet you're surprised to see me here!\p"
+	.string "I made it all the way here, and it's\n"
+	.string "all thanks to you!\p"
+	.string "{PLAYER}, losing to you that time\n"
+	.string "made me stronger!\p"
+	.string "But I'm not going to lose anymore!\p"
+	.string "I'm going to win! For the POKéMON who\n"
+	.string "gave me courage and strength!\p"
+	.string "Okay… Here I come!$"
 
 VictoryRoad_1F_Text_WallyEntranceDefeat:
-	.string "{JPN}うわぁ!\nやっぱり {PLAYER}さんは つよいよ!$"
+	.string "Wow!\n"
+	.string "{PLAYER}, you are strong, after all!$"
 
 VictoryRoad_1F_Text_WallyPostEntranceBattle:
-	.string "{JPN}ミツル『…… こんかいは\n{PLAYER}さんに かてなかった けど\lいつか きっと おいついて みせるからね!$"
+	.string "WALLY: I couldn't beat you today,\n"
+	.string "{PLAYER}, but one of these days, I'll\l"
+	.string "catch up to you!$"
 
 VictoryRoad_1F_Text_WallyIntro:
-	.string "{JPN}ミツル『あっ! {PLAYER}さん!\pぼく あれから つよくなった はずだよ!\nそれを {PLAYER}さんに\lみてもらいたいんだ!\pそれでは…… いきますよ!$"
+	.string "WALLY: Hi! {PLAYER}!\p"
+	.string "I've gotten stronger since that last\n"
+	.string "time! I wanted to show you, {PLAYER}!\p"
+	.string "Okay… Here I come!$"
 
 VictoryRoad_1F_Text_WallyDefeat:
-	.string "{JPN}うわぁ!\nやっぱり {PLAYER}さんは つよいよ!$"
+	.string "Wow!\n"
+	.string "{PLAYER}, you are strong, after all!$"
 
 VictoryRoad_1F_Text_WallyPostBattle:
-	.string "{JPN}ミツル『…… こんかいも\n{PLAYER}さんに かてなかった けど\lいつか きっと おいついて……\pポケモンリーグに ちょうせん するんだ!$"
+	.string "WALLY: I couldn't beat you this time,\n"
+	.string "too… But one of these days, {PLAYER},\l"
+	.string "I'm going to catch up to you…\p"
+	.string "And challenge the POKéMON LEAGUE!$"
 
 VictoryRoad_1F_Text_EdgarIntro:
-	.string "{JPN}ここまでは なんとか これたが\nあと すこしが とても とおいよ……$"
+	.string "I've made it this far a couple times,\n"
+	.string "but the last stretch is so long…$"
 
 VictoryRoad_1F_Text_EdgarDefeat:
-	.string "{JPN}ここで おわったか……$"
+	.string "My dream ends here again…$"
 
 VictoryRoad_1F_Text_EdgarPostBattle:
-	.string "{JPN}ここまで きたなら\nいきおいで チャンピオンに なれよ!\lきみなら できるさ!$"
+	.string "You've made it this far. Keep the\n"
+	.string "momentum going and become the\l"
+	.string "CHAMPION! If anyone can, it's you!$"
 
 VictoryRoad_1F_Text_AlbertIntro:
-	.string "{JPN}せっかく ここまで きたんだ\nいまさら まけるなんて ありえないよ!$"
+	.string "I didn't come all this way to lose now.\n"
+	.string "That possibility doesn't exist!$"
 
 VictoryRoad_1F_Text_AlbertDefeat:
-	.string "{JPN}まさか……\nまけたのか……?$"
+	.string "Impossible…\n"
+	.string "I lost?$"
 
 VictoryRoad_1F_Text_AlbertPostBattle:
-	.string "{JPN}ここで まけた……\pということは まだ チャンピオンに なる\nしかくが なかったと いうことか……$"
+	.string "I lost here…\p"
+	.string "That means I lack the qualifications\n"
+	.string "to become the CHAMPION…$"
 
 VictoryRoad_1F_Text_HopeIntro:
-	.string "{JPN}この はてしなく けわしい みち こそ\nまさに チャンピオンへの みち なのよ!$"
+	.string "This seemingly infinite and harsh road\n"
+	.string "lives up to its name of VICTORY.$"
 
 VictoryRoad_1F_Text_HopeDefeat:
-	.string "{JPN}すばらしい たたかいかた ね……$"
+	.string "Your battle style is fantastic…$"
 
 VictoryRoad_1F_Text_HopePostBattle:
-	.string "{JPN}あなたには チャンピオンに なれる\nかのうせいが あるみたいね$"
+	.string "You seem to have the potential for\n"
+	.string "becoming the CHAMPION.$"
 
 VictoryRoad_1F_Text_QuincyIntro:
-	.string "{JPN}チャンピオンロード とは なにか?\nかてたら おしえてやろう!$"
+	.string "What is the VICTORY ROAD?\n"
+	.string "I'll tell you if you win!$"
 
 VictoryRoad_1F_Text_QuincyDefeat:
-	.string "{JPN}うん いいだろう!$"
+	.string "Okay!\n"
+	.string "Well done!$"
 
 VictoryRoad_1F_Text_QuincyPostBattle:
-	.string "{JPN}ここを ぶじに ぬけきるって ことが\nポケモンチャンピオンを めざす やつの\lさいごの しれん なんだ!\pだから チャンピオンロードと\nよばれて いるのさ$"
+	.string "Getting through here safely--that's\n"
+	.string "the final test for any TRAINER aiming\l"
+	.string "to become the POKéMON CHAMPION.\p"
+	.string "That's why it's called the VICTORY\n"
+	.string "ROAD.$"
 
 VictoryRoad_1F_Text_KatelynnIntro:
-	.string "{JPN}ここまで きた ひとに\nなにも いうことは ない…… いくわよ!$"
+	.string "I have nothing to say to anyone\n"
+	.string "that's come this far. Come on!$"
 
 VictoryRoad_1F_Text_KatelynnDefeat:
-	.string "{JPN}くやしいわ……!$"
+	.string "This is a disgrace…$"
 
 VictoryRoad_1F_Text_KatelynnPostBattle:
-	.string "{JPN}ふん…… いいわよ\nあなた から さきに いきなさいよ$"
+	.string "Humph, go right on ahead.\n"
+	.string "See if I care.$"

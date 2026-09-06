@@ -304,59 +304,125 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "{JPN}これ…… ダイゴさんに もらったけど\nなんだか よく わかんないや!\pおうじゃのしるし って いうらしいけど\nおまえ ほしい?$"
+	.string "I got this from STEVEN, but I don't\n"
+	.string "know what it's good for.\p"
+	.string "I think it's called KING'S ROCK.\n"
+	.string "Do you want it?$"
 
 MossdeepCity_Text_YouCanKeepIt:
-	.string "{JPN}これが ほしいなんて\nおまえも かわってるよな!\pやるけど そのかわり\nダイゴさんには ないしょ だぜ!$"
+	.string "Why would you want it?\n"
+	.string "You're weird.\p"
+	.string "You can keep it, but keep it a secret\n"
+	.string "from STEVEN.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "{JPN}ダイゴさんの いえなら すぐそこだよ!$"
+	.string "STEVEN's house is right over there!$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
-	.string "{JPN}そうだろ! へんてこな いしを\nもらっても こまっちゃうよな!$"
+	.string "Yeah, you think so, too! What are you\n"
+	.string "supposed to do with some weird rock?$"
 
 MossdeepCity_Text_WailmerWatching:
-	.string "{JPN}この トクサネの しゅうへん では\nやせいの ホエルコが けんぶつ できるんだ\pそーいうのを えーと……\nなんて いったっけ かな……\pホエ ホエ ホエ……\pホエルコ ウオッチング だ!$"
+	.string "Around MOSSDEEP, you can see wild\n"
+	.string "WAILMER.\p"
+	.string "It's called, uh…\n"
+	.string "What was it now…\p"
+	.string "WAI, WAI, WAI…\p"
+	.string "WAILMER watching!$"
 
 MossdeepCity_Text_SpaceCenterReceivedLetter:
-	.string "{JPN}しまの うちゅうセンター では\nすんごい ロケット とばしとるけど……\pさいきん あそこに\nおかしなてがみ が とどいた とかで\lちょっとした さわぎに なっとるのよ$"
+	.string "The island's SPACE CENTER has been\n"
+	.string "launching huge rockets.\p"
+	.string "There's been some kind of an uproar\n"
+	.string "over a letter they received recently.$"
 
 MossdeepCity_Text_SpaceCenterLaunchingRockets:
-	.string "{JPN}しまの うちゅうセンター では\nすんごい ロケット とばしとるのよ!$"
+	.string "The island's SPACE CENTER has been\n"
+	.string "launching huge rockets.$"
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
-	.string "{JPN}ふなのりの なかまから きいたんだけど\nミナモに すみついていた アクアだん\lだれかが やっつけたんだってな!\pでも こっちの トクサネは\nマグマだんに ねらわれてるんだよ……\pあいつらが なにをするき なのかは\nうちゅうセンターに いけば わかるさ$"
+	.string "I heard from a SAILOR buddy that\n"
+	.string "TEAM AQUA set up shop in LILYCOVE.\p"
+	.string "I also heard that someone came along\n"
+	.string "and wiped the floor with them!\p"
+	.string "But MOSSDEEP here's been targeted\n"
+	.string "by that TEAM MAGMA.\p"
+	.string "If you want to know what they're up to,\n"
+	.string "go visit the SPACE CENTER.$"
 
 MossdeepCity_Text_FeelReliefOnLand:
-	.string "{JPN}おれは ふなのり だから\nやっぱり うみのほうが だいじさ!\pでも ひさしぶりに りくに あがると\nやっぱり ホッと するんだよな!$"
+	.string "I'm a SAILOR, so the sea's obviously\n"
+	.string "more important to me.\p"
+	.string "But you know? When I get back on land\n"
+	.string "after a long voyage, I do feel relief!$"
 
 MossdeepCity_Text_NiceIfWorldCoveredByFlowers:
-	.string "{JPN}せかいじゅうの すべてが!\pこのしま みたいに くさばなで\nいっぱいに なれば いいのにね!$"
+	.string "Wouldn't it be nice?\p"
+	.string "If the whole world was covered in\n"
+	.string "plants and flowers like this island?$"
 
 MossdeepCity_Text_LifeNeedsSeaToLive:
-	.string "{JPN}いのちの みなもとは うみから うまれて\nりくに あがって きた\pやくめを おえた いのちは\nつち となって だいちに かえって いく\pそして うみと だいちは\nいつでも つながって いる……\pそう この かいがんせんの ようにな$"
+	.string "All life needs the sea to live, even\n"
+	.string "though it makes its home on the land.\p"
+	.string "Life, having run its course, becomes\n"
+	.string "soil and returns to the land.\p"
+	.string "And the sea is always connected to\n"
+	.string "the land.\p"
+	.string "Yes, like the very shoreline here.$"
 
 MossdeepCity_Text_SurfExhilarating:
-	.string "{JPN}ふねのたびも いいけどな\pポケモンと ともに なみのりで\nうみを わたるのは なんとも いえない\lきもちよさが あるよな……\pそう おもわないか? わかものよ$"
+	.string "A voyage on a ship is fine.\p"
+	.string "But crossing the sea with POKéMON\n"
+	.string "using SURF…\p"
+	.string "Now that's an exhilarating trip!\n"
+	.string "Wouldn't you agree, youngster?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
-	.string "{JPN}この いわ って\nうちゅうセンターの みんなに とって\lだいじな いわ なの\pロケットが ぶじに とぶように ねがって\nここに おいたんだって!\pあなたは ねがいごとを かなえたいとき\nどうするの?\lながれぼしに ねがうの?\pあたしなら たんざくに\nおねがいごとを かくかな やっぱ!$"
+	.string "This rock has a special meaning to\n"
+	.string "the people at the SPACE CENTER.\p"
+	.string "They put it here as their wish for\n"
+	.string "their rockets to fly safely.\p"
+	.string "When you make a wish, what do you use?\n"
+	.string "Do you wish upon a star?\p"
+	.string "I use a wish tag to make it happen.\n"
+	.string "That's what I do.$"
 
 MossdeepCity_Text_ItsAWhiteRock:
-	.string "{JPN}しろい いわ だ!$"
+	.string "It's a white rock.$"
 
 MossdeepCity_Text_GymSign:
-	.string "{JPN}トクサネ シティ ポケモンジム\nリーダー フウ ラン\lしんぴの コンビネーション!!$"
+	.string "MOSSDEEP CITY POKéMON GYM\n"
+	.string "LEADERS: LIZA & TATE\p"
+	.string "“The mystic combination!”$"
 
 MossdeepCity_Text_CitySign:
-	.string "{JPN}ここは トクサネ シティ\n「ポケモンを たいせつに!」が あいことば$"
+	.string "MOSSDEEP CITY\n"
+	.string "“Our slogan: Cherish POKéMON!”$"
 
 MossdeepCity_Text_SpaceCenterSign:
-	.string "{JPN}「トクサネ うちゅうセンター」\nうちゅうに いちばん ちかい ばしょ$"
+	.string "MOSSDEEP SPACE CENTER\n"
+	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "{JPN}エニシダ『{PLAYER}{KUN} げんき?\nわたしは げんきさ!\pトクサネシティの ジムリーダーが\nかなり つよいって きいてね\lのぞいてみようと きて みたら\lまちの ようすが なんだか ヘンなんだ\pよこくじょうが どうした とか\nうちゅうセンターが どうした とか……\pわたしには かんけい なさそうだなあ$"
+	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"
+	.string "I'm doing great!\p"
+	.string "I'd heard MOSSDEEP's GYM LEADER is\n"
+	.string "pretty strong, so I decided to come\l"
+	.string "take a look-see for myself.\p"
+	.string "But there's something wrong about\n"
+	.string "this town.\p"
+	.string "People are going on about a warning\n"
+	.string "letter and the SPACE CENTER…\p"
+	.string "I don't think it concerns me in any\n"
+	.string "way, though.$"
 
 MossdeepCity_Text_SootopolisNewGymLeader:
-	.string "{JPN}あー あしもとが じゃぶじゃぶして\nきもちが いい……\pそうだ! じゃぶじゃぶ といえば\nルネシティ だけど\pあそこの ジム\nリーダーが かわった らしいね\pなんでも ミクリさんの\nおししょうさん だとか……$"
+	.string "Ahh… It feels great letting the waves\n"
+	.string "wash over my feet…\p"
+	.string "Speaking of the waves, you know that\n"
+	.string "island city SOOTOPOLIS?\p"
+	.string "I think the GYM there had a new\n"
+	.string "LEADER come in.\p"
+	.string "People tell me the new LEADER once\n"
+	.string "mentored WALLACE.$"
 

@@ -5078,31 +5078,25 @@ bool32 AI_CanContactBypassProtect(enum BattlerId battlerAtk, enum BattlerId batt
 bool32 IsConsideringZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
 {
     if (GetMovePower(move) == 0 && GetMoveZEffect(move) == Z_EFFECT_NONE)
-    {
         return FALSE;
-    }
-    else if (!IsViableZMove(battlerAtk, move))
-    {
-        return FALSE;
-    }
 
     return gBattleStruct->gimmick.usableGimmick[battlerAtk] == GIMMICK_Z_MOVE && ShouldUseZMove(battlerAtk, battlerDef, move);
 }
 
-//TODO - もう少し高度なロジックにしたい。
+//TODO - this could use some more sophisticated logic
 bool32 ShouldUseZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move chosenMove)
 {
-    // シンプルなロジック。通常技で倒せる場合を除き、選択した技をZワザにできるならする。
+    // simple logic. just upgrades chosen move to z move if possible, unless regular move would kill opponent
     enum MoveTarget target = AI_GetBattlerMoveTargetType(battlerAtk, chosenMove);
     if ((IsDoubleBattle()) && battlerDef == GetPartnerBattler(battlerAtk) && target != TARGET_ALLY && target != TARGET_USER_OR_ALLY)
-        return FALSE;   // パートナーにZワザを使わない。
+        return FALSE;   // don't use z move on partner
     if (HasTrainerUsedGimmick(battlerAtk, GIMMICK_Z_MOVE))
-        return FALSE;   // Zワザを2回使わせない。
+        return FALSE;   // can't use z move twice
 
     if (IsViableZMove(battlerAtk, chosenMove))
     {
         enum BattleMoveEffects baseEffect = GetMoveEffect(chosenMove);
-        bool32 isEager = FALSE; // 通常よりもZワザを使う可能性が高い
+        bool32 isEager = FALSE; // more likely to use a z move than typical
 
         enum Move predictedMove = GetPredictedMove(battlerAtk, battlerDef, gAiLogicData);
         bool32 isSlower = AI_IsSlower(battlerAtk, battlerDef, chosenMove, predictedMove, CONSIDER_PRIORITY);
@@ -5243,18 +5237,18 @@ bool32 ShouldUseZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
         if (gBattleMons[battlerDef].ability == ABILITY_DISGUISE
             && !MoveIgnoresTargetAbility(zMove)
             && IsMimikyuDisguised(battlerDef))
-            return FALSE; // ばけのかわを剥がすためにZワザを無駄遣いしない。
+            return FALSE; // Don't waste a Z-Move busting disguise
         if (gBattleMons[battlerDef].ability == ABILITY_ICE_FACE
             && !MoveIgnoresTargetAbility(zMove)
             && gBattleMons[battlerDef].species == SPECIES_EISCUE_ICE && IsBattleMovePhysical(chosenMove))
-            return FALSE; // アイスフェイスを壊すためにZワザを無駄遣いしない。
+            return FALSE; // Don't waste a Z-Move busting Ice Face
 
         dmg = AI_CalcDamageSaveBattlers(chosenMove, battlerAtk, battlerDef, &effectiveness, GIMMICK_NONE, GIMMICK_NONE);
 
-        // 通常技で倒せる場面では、Zワザを使わない。
+        // don't waste a damaging z move if the normal move will KO
         if (!IsBattleMoveStatus(chosenMove) && dmg.minimum >= gBattleMons[battlerDef].hp)
         {
-            // Risky AIの場合、命中チェックをスキップ
+            // Risky AI skips accuracy check.
             if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY)
                 return FALSE;
 

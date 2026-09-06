@@ -211,7 +211,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
     if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
-        // 通常のバトルフロンティアのトレーナー
+        // Normal battle frontier trainer.
         fixedIV = GetFrontierTrainerFixedIvs(trainerId);
         monSet = gFacilityTrainers[trainerId].monSet;
     }
@@ -230,7 +230,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
     {
-        // レコードのトレーナー
+        // Record mixed player.
         for (j = 0, i = 0; i < monCount; j++, i++)
         {
             if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j].species != SPECIES_NONE
@@ -243,15 +243,16 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else
     {
-        // 弟子
+        // Apprentice.
         for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
             CreateApprenticeMon(&gParties[trainer][i], &gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE], i);
         return;
     }
 
-    // 通常のバトルフロンティアのトレーナー。
-    // 3匹のポケモンが選出されるまで、ランダムにトレーナーのパーティを埋める。
-    // トレーナーのパーティ内で、ポケモンの種類や持たせている道具が重複することはない。
+    // Regular battle frontier trainer.
+    // Attempt to fill the trainer's party with random Pokémon until 3 have been
+    // successfully chosen. The trainer's party may not have duplicate Pokémon species
+    // or duplicate held items.
     for (bfMonCount = 0; monSet[bfMonCount] != 0xFFFF; bfMonCount++)
         ;
     i = 0;
@@ -260,12 +261,12 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     {
         u16 monId = monSet[Random() % bfMonCount];
 
-        // 『HIGH_TIER』はオープンレベルにのみ、出現する。(includeのFRONTIER_MONS_HIGH_TIERの番号が閾値)
-        // ここでの20という数値は、有効な値ではありません。(意味がありません)
+        // "High tier" Pokémon are only allowed on open level mode
+        // 20 is not a possible value for level here
         if ((level == FRONTIER_MAX_LEVEL_50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
             continue;
 
-        // このポケモン種が重複していないことを確認する。
+        // Ensure this Pokémon species isn't a duplicate.
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_SPECIES) == gFacilityTrainerMons[monId].species)
@@ -274,7 +275,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // このポケモンの持ち物が重複していないことを確認する。
+        // Ensure this Pokemon's held item isn't a duplicate.
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) != ITEM_NONE
@@ -284,8 +285,8 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // この特定のポケモンインデックスが重複していないことを確認する。
-        // ただし、種族や持ち物は直前ですでに確認済みであるため、このチェックは不要と思われる。
+        // Ensure this exact Pokémon index isn't a duplicate. This check doesn't seem necessary
+        // because the species and held items were already checked directly above.
         for (j = 0; j < i; j++)
         {
             if (chosenMonIndices[j] == monId)
@@ -296,11 +297,11 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
         chosenMonIndices[i] = monId;
 
-        // 選択したポケモンをトレーナーのパーティに加える。
+        // Place the chosen Pokémon into the trainer's party.
         CreateFacilityMon(&gFacilityTrainerMons[monId], level, fixedIV, otID, 0, &gParties[trainer][i]);
 
-        // ポケモンがトレーナーのパーティに正常に追加されたため、
-        // 次のパーティスロットへ進んでも問題ありません。
+        // The Pokémon was successfully added to the trainer's party, so it's safe to move on to
+        // the next party slot.
         i++;
     }
 }
@@ -325,7 +326,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     CreateMonWithIVs(dst, fmon->species, level, personality, OTID_STRUCT_PRESET(otID), fixedIV);
 
     friendship = MAX_FRIENDSHIP;
-    // Give the chosen Pokemon its specified moves.
+    // Give the chosen Pokémon its specified moves.
     for (j = 0; j < MAX_MON_MOVES; j++)
     {
         move = fmon->moves[j];
@@ -334,7 +335,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 
         SetMonMoveSlot(dst, move, j);
         if (GetMoveEffect(move) == EFFECT_FRUSTRATION)
-            friendship = 0;  // Frustration is more powerful the lower the Pokemon's friendship is.
+            friendship = 0;  // Frustration is more powerful the lower the Pokémon's friendship is.
     }
 
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
@@ -368,9 +369,6 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     if (fmon->iv)
         SetMonData(dst, MON_DATA_IVS, &(fmon->iv));
 
-    if (fmon->nickname != NULL)
-        SetMonData(dst, MON_DATA_NICKNAME, fmon->nickname);
-
     if (fmon->isShiny)
     {
         u32 data = TRUE;
@@ -386,14 +384,9 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         u32 data = fmon->gigantamaxFactor;
         SetMonData(dst, MON_DATA_GIGANTAMAX_FACTOR, &data);
     }
-    if (fmon->shouldTerastal)
+    if (fmon->teraType)
     {
         u32 data = fmon->teraType;
-        SetMonData(dst, MON_DATA_TERA_TYPE, &data);
-    }
-    else
-    {
-        u32 data = TYPE_MYSTERY;
         SetMonData(dst, MON_DATA_TERA_TYPE, &data);
     }
 

@@ -256,25 +256,25 @@ static const u32 sBirchSpeechShadowGfx[] = INCGFX_U32("graphics/birch_speech/sha
 static const u32 sBirchSpeechBgMap[] = INCGFX_U32("graphics/birch_speech/map.bin", ".smolTM");
 static const u16 sBirchSpeechBgGradientPal[] = INCGFX_U16("graphics/birch_speech/bg2.pal", ".gbapal");
 
-static const u8 gText_SaveFileCorrupted[] = _("{JPN}レポートが せいかくに かかれていないので\nそのまえのレポートを よみます!");
-static const u8 gText_SaveFileErased[] = _("{JPN}レポートの ないようが きえてしまった!");
-static const u8 gJPText_No1MSubCircuit[] = _("{JPN}1Mサブきばんが ささっていません!");
-static const u8 gText_BatteryRunDry[] = _("{JPN}でんちぎれの ために\nとけいが うごかなくなりました\pとけいに かんけいする できごとは おきませんが\nゲームを つづけて あそぶことは できます");
+static const u8 gText_SaveFileCorrupted[] = _("The save file is corrupted. The\nprevious save file will be loaded.");
+static const u8 gText_SaveFileErased[] = _("The save file has been erased\ndue to corruption or damage.");
+static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません！");
+static const u8 gText_BatteryRunDry[] = _("The internal battery has run dry.\nThe game can be played.\pHowever, clock-based events will\nno longer occur.");
 
-static const u8 gText_MainMenuNewGame[] = _("{JPN}さいしょから はじめる");
-static const u8 gText_MainMenuContinue[] = _("{JPN}つづきから はじめる");
-static const u8 gText_MainMenuOption[] = _("{JPN}せっていを かえる");
-static const u8 gText_MainMenuMysteryGift[] = _("{JPN}ふしぎな おくりもの");
-static const u8 gText_MainMenuMysteryGift2[] = _("{JPN}ふしぎな もらいもの");
-static const u8 gText_MainMenuMysteryEvents[] = _("{JPN}ふしぎな できごと");
-static const u8 gText_WirelessNotConnected[] = _("{JPN}ワイヤレスアダプタ が\nつながっていません");
-static const u8 gText_MysteryGiftCantUse[] = _("{JPN}ワイヤレスアダプタ を さしたまま\nふしぎなもらいもの は できません");
-static const u8 gText_MysteryEventsCantUse[] = _("{JPN}ワイヤレスアダプタ を さしたまま\nふしぎなできごと は できません");
+static const u8 gText_MainMenuNewGame[] = _("NEW GAME");
+static const u8 gText_MainMenuContinue[] = _("CONTINUE");
+static const u8 gText_MainMenuOption[] = _("OPTION");
+static const u8 gText_MainMenuMysteryGift[] = _("MYSTERY GIFT");
+static const u8 gText_MainMenuMysteryGift2[] = _("MYSTERY GIFT");
+static const u8 gText_MainMenuMysteryEvents[] = _("MYSTERY EVENTS");
+static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nconnected.");
+static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
+static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
 
-static const u8 gText_ContinueMenuPlayer[] = _("{JPN}しゅじんこう");
-static const u8 gText_ContinueMenuTime[] = _("{JPN}プレイじかん");
-static const u8 gText_ContinueMenuPokedex[] = _("{JPN}ポケモンずかん");
-static const u8 gText_ContinueMenuBadges[] = _("{JPN}もっているバッジ");
+static const u8 gText_ContinueMenuPlayer[] = _("PLAYER");
+static const u8 gText_ContinueMenuTime[] = _("TIME");
+static const u8 gText_ContinueMenuPokedex[] = _("POKéDEX");
+static const u8 gText_ContinueMenuBadges[] = _("BADGES");
 
 #define MENU_LEFT 2
 #define MENU_TOP_WIN0 1
@@ -478,49 +478,49 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("{JPN}イツオ"),
-    COMPOUND_STRING("{JPN}ギョク"),
-    COMPOUND_STRING("{JPN}ケイ"),
-    COMPOUND_STRING("{JPN}シュウサク"),
-    COMPOUND_STRING("{JPN}セイゴ"),
-    COMPOUND_STRING("{JPN}ダイサク"),
-    COMPOUND_STRING("{JPN}タカヒト"),
-    COMPOUND_STRING("{JPN}タツヤ"),
-    COMPOUND_STRING("{JPN}ダニエル"),
-    COMPOUND_STRING("{JPN}テルキ"),
-    COMPOUND_STRING("{JPN}トム"),
-    COMPOUND_STRING("{JPN}トモヤ"),
-    COMPOUND_STRING("{JPN}ヒトシ"),
-    COMPOUND_STRING("{JPN}ヒロアキ"),
-    COMPOUND_STRING("{JPN}ユキヒコ"),
-    COMPOUND_STRING("{JPN}ラルド"),
-    COMPOUND_STRING("{JPN}リクヤ"),
-    COMPOUND_STRING("{JPN}リチャード"),
-    COMPOUND_STRING("{JPN}リュウ"),
-    COMPOUND_STRING("{JPN}リョウタ")
+    COMPOUND_STRING("STU"),
+    COMPOUND_STRING("MILTON"),
+    COMPOUND_STRING("TOM"),
+    COMPOUND_STRING("KENNY"),
+    COMPOUND_STRING("REID"),
+    COMPOUND_STRING("JUDE"),
+    COMPOUND_STRING("JAXSON"),
+    COMPOUND_STRING("EASTON"),
+    COMPOUND_STRING("WALKER"),
+    COMPOUND_STRING("TERU"),
+    COMPOUND_STRING("JOHNNY"),
+    COMPOUND_STRING("BRETT"),
+    COMPOUND_STRING("SETH"),
+    COMPOUND_STRING("TERRY"),
+    COMPOUND_STRING("CASEY"),
+    COMPOUND_STRING("DARREN"),
+    COMPOUND_STRING("LANDON"),
+    COMPOUND_STRING("COLLIN"),
+    COMPOUND_STRING("STANLEY"),
+    COMPOUND_STRING("QUINCY")
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("{JPN}アイコ"),
-    COMPOUND_STRING("{JPN}アヤナ"),
-    COMPOUND_STRING("{JPN}アン"),
-    COMPOUND_STRING("{JPN}エミィ"),
-    COMPOUND_STRING("{JPN}カオリ"),
-    COMPOUND_STRING("{JPN}カレン"),
-    COMPOUND_STRING("{JPN}キョウコ"),
-    COMPOUND_STRING("{JPN}サエ"),
-    COMPOUND_STRING("{JPN}スイ"),
-    COMPOUND_STRING("{JPN}ジュリ"),
-    COMPOUND_STRING("{JPN}チエミ"),
-    COMPOUND_STRING("{JPN}チヨコ"),
-    COMPOUND_STRING("{JPN}テルコ"),
-    COMPOUND_STRING("{JPN}ナナエ"),
-    COMPOUND_STRING("{JPN}ヒナ"),
-    COMPOUND_STRING("{JPN}マキコ"),
-    COMPOUND_STRING("{JPN}ミサコ"),
-    COMPOUND_STRING("{JPN}ムツミ"),
-    COMPOUND_STRING("{JPN}モニカ"),
-    COMPOUND_STRING("{JPN}ユウメ")
+    COMPOUND_STRING("KIMMY"),
+    COMPOUND_STRING("TIARA"),
+    COMPOUND_STRING("BELLA"),
+    COMPOUND_STRING("JAYLA"),
+    COMPOUND_STRING("ALLIE"),
+    COMPOUND_STRING("LIANNA"),
+    COMPOUND_STRING("SARA"),
+    COMPOUND_STRING("MONICA"),
+    COMPOUND_STRING("CAMILA"),
+    COMPOUND_STRING("AUBREE"),
+    COMPOUND_STRING("RUTHIE"),
+    COMPOUND_STRING("HAZEL"),
+    COMPOUND_STRING("NADINE"),
+    COMPOUND_STRING("TANJA"),
+    COMPOUND_STRING("YASMIN"),
+    COMPOUND_STRING("NICOLA"),
+    COMPOUND_STRING("LILLIE"),
+    COMPOUND_STRING("TERRA"),
+    COMPOUND_STRING("LUCY"),
+    COMPOUND_STRING("HALIE")
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -532,8 +532,7 @@ enum
     HAS_NO_SAVED_GAME,  //NEW GAME, OPTION
     HAS_SAVED_GAME,     //CONTINUE, NEW GAME, OPTION
     HAS_MYSTERY_GIFT,   //CONTINUE, NEW GAME, MYSTERY GIFT, OPTION
-    HAS_MYSTERY_EVENTS, //CONTINUE, NEW GAME, MYSTERY EVENTS, OPTION
-    HAS_MYSTERY_GIFT_AND_EVENTS, //CONTINUE, NEW GAME, MYSTERY GIFT, MYSTERY EVENTS, OPTION
+    HAS_MYSTERY_EVENTS, //CONTINUE, NEW GAME, MYSTERY GIFT, MYSTERY EVENTS, OPTION
 };
 
 enum
@@ -549,7 +548,6 @@ enum
 
 #define MAIN_MENU_BORDER_TILE   0x1D5
 #define BIRCH_DLG_BASE_TILE_NUM 0xFC
-#define BIRCH_INTRO_MON_SPECIES SPECIES_GARDEVOIR_MEGA
 
 static void CB2_MainMenu(void)
 {
@@ -663,24 +661,9 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         switch (gSaveFileStatus)
         {
         case SAVE_STATUS_OK:
-                if (tWirelessAdapterConnected)
-                {
-                    if (IsMysteryGiftEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT;
-                    else
-                        tMenuType = HAS_SAVED_GAME;
-                }
-                else
-                {
-                    if (IsMysteryGiftEnabled() && !IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT;
-                    else if (!IsMysteryGiftEnabled() && IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_EVENTS;
-                    else if (IsMysteryGiftEnabled() && IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT_AND_EVENTS;
-                    else
-                        tMenuType = HAS_SAVED_GAME;
-                }
+            tMenuType = HAS_SAVED_GAME;
+            if (IsMysteryGiftEnabled())
+                tMenuType++;
             gTasks[taskId].func = Task_MainMenuCheckBattery;
             break;
         case SAVE_STATUS_CORRUPT:
@@ -691,24 +674,9 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
         case SAVE_STATUS_ERROR:
             CreateMainMenuErrorWindow(gText_SaveFileCorrupted);
             gTasks[taskId].func = Task_WaitForSaveFileErrorWindow;
-                if (tWirelessAdapterConnected)
-                {
-                    if (IsMysteryGiftEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT;
-                    else
-                        tMenuType = HAS_SAVED_GAME;
-                }
-                else
-                {
-                    if (IsMysteryGiftEnabled() && !IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT;
-                    else if (!IsMysteryGiftEnabled() && IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_EVENTS;
-                    else if (IsMysteryGiftEnabled() && IsMysteryEventEnabled())
-                        tMenuType = HAS_MYSTERY_GIFT_AND_EVENTS;
-                    else
-                        tMenuType = HAS_SAVED_GAME;
-                }
+            tMenuType = HAS_SAVED_GAME;
+            if (IsMysteryGiftEnabled() == TRUE)
+                tMenuType++;
             break;
         case SAVE_STATUS_EMPTY:
         default:
@@ -733,34 +701,13 @@ static void Task_MainMenuCheckSaveFile(u8 taskId)
                 sCurrItemAndOptionMenuCheck = 3;
                 break;
             case HAS_MYSTERY_EVENTS:
-                sCurrItemAndOptionMenuCheck = 3;
-                break;
-            case HAS_MYSTERY_GIFT_AND_EVENTS:
                 sCurrItemAndOptionMenuCheck = 4;
                 break;
             }
         }
         sCurrItemAndOptionMenuCheck &= ~OPTION_MENU_FLAG;  // turn off the "returning from options menu" flag
         tCurrItem = sCurrItemAndOptionMenuCheck;
-
-        switch (tMenuType)
-        {
-            case HAS_NO_SAVED_GAME:
-                tItemCount = 2;
-                break;
-            case HAS_SAVED_GAME:
-                tItemCount = 3;
-                break;
-            case HAS_MYSTERY_GIFT:
-                tItemCount = 4;
-                break;
-            case HAS_MYSTERY_EVENTS:
-                tItemCount = 4;
-                break;
-            case HAS_MYSTERY_GIFT_AND_EVENTS:
-                tItemCount = 5;
-                break;
-        }
+        tItemCount = tMenuType + 2;
     }
 }
 
@@ -911,33 +858,10 @@ static void Task_DisplayMainMenu(u8 taskId)
             FillWindowPixelBuffer(3, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(4, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(5, PIXEL_FILL(0xA));
-            AddTextPrinterParameterized3(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue);
-            AddTextPrinterParameterized3(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame);
-            AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryEvents);
-            AddTextPrinterParameterized3(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
-            MainMenu_FormatSavegameText();
-            PutWindowTilemap(2);
-            PutWindowTilemap(3);
-            PutWindowTilemap(4);
-            PutWindowTilemap(5);
-            CopyWindowToVram(2, COPYWIN_GFX);
-            CopyWindowToVram(3, COPYWIN_GFX);
-            CopyWindowToVram(4, COPYWIN_GFX);
-            CopyWindowToVram(5, COPYWIN_GFX);
-            DrawMainMenuWindowBorder(&sWindowTemplates_MainMenu[2], MAIN_MENU_BORDER_TILE);
-            DrawMainMenuWindowBorder(&sWindowTemplates_MainMenu[3], MAIN_MENU_BORDER_TILE);
-            DrawMainMenuWindowBorder(&sWindowTemplates_MainMenu[4], MAIN_MENU_BORDER_TILE);
-            DrawMainMenuWindowBorder(&sWindowTemplates_MainMenu[5], MAIN_MENU_BORDER_TILE);
-            break;
-            case HAS_MYSTERY_GIFT_AND_EVENTS:
-            FillWindowPixelBuffer(2, PIXEL_FILL(0xA));
-            FillWindowPixelBuffer(3, PIXEL_FILL(0xA));
-            FillWindowPixelBuffer(4, PIXEL_FILL(0xA));
-            FillWindowPixelBuffer(5, PIXEL_FILL(0xA));
             FillWindowPixelBuffer(6, PIXEL_FILL(0xA));
             AddTextPrinterParameterized3(2, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuContinue);
             AddTextPrinterParameterized3(3, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuNewGame);
-            AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift);
+            AddTextPrinterParameterized3(4, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryGift2);
             AddTextPrinterParameterized3(5, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuMysteryEvents);
             AddTextPrinterParameterized3(6, FONT_NORMAL, 0, 1, sTextColor_Headers, TEXT_SKIP_DRAW, gText_MainMenuOption);
             MainMenu_FormatSavegameText();
@@ -998,7 +922,7 @@ static bool8 HandleMainMenuInput(u8 taskId)
     }
     else if ((JOY_NEW(DPAD_UP)) && tCurrItem > 0)
     {
-        if (tMenuType == HAS_MYSTERY_GIFT_AND_EVENTS && tIsScrolled == TRUE && tCurrItem == 1)
+        if (tMenuType == HAS_MYSTERY_EVENTS && tIsScrolled == TRUE && tCurrItem == 1)
         {
             ChangeBgY(0, 0x2000, BG_COORD_SUB);
             ChangeBgY(1, 0x2000, BG_COORD_SUB);
@@ -1010,7 +934,7 @@ static bool8 HandleMainMenuInput(u8 taskId)
     }
     else if ((JOY_NEW(DPAD_DOWN)) && tCurrItem < tItemCount - 1)
     {
-        if (tMenuType == HAS_MYSTERY_GIFT_AND_EVENTS && tCurrItem == 3 && tIsScrolled == FALSE)
+        if (tMenuType == HAS_MYSTERY_EVENTS && tCurrItem == 3 && tIsScrolled == FALSE)
         {
             ChangeBgY(0, 0x2000, BG_COORD_ADD);
             ChangeBgY(1, 0x2000, BG_COORD_ADD);
@@ -1036,7 +960,7 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
 
     if (!gPaletteFade.active)
     {
-        if (gTasks[taskId].tMenuType == HAS_MYSTERY_GIFT_AND_EVENTS)
+        if (gTasks[taskId].tMenuType == HAS_MYSTERY_EVENTS)
             RemoveScrollIndicatorArrowPair(gTasks[taskId].tScrollArrowTaskId);
         ClearStdWindowAndFrame(0, TRUE);
         ClearStdWindowAndFrame(1, TRUE);
@@ -1111,42 +1035,34 @@ static void Task_HandleMainMenuAPressed(u8 taskId)
                 action = ACTION_NEW_GAME;
                 break;
             case 2:
-		action = ACTION_MYSTERY_EVENTS;
-		if (wirelessAdapterConnected)
+                if (gTasks[taskId].tWirelessAdapterConnected)
+                {
+                    action = ACTION_MYSTERY_GIFT;
+                    if (!wirelessAdapterConnected)
+                    {
+                        action = ACTION_INVALID;
+                        gTasks[taskId].tMenuType = HAS_NO_SAVED_GAME;
+                    }
+                }
+                else if (wirelessAdapterConnected)
                 {
                     action = ACTION_INVALID;
-                    gTasks[taskId].tMenuType = HAS_NO_SAVED_GAME;
+                    gTasks[taskId].tMenuType = HAS_SAVED_GAME;
                 }
-		break;
-            case 3:
-		action = ACTION_OPTION;
-		break;
-                }
-                break;
-            case HAS_MYSTERY_GIFT_AND_EVENTS:
-                switch (gTasks[taskId].tCurrItem)
+                else
                 {
-            case 0:
-		default:
-		action = ACTION_CONTINUE;
-		break;
-            case 1:
-		action = ACTION_NEW_GAME;
-		break;
-            case 2:
-		action = ACTION_MYSTERY_GIFT;
-		if (!wirelessAdapterConnected)
-                {
-		action = ACTION_INVALID;
-		gTasks[taskId].tMenuType = HAS_NO_SAVED_GAME;
+                    action = ACTION_EREADER;
                 }
                 break;
             case 3:
-		action = ACTION_MYSTERY_EVENTS;
                 if (wirelessAdapterConnected)
                 {
-		action = ACTION_INVALID;
-		gTasks[taskId].tMenuType = HAS_NO_SAVED_GAME;
+                    action = ACTION_INVALID;
+                    gTasks[taskId].tMenuType = HAS_MYSTERY_GIFT;
+                }
+                else
+                {
+                    action = ACTION_MYSTERY_EVENTS;
                 }
                 break;
             case 4:
@@ -1226,7 +1142,7 @@ static void Task_HandleMainMenuBPressed(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
-        if (gTasks[taskId].tMenuType == HAS_MYSTERY_GIFT_AND_EVENTS)
+        if (gTasks[taskId].tMenuType == HAS_MYSTERY_EVENTS)
             RemoveScrollIndicatorArrowPair(gTasks[taskId].tScrollArrowTaskId);
         sCurrItemAndOptionMenuCheck = 0;
         FreeAllWindowBuffers();
@@ -1318,7 +1234,6 @@ static void HighlightSelectedMainMenuItem(enum PartyMenuType menuType, u8 select
         }
         break;
     case HAS_MYSTERY_GIFT:
-    case HAS_MYSTERY_EVENTS:
         switch (selectedMenuItem)
         {
         case 0:
@@ -1336,7 +1251,7 @@ static void HighlightSelectedMainMenuItem(enum PartyMenuType menuType, u8 select
             break;
         }
         break;
-    case HAS_MYSTERY_GIFT_AND_EVENTS:
+    case HAS_MYSTERY_EVENTS:
         switch (selectedMenuItem)
         {
         case 0:
@@ -1464,7 +1379,6 @@ static void Task_NewGameBirchSpeech_ThisIsAPokemon(u8 taskId)
     if (!gPaletteFade.active && !RunTextPrintersAndIsPrinter0Active())
     {
         gTasks[taskId].func = Task_NewGameBirchSpeech_MainSpeech;
-        NewGameBirchSpeech_ClearWindow(0);
         StringExpandPlaceholders(gStringVar4, gText_ThisIsAPokemon);
         AddTextPrinterWithCallbackForMessage(TRUE, NewGameBirchSpeech_WaitForThisIsPokemonText);
         sBirchSpeechMainTaskId = taskId;
@@ -1475,7 +1389,6 @@ static void Task_NewGameBirchSpeech_MainSpeech(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
-        NewGameBirchSpeech_ClearWindow(0);
         StringExpandPlaceholders(gStringVar4, gText_Birch_MainSpeech);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_AndYouAre;
@@ -1489,11 +1402,11 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     u8 spriteId = gTasks[sBirchSpeechMainTaskId].tLotadSpriteId;
 
     gSprites[spriteId].x = 100;
-    gSprites[spriteId].y = 60;
+    gSprites[spriteId].y = 75;
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, BIRCH_INTRO_MON_SPECIES);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1531,7 +1444,6 @@ static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
     if (!RunTextPrintersAndIsPrinter0Active())
     {
         sStartedPokeBallTask = FALSE;
-        NewGameBirchSpeech_ClearWindow(0);
         StringExpandPlaceholders(gStringVar4, gText_Birch_AndYouAre);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_StartBirchLotadPlatformFade;
@@ -1791,7 +1703,7 @@ static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         spriteId = gTasks[taskId].tLotadSpriteId;
         gSprites[spriteId].x = 100;
-        gSprites[spriteId].y = 60;
+        gSprites[spriteId].y = 75;
         gSprites[spriteId].invisible = FALSE;
         gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
@@ -1845,7 +1757,6 @@ static void Task_NewGameBirchSpeech_AreYouReady(u8 taskId)
         gTasks[taskId].tPlayerSpriteId = spriteId;
         NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
         NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
-        NewGameBirchSpeech_ClearWindow(0);
         StringExpandPlaceholders(gStringVar4, gText_Birch_AreYouReady);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_ShrinkPlayer;
@@ -1995,7 +1906,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
 
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(BIRCH_INTRO_MON_SPECIES, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(SPECIES_LOTAD, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)
@@ -2010,7 +1921,7 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[birchSpriteId].oam.priority = 0;
     gSprites[birchSpriteId].invisible = TRUE;
     gTasks[taskId].tBirchSpriteId = birchSpriteId;
-    lotadSpriteId = NewGameBirchSpeech_CreateLotadSprite(100, 0x3C);
+    lotadSpriteId = NewGameBirchSpeech_CreateLotadSprite(100, 0x4B);
     gSprites[lotadSpriteId].callback = SpriteCB_Null;
     gSprites[lotadSpriteId].oam.priority = 0;
     gSprites[lotadSpriteId].invisible = TRUE;

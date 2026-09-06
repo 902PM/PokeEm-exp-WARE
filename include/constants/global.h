@@ -76,7 +76,7 @@ enum Language
     #define IS_FRLG 0
     #endif
 #endif
-#define GAME_LANGUAGE (LANGUAGE_JAPANESE)
+#define GAME_LANGUAGE (LANGUAGE_ENGLISH)
 
 // party sizes
 #define PARTY_SIZE 6

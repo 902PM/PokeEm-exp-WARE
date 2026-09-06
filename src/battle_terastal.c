@@ -16,14 +16,14 @@
 #include "constants/abilities.h"
 #include "constants/rgb.h"
 
-// トレーナーのテラスタル時にフラグや変数を設定します。
+// Sets flags and variables upon a battler's Terastallization.
 void ActivateTera(enum BattlerId battler)
 {
-    // 適切なフラグを設定。
+    // Set appropriate flags.
     SetActiveGimmick(battler, GIMMICK_TERA);
     SetGimmickAsActivated(battler, GIMMICK_TERA);
 
-    // テラオーブのチャージを消費。
+    // Remove Tera Orb charge.
     if (IsTeraOrbCharged()
         && IsOnPlayerSide(battler)
         && !(IsDoubleBattle() && !IsPartnerMonFromSameTrainer(battler)))
@@ -31,7 +31,7 @@ void ActivateTera(enum BattlerId battler)
         FlagClear(B_FLAG_TERA_ORB_CHARGED);
     }
 
-    // 戦闘スクリプトを実行。
+    // Execute battle script.
     PREPARE_TYPE_BUFFER(gBattleTextBuff1, GetBattlerTeraType(battler));
     if (TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_TERASTALLIZATION, GetBattlerAbility(gBattlerAttacker)))
         BattleScriptPushCursorAndCallback(BattleScript_TeraFormChange);
@@ -42,13 +42,13 @@ void ActivateTera(enum BattlerId battler)
         BattleScriptPushCursorAndCallback(BattleScript_Terastallization);
 }
 
-// アニメーションの再生後、パレットブレンドを適用し、UIインジケーターを有効にします。
+// Applies palette blend and enables UI indicator after animation has played
 void ApplyBattlerVisualsForTeraAnim(enum BattlerId battler)
 {
     struct Pokemon *party = GetBattlerParty(battler);
     u32 index = gBattlerPartyIndexes[battler];
 
-    // インジケーターを表示し、パレットブレンドを行う。
+    // Show indicator and do palette blend.
     UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &party[index], HEALTHBOX_ALL);
     BlendPalette(OBJ_PLTT_ID(battler), 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battler)));
     CpuCopy32(gPlttBufferFaded + OBJ_PLTT_ID(battler), gPlttBufferUnfaded + OBJ_PLTT_ID(battler), PLTT_SIZEOF(16));
@@ -57,7 +57,7 @@ void ApplyBattlerVisualsForTeraAnim(enum BattlerId battler)
     BlendPalette(OBJ_PLTT_ID(battler), 16, 16, RGB_WHITEALPHA);
 }
 
-// テラスタルオーブがチャージされているかを返す。
+// Returns whether the Tera Orb is charged.
 bool32 IsTeraOrbCharged(void)
 {
     if (FlagGet(B_FLAG_TERA_ORB_NO_COST) || B_TERA_ORB_ALWAYS_CHARGED)
@@ -65,7 +65,7 @@ bool32 IsTeraOrbCharged(void)
     return FlagGet(B_FLAG_TERA_ORB_CHARGED);
 }
 
-// トレーナーがテラスタル可能かどうかを返す。
+// Returns whether a battler can Terastallize.
 bool32 CanTerastallize(enum BattlerId battler)
 {
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
@@ -73,13 +73,13 @@ bool32 CanTerastallize(enum BattlerId battler)
     if (gBattleMons[battler].volatiles.transformed && GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_TERAPAGOS)
         return FALSE;
 
-    // 素の状態において、最初のジグザグマがテラスタルするのを防ぎます。
+    // Prevents Zigzagoon from terastalizing in vanilla.
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
         return FALSE;
 
     if (TESTING || !IsOnPlayerSide(battler))
     {
-        // このブロック内の他のすべてのチェックをスキップし、HasTrainerUsedGimmick へ進む。
+        // Skip all other checks in this block, go to HasTrainerUsedGimmick
     }
     else if (!CheckBagHasItem(ITEM_TERA_ORB, 1))
     {
@@ -90,59 +90,59 @@ bool32 CanTerastallize(enum BattlerId battler)
         return FALSE;
     }
 
-    // トレーナーがすでにテラスタルしているか確認。
+    // Check if Trainer has already Terastallized.
     if (HasTrainerUsedGimmick(battler, GIMMICK_TERA))
         return FALSE;
 
-    // AIがテラスタルを行う意図があるか確認。
+    // Check if AI battler is intended to Terastallize.
     if (!ShouldTrainerBattlerUseGimmick(battler, GIMMICK_TERA))
         return FALSE;
 
-    // ポケモンが別のギミックが有効になっているか確認。
+    // Check if battler has another gimmick active.
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
-    // ポケモンがZクリスタルまたはメガストーンを持っているか確認。
+    // Check if battler is holding a Z-Crystal or Mega Stone.
     if (!TESTING && (holdEffect == HOLD_EFFECT_Z_CRYSTAL || holdEffect == HOLD_EFFECT_MEGA_STONE)) // tests make this check already
         return FALSE;
 
-    // チェックに合格
+    // Every check passed!
     return TRUE;
 }
 
-// ポケモンのテラスタイプを返す。
+// Returns a battler's Tera type.
 enum Type GetBattlerTeraType(enum BattlerId battler)
 {
     return GetMonData(GetBattlerMon(battler), MON_DATA_TERA_TYPE);
 }
 
-// 特定のタイプのステラブーストを消費。
+// Uses up a type's Stellar boost.
 void ExpendTypeStellarBoost(enum BattlerId battler, enum Type type)
 {
     if (type < 32 && gBattleMons[battler].species != SPECIES_TERAPAGOS_STELLAR) // avoid OOB access
         gBattleStruct->stellarBoostFlags[GetBattlerTrainer(battler)] |= 1u << type;
 }
 
-// ステラブーストが消費されたか確認。
+// Checks whether a type's Stellar boost has been expended.
 bool32 IsTypeStellarBoosted(enum BattlerId battler, enum Type type)
 {
-    if (type < 32) // OOBアクセスを回避
+    if (type < 32) // avoid OOB access
         return !(gBattleStruct->stellarBoostFlags[GetBattlerTrainer(battler)] & (1u << type));
     else
         return FALSE;
 }
 
-// テラスタル時に適用されるタイプ一致補正の倍率を返す。
-// Smogonの調査スレッドにある威力倍率。
+// Returns the STAB power multiplier to use when Terastallized.
+// Power multipliers from Smogon Research thread.
 uq4_12_t GetTeraMultiplier(struct DamageContext *ctx)
 {
     enum Type teraType = GetBattlerTeraType(ctx->battlerAtk);
 
-    // セーフティチェック
+    // Safety check.
     if (GetActiveGimmick(ctx->battlerAtk) != GIMMICK_TERA)
         return UQ_4_12(1.0);
 
-    // テラスタイプチェック
+    // Stellar-type checks.
     if (teraType == TYPE_STELLAR)
     {
         bool32 shouldBoost = IsTypeStellarBoosted(ctx->battlerAtk, ctx->moveType);
@@ -158,7 +158,7 @@ uq4_12_t GetTeraMultiplier(struct DamageContext *ctx)
         else
             return UQ_4_12(1.0);
     }
-    // 元のタイプとテラスタイプ
+    // Base and Tera type.
     if (ctx->moveType == teraType && IS_BATTLER_OF_BASE_TYPE(ctx->battlerAtk, ctx->moveType))
     {
         if (ctx->abilities[ctx->battlerAtk] == ABILITY_ADAPTABILITY)
@@ -166,7 +166,7 @@ uq4_12_t GetTeraMultiplier(struct DamageContext *ctx)
         else
             return UQ_4_12(2.0);
     }
-    // テラスタイプのみ（てきおうりょくを適用）。
+    // Tera type only (Adaptability applies).
     else if (ctx->moveType == teraType && !IS_BATTLER_OF_BASE_TYPE(ctx->battlerAtk, ctx->moveType))
     {
         if (ctx->abilities[ctx->battlerAtk] == ABILITY_ADAPTABILITY)
@@ -174,12 +174,12 @@ uq4_12_t GetTeraMultiplier(struct DamageContext *ctx)
         else
             return UQ_4_12(1.5);
     }
-    // 元のタイプのみ（テラスタル中はてきおうりょくは適用しない）。
+    // Base type only (Adaptability does not apply while Terastallized).
     else if (ctx->moveType != teraType && IS_BATTLER_OF_BASE_TYPE(ctx->battlerAtk, ctx->moveType))
     {
         return UQ_4_12(1.5);
     }
-    // 元のタイプでもテラスタイプでもない
+    // Neither base or Tera type.
     else
     {
         return UQ_4_12(1.0);

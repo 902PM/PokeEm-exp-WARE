@@ -223,79 +223,156 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth:
 	step_end
 
 SlateportCity_OceanicMuseum_1F_Text_WouldYouLikeToEnter:
-	.string "{JPN}うみの かがく はくぶつかんへ\nようこそ いらっしゃいませ!\pにゅうじょうりょう 50えんに なります\nけんがく して いきますか?$"
+	.string "Welcome to the OCEANIC MUSEUM.\p"
+	.string "The entrance fee is ¥50.\n"
+	.string "Would you like to enter?$"
 
 SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself:
-	.string "{JPN}ごゆっくり どうぞ!$"
+	.string "Please enjoy yourself.$"
 
 SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney:
-	.string "{JPN}……あら おかねが たりませんわ$"
+	.string "Oh? I'm sorry, but you don't seem to\n"
+	.string "have enough money.$"
 
 SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup:
-	.string "{JPN}……あら さっきの だんたいさん?\nあなただけ おくれちゃって しかたないわね\lはやく とおっちゃって!$"
+	.string "Oh? You're with that group that\n"
+	.string "went in earlier?\p"
+	.string "You're the only one who's late.\n"
+	.string "You'd better go catch up to them!$"
 
 SlateportCity_OceanicMuseum_1F_Text_AquaExistForGoodOfAll:
-	.string "{JPN}みんなの ために\nわれわれ アクアだんは いるのよ!$"
+	.string "We, TEAM AQUA, exist for the good\n"
+	.string "of all!$"
 
 SlateportCity_OceanicMuseum_1F_Text_OurBossIsntHere:
-	.string "{JPN}げんちしゅうごう で\nここに あつまったのは いいけど……\pかんじんの リーダーが まだ こないんだ$"
+	.string "We were told to assemble here,\n"
+	.string "so we did, but…\p"
+	.string "Our BOSS, the linchpin, isn't here.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich:
-	.string "{JPN}ここに おいてある もの\nかっぱらうと もうかるかな?$"
+	.string "If I ripped off the stuff here,\n"
+	.string "would it make me rich?$"
 
 SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds:
-	.string "{JPN}この ちしきを いかして\nわるいこと してやるか……$"
+	.string "What I learn here, I can put to use on\n"
+	.string "nefarious deeds…$"
 
 SlateportCity_OceanicMuseum_1F_Text_RustboroBungled:
-	.string "{JPN}なかまが カナズミで ドジらなければ\nここに こなくて すんだのによ!$"
+	.string "If our goons didn't bungle things\n"
+	.string "in RUSTBORO, we wouldn't be here!$"
 
 SlateportCity_OceanicMuseum_1F_Text_DidntHaveMoney:
-	.string "{JPN}さっき 50えんが なくて\nうけつけで すごい じかん かかったよ……$"
+	.string "I didn't have ¥50, so it took a long\n"
+	.string "time getting by the receptionist.$"
 
 SlateportCity_OceanicMuseum_1F_Text_LearnAboutSeaForBattling:
-	.string "{JPN}うみのこと べんきょう して\nポケモンしょうぶに やくだてたいの$"
+	.string "I want to learn about the sea and\n"
+	.string "use that knowledge for battling.$"
 
 SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
-	.string "{JPN}わたくしッ\nうみを みると こうふん するのですッ!\pそんな わたくしに とって\nクスノキかんちょうは\lあこがれの ひと ナンバー1 なのですッ!$"
+	.string "I get all giddy and gooey when\n"
+	.string "I see the sea!\p"
+	.string "For me, CAPT. STERN is the number\n"
+	.string "one role model!$"
 
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
-	.string "{JPN}うみは はてしなく ひろく\nどこまでも ふかい……\pきっと われわれが しらない ポケモンも\nいっぱい いるのだろうね$"
+	.string "The sea is vast without end, and\n"
+	.string "infinitely deep…\p"
+	.string "There must be many POKéMON that\n"
+	.string "we don't know about.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
-	.string "{JPN}あたし うみの ポケモンが ほしいの\pだって ひんやりと してて\nだきしめたら きもちよさそう だもの$"
+	.string "I want a sea POKéMON.\p"
+	.string "I think it would feel cool and nice\n"
+	.string "to hug.$"
 
 SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis:
-	.string "{JPN}ひえー!!\nなんで おまえ ここに いるんだよ!?\pおれ? おれは カナシダ トンネルで\nおまえに コテンパンに された\lアクアだん だよ\pこれを やるから ゆるしてくれよ!$"
+	.string "Aiyeeeh!\n"
+	.string "What are you doing here?\p"
+	.string "Me? I'm the TEAM AQUA member\n"
+	.string "you thumped before, remember?\l"
+	.string "Back in RUSTURF TUNNEL?\p"
+	.string "Here, take this!\n"
+	.string "You have to forgive me!$"
 
 SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain:
-	.string "{JPN}その わざマシン\nおれより おまえのほうが にあうぜ!\pじゃあな わはははー!$"
+	.string "That TM, it suits you more than it\n"
+	.string "does me.\p"
+	.string "Hope I never see you again!\n"
+	.string "Wahahaha!$"
 
 SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis:
-	.string "{JPN}たのむから\nなんとかして うけとってくれよ!$"
+	.string "Awww, come on!\n"
+	.string "You have to take this and let me go!$"
 
 SlateportCity_OceanicMuseum_1F_Text_WhirlpoolExperiment:
-	.string "{JPN}ガラスの なかで あおい みずが\nくるくると まわって いる!\p「これは かぜの ちからで じんこうてきに\n うずしおを おこす じっけん です」$"
+	.string "A blue fluid is spiraling inside\n"
+	.string "a glass vessel.\p"
+	.string "“This is an experiment to create a\n"
+	.string "WHIRLPOOL artificially using wind.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_WaterfallExperiment:
-	.string "{JPN}ガラスの なかで あかい ボールが\nうかんだり しずんだり している!\p「これは ボールの ふりょくを りようした\n たきのぼりの げんりの じっけん です」$"
+	.string "A red ball is bobbing up and down\n"
+	.string "inside a glass vessel.\p"
+	.string "“This is an experiment simulating a\n"
+	.string "WATERFALL using the ball's buoyancy.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanSoilDisplay:
-	.string "{JPN}うみの そこの つちの みほんだ!\p「かいていには ながい ねんげつを かけて\n せいぶつの しがいが ふりつもり\l ちそうが かたち づくられて いきます」\p「これらを ぶんせき することで\n とおい むかしの ことが わかるのです」$"
+	.string "It's a sample of soil from the ocean\n"
+	.string "floor.\p"
+	.string "“Over many years, the remains of\n"
+	.string "life-forms settle at the bottom of\l"
+	.string "the sea, making sedimentary layers.\p"
+	.string "“By analyzing these layers, the\n"
+	.string "ancient past is revealed.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_BeachSandDisplay:
-	.string "{JPN}うみべの すなの みほんだ!\p「やまから かわを つたって きた いしは\n みずの なかで ころがる うちに\l くだかれたり けずれたり していきます」\p「それらが ちいさな つぶに なって\n うみべの すなが できて いくのです」$"
+	.string "It's a sample of beach sand.\p"
+	.string "“Stones from mountains are washed\n"
+	.string "down by rivers where they are\l"
+	.string "chipped and ground down.\p"
+	.string "“They are reduced to grains and end\n"
+	.string "up as sand on beaches.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact1:
-	.string "{JPN}「うみの まめちしき その1\n なぜ うみの みずは あおいの?」\p「ひかりには いくつもの いろが あって\n ほとんどの ひかりは みずに はいると\l その いろが なくなって いきます」\p「けれど あおい ひかり だけは\n そのままの いろで のこる ため\l うみは あおく みえるのです」$"
+	.string "“OCEANIC MINIFACT 1\n"
+	.string "Why is seawater blue?\p"
+	.string "“Light is composed of many colors.\p"
+	.string "“When light passes through water,\n"
+	.string "most kinds of light lose color.\p"
+	.string "“However, blue light retains its\n"
+	.string "color, making the sea appear blue.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact2:
-	.string "{JPN}「うみの まめちしき その2\n なぜ うみの みずは しょっぱいの?」\p「かいすい には いわから にじみでた\p しおの もとに なる\n ナトリウムイオン と えんそイオン\l という ぶっしつが おおく ふくまれ\l だから なめると しょっぱいのです」$"
+	.string "“OCEANIC MINIFACT 2\n"
+	.string "Why is the sea salty?\p"
+	.string "“Seawater contains dissolved salt in\n"
+	.string "the form of sodium and chlorine ions.\p"
+	.string "“These ions leech out of rocks\n"
+	.string "and are carried out to sea by rain.\p"
+	.string "“The concentration of dissolved salt\n"
+	.string "makes the sea salty.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3:
-	.string "{JPN}「うみの まめちしき その3\n うみと りくは どちらが ひろいの?」\p「だいたい うみが 70パーセントで\n りくが 30パーセント くらいです\p りくちに くらべて うみは\n その 2ばい いじょうも あるのです」$"
+	.string "“OCEANIC MINIFACT 3\n"
+	.string "Which is bigger? The sea or land?\p"
+	.string "“The sea covers about 70% of\n"
+	.string "the planet, and the rest is land.\p"
+	.string "“The sea is therefore more than twice\n"
+	.string "the size of land.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_FossilDisplay:
-	.string "{JPN}デコボコに なみうった かせきが ある!\p「うみの そこに たまった つちには\n かいすいが ながれる えいきょうで\l なみの ような もようが できます」\p「それが そのまま かせきに なったものを\n リップルマークと よんでいます」$"
+	.string "It's a fossil with wavy ridges on it.\p"
+	.string "“Soil on the ocean floor gets scoured\n"
+	.string "by the tide.\p"
+	.string "“The flowing seawater marks the soil\n"
+	.string "with small ridges and valleys.\p"
+	.string "“If this soil becomes fossilized, it is\n"
+	.string "called a ripple mark.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine:
-	.string "{JPN}まるい ドームの なかで なんだか\nよく わからない きかいが まわってる!\pなにかの ふかさを しらべるのかな?$"
+	.string "A strange machine is rotating under\n"
+	.string "a glass dome.\p"
+	.string "Maybe it's for measuring the depth\n"
+	.string "of something…$"
+

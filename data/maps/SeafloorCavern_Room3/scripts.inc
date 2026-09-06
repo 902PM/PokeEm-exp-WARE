@@ -12,20 +12,47 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 	end
 
 SeafloorCavern_Room3_Text_ShellyIntro:
-	.string "{JPN}オーッホッホ!\pせんすいていも ないのに\nよく ここまで おいかけて きたわね!\lたいした おこさま だわ!\pでもね……\nジャマされると めんどう なのよね\pてんき けんきゅうじょ での\nかりも かえしたいし……\pちょっと いたい おもい させちゃうから\nかくご しなさーい!!$"
+	.string "Ahahahaha!\p"
+	.string "How did you manage to get here without\n"
+	.string "a submarine?\l"
+	.string "What an impressive child!\p"
+	.string "But… It won't do to have you\n"
+	.string "meddling about here.\p"
+	.string "And, I do want payback for what\n"
+	.string "happened at the WEATHER INSTITUTE…\p"
+	.string "I'm going to give you a little taste\n"
+	.string "of pain! Resign yourself to it!$"
 
 SeafloorCavern_Room3_Text_ShellyDefeat:
-	.string "{JPN}オーッホッホ!\pいったーい!$"
+	.string "Ahahahaha!\p"
+	.string "Ouch!$"
 
 SeafloorCavern_Room3_Text_ShellyPostBattle:
-	.string "{JPN}オーッホッホ!\pあなた そんなに つよいんだもの\nアクアだんの なかま じゃなくて\lとっても ざんねんだわ\pリーダーが じつげん してくれる\nすばらしい せかいを\lいっしょに たのしむことが できたのに$"
+	.string "Ahahahaha!\n"
+	.string "You're so darn strong.\p"
+	.string "It's terribly disappointing that you're\n"
+	.string "not a TEAM AQUA member.\p"
+	.string "You could have enjoyed the fabulous\n"
+	.string "world our BOSS has promised as\l"
+	.string "one of us…$"
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
-	.string "{JPN}オレたちの やぼうの ために\nポケモンは ひつような ものだが\pポケモンの ちからを かりて\nおまえの ような やつが\lこんな ところまで ジャマしに くる!\pよのなか うまく いかない もんだ!$"
+	.string "For our dream to become real, we need\n"
+	.string "the power of POKéMON.\p"
+	.string "But meddlers like you use the power of\n"
+	.string "POKéMON to mess with us even at\l"
+	.string "a place like this!\p"
+	.string "Life just doesn't work the way we\n"
+	.string "need it to!$"
 
 SeafloorCavern_Room3_Text_Grunt5Defeat:
-	.string "{JPN}ぐはっ!$"
+	.string "Gwah!$"
 
 SeafloorCavern_Room3_Text_Grunt5PostBattle:
-	.string "{JPN}オレたちが あたまの あがらない\nあの リーダーに\pよくも まあ おまえの ような\nこどもが さからえる もんだよな!\pもしかして おまえって\nとんでもないやつ…… なのか?$"
+	.string "You know, we don't dare question\n"
+	.string "the motives of our leader.\p"
+	.string "But here you are, just some punk,\n"
+	.string "going up against our BOSS.\p"
+	.string "Maybe…\n"
+	.string "You must be something…$"
 

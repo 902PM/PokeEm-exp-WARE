@@ -26,14 +26,22 @@ MtPyre_1F_EventScript_Man::
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
-	.string "{JPN}この おくりびやま には\nいろんな ものが さまよっておる……\pなにが おきるか わからん\nねんのため これを もっていきなされ$"
+	.string "All sorts of beings wander the slopes\n"
+	.string "of MT. PYRE…\p"
+	.string "There is no telling what may happen.\n"
+	.string "Take this. It's for your own good.$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "{JPN}きよめのおふだ をな\nポケモンに もたせて おく\pすると やせいの ポケモンが\nあんまり とびだして こなくなるぞよ$"
+	.string "Have a POKéMON hold that\n"
+	.string "CLEANSE TAG.\p"
+	.string "It will help ward off wild POKéMON.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
-	.string "{JPN}あなたも おはか まいりに きたの?\nずいぶんと ポケモン おもい なのね$"
+	.string "Did you come to pay your respect\n"
+	.string "to the spirits of departed POKéMON?\p"
+	.string "You must care for your POKéMON a lot.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
-	.string "{JPN}ここには ぼくが たいせつに していた\nジグザグマが やすらかに ねむってる……$"
+	.string "This is the final resting place of my\n"
+	.string "ZIGZAGOON. I cherished it…$"
 

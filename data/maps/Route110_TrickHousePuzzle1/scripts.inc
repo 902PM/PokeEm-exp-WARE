@@ -37,32 +37,41 @@ Route110_TrickHousePuzzle1_EventScript_Robin::
 	end
 
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::
-	.string "{JPN}{PLAYER}は あいことばを\nとびらに かきつけた!\p「カラクリだいおう さま すてき」\p…… …… ……\pかぎの はずれる おとがした!$"
+	.string "{PLAYER} wrote down the secret code\n"
+	.string "on the door.\p"
+	.string "“TRICK MASTER is fabulous.”\n"
+	.string "… … … … … … … …\p"
+	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle1_Text_SallyIntro:
-	.string "{JPN}おぼえさせた ばかりの いあいぎりで\nきって きって きりまくりよ!$"
+	.string "I'll hack and slash my way to victory\n"
+	.string "with the CUT we just learned!$"
 
 Route110_TrickHousePuzzle1_Text_SallyDefeat:
-	.string "{JPN}ほんき ださないでよー!$"
+	.string "Why are you so serious?$"
 
 Route110_TrickHousePuzzle1_Text_SallyPostBattle:
-	.string "{JPN}きっても きっても あきないわ!$"
+	.string "I never get tired of hacking\n"
+	.string "and slashing!$"
 
 Route110_TrickHousePuzzle1_Text_EddieIntro:
-	.string "{JPN}へんな やしきに\nまよいこんじゃった……$"
+	.string "I wandered into this weird house\n"
+	.string "by accident…$"
 
 Route110_TrickHousePuzzle1_Text_EddieDefeat:
-	.string "{JPN}おまけに まけちゃった……$"
+	.string "And now I've lost…$"
 
 Route110_TrickHousePuzzle1_Text_EddiePostBattle:
-	.string "{JPN}さらに まよっちゃった……\nでられない……$"
+	.string "I lost my way, I lost a battle, and I'm\n"
+	.string "now even more lost… I can't get out…$"
 
 Route110_TrickHousePuzzle1_Text_RobinIntro:
-	.string "{JPN}カラクリだいおう って\nなにもの なのかしら?$"
+	.string "Just who is the TRICK MASTER?$"
 
 Route110_TrickHousePuzzle1_Text_RobinDefeat:
-	.string "{JPN}きを とられていたら\nまけちゃったわ!$"
+	.string "I lost while I was lost in thought!$"
 
 Route110_TrickHousePuzzle1_Text_RobinPostBattle:
-	.string "{JPN}つよいわ!\nあなたも なにもの なの?$"
+	.string "You're strong!\n"
+	.string "Just who are you?$"
 

@@ -281,7 +281,7 @@ static u64 GetAiFlags(u16 trainerId, enum BattlerId battler)
         else if (gBattleTypeFlags & BATTLE_TYPE_FACTORY)
             flags = GetAiScriptsInBattleFactory();
         else if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_SECRET_BASE))
-            flags = AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION | AI_FLAG_HP_AWARE | AI_FLAG_WILL_SUICIDE | AI_FLAG_TRY_TO_2HKO;
+            flags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT;
         else
             flags = GetTrainerAIFlagsFromId(trainerId);
     }
@@ -440,7 +440,7 @@ void ComputeAiBattlerDecisions(enum BattlerId battler)
 
 void ReconsiderGimmick(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
 {
-    // ギミックの使用を前提としてbattlerAtkの技を選択した後、そのギミックが本当に必要かどうかを再検討。
+    // After choosing a move for battlerAtk assuming that a gimmick will be used, reconsider whether the gimmick is necessary.
 
     if (gBattleStruct->gimmick.usableGimmick[battlerAtk] == GIMMICK_Z_MOVE && !ShouldUseZMove(battlerAtk, battlerDef, move))
         SetAIUsingGimmick(battlerAtk, NO_GIMMICK);

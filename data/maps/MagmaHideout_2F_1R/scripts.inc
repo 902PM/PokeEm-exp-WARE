@@ -22,38 +22,54 @@ MagmaHideout_2F_1R_EventScript_Grunt5::
 	end
 
 MagmaHideout_2F_1R_Text_Grunt14Intro:
-	.string "{JPN}むむむ!\pここに はいって これるのは\nマグマだんの メンバー だけのはず!\pなのに あなたは\nマグマだんの ふくを きていない……\pえーい あやしい やつめ!\nわたしと しょうぶ しなさい!$"
+	.string "What, what, what?\p"
+	.string "Only TEAM MAGMA members are supposed\n"
+	.string "to be in here!\p"
+	.string "But you're not dressed in TEAM MAGMA's\n"
+	.string "uniform…\p"
+	.string "You rouse my suspicion!\n"
+	.string "Battle with me!$"
 
 MagmaHideout_2F_1R_Text_Grunt14Defeat:
-	.string "{JPN}あわわわ……\nマグマだんの プライドが……$"
+	.string "Aiyiyi…\n"
+	.string "My pride as a TEAM MAGMA member…$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle:
-	.string "{JPN}さむがりの ひとは\nマグマだんに はいると いいわよ$"
+	.string "If you suffer from chills, you should\n"
+	.string "join TEAM MAGMA.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro:
-	.string "{JPN}こらこら!\pオレの めのまえを だまって\nすどおり させる わけには いかねーぞ!$"
+	.string "Hold it right there!\p"
+	.string "You don't really expect me to keep\n"
+	.string "my trap shut and let you waltz by me?$"
 
 MagmaHideout_2F_1R_Text_Grunt3Defeat:
-	.string "{JPN}うはっ! まけましたっ!$"
+	.string "Ooh wow!\n"
+	.string "I concede!$"
 
 MagmaHideout_2F_1R_Text_Grunt3PostBattle:
-	.string "{JPN}こんなことなら すどおり していって\nもらうほうが よかったかも……$"
+	.string "Maybe it would've been better if I did\n"
+	.string "just let you go unchallenged…$"
 
 MagmaHideout_2F_1R_Text_Grunt4Intro:
-	.string "{JPN}やや! あやしい やつめ!$"
+	.string "Ahah!\n"
+	.string "An intruder!$"
 
 MagmaHideout_2F_1R_Text_Grunt4Defeat:
-	.string "{JPN}ぬおお……$"
+	.string "Graaah!$"
 
 MagmaHideout_2F_1R_Text_Grunt4PostBattle:
-	.string "{JPN}しょうぶに まけたのに\nまだ ここを ぐるぐる まわる\lひつようが あるんだろうか?$"
+	.string "I've already lost.\p"
+	.string "Do I really need to keep running\n"
+	.string "around in a circle?$"
 
 MagmaHideout_2F_1R_Text_Grunt5Intro:
-	.string "{JPN}むむ! あやしい やつめ!$"
+	.string "Oh, oh!\n"
+	.string "An intruder!$"
 
 MagmaHideout_2F_1R_Text_Grunt5Defeat:
-	.string "{JPN}うぬぬ……$"
+	.string "Mutter…$"
 
 MagmaHideout_2F_1R_Text_Grunt5PostBattle:
-	.string "{JPN}オレ ほんとは ポケモンしょうぶ\nあんまり とくいじゃ ないんだよね$"
+	.string "Actually, I'm no expert at battling…$"
 

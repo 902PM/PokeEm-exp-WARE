@@ -127,7 +127,7 @@ FarawayIsland_Interior_EventScript_Mew::
 	special DestroyMewEmergingGrassSprite
 	delay 40
 	waitmoncry
-	seteventmon SPECIES_MEW, 30, ITEM_LIECHI_BERRY
+	seteventmon SPECIES_MEW, 30
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -183,4 +183,4 @@ FarawayIsland_Interior_EventScript_HideMewWhenGrassCut::
 	end
 
 FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded:
-	.string "{JPN}けはいが きえてしまった……$"
+	.string "The feeling of being watched faded…$"

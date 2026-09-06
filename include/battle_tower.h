@@ -41,7 +41,6 @@ void CalcApprenticeChecksum(struct Apprentice *apprentice);
 void GetBattleTowerTrainerLanguage(u8 *dst, u16 trainerId);
 u8 SetTentPtrsGetLevel(void);
 void TrySetLinkBattleTowerEnemyPartyLevel(void);
-void ConvertEReaderTrainerClassToFacilityClass(void);
 void FillTentTrainerParty(u8 monsCount);
 
 

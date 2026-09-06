@@ -41,23 +41,38 @@ FortreeCity_House1_EventScript_Zigzagoon::
 	end
 
 FortreeCity_House1_Text_YouWillTradeWontYou:
-	.string "{JPN}うぉー!\nどうしても {STR_VAR_1}が ほしーっ!\l……と\lこころの さけびを きかれて しまった!\pきいた からには\nきみの {STR_VAR_1}と ボクの {STR_VAR_2}を\lもちろん こうかん するでしょ!$"
+	.string "Wrooooaaar! I need it!\n"
+	.string "I have to get me a {STR_VAR_1}!\l"
+	.string "I'll do anything for it!\p"
+	.string "…Uh… Did you hear that?\n"
+	.string "My shout from the bottom of my heart?\p"
+	.string "Having heard that, you will trade\n"
+	.string "your {STR_VAR_1} for my {STR_VAR_2},\l"
+	.string "won't you?$"
 
 FortreeCity_House1_Text_MonYouTakeCare:
-	.string "{JPN}おー やったー!\p{STR_VAR_1} よくきたなー!\n{STR_VAR_2} げんきで やれよー!$"
+	.string "Oh, yeah, right on!\p"
+	.string "{STR_VAR_1}, welcome!\n"
+	.string "{STR_VAR_2}, you take care!$"
 
 FortreeCity_House1_Text_ThisIsntAMon:
-	.string "{JPN}いやソレ\n{STR_VAR_1}じゃないでしょ$"
+	.string "Uh, no, I don't think so.\n"
+	.string "That isn't a {STR_VAR_1}.$"
 
 FortreeCity_House1_Text_YouWontTradeMe:
-	.string "{JPN}え こうかん しないの?\nこころの さけびを きいたくせに……$"
+	.string "No? You won't trade me?\n"
+	.string "Even after I bared my heart to you?$"
 
 FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
-	.string "{JPN}よし いまから\nバルビートを つよく するぞー!\lプラスルも つよく してやってよ!$"
+	.string "I'm going to make VOLBEAT super\n"
+	.string "strong from this moment on!\p"
+	.string "I hope you do the same with PLUSLE!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
-	.string "{JPN}ひとと ポケモンを こうかん する……\pつまりは それぞれの\nおもいでを こうかん しているのじゃな$"
+	.string "Trading POKéMON with others…\p"
+	.string "It's as if you're trading your own\n"
+	.string "memories with other people.$"
 
 FortreeCity_House1_Text_Zigzagoon:
-	.string "{JPN}ジグザグマ『グモモォ?$"
+	.string "ZIGZAGOON: Gumomoh?$"
 

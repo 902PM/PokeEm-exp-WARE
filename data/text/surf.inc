@@ -1,8 +1,10 @@
 gText_WantToUseSurf::
-	.string "{JPN}みずは ふかい あおに そまっている……\nなみのりを つかいますか?$"
+	.string "The water is dyed a deep blue…\n"
+	.string "Would you like to SURF?$"
 
 gText_PlayerUsedSurf::
-	.string "{JPN}{STR_VAR_1}は\nなみのりを つかった!$"
+	.string "{STR_VAR_1} used SURF!$"
 
 Text_CurrentTooFast::
-	.string "{JPN}みずの ながれが はやい!\nなみのりは できない みたい…$"
+	.string "The current is much too fast!\n"
+	.string "SURF can't be used here…$"

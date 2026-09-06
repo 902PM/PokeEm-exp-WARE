@@ -1,29 +1,71 @@
 EventTicket_Text_OldSeaMapTooFar:
-	.string "{JPN}なんだ?\nボロっちい ちずを もってきたってのは\lおまえさんか? みせてみな!\p…… …… ……\pこりゃ また ずいぶん とおいなあ\nわりいが ほかを あたったほうが……$"
+	.string "What's up, youngster?\p"
+	.string "What, it's you who's supposed to have\n"
+	.string "a tattered old map?\p"
+	.string "Let's have a look.\n"
+	.string "… … … … … …\p"
+	.string "Boy, this is quite a ways away.\n"
+	.string "I'm afraid I can't help you…$"
 
 EventTicket_Text_BrineyHoldOnASecond:
-	.string "{JPN}ハギ『こら! わしの おんじんの\nねがいを ことわるとは なにごとだ!$"
+	.string "BRINEY: Hold on a second!\p"
+	.string "What's the idea of turning down\n"
+	.string "someone that I owe so much to?$"
 
 EventTicket_Text_BrineyLetsSail:
-	.string "{JPN}{PLAYER}{KUN} すまなかったね\nこのふねを たよって きて くれたのに……\lもちろん いますぐに しゅっこうだ!\pさあいくぞ!\nかいずに ある しまへ しゅっぱつ!$"
+	.string "{PLAYER}{KUN}, I'm terribly sorry.\p"
+	.string "You came to me seeking my help,\n"
+	.string "and we almost turned you away.\p"
+	.string "Well, let me make things right.\p"
+	.string "We'll sail right away, of course!\p"
+	.string "Let's find this island on\n"
+	.string "this OLD SEA MAP!$"
 
 EventTicket_Text_OddTicketGetOnBoard:
-	.string "{JPN}みょうな チケットを\nもってきたのは おまえさんか?\pおまえが いこうと しているのは\nとおく はなれた ちほうの しま……\lそこには なにが まっているのか\lしって いるやつは いねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!$"
+	.string "Is it you who brought that odd\n"
+	.string "ticket?\p"
+	.string "Where you're trying to go is an island\n"
+	.string "that's far, far away.\p"
+	.string "No one knows what awaits there…\p"
+	.string "The very thought excites my blood\n"
+	.string "as a sailing man!\p"
+	.string "Get on board, youngster!$"
 
 FarawayIsland_Entrance_Text_SailorReturn:
-	.string "{JPN}まったく ハギ せんちょうの\nきまぐれにも まいるよなあ……\pもう ミナモへ かえるのかい?$"
+	.string "CAPT. BRINEY can be so maddeningly\n"
+	.string "fickle…\p"
+	.string "Do you want to return to LILYCOVE?$"
 
 BirthIsland_Harbor_Text_SailorReturn:
-	.string "{JPN}ふしぎな かたちの しまだなあ\nもう ミナモへ かえるか?$"
+	.string "What an oddly shaped island, eh?\n"
+	.string "Do you want to return to LILYCOVE?$"
 
 EventTicket_Text_OddTicketsWhereTo:
-	.string "{JPN}ヘンテコな チケットを\nいくつも もってきたのは おまえさんか?\p…… …… ……ふむ\pこいつらで いける ところは\nどこも ここから とおい しま\lそこでは なにが おきるのか\lなにが まっているのか\lしっている やつは いねえ……\lううむ ふなのりの ちが さわぐぜ!\pさあ のりな!\nまずは どこから いってみるかい?$"
+	.string "Is it you who brought those\n"
+	.string "odd tickets?\p"
+	.string "… … …Hm.\p"
+	.string "These tickets will get you to islands\n"
+	.string "that are far, far away.\p"
+	.string "No one knows what awaits there,\n"
+	.string "or what may happen there.\p"
+	.string "The very thought excites my blood\n"
+	.string "as a sailing man!\p"
+	.string "Get on board, youngster!\n"
+	.string "Where shall we sail first?$"
 
 NavelRock_Harbor_Text_SailorReturn:
-	.string "{JPN}な…… なんか おくふかくから\nひくい うなりが きこえたような……\pだ だいじょうぶか?\nもう かえった ほうが いいんじゃないか?$"
+	.string "Did… Did you hear that?\n"
+	.string "That low growling from deep in there.\p"
+	.string "Are you sure it's safe?\n"
+	.string "Do you think we should leave?$"
 
 FarawayIsland_Entrance_Text_Sign:
-	.string "{JPN}なんねんも まえに かかれたような\nふるい かきおきが ある……\p……がつ 6か\nここに たちいる にんげ……が\lふたたび ……らわれると すれば\lこころ やさし……で あらんことを\p……こに その ねがいを しるし\nこの ……を あとにする\p……ジ$"
+	.string "The writing is fading as if it was\n"
+	.string "written a long time ago…\p"
+	.string "“…ber, 6th day\n"
+	.string "If any human…sets foot here…\l"
+	.string "again…et it be a kindhearted pers…\l"
+	.string "…ith that hope, I depar…”$"
 
 FarawayIsland_Interior_Text_Mew:
-	.string "{JPN}ミュー……$"
+	.string "Myuu…$"

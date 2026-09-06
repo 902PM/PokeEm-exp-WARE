@@ -34,13 +34,16 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_QuestionMark,
     },
 
-// Poke Balls
+// Poké Balls
 
     [ITEM_STRANGE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ストレンジボール"),
+        .name = ITEM_NAME("Strange Ball"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}じかんと くうかんを\nこえて やってきた\nかわった ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that has\n"
+            "traveled across\n"
+            "space and time."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -51,9 +54,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}モンスターボール"),
+        .name = ITEM_NAME("Poké Ball"),
         .price = 200,
-        .description = COMPOUND_STRING("{JPN}やせい ポケモンを\nつかまえるための どうぐ"),
+        .description = COMPOUND_STRING(
+            "A tool used for\n"
+            "catching wild\n"
+            "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -64,9 +70,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GREAT_BALL] =
     {
-        .name = ITEM_NAME("{JPN}スーパーボール"),
+        .name = ITEM_NAME("Great Ball"),
         .price = 600,
-        .description = COMPOUND_STRING("{JPN}モンスターボール より\nつかまえ やすくなった\nこうせいのうの ボール"),
+        .description = COMPOUND_STRING(
+            "A good Ball with a\n"
+            "higher catch rate\n"
+            "than a Poké Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -77,9 +86,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ULTRA_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ハイパーボール"),
+        .name = ITEM_NAME("Ultra Ball"),
         .price = (I_PRICE >= GEN_7) ? 800 : 1200,
-        .description = COMPOUND_STRING("{JPN}スーパーボール より\nつかまえ やすくなった\nとても すごい ボール"),
+        .description = COMPOUND_STRING(
+            "A better Ball with\n"
+            "a higher catch rate\n"
+            "than a Great Ball."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -90,9 +102,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MASTER_BALL] =
     {
-        .name = ITEM_NAME("{JPN}マスターボール"),
+        .name = ITEM_NAME("Master Ball"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンを かならず\nつかまえることが できる\nさいこうの ボール"),
+        .description = COMPOUND_STRING(
+            "The best Ball that\n"
+            "catches a Pokémon\n"
+            "without fail."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -103,9 +118,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PREMIER_BALL] =
     {
-        .name = ITEM_NAME("{JPN}プレミアボール"),
+        .name = ITEM_NAME("Premier Ball"),
         .price = (I_PRICE >= GEN_7) ? 20 : 200,
-        .description = COMPOUND_STRING("{JPN}なにかの きねんに\nつくられた めずらしい\nモンスターボール"),
+        .description = COMPOUND_STRING(
+            "A rare Ball made\n"
+            "in commemoration\n"
+            "of some event."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -116,9 +134,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEAL_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ヒールボール"),
+        .name = ITEM_NAME("Heal Ball"),
         .price = 300,
-        .description = COMPOUND_STRING("{JPN}つかまえた ポケモンの\nHPを かいふくする\nやさしい ボール"),
+        .description = COMPOUND_STRING(
+            "A remedial Ball\n"
+            "that restores\n"
+            "caught Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -129,9 +150,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NET_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ネットボール"),
+        .name = ITEM_NAME("Net Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}みずと むしタイプの\nポケモンが つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "well on Water- and\n"
+            "Bug-type Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -142,9 +166,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NEST_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ネストボール"),
+        .name = ITEM_NAME("Nest Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}つかまえる ポケモンが\nよわいほど つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on weaker\n"
+            "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -155,9 +182,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DIVE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ダイブボール"),
+        .name = ITEM_NAME("Dive Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}かいていに いる\nポケモンが つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on Pokémon\n"
+        #if B_DIVE_BALL_MODIFIER >= GEN_4
+            "in the water."),
+        #else
+            "on the ocean floor."),
+        #endif
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -168,9 +202,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DUSK_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ダークボール"),
+        .name = ITEM_NAME("Dusk Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}くらい ところで\nポケモンが つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better at night\n"
+            "or in dark places."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -181,9 +218,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TIMER_BALL] =
     {
-        .name = ITEM_NAME("{JPN}タイマーボール"),
+        .name = ITEM_NAME("Timer Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ターンすうが かかれば\nかかるほど つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that gains\n"
+            "power in battles\n"
+            "taking many turns."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -194,9 +234,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_QUICK_BALL] =
     {
-        .name = ITEM_NAME("{JPN}クイックボール"),
+        .name = ITEM_NAME("Quick Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}せんとうが はじまって\nすぐ つかうと つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better at the\n"
+            "start of a battle."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -207,9 +250,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REPEAT_BALL] =
     {
-        .name = ITEM_NAME("{JPN}リピートボール"),
+        .name = ITEM_NAME("Repeat Ball"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}つかまえた ことが ある\nポケモンが つかまえ\nやすくなる ボール"),
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on Pokémon\n"
+            "caught before."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -220,9 +266,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUXURY_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ゴージャスボール"),
-        .price = 1000,
-        .description = COMPOUND_STRING("{JPN}つかまえた ポケモンが\nなつき やすくなる\nいごこちの いい ボール"),
+        .name = ITEM_NAME("Luxury Ball"),
+        .price = (I_PRICE >= GEN_8) ? 3000 : 1000,
+        .description = COMPOUND_STRING(
+            "A cozy Ball that\n"
+            "makes Pokémon\n"
+            "quickly friendly."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -233,9 +282,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEVEL_BALL] =
     {
-        .name = ITEM_NAME("{JPN}レベルボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}ポケモンの レベルが\nひくいほど つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Level Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on lower-\n"
+            "level Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -246,9 +298,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LURE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ルアーボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}つりざおで つりあげた\nポケモンを つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Lure Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on Pokémon\n"
+            "hooked by a Rod."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -259,9 +314,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MOON_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ムーンボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}つきのいしで しんかする\nポケモンが つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Moon Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on Moon\n"
+            "Stone evolvers."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -272,9 +330,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FRIEND_BALL] =
     {
-        .name = ITEM_NAME("{JPN}フレンドボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}つかまえた ポケモンが\nすぐに なついて\nくれる ボール"),
+        .name = ITEM_NAME("Friend Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that makes\n"
+            "caught Pokémon\n"
+            "more friendly."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -285,9 +346,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LOVE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ラブラブボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}せいべつが ちがう\nポケモンを つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Love Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on the\n"
+            "opposite gender."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -298,9 +362,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAST_BALL] =
     {
-        .name = ITEM_NAME("{JPN}スピードボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}すばやさの たかい\nポケモンが つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Fast Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on fast\n"
+            "Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -311,9 +378,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEAVY_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ヘビーボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}たいじゅうの おもい\nポケモンを つかまえ\nやすくなる ボール"),
+        .name = ITEM_NAME("Heavy Ball"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A Ball that works\n"
+            "better on very\n"
+            "heavy Pokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -324,13 +394,17 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DREAM_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ドリームボール"),
-        .price = 300,
+        .name = ITEM_NAME("Dream Ball"),
+        .price = 0,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
-            "{JPN}ねむり じょうたいの\nポケモンが つかまえ\nやすくなる ボール"),
+            "A Ball that works\n"
+            "better on Pokémon\n"
+            "that are alseep."),
         #else
-            "{JPN}ハイリンクのもりで\nあらわれる ゆめのボール"),
+            "A special Ball that\n"
+            "appears in the\n"
+            "Entree Forest."),
         #endif
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
@@ -342,9 +416,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SAFARI_BALL] =
     {
-        .name = ITEM_NAME("{JPN}サファリボール"),
+        .name = ITEM_NAME("Safari Ball"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}サファリゾーンで のみ\nつかうことが できる\nとくしゅな ボール"),
+        .description = COMPOUND_STRING(
+            "A special Ball that\n"
+            "is used only in the\n"
+            "Safari Zone."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -355,9 +432,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SPORT_BALL] =
     {
-        .name = ITEM_NAME("{JPN}コンペボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}むしとりたいかいの\nなかで つかう\nとくべつな ボール"),
+        .name = ITEM_NAME("Sport Ball"),
+        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
+        .description = COMPOUND_STRING(
+            "A special Ball that\n"
+            "is used in the Bug-\n"
+            "Catching Contest."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -368,9 +448,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PARK_BALL] =
     {
-        .name = ITEM_NAME("{JPN}パークボール"),
-        .price = 300,
-        .description = COMPOUND_STRING("{JPN}パルパークの\nなかで つかう\nとくべつな ボール"),
+        .name = ITEM_NAME("Park Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A special Poké Ball\n"
+            "for the Pal Park."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -381,9 +463,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BEAST_BALL] =
     {
-        .name = ITEM_NAME("{JPN}ウルトラボール"),
-        .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ウルトラビーストを\nつかまえる ために\nつくられた ボール"),
+        .name = ITEM_NAME("Beast Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A special Poké Ball\n"
+            "designed to catch\n"
+            "Ultra Beasts."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -394,9 +479,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHERISH_BALL] =
     {
-        .name = ITEM_NAME("{JPN}プレシャスボール"),
+        .name = ITEM_NAME("Cherish Ball"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}なにかの きねんの\nしなとして つくられた\nかなり めずらしい ボール"),
+        .description = COMPOUND_STRING(
+            "A rare Ball crafted\n"
+            "to commemorate a\n"
+            "special occasion."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -409,10 +497,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POTION] =
     {
-        .name = ITEM_NAME("{JPN}キズぐすり"),
+        .name = ITEM_NAME("Potion"),
         .price = (I_PRICE >= GEN_7) ? 200 : 300,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンの たいりょくを\n20 かいふくする"),
+        .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Pokémon by\n"
+            "20 points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -426,14 +517,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPER_POTION] =
     {
-        .name = ITEM_NAME("{JPN}いいキズぐすり"),
+        .name = ITEM_NAME("Super Potion"),
         .price = 700,
         .holdEffectParam = 60,
         .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Pokémon by\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}ポケモンの たいりょくを\n60 かいふくする"),
+            "60 points."),
         #else
-            "{JPN}ポケモンの たいりょくを\n50 かいふくする"),
+            "50 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -448,14 +541,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HYPER_POTION] =
     {
-        .name = ITEM_NAME("{JPN}すごいキズぐすり"),
+        .name = ITEM_NAME("Hyper Potion"),
         .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 1200 : 1500,
         .holdEffectParam = 120,
         .description = COMPOUND_STRING(
+            "Restores the HP of\n"
+            "a Pokémon by\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}ポケモンの たいりょくを\n120 かいふくする"),
+            "120 points."),
         #else
-            "{JPN}ポケモンの たいりょくを\n200 かいふくする"),
+            "200 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -470,10 +565,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_POTION] =
     {
-        .name = ITEM_NAME("{JPN}まんたんのくすり"),
+        .name = ITEM_NAME("Max Potion"),
         .price = 2500,
         .holdEffectParam = 255,
-        .description = COMPOUND_STRING("{JPN}ポケモンの たいりょくを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Fully restores the\n"
+            "HP of a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -487,10 +584,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FULL_RESTORE] =
     {
-        .name = ITEM_NAME("{JPN}かいふくのくすり"),
+        .name = ITEM_NAME("Full Restore"),
         .price = 3000,
         .holdEffectParam = 255,
-        .description = COMPOUND_STRING("{JPN}ポケモンの たいりょくと\nじょうたい いじょうを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Fully restores the\n"
+            "HP and status of a\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -504,9 +604,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REVIVE] =
     {
-        .name = ITEM_NAME("{JPN}げんきのかけら"),
+        .name = ITEM_NAME("Revive"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
-        .description = COMPOUND_STRING("{JPN}ひんし じょうたいから\nたいりょく はんぶんまで\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "Revives a fainted\n"
+            "Pokémon with half\n"
+            "its HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -520,9 +623,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_REVIVE] =
     {
-        .name = ITEM_NAME("{JPN}げんきのかたまり"),
+        .name = ITEM_NAME("Max Revive"),
         .price = 4000,
-        .description = COMPOUND_STRING("{JPN}ひんし じょうたいから\nたいりょくを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Revives a fainted\n"
+            "Pokémon with all\n"
+            "its HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -536,14 +642,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FRESH_WATER] =
     {
-        .name = ITEM_NAME("{JPN}おいしいみず"),
+        .name = ITEM_NAME("Fresh Water"),
         .price = 200,
         .holdEffectParam = 30,
         .description = COMPOUND_STRING(
+            "A mineral water\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}ミネラルたっぷりの みず\nポケモンの たいりょくを\n30 かいふくする"),
+            "by 30 points."),
         #else
-            "{JPN}ミネラルたっぷりの みず\nポケモンの たいりょくを\n50 かいふくする"),
+            "by 50 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -558,14 +666,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SODA_POP] =
     {
-        .name = ITEM_NAME("{JPN}サイコソーダ"),
+        .name = ITEM_NAME("Soda Pop"),
         .price = 300,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
+            "A fizzy soda drink\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}ジュワーっと そうかい\nポケモンの たいりょくを\n50 かいふくする"),
+            "by 50 points."),
         #else
-            "{JPN}ジュワーっと そうかい\nポケモンの たいりょくを\n60 かいふくする"),
+            "by 60 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -580,14 +690,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEMONADE] =
     {
-        .name = ITEM_NAME("{JPN}ミックスオレ"),
+        .name = ITEM_NAME("Lemonade"),
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
         .holdEffectParam = 70,
         .description = COMPOUND_STRING(
+            "A very sweet drink\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}とっても あまーい\nポケモンの たいりょくを\n70 かいふくする"),
+            "by 70 points."),
         #else
-            "{JPN}とっても あまーい\nポケモンの たいりょくを\n80 かいふくする"),
+            "by 80 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -602,10 +714,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MOOMOO_MILK] =
     {
-        .name = ITEM_NAME("{JPN}モーモーミルク"),
+        .name = ITEM_NAME("Moomoo Milk"),
         .price = (I_PRICE >= GEN_7) ? 600 : 500,
         .holdEffectParam = 100,
-        .description = COMPOUND_STRING("{JPN}えいよう まんてん\nポケモンの たいりょくを\n100 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A nutritious milk\n"
+            "that restores HP\n"
+            "by 100 points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -619,13 +734,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ENERGY_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}ちからのこな"),
+        .name = ITEM_NAME("Energy Powder"),
         .price = 500,
         .description = COMPOUND_STRING(
+            "A bitter powder\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}とても にがい こな\nポケモンの たいりょくを\n60 かいふくする"),
+            "by 60 points."),
         #else
-            "{JPN}とても にがい こな\nポケモンの たいりょくを\n50 かいふくする"),
+            "by 50 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -640,13 +757,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ENERGY_ROOT] =
     {
-        .name = ITEM_NAME("{JPN}ちからのねっこ"),
+        .name = ITEM_NAME("Energy Root"),
         .price = (I_PRICE >= GEN_7) ? 1200 : 800,
         .description = COMPOUND_STRING(
+            "A bitter root\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}とても にがい ねっこ\nポケモンの たいりょくを\n120 かいふくする"),
+            "by 120 points."),
         #else
-            "{JPN}とても にがい ねっこ\nポケモンの たいりょくを\n200 かいふくする"),
+            "by 200 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -661,9 +780,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEAL_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}ばんのうごな"),
+        .name = ITEM_NAME("Heal Powder"),
         .price = (I_PRICE >= GEN_7) ? 300 : 450,
-        .description = COMPOUND_STRING("{JPN}すごく にがい こな\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A bitter powder\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -677,9 +799,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REVIVAL_HERB] =
     {
-        .name = ITEM_NAME("{JPN}ふっかつそう"),
+        .name = ITEM_NAME("Revival Herb"),
         .price = 2800,
-        .description = COMPOUND_STRING("{JPN}とても にがい くさ\nひんし じょうたいから\nふっかつする"),
+        .description = COMPOUND_STRING(
+            "A very bitter herb\n"
+            "that revives a\n"
+            "fainted Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -693,9 +818,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ANTIDOTE] =
     {
-        .name = ITEM_NAME("{JPN}どくけし"),
+        .name = ITEM_NAME("Antidote"),
         .price = (I_PRICE >= GEN_7) ? 200 : 100,
-        .description = COMPOUND_STRING("{JPN}どく じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "Heals a poisoned\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -709,9 +836,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PARALYZE_HEAL] =
     {
-        .name = ITEM_NAME("{JPN}まひなおし"),
+        .name = ITEM_NAME("Paralyze Heal"),
         .price = (I_PRICE == GEN_7) ? 300 : 200,
-        .description = COMPOUND_STRING("{JPN}まひ じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "Heals a paralyzed\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -725,7 +854,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BURN_HEAL] =
     {
-        .name = ITEM_NAME("{JPN}やけどなおし"),
+        .name = ITEM_NAME("Burn Heal"),
     #if I_PRICE >= GEN_8
         .price = 200,
     #elif I_PRICE == GEN_7
@@ -733,7 +862,9 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 250,
     #endif
-        .description = COMPOUND_STRING("{JPN}やけど じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "Heals Pokémon\n"
+            "of a burn."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -747,7 +878,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_HEAL] =
     {
-        .name = ITEM_NAME("{JPN}こおりなおし"),
+        .name = ITEM_NAME("Ice Heal"),
     #if I_PRICE >= GEN_8
         .price = 200,
     #elif I_PRICE == GEN_7
@@ -755,7 +886,14 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 250,
     #endif
-        .description = COMPOUND_STRING("{JPN}こおり じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+        #if B_USE_FROSTBITE
+            "Heals Pokémon\n"
+            "of frostbite."),
+        #else
+            "Defrosts a frozen\n"
+            "Pokémon."),
+        #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -769,7 +907,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AWAKENING] =
     {
-        .name = ITEM_NAME("{JPN}ねむけざまし"),
+        .name = ITEM_NAME("Awakening"),
     #if (I_PRICE >= GEN_8 || I_PRICE == GEN_1)
         .price = 200,
     #elif I_PRICE == GEN_7
@@ -777,7 +915,9 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 250,
     #endif
-        .description = COMPOUND_STRING("{JPN}ねむり じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "Awakens a sleeping\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -791,9 +931,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FULL_HEAL] =
     {
-        .name = ITEM_NAME("{JPN}なんでもなおし"),
+        .name = ITEM_NAME("Full Heal"),
         .price = (I_PRICE >= GEN_7) ? 400 : 600,
-        .description = COMPOUND_STRING("{JPN}じょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "Heals all the\n"
+            "status problems of\n"
+            "one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -807,10 +950,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ETHER] =
     {
-        .name = ITEM_NAME("{JPN}ピーピーエイド"),
+        .name = ITEM_NAME("Ether"),
         .price = (I_PRICE >= GEN_2) ? 1200 : 1,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}1つの わざの\nわざポイントを\n10 かいふくする"),
+        .description = COMPOUND_STRING(
+            "Restores the PP\n"
+            "of a selected move\n"
+            "by 10."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU_MOVES,
@@ -824,10 +970,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_ETHER] =
     {
-        .name = ITEM_NAME("{JPN}ピーピーリカバー"),
+        .name = ITEM_NAME("Max Ether"),
         .price = (I_PRICE >= GEN_2) ? 2000 : 1,
         .holdEffectParam = 255,
-        .description = COMPOUND_STRING("{JPN}1つの わざの\nわざポイントを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Fully restores the\n"
+            "PP of a selected\n"
+            "move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU_MOVES,
@@ -841,10 +990,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELIXIR] =
     {
-        .name = ITEM_NAME("{JPN}ピーピーエイダー"),
+        .name = ITEM_NAME("Elixir"),
         .price = (I_PRICE >= GEN_2) ? 3000 : 1,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}すべての わざの\nわざポイントを\n10 かいふくする"),
+        .description = COMPOUND_STRING(
+            "Restores the PP\n"
+            "of all moves by 10."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -858,10 +1009,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_ELIXIR] =
     {
-        .name = ITEM_NAME("{JPN}ピーピーマックス"),
+        .name = ITEM_NAME("Max Elixir"),
         .price = (I_PRICE >= GEN_2) ? 4500 : 1,
         .holdEffectParam = 255,
-        .description = COMPOUND_STRING("{JPN}ポケモン 1ぴきの\nすべての わざポイントを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Fully restores the\n"
+            "PP of a Pokémon's\n"
+            "moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -875,11 +1029,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BERRY_JUICE] =
     {
-        .name = ITEM_NAME("{JPN}きのみジュース"),
+        .name = ITEM_NAME("Berry Juice"),
         .price = 100,
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}きのみ 100パーセント\nポケモンの たいりょくを\n20 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A 100% pure juice\n"
+            "that restores HP\n"
+            "by 20 points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -893,10 +1050,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SACRED_ASH] =
     {
-        .name = ITEM_NAME("{JPN}せいなるはい"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}せいなるはい"),
+        .name = ITEM_NAME("Sacred Ash"),
+        .pluralName = ITEM_PLURAL_NAME("Sacred Ashes"),
         .price = (I_PRICE >= GEN_7) ? 50000 : 200,
-        .description = COMPOUND_STRING("{JPN}ひんししている ポケモン\nすべてを せいじょうな\nじょうたいに する"),
+        .description = COMPOUND_STRING(
+            "Fully revives and\n"
+            "restores all\n"
+            "fainted Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -909,10 +1069,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWEET_HEART] =
     {
-        .name = ITEM_NAME("{JPN}ハートスイーツ"),
+        .name = ITEM_NAME("Sweet Heart"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 100,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}あまい チョコレート\nポケモンの たいりょくを\n20 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A sweet chocolate\n"
+            "that restores HP\n"
+            "by 20 points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -926,10 +1089,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_HONEY] =
     {
-        .name = ITEM_NAME("{JPN}ダイミツ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ダイミツ"),
+        .name = ITEM_NAME("Max Honey"),
+        .pluralName = ITEM_PLURAL_NAME("Max Honey"),
         .price = 8000,
-        .description = COMPOUND_STRING("{JPN}ひんし じょうたいから\nたいりょくを\nぜんかいふくする"),
+        .description = COMPOUND_STRING(
+            "Revives a fainted\n"
+            "Pokémon with all\n"
+            "its HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -945,10 +1111,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PEWTER_CRUNCHIES] =
     {
-        .name = ITEM_NAME("{JPN}ニビあられ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ニビあられ"),
+        .name = ITEM_NAME("Pewter Crunchies"),
+        .pluralName = ITEM_PLURAL_NAME("Pewter Crunchies"),
         .price = 250,
-        .description = COMPOUND_STRING("{JPN}ニビの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -962,9 +1131,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAGE_CANDY_BAR] =
     {
-        .name = ITEM_NAME("{JPN}いかりまんじゅう"),
+        .name = ITEM_NAME("Rage Candy Bar"),
         .price = (I_PRICE >= GEN_7) ? 350 : 300,
-        .description = COMPOUND_STRING("{JPN}チョウジの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -978,9 +1150,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LAVA_COOKIE] =
     {
-        .name = ITEM_NAME("{JPN}フエンせんべい"),
+        .name = ITEM_NAME("Lava Cookie"),
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
-        .description = COMPOUND_STRING("{JPN}フエンの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -994,10 +1169,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OLD_GATEAU] =
     {
-        .name = ITEM_NAME("{JPN}もりのヨウカン"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}もりのヨウカン"),
+        .name = ITEM_NAME("Old Gateau"),
+        .pluralName = ITEM_PLURAL_NAME("Old Gateaux"),
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
-        .description = COMPOUND_STRING("{JPN}ハクタイの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -1011,9 +1189,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CASTELIACONE] =
     {
-        .name = ITEM_NAME("{JPN}ヒウンアイス"),
+        .name = ITEM_NAME("Casteliacone"),
         .price = (I_PRICE >= GEN_7) ? 350 : 100,
-        .description = COMPOUND_STRING("{JPN}ヒウンシティの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -1027,9 +1208,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUMIOSE_GALETTE] =
     {
-        .name = ITEM_NAME("{JPN}ミアレガレット"),
+        .name = ITEM_NAME("Lumiose Galette"),
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
-        .description = COMPOUND_STRING("{JPN}ミアレシティの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -1043,9 +1227,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHALOUR_SABLE] =
     {
-        .name = ITEM_NAME("{JPN}シャラサブレ"),
+        .name = ITEM_NAME("Shalour Sable"),
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
-        .description = COMPOUND_STRING("{JPN}シャラシティの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -1059,9 +1246,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_MALASADA] =
     {
-        .name = ITEM_NAME("{JPN}おおきいマラサダ"),
+        .name = ITEM_NAME("Big Malasada"),
         .price = 350,
-        .description = COMPOUND_STRING("{JPN}アローラの めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -1077,9 +1267,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HP_UP] =
     {
-        .name = ITEM_NAME("{JPN}マックスアップ"),
+        .name = ITEM_NAME("HP Up"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}たいりょくの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base HP\n"
+            "of one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1092,9 +1284,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PROTEIN] =
     {
-        .name = ITEM_NAME("{JPN}タウリン"),
+        .name = ITEM_NAME("Protein"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}こうげきの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Attack stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1107,9 +1302,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IRON] =
     {
-        .name = ITEM_NAME("{JPN}ブロムヘキシン"),
+        .name = ITEM_NAME("Iron"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}ぼうぎょの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Defense stat of\n"
+            "one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1122,9 +1320,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CALCIUM] =
     {
-        .name = ITEM_NAME("{JPN}リゾチウム"),
+        .name = ITEM_NAME("Calcium"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}とくこうの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Atk stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1137,9 +1338,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZINC] =
     {
-        .name = ITEM_NAME("{JPN}キトサン"),
+        .name = ITEM_NAME("Zinc"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}とくぼうの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Def stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1152,10 +1356,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CARBOS] =
     {
-        .name = ITEM_NAME("{JPN}インドメタシン"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}インドメタシン"),
+        .name = ITEM_NAME("Carbos"),
+        .pluralName = ITEM_PLURAL_NAME("Carbos"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}すばやさの\nきそポイントを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Speed stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1168,7 +1375,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PP_UP] =
     {
-        .name = ITEM_NAME("{JPN}ポイントアップ"),
+        .name = ITEM_NAME("PP Up"),
     #if I_PRICE >= GEN_7
         .price = 10000,
     #elif I_PRICE >= GEN_2
@@ -1176,7 +1383,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 1,
     #endif
-        .description = COMPOUND_STRING("{JPN}わざポイントの\nさいだいちが あがる"),
+        .description = COMPOUND_STRING(
+            "Raises the maximum\n"
+            "PP of a selected\n"
+            "move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1189,10 +1399,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PP_MAX] =
     {
-        .name = ITEM_NAME("{JPN}ポイントマックス"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ポイントマックス"),
+        .name = ITEM_NAME("PP Max"),
+        .pluralName = ITEM_PLURAL_NAME("PP Maxes"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
-        .description = COMPOUND_STRING("{JPN}わざポイントを\nさいだいちまで あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the PP of a\n"
+            "move to its maximum\n"
+            "points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1207,9 +1420,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEALTH_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}たいりょくのハネ"),
+        .name = ITEM_NAME("Health Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}たいりょくの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base HP\n"
+            "of one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1222,9 +1437,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MUSCLE_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}きんりょくのハネ"),
+        .name = ITEM_NAME("Muscle Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}こうげきの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Attack stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1237,9 +1455,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RESIST_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}ていこうのハネ"),
+        .name = ITEM_NAME("Resist Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}ぼうぎょの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Defense stat of\n"
+            "one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1252,9 +1473,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GENIUS_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}ちりょくのハネ"),
+        .name = ITEM_NAME("Genius Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}とくこうの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Atk stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1267,9 +1491,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLEVER_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}せいしんのハネ"),
+        .name = ITEM_NAME("Clever Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}とくぼうの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Def stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1282,9 +1509,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWIFT_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}しゅんぱつのハネ"),
+        .name = ITEM_NAME("Swift Feather"),
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = COMPOUND_STRING("{JPN}すばやさの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Speed stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
@@ -1299,7 +1529,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_CAPSULE] =
     {
-        .name = ITEM_NAME("{JPN}とくせいカプセル"),
+        .name = ITEM_NAME("Ability Capsule"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -1308,7 +1538,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 1000,
     #endif
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンに つかうと\nちがう とくせいに\nかえられる カプセル"),
+        .description = COMPOUND_STRING(
+            "A capsule that\n"
+            "allows a Pokémon to\n"
+            "switch Abilities."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
@@ -1319,11 +1552,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_PATCH] =
     {
-        .name = ITEM_NAME("{JPN}とくせいパッチ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}とくせいパッチ"),
+        .name = ITEM_NAME("Ability Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Ability Patches"),
         .price = (I_PRICE >= GEN_9) ? 250000 : 20,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンに つかうと\nめずらしい とくせいに\nかえられる パッチ"),
+        .description = COMPOUND_STRING(
+            "Changes a regular\n"
+            "Ability to a\n"
+            "rarer Ability."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
@@ -1336,9 +1572,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LONELY_MINT] =
     {
-        .name = ITEM_NAME("{JPN}さみしがりミント"),
+        .name = ITEM_NAME("Lonely Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nこうげきが あがって\nぼうぎょが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Attack and\n"
+            "lowers Defense."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1351,9 +1590,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ADAMANT_MINT] =
     {
-        .name = ITEM_NAME("{JPN}いじっぱりミント"),
+        .name = ITEM_NAME("Adamant Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nこうげきが あがって\nとくこうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Attack and\n"
+            "lowers Sp. Atk."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1366,9 +1608,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NAUGHTY_MINT] =
     {
-        .name = ITEM_NAME("{JPN}やんちゃミント"),
+        .name = ITEM_NAME("Naughty Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nこうげきが あがって\nとくぼうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Attack and\n"
+            "lowers Sp. Def."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1381,9 +1626,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BRAVE_MINT] =
     {
-        .name = ITEM_NAME("{JPN}ゆうかんミント"),
+        .name = ITEM_NAME("Brave Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nこうげきが あがって\nすばやさが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Attack and\n"
+            "lowers Speed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1396,9 +1644,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BOLD_MINT] =
     {
-        .name = ITEM_NAME("{JPN}ずぶといミント"),
+        .name = ITEM_NAME("Bold Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nぼうぎょが あがって\nこうげきが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Defense and\n"
+            "lowers Attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1411,9 +1662,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IMPISH_MINT] =
     {
-        .name = ITEM_NAME("{JPN}わんぱくミント"),
+        .name = ITEM_NAME("Impish Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nぼうぎょが あがって\nとくこうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Defense and\n"
+            "lowers Sp. Atk."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1426,9 +1680,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LAX_MINT] =
     {
-        .name = ITEM_NAME("{JPN}のうてんきミント"),
+        .name = ITEM_NAME("Lax Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nぼうぎょが あがって\nとくぼうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Defense and\n"
+            "lowers Sp. Def."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1441,9 +1698,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELAXED_MINT] =
     {
-        .name = ITEM_NAME("{JPN}のんきミント"),
+        .name = ITEM_NAME("Relaxed Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nぼうぎょが あがって\nすばやさが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Defense and\n"
+            "lowers Speed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1456,9 +1716,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MODEST_MINT] =
     {
-        .name = ITEM_NAME("{JPN}ひかえめミント"),
+        .name = ITEM_NAME("Modest Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくこうが あがって\nこうげきが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Atk and\n"
+            "lowers Attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1471,9 +1734,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MILD_MINT] =
     {
-        .name = ITEM_NAME("{JPN}おっとりミント"),
+        .name = ITEM_NAME("Mild Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくこうが あがって\nぼうぎょが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Atk and\n"
+            "lowers Defense."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1486,9 +1752,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RASH_MINT] =
     {
-        .name = ITEM_NAME("{JPN}うっかりやミント"),
+        .name = ITEM_NAME("Rash Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくこうが あがって\nとくぼうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Atk and\n"
+            "lowers Sp. Def."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1501,9 +1770,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_QUIET_MINT] =
     {
-        .name = ITEM_NAME("{JPN}れいせいミント"),
+        .name = ITEM_NAME("Quiet Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくこうが あがって\nすばやさが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Atk and\n"
+            "lowers Speed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1516,9 +1788,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CALM_MINT] =
     {
-        .name = ITEM_NAME("{JPN}おだやかミント"),
+        .name = ITEM_NAME("Calm Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくぼうが あがって\nこうげきが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Def and\n"
+            "lowers Attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1531,9 +1806,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GENTLE_MINT] =
     {
-        .name = ITEM_NAME("{JPN}おとなしいミント"),
+        .name = ITEM_NAME("Gentle Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくぼうが あがって\nぼうぎょが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Def and\n"
+            "lowers Defense."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1546,9 +1824,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CAREFUL_MINT] =
     {
-        .name = ITEM_NAME("{JPN}しんちょうミント"),
+        .name = ITEM_NAME("Careful Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくぼうが あがって\nとくこうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Def and\n"
+            "lowers Sp. Atk."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1561,9 +1842,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SASSY_MINT] =
     {
-        .name = ITEM_NAME("{JPN}なまいきミント"),
+        .name = ITEM_NAME("Sassy Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nとくぼうが あがって\nすばやさが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Sp. Def and\n"
+            "lowers Speed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1576,9 +1860,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TIMID_MINT] =
     {
-        .name = ITEM_NAME("{JPN}おくびょうミント"),
+        .name = ITEM_NAME("Timid Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nすばやさが あがって\nこうげきが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Speed and\n"
+            "lowers Attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1591,9 +1878,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HASTY_MINT] =
     {
-        .name = ITEM_NAME("{JPN}せっかちミント"),
+        .name = ITEM_NAME("Hasty Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nすばやさが あがって\nぼうぎょが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Speed and\n"
+            "lowers Defense."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1606,9 +1896,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_JOLLY_MINT] =
     {
-        .name = ITEM_NAME("{JPN}ようきミント"),
+        .name = ITEM_NAME("Jolly Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nすばやさが あがって\nとくこうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Speed and\n"
+            "lowers Sp. Atk."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1621,9 +1914,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NAIVE_MINT] =
     {
-        .name = ITEM_NAME("{JPN}むじゃきミント"),
+        .name = ITEM_NAME("Naive Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nすばやさが あがって\nとくぼうが さがるミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "raises Speed and\n"
+            "lowers Sp. Def."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1636,9 +1932,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SERIOUS_MINT] =
     {
-        .name = ITEM_NAME("{JPN}まじめミント"),
+        .name = ITEM_NAME("Serious Mint"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに かがせると\nまんべなく そだつ\nミント"),
+        .description = COMPOUND_STRING(
+            "When smelled, it\n"
+            "makes a Pokémon's\n"
+            "stats grow equally."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
@@ -1653,10 +1952,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RARE_CANDY] =
     {
-        .name = ITEM_NAME("{JPN}ふしぎなアメ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ふしぎなアメ"),
+        .name = ITEM_NAME("Rare Candy"),
+        .pluralName = ITEM_PLURAL_NAME("Rare Candies"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
-        .description = COMPOUND_STRING("{JPN}ポケモンの レベルを\n1 あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the level\n"
+            "of a Pokémon by\n"
+            "one."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1669,11 +1971,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CANDY_XS] =
     {
-        .name = ITEM_NAME("{JPN}けいけんアメXS"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}けいけんアメXS"),
+        .name = ITEM_NAME("Exp. Candy XS"),
+        .pluralName = ITEM_PLURAL_NAME("Exp. Candies XS"),
         .price = 20,
         .holdEffectParam = EXP_100,
-        .description = COMPOUND_STRING("{JPN}あたえると ポケモン\n1ひきの けいけんちが\nほんのすこし ふえる"),
+        .description = COMPOUND_STRING(
+            "Grants a very small\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1686,11 +1991,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CANDY_S] =
     {
-        .name = ITEM_NAME("{JPN}けいけんアメS"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}けいけんアメS"),
+        .name = ITEM_NAME("Exp. Candy S"),
+        .pluralName = ITEM_PLURAL_NAME("Exp. Candies S"),
         .price = 240,
         .holdEffectParam = EXP_800,
-        .description = COMPOUND_STRING("{JPN}あたえると ポケモン\n1ひきの けいけんちが\nすこし ふえる"),
+        .description = COMPOUND_STRING(
+            "Grants a small\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1703,11 +2011,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CANDY_M] =
     {
-        .name = ITEM_NAME("{JPN}けいけんアメM"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}けいけんアメM"),
+        .name = ITEM_NAME("Exp. Candy M"),
+        .pluralName = ITEM_PLURAL_NAME("Exp. Candies M"),
         .price = 1000,
         .holdEffectParam = EXP_3000,
-        .description = COMPOUND_STRING("{JPN}あたえると ポケモン\n1ひきの けいけんちが\nふえる"),
+        .description = COMPOUND_STRING(
+            "Grants a moderate\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1720,11 +2031,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CANDY_L] =
     {
-        .name = ITEM_NAME("{JPN}けいけんアメL"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}けいけんアメL"),
+        .name = ITEM_NAME("Exp. Candy L"),
+        .pluralName = ITEM_PLURAL_NAME("Exp. Candies L"),
         .price = 3000,
         .holdEffectParam = EXP_10000,
-        .description = COMPOUND_STRING("{JPN}あたえると ポケモン\n1ひきの けいけんちが\nかなり ふえる"),
+        .description = COMPOUND_STRING(
+            "Grants a large\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1737,11 +2051,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CANDY_XL] =
     {
-        .name = ITEM_NAME("{JPN}けいけんアメXL"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}けいけんアメXL"),
+        .name = ITEM_NAME("Exp. Candy XL"),
+        .pluralName = ITEM_PLURAL_NAME("Exp. Candies XL"),
         .price = 10000,
         .holdEffectParam = EXP_30000,
-        .description = COMPOUND_STRING("{JPN}あたえると ポケモン\n1ひきの けいけんちが\nとても ふえる"),
+        .description = COMPOUND_STRING(
+            "Grants a very large\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1754,10 +2071,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DYNAMAX_CANDY] =
     {
-        .name = ITEM_NAME("{JPN}ダイマックスアメ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ダイマックスアメ"),
+        .name = ITEM_NAME("Dynamax Candy"),
+        .pluralName = ITEM_PLURAL_NAME("Dynamax Candies"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}あたえると ダイマックス\nレベルが 1あがる"),
+        .description = COMPOUND_STRING(
+            "Raises the Dynamax\n"
+            "Level of a single\n"
+            "Pokémon by one."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -1771,9 +2091,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUE_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}あおいビードロ"),
+        .name = ITEM_NAME("Blue Flute"),
         .price = (I_PRICE >= GEN_7) ? 20 : 100,
-        .description = COMPOUND_STRING("{JPN}ガラスで できた ふえ\nねむり じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A glass flute that\n"
+            "awakens sleeping\n"
+            "Pokémon."),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -1788,9 +2111,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YELLOW_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}きいろビードロ"),
+        .name = ITEM_NAME("Yellow Flute"),
         .price = (I_PRICE >= GEN_7) ? 20 : 300,
-        .description = COMPOUND_STRING("{JPN}ガラスで できた ふえ\nこんらん じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A glass flute that\n"
+            "snaps Pokémon\n"
+            "out of confusion."),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -1805,9 +2131,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RED_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}あかいビードロ"),
+        .name = ITEM_NAME("Red Flute"),
         .price = (I_PRICE >= GEN_7) ? 20 : 200,
-        .description = COMPOUND_STRING("{JPN}ガラスで できた ふえ\nメロメロ じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A glass flute that\n"
+            "snaps Pokémon\n"
+            "out of attraction."),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -1824,10 +2153,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}くろいビードロ"),
+        .name = ITEM_NAME("Black Flute"),
         .price = (I_PRICE >= GEN_7) ? 20 : 400,
         .holdEffectParam = 50,
-        .description = COMPOUND_STRING("{JPN}ガラスで できた ふえ\nやせい ポケモンと\nそうぐう しにくくなる"),
+        .description = COMPOUND_STRING(
+            "A glass flute that\n"
+            "keeps away wild\n"
+            "Pokémon."),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -1840,10 +2172,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WHITE_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}しろいビードロ"),
+        .name = ITEM_NAME("White Flute"),
         .price = (I_PRICE >= GEN_7) ? 20 : 500,
         .holdEffectParam = 150,
-        .description = COMPOUND_STRING("{JPN}ガラスで できた ふえ\nやせい ポケモンと\nそうぐう しやすくなる"),
+        .description = COMPOUND_STRING(
+            "A glass flute that\n"
+            "lures wild Pokémon."),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -1858,10 +2192,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REPEL] =
     {
-        .name = ITEM_NAME("{JPN}むしよけスプレー"),
+        .name = ITEM_NAME("Repel"),
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
         .holdEffectParam = 100,
-        .description = COMPOUND_STRING("{JPN}100ぽ すすむ あいだ\nよわい ポケモンと\nそうぐう しなくなる"),
+        .description = COMPOUND_STRING(
+            "Repels weak wild\n"
+            "Pokémon for 100\n"
+            "steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1873,10 +2210,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPER_REPEL] =
     {
-        .name = ITEM_NAME("{JPN}シルバースプレー"),
+        .name = ITEM_NAME("Super Repel"),
         .price = (I_PRICE >= GEN_7) ? 700 : 500,
         .holdEffectParam = 200,
-        .description = COMPOUND_STRING("{JPN}200ぽ すすむ あいだ\nよわい ポケモンと\nそうぐう しなくなる"),
+        .description = COMPOUND_STRING(
+            "Repels weak wild\n"
+            "Pokémon for 200\n"
+            "steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1888,10 +2228,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_REPEL] =
     {
-        .name = ITEM_NAME("{JPN}ゴールドスプレー"),
+        .name = ITEM_NAME("Max Repel"),
         .price = (I_PRICE >= GEN_7) ? 900 : 700,
         .holdEffectParam = 250,
-        .description = COMPOUND_STRING("{JPN}250ぽ すすむ あいだ\nよわい ポケモンと\nそうぐう しなくなる"),
+        .description = COMPOUND_STRING(
+            "Repels weak wild\n"
+            "Pokémon for 250\n"
+            "steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1903,10 +2246,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LURE] =
     {
-        .name = ITEM_NAME("{JPN}むしよせコロン"),
+        .name = ITEM_NAME("Lure"),
         .price = 400,
         .holdEffectParam = 100,
-        .description = COMPOUND_STRING("{JPN}100ぽ すすむ あいだ\nめずらしい ポケモンが\nでて きやすく なる"),
+        .description = COMPOUND_STRING(
+            "Makes Pokémon more\n"
+            "likely to appear\n"
+            "for 100 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1919,10 +2265,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPER_LURE] =
     {
-        .name = ITEM_NAME("{JPN}シルバーコロン"),
+        .name = ITEM_NAME("Super Lure"),
         .price = 700,
         .holdEffectParam = 200,
-        .description = COMPOUND_STRING("{JPN}200ぽ すすむ あいだ\nめずらしい ポケモンが\nでて きやすく なる"),
+        .description = COMPOUND_STRING(
+            "Makes Pokémon more\n"
+            "likely to appear\n"
+            "for 200 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1935,10 +2284,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_LURE] =
     {
-        .name = ITEM_NAME("{JPN}ゴールドコロン"),
+        .name = ITEM_NAME("Max Lure"),
         .price = 900,
         .holdEffectParam = 250,
-        .description = COMPOUND_STRING("{JPN}250ぽ すすむ あいだ\nめずらしい ポケモンが\nでて きやすく なる"),
+        .description = COMPOUND_STRING(
+            "Makes Pokémon more\n"
+            "likely to appear\n"
+            "for 250 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -1951,8 +2303,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ESCAPE_ROPE] =
     {
-        .name = ITEM_NAME("{JPN}あなぬけのヒモ"),
-        .description = COMPOUND_STRING("{JPN}どうくつや ダンジョンを\nぬけだせる"),
+        .name = ITEM_NAME("Escape Rope"),
+        .description = COMPOUND_STRING(
+            "Use to escape\n"
+            "instantly from a\n"
+            "cave or a dungeon."),
     #if I_KEY_ESCAPE_ROPE >= GEN_8
         .price = 0,
         .importance = 1,
@@ -1969,18 +2324,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_EscapeRope,
     },
 
-// X Items
+// X items
 
     [ITEM_X_ATTACK] =
     {
-        .name = ITEM_NAME("{JPN}プラスパワー"),
+        .name = ITEM_NAME("X Attack"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 500,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの こうげきを\nおおきく あげる"),
+            "Sharply raises the\n"
+            "Attack stat\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nこうげきりょくが あがる"),
+            "Raises the stat\n"
+            "Attack during one\n"
+            "battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -1995,14 +2354,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_DEFENSE] =
     {
-        .name = ITEM_NAME("{JPN}ディフェンダー"),
+        .name = ITEM_NAME("X Defense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 550,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの ぼうぎょを\nおおきく あげる"),
+            "Sharply raises the\n"
+            "Defense stat\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nぼうぎょりょくが あがる"),
+            "Raises the stat\n"
+            "Defense during one\n"
+            "battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -2017,14 +2380,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SP_ATK] =
     {
-        .name = ITEM_NAME("{JPN}スペシャルアップ"),
+        .name = ITEM_NAME("X Sp. Atk"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの とくこうを\nおおきく あげる"),
+            "Sharply raises the\n"
+            "Sp. Atk stat\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nとくこうの いりょくが\nあがる"),
+            "Raises the stat\n"
+            "Sp. Atk during one\n"
+            "battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -2039,14 +2406,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SP_DEF] =
     {
-        .name = ITEM_NAME("{JPN}スペシャルガード"),
+        .name = ITEM_NAME("X Sp. Def"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの とくぼうを\nおおきく あげる"),
+            "Sharply raises the\n"
+            "Sp. Def stat\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nとくぼうを あげる"),
+            "Raises the stat\n"
+            "Sp. Def during one\n"
+            "battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -2061,14 +2432,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SPEED] =
     {
-        .name = ITEM_NAME("{JPN}スピーダー"),
+        .name = ITEM_NAME("X Speed"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの すばやさを\nおおきく あげる"),
+            "Sharply raises the\n"
+            "Speed stat\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nすばやさが あがる"),
+            "Raises the stat\n"
+            "Speed during one\n"
+            "battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -2083,15 +2458,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_ACCURACY] =
     {
-        .name = ITEM_NAME("{JPN}ヨクアタール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヨクアタール"),
+        .name = ITEM_NAME("X Accuracy"),
+        .pluralName = ITEM_PLURAL_NAME("X Accuracies"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 950,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの めいちゅうを\nおおきく あげる"),
+            "Sharply raises\n"
+            "accuracy during\n"
+            "one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nわざが あたりやすくなる"),
+            "Raises accuracy\n"
+            "of moves\n"
+            "during one battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
@@ -2106,10 +2485,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DIRE_HIT] =
     {
-        .name = ITEM_NAME("{JPN}クリティカット"),
+        .name = ITEM_NAME("Dire Hit"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 650,
         .description = COMPOUND_STRING(
-            "{JPN}つかった せんとうちゅう\nあいての きゅうしょに\nあたりやすくなる"),
+            "Raises the\n"
+            "critical-hit ratio\n"
+            "during one battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
         .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
@@ -2123,10 +2504,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GUARD_SPEC] =
     {
-        .name = ITEM_NAME("{JPN}エフェクトガード"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}エフェクトガード"),
+        .name = ITEM_NAME("Guard Spec."),
+        .pluralName = ITEM_PLURAL_NAME("Guard Specs."),
         .price = (I_PRICE >= GEN_7) ? 1500 : 700,
-        .description = COMPOUND_STRING("{JPN}せんとうで つかうと\nみかたの のうりょくを\nさげられなくする"),
+        .description = COMPOUND_STRING(
+            "Prevents stat\n"
+            "lowering when\n"
+            "used in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -2140,7 +2524,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_DOLL] =
     {
-        .name = ITEM_NAME("{JPN}ピッピにんぎょう"),
+        .name = ITEM_NAME("Poké Doll"),
     #if I_PRICE >= GEN_8
         .price = 300,
     #elif I_PRICE == GEN_7
@@ -2148,7 +2532,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 1000,
     #endif
-        .description = COMPOUND_STRING("{JPN}そうぐうした やせいの\nポケモンから かならず\nにげることが できる"),
+        .description = COMPOUND_STRING(
+            "Use to flee from\n"
+            "any battle with\n"
+            "a wild Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -2161,9 +2548,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLUFFY_TAIL] =
     {
-        .name = ITEM_NAME("{JPN}エネコのシッポ"),
+        .name = ITEM_NAME("Fluffy Tail"),
         .price = (I_PRICE >= GEN_7) ? 100 : 1000,
-        .description = COMPOUND_STRING("{JPN}そうぐうした やせいの\nポケモンから かならず\nにげることが できる"),
+        .description = COMPOUND_STRING(
+            "Use to flee from\n"
+            "any battle with\n"
+            "a wild Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -2176,9 +2566,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_TOY] =
     {
-        .name = ITEM_NAME("{JPN}ポケじゃらし"),
+        .name = ITEM_NAME("Poké Toy"),
         .price = (I_PRICE >= GEN_7) ? 100 : 1000,
-        .description = COMPOUND_STRING("{JPN}そうぐうした やせいの\nポケモンから かならず\nにげることが できる"),
+        .description = COMPOUND_STRING(
+            "Use to flee from\n"
+            "any battle with\n"
+            "a wild Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -2191,10 +2584,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAX_MUSHROOMS] =
     {
-        .name = ITEM_NAME("{JPN}ダイキノコ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ダイキノコ"),
+        .name = ITEM_NAME("Max Mushrooms"),
+        .pluralName = ITEM_PLURAL_NAME("Max Mushrooms"),
         .price = 8000,
-        .description = COMPOUND_STRING("{JPN}せんとうちゅう\nポケモンの すべての\nのうりょくを あげる"),
+        .description = COMPOUND_STRING(
+            "Mushrooms that\n"
+            "raise all stats\n"
+            "during one battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
@@ -2209,9 +2605,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BOTTLE_CAP] =
     {
-        .name = ITEM_NAME("{JPN}ぎんのおうかん"),
+        .name = ITEM_NAME("Bottle Cap"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 5000,
-        .description = COMPOUND_STRING("{JPN}ぎんいろの きれいな\nおうかん よろこぶ\nひともいる"),
+        .description = COMPOUND_STRING(
+            "A beautiful bottle\n"
+            "cap that gives off\n"
+            "a silver gleam."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2223,9 +2622,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOLD_BOTTLE_CAP] =
     {
-        .name = ITEM_NAME("{JPN}きんのおうかん"),
+        .name = ITEM_NAME("Gold Bottle Cap"),
         .price = (I_PRICE >= GEN_9) ? 60000 : 10000,
-        .description = COMPOUND_STRING("{JPN}きんいろの きれいな\nおうかん よろこぶ\nひともいる"),
+        .description = COMPOUND_STRING(
+            "A beautiful bottle\n"
+            "cap that gives off\n"
+            "a golden gleam."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2237,9 +2639,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NUGGET] =
     {
-        .name = ITEM_NAME("{JPN}きんのたま"),
+        .name = ITEM_NAME("Nugget"),
         .price = 10000 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}じゅんきん せい\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "A nugget of pure\n"
+            "gold. Can be sold at\n"
+            "a high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2251,7 +2656,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_NUGGET] =
     {
-        .name = ITEM_NAME("{JPN}でかいきんのたま"),
+        .name = ITEM_NAME("Big Nugget"),
     #if I_PRICE >= GEN_7
         .price = 40000 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_6
@@ -2259,7 +2664,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 0,
     #endif
-        .description = COMPOUND_STRING("{JPN}じゅんきん せいの \nおおきな たま\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "A big nugget of\n"
+            "gold. Can be sold at\n"
+            "a high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2271,9 +2679,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TINY_MUSHROOM] =
     {
-        .name = ITEM_NAME("{JPN}ちいさなキノコ"),
+        .name = ITEM_NAME("Tiny Mushroom"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}ふつうの キノコ\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A plain mushroom\n"
+            "that would sell\n"
+            "at a cheap price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2285,9 +2696,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_MUSHROOM] =
     {
-        .name = ITEM_NAME("{JPN}おおきなキノコ"),
+        .name = ITEM_NAME("Big Mushroom"),
         .price = 5000 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}めずらしい キノコ\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "A rare mushroom\n"
+            "that would sell at a\n"
+            "high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2299,7 +2713,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BALM_MUSHROOM] =
     {
-        .name = ITEM_NAME("{JPN}かおるキノコ"),
+        .name = ITEM_NAME("Balm Mushroom"),
     #if I_PRICE >= GEN_7
         .price = 15000 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_6
@@ -2307,7 +2721,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 0,
     #endif
-        .description = COMPOUND_STRING("{JPN}めずらしい キノコ\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "Gives off a nice\n"
+            "fragrance. It would\n"
+            "sell at a high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2319,9 +2736,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PEARL] =
     {
-        .name = ITEM_NAME("{JPN}しんじゅ"),
+        .name = ITEM_NAME("Pearl"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR: 1400,
-        .description = COMPOUND_STRING("{JPN}きれいな しんじゅ\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A pretty pearl\n"
+            "that would sell at a\n"
+            "cheap price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2333,9 +2753,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_PEARL] =
     {
-        .name = ITEM_NAME("{JPN}おおきなしんじゅ"),
+        .name = ITEM_NAME("Big Pearl"),
         .price = (I_PRICE >= GEN_7) ? 8000 * TREASURE_FACTOR: 7500,
-        .description = COMPOUND_STRING("{JPN}とても きれいな\nおおつぶの しんじゅ\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "A lovely large pearl\n"
+            "that would sell at a\n"
+            "high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2347,7 +2770,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PEARL_STRING] =
     {
-        .name = ITEM_NAME("{JPN}おだんごしんじゅ"),
+        .name = ITEM_NAME("Pearl String"),
     #if I_PRICE >= GEN_8
         .price = 20000 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_7
@@ -2357,7 +2780,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 0,
     #endif
-        .description = COMPOUND_STRING("{JPN}ぎんいろに ひかる\nおおつぶの しんじゅ\nとても たかく うれる"),
+        .description = COMPOUND_STRING(
+            "Very large pearls\n"
+            "that would sell at a\n"
+            "high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2369,9 +2795,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STARDUST] =
     {
-        .name = ITEM_NAME("{JPN}ほしのすな"),
+        .name = ITEM_NAME("Stardust"),
         .price = (I_PRICE >= GEN_7) ? 3000 * TREASURE_FACTOR: 2000,
-        .description = COMPOUND_STRING("{JPN}あかくて きれいな すな\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "Beautiful red sand.\n"
+            "Can be sold at a\n"
+            "high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2383,9 +2812,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STAR_PIECE] =
     {
-        .name = ITEM_NAME("{JPN}ほしのかけら"),
+        .name = ITEM_NAME("Star Piece"),
         .price = (I_PRICE >= GEN_7) ? 12000 * TREASURE_FACTOR: 9800,
-        .description = COMPOUND_STRING("{JPN}あかくて きれいな\nほうせきの かけら\nとても たかく うれる"),
+        .description = COMPOUND_STRING(
+            "A red gem shard.\n"
+            "It would sell for a\n"
+            "very high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2397,7 +2829,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COMET_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}すいせいのかけら"),
+        .name = ITEM_NAME("Comet Shard"),
     #if I_PRICE >= GEN_8
         .price = 25000 * TREASURE_FACTOR,
     #elif I_PRICE == GEN_7
@@ -2407,7 +2839,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 0,
     #endif
-        .description = COMPOUND_STRING("{JPN}すいせいが ちひょうに\nおちた かけら\nとても たかく うれる"),
+        .description = COMPOUND_STRING(
+            "A fallen shard of\n"
+            "a comet. It would\n"
+            "sell at a high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2419,9 +2854,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHOAL_SALT] =
     {
-        .name = ITEM_NAME("{JPN}あさせのしお"),
+        .name = ITEM_NAME("Shoal Salt"),
         .price = 20,
-        .description = COMPOUND_STRING("{JPN}あさせのほらあなで\nみつけた しお"),
+        .description = COMPOUND_STRING(
+            "Salt obtained from\n"
+            "deep inside the\n"
+            "Shoal Cave."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2433,9 +2871,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHOAL_SHELL] =
     {
-        .name = ITEM_NAME("{JPN}あさせのかいがら"),
+        .name = ITEM_NAME("Shoal Shell"),
         .price = 20,
-        .description = COMPOUND_STRING("{JPN}あさせのほらあなで\nみつけた かいがら"),
+        .description = COMPOUND_STRING(
+            "A seashell found\n"
+            "deep inside the\n"
+            "Shoal Cave."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2447,9 +2888,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RED_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}あかいかけら"),
+        .name = ITEM_NAME("Red Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = COMPOUND_STRING("{JPN}むかしに つくられた\nどうぐの かけら らしい\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A shard from an\n"
+            "ancient item. Can\n"
+            "be sold cheaply."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -2461,9 +2905,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUE_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}あおいかけら"),
+        .name = ITEM_NAME("Blue Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = COMPOUND_STRING("{JPN}むかしに つくられた\nどうぐの かけら らしい\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A shard from an\n"
+            "ancient item. Can\n"
+            "be sold cheaply."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -2475,9 +2922,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YELLOW_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}きいろいかけら"),
+        .name = ITEM_NAME("Yellow Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = COMPOUND_STRING("{JPN}むかしに つくられた\nどうぐの かけら らしい\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A shard from an\n"
+            "ancient item. Can\n"
+            "be sold cheaply."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -2489,9 +2939,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GREEN_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}みどりのかけら"),
+        .name = ITEM_NAME("Green Shard"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
-        .description = COMPOUND_STRING("{JPN}むかしに つくられた\nどうぐの かけら らしい\nやすく うれる"),
+        .description = COMPOUND_STRING(
+            "A shard from an\n"
+            "ancient item. Can\n"
+            "be sold cheaply."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -2503,9 +2956,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEART_SCALE] =
     {
-        .name = ITEM_NAME("{JPN}ハートのウロコ"),
+        .name = ITEM_NAME("Heart Scale"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}きれいな ウロコ\nマニアの あいだで\nにんきが たかい"),
+        .description = COMPOUND_STRING(
+            "A lovely scale.\n"
+            "It is coveted by\n"
+            "collectors."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2517,8 +2973,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HONEY] =
     {
-        .name = ITEM_NAME("{JPN}あまいミツ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}あまいミツ"),
+        .name = ITEM_NAME("Honey"),
+        .pluralName = ITEM_PLURAL_NAME("Honey"),
     #if I_PRICE >= GEN_8
         .price = 900,
     #elif I_PRICE == GEN_7
@@ -2526,7 +2982,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 100,
     #endif
-        .description = COMPOUND_STRING("{JPN}あまい においで\nやせい ポケモンが\nあらわれる"),
+        .description = COMPOUND_STRING(
+            "A sweet honey that\n"
+            "attracts wild\n"
+            "Pokémon when used."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_FIELD,
@@ -2538,9 +2997,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RARE_BONE] =
     {
-        .name = ITEM_NAME("{JPN}きちょうなホネ"),
+        .name = ITEM_NAME("Rare Bone"),
         .price = (I_PRICE >= GEN_7) ? 5000 * TREASURE_FACTOR: 10000,
-        .description = COMPOUND_STRING("{JPN}こうこがくの うえで\nとても きちょうな ホネ\nたかく うれる"),
+        .description = COMPOUND_STRING(
+            "A bone for study\n"
+            "that would sell at a\n"
+            "high price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2552,9 +3014,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ODD_KEYSTONE] =
     {
-        .name = ITEM_NAME("{JPN}かなめいし"),
+        .name = ITEM_NAME("Odd Keystone"),
         .price = 2100,
-        .description = COMPOUND_STRING("{JPN}だいじないし\nときどき いしから\nこえがきこえる"),
+        .description = COMPOUND_STRING(
+            "A vital item. Voices\n"
+            "can be heard from\n"
+            "it occasionally."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2566,9 +3031,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PRETTY_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}きれいなハネ"),
+        .name = ITEM_NAME("Pretty Feather"),
         .price = (I_PRICE >= GEN_7) ? 1000 * TREASURE_FACTOR: 200,
-        .description = COMPOUND_STRING("{JPN}きれいなだけで\nなんの こうかもない\nふつうの ハネ"),
+        .description = COMPOUND_STRING(
+            "A regular feather\n"
+            "that has no effect\n"
+            "on Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -2580,9 +3048,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_COPPER] =
     {
-        .name = ITEM_NAME("{JPN}こだいのどうか"),
+        .name = ITEM_NAME("Relic Copper"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつかわれた どうか"),
+        .description = COMPOUND_STRING(
+            "A copper coin used\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2594,9 +3065,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_SILVER] =
     {
-        .name = ITEM_NAME("{JPN}こだいのぎんか"),
+        .name = ITEM_NAME("Relic Silver"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつかわれた ぎんか"),
+        .description = COMPOUND_STRING(
+            "A silver coin used\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2608,9 +3082,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_GOLD] =
     {
-        .name = ITEM_NAME("{JPN}こだいのきんか"),
+        .name = ITEM_NAME("Relic Gold"),
         .price = (I_PRICE >= GEN_6) ? 60000 : 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつかわれた きんか"),
+        .description = COMPOUND_STRING(
+            "A gold coin used\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2622,9 +3099,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_VASE] =
     {
-        .name = ITEM_NAME("{JPN}こだいのツボ"),
+        .name = ITEM_NAME("Relic Vase"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつくられた ツボ"),
+        .description = COMPOUND_STRING(
+            "A fragile vase made\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2636,9 +3116,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_BAND] =
     {
-        .name = ITEM_NAME("{JPN}こだいのうでわ"),
+        .name = ITEM_NAME("Relic Band"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつくられた うでわ"),
+        .description = COMPOUND_STRING(
+            "A bracelet made\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2650,9 +3133,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_STATUE] =
     {
-        .name = ITEM_NAME("{JPN}こだいのせきぞう"),
+        .name = ITEM_NAME("Relic Statue"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつくられた せきぞう"),
+        .description = COMPOUND_STRING(
+            "A stone figure made\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2664,9 +3150,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RELIC_CROWN] =
     {
-        .name = ITEM_NAME("{JPN}こだいのおうかん"),
+        .name = ITEM_NAME("Relic Crown"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}3000ねんほど\nむかしの ぶんめいで\nつくられた おうかん"),
+        .description = COMPOUND_STRING(
+            "A heavy crown made\n"
+            "by a civilization\n"
+            "3,000 years ago."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2678,9 +3167,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STRANGE_SOUVENIR] =
     {
-        .name = ITEM_NAME("{JPN}ふしぎなおきもの"),
+        .name = ITEM_NAME("Strange Souvenir"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 10,
-        .description = COMPOUND_STRING("{JPN}アローラの まもりがみと\nされる ポケモンを\nかたどった おきもの"),
+        .description = COMPOUND_STRING(
+            "An ornament that\n"
+            "depicts a Pokémon\n"
+            "from Alola."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -2694,8 +3186,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HELIX_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}かいのカセキ"),
-        .description = COMPOUND_STRING("{JPN}おおむかし うみに\nすんでいた ポケモンの\nかいがらの いちぶ"),
+        .name = ITEM_NAME("Helix Fossil"),
+        .description = COMPOUND_STRING(
+            "A piece of an\n"
+            "ancient marine\n"
+            "Pokémon's seashell."),
     #if I_KEY_FOSSILS >= GEN_4
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .pocket = POCKET_ITEMS,
@@ -2714,8 +3209,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DOME_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}こうらのカセキ"),
-        .description = COMPOUND_STRING("{JPN}おおむかし うみに\nすんでいた ポケモンの\nこうらの いちぶ"),
+        .name = ITEM_NAME("Dome Fossil"),
+        .description = COMPOUND_STRING(
+            "A piece of an\n"
+            "ancient marine\n"
+            "Pokémon's shell."),
     #if I_KEY_FOSSILS >= GEN_4
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .pocket = POCKET_ITEMS,
@@ -2734,8 +3232,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OLD_AMBER] =
     {
-        .name = ITEM_NAME("{JPN}ひみつのコハク"),
-        .description = COMPOUND_STRING("{JPN}こだい ポケモンの\nいでんし じょうほうが\nとじこめられている いし"),
+        .name = ITEM_NAME("Old Amber"),
+        .description = COMPOUND_STRING(
+            "A stone containing\n"
+            "the genes of an\n"
+            "ancient Pokémon."),
     #if I_KEY_FOSSILS >= GEN_4
         .price = 1000,
         .pocket = POCKET_ITEMS,
@@ -2754,8 +3255,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROOT_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}ねっこのカセキ"),
-        .description = COMPOUND_STRING("{JPN}おおむかし かいていで\nくらしていた ポケモンの\nカセキと いわれている"),
+        .name = ITEM_NAME("Root Fossil"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, seafloor-\n"
+            "dwelling Pokémon."),
     #if I_KEY_FOSSILS >= GEN_4
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .pocket = POCKET_ITEMS,
@@ -2774,8 +3278,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLAW_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}ツメのカセキ"),
-        .description = COMPOUND_STRING("{JPN}おおむかし かいていで\nくらしていた ポケモンの\nカセキと いわれている"),
+        .name = ITEM_NAME("Claw Fossil"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, seafloor-\n"
+            "dwelling Pokémon."),
     #if I_KEY_FOSSILS >= GEN_4
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
         .pocket = POCKET_ITEMS,
@@ -2794,9 +3301,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ARMOR_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}たてのカセキ"),
+        .name = ITEM_NAME("Armor Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}おおむかし ちじょうで\nくらしていた ポケモンの\nえりかざりの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A part of an\n"
+            "ancient land\n"
+            "Pokémon's collar."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2808,9 +3318,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SKULL_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}ずがいのカセキ"),
+        .name = ITEM_NAME("Skull Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}おおむかし ちじょうで\nくらしていた ポケモンの\nあたまの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A part of an\n"
+            "ancient land\n"
+            "Pokémon's head."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2822,9 +3335,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COVER_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}ふたのカセキ"),
+        .name = ITEM_NAME("Cover Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}おおむかし うみに\nすんでいた ポケモンの\nせなかの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A part of an\n"
+            "ancient sea\n"
+            "Pokémon's back."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2836,9 +3352,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PLUME_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}はねのカセキ"),
+        .name = ITEM_NAME("Plume Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}とり ポケモンの\nそせんの\nつばさの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A part of an\n"
+            "ancient sky\n"
+            "Pokémon's wing."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2850,9 +3369,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_JAW_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}アゴのカセキ"),
+        .name = ITEM_NAME("Jaw Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}おおむかし ちじょうで\nくらしていた ポケモンの\nアゴの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A piece of an\n"
+            "ancient land\n"
+            "Pokémon's jaw."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2864,9 +3386,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SAIL_FOSSIL] =
     {
-        .name = ITEM_NAME("{JPN}ヒレのカセキ"),
+        .name = ITEM_NAME("Sail Fossil"),
         .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-        .description = COMPOUND_STRING("{JPN}おおむかし ちじょうで\nくらしていた ポケモンの\nヒレの いちぶ"),
+        .description = COMPOUND_STRING(
+            "An impression of an\n"
+            "ancient land\n"
+            "Pokémon's skin sail."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2878,9 +3403,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOSSILIZED_BIRD] =
     {
-        .name = ITEM_NAME("{JPN}カセキのトリ"),
+        .name = ITEM_NAME("Fossilized Bird"),
         .price = 5000,
-        .description = COMPOUND_STRING("{JPN}おおむかし そらを\nとんでいた ポケモンの\nカセキの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, sky-\n"
+            "soaring Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2892,10 +3420,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOSSILIZED_FISH] =
     {
-        .name = ITEM_NAME("{JPN}カセキのサカナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カセキのサカナ"),
+        .name = ITEM_NAME("Fossilized Fish"),
+        .pluralName = ITEM_PLURAL_NAME("Fossilized Fish"),
         .price = 5000,
-        .description = COMPOUND_STRING("{JPN}おおむかし うみに\nすんでいた ポケモンの\nカセキの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, sea-\n"
+            "dwelling Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2907,9 +3438,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOSSILIZED_DRAKE] =
     {
-        .name = ITEM_NAME("{JPN}カセキのリュウ"),
+        .name = ITEM_NAME("Fossilized Drake"),
         .price = 5000,
-        .description = COMPOUND_STRING("{JPN}おおむかし りくに\nすんでいた ポケモンの\nカセキの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, land-\n"
+            "roaming Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2921,9 +3455,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOSSILIZED_DINO] =
     {
-        .name = ITEM_NAME("{JPN}カセキのクビナガ"),
+        .name = ITEM_NAME("Fossilized Dino"),
         .price = 5000,
-        .description = COMPOUND_STRING("{JPN}おおむかし うみに\nすんでいた ポケモンの\nカセキの いちぶ"),
+        .description = COMPOUND_STRING(
+            "A fossil of an\n"
+            "ancient, sea-\n"
+            "dwelling Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
@@ -2937,13 +3474,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROWTH_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}すくすくこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}すくすくこやし"),
+        .name = ITEM_NAME("Growth Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Growth Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}つちの かわきが\nはやくなるが きのみの\nそだちも はやくなる"),
+        .description = COMPOUND_STRING(
+            "Speeds up Berry\n"
+            "growth, but dries\n"
+            "the soil faster."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -2957,13 +3500,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DAMP_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}じめじめこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}じめじめこやし"),
+        .name = ITEM_NAME("Damp Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Damp Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}つちの かわきが\nおそくなるが きのみの\nそだちも おそくなる"),
+        .description = COMPOUND_STRING(
+            "Causes the soil to\n"
+            "dry slower, but\n"
+            "slows Berry growth."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -2977,13 +3526,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STABLE_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}ながながこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ながながこやし"),
+        .name = ITEM_NAME("Stable Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Stable Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}きのみが おちるまでの\nじかんが ふだんより\nながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends the time\n"
+            "ripened Berries\n"
+            "remain on plants."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -2997,13 +3552,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOOEY_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}ねばねばこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ねばねばこやし"),
+        .name = ITEM_NAME("Gooey Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Gooey Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}かれたあとに あたらしい\nめが でてくる\nかいすうが ふえる"),
+        .description = COMPOUND_STRING(
+            "Ups the times new\n"
+            "plants grow where\n"
+            "mature ones withered."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -3017,13 +3578,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RICH_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}たわわこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}たわわこやし"),
+        .name = ITEM_NAME("Rich Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Rich Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}こまめに せわを\nしなくても とれる\nきのみの かずが ふえる"),
+        .description = COMPOUND_STRING(
+            "A fertilizer for\n"
+            "growing Berries that\n"
+            "increases the harvest."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -3037,13 +3604,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SURPRISE_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}びっくりこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}びっくりこやし"),
+        .name = ITEM_NAME("Surprise Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Surprise Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}きのみの くみあわせに\nよっては とつぜんへんいが\nはっせい する"),
+        .description = COMPOUND_STRING(
+            "A fertilizer for\n"
+            "growing Berries that\n"
+            "causes mutations."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -3057,13 +3630,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BOOST_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}ぐんぐんこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ぐんぐんこやし"),
+        .name = ITEM_NAME("Boost Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Boost Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}みずを おおく\nまくことで とれる\nきのみの かずが ふえる"),
+        .description = COMPOUND_STRING(
+            "Increases the Berry\n"
+            "harvest that can be\n"
+            "grown by watering."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -3077,13 +3656,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AMAZE_MULCH] =
     {
-        .name = ITEM_NAME("{JPN}とんでもこやし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}とんでもこやし"),
+        .name = ITEM_NAME("Amaze Mulch"),
+        .pluralName = ITEM_PLURAL_NAME("Amaze Mulch"),
         .price = 200,
     #if OW_BERRY_MULCH_USAGE == TRUE
-        .description = COMPOUND_STRING("{JPN}3つの とくちょうを\nすべて そなえた\nすごい こやし"),
+        .description = COMPOUND_STRING(
+            "A fertilizer with the\n"
+            "effects of Rich, Boost,\n"
+            "and Surprise Mulch."),
     #else
-        .description = COMPOUND_STRING("{JPN}ふかふかのつちに\nまいて つかう"),
+        .description = COMPOUND_STRING(
+            "It appears to be\n"
+            "unsuitable for\n"
+            "the soil."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
@@ -3096,19 +3681,22 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Apricorns
-    #if (I_PRICE >= GEN_8 || I_PRICE <= GEN_2)
-        #define APRICORN_PRICE 200
-    #elif I_PRICE >= GEN_5
-        #define APRICORN_PRICE 20
-    #else
-        #define APRICORN_PRICE 0
-    #endif
+#if (I_PRICE >= GEN_8 || I_PRICE <= GEN_2)
+    #define APRICORN_PRICE 200
+#elif I_PRICE >= GEN_5
+    #define APRICORN_PRICE 20
+#else
+    #define APRICORN_PRICE 0
+#endif
 
     [ITEM_RED_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}あかぼんぐり"),
+        .name = ITEM_NAME("Red Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}あかいろの ぼんぐり\nつーんと はなにくる\nかおりがする"),
+        .description = COMPOUND_STRING(
+            "A red Apricorn.\n"
+            "It assails your\n"
+            "nostrils."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3119,9 +3707,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUE_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}あおぼんぐり"),
+        .name = ITEM_NAME("Blue Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}あおいろの ぼんぐり\nすこし あおくさい\nかおりがする"),
+        .description = COMPOUND_STRING(
+            "A blue Apricorn.\n"
+            "It smells a bit\n"
+            "like grass."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3132,9 +3723,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YELLOW_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}きぼんぐり"),
+        .name = ITEM_NAME("Yellow Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}きいろの ぼんぐり\nさわやかな かおりがする"),
+        .description = COMPOUND_STRING(
+            "A yellow Apricorn.\n"
+            "It has a light,\n"
+            "refreshing scent."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3145,9 +3739,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GREEN_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}みどぼんぐり"),
+        .name = ITEM_NAME("Green Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}みどりいろの ぼんぐり\nふしぎと こうばしい\nかおりがする"),
+        .description = COMPOUND_STRING(
+            "A green Apricorn.\n"
+            "It has an aromatic,\n"
+            "mysterious scent."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3158,9 +3755,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PINK_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}ももぼんぐり"),
+        .name = ITEM_NAME("Pink Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}ももいろの ぼんぐり\nあまそうな いい\nかおりがする"),
+        .description = COMPOUND_STRING(
+            "A pink Apricorn.\n"
+            "It has a nice,\n"
+            "sweet scent."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3171,9 +3771,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WHITE_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}しろぼんぐり"),
+        .name = ITEM_NAME("White Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}しろいろの ぼんぐり\nなんの かおりも しない"),
+        .description = COMPOUND_STRING(
+            "A white Apricorn.\n"
+            "It doesn't smell\n"
+            "like anything."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3184,9 +3787,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_APRICORN] =
     {
-        .name = ITEM_NAME("{JPN}くろぼんぐり"),
+        .name = ITEM_NAME("Black Apricorn"),
         .price = APRICORN_PRICE,
-        .description = COMPOUND_STRING("{JPN}くろいろの ぼんぐり\nなんとも いえない\nかおりがする"),
+        .description = COMPOUND_STRING(
+            "A black Apricorn.\n"
+            "Its scent is\n"
+            "indescribable."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3197,9 +3803,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WISHING_PIECE] =
     {
-        .name = ITEM_NAME("{JPN}ねがいのかたまり"),
+        .name = ITEM_NAME("Wishing Piece"),
         .price = 20,
-        .description = COMPOUND_STRING("{JPN}すあなに なげいれると\nダイマックスポケモンが\nあらわれる"),
+        .description = COMPOUND_STRING(
+            "Throw one into a\n"
+            "den to attract a\n"
+            "Dynamax Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -3211,9 +3820,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GALARICA_TWIG] =
     {
-        .name = ITEM_NAME("{JPN}ガラナツのえだ"),
+        .name = ITEM_NAME("Galarica Twig"),
         .price = 20 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}ガラルちほうの いちぶに\nはえる ガラナツという\nきの えだ"),
+        .description = COMPOUND_STRING(
+            "A twig from a tree\n"
+            "called Galarica\n"
+            "that grows in Galar."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3225,10 +3837,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ARMORITE_ORE] =
     {
-        .name = ITEM_NAME("{JPN}ヨロイこうせき"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヨロイこうせき"),
+        .name = ITEM_NAME("Armorite Ore"),
+        .pluralName = ITEM_PLURAL_NAME("Armorite Ore"),
         .price = 20,
-        .description = COMPOUND_STRING("{JPN}ヨロイじまで とれる\nめずらしい いし"),
+        .description = COMPOUND_STRING(
+            "Rare ore that\n"
+            "can be obtained on\n"
+            "the Isle of Armor."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3240,10 +3855,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DYNITE_ORE] =
     {
-        .name = ITEM_NAME("{JPN}マックスこうせき"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}マックスこうせき"),
+        .name = ITEM_NAME("Dynite Ore"),
+        .pluralName = ITEM_PLURAL_NAME("Dynite Ore"),
         .price = 20,
-        .description = COMPOUND_STRING("{JPN}マックスダイすあなで\nとれる\nなぞの いし"),
+        .description = COMPOUND_STRING(
+            "Mysterious ore\n"
+            "obtained in\n"
+            "the Max Lair."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3257,10 +3875,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ORANGE_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}オレンジメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}オレンジメール"),
+        .name = ITEM_NAME("Orange Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Orange Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ジグザグマの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Zigzagoon-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3272,10 +3893,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HARBOR_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}ハーバーメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ハーバーメール"),
+        .name = ITEM_NAME("Harbor Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Harbor Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}キャモメの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Wingull-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3287,10 +3911,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GLITTER_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}キラキラメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}キラキラメール"),
+        .name = ITEM_NAME("Glitter Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Glitter Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ピカチュウの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Pikachu-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3302,10 +3929,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MECH_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}メカニカルメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}メカニカルメール"),
+        .name = ITEM_NAME("Mech Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Mech Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}コイルの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Magnemite-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3317,10 +3947,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WOOD_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}ウッディメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ウッディメール"),
+        .name = ITEM_NAME("Wood Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Wood Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ナマケロの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Slakoth-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3332,10 +3965,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WAVE_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}クロスメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}クロスメール"),
+        .name = ITEM_NAME("Wave Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Wave Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ホエルコの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Wailmer-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3347,10 +3983,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BEAD_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}トレジャーメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}トレジャーメール"),
+        .name = ITEM_NAME("Bead Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Bead Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンの\nにがおえがでる びんせん"),
+        .description = COMPOUND_STRING(
+            "Mail featuring a\n"
+            "sketch of the\n"
+            "holding Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3362,10 +4001,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHADOW_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}シャドーメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}シャドーメール"),
+        .name = ITEM_NAME("Shadow Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Shadow Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ヨマワルの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Duskull-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3377,10 +4019,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TROPIC_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}トロピカルメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}トロピカルメール"),
+        .name = ITEM_NAME("Tropic Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Tropic Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}キレイハナの すがたが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A Bellossom-print\n"
+            "Mail to be held by\n"
+            "a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3392,10 +4037,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DREAM_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}ドリームメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ドリームメール"),
+        .name = ITEM_NAME("Dream Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Dream Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンの\nにがおえがでる びんせん"),
+        .description = COMPOUND_STRING(
+            "Mail featuring a\n"
+            "sketch of the\n"
+            "holding Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3407,10 +4055,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAB_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}ミラクルメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ミラクルメール"),
+        .name = ITEM_NAME("Fab Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Fab Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}ごうかな もようが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "A gorgeous-print\n"
+            "Mail to be held\n"
+            "by a Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3422,10 +4073,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RETRO_MAIL] =
     {
-        .name = ITEM_NAME("{JPN}レトロメール"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}レトロメール"),
+        .name = ITEM_NAME("Retro Mail"),
+        .pluralName = ITEM_PLURAL_NAME("Retro Mail"),
         .price = 50,
-        .description = COMPOUND_STRING("{JPN}3ひきの ポケモンが\nプリントされた びんせん\nポケモンに もたせる"),
+        .description = COMPOUND_STRING(
+            "Mail featuring the\n"
+            "drawings of three\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
@@ -3435,13 +4089,16 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_RetroMail,
     },
 
-// Evolution Items
+// Evolution items
 
     [ITEM_FIRE_STONE] =
     {
-        .name = ITEM_NAME("{JPN}ほのおのいし"),
+        .name = ITEM_NAME("Fire Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3454,9 +4111,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATER_STONE] =
     {
-        .name = ITEM_NAME("{JPN}みずのいし"),
+        .name = ITEM_NAME("Water Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3469,9 +4129,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_THUNDER_STONE] =
     {
-        .name = ITEM_NAME("{JPN}かみなりのいし"),
+        .name = ITEM_NAME("Thunder Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3484,9 +4147,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEAF_STONE] =
     {
-        .name = ITEM_NAME("{JPN}リーフのいし"),
+        .name = ITEM_NAME("Leaf Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3499,9 +4165,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_STONE] =
     {
-        .name = ITEM_NAME("{JPN}こおりのいし"),
+        .name = ITEM_NAME("Ice Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3514,9 +4183,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUN_STONE] =
     {
-        .name = ITEM_NAME("{JPN}たいようのいし"),
+        .name = ITEM_NAME("Sun Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3529,17 +4201,20 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MOON_STONE] =
     {
-        .name = ITEM_NAME("{JPN}つきのいし"),
+        .name = ITEM_NAME("Moon Stone"),
     #if I_PRICE >= GEN_7
         .price = 3000,
     #elif I_PRICE >= GEN_4
         .price = 2100,
     #elif I_PRICE == GEN_3
-        .price = 2100,
+        .price = 0,
     #else
         .price = 1,
     #endif
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3552,9 +4227,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHINY_STONE] =
     {
-        .name = ITEM_NAME("{JPN}ひかりのいし"),
+        .name = ITEM_NAME("Shiny Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3567,9 +4245,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DUSK_STONE] =
     {
-        .name = ITEM_NAME("{JPN}やみのいし"),
+        .name = ITEM_NAME("Dusk Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3582,9 +4263,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DAWN_STONE] =
     {
-        .name = ITEM_NAME("{JPN}めざめいし"),
+        .name = ITEM_NAME("Dawn Stone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
@@ -3597,9 +4281,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWEET_APPLE] =
     {
-        .name = ITEM_NAME("{JPN}あまーいりんご"),
+        .name = ITEM_NAME("Sweet Apple"),
         .price = 2200,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nあまい りんご"),
+        .description = COMPOUND_STRING(
+            "A peculiar apple\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3612,9 +4299,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TART_APPLE] =
     {
-        .name = ITEM_NAME("{JPN}すっぱいりんご"),
+        .name = ITEM_NAME("Tart Apple"),
         .price = 2200,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nすっぱい りんご"),
+        .description = COMPOUND_STRING(
+            "A peculiar apple\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3627,9 +4317,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CRACKED_POT] =
     {
-        .name = ITEM_NAME("{JPN}われたポット"),
+        .name = ITEM_NAME("Cracked Pot"),
         .price = 1600,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nわれた ポット"),
+        .description = COMPOUND_STRING(
+            "A peculiar teapot\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3642,9 +4335,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHIPPED_POT] =
     {
-        .name = ITEM_NAME("{JPN}かけたポット"),
+        .name = ITEM_NAME("Chipped Pot"),
         .price = 38000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nかけた ポット"),
+        .description = COMPOUND_STRING(
+            "A peculiar teapot\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3657,9 +4353,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GALARICA_CUFF] =
     {
-        .name = ITEM_NAME("{JPN}ガラナツブレス"),
+        .name = ITEM_NAME("Galarica Cuff"),
         .price = (I_PRICE >= GEN_9) ? 3000 : 6000,
-        .description = COMPOUND_STRING("{JPN}ガラナツのえだを\nあみこんだ ブレスレット\nガラルヤドンが よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A cuff that\n"
+            "makes Galarian\n"
+            "Slowpoke happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3672,9 +4371,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GALARICA_WREATH] =
     {
-        .name = ITEM_NAME("{JPN}ガラナツリース"),
+        .name = ITEM_NAME("Galarica Wreath"),
         .price = (I_PRICE >= GEN_9) ? 3000 : 6000,
-        .description = COMPOUND_STRING("{JPN}ガラナツのえだを\nあみこんだ かんむり\nガラルヤドンが よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A wreath that\n"
+            "makes Galarian\n"
+            "Slowpoke happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -3687,10 +4389,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_SCALE] =
     {
-        .name = ITEM_NAME("{JPN}りゅうのウロコ"),
+        .name = ITEM_NAME("Dragon Scale"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}ドラゴンタイプの\nポケモンが もっている\nふしぎな ウロコ"),
+        .description = COMPOUND_STRING(
+            "A strange scale\n"
+            "held by Dragon-\n"
+            "type Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3703,9 +4408,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_UPGRADE] =
     {
-        .name = ITEM_NAME("{JPN}アップグレード"),
+        .name = ITEM_NAME("Upgrade"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}ふしぎな はこ\nシルフ カンパニーせい"),
+        .description = COMPOUND_STRING(
+            "A peculiar box made\n"
+            "by Silph Co."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3718,9 +4425,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PROTECTOR] =
     {
-        .name = ITEM_NAME("{JPN}プロテクター"),
+        .name = ITEM_NAME("Protector"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}とても かたくて おもい\nある ポケモンが\nこのんでいる"),
+        .description = COMPOUND_STRING(
+            "A protective item.\n"
+            "It is loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3733,9 +4443,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTIRIZER] =
     {
-        .name = ITEM_NAME("{JPN}エレキブースター"),
+        .name = ITEM_NAME("Electirizer"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}でんきの エネルギーが\nたくわえられている はこ\nあるポケモンが このんでいる"),
+        .description = COMPOUND_STRING(
+            "A box of electric\n"
+            "energy loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3748,9 +4461,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGMARIZER] =
     {
-        .name = ITEM_NAME("{JPN}マグマブースター"),
+        .name = ITEM_NAME("Magmarizer"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}マグマの エネルギーが\nたくわえられている はこ\nあるポケモンが このんでいる"),
+        .description = COMPOUND_STRING(
+            "A box of magma\n"
+            "energy loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3763,9 +4479,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DUBIOUS_DISC] =
     {
-        .name = ITEM_NAME("{JPN}あやしいパッチ"),
+        .name = ITEM_NAME("Dubious Disc"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}なかに あやしい\nじょうほうが つまった\nとうめいな きかい"),
+        .description = COMPOUND_STRING(
+            "A transparent\n"
+            "device overflowing\n"
+            "with dubious data."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3778,9 +4497,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REAPER_CLOTH] =
     {
-        .name = ITEM_NAME("{JPN}れいかいのぬの"),
+        .name = ITEM_NAME("Reaper Cloth"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}つよい れいりょくが\nこめられている ぬの\nあるポケモンが このんでいる"),
+        .description = COMPOUND_STRING(
+            "A cloth imbued with\n"
+            "energy loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3793,7 +4515,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PRISM_SCALE] =
     {
-        .name = ITEM_NAME("{JPN}きれいなウロコ"),
+        .name = ITEM_NAME("Prism Scale"),
     #if I_PRICE >= GEN_9
         .price = 3000,
     #elif I_PRICE >= GEN_7
@@ -3801,7 +4523,10 @@ const struct ItemInfo gItemsInfo[] =
     #else
         .price = 500,
     #endif
-        .description = COMPOUND_STRING("{JPN}ある とくていの\nポケモンを しんかさせる\nふしぎな ウロコ"),
+        .description = COMPOUND_STRING(
+            "A mysterious scale\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3814,9 +4539,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WHIPPED_DREAM] =
     {
-        .name = ITEM_NAME("{JPN}ホイップポップ"),
+        .name = ITEM_NAME("Whipped Dream"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}ほんのり あまいクリーム\nある ポケモンが\nこのんでいる"),
+        .description = COMPOUND_STRING(
+            "A soft and sweet\n"
+            "treat loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3829,9 +4557,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SACHET] =
     {
-        .name = ITEM_NAME("{JPN}においぶくろ"),
+        .name = ITEM_NAME("Sachet"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .description = COMPOUND_STRING("{JPN}きつめの かおりのふくろ\nある ポケモンが\nこのんでいる"),
+        .description = COMPOUND_STRING(
+            "A sachet with\n"
+            "perfumes loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3844,9 +4575,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OVAL_STONE] =
     {
-        .name = ITEM_NAME("{JPN}まんまるいし"),
+        .name = ITEM_NAME("Oval Stone"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 2100,
-        .description = COMPOUND_STRING("{JPN}ある とくていの\nポケモンを しんかさせる\nふしぎな いし"),
+        .description = COMPOUND_STRING(
+            "Makes certain\n"
+            "species of Pokémon\n"
+            "evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -3859,9 +4593,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STRAWBERRY_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}いちごアメざいく"),
+        .name = ITEM_NAME("Strawberry Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}いちごの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "Strawberry-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3873,9 +4610,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LOVE_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}ハートアメざいく"),
+        .name = ITEM_NAME("Love Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}ハートの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A heart-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3887,9 +4627,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BERRY_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}ベリーアメざいく"),
+        .name = ITEM_NAME("Berry Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}ベリーの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A berry-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3901,9 +4644,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLOVER_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}よつばアメざいく"),
+        .name = ITEM_NAME("Clover Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}よつばの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A clover-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3915,9 +4661,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLOWER_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}おはなアメざいく"),
+        .name = ITEM_NAME("Flower Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}おはなの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A flower-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3929,9 +4678,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STAR_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}スターアメざいく"),
+        .name = ITEM_NAME("Star Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}スターの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A star-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3943,9 +4695,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RIBBON_SWEET] =
     {
-        .name = ITEM_NAME("{JPN}リボンアメざいく"),
+        .name = ITEM_NAME("Ribbon Sweet"),
         .price = 500 * TREASURE_FACTOR,
-        .description = COMPOUND_STRING("{JPN}リボンの アメざいく\nマホミルに もたせると\nくるくる まわって よろこぶ"),
+        .description = COMPOUND_STRING(
+            "A ribbon-shaped\n"
+            "sweet. When held by\n"
+            "Milcery, it's happy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3957,10 +4712,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EVERSTONE] =
     {
-        .name = ITEM_NAME("{JPN}かわらずのいし"),
+        .name = ITEM_NAME("Everstone"),
         .price = (I_PRICE >= GEN_7) ? 3000 : 200,
         .holdEffect = HOLD_EFFECT_PREVENT_EVOLVE,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nしんか しなくなる\nふしぎな いし"),
+        .description = COMPOUND_STRING(
+            "A wondrous hold\n"
+            "item that prevents\n"
+            "evolution."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -3974,10 +4732,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RED_NECTAR] =
     {
-        .name = ITEM_NAME("{JPN}くれないのミツ"),
+        .name = ITEM_NAME("Red Nectar"),
         .price = 300,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}はなのミツ\nとくていの ポケモンの\nすがたを かえる"),
+        .description = COMPOUND_STRING(
+            "Flower nectar that\n"
+            "changes the form\n"
+            "of certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
@@ -3989,10 +4750,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YELLOW_NECTAR] =
     {
-        .name = ITEM_NAME("{JPN}やまぶきのミツ"),
+        .name = ITEM_NAME("Yellow Nectar"),
         .price = 300,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}はなのミツ\nとくていの ポケモンの\nすがたを かえる"),
+        .description = COMPOUND_STRING(
+            "Flower nectar that\n"
+            "changes the form\n"
+            "of certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
@@ -4004,10 +4768,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PINK_NECTAR] =
     {
-        .name = ITEM_NAME("{JPN}うすもものミツ"),
+        .name = ITEM_NAME("Pink Nectar"),
         .price = 300,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}はなのミツ\nとくていの ポケモンの\nすがたを かえる"),
+        .description = COMPOUND_STRING(
+            "Flower nectar that\n"
+            "changes the form\n"
+            "of certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
@@ -4019,10 +4786,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PURPLE_NECTAR] =
     {
-        .name = ITEM_NAME("{JPN}むらさきのミツ"),
+        .name = ITEM_NAME("Purple Nectar"),
         .price = 300,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}はなのミツ\nとくていの ポケモンの\nすがたを かえる"),
+        .description = COMPOUND_STRING(
+            "Flower nectar that\n"
+            "changes the form\n"
+            "of certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
@@ -4036,11 +4806,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLAME_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}ひのたまプレート"),
+        .name = ITEM_NAME("Flame Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると ほのおの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Fire-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4053,11 +4826,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SPLASH_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}しずくプレート"),
+        .name = ITEM_NAME("Splash Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると みずの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Water-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4070,11 +4846,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZAP_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}いかずちプレート"),
+        .name = ITEM_NAME("Zap Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると でんきの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Electric-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4087,11 +4866,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEADOW_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}みどりのプレート"),
+        .name = ITEM_NAME("Meadow Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると くさの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Grass-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4104,11 +4886,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICICLE_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}つららのプレート"),
+        .name = ITEM_NAME("Icicle Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると こおりの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ice-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4121,11 +4906,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIST_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}こぶしのプレート"),
+        .name = ITEM_NAME("Fist Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると かくとうの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Fighting-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4138,11 +4926,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TOXIC_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}もうどくプレート"),
+        .name = ITEM_NAME("Toxic Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると どくの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Poison-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4155,11 +4946,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EARTH_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}だいちのプレート"),
+        .name = ITEM_NAME("Earth Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると じめんの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ground-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4172,11 +4966,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SKY_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}あおぞらプレート"),
+        .name = ITEM_NAME("Sky Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると ひこうの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Flying-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4189,11 +4986,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MIND_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}ふしぎのプレート"),
+        .name = ITEM_NAME("Mind Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると エスパーの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Psychic-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4206,11 +5006,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_INSECT_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}たまむしプレート"),
+        .name = ITEM_NAME("Insect Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると むしの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Bug-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4223,11 +5026,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STONE_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}がんせきプレート"),
+        .name = ITEM_NAME("Stone Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると いわの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Rock-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4240,11 +5046,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SPOOKY_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}もののけプレート"),
+        .name = ITEM_NAME("Spooky Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると ゴーストの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ghost-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4257,11 +5066,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRACO_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}りゅうのプレート"),
+        .name = ITEM_NAME("Draco Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると ドラゴンの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Dragon-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4274,11 +5086,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DREAD_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}こわもてプレート"),
+        .name = ITEM_NAME("Dread Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると あくの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Dark-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4291,11 +5106,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IRON_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}こうてつプレート"),
+        .name = ITEM_NAME("Iron Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると はがねの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Steel-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4308,11 +5126,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PIXIE_PLATE] =
     {
-        .name = ITEM_NAME("{JPN}せいれいプレート"),
+        .name = ITEM_NAME("Pixie Plate"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_PLATE,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると フェアリーの\nわざの いりょくが\nつよまる せきばん"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Fairy-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
@@ -4327,10 +5148,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DOUSE_DRIVE] =
     {
-        .name = ITEM_NAME("{JPN}アクアカセット"),
+        .name = ITEM_NAME("Douse Drive"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
-        .description = COMPOUND_STRING("{JPN}テクノバスターが\nみずタイプに なる\nカセット"),
+        .description = COMPOUND_STRING(
+            "Changes Techno\n"
+            "Blast to a\n"
+            "Water-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -4343,10 +5167,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHOCK_DRIVE] =
     {
-        .name = ITEM_NAME("{JPN}イナズマカセット"),
+        .name = ITEM_NAME("Shock Drive"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
-        .description = COMPOUND_STRING("{JPN}テクノバスターが\nでんきタイプに なる\nカセット"),
+        .description = COMPOUND_STRING(
+            "Changes Techno\n"
+            "Blast to an\n"
+            "Electric move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -4359,10 +5186,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BURN_DRIVE] =
     {
-        .name = ITEM_NAME("{JPN}ブレイズカセット"),
+        .name = ITEM_NAME("Burn Drive"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
-        .description = COMPOUND_STRING("{JPN}テクノバスターが\nほのおタイプに なる\nカセット"),
+        .description = COMPOUND_STRING(
+            "Changes Techno\n"
+            "Blast to a\n"
+            "Fire-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -4375,10 +5205,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHILL_DRIVE] =
     {
-        .name = ITEM_NAME("{JPN}フリーズカセット"),
+        .name = ITEM_NAME("Chill Drive"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
-        .description = COMPOUND_STRING("{JPN}テクノバスターが\nこおりタイプに なる\nカセット"),
+        .description = COMPOUND_STRING(
+            "Changes Techno\n"
+            "Blast to an\n"
+            "Ice-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -4393,12 +5226,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIRE_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ファイヤーメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ファイヤーメモリ"),
+        .name = ITEM_NAME("Fire Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Fire Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nほのおに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Fire-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4411,12 +5247,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATER_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ウオーターメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ウオーターメモリ"),
+        .name = ITEM_NAME("Water Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Water Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nみずに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Water-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4429,12 +5268,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIC_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}エレクトロメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}エレクトロメモリ"),
+        .name = ITEM_NAME("Electric Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Electric Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nでんきに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Electric-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4447,12 +5289,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASS_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}グラスメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}グラスメモリ"),
+        .name = ITEM_NAME("Grass Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Grass Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nくさに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Grass-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4465,12 +5310,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}アイスメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}アイスメモリ"),
+        .name = ITEM_NAME("Ice Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Ice Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nこおりに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Ice-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4483,12 +5331,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGHTING_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ファイトメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ファイトメモリ"),
+        .name = ITEM_NAME("Fighting Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Fighting Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nかくとうに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Fighting-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4501,12 +5352,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISON_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ポイズンメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ポイズンメモリ"),
+        .name = ITEM_NAME("Poison Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Poison Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nどくに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Poison-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4519,12 +5373,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROUND_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}グラウンドメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}グラウンドメモリ"),
+        .name = ITEM_NAME("Ground Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Ground Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nじめんに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Ground-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4537,12 +5394,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLYING_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}フライングメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}フライングメモリ"),
+        .name = ITEM_NAME("Flying Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Flying Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nひこうに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Flying-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4555,12 +5415,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIC_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}サイキックメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}サイキックメモリ"),
+        .name = ITEM_NAME("Psychic Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Psychic Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nエスパーに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Psychic-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4573,12 +5436,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BUG_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}バグメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}バグメモリ"),
+        .name = ITEM_NAME("Bug Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Bug Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nむしに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Bug-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4591,12 +5457,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCK_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ロックメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ロックメモリ"),
+        .name = ITEM_NAME("Rock Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Rock Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nいわに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Rock-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4609,12 +5478,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GHOST_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ゴーストメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ゴーストメモリ"),
+        .name = ITEM_NAME("Ghost Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Ghost Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nゴーストに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Ghost-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4627,12 +5499,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ドラゴンメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ドラゴンメモリ"),
+        .name = ITEM_NAME("Dragon Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Dragon Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nドラゴンに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Dragon-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4645,12 +5520,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARK_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}ダークメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ダークメモリ"),
+        .name = ITEM_NAME("Dark Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Dark Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nあくに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Dark-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4663,12 +5541,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEEL_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}スチールメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}スチールメモリ"),
+        .name = ITEM_NAME("Steel Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Steel Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nはがねに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Steel-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4681,12 +5562,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRY_MEMORY] =
     {
-        .name = ITEM_NAME("{JPN}フェアリーメモリ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}フェアリーメモリ"),
+        .name = ITEM_NAME("Fairy Memory"),
+        .pluralName = ITEM_PLURAL_NAME("Fairy Memories"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_MEMORY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}シルヴァディの タイプを\nフェアリーに かえる\nデータメモリ"),
+        .description = COMPOUND_STRING(
+            "Contains Fairy-\n"
+            "type data. Changes\n"
+            "Silvally's type."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
@@ -4699,9 +5583,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RUSTED_SWORD] =
     {
-        .name = ITEM_NAME("{JPN}くちたけん"),
+        .name = ITEM_NAME("Rusted Sword"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}えいゆうが さいやくを\nうちはらったと\nつたえられる けん"),
+        .description = COMPOUND_STRING(
+            "A hero used this\n"
+            "sword to halt a\n"
+            "terrible disaster."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -4712,9 +5599,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RUSTED_SHIELD] =
     {
-        .name = ITEM_NAME("{JPN}くちたたて"),
+        .name = ITEM_NAME("Rusted Shield"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}えいゆうが さいやくを\nうちはらったと\nつたえられる たて"),
+        .description = COMPOUND_STRING(
+            "A hero used this\n"
+            "shield to halt a\n"
+            "terrible disaster."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -4723,14 +5613,17 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_RustedWeapons,
     },
 
-// Colored Orbs
+// Colored orbs
 
     [ITEM_RED_ORB] =
     {
-        .name = ITEM_NAME("{JPN}べにいろのたま"),
+        .name = ITEM_NAME("Red Orb"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
-        .description = COMPOUND_STRING("{JPN}おおむかしの ちからが\nこめられている という\nあかく かがやく たま"),
+        .description = COMPOUND_STRING(
+            "A red, glowing orb\n"
+            "said to contain an\n"
+            "ancient power."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -4741,10 +5634,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUE_ORB] =
     {
-        .name = ITEM_NAME("{JPN}あいいろのたま"),
+        .name = ITEM_NAME("Blue Orb"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
-        .description = COMPOUND_STRING("{JPN}おおむかしの ちからが\nこめられている という\nあおく かがやく たま"),
+        .description = COMPOUND_STRING(
+            "A blue, glowing orb\n"
+            "said to contain an\n"
+            "ancient power."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -4757,10 +5653,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_VENUSAURITE] =
     {
-        .name = ITEM_NAME("{JPN}フシギバナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Venusaurite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}フシギバナに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Venusaur to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4772,10 +5671,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHARIZARDITE_X] =
     {
-        .name = ITEM_NAME("{JPN}リザードナイトX"),
-        .price = 10000,
+        .name = ITEM_NAME("Charizardite X"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}リザードンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Charizard to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4787,10 +5689,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHARIZARDITE_Y] =
     {
-        .name = ITEM_NAME("{JPN}リザードナイトY"),
-        .price = 10000,
+        .name = ITEM_NAME("Charizardite Y"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}リザードンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Charizard to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4802,10 +5707,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLASTOISINITE] =
     {
-        .name = ITEM_NAME("{JPN}カメックスナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Blastoisinite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}カメックスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Blastoise to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -4816,10 +5725,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BEEDRILLITE] =
     {
-        .name = ITEM_NAME("{JPN}スピアナイト"),
+        .name = ITEM_NAME("Beedrillite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}スピアーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Beedrill to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4831,10 +5743,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PIDGEOTITE] =
     {
-        .name = ITEM_NAME("{JPN}ピジョットナイト"),
+        .name = ITEM_NAME("Pidgeotite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ピジョットに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Pidgeot to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4846,10 +5761,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ALAKAZITE] =
     {
-        .name = ITEM_NAME("{JPN}フーディナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Alakazite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}フーディンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Alakazam to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4861,10 +5779,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SLOWBRONITE] =
     {
-        .name = ITEM_NAME("{JPN}ヤドランナイト"),
+        .name = ITEM_NAME("Slowbronite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ヤドランに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Slowbro to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4876,10 +5797,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GENGARITE] =
     {
-        .name = ITEM_NAME("{JPN}ゲンガナイト"),
+        .name = ITEM_NAME("Gengarite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ゲンガーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Gengar to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4891,10 +5815,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KANGASKHANITE] =
     {
-        .name = ITEM_NAME("{JPN}ガルーラナイト"),
+        .name = ITEM_NAME("Kangaskhanite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ガルーラに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Kangaskhan to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4906,10 +5833,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PINSIRITE] =
     {
-        .name = ITEM_NAME("{JPN}カイロスナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Pinsirite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}カイロスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Pinsir to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4921,10 +5851,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GYARADOSITE] =
     {
-        .name = ITEM_NAME("{JPN}ギャラドスナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Gyaradosite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ギャラドスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Gyarados to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4936,10 +5869,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AERODACTYLITE] =
     {
-        .name = ITEM_NAME("{JPN}プテラナイト"),
+        .name = ITEM_NAME("Aerodactylite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}プテラに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Aerodactyl to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4951,10 +5887,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEWTWONITE_X] =
     {
-        .name = ITEM_NAME("{JPN}ミュウツナイトX"),
+        .name = ITEM_NAME("Mewtwonite X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ミュウツーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Mewtwo to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4966,10 +5905,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEWTWONITE_Y] =
     {
-        .name = ITEM_NAME("{JPN}ミュウツナイトY"),
+        .name = ITEM_NAME("Mewtwonite Y"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ミュウツーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Mewtwo to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4981,10 +5923,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AMPHAROSITE] =
     {
-        .name = ITEM_NAME("{JPN}デンリュウナイト"),
+        .name = ITEM_NAME("Ampharosite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}デンリュウに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Ampharos to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -4996,10 +5941,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEELIXITE] =
     {
-        .name = ITEM_NAME("{JPN}ハガネールナイト"),
+        .name = ITEM_NAME("Steelixite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ハガネールに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Steelix to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5011,10 +5959,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCIZORITE] =
     {
-        .name = ITEM_NAME("{JPN}ハッサムナイト"),
+        .name = ITEM_NAME("Scizorite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ハッサムに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scizor to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5026,10 +5977,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HERACRONITE] =
     {
-        .name = ITEM_NAME("{JPN}ヘラクロスナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Heracronite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ヘラクロスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Heracross to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5041,10 +5995,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HOUNDOOMINITE] =
     {
-        .name = ITEM_NAME("{JPN}ヘルガナイト"),
+        .name = ITEM_NAME("Houndoominite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ヘルガーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Houndoom to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5056,10 +6013,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TYRANITARITE] =
     {
-        .name = ITEM_NAME("{JPN}バンギラスナイト"),
+        .name = ITEM_NAME("Tyranitarite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}バンギラスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Tyranitar to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5071,10 +6031,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCEPTILITE] =
     {
-        .name = ITEM_NAME("{JPN}ジュカインナイト"),
+        .name = ITEM_NAME("Sceptilite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ジュカインに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Sceptile to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5086,10 +6049,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLAZIKENITE] =
     {
-        .name = ITEM_NAME("{JPN}バシャーモナイト"),
+        .name = ITEM_NAME("Blazikenite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}バシャーモに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Blaziken to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5101,10 +6067,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWAMPERTITE] =
     {
-        .name = ITEM_NAME("{JPN}ラグラージナイト"),
+        .name = ITEM_NAME("Swampertite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ラグラージに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Swampert to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5116,10 +6085,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GARDEVOIRITE] =
     {
-        .name = ITEM_NAME("{JPN}サーナイトナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Gardevoirite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}サーナイトに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Gardevoir to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5131,10 +6103,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SABLENITE] =
     {
-        .name = ITEM_NAME("{JPN}ヤミラミナイト"),
+        .name = ITEM_NAME("Sablenite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ヤミラミに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Sableye to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5146,10 +6121,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAWILITE] =
     {
-        .name = ITEM_NAME("{JPN}クチートナイト"),
+        .name = ITEM_NAME("Mawilite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}クチートに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Mawile to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5161,10 +6139,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AGGRONITE] =
     {
-        .name = ITEM_NAME("{JPN}ボスゴドラナイト"),
+        .name = ITEM_NAME("Aggronite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ボスゴドラに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Aggron to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5176,10 +6157,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEDICHAMITE] =
     {
-        .name = ITEM_NAME("{JPN}チャーレムナイト"),
+        .name = ITEM_NAME("Medichamite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}チャーレムに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Medicham to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5191,10 +6175,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MANECTITE] =
     {
-        .name = ITEM_NAME("{JPN}ライボルトナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Manectite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ライボルトに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Manectric to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5206,10 +6193,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHARPEDONITE] =
     {
-        .name = ITEM_NAME("{JPN}サメハダナイト"),
+        .name = ITEM_NAME("Sharpedonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}サメハダーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Sharpedo to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5221,10 +6211,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CAMERUPTITE] =
     {
-        .name = ITEM_NAME("{JPN}バクーダナイト"),
+        .name = ITEM_NAME("Cameruptite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}バクーダに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Camerupt to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5236,10 +6229,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ALTARIANITE] =
     {
-        .name = ITEM_NAME("{JPN}チルタリスナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Altarianite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}チルタリスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Altaria to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5251,10 +6247,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BANETTITE] =
     {
-        .name = ITEM_NAME("{JPN}ジュペッタナイト"),
+        .name = ITEM_NAME("Banettite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ジュペッタに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Banette to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5266,10 +6265,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABSOLITE] =
     {
-        .name = ITEM_NAME("{JPN}アブソルナイト"),
+        .name = ITEM_NAME("Absolite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}アブソルに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Absol to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5281,10 +6283,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GLALITITE] =
     {
-        .name = ITEM_NAME("{JPN}オニゴーリナイト"),
+        .name = ITEM_NAME("Glalitite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}オニゴーリに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Glalie to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5296,10 +6301,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SALAMENCITE] =
     {
-        .name = ITEM_NAME("{JPN}ボーマンダナイト"),
+        .name = ITEM_NAME("Salamencite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ボーマンダに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Salamence to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5311,10 +6319,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METAGROSSITE] =
     {
-        .name = ITEM_NAME("{JPN}メタグロスナイト"),
+        .name = ITEM_NAME("Metagrossite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}メタグロスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Metagross to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5326,10 +6337,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LATIASITE] =
     {
-        .name = ITEM_NAME("{JPN}ラティアスナイト"),
+        .name = ITEM_NAME("Latiasite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ラティアスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Latias to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5341,10 +6355,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LATIOSITE] =
     {
-        .name = ITEM_NAME("{JPN}ラティオスナイト"),
+        .name = ITEM_NAME("Latiosite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ラティオスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Latios to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5356,10 +6373,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LOPUNNITE] =
     {
-        .name = ITEM_NAME("{JPN}ミミロップナイト"),
+        .name = ITEM_NAME("Lopunnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ミミロップに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Lopunny to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5371,10 +6391,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GARCHOMPITE] =
     {
-        .name = ITEM_NAME("{JPN}ガブリアスナイト"),
+        .name = ITEM_NAME("Garchompite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ガブリアスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Garchomp to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5386,10 +6409,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUCARIONITE] =
     {
-        .name = ITEM_NAME("{JPN}ルカリオナイト"),
+        .name = ITEM_NAME("Lucarionite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ルカリオに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Lucario to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5401,10 +6427,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABOMASITE] =
     {
-        .name = ITEM_NAME("{JPN}ユキノオナイト"),
+        .name = ITEM_NAME("Abomasite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ユキノオーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Abomasnow to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5416,10 +6445,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GALLADITE] =
     {
-        .name = ITEM_NAME("{JPN}エルレイドナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Galladite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}エルレイドに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Gallade to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5431,10 +6463,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUDINITE] =
     {
-        .name = ITEM_NAME("{JPN}タブンネナイト"),
+        .name = ITEM_NAME("Audinite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}タブンネに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Audino to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5446,10 +6481,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DIANCITE] =
     {
-        .name = ITEM_NAME("{JPN}ディアンシナイト"),
+        .name = ITEM_NAME("Diancite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ディアンシーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Diancie to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5461,10 +6499,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLEFABLITE] =
     {
-        .name = ITEM_NAME("{JPN}ピクシナイト"),
+        .name = ITEM_NAME("Clefablite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ピクシーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Clefable to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5476,10 +6517,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_VICTREEBELITE] =
     {
-        .name = ITEM_NAME("{JPN}ウツボットナイト"),
+        .name = ITEM_NAME("Victreebelite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ウツボットに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Victreebel to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5491,10 +6535,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STARMINITE] =
     {
-        .name = ITEM_NAME("{JPN}スターミナイト"),
+        .name = ITEM_NAME("Starminite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}スターミーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Starmie to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5506,10 +6553,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGONINITE] =
     {
-        .name = ITEM_NAME("{JPN}カイリュナイト"),
+        .name = ITEM_NAME("Dragoninite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}カイリューに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragonite to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5521,10 +6571,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEGANIUMITE] =
     {
-        .name = ITEM_NAME("{JPN}メガニウムナイト"),
+        .name = ITEM_NAME("Meganiumite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}メガニウムに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Meganium to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5536,10 +6589,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FERALIGITE] =
     {
-        .name = ITEM_NAME("{JPN}オーダイルナイト"),
+        .name = ITEM_NAME("Feraligite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}オーダイルに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Feraligatr to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5551,10 +6607,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SKARMORITE] =
     {
-        .name = ITEM_NAME("{JPN}エアームドナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Skarmorite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}エアームドに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Skarmory to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5566,10 +6625,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FROSLASSITE] =
     {
-        .name = ITEM_NAME("{JPN}ユキメノコナイト"),
+        .name = ITEM_NAME("Froslassite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ユキメノコに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Froslass to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5581,10 +6643,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EMBOARITE] =
     {
-        .name = ITEM_NAME("{JPN}エンブオナイト"),
+        .name = ITEM_NAME("Emboarite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}エンブオーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Emboar to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5596,10 +6661,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXCADRITE] =
     {
-        .name = ITEM_NAME("{JPN}ドリュウズナイト"),
+        .name = ITEM_NAME("Excadrite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ドリュウズに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Excadrill to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5611,10 +6679,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCOLIPITE] =
     {
-        .name = ITEM_NAME("{JPN}ペンドラナイト"),
+        .name = ITEM_NAME("Scolipite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ペンドラーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scolipede to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5626,10 +6697,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCRAFTINITE] =
     {
-        .name = ITEM_NAME("{JPN}ズルズキナイト"),
+        .name = ITEM_NAME("Scraftinite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ズルズキンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scrafty to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5641,10 +6715,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EELEKTROSSITE] =
     {
-        .name = ITEM_NAME("{JPN}シビルドナイト"),
+        .name = ITEM_NAME("Eelektrossite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}シビルドンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Eelektross to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5656,10 +6733,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHANDELURITE] =
     {
-        .name = ITEM_NAME("{JPN}シャンデラナイト"),
+        .name = ITEM_NAME("Chandelurite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}シャンデラに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Chandelure to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5671,10 +6751,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHESNAUGHTITE] =
     {
-        .name = ITEM_NAME("{JPN}ブリガロナイト"),
+        .name = ITEM_NAME("Chesnaughtite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ブリガロンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Chesnaught to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5686,10 +6769,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DELPHOXITE] =
     {
-        .name = ITEM_NAME("{JPN}マフォクシナイト"),
+        .name = ITEM_NAME("Delphoxite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}マフォクシーに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Delphox to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5701,10 +6787,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRENINJITE] =
     {
-        .name = ITEM_NAME("{JPN}ゲッコウガナイト"),
+        .name = ITEM_NAME("Greninjite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ゲッコウガに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Greninja to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5716,10 +6805,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PYROARITE] =
     {
-        .name = ITEM_NAME("{JPN}カエンジシナイト"),
+        .name = ITEM_NAME("Pyroarite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}カエンジシに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Pyroar to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5731,10 +6823,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLOETTITE] =
     {
-        .name = ITEM_NAME("{JPN}フラエッテナイト"),
+        .name = ITEM_NAME("Floettite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}フラエッテに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Floette to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5746,10 +6841,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MALAMARITE] =
     {
-        .name = ITEM_NAME("{JPN}カラマネロナイト"),
+        .name = ITEM_NAME("Malamarite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}カラマネロに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Malamar to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5761,10 +6859,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BARBARACITE] =
     {
-        .name = ITEM_NAME("{JPN}ガメノデスナイト"),
+        .name = ITEM_NAME("Barbaracite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ガメノデスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Barbaracle to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5776,10 +6877,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGALGITE] =
     {
-        .name = ITEM_NAME("{JPN}ドラミドナイト"),
+        .name = ITEM_NAME("Dragalgite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ドラミドロに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragalge to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5791,10 +6895,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HAWLUCHANITE] =
     {
-        .name = ITEM_NAME("{JPN}ルチャブルナイト"),
+        .name = ITEM_NAME("Hawluchanite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ルチャブルに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Hawlucha to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5806,10 +6913,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZYGARDITE] =
     {
-        .name = ITEM_NAME("{JPN}ジガルデナイト"),
+        .name = ITEM_NAME("Zygardite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ジガルデに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Zygarde to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5821,10 +6931,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAMPANITE] =
     {
-        .name = ITEM_NAME("{JPN}ジジーロナイト"),
+        .name = ITEM_NAME("Drampanite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ジジーロンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Drampa to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5836,10 +6949,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FALINKSITE] =
     {
-        .name = ITEM_NAME("{JPN}タイレーツナイト"),
+        .name = ITEM_NAME("Falinksite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}タイレーツに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Falinks to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5851,10 +6967,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEATRANITE] =
     {
-        .name = ITEM_NAME("{JPN}ヒードラナイト"),
+        .name = ITEM_NAME("Heatranite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ヒードランに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Heatran to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5866,10 +6985,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARKRANITE] =
     {
-        .name = ITEM_NAME("{JPN}ダークライナイト"),
+        .name = ITEM_NAME("Darkranite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ダークライに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Darkrai to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5881,10 +7003,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZERAORITE] =
     {
-        .name = ITEM_NAME("{JPN}ゼラオラナイト"),
+        .name = ITEM_NAME("Zeraorite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ゼラオラに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Zeraora to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5896,10 +7021,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAICHUNITE_X] =
     {
-        .name = ITEM_NAME("{JPN}ライチュウナイトX"),
+        .name = ITEM_NAME("Raichunite X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ライチュウに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Raichu to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5911,10 +7039,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAICHUNITE_Y] =
     {
-        .name = ITEM_NAME("{JPN}ライチュウナイトY"),
+        .name = ITEM_NAME("Raichunite Y"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ライチュウに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Raichu to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5926,10 +7057,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHIMECHITE] =
     {
-        .name = ITEM_NAME("{JPN}チリーンナイト"),
-        .price = 10000,
+        .name = ITEM_NAME("Chimechite"),
+        .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}チリーンに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Chimecho to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5941,10 +7075,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABSOLITE_Z] =
     {
-        .name = ITEM_NAME("{JPN}アブソルナイトZ"),
+        .name = ITEM_NAME("Absolite Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}アブソルに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Absol to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5956,10 +7093,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STARAPTITE] =
     {
-        .name = ITEM_NAME("{JPN}ムクホークナイト"),
+        .name = ITEM_NAME("Staraptite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ムクホークに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Staraptor to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5971,10 +7111,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GARCHOMPITE_Z] =
     {
-        .name = ITEM_NAME("{JPN}ガブリアスナイトZ"),
+        .name = ITEM_NAME("Garchompite Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ガブリアスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Garchomp to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -5986,10 +7129,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUCARIONITE_Z] =
     {
-        .name = ITEM_NAME("{JPN}ルカリオナイトZ"),
+        .name = ITEM_NAME("Lucarionite Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ルカリオに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Lucario to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6001,10 +7147,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOLURKITE] =
     {
-        .name = ITEM_NAME("{JPN}ゴルーグナイト"),
+        .name = ITEM_NAME("Golurkite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ゴルーグに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Golurk to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6016,10 +7165,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEOWSTICITE] =
     {
-        .name = ITEM_NAME("{JPN}ニャオニクスナイト"),
+        .name = ITEM_NAME("Meowsticite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ニャオニクスに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Meowstic to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6031,10 +7183,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CRABOMINITE] =
     {
-        .name = ITEM_NAME("{JPN}ケケンカニナイト"),
+        .name = ITEM_NAME("Crabominite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}ケケンカニに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Crabominable to\n"
+            "Mega in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6046,10 +7201,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOLISOPITE] =
     {
-        .name = ITEM_NAME("{JPN}グソクムシャナイト"),
+        .name = ITEM_NAME("Golisopite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}グソクムシャに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Golisopod to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6061,10 +7219,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGEARNITE] =
     {
-        .name = ITEM_NAME("{JPN}マギアナイト"),
+        .name = ITEM_NAME("Magearnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}マギアナに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Magearna to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6076,10 +7237,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCOVILLAINITE] =
     {
-        .name = ITEM_NAME("{JPN}スコヴィラナイト"),
+        .name = ITEM_NAME("Scovillainite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}スコヴィランに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scovillain to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6091,10 +7255,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BAXCALIBRITE] =
     {
-        .name = ITEM_NAME("{JPN}セグレイブナイト"),
+        .name = ITEM_NAME("Baxcalibrite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}セグレイブに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Baxcalibur to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6106,10 +7273,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TATSUGIRINITE] =
     {
-        .name = ITEM_NAME("{JPN}シャリタツナイト"),
+        .name = ITEM_NAME("Tatsugirinite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}シャリタツに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Tatsugiri to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6121,10 +7291,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GLIMMORANITE] =
     {
-        .name = ITEM_NAME("{JPN}キラフロルナイト"),
+        .name = ITEM_NAME("Glimmoranite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING("{JPN}キラフロルに もたせると\nせんとうちゅうに\nメガシンカ できる"),
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Glimmora to Mega\n"
+            "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6135,21 +7308,24 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Gems
-    #if I_PRICE >= GEN_9
-        #define GEM_PRICE 15000
-    #elif I_PRICE >= GEN_7
-        #define GEM_PRICE 4000
-    #else
-        #define GEM_PRICE 200
-    #endif
+#if I_PRICE >= GEN_9
+    #define GEM_PRICE 15000
+#elif I_PRICE >= GEN_7
+    #define GEM_PRICE 4000
+#else
+    #define GEM_PRICE 200
+#endif
 
     [ITEM_NORMAL_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ノーマルジュエル"),
+        .name = ITEM_NAME("Normal Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nノーマルの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Normal-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6161,11 +7337,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIRE_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ほのおのジュエル"),
+        .name = ITEM_NAME("Fire Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nほのおの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Fire-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6177,11 +7356,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATER_GEM] =
     {
-        .name = ITEM_NAME("{JPN}みずのジュエル"),
+        .name = ITEM_NAME("Water Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nみずの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Water-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6193,11 +7375,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIC_GEM] =
     {
-        .name = ITEM_NAME("{JPN}でんきのジュエル"),
+        .name = ITEM_NAME("Electric Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nでんきの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of an Electric-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6209,11 +7394,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASS_GEM] =
     {
-        .name = ITEM_NAME("{JPN}くさのジュエル"),
+        .name = ITEM_NAME("Grass Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nくさの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Grass-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6225,11 +7413,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_GEM] =
     {
-        .name = ITEM_NAME("{JPN}こおりのジュエル"),
+        .name = ITEM_NAME("Ice Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nこおりの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of an Ice-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6241,11 +7432,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGHTING_GEM] =
     {
-        .name = ITEM_NAME("{JPN}かくとうジュエル"),
+        .name = ITEM_NAME("Fighting Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nかくとうの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Fighting-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6257,11 +7451,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISON_GEM] =
     {
-        .name = ITEM_NAME("{JPN}どくのジュエル"),
+        .name = ITEM_NAME("Poison Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nどくの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Poison-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6273,11 +7470,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROUND_GEM] =
     {
-        .name = ITEM_NAME("{JPN}じめんのジュエル"),
+        .name = ITEM_NAME("Ground Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nじめんの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Ground-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6289,11 +7489,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLYING_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ひこうのジュエル"),
+        .name = ITEM_NAME("Flying Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nひこうの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Flying-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6305,11 +7508,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIC_GEM] =
     {
-        .name = ITEM_NAME("{JPN}エスパージュエル"),
+        .name = ITEM_NAME("Psychic Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nエスパーの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Psychic-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6321,11 +7527,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BUG_GEM] =
     {
-        .name = ITEM_NAME("{JPN}むしのジュエル"),
+        .name = ITEM_NAME("Bug Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nむしの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Bug-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6337,11 +7546,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCK_GEM] =
     {
-        .name = ITEM_NAME("{JPN}いわのジュエル"),
+        .name = ITEM_NAME("Rock Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nいわの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Rock-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6353,11 +7565,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GHOST_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ゴーストジュエル"),
+        .name = ITEM_NAME("Ghost Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nゴーストの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Ghost-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6369,11 +7584,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ドラゴンジュエル"),
+        .name = ITEM_NAME("Dragon Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nドラゴンの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Dragon-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6385,11 +7603,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARK_GEM] =
     {
-        .name = ITEM_NAME("{JPN}あくのジュエル"),
+        .name = ITEM_NAME("Dark Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nあくの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Dark-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6401,11 +7622,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEEL_GEM] =
     {
-        .name = ITEM_NAME("{JPN}はがねのジュエル"),
+        .name = ITEM_NAME("Steel Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nはがねの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Steel-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6417,11 +7641,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRY_GEM] =
     {
-        .name = ITEM_NAME("{JPN}ようせいジュエル"),
+        .name = ITEM_NAME("Fairy Gem"),
         .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると いちどだけ\nフェアリーの わざの\nいりょくが つよまる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a Fairy-\n"
+            "type move once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6435,10 +7662,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NORMALIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ノーマルZ"),
+        .name = ITEM_NAME("Normalium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ノーマルタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Normal-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6450,10 +7680,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIRIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ホノオZ"),
+        .name = ITEM_NAME("Firium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ほのおタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Fire-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6465,10 +7698,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATERIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ミズZ"),
+        .name = ITEM_NAME("Waterium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}みずタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Water-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6480,10 +7716,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}デンキZ"),
+        .name = ITEM_NAME("Electrium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}でんきタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Electric-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6495,10 +7734,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASSIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}クサZ"),
+        .name = ITEM_NAME("Grassium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}くさタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Grass-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6510,10 +7752,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}コオリZ"),
+        .name = ITEM_NAME("Icium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}こおりタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Ice-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6525,10 +7770,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGHTINIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}カクトウZ"),
+        .name = ITEM_NAME("Fightinium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}かくとうタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Fighting-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6540,10 +7788,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISONIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ドクZ"),
+        .name = ITEM_NAME("Poisonium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}どくタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Poison-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6555,10 +7806,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROUNDIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ジメンZ"),
+        .name = ITEM_NAME("Groundium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}じめんタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Ground-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6570,10 +7824,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLYINIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ヒコウZ"),
+        .name = ITEM_NAME("Flyinium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ひこうタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Flying-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6585,10 +7842,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}エスパーZ"),
+        .name = ITEM_NAME("Psychium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}エスパータイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Psychic-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6600,10 +7860,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BUGINIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ムシZ"),
+        .name = ITEM_NAME("Buginium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}むしタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Bug-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6615,10 +7878,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCKIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}イワZ"),
+        .name = ITEM_NAME("Rockium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}いわタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Rock-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6630,10 +7896,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GHOSTIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ゴーストZ"),
+        .name = ITEM_NAME("Ghostium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ゴーストタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Ghost-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6645,10 +7914,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGONIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ドラゴンZ"),
+        .name = ITEM_NAME("Dragonium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ドラゴンタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Dragon-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6660,10 +7932,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARKINIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}アクZ"),
+        .name = ITEM_NAME("Darkinium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}あくタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Dark-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6675,10 +7950,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEELIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ハガネZ"),
+        .name = ITEM_NAME("Steelium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}はがねタイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Steel-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6690,10 +7968,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}フェアリーZ"),
+        .name = ITEM_NAME("Fairium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}フェアリータイプの\nわざを Zワザに\nグレードアップする"),
+        .description = COMPOUND_STRING(
+            "Upgrades Fairy-\n"
+            "type moves to\n"
+            "Z-Moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6705,10 +7986,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PIKANIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ピカチュウZ"),
+        .name = ITEM_NAME("Pikanium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ピカチュウの\nボルテッカーを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Pikachu's\n"
+            "Volt Tackle\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6720,10 +8004,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EEVIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}イーブイZ"),
+        .name = ITEM_NAME("Eevium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}イーブイの\nとっておきを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Eevee's\n"
+            "Last Resort\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6735,10 +8022,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SNORLIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}カビゴンZ"),
+        .name = ITEM_NAME("Snorlium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}カビゴンの\nギガインパクトを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Snorlax's\n"
+            "Giga Impact\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6750,10 +8040,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEWNIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ミュウZ"),
+        .name = ITEM_NAME("Mewnium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ミュウの\nサイコキネシスを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Mew's\n"
+            "Psychic\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6765,10 +8058,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DECIDIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ジュナイパーZ"),
+        .name = ITEM_NAME("Decidium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ジュナイパーの\nかげぬいを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Decidueye\n"
+            "Spirit Shackle\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6780,10 +8076,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_INCINIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ガオガエンZ"),
+        .name = ITEM_NAME("Incinium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ガオガエンの\nDDラリアットを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Incineroar\n"
+            "Darkest Lariat\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6795,10 +8094,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PRIMARIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}アシレーヌZ"),
+        .name = ITEM_NAME("Primarium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}アシレーヌの\nうたかたのアリアを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Primarina's\n"
+            "Sparkling Aria\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6810,10 +8112,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LYCANIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ルガルガンZ"),
+        .name = ITEM_NAME("Lycanium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ルガルガンの\nストーンエッジを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Lycanroc's\n"
+            "Stone Edge\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6825,10 +8130,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MIMIKIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ミミッキュZ"),
+        .name = ITEM_NAME("Mimikium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ミミッキュの\nじゃれつくを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Mimikyu's\n"
+            "Play Rough\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6840,10 +8148,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KOMMONIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ジャラランガZ"),
+        .name = ITEM_NAME("Kommonium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ジャラランガの\nスケイルノイズを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Kommo-o's\n"
+            "Clanging Scales\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6855,10 +8166,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TAPUNIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}カプZ"),
+        .name = ITEM_NAME("Tapunium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}カプたちの\nしぜんのいかりを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade the tapu's\n"
+            "Nature's Madness\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6870,10 +8184,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOLGANIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ソルガレオZ"),
+        .name = ITEM_NAME("Solganium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ソルガレオの\nメテオドライブを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Solgaleo's\n"
+            "Sunsteel Strike\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6885,10 +8202,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUNALIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ルナアーラZ"),
+        .name = ITEM_NAME("Lunalium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}ルナアーラの\nシャドーレイを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Lunala's\n"
+            "Moongeist Beam\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6900,10 +8220,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MARSHADIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}マーシャドーZ"),
+        .name = ITEM_NAME("Marshadium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}マーシャドーの\nシャドースチールを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Marshadow\n"
+            "Spectral Thief\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6915,10 +8238,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ALORAICHIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}アロライZ"),
+        .name = ITEM_NAME("Aloraichium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}アローラ ライチュウの\n10まんボルトを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrades Alolan\n"
+            "Raichu Thunderbolt\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6930,10 +8256,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PIKASHUNIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}サトピカZ"),
+        .name = ITEM_NAME("Pikashunium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}サトシの ピカチュウの\n10まんボルトを\nZワザに する"),
+        .description = COMPOUND_STRING(
+            "Upgrade Pikachu in\n"
+            "a cap's Thunderbolt\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6945,10 +8274,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ULTRANECROZIUM_Z] =
     {
-        .name = ITEM_NAME("{JPN}ウルトラネクロZ"),
+        .name = ITEM_NAME("Ultranecrozium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
-        .description = COMPOUND_STRING("{JPN}がったいした\nネクロズマを あらたな\nすがたにする けっしょう"),
+        .description = COMPOUND_STRING(
+            "Upgrade Necrozma's\n"
+            "Photon Geyser\n"
+            "to a Z-Move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -6962,10 +8294,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LIGHT_BALL] =
     {
-        .name = ITEM_NAME("{JPN}でんきだま"),
+        .name = ITEM_NAME("Light Ball"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 100,
         .holdEffect = HOLD_EFFECT_LIGHT_BALL,
-        .description = COMPOUND_STRING("{JPN}ピカチュウに もたせると\nこうげきと とくこうが\nあがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+        #if B_LIGHT_BALL_ATTACK_BOOST
+            "boosts the Atk and\n"
+            "Sp. Atk of Pikachu."),
+        #else
+            "boosts the Sp. Atk\n"
+            "of Pikachu."),
+        #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6977,10 +8317,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEEK] =
     {
-        .name = ITEM_NAME("{JPN}ながねぎ"),
+        .name = ITEM_NAME("Leek"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .holdEffect = HOLD_EFFECT_LEEK,
-        .description = COMPOUND_STRING("{JPN}カモネギに もたせると\nきゅうしょに\nあたりやすくなる"),
+        .description = COMPOUND_STRING(
+        #if P_GALARIAN_FORMS
+            "Raises Farfetch'd\n"
+            "or Sirfetch'd's\n"
+            "critical-hit ratio."),
+        #else
+            "A held item that\n"
+            "raises Farfetch'd's\n"
+            "critical-hit ratio."),
+        #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -6992,10 +8341,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_THICK_CLUB] =
     {
-        .name = ITEM_NAME("{JPN}ふといホネ"),
+        .name = ITEM_NAME("Thick Club"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 500,
         .holdEffect = HOLD_EFFECT_THICK_CLUB,
-        .description = COMPOUND_STRING("{JPN}カラカラや ガラガラに\nもたせると こうげきの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that \n"
+            "boosts Cubone or\n"
+            "Marowak's Attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7007,11 +8359,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUCKY_PUNCH] =
     {
-        .name = ITEM_NAME("{JPN}ラッキーパンチ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ラッキーパンチ"),
+        .name = ITEM_NAME("Lucky Punch"),
+        .pluralName = ITEM_PLURAL_NAME("Lucky Punches"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 10,
         .holdEffect = HOLD_EFFECT_LUCKY_PUNCH,
-        .description = COMPOUND_STRING("{JPN}ラッキーに もたせると\nきゅうしょに\nあたりやすくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Chansey's\n"
+            "critical-hit rate."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7023,10 +8378,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METAL_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}メタルパウダー"),
+        .name = ITEM_NAME("Metal Powder"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 10,
         .holdEffect = HOLD_EFFECT_METAL_POWDER,
-        .description = COMPOUND_STRING("{JPN}メタモンに もたせると\nぼうぎょが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Ditto's\n"
+            "Defense."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7038,10 +8396,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_QUICK_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}スピードパウダー"),
+        .name = ITEM_NAME("Quick Powder"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 10,
         .holdEffect = HOLD_EFFECT_QUICK_POWDER,
-        .description = COMPOUND_STRING("{JPN}メタモンに もたせると\nすばやさが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Ditto's\n"
+            "Speed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7053,10 +8414,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEEP_SEA_SCALE] =
     {
-        .name = ITEM_NAME("{JPN}しんかいのウロコ"),
+        .name = ITEM_NAME("Deep Sea Scale"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_SCALE,
-        .description = COMPOUND_STRING("{JPN}にぶく ひかる ウロコ\nパールルに もたせると\nとくぼうが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts the Sp. Def\n"
+            "of Clamperl."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -7069,11 +8433,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEEP_SEA_TOOTH] =
     {
-        .name = ITEM_NAME("{JPN}しんかいのキバ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}しんかいのキバ"),
+        .name = ITEM_NAME("Deep Sea Tooth"),
+        .pluralName = ITEM_PLURAL_NAME("Deep Sea Teeth"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,
-        .description = COMPOUND_STRING("{JPN}するどく ひかる キバ\nパールルに もたせると\nとくこうが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts the Sp. Atk\n"
+            "of Clamperl."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -7086,15 +8453,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOUL_DEW] =
     {
-        .name = ITEM_NAME("{JPN}こころのしずく"),
+        .name = ITEM_NAME("Soul Dew"),
         .price = (I_PRICE >= GEN_7) ? 0 : 200,
         .holdEffect = HOLD_EFFECT_SOUL_DEW,
         .holdEffectParam = B_SOUL_DEW_BOOST >= GEN_7 ? 20 : 50,
         .description = COMPOUND_STRING(
         #if B_SOUL_DEW_BOOST >= GEN_7
-            "{JPN}ラティオス ラティアスに\nもたせると エスパーと\nドラゴンの いりょくがあがる"),
+            "Boosts Latios or\n"
+            "Latias' Psychic- &\n"
+            "Dragon-type moves."),
         #else
-            "{JPN}ラティオス ラティアスに\nもたせると とくこうと\nとくぼうが あがる"),
+            "Held item: boosts\n"
+            "Sp. Atk & Sp. Def of\n"
+            "Latios & Latias."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
@@ -7107,11 +8478,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ADAMANT_ORB] =
     {
-        .name = ITEM_NAME("{JPN}こんごうだま"),
+        .name = ITEM_NAME("Adamant Orb"),
         .price = (I_PRICE >= GEN_7) ? 0 : 10000,
         .holdEffect = HOLD_EFFECT_ADAMANT_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ディアルガに もたせると\nドラゴンと はがねの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts Dialga's\n"
+            "Dragon- and Steel-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7123,11 +8497,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUSTROUS_ORB] =
     {
-        .name = ITEM_NAME("{JPN}しらたま"),
+        .name = ITEM_NAME("Lustrous Orb"),
         .price = (I_PRICE >= GEN_7) ? 0 : 10000,
         .holdEffect = HOLD_EFFECT_LUSTROUS_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}パルキアに もたせると\nドラゴンと みずの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts Palkia's\n"
+            "Dragon- and Water-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7139,11 +8516,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRISEOUS_ORB] =
     {
-        .name = ITEM_NAME("{JPN}はっきんだま"),
+        .name = ITEM_NAME("Griseous Orb"),
         .price = (I_PRICE >= GEN_7) ? 0 : 10000,
         .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ギラティナに もたせると\nドラゴンと ゴーストの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts Giratina's\n"
+            "Dragon- and Ghost-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7157,11 +8537,21 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SEA_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}うしおのおこう"),
+        .name = ITEM_NAME("Sea Incense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = I_TYPE_BOOST_POWER >= GEN_4 ? 20 : 5,
-        .description = COMPOUND_STRING("{JPN}もたせると\nみずタイプの わざの\nいりょくが あがる"),
+    #if I_TYPE_BOOST_POWER >= GEN_4
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Water-type moves."),
+    #else
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "slightly boosts\n"
+            "Water-type moves."),
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7174,17 +8564,21 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LAX_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}のんきのおこう"),
+        .name = ITEM_NAME("Lax Incense"),
         .price = (I_PRICE >= GEN_7) ? 5000 : 9600,
         .holdEffect = HOLD_EFFECT_EVASION_UP,
     #if I_LAX_INCENSE_BOOST >= GEN_4
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
-            "{JPN}ポケモンに もたせると\nてきの わざが\nめいちゅう しにくくなる"),
+            "A held item that\n"
+            "cuts the\n"
+            "foe's accuracy."),
     #else
         .holdEffectParam = 5,
         .description = COMPOUND_STRING(
-            "{JPN}ポケモンに もたせると\nてきの めいちゅうりつを\nすこしだけ さげる"),
+            "A hold item that\n"
+            "slightly cuts the\n"
+            "foe's accuracy."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
@@ -7197,11 +8591,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ODD_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}あやしいおこう"),
+        .name = ITEM_NAME("Odd Incense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると\nエスパータイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Psychic-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7214,11 +8611,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCK_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}がんせきおこう"),
+        .name = ITEM_NAME("Rock Incense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると\nいわタイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Rock-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7231,11 +8631,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FULL_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}まんぷくおこう"),
+        .name = ITEM_NAME("Full Incense"),
         .price = (I_PRICE >= GEN_7) ? 5000 : 9600,
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .holdEffectParam = 5,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンは\nいつもより こうどうが\nおそくなる"),
+        .description = COMPOUND_STRING(
+            "An item that makes\n"
+            "the holder move\n"
+            "slower than usual."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7247,11 +8650,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WAVE_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}さざなみのおこう"),
+        .name = ITEM_NAME("Wave Incense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると\nみずタイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Water-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7264,11 +8670,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROSE_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}おはなのおこう"),
+        .name = ITEM_NAME("Rose Incense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}もたせると\nくさタイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Grass-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7281,10 +8690,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUCK_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}こううんのおこう"),
+        .name = ITEM_NAME("Luck Incense"),
         .price = (I_PRICE >= GEN_7) ? 11000 : 9600,
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nせんとうに でると\nおかねが 2ばいもらえる"),
+        .description = COMPOUND_STRING(
+            "Doubles money in\n"
+            "battle if the\n"
+            "holder takes part."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7296,10 +8708,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PURE_INCENSE] =
     {
-        .name = ITEM_NAME("{JPN}きよめのおこう"),
+        .name = ITEM_NAME("Pure Incense"),
         .price = (I_PRICE >= GEN_7) ? 6000 : 9600,
         .holdEffect = HOLD_EFFECT_REPEL,
-        .description = COMPOUND_STRING("{JPN}もたせると\nやせいポケモンが\nでて きにくくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "helps repel wild\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
@@ -7313,10 +8728,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RED_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}あかいバンダナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}あかいバンダナ"),
+        .name = ITEM_NAME("Red Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Red Scarves"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}もたせて コンテストに\nさんかすると いつもより\nかっこよく みられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Cool in\n"
+            "Contests."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7328,10 +8746,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUE_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}あおいバンダナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}あおいバンダナ"),
+        .name = ITEM_NAME("Blue Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Blue Scarves"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}もたせて コンテストに\nさんかすると いつもより\nうつくしく みられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Beauty in\n"
+            "Contests."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7343,10 +8764,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PINK_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}ピンクのバンダナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ピンクのバンダナ"),
+        .name = ITEM_NAME("Pink Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Pink Scarves"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}もたせて コンテストに\nさんかすると いつもより\nかわいく みられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Cute in\n"
+            "Contests."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7358,10 +8782,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GREEN_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}みどりのバンダナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}みどりのバンダナ"),
+        .name = ITEM_NAME("Green Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Green Scarves"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}もたせて コンテストに\nさんかすると いつもより\nかしこく みられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Smart in\n"
+            "Contests."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7373,10 +8800,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YELLOW_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}きいろのバンダナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}きいろのバンダナ"),
+        .name = ITEM_NAME("Yellow Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Yellow Scarves"),
         .price = 100,
-        .description = COMPOUND_STRING("{JPN}もたせて コンテストに\nさんかすると いつもより\nたくましく みられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Tough in\n"
+            "Contests."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7390,10 +8820,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MACHO_BRACE] =
     {
-        .name = ITEM_NAME("{JPN}きょうせいギプス"),
+        .name = ITEM_NAME("Macho Brace"),
         .price = 3000,
         .holdEffect = HOLD_EFFECT_MACHO_BRACE,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nすばやさが さがるが\nつよく そだつ"),
+        .description = COMPOUND_STRING(
+            "Promotes growth,\n"
+            "but reduces\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7405,11 +8838,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_WEIGHT] =
     {
-        .name = ITEM_NAME("{JPN}パワーウエイト"),
+        .name = ITEM_NAME("Power Weight"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nHPが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes HP\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7422,11 +8858,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_BRACER] =
     {
-        .name = ITEM_NAME("{JPN}パワーリスト"),
+        .name = ITEM_NAME("Power Bracer"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nこうげきが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes Attack\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7439,11 +8878,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_BELT] =
     {
-        .name = ITEM_NAME("{JPN}パワーベルト"),
+        .name = ITEM_NAME("Power Belt"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nぼうぎょが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes Defense\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7456,12 +8898,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_LENS] =
     {
-        .name = ITEM_NAME("{JPN}パワーレンズ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}パワーレンズ"),
+        .name = ITEM_NAME("Power Lens"),
+        .pluralName = ITEM_PLURAL_NAME("Power Lenses"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nとくこうが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes Sp. Atk\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7474,11 +8919,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_BAND] =
     {
-        .name = ITEM_NAME("{JPN}パワーバンド"),
+        .name = ITEM_NAME("Power Band"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nとくぼうが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes Sp. Def\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7491,11 +8939,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_ANKLET] =
     {
-        .name = ITEM_NAME("{JPN}パワーアンクル"),
+        .name = ITEM_NAME("Power Anklet"),
         .price = (I_PRICE >= GEN_9) ? 10000 : 3000,
         .holdEffect = HOLD_EFFECT_POWER_ITEM,
         .holdEffectParam = POWER_ITEM_BOOST,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさが\nさがるが ポケモンの\nすばやさが そだちやすい"),
+        .description = COMPOUND_STRING(
+            "Promotes Speed\n"
+            "gain, but cuts\n"
+            "Speed in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7506,23 +8957,26 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_PowerAnklet,
     },
 
-// Type-boosting Held Items
-    #if I_PRICE >= GEN_9
-        #define TYPE_BOOSTING_PRICE 3000
-    #elif I_PRICE >= GEN_7
-        #define TYPE_BOOSTING_PRICE 1000
-    #else
-        #define TYPE_BOOSTING_PRICE 100
-    #endif
+// Type-enhancing items
+#if I_PRICE >= GEN_9
+    #define TYPE_BOOSTING_PRICE 3000
+#elif I_PRICE >= GEN_7
+    #define TYPE_BOOSTING_PRICE 1000
+#else
+    #define TYPE_BOOSTING_PRICE 100
+#endif
 
     [ITEM_SILK_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}シルクのスカーフ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}シルクのスカーフ"),
+        .name = ITEM_NAME("Silk Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Silk Scarves"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nノーマルタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Normal-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7535,7 +8989,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHARCOAL] =
     {
-        .name = ITEM_NAME("{JPN}もくたん"),
+        .name = ITEM_NAME("Charcoal"),
     #if I_PRICE >= GEN_9
         .price = 3000,
     #elif I_PRICE >= GEN_7
@@ -7545,7 +8999,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nほのおタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Fire-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7558,11 +9015,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MYSTIC_WATER] =
     {
-        .name = ITEM_NAME("{JPN}しんぴのしずく"),
+        .name = ITEM_NAME("Mystic Water"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nみずタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Water-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7575,11 +9035,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGNET] =
     {
-        .name = ITEM_NAME("{JPN}じしゃく"),
+        .name = ITEM_NAME("Magnet"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nでんきタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Electric-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7592,11 +9055,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MIRACLE_SEED] =
     {
-        .name = ITEM_NAME("{JPN}きせきのタネ"),
+        .name = ITEM_NAME("Miracle Seed"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると\nくさタイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Grass-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7609,11 +9075,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NEVER_MELT_ICE] =
     {
-        .name = ITEM_NAME("{JPN}とけないこおり"),
+        .name = ITEM_NAME("Never-Melt Ice"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nこおりタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ice-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7626,11 +9095,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_BELT] =
     {
-        .name = ITEM_NAME("{JPN}くろおび"),
+        .name = ITEM_NAME("Black Belt"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nかくとうタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Fighting-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7643,11 +9115,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISON_BARB] =
     {
-        .name = ITEM_NAME("{JPN}どくバリ"),
+        .name = ITEM_NAME("Poison Barb"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nどくタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Poison-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7660,12 +9135,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOFT_SAND] =
     {
-        .name = ITEM_NAME("{JPN}やわらかいすな"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}やわらかいすな"),
+        .name = ITEM_NAME("Soft Sand"),
+        .pluralName = ITEM_PLURAL_NAME("Soft Sand"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nじめんタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ground-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7678,11 +9156,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHARP_BEAK] =
     {
-        .name = ITEM_NAME("{JPN}するどいくちばし"),
+        .name = ITEM_NAME("Sharp Beak"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nひこうタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Flying-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7695,11 +9176,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TWISTED_SPOON] =
     {
-        .name = ITEM_NAME("{JPN}まがったスプーン"),
+        .name = ITEM_NAME("Twisted Spoon"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると\nエスパータイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Psychic-\n"
+            "type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7712,11 +9196,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SILVER_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}ぎんのこな"),
+        .name = ITEM_NAME("Silver Powder"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nむしタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Bug-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7729,11 +9216,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HARD_STONE] =
     {
-        .name = ITEM_NAME("{JPN}かたいいし"),
+        .name = ITEM_NAME("Hard Stone"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}もたせると\nいわタイプの わざの\nいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Rock-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7746,11 +9236,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SPELL_TAG] =
     {
-        .name = ITEM_NAME("{JPN}のろいのおふだ"),
+        .name = ITEM_NAME("Spell Tag"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nゴーストタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Ghost-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7763,11 +9256,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_FANG] =
     {
-        .name = ITEM_NAME("{JPN}りゅうのキバ"),
+        .name = ITEM_NAME("Dragon Fang"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nドラゴンタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Dragon-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7780,12 +9276,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_GLASSES] =
     {
-        .name = ITEM_NAME("{JPN}くろいメガネ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}くろいメガネ"),
+        .name = ITEM_NAME("Black Glasses"),
+        .pluralName = ITEM_PLURAL_NAME("Black Glasses"),
         .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nあくタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Dark-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7798,7 +9297,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METAL_COAT] =
     {
-        .name = ITEM_NAME("{JPN}メタルコート"),
+        .name = ITEM_NAME("Metal Coat"),
     #if I_PRICE >= GEN_9
         .price = 3000,
     #elif I_PRICE >= GEN_7
@@ -7808,7 +9307,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nはがねタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Steel-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -7820,11 +9322,11 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_MetalCoat,
     },
 
-// Choice Items
+// Choice items
 
     [ITEM_CHOICE_BAND] =
     {
-        .name = ITEM_NAME("{JPN}こだわりハチマキ"),
+        .name = ITEM_NAME("Choice Band"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -7833,7 +9335,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_CHOICE_BAND,
-        .description = COMPOUND_STRING("{JPN}こうげきの いりょくが\nあがるが おなじ\nわざしか だせなくなる"),
+        .description = COMPOUND_STRING(
+            "Boosts Attack,\n"
+            "but permits\n"
+            "only one move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7845,8 +9350,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHOICE_SPECS] =
     {
-        .name = ITEM_NAME("{JPN}こだわりメガネ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}こだわりメガネ"),
+        .name = ITEM_NAME("Choice Specs"),
+        .pluralName = ITEM_PLURAL_NAME("Choice Specs"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -7855,7 +9360,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_CHOICE_SPECS,
-        .description = COMPOUND_STRING("{JPN}とくこうの いりょくが\nあがるが おなじ\nわざしか だせなくなる"),
+        .description = COMPOUND_STRING(
+            "Boosts Sp. Atk,\n"
+            "but permits\n"
+            "only one move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7867,8 +9375,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHOICE_SCARF] =
     {
-        .name = ITEM_NAME("{JPN}こだわりスカーフ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}こだわりスカーフ"),
+        .name = ITEM_NAME("Choice Scarf"),
+        .pluralName = ITEM_PLURAL_NAME("Choice Scarves"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -7877,7 +9385,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_CHOICE_SCARF,
-        .description = COMPOUND_STRING("{JPN}もたせると すばやさは\nあがるが おなじ\nわざしか だせなくなる"),
+        .description = COMPOUND_STRING(
+            "Boosts Speed,\n"
+            "but permits\n"
+            "only one move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7891,7 +9402,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLAME_ORB] =
     {
-        .name = ITEM_NAME("{JPN}かえんだま"),
+        .name = ITEM_NAME("Flame Orb"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -7900,7 +9411,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_FLAME_ORB,
-        .description = COMPOUND_STRING("{JPN}もたせると\nせんとうちゅうに やけど\nじょうたいに なる"),
+        .description = COMPOUND_STRING(
+            "A bizarre orb that\n"
+            "burns the\n"
+            "holder in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7912,7 +9426,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TOXIC_ORB] =
     {
-        .name = ITEM_NAME("{JPN}どくどくだま"),
+        .name = ITEM_NAME("Toxic Orb"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -7921,7 +9435,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_TOXIC_ORB,
-        .description = COMPOUND_STRING("{JPN}もたせると\nせんとうちゅうに もうどく\nじょうたいに なる"),
+        .description = COMPOUND_STRING(
+            "A bizarre orb that\n"
+            "badly poisons the\n"
+            "holder in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7935,7 +9452,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DAMP_ROCK] =
     {
-        .name = ITEM_NAME("{JPN}しめったいわ"),
+        .name = ITEM_NAME("Damp Rock"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -7944,7 +9461,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_DAMP_ROCK,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nあまごいを つかうと\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends rain\n"
+            "when the\n"
+            "holder summons it."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7956,7 +9476,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEAT_ROCK] =
     {
-        .name = ITEM_NAME("{JPN}あついいわ"),
+        .name = ITEM_NAME("Heat Rock"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -7965,7 +9485,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_HEAT_ROCK,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nにほんばれを つかうと\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends harsh\n"
+            "sunlight when the\n"
+            "holder summons it."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7977,7 +9500,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SMOOTH_ROCK] =
     {
-        .name = ITEM_NAME("{JPN}さらさらいわ"),
+        .name = ITEM_NAME("Smooth Rock"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -7986,7 +9509,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_SMOOTH_ROCK,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nすなあらしを つかうと\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends a\n"
+            "sandstorm when the\n"
+            "holder summons it."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -7998,7 +9524,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICY_ROCK] =
     {
-        .name = ITEM_NAME("{JPN}つめたいいわ"),
+        .name = ITEM_NAME("Icy Rock"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -8008,11 +9534,20 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_ICY_ROCK,
     #if B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_HAIL
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nあられを つかうと\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends a\n"
+            "hailstorm when the\n"
+            "holder summons it."),
     #elif B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nゆきげしきを つかうと\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends a\n"
+            "snowstorm when the\n"
+            "holder summons it."),
     #else
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nてんきを ゆきにすると\nじかんが ながくなる"),
+        .description = COMPOUND_STRING(
+            "Extends hail or\n"
+            "snow when the\n"
+            "holder summons it."),
     #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
@@ -8027,11 +9562,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIC_SEED] =
     {
-        .name = ITEM_NAME("{JPN}エレキシード"),
+        .name = ITEM_NAME("Electric Seed"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_ELECTRIC_TERRAIN,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nエレキフィールドの ときに\nつかって ぼうぎょアップ"),
+        .description = COMPOUND_STRING(
+            "Raises Defense on\n"
+            "Electric Terrain,\n"
+            "but only once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8043,11 +9581,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIC_SEED] =
     {
-        .name = ITEM_NAME("{JPN}サイコシード"),
+        .name = ITEM_NAME("Psychic Seed"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nサイコフィールドの ときに\nつかって とくぼうアップ"),
+        .description = COMPOUND_STRING(
+            "Raises Sp. Def on\n"
+            "Psychic Terrain,\n"
+            "but only once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8059,11 +9600,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MISTY_SEED] =
     {
-        .name = ITEM_NAME("{JPN}ミストシード"),
+        .name = ITEM_NAME("Misty Seed"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_MISTY_TERRAIN,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nミストフィールドの ときに\nつかって とくぼうアップ"),
+        .description = COMPOUND_STRING(
+            "Raises Sp. Def on\n"
+            "Misty Terrain,\n"
+            "but only once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8075,11 +9619,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASSY_SEED] =
     {
-        .name = ITEM_NAME("{JPN}グラスシード"),
+        .name = ITEM_NAME("Grassy Seed"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_GRASSY_TERRAIN,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nグラスフィールドの ときに\nつかって ぼうぎょアップ"),
+        .description = COMPOUND_STRING(
+            "Raises Defense on\n"
+            "Grassy Terrain,\n"
+            "but only once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8093,7 +9640,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABSORB_BULB] =
     {
-        .name = ITEM_NAME("{JPN}きゅうこん"),
+        .name = ITEM_NAME("Absorb Bulb"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE >= GEN_7
@@ -8103,7 +9650,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_ABSORB_BULB,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}もたせて みずの\nわざを うけると\nとくこうが あがる"),
+        .description = COMPOUND_STRING(
+            "Ups Sp. Atk if the\n"
+            "holder is hurt by\n"
+            "a Water-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8115,8 +9665,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CELL_BATTERY] =
     {
-        .name = ITEM_NAME("{JPN}じゅうでんち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}じゅうでんち"),
+        .name = ITEM_NAME("Cell Battery"),
+        .pluralName = ITEM_PLURAL_NAME("Cell Batteries"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE >= GEN_7
@@ -8126,7 +9676,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_CELL_BATTERY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}もたせて でんきの\nわざを うけると\nこうげきが あがる"),
+        .description = COMPOUND_STRING(
+            "Ups Attack if the\n"
+            "holder is hurt by\n"
+            "an Electric move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8138,8 +9691,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUMINOUS_MOSS] =
     {
-        .name = ITEM_NAME("{JPN}ひかりごけ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ひかりごけ"),
+        .name = ITEM_NAME("Luminous Moss"),
+        .pluralName = ITEM_PLURAL_NAME("Luminous Moss"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE >= GEN_7
@@ -8149,7 +9702,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_LUMINOUS_MOSS,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}もたせて みずの\nわざを うけると\nとくぼうが あがる"),
+        .description = COMPOUND_STRING(
+            "Ups Sp. Def if the\n"
+            "holder is hurt by\n"
+            "a Water-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8161,7 +9717,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SNOWBALL] =
     {
-        .name = ITEM_NAME("{JPN}ゆきだま"),
+        .name = ITEM_NAME("Snowball"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE >= GEN_7
@@ -8171,7 +9727,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_SNOWBALL,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}もたせて こおりの\nわざを うけると\nこうげきが あがる"),
+        .description = COMPOUND_STRING(
+            "Ups Attack if the\n"
+            "holder is hurt by\n"
+            "an Ice-type move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8185,7 +9744,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BRIGHT_POWDER] =
     {
-        .name = ITEM_NAME("{JPN}ひかりのこな"),
+        .name = ITEM_NAME("Bright Powder"),
     #if I_PRICE >= GEN_9
         .price = 30000,
     #elif I_PRICE >= GEN_7
@@ -8195,7 +9754,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_EVASION_UP,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}もたせると ひかりが\nあいてを まどわして\nめいちゅうりつを さげる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "casts a glare to\n"
+            "reduce accuracy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8207,7 +9769,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WHITE_HERB] =
     {
-        .name = ITEM_NAME("{JPN}しろいハーブ"),
+        .name = ITEM_NAME("White Herb"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8216,7 +9778,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_WHITE_HERB,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nさがった のうりょくを\nもとにもどす"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores any\n"
+            "lowered stat once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8228,16 +9793,22 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_SHARE] =
     {
-        .name = ITEM_NAME("{JPN}がくしゅうそうち"),
+        .name = ITEM_NAME("Exp. Share"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
     #if I_EXP_SHARE_ITEM >= GEN_6
-        .description = COMPOUND_STRING("{JPN}てもちの ポケモン\nすべてが けいけんちを\nもらえる そうち"),
+        .description = COMPOUND_STRING(
+            "This device allows\n"
+            "all party members\n"
+            "to share in Exp."),
         .price = 0,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
     #else
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "gets Exp. Points\n"
+            "from battles."),
         .price = (I_PRICE == GEN_1) ? 1 : 3000,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nけいけんちを\nわけて もらえる"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
     #endif
@@ -8250,7 +9821,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_QUICK_CLAW] =
     {
-        .name = ITEM_NAME("{JPN}せんせいのツメ"),
+        .name = ITEM_NAME("Quick Claw"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -8260,7 +9831,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_QUICK_CLAW,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nせんせい こうげきが\nたまに できる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "occasionally allows\n"
+            "the first strike."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8272,7 +9846,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOOTHE_BELL] =
     {
-        .name = ITEM_NAME("{JPN}やすらぎのすず"),
+        .name = ITEM_NAME("Soothe Bell"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE >= GEN_7
@@ -8281,7 +9855,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_FRIENDSHIP_UP,
-        .description = COMPOUND_STRING("{JPN}もたせると ポケモンが\nとっても やすらいで\nなつき やすくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "calms spirits and\n"
+            "fosters friendship."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8293,7 +9870,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MENTAL_HERB] =
     {
-        .name = ITEM_NAME("{JPN}メンタルハーブ"),
+        .name = ITEM_NAME("Mental Herb"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8304,9 +9881,13 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MENTAL_HERB,
         .description = COMPOUND_STRING(
         #if B_MENTAL_HERB >= GEN_5
-            "{JPN}もたせた ポケモンが\nわざを だせなくなったら\nなおして くれる"),
+            "Snaps Pokémon out\n"
+            "of move-binding\n"
+            "effects once."),
         #else
-            "{JPN}もたせた ポケモンが\nメロメロに なったとき\nなおして くれる"),
+            "A held item that\n"
+            "snaps Pokémon out\n"
+            "of attraction once."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
@@ -8319,7 +9900,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KINGS_ROCK] =
     {
-        .name = ITEM_NAME("{JPN}おうじゃのしるし"),
+        .name = ITEM_NAME("King's Rock"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8329,7 +9910,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nダメージを うけた\nあいてが たまに ひるむ"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "may cause flinching\n"
+            "when the foe is hit."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -8342,7 +9926,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AMULET_COIN] =
     {
-        .name = ITEM_NAME("{JPN}おまもりこばん"),
+        .name = ITEM_NAME("Amulet Coin"),
     #if I_PRICE >= GEN_9
         .price = 30000,
     #elif I_PRICE >= GEN_7
@@ -8351,7 +9935,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンが\nせんとうに でると\nおかねが 2ばいもらえる"),
+        .description = COMPOUND_STRING(
+            "Doubles money in\n"
+            "battle if the\n"
+            "holder takes part."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8363,10 +9950,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLEANSE_TAG] =
     {
-        .name = ITEM_NAME("{JPN}きよめのおふだ"),
+        .name = ITEM_NAME("Cleanse Tag"),
         .price = (I_PRICE >= GEN_7) ? 5000 : 200,
         .holdEffect = HOLD_EFFECT_REPEL,
-        .description = COMPOUND_STRING("{JPN}もたせると\nやせいポケモンが\nでて きにくくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "helps repel wild\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8378,7 +9968,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SMOKE_BALL] =
     {
-        .name = ITEM_NAME("{JPN}けむりだま"),
+        .name = ITEM_NAME("Smoke Ball"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -8387,7 +9977,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_CAN_ALWAYS_RUN,
-        .description = COMPOUND_STRING("{JPN}そうぐうした やせいの\nポケモンから かならず\nにげられる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "assures fleeing\n"
+            "from wild Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8399,7 +9992,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOCUS_BAND] =
     {
-        .name = ITEM_NAME("{JPN}きあいのハチマキ"),
+        .name = ITEM_NAME("Focus Band"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8409,7 +10002,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_FOCUS_BAND,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nたまに ひんしを\nふせぐことが できる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "occasionally\n"
+            "prevents fainting."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8421,10 +10017,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUCKY_EGG] =
     {
-        .name = ITEM_NAME("{JPN}しあわせタマゴ"),
+        .name = ITEM_NAME("Lucky Egg"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 200,
         .holdEffect = HOLD_EFFECT_LUCKY_EGG,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンの\nけいけんちが いつもより\nおおめに もらえる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts Exp. Points\n"
+            "earned in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8436,8 +10035,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCOPE_LENS] =
     {
-        .name = ITEM_NAME("{JPN}ピントレンズ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ピントレンズ"),
+        .name = ITEM_NAME("Scope Lens"),
+        .pluralName = ITEM_PLURAL_NAME("Scope Lenses"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -8446,7 +10045,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nきゅうしょに\nあたり やすくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "improves the\n"
+            "critical-hit rate."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8458,8 +10060,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEFTOVERS] =
     {
-        .name = ITEM_NAME("{JPN}たべのこし"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}たべのこし"),
+        .name = ITEM_NAME("Leftovers"),
+        .pluralName = ITEM_PLURAL_NAME("Leftovers"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8469,7 +10071,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_LEFTOVERS,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくが\nせんとうの あいだ\nすこしずつ かいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "gradually restores\n"
+            "HP in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8481,7 +10086,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHELL_BELL] =
     {
-        .name = ITEM_NAME("{JPN}かいがらのすず"),
+        .name = ITEM_NAME("Shell Bell"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8491,7 +10096,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_SHELL_BELL,
         .holdEffectParam = 8,
-        .description = COMPOUND_STRING("{JPN}もたせると てきに\nダメージを あたえたとき\nたいりょくが かいふく"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores HP upon\n"
+            "striking the foe."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8503,8 +10111,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WIDE_LENS] =
     {
-        .name = ITEM_NAME("{JPN}こうかくレンズ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}こうかくレンズ"),
+        .name = ITEM_NAME("Wide Lens"),
+        .pluralName = ITEM_PLURAL_NAME("Wide Lenses"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8514,7 +10122,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_WIDE_LENS,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}もたせると\nわざの めいちゅうりつが\nすこし あがる"),
+        .description = COMPOUND_STRING(
+            "A magnifying lens\n"
+            "that boosts the\n"
+            "accuracy of moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8526,7 +10137,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MUSCLE_BAND] =
     {
-        .name = ITEM_NAME("{JPN}ちからのハチマキ"),
+        .name = ITEM_NAME("Muscle Band"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -8536,7 +10147,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_MUSCLE_BAND,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}ぶつりわざの\nいりょくが すこし\nあがる メガネ"),
+        .description = COMPOUND_STRING(
+            "A headband that\n"
+            "slightly boosts\n"
+            "physical moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8548,8 +10162,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WISE_GLASSES] =
     {
-        .name = ITEM_NAME("{JPN}ものしりメガネ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ものしりメガネ"),
+        .name = ITEM_NAME("Wise Glasses"),
+        .pluralName = ITEM_PLURAL_NAME("Wise Glasses"),
     #if I_PRICE >= GEN_9
         .price = 8000,
     #elif I_PRICE >= GEN_7
@@ -8559,7 +10173,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_WISE_GLASSES,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}とくしゅわざの\nいりょくが すこし\nあがる メガネ"),
+        .description = COMPOUND_STRING(
+            "Thick glasses that\n"
+            "slightly boost\n"
+            "special moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8571,7 +10188,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXPERT_BELT] =
     {
-        .name = ITEM_NAME("{JPN}たつじんのおび"),
+        .name = ITEM_NAME("Expert Belt"),
     #if I_PRICE >= GEN_9
         .price = 30000,
     #elif I_PRICE >= GEN_7
@@ -8581,7 +10198,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_EXPERT_BELT,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}こうかばつぐんの\nときの いりょくが\nすこし あがる"),
+        .description = COMPOUND_STRING(
+            "A well-worn belt\n"
+            "that boosts super\n"
+            "effective moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8593,7 +10213,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LIGHT_CLAY] =
     {
-        .name = ITEM_NAME("{JPN}ひかりのねんど"),
+        .name = ITEM_NAME("Light Clay"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8602,7 +10222,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_LIGHT_CLAY,
-        .description = COMPOUND_STRING("{JPN}ひかりのかべや\nリフレクターの こうかを\nいつもより ながく する"),
+        .description = COMPOUND_STRING(
+            "Barrier moves\n"
+            "like Light Screen\n"
+            "last longer."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8614,7 +10237,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LIFE_ORB] =
     {
-        .name = ITEM_NAME("{JPN}いのちのたま"),
+        .name = ITEM_NAME("Life Orb"),
     #if I_PRICE >= GEN_9
         .price = 50000,
     #elif I_PRICE >= GEN_7
@@ -8623,7 +10246,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_LIFE_ORB,
-        .description = COMPOUND_STRING("{JPN}こうげきする たびに\nHPが へってしまうが\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts moves, but\n"
+            "cuts HP when the\n"
+            "holder lands hits."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8635,7 +10261,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWER_HERB] =
     {
-        .name = ITEM_NAME("{JPN}パワフルハーブ"),
+        .name = ITEM_NAME("Power Herb"),
     #if I_PRICE >= GEN_9
         .price = 30000,
     #elif I_PRICE >= GEN_7
@@ -8644,7 +10270,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_POWER_HERB,
-        .description = COMPOUND_STRING("{JPN}いちどだけ 1ターンめに\nちからを ためるわざを\nすぐに つかえる"),
+        .description = COMPOUND_STRING(
+            "Allows immediate\n"
+            "use of a move that\n"
+            "requires charging."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8656,8 +10285,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FOCUS_SASH] =
     {
-        .name = ITEM_NAME("{JPN}きあいのタスキ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}きあいのタスキ"),
+        .name = ITEM_NAME("Focus Sash"),
+        .pluralName = ITEM_PLURAL_NAME("Focus Sashes"),
     #if I_PRICE >= GEN_9
         .price = 50000,
     #elif I_PRICE >= GEN_7
@@ -8666,7 +10295,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_FOCUS_SASH,
-        .description = COMPOUND_STRING("{JPN}もたせると HPが\nまんたんのとき いちげきでは\nたおされなくなる"),
+        .description = COMPOUND_STRING(
+            "If the holder has\n"
+            "full HP, it endures\n"
+            "one KO with 1 HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8678,8 +10310,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZOOM_LENS] =
     {
-        .name = ITEM_NAME("{JPN}フォーカスレンズ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}フォーカスレンズ"),
+        .name = ITEM_NAME("Zoom Lens"),
+        .pluralName = ITEM_PLURAL_NAME("Zoom Lenses"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8689,7 +10321,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_ZOOM_LENS,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}てきよりも こうどうが\nおそいとき わざが\nめいちゅう しやすくなる"),
+        .description = COMPOUND_STRING(
+            "Boosts accuracy if\n"
+            "the holder moves\n"
+            "after the foe."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8701,7 +10336,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METRONOME] =
     {
-        .name = ITEM_NAME("{JPN}メトロノーム"),
+        .name = ITEM_NAME("Metronome"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -8711,7 +10346,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_METRONOME,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}おなじわざを れんぞくで\nつかったとき いりょくが\nあがる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of a move that is\n"
+            "used repeatedly."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8723,7 +10361,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IRON_BALL] =
     {
-        .name = ITEM_NAME("{JPN}くろいてっきゅう"),
+        .name = ITEM_NAME("Iron Ball"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8732,7 +10370,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_IRON_BALL,
-        .description = COMPOUND_STRING("{JPN}すばやさが さがり\nじめんわざが\nあたって しまう"),
+        .description = COMPOUND_STRING(
+            "Cuts Speed and\n"
+            "makes Ground moves\n"
+            "hit the holder."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8744,7 +10385,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LAGGING_TAIL] =
     {
-        .name = ITEM_NAME("{JPN}こうこうのしっぽ"),
+        .name = ITEM_NAME("Lagging Tail"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8753,7 +10394,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンは\nいつもより こうどうが\nおそくなる"),
+        .description = COMPOUND_STRING(
+            "An item that makes\n"
+            "the holder move\n"
+            "slower than usual."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8765,7 +10409,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DESTINY_KNOT] =
     {
-        .name = ITEM_NAME("{JPN}あかいいと"),
+        .name = ITEM_NAME("Destiny Knot"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8774,7 +10418,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_DESTINY_KNOT,
-        .description = COMPOUND_STRING("{JPN}もたせると メロメロに\nなったとき あいても\nメロメロに できる"),
+        .description = COMPOUND_STRING(
+            "If the holder falls\n"
+            "in love, the foe\n"
+            "does too."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8786,7 +10433,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_SLUDGE] =
     {
-        .name = ITEM_NAME("{JPN}くろいヘドロ"),
+        .name = ITEM_NAME("Black Sludge"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8795,7 +10442,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
-        .description = COMPOUND_STRING("{JPN}もたせると どくタイプの\nポケモンは すこしずつ\nHPを かいふくする"),
+        .description = COMPOUND_STRING(
+            "Gradually restores\n"
+            "Poison-types' HP.\n"
+            "Damages all others."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8807,7 +10457,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRIP_CLAW] =
     {
-        .name = ITEM_NAME("{JPN}ねばりのかぎづめ"),
+        .name = ITEM_NAME("Grip Claw"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8816,7 +10466,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_GRIP_CLAW,
-        .description = COMPOUND_STRING("{JPN}もたせると ダメージを\nあたえつづける わざの\nターンすうが ふえる"),
+        .description = COMPOUND_STRING(
+            "Multi-turn moves\n"
+            "like Bind and Wrap\n"
+            "last longer."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8828,7 +10481,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STICKY_BARB] =
     {
-        .name = ITEM_NAME("{JPN}くっつきバリ"),
+        .name = ITEM_NAME("Sticky Barb"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8837,7 +10490,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_STICKY_BARB,
-        .description = COMPOUND_STRING("{JPN}まいターン ダメージを\nうける じぶんにふれた\nあいてに くっつく"),
+        .description = COMPOUND_STRING(
+            "Damages the holder\n"
+            "each turn. Latches\n"
+            "on from contact."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8849,7 +10505,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHED_SHELL] =
     {
-        .name = ITEM_NAME("{JPN}きれいなぬけがら"),
+        .name = ITEM_NAME("Shed Shell"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -8858,7 +10514,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 100,
     #endif
         .holdEffect = HOLD_EFFECT_SHED_SHELL,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンは\nひかえの ポケモンと\nかならず いれかわれる"),
+        .description = COMPOUND_STRING(
+            "Enables the holder\n"
+            "to switch out\n"
+            "without fail."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8870,7 +10529,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_ROOT] =
     {
-        .name = ITEM_NAME("{JPN}おおきなねっこ"),
+        .name = ITEM_NAME("Big Root"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8880,7 +10539,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_BIG_ROOT,
         .holdEffectParam = 30,
-        .description = COMPOUND_STRING("{JPN}HPを すいとる わざで\nいつもより おおく\nHPを かいふくできる"),
+        .description = COMPOUND_STRING(
+            "Boosts the amount\n"
+            "of HP restored from\n"
+            "HP-stealing moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8892,7 +10554,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAZOR_CLAW] =
     {
-        .name = ITEM_NAME("{JPN}するどいツメ"),
+        .name = ITEM_NAME("Razor Claw"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -8901,7 +10563,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 2100,
     #endif
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
-        .description = COMPOUND_STRING("{JPN}もたせると\nわざが きゅうしょに\nあたりやすくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "improves the\n"
+            "critical-hit rate."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -8914,7 +10579,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAZOR_FANG] =
     {
-        .name = ITEM_NAME("{JPN}するどいキバ"),
+        .name = ITEM_NAME("Razor Fang"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -8924,7 +10589,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nダメージを うけた\nあいてが たまに ひるむ"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "may cause flinching\n"
+            "when the foe is hit."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -8937,7 +10605,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EVIOLITE] =
     {
-        .name = ITEM_NAME("{JPN}しんかのきせき"),
+        .name = ITEM_NAME("Eviolite"),
     #if I_PRICE >= GEN_9
         .price = 50000,
     #elif I_PRICE >= GEN_7
@@ -8947,7 +10615,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_EVIOLITE,
         .holdEffectParam = 50,
-        .description = COMPOUND_STRING("{JPN}もたせると しんかまえ\nポケモンの ぼうぎょと\nとくぼうが あがる"),
+        .description = COMPOUND_STRING(
+            "Ups the defensive\n"
+            "stats of Pokémon\n"
+            "that can evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8959,7 +10630,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLOAT_STONE] =
     {
-        .name = ITEM_NAME("{JPN}かるいし"),
+        .name = ITEM_NAME("Float Stone"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -8968,7 +10639,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_FLOAT_STONE,
-        .description = COMPOUND_STRING("{JPN}もたせると\nポケモンの たいじゅうが\nかるくなる"),
+        .description = COMPOUND_STRING(
+            "A light stone that\n"
+            "reduces the weight\n"
+            "of the holder."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -8980,7 +10654,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCKY_HELMET] =
     {
-        .name = ITEM_NAME("{JPN}ゴツゴツメット"),
+        .name = ITEM_NAME("Rocky Helmet"),
     #if I_PRICE >= GEN_9
         .price = 50000,
     #elif I_PRICE >= GEN_7
@@ -8990,7 +10664,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_ROCKY_HELMET,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}だげきわざを\nうけたとき あいてにも\nダメージを あたえる"),
+        .description = COMPOUND_STRING(
+            "Damages foes that\n"
+            "make contact with\n"
+            "the holder."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9002,7 +10679,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AIR_BALLOON] =
     {
-        .name = ITEM_NAME("{JPN}ふうせん"),
+        .name = ITEM_NAME("Air Balloon"),
     #if I_PRICE >= GEN_9
         .price = 15000,
     #elif I_PRICE >= GEN_7
@@ -9012,7 +10689,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_AIR_BALLOON,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちゅうにうく\nこうげきを うけると\nわれてしまう"),
+        .description = COMPOUND_STRING(
+            "Makes the holder\n"
+            "float, but bursts\n"
+            "if hit by an attack."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9024,7 +10704,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RED_CARD] =
     {
-        .name = ITEM_NAME("{JPN}レッドカード"),
+        .name = ITEM_NAME("Red Card"),
     #if I_PRICE >= GEN_9
         .price = 3000,
     #elif I_PRICE >= GEN_7
@@ -9035,7 +10715,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_RED_CARD,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "{JPN}わざをつかってきた\nあいてを たいじょう\nさせることが できる"),
+            "Foes that hit the\n"
+            "holder are removed\n"
+            "from the battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9047,7 +10729,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RING_TARGET] =
     {
-        .name = ITEM_NAME("{JPN}ねらいのまと"),
+        .name = ITEM_NAME("Ring Target"),
     #if I_PRICE >= GEN_9
         .price = 10000,
     #elif I_PRICE >= GEN_7
@@ -9057,7 +10739,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_RING_TARGET,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}タイプあいしょうで\nむこう だった わざが\nあたってしまう"),
+        .description = COMPOUND_STRING(
+            "Moves that have no\n"
+            "effect due to type\n"
+            "will hit the holder."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9069,7 +10754,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BINDING_BAND] =
     {
-        .name = ITEM_NAME("{JPN}しめつけバンド"),
+        .name = ITEM_NAME("Binding Band"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -9078,7 +10763,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_BINDING_BAND,
-        .description = COMPOUND_STRING("{JPN}もたせると しめつける\nわざの いりょくが\nつよく なる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of the holder's\n"
+            "binding moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9090,7 +10778,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EJECT_BUTTON] =
     {
-        .name = ITEM_NAME("{JPN}だっしゅつボタン"),
+        .name = ITEM_NAME("Eject Button"),
     #if I_PRICE >= GEN_9
         .price = 30000,
     #elif I_PRICE >= GEN_7
@@ -9100,7 +10788,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffect = HOLD_EFFECT_EJECT_BUTTON,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}わざを うけると\nせんとうから だっしゅつして\nてもちと いれかわる"),
+        .description = COMPOUND_STRING(
+            "If the holder is\n"
+            "hit, it will be\n"
+            "switched out."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9112,12 +10803,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WEAKNESS_POLICY] =
     {
-        .name = ITEM_NAME("{JPN}じゃくてんほけん"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}じゃくてんほけん"),
+        .name = ITEM_NAME("Weakness Policy"),
+        .pluralName = ITEM_PLURAL_NAME("Weakness Policies"),
         .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
         .holdEffect = HOLD_EFFECT_WEAKNESS_POLICY,
         .holdEffectParam = 0,
-        .description = COMPOUND_STRING("{JPN}じゃくてんを つかれると\nこうげきと とくこうが\nそれぞれ ぐーんと あがる"),
+        .description = COMPOUND_STRING(
+            "If hit super\n"
+            "effectively, ups\n"
+            "offenses sharply."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9129,11 +10823,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ASSAULT_VEST] =
     {
-        .name = ITEM_NAME("{JPN}とつげきチョッキ"),
+        .name = ITEM_NAME("Assault Vest"),
         .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
         .holdEffect = HOLD_EFFECT_ASSAULT_VEST,
         .holdEffectParam = 50,
-        .description = COMPOUND_STRING("{JPN}もたせると\nとくぼうが あがるが\nへんかわざを だせなくなる"),
+        .description = COMPOUND_STRING(
+            "Boosts Sp. Def, but\n"
+            "prevents the use\n"
+            "of status moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9145,8 +10842,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SAFETY_GOGGLES] =
     {
-        .name = ITEM_NAME("{JPN}ぼうじんゴーグル"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ぼうじんゴーグル"),
+        .name = ITEM_NAME("Safety Goggles"),
+        .pluralName = ITEM_PLURAL_NAME("Safety Goggles"),
     #if I_PRICE >= GEN_9
         .price = 20000,
     #elif I_PRICE >= GEN_7
@@ -9155,7 +10852,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 1000,
     #endif
         .holdEffect = HOLD_EFFECT_SAFETY_GOGGLES,
-        .description = COMPOUND_STRING("{JPN}てんこうダメージだけでなく\nこなをだす わざの\nこうかも ふせぐ ゴーグル"),
+        .description = COMPOUND_STRING(
+            "Protects from\n"
+            "weather damage,\n"
+            "powder and spores."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9167,7 +10867,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ADRENALINE_ORB] =
     {
-        .name = ITEM_NAME("{JPN}ビビリだま"),
+        .name = ITEM_NAME("Adrenaline Orb"),
     #if I_PRICE >= GEN_9
         .price = 5000,
     #elif I_PRICE == GEN_8
@@ -9176,7 +10876,10 @@ const struct ItemInfo gItemsInfo[] =
         .price = 300,
     #endif
         .holdEffect = HOLD_EFFECT_ADRENALINE_ORB,
-        .description = COMPOUND_STRING("{JPN}もたせると\nいかくを うけたとき\nすばやさが あがる"),
+        .description = COMPOUND_STRING(
+            "This orb raises\n"
+            "Speed if the holder\n"
+            "is intimidated."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9188,10 +10891,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TERRAIN_EXTENDER] =
     {
-        .name = ITEM_NAME("{JPN}グランドコート"),
+        .name = ITEM_NAME("Terrain Extender"),
         .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_EXTENDER,
-        .description = COMPOUND_STRING("{JPN}フィールドを\nはったとき いつもよりも\nながく のこる"),
+        .description = COMPOUND_STRING(
+            "Extends terrain\n"
+            "duration when the\n"
+            "holder summons it."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9203,11 +10909,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PROTECTIVE_PADS] =
     {
-        .name = ITEM_NAME("{JPN}ぼうごパット"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ぼうごパット"),
+        .name = ITEM_NAME("Protective Pads"),
+        .pluralName = ITEM_PLURAL_NAME("Protective Pads"),
         .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_PROTECTIVE_PADS,
-        .description = COMPOUND_STRING("{JPN}こうげき する てきに\nさわってうける こうかを\nうけないように する"),
+        .description = COMPOUND_STRING(
+            "Protects from\n"
+            "effects triggered\n"
+            "by making contact."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9219,10 +10928,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_THROAT_SPRAY] =
     {
-        .name = ITEM_NAME("{JPN}のどスプレー"),
+        .name = ITEM_NAME("Throat Spray"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_THROAT_SPRAY,
-        .description = COMPOUND_STRING("{JPN}おとに かんする\nわざを つかうと\nとくこうが あがる"),
+        .description = COMPOUND_STRING(
+            "Raises Sp. Atk if\n"
+            "the holder uses a\n"
+            "sound-based move."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9234,10 +10946,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EJECT_PACK] =
     {
-        .name = ITEM_NAME("{JPN}だっしゅつパック"),
+        .name = ITEM_NAME("Eject Pack"),
         .price = (I_PRICE >= GEN_9) ? 30000 : 4000,
         .holdEffect = HOLD_EFFECT_EJECT_PACK,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンの\nのうりょくが さがると\nてもちと いれかわる"),
+        .description = COMPOUND_STRING(
+            "If the holder's\n"
+            "stats are lowered,\n"
+            "it'll be switched."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9249,11 +10964,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEAVY_DUTY_BOOTS] =
     {
-        .name = ITEM_NAME("{JPN}あつぞこブーツ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}あつぞこブーツ"),
+        .name = ITEM_NAME("Heavy-Duty Boots"),
+        .pluralName = ITEM_PLURAL_NAME("Heavy-Duty Boots"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_HEAVY_DUTY_BOOTS,
-        .description = COMPOUND_STRING("{JPN}あしばに しかけられた\nわななどの えいきょうを\nうけなくなる"),
+        .description = COMPOUND_STRING(
+            "Protects from the\n"
+            "effects of traps\n"
+            "set on the field."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9265,11 +10983,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUNDER_POLICY] =
     {
-        .name = ITEM_NAME("{JPN}からぶりほけん"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}からぶりほけん"),
+        .name = ITEM_NAME("Blunder Policy"),
+        .pluralName = ITEM_PLURAL_NAME("Blunder Policies"),
         .price = (I_PRICE >= GEN_9) ? 30000 : 4000,
         .holdEffect = HOLD_EFFECT_BLUNDER_POLICY,
-        .description = COMPOUND_STRING("{JPN}めいちゅうりつに よって\nわざが はずれたとき\nすばやさが ぐーんと あがる"),
+        .description = COMPOUND_STRING(
+            "Sharply ups speed\n"
+            "if a move misses\n"
+            "due to accuracy."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9281,10 +11002,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROOM_SERVICE] =
     {
-        .name = ITEM_NAME("{JPN}ルームサービス"),
+        .name = ITEM_NAME("Room Service"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_ROOM_SERVICE,
-        .description = COMPOUND_STRING("{JPN}もたせると トリックルームのときに\nつかって すばやさが さがる"),
+        .description = COMPOUND_STRING(
+            "Lowers the holder's\n"
+            "Speed when Trick\n"
+            "Room takes effect."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9296,10 +11020,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_UTILITY_UMBRELLA] =
     {
-        .name = ITEM_NAME("{JPN}ばんのうがさ"),
+        .name = ITEM_NAME("Utility Umbrella"),
         .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_UTILITY_UMBRELLA,
-        .description = COMPOUND_STRING("{JPN}もたせた ポケモンは\nあめと にほんばれの\nえいきょうを うけなくなる"),
+        .description = COMPOUND_STRING(
+            "Protects from the\n"
+            "effects of rain\n"
+            "and harsh sunlight."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -9313,11 +11040,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHERI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}クラボのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}クラボのみ"),
+        .name = ITEM_NAME("Cheri Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Cheri Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_PAR,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nまひ じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "heals paralysis\n"
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9330,11 +11060,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHESTO_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}カゴのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カゴのみ"),
+        .name = ITEM_NAME("Chesto Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Chesto Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_SLP,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nねむり じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "awakens Pokémon\n"
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9347,11 +11080,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PECHA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}モモンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}モモンのみ"),
+        .name = ITEM_NAME("Pecha Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Pecha Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_PSN,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nどく じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "heals poisoning\n"
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9364,11 +11100,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAWST_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}チーゴのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}チーゴのみ"),
+        .name = ITEM_NAME("Rawst Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Rawst Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_BRN,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nやけど じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "heals a burn in\n"
+            "battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9381,11 +11120,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ASPEAR_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ナナシのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ナナシのみ"),
+        .name = ITEM_NAME("Aspear Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Aspear Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_FRZ,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nこおり じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+        #if B_USE_FROSTBITE
+            "heals frostbite\n"
+        #else
+            "defrosts Pokémon\n"
+        #endif
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9398,12 +11144,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEPPA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ヒメリのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヒメリのみ"),
+        .name = ITEM_NAME("Leppa Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Leppa Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESTORE_PP,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nわざポイントを\n10 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores 10 PP in\n"
+            "battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU_MOVES,
         .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
@@ -9416,12 +11165,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ORAN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}オレンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}オレンのみ"),
+        .name = ITEM_NAME("Oran Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Oran Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
         .holdEffectParam = 10,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nたいりょくを\n10 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores 10 HP in\n"
+            "battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9434,11 +11186,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PERSIM_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}キーのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}キーのみ"),
+        .name = ITEM_NAME("Persim Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Persim Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_CONFUSION,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nこんらん じょうたいを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "heals confusion\n"
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9451,11 +11206,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUM_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ラムのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ラムのみ"),
+        .name = ITEM_NAME("Lum Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Lum Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_STATUS,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nじょうたいを いじょうを\nかいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "heals any status\n"
+            "problem in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -9468,17 +11226,23 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SITRUS_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}オボンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}オボンのみ"),
+        .name = ITEM_NAME("Sitrus Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Sitrus Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
     #if I_SITRUS_BERRY_HEAL >= GEN_4
         .holdEffect = HOLD_EFFECT_RESTORE_PCT_HP,
         .holdEffectParam = 25,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nたいりょくを\nすこしだけ かいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores a little\n"
+            "HP in battle."),
     #else
         .holdEffect = HOLD_EFFECT_RESTORE_HP,
         .holdEffectParam = 30,
-        .description = COMPOUND_STRING("{JPN}もたせると じぶんで\nたいりょくを\n30 かいふくする"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "restores 30 HP in\n"
+            "battle."),
     #endif
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
@@ -9492,13 +11256,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGY_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}フィラのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}フィラのみ"),
+        .name = ITEM_NAME("Figy Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Figy Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SPICY,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくを\nかいふく できるが\nこんらんする ことがある"),
+        .description = COMPOUND_STRING(
+            "Restores HP, but\n"
+            "confuses if the\n"
+            "flavor is hated."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9509,13 +11276,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WIKI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ウイのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ウイのみ"),
+        .name = ITEM_NAME("Wiki Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Wiki Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_DRY,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくを\nかいふく できるが\nこんらんする ことがある"),
+        .description = COMPOUND_STRING(
+            "Restores HP, but\n"
+            "confuses if the\n"
+            "flavor is hated."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9526,13 +11296,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGO_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}マゴのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}マゴのみ"),
+        .name = ITEM_NAME("Mago Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Mago Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SWEET,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくを\nかいふく できるが\nこんらんする ことがある"),
+        .description = COMPOUND_STRING(
+            "Restores HP, but\n"
+            "confuses if the\n"
+            "flavor is hated."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9543,13 +11316,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AGUAV_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}バンジのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}バンジのみ"),
+        .name = ITEM_NAME("Aguav Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Aguav Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_BITTER,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくを\nかいふく できるが\nこんらんする ことがある"),
+        .description = COMPOUND_STRING(
+            "Restores HP, but\n"
+            "confuses if the\n"
+            "flavor is hated."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9560,13 +11336,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IAPAPA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}イアのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}イアのみ"),
+        .name = ITEM_NAME("Iapapa Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Iapapa Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SOUR,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
-        .description = COMPOUND_STRING("{JPN}もたせると たいりょくを\nかいふく できるが\nこんらんする ことがある"),
+        .description = COMPOUND_STRING(
+            "Restores HP, but\n"
+            "confuses if the\n"
+            "flavor is hated."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9577,10 +11356,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAZZ_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ズリのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ズリのみ"),
+        .name = ITEM_NAME("Razz Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Razz Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nズリが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Razz."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9591,10 +11373,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLUK_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ブリーのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ブリーのみ"),
+        .name = ITEM_NAME("Bluk Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Bluk Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nブリーが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Bluk."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9605,10 +11390,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NANAB_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ナナのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ナナのみ"),
+        .name = ITEM_NAME("Nanab Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Nanab Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nナナが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Nanab."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9619,10 +11407,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WEPEAR_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}セシナのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}セシナのみ"),
+        .name = ITEM_NAME("Wepear Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Wepear Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nセシナが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Wepear."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9633,10 +11424,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PINAP_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}パイルのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}パイルのみ"),
+        .name = ITEM_NAME("Pinap Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Pinap Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nパイルが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Pinap."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9647,10 +11441,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POMEG_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ザロクのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ザロクのみ"),
+        .name = ITEM_NAME("Pomeg Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Pomeg Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが HPの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base HP."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9662,10 +11459,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KELPSY_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ネコブのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ネコブのみ"),
+        .name = ITEM_NAME("Kelpsy Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Kelpsy Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが こうげきの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base Attack."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9677,10 +11477,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_QUALOT_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}タポルのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}タポルのみ"),
+        .name = ITEM_NAME("Qualot Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Qualot Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが ぼうぎょの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base Defense."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9692,10 +11495,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HONDEW_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ロメのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ロメのみ"),
+        .name = ITEM_NAME("Hondew Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Hondew Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが とくこうの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base Sp. Atk."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9707,10 +11513,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GREPA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ウブのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ウブのみ"),
+        .name = ITEM_NAME("Grepa Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Grepa Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが とくぼうの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base Sp. Def."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9722,10 +11531,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TAMATO_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}マトマのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}マトマのみ"),
+        .name = ITEM_NAME("Tamato Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Tamato Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポケモンが ちょっと\nなつくが すばやさの\nきそポイントが さがる"),
+        .description = COMPOUND_STRING(
+            "Makes a Pokémon\n"
+            "friendly but lowers\n"
+            "base Speed."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -9737,10 +11549,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CORNN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}モコシのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}モコシのみ"),
+        .name = ITEM_NAME("Cornn Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Cornn Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nモコシが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Cornn."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9751,10 +11566,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGOST_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ゴスのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ゴスのみ"),
+        .name = ITEM_NAME("Magost Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Magost Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nゴスが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Magost."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9765,10 +11583,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RABUTA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ラブタのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ラブタのみ"),
+        .name = ITEM_NAME("Rabuta Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Rabuta Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nラブタが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Rabuta."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9779,10 +11600,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NOMEL_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ノメルのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ノメルのみ"),
+        .name = ITEM_NAME("Nomel Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Nomel Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nノメルが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Nomel."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9793,10 +11617,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SPELON_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ノワキのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ノワキのみ"),
+        .name = ITEM_NAME("Spelon Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Spelon Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nノワキが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Spelon."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9807,10 +11634,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PAMTRE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}シーヤのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}シーヤのみ"),
+        .name = ITEM_NAME("Pamtre Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Pamtre Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nシーヤが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Pamtre."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9821,10 +11651,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATMEL_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}カイスのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カイスのみ"),
+        .name = ITEM_NAME("Watmel Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Watmel Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nカイスが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Watmel."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9835,10 +11668,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DURIN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ドリのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ドリのみ"),
+        .name = ITEM_NAME("Durin Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Durin Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nドリが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Durin."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9849,10 +11685,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BELUE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ベリブのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ベリブのみ"),
+        .name = ITEM_NAME("Belue Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Belue Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nベリブが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow Belue."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9863,12 +11702,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHILAN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ホズのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ホズのみ"),
+        .name = ITEM_NAME("Chilan Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Chilan Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_NORMAL,
-        .description = COMPOUND_STRING("{JPN}もたせると ノーマル\nわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "weakens one\n"
+            "Normal-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9879,12 +11721,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OCCA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}オッカのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}オッカのみ"),
+        .name = ITEM_NAME("Occa Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Occa Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_FIRE,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nほのおわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Fire-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9895,12 +11740,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PASSHO_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}イトケのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}イトケのみ"),
+        .name = ITEM_NAME("Passho Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Passho Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_WATER,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nみずわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Water-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9911,12 +11759,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WACAN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ソクノのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ソクノのみ"),
+        .name = ITEM_NAME("Wacan Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Wacan Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_ELECTRIC,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nでんきわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Electric move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9927,12 +11778,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RINDO_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}リンドのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}リンドのみ"),
+        .name = ITEM_NAME("Rindo Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Rindo Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_GRASS,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nくさわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Grass-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9943,12 +11797,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_YACHE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ヤチェのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヤチェのみ"),
+        .name = ITEM_NAME("Yache Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Yache Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_ICE,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nこおりわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Ice-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9959,12 +11816,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHOPLE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ヨプのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヨプのみ"),
+        .name = ITEM_NAME("Chople Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Chople Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_FIGHTING,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nかくとうわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Fighting move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9975,12 +11835,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEBIA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ビアーのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ビアーのみ"),
+        .name = ITEM_NAME("Kebia Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Kebia Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_POISON,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nどくわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Poison-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -9991,12 +11854,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHUCA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}シュカのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}シュカのみ"),
+        .name = ITEM_NAME("Shuca Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Shuca Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_GROUND,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nじめんわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Ground-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10007,12 +11873,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COBA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}バコウのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}バコウのみ"),
+        .name = ITEM_NAME("Coba Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Coba Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_FLYING,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nひこうわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Flying-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10023,12 +11892,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PAYAPA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ウタンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ウタンのみ"),
+        .name = ITEM_NAME("Payapa Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Payapa Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_PSYCHIC,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nエスパーわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Psychic-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10039,12 +11911,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TANGA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}タンガのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}タンガのみ"),
+        .name = ITEM_NAME("Tanga Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Tanga Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_BUG,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nむしわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Bug-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10055,12 +11930,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHARTI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ヨロギのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヨロギのみ"),
+        .name = ITEM_NAME("Charti Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Charti Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_ROCK,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nいわわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Rock-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10071,12 +11949,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KASIB_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}カシブのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カシブのみ"),
+        .name = ITEM_NAME("Kasib Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Kasib Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_GHOST,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nゴーストわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Ghost-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10087,12 +11968,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HABAN_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ハバンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ハバンのみ"),
+        .name = ITEM_NAME("Haban Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Haban Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_DRAGON,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nドラゴンわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Dragon-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10103,12 +11987,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COLBUR_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ナモのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ナモのみ"),
+        .name = ITEM_NAME("Colbur Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Colbur Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_DARK,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nあくわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Dark-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10119,12 +12006,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BABIRI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}リリバのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}リリバのみ"),
+        .name = ITEM_NAME("Babiri Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Babiri Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_STEEL,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nはがねわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Steel-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10135,12 +12025,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROSELI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ロゼルのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ロゼルのみ"),
+        .name = ITEM_NAME("Roseli Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Roseli Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RESIST_BERRY,
         .holdEffectParam = TYPE_FAIRY,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nフェアリーわざを うけたとき\nいりょくが よわまる"),
+        .description = COMPOUND_STRING(
+            "Weakens one\n"
+            "supereffective\n"
+            "Fairy-type move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10151,12 +12044,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LIECHI_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}チイラのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}チイラのみ"),
+        .name = ITEM_NAME("Liechi Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Liechi Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_ATTACK_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nこうげきりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Attack in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10167,12 +12063,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GANLON_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}リュガのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}リュガのみ"),
+        .name = ITEM_NAME("Ganlon Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Ganlon Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_DEFENSE_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nぼうぎょりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Defense in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10183,12 +12082,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SALAC_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}カムラのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カムラのみ"),
+        .name = ITEM_NAME("Salac Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Salac Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_SPEED_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nすばやさが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Speed in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10199,12 +12101,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PETAYA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ヤタピのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ヤタピのみ"),
+        .name = ITEM_NAME("Petaya Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Petaya Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_SP_ATTACK_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nとくこうが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Sp. Atk in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10215,12 +12120,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_APICOT_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ズアのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ズアのみ"),
+        .name = ITEM_NAME("Apicot Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Apicot Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_SP_DEFENSE_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nとくぼうが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises Sp. Def in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10231,12 +12139,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LANSAT_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}サンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}サンのみ"),
+        .name = ITEM_NAME("Lansat Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Lansat Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CRITICAL_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nてきの きゅうしょに\nあたり やすくなる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "ups the critical-\n"
+            "hit rate in a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10247,12 +12158,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STARF_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}スターのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}スターのみ"),
+        .name = ITEM_NAME("Starf Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Starf Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_RANDOM_STAT_UP,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nのうりょくの どれか\n1つが ぐーんと あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "sharply raises a\n"
+            "stat in a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10263,11 +12177,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ENIGMA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ナゾのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ナゾのみ"),
+        .name = ITEM_NAME("Enigma Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Enigma Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_ENIGMA_BERRY,
-        .description = COMPOUND_STRING("{JPN}もたせると こうかばつぐんの\nわざを うけたとき\nHPを かいふくする"),
+        .description = COMPOUND_STRING(
+            "Restores HP when\n"
+            "hit by a super\n"
+            "effective move."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10278,12 +12195,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MICLE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ミクルのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ミクルのみ"),
+        .name = ITEM_NAME("Micle Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Micle Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_MICLE_BERRY,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nいちどだけ わざの\nめいちゅうりつが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "boosts accuracy in\n"
+            "a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10294,12 +12214,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CUSTAP_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}イバンのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}イバンのみ"),
+        .name = ITEM_NAME("Custap Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Custap Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CUSTAP_BERRY,
         .holdEffectParam = 4,
-        .description = COMPOUND_STRING("{JPN}もたせると ピンチのとき\nいちどだけ こうどうが\nはやくなる"),
+        .description = COMPOUND_STRING(
+            "The holder gets\n"
+            "to move first just\n"
+            "once in a pinch."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10310,11 +12233,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_JABOCA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}ジャポのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ジャポのみ"),
+        .name = ITEM_NAME("Jaboca Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Jaboca Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_JABOCA_BERRY,
-        .description = COMPOUND_STRING("{JPN}もたせて ぶつりわざを\nうけたとき あいてにも\nダメージを あたえる"),
+        .description = COMPOUND_STRING(
+            "If hit by a physical\n"
+            "move, the foe will\n"
+            "also take damage."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10325,11 +12251,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROWAP_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}レンブのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}レンブのみ"),
+        .name = ITEM_NAME("Rowap Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Rowap Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_ROWAP_BERRY,
-        .description = COMPOUND_STRING("{JPN}もたせて とくしゅわざを\nうけたとき あいてにも\nダメージを あたえる"),
+        .description = COMPOUND_STRING(
+            "If hit by a special\n"
+            "move, the foe will\n"
+            "also take damage."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10340,11 +12269,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEE_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}アッキのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}アッキのみ"),
+        .name = ITEM_NAME("Kee Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Kee Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_KEE_BERRY,
-        .description = COMPOUND_STRING("{JPN}もたせて ぶつりわざを\nうけたとき じぶんの\nぼうぎょが あがる"),
+        .description = COMPOUND_STRING(
+            "If hit by a physical\n"
+            "move, it raises the\n"
+            "holder's Defense."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10355,11 +12287,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MARANGA_BERRY] =
     {
-        .name = ITEM_NAME("{JPN}タラプのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}タラプのみ"),
+        .name = ITEM_NAME("Maranga Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Maranga Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_MARANGA_BERRY,
-        .description = COMPOUND_STRING("{JPN}もたせて とくしゅわざを\nうけたとき じぶんの\nとくぼうが あがる"),
+        .description = COMPOUND_STRING(
+            "If hit by a special\n"
+            "move, it raises the\n"
+            "holder's Sp. Def."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -10370,10 +12305,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ENIGMA_BERRY_E_READER] =
     {
-        .name = ITEM_NAME("{JPN}ナゾのみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ナゾのみ"),
+        .name = ITEM_NAME("Enigma Berry"),
+        .pluralName = ITEM_PLURAL_NAME("Enigma Berries"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
-        .description = COMPOUND_STRING("{JPN}ポロックの ざいりょう\nつちのなかに うめると\nなぞな みが そだつ"),
+        .description = COMPOUND_STRING(
+            "{POKEBLOCK} ingredient.\n"
+            "Plant in loamy soil\n"
+            "to grow a mystery."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU, // Type handled by ItemUseOutOfBattle_EnigmaBerry
         .fieldUseFunc = ItemUseOutOfBattle_EnigmaBerry,
@@ -10387,9 +12325,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_FOCUS_PUNCH] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン01"),
+        .name = ITEM_NAME("TM01"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}てきに だいダメージを\nあたえるが こうげきを\nうけると ひるんでしまう"),
+        .description = COMPOUND_STRING(
+            "Powerful, but fails\n"
+            "if the user is\n"
+            "hit by the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10398,9 +12339,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_DRAGON_CLAW] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン02"),
+        .name = ITEM_NAME("TM02"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ながく するどい ツメで\nてきを ひっかけて\nこうげきする"),
+        .description = COMPOUND_STRING(
+            "Hooks and slashes\n"
+            "the foe with long,\n"
+            "sharp claws."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10409,9 +12353,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_WATER_PULSE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン03"),
+        .name = ITEM_NAME("TM03"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ちょうおんぱ こうげきで\nてきを こんらんさせる\nことがある"),
+        .description = COMPOUND_STRING(
+            "Generates an\n"
+            "ultrasonic wave\n"
+            "that may confuse."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10420,9 +12367,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_CALM_MIND] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン04"),
+        .name = ITEM_NAME("TM04"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}せいしんを しゅうちゅう\nさせて とくこうと\nとくぼうを あげる"),
+        .description = COMPOUND_STRING(
+            "Raises Sp. Atk and\n"
+            "Sp. Def by focusing\n"
+            "the mind."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10431,9 +12381,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_ROAR] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン05"),
+        .name = ITEM_NAME("TM05"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ほえて てきを にがす\nてきが にげると\nせんとうは おわる"),
+        .description = COMPOUND_STRING(
+            "A roar that makes\n"
+            "the foe switch or\n"
+            "ends the battle."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10442,9 +12395,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_TOXIC] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン06"),
+        .name = ITEM_NAME("TM06"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}じょじょに ダメージが\nふえる もうどくを\nてきに あたえる"),
+        .description = COMPOUND_STRING(
+            "Poisons the foe\n"
+            "with a toxin that\n"
+            "gradually worsens."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10453,15 +12409,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_HAIL] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン07"),
+        .name = ITEM_NAME("TM07"),
         .price = 3000,
-    #if B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW
         .description = COMPOUND_STRING(
-            "{JPN}ゆきで 5ターンの あいだ\nこおりタイプの ポケモンの\nぼうぎょを あげる"),
-    #else
-        .description = COMPOUND_STRING(
-            "{JPN}あられを ふらして\nこおりタイプ いがいに\nダメージを あたえる"),
-    #endif
+        #if B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW
+            "Boosts the\n"
+            "Defense of Ice-\n"
+            "types for 5 turns."),
+        #else
+            "Damages all\n"
+            "types except Ice\n"
+            "for 5 turns."),
+        #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10470,9 +12429,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_BULK_UP] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン08"),
+        .name = ITEM_NAME("TM08"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}からだを きたえて\nこうげきと ぼうぎょの\nちからを あげる"),
+        .description = COMPOUND_STRING(
+            "Bulks up the body\n"
+            "to raise both\n"
+            "Attack & Defense."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10481,9 +12443,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_BULLET_SEED] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン09"),
+        .name = ITEM_NAME("TM09"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}タネを 2ー5かい\nれんぞくで はっしゃして\nてきを こうげきする"),
+        .description = COMPOUND_STRING(
+            "Shoots 2 to 5 seeds\n"
+            "in a row to strike\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10492,9 +12457,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_HIDDEN_POWER] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン10"),
+        .name = ITEM_NAME("TM10"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ポケモンによって てきに\nあたえる ダメージの\nりょうが へんかする"),
+        .description = COMPOUND_STRING(
+            "The type\n"
+            "varies among\n"
+            "different Pokémon."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10503,9 +12471,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SUNNY_DAY] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン11"),
+        .name = ITEM_NAME("TM11"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}5ターンの あいだ\nほのおタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of Fire-type moves\n"
+            "for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10514,9 +12485,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_TAUNT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン12"),
+        .name = ITEM_NAME("TM12"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}あいてを おこらせて\nこうげきわざ しか\nだせない ように する"),
+        .description = COMPOUND_STRING(
+            "The foe can only\n"
+            "use attack moves\n"
+        #if B_TAUNT_TURNS >= GEN_5
+            "for 3 turns."),
+        #elif B_TAUNT_TURNS == GEN_4
+            "for 2 to 4 turns."),
+        #else
+            "for 2 turns."),
+        #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10525,13 +12505,15 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_ICE_BEAM] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン13"),
+        .name = ITEM_NAME("TM13"),
         .price = 3000,
         .description = COMPOUND_STRING(
-        #if B_USE_FROSTBITE == TRUE
-            "{JPN}れいきを はっしゃして\nてきを こうげきする\nしもやけにする ことがある"),
+            "Fires an icy cold\n"
+            "beam that may\n"
+        #if B_USE_FROSTBITE
+            "cause frostbite."),
         #else
-            "{JPN}れいきを はっしゃして\nてきを こうげきする\nこおらせる ことがある"),
+            "freeze the foe."),
         #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -10541,13 +12523,17 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_BLIZZARD] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン14"),
+        .name = ITEM_NAME("TM14"),
         .price = 5500,
         .description = COMPOUND_STRING(
-        #if B_USE_FROSTBITE == TRUE
-            "{JPN}ゆきを つよいかぜに\nのせて こうげきする\nしもやけにする ことがある"),
+        #if B_USE_FROSTBITE
+            "A snow-and-wind\n"
+            "attack that may\n"
+            "cause frostbite."),
         #else
-            "{JPN}ゆきを つよいかぜに\nのせて こうげきする\nこおらせる ことがある"),
+            "A brutal snow-and-\n"
+            "wind attack that\n"
+            "may freeze the foe."),
         #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -10557,9 +12543,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_HYPER_BEAM] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン15"),
+        .name = ITEM_NAME("TM15"),
         .price = 7500,
-        .description = COMPOUND_STRING("{JPN}ダメージは おおきいが\nつかうと つぎのターン\nうごけなく なってしまう"),
+        .description = COMPOUND_STRING(
+        #if B_SKIP_RECHARGE != GEN_1
+            "Powerful, but needs\n"
+            "recharging the\n"
+            "next turn."),
+        #else
+            "Needs recharging if\n"
+            "it doesn't knock\n"
+            "out the target."),
+        #endif
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10568,9 +12563,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_LIGHT_SCREEN] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン16"),
+        .name = ITEM_NAME("TM16"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ひかりのかべを つくり\nとくこうの ダメージを\nよわめる"),
+        .description = COMPOUND_STRING(
+            "Creates a wall of\n"
+            "light that reduces\n"
+            "special damage."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10579,9 +12577,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_PROTECT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン17"),
+        .name = ITEM_NAME("TM17"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}そのターンの こうげきを\nうけないが れんぞくして\nだすと しっぱいしやすい"),
+        .description = COMPOUND_STRING(
+            "Negates all damage,\n"
+            "but may fail if used\n"
+            "in succession."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10590,9 +12591,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_RAIN_DANCE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン18"),
+        .name = ITEM_NAME("TM18"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}5ターンの あいだ\nみずタイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "Boosts the power\n"
+            "of Water-type\n"
+            "moves for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10601,9 +12605,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_GIGA_DRAIN] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン19"),
+        .name = ITEM_NAME("TM19"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}あたえた ダメージの\nはんぶんの たいりょくを\nかいふく できる"),
+        .description = COMPOUND_STRING(
+            "Recovers half the\n"
+            "HP of the damage \n"
+            "this move inflicts."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10612,9 +12619,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SAFEGUARD] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン20"),
+        .name = ITEM_NAME("TM20"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ふしぎな ちからに\nまもられて とくしゅ\nじょうたいに ならない"),
+        .description = COMPOUND_STRING(
+            "Guards allies from\n"
+            "status problems\n"
+            "for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10623,9 +12633,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_FRUSTRATION] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン21"),
+        .name = ITEM_NAME("TM21"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ポケモンが なついて\nいないほど あたえる\nダメージが あがる"),
+        .description = COMPOUND_STRING(
+            "The less the user\n"
+            "likes you, the more\n"
+            "powerful this move."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10634,9 +12647,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SOLAR_BEAM] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン22"),
+        .name = ITEM_NAME("TM22"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}1ターンめで ひかりを\nきゅうしゅうして つぎの\nターンに こうげきする"),
+        .description = COMPOUND_STRING(
+            "Absorbs sunlight in\n"
+            "the 1st turn, then\n"
+            "attacks next turn."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10645,9 +12661,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_IRON_TAIL] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン23"),
+        .name = ITEM_NAME("TM23"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}かたいシッポで こうげき\nてきの ぼうぎょを\nさげる ことがある"),
+        .description = COMPOUND_STRING(
+            "Slams the foe with\n"
+            "a hard tail. It may\n"
+            "lower Defense."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10656,9 +12675,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_THUNDERBOLT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン24"),
+        .name = ITEM_NAME("TM24"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}でんげきを あびせる\nあたった てきを\nまひさせる ことがある"),
+        .description = COMPOUND_STRING(
+            "A powerful electric\n"
+            "attack that may\n"
+            "cause paralysis."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10667,9 +12689,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_THUNDER] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン25"),
+        .name = ITEM_NAME("TM25"),
         .price = 5500,
-        .description = COMPOUND_STRING("{JPN}かみなりを おとす\nあたった てきを\nまひさせる ことがある"),
+        .description = COMPOUND_STRING(
+            "Strikes the foe\n"
+            "with a thunderbolt.\n"
+            "It may paralyze."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10678,9 +12703,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_EARTHQUAKE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン26"),
+        .name = ITEM_NAME("TM26"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}じめんを つよく ゆらす\nとんでいる てきいがいに\nだいダメージを あたえる"),
+        .description = COMPOUND_STRING(
+            "Causes a quake\n"
+            "that hits all\n"
+            "other Pokémon."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10689,9 +12717,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_RETURN] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン27"),
+        .name = ITEM_NAME("TM27"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ポケモンが なついて\nいるほど あたえる\nダメージが あがる"),
+        .description = COMPOUND_STRING(
+            "The more the user\n"
+            "likes you, the more\n"
+            "powerful this move."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10700,9 +12731,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_DIG] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン28"),
+        .name = ITEM_NAME("TM28"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}1ターンめで じめんに\nもぐり つぎのターンに\nてきを こうげきする"),
+        .description = COMPOUND_STRING(
+            "Digs underground\n"
+            "the 1st turn, then\n"
+            "strikes next turn."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10711,9 +12745,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_PSYCHIC] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン29"),
+        .name = ITEM_NAME("TM29"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}つよい ねんりきを だす\nてきの とくぼうを\nさげる ことがある"),
+        .description = COMPOUND_STRING(
+            "A powerful psychic\n"
+            "attack that may\n"
+            "lower Sp. Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10722,9 +12759,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SHADOW_BALL] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン30"),
+        .name = ITEM_NAME("TM30"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}くろいかたまりを なげる\nてきの とくぼうを\nさげる ことがある"),
+        .description = COMPOUND_STRING(
+            "Hurls a dark lump\n"
+            "at the foe. It may\n"
+            "lower Sp. Def."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10733,9 +12773,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_BRICK_BREAK] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン31"),
+        .name = ITEM_NAME("TM31"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ひかりのかべ などを\nこわして てきに\nダメージを あたえられる"),
+        .description = COMPOUND_STRING(
+            "Destroys barriers\n"
+            "like Light Screen\n"
+            "and causes damage."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10744,9 +12787,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_DOUBLE_TEAM] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン32"),
+        .name = ITEM_NAME("TM32"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}ぶんしんを つくって\nてきを まどわせて\nかいひりつを あげる"),
+        .description = COMPOUND_STRING(
+            "Creates illusory\n"
+            "copies to raise\n"
+            "evasiveness."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10755,9 +12801,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_REFLECT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン33"),
+        .name = ITEM_NAME("TM33"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ひかりのかべを つくり\nぶつり こうげきの\nダメージを よわめる"),
+        .description = COMPOUND_STRING(
+            "Creates a wall of\n"
+            "light that weakens\n"
+            "physical attacks."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10766,9 +12815,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SHOCK_WAVE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン34"),
+        .name = ITEM_NAME("TM34"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ぜったいに よけられない\nすばやさで てきに\nでんげきを あびせる."),
+        .description = COMPOUND_STRING(
+            "Zaps the foe with a\n"
+            "jolt of electricity\n"
+            "that never misses."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10777,9 +12829,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_FLAMETHROWER] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン35"),
+        .name = ITEM_NAME("TM35"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}ほのおを まきちらす\nあたった てきを\nやけどさせる ことがある"),
+        .description = COMPOUND_STRING(
+            "Looses a stream of\n"
+            "fire that may burn\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10788,9 +12843,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SLUDGE_BOMB] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン36"),
+        .name = ITEM_NAME("TM36"),
         .price = 1000,
-        .description = COMPOUND_STRING("{JPN}ヘドロを なげつける\nあたった てきに どくを\nあたえることが ある"),
+        .description = COMPOUND_STRING(
+            "Hurls sludge at the\n"
+            "foe. It may poison\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10799,9 +12857,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SANDSTORM] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン37"),
+        .name = ITEM_NAME("TM37"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}すなあらしを おこして\nまいターン てきに\nダメージを あたえる"),
+        .description = COMPOUND_STRING(
+            "Causes a sandstorm\n"
+            "that hits\n"
+            "over 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10810,9 +12871,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_FIRE_BLAST] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン38"),
+        .name = ITEM_NAME("TM38"),
         .price = 5500,
-        .description = COMPOUND_STRING("{JPN}だいの もじで すべてを\nやきつくす こうげき\nやけどさせる ことがある"),
+        .description = COMPOUND_STRING(
+            "A powerful fire\n"
+            "attack that may\n"
+            "burn the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10821,9 +12885,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_ROCK_TOMB] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン39"),
+        .name = ITEM_NAME("TM39"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}いわで てきの うごきを\nふうじて こうげき\nすばやさを さげられる"),
+        .description = COMPOUND_STRING(
+            "Stops the foe from\n"
+            "moving with rocks.\n"
+            "May lower Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10832,9 +12899,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_AERIAL_ACE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン40"),
+        .name = ITEM_NAME("TM40"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}すばやい うごきで\nぜったいに よけられない\nこうげきを する"),
+        .description = COMPOUND_STRING(
+            "An extremely fast\n"
+            "attack that can't\n"
+            "be avoided."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10843,9 +12913,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_TORMENT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン41"),
+        .name = ITEM_NAME("TM41"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}てきが おなじわざを\nれんぞくで だせない\nようにする"),
+        .description = COMPOUND_STRING(
+            "Prevents the foe\n"
+            "from using the same\n"
+            "move in a row."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10854,9 +12927,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_FACADE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン42"),
+        .name = ITEM_NAME("TM42"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}どく まひ やけどのとき\nこうげきの ちからを\nあげる ことが できる"),
+        .description = COMPOUND_STRING(
+            "Boosts power when\n"
+            "poisoned, burned,\n"
+            "or paralyzed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10865,9 +12941,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SECRET_POWER] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン43"),
+        .name = ITEM_NAME("TM43"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}たたかう ばしょに より\nてきに あたえる\nついか こうかが かわる"),
+        .description = COMPOUND_STRING(
+            "Adds an effect to\n"
+            "attack depending\n"
+            "on the location."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10876,9 +12955,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_REST] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン44"),
+        .name = ITEM_NAME("TM44"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}2ターンねむり からだの\nいじょうと たいりょくを\nぜんかいふく する"),
+        .description = COMPOUND_STRING(
+            "The user sleeps for\n"
+            "2 turns to restore\n"
+            "health and status."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10887,9 +12969,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_ATTRACT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン45"),
+        .name = ITEM_NAME("TM45"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}オスなら メスに\nメスなら オスに\nわざが だしにくくなる"),
+        .description = COMPOUND_STRING(
+            "Makes it tough for\n"
+            "the opposite\n"
+            "gender to attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10898,9 +12983,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_THIEF] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン46"),
+        .name = ITEM_NAME("TM46"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}こうげきちゅうに すきを\nみて てきが もっている\nどうぐを ぬすむ"),
+        .description = COMPOUND_STRING(
+            "While attacking,\n"
+            "it steals the\n"
+            "foe's held item."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10909,9 +12997,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_STEEL_WING] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン47"),
+        .name = ITEM_NAME("TM47"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}かたいつばさを おおきく\nひろげて そのまま\nてきに たいあたりする"),
+        .description = COMPOUND_STRING(
+            "Slams into the\n"
+            "foe. This may\n"
+            "raise Defense."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10920,9 +13011,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SKILL_SWAP] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン48"),
+        .name = ITEM_NAME("TM48"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}わざを だした ターンに\nじぶんと てきの\nとくせいを いれかえる"),
+        .description = COMPOUND_STRING(
+            "Switches Abilities\n"
+            "with the foe on the\n"
+            "turn this is used."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10931,9 +13025,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_SNATCH] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン49"),
+        .name = ITEM_NAME("TM49"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}てきが つかおうとした\nわざを うばって\nじぶんに つかう"),
+        .description = COMPOUND_STRING(
+            "Steals the next\n"
+            "healing or stat-\n"
+            "changing move."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10942,9 +13039,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_OVERHEAT] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン50"),
+        .name = ITEM_NAME("TM50"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}フルパワーで こうげき\nできるが とくこうが\nガクッと さがってしまう"),
+        .description = COMPOUND_STRING(
+            "Enables full-power\n"
+            "attack, but harshly\n"
+            "lowers Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10953,7 +13053,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM51] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン51"),
+        .name = ITEM_NAME("TM51"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -10964,7 +13064,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM52] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン52"),
+        .name = ITEM_NAME("TM52"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -10975,7 +13075,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM53] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン53"),
+        .name = ITEM_NAME("TM53"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -10986,7 +13086,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM54] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン54"),
+        .name = ITEM_NAME("TM54"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -10997,7 +13097,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM55] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン55"),
+        .name = ITEM_NAME("TM55"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11008,7 +13108,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM56] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン56"),
+        .name = ITEM_NAME("TM56"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11019,7 +13119,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM57] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン57"),
+        .name = ITEM_NAME("TM57"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11030,7 +13130,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM58] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン58"),
+        .name = ITEM_NAME("TM58"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11041,7 +13141,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM59] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン59"),
+        .name = ITEM_NAME("TM59"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11052,7 +13152,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM60] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン60"),
+        .name = ITEM_NAME("TM60"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11063,7 +13163,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM61] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン61"),
+        .name = ITEM_NAME("TM61"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11074,7 +13174,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM62] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン62"),
+        .name = ITEM_NAME("TM62"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11085,7 +13185,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM63] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン63"),
+        .name = ITEM_NAME("TM63"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11096,7 +13196,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM64] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン64"),
+        .name = ITEM_NAME("TM64"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11107,7 +13207,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM65] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン65"),
+        .name = ITEM_NAME("TM65"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11118,7 +13218,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM66] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン66"),
+        .name = ITEM_NAME("TM66"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11129,7 +13229,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM67] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン67"),
+        .name = ITEM_NAME("TM67"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11140,7 +13240,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM68] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン68"),
+        .name = ITEM_NAME("TM68"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11151,7 +13251,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM69] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン69"),
+        .name = ITEM_NAME("TM69"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11162,7 +13262,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM70] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン70"),
+        .name = ITEM_NAME("TM70"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11173,7 +13273,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM71] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン71"),
+        .name = ITEM_NAME("TM71"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11184,7 +13284,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM72] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン72"),
+        .name = ITEM_NAME("TM72"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11195,7 +13295,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM73] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン73"),
+        .name = ITEM_NAME("TM73"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11206,7 +13306,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM74] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン74"),
+        .name = ITEM_NAME("TM74"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11217,7 +13317,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM75] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン75"),
+        .name = ITEM_NAME("TM75"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11228,7 +13328,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM76] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン76"),
+        .name = ITEM_NAME("TM76"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11239,7 +13339,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM77] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン77"),
+        .name = ITEM_NAME("TM77"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11250,7 +13350,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM78] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン78"),
+        .name = ITEM_NAME("TM78"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11261,7 +13361,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM79] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン79"),
+        .name = ITEM_NAME("TM79"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11272,7 +13372,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM80] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン80"),
+        .name = ITEM_NAME("TM80"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11283,7 +13383,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM81] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン81"),
+        .name = ITEM_NAME("TM81"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11294,7 +13394,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM82] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン82"),
+        .name = ITEM_NAME("TM82"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11305,7 +13405,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM83] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン83"),
+        .name = ITEM_NAME("TM83"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11316,7 +13416,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM84] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン84"),
+        .name = ITEM_NAME("TM84"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11327,7 +13427,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM85] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン85"),
+        .name = ITEM_NAME("TM85"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11338,7 +13438,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM86] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン86"),
+        .name = ITEM_NAME("TM86"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11349,7 +13449,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM87] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン87"),
+        .name = ITEM_NAME("TM87"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11360,7 +13460,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM88] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン88"),
+        .name = ITEM_NAME("TM88"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11371,7 +13471,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM89] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン89"),
+        .name = ITEM_NAME("TM89"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11382,7 +13482,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM90] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン90"),
+        .name = ITEM_NAME("TM90"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11393,7 +13493,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM91] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン91"),
+        .name = ITEM_NAME("TM91"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11404,7 +13504,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM92] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン92"),
+        .name = ITEM_NAME("TM92"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11415,7 +13515,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM93] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン93"),
+        .name = ITEM_NAME("TM93"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11426,7 +13526,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM94] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン94"),
+        .name = ITEM_NAME("TM94"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11437,7 +13537,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM95] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン95"),
+        .name = ITEM_NAME("TM95"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11448,7 +13548,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM96] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン96"),
+        .name = ITEM_NAME("TM96"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11459,7 +13559,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM97] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン97"),
+        .name = ITEM_NAME("TM97"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11470,7 +13570,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM98] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン98"),
+        .name = ITEM_NAME("TM98"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11481,7 +13581,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM99] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン99"),
+        .name = ITEM_NAME("TM99"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11492,7 +13592,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM100] =
     {
-        .name = ITEM_NAME("{JPN}わざマシン100"),
+        .name = ITEM_NAME("TM100"),
         .price = 3000,
         .description = COMPOUND_STRING("?????"), // Todo
         .importance = I_REUSABLE_TMS,
@@ -11503,9 +13603,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_CUT] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン01"),
+        .name = ITEM_NAME("HM01"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}カマや ツメなどの\nするどいもので てきを\nきりつけて こうげきする"),
+        .description = COMPOUND_STRING(
+            "Attacks the foe\n"
+            "with sharp blades\n"
+            "or claws."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11514,9 +13617,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_FLY] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン02"),
+        .name = ITEM_NAME("HM02"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}1ターンめで そらへとび\nつぎの ターンに てきを\nこうげきする"),
+        .description = COMPOUND_STRING(
+            "Flies up on the\n"
+            "first turn, then\n"
+            "attacks next turn."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11525,9 +13631,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_SURF] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン03"),
+        .name = ITEM_NAME("HM03"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}みずに なみを おこし\nそれを ものすごい\nちからで たたきつける"),
+        .description = COMPOUND_STRING(
+            "Creates a huge\n"
+            "wave, then crashes\n"
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "it on all others."),
+        #else
+            "it down on foes."),
+        #endif
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11536,9 +13649,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_STRENGTH] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン04"),
+        .name = ITEM_NAME("HM04"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ぜんしんに ものすごい\nちからを ためこみ\nてきを こうげきする"),
+        .description = COMPOUND_STRING(
+            "Builds enormous\n"
+            "power, then slams\n"
+            "the foe."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11547,9 +13663,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_FLASH] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン05"),
+        .name = ITEM_NAME("HM05"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}つよい ひかりで めを\nくらませて てきの\nめいちゅうりつを さげる"),
+        .description = COMPOUND_STRING(
+            "Looses a powerful\n"
+            "blast of light that\n"
+            "lowers accuracy."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11558,9 +13677,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_ROCK_SMASH] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン06"),
+        .name = ITEM_NAME("HM06"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}いわをもくだく ちからで\nてきの ぼうぎょを\nさげる ことがある"),
+        .description = COMPOUND_STRING(
+            "A rock-crushingly\n"
+            "tough attack that\n"
+            "may lower Defense."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11569,9 +13691,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_WATERFALL] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン07"),
+        .name = ITEM_NAME("HM07"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}たきを さかのぼるような\nいきおいで てきに\nとっしんする"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "Attacks with power\n"
+            "to climb waterfalls.\n"
+            "May flinch."),
+        #else
+            "Attacks the foe\n"
+            "with enough power\n"
+            "to climb waterfalls."),
+        #endif
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11580,9 +13711,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HM_DIVE] =
     {
-        .name = ITEM_NAME("{JPN}ひでんマシン08"),
+        .name = ITEM_NAME("HM08"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}1ターンめで みずに\nもぐり つぎのターンで\nてきを こうげきする"),
+        .description = COMPOUND_STRING(
+            "Dives underwater\n"
+            "the 1st turn, then\n"
+            "attacks next turn."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11593,10 +13727,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OVAL_CHARM] =
     {
-        .name = ITEM_NAME("{JPN}まるいおまもり"),
+        .name = ITEM_NAME("Oval Charm"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}もっていると ポケモン\nそだてやさんで タマゴが\nはっけん されやすくなる"),
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "chance of finding\n"
+            "Pokémon Eggs."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11606,10 +13743,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHINY_CHARM] =
     {
-        .name = ITEM_NAME("{JPN}ひかるおまもり"),
+        .name = ITEM_NAME("Shiny Charm"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}もっていると いろちがいの\nポケモンと であいやすくなる"),
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "chance of finding\n"
+            "Shiny Pokémon."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11619,10 +13759,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CATCHING_CHARM] =
     {
-        .name = ITEM_NAME("{JPN}ゆれないおまもり"),
+        .name = ITEM_NAME("Catching Charm"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}もっていると\nほかくクリティカルが\nはっせい しやすくなる"),
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "chance of getting\n"
+            "a critical catch."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11632,10 +13775,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EXP_CHARM] =
     {
-        .name = ITEM_NAME("{JPN}けいけんおまもり"),
+        .name = ITEM_NAME("Exp. Charm"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}もっていると ポケモンが\nえられる けいけんちが\nふえる おまもり"),
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "Exp. Points that\n"
+            "Pokémon can get."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11647,10 +13793,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROTOM_CATALOG] =
     {
-        .name = ITEM_NAME("{JPN}ロトムのカタログ"),
+        .name = ITEM_NAME("Rotom Catalog"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}カタログを つかうことで\nロトムを かでんに\nだしいれ できる"),
+        .description = COMPOUND_STRING(
+            "Use to have Rotom\n"
+            "hop in and out of\n"
+            "the devices listed."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RotomCatalog,
@@ -11660,10 +13809,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRACIDEA] =
     {
-        .name = ITEM_NAME("{JPN}グラシデアのはな"),
+        .name = ITEM_NAME("Gracidea"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}かんしゃの きもちを\nつたえるため ブーケにして\nおくることが ある"),
+        .description = COMPOUND_STRING(
+            "A flower given as\n"
+            "an expression of\n"
+            "gratitude."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
@@ -11673,11 +13825,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REVEAL_GLASS] =
     {
-        .name = ITEM_NAME("{JPN}うつしかがみ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}うつしかがみ"),
+        .name = ITEM_NAME("Reveal Glass"),
+        .pluralName = ITEM_PLURAL_NAME("Reveal Glasses"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ポケモンを ほんらいの\nすがたに かえてしまう\nふしぎな かがみ"),
+        .description = COMPOUND_STRING(
+            "Returns a\n"
+            "Pokémon back to\n"
+            "its original shape."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
@@ -11687,11 +13842,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DNA_SPLICERS] =
     {
-        .name = ITEM_NAME("{JPN}いでんしのくさび"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}いでんしのくさび"),
+        .name = ITEM_NAME("DNA Splicers"),
+        .pluralName = ITEM_PLURAL_NAME("DNA Splicers"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}キュレムと あるポケモンを\nがったいさせる\nいっついの くさび"),
+        .description = COMPOUND_STRING(
+            "A splicer that\n"
+            "fuses Kyurem and\n"
+            "a certain Pokémon."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
@@ -11701,10 +13859,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ZYGARDE_CUBE] =
     {
-        .name = ITEM_NAME("{JPN}ジガルデキューブ"),
+        .name = ITEM_NAME("Zygarde Cube"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ポケモン ジガルデの\nコアと セルを\nあつめるための どうぐ"),
+        .description = COMPOUND_STRING(
+            "An item to change\n"
+            "Zygarde's forms."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ZygardeCube,
@@ -11714,10 +13874,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PRISON_BOTTLE] =
     {
-        .name = ITEM_NAME("{JPN}いましめのツボ"),
+        .name = ITEM_NAME("Prison Bottle"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}おおむかしに とある\nポケモンの ふうじこめたと\nされる ツボ"),
+        .description = COMPOUND_STRING(
+            "A bottle used to\n"
+            "seal a certain\n"
+            "Pokémon long ago."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
@@ -11727,10 +13890,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_N_SOLARIZER] =
     {
-        .name = ITEM_NAME("{JPN}ネクロプラスソル"),
+        .name = ITEM_NAME("N-Solarizer"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ひかりを ひつようと する\nネクロズマと ソルガレオを\nがったい させる マシン"),
+        .description = COMPOUND_STRING(
+            "Fuses or separates\n"
+            "Necrozma and\n"
+            "Solgaleo."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
@@ -11740,10 +13906,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_N_LUNARIZER] =
     {
-        .name = ITEM_NAME("{JPN}ネクロプラスルナ"),
+        .name = ITEM_NAME("N-Lunarizer"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ひかりを ひつようと する\nネクロズマと ルナアーラを\nがったい させる マシン"),
+        .description = COMPOUND_STRING(
+            "Fuses or separates\n"
+            "Necrozma and\n"
+            "Lunala."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
@@ -11753,11 +13922,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REINS_OF_UNITY] =
     {
-        .name = ITEM_NAME("{JPN}キズナのタヅナ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}キズナのタヅナ"),
+        .name = ITEM_NAME("Reins of Unity"),
+        .pluralName = ITEM_PLURAL_NAME("Reins of Unity"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ちからを ぞうふくし\nバドレックスと あいばを\nがったい させる"),
+        .description = COMPOUND_STRING(
+            "Unites or\n"
+            "separates Calyrex\n"
+            "and its steed."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
@@ -11769,10 +13941,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MEGA_RING] =
     {
-        .name = ITEM_NAME("{JPN}メガリング"),
+        .name = ITEM_NAME("Mega Ring"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}メガストーンを もったまま\nたたかう ポケモンを\nメガシンカ させる"),
+        .description = COMPOUND_STRING(
+            "Enables Pokémon\n"
+            "with Mega Stones\n"
+            "to Mega Evolve."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11782,10 +13957,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_Z_POWER_RING] =
     {
-        .name = ITEM_NAME("{JPN}Zパワーリング"),
+        .name = ITEM_NAME("Z-Power Ring"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ポケモンが Zパワーを\nはなてるようにする\nふしぎなうでわ"),
+        .description = COMPOUND_STRING(
+            "A ring that\n"
+            "enables Pokémon\n"
+            "to use Z-Power."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11795,10 +13973,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DYNAMAX_BAND] =
     {
-        .name = ITEM_NAME("{JPN}ダイマックスB"),
+        .name = ITEM_NAME("Dynamax Band"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}ねがいぼしが\nひかりだして ポケモンを\nダイマックス させる"),
+        .description = COMPOUND_STRING(
+            "Allows Pokémon to\n"
+            "Dynamax when at\n"
+            "a Power Spot."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -11810,9 +13991,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BICYCLE] =
     {
-        .name = ITEM_NAME("{JPN}じてんしゃ"),
+        .name = ITEM_NAME("Bike"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}おりたたみの じてんしゃ\nランニングシューズより\nはやく はしる"),
+        .description = COMPOUND_STRING(
+            "A folding bicycle\n"
+            "that is faster than\n"
+            "the Running Shoes."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11824,9 +14008,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MACH_BIKE] =
     {
-        .name = ITEM_NAME("{JPN}マッハじてんしゃ"),
+        .name = ITEM_NAME("Mach Bike"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}2ばい いじょうの\nはやさで いどう できる\nおりたたみの じてんしゃ"),
+        .description = COMPOUND_STRING(
+            "A folding bicycle\n"
+            "that doubles your\n"
+            "speed or better."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11838,9 +14025,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ACRO_BIKE] =
     {
-        .name = ITEM_NAME("{JPN}ダートじてんしゃ"),
+        .name = ITEM_NAME("Acro Bike"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ジャンプや ウイリーの\nアクションが できる\nおりたたみの じてんしゃ"),
+        .description = COMPOUND_STRING(
+            "A folding bicycle\n"
+            "capable of jumps\n"
+            "and wheelies."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11852,9 +14042,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OLD_ROD] =
     {
-        .name = ITEM_NAME("{JPN}ボロのつりざお"),
+        .name = ITEM_NAME("Old Rod"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンを つるどうぐ\nみずべで つかうと\nポケモンが つれる"),
+        .description = COMPOUND_STRING(
+            "Use by any body of\n"
+            "water to fish for\n"
+            "wild Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11866,9 +14059,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOOD_ROD] =
     {
-        .name = ITEM_NAME("{JPN}いいつりざお"),
+        .name = ITEM_NAME("Good Rod"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンを つるどうぐ\nなかなかの つりざおと\nいわれている"),
+        .description = COMPOUND_STRING(
+            "A decent fishing\n"
+            "rod for catching\n"
+            "wild Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11880,9 +14076,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPER_ROD] =
     {
-        .name = ITEM_NAME("{JPN}すごいつりざお"),
+        .name = ITEM_NAME("Super Rod"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンを つるどうぐ\nさいこうの つりざおと\nいわれている"),
+        .description = COMPOUND_STRING(
+            "The best fishing\n"
+            "rod for catching\n"
+            "wild Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11894,9 +14093,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DOWSING_MACHINE] =
     {
-        .name = ITEM_NAME("{JPN}ダウジングマシン"),
+        .name = ITEM_NAME("Dowsing Machine"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}みえない どうぐに\nはんのうして\nおとで おしえて くれる"),
+        .description = COMPOUND_STRING(
+            "A device that\n"
+            "signals an invisible\n"
+            "item by sound."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11907,9 +14109,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TOWN_MAP] =
     {
-        .name = ITEM_NAME("{JPN}タウンマップ"),
+        .name = ITEM_NAME("Town Map"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}いつでも みることが\nできる べんりな ちず\nじぶんの いちも わかる"),
+        .description = COMPOUND_STRING(
+            "Can be viewed\n"
+            "anytime. Shows your\n"
+            "present location."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -11920,9 +14125,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_VS_SEEKER] =
     {
-        .name = ITEM_NAME("{JPN}バトルサーチャー"),
+        .name = ITEM_NAME("Vs. Seeker"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}たたかえる トレーナーを\nおしえてくれる きかい\nじゅうでんして つかう"),
+        .description = COMPOUND_STRING(
+            "A rechargeable unit\n"
+            "that flags battle-\n"
+            "ready Trainers."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11937,9 +14145,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TM_CASE] =
     {
-        .name = ITEM_NAME("{JPN}わざマシンケース"),
+        .name = ITEM_NAME("TM Case"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}わざマシンを ほかんする\nべんりな いれもの"),
+        .description = COMPOUND_STRING(
+            "A convenient case\n"
+            "that holds TMs and\n"
+            "HMs."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -11950,10 +14161,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BERRY_POUCH] =
     {
-        .name = ITEM_NAME("{JPN}きのみぶくろ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}きのみぶくろ"),
+        .name = ITEM_NAME("Berry Pouch"),
+        .pluralName = ITEM_PLURAL_NAME("Berry Pouches"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}きのみを ほぞんする\nべんりな いれもの"),
+        .description = COMPOUND_STRING(
+            "A convenient\n"
+            "container that\n"
+            "holds Berries."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -11964,9 +14178,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKEMON_BOX_LINK] =
     {
-        .name = ITEM_NAME("{JPN}ポケモンボックス"),
+        .name = ITEM_NAME("{PKMN} Box Link"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}いつでも ボックスに\nアクセスして ポケモンを\nあずけたり ひきだせる"),
+        .description = COMPOUND_STRING(
+            "Allows access to\n"
+            "the Pokémon\n"
+            "Storage System."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -11977,9 +14194,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COIN_CASE] =
     {
-        .name = ITEM_NAME("{JPN}コインケース"),
+        .name = ITEM_NAME("Coin Case"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}てにいれた コインを\n9999まい まで\nもつことが できる"),
+        .description = COMPOUND_STRING(
+            "A case that holds\n"
+            "up to 9,999 Coins."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -11990,9 +14209,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POWDER_JAR] =
     {
-        .name = ITEM_NAME("{JPN}こないれ"),
+        .name = ITEM_NAME("Powder Jar"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}きのみクラッシュで\nできた きのみの こなを\nほぞんする いれもの"),
+        .description = COMPOUND_STRING(
+            "Stores Berry\n"
+            "Powder made using\n"
+            "a Berry Crusher."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12003,9 +14225,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WAILMER_PAIL] =
     {
-        .name = ITEM_NAME("{JPN}ホエルコじょうろ"),
+        .name = ITEM_NAME("Wailmer Pail"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}みずを かける どうぐ\nつちに うめた きのみを\nすくすく そだてる"),
+        .description = COMPOUND_STRING(
+            "A tool used for\n"
+            "watering Berries\n"
+            "and plants."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -12016,9 +14241,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_RADAR] =
     {
-        .name = ITEM_NAME("{JPN}ポケトレ"),
+        .name = ITEM_NAME("Poké Radar"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}くさむらに かくれている\nポケモンを さがしだせる\nどうぐ"),
+        .description = COMPOUND_STRING(
+            "A tool that can\n"
+            "search out Pokémon\n"
+            "hiding in grass."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12029,9 +14257,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKEBLOCK_CASE] =
     {
-        .name = ITEM_NAME("{JPN}ポロックケース"),
+        .name = ITEM_NAME("{POKEBLOCK} Case"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}きのみブレンダーで\nつくった ポロックを\nほぞんする いれもの"),
+        .description = COMPOUND_STRING(
+            "A case for holding\n"
+            "{POKEBLOCK}s made with\n"
+            "a Berry Blender."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PBLOCK_CASE,
@@ -12042,9 +14273,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOOT_SACK] =
     {
-        .name = ITEM_NAME("{JPN}はいぶくろ"),
+        .name = ITEM_NAME("Soot Sack"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}つもった かざんばいを\nあつめるための ふくろ"),
+        .description = COMPOUND_STRING(
+            "A sack used to\n"
+            "gather and hold\n"
+            "volcanic ash."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12055,9 +14289,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_FLUTE] =
     {
-        .name = ITEM_NAME("{JPN}ポケモンのふえ"),
+        .name = ITEM_NAME("Poké Flute"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}きれいな ねいろの ふえ\nねている ポケモンが\nきくと とびおきる"),
+        .description = COMPOUND_STRING(
+            "A sweet-sounding\n"
+            "flute that awakens\n"
+            "Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12069,9 +14306,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAME_CHECKER] =
     {
-        .name = ITEM_NAME("{JPN}ボイスチェッカー"),
+        .name = ITEM_NAME("Fame Checker"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ゆうめいな じんぶつの\nじょうほうを いつでも\nみなおすことが できる"),
+        .description = COMPOUND_STRING(
+            "Stores information\n"
+            "on famous people\n"
+            "for instant recall."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12082,9 +14322,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TEACHY_TV] =
     {
-        .name = ITEM_NAME("{JPN}おしえテレビ"),
+        .name = ITEM_NAME("Teachy TV"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}トレーナーの やくにたつ\nばんぐみを みることが\nできる テレビ"),
+        .description = COMPOUND_STRING(
+            "A TV set tuned to\n"
+            "an advice program\n"
+            "for Trainers."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -12097,9 +14340,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SS_TICKET] =
     {
-        .name = ITEM_NAME("{JPN}ふねのチケット"),
+        .name = ITEM_NAME("S.S. Ticket"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}れんらくせんに\nのるとき ひつよう"),
+        .description = COMPOUND_STRING(
+            "The ticket required\n"
+            "for sailing on a\n"
+            "ferry."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12110,9 +14356,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_EON_TICKET] =
     {
-        .name = ITEM_NAME("{JPN}むげんのチケット"),
+        .name = ITEM_NAME("Eon Ticket"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}みなみのことうへ いく\nふねの チケット"),
+        .description = COMPOUND_STRING(
+            "The ticket for a\n"
+            "ferry to a distant\n"
+            "southern island."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12124,9 +14373,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MYSTIC_TICKET] =
     {
-        .name = ITEM_NAME("{JPN}しんぴのチケット"),
+        .name = ITEM_NAME("Mystic Ticket"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}へそのいわへ\nいくために ひつような\nふねの チケット"),
+        .description = COMPOUND_STRING(
+            "A ticket required\n"
+            "to board the ship\n"
+            "to Navel Rock."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12137,9 +14389,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AURORA_TICKET] =
     {
-        .name = ITEM_NAME("{JPN}オーロラチケット"),
+        .name = ITEM_NAME("Aurora Ticket"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}たんじょうのしまへ\nいくために ひつような\nふねの チケット"),
+        .description = COMPOUND_STRING(
+            "A ticket required\n"
+            "to board the ship\n"
+            "to Birth Island."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12150,9 +14405,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_OLD_SEA_MAP] =
     {
-        .name = ITEM_NAME("{JPN}ふるびたかいず"),
+        .name = ITEM_NAME("Old Sea Map"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ある しまへの かいろを\nしるして ある\nふるぼけた うみの ちず"),
+        .description = COMPOUND_STRING(
+            "A faded sea chart\n"
+            "that shows the way\n"
+            "to a certain island."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12163,9 +14421,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LETTER] =
     {
-        .name = ITEM_NAME("{JPN}ダイゴへのてがみ"),
+        .name = ITEM_NAME("Letter"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}デボンしゃちょう から\nあずかった てがみ"),
+        .description = COMPOUND_STRING(
+            "A letter to Steven\n"
+            "from the President\n"
+            "of the Devon Corp."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12176,10 +14437,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEVON_PARTS] =
     {
-        .name = ITEM_NAME("{JPN}デボンのにもつ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}デボンのにもつ"),
+        .name = ITEM_NAME("Devon Parts"),
+        .pluralName = ITEM_PLURAL_NAME("Devon Parts"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}デボンで つくられた\nなにかの パーツが\nはいっている にもつ"),
+        .description = COMPOUND_STRING(
+            "A package that\n"
+            "contains Devon's\n"
+            "machine parts."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12190,10 +14454,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GO_GOGGLES] =
     {
-        .name = ITEM_NAME("{JPN}ゴーゴーゴーグル"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ゴーゴーゴーグル"),
+        .name = ITEM_NAME("Go-Goggles"),
+        .pluralName = ITEM_PLURAL_NAME("Go-Goggles"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}さばくの すなあらしから\nめを まもってくれる\nすてきな ゴーグル"),
+        .description = COMPOUND_STRING(
+            "Nifty goggles that\n"
+            "protect eyes from\n"
+            "desert sandstorms."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12204,9 +14471,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DEVON_SCOPE] =
     {
-        .name = ITEM_NAME("{JPN}デボンスコープ"),
+        .name = ITEM_NAME("Devon Scope"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}みえない ポケモンに\nはんのうして おとをだす\nデボンの とくせいひん"),
+        .description = COMPOUND_STRING(
+            "A device by Devon\n"
+            "that signals any\n"
+            "unseeable Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12217,9 +14487,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BASEMENT_KEY] =
     {
-        .name = ITEM_NAME("{JPN}ちかのカギ"),
+        .name = ITEM_NAME("Basement Key"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}キンセツの ちかにある\nニューキンセツに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "The key for New\n"
+            "Mauville beneath\n"
+            "Mauville City."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12230,9 +14503,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCANNER] =
     {
-        .name = ITEM_NAME("{JPN}たんちき"),
+        .name = ITEM_NAME("Scanner"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの なかで\nみつけた どうぐ"),
+        .description = COMPOUND_STRING(
+            "A device found\n"
+            "inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12243,9 +14519,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STORAGE_KEY] =
     {
-        .name = ITEM_NAME("{JPN}そうこのカギ"),
+        .name = ITEM_NAME("Storage Key"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの そうこに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "The key to the\n"
+            "storage inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12256,10 +14535,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEY_TO_ROOM_1] =
     {
-        .name = ITEM_NAME("{JPN}1ごうしつのカギ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}1ごうしつのカギ"),
+        .name = ITEM_NAME("Key to Room 1"),
+        .pluralName = ITEM_PLURAL_NAME("Keys to Room 1"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの へやに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "A key that opens a\n"
+            "door inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12270,10 +14552,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEY_TO_ROOM_2] =
     {
-        .name = ITEM_NAME("{JPN}2ごうしつのカギ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}2ごうしつのカギ"),
+        .name = ITEM_NAME("Key to Room 2"),
+        .pluralName = ITEM_PLURAL_NAME("Keys to Room 2"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの へやに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "A key that opens a\n"
+            "door inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12284,10 +14569,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEY_TO_ROOM_4] =
     {
-        .name = ITEM_NAME("{JPN}4ごうしつのカギ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}4ごうしつのカギ"),
+        .name = ITEM_NAME("Key to Room 4"),
+        .pluralName = ITEM_PLURAL_NAME("Keys to Room 4"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの へやに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "A key that opens a\n"
+            "door inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12298,10 +14586,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_KEY_TO_ROOM_6] =
     {
-        .name = ITEM_NAME("{JPN}6ごうしつのカギ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}6ごうしつのカギ"),
+        .name = ITEM_NAME("Key to Room 6"),
+        .pluralName = ITEM_PLURAL_NAME("Keys to Room 6"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}すてられぶねの へやに\nはいる ための カギ"),
+        .description = COMPOUND_STRING(
+            "A key that opens a\n"
+            "door inside the\n"
+            "Abandoned Ship."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12312,9 +14603,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METEORITE] =
     {
-        .name = ITEM_NAME("{JPN}いんせき"),
+        .name = ITEM_NAME("Meteorite"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}りゅうせいのたきに\nおちていた いんせき"),
+        .description = COMPOUND_STRING(
+            "A rock that allows\n"
+            "a certain Pokémon\n"
+            "to change Formes."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
@@ -12325,9 +14619,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MAGMA_EMBLEM] =
     {
-        .name = ITEM_NAME("{JPN}マグマのしるし"),
+        .name = ITEM_NAME("Magma Emblem"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}マグマだんの マークと\nおなじ かたちを した\nおなじ かたちを した"),
+        .description = COMPOUND_STRING(
+            "A medal-like item in\n"
+            "the same shape as\n"
+            "Team Magma's mark."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12338,10 +14635,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CONTEST_PASS] =
     {
-        .name = ITEM_NAME("{JPN}コンテストパス"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}コンテストパス"),
+        .name = ITEM_NAME("Contest Pass"),
+        .pluralName = ITEM_PLURAL_NAME("Contest Passes"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ポケモンコンテストに\nさんかする ことができる"),
+        .description = COMPOUND_STRING(
+            "The pass required\n"
+            "for entering\n"
+            "Pokémon Contests."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12352,9 +14652,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PARCEL] =
     {
-        .name = ITEM_NAME("{JPN}おとどけもの"),
+        .name = ITEM_NAME("Parcel"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ショップの てんいんから\nたのまれた おとどけもの\nオーキドはかせに わたす"),
+        .description = COMPOUND_STRING(
+            "A parcel for Prof.\n"
+            "Oak from a Pokémon\n"
+            "Mart's clerk."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12365,9 +14668,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SECRET_KEY] =
     {
-        .name = ITEM_NAME("{JPN}ひみつのカギ"),
+        .name = ITEM_NAME("Secret Key"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}グレンじま ジムの\nいりぐちを あける カギ"),
+        .description = COMPOUND_STRING(
+            "The key to the\n"
+            "Cinnabar Island\n"
+            "Gym's entrance."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12378,9 +14684,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIKE_VOUCHER] =
     {
-        .name = ITEM_NAME("{JPN}ひきかえけん"),
+        .name = ITEM_NAME("Bike Voucher"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ミラクル・サイクルで\nおりたたみ じてんしゃと\nこうかん できる かみ"),
+        .description = COMPOUND_STRING(
+            "A voucher for\n"
+            "obtaining a bicycle\n"
+            "from the Bike Shop."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12391,10 +14700,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GOLD_TEETH] =
     {
-        .name = ITEM_NAME("{JPN}きんのいれば"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}きんのいれば"),
+        .name = ITEM_NAME("Gold Teeth"),
+        .pluralName = ITEM_PLURAL_NAME("Gold Teeth"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}サファリゾーンの\nえんちょうが おとした\nきんいろの いれば"),
+        .description = COMPOUND_STRING(
+            "Gold dentures lost\n"
+            "by the Safari\n"
+            "Zone's Warden."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12405,9 +14717,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CARD_KEY] =
     {
-        .name = ITEM_NAME("{JPN}カードキー"),
+        .name = ITEM_NAME("Card Key"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}カードで できた カギ\nシルフカンパニー ビルの\nドアロックを はずせる"),
+        .description = COMPOUND_STRING(
+            "A card-type door\n"
+            "key used in Silph\n"
+            "Co's office."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12418,9 +14733,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LIFT_KEY] =
     {
-        .name = ITEM_NAME("{JPN}エレベータのカギ"),
+        .name = ITEM_NAME("Lift Key"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}ロケットだん アジトの\nエレベーターを うごかす\nことが できる カギ"),
+        .description = COMPOUND_STRING(
+            "An elevator key\n"
+            "used in Team\n"
+            "Rocket's Hideout."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12431,9 +14749,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SILPH_SCOPE] =
     {
-        .name = ITEM_NAME("{JPN}シルフスコープ"),
+        .name = ITEM_NAME("Silph Scope"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}めに みえない ものを\nみられる スコープ\nシルフ カンパニーせい"),
+        .description = COMPOUND_STRING(
+            "Silph Co's scope\n"
+            "makes unseeable\n"
+            "Pokémon visible."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12444,10 +14765,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TRI_PASS] =
     {
-        .name = ITEM_NAME("{JPN}トライパス"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}トライパス"),
+        .name = ITEM_NAME("Tri-Pass"),
+        .pluralName = ITEM_PLURAL_NAME("Tri-Passes"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}1のしまと 2のしまと\n3のしまを いどうする\nふねに のれる"),
+        .description = COMPOUND_STRING(
+            "A pass for ferries\n"
+            "between One, Two,\n"
+            "and Three Island."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12458,10 +14782,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RAINBOW_PASS] =
     {
-        .name = ITEM_NAME("{JPN}レインボーパス"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}レインボーパス"),
+        .name = ITEM_NAME("Rainbow Pass"),
+        .pluralName = ITEM_PLURAL_NAME("Rainbow Passes"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}クチバシティと\nななしまを いどうする\nふねに のれる"),
+        .description = COMPOUND_STRING(
+            "For ferries serving\n"
+            "Vermilion and the\n"
+            "Sevii Islands."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12472,10 +14799,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TEA] =
     {
-        .name = ITEM_NAME("{JPN}おちゃ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}おちゃ"),
+        .name = ITEM_NAME("Tea"),
+        .pluralName = ITEM_PLURAL_NAME("Tea"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}おばあさんが いれた\nおいしい おちゃ\nかわきを うるおす"),
+        .description = COMPOUND_STRING(
+            "A thirst-quenching\n"
+            "tea prepared by an\n"
+            "old lady."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12486,10 +14816,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RUBY] =
     {
-        .name = ITEM_NAME("{JPN}ルビー"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ルビー"),
+        .name = ITEM_NAME("Ruby"),
+        .pluralName = ITEM_PLURAL_NAME("Rubies"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}じょうねつを あらわす\nうつくしい ほうせき\nあかく ひかり かがやく"),
+        .description = COMPOUND_STRING(
+            "An exquisite, red-\n"
+            "glowing gem that\n"
+            "symbolizes passion."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12500,9 +14833,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SAPPHIRE] =
     {
-        .name = ITEM_NAME("{JPN}サファイア"),
+        .name = ITEM_NAME("Sapphire"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}せいじつを あらわす\nうつくしい ほうせき\nあおく ひかり かがやく"),
+        .description = COMPOUND_STRING(
+            "A brilliant blue gem\n"
+            "that symbolizes\n"
+            "honesty."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12515,10 +14851,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_SHIELD] =
     {
-        .name = ITEM_NAME("{JPN}とくせいガード"),
+        .name = ITEM_NAME("Ability Shield"),
         .price = 20000,
         .holdEffect = HOLD_EFFECT_ABILITY_SHIELD,
-        .description = COMPOUND_STRING("{JPN}こせいてきな たて\nもたせると あいてに\nとくせいを かえられない"),
+        .description = COMPOUND_STRING(
+            "Guards the holder\n"
+            "from having its\n"
+            "Ability changed."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12530,10 +14869,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLEAR_AMULET] =
     {
-        .name = ITEM_NAME("{JPN}クリアチャーム"),
+        .name = ITEM_NAME("Clear Amulet"),
         .price = 30000,
         .holdEffect = HOLD_EFFECT_CLEAR_AMULET,
-        .description = COMPOUND_STRING("{JPN}もたせると あいての\nわざや とくせいで\nのうりょくが さがらない"),
+        .description = COMPOUND_STRING(
+            "Protects the\n"
+            "holder from\n"
+            "stat-lowering."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12545,10 +14887,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PUNCHING_GLOVE] =
     {
-        .name = ITEM_NAME("{JPN}パンチグローブ"),
+        .name = ITEM_NAME("Punching Glove"),
         .price = 15000,
         .holdEffect = HOLD_EFFECT_PUNCHING_GLOVE,
-        .description = COMPOUND_STRING("{JPN}パンチわざの いりょくが\nあがり あいてに\nふれてないパンチに なる"),
+        .description = COMPOUND_STRING(
+            "Boosts punching\n"
+            "moves and prevents\n"
+            "contact with foes."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12560,10 +14905,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_COVERT_CLOAK] =
     {
-        .name = ITEM_NAME("{JPN}おんみつマント"),
+        .name = ITEM_NAME("Covert Cloak"),
         .price = 20000,
         .holdEffect = HOLD_EFFECT_COVERT_CLOAK,
-        .description = COMPOUND_STRING("{JPN}もたせると わざの\nついかこうかを\nうけなくなる"),
+        .description = COMPOUND_STRING(
+            "Conceals the\n"
+            "holder from\n"
+            "additional effects."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12575,11 +14923,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LOADED_DICE] =
     {
-        .name = ITEM_NAME("{JPN}いかさまダイス"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}いかさまダイス"),
+        .name = ITEM_NAME("Loaded Dice"),
+        .pluralName = ITEM_PLURAL_NAME("Loaded Dice"),
         .price = 20000,
         .holdEffect = HOLD_EFFECT_LOADED_DICE,
-        .description = COMPOUND_STRING("{JPN}もたせて れんぞくわざを\nつかうと おおめに\nわざを だすことが できる"),
+        .description = COMPOUND_STRING(
+            "The holder's\n"
+            "multistrike moves\n"
+            "hit more times."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12591,9 +14942,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUSPICIOUS_ARMOR] =
     {
-        .name = ITEM_NAME("{JPN}イワイノヨロイ"),
+        .name = ITEM_NAME("Auspicious Armor"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nいわいの よろい"),
+        .description = COMPOUND_STRING(
+            "A set of armor\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12606,11 +14960,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BOOSTER_ENERGY] =
     {
-        .name = ITEM_NAME("{JPN}ブーストエナジー"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ブーストエナジー"),
+        .name = ITEM_NAME("Booster Energy"),
+        .pluralName = ITEM_PLURAL_NAME("Booster Energies"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_BOOSTER_ENERGY,
-        .description = COMPOUND_STRING("{JPN}あるとくせいを もつ\nポケモンに もたせると\nちからが ブーストする"),
+        .description = COMPOUND_STRING(
+            "Ups the strength\n"
+            "of Pokémon with\n"
+            "certain Abilities."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12622,9 +14979,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BIG_BAMBOO_SHOOT] =
     {
-        .name = ITEM_NAME("{JPN}おおきなタケノコ"),
+        .name = ITEM_NAME("Big Bamboo Shoot"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}おおきな めずらしい\nタケノコ グルメには\nとてもにんきが ある"),
+        .description = COMPOUND_STRING(
+            "A large bamboo\n"
+            "shoot. It's popular\n"
+            "with gourmands."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -12636,9 +14996,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GIMMIGHOUL_COIN] =
     {
-        .name = ITEM_NAME("{JPN}コレクレーのコイン"),
+        .name = ITEM_NAME("Gimmighoul Coin"),
         .price = 400,
-        .description = COMPOUND_STRING("{JPN}コレクレーが\nだいじそうに\nあつめている"),
+        .description = COMPOUND_STRING(
+            "A dropped material\n"
+            "Gimmighoul hoard\n"
+            "and treasure."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12649,9 +15012,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEADERS_CREST] =
     {
-        .name = ITEM_NAME("{JPN}かしらのしるし"),
+        .name = ITEM_NAME("Leader's Crest"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}むれを ひきいる\nキリキザンだけが\nもっている"),
+        .description = COMPOUND_STRING(
+            "A shard of a blade.\n"
+            "Bisharp that head\n"
+            "a group hold it."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12662,9 +15028,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MALICIOUS_ARMOR] =
     {
-        .name = ITEM_NAME("{JPN}ノロイノヨロイ"),
+        .name = ITEM_NAME("Malicious Armor"),
         .price = 3000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nのろいの よろい"),
+        .description = COMPOUND_STRING(
+            "A set of armor\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12677,10 +15046,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MIRROR_HERB] =
     {
-        .name = ITEM_NAME("{JPN}ものまねハーブ"),
+        .name = ITEM_NAME("Mirror Herb"),
         .price = 30000,
         .holdEffect = HOLD_EFFECT_MIRROR_HERB,
-        .description = COMPOUND_STRING("{JPN}あいての のうりょくが\nあがったとき おじように\nのうりょくを あげる"),
+        .description = COMPOUND_STRING(
+            "Mirrors a foe's\n"
+            "stat increases,\n"
+            "but only once."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -12692,10 +15064,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCROLL_OF_DARKNESS] =
     {
-        .name = ITEM_NAME("{JPN}あくのかけじく"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}あくのかけじく"),
+        .name = ITEM_NAME("Scroll of Darkness"),
+        .pluralName = ITEM_PLURAL_NAME("Scrolls of Darkness"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nあくのごくいの かけじく"),
+        .description = COMPOUND_STRING(
+            "A peculiar scroll\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
@@ -12708,10 +15083,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SCROLL_OF_WATERS] =
     {
-        .name = ITEM_NAME("{JPN}みずのかけじく"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}みずのかけじく"),
+        .name = ITEM_NAME("Scroll of Waters"),
+        .pluralName = ITEM_PLURAL_NAME("Scrolls of Waters"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nみずのごくいの かけじく"),
+        .description = COMPOUND_STRING(
+            "A peculiar scroll\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
@@ -12724,9 +15102,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TERA_ORB] =
     {
-        .name = ITEM_NAME("{JPN}テラスタルオーブ"),
+        .name = ITEM_NAME("Tera Orb"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}エネルギーが チャージ\nされていると ポケモンを\nテラスタル させる"),
+        .description = COMPOUND_STRING(
+            "When charged, it\n"
+            "can cause Pokémon\n"
+            "to Terastallize."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -12737,9 +15118,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TINY_BAMBOO_SHOOT] =
     {
-        .name = ITEM_NAME("{JPN}ちいさなタケノコ"),
+        .name = ITEM_NAME("Tiny Bamboo Shoot"),
         .price = 750,
-        .description = COMPOUND_STRING("{JPN}ちいさな めずらしい\nタケノコ グルメには\nとてもにんきが ある"),
+        .description = COMPOUND_STRING(
+            "A small bamboo\n"
+            "shoot. It's popular\n"
+            "with gourmands."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
@@ -12751,9 +15135,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BUG_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースむし"),
+        .name = ITEM_NAME("Bug Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12764,9 +15151,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DARK_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースあく"),
+        .name = ITEM_NAME("Dark Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12777,9 +15167,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DRAGON_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースドラゴン"),
+        .name = ITEM_NAME("Dragon Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12790,9 +15183,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ELECTRIC_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースでんき"),
+        .name = ITEM_NAME("Electric Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12803,9 +15199,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRY_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースフェアリー"),
+        .name = ITEM_NAME("Fairy Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12816,9 +15215,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIGHTING_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースかくとう"),
+        .name = ITEM_NAME("Fighting Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12829,9 +15231,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FIRE_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースほのお"),
+        .name = ITEM_NAME("Fire Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12842,9 +15247,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FLYING_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースひこう"),
+        .name = ITEM_NAME("Flying Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12855,9 +15263,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GHOST_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースゴースト"),
+        .name = ITEM_NAME("Ghost Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12868,9 +15279,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRASS_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースくさ"),
+        .name = ITEM_NAME("Grass Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12881,9 +15295,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GROUND_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースじめん"),
+        .name = ITEM_NAME("Ground Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12894,9 +15311,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ICE_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースこおり"),
+        .name = ITEM_NAME("Ice Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12907,9 +15327,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NORMAL_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースノーマル"),
+        .name = ITEM_NAME("Normal Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12920,9 +15343,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POISON_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースどく"),
+        .name = ITEM_NAME("Poison Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12933,9 +15359,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PSYCHIC_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースエスパー"),
+        .name = ITEM_NAME("Psychic Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12946,9 +15375,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ROCK_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースいわ"),
+        .name = ITEM_NAME("Rock Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12959,9 +15391,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STEEL_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースはがね"),
+        .name = ITEM_NAME("Steel Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12972,9 +15407,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WATER_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}テラピースみず"),
+        .name = ITEM_NAME("Water Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -12985,11 +15423,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ADAMANT_CRYSTAL] =
     {
-        .name = ITEM_NAME("{JPN}だいこんごうだま"),
+        .name = ITEM_NAME("Adamant Crystal"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_ADAMANT_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ディアルガに もたせると\nちからが みなぎり\nすがたが かわる"),
+        .description = COMPOUND_STRING(
+            "A glowing gem that\n"
+            "allows Dialga\n"
+            "to change form."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13001,11 +15442,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRISEOUS_CORE] =
     {
-        .name = ITEM_NAME("{JPN}だいはっきんだま"),
+        .name = ITEM_NAME("Griseous Core"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}ギラティナに もたせると\nちからが みなぎり\nすがたが かわる"),
+        .description = COMPOUND_STRING(
+            "A glowing gem that\n"
+            "allows Giratina\n"
+            "to change form."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13017,11 +15461,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUSTROUS_GLOBE] =
     {
-        .name = ITEM_NAME("{JPN}だいしらたま"),
+        .name = ITEM_NAME("Lustrous Globe"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_LUSTROUS_ORB,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}パルキアに もたせると\nちからが みなぎり\nすがたが かわる"),
+        .description = COMPOUND_STRING(
+            "A glowing gem that\n"
+            "allows Palkia\n"
+            "to change form."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13033,9 +15480,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BLACK_AUGURITE] =
     {
-        .name = ITEM_NAME("{JPN}くろのきせき"),
+        .name = ITEM_NAME("Black Augurite"),
         .price = 8000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nするどい くろい いし"),
+        .description = COMPOUND_STRING(
+            "A black stone.\n"
+            "It is loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13048,9 +15498,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LINKING_CORD] =
     {
-        .name = ITEM_NAME("{JPN}つながりのヒモ"),
+        .name = ITEM_NAME("Linking Cord"),
         .price = 8000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nふしぎな ヒモ"),
+        .description = COMPOUND_STRING(
+            "A string exuding\n"
+            "energy loved by\n"
+            "certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13063,9 +15516,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PEAT_BLOCK] =
     {
-        .name = ITEM_NAME("{JPN}ピートブロック"),
+        .name = ITEM_NAME("Peat Block"),
         .price = 10000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nせきたんの かたまり"),
+        .description = COMPOUND_STRING(
+            "A block of material.\n"
+            "It is loved by\n"
+            "a certain Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13078,10 +15534,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BERSERK_GENE] =
     {
-        .name = ITEM_NAME("{JPN}はかいのいでんし"),
+        .name = ITEM_NAME("Berserk Gene"),
         .price = 20,
         .holdEffect = HOLD_EFFECT_BERSERK_GENE,
-        .description = COMPOUND_STRING("{JPN}こうげきりょくが ぐーんと\nあがるが こんらん\nじょうたいに なってしまう"),
+        .description = COMPOUND_STRING(
+            "Sharply raises\n"
+            "Attack, but causes\n"
+            "lasting confusion."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13093,11 +15552,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FAIRY_FEATHER] =
     {
-        .name = ITEM_NAME("{JPN}ようせいのハネ"),
+        .name = ITEM_NAME("Fairy Feather"),
         .price = 1000,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING("{JPN}ポケモンに もたせると\nフェアリータイプの\nわざのいりょくが あがる"),
+        .description = COMPOUND_STRING(
+            "A held item that\n"
+            "raises the power of\n"
+            "Fairy-type moves."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13110,9 +15572,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SYRUPY_APPLE] =
     {
-        .name = ITEM_NAME("{JPN}みついりりんご"),
+        .name = ITEM_NAME("Syrupy Apple"),
         .price = 2200,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nみついり りんご"),
+        .description = COMPOUND_STRING(
+            "A peculiar apple\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13125,9 +15590,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_UNREMARKABLE_TEACUP] =
     {
-        .name = ITEM_NAME("{JPN}ボンサクのちゃわん"),
+        .name = ITEM_NAME("Unremarkable Teacup"),
         .price = 1600,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nわれている ちゃわん"),
+        .description = COMPOUND_STRING(
+            "A peculiar teacup\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13140,9 +15608,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MASTERPIECE_TEACUP] =
     {
-        .name = ITEM_NAME("{JPN}ケッサクのちゃわん"),
+        .name = ITEM_NAME("Masterpiece Teacup"),
         .price = 38000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nかけている ちゃわん"),
+        .description = COMPOUND_STRING(
+            "A peculiar teacup\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13155,11 +15626,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CORNERSTONE_MASK] =
     {
-        .name = ITEM_NAME("{JPN}いしずえのめん"),
+        .name = ITEM_NAME("Cornerstone Mask"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_OGERPON_MASK,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}オーガポンに もたせると\nいわタイプを まとい\nたたかう"),
+        .description = COMPOUND_STRING(
+            "Allows Ogerpon to\n"
+            "wield the Rock\n"
+            "type in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13170,11 +15644,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_WELLSPRING_MASK] =
     {
-        .name = ITEM_NAME("{JPN}いどのめん"),
+        .name = ITEM_NAME("Wellspring Mask"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_OGERPON_MASK,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}オーガポンに もたせると\nみずタイプを まとい\nたたかう"),
+        .description = COMPOUND_STRING(
+            "Allows Ogerpon to\n"
+            "wield the Water\n"
+            "type in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13185,11 +15662,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEARTHFLAME_MASK] =
     {
-        .name = ITEM_NAME("{JPN}かまどのめん"),
+        .name = ITEM_NAME("Hearthflame Mask"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_OGERPON_MASK,
         .holdEffectParam = 20,
-        .description = COMPOUND_STRING("{JPN}オーガポンに もたせると\nほのおタイプを まとい\nたたかう"),
+        .description = COMPOUND_STRING(
+            "Allows Ogerpon to\n"
+            "wield the Fire\n"
+            "type in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -13200,10 +15680,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HEALTH_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}たいりょくのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}たいりょくのもち"),
+        .name = ITEM_NAME("Health Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Health Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}たいりょくの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base HP\n"
+            "of one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13216,10 +15698,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_MUSCLE_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}きんりょくのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}きんりょくのもち"),
+        .name = ITEM_NAME("Muscle Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Muscle Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}こうげきの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Attack stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13232,10 +15717,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_RESIST_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}ていこうのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ていこうのもち"),
+        .name = ITEM_NAME("Resist Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Resist Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}ぼうぎょの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Defense stat of\n"
+            "one Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13248,10 +15736,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GENIUS_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}ちりょくのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}ちりょくのもち"),
+        .name = ITEM_NAME("Genius Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Genius Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}とくこうの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Atk stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13264,10 +15755,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CLEVER_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}せいしんのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}せいしんのもち"),
+        .name = ITEM_NAME("Clever Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Clever Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}とくぼうの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Sp. Def stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13280,10 +15774,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWIFT_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}しゅんぱつのもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}しゅんぱつのもち"),
+        .name = ITEM_NAME("Swift Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Swift Mochi"),
         .price = 500,
-        .description = COMPOUND_STRING("{JPN}すばやさの\nきそポイントを\nちょっと あげる"),
+        .description = COMPOUND_STRING(
+            "Raises the base\n"
+            "Speed stat of one\n"
+            "Pokémon."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13296,10 +15793,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FRESH_START_MOCHI] =
     {
-        .name = ITEM_NAME("{JPN}まっさらもち"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}まっさらもち"),
+        .name = ITEM_NAME("Fresh-Start Mochi"),
+        .pluralName = ITEM_PLURAL_NAME("Fresh-Start Mochi"),
         .price = 300,
-        .description = COMPOUND_STRING("{JPN}ポケモンの\nきそポイントが\nすべて なくなってしまう"),
+        .description = COMPOUND_STRING(
+            "A cake that causes\n"
+            "a Pokémon to lose\n"
+            "all its base stats."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -13312,10 +15812,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GLIMMERING_CHARM] =
     {
-        .name = ITEM_NAME("{JPN}きらめくおまもり"),
+        .name = ITEM_NAME("Glimmering Charm"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("{JPN}テラレイドバトルで\nもらえる テラピースが\nふえる"),
+        .description = COMPOUND_STRING(
+            "Increases the\n"
+            "number of Tera\n"
+            "Shards from raids."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -13325,9 +15828,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_METAL_ALLOY] =
     {
-        .name = ITEM_NAME("{JPN}ふくごうきんぞく"),
+        .name = ITEM_NAME("Metal Alloy"),
         .price = 6000,
-        .description = COMPOUND_STRING("{JPN}とくていの ポケモンを\nしんかさせる\nふしぎな きんぞく"),
+        .description = COMPOUND_STRING(
+            "A peculiar metal\n"
+            "that makes certain\n"
+            "Pokémon evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13339,9 +15845,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_STELLAR_TERA_SHARD] =
     {
-        .name = ITEM_NAME("{JPN}ステラテラピース"),
+        .name = ITEM_NAME("Stellar Tera Shard"),
         .price = 0,
-        .description = COMPOUND_STRING("{JPN}テラスタルポケモンが\nたおれたとき くだけた\nテラスタルジュエル"),
+        .description = COMPOUND_STRING(
+            "Shards that may\n"
+            "form when a Tera\n"
+            "Pokémon falls."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
@@ -13352,9 +15861,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_JUBILIFE_MUFFIN] =
     {
-        .name = ITEM_NAME("{JPN}コトブキマフィン"),
+        .name = ITEM_NAME("Jubilife Muffin"),
         .price = 250,
-        .description = COMPOUND_STRING("{JPN}コトブキムラ めいぶつ\nじょうたい いじょうを\nすべて かいふくする"),
+        .description = COMPOUND_STRING(
+            "A local specialty\n"
+            "that heals all\n"
+            "status problems."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -13368,10 +15880,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_REMEDY] =
     {
-        .name = ITEM_NAME("{JPN}カンポーやく"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}カンポーやく"),
+        .name = ITEM_NAME("Remedy"),
+        .pluralName = ITEM_PLURAL_NAME("Remedies"),
         .price = 150,
-        .description = COMPOUND_STRING("{JPN}ポケモンの たいりょくを\n20 かいふくする\nとても にがい こな"),
+        .description = COMPOUND_STRING(
+            "A bitter powder\n"
+            "that restores HP\n"
+            "by 20 points."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -13385,15 +15900,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_FINE_REMEDY] =
     {
-        .name = ITEM_NAME("{JPN}いいカンポーやく"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}いいカンポーやく"),
+        .name = ITEM_NAME("Fine Remedy"),
+        .pluralName = ITEM_PLURAL_NAME("Fine Remedies"),
         .price = 150,
         .description = COMPOUND_STRING(
-            "{JPN}ポケモンの たいりょくを\n"
+            "A bitter powder\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}60 かいふくする\nとても にがい こな"),
+            "by 60 points."),
         #else
-            "{JPN}50 かいふくする\nとても にがい こな"),
+            "by 50 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -13408,15 +15924,16 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPERB_REMEDY] =
     {
-        .name = ITEM_NAME("{JPN}すごいカンポーやく"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}すごいカンポーやく"),
+        .name = ITEM_NAME("Superb Remedy"),
+        .pluralName = ITEM_PLURAL_NAME("Superb Remedies"),
         .price = 750,
         .description = COMPOUND_STRING(
-            "{JPN}ポケモンの たいりょくを\n"
+            "A bitter powder\n"
+            "that restores HP\n"
         #if I_HEALTH_RECOVERY >= GEN_7
-            "{JPN}120 かいふくする\nとても にがい こな"),
+            "by 120 points."),
         #else
-            "{JPN}200 かいふくする\nとても にがい こな"),
+            "by 200 points."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -13431,14 +15948,17 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUX_EVASION] =
     {
-        .name = ITEM_NAME("{JPN}ヨクアタラーヌ"),
+        .name = ITEM_NAME("Aux Evasion"),
         .price = 800,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの かいひりつを\nおおきく あげる"),
+            "Sharply raises\n"
+            "evasiveness\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nかいひりつを あげる"),
+            "Raises evasiveness\n"
+            "during one battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_AUX_ITEM,
@@ -13451,14 +15971,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUX_GUARD] =
     {
-        .name = ITEM_NAME("{JPN}ガードアップ"),
+        .name = ITEM_NAME("Aux Guard"),
         .price = 400,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの まもりを\nおおきく あげる"),
+            "Sharply raises\n"
+            "defensive stats\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nまもりを あげる"),
+            "Raises Defense\n"
+            "and Sp. Def\n"
+            "during one battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_AUX_ITEM,
@@ -13471,14 +15995,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUX_POWER] =
     {
-        .name = ITEM_NAME("{JPN}パワーアップ"),
+        .name = ITEM_NAME("Aux Power"),
         .price = 400,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの ちからを\nおおきく あげる"),
+            "Sharply raises\n"
+            "offensive stats\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nちからを あげる"),
+            "Raises Attack\n"
+            "and Sp. Atk\n"
+            "during one battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_AUX_ITEM,
@@ -13491,14 +16019,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_AUX_POWERGUARD] =
     {
-        .name = ITEM_NAME("{JPN}マルチアップ"),
+        .name = ITEM_NAME("Aux Powerguard"),
         .price = 1200,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
-            "{JPN}せんとうちゅうの\nポケモンの ちからと\nまもりを おおきくあげる"),
+            "Sharply raises\n"
+            "offense & defense\n"
+            "during one battle."),
         #else
-            "{JPN}つかった せんとうちゅう\nちからと まもりを\nあげる"),
+            "Raises offenses\n"
+            "and defenses\n"
+            "during one battle."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_AUX_ITEM,
@@ -13511,7 +16043,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHOICE_DUMPLING] =
     {
-        .name = ITEM_NAME("{JPN}こだわりちまき"),
+        .name = ITEM_NAME("Choice Dumpling"),
         .price = 1200,
         .description = COMPOUND_STRING("?????"),
         .pocket = POCKET_ITEMS,
@@ -13525,7 +16057,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SWAP_SNACK] =
     {
-        .name = ITEM_NAME("{JPN}あべこべやき"),
+        .name = ITEM_NAME("Swap Snack"),
         .price = 1200,
         .description = COMPOUND_STRING("?????"),
         .pocket = POCKET_ITEMS,
@@ -13539,8 +16071,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_TWICE_SPICED_RADISH] =
     {
-        .name = ITEM_NAME("{JPN}にばいづけ"),
-        .pluralName = ITEM_PLURAL_NAME("{JPN}にばいづけ"),
+        .name = ITEM_NAME("Twice-Spiced Radish"),
+        .pluralName = ITEM_PLURAL_NAME("Twice-Spiced Radishes"),
         .price = 1600,
         .description = COMPOUND_STRING("?????"),
         .pocket = POCKET_ITEMS,
@@ -13554,9 +16086,12 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKESHI_DOLL] =
     {
-        .name = ITEM_NAME("{JPN}ポケモンこけし"),
+        .name = ITEM_NAME("Pokéshi Doll"),
         .price = 2000,
-        .description = COMPOUND_STRING("{JPN}ポケモンを かたどった\nもくせいの おもちゃ\nおみせで うれる"),
+        .description = COMPOUND_STRING(
+            "A wooden toy in the\n"
+            "image of a Pokémon.\n"
+            "It can be sold."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,

@@ -202,13 +202,14 @@ SecretBase_EventScript_SkittyTV::
 	end
 
 SecretBase_Text_SmallIndentInWall::
-	.string "{JPN}かべに ちいさな くぼみが ある$"
+	.string "There's a small indent in the wall.$"
 
 SecretBase_Text_IndentUseSecretPower::
-	.string "{JPN}かべに ちいさな くぼみが ある\pひみつのちからを つかいますか?$"
+	.string "There's a small indent in the wall.\p"
+	.string "Use the SECRET POWER?$"
 
 SecretBase_Text_DiscoveredSmallCavern::
-	.string "{JPN}ちいさな どうくつを はっけん!$"
+	.string "Discovered a small cavern!$"
 
 SecretBase_Text_WantToMakeYourSecretBaseHere:
-	.string "{JPN}ここに ひみつきちを つくりますか?$"
+	.string "Want to make your SECRET BASE here?$"

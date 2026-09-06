@@ -1,47 +1,57 @@
 gText_ObtainedTheItem::
-	.string "{JPN}{STR_VAR_2}を てにいれた!$"
+	.string "Obtained the {STR_VAR_2}!$"
 
 gText_TheBagIsFull::
-	.string "{JPN}バッグが いっぱいだ!$"
+	.string "The BAG is full…$"
 
 gText_PutItemInPocket::
-	.string "{JPN}{PLAYER}は {STR_VAR_2}を\n{STR_VAR_3}ポケットに しまった!$"
+	.string "{PLAYER} put away the {STR_VAR_2}\n"
+	.string "in the {STR_VAR_3} POCKET.$"
 
 gText_PlayerFoundOneItem::
-	.string "{JPN}{PLAYER}は {STR_VAR_2}を\nみつけた!$"
+	.string "{PLAYER} found one {STR_VAR_2}!$"
 
 gText_TooBadBagIsFull::
-	.string "{JPN}ざんねん!\nバッグが いっぱいだ……$"
+	.string "Too bad!\n"
+	.string "The BAG is full…$"
 
 gText_PlayerPutItemInBag::
-	.string "{JPN}{PLAYER}は {STR_VAR_2}を\nバッグに しまった!$"
+	.string "{PLAYER} put away the {STR_VAR_2}\n"
+	.string "in the BAG.$"
 
 gText_ObtainedTheDecor::
-	.string "{JPN}{STR_VAR_2}を てにいれた!$"
+	.string "Obtained the {STR_VAR_2}!$"
 
 gText_NoRoomLeftForAnother::
-	.string "{JPN}ざんねん! {STR_VAR_2}を\nいれる ばしょが いっぱいだ……$"
+	.string "Too bad! There's no room left for\n"
+	.string "another {STR_VAR_2}…$"
 
 gText_TheDecorWasTransferredToThePC::
-	.string "{JPN}{STR_VAR_2}は\nパソコンに てんそうされた!$"
+	.string "The {STR_VAR_2} was transferred\n"
+	.string "to the PC.$"
 
 gText_ObtainedTheItems::
-	.string "{JPN}{STR_VAR_1}と {STR_VAR_2}を てにいれた!$"
+	.string "Obtained {STR_VAR_1} {STR_VAR_2}!$"
 
 gText_PlayerFoundItems::
-	.string "{JPN}{PLAYER}は {STR_VAR_1}と {STR_VAR_2}を みつけた!$"
+	.string "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$"
 
 gText_PutCoinsAwayInCoinCase::
-	.string "{JPN}{PLAYER}は \nコインケースに しまった!$"
+	.string "{PLAYER} put the COINS away in\n"
+	.string "the COIN CASE.$"
 
 gText_FoundXCoins::
-	.string "{JPN}{PLAYER}は {STR_VAR_2}を\n{STR_VAR_1}まい みつけた!$"
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_1} {STR_VAR_2}!$"
 
 gText_FoundXItems::
-	.string "{JPN}{PLAYER}は {STR_VAR_2}を\n{STR_VAR_1}こ みつけた$"
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_1} {STR_VAR_2}(s)!$"
 
 gText_CoinCaseIsFull::
-	.string "{JPN}ざんねん!\nコインケースが いっぱいだ……$"
+	.string "Too bad!\n"
+	.string "The COIN CASE is full…$"
 
 gText_NothingToPutThemIn::
-	.string "{JPN}ざんねん!\nいれるものが ない……$"
+	.string "Too bad!\n"
+	.string "There's nothing to put them in…$"

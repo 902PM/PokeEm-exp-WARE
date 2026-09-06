@@ -44,10 +44,6 @@ EverGrandeCity_HallOfFame_EventScript_ReadyReceiveSSTicketEvent::
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
 	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
-	additem ITEM_EON_TICKET
-	additem ITEM_MYSTIC_TICKET
-	additem ITEM_AURORA_TICKET
-	additem ITEM_OLD_SEA_MAP
 	return
 
 EverGrandeCity_HallOfFame_EventScript_ReadyDexUpgradeEvent::
