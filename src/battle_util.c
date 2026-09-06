@@ -539,7 +539,7 @@ void HandleAction_UseMove(void)
     SetTypeBeforeUsingMove(gChosenMove, gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker));
     gBattleStruct->baseMove = gCurrentMove;
 
-    // check Z-Move used
+    // Zワザが使用されたか確認
     if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE
      && GetMoveCategory(gCurrentMove) != DAMAGE_CATEGORY_STATUS // Check the actual type, not the dynamic one
      && !IsZMove(gCurrentMove))
@@ -1429,10 +1429,10 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
     u16 *choicedMove = &gBattleStruct->choicedMove[battler];
     enum BattleMoveEffects moveEffect = GetMoveEffect(move);
 
-    // Dynamax bypasses all selection prevention except Taunt and Assault Vest.
+    // ダイマックスは、『ちょうはつ』と『とつげきチョッキ』以外のすべての選択を妨げる効果を無効化します。
     bool32 dynamaxBypassCheck = (!IsGimmickChosenForAction(battler, GIMMICK_DYNAMAX) && GetActiveGimmick(battler) != GIMMICK_DYNAMAX);
 
-    // Z-Moves bypass the effects of disruption moves like Encore, Taunt, Disable
+    // Zワザは、アンコール、ちょうはつ、かなしばりといった妨害技の効果を無視します。
     bool32 zMoveBypassCheck = (!IsGimmickChosenForAction(battler, GIMMICK_Z_MOVE) && GetActiveGimmick(battler) != GIMMICK_Z_MOVE);
 
     if (GetConfig(B_ENCORE_TARGET) >= GEN_5
@@ -5673,7 +5673,7 @@ enum Obedience GetAttackerObedienceForAction(void)
     if (calc < obedienceLevel)
         return OBEYS;
 
-    //  Clear the Z-Move flags if the battler is disobedient as to not waste the Z-Move
+    //  Zワザを無駄にしないよう、ポケモンが言うことを聞かない状態であればZワザのフラグを解除する。
     if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
     {
         gBattleStruct->gimmick.activated[gBattlerAttacker][GIMMICK_Z_MOVE] = FALSE;
@@ -5856,7 +5856,7 @@ bool32 IsBattlerProtected(struct BattleCalcValues *cv)
     if (gProtectStructs[cv->battlerDef].protected != PROTECT_MAX_GUARD && !MoveIgnoresProtect(cv->move))
     {
         if (IsZMove(cv->move) || IsMaxMove(cv->move))
-            return FALSE; // Z-Moves and Max Moves bypass protection (except Max Guard).
+            return FALSE; // Zワザとダイマックス技は、まもる等の技を貫通します（ただしダイウォールは除きます）。
 
         if ((cv->abilities[cv->battlerAtk] == ABILITY_UNSEEN_FIST || cv->abilities[cv->battlerAtk] == ABILITY_PIERCING_DRILL)
          && IsMoveMakingContact(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->holdEffects[cv->battlerAtk], cv->move))
@@ -10554,7 +10554,7 @@ bool32 DoesOHKOMoveMissTarget(struct BattleCalcValues *cv)
         SURE_HIT,
     };
 
-    // Dynamaxed Pokemon cannot be hit by OHKO moves.
+    // ダイマックスしたポケモンは、一撃必殺技を受けません。
     if (GetActiveGimmick(cv->battlerDef) == GIMMICK_DYNAMAX)
     {
         gBattleStruct->moveResultFlags[cv->battlerDef] |= MOVE_RESULT_ONE_HIT_KO_NO_AFFECT;

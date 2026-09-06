@@ -32,15 +32,15 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
-// Select_ refers to the first Pokémon selection screen where you choose your initial 3 rental Pokémon.
-// Swap_   refers to the subsequent selection screens where you can swap a Pokémon with one from the beaten trainer
+// Select_ 最初にレンタルする3匹のポケモンを選ぶ、最初のポケモン選択画面のこと。
+// Swap_   勝利したトレーナーのポケモンと自分のポケモンを入れ替える画面のこと。
 
-// Note that, generally, "Action" will refer to the immediate actions that can be taken on each screen,
-// i.e. selecting a Pokémon or selecting the Cancel button
-// The "Options menu" will refer to the popup menu that shows when some actions have been selected
+// なお、一般的に「Action」とは、各画面で実行できる即時のアクションを指します。
+// つまり、ポケモンを選択すること、キャンセルすること。
+// "Options menu"とは、特定のアクションが選択された際に表示されるポップアップメニューを指します。
 
-#define SWAP_PLAYER_SCREEN 0  // The screen where the player selects which of their Pokémon to swap away
-#define SWAP_ENEMY_SCREEN  1  // The screen where the player selects which new Pokémon from the defeated party to swap for
+#define SWAP_PLAYER_SCREEN 0  // プレイヤーが手持ちのポケモンのうち、どのポケモンを入れ替えるかを選択する画面
+#define SWAP_ENEMY_SCREEN  1  // 倒した相手のパーティから、どの新しいポケモンと入れ替えるかを選択する画面
 
 #define SELECTABLE_MONS_COUNT 6
 
@@ -67,17 +67,17 @@ enum {
     GFXTAG_MON_PIC_BG_ANIM,
 };
 
-// Tasks in this file universally use data[0] as a state for switches
+// このファイル内のタスクは、一律に `data[0]` をスイッチの状態として使用しています。
 #define tState   data[0]
 
-// States for both Select/Swap versions of Task_FadeSpeciesName
+// Task_FadeSpeciesNameのSelect版およびSwap版の双方に対応
 enum {
     FADESTATE_INIT,
     FADESTATE_RUN,
     FADESTATE_DELAY
 };
 
-// Return states for the Select Actions
+// 「Select Actions」のリターンする状態
 enum {
     SELECT_SUMMARY,
     SELECT_CONTINUE_CHOOSING,
@@ -166,7 +166,7 @@ static void CloseMonPic(struct FactoryMonPic, bool8 *, bool8);
 static void Task_OpenMonPic(u8);
 static void Task_CloseMonPic(u8);
 
-// Select screen
+// 選択画面(Select)
 static void CB2_InitSelectScreen(void);
 static void Select_SetWinRegs(s16, s16, s16, s16);
 static void Select_InitMonsData(void);
@@ -198,7 +198,7 @@ static u8 Select_OptionOthers(void);
 static u8 Select_OptionRentDeselect(void);
 static bool32 Select_AreSpeciesValid(u16);
 
-// Swap screen
+// 入れ替え画面(Swap)
 static void CB2_InitSwapScreen(void);
 static void Swap_DestroyAllSprites(void);
 static void Swap_ShowYesNoOptions(void);
@@ -1495,7 +1495,7 @@ static void Select_Task_Exit(u8 taskId)
     }
 }
 
-// Handles the Yes/No prompt when confirming the 3 selected rental Pokémon
+// 選択した3匹のレンタルポケモンを確定する際の「はい／いいえ」の確認画面
 static void Select_Task_HandleYesNo(u8 taskId)
 {
     if (sFactorySelectScreen->monPicAnimating == TRUE)

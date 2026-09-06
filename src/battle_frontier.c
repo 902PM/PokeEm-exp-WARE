@@ -211,7 +211,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
     if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
-        // Normal battle frontier trainer.
+        // 通常のバトルフロンティアのトレーナー
         fixedIV = GetFrontierTrainerFixedIvs(trainerId);
         monSet = gFacilityTrainers[trainerId].monSet;
     }
@@ -230,7 +230,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
     {
-        // Record mixed player.
+        // レコードのトレーナー
         for (j = 0, i = 0; i < monCount; j++, i++)
         {
             if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j].species != SPECIES_NONE
@@ -243,16 +243,15 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     }
     else
     {
-        // Apprentice.
+        // 弟子
         for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
             CreateApprenticeMon(&gParties[trainer][i], &gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE], i);
         return;
     }
 
-    // Regular battle frontier trainer.
-    // Attempt to fill the trainer's party with random Pokémon until 3 have been
-    // successfully chosen. The trainer's party may not have duplicate Pokémon species
-    // or duplicate held items.
+    // 通常のバトルフロンティアのトレーナー。
+    // 3匹のポケモンが選出されるまで、ランダムにトレーナーのパーティを埋める。
+    // トレーナーのパーティ内で、ポケモンの種類や持たせている道具が重複することはない。
     for (bfMonCount = 0; monSet[bfMonCount] != 0xFFFF; bfMonCount++)
         ;
     i = 0;
@@ -261,12 +260,12 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     {
         u16 monId = monSet[Random() % bfMonCount];
 
-        // "High tier" Pokémon are only allowed on open level mode
-        // 20 is not a possible value for level here
+        // 『HIGH_TIER』はオープンレベルにのみ、出現する。(includeのFRONTIER_MONS_HIGH_TIERの番号が閾値)
+        // ここでの20という数値は、有効な値ではありません。(意味がありません)
         if ((level == FRONTIER_MAX_LEVEL_50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
             continue;
 
-        // Ensure this Pokémon species isn't a duplicate.
+        // このポケモン種が重複していないことを確認する。
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_SPECIES) == gFacilityTrainerMons[monId].species)
@@ -275,7 +274,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // Ensure this Pokemon's held item isn't a duplicate.
+        // このポケモンの持ち物が重複していないことを確認する。
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) != ITEM_NONE
@@ -285,8 +284,8 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if (j != i)
             continue;
 
-        // Ensure this exact Pokémon index isn't a duplicate. This check doesn't seem necessary
-        // because the species and held items were already checked directly above.
+        // この特定のポケモンインデックスが重複していないことを確認する。
+        // ただし、種族や持ち物は直前ですでに確認済みであるため、このチェックは不要と思われる。
         for (j = 0; j < i; j++)
         {
             if (chosenMonIndices[j] == monId)
@@ -297,11 +296,11 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
 
         chosenMonIndices[i] = monId;
 
-        // Place the chosen Pokémon into the trainer's party.
+        // 選択したポケモンをトレーナーのパーティに加える。
         CreateFacilityMon(&gFacilityTrainerMons[monId], level, fixedIV, otID, 0, &gParties[trainer][i]);
 
-        // The Pokémon was successfully added to the trainer's party, so it's safe to move on to
-        // the next party slot.
+        // ポケモンがトレーナーのパーティに正常に追加されたため、
+        // 次のパーティスロットへ進んでも問題ありません。
         i++;
     }
 }

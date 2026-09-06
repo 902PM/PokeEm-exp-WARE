@@ -59,7 +59,7 @@ static void SpriteCB_VersionBannerRight(struct Sprite *sprite);
 static void SpriteCB_PressStartCopyrightBanner(struct Sprite *sprite);
 static void SpriteCB_PokemonLogoShine(struct Sprite *sprite);
 
-// const rom data
+// ROM定数データ
 static const u16 sUnusedUnknownPal[] = INCGFX_U16("graphics/title_screen/unused.pal", ".gbapal");
 
 static const u32 sTitleScreenRayquazaGfx[] = INCGFX_U32("graphics/title_screen/rayquaza.png", ".4bpp.smol");
@@ -69,8 +69,8 @@ static const u32 sTitleScreenCloudsGfx[] = INCGFX_U32("graphics/title_screen/clo
 
 
 
-// Used to blend "Emerald Version" as it passes over over the Pokémon banner.
-// Also used by the intro to blend the Game Freak name/logo in and out as they appear and disappear
+// 「エメラルドバージョン」の文字がポケモン・バナーの上を通過する際のブレンド処理に使用されます。
+// また、イントロにおいてGame Freakの名称やロゴが表示・非表示になる際のブレンド処理にも使用されます。
 const u16 gTitleScreenAlphaBlend[64] =
 {
     BLDALPHA_BLEND(16, 0),
@@ -710,12 +710,12 @@ static void Task_TitleScreenPhase1(u8 taskId)
         SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16, 0));
         SetGpuReg(REG_OFFSET_BLDY, 0);
 
-        // Create left side of version banner
+        // バナーの左側の作成
         spriteId = CreateSprite(&sVersionBannerLeftSpriteTemplate, VERSION_BANNER_LEFT_X, VERSION_BANNER_Y, 0);
         gSprites[spriteId].sAlphaBlendIdx = ARRAY_COUNT(gTitleScreenAlphaBlend);
         gSprites[spriteId].sParentTaskId = taskId;
 
-        // Create right side of version banner
+        // バナーの右側の作成
         spriteId = CreateSprite(&sVersionBannerRightSpriteTemplate, VERSION_BANNER_RIGHT_X, VERSION_BANNER_Y, 0);
         gSprites[spriteId].sParentTaskId = taskId;
 
