@@ -871,9 +871,11 @@ void InitBattlerHealthboxCoords(enum BattlerId battler)
     UpdateSpritePos(gHealthboxSpriteIds[battler], x, y);
 }
 
+// ここがレベル表示、FONTも含まれる。(todo - おそらく、レベルのフォントが濃くなくて、ABCのニックネームが濃いのは日本語扱いされていないから)
 static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
 {
     u8 text[16];
+    u8 offset;
     enum BattlerId battler = gSprites[healthboxSpriteId].hMain_Battler;
     u32 spriteId = gSprites[healthboxSpriteId].oam.affineParam;
 
@@ -886,27 +888,42 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     }
     else
     {
+        if (IsOnPlayerSide(battler))
+        {
         text[0] = CHAR_EXTRA_SYMBOL;
         text[1] = CHAR_LV_2;
-
-        ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        text[2] = 0xFC;
+        text[3] = 0x15;        
+        offset  = 2;
+        }
+        else
+        {
+        text[0] = CHAR_EXTRA_SYMBOL;
+        text[1] = CHAR_LV_2;
+        text[2] = CHAR_COLON;
+        text[3] = 0xFC;
+        text[4] = 0x15;
+        offset  = 3;
+        }
+        ConvertIntToDecimalStringN(text + offset, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
         UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
     }
 
-    u32 width = GetStringWidth(FONT_SMALL, text, 0);
-
+// ここが実際の表示位置、元々の『XX - width』は相対位置でマイナスになる可能性があるので、絶対にFONT_SMALLでNNが６文字までと考えて固定値にする。
+// to-do：ただし、これでも『LV:100』だと枠オーバーする、原作だと『Lv』自体が左スプライトのため、またギミック系のアイコンの位置も変えないとだめ。
     if (IsOnPlayerSide(battler))
     {
         FillSpriteRectColor(spriteId, 8, 5, 24, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 32 - width, 3, 0, 0, sHealthBoxTextColor, 0, text);
+        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 7, 3, 0, 0, sHealthBoxTextColor, 0, text);
     }
     else
     {
         FillSpriteRectColor(spriteId, 0, 5, 24, 11, HEALTHBOX_BG_INDEX);
-        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 24 - width, 3, 0, 0, sHealthBoxTextColor, 0, text);
+        AddSpriteTextPrinterParameterized6(spriteId, FONT_SMALL, 0, 3, 0, 0, sHealthBoxTextColor, 0, text);
     }
 }
 
+// ここにHPのフォント
 #define HP_FONT FONT_SMALL
 #define HP_MAX_DIGITS 4
 #define HP_RIGHT_SPRITE_CHARS 6
@@ -914,7 +931,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
 static void PrintHpOnHealthbox(u32 spriteId, s16 currHp, s16 maxHp, u32 bgColor, s8 xOffset, s8 yOffset)
 {
     u32 width;
-    u8 text[2 * HP_MAX_DIGITS + 2], *txtPtr;
+    u8 text[2 * HP_MAX_DIGITS + 4], *txtPtr;
 
     // 4桁のHPを収めるには、HPボックス上でのHPの表示方法を少し変更する必要があります。
     // HP_RIGHT_SPRITE_CHARS 文字分は右側のHPボックスに収まり、残りは左側のボックスに表示されます。
@@ -939,7 +956,6 @@ static void PrintHpOnHealthbox(u32 spriteId, s16 currHp, s16 maxHp, u32 bgColor,
         AddSpriteTextPrinterParameterized6(spriteId2, HP_FONT, xOffset + 32 - width, yOffset + 5, 0, 0, sHealthBoxTextColor, 0, text);
     else
         AddSpriteTextPrinterParameterized6(spriteId, HP_FONT, xOffset + 64 - (width - 32), yOffset + 5, 0, 0, sHealthBoxTextColor, 0, text);
-
     gSprites[spriteId].data[1] = savedValue1;
     gSprites[spriteId2].data[1] = savedValue2;
 }
@@ -1773,6 +1789,7 @@ static void SpriteCB_StatusSummaryBalls_OnSwitchout(struct Sprite *sprite)
     sprite->y2 = gSprites[barSpriteId].y2;
 }
 
+// ここが種族名のフォント(Nicknameも)
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 {
     u32 healthboxSpriteId2 = gSprites[healthboxSpriteId].oam.affineParam;
