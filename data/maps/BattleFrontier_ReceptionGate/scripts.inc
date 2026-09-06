@@ -294,212 +294,98 @@ BattleFrontier_ReceptionGate_EventScript_ExitFrontierPassGuide::
 	end
 
 BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
-	.string "Is it your first time here?\n"
-	.string "Please step this way!$"
+	.string "{JPN}はじめての おきゃくさまですね!\nこちらへ どうぞ!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
-	.string "Welcome to the BATTLE FRONTIER!$"
+	.string "{JPN}ポケモンバトルの さいぜんせん!\nバトルフロンティアへ ようこそ!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
-	.string "For a first-time visitor, we issue\n"
-	.string "the FRONTIER PASS.\p"
-	.string "It's for use at all the facilities\n"
-	.string "in the BATTLE FRONTIER.\p"
-	.string "Here you are!$"
+	.string "{JPN}はじめての おきゃくさまには\nバトルフロンティアの なかで\lごりよう いただける フロンティアパスを\lはっこうして おります!\pどうぞ おうけとり ください!$"
 
 BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
-	.string "{PLAYER} obtained\n"
-	.string "the FRONTIER PASS.$"
+	.string "{JPN}{PLAYER}は\nフロンティアパスを もらった!$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "{PLAYER} placed the TRAINER CARD\n"
-	.string "in the FRONTIER PASS.$"
+	.string "{JPN}{PLAYER}は トレーナーカードを\nフロンティアパスに いれかえた!$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
-	.string "We hope you enjoy all that the BATTLE\n"
-	.string "FRONTIER has to offer!$"
+	.string "{JPN}それでは バトルフロンティアを\nぞんぶんに おたのしみ ください!$"
 
 BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame:
-	.string "???: Well, if it isn't {PLAYER}{KUN}!\n"
-	.string "You came out here!$"
+	.string "{JPN}???『やあ きて くれたんだね\n{PLAYER}{KUN}!$"
 
 BattleFrontier_ReceptionGate_Text_OhMrScottGoodDay:
-	.string "GUIDE: Oh! MR. SCOTT, sir!\n"
-	.string "Good day to you, sir!$"
+	.string "{JPN}うけつけ『あっ エニシダさま!\nおつかれさまです!$"
 
 BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
-	.string "SCOTT: It's great to see you here,\n"
-	.string "it really is!\p"
-	.string "I hope you'll take your time and\n"
-	.string "explore everywhere.\p"
-	.string "Naturally, I hope you'll also experience\n"
-	.string "the pure essence of battling.\p"
-	.string "I also have my quarters here, so feel\n"
-	.string "free to visit if you have time.$"
+	.string "{JPN}エニシダ『きみが きてくれて\nとっても うれしいよ!\pぜひ ゆっくりと そして じっくりと\nポケモンしょうぶの しんずいを\lあじわって いって くれ!\pわたしの へやも あるから\nひまが あるときに たずねて きてくれよ!$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-	.string "I'm your guide to the various facilities\n"
-	.string "here in the BATTLE FRONTIER.$"
+	.string "{JPN}こちらでは バトルフロンティアに ある\nさまざまな しせつの\lごあんないを いたします!$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
-	.string "Which would you like to learn about?$"
+	.string "{JPN}どの せつめいが ききたいですか?$"
 
 BattleFrontier_ReceptionGate_Text_BattleTowerInfo:
-	.string "It is the gigantic tower considered\n"
-	.string "to be the BATTLE FRONTIER's symbol.\p"
-	.string "There are four kinds of BATTLE ROOMS\n"
-	.string "in the tower for SINGLE, DOUBLE, MULTI,\l"
-	.string "and LINK MULTI BATTLES.$"
+	.string "{JPN}バトルフロンティアの シンボル とも\nいえる きょだいな とう です\pこちらの たてもの では シングル\nダブル マルチ つうしんマルチの\l4つの バトルルームで たたかいを\lたのしむことが できます!$"
 
 BattleFrontier_ReceptionGate_Text_BattleDomeInfo:
-	.string "The BATTLE DOME is the large building\n"
-	.string "shaped like a huge egg.\p"
-	.string "Events named Battle Tourneys are held\n"
-	.string "in this facility.\p"
-	.string "The Battle Tourneys are offered in\n"
-	.string "two courses--for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "{JPN}バトルドームは たまごの ような\nかたちをした おおきな たてものです\pこちらでは バトルトーナメント という\nイベントが かいさいされて います\pなお バトルトーナメントには\nシングルバトルよう ダブルバトルようの\l2つの コースが あります!$"
 
 BattleFrontier_ReceptionGate_Text_BattlePalaceInfo:
-	.string "The BATTLE PALACE is the red building\n"
-	.string "on the right of the BATTLE FRONTIER.\p"
-	.string "There are two kinds of BATTLE HALLS\n"
-	.string "for SINGLE and DOUBLE BATTLES.$"
+	.string "{JPN}バトルパレスは バトルフロンティアの\nみぎはじに ある あかい たてものです\pこちらの たてもの では\nシングル ダブルの 2つの\lバトルホールへの ちょうせんが できます$"
 
 BattleFrontier_ReceptionGate_Text_BattleArenaInfo:
-	.string "The BATTLE ARENA is the dojo-like\n"
-	.string "building at the center-right of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Set KO Tourney\n"
-	.string "takes place at the BATTLE ARENA.$"
+	.string "{JPN}バトルアリーナは バトルフロンティアの\nちゅうおう みぎに いちする\lどうじょうの ような たてものです\pこちらでは かちぬきチームバトル という\nイベントを かいさい しております!$"
 
 BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
-	.string "The BATTLE FACTORY is the large\n"
-	.string "building that is the closest to us.\p"
-	.string "An event called the Battle Swap\n"
-	.string "is conducted there.\p"
-	.string "The Battle Swap event is offered in\n"
-	.string "two courses for SINGLE and DOUBLE\l"
-	.string "BATTLES.$"
+	.string "{JPN}バトルファクトリーは ここをでて いちばん\nちかくにある おおきな ビルに なります\pこちらでは バトルトレード という\nイベントを かいさいして おります\pなお バトルトレードには\nシングルバトルよう ダブルバトルようの\l2つの コースが ようい されています!$"
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
-	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "An event called the Battle Choice\n"
-	.string "is conducted there.$"
+	.string "{JPN}バトルチューブは バトルフロンティアの\nちゅうおう ひだりに いちする\lポケモンの かたちを した たてものです\pこちらでは バトルゲーム という\nイベントを かいさい しております!$"
 
 BattleFrontier_ReceptionGate_Text_BattlePyramidInfo:
-	.string "The BATTLE PYRAMID is the enormous\n"
-	.string "pyramid.\p"
-	.string "An event called the Battle Quest\n"
-	.string "is conducted there.$"
+	.string "{JPN}バトルピラミッドは きょだいな\nピラミッドの かたちをした たてものです\pこちらでは バトルアドベンチャー という\nイベントを かいさい しております!$"
 
 BattleFrontier_ReceptionGate_Text_RankingHallInfo:
-	.string "The RANKING HALL is located near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "There, you may see the most fantastic\n"
-	.string "records left by the TRAINERS that\l"
-	.string "took on the many challenges of\l"
-	.string "the BATTLE FRONTIER.$"
+	.string "{JPN}ランキングホールは\nバトルタワーの ちかくに あります\pこちらは バトルフロンティアで\nたたかった トレーナーたちの\lもっとも すばらしい きろくを\lみることが できます$"
 
 BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
-	.string "The EXCHANGE SERVICE CORNER is near\n"
-	.string "the BATTLE TOWER.\p"
-	.string "The Battle Points you have earned in\n"
-	.string "the BATTLE FRONTIER may be exchanged\l"
-	.string "for fabulous prizes there.$"
+	.string "{JPN}ひきかえサービス コーナーは\nバトルタワーの ちかくに あります\pこちらでは バトルフロンティアの\nなかで ためた バトルポイントを\lすてきな けいひんと\lこうかんする ことが できます!$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-	.string "I'm your guide to the basic rules that\n"
-	.string "are common to all the challenges\l"
-	.string "offered by the facilities in the BATTLE\l"
-	.string "FRONTIER.$"
+	.string "{JPN}こちらでは バトルフロンティアに ある\nすべての しせつに きょうつう した\lちょうせんの ための きほんてきな\lルールを せつめい いたします!$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
-	.string "What would you like to learn about?$"
+	.string "{JPN}どの せつめいが ききたいですか?$"
 
 BattleFrontier_ReceptionGate_Text_LevelModeInfo:
-	.string "All the challenges at the BATTLE\n"
-	.string "FRONTIER's facilities come in\l"
-	.string "two courses--Level 50 and Open Level.$"
+	.string "{JPN}バトルフロンティアに ある\nすべての しせつの ちょうせんは\lおおきく レベル50の コースと\lオープンレベルの コースに わかれています$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "The Level 50 course is open to POKéMON\n"
-	.string "up to and including Level 50.\p"
-	.string "Please keep in mind, however, that\n"
-	.string "no TRAINER you face will have any\l"
-	.string "POKéMON below Level 50.\p"
-	.string "This course is the entry level for\n"
-	.string "battles at the BATTLE FRONTIER.\p"
-	.string "To begin, we hope you will challenge\n"
-	.string "this course.$"
+	.string "{JPN}レベル50の コースでは なまえの とおり\nレベル50までの ポケモンを\lちょうせん させることが できます\pただし レベル50より ひくい レベルの\nポケモンを つれた トレーナーが\lとうじょう することは ありません\lくれぐれも ごちゅうい ください\pなお このコースが バトルフロンティアの\nたたかいの きほんと なって いますので\lぜひ チャレンジして みてください$"
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
-	.string "The Open Level course places no limit\n"
-	.string "on the levels of POKéMON entering\l"
-	.string "challenges.\p"
-	.string "The levels of your opponents will\n"
-	.string "be adjusted to match the levels of\l"
-	.string "your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 60.$"
+	.string "{JPN}オープンレベルの コースでは\nちょうせんに さんかする ポケモンの\lレベルに せいげんが ありません\pあなたの ポケモンの レベルに あわせて\nたいせんする トレーナーの ポケモンの\lレベルが かわります\pただし レベル60より ひくい レベルの\nポケモンを つれた トレーナーが\lとうじょう することは ありません$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
-	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of POKéMON,\n"
-	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
-	.string "challenges will depend on the facility.\p"
-	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
-	.string "permitted.$"
+	.string "{JPN}タマゴや いちぶの れいがいを\nのぞいて ほとんどの ポケモンが\lすべての しせつに ちょうせん できます\pちょうせんの ために\nひつような ポケモンの かずは\lしせつに よって ちがいます\pただし どの しせつでも\nおなじ しゅるいの ポケモンを\l2ひき いじょう さんか させることは\lできませんので ごちゅうい ください$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
-	.string "When entering a challenge at a BATTLE\n"
-	.string "FRONTIER facility, POKéMON may not\l"
-	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
-	.string "entering a challenge are holding\l"
-	.string "different items.$"
+	.string "{JPN}バトルフロンティアの しせつに\nポケモンを ちょうせん させるとき\pそれぞれの ポケモンが\nおなじ どうぐを もつことは できません\pちょうせん させる ポケモンには\nすべて ちがう どうぐを\lもたせて おくように してください$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-	.string "I'm your guide to the FRONTIER PASS.$"
+	.string "{JPN}こちらでは フロンティアパスの\nせつめいを いたします!$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
-	.string "Which would you like to learn about?$"
+	.string "{JPN}どの せつめいが ききたいですか?$"
 
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
-	.string "There are seven facilities at\n"
-	.string "the BATTLE FRONTIER.\p"
-	.string "TRAINERS who gain recognition for\n"
-	.string "their abilities may be rewarded with\l"
-	.string "symbols from each of the facilities.\p"
-	.string "To earn a symbol, TRAINERS may need\n"
-	.string "to defeat other TRAINERS in a row,\l"
-	.string "and may need to win events repeatedly.\p"
-	.string "It's certainly not easy to win symbols.\n"
-	.string "I wish you the best of luck!$"
+	.string "{JPN}バトルフロンティアの 7つの しせつで\nつよさを みとめられた トレーナーが\lそれぞれの しせつの シンボルを\lもらえることが あります\pシンボルを もらう ためには\nなんにんも トレーナーを かちぬいたり\lなんども せいは したり……\pなかなか たいへんな みちのりですが\nぜひ がんばって くださいね!$"
 
 BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
-	.string "It is possible to record one battle\n"
-	.string "on your FRONTIER PASS.\p"
-	.string "You may record a battle you had with\n"
-	.string "a friend or friends.\p"
-	.string "Or you may record a battle conducted\n"
-	.string "at the BATTLE FRONTIER excluding\l"
-	.string "matches at the BATTLE PIKE or\l"
-	.string "the BATTLE PYRAMID.\p"
-	.string "You may choose to record your match\n"
-	.string "at the end of a battle.$"
+	.string "{JPN}あなたの たいせんを ひとつだけ\nパスに きろくする ことが できます\pおともだち との たいせんか\nバトルチューブ バトルピラミッド いがいの\lバトルフロンティアでの\lたいせんが きろくできます\pたいせんが おわった ときに\nきろく するか どうかを きめられます$"
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
-	.string "Battle Points are rewards given to\n"
-	.string "TRAINERS who battled outstandingly\l"
-	.string "at the BATTLE FRONTIER.\p"
-	.string "You may trade in your Battle Points\n"
-	.string "for prizes at the EXCHANGE SERVICE\l"
-	.string "CORNER.$"
+	.string "{JPN}バトルポイントは\nバトルフロンティアで すばらしい\lたたかいを した トレーナーに\lあたえられる ごほうびです\pためた ポイントは ひきかえサービスで\nしょうひんと ひきかえることが できます$"
 

@@ -1,27 +1,20 @@
 Text_PictureBookShelf:
-	.string "There's a set of POKéMON picture books.$"
+	.string "{JPN}ポケモンえほんが そろってる!$"
 
 Text_BookShelf:
-	.string "It's filled with all sorts of books.$"
+	.string "{JPN}いろんな ほんが いっぱいだ!$"
 
 Text_PokemonCenterBookShelf:
-	.string "POKéMON magazines!\n"
-	.string "POKéMON PAL…\p"
-	.string "POKéMON HANDBOOK…\n"
-	.string "ADORABLE POKéMON…$"
+	.string "{JPN}ポケモンざっしが ならんでる!\p……「ポケモンのとも」\n……「ポケモン てちょう」\l……「かわいい ポケモン」$"
 
 Text_Vase:
-	.string "This vase looks expensive…\n"
-	.string "Peered inside…\p"
-	.string "But, it was empty.$"
+	.string "{JPN}たかそうな つぼが ある!\nのぞきこむと……\pなかは からっぽ だ!$"
 
 Text_EmptyTrashCan:
-	.string "It's empty.$"
+	.string "{JPN}なかは からっぽ だ!$"
 
 Text_ShopShelf:
-	.string "The shelves brim with all sorts of\n"
-	.string "POKéMON merchandise.$"
+	.string "{JPN}たくさんの ポケモン グッズが\nところせましと ならべられてる!$"
 
 Text_Blueprint:
-	.string "A blueprint of some sort?\n"
-	.string "It's too complicated!$"
+	.string "{JPN}なにかの せっけいず……?\nみても チンプンカンプン!$"

@@ -36,8 +36,8 @@ DayCare_Text_TakeGoodCareOfIt::
 	.string "Take good care of it.$"
 
 DayCare_Text_SeeWifeIfYouWantToPickUpMon::
-	.string "ポケモンを　ひきとりたい　ときは\n"
-	.string "ばさんに　いって　おくれ$"
+	.string "ポケモンを ひきとりたい ときは\n"
+	.string "ばあさんに いって おくれ$"
 
 DayCare_Text_YourMonsAreDoingFine::
 	.string "Ah, it's you! Your {STR_VAR_1} and\n"
@@ -99,7 +99,7 @@ DayCare_Text_YourPartyIsFull::
 	.string "Make room, then come see me.$"
 
 DayCare_Text_TakeBackWhichMon::
-	.string "どっちの　ポケモンを　ひきとるかい？$"
+	.string "どっちの ポケモンを ひきとるかい?$"
 
 DayCare_Text_ItWillCostX::
 	.string "If you want your {STR_VAR_1} back,\n"
