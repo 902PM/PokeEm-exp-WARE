@@ -327,7 +327,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_RAZOR_WIND] =
     {
         .name = COMPOUND_STRING("{JPN}かまいたち"),
-        .description = COMPOUND_STRING("{JPN}1ターンめで かぜのやいばを つくり\nつぎのターンで てきを こうげき"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA == GEN_3 || B_UPDATED_MOVE_DATA == GEN_1
+            "{JPN}1ターンめで かぜのやいばを つくり\nつぎのターンで てきを こうげき"),
+        #else
+            "{JPN}かぜのやいばを つくり つぎのターンで\nこうげき きゅうしょに あたりやすい"),
+        #endif
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = 80,
         .type = TYPE_NORMAL,
@@ -671,13 +676,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}とびげり"),
         .description = COMPOUND_STRING("{JPN}ジャンプした いきおいで キックを\nくりだす はずすと ダメージをうける"),
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 100,
-        #elif B_UPDATED_MOVE_DATA == GEN_4
-            .power = 85,
-        #else
-            .power = 70,
-        #endif
+    #if B_UPDATED_MOVE_DATA >= GEN_5
+        .power = 100,
+    #elif B_UPDATED_MOVE_DATA == GEN_4
+        .power = 85,
+    #else
+        .power = 70,
+    #endif
         .effect = EFFECT_RECOIL_IF_MISS,
         .type = TYPE_FIGHTING,
         .accuracy = 95,
@@ -844,7 +849,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TACKLE] =
     {
         .name = COMPOUND_STRING("{JPN}たいあたり"),
-        .description = COMPOUND_STRING("{JPN}からだぜんたいを つかって\nてきに たいあたりして こうげき"),
+        .description = COMPOUND_STRING({JPN}からだぜんたいを つかって\nてきに たいあたりして こうげき"),
         .power = 50,
         .effect = EFFECT_HIT,
         .type = TYPE_NORMAL,
@@ -1279,14 +1284,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DISABLE] =
     {
         .name = COMPOUND_STRING("{JPN}かなしばり"),
-        .description = COMPOUND_STRING("{JPN}ちょうのうりょくで てきの うごきを\nとめて わざを 1つ つかえなくする"),
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            .accuracy = 100,
-        #elif B_UPDATED_MOVE_DATA == GEN_4
-            .accuracy = 80,
+        .description = COMPOUND_STRING(
+        #if B_DISABLE_TURNS >= GEN_5
+            "{JPN}ちょくぜんに だしていた わざを\n4ターンの あいだ つかえなく する。"),
+        #elif B_DISABLE_TURNS == GEN_4
+            "{JPN}あいての うごきを とめて\nだしていた わざを つかえなくする。"),
         #else
-            .accuracy = 55,
-        #endif
+            "{JPN}ちょうのうりょくで てきの うごきを\nとめて わざを 1つ つかえなくする"),
+    #if B_UPDATED_MOVE_DATA >= GEN_5
+        .accuracy = 100,
+    #elif B_UPDATED_MOVE_DATA == GEN_4
+        .accuracy = 80,
+    #else
+        .accuracy = 55,
+    #endif
         .effect = EFFECT_DISABLE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -1309,7 +1320,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ACID] =
     {
         .name = COMPOUND_STRING("{JPN}ようかいえき"),
-        .description = COMPOUND_STRING("{JPN}つよいさんで てきの ひふを とかす\nとくぼうを さげることがある"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "{JPN}つよい さんを てきに かけて\nこうげき とくぼうを さげることがある"),
+        #else
+            "{JPN}つよいさんで てきの ひふを とかす\nぼうぎょを さげることがある"),
+        #endif
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_POISON,
@@ -1450,7 +1466,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SURF] =
     {
         .name = COMPOUND_STRING("{JPN}なみのり"),
-        .description = COMPOUND_STRING("{JPN}みずに なみを おこし それを\nものすごい ちからで たたきつける"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "{JPN}おおきな なみで まわりに\nいるものを すべて こうげきする"),
+        #else
+            "{JPN}みずに なみを おこし それを\nものすごい ちからで たたきつける"),
+        #endif
         .effect = EFFECT_HIT,
         .power = 95,
         .type = TYPE_WATER,
@@ -1694,16 +1715,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_LOW_KICK] =
     {
         .name = COMPOUND_STRING("{JPN}けたぐり"),
-        .description = COMPOUND_STRING("{JPN}おもい ポケモンには より\nおおきな ダメージを あたえる"),
-        #if B_UPDATED_MOVE_DATA >= GEN_3
-            .effect = EFFECT_LOW_KICK,
-        #else
-            .effect = EFFECT_HIT,
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_FLINCH,
-                .chance = 30,
-            }),
-        #endif
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_3
+            "{JPN}おもい ポケモンには より\nおおきな ダメージを あたえる"),
+    #else
+            "{JPN}タイミングよく あしを ひっかける\nてきを ひるませることがある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+    #endif
+        .effect = B_UPDATED_MOVE_DATA >= GEN_3 ? EFFECT_LOW_KICK : EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 50,
         .type = TYPE_FIGHTING,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_3 ? 100 : 90,
@@ -1878,7 +1900,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_GROWTH] =
     {
         .name = COMPOUND_STRING("{JPN}せいちょう"),
-        .description = COMPOUND_STRING("{JPN}いっきに からだを せいちょうさせて\nとくこうを あげる"),
+        .description = COMPOUND_STRING(
+        #if B_GROWTH_STAT_RAISE >= GEN_5
+            "{JPN}いっきに おおきく せいちょう させて\nこうげきと とくこうを あげる"),
+        #else
+            "{JPN}いっきに からだを せいちょうさせて\nとくこうを あげる"),
+        #endif
         .effect = EFFECT_GROWTH,
         .power = 0,
         .type = B_UPDATED_MOVE_TYPES >= GEN_CHAMPIONS ? TYPE_GRASS : TYPE_NORMAL,
@@ -2031,13 +2058,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}はなびらのまい"),
         .description = COMPOUND_STRING("{JPN}2ー3ターンのあいだ あばれつづける\nあばれたあとは こんらんしてしまう"),
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            .power = 120,
-        #elif B_UPDATED_MOVE_DATA == GEN_4
-            .power = 90,
-        #else
-            .power = 70,
-        #endif
+    #if B_UPDATED_MOVE_DATA >= GEN_5
+        .power = 120,
+    #elif B_UPDATED_MOVE_DATA == GEN_4
+        .power = 90,
+    #else
+        .power = 70,
+    #endif
         .effect = EFFECT_HIT,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -2064,7 +2091,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_STRING_SHOT] =
     {
         .name = COMPOUND_STRING("{JPN}いとをはく"),
-        .description = COMPOUND_STRING("{JPN}いとを てきの からだに まきつけ\nすばやさを がくっと さげる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            "{JPN}くちから いとを まきつけて あいての\nすばやさを がくっと さげる"),
+        #else
+            "{JPN}いとを てきの からだに まきつけ\nすばやさを さげさせる"),
+        #endif
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_BUG,
@@ -2544,7 +2576,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TELEPORT] =
     {
         .name = COMPOUND_STRING("{JPN}テレポート"),
-        .description = COMPOUND_STRING("{JPN}ちょうのうりょくを つかって\nせんとうから だっしゅつする"),
+        .description = COMPOUND_STRING(
+        #if B_TELEPORT_BEHAVIOR >= GEN_8
+            "{JPN}ひかえの ポケモンが いるときに\nつかうと いれかわる"),
+        #else
+            "{JPN}ちょうのうりょくを つかって\nせんとうから だっしゅつする"),
+        #endif
         .effect = EFFECT_TELEPORT,
         .power = 0,
         .type = TYPE_PSYCHIC,
@@ -2730,7 +2767,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MINIMIZE] =
     {
         .name = COMPOUND_STRING("{JPN}ちいさくなる"),
-        .description = COMPOUND_STRING("{JPN}からだを ちぢめて ちいさくなり\nじぶんの かいひりつを ぐーんとあげる"),
+        .description = COMPOUND_STRING(
+        #if B_MINIMIZE_EVASION >= GEN_5
+            "{JPN}からだを ちぢめて ちいさくみせて\nじぶんの かいひりつを ぐーんとあげる"),
+        #else
+            "{JPN}からだを ちぢめて ちいさくなり\nかいひりつを あげる"),
+        #endif
         .effect = EFFECT_MINIMIZE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -3251,7 +3293,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WATERFALL] =
     {
         .name = COMPOUND_STRING("{JPN}たきのぼり"),
-        .description = COMPOUND_STRING("{JPN}すごい いきおいで てきに つっこむ\nてきを ひるませることがある"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_4
+            "{JPN}すごい いきおいで てきに つっこむ\nてきを ひるませることがある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 20,
+        }),
+    #else
+            "たきを さかのぼるような いきおいで\nてきに とっしんする"),
+    #endif
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_WATER,
@@ -3262,12 +3313,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_FLINCH,
-                .chance = 20,
-            }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BETTER_IF_LAST,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -3327,7 +3372,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SKULL_BASH] =
     {
         .name = COMPOUND_STRING("{JPN}ロケットずつき"),
-        .description = COMPOUND_STRING("{JPN}1ターンめで あたまを ひっこめて\nつぎのターンで てきを こうげき"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_2
+            "{JPN}1ターンめで あたまを ひっこめて\nつぎのターンで てきを こうげき"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .defense = 1,
+            .self = TRUE,
+            .onChargeTurnOnly = TRUE,
+        }),
+    #else
+            "{JPN}さいしょに くびを ひっこめて\nつぎのターンで てきを こうげき"),
+    #endif
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 130 : 100,
         .type = TYPE_NORMAL,
@@ -3341,14 +3397,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .argument.twoTurnAttack = { .stringId = STRINGID_PKMNLOWEREDHEAD },
-        #if B_UPDATED_MOVE_DATA >= GEN_2
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_STAT_PLUS,
-            .defense = 1,
-            .self = TRUE,
-            .onChargeTurnOnly = TRUE,
-        }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -3519,13 +3567,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}へびにらみ"),
         .description = COMPOUND_STRING("{JPN}おなかの もようで てきを いかくし\nおびえさせて まひさせてしまう"),
-        #if B_UPDATED_MOVE_DATA >= GEN_6
-            .accuracy = 100,
-        #elif B_UPDATED_MOVE_DATA == GEN_5
-            .accuracy = 90,
-        #else
-            .accuracy = 75,
-        #endif
+    #if B_UPDATED_MOVE_DATA >= GEN_6
+        .accuracy = 100,
+    #elif B_UPDATED_MOVE_DATA == GEN_5
+        .accuracy = 90,
+    #else
+        .accuracy = 75,
+    #endif
         .effect = EFFECT_NON_VOLATILE_STATUS,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -3574,14 +3622,19 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_POISON_GAS] =
     {
         .name = COMPOUND_STRING("{JPN}どくガス"),
-        .description = COMPOUND_STRING("{JPN}どくガスを てきに ふきかけて\nどくをあたえる"),
-        #if B_UPDATED_MOVE_DATA >= GEN_6
-            .accuracy = 90,
-        #elif B_UPDATED_MOVE_DATA == GEN_5
-            .accuracy = 80,
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_5
+            "{JPN}どくガスを あいての かおに\nふきかけて どくに する"),
         #else
-            .accuracy = 55,
+            "{JPN}どくガスを てきに ふきかけて\nどくをあたえる"),
         #endif
+    #if B_UPDATED_MOVE_DATA >= GEN_6
+        .accuracy = 90,
+    #elif B_UPDATED_MOVE_DATA == GEN_5
+        .accuracy = 80,
+    #else
+        .accuracy = 55,
+    #endif
         .effect = EFFECT_NON_VOLATILE_STATUS,
         .power = 0,
         .type = TYPE_POISON,
@@ -3676,7 +3729,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SKY_ATTACK] =
     {
         .name = COMPOUND_STRING("{JPN}ゴッドバード"),
-        .description = COMPOUND_STRING("{JPN}1ターンめで じゃくてんを さがし\nつぎのターンで てきを こうげき"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_3
+            "{JPN}2ターンめに こうげき ひるませたり\nきゅうしょに あたる ことがある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+    #else
+            "{JPN}1ターンめで じゃくてんを さがし\nつぎのターンで てきを こうげき"),
+    #endif
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = 140,
         .type = TYPE_FLYING,
@@ -3690,12 +3752,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAHARSHLIGHT },
-    #if B_UPDATED_MOVE_DATA >= GEN_3
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
-    #endif
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -3763,7 +3819,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DIZZY_PUNCH] =
     {
         .name = COMPOUND_STRING("{JPN}ピヨピヨパンチ"),
-        .description = COMPOUND_STRING("{JPN}リズミカルな パンチで こうげき\nてきを こんらんさせることがある"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_2
+            "{JPN}リズミカルな パンチで こうげき\nてきを こんらんさせることがある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CONFUSION,
+            .chance = 20,
+        }),
+    #else
+            "{JPN}おやこどうじで パンチで こうげき"),
+    #endif
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_NORMAL,
@@ -3775,12 +3840,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .punchingMove = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_2
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_CONFUSION,
-                .chance = 20,
-            }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -4041,7 +4100,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ROCK_SLIDE] =
     {
         .name = COMPOUND_STRING("{JPN}いわなだれ"),
-        .description = COMPOUND_STRING("{JPN}おおきな いわを なげつける\nてきを ひるませることがある"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_2
+            "{JPN}おおきな いわを なげつける\nてきを ひるませることがある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+    #else
+            "{JPN}あいての ポケモンに むかって\nいわの なだれを おこす"),
+    #endif
         .effect = EFFECT_HIT,
         .power = 75,
         .type = TYPE_ROCK,
@@ -4051,12 +4119,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .movetext = 4,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        #if B_UPDATED_MOVE_DATA >= GEN_2
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_FLINCH,
-                .chance = 30,
-            }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
@@ -4124,7 +4186,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CONVERSION] =
     {
         .name = COMPOUND_STRING("{JPN}テクスチャー"),
-        .description = COMPOUND_STRING("{JPN}おぼえている わざの タイプの\nどれかに じぶんの タイプを かえる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_CONVERSION >= GEN_6
+            "{JPN}おぼえている わざで\nいちばん うえの おなじ タイプにする"),
+        #else
+            "{JPN}おぼえている わざの タイプの\nどれかに じぶんの タイプを かえる"),
+        #endif
         .effect = EFFECT_CONVERSION,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -4149,7 +4216,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TRI_ATTACK] =
     {
         .name = COMPOUND_STRING("{JPN}トライアタック"),
-        .description = COMPOUND_STRING("{JPN}3しゅるいの こうせんを\n1つにまとめて てきに はっしゃする"),
+        .description = COMPOUND_STRING(
+    #if B_UPDATED_MOVE_DATA >= GEN_2
+            "{JPN}3しゅるいの こうせんを\n1つにまとめて てきに はっしゃする"),
+        #endif
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
+            .chance = 20,
+            .argument.randomMoveEffects = { MOVE_EFFECT_BURN, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_FREEZE_OR_FROSTBITE },
+        }),
+    #else
+            "{JPN}さんかくけいの エネルギーたいを\nつくって あいてに ぶつける"),
+    #endif
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_NORMAL,
@@ -4159,13 +4237,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .movetext = 4,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        #if B_UPDATED_MOVE_DATA >= GEN_2
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
-            .chance = 20,
-            .argument.randomMoveEffects = { MOVE_EFFECT_BURN, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_FREEZE_OR_FROSTBITE },
-        }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -4264,7 +4335,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .argument = { .recoilPercentage = 50 },
     #endif
         .power = 50,
-        .type = TYPE_NORMAL,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_2 ? TYPE_MYSTERY : TYPE_NORMAL,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 0 : 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_2 ? 1: 10,
         .target = TARGET_SELECTED,
@@ -4601,7 +4672,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_COTTON_SPORE] =
     {
         .name = COMPOUND_STRING("{JPN}わたほうし"),
-        .description = COMPOUND_STRING("{JPN}ほうしを まとわりつかせ てきの\nすばやさを がくっとさげさせる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            "{JPN}フワフワの ほうしを まとわりつかせ\nてきの すばやさを がくっとさげる"),
+        #else
+            "{JPN}ほうしを まとわりつかせ てきの\nすばやさを がくっとさげさせる"),
+        #endif
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_GRASS,
@@ -4651,7 +4727,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SPITE] =
     {
         .name = COMPOUND_STRING("{JPN}うらみ"),
-        .description = COMPOUND_STRING("{JPN}あいてが だした わざを うらんで\nその わざポイントを へらしてしまう"),
+        .description = COMPOUND_STRING(
+        #if B_PP_REDUCED_BY_SPITE >= GEN_4
+            "{JPN}あいてが だした わざに うらみを\nいだいて PPを 4だけ へらす"),
+        #else
+            "{JPN}あいてが だした わざを うらんで\nその わざポイントを へらしてしまう"),
+        #endif
         .effect = EFFECT_SPITE,
         .power = 0,
         .type = TYPE_GHOST,
@@ -5861,7 +5942,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ENCORE] =
     {
         .name = COMPOUND_STRING("{JPN}アンコール"),
-        .description = COMPOUND_STRING("{JPN}てきが さいごに つかった わざを\n2ー6かい れんぞくで ださせる"),
+        .description = COMPOUND_STRING(
+        #if B_ENCORE_TURNS >= GEN_5
+            "{JPN}あいてが さいごに つかった わざを\n3ターンの あいだ ずっと ださせる"),
+        #elif B_ENCORE_TURNS >= GEN_4
+            "{JPN}あいてが さいごに つかった わざを\n3ー7ターンのあいだ ずっと ださせる"),
+        #else
+            "{JPN}てきが さいごに つかった わざを\n2ー6かい れんぞくで ださせる"),
+        #endif
         .effect = EFFECT_ENCORE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -5909,7 +5997,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_RAPID_SPIN] =
     {
         .name = COMPOUND_STRING("{JPN}こうそくスピン"),
-        .description = COMPOUND_STRING("{JPN}からだを はやく かいてんさせて\nてきを こうげき"),
+        .description = COMPOUND_STRING(
+    #if B_SPEED_BUFFING_RAPID_SPIN >= GEN_8
+            "{JPN}かいてんして てきを こうげき\nじぶんの すばやさも あがる"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .speed = 1,
+            .self = TRUE,
+            .chance = 100,
+        }),
+    #else
+            "{JPN}からだを はやく かいてんさせて\nてきを こうげき"),
+    #endif
         .effect = EFFECT_RAPID_SPIN,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 50 : 20,
         .type = TYPE_NORMAL,
@@ -5920,14 +6019,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        #if B_SPEED_BUFFING_RAPID_SPIN >= GEN_8
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_STAT_PLUS,
-            .speed = 1,
-            .self = TRUE,
-            .chance = 100,
-        }),
-        #endif
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED : CONTEST_EFFECT_AVOID_STARTLE_ONCE,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -5939,7 +6030,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SWEET_SCENT] =
     {
         .name = COMPOUND_STRING("{JPN}あまいかおり"),
-        .description = COMPOUND_STRING("{JPN}あまいかおりで きを そらせて\nてきの かいひりつを がくっとさげる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            "{JPN}あまいかおりで きを そらせて\nてきの かいひりつを がくっとさげる"),
+        #else
+            "{JPN}あまいかおりで きを そらせて\nてきの かいひりつを さげさせる"),
+        #endif
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -6004,7 +6100,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = TRUE,
+        .slicingMove = B_UPDATED_MOVE_FLAGS >= GEN_CHAMPIONS,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STAT_PLUS,
             .attack = 1,
@@ -6243,7 +6339,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CRUNCH] =
     {
         .name = COMPOUND_STRING("{JPN}かみくだく"),
-        .description = COMPOUND_STRING("{JPN}するどい はで てきを かみくだく\nぼうぎょを さげることがある"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "{JPN}するどい はで てきを かみくだく\nぼうぎょを さげることがある"),
+        #else
+            "{JPN}するどい はで てきを かみくだく\nとくぼうを さげることがある"),
+        #endif
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DARK,
@@ -6545,7 +6646,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_UPROAR] =
     {
         .name = COMPOUND_STRING("{JPN}さわぐ"),
-        .description = COMPOUND_STRING("{JPN}2ー5ターンのあいだ さわいで\nだれも ねむれない"),
+        .description = COMPOUND_STRING(
+        #if B_UPROAR_TURNS >= GEN_5
+            "{JPN}3ターンの あいだ さわいで\nだれも ねむれなく なる"),
+        #else
+            "{JPN}2ー5ターンのあいだ さわいで\nだれも ねむれない"),
+        #endif
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 50,
         .type = TYPE_NORMAL,
@@ -6575,7 +6681,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_STOCKPILE] =
     {
         .name = COMPOUND_STRING("{JPN}たくわえる"),
-        .description = COMPOUND_STRING("{JPN}さいだい 3かいまで\nちからを たくわえる"),
+        .description = COMPOUND_STRING(
+            "Charges up power for up to\n"
+        #if B_STOCKPILE_RAISES_DEFS >= GEN_4
+            "{JPN}ちからを 3かいまで たくわえて\nぼうぎょと とくぼうを あげる"),
+        #else
+            "{JPN}さいだい 3かいまで\nちからを たくわえる"),
+        #endif
         .effect = EFFECT_STOCKPILE,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -6941,7 +7053,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CHARGE] =
     {
         .name = COMPOUND_STRING("{JPN}じゅうでん"),
-        .description = COMPOUND_STRING("{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
+        .description = COMPOUND_STRING(
+    #if B_CHARGE >= GEN_9
+        #if B_CHARGE_SPDEF_RAISE >= GEN_5
+            "{JPN}つぎに だす でんきの いりょくを\nあげる じぶんの とくぼうも あがる"),
+        #else
+            "{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
+        #endif
+    #else
+        #if B_CHARGE_SPDEF_RAISE >= GEN_5
+            "{JPN}つぎに だす でんきの いりょくを\nあげる じぶんの とくぼうも あがる"),
+        #else
+            ""{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
+        #endif
+    #endif
         .effect = EFFECT_CHARGE,
         .power = 0,
         .type = TYPE_ELECTRIC,
@@ -6972,7 +7097,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TAUNT] =
     {
         .name = COMPOUND_STRING("{JPN}ちょうはつ"),
-        .description = COMPOUND_STRING("{JPN}あいてを ちょうはつして おこらせる\nあいては こうげき しかできなくなる"),
+        .description = COMPOUND_STRING(
+        #if B_TAUNT_TURNS >= GEN_5
+            "{JPN}3ターンの あいだ あいては\nこうげき わざしか だせなくなる"),
+        #elif B_TAUNT_TURNS == GEN_4
+            "{JPN}2ー4ターンの あいだ あいては\nこうげき わざしか だせなくなる"),
+        #else
+            "{JPN}あいてを ちょうはつして おこらせる\nあいては こうげき しかできなくなる"),
+        #endif
         .effect = EFFECT_TAUNT,
         .power = 0,
         .type = TYPE_DARK,
@@ -7306,7 +7438,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_KNOCK_OFF] =
     {
         .name = COMPOUND_STRING("{JPN}はたきおとす"),
-        .description = COMPOUND_STRING("{JPN}あいての どうぐを はたきおとして\nおわるまで つかえなくする"),
+        .description = COMPOUND_STRING(
+        #if B_KNOCK_OFF_DMG >= GEN_6 && B_KNOCK_OFF_REMOVAL >= GEN_5
+            "{JPN}あいての どうぐを はたきおとして\nおわるまで つかえなく する"),
+        #else
+            "{JPN}あいての どうぐを はたきおとして\nおわるまで つかえなくする"),
+        #endif
         .effect = EFFECT_KNOCK_OFF,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 65 : 20,
         .type = TYPE_DARK,
@@ -7502,7 +7639,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}ひみつのちから"),
         .description = COMPOUND_STRING("{JPN}ひみつの ちからを よびさます\nばしょによって ついかこうかがちがう"),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SECRET_POWER,
         .power = 70,
         .type = TYPE_NORMAL,
         .accuracy = 100,
@@ -7600,7 +7737,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TAIL_GLOW] =
     {
         .name = COMPOUND_STRING("{JPN}ほたるび"),
-        .description = COMPOUND_STRING("{JPN}ひかりを てんめつさせて\nとくこうを ぐぐーんとあげる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_5
+            "{JPN}てんめつする ひかりを ながめて\nとくこうを ぐぐーんとあげる"),
+        #else
+            "{JPN}ひかりを てんめつさせて\nとくこうを ぐーんとあげる"),
+        #endif
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_BUG,
@@ -7761,7 +7903,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MUD_SPORT] =
     {
         .name = COMPOUND_STRING("{JPN}どろあそび"),
-        .description = COMPOUND_STRING("{JPN}どろどろに なって\nでんきタイプの ダメージを へらす"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            "{JPN}5ターンの あいだ でんきタイプの\nわざを よわめる"),
+        #else
+            "{JPN}どろどろに なって\nでんきタイプの ダメージを へらす"),
+        #endif
         .effect = EFFECT_MUD_SPORT,
         .power = 0,
         .type = TYPE_GROUND,
@@ -8513,7 +8660,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SHEER_COLD] =
     {
         .name = COMPOUND_STRING("{JPN}ぜったいれいど"),
-        .description = COMPOUND_STRING("{JPN}ぜったいれいどで てきを おそう\nきまると せんとうふのうになる"),
+        .description = COMPOUND_STRING(
+        #if B_SHEER_COLD_ACC >= GEN_7
+            "{JPN}いちげきひっさつ こおりタイプ\nいがいの ポケモンだと あたりにくい"),
+        #else
+            "{JPN}ぜったいれいどで てきを おそう\nきまると せんとうふのうになる"),
+        #endif
         .effect = EFFECT_OHKO,
         .power = 1,
         .type = TYPE_ICE,
@@ -8682,7 +8834,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HOWL] =
     {
         .name = COMPOUND_STRING("{JPN}とおぼえ"),
-        .description = COMPOUND_STRING("{JPN}ほえて きあいを たかめることで\nこうげきを あげる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_8
+            "{JPN}おおごえで ほえて きあいを たかめ\nじぶんと みかたの こうげきを あげる"),
+        #else
+            "{JPN}ほえて きあいを たかめることで\nこうげきを あげる"),
+        #endif
         .power = 0,
         .effect = EFFECT_STAT_CHANGE,
         .type = TYPE_NORMAL,
@@ -8901,7 +9058,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_VOLT_TACKLE] =
     {
         .name = COMPOUND_STRING("{JPN}ボルテッカー"),
-        .description = COMPOUND_STRING("{JPN}いのちをかけて てきに たいあたり\nじぶんもかなり ダメージをうける"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            "{JPN}でんきを まとって こうげき\nまひ じょうたいに することが ある"),
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 10,
+        }),
+        #else
+            "{JPN}いのちをかけて てきに たいあたり\nじぶんもかなり ダメージをうける"),
+        #endif
         .effect = EFFECT_RECOIL,
         .power = 120,
         .type = TYPE_ELECTRIC,
@@ -8913,12 +9079,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .argument = { .recoilPercentage = 33 },
         .makesContact = TRUE,
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .additionalEffects = ADDITIONAL_EFFECTS({
-                .moveEffect = MOVE_EFFECT_PARALYSIS,
-                .chance = 10,
-            }),
-        #endif
         .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
@@ -8951,7 +9111,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WATER_SPORT] =
     {
         .name = COMPOUND_STRING("{JPN}みずあそび"),
-        .description = COMPOUND_STRING("{JPN}びしょびしょに なって\nほのおタイプの ダメージを へらす"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_6
+            "{JPN}5ターンの あいだ\nほのおタイプの わざを よわめる"),
+        #else
+            "{JPN}びしょびしょに なって\nほのおタイプの ダメージを へらす"),
+        #endif
         .effect = EFFECT_WATER_SPORT,
         .power = 0,
         .type = TYPE_WATER,
@@ -9442,7 +9607,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TAILWIND] =
     {
         .name = COMPOUND_STRING("{JPN}おいかぜ"),
-        .description = COMPOUND_STRING("{JPN}3ターンのあいだ みかた\nぜんいんの すばやさを あげる"),
+        .description = COMPOUND_STRING(
+        #if B_TAILWIND_TURNS >= GEN_5
+            "{JPN}4ターンのあいだ みかた\nぜんいんの すばやさを あげる"),
+        #else
+            "{JPN}3ターンのあいだ みかた\nぜんいんの すばやさを あげる"),
+        #endif
         .effect = EFFECT_TAILWIND,
         .power = 0,
         .type = TYPE_FLYING,
@@ -12928,7 +13098,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_INCINERATE] =
     {
         .name = COMPOUND_STRING("{JPN}やきつくす"),
-        .description = COMPOUND_STRING("{JPN}あいてが きのみを もっている\nとき もやして つかえなく する"),
+        .description = COMPOUND_STRING(
+        #if B_INCINERATE_GEMS >= GEN_6
+            "{JPN}あいてが きのみなどを もっている\nとき もやして つかえなく する"),
+        #else
+            "{JPN}あいてが きのみを もっている\nとき もやして つかえなく する"),
+        #endif
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 30,
         .type = TYPE_FIRE,
@@ -14291,7 +14466,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FELL_STINGER] =
     {
         .name = COMPOUND_STRING("{JPN}とどめばり"),
-        .description = COMPOUND_STRING("{JPN}このわざで てきを たおすと\nこうげきが ぐぐーんと あがる"),
+        .description = COMPOUND_STRING(
+            "If the foe is KO'd, Attack\n"
+        #if B_FELL_STINGER_STAT_RAISE >= GEN_7
+            "{JPN}このわざで てきを たおすと\nこうげきが ぐぐーんと あがる"),
+        #else
+            "{JPN}このわざで てきを たおすと\nこうげきが ぐーんと あがる"),
+        #endif
         .effect = EFFECT_FELL_STINGER,
         .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 50 : 30,
         .type = TYPE_BUG,
@@ -14487,7 +14668,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FREEZE_DRY] =
     {
         .name = COMPOUND_STRING("{JPN}フリーズドライ"),
-        .description = COMPOUND_STRING("{JPN}てきを きゅうげきに ひやす\nみずタイプにも こうかばつぐんになる"),
+        #if B_UPDATED_MOVE_DATA < GEN_CHAMPIONS
+        .description = COMPOUND_STRING(
+            #if B_USE_FROSTBITE == TRUE
+                "{JPN}てきを きゅうげきに ひやす\nみずタイプにも こうかばつぐんになる"),
+            #else
+                "{JPN}てきを きゅうげきに ひやす\nみずタイプにも こうかばつぐんになる"),
+            #endif
+        #else
+        .description = COMPOUND_STRING(
+            "{JPN}てきを きゅうげきに ひやす\nみずタイプにも こうかばつぐんになる"),
+        #endif
         .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 70,
         .type = TYPE_ICE,
@@ -14498,10 +14689,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .argument = { .type = TYPE_WATER },
+    #if B_UPDATED_MOVE_DATA < GEN_CHAMPIONS
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
             .chance = 10,
         }),
+    #endif
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -16583,7 +16776,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_AURORA_VEIL] =
     {
         .name = COMPOUND_STRING("{JPN}オーロラベール"),
-        .description = COMPOUND_STRING("{JPN}5ターンのあいだ ぶつりと\nとくしゅの ダメージを よわめる"),
+        .description = COMPOUND_STRING(
+        #if B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW
+            "{JPN}5ターンのあいだ ぶつりと\nとくしゅの ダメージを よわめる"),
+        #elif B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_BOTH
+            "{JPN}5ターンのあいだ ぶつりと\nとくしゅの ダメージを よわめる"),
+        #else
+            "{JPN}5ターンのあいだ ぶつりと\nとくしゅの ダメージを よわめる"),
+        #endif
         .effect = EFFECT_AURORA_VEIL,
         .power = 0,
         .type = TYPE_ICE,
@@ -17043,7 +17243,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ZIPPY_ZAP] =
     {
         .name = COMPOUND_STRING("{JPN}ばちばちアクセル"),
-        .description = COMPOUND_STRING("{JPN}もうスピードの でんげきアタック\nせんせい して きゅうしょに あたる"),
+        .description = COMPOUND_STRING(
+        #if B_UPDATED_MOVE_DATA >= GEN_8
+            "{JPN}もうスピードの でんげきアタック\nせんせい して かいひを あげる"),
+        #else
+            "{JPN}もうスピードの でんげきアタック\nせんせい して きゅうしょに あたる"),
+        #endif
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 80 : 50,
         .type = TYPE_ELECTRIC,
@@ -17055,7 +17260,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
-        .alwaysCriticalHit = TRUE,
+        .alwaysCriticalHit = B_UPDATED_MOVE_DATA < GEN_8,
         .metronomeBanned = TRUE,
         #if B_UPDATED_MOVE_DATA >= GEN_8
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -17135,7 +17340,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BOUNCY_BUBBLE] =
     {
         .name = COMPOUND_STRING("{JPN}いきいきバブル"),
-        .description = COMPOUND_STRING("{JPN}みずの かたまりをぶつけて こうげき\nダメージのはんぶんの HPをかいふくする"),
+        .description = COMPOUND_STRING(
+            "Shoots bubbles that absorb\n"
+        #if B_UPDATED_MOVE_DATA >= GEN_8
+            "{JPN}みずの かたまりをぶつけて こうげき\nダメージぶんの HPをかいふくする"),
+        #else
+            "{JPN}みずの かたまりをぶつけて こうげき\nダメージのはんぶんの HPをかいふくする"),
+        #endif
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 60 : 90,
         .type = TYPE_WATER,
@@ -18961,7 +19172,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .slicingMove = TRUE,
+        .slicingMove = B_UPDATED_MOVE_FLAGS >= GEN_CHAMPIONS,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
             .chance = 50,
@@ -20845,7 +21056,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .movetext = 4,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
-        .soundMove = TRUE,
+        .soundMove = B_UPDATED_MOVE_FLAGS >= GEN_CHAMPIONS,
         .ignoresSubstitute = TRUE,
         .battleAnimScript = gBattleAnimMove_DragonCheer,
     },

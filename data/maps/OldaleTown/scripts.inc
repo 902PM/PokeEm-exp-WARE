@@ -340,54 +340,31 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "{JPN}ちょっと ひとやすみ したいから\n"
-	.string "{JPN}レポート かいてるの$"
+	.string "{JPN}ちょっと ひとやすみ したいから\nレポート かいてるの$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "{JPN}おれ フレンドリィショップの てんいん!\p"
-	.string "{JPN}きみ! きみ!\n"
-	.string "{JPN}ちょっと ついてきて!$"
+	.string "{JPN}おれ フレンドリィショップの てんいん!\pきみ! きみ!\nちょっと ついてきて!$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "{JPN}ここが フレンドリィショップ!\n"
-	.string "{JPN}あおい やねが めじるし なのさ!\p"
-	.string "{JPN}ポケモンを つかまえる ボールとか\n"
-	.string "{JPN}いろんな グッズを うってるよ!\p"
-	.string "{JPN}キミには サービスとして\n"
-	.string "{JPN}これを あげよう!$"
+	.string "{JPN}ここが フレンドリィショップ!\nあおい やねが めじるし なのさ!\pポケモンを つかまえる ボールとか\nいろんな グッズを うってるよ!\pキミには サービスとして\nこれを あげよう!$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "{JPN}どんな ときでも つかえる\n"
-	.string "{JPN}キズぐすりは ばあいに よっては\l"
-	.string "{JPN}ポケモンセンターより たよりに なるからね$"
+	.string "{JPN}どんな ときでも つかえる\nキズぐすりは ばあいに よっては\lポケモンセンターより たよりに なるからね$"
 
 OldaleTown_Text_WaitDontComeInHere:
-	.string "{JPN}あーー!\n"
-	.string "{JPN}こっちに はいらないで くれよ!\p"
-	.string "{JPN}めずらしい ポケモンの あしあとを\n"
-	.string "{JPN}はっけん したんだ!\l"
-	.string "{JPN}スケッチが おわるまで まっててくれよ$"
+	.string "{JPN}あーー!\nこっちに はいらないで くれよ!\pめずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ$"
 
 OldaleTown_Text_DiscoveredFootprints:
-	.string "{JPN}めずらしい ポケモンの あしあとを\n"
-	.string "{JPN}はっけん したんだ!\l"
-	.string "{JPN}スケッチが おわるまで まっててくれよ$"
+	.string "{JPN}めずらしい ポケモンの あしあとを\nはっけん したんだ!\lスケッチが おわるまで まっててくれよ$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "{JPN}かんせい させた めずらしい\n"
-	.string "{JPN}ポケモンの あしあとの スケッチ\l"
-	.string "{JPN}よくみたら じぶんの あしあと だったよ……$"
+	.string "{JPN}かんせい させた めずらしい\nポケモンの あしあとの スケッチ\lよくみたら じぶんの あしあと だったよ……$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "{JPN}ハルカ『{PLAYER}{KUN}!\n"
-	.string "{JPN}こっち こっち!\l"
-	.string "{JPN}はやく かえろうよ!$"
+	.string "{JPN}ハルカ『{PLAYER}{KUN}!\nこっち こっち!\lはやく かえろうよ!$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "{JPN}ユウキ『オレ さきに\n"
-	.string "{JPN}けんきゅうじょに もどるから\l"
-	.string "{JPN}{PLAYER}も はやく こいよな$"
+	.string "{JPN}ユウキ『オレ さきに\nけんきゅうじょに もどるから\l{PLAYER}も はやく こいよな$"
 
 OldaleTown_Text_TownSign:
-	.string "{JPN}ここは コトキ タウン\n"
-	.string "{JPN}なにかが かすかに はじまる ところ$"
+	.string "{JPN}ここは コトキ タウン\nなにかが かすかに はじまる ところ$"
