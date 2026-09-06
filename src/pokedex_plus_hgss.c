@@ -1780,7 +1780,8 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
         description = GetSpeciesPokedexDescription(species);
     else
         description = sExpandedPlaceholder_PokedexDescription;
-    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 93);
+    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 101);
+// ここがHGSSのY軸、一番最後の引数
 
     //Type Icon(s)
     if (owned)
@@ -3024,9 +3025,9 @@ static void EvoFormsPage_PrintNavigationButtons(void)
         if (sPokedexView->selectedScreen == EVO_SCREEN)
         {
             if (!HGSS_DECAPPED)
-                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, x+9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_PE);
+                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, 9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_PE);
             else
-                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, x+9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_Decapped_PE);
+                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, 9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_Decapped_PE);
         }
         else if (sPokedexView->selectedScreen == FORMS_SCREEN)
         {

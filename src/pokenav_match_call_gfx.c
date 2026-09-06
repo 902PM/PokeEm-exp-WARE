@@ -1005,7 +1005,7 @@ static void PrintNumberOfBattles(u16 windowId)
 static void PrintMatchCallInfoLabel(u16 windowId, const u8 *str, int top)
 {
     int y = top * 16 + 1;
-    AddTextPrinterParameterized(windowId, FONT_NARROW, str, 2, y, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(windowId, FONT_NARROW, str, 22, y, TEXT_SKIP_DRAW, NULL);
 }
 
 static void PrintMatchCallInfoNumber(u16 windowId, const u8 *str, int top)
@@ -1026,7 +1026,7 @@ static void PrintMatchCallLocation(struct Pokenav_MatchCallGfx *gfx, int delta)
     else
         StringCopy(mapName, gText_Unknown);
 
-    x = GetStringCenterAlignXOffset(FONT_NARROW, mapName, 88);
+    x = GetStringRightAlignXOffset(FONT_NARROW, mapName, 86);
     FillWindowPixelBuffer(gfx->locWindowId, PIXEL_FILL(1));
     AddTextPrinterParameterized(gfx->locWindowId, FONT_NARROW, mapName, x, 1, 0, NULL);
 }

@@ -3789,8 +3789,7 @@ void Task_LoadSizeScreen(u8 taskId)
         {
             u8 string[64];
 
-            StringCopy(string, gText_SizeComparedTo);
-            StringAppend(string, gSaveBlock2Ptr->playerName);
+        StringExpandPlaceholders(string, gText_SizeComparedTo);
             PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
             gMain.state++;
         }
@@ -4430,7 +4429,6 @@ static u8* ConvertMonWeightToImperialString(u32 weight)
     weightString[index++] = CHAR_l;
     weightString[index++] = CHAR_b;
     weightString[index++] = CHAR_s;
-    weightString[index++] = CHAR_PERIOD;
     weightString[index++] = EOS;
 
     return weightString;
@@ -4443,7 +4441,6 @@ static u8* ConvertMonWeightToMetricString(u32 weight)
 
     weightString[index++] = CHAR_k;
     weightString[index++] = CHAR_g;
-    weightString[index++] = CHAR_PERIOD;
     weightString[index++] = EOS;
     return weightString;
 }

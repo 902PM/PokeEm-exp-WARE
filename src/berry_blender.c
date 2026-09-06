@@ -1220,7 +1220,8 @@ static void InitLocalPlayers(u8 opponentsNum)
     case 1:
         gInGameOpponentsNo = 1;
         sBerryBlender->numPlayers = 2;
-        StringCopy(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
+    StringCopy(gLinkPlayers[0].name, COMPOUND_STRING("{JPN}"));
+    StringAppend(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
 
         if (!FlagGet(FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER))
             StringCopy(gLinkPlayers[1].name, sBlenderOpponentsNames[BLENDER_MASTER]);
