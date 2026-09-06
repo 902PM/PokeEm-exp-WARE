@@ -2581,7 +2581,6 @@ static void PrintOnAbilityPopUp(const u8 *str, u32 spriteId1, u32 spriteId2, u32
 
 static void PrintBattlerOnAbilityPopUp(enum BattlerId battler, u8 spriteId1, u8 spriteId2)
 {
-    u32 totalChar = 0, lastChar;
     struct Pokemon *illusionMon = GetIllusionMonPtr(battler);
 
     if (illusionMon != NULL)
@@ -2589,13 +2588,7 @@ static void PrintBattlerOnAbilityPopUp(enum BattlerId battler, u8 spriteId1, u8 
     else
         GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
 
-    while (gStringVar1[totalChar] != EOS)
-        totalChar++;
-
-    lastChar = gStringVar1[totalChar - 1];
-    StringAppend(gStringVar1, COMPOUND_STRING("'"));
-    if (lastChar != CHAR_S && lastChar != CHAR_s)
-        StringAppend(gStringVar1, COMPOUND_STRING("s"));
+    StringAppend(gStringVar1, COMPOUND_STRING("{JPN}の"));
 
     u32 x;
     u32 y = 0;
