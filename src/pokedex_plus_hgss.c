@@ -1780,7 +1780,8 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
         description = GetSpeciesPokedexDescription(species);
     else
         description = sExpandedPlaceholder_PokedexDescription;
-    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 93);
+    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, 0xF0), 101);
+// ここがHGSSのY軸、一番最後の引数
 
     //Type Icon(s)
     if (owned)
@@ -3024,9 +3025,9 @@ static void EvoFormsPage_PrintNavigationButtons(void)
         if (sPokedexView->selectedScreen == EVO_SCREEN)
         {
             if (!HGSS_DECAPPED)
-                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, x+9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_PE);
+                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, 9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_PE);
             else
-                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, x+9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_Decapped_PE);
+                AddTextPrinterParameterized3(WIN_NAVIGATION_BUTTONS, 0, 9, y, sStatsPageNavigationTextColor, 0, sText_EVO_Buttons_Decapped_PE);
         }
         else if (sPokedexView->selectedScreen == FORMS_SCREEN)
         {
@@ -3635,7 +3636,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
         bool32 caught = GetSetPokedexFlag(SpeciesToNationalPokedexNum(targetSpecies), FLAG_GET_CAUGHT);
         if (HGSS_HIDE_UNOWNED_EVOLUTION_METHODS == TRUE && !caught)
         {
-            StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("ふめい"));
+            StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}ふめい"));
         }
         else
         {
@@ -3643,11 +3644,11 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
             {
             case EVO_SCRIPT_TRIGGER:
             case EVO_NONE:
-                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("ふめい"));
+                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}ふめい"));
                 break;
             case EVO_LEVEL:
             case EVO_LEVEL_BATTLE_ONLY:
-                    StringCopy(gStringVar4, COMPOUND_STRING("レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}レベルアップ"));
                 if (evolutions[i].param > 1)
                 {
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].param, STR_CONV_MODE_LEFT_ALIGN, EVO_SCREEN_LVL_DIGITS); //level
@@ -3655,33 +3656,33 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("{JPN}で しんか"));
                 }
                 if ((enum EvolutionMethods)evolutions[i].method == EVO_LEVEL_BATTLE_ONLY)
-                    StringCopy(gStringVar4, COMPOUND_STRING("バトルちゅうに レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}バトルちゅうに レベルアップ"));
                 break;
             case EVO_TRADE:
-                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("つうしんこうかん"));
+                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}つうしんこうかん"));
                 break;
             case EVO_ITEM:
                 CopyItemName(evolutions[i].param, gStringVar2);
-                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{STR_VAR_2}を つかう"));
+                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}: {STR_VAR_2}を つかう"));
                 break;
             case EVO_SPLIT_FROM_EVO:
                 StringCopy(gStringVar4, GetSpeciesName(evolutions[i].param)); //mon name
-                StringAppend(gStringVar4, COMPOUND_STRING("ともに あらわれる"));
+                StringAppend(gStringVar4, COMPOUND_STRING(": と ともに あらわれる"));
                 break;
             case EVO_BATTLE_END:
-                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("バトルご"));
+                StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}バトルご"));
                 break;
             case EVO_SPIN:
                 if (evolutions[i].param == SPIN_CW_SHORT)
-                    StringCopy(gStringVar4, COMPOUND_STRING("みぎ 5びょういか"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}みぎ 5びょういか"));
                 else if (evolutions[i].param == SPIN_CW_LONG)
-                    StringCopy(gStringVar4, COMPOUND_STRING("みぎ 5びょういじょう"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}みぎ 5びょういじょう"));
                 else if (evolutions[i].param == SPIN_CCW_SHORT)
-                    StringCopy(gStringVar4, COMPOUND_STRING("ひだり 5びょういか"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}ひだり 5びょういか"));
                 else if (evolutions[i].param == SPIN_CCW_LONG)
-                    StringCopy(gStringVar4, COMPOUND_STRING("ひだり 5びょういじょう"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}ひだり 5びょういじょう"));
                 else
-                    StringAppend(gStringVar4, COMPOUND_STRING("10びょういじょう"));
+                    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}10びょういじょう"));
                 break;
             }//Switch end
 
@@ -3708,16 +3709,13 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringCopy(gStringVar4, COMPOUND_STRING("{JPN}なかよしど 160いじょう"));
                     break;
                 case IF_ATK_GT_DEF:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}>{JPN}ぼうぎょ"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}>{JPN}ぼうぎょで レベルアップ"));
                     break;
                 case IF_ATK_EQ_DEF:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}={JPN}ぼうぎょ"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}={JPN}ぼうぎょで レベルアップ"));
                     break;
                 case IF_ATK_LT_DEF:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}<{JPN}ぼうぎょ"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}こうげき{ENG}<{JPN}ぼうぎょで レベルアップ"));
                     break;
                 case IF_TIME:
                     switch (evolutions[i].params[j].arg1)
@@ -3740,15 +3738,13 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                 case IF_HOLD_ITEM:
                     if (isAlcremie && IsItemSweet(evolutions[i].params[j].arg1))
                     {
-                        StringAppend(gStringVar4, COMPOUND_STRING("スイーツ")); //item
+                        StringAppend(gStringVar4, COMPOUND_STRING("{JPN}スイーツ")); //item
                         StringAppend(gStringVar4, COMPOUND_STRING("を もって かいてん"));
                     }
                     else
                     {
                         CopyItemName(evolutions[i].params[j].arg1, gStringVar2); //item
-                        StringCopy(gStringVar4, gStringVar2);
-                        StringAppend(gStringVar4, COMPOUND_STRING("を もって "));
-                        StringAppend(gStringVar4, COMPOUND_STRING("つうしんこうかん"));
+                        StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("{JPN}: {STR_VAR_2}を もって つうしんこうかん"));
                     }
                     break;
                 // Gen 3
@@ -3762,7 +3758,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                         else if (condition == IF_PID_UPPER_MODULO_10_EQ
                              && arg < 10 && arg >= 0)
                             arg = 1;
-                    StringCopy(gStringVar4, COMPOUND_STRING("ランダムに "));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}ランダムに "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].param, STR_CONV_MODE_LEFT_ALIGN, EVO_SCREEN_LVL_DIGITS); //level
                     StringAppend(gStringVar4, gStringVar2);
                     StringAppend(gStringVar4, COMPOUND_STRING("で しんか "));
@@ -3771,24 +3767,19 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("{ENG}%"));
                     break;
                 case IF_MIN_BEAUTY:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}うつくしさ170いじょう"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}うつくしさ170いじょうで レベルアップ"));
                     break;
                 case IF_MIN_COOLNESS:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かっこよさ170いじょう"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かっこよさ170いじょうで レベルアップ"));
                     break;
                 case IF_MIN_SMARTNESS:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かしこさ170いじょう"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かしこさ170いじょうで レベルアップ"));
                     break;
                 case IF_MIN_TOUGHNESS:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}たくましさ170いじょう"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}たくましさ170いじょうで レベルアップ"));
                     break;
                 case IF_MIN_CUTENESS:
-                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かわいさ170いじょう"));
-                    StringAppend(gStringVar4, COMPOUND_STRING("で レベルアップ"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}かわいさ170いじょうで レベルアップ"));
                     break;
                 // Gen 4
                 case IF_SPECIES_IN_PARTY:
@@ -3865,16 +3856,16 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING(" せいかく"));
                     break;
                 case IF_AMPED_NATURE:
-                    StringCopy(gStringVar4, COMPOUND_STRING("ハイな せいかくで 30で しんか"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}ハイな せいかくで 30で しんか"));
                     break;
                 case IF_LOW_KEY_NATURE:
-                    StringCopy(gStringVar4, COMPOUND_STRING("ローな せいかくで 30で しんか"));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}ローな せいかくで 30で しんか"));
                     break;
                 case IF_RECOIL_DAMAGE_GE:
-                    StringCopy(gStringVar4, COMPOUND_STRING("はんどうダメージ "));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}はんどうダメージ "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg1, STR_CONV_MODE_LEFT_ALIGN, 3);
                     StringAppend(gStringVar4, gStringVar2);
-                    StringAppend(gStringVar4, COMPOUND_STRING("いじょうで レベルアップ"));
+                    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}いじょうで レベルアップ"));
                     break;
                 case IF_CURRENT_DAMAGE_GE:
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg1, STR_CONV_MODE_LEFT_ALIGN, 3);
@@ -3891,7 +3882,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("を "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg2, STR_CONV_MODE_LEFT_ALIGN, 3);
                     StringAppend(gStringVar4, gStringVar2);
-                    StringAppend(gStringVar4, COMPOUND_STRING("かい つかう"));
+                    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}かい つかう"));
                     break;
                 // Gen 9
                 case IF_DEFEAT_X_WITH_ITEMS:
@@ -3899,7 +3890,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("を "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg3, STR_CONV_MODE_LEFT_ALIGN, 3);
                     StringAppend(gStringVar4, gStringVar2);
-                    StringAppend(gStringVar4, COMPOUND_STRING("かい\n"));
+                    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}かい\n"));
                     CopyItemName(evolutions[i].params[j].arg2, gStringVar2);
                     StringAppend(gStringVar4, gStringVar2);
                     StringAppend(gStringVar4, COMPOUND_STRING(" をもって たおす"));
@@ -3925,10 +3916,10 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("{JPN}ほ あるいて レベルアップ"));
                     break;
                 case IF_BAG_ITEM_COUNT:
-                    StringCopy(gStringVar4, COMPOUND_STRING("バッグに "));
+                    StringCopy(gStringVar4, COMPOUND_STRING("{JPN}バッグに "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg2, STR_CONV_MODE_LEFT_ALIGN, 3);
                     StringAppend(gStringVar4, gStringVar2);
-                    StringAppend(gStringVar4, COMPOUND_STRING("まいの "));
+                    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}まいの "));
                     CopyItemNameHandlePlural(evolutions[i].params[j].arg1, gStringVar2, evolutions[i].params[j].arg2);
                     StringAppend(gStringVar4, gStringVar2);
                     break;

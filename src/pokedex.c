@@ -4197,6 +4197,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     else
         description = sExpandedPlaceholder_PokedexDescription;
     PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, DISPLAY_WIDTH), 95);
+// ここの95が図鑑テキストのY軸、ただし元々の原作のヤツなので注意。
 }
 
 void PrintMonMeasurements(enum Species species, u32 owned)
@@ -4428,7 +4429,6 @@ static u8* ConvertMonWeightToImperialString(u32 weight)
     weightString[index++] = CHAR_l;
     weightString[index++] = CHAR_b;
     weightString[index++] = CHAR_s;
-    weightString[index++] = CHAR_PERIOD;
     weightString[index++] = EOS;
 
     return weightString;
@@ -4441,7 +4441,6 @@ static u8* ConvertMonWeightToMetricString(u32 weight)
 
     weightString[index++] = CHAR_k;
     weightString[index++] = CHAR_g;
-    weightString[index++] = CHAR_PERIOD;
     weightString[index++] = EOS;
     return weightString;
 }
