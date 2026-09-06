@@ -7511,9 +7511,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .movetext = 4,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = { .secondaryEffectChance = 30 },
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SECRET_POWER,
-            .chance = 30,
+            .sheerForceOverride = TRUE,
         }),
         .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION,
         .contestCategory = CONTEST_CATEGORY_SMART,
