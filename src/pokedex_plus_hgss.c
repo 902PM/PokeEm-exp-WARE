@@ -105,7 +105,7 @@ static const u8 sText_Stats_MEDIUM_SLOW[] = _("{JPN}105まん");
 static const u8 sText_Stats_FAST[] = _("{JPN}80まん");
 static const u8 sText_Stats_SLOW[] = _("{JPN}125まん");
 static const u8 sText_Stats_ContestHeart[] = _("H");
-static const u8 sText_Stats_Minus[] = _("？");
+static const u8 sText_Stats_Minus[] = _("?");
 static const u8 sText_Stats_eggGroup[] = _("{JPN}タマゴグループ1:");
 static const u8 sText_Stats_eggGroup_Groups[] = _("{STR_VAR_1}/{STR_VAR_2}");
 static const u8 sText_Stats_eggGroup_MONSTER[] = _("{JPN}かいじゅう");
@@ -154,7 +154,7 @@ static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{JPN}{A_BUTTON}フォル�
 static const u8 sText_FORMS_Buttons_Submenu_PE[] = _("{JPN}{DPAD_NONE}フォルム {A_BUTTON}みる {START_BUTTON}しんか");
 static const u8 sText_FORMS_Buttons_Submenu_Decapped_PE[] = _("{JPN}{DPAD_NONE}フォルム {A_BUTTON}みる {START_BUTTON}しんか");
 static const u8 sText_FORMS_NONE[] = _("{JPN}{STR_VAR_1}:フォルム なし");
-static const u8 sText_PlusSymbol[] = _("+");
+static const u8 sText_PlusSymbol[] = _("{PLUS}");
 
 // static .rodata graphics
 
@@ -3829,7 +3829,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     {
                     case REGION_NONE:
                     case REGIONS_COUNT:
-                        StringAppend(gStringVar4, COMPOUND_STRING("？？？"));
+                        StringAppend(gStringVar4, COMPOUND_STRING("???"));
                         break;
                     case REGION_KANTO: StringAppend(gStringVar4, COMPOUND_STRING("カントー")); break;
                     case REGION_JOHTO: StringAppend(gStringVar4, COMPOUND_STRING("ジョウト")); break;

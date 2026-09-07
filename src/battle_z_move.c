@@ -95,8 +95,8 @@ static const struct SignatureZMove sSignatureZMoves[] =
 };
 
 static const u8 sText_ResetStats[] = _("へんかを もどす");
-static const u8 sText_StatsPlus[] = _("すべて +1");
-static const u8 sText_StatsPlus2[] = _("すべて +2");
+static const u8 sText_StatsPlus[] = _("すべて {JPN_PLUS}1");
+static const u8 sText_StatsPlus2[] = _("すべて {JPN_PLUS}2");
 static const u8 sText_CritHitsPlus[] = _("はりきり じょうたい");
 static const u8 sText_FollowMe[] = _("このゆびとまれ");
 static const u8 sText_RecoverHP[] = _("かいふく");

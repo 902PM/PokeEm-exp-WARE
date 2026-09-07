@@ -2533,7 +2533,7 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         COMPOUND_STRING("{JPN} 80てん"),
         COMPOUND_STRING("{JPN} 90てん"),
         COMPOUND_STRING("{JPN}100てん"),
-        COMPOUND_STRING("{JPN}  ？")
+        COMPOUND_STRING("{JPN}  ?")
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1] =
     {

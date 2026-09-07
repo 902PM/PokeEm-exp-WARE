@@ -450,7 +450,7 @@ void CB2_FlashNotDetectedScreen(void)
     InitWindows(textWin);
     DrawStdFrameWithCustomTileAndPalette(0, TRUE, 0x214, 0xE);
     static const u8 saveFailedMessage[] =_(
-        "{COLOR RED}エラー！ {COLOR DARK_GRAY}フラッシュメモリが みつかりません！\n"
+        "{COLOR RED}エラー! {COLOR DARK_GRAY}フラッシュメモリが みつかりません!\n"
         "\n"
         "エミュレーターで あそんでいるなら\n"
         "セーブタイプを\n"
