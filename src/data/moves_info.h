@@ -849,7 +849,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_TACKLE] =
     {
         .name = COMPOUND_STRING("{JPN}たいあたり"),
-        .description = COMPOUND_STRING({JPN}からだぜんたいを つかって\nてきに たいあたりして こうげき"),
+        .description = COMPOUND_STRING("{JPN}からだぜんたいを つかって\nてきに たいあたりして こうげき"),
     #if B_UPDATED_MOVE_DATA >= GEN_7
         .power = 40,
     #elif B_UPDATED_MOVE_DATA >= GEN_5
@@ -1292,11 +1292,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("{JPN}かなしばり"),
         .description = COMPOUND_STRING(
         #if B_DISABLE_TURNS >= GEN_5
-            "{JPN}ちょくぜんに だしていた わざを\n4ターンの あいだ つかえなく する。"),
+            "{JPN}ちょくぜんに だしていた わざを\n4ターンの あいだ つかえなく する"),
         #elif B_DISABLE_TURNS == GEN_4
-            "{JPN}あいての うごきを とめて\nだしていた わざを つかえなくする。"),
+            "{JPN}あいての うごきを とめて\nだしていた わざを つかえなくする"),
         #else
             "{JPN}ちょうのうりょくで てきの うごきを\nとめて わざを 1つ つかえなくする"),
+        #endif
     #if B_UPDATED_MOVE_DATA >= GEN_5
         .accuracy = 100,
     #elif B_UPDATED_MOVE_DATA == GEN_4
@@ -4231,7 +4232,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
     #if B_UPDATED_MOVE_DATA >= GEN_2
             "{JPN}3しゅるいの こうせんを\n1つにまとめて てきに はっしゃする"),
-        #endif
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
             .chance = 20,
@@ -7076,7 +7076,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #if B_CHARGE_SPDEF_RAISE >= GEN_5
             "{JPN}つぎに だす でんきの いりょくを\nあげる じぶんの とくぼうも あがる"),
         #else
-            ""{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
+            "{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
         #endif
     #endif
         .effect = EFFECT_CHARGE,
