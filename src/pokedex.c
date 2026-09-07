@@ -680,7 +680,7 @@ const struct WindowTemplate sPokemonList_WindowTemplate[] =
 static const u8 sText_No0000[] = _("{NO}0000");
 static const u8 sText_No000[] = _("{NO}000");
 const u8 sCaughtBall_Gfx[] = INCGFX_U8("graphics/pokedex/caught_ball.png", ".4bpp");
-static const u8 sText_TenDashes[] = _("----------");
+static const u8 sText_TenDashes[] = _("-----");
 
 static const u8 sText_UnkHeight[] = _("???.? m");
 static const u8 sText_UnkHeightMetric[] = _("???.? m");

@@ -1026,7 +1026,7 @@ static void PrintMatchCallLocation(struct Pokenav_MatchCallGfx *gfx, int delta)
     else
         StringCopy(mapName, gText_Unknown);
 
-    x = 26;
+    x = GetStringRightAlignXOffset(FONT_NARROW, mapName, 80);
     FillWindowPixelBuffer(gfx->locWindowId, PIXEL_FILL(1));
     AddTextPrinterParameterized(gfx->locWindowId, FONT_NORMAL, mapName, x, 1, 0, NULL);
 }

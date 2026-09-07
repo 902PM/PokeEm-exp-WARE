@@ -713,7 +713,7 @@ static void PrintCheckPageTrainerName(struct PokenavListWindowState *state, stru
     CopyWindowRectToVram(list->listWindow.windowId, COPYWIN_FULL, 0, list->listWindow.unkA * 2, list->listWindow.width, 2);
 }
 
-// Print the trainer's name and title for the list (to replace the check page name and title, which has a red background)
+// 詳細から戻ってくる時の描画設定。だからリストとは関係ない。
 static void PrintMatchCallListTrainerName(struct PokenavListWindowState *state, struct PokenavList *list)
 {
     list->bufferItemFunc(state->listPtr + state->listItemSize * state->windowTopIndex, list->itemTextBuffer);
