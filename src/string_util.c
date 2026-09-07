@@ -795,7 +795,7 @@ void ConvertInternationalString(u8 *s, enum Language language)
         StripExtCtrlCodes(s);
         i = StringLength(s);
         s[i++] = EXT_CTRL_CODE_BEGIN;
-        s[i++] = EXT_CTRL_CODE_ENG;
+        s[i++] = EXT_CTRL_CODE_JPN;
         s[i++] = EOS;
 
         i--;

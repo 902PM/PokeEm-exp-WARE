@@ -80,7 +80,7 @@ void FillPartnerParty(u16 trainerId)
             {
                 if (monData.nickname[0] != EXT_CTRL_CODE_BEGIN || monData.nickname[1] != EXT_CTRL_CODE_JPN)
                 {
-                    monData.nickname[5] = EOS;
+                    monData.nickname[6] = EOS;
                     ConvertInternationalString(monData.nickname, LANGUAGE_JAPANESE);
                 }
             }

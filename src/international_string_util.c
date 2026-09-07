@@ -183,14 +183,14 @@ void ConvertInternationalContestantName(u8 *str)
     {
         while (*str != EOS)
         {
-            if (str[0] == EXT_CTRL_CODE_BEGIN && str[1] == EXT_CTRL_CODE_ENG)
+            if (str[0] == EXT_CTRL_CODE_BEGIN && str[1] == EXT_CTRL_CODE_ENG) // 判定：{ENG}があったら終了。
                 return;
 
             str++;
         }
 
         *str++ = EXT_CTRL_CODE_BEGIN;
-        *str++ = EXT_CTRL_CODE_ENG;
+        *str++ = EXT_CTRL_CODE_JPN;
         *str = EOS;
     }
 }
@@ -201,16 +201,16 @@ void TVShowConvertInternationalString(u8 *dest, const u8 *src, int language)
     ConvertInternationalString(dest, language);
 }
 
-// It's impossible to distinguish between Latin languages just from a string alone, so the function defaults to LANGUAGE_ENGLISH. This is the case in all of the versions of the game.
+// 文字列だけではラテン系言語を区別できないため、この関数はデフォルトで LANGUAGE_ENGLISH を使用します。これは、ゲームのすべてのバージョンに当てはまります。(大嘘)
 enum Language GetNicknameLanguage(u8 *str)
 {
     if (str[0] == EXT_CTRL_CODE_BEGIN && str[1] == EXT_CTRL_CODE_JPN)
         return LANGUAGE_JAPANESE;
     else
-        return LANGUAGE_ENGLISH;
+        return LANGUAGE_JAPANESE;
 }
 
-// Used by Pokénav's Match Call to erase the previous trainer's flavor text when switching between their info pages.
+// ポケナビのエントリーコールで、トレーナーの情報を切り替える際、以前のトレーナーの情報を消去するために使用されます。
 void FillWindowTilesByRow(int windowId, int columnStart, int rowStart, int numFillTiles, int numRows)
 {
     u8 *windowTileData;
