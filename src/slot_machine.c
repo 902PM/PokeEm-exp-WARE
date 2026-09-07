@@ -650,7 +650,7 @@ static void SpriteCB_ReelTimeDuck(struct Sprite *);
 static void SpriteCB_ReelTimeSmoke(struct Sprite *);
 static void SpriteCB_PikaPowerBolt(struct Sprite *);
 
-static const u8 sText_QuitTheGame[] = _("{JPN}ゲームを やめますか？");
+static const u8 sText_QuitTheGame[] = _("{JPN}ゲームを やめますか?");
 static const u8 sText_YouveGot9999Coins[] = _("{JPN}コインが 9999まい\nたまって います");
 static const u8 sText_YouveRunOutOfCoins[] = _("{JPN}コインが ありません\nゲームを しゅうりょうします");
 static const u8 sText_YouDontHaveThreeCoins[] = _("{JPN}コインが 3まい ありません!");

@@ -110,7 +110,7 @@ const struct FrontierBrain gFrontierBrainInfo[NUM_FRONTIER_FACILITIES] =
             COMPOUND_STRING("{JPN}ありがとう……")           //Gold
         },
         .wonTexts = {
-            COMPOUND_STRING("{JPN}ざんねん　だよ……"), //Silver
+            COMPOUND_STRING("{JPN}ざんねん だよ……"), //Silver
             COMPOUND_STRING("{JPN}ごめんね……")       //Gold
         },
         .battledBit = {1 << 0, 1 << 1},

@@ -260,8 +260,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_MYSTERY] =
     {
-        .name = _("{JPN}？？？"),
-        .generic = _("{JPN}？？？タイプの わざ"),
+        .name = _("{JPN}???"),
+        .generic = _("{JPN}???タイプの わざ"),
         .palette = 15,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,

@@ -785,7 +785,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
 
     [CONTEST_CATEGORIES_COUNT] =
     {
-        .generic = COMPOUND_STRING("{JPN}？？？"),
+        .generic = COMPOUND_STRING("{JPN}???"),
     },
 };
 

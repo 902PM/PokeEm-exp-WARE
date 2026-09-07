@@ -83,7 +83,7 @@ static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
 static const u8 sText_CantDismountBike[] = _("{JPN}ここでは おりられない!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderNearby[] = _("{JPN}おっ!\nマシンが はんのう しているぞ!\pちかくに どうぐが うまってる!！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderNearby[] = _("{JPN}おっ!\nマシンが はんのう しているぞ!\pちかくに どうぐが うまってる!!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderOnTop[] = _("{JPN}マシンが あしもとで\nすごく はんのう しているぞ!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNothing[] = _("{JPN}…… …… ふう!\n…… なんにも はんのう しない{PAUSE_UNTIL_PRESS}");
 static const u8 sText_CoinCase[] = _("{JPN}あなたの コイン\n{STR_VAR_1}まい{PAUSE_UNTIL_PRESS}");
@@ -1140,7 +1140,7 @@ bool32 CanThrowBall(void)
 }
 
 static const u8 sText_CantThrowPokeBall_TwoMons[] = _("{JPN}だめだ! 1ぴき じゃないと\nねらいが さだまらない……!\p");
-static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("{JPN}だめだ! ポケモンが みえなくて\nねらいが　さだまらない……！\p");
+static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("{JPN}だめだ! ポケモンが みえなくて\nねらいが さだまらない……!\p");
 static const u8 sText_CantThrowPokeBall_Disabled[] = _("{JPN}ボールを なげることが できない!\p");
 
 static void ItemUseInBattle_ShowPartyMenu(u8 taskId)

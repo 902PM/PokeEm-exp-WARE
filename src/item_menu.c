@@ -218,9 +218,9 @@ static void Task_FadeAndCloseBagMenuIfMulch(u8 taskId);
 
 static const u8 sText_Var1CantBeHeldHere[] = _("{JPN}ここでは {STR_VAR_1}を\nもたせることは できません!");
 static const u8 sText_DepositHowManyVar1[] = _("{JPN}{STR_VAR_1} を\nいくつ あずけますか?");
-static const u8 sText_DepositedVar2Var1s[] = _("{JPN}{STR_VAR_1} を\n{STR_VAR_2}コ　あずけました");
+static const u8 sText_DepositedVar2Var1s[] = _("{JPN}{STR_VAR_1} を\n{STR_VAR_2}コ あずけました");
 static const u8 sText_NoRoomForItems[] = _("{JPN}これいじょう\nあずけられません!");
-static const u8 sText_CantStoreImportantItems[] = _("{JPN}たいせつな どうぐは\nパソコンに　\nいれられません!");
+static const u8 sText_CantStoreImportantItems[] = _("{JPN}たいせつな どうぐは\nパソコンに \nいれられません!");
 
 static void Task_LoadBagSortOptions(u8 taskId);
 static void ItemMenu_SortByName(u8 taskId);
@@ -288,7 +288,7 @@ static const struct ListMenuTemplate sItemListMenu =
     .cursorKind = CURSOR_BLACK_ARROW
 };
 
-static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません！");
+static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません!");
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,                {ItemMenu_UseOutOfBattle}},
     [ACTION_TOSS]              = {gMenuText_Toss,               {ItemMenu_Toss}},
@@ -2738,8 +2738,8 @@ static void PrintTMHMMoveData(enum Item itemId)
     }
 }
 
-static const u8 sText_SortItemsHow[] = _("{JPN}どう ならべかえますか？");
-static const u8 sText_ItemsSorted[] = _("{JPN}{STR_VAR_1}で ならべかえました！");
+static const u8 sText_SortItemsHow[] = _("{JPN}どう ならべかえますか?");
+static const u8 sText_ItemsSorted[] = _("{JPN}{STR_VAR_1}で ならべかえました!");
 static const u8 *const sSortTypeStrings[] =
 {
     [SORT_ALPHABETICALLY] = COMPOUND_STRING("{JPN}なまえ"),
