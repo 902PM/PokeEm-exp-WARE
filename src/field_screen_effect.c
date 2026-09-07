@@ -1444,7 +1444,7 @@ static void Task_RushInjuredPokemonToCenter(u8 taskId)
     {
         const u8 *recoveryMessage = GenerateRecoveryMessage(taskId);
 
-        if (PrintWhiteOutRecoveryMessage(taskId, recoveryMessage, 2, 8))
+        if (PrintWhiteOutRecoveryMessage(taskId, recoveryMessage, 40, 0))
         {
             ObjectEventTurn(&gObjectEvents[gPlayerAvatar.objectEventId], DIR_NORTH);
             gTasks[taskId].tState = WHITEOUT_CUTSCENE_LEAVE_MSG_SCREEN;

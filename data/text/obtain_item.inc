@@ -26,7 +26,7 @@ gText_TheDecorWasTransferredToThePC::
 	.string "{JPN}{STR_VAR_2}は\nパソコンに てんそうされた!$"
 
 gText_ObtainedTheItems::
-	.string "{JPN}{STR_VAR_1}と {STR_VAR_2}を てにいれた!$"
+	.string "{JPN}{STR_VAR_2}を {STR_VAR_1}こ てにいれた!$"
 
 gText_PlayerFoundItems::
 	.string "{JPN}{PLAYER}は {STR_VAR_1}と {STR_VAR_2}を みつけた!$"

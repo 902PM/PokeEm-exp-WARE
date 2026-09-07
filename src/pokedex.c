@@ -682,7 +682,7 @@ static const u8 sText_No000[] = _("{NO}000");
 const u8 sCaughtBall_Gfx[] = INCGFX_U8("graphics/pokedex/caught_ball.png", ".4bpp");
 static const u8 sText_TenDashes[] = _("----------");
 
-static const u8 sText_UnkHeight[] = _("{JPN}{CLEAR_TO 12}??'??”");
+static const u8 sText_UnkHeight[] = _("???.? m");
 static const u8 sText_UnkHeightMetric[] = _("???.? m");
 static const u8 sText_UnkWeight[] = _("????.? kg");
 static const u8 sText_UnkWeightMetric[] = _("???.? kg");
@@ -3588,8 +3588,8 @@ void Task_LoadCryScreen(u8 taskId)
         gMain.state++;
         break;
     case 4:
-        PrintInfoScreenText(gText_CryOf, 82, 33);
-        PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 49);
+        PrintInfoScreenText(gText_CryOf, 82, 49);
+        PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 33);
         gMain.state++;
         break;
     case 5:
@@ -4196,7 +4196,7 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
         description = GetSpeciesPokedexDescription(species);
     else
         description = sExpandedPlaceholder_PokedexDescription;
-    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, DISPLAY_WIDTH), 95);
+    PrintInfoScreenText(description, GetStringCenterAlignXOffset(FONT_NORMAL, description, DISPLAY_WIDTH), 103);
 // ここの95が図鑑テキストのY軸、ただし元々の原作のヤツなので注意。
 }
 
@@ -4706,7 +4706,8 @@ u8 PrintCryScreenSpeciesName(u8 windowId, u16 num, u8 left, u8 top)
     default:
         for (i = 0; GetSpeciesName(num)[i] != EOS && i < POKEMON_NAME_LENGTH; i++)
             str[i] = GetSpeciesName(num)[i];
-        WrapFontIdToFit(str, str + i, FONT_NORMAL, 60);
+	    StringAppend(str, COMPOUND_STRING("の"));
+        WrapFontIdToFit(str, str + i + 1, FONT_NORMAL, 60);
         break;
     case 0:
         for (i = 0; i < 5; i++)

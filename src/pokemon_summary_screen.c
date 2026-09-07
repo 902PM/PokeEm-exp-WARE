@@ -1720,6 +1720,7 @@ static void HandleMoveRelearnerInput(u8 taskId)
     {
         sMonSummaryScreen->callback = CB2_InitLearnMove;
         gRelearnMode = sMonSummaryScreen->currPageIndex;
+        gSpecialVar_MonBoxPos = sMonSummaryScreen->curMonIndex;
         if (sMonSummaryScreen->isBoxMon)
         {
             gSpecialVar_0x8004 = PC_MON_CHOSEN;
@@ -3593,11 +3594,30 @@ static void PrintMonTrainerMemo(void)
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
 }
 
+static bool32 SummaryNatureUsesPlainSuffix(u8 nature)
+{
+    switch (nature)
+    {
+    case NATURE_BOLD:   // ずぶとい
+    case NATURE_GENTLE: // おとなしい
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 static void BufferNatureString(void)
 {
     struct PokemonSummaryScreenData *sumStruct = sMonSummaryScreen;
-    DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gNaturesInfo[sumStruct->summary.nature].name);
-    DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
+
+    StringCopy(gStringVar3, gNaturesInfo[sumStruct->summary.nature].name);
+
+    if (SummaryNatureUsesPlainSuffix(sumStruct->summary.nature))
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
+    else
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, COMPOUND_STRING("な"));
+
+    DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gStringVar3);
 }
 
 static void GetMetLevelString(u8 *output)

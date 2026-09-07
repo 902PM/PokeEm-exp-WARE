@@ -331,7 +331,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #if B_UPDATED_MOVE_DATA == GEN_3 || B_UPDATED_MOVE_DATA == GEN_1
             "{JPN}1ターンめで かぜのやいばを つくり\nつぎのターンで てきを こうげき"),
         #else
-            "{JPN}かぜのやいばを つくり つぎのターンで\nこうげき きゅうしょに あたりやすい。"),
+            "{JPN}かぜのやいばを つくり 2ターンめで\nこうげき きゅうしょに あたりやすい"),
         #endif
         .effect = EFFECT_TWO_TURNS_ATTACK,
         .power = 80,
@@ -1329,7 +1329,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("{JPN}ようかいえき"),
         .description = COMPOUND_STRING(
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            "{JPN}つよい さんを てきに かけて\nこうげき とくぼうを さげることがある"),
+            "{JPN}つよいさんを てきにかけて こうげき\nとくぼうを さげることがある"),
         #else
             "{JPN}つよいさんで てきの ひふを とかす\nぼうぎょを さげることがある"),
         #endif
@@ -1909,7 +1909,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("{JPN}せいちょう"),
         .description = COMPOUND_STRING(
         #if B_GROWTH_STAT_RAISE >= GEN_5
-            "{JPN}いっきに おおきく せいちょう させて\nこうげきと とくこうを あげる"),
+            "{JPN}いっきに おおきくせいちょう させて\nこうげきと とくこうを あげる"),
         #else
             "{JPN}いっきに からだを せいちょうさせて\nとくこうを あげる"),
         #endif
@@ -2100,7 +2100,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("{JPN}いとをはく"),
         .description = COMPOUND_STRING(
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            "{JPN}くちから いとを まきつけて あいての\nすばやさを がくっと さげる"),
+            "{JPN}くちから いとを まきつけて てきの\nすばやさを がくっと さげる"),
         #else
             "{JPN}いとを てきの からだに まきつけ\nすばやさを さげさせる"),
         #endif
@@ -4201,7 +4201,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("{JPN}テクスチャー"),
         .description = COMPOUND_STRING(
         #if B_UPDATED_CONVERSION >= GEN_6
-            "{JPN}おぼえている わざで\nいちばん うえの おなじ タイプにする"),
+            "{JPN}おぼえている わざで\nいちばんうえの おなじ タイプにする"),
         #else
             "{JPN}おぼえている わざの タイプの\nどれかに じぶんの タイプを かえる"),
         #endif
