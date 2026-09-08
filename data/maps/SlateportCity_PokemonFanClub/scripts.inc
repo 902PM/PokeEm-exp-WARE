@@ -259,16 +259,16 @@ SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon:
 	.string "{JPN}ポケモンコンテストに でた ことが\nある トレーナーの ポケモン…\lぜひとも みて みたい ものですな$"
 
 SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon:
-	.string "{JPN}ウォッホン!!\nおっ コンテストに でられましたな!\pどれ あなたは ポケモンを\nどんな ふうに そだてられて いるのかな？\pいやー ひとの そだてた ポケモンを\nはいけん するのは たのしい ですぞ!\pきちんと そだてられた ポケモンの\nしあわせそうな かお……\pそれを みつめる トレーナーの\nやさしげな ひとみ……\pいやー しあわせで\nむねが いっぱいに なりますな……\pおっと しつれい! ついつい\nはなしが ながくなって しまいましたな\pでは さっそく きみの ポケモンが\nどれほど そだっているのか\lはいけん させて もらいますかな!$"
+	.string "{JPN}ウォッホン!!\nおっ コンテストに でられましたな!\pどれ あなたは ポケモンを\nどんな ふうに そだてられて いるのかな?\pいやー ひとの そだてた ポケモンを\nはいけん するのは たのしい ですぞ!\pきちんと そだてられた ポケモンの\nしあわせそうな かお……\pそれを みつめる トレーナーの\nやさしげな ひとみ……\pいやー しあわせで\nむねが いっぱいに なりますな……\pおっと しつれい! ついつい\nはなしが ながくなって しまいましたな\pでは さっそく きみの ポケモンが\nどれほど そだっているのか\lはいけん させて もらいますかな!$"
 
 SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing:
-	.string "{JPN}きみの ポケモン そだって ますかな？\nちょっと はいけん させて もらいますぞ!$"
+	.string "{JPN}きみの ポケモン そだって ますかな?\nちょっと はいけん させて もらいますぞ!$"
 
 SlateportCity_PokemonFanClub_Text_HmHmISee:
 	.string "{JPN}ふむふむ……\nなるほど……$"
 
 SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks:
-	.string "{JPN}ふむう……\nわるくは ないんだが よくもない……\pおやの トレーナーである きみの\nどりょくが ひつよう ですな!\pたとえば もっと たくさん\nポロックを あげるのは どうですかな？$"
+	.string "{JPN}ふむう……\nわるくは ないんだが よくもない……\pおやの トレーナーである きみの\nどりょくが ひつよう ですな!\pたとえば もっと たくさん\nポロックを あげるのは どうですかな?$"
 
 SlateportCity_PokemonFanClub_Text_NoSpaceForReward:
 	.string "{JPN}あらら……\pけっこう ポケモンが そだっているので\nいいものを あげようと おもったのですが\lもちものが いっぱい ですな$"
@@ -307,7 +307,7 @@ SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting:
 	.string "{JPN}ポケモンしょうぶに まけて\nひんしに させて ばかりだと\lポケモンが どんどん すさんで\lトレーナーのこと うたがう ようになる\pつまり なついて くれなくなるよ$"
 
 SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein:
-	.string "{JPN}ポケモンって どうぐ\nつかってもらうのが すきなのかな？\pだって タウリンとか あげると\nすごく うれしそうに するのよ!$"
+	.string "{JPN}ポケモンって どうぐ\nつかってもらうのが すきなのかな?\pだって タウリンとか あげると\nすごく うれしそうに するのよ!$"
 
 SlateportCity_PokemonFanClub_Text_Skitty:
 	.string "{JPN}エネコ『ふにゃあーあ$"
@@ -316,5 +316,5 @@ SlateportCity_PokemonFanClub_Text_Zigzagoon:
 	.string "{JPN}ジグザグマ『キュウウ……$"
 
 SlateportCity_PokemonFanClub_Text_Azumarill:
-	.string "{JPN}マリルリ『マリ マリ!？$"
+	.string "{JPN}マリルリ『マリ マリ!?$"
 

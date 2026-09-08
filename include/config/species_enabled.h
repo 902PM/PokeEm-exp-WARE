@@ -1,11 +1,11 @@
 #ifndef GUARD_CONFIG_SPECIES_ENABLED_H
 #define GUARD_CONFIG_SPECIES_ENABLED_H
 
-// Modifying the latest generation WILL change the saveblock due to Dex flags and will require a new save file.
-// Generations of Pokémon are defined by the first member introduced,
-// so Pikachu depends on the Gen 1 setting despite Pichu being the lowest member of the evolution tree.
-// Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Sneasel Family will be disabled
-// (Sneasel + Hisuian, Weavile and Sneasler).
+// 最新世代のデータを変更すると、図鑑フラグの影響でセーブブロックが変化するため、新しいセーブファイルが必要になります。
+// ポケモンの世代は、その系統で最初に登場したポケモンに基づいて定義されます。
+// そのため、ピチューが進化系統の最下位（進化前）であっても、ピカチュウは「第1世代」の設定に依存します。
+// 例：P_GEN_2_POKEMONをFALSEに設定すると、ニューラ系統のすべてのポケモンが無効化されます
+// （ニューラ、ヒスイのすがたのニューラ、マニューラ、オオニューラ）。
 #define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
 #define P_GEN_2_POKEMON                  TRUE // Generation 2 Pokémon (GSC)
 #define P_GEN_3_POKEMON                  TRUE // Generation 3 Pokémon (RSE, FRLG)

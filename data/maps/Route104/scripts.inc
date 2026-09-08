@@ -1022,7 +1022,7 @@ Route104_Text_FlowerShopSellingSaplings:
 	.string "{JPN}この フラワーショップ ちかごろ\nうえきも うって くれるのよ!\pうれしくて たくさん かっちゃった!\nどこに かざろうかしら?$"
 
 Route104_Text_MrBrineysCottage:
-	.string "{JPN}「ハギろうじんの　こや」$"
+	.string "{JPN}「ハギろうじんの こや」$"
 
 Route104_Text_RouteSignPetalburg:
 	.string "{JPN}ここは 104ばん どうろ\n{RIGHT_ARROW} トウカシティ$"
@@ -1031,7 +1031,7 @@ Route104_Text_RouteSignRustboro:
 	.string "{JPN}ここは 104ばん どうろ\n{UP_ARROW} カナズミシティ$"
 
 Route104_Text_PrettyPetalFlowShop:
-	.string "{JPN}「フラワーショップ　サン・トウカ」$"
+	.string "{JPN}「フラワーショップ サン・トウカ」$"
 
 Route104_Text_TrainerTipsDoubleBattles:
 	.string "{JPN}おとくな けいじばん!!\pホウエンちほう には\nダブルバトルと いって 2たい2の\lポケモンしょうぶを いどんでくる\lトレーナーが います!\pダブルバトルでは ポケモンの リストの\nひだりと いちばん うえにいる\lポケモンが とびだして たたかうので\lリストの ならびには ようちゅうい!$"

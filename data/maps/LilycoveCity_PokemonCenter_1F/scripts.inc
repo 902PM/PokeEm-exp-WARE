@@ -49,10 +49,10 @@ LilycoveCity_PokemonCenter_1F_EventScript_ManiacBadTeamGone::
 	end
 
 LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon:
-	.string "{JPN}この せかいには\nどれだけの ポケモンが いるのかな?\pいつのひか うみを こえて\nとおい くにの ひとと\lポケモン こうかん したいなあ！$"
+	.string "{JPN}この せかいには\nどれだけの ポケモンが いるのかな?\pいつのひか うみを こえて\nとおい くにの ひとと\lポケモン こうかん したいなあ!$"
 
 LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels:
-	.string "{JPN}ちかごろ ひとの ポケモンを うばったり\nいんせきを よこどり したりする\lろくでもない やつらが いるらしいな！$"
+	.string "{JPN}ちかごろ ひとの ポケモンを うばったり\nいんせきを よこどり したりする\lろくでもない やつらが いるらしいな!$"
 
 LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels:
 	.string "{JPN}ひとの ポケモンを うばったり\nいんせきを よこどり していた\lろくでもない やつら……\pちかごろ すがたを みなくなったよ$"

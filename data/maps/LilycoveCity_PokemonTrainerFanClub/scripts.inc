@@ -558,19 +558,19 @@ LilycoveCity_PokemonTrainerFanClub_EventScript_AlreadyInterviewed2::
 	end
 
 LilycoveCity_PokemonTrainerFanClub_Text_OhWowItsPlayer:
-	.string "{JPN}いいあ！\n{PLAYER}だ！！$"
+	.string "{JPN}いいあ!\n{PLAYER}だ!!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HeardAboutYouImYourFan:
-	.string "{JPN}きいたよ！\nきみ つよいんだってな\pここでは みんな\nだれが いちばん つよい トレーナーか\lはなしを してるんだけど\pおれ きみの うわさを きいて\nきみの ファンに なることに したよ！\pこれからも つよい トレーナーと\nバンバン たたかって\pおれたちに あつい\nたたかいを みせてくれよ！\pそうすれば きっと みんなも\nきみの ことを みなおすと おもうんだ\pじゃあ きたい してるよ！\n{PLAYER}！！$"
+	.string "{JPN}きいたよ!\nきみ つよいんだってな\pここでは みんな\nだれが いちばん つよい トレーナーか\lはなしを してるんだけど\pおれ きみの うわさを きいて\nきみの ファンに なることに したよ!\pこれからも つよい トレーナーと\nバンバン たたかって\pおれたちに あつい\nたたかいを みせてくれよ!\pそうすれば きっと みんなも\nきみの ことを みなおすと おもうんだ\pじゃあ きたい してるよ!\n{PLAYER}!!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin:
-	.string "{JPN}おう {PLAYER}！！\nおうえん してるぞ！！$"
+	.string "{JPN}おう {PLAYER}!!\nおうえん してるぞ!!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OthersDontKnowYoureTheBest:
-	.string "{JPN}あいつらは しらないんだ\nきみが いちばん すごいって ことをさ！\pそうだろ {PLAYER}！\nこんじょう みせてくれ！$"
+	.string "{JPN}あいつらは しらないんだ\nきみが いちばん すごいって ことをさ!\pそうだろ {PLAYER}!\nこんじょう みせてくれ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainersPowerIsOutOfTheOrdinary:
-	.string "{JPN}きみには わるいけど いま いちばん\nちゅうもくの トレーナーは\lまちがいなく {STR_VAR_1} だね！\pあの つよさは\nだたものじゃ ないよ$"
+	.string "{JPN}きみには わるいけど いま いちばん\nちゅうもくの トレーナーは\lまちがいなく {STR_VAR_1} だね!\pあの つよさは\nだたものじゃ ないよ$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsBestNoOneWantsToListen:
 	.string "{JPN}くそー いまは {STR_VAR_1}が\nいちばん つよいって いってるのに\pだれも きいて くれない……$"
@@ -579,94 +579,94 @@ LilycoveCity_PokemonTrainerFanClub_Text_HearingAboutToughNewTrainer:
 	.string "{JPN}さいきん つぎつぎと ジムリーダーを\nたおしている っていう\pつよい トレーナーが\nあらわれた らしいんだ\pきみ しらないかい?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ImPullingForYou:
-	.string "{JPN}あ！\n{PLAYER}！！\pがんばってね\nおうえん してるから！$"
+	.string "{JPN}あ!\n{PLAYER}!!\pがんばってね\nおうえん してるから!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_BrawlyNoImYourFan:
-	.string "{JPN}トウキさま……\pあ！\nちがう ちがう！\pわたしは あくまで あなたの\nファン なんだからね！\pだから あたしの ために\nがんばってよ！$"
+	.string "{JPN}トウキさま……\pあ!\nちがう ちがう!\pわたしは あくまで あなたの\nファン なんだからね!\pだから あたしの ために\nがんばってよ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ICantHelpLikingBrawly:
 	.string "{JPN}やっぱり わたしは トウキさま しか\nすきに なれないのよねー$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NobodyUnderstandsBrawly:
-	.string "{JPN}だれも トウキさまの\nみりょくを わかって くれないの……\pいいわ！\pわたし ひとりでも トウキさまの ことを\nおうえん しつづけるから！$"
+	.string "{JPN}だれも トウキさまの\nみりょくを わかって くれないの……\pいいわ!\pわたし ひとりでも トウキさまの ことを\nおうえん しつづけるから!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_MyFavoriteTrainerIsBrawly:
-	.string "{JPN}わたしの いちばん すきな\nトレーナーは なんと いっても\pムロの ジムリーダー\nトウキさまよ！$"
+	.string "{JPN}わたしの いちばん すきな\nトレーナーは なんと いっても\pムロの ジムリーダー\nトウキさまよ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouveSurpassedYourFather:
-	.string "{JPN}きみは ついに あらゆる めんで\nきみの おとうさんを こえたな！\pこの わしが いって いるんだから\nまちがいない！$"
+	.string "{JPN}きみは ついに あらゆる めんで\nきみの おとうさんを こえたな!\pこの わしが いって いるんだから\nまちがいない!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling:
-	.string "{JPN}きみの おとうさんは ピンチに なっても\nあきらめずに たたかって いたよ……\pわしは しっているよ\pきみは いくら まけても けっして\nあきらめない という ことを！\lだから がんばってくれ！$"
+	.string "{JPN}きみの おとうさんは ピンチに なっても\nあきらめずに たたかって いたよ……\pわしは しっているよ\pきみは いくら まけても けっして\nあきらめない という ことを!\lだから がんばってくれ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman:
-	.string "{JPN}きみより センリさんの ほうが\nもっと つよくて かっこよく\lみごたえの ある たたかいを していたぞ！\pいくら きみが つよいと\nいわれて いても\pきみの おとうさんに くらべたら\nまだまだ だな$"
+	.string "{JPN}きみより センリさんの ほうが\nもっと つよくて かっこよく\lみごたえの ある たたかいを していたぞ!\pいくら きみが つよいと\nいわれて いても\pきみの おとうさんに くらべたら\nまだまだ だな$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent:
-	.string "{JPN}きみも センリさんと おなじ ふんいき\nというか はくりょくが でてきたね\pしかし センリさん とは けっていてきに\nちがう ものが ある！\p……それは わたしからは いえない\nじぶんで さがして みるんだな$"
+	.string "{JPN}きみも センリさんと おなじ ふんいき\nというか はくりょくが でてきたね\pしかし センリさん とは けっていてきに\nちがう ものが ある!\p……それは わたしからは いえない\nじぶんで さがして みるんだな$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WeDiscussStrongestTrainers:
-	.string "{JPN}ここにいる みんなは\nポケモンしょうぶが だいすきでね\pだれが いちばん つよい トレーナーか\nはなしを して いるんだ！\pきみも ゆうめいに なれば\nみんな ファンに なるかもな！$"
+	.string "{JPN}ここにいる みんなは\nポケモンしょうぶが だいすきでね\pだれが いちばん つよい トレーナーか\nはなしを して いるんだ!\pきみも ゆうめいに なれば\nみんな ファンに なるかもな!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OhWoweeItsPlayer:
-	.string "{JPN}うわー！ {PLAYER}だー\nほんもの だー\pあくしゅ してー\nあくしゅ！$"
+	.string "{JPN}うわー! {PLAYER}だー\nほんもの だー\pあくしゅ してー\nあくしゅ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou:
-	.string "{JPN}……わたし いつまでも {PLAYER}の こと\nおうえん する からね！\pわたし もう {PLAYER}の まける\nとこなんて みたくないよ\p{PLAYER} ほんとは\nつよいんだ もんね！$"
+	.string "{JPN}……わたし いつまでも {PLAYER}の こと\nおうえん する からね!\pわたし もう {PLAYER}の まける\nとこなんて みたくないよ\p{PLAYER} ほんとは\nつよいんだ もんね!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_EveryoneThinksTrainerIsCool:
 	.string "{JPN}{STR_VAR_1}さん って かっこいい……\pねえ みんなも\nそう おもうでしょー?$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsReallyCoolItsJustMe:
-	.string "{JPN}{STR_VAR_1}さん って ほんとうに\nかっこいい よねぇ……\pわたし ひとりに なっても\nずうっと おうえん するんだー！$"
+	.string "{JPN}{STR_VAR_1}さん って ほんとうに\nかっこいい よねぇ……\pわたし ひとりに なっても\nずうっと おうえん するんだー!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WishThereWasTrainerLikeThat:
 	.string "{JPN}わたしのね\nすきな トレーナーは\pかっこよくて\pつよくて\pそれでいて やさしい\pそんな トレーナーが いいなぁ……$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_WantToBeStrongLikeYou:
-	.string "{JPN}あ！ {PLAYER}だー！\nすげー！\pぼくも おおきく なったら\n{PLAYER} みたいに つよく なりたいよ！$"
+	.string "{JPN}あ! {PLAYER}だー!\nすげー!\pぼくも おおきく なったら\n{PLAYER} みたいに つよく なりたいよ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OnlyOneWhoCheersForYou:
-	.string "{JPN}……\nぼく ひとりに なったって\pずっと {PLAYER}の ことを\nおうえん するよ！\pだって {PLAYER}の こと\nしんじてるもん！$"
+	.string "{JPN}……\nぼく ひとりに なったって\pずっと {PLAYER}の ことを\nおうえん するよ!\pだって {PLAYER}の こと\nしんじてるもん!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsWickedlyCool:
 	.string "{JPN}{STR_VAR_1}って かっこいいよねー\nぼく あくしゅ してほしいなー$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NeverGoingToStopBeingTrainersFan:
-	.string "{JPN}……\nぼく ひとりに なったって\pぜったい {STR_VAR_1}の ファンを\nやめない からね！\pだって ぼく きいたんだもん\n{STR_VAR_1}は ぜったいに まけないって$"
+	.string "{JPN}……\nぼく ひとりに なったって\pぜったい {STR_VAR_1}の ファンを\nやめない からね!\pだって ぼく きいたんだもん\n{STR_VAR_1}は ぜったいに まけないって$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureAmazingAfterAll:
-	.string "{JPN}{PLAYER}！\nやっぱり すごいよ きみは！\pぼくは きみを はじめて みたときから\nすごい やつだって おもってたよ！\lやはり ぼくのめは たしかな ようだね！$"
+	.string "{JPN}{PLAYER}!\nやっぱり すごいよ きみは!\pぼくは きみを はじめて みたときから\nすごい やつだって おもってたよ!\lやはり ぼくのめは たしかな ようだね!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ImInYourCorner:
-	.string "{JPN}まあ ほかの やつの\nことなんて きにするなよ\lぼくが ついて いるんだ！\pきみは しんぱい しないで いつもどおり\nたたかって いれば いいんだよ$"
+	.string "{JPN}まあ ほかの やつの\nことなんて きにするなよ\lぼくが ついて いるんだ!\pきみは しんぱい しないで いつもどおり\nたたかって いれば いいんだよ$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_ThinkTrainerIsNumberOne:
 	.string "{JPN}きみも なかなか\nいい トレーナーだと おもうけど\pいまは やっぱり {STR_VAR_1}が\nいちばんだと おもうんだ\pまあ ぼくが おもっている だけだから\nあまり きにしなくて いいよ$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YoureMaybeStrongerThanTrainer:
-	.string "{JPN}きみは ほんとうに つよいな……\n{STR_VAR_1} より つよいかも しれない\pでも {STR_VAR_1} には\nぼくが ひつよう なんだ\pだって ぼくが {STR_VAR_1}を\nおうえん しなきゃ\lだれが おうえん するんだ！$"
+	.string "{JPN}きみは ほんとうに つよいな……\n{STR_VAR_1} より つよいかも しれない\pでも {STR_VAR_1} には\nぼくが ひつよう なんだ\pだって ぼくが {STR_VAR_1}を\nおうえん しなきゃ\lだれが おうえん するんだ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouChangedMyMind:
-	.string "{JPN}みなおしたわ！\nあなたって ほんとうに つよいのね！\pどうしたら そんなに つよく なれるのか\nおしえて もらいたいわ$"
+	.string "{JPN}みなおしたわ!\nあなたって ほんとうに つよいのね!\pどうしたら そんなに つよく なれるのか\nおしえて もらいたいわ$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouBattleAttractivelyInToughSituation:
-	.string "{JPN}あなたって ピンチに なれば なるほど\nみりょくてきな たたかいを するのよね\lつぎの たいせんが たのしみだわ！$"
+	.string "{JPN}あなたって ピンチに なれば なるほど\nみりょくてきな たたかいを するのよね\lつぎの たいせんが たのしみだわ!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_TrainerIsStandout:
-	.string "{JPN}さいきんの トレーナーは\nやっぱり {STR_VAR_1}よね！\lあの つよさは ただもの じゃないわ\pあなたも いいせん いってるけど\n{STR_VAR_1}に くらべたら まだまだねー$"
+	.string "{JPN}さいきんの トレーナーは\nやっぱり {STR_VAR_1}よね!\lあの つよさは ただもの じゃないわ\pあなたも いいせん いってるけど\n{STR_VAR_1}に くらべたら まだまだねー$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_NoOneCanKnockYouButTrainerStronger:
-	.string "{JPN}あなたって ほんとうに\nにんき ものよね……\pつよいし ポケモンにも やさしいし\nいうこと ないわ\pでもね！ わたしは\n{STR_VAR_1}を しんじているの！\p{STR_VAR_1}の ほうが ぜったいに\nつよいに きまってるん だから！$"
+	.string "{JPN}あなたって ほんとうに\nにんき ものよね……\pつよいし ポケモンにも やさしいし\nいうこと ないわ\pでもね! わたしは\n{STR_VAR_1}を しんじているの!\p{STR_VAR_1}の ほうが ぜったいに\nつよいに きまってるん だから!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YouImpressive:
-	.string "{JPN}おぬし……\pやるな！$"
+	.string "{JPN}おぬし……\pやるな!$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_OnlyIRecognizeYourTrueWorth:
 	.string "{JPN}おぬしの しんの ちからは\nこの わしだけが しっていれば よいのじゃ\pみなには その ひめられた ちから\nわかるまい……$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_HaventRealizedPotential:
-	.string "{JPN}うむ おぬし なかなかの\nめを しておるな\pじゃが！\p……うーむ\nまだまだの ようじゃな$"
+	.string "{JPN}うむ おぬし なかなかの\nめを しておるな\pじゃが!\p……うーむ\nまだまだの ようじゃな$"
 
 LilycoveCity_PokemonTrainerFanClub_Text_YourePowerfulButNotTrueStrength:
-	.string "{JPN}たしかに おぬしは\nとてつもなく つよいかも しれない\pじゃが！\nわしには わかる\pその つよさは まだ\nしんの つよさとは いわないのじゃ！\lしんの つよさとは！\p……\pじつは わしも\nよく わからんのじゃ$"
+	.string "{JPN}たしかに おぬしは\nとてつもなく つよいかも しれない\pじゃが!\nわしには わかる\pその つよさは まだ\nしんの つよさとは いわないのじゃ!\lしんの つよさとは!\p……\pじつは わしも\nよく わからんのじゃ$"

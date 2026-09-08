@@ -246,7 +246,7 @@ const struct FollowerMsgInfo gFollowerSurpriseMessages[] = {
 // Unconditional curious messages
 static const u8 sCuriousMsg00[] = _("{JPN}キョロキョロ なにか さがしてる みたい");
 static const u8 sCuriousMsg01[] = _("{JPN}まえが みえなくて ぶつかった!");
-static const u8 sCuriousMsg02[] = _("{JPN}クンクン! なにか ちかくに あるのかな？");
+static const u8 sCuriousMsg02[] = _("{JPN}クンクン! なにか ちかくに あるのかな?");
 static const u8 sCuriousMsg03[] = _("{JPN}{STR_VAR_1}は いしころを\nコロコロ ころがして あそんでる");
 static const u8 sCuriousMsg04[] = _("{JPN}{STR_VAR_1}は\nキョロキョロ なにかを さがしてる");
 static const u8 sCuriousMsg05[] = _("{JPN}{STR_VAR_1}は {PLAYER}の\nにおいを クンクン かいでる");

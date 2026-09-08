@@ -41,5 +41,5 @@ Underwater_SeafloorCavern_EventScript_CheckStolenSub::
 	end
 
 Underwater_SeafloorCavern_Text_SubExplorer1:
-	.string "せんすいてい には\n「かいえん 1ごう」と かかれている\pアクアだんが カイナから\nうばって いった せんすいてい だ！\pアクアだんは\nここから うえに あがったみたいだ$"
+	.string "せんすいてい には\n「かいえん 1ごう」と かかれている\pアクアだんが カイナから\nうばって いった せんすいてい だ!\pアクアだんは\nここから うえに あがったみたいだ$"
 

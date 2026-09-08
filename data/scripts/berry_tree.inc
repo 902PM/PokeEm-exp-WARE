@@ -258,7 +258,7 @@ BerryTree_Text_ItsSoftLoamySoil:
 	.string "{JPN}ふかふかの つちだ!$"
 
 BerryTree_Text_WantToPlant:
-	.string "{JPN}ふかふかの つちだ!\nきのみを うめますか？$"
+	.string "{JPN}ふかふかの つちだ!\nきのみを うめますか?$"
 
 BerryTree_Text_PlantedOneBerry:
 	.string "{JPN}{PLAYER}は ふかふかの つちに\n{STR_VAR_1}を うめた!$"
@@ -307,7 +307,7 @@ BerryTree_Text_CareAdverbGood:
 	.string "{JPN}きれいに$"
 
 BerryTree_Text_WantToPick:
-	.string "{JPN}{STR_VAR_1}が {STR_VAR_2}こ できてる!\p{STR_VAR_1}を とりますか？$"
+	.string "{JPN}{STR_VAR_1}が {STR_VAR_2}こ できてる!\p{STR_VAR_1}を とりますか?$"
 
 BerryTree_Text_PickedTheBerry:
 	.string "{JPN}{PLAYER}は {STR_VAR_1}を {STR_VAR_2}こ とった!$"
@@ -322,7 +322,7 @@ BerryTree_Text_BerryLeftUnpicked:
 	.string "{JPN}{PLAYER}は {STR_VAR_1}を\nそのままに しておいた$"
 
 BerryTree_Text_WantToWater:
-	.string "{JPN}もっている ホエルコじょうろ で\n{STR_VAR_1}に みずを あげますか？$"
+	.string "{JPN}もっている ホエルコじょうろ で\n{STR_VAR_1}に みずを あげますか?$"
 
 BerryTree_Text_WateredTheBerry:
 	.string "{JPN}{PLAYER}は {STR_VAR_1}に みずを あげた!$"

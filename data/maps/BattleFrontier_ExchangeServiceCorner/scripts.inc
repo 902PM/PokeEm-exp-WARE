@@ -352,13 +352,13 @@ BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
 	.string "{JPN}リストから しょうひんを えらんでください$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase:
-	.string "{JPN}{STR_VAR_1}を えらびました\nよろしいですか？$"
+	.string "{JPN}{STR_VAR_1}を えらびました\nよろしいですか?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
-	.string "{JPN}ありがとうございます！\nじたくの パソコンに おくります$"
+	.string "{JPN}ありがとうございます!\nじたくの パソコンに おくります$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
-	.string "{JPN}しょうひんを どうぞ！$"
+	.string "{JPN}しょうひんを どうぞ!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
 	.string "{JPN}もうしわけ ありません……\nバトルポイントが たりません……$"

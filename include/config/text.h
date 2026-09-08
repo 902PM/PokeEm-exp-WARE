@@ -2,18 +2,18 @@
 #define GUARD_CONFIG_TEXT_H
 
 // Text settings:
-#define AUTO_SCROLL_TEXT             FALSE   // If TRUE, text will automatically scroll to the next line after NUM_FRAMES_AUTO_SCROLL_DELAY. Players can still press A_BUTTON or B_BUTTON to scroll on their own.
+#define AUTO_SCROLL_TEXT             FALSE   // TRUEの場合、NUM_FRAMES_AUTO_SCROLL_DELAYで指定したフレーム数が経過すると、テキストは自動的に次の行へスクロールします。プレイヤーはA_BUTTONまたはB_BUTTONを押して、手動でスクロールさせることも可能です。
 #define NUM_FRAMES_AUTO_SCROLL_DELAY 49
 
-// A note on the modifiers: they are roughly multiplicative, so having them set at 1 is vanilla speed. They also are used to calculate frame delays for the speed of the scroll effect and the animated down arrow, so to that end, they are capped at 31 to prevent the text printing from desyncing with A/B button inputs.
-// From testing, a value of 18 to 20 is essentially equivalent to instant text.
-#define TEXT_SPEED_SLOW_MODIFIER     1       // How fast the SLOW text speed option prints
-#define TEXT_SPEED_MEDIUM_MODIFIER   1       // How fast the MID text speed option prints
-#define TEXT_SPEED_FAST_MODIFIER     1       // How fast the FAST text speed option prints
-#define TEXT_SPEED_INSTANT_MODIFIER  12      // Needed only for the animation delays
-#define TEXT_SPEED_INSTANT           FALSE   // Renders all text as fast as it can, basically instant. Overrides FLAG_TEXT_SPEED_INSTANT and in-game player options menu setting.
+// 補正値（モディファイア）について補足します。これらは概ね乗算的に作用するため、値を1に設定すると標準（バニラ）の速度になります。また、スクロール効果やアニメーションする下矢印の表示タイミング（フレーム遅延）の計算にも使用されるため、テキストの表示とA/Bボタン入力との間でズレが生じないよう、上限値は31に制限されています。
+// テストの結果、18から20という値は、実質的に「インスタントテキスト」と同等であることがわかりました。
+#define TEXT_SPEED_SLOW_MODIFIER     1       // おそいのテキスト表示速度設定における表示速度
+#define TEXT_SPEED_MEDIUM_MODIFIER   1       // ふつうのテキスト表示速度設定における表示速度
+#define TEXT_SPEED_FAST_MODIFIER     1       // はやいのテキスト表示速度設定における表示速度
+#define TEXT_SPEED_INSTANT_MODIFIER  12      // アニメーションの遅延にのみ必要です。
+#define TEXT_SPEED_INSTANT           FALSE   // すべてのテキストを可能な限り高速（実質的に瞬時）に表示します。`FLAG_TEXT_SPEED_INSTANT` およびゲーム内のプレイヤーオプション設定よりも優先されます。
 
 // Text speed flag:
-#define FLAG_TEXT_SPEED_INSTANT      0       // Use this if you want to toggle instant text speed
+#define FLAG_TEXT_SPEED_INSTANT      0       // テキストの表示速度を瞬時に切り替えたい場合は、これを使用してください。
 
 #endif // GUARD_CONFIG_TEXT_H

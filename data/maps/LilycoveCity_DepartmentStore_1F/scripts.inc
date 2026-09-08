@@ -139,7 +139,7 @@ LilycoveCity_DepartmentStore_1F_EventScript_FloorNamesSign::
 	end
 
 LilycoveCity_DepartmentStore_1F_Text_WelcomeToDeptStore:
-	.string "{JPN}いらっしゃいませ！\nミナモ デパート です$"
+	.string "{JPN}いらっしゃいませ!\nミナモ デパート です$"
 
 LilycoveCity_DepartmentStore_1F_Text_IBuyAllSortsOfThings:
 	.string "{JPN}デパートに くると たのしくなって\nいろんな ものを かっちゃうのよ$"
@@ -148,17 +148,17 @@ LilycoveCity_DepartmentStore_1F_Text_MomBuyingMeFurniture:
 	.string "{JPN}きょうは すてきな かぐを\nおかあさんに かって もらうの$"
 
 LilycoveCity_DepartmentStore_1F_Text_BuyingSomethingForAzumarill:
-	.string "{JPN}コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ！$"
+	.string "{JPN}コンテストで ゆうしょうした ごほうびに\nマリルリに なにか かって あげるんだよ!$"
 
 LilycoveCity_DepartmentStore_1F_Text_Azumarill:
-	.string "{JPN}マリルリ『まりりるぅー！$"
+	.string "{JPN}マリルリ『まりりるぅー!$"
 
 LilycoveCity_DepartmentStore_1F_Text_FloorNamesSign:
 	.string "{JPN}1かい …… サービス カウンター\n       ちゅうせん かいじょう\p2かい …… トレーナーズ ゾーン\p3かい …… バトル コレクション\p4かい …… わざマシン コーナー\p5かい …… ぬいぐるみ フロアー\pおくじょう …… いこいの ひろば$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_WirelessCommIsFun:
-	.string "{JPN}むせん つうしん って\nたのしい よね！\pいままで できなかった ことが\nできるようになる きが するの！\pむせんで こうかん できなかった\nともだちも ブーッと できたり！\pなんだか とっても\nわくわく しちゃう！$"
+	.string "{JPN}むせん つうしん って\nたのしい よね!\pいままで できなかった ことが\nできるようになる きが するの!\pむせんで こうかん できなかった\nともだちも ブーッと できたり!\pなんだか とっても\nわくわく しちゃう!$"
 
 @ Unused
 LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
