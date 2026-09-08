@@ -36,5 +36,5 @@ SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
 	.string "{JPN}たしかに いちば には\nいろんな ほりだしものが ある\pだが フレンドリィショップ じゃないと\nかえない ものも あるからな$"
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
-	.string "{JPN}スーパーボールは モンスターボールよりも\nポケモンを つかまえやすい！\pこれなら あの てごわい ポケモンも……$"
+	.string "{JPN}スーパーボールは モンスターボールよりも\nポケモンを つかまえやすい!\pこれなら あの てごわい ポケモンも……$"
 

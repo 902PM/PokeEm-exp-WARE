@@ -1160,7 +1160,7 @@ PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 	.string "{JPN}ミツルくん\nわたしの ポケモンを かして あげよう!\pミツルは\nジグザグマを あずかった!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
-	.string "{JPN}ミツル『わあ……\nポケモンだぁ……!\pパパ『うむ……\nモンスターボールは あげるから\lがんばって　みなさい!\pミツルは\nモンスターボールを もらった!$"
+	.string "{JPN}ミツル『わあ……\nポケモンだぁ……!\pパパ『うむ……\nモンスターボールは あげるから\lがんばって みなさい!\pミツルは\nモンスターボールを もらった!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "{JPN}ミツル『おじさん ありがとう!$"

@@ -53,5 +53,5 @@ NewMauville_Entrance_Text_UseBasementKey:
 	.string "{JPN}ちかのカギを つかいますか?$"
 
 NewMauville_Entrance_Text_UsedBasementKey:
-	.string "{JPN}{PLAYER}は\nちかのカギを つかった!\pとびらは ひらいた！$"
+	.string "{JPN}{PLAYER}は\nちかのカギを つかった!\pとびらは ひらいた!$"
 

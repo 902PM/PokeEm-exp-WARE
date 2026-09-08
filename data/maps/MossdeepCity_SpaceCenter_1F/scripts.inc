@@ -307,7 +307,7 @@ MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
 	.string "{JPN}マグマだんを おっぱらわなきゃ\nかいがんの さんぽ どころじゃないね!$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
-	.string "{JPN}ひとに よっては\nポケモンは うちゅうから やってきた!\lって いうよね! ほんとう かなー？$"
+	.string "{JPN}ひとに よっては\nポケモンは うちゅうから やってきた!\lって いうよね! ほんとう かなー?$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
 	.string "{JPN}マグマだん なんて\nアクアだんが やっつければ いいのよ!\pでも そうすると こんどは\nアクアだんが おおきなかおを するのよね$"
@@ -319,7 +319,7 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
 	.string "{JPN}でっかい てつの かたまりが\nおおぞらを つきぬけ\lうちゅうまで とんで いく……\pそんな わしのゆめを ジャマする\nマグマだんめ! ぬぬぬ ゆるさん!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "{JPN}ダイゴ『{PLAYER}{KUN} そこにある\nよこくじょうは もう よんだかい？\pマグマだんは このしまに ある\nロケットねんりょうを ねらっている!\pなにに つかうのか しらないけど\nかれらに わたす わけには いかないよ!\pボクは もうすこし ここで\nみはって いるから きみは まちでも\lけんぶつ してきたら どうかな$"
+	.string "{JPN}ダイゴ『{PLAYER}{KUN} そこにある\nよこくじょうは もう よんだかい?\pマグマだんは このしまに ある\nロケットねんりょうを ねらっている!\pなにに つかうのか しらないけど\nかれらに わたす わけには いかないよ!\pボクは もうすこし ここで\nみはって いるから きみは まちでも\lけんぶつ してきたら どうかな$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
 	.string "{JPN}やくそく どおり ロケットねんりょうを\nちょうだいしに きたわよ!$"
@@ -343,10 +343,10 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
 	.string "{JPN}うちゅうセンターに ちょぞう してある\nロケットの ねんりょうは\lぜんぶ オレたちが いただいて いくぜ!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "{JPN}コップいっぱいで いいから\nねんりょう くれない？$"
+	.string "{JPN}コップいっぱいで いいから\nねんりょう くれない?$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "{JPN}ねんりょうの つかいみち？\nそんなこと オレは しらん!\l2かいに いる リーダーに きいてくれ!$"
+	.string "{JPN}ねんりょうの つかいみち?\nそんなこと オレは しらん!\l2かいに いる リーダーに きいてくれ!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
 	.string "{JPN}リーダーから だれも ここを とおすな\nって いわれてるんだよ!$"
@@ -358,4 +358,4 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
 	.string "{JPN}リーダーには オレが さいごまで\nもちばを はなれなかった って\lいっといて くれよ!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
-	.string "{JPN}これは……\nはんこう よこくじょう？\p「うちゅうセンターの みなさん\n いかが おすごしで しょうか\p ロケットの ねんりょうは\n まもなく われわれが いただきます\l イヤだと いっても ムダなのでーす\p もっと りくちを!\n              マグマだん$"
+	.string "{JPN}これは……\nはんこう よこくじょう?\p「うちゅうセンターの みなさん\n いかが おすごしで しょうか\p ロケットの ねんりょうは\n まもなく われわれが いただきます\l イヤだと いっても ムダなのでーす\p もっと りくちを!\n              マグマだん$"

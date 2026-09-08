@@ -343,13 +343,13 @@ MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
 	.string "{JPN}トクサネは てんきの よい ひが おおい\nかぜの むきも あんてい している\pロケットを うちあげる には\nもってこいの ばしょ なんですな$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "{JPN}ロケットの ねんりょうなんか うばって\nマグマだんは なにする つもりだ！?$"
+	.string "{JPN}ロケットの ねんりょうなんか うばって\nマグマだんは なにする つもりだ!?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
-	.string "{JPN}わしも もうすこし わかければ\nうちゅう ひこうしに なりたかった……\pいや いまからでも おそくない！\nよーし がんばるぞー！！$"
+	.string "{JPN}わしも もうすこし わかければ\nうちゅう ひこうしに なりたかった……\pいや いまからでも おそくない!\nよーし がんばるぞー!!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "{JPN}マグマだんに ねんりょうを うばわれたら\nわしが うちゅうに いけなくなる！\pそんなこと させて たまるかー！$"
+	.string "{JPN}マグマだんに ねんりょうを うばわれたら\nわしが うちゅうに いけなくなる!\pそんなこと させて たまるかー!$"
 
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "{JPN}いつか ふつーの ひとも\nうちゅうに いけると いいのにな……$"
@@ -358,55 +358,55 @@ MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
 	.string "{JPN}マグマだんも……\nうちゅうに いきたいの かな?$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
-	.string "{JPN}なんだ おまえ！\pおれたち 3にんに かこまれてるのに\nやろうってのか！?$"
+	.string "{JPN}なんだ おまえ!\pおれたち 3にんに かこまれてるのに\nやろうってのか!?$"
 
 MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
-	.string "{JPN}だよな！\nそのほうが おりこうさん だぜ！$"
+	.string "{JPN}だよな!\nそのほうが おりこうさん だぜ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "{JPN}むてっぽうな やつめ……\nまずは オレからだ！$"
+	.string "{JPN}むてっぽうな やつめ……\nまずは オレからだ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
-	.string "{JPN}オレは まけたが しかし！$"
+	.string "{JPN}オレは まけたが しかし!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
-	.string "{JPN}あんしん するのは まだ はやい\nつぎは オレが あいてだ！$"
+	.string "{JPN}あんしん するのは まだ はやい\nつぎは オレが あいてだ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
-	.string "{JPN}オレも まけたが だけど！$"
+	.string "{JPN}オレも まけたが だけど!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "{JPN}ひとやすみ したいだろう けど\nそんな わけには いきませーん！$"
+	.string "{JPN}ひとやすみ したいだろう けど\nそんな わけには いきませーん!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
 	.string "{JPN}オレたちが ひとやすみ\nしておけば…… よかった……$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
-	.string "{JPN}3にんも いて このザマか！$"
+	.string "{JPN}3にんも いて このザマか!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
-	.string "{JPN}3にんがかりで まけると\nいつもの 3ばい かっこわるいぜ！$"
+	.string "{JPN}3にんがかりで まけると\nいつもの 3ばい かっこわるいぜ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
 	.string "{JPN}オレたち リーダーの\nやくに たってるのかな……?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
-	.string "{JPN}ウヒョヒョ！ せっかく\nねんりょうを いただきに きたのに\lジャマが はいっちまった！\pおまえも オレたちの ジャマを するなら\nいっしょに かたづけて やろうか！$"
+	.string "{JPN}ウヒョヒョ! せっかく\nねんりょうを いただきに きたのに\lジャマが はいっちまった!\pおまえも オレたちの ジャマを するなら\nいっしょに かたづけて やろうか!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "{JPN}マツブサ『えーい そこをどけ！\nわれわれの ジャマを するんじゃない！$"
+	.string "{JPN}マツブサ『えーい そこをどけ!\nわれわれの ジャマを するんじゃない!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "{JPN}ダイゴ『マグマだん……\nロケットの ねんりょうなんか ぬすんで\lいったい なにをする つもりなんだ！$"
+	.string "{JPN}ダイゴ『マグマだん……\nロケットの ねんりょうなんか ぬすんで\lいったい なにをする つもりなんだ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "{JPN}マツブサ『ふふふ……\nそんなに しりたけりゃ おしえてやろう\pえんとつやまの かこうに\nぜんぶ なげこんで やるのさ！\pグラードンも きえてしまった ことだし\nもう あんなやまに ようはない\pだから ねんりょうの ちからを りようして\nかざんを ふんか させて やるのさ\lズドドーン とな！$"
+	.string "{JPN}マツブサ『ふふふ……\nそんなに しりたけりゃ おしえてやろう\pえんとつやまの かこうに\nぜんぶ なげこんで やるのさ!\pグラードンも きえてしまった ことだし\nもう あんなやまに ようはない\pだから ねんりょうの ちからを りようして\nかざんを ふんか させて やるのさ\lズドドーン とな!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
-	.string "{JPN}ダイゴ『{PLAYER}{KUN}！\nちからを かして くれるのかい！?\pボクと いっしょに たたかおう！\nじゅんびは いいね?$"
+	.string "{JPN}ダイゴ『{PLAYER}{KUN}!\nちからを かして くれるのかい!?\pボクと いっしょに たたかおう!\nじゅんびは いいね?$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "{JPN}ダイゴ『じゃあ いそいで\nじゅんびを ととのえて くるんだ！$"
+	.string "{JPN}ダイゴ『じゃあ いそいで\nじゅんびを ととのえて くるんだ!$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
 	.string "{JPN}わたしは ただ……\nりくちを ふやしたい だけなのに……$"

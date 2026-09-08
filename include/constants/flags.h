@@ -754,7 +754,7 @@
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
 
 // Expansion feature test flags.
-// These aliases keep the original unused flag IDs intact while making debug
+// これらは本家にないフラグです。消さないでください。
 // menu toggles easier to identify.
 #define FLAG_EXPANSION_INVERSE_BATTLE                 FLAG_UNUSED_0x264
 #define FLAG_EXPANSION_AI_VS_AI_BATTLE                FLAG_UNUSED_0x265
@@ -781,7 +781,7 @@
 #define FLAG_EXPANSION_NO_COLLISION                   FLAG_UNUSED_0x27A
 #define FLAG_EXPANSION_POKE_RIDER                     FLAG_UNUSED_0x27B
 
-// Compatibility aliases for the verification ROM/debug menu wording.
+// こっちも本家にないよー
 #define FLAG_EXPANSION_DEXNAV_DISPLAY                 FLAG_EXPANSION_DEXNAV_GET
 #define FLAG_EXPANSION_DEXNAV_DETECT                  FLAG_EXPANSION_DEXNAV_DETECTOR_MODE
 #define FLAG_EXPANSION_FOLLOWING_MON_DISABLED         FLAG_EXPANSION_FOLLOWERS_DISABLED

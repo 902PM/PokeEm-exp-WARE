@@ -171,10 +171,10 @@ Route123_EventScript_RematchFernando::
 	end
 
 Route123_Text_LoveGrassMonsHaveAny:
-	.string "{JPN}あたし くさタイプの ポケモン\nだいすき なの！\pあなたは くさタイプの ポケモン\nもって いないの……？$"
+	.string "{JPN}あたし くさタイプの ポケモン\nだいすき なの!\pあなたは くさタイプの ポケモン\nもって いないの……?$"
 
 Route123_Text_YouLikeGrassMonsTooHaveThis:
-	.string "{JPN}あら！？\pあなたも くさタイプの ポケモンが\nだいすき なのね！\pうれしいから これ あげちゃう！\nともだちの しるし よ！$"
+	.string "{JPN}あら!?\pあなたも くさタイプの ポケモンが\nだいすき なのね!\pうれしいから これ あげちゃう!\nともだちの しるし よ!$"
 
 Route123_Text_CheckTreesWithMyGrassMon:
 	.string "{JPN}くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね$"

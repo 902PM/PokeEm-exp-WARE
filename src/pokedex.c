@@ -682,10 +682,10 @@ static const u8 sText_No000[] = _("{NO}000");
 const u8 sCaughtBall_Gfx[] = INCGFX_U8("graphics/pokedex/caught_ball.png", ".4bpp");
 static const u8 sText_TenDashes[] = _("-----");
 
-static const u8 sText_UnkHeight[] = _("???.? m");
-static const u8 sText_UnkHeightMetric[] = _("???.? m");
-static const u8 sText_UnkWeight[] = _("????.? kg");
-static const u8 sText_UnkWeightMetric[] = _("???.? kg");
+static const u8 sText_UnkHeight[] = _("??.?m");
+static const u8 sText_UnkHeightMetric[] = _("???.?m");
+static const u8 sText_UnkWeight[] = _("???.?kg");
+static const u8 sText_UnkWeightMetric[] = _("???.?kg");
 static const u8 sText_PokedexRegistration[] = _("{JPN}ポケモンずかんの とうろく かんりょう!");
 static const u8 sText_HTHeight[] = _("{JPN}たかさ");
 static const u8 sText_WTWeight[] = _("{JPN}おもさ");

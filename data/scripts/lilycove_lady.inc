@@ -670,7 +670,7 @@ LilycoveCity_PokemonCenter_1F_Text_Kecleon:
 	.string "{JPN}{STR_VAR_1}『いぎぎぎぃ!!$"
 
 LilycoveCity_PokemonCenter_1F_Text_Poochyena:
-	.string "{JPN}{STR_VAR_1}『バアーゥン　……$"
+	.string "{JPN}{STR_VAR_1}『バアーゥン ……$"
 
 LilycoveCity_PokemonCenter_1F_Text_Pikachu:
 	.string "{JPN}{STR_VAR_1}『ぴっか!$"

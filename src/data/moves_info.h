@@ -21340,7 +21340,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HYDRO_VORTEX] =
     {
         .name = COMPOUND_STRING("{JPN}スーパーアクアトルネード"),
-        .description = COMPOUND_STRING("{JPN}Zパワーで おおきな うずしおをつくり\nぜんりょくで あいてを　のみこむ"),
+        .description = COMPOUND_STRING("{JPN}Zパワーで おおきな うずしおをつくり\nぜんりょくで あいてを のみこむ"),
         .effect = EFFECT_HIT,
         .power = 1,
         .type = TYPE_WATER,
