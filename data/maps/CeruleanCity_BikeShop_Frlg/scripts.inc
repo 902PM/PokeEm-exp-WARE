@@ -122,9 +122,9 @@ CeruleanCity_BikeShop_Text_WowYourBikeIsCool::
 
 @ Unused
 CeruleanCity_BikeShop_Text_GermanFoldableBicyleFinallyOnMarket::
-	.string "ついに　はつばい！\p"
-	.string "ドイツ　せい　さいこうきゅう\n"
-	.string "おりたたみ　じてんしゃ！$"
+	.string "ついに はつばい!\p"
+	.string "ドイツ せい さいこうきゅう\n"
+	.string "おりたたみ じてんしゃ!$"
 
 CeruleanCity_BikeShop_Text_ShinyNewBicycle::
 	.string "A shiny new BICYCLE!$"

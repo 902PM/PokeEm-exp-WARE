@@ -6,13 +6,13 @@ Route5_PokemonDayCare_Frlg_MapScripts::
 Route5_PokemonDayCare_Text_WantMeToRaiseMon::
 	.string "I run the DAY-CARE service.\p"
 	.string "Would you like me to raise one of\n"
-	.string "your POKéMON?$"
+	.string "your POKEMON?$"
 
 Route5_PokemonDayCare_Text_ComeAgain::
 	.string "Come again.$"
 
 Route5_PokemonDayCare_Text_WhichMonShouldIRaise::
-	.string "Which POKéMON should I raise?$"
+	.string "Which POKEMON should I raise?$"
 
 Route5_PokemonDayCare_Text_ComeAnytimeYouLike::
 	.string "Fine.\n"
@@ -31,23 +31,23 @@ Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime::
 	.string "some more time with me.$"
 
 Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
-	.string "You owe me ¥{STR_VAR_2} for the return\n"
-	.string "of this POKéMON.$"
+	.string "You owe me {STR_VAR_2} yen for the return\n"
+	.string "of this POKEMON.$"
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
 	.string "Thank you!\n"
-	.string "Here's your POKéMON.$"
+	.string "Here's your POKEMON.$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
 	.string "{PLAYER} got {STR_VAR_1} back\n"
 	.string "from the DAY-CARE MAN.$"
 
 Route5_PokemonDayCare_Text_OnlyHaveOneMonWithYou::
-	.string "Oh? You only have one POKéMON\n"
+	.string "Oh? You only have one POKEMON\n"
 	.string "with you.$"
 
 Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
-	.string "If you leave me that POKéMON,\n"
+	.string "If you leave me that POKEMON,\n"
 	.string "what will you battle with?$"
 
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
@@ -58,7 +58,7 @@ Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Aren't I great?$"
 
 Route5_PokemonDayCare_Text_YouveGotNoRoomForIt::
-	.string "You can't take this POKéMON back\n"
+	.string "You can't take this POKEMON back\n"
 	.string "if you've got no room for it.$"
 
 Route5_PokemonDayCare_Text_DontHaveEnoughMoney::
@@ -66,8 +66,8 @@ Route5_PokemonDayCare_Text_DontHaveEnoughMoney::
 
 Route5_PokemonDayCare_Text_WantMeToTakeALookAtYours::
 	.string "きみの\n"
-	.string "みてみるかね？$"
+	.string "みてみるかね?$"
 
 Route5_PokemonDayCare_Text_CantAcceptMonWithHM::
-	.string "わるいけど　ひでんのわざを　もった\n"
-	.string "ポケモンは　あずかれないなぁ$"
+	.string "わるいけど ひでんのわざを もった\n"
+	.string "ポケモンは あずかれないなぁ$"

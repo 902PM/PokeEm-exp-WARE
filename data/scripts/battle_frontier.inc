@@ -11,4 +11,4 @@ BattleFrontier_ShowCaughtBannedSpeciesEnd:
 
 BattleFrontier_DoYouWantToSeeTheListOfCaughtBannedSpecies:
 	.string "Do you want to see the list of\n"
-	.string "POKéMON species you can't bring?$"
+	.string "POKeMON species you can't bring?$"

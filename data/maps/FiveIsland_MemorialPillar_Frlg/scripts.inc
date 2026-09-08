@@ -119,21 +119,21 @@ FiveIsland_MemorialPillar_Text_HaroldDefeat::
 
 FiveIsland_MemorialPillar_Text_HaroldPostBattle::
 	.string "It fills me with happiness when\n"
-	.string "bird POKéMON beg playfully…$"
+	.string "bird POKeMON beg playfully…$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrub::
 	.string "Scrub, scrub…$"
 
 FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
 	.string "Hello…\n"
-	.string "Your POKéMON look healthy…$"
+	.string "Your POKeMON look healthy…$"
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
 	.string "This is where I buried my ONIX…\n"
 	.string "It was named TECTONIX…$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering::
-	.string "“Here lies TECTONIX” is engraved\n"
+	.string "Here lies TECTONIX is engraved\n"
 	.string "on a boulder.\p"
 	.string "There is a LEMONADE placed as an\n"
 	.string "offering in front of the grave.$"
@@ -157,7 +157,7 @@ FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
 	.string "thanks?$"
 
 FiveIsland_MemorialPillar_Text_BeGoodToYourMonsToo::
-	.string "Please be good to your POKéMON,\n"
+	.string "Please be good to your POKEMON,\n"
 	.string "too.$"
 
 FiveIsland_MemorialPillar_Text_DontHaveRoomForIt::
@@ -177,6 +177,6 @@ FiveIsland_MemorialPillar_Text_ScrubScrubTectonix::
 FiveIsland_MemorialPillar_Text_HereLiesTectonix::
 	.string "Boulders and rocks are neatly piled\n"
 	.string "up as a cairn.\p"
-	.string "“Here lies TECTONIX” is engraved\n"
+	.string "Here lies TECTONIX is engraved\n"
 	.string "on a boulder.$"
 

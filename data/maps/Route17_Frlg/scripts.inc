@@ -79,14 +79,14 @@ Route17_Text_NikolasPostBattle::
 	.string "POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
-	.string "I leveled up my POKéMON, but it\n"
+	.string "I leveled up my POKEMON, but it\n"
 	.string "won't evolve. Why?$"
 
 Route17_Text_ZeekDefeat::
 	.string "Why, you!$"
 
 Route17_Text_ZeekPostBattle::
-	.string "Maybe some POKéMON need element\n"
+	.string "Maybe some POKEMON need element\n"
 	.string "STONES to evolve.$"
 
 Route17_Text_JamalIntro::
@@ -134,8 +134,8 @@ Route17_Text_WatchOutForDiscardedItems::
 
 Route17_Text_SameSpeciesGrowDifferentRates::
 	.string "TRAINER TIPS\p"
-	.string "All POKéMON are unique.\p"
-	.string "Even POKéMON of the same species\n"
+	.string "All POKEMON are unique.\p"
+	.string "Even POKEMON of the same species\n"
 	.string "and level grow at different rates.$"
 
 Route17_Text_PressBToStayInPlace::
@@ -149,7 +149,7 @@ Route17_Text_RouteSign::
 
 Route17_Text_DontThrowGameThrowBalls::
 	.string "It's a notice!\p"
-	.string "Don't throw the game, throw POKé\n"
+	.string "Don't throw the game, throw POKe\n"
 	.string "BALLS instead!$"
 
 Route17_Text_CyclingRoadSign::

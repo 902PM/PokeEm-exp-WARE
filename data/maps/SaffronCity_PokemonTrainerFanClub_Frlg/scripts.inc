@@ -461,7 +461,7 @@ SaffronCity_PokemonTrainerFanClub_Text_BrocksMyHero::
 	.string "He's a man among men!\p"
 	.string "Heheh, I got my mom to do\n"
 	.string "something for me.\p"
-	.string "I got her to embroider “BROCK”\n"
+	.string "I got her to embroider BROCK\n"
 	.string "on my shorts!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_BrocksFanToBitterEnd::
@@ -509,13 +509,13 @@ SaffronCity_PokemonTrainerFanClub_Text_YouveStillAWaysToGo::
 	.string "You certainly do have the look of\n"
 	.string "a winner.\p"
 	.string "But for me to accept you as\n"
-	.string "a true POKéMON great…\p"
+	.string "a true POKEMON great…\p"
 	.string "… …\p"
 	.string "You've still a ways to go!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_YoullBeTalkedAboutIfYouKeepWinning::
 	.string "All of us gathered here are fans\n"
-	.string "of POKéMON TRAINERS.\p"
+	.string "of POKEMON TRAINERS.\p"
 	.string "The way they look in battle…\n"
 	.string "They are the picture of coolness.\p"
 	.string "Perhaps you will be talked about\n"
