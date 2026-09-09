@@ -2357,7 +2357,7 @@ void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 unused)
             text[i] = CHAR_HYPHEN;
     }
 
-    PrintMonDexNum(0, FONT_NARROW, text, left, top);
+    PrintMonDexNum(0, FONT_NORMAL, text, left, top);
 }
 
 void CreateCaughtBall(bool16 owned, u8 x, u8 y, u16 unused)
@@ -2381,7 +2381,7 @@ u8 CreateMonName(u16 num, u8 left, u8 top)
         str = GetSpeciesName(num);
     else
         str = sText_TenDashes;
-    PrintMonName(0, FONT_NARROW, str, left, top);
+    PrintMonName(0, FONT_NORMAL, str, left, top);
     return StringLength(str);
 }
 
@@ -4478,7 +4478,6 @@ static u8* ConvertMeasurementToMetricString(u32 num, u32* index)
     string[(*index)++] = CHAR_0 + ((num % 1000) % 100) / 10;
     string[(*index)++] = CHAR_DEC_SEPARATOR;
     string[(*index)++] = CHAR_0 + ((num % 1000) % 100) % 10;
-    string[(*index)++] = CHAR_SPACE;
 
     return string;
 }

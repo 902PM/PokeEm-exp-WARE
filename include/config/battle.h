@@ -334,9 +334,9 @@
 #define B_ABILITY_WEATHER               GEN_LATEST // 第6世代以降、特性によって発生する天候は5ターンの間持続します。それ以前は、戦闘が終了するか、技や別の天候特性によって天候が変化するまで持続していました。
 #define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // 第4世代以降、砂嵐の天候によって Sp が倍増します。いわタイプのポケモンの防御力が1.5倍になる。
 #define B_SANDSTORM_SOLAR_BEAM          GEN_LATEST // 第3世代以降、砂嵐によってソーラー ビームの出力が低下します。
-#define B_OVERWORLD_FOG                 GEN_LATEST // 第8世代以降、フィールド上の「霧」は戦闘中に「ミストフィールド」を発生させます。一方、第4世代に限っては、フィールド上の「霧」は戦闘中に「霧」という特殊な天候状態を発生させます。
-#define B_OVERWORLD_SNOW                GEN_LATEST // 第9世代以降、フィールド上の天候が「雪」の場合、戦闘では「あられ」ではなく「ゆき」が発生します。
-#define B_SNOW_WARNING                  GEN_LATEST // 第9世代以降、「ゆきふらし」は「あられ」の代わりに「ゆき」を降らせるようになります。
+#define B_OVERWORLD_FOG                 GEN_3      // 第8世代以降、フィールド上の「霧」は戦闘中に「ミストフィールド」を発生させます。一方、第4世代に限っては、フィールド上の「霧」は戦闘中に「霧」という特殊な天候状態を発生させます。
+#define B_OVERWORLD_SNOW                GEN_8      // 第9世代以降、フィールド上の天候が「雪」の場合、戦闘では「あられ」ではなく「ゆき」が発生します。
+#define B_SNOW_WARNING                  GEN_8      // 第9世代以降、「ゆきふらし」は「あられ」の代わりに「ゆき」を降らせるようになります。
 #define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_BOTH // 「あられ」状態と「ゆき」状態を共存させます。
 #define B_OVERWORLD_WEATHER_OVERRIDE    GEN_LATEST // 第9世代以降、フィールド上の天候は上書きできません。
 

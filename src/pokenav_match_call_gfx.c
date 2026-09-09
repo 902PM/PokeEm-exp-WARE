@@ -1026,7 +1026,7 @@ static void PrintMatchCallLocation(struct Pokenav_MatchCallGfx *gfx, int delta)
     else
         StringCopy(mapName, gText_Unknown);
 
-    x = GetStringRightAlignXOffset(FONT_NARROW, mapName, 80);
+    x = GetStringRightAlignXOffset(FONT_NORMAL, mapName, 80);
     FillWindowPixelBuffer(gfx->locWindowId, PIXEL_FILL(1));
     AddTextPrinterParameterized(gfx->locWindowId, FONT_NORMAL, mapName, x, 1, 0, NULL);
 }
@@ -1042,7 +1042,7 @@ static void PrintMatchCallSelectionOptions(struct Pokenav_MatchCallGfx *gfx)
         if (optionText == MATCH_CALL_OPTION_COUNT)
             break;
 
-        AddTextPrinterParameterized(gfx->infoBoxWindowId, FONT_NARROW, sMatchCallOptionTexts[optionText], 16, i * 16 + 1, TEXT_SKIP_DRAW, NULL);
+        AddTextPrinterParameterized(gfx->infoBoxWindowId, FONT_NORMAL, sMatchCallOptionTexts[optionText], 16, i * 16 + 1, TEXT_SKIP_DRAW, NULL);
     }
 
     CopyWindowToVram(gfx->infoBoxWindowId, COPYWIN_GFX);

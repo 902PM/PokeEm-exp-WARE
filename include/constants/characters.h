@@ -223,7 +223,7 @@
 #define CHAR_9                 0xAA
 #define CHAR_EXCL_MARK         0xAB
 #define CHAR_QUESTION_MARK     0xAC
-#define CHAR_PERIOD            0xAD
+#define CHAR_PERIOD            0xB8
 #define CHAR_HYPHEN            0xAE
 #define CHAR_BULLET            0xAF
 #define CHAR_ELLIPSIS          0xB0
