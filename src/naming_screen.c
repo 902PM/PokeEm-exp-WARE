@@ -46,7 +46,7 @@ enum {
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 20
+#define KBCOL_COUNT 19
 #define NAMING_SCREEN_MAX_INPUT_CHARS 6
 #define KEYBOARD_TEXT_X 0
 #define KEYBOARD_CURSOR_BASE_X 28
@@ -306,9 +306,6 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
     DUMMY_WIN_TEMPLATE
 };
 
-#define JP_KATAKANA_OFFSET 0x50
-#define JP_TO_KATA(ch) ((ch) + JP_KATAKANA_OFFSET)
-
 // This handles what characters get inserted when a key is pressed.
 // Empty cells are zero and are ignored by the character handler.
 static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] =
@@ -416,8 +413,6 @@ static void DrawBgTilemap(u8, const void *);
 static void NamingScreen_Dummy(u8, u8);
 static void DrawTextEntry(void);
 static void PrintKeyboardKeys(u8, u8);
-static bool8 IsNamingScreenJapaneseChar(u8);
-static void BuildSingleCharText(u8 *, u8);
 static void DrawKeyboardPageOnDeck(void);
 static void PrintControls(void);
 static void CB2_NamingScreen(void);
@@ -1344,9 +1339,9 @@ static bool8 PageSwapSprite_SlideOn(struct Sprite *sprite)
 }
 
 static const u16 sPageSwapPalTags[] = {
-    [KBPAGE_HIRAGANA] = PALTAG_PAGE_SWAP_UPPER,
-    [KBPAGE_KATAKANA]  = PALTAG_PAGE_SWAP_LOWER,
-    [KBPAGE_EIGO]  = PALTAG_PAGE_SWAP_OTHERS
+    [PAGE_SWAP_UPPER]  = PALTAG_PAGE_SWAP_UPPER,
+    [PAGE_SWAP_OTHERS] = PALTAG_PAGE_SWAP_OTHERS,
+    [PAGE_SWAP_LOWER]  = PALTAG_PAGE_SWAP_LOWER
 };
 
 static const u16 sPageSwapGfxTags[] = {
@@ -1870,29 +1865,12 @@ static void DrawGenderIcon(void)
         AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, (GetMaxInputChars() * 4) + 64, 1, sGenderColors[isFemale], TEXT_SKIP_DRAW, text);
     }
 }
-
-static bool8 IsKeyboardHiragana(u8 ch)
-{
-    return ch >= CHAR_HIRA_A && ch <= CHAR_HIRA_SMALL_TU;
-}
-
-static bool8 IsNamingScreenJapaneseChar(u8 ch)
-{
-    return (ch >= JAPANESE_HIRAGANA_START && ch <= JAPANESE_KATAKANA_END)
-        || ch == JAPANESE_CHAR_VU;
-}
-
-static void BuildSingleCharText(u8 *dest, u8 ch)
-{
-        dest[0] = ch;
-        dest[1] = EOS;
-}
-
+// ここは必要
 static bool8 IsKeyboardUppercaseLetter(u8 ch)
 {
     return ch >= CHAR_A && ch <= CHAR_Z;
 }
-
+// ここも
 static bool8 IsKeyboardLowercaseLetter(u8 ch)
 {
     return ch >= CHAR_a && ch <= CHAR_z;
@@ -1900,46 +1878,7 @@ static bool8 IsKeyboardLowercaseLetter(u8 ch)
 
 static u8 GetCharAtKeyboardPos(s16 x, s16 y)
 {
-    u8 ch = sKeyboardChars[CurrentPageToKeyboardId()][y][x];
-
-    if (sNamingScreen->currentPage == KBPAGE_HIRAGANA
-     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
-     && IsKeyboardHiragana(ch))
-        ch = JP_TO_KATA(ch);
-
-    if (sNamingScreen->currentPage == KBPAGE_KATAKANA
-     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
-     && IsKeyboardHiragana(ch))
-        ch += CHAR_KANA_A - CHAR_HIRA_A;
-
-    if (sNamingScreen->currentPage == KBPAGE_EIGO
-     && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
-     && IsKeyboardUppercaseLetter(ch))
-        ch += CHAR_a - CHAR_A;
-
-    return ch;
-}
-
-static u8 GetDisplayCharAtKeyboardPos(u8 page, s16 x, s16 y)
-{
-    u8 ch = sKeyboardChars[page][y][x];
-
-    if (sNamingScreen->currentPage == KBPAGE_HIRAGANA
-     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
-     && IsKeyboardHiragana(ch))
-        ch = JP_TO_KATA(ch);
-
-    if (sNamingScreen->currentPage == KBPAGE_KATAKANA
-     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
-     && IsKeyboardHiragana(ch))
-        ch += CHAR_KANA_A - CHAR_HIRA_A;
-
-    if (sNamingScreen->currentPage == KBPAGE_EIGO
-     && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
-     && IsKeyboardUppercaseLetter(ch))
-        ch += CHAR_a - CHAR_A;
-
-    return ch;
+    return sKeyboardChars[CurrentPageToKeyboardId()][y][x];
 }
 
 static u8 GetMaxInputChars(void)
@@ -2123,9 +2062,6 @@ static bool8 TransformPreviousCharacter(u8 action)
     ch = sNamingScreen->textBuffer[index];
 
     if (sNamingScreen->currentPage == KBPAGE_EIGO && action == KEY_ACTION_NONE)
-        return FALSE;
-
-    if (sNamingScreen->currentPage == KBPAGE_KATAKANA && action == KEY_ACTION_NONE)
     {
         if (IsKeyboardUppercaseLetter(ch))
             ch += CHAR_a - CHAR_A;
@@ -2156,8 +2092,6 @@ static u8 AddTextCharacter(void)
     GetCursorPos(&x, &y);
 
     ch = GetCharAtKeyboardPos(x, y);
-    if (ch == 0)
-        return 0;
 
     BufferCharacter(ch);
     DrawTextEntry();
@@ -2237,7 +2171,8 @@ static void DrawTextEntry(void)
     for (i = 0; i < maxChars; i++)
     {
         ch = sNamingScreen->textBuffer[i];
-        BuildSingleCharText(temp, ch);
+        temp[0] = ch;
+        temp[1] = EOS;
         extraWidth = (IsWideLetter(ch) == TRUE) ? 2 : 0;
 
         AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, i * 8 + x + extraWidth, 1, TEXT_SKIP_DRAW, NULL);
@@ -2283,12 +2218,9 @@ static void PrintKeyboardKeys(u8 window, u8 page)
     {
         for (x = 0; x < KBCOL_COUNT; x++)
         {
-            ch = GetDisplayCharAtKeyboardPos(page, x, y);
-            if (ch != 0)
-            {
-                BuildSingleCharText(text, ch);
+            ch = sKeyboardChars[page][y][x];
+            text[0] = ch;
                 AddTextPrinterParameterized3(window, FONT_NORMAL, sPageColumnXPos[x] + KEYBOARD_TEXT_X, y * 16 + 1, sKeyboardTextColors[page], 0, text);
-            }
         }
     }
 
