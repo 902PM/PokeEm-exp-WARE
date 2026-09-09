@@ -23,6 +23,7 @@
 #include "data.h"
 #include "strings.h"
 #include "menu.h"
+#include "text.h"
 #include "text_window.h"
 #include "overworld.h"
 #include "walda_phrase.h"
@@ -39,13 +40,16 @@ enum {
     INPUT_DPAD_RIGHT,
     INPUT_A_BUTTON,
     INPUT_B_BUTTON,
-    INPUT_LR_BUTTON,
+    INPUT_R_BUTTON,
     INPUT_SELECT,
     INPUT_START,
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 8
+#define KBCOL_COUNT 20
+#define NAMING_SCREEN_MAX_INPUT_CHARS 6
+#define KEYBOARD_TEXT_X 0
+#define KEYBOARD_CURSOR_BASE_X 28
 
 enum {
     GFXTAG_BACK_BUTTON,
@@ -87,17 +91,22 @@ enum {
 // The constants for the pages are needlessly complicated because GF didn't keep the indexing order consistent
 // This set is used for sNamingScreen->currentPage. It uses the order that the pages are cycled in
 enum {
-    KBPAGE_SYMBOLS,
-    KBPAGE_LETTERS_UPPER,
-    KBPAGE_LETTERS_LOWER,
+    KBPAGE_HIRAGANA,
+    KBPAGE_KATAKANA,
+    KBPAGE_EIGO,
     KBPAGE_COUNT,
 };
 
 // This set is used for initializing a page's keyboard text and getting its number of columns
 enum {
-    KEYBOARD_LETTERS_LOWER,
-    KEYBOARD_LETTERS_UPPER,
-    KEYBOARD_SYMBOLS,
+    KEYBOARD_HIRAGANA,
+    KEYBOARD_KATAKANA,
+    KEYBOARD_EIGO,
+};
+
+enum {
+    JAPANESE_MODE_HIRAGANA,
+    JAPANESE_MODE_KATAKANA,
 };
 
 // This set is used for getting the gfx/pal tags of the page's swap button
@@ -105,6 +114,20 @@ enum {
     PAGE_SWAP_UPPER,
     PAGE_SWAP_OTHERS,
     PAGE_SWAP_LOWER,
+};
+
+enum {
+    ENGLISH_MODE_UPPER,
+    ENGLISH_MODE_LOWER,
+};
+
+enum {
+    KEY_ACTION_NONE,
+    KEY_ACTION_JAPANESE_SHIFT,
+    KEY_ACTION_ENGLISH_SHIFT,
+    KEY_ACTION_SMALL,
+    KEY_ACTION_VOICED,
+    KEY_ACTION_SEMIVOICED,
 };
 
 enum {
@@ -171,6 +194,8 @@ struct NamingScreenData
     u8 bgToReveal;
     u8 bgToHide;
     u8 currentPage;
+    u8 japaneseMode;
+    u8 englishMode;
     u8 cursorSpriteId;
     u8 swapBtnFrameSpriteId;
     u8 keyRepeatStartDelayCopy;
@@ -281,38 +306,39 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
     DUMMY_WIN_TEMPLATE
 };
 
-// This handles what characters get inserted when a key is pressed
-// The keys shown on the keyboard are handled separately by sNamingScreenKeyboardText
-static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {
-        __("abcdef ."),
-        __("ghijkl ,"),
-        __("mnopqrs "),
-        __("tuvwxyz "),
+#define JP_KATAKANA_OFFSET 0x50
+#define JP_TO_KATA(ch) ((ch) + JP_KATAKANA_OFFSET)
+
+// This handles what characters get inserted when a key is pressed.
+// Empty cells are zero and are ignored by the character handler.
+static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] =
+{
+    [KEYBOARD_HIRAGANA] =
+    {
+        {CHAR_HIRA_A, CHAR_HIRA_I, CHAR_HIRA_U, CHAR_HIRA_E, CHAR_HIRA_O, CHAR_SPACE, CHAR_HIRA_NA, CHAR_HIRA_NI, CHAR_HIRA_NU, CHAR_HIRA_NE, CHAR_HIRA_NO, CHAR_SPACE, CHAR_HIRA_YA, CHAR_HIRA_YU, CHAR_HIRA_YO, CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_HIRA_KA, CHAR_HIRA_KI, CHAR_HIRA_KU, CHAR_HIRA_KE, CHAR_HIRA_KO, CHAR_SPACE, CHAR_HIRA_HA, CHAR_HIRA_HI, CHAR_HIRA_HU, CHAR_HIRA_HE, CHAR_HIRA_HO, CHAR_SPACE,CHAR_HIRA_WA, CHAR_HIRA_WO, CHAR_HIRA_N, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_HIRA_SA, CHAR_HIRA_SI, CHAR_HIRA_SU, CHAR_HIRA_SE, CHAR_HIRA_SO, CHAR_SPACE, CHAR_HIRA_MA, CHAR_HIRA_MI, CHAR_HIRA_MU, CHAR_HIRA_ME, CHAR_HIRA_MO, CHAR_SPACE,CHAR_HIRA_SMALL_YA, CHAR_HIRA_SMALL_YU, CHAR_HIRA_SMALL_YO, CHAR_HIRA_SMALL_TU, CHAR_HYPHEN, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_HIRA_TA, CHAR_HIRA_TI, CHAR_HIRA_TU, CHAR_HIRA_TE, CHAR_HIRA_TO, CHAR_SPACE, CHAR_HIRA_RA, CHAR_HIRA_RI, CHAR_HIRA_RU, CHAR_HIRA_RE, CHAR_HIRA_RO, CHAR_SPACE,CHAR_HIRA_SMALL_A, CHAR_HIRA_SMALL_I, CHAR_HIRA_SMALL_U, CHAR_HIRA_SMALL_E, CHAR_HIRA_SMALL_O, CHAR_SPACE, CHAR_SPACE},
     },
-    [KEYBOARD_LETTERS_UPPER] = {
-        __("ABCDEF ."),
-        __("GHIJKL ,"),
-        __("MNOPQRS "),
-        __("TUVWXYZ "),
+    [KEYBOARD_KATAKANA] =
+    {
+        {CHAR_KANA_A, CHAR_KANA_I, CHAR_KANA_U, CHAR_KANA_E, CHAR_KANA_O, CHAR_SPACE, CHAR_KANA_NA, CHAR_KANA_NI, CHAR_KANA_NU, CHAR_KANA_NE, CHAR_KANA_NO, CHAR_SPACE, CHAR_KANA_YA, CHAR_KANA_YU, CHAR_KANA_YO, CHAR_EXCL_MARK, CHAR_QUESTION_MARK, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_KANA_KA, CHAR_KANA_KI, CHAR_KANA_KU, CHAR_KANA_KE, CHAR_KANA_KO, CHAR_SPACE, CHAR_KANA_HA, CHAR_KANA_HI, CHAR_KANA_HU, CHAR_KANA_HE, CHAR_KANA_HO, CHAR_SPACE, CHAR_KANA_WA, CHAR_KANA_WO, CHAR_KANA_N, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_KANA_SA, CHAR_KANA_SI, CHAR_KANA_SU, CHAR_KANA_SE, CHAR_KANA_SO, CHAR_SPACE, CHAR_KANA_MA, CHAR_KANA_MI, CHAR_KANA_MU, CHAR_KANA_ME, CHAR_KANA_MO, CHAR_SPACE, CHAR_KANA_SMALL_YA, CHAR_KANA_SMALL_YU, CHAR_KANA_SMALL_YO, CHAR_KANA_SMALL_TU, CHAR_HYPHEN, CHAR_SPACE, CHAR_SPACE},
+        {CHAR_KANA_TA, CHAR_KANA_TI, CHAR_KANA_TU, CHAR_KANA_TE, CHAR_KANA_TO, CHAR_SPACE, CHAR_KANA_RA, CHAR_KANA_RI, CHAR_KANA_RU, CHAR_KANA_RE, CHAR_KANA_RO, CHAR_SPACE, CHAR_KANA_SMALL_A, CHAR_KANA_SMALL_I, CHAR_KANA_SMALL_U, CHAR_KANA_SMALL_E, CHAR_KANA_SMALL_O, CHAR_SPACE, CHAR_SPACE},
     },
-    [KEYBOARD_SYMBOLS] = {
-        __("01234   "),
-        __("56789   "),
-        __("!?♂♀/-  "),
-        __(""),
+    [KEYBOARD_EIGO] =
+    {
+        {CHAR_A, CHAR_B, CHAR_C, CHAR_D, CHAR_E, CHAR_F, CHAR_G, CHAR_H, CHAR_I, CHAR_J, CHAR_K, CHAR_L, CHAR_M, CHAR_N, CHAR_O, CHAR_P, CHAR_Q, CHAR_R, CHAR_S},
+        {CHAR_T, CHAR_U, CHAR_V, CHAR_W, CHAR_X, CHAR_Y, CHAR_Z, CHAR_SPACE, CHAR_0, CHAR_1, CHAR_2, CHAR_3, CHAR_4, CHAR_5, CHAR_6, CHAR_7, CHAR_8, CHAR_9, CHAR_SPACE},
+        {CHAR_a, CHAR_b, CHAR_c, CHAR_d, CHAR_e, CHAR_f, CHAR_g, CHAR_h, CHAR_i, CHAR_j, CHAR_k, CHAR_l, CHAR_m, CHAR_n, CHAR_o, CHAR_p, CHAR_q, CHAR_r, CHAR_s},
+        {CHAR_t, CHAR_u, CHAR_v, CHAR_w, CHAR_x, CHAR_y, CHAR_z, CHAR_SPACE, CHAR_PERIOD, CHAR_BULLET, CHAR_ELLIPSIS, CHAR_DBL_QUOTE_LEFT, CHAR_DBL_QUOTE_RIGHT, CHAR_SGL_QUOTE_LEFT, CHAR_SGL_QUOTE_RIGHT, CHAR_SLASH, CHAR_MALE, CHAR_FEMALE, CHAR_SPACE},    
     }
 };
 
-static const u8 sPageColumnCounts[KBPAGE_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = KBCOL_COUNT,
-    [KEYBOARD_LETTERS_UPPER] = KBCOL_COUNT,
-    [KEYBOARD_SYMBOLS]       = 6
-};
-static const u8 sPageColumnXPos[KBPAGE_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_SYMBOLS]       = {0, 22, 44, 66, 88, 110}
+static const u8 sPageColumnXPos[KBCOL_COUNT] =
+{
+    0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144
 };
 
 static const struct NamingScreenTemplate *const sNamingScreenTemplates[];
@@ -329,7 +355,6 @@ static const struct SpriteTemplate sSpriteTemplate_Cursor;
 static const struct SpriteTemplate sSpriteTemplate_InputArrow;
 static const struct SpriteTemplate sSpriteTemplate_Underscore;
 static const struct SpriteTemplate sSpriteTemplate_PCIcon;
-static const u8 *const sNamingScreenKeyboardText[KBPAGE_COUNT][KBROW_COUNT];
 static const struct SpriteSheet sSpriteSheets[];
 static const struct SpritePalette sSpritePalettes[];
 
@@ -374,12 +399,14 @@ static void CreateTextEntrySprites(void);
 static void CreateInputTargetIcon(void);
 static u8 HandleKeyboardEvent(void);
 static u8 SwapKeyboardPage(void);
+static bool8 TransformPreviousCharacter(u8);
 static u8 GetInputEvent(void);
 static void SetInputState(u8);
 static void DrawTextEntryBox(void);
+static u8 GetMaxInputChars(void);
 static u8 GetTextEntryPosition(void);
 static void DeleteTextCharacter(void);
-static bool8 AddTextCharacter(void);
+static u8 AddTextCharacter(void);
 static void BufferCharacter(u8);
 static void SaveInputText(void);
 static void LoadGfx(void);
@@ -389,6 +416,8 @@ static void DrawBgTilemap(u8, const void *);
 static void NamingScreen_Dummy(u8, u8);
 static void DrawTextEntry(void);
 static void PrintKeyboardKeys(u8, u8);
+static bool8 IsNamingScreenJapaneseChar(u8);
+static void BuildSingleCharText(u8 *, u8);
 static void DrawKeyboardPageOnDeck(void);
 static void PrintControls(void);
 static void CB2_NamingScreen(void);
@@ -481,13 +510,18 @@ static void NamingScreen_Init(void)
     sNamingScreen->bgToHide = 1;
     sNamingScreen->template = sNamingScreenTemplates[sNamingScreen->templateNum];
     sNamingScreen->currentPage = sNamingScreen->template->initialPage;
-    sNamingScreen->inputCharBaseXPos = (DISPLAY_WIDTH - sNamingScreen->template->maxChars * 8) / 2 + 6;
+    sNamingScreen->japaneseMode = JAPANESE_MODE_HIRAGANA;
+    sNamingScreen->englishMode = ENGLISH_MODE_UPPER;
+    sNamingScreen->inputCharBaseXPos = (DISPLAY_WIDTH - GetMaxInputChars() * 8) / 2 + 6;
     if (sNamingScreen->templateNum == NAMING_SCREEN_WALDA)
         sNamingScreen->inputCharBaseXPos += 11;
     sNamingScreen->keyRepeatStartDelayCopy = gKeyRepeatStartDelay;
     memset(sNamingScreen->textBuffer, EOS, sizeof(sNamingScreen->textBuffer));
     if (sNamingScreen->template->copyExistingString)
+    {
         StringCopy(sNamingScreen->textBuffer, sNamingScreen->destBuffer);
+        sNamingScreen->textBuffer[GetMaxInputChars()] = EOS;
+    }
     gKeyRepeatStartDelay = 16;
 }
 
@@ -591,23 +625,23 @@ static void Task_NamingScreen(u8 taskId)
 // Which gfx/pal to load for the swap page button
 static const u8 sPageToNextGfxId[KBPAGE_COUNT] =
 {
-    [KBPAGE_SYMBOLS]       = PAGE_SWAP_UPPER,
-    [KBPAGE_LETTERS_UPPER] = PAGE_SWAP_LOWER,
-    [KBPAGE_LETTERS_LOWER] = PAGE_SWAP_OTHERS
+    [KBPAGE_EIGO]       = PAGE_SWAP_UPPER,
+    [KBPAGE_HIRAGANA]   = PAGE_SWAP_LOWER,
+    [KBPAGE_KATAKANA]   = PAGE_SWAP_OTHERS
 };
 
 static const u8 sPageToNextKeyboardId[KBPAGE_COUNT] =
 {
-    [KBPAGE_SYMBOLS]       = KEYBOARD_LETTERS_UPPER,
-    [KBPAGE_LETTERS_UPPER] = KEYBOARD_LETTERS_LOWER,
-    [KBPAGE_LETTERS_LOWER] = KEYBOARD_SYMBOLS
+    [KBPAGE_HIRAGANA]  = KEYBOARD_KATAKANA,
+    [KBPAGE_KATAKANA]  = KEYBOARD_EIGO,
+    [KBPAGE_EIGO]      = KEYBOARD_HIRAGANA
 };
 
 static const u8 sPageToKeyboardId[KBPAGE_COUNT] =
 {
-    [KBPAGE_SYMBOLS]       = KEYBOARD_SYMBOLS,
-    [KBPAGE_LETTERS_UPPER] = KEYBOARD_LETTERS_UPPER,
-    [KBPAGE_LETTERS_LOWER] = KEYBOARD_LETTERS_LOWER
+    [KBPAGE_HIRAGANA]  = KEYBOARD_HIRAGANA,
+    [KBPAGE_KATAKANA]  = KEYBOARD_KATAKANA,
+    [KBPAGE_EIGO]      = KEYBOARD_EIGO
 };
 
 static u8 PageToNextGfxId(u8 page)
@@ -628,13 +662,13 @@ static u8 CurrentPageToKeyboardId(void)
 static bool8 MainState_FadeIn(void)
 {
     DrawBgTilemap(3, gNamingScreenBackground_Tilemap);
-    sNamingScreen->currentPage = KBPAGE_LETTERS_UPPER;
+    sNamingScreen->currentPage = KBPAGE_HIRAGANA;
     DrawBgTilemap(2, gNamingScreenKeyboardLower_Tilemap);
     DrawBgTilemap(1, gNamingScreenKeyboardUpper_Tilemap);
-    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_2], KEYBOARD_LETTERS_LOWER);
-    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_1], KEYBOARD_LETTERS_UPPER);
-    NamingScreen_Dummy(2, KEYBOARD_LETTERS_LOWER);
-    NamingScreen_Dummy(1, KEYBOARD_LETTERS_UPPER);
+    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_2], KEYBOARD_KATAKANA);
+    PrintKeyboardKeys(sNamingScreen->windows[WIN_KB_PAGE_1], KEYBOARD_HIRAGANA);
+    NamingScreen_Dummy(2, KEYBOARD_KATAKANA);
+    NamingScreen_Dummy(1, KEYBOARD_HIRAGANA);
     DrawTextEntry();
     DrawTextEntryBox();
     PrintControls();
@@ -1133,8 +1167,8 @@ static void SetCursorPos(s16 x, s16 y)
 {
     struct Sprite *cursorSprite = &gSprites[sNamingScreen->cursorSpriteId];
 
-    if (x < sPageColumnCounts[CurrentPageToKeyboardId()])
-        cursorSprite->x = sPageColumnXPos[CurrentPageToKeyboardId()][x] + 38;
+    if (x < KBCOL_COUNT)
+        cursorSprite->x = sPageColumnXPos[x] + KEYBOARD_CURSOR_BASE_X;
     else
         cursorSprite->x = 0;
 
@@ -1198,7 +1232,7 @@ static u8 GetKeyRoleAtCursorPos(void)
 // If the cursor's x is equal to the column count, cursor is in the button column
 static u8 GetCurrentPageColumnCount(void)
 {
-    return sPageColumnCounts[CurrentPageToKeyboardId()];
+    return KBCOL_COUNT;
 }
 
 #undef sX
@@ -1310,9 +1344,9 @@ static bool8 PageSwapSprite_SlideOn(struct Sprite *sprite)
 }
 
 static const u16 sPageSwapPalTags[] = {
-    [PAGE_SWAP_UPPER]  = PALTAG_PAGE_SWAP_UPPER,
-    [PAGE_SWAP_OTHERS] = PALTAG_PAGE_SWAP_OTHERS,
-    [PAGE_SWAP_LOWER]  = PALTAG_PAGE_SWAP_LOWER
+    [KBPAGE_HIRAGANA] = PALTAG_PAGE_SWAP_UPPER,
+    [KBPAGE_KATAKANA]  = PALTAG_PAGE_SWAP_LOWER,
+    [KBPAGE_EIGO]  = PALTAG_PAGE_SWAP_OTHERS
 };
 
 static const u16 sPageSwapGfxTags[] = {
@@ -1357,7 +1391,7 @@ static void CreateTextEntrySprites(void)
     gSprites[spriteId].oam.priority = 3;
     gSprites[spriteId].invisible = TRUE;
     xPos = sNamingScreen->inputCharBaseXPos;
-    for (i = 0; i < sNamingScreen->template->maxChars; i++, xPos += 8)
+    for (i = 0; i < GetMaxInputChars(); i++, xPos += 8)
     {
         spriteId = CreateSprite(&sSpriteTemplate_Underscore, xPos + 3, 60, 0);
         gSprites[spriteId].oam.priority = 3;
@@ -1486,7 +1520,6 @@ static void NamingScreen_CreateRivalIcon(void)
 //--------------------------------------------------
 
 static bool8 KeyboardKeyHandler_Character(u8);
-static void SwapKeyboardToLowerAfterFirstCapitalLetter(void);
 static bool8 KeyboardKeyHandler_Page(u8);
 static bool8 KeyboardKeyHandler_Backspace(u8);
 static bool8 KeyboardKeyHandler_OK(u8);
@@ -1507,6 +1540,10 @@ static bool8 HandleKeyboardEvent(void)
     if (input == INPUT_SELECT)
     {
         return SwapKeyboardPage();
+    }
+    else if (input == INPUT_R_BUTTON)
+    {
+        return TransformPreviousCharacter(KEY_ACTION_NONE);
     }
     else if (input == INPUT_B_BUTTON)
     {
@@ -1529,32 +1566,19 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
     TryStartButtonFlash(BUTTON_COUNT, FALSE, FALSE);
     if (input == INPUT_A_BUTTON)
     {
-        bool8 textFull = AddTextCharacter();
+        u8 textFull = AddTextCharacter();
 
-        SwapKeyboardToLowerAfterFirstCapitalLetter();
-
-        SquishCursor();
-        if (textFull)
+        if (textFull != 0)
         {
-            SetInputState(INPUT_STATE_OVERRIDE);
-            sNamingScreen->state = STATE_MOVE_TO_OK_BUTTON;
+            SquishCursor();
+            if (textFull == 2)
+            {
+                SetInputState(INPUT_STATE_OVERRIDE);
+                sNamingScreen->state = STATE_MOVE_TO_OK_BUTTON;
+            }
         }
     }
     return FALSE;
-}
-
-static void SwapKeyboardToLowerAfterFirstCapitalLetter(void)
-{
-    if (AUTO_LOWERCASE_KEYBOARD < GEN_6)
-        return;
-
-    if (sNamingScreen->currentPage != KBPAGE_LETTERS_UPPER)
-        return;
-
-    if (GetTextEntryPosition() != 1)
-        return;
-
-    MainState_StartPageSwap();
 }
 
 static bool8 KeyboardKeyHandler_Page(u8 input)
@@ -1653,6 +1677,8 @@ static void Input_Enabled(struct Task *task)
         task->tKeyboardEvent = INPUT_A_BUTTON;
     else if (JOY_NEW(B_BUTTON))
         task->tKeyboardEvent = INPUT_B_BUTTON;
+    else if (JOY_NEW(R_BUTTON))
+        task->tKeyboardEvent = INPUT_R_BUTTON;
     else if (JOY_NEW(SELECT_BUTTON))
         task->tKeyboardEvent = INPUT_SELECT;
     else if (JOY_NEW(START_BUTTON))
@@ -1841,33 +1867,105 @@ static void DrawGenderIcon(void)
             StringCopy(text, gText_FemaleSymbol);
             isFemale = TRUE;
         }
-        AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, (POKEMON_NAME_LENGTH * 4) + 64, 1, sGenderColors[isFemale], TEXT_SKIP_DRAW, text);
+        AddTextPrinterParameterized3(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, (GetMaxInputChars() * 4) + 64, 1, sGenderColors[isFemale], TEXT_SKIP_DRAW, text);
     }
+}
+
+static bool8 IsKeyboardHiragana(u8 ch)
+{
+    return ch >= CHAR_HIRA_A && ch <= CHAR_HIRA_SMALL_TU;
+}
+
+static bool8 IsNamingScreenJapaneseChar(u8 ch)
+{
+    return (ch >= JAPANESE_HIRAGANA_START && ch <= JAPANESE_KATAKANA_END)
+        || ch == JAPANESE_CHAR_VU;
+}
+
+static void BuildSingleCharText(u8 *dest, u8 ch)
+{
+        dest[0] = ch;
+        dest[1] = EOS;
+}
+
+static bool8 IsKeyboardUppercaseLetter(u8 ch)
+{
+    return ch >= CHAR_A && ch <= CHAR_Z;
+}
+
+static bool8 IsKeyboardLowercaseLetter(u8 ch)
+{
+    return ch >= CHAR_a && ch <= CHAR_z;
 }
 
 static u8 GetCharAtKeyboardPos(s16 x, s16 y)
 {
-    return sKeyboardChars[CurrentPageToKeyboardId()][y][x];
+    u8 ch = sKeyboardChars[CurrentPageToKeyboardId()][y][x];
+
+    if (sNamingScreen->currentPage == KBPAGE_HIRAGANA
+     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
+     && IsKeyboardHiragana(ch))
+        ch = JP_TO_KATA(ch);
+
+    if (sNamingScreen->currentPage == KBPAGE_KATAKANA
+     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
+     && IsKeyboardHiragana(ch))
+        ch += CHAR_KANA_A - CHAR_HIRA_A;
+
+    if (sNamingScreen->currentPage == KBPAGE_EIGO
+     && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
+     && IsKeyboardUppercaseLetter(ch))
+        ch += CHAR_a - CHAR_A;
+
+    return ch;
 }
 
+static u8 GetDisplayCharAtKeyboardPos(u8 page, s16 x, s16 y)
+{
+    u8 ch = sKeyboardChars[page][y][x];
+
+    if (sNamingScreen->currentPage == KBPAGE_HIRAGANA
+     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
+     && IsKeyboardHiragana(ch))
+        ch = JP_TO_KATA(ch);
+
+    if (sNamingScreen->currentPage == KBPAGE_KATAKANA
+     && sNamingScreen->japaneseMode == JAPANESE_MODE_KATAKANA
+     && IsKeyboardHiragana(ch))
+        ch += CHAR_KANA_A - CHAR_HIRA_A;
+
+    if (sNamingScreen->currentPage == KBPAGE_EIGO
+     && sNamingScreen->englishMode == ENGLISH_MODE_LOWER
+     && IsKeyboardUppercaseLetter(ch))
+        ch += CHAR_a - CHAR_A;
+
+    return ch;
+}
+
+static u8 GetMaxInputChars(void)
+{
+    if (sNamingScreen->template->maxChars < NAMING_SCREEN_MAX_INPUT_CHARS)
+        return sNamingScreen->template->maxChars;
+    return NAMING_SCREEN_MAX_INPUT_CHARS;
+}
 
 static u8 GetTextEntryPosition(void)
 {
     u8 i;
 
-    for (i = 0; i < sNamingScreen->template->maxChars; i++)
+    for (i = 0; i < GetMaxInputChars(); i++)
     {
         if (sNamingScreen->textBuffer[i] == EOS)
             return i;
     }
-    return sNamingScreen->template->maxChars - 1;
+    return GetMaxInputChars() - 1;
 }
 
 static u8 GetPreviousTextCaretPosition(void)
 {
     s8 i;
 
-    for (i = sNamingScreen->template->maxChars - 1; i > 0; i--)
+    for (i = GetMaxInputChars() - 1; i > 0; i--)
     {
         if (sNamingScreen->textBuffer[i] != EOS)
             return i;
@@ -1894,22 +1992,182 @@ static void DeleteTextCharacter(void)
     PlaySE(SE_BALL);
 }
 
-// Returns TRUE if the text entry is now full
-static bool8 AddTextCharacter(void)
+struct KanaTransformCycle
+{
+    u8 base;
+    u8 small;
+    u8 voiced;
+    u8 semiVoiced;
+};
+
+static const struct KanaTransformCycle sKanaTransformCycles[] =
+{
+    {CHAR_HIRA_A, CHAR_HIRA_SMALL_A},
+    {CHAR_HIRA_I, CHAR_HIRA_SMALL_I},
+    {CHAR_HIRA_U, CHAR_HIRA_SMALL_U},
+    {CHAR_HIRA_E, CHAR_HIRA_SMALL_E},
+    {CHAR_HIRA_O, CHAR_HIRA_SMALL_O},
+    {CHAR_HIRA_KA, 0, CHAR_HIRA_GA},
+    {CHAR_HIRA_KI, 0, CHAR_HIRA_GI},
+    {CHAR_HIRA_KU, 0, CHAR_HIRA_GU},
+    {CHAR_HIRA_KE, 0, CHAR_HIRA_GE},
+    {CHAR_HIRA_KO, 0, CHAR_HIRA_GO},
+    {CHAR_HIRA_SA, 0, CHAR_HIRA_ZA},
+    {CHAR_HIRA_SI, 0, CHAR_HIRA_ZI},
+    {CHAR_HIRA_SU, 0, CHAR_HIRA_ZU},
+    {CHAR_HIRA_SE, 0, CHAR_HIRA_ZE},
+    {CHAR_HIRA_SO, 0, CHAR_HIRA_ZO},
+    {CHAR_HIRA_TA, 0, CHAR_HIRA_DA},
+    {CHAR_HIRA_TI, 0, CHAR_HIRA_DI},
+    {CHAR_HIRA_TU, CHAR_HIRA_SMALL_TU, CHAR_HIRA_DU},
+    {CHAR_HIRA_TE, 0, CHAR_HIRA_DE},
+    {CHAR_HIRA_TO, 0, CHAR_HIRA_DO},
+    {CHAR_HIRA_HA, 0, CHAR_HIRA_BA, CHAR_HIRA_PA},
+    {CHAR_HIRA_HI, 0, CHAR_HIRA_BI, CHAR_HIRA_PI},
+    {CHAR_HIRA_HU, 0, CHAR_HIRA_BU, CHAR_HIRA_PU},
+    {CHAR_HIRA_HE, 0, CHAR_HIRA_BE, CHAR_HIRA_PE},
+    {CHAR_HIRA_HO, 0, CHAR_HIRA_BO, CHAR_HIRA_PO},
+    {CHAR_HIRA_YA, CHAR_HIRA_SMALL_YA},
+    {CHAR_HIRA_YU, CHAR_HIRA_SMALL_YU},
+    {CHAR_HIRA_YO, CHAR_HIRA_SMALL_YO},
+    {CHAR_KANA_A, CHAR_KANA_SMALL_A},
+    {CHAR_KANA_I, CHAR_KANA_SMALL_I},
+    {CHAR_KANA_U, CHAR_KANA_SMALL_U, JAPANESE_CHAR_VU},
+    {CHAR_KANA_E, CHAR_KANA_SMALL_E},
+    {CHAR_KANA_O, CHAR_KANA_SMALL_O},
+    {CHAR_KANA_KA, 0, CHAR_KANA_GA},
+    {CHAR_KANA_KI, 0, CHAR_KANA_GI},
+    {CHAR_KANA_KU, 0, CHAR_KANA_GU},
+    {CHAR_KANA_KE, 0, CHAR_KANA_GE},
+    {CHAR_KANA_KO, 0, CHAR_KANA_GO},
+    {CHAR_KANA_SA, 0, CHAR_KANA_ZA},
+    {CHAR_KANA_SI, 0, CHAR_KANA_ZI},
+    {CHAR_KANA_SU, 0, CHAR_KANA_ZU},
+    {CHAR_KANA_SE, 0, CHAR_KANA_ZE},
+    {CHAR_KANA_SO, 0, CHAR_KANA_ZO},
+    {CHAR_KANA_TA, 0, CHAR_KANA_DA},
+    {CHAR_KANA_TI, 0, CHAR_KANA_DI},
+    {CHAR_KANA_TU, CHAR_KANA_SMALL_TU, CHAR_KANA_DU},
+    {CHAR_KANA_TE, 0, CHAR_KANA_DE},
+    {CHAR_KANA_TO, 0, CHAR_KANA_DO},
+    {CHAR_KANA_HA, 0, CHAR_KANA_BA, CHAR_KANA_PA},
+    {CHAR_KANA_HI, 0, CHAR_KANA_BI, CHAR_KANA_PI},
+    {CHAR_KANA_HU, 0, CHAR_KANA_BU, CHAR_KANA_PU},
+    {CHAR_KANA_HE, 0, CHAR_KANA_BE, CHAR_KANA_PE},
+    {CHAR_KANA_HO, 0, CHAR_KANA_BO, CHAR_KANA_PO},
+    {CHAR_KANA_YA, CHAR_KANA_SMALL_YA},
+    {CHAR_KANA_YU, CHAR_KANA_SMALL_YU},
+    {CHAR_KANA_YO, CHAR_KANA_SMALL_YO},
+};
+
+static bool8 TryTransformKana(u8 *ch, u8 action)
+{
+    u8 i;
+    u8 j;
+
+    for (i = 0; i < ARRAY_COUNT(sKanaTransformCycles); i++)
+    {
+        const u8 chars[] =
+        {
+            sKanaTransformCycles[i].base,
+            sKanaTransformCycles[i].small,
+            sKanaTransformCycles[i].voiced,
+            sKanaTransformCycles[i].semiVoiced
+        };
+
+        for (j = 0; j < ARRAY_COUNT(chars); j++)
+        {
+            if (chars[j] == 0 || chars[j] != *ch)
+                continue;
+
+            if (action == KEY_ACTION_SMALL && sKanaTransformCycles[i].small != 0)
+            {
+                *ch = (*ch == sKanaTransformCycles[i].small) ? sKanaTransformCycles[i].base : sKanaTransformCycles[i].small;
+                return TRUE;
+            }
+            if (action == KEY_ACTION_VOICED && sKanaTransformCycles[i].voiced != 0)
+            {
+                *ch = (*ch == sKanaTransformCycles[i].voiced) ? sKanaTransformCycles[i].base : sKanaTransformCycles[i].voiced;
+                return TRUE;
+            }
+            if (action == KEY_ACTION_SEMIVOICED && sKanaTransformCycles[i].semiVoiced != 0)
+            {
+                *ch = (*ch == sKanaTransformCycles[i].semiVoiced) ? sKanaTransformCycles[i].base : sKanaTransformCycles[i].semiVoiced;
+                return TRUE;
+            }
+            if (action != KEY_ACTION_NONE)
+                return FALSE;
+
+            do
+            {
+                j = (j + 1) % ARRAY_COUNT(chars);
+            } while (chars[j] == 0);
+
+            *ch = chars[j];
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
+static bool8 TransformPreviousCharacter(u8 action)
+{
+    u8 index;
+    u8 ch;
+
+    if (sNamingScreen->textBuffer[0] == EOS)
+        return FALSE;
+
+    index = GetPreviousTextCaretPosition();
+    ch = sNamingScreen->textBuffer[index];
+
+    if (sNamingScreen->currentPage == KBPAGE_EIGO && action == KEY_ACTION_NONE)
+        return FALSE;
+
+    if (sNamingScreen->currentPage == KBPAGE_KATAKANA && action == KEY_ACTION_NONE)
+    {
+        if (IsKeyboardUppercaseLetter(ch))
+            ch += CHAR_a - CHAR_A;
+        else if (IsKeyboardLowercaseLetter(ch))
+            ch -= CHAR_a - CHAR_A;
+        else
+            return FALSE;
+    }
+    else if (!TryTransformKana(&ch, action))
+    {
+        return FALSE;
+    }
+
+    sNamingScreen->textBuffer[index] = ch;
+    DrawTextEntry();
+    CopyBgTilemapBufferToVram(3);
+    PlaySE(SE_SELECT);
+    return TRUE;
+}
+
+// Returns 0 if nothing was entered, 1 if text changed, or 2 if the text entry is now full.
+static u8 AddTextCharacter(void)
 {
     s16 x;
     s16 y;
+    u8 ch;
 
     GetCursorPos(&x, &y);
-    BufferCharacter(GetCharAtKeyboardPos(x, y));
+
+    ch = GetCharAtKeyboardPos(x, y);
+    if (ch == 0)
+        return 0;
+
+    BufferCharacter(ch);
     DrawTextEntry();
     CopyBgTilemapBufferToVram(3);
     PlaySE(SE_SELECT);
 
-    if (GetPreviousTextCaretPosition() != sNamingScreen->template->maxChars - 1)
-        return FALSE;
+    if (GetPreviousTextCaretPosition() != GetMaxInputChars() - 1)
+        return 1;
     else
-        return TRUE;
+        return 2;
 }
 
 static void BufferCharacter(u8 ch)
@@ -1922,11 +2180,11 @@ static void SaveInputText(void)
 {
     u8 i;
 
-    for (i = 0; i < sNamingScreen->template->maxChars; i++)
+    for (i = 0; i < GetMaxInputChars(); i++)
     {
         if (sNamingScreen->textBuffer[i] != CHAR_SPACE && sNamingScreen->textBuffer[i] != EOS)
         {
-            StringCopyN(sNamingScreen->destBuffer, sNamingScreen->textBuffer, sNamingScreen->template->maxChars + 1);
+            StringCopyN(sNamingScreen->destBuffer, sNamingScreen->textBuffer, GetMaxInputChars() + 1);
             break;
         }
     }
@@ -1968,18 +2226,19 @@ static void NamingScreen_Dummy(u8 bg, u8 page)
 static void DrawTextEntry(void)
 {
     u8 i;
-    u8 temp[2];
+    u8 ch;
+    u8 temp[4];
     u16 extraWidth;
-    u8 maxChars = sNamingScreen->template->maxChars;
+    u8 maxChars = GetMaxInputChars();
     u16 x = sNamingScreen->inputCharBaseXPos - 0x40;
 
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY], PIXEL_FILL(1));
 
     for (i = 0; i < maxChars; i++)
     {
-        temp[0] = sNamingScreen->textBuffer[i];
-        temp[1] = gText_ExpandedPlaceholder_Empty[0];
-        extraWidth = (IsWideLetter(temp[0]) == TRUE) ? 2 : 0;
+        ch = sNamingScreen->textBuffer[i];
+        BuildSingleCharText(temp, ch);
+        extraWidth = (IsWideLetter(ch) == TRUE) ? 2 : 0;
 
         AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, i * 8 + x + extraWidth, 1, TEXT_SKIP_DRAW, NULL);
     }
@@ -1998,35 +2257,49 @@ ALIGNED(4) static const u8 sTextColorStruct[3][4] =
 
 static const u8 sFillValues[KBPAGE_COUNT] =
 {
-    [KEYBOARD_LETTERS_LOWER] = PIXEL_FILL(14),
-    [KEYBOARD_LETTERS_UPPER] = PIXEL_FILL(13),
-    [KEYBOARD_SYMBOLS]       = PIXEL_FILL(15)
+    [KEYBOARD_HIRAGANA] = PIXEL_FILL(13),
+    [KEYBOARD_KATAKANA]  = PIXEL_FILL(14),
+    [KEYBOARD_EIGO]  = PIXEL_FILL(15)
 };
 
 static const u8 *const sKeyboardTextColors[KBPAGE_COUNT] =
 {
-    [KEYBOARD_LETTERS_LOWER] = sTextColorStruct[1],
-    [KEYBOARD_LETTERS_UPPER] = sTextColorStruct[0],
-    [KEYBOARD_SYMBOLS]       = sTextColorStruct[2]
+    [KEYBOARD_HIRAGANA] = sTextColorStruct[0],
+    [KEYBOARD_KATAKANA]  = sTextColorStruct[1],
+    [KEYBOARD_EIGO]  = sTextColorStruct[2]
 };
 
 static void PrintKeyboardKeys(u8 window, u8 page)
 {
-    u8 i;
+    u8 x;
+    u8 y;
+    u8 ch;
+    u8 text[4];
 
     FillWindowPixelBuffer(window, sFillValues[page]);
 
-    for (i = 0; i < KBROW_COUNT; i++)
-        AddTextPrinterParameterized3(window, FONT_NORMAL, 0, i * 16 + 1, sKeyboardTextColors[page], 0, sNamingScreenKeyboardText[page][i]);
+    text[1] = EOS;
+    for (y = 0; y < KBROW_COUNT; y++)
+    {
+        for (x = 0; x < KBCOL_COUNT; x++)
+        {
+            ch = GetDisplayCharAtKeyboardPos(page, x, y);
+            if (ch != 0)
+            {
+                BuildSingleCharText(text, ch);
+                AddTextPrinterParameterized3(window, FONT_NORMAL, sPageColumnXPos[x] + KEYBOARD_TEXT_X, y * 16 + 1, sKeyboardTextColors[page], 0, text);
+            }
+        }
+    }
 
     PutWindowTilemap(window);
 }
 
 static const u32 *const sNextKeyboardPageTilemaps[] =
 {
-    [KBPAGE_SYMBOLS] = gNamingScreenKeyboardUpper_Tilemap,
-    [KBPAGE_LETTERS_UPPER] = gNamingScreenKeyboardLower_Tilemap, // lower
-    [KBPAGE_LETTERS_LOWER] = gNamingScreenKeyboardSymbols_Tilemap  // symbols
+    [KBPAGE_EIGO]       = gNamingScreenKeyboardUpper_Tilemap,
+    [KBPAGE_HIRAGANA]   = gNamingScreenKeyboardLower_Tilemap, // lower
+    [KBPAGE_KATAKANA]   = gNamingScreenKeyboardSymbols_Tilemap  // symbols
 };
 
 // There are always 2 keyboard pages drawn, the current page and the one that will shown next if the player swaps
@@ -2146,14 +2419,14 @@ static void UNUSED Debug_NamingScreenNickname(void)
 // Forward-declared variables
 //--------------------------------------------------
 
-// Initial pages below are pointless, they're overwritten with KBPAGE_LETTERS_UPPER in MainState_FadeIn()
+// 以下の初期ページは無意味です。MainState_FadeIn() 内で KBPAGE_HIRAGANA によって上書きされてしまうためです。
 static const struct NamingScreenTemplate sPlayerNamingScreenTemplate =
 {
     .copyExistingString = FALSE,
     .maxChars = PLAYER_NAME_LENGTH,
     .iconFunction = 1,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
     .title = COMPOUND_STRING("{JPN}あなた の なまえは?"),
 };
@@ -2164,7 +2437,7 @@ static const struct NamingScreenTemplate sPCBoxNamingTemplate =
     .maxChars = BOX_NAME_LENGTH,
     .iconFunction = 2,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 19,
     .title = COMPOUND_STRING("{JPN}ボックス の なまえは?"),
 };
@@ -2175,7 +2448,7 @@ static const struct NamingScreenTemplate sMonNamingScreenTemplate =
     .maxChars = POKEMON_NAME_LENGTH,
     .iconFunction = 3,
     .addGenderIcon = TRUE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
     .title = COMPOUND_STRING("{JPN}{STR_VAR_1} の ニックネームは?"),
 };
@@ -2186,7 +2459,7 @@ static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
     .maxChars = WALDA_PHRASE_LENGTH,
     .iconFunction = 4,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 11,
     .title = COMPOUND_STRING("{JPN}おじさんに ことばを おしえよう"),
 };
@@ -2197,7 +2470,7 @@ static const struct NamingScreenTemplate sCodeScreenTemplate =
     .maxChars = CODE_NAME_LENGTH,
     .iconFunction = 5,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
     .title = COMPOUND_STRING("{JPN}コードを いれよう"),
 };
@@ -2208,7 +2481,7 @@ static const struct NamingScreenTemplate sRivalNamingScreenTemplate =
     .maxChars = PLAYER_NAME_LENGTH,
     .iconFunction = 6,
     .addGenderIcon = FALSE,
-    .initialPage = KBPAGE_LETTERS_UPPER,
+    .initialPage = KBPAGE_HIRAGANA,
     .title = sText_RivalsName,
 };
 
@@ -2339,10 +2612,6 @@ static const struct Subsprite sSubsprites_PageSwapFrame[] =
     }
 };
 
-/*
-[0_][] <-1    24x8
-   ^-- Origin
-*/
 static const struct Subsprite sSubsprites_PageSwapText[] =
 {
     {
@@ -2592,31 +2861,6 @@ static const struct SpriteTemplate sSpriteTemplate_PCIcon =
     .oam = &sOam_8x8,
     .anims = sAnims_PCIcon,
     .images = sImageTable_PCIcon,
-};
-
-static const u8 *const sNamingScreenKeyboardText[KBPAGE_COUNT][KBROW_COUNT] =
-{
-    [KEYBOARD_LETTERS_LOWER] =
-    {
-        gText_NamingScreenKeyboard_abcdef,
-        gText_NamingScreenKeyboard_ghijkl,
-        gText_NamingScreenKeyboard_mnopqrs,
-        gText_NamingScreenKeyboard_tuvwxyz
-    },
-    [KEYBOARD_LETTERS_UPPER] =
-    {
-        gText_NamingScreenKeyboard_ABCDEF,
-        gText_NamingScreenKeyboard_GHIJKL,
-        gText_NamingScreenKeyboard_MNOPQRS,
-        gText_NamingScreenKeyboard_TUVWXYZ
-    },
-    [KEYBOARD_SYMBOLS] =
-    {
-        gText_NamingScreenKeyboard_01234,
-        gText_NamingScreenKeyboard_56789,
-        gText_NamingScreenKeyboard_Symbols1,
-        gText_NamingScreenKeyboard_Symbols2
-    },
 };
 
 static const struct SpriteSheet sSpriteSheets[] =
