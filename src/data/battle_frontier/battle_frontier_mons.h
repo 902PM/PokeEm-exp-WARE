@@ -3677,8 +3677,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_GOLISOPOD] = {
         .species = SPECIES_GOLISOPOD,
-        .moves = {MOVE_FIRST_IMPRESSION, MOVE_AQUA_JET, MOVE_LIQUIDATION, MOVE_POISON_JAB},
-        .heldItem = ITEM_CHOICE_BAND,
+        .moves = {MOVE_FIRST_IMPRESSION, MOVE_CLOSE_COMBAT, MOVE_LIQUIDATION, MOVE_POISON_JAB},
+        .heldItem = ITEM_GOLISOPITE,
         .ev = TRAINER_PARTY_EVS(2, 252, 0, 92, 0, 164),
         .nature = NATURE_LONELY,
         .ball = BALL_DIVE,
