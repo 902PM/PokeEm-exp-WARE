@@ -104,21 +104,11 @@ enum {
     KEYBOARD_EIGO,
 };
 
-enum {
-    JAPANESE_MODE_HIRAGANA,
-    JAPANESE_MODE_KATAKANA,
-};
-
 // This set is used for getting the gfx/pal tags of the page's swap button
 enum {
     PAGE_SWAP_UPPER,
     PAGE_SWAP_OTHERS,
     PAGE_SWAP_LOWER,
-};
-
-enum {
-    ENGLISH_MODE_UPPER,
-    ENGLISH_MODE_LOWER,
 };
 
 enum {
@@ -194,8 +184,6 @@ struct NamingScreenData
     u8 bgToReveal;
     u8 bgToHide;
     u8 currentPage;
-    u8 japaneseMode;
-    u8 englishMode;
     u8 cursorSpriteId;
     u8 swapBtnFrameSpriteId;
     u8 keyRepeatStartDelayCopy;
@@ -505,8 +493,6 @@ static void NamingScreen_Init(void)
     sNamingScreen->bgToHide = 1;
     sNamingScreen->template = sNamingScreenTemplates[sNamingScreen->templateNum];
     sNamingScreen->currentPage = sNamingScreen->template->initialPage;
-    sNamingScreen->japaneseMode = JAPANESE_MODE_HIRAGANA;
-    sNamingScreen->englishMode = ENGLISH_MODE_UPPER;
     sNamingScreen->inputCharBaseXPos = (DISPLAY_WIDTH - GetMaxInputChars() * 8) / 2 + 6;
     if (sNamingScreen->templateNum == NAMING_SCREEN_WALDA)
         sNamingScreen->inputCharBaseXPos += 11;
