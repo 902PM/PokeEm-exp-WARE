@@ -731,6 +731,7 @@ static void Task_TitleScreenPhase1(u8 taskId)
 static void Task_TitleScreenPhase2(u8 taskId)
 {
     u32 yPos;
+    s16 xPos;
 
     // Skip to next phase when A, B, Start, or Select is pressed
     if (JOY_NEW(A_B_START_SELECT) || gTasks[taskId].tSkipToNext)
@@ -765,17 +766,19 @@ static void Task_TitleScreenPhase2(u8 taskId)
 
     if (!(gTasks[taskId].tCounter & 3) && gTasks[taskId].tPointless != 0)
         gTasks[taskId].tPointless++;
+
     if (!(gTasks[taskId].tCounter & 1) && gTasks[taskId].tBg2Y != 0)
         gTasks[taskId].tBg2Y++;
 
-    // Slide Pokémon logo up
+    // Slide Pokémon logo diagonally
     yPos = gTasks[taskId].tBg2Y * 256;
+    // X座標の移動。ズラすので場合、x/32を弄る。10/32で消える。
+    xPos = -10 + (32 + gTasks[taskId].tBg2Y) * 9 / 32;
+
     SetGpuReg(REG_OFFSET_BG2Y_L, yPos);
     SetGpuReg(REG_OFFSET_BG2Y_H, yPos / 0x10000);
-    SetGpuReg(REG_OFFSET_BG2X_L, -1 * 256);
 
-    gTasks[taskId].data[5] = 15; // Unused
-    gTasks[taskId].data[6] = 6;  // Unused
+    SetGpuReg(REG_OFFSET_BG2X_L, xPos * 256);
 }
 
 // Show Rayquaza silhouette and process main title screen input
