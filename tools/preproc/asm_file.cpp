@@ -549,6 +549,7 @@ int AsmFile::ReadBraille(unsigned char* s)
         }
 		else
 		{
+            // 点字日本対応させるための修正。
 			std::string matched;
 			const std::string *output = nullptr;
 
