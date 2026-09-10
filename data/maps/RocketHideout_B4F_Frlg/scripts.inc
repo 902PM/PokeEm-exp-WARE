@@ -141,7 +141,7 @@ RocketHideout_B4F_Text_GiovanniPostBattle::
 	.string "A child like you would never\n"
 	.string "understand what I hope to achieve.\p"
 	.string "I shall step aside this time!\p"
-	.string "I hope we meet again...$"
+	.string "I hope we meet again…$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
 	.string "I know you!\n"

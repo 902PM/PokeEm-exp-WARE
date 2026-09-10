@@ -149,7 +149,7 @@ CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom::
 
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
 	.string "It's a pamphlet on TMs.\p"
-	.string "... ...\p"
+	.string "… …\p"
 	.string "There are fifty TMs in all.\p"
 	.string "There are also seven HMs that\n"
 	.string "can be used repeatedly.\p"

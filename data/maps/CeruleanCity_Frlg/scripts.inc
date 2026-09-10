@@ -394,7 +394,7 @@ CeruleanCity_Text_OhRightLittlePresentAsFavor::
 	.string "present as a favor.$"
 
 CeruleanCity_Text_ExplainFameCheckerSmellYa::
-	.string "A chatty gossip like you...\n"
+	.string "A chatty gossip like you…\n"
 	.string "That thing's perfect.\p"
 	.string "I don't need it because I don't\n"
 	.string "give a hoot about others.\p"
@@ -404,7 +404,7 @@ CeruleanCity_Text_ExplainFameCheckerSmellYa::
 CeruleanCity_Text_GruntIntro::
 	.string "Hey! Stay out!\n"
 	.string "It's not your yard!\p"
-	.string "...Huh?\n"
+	.string "…Huh?\n"
 	.string "Me?\p"
 	.string "I'm an innocent bystander!\n"
 	.string "Don't you believe me?{PLAY_BGM}{MUS_RG_ENCOUNTER_ROCKET}$"
@@ -414,7 +414,7 @@ CeruleanCity_Text_GruntDefeat::
 	.string "I'll leave quietly!$"
 
 CeruleanCity_Text_OkayIllReturnStolenTM::
-	.string "...Okay.\n"
+	.string "…Okay.\n"
 	.string "I'll return the TM I stole.$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
@@ -431,7 +431,7 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
 
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
 	.string "You're a TRAINER, too?\p"
-	.string "Collecting, battling...\n"
+	.string "Collecting, battling…\n"
 	.string "It's a tough life, isn't it?$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
@@ -485,16 +485,16 @@ CeruleanCity_Text_HardToControlMonsObedience::
 	.string "on your abilities as a TRAINER.$"
 
 CeruleanCity_Text_SlowbroTookSnooze::
-	.string "SLOWBRO took a snooze...$"
+	.string "SLOWBRO took a snooze…$"
 
 CeruleanCity_Text_SlowbroLoafingAround::
-	.string "SLOWBRO is loafing around...$"
+	.string "SLOWBRO is loafing around…$"
 
 CeruleanCity_Text_SlowbroTurnedAway::
-	.string "SLOWBRO turned away...$"
+	.string "SLOWBRO turned away…$"
 
 CeruleanCity_Text_SlowbroIgnoredOrders::
-	.string "SLOWBRO ignored orders...$"
+	.string "SLOWBRO ignored orders…$"
 
 CeruleanCity_Text_WantBrightRedBicycle::
 	.string "I want a bright red bicycle.\p"

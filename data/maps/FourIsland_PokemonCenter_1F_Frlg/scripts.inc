@@ -33,7 +33,7 @@ Text_BodySlamTeach::
 	.string "We're having a BODY SLAM match\n"
 	.string "to see who wimps out first.\p"
 	.string "If you were to join us, you'd be\n"
-	.string "squashed like a bug, though...\p"
+	.string "squashed like a bug, though…\p"
 	.string "How about I teach BODY SLAM to\n"
 	.string "a POKEMON of yours instead?$"
 
@@ -60,8 +60,8 @@ FourIsland_PokemonCenter_1F_Text_RareIceMonsInCave::
 
 FourIsland_PokemonCenter_1F_Text_DayCarePeopleFoundEggBefore::
 	.string "Oh? A POKEMON EGG?\n"
-	.string "...I have no idea.\p"
-	.string "...Oh, wait. The DAY-CARE people\n"
+	.string "…I have no idea.\p"
+	.string "…Oh, wait. The DAY-CARE people\n"
 	.string "in town were saying something.\p"
 	.string "They said that they'd found EGGS\n"
 	.string "before on their property.$"

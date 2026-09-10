@@ -110,7 +110,7 @@ LavenderTown_VolunteerPokemonHouse_Text_Psyduck::
 	.string "PSYDUCK: Gwappa!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
-	.string "MR. FUJI: {PLAYER}...\p"
+	.string "MR. FUJI: {PLAYER}…\p"
 	.string "Your POKeDEX quest is one that\n"
 	.string "requires strong dedication.\p"
 	.string "Without deep love for POKEMON,\n"
@@ -138,12 +138,12 @@ LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
 	.string "POKEMON FAN MAGAZINE\n"
 	.string "Monthly Grand Prize Drawing!\p"
-	.string "The application form is...\p"
+	.string "The application form is…\p"
 	.string "Gone! It's been clipped out.\n"
 	.string "Someone must have applied already.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::
 	.string "POKEMON magazines line the shelf.\p"
-	.string "POKEMON INSIDER...\p"
-	.string "POKEMON FAN...$"
+	.string "POKEMON INSIDER…\p"
+	.string "POKEMON FAN…$"
 

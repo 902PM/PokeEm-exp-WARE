@@ -106,7 +106,7 @@ SilphCo_6F_Text_WeGotEngaged::
 	.string "Heheh!$"
 
 SilphCo_6F_Text_ThatManIsSuchACoward::
-	.string "That man next to me...\n"
+	.string "That man next to me…\n"
 	.string "He's such a coward!$"
 
 SilphCo_6F_Text_NeedsMeToLookAfterHim::

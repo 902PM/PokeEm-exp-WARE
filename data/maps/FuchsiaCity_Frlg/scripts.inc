@@ -154,10 +154,10 @@ FuchsiaCity_Text_WheresSara::
 	.string "I said I'd meet her here.$"
 
 FuchsiaCity_Text_ItemBallInThere::
-	.string "That item ball in there...\n"
+	.string "That item ball in there…\n"
 	.string "Were you wanting that?\p"
 	.string "Me, too!\n"
-	.string "...Huh? That's a POKEMON?$"
+	.string "…Huh? That's a POKEMON?$"
 
 FuchsiaCity_Text_CitySign::
 	.string "FUCHSIA CITY\n"
@@ -218,23 +218,23 @@ FuchsiaCity_Text_KabutoSign::
 
 @ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
 FuchsiaCity_Text_Ellipsis::
-	.string "......$"
+	.string "……$"
 
 Text_SubstituteTeach::
 	.string "Aww, I wish I was a KANGASKHAN\n"
 	.string "baby.\p"
 	.string "I'd love to be a substitute for the\n"
-	.string "baby...\p"
+	.string "baby…\p"
 	.string "And snuggle in the mother\n"
 	.string "KANGASKHAN's belly pouch.\p"
 	.string "But only POKEMON can use the\n"
-	.string "technique SUBSTITUTE...\p"
+	.string "technique SUBSTITUTE…\p"
 	.string "Want me to teach SUBSTITUTE to\n"
 	.string "one of your POKEMON?$"
 
 Text_SubstituteDeclined::
 	.string "Oh, really?\n"
-	.string "SUBSTITUTE seems so fun...$"
+	.string "SUBSTITUTE seems so fun…$"
 
 Text_SubstituteWhichMon::
 	.string "Which POKEMON wants to learn\n"
@@ -242,7 +242,7 @@ Text_SubstituteWhichMon::
 
 Text_SubstituteTaught::
 	.string "Boy, what I'd give to crawl inside\n"
-	.string "a KANGASKHAN belly pouch...$"
+	.string "a KANGASKHAN belly pouch…$"
 
 FuchsiaCity_Text_MyFatherIsGymLeader::
 	.string "My father is the GYM LEADER of\n"

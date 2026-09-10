@@ -13,7 +13,7 @@ SixIsland_OutcastIsland_Text_RocketIntro::
 	.string "I'll take it out on you!$"
 
 SixIsland_OutcastIsland_Text_RocketDefeat::
-	.string "...Huh?$"
+	.string "…Huh?$"
 
 SixIsland_OutcastIsland_Text_RocketPostBattle::
 	.string "So listen, you haven't seen any\n"
@@ -24,24 +24,24 @@ SixIsland_OutcastIsland_Text_TylorIntro::
 	.string "A battle'd be a change of pace!$"
 
 SixIsland_OutcastIsland_Text_TylorDefeat::
-	.string "Nope, no luck at all...$"
+	.string "Nope, no luck at all…$"
 
 SixIsland_OutcastIsland_Text_TylorPostBattle::
 	.string "I can't very well go home without\n"
 	.string "catching something, though.$"
 
 SixIsland_OutcastIsland_Text_MymoIntro::
-	.string "Gasp... Gasp...\p"
+	.string "Gasp… Gasp…\p"
 	.string "I swam here from SIX ISLE PORT\n"
 	.string "in one go.$"
 
 SixIsland_OutcastIsland_Text_MymoDefeat::
-	.string "Gasp...\n"
-	.string "Gasp...$"
+	.string "Gasp…\n"
+	.string "Gasp…$"
 
 SixIsland_OutcastIsland_Text_MymoPostBattle::
-	.string "I'm only at the halfway point...\n"
-	.string "I'm beat...$"
+	.string "I'm only at the halfway point…\n"
+	.string "I'm beat…$"
 
 SixIsland_OutcastIsland_Text_NicoleIntro::
 	.string "It's not so easy sending POKEMON\n"
@@ -90,4 +90,4 @@ SixIsland_OutcastIsland_Text_GebPostBattle::
 SixIsland_OutcastIsland_Text_GebNotEnoughMons::
 	.string "GEB: Please battle against me and\n"
 	.string "my sister!\p"
-	.string "...Oh, you don't have two POKEMON?$"
+	.string "…Oh, you don't have two POKEMON?$"

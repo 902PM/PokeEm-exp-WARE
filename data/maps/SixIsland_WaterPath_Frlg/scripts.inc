@@ -14,13 +14,13 @@ SixIsland_WaterPath_Text_RoseIntro::
 	.string "all the way here.$"
 
 SixIsland_WaterPath_Text_RoseDefeat::
-	.string "Giggle... You're so cute when you're\n"
+	.string "Giggle… You're so cute when you're\n"
 	.string "determined.$"
 
 SixIsland_WaterPath_Text_RosePostBattle::
 	.string "I want to go to the woods over\n"
-	.string "there, but...\p"
-	.string "There are lots of BUG POKEMON.\n"
+	.string "there, but…\p"
+	.string "There are lots of BUG POKeMON.\n"
 	.string "They scare me a little.$"
 
 SixIsland_WaterPath_Text_EdwardIntro::
@@ -44,7 +44,7 @@ SixIsland_WaterPath_Text_SamirDefeat::
 
 SixIsland_WaterPath_Text_SamirPostBattle::
 	.string "I couldn't lift the stigma of being\n"
-	.string "a SWIMMER...$"
+	.string "a SWIMMER…$"
 
 SixIsland_WaterPath_Text_DeniseIntro::
 	.string "My boyfriend's always busy, so I\n"
@@ -80,7 +80,7 @@ SixIsland_WaterPath_Text_MiuDefeat::
 
 SixIsland_WaterPath_Text_MiuPostBattle::
 	.string "MIU: It makes me all sad inside\n"
-	.string "when we lose...$"
+	.string "when we lose…$"
 
 SixIsland_WaterPath_Text_MiuNotEnoughMons::
 	.string "MIU: MIA and I are TWINS.\n"
@@ -95,8 +95,8 @@ SixIsland_WaterPath_Text_MiaDefeat::
 	.string "You're bad for winning!$"
 
 SixIsland_WaterPath_Text_MiaPostBattle::
-	.string "MIA: Ohh...\n"
-	.string "I'm sorry, my POKEMON...$"
+	.string "MIA: Ohh…\n"
+	.string "I'm sorry, my POKEMON…$"
 
 SixIsland_WaterPath_Text_MiaNotEnoughMons::
 	.string "MIA: Oh, you only have one\n"

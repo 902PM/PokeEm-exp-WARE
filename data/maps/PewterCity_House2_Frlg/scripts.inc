@@ -18,7 +18,7 @@ PewterCity_House2_Text_MonsLearnTechniquesAsTheyGrow::
 PewterCity_House2_Text_MonsEasierCatchIfStatused::
 	.string "A POKEMON becomes easier to \n"
 	.string "catch if it has a status problem.\p"
-	.string "Sleep, poison, burn, or paralysis...\n"
+	.string "Sleep, poison, burn, or paralysis…\n"
 	.string "Those are all effective.\p"
 	.string "But catching POKEMON is never\n"
 	.string "a sure thing!$"

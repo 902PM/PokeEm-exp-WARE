@@ -36,7 +36,7 @@ PewterCity_Mart_Items::
 PewterCity_Mart_Text_BoughtWeirdFishFromShadyGuy::
 	.string "A shady old guy sucked me into\n"
 	.string "buying this weird fish POKEMON!\p"
-	.string "It's totally weak and it cost ¥500!$"
+	.string "It's totally weak and it cost 500 yen!$"
 
 PewterCity_Mart_Text_GoodThingsIfRaiseMonsDiligently::
 	.string "Good things can happen if you raise\n"

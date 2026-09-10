@@ -148,13 +148,13 @@ Route4_PokemonCenter_1F_EventScript_Newspaper::
 
 Route4_PokemonCenter_1F_Text_CanHaveSixMonsWithYou::
 	.string "Okay, set six POKe BALLS in my\n"
-	.string "belt...\p"
+	.string "belt…\p"
 	.string "Yeah, that'll do it. At most, you\n"
 	.string "can have six POKEMON with you.$"
 
 Route4_PokemonCenter_1F_Text_TeamRocketAttacksCerulean::
 	.string "TEAM ROCKET attacks CERULEAN\n"
-	.string "citizens...\p"
+	.string "citizens…\p"
 	.string "Not a day goes by without TEAM\n"
 	.string "ROCKET being in the news.$"
 
@@ -162,19 +162,19 @@ Route4_PokemonCenter_1F_Text_LaddieBuyMagikarpForJust500::
 	.string "MAN: Hello there, laddie!\n"
 	.string "Have I got a deal just for you!\p"
 	.string "I'll let you have a secret POKEMON\n"
-	.string "- a MAGIKARP - for just ¥500!\p"
+	.string "- a MAGIKARP - for just 500 yen!\p"
 	.string "So, you'll buy it, am I right?$"
 
 Route4_PokemonCenter_1F_Text_SweetieBuyMagikarpForJust500::
 	.string "MAN: Hello there, sweetie pie!\n"
 	.string "Have I got a deal just for you!\p"
 	.string "I'll let you have a secret POKEMON\n"
-	.string "- a MAGIKARP - for just ¥500!\p"
+	.string "- a MAGIKARP - for just 500 yen!\p"
 	.string "So, you'll buy it, am I right?$"
 
 Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp::
-	.string "{PLAYER} paid an outrageous ¥500\n"
-	.string "and bought the MAGIKARP...$"
+	.string "{PLAYER} paid an outrageous 500 yen\n"
+	.string "and bought the MAGIKARP…$"
 
 Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou::
 	.string "No? You say no? I'm only doing this\n"

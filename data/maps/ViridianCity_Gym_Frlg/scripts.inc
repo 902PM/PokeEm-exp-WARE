@@ -153,7 +153,7 @@ ViridianCity_Gym_Text_ExplainTM26::
 	.string "It is a powerful attack that causes\n"
 	.string "a massive tremor.\p"
 	.string "I made it when I ran the GYM here,\n"
-	.string "far too long ago... $"
+	.string "far too long ago… $"
 
 ViridianCity_Gym_Text_YouDoNotHaveSpace::
 	.string "You do not have space for this!$"
@@ -200,7 +200,7 @@ ViridianCity_Gym_Text_KiyoDefeat::
 
 ViridianCity_Gym_Text_KiyoPostBattle::
 	.string "If my POKEMON were as good at\n"
-	.string "karate as I...$"
+	.string "karate as I…$"
 
 ViridianCity_Gym_Text_WarrenIntro::
 	.string "The truly talented win with style.$"
@@ -210,7 +210,7 @@ ViridianCity_Gym_Text_WarrenDefeat::
 
 ViridianCity_Gym_Text_WarrenPostBattle::
 	.string "The LEADER will scold me for\n"
-	.string "losing this way...$"
+	.string "losing this way…$"
 
 ViridianCity_Gym_Text_TakashiIntro::
 	.string "I'm the KARATE KING!\n"

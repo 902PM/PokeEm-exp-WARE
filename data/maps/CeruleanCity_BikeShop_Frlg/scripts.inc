@@ -83,7 +83,7 @@ CeruleanCity_BikeShop_Text_SorryYouCantAffordIt::
 	.string "You can't afford it!$"
 
 CeruleanCity_BikeShop_Text_OhBikeVoucherHereYouGo::
-	.string "Oh, that's...\p"
+	.string "Oh, that's…\p"
 	.string "A BIKE VOUCHER!\p"
 	.string "Okay!\n"
 	.string "Here you go!$"

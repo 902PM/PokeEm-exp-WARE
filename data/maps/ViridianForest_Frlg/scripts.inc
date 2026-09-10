@@ -117,7 +117,7 @@ ViridianForest_Text_AnthonyDefeat::
 	.string "Nothing went right.$"
 
 ViridianForest_Text_AnthonyPostBattle::
-	.string "I lost some of my allowance...$"
+	.string "I lost some of my allowance…$"
 
 ViridianForest_Text_CharlieIntro::
 	.string "Did you know that POKEMON evolve?$"

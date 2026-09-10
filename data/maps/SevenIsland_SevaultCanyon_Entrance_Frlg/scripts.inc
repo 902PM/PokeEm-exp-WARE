@@ -23,21 +23,21 @@ SevenIsland_SevaultCanyon_Entrance_Text_MasonIntro::
 	.string "Are you a member of my fan club?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonDefeat::
-	.string "Oh, so you're not a fan...\p"
+	.string "Oh, so you're not a fan…\p"
 	.string "Well, I can change that.\n"
 	.string "Let me sing for you!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonPostBattle::
-	.string "Lalalah...\n"
+	.string "Lalalah…\n"
 	.string "My POKEMON, I send them out,\l"
 	.string "all the girls scream and shout!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasIntro::
-	.string "This island is too spread out...\n"
+	.string "This island is too spread out…\n"
 	.string "It's not easy patrolling the place.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasDefeat::
-	.string "Uh-huh...$"
+	.string "Uh-huh…$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasPostBattle::
 	.string "TRAINERS like you from cities,\n"

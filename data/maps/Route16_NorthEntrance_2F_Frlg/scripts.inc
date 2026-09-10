@@ -60,12 +60,12 @@ Route16_NorthEntrance_2F_Text_RidingTogetherOnNewBikes::
 
 Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore::
 	.string "Let's see what the binoculars have\n"
-	.string "to show...\p"
+	.string "to show…\p"
 	.string "It's the CELADON DEPT. STORE!$"
 
 Route16_NorthEntrance_2F_Text_LongPathOverWater::
 	.string "Let's see what the binoculars have\n"
-	.string "to show...\p"
+	.string "to show…\p"
 	.string "There's a long path over water far\n"
 	.string "away.$"
 

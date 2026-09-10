@@ -77,7 +77,7 @@ Route14_Text_BennyDefeat::
 	.string "I knew it!$"
 
 Route14_Text_BennyPostBattle::
-	.string "Winning, losing... It's insignificant\n"
+	.string "Winning, losing… It's insignificant\n"
 	.string "under this huge sky.$"
 
 Route14_Text_LukasIntro::
@@ -136,7 +136,7 @@ Route14_Text_KiriIntro::
 	.string "really hard together.$"
 
 Route14_Text_KiriDefeat::
-	.string "KIRI: Whimper...\n"
+	.string "KIRI: Whimper…\n"
 	.string "We lost, didn't we?$"
 
 Route14_Text_KiriPostBattle::

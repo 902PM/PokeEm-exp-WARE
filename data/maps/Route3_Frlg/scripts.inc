@@ -10,8 +10,8 @@ Route3_EventScript_RouteSign::
 	end
 
 Route3_Text_TunnelFromCeruleanTiring::
-	.string "Whew... I better take a rest...\n"
-	.string "Groan...\p"
+	.string "Whew… I better take a rest…\n"
+	.string "Groan…\p"
 	.string "That tunnel from CERULEAN takes a\n"
 	.string "lot out of you!$"
 
@@ -65,7 +65,7 @@ Route3_Text_GregPostBattle::
 	.string "full, just switch to another BOX.$"
 
 Route3_Text_SallyIntro::
-	.string "That look you gave me...\n"
+	.string "That look you gave me…\n"
 	.string "It's so intriguing!$"
 
 Route3_Text_SallyDefeat::

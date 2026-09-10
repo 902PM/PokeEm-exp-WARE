@@ -91,7 +91,7 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech_Rematch:
 	.string "{JPN}アハハ!\pまってたよ!\pこんどの アタシは ひとあじ ちがう\nかくご きめて かかって きてね!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat_Rematch:
-	.string "{JPN}さすがね！$"
+	.string "{JPN}さすがね!$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech_Rematch:
 	.string "{JPN}うーん ざんねん\nまた まけたか……\pだけど ちからを\nあわせて たたかったから\pアタシと ポケモンたちは\nきずなを もっと もっと\lふかめることが できた\pまた しょうぶ できること\nたのしみに してるよ!$"

@@ -50,6 +50,6 @@ SevenIsland_TanobyRuins_Text_CliffordDefeat::
 
 SevenIsland_TanobyRuins_Text_CliffordPostBattle::
 	.string "Ah, so you are studying POKEMON\n"
-	.string "on your own...\p"
+	.string "on your own…\p"
 	.string "Yes, you certainly are quite the\n"
 	.string "extraordinary person, indeed.$"

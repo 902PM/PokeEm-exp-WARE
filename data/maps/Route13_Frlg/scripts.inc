@@ -103,7 +103,7 @@ Route13_Text_SheilaDefeat::
 Route13_Text_SheilaPostBattle::
 	.string "I don't know anything about\n"
 	.string "POKEMON actually.\p"
-	.string "The ones I use... I picked them\n"
+	.string "The ones I use… I picked them\n"
 	.string "for their looks!$"
 
 Route13_Text_JaredIntro::
@@ -125,7 +125,7 @@ Route13_Text_RobertDefeat::
 
 Route13_Text_RobertPostBattle::
 	.string "I wish I could fly like PIDGEY and\n"
-	.string "PIDGEOTTO...$"
+	.string "PIDGEOTTO…$"
 
 Route13_Text_LookToLeftOfThatPost::
 	.string "TRAINER TIPS\p"

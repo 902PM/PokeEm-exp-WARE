@@ -148,12 +148,12 @@ Route15_Text_RonIntro::
 	.string "lose.$"
 
 Route15_Text_RonDefeat::
-	.string "RON: Oh, no, no...\n"
+	.string "RON: Oh, no, no…\n"
 	.string "Sis, I'm sorry!$"
 
 Route15_Text_RonPostBattle::
-	.string "RON: Oh, bleah...\n"
-	.string "I wish I had a nice sister...$"
+	.string "RON: Oh, bleah…\n"
+	.string "I wish I had a nice sister…$"
 
 Route15_Text_RonNotEnoughMons::
 	.string "RON: Did you want to battle with\n"

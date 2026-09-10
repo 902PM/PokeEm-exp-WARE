@@ -169,7 +169,7 @@ SaffronCity_Text_FlewHereOnPidgeot::
 	.string "I flew here on my PIDGEOT when\n"
 	.string "I read about SILPH.\p"
 	.string "It's already over?\n"
-	.string "I missed the media action...$"
+	.string "I missed the media action…$"
 
 SaffronCity_Text_Pidgeot::
 	.string "PIDGEOT: Bi bibii!$"
@@ -183,8 +183,8 @@ SaffronCity_Text_ImASecurityGuard::
 	.string "Suspicious kids I don't allow in!$"
 
 SaffronCity_Text_HesTakingASnooze::
-	.string "...\n"
-	.string "Snore...\p"
+	.string "…\n"
+	.string "Snore…\p"
 	.string "Hah! He's taking a snooze!$"
 
 SaffronCity_Text_CitySign::
@@ -222,7 +222,7 @@ SaffronCity_Text_MrPsychicsHouse::
 
 SaffronCity_Text_SilphsLatestProduct::
 	.string "SILPH's latest product!\n"
-	.string "Release to be determined...$"
+	.string "Release to be determined…$"
 
 SaffronCity_Text_TrainerFanClubSign::
 	.string "POKEMON TRAINER FAN CLUB\p"
@@ -230,7 +230,7 @@ SaffronCity_Text_TrainerFanClubSign::
 	.string "names on this sign.$"
 
 SaffronCity_Text_HowCanClubNotRecognizeLance::
-	.string "This FAN CLUB...\n"
+	.string "This FAN CLUB…\n"
 	.string "No one here has a clue!\p"
 	.string "How could they not recognize\n"
 	.string "the brilliance that is LANCE?\p"

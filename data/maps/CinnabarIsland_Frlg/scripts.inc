@@ -352,7 +352,7 @@ CinnabarIsland_EventScript_GymSign::
 	end
 
 CinnabarIsland_Text_DoorIsLocked::
-	.string "The door is locked...$"
+	.string "The door is locked…$"
 
 CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab::
 	.string "CINNABAR GYM's BLAINE is quite the\n"

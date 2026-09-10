@@ -13,8 +13,8 @@ Route6_Text_RickyDefeat::
 	.string "I just can't win!$"
 
 Route6_Text_RickyPostBattle::
-	.string "Whisper...\n"
-	.string "Whisper...$"
+	.string "Whisper…\n"
+	.string "Whisper…$"
 
 Route6_Text_NancyIntro::
 	.string "Excuse me!\n"
@@ -25,8 +25,8 @@ Route6_Text_NancyDefeat::
 	.string "I hate losing.$"
 
 Route6_Text_NancyPostBattle::
-	.string "Whisper...\n"
-	.string "Whisper...$"
+	.string "Whisper…\n"
+	.string "Whisper…$"
 
 Route6_Text_KeigoIntro::
 	.string "There aren't many bugs out here.$"
@@ -44,8 +44,8 @@ Route6_Text_JeffIntro::
 	.string "You want to talk to me?$"
 
 Route6_Text_JeffDefeat::
-	.string "This stinks...\n"
-	.string "I couldn't beat your challenge...$"
+	.string "This stinks…\n"
+	.string "I couldn't beat your challenge…$"
 
 Route6_Text_JeffPostBattle::
 	.string "I should bring more POKEMON with\n"
@@ -56,7 +56,7 @@ Route6_Text_IsabelleIntro::
 	.string "Well, okay. I'll play!$"
 
 Route6_Text_IsabelleDefeat::
-	.string "Things just didn't work...$"
+	.string "Things just didn't work…$"
 
 Route6_Text_IsabellePostBattle::
 	.string "I want to get stronger.\n"

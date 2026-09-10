@@ -296,8 +296,8 @@ Route25_SeaCottage_Movement_BillExitTeleporter::
 	step_end
 
 Route25_SeaCottage_Text_ImBillHelpMeOutPal::
-	.string "Hiya! I'm a POKEMON...\n"
-	.string "...No I'm not!\p"
+	.string "Hiya! I'm a POKEMON…\n"
+	.string "…No I'm not!\p"
 	.string "Call me BILL!\n"
 	.string "I'm a true-blue POKeMANIAC!\p"
 	.string "Hey!\n"
@@ -309,8 +309,8 @@ Route25_SeaCottage_Text_ImBillHelpMeOutPal::
 	.string "Help me out here!$"
 
 Route25_SeaCottage_Text_ImBillHelpMeOutLady::
-	.string "Hiya! I'm a POKEMON...\n"
-	.string "...No I'm not!\p"
+	.string "Hiya! I'm a POKEMON…\n"
+	.string "…No I'm not!\p"
 	.string "Call me BILL!\n"
 	.string "I'm a true-blue POKeMANIAC!\p"
 	.string "Hey!\n"
@@ -354,7 +354,7 @@ Route25_SeaCottage_Text_ThanksBudTakeThis::
 	.string "POKEMON collection?\p"
 	.string "You didn't?\n"
 	.string "That's a bummer.\p"
-	.string "I've got to thank you...\n"
+	.string "I've got to thank you…\n"
 	.string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ThanksLadyTakeThis::
@@ -364,7 +364,7 @@ Route25_SeaCottage_Text_ThanksLadyTakeThis::
 	.string "POKEMON collection?\p"
 	.string "You didn't?\n"
 	.string "That's a bummer.\p"
-	.string "I've got to thank you...\n"
+	.string "I've got to thank you…\n"
 	.string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::

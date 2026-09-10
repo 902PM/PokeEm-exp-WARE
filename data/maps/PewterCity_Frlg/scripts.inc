@@ -847,22 +847,22 @@ Text_DreamEaterTeach::
 	.string "I must have dozed off in the sun.\p"
 	.string "I had this weird dream about\n"
 	.string "a DROWZEE eating my dream.\p"
-	.string "And...\n"
-	.string "I learned how to eat dreams...\p"
+	.string "And…\n"
+	.string "I learned how to eat dreams…\p"
 	.string "Oogh, this is too spooky!\p"
 	.string "Let me teach it to a POKEMON so\n"
 	.string "I can forget about it!$"
 
 Text_DreamEaterDeclined::
-	.string "...Snore...$"
+	.string "…Snore…$"
 
 Text_DreamEaterWhichMon::
 	.string "Which POKEMON wants to learn\n"
 	.string "DREAM EATER?$"
 
 Text_DreamEaterTaught::
-	.string "...ZZZ...\n"
-	.string "I...can't eat...anymore...$"
+	.string "…ZZZ…\n"
+	.string "I…can't eat…anymore…$"
 
 PewterCity_Text_ClefairyCameFromMoon::
 	.string "CLEFAIRY came from the moon.\n"
@@ -966,7 +966,7 @@ PewterCity_Text_MustBeGoingBackToLab::
 	.string "Bye-bye!$"
 
 PewterCity_Text_RunningShoesLetterFromMom::
-	.string "There's a letter attached...\p"
+	.string "There's a letter attached…\p"
 	.string "Dear {PLAYER},\p"
 	.string "Here is a pair of RUNNING SHOES\n"
 	.string "for my beloved challenger.\p"

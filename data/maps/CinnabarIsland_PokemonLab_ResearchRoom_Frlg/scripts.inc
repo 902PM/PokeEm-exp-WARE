@@ -23,7 +23,7 @@ CinnabarIsland_PokemonLab_ResearchRoom_Text_EeveeCanEvolveIntroThreeMons::
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail::
 	.string "There's an e-mail message.\p"
-	.string "... ... ...\p"
+	.string "… … …\p"
 	.string "There are three legendary bird\n"
 	.string "POKEMON.\p"
 	.string "They are ARTICUNO, ZAPDOS, and\n"
@@ -31,7 +31,7 @@ CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail::
 	.string "Their whereabouts are unknown.\p"
 	.string "We plan to explore the cavern\n"
 	.string "close to CERULEAN.\p"
-	.string "From: POKEMON RESEARCH TEAM...$"
+	.string "From: POKEMON RESEARCH TEAM…$"
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_AnAmberPipe::
 	.string "An amber pipe!$"

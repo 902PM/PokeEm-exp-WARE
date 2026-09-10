@@ -234,7 +234,7 @@ PokemonLeague_ChampionsRoom_Text_Intro::
 	.string "looked all over for POKEMON.\p"
 	.string "Not only that, I assembled teams\n"
 	.string "that would beat any POKEMON type.\p"
-	.string "And now...\p"
+	.string "And now…\p"
 	.string "I'm the POKEMON LEAGUE CHAMPION!\p"
 	.string "{PLAYER}!\n"
 	.string "Do you know what that means?\p"
@@ -252,7 +252,7 @@ PokemonLeague_ChampionsRoom_Text_RematchIntro::
 	.string "looked all over for POKEMON.\p"
 	.string "Not only that, I assembled teams\n"
 	.string "that would beat any POKEMON type.\p"
-	.string "And now...\p"
+	.string "And now…\p"
 	.string "I'm the POKEMON LEAGUE CHAMPION!\p"
 	.string "{PLAYER}!\n"
 	.string "Do you know what that means?\p"
@@ -284,10 +284,10 @@ PokemonLeague_ChampionsRoom_Text_PostBattle::
 	.string "Why?\n"
 	.string "Why did I lose?\p"
 	.string "I never made any mistakes raising\n"
-	.string "my POKEMON...\p"
+	.string "my POKEMON…\p"
 	.string "Darn it! You're the new POKEMON\n"
 	.string "LEAGUE CHAMPION!\p"
-	.string "Although I don't like to admit it...$"
+	.string "Although I don't like to admit it…$"
 
 PokemonLeague_ChampionsRoom_Text_OakPlayer::
 	.string "OAK: {PLAYER}!$"
@@ -303,7 +303,7 @@ PokemonLeague_ChampionsRoom_Text_OakCongratulations::
 	.string "{PLAYER}, you have come of age!$"
 
 PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
-	.string "OAK: {RIVAL}...\n"
+	.string "OAK: {RIVAL}…\n"
 	.string "I'm disappointed in you.\p"
 	.string "I came when I heard you'd beaten\n"
 	.string "the ELITE FOUR.\p"

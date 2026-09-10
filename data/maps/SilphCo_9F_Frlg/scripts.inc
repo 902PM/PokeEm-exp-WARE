@@ -63,7 +63,7 @@ SilphCo_9F_Text_Grunt1Defeat::
 
 SilphCo_9F_Text_Grunt1PostBattle::
 	.string "If I had started as a TRAINER at\n"
-	.string "your age...$"
+	.string "your age…$"
 
 SilphCo_9F_Text_EdIntro::
 	.string "Your POKEMON have weak points!\n"

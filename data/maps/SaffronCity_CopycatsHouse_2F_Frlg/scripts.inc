@@ -111,7 +111,7 @@ SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
 	.string "on his head!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MySecrets::
-	.string "...\p"
+	.string "…\p"
 	.string "My Secrets!\p"
 	.string "Skill: Mimicry!\n"
 	.string "Hobby: Collecting dolls!\l"

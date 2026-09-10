@@ -10,7 +10,7 @@ Route9_Text_AliciaIntro::
 	.string "You're mine!$"
 
 Route9_Text_AliciaDefeat::
-	.string "You deceived me...$"
+	.string "You deceived me…$"
 
 Route9_Text_AliciaPostBattle::
 	.string "The tunnel coming up is pitch-black\n"
@@ -30,10 +30,10 @@ Route9_Text_ChrisPostBattle::
 
 Route9_Text_DrewIntro::
 	.string "I'm taking the ROCK TUNNEL to\n"
-	.string "go to LAVENDER...$"
+	.string "go to LAVENDER…$"
 
 Route9_Text_DrewDefeat::
-	.string "Can't measure up...$"
+	.string "Can't measure up…$"
 
 Route9_Text_DrewPostBattle::
 	.string "Are you off to ROCK TUNNEL, too?$"
@@ -83,7 +83,7 @@ Route9_Text_BrentDefeat::
 
 Route9_Text_BrentPostBattle::
 	.string "I have to collect more than bugs\n"
-	.string "to get stronger...$"
+	.string "to get stronger…$"
 
 Route9_Text_AlanIntro::
 	.string "Hahahaha!\n"
@@ -101,7 +101,7 @@ Route9_Text_ConnerIntro::
 	.string "Go, my super BUG POKEMON!$"
 
 Route9_Text_ConnerDefeat::
-	.string "My bugs...$"
+	.string "My bugs…$"
 
 Route9_Text_ConnerPostBattle::
 	.string "If you don't like BUG POKEMON,\n"

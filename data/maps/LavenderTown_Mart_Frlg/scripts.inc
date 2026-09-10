@@ -62,4 +62,5 @@ LavenderTown_Mart_Text_SoldNuggetFromMountainsFor5000::
 	.string "この あいだ やまおくで\n"
 	.string "きんのたまを ひろい ましてね!\p"
 	.string "つかえない しなもの ですが\n"
-	.string "うったら なんと 5000¥でした$"
+	.string "うったら なんと 5000円でした$"
+

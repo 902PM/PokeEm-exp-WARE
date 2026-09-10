@@ -39,5 +39,5 @@ SixIsland_Mart_Text_AgathaOldestEverEliteFourMember::
 
 SixIsland_Mart_Text_ShouldBuyMailAndWriteLetter::
 	.string "I should buy some MAIL and write\n"
-	.string "him a letter...$"
+	.string "him a letter…$"
 

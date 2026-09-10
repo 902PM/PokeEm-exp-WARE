@@ -60,7 +60,7 @@ SilphCo_3F_Text_JoseDefeat::
 	.string "You really got me!$"
 
 SilphCo_3F_Text_JosePostBattle::
-	.string "Humph...\p"
+	.string "Humph…\p"
 	.string "TEAM ROCKET said that if I helped\n"
 	.string "them, they'd let me study POKEMON.$"
 

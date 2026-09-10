@@ -68,14 +68,14 @@ Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers::
 
 Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
 	.string "A NUGGET is totally useless.\n"
-	.string "So I sold it for ¥5000.$"
+	.string "So I sold it for 5000 yen.$"
 
 Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
 	.string "I heard that ghosts haunt\n"
 	.string "LAVENDER TOWN.$"
 
 Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
-	.string "Oh... {PLAYER}!\n"
+	.string "Oh… {PLAYER}!\n"
 	.string "I've been looking for you!\p"
 	.string "It's me, one of the ever-present\n"
 	.string "AIDES to PROF. OAK.\p"

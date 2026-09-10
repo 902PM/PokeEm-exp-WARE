@@ -101,7 +101,7 @@ PewterCity_Gym_Text_BrockDefeat::
 	.string "I took you for granted, and so\n"
 	.string "I lost.\p"
 	.string "As proof of your victory, I confer\n"
-	.string "on you this...the official POKEMON\l"
+	.string "on you this…the official POKEMON\l"
 	.string "LEAGUE BOULDERBADGE.\p"
 	.string "{FONT_NORMAL}{PLAYER} received the BOULDERBADGE\n"
 	.string "from BROCK!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
@@ -128,7 +128,7 @@ PewterCity_Gym_Text_ExplainTM39::
 	.string "A TM is good for only one use.\p"
 	.string "So, when you use one, pick the\n"
 	.string "POKEMON carefully.\p"
-	.string "Anyways...\n"
+	.string "Anyways…\n"
 	.string "TM39 contains ROCK TOMB.\p"
 	.string "It hurls boulders at the foe and\n"
 	.string "lowers its SPEED.$"
@@ -152,12 +152,12 @@ PewterCity_Gym_Text_LiamIntro::
 
 PewterCity_Gym_Text_LiamDefeat::
 	.string "Darn!\p"
-	.string "Light-years isn't time...\n"
+	.string "Light-years isn't time…\n"
 	.string "It measures distance!$"
 
 PewterCity_Gym_Text_LiamPostBattle::
 	.string "You're pretty hot.\n"
-	.string "...But not as hot as BROCK!$"
+	.string "…But not as hot as BROCK!$"
 
 PewterCity_Gym_Text_LetMeTakeYouToTheTop::
 	.string "Hiya!\n"

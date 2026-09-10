@@ -109,7 +109,7 @@ SixIsland_PatternBush_Text_GarretIntro::
 	.string "only around here!$"
 
 SixIsland_PatternBush_Text_GarretDefeat::
-	.string "Heheh...\n"
+	.string "Heheh…\n"
 	.string "Isn't my POKEMON awesome?$"
 
 SixIsland_PatternBush_Text_GarretPostBattle::
@@ -150,7 +150,7 @@ SixIsland_PatternBush_Text_NashDefeat::
 	.string "Super awesome!$"
 
 SixIsland_PatternBush_Text_NashPostBattle::
-	.string "The funny patterns on the ground...\p"
+	.string "The funny patterns on the ground…\p"
 	.string "They look like the patterns on my\n"
 	.string "grandpa's clothes.$"
 
@@ -164,7 +164,7 @@ SixIsland_PatternBush_Text_CordellDefeat::
 
 SixIsland_PatternBush_Text_CordellPostBattle::
 	.string "Ayup, you townies come around all\n"
-	.string "so dandy with a hat that flashy...\p"
+	.string "so dandy with a hat that flashy…\p"
 	.string "How about giving me that?$"
 
 SixIsland_PatternBush_Text_DaliaIntro::
@@ -201,7 +201,7 @@ SixIsland_PatternBush_Text_RileyIntro::
 	.string "I'll pitch my tent here.$"
 
 SixIsland_PatternBush_Text_RileyDefeat::
-	.string "Wimped out...$"
+	.string "Wimped out…$"
 
 SixIsland_PatternBush_Text_RileyPostBattle::
 	.string "I'm going to observe the night sky\n"
@@ -216,7 +216,7 @@ SixIsland_PatternBush_Text_MarcyDefeat::
 	.string "I cut my shin on some grass.$"
 
 SixIsland_PatternBush_Text_MarcyPostBattle::
-	.string "A little cut like that...\n"
+	.string "A little cut like that…\n"
 	.string "A little spit's enough to cure it!$"
 
 SixIsland_PatternBush_Text_LaytonIntro::

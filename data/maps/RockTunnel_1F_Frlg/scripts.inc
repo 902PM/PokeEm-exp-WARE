@@ -60,7 +60,7 @@ RockTunnel_1F_Text_LennyPostBattle::
 
 RockTunnel_1F_Text_OliverIntro::
 	.string "Hmm.\n"
-	.string "Maybe I'm lost in here...$"
+	.string "Maybe I'm lost in here…$"
 
 RockTunnel_1F_Text_OliverDefeat::
 	.string "Ease up!\n"
@@ -97,7 +97,7 @@ RockTunnel_1F_Text_LeahIntro::
 	.string "dark!$"
 
 RockTunnel_1F_Text_LeahDefeat::
-	.string "It was too dark...$"
+	.string "It was too dark…$"
 
 RockTunnel_1F_Text_LeahPostBattle::
 	.string "I saw a MACHOP in this tunnel.$"

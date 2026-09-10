@@ -56,7 +56,7 @@ VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
 	.string "It is true that a higher-level\n"
-	.string "POKEMON will be more powerful...\p"
+	.string "POKeMON will be more powerful…\p"
 	.string "But, all POKEMON will have weak\n"
 	.string "points against specific types.\p"
 	.string "So, there appears to be no\n"
@@ -64,7 +64,7 @@ VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
 
 VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::
 	.string "The urge to battle with someone\n"
-	.string "you've tangled with before...\p"
+	.string "you've tangled with before…\p"
 	.string "Have you ever had that urge?\n"
 	.string "I'm sure you have.\p"
 	.string "I wanted to battle certain people\n"

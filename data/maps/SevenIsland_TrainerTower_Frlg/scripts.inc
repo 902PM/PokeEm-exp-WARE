@@ -18,7 +18,7 @@ SevenIsland_TrainerTower_Text_DarioIntro::
 	.string "I sensed your approach.$"
 
 SevenIsland_TrainerTower_Text_DarioDefeat::
-	.string "Give up...$"
+	.string "Give up…$"
 
 SevenIsland_TrainerTower_Text_DarioPostBattle::
 	.string "In your future, I sense that you\n"

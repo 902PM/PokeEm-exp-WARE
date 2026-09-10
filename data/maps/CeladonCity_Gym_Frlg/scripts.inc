@@ -84,10 +84,10 @@ CeladonCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 CeladonCity_Gym_Text_ErikaIntro::
-	.string "Hello...\n"
+	.string "Hello…\n"
 	.string "Lovely weather, isn't it?\l"
-	.string "It's so pleasant...\p"
-	.string "...Oh, dear...\n"
+	.string "It's so pleasant…\p"
+	.string "…Oh, dear…\n"
 	.string "I must have dozed off. Welcome.\p"
 	.string "My name is ERIKA.\n"
 	.string "I am the LEADER of CELADON GYM.\p"
@@ -95,7 +95,7 @@ CeladonCity_Gym_Text_ErikaIntro::
 	.string "flower arranging.\p"
 	.string "My POKEMON are solely of the\n"
 	.string "GRASS type.\p"
-	.string "...Oh, I'm sorry, I had no idea that\n"
+	.string "…Oh, I'm sorry, I had no idea that\n"
 	.string "you wished to challenge me.\p"
 	.string "Very well, but I shall not lose.{PLAY_BGM MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
@@ -159,15 +159,15 @@ CeladonCity_Gym_Text_BridgetPostBattle::
 	.string "and GROUND-type POKEMON.$"
 
 CeladonCity_Gym_Text_TinaIntro::
-	.string "...Weren't you peeking in here\n"
+	.string "…Weren't you peeking in here\n"
 	.string "earlier?$"
 
 CeladonCity_Gym_Text_TinaDefeat::
 	.string "You're an eye-opener!$"
 
 CeladonCity_Gym_Text_TinaPostBattle::
-	.string "Oh, you were looking at ERIKA...\n"
-	.string "You weren't looking at me...$"
+	.string "Oh, you were looking at ERIKA…\n"
+	.string "You weren't looking at me…$"
 
 CeladonCity_Gym_Text_TamiaIntro::
 	.string "Look, look!\n"

@@ -31,7 +31,7 @@ Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime::
 	.string "some more time with me.$"
 
 Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
-	.string "You owe me ¥{STR_VAR_2} for the return\n"
+	.string "You owe me {STR_VAR_2} yen for the return\n"
 	.string "of this POKEMON.$"
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
@@ -53,7 +53,7 @@ Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Your {STR_VAR_1} has grown a lot.\n"
 	.string "Yes, quite a lot, I'd say.\p"
-	.string "Let me see...\n"
+	.string "Let me see…\n"
 	.string "By level, it's grown by {STR_VAR_2}.\p"
 	.string "Aren't I great?$"
 

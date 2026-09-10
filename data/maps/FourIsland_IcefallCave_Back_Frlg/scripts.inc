@@ -242,7 +242,7 @@ FourIsland_IcefallCave_Back_Text_LoreleiWellDeepFreezeYou::
 	.string "My LAPRAS is furious for what\n"
 	.string "you've done to its friends.\p"
 	.string "Go, LAPRAS!\n"
-	.string "ICE BEAM...$"
+	.string "ICE BEAM…$"
 
 FourIsland_IcefallCave_Back_Text_OkayRocketWareHouseFiveIsland::
 	.string "Wawaah! Okay!\n"
@@ -251,15 +251,15 @@ FourIsland_IcefallCave_Back_Text_OkayRocketWareHouseFiveIsland::
 	.string "WAREHOUSE on FIVE ISLAND.\p"
 	.string "There! I said it!\n"
 	.string "We'll be going now!\p"
-	.string "...But I doubt you'll ever make it\n"
+	.string "…But I doubt you'll ever make it\n"
 	.string "into the ROCKET WAREHOUSE!\p"
 	.string "Heheheheh!$"
 
 FourIsland_IcefallCave_Back_Text_ThankYouThisIsAwful::
 	.string "{PLAYER}, thank you.\n"
-	.string "But this is awful...\p"
+	.string "But this is awful…\p"
 	.string "I was born and raised here on\n"
 	.string "these islands.\p"
 	.string "I had no idea that those horrible\n"
-	.string "criminals were loose here...$"
+	.string "criminals were loose here…$"
 

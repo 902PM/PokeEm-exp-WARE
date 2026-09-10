@@ -85,13 +85,13 @@ Text_ThunderWaveTeach::
 	.string "Eeek!\n"
 	.string "No! Stop! Help!\p"
 	.string "Oh, you're not with TEAM ROCKET.\n"
-	.string "I'm sorry, I thought...\p"
+	.string "I'm sorry, I thought…\p"
 	.string "Will you forgive me if I teach\n"
 	.string "you the THUNDER WAVE technique?$"
 
 Text_ThunderWaveDeclined::
-	.string "Oh...\n"
-	.string "But THUNDER WAVE is convenient...$"
+	.string "Oh…\n"
+	.string "But THUNDER WAVE is convenient…$"
 
 Text_ThunderWaveWhichMon::
 	.string "Which POKEMON should I teach\n"

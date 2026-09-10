@@ -187,7 +187,7 @@ MtMoon_B2F_Text_Grunt3Intro::
 	.string "Get lost, kid!$"
 
 MtMoon_B2F_Text_Grunt3Defeat::
-	.string "So, you are good...$"
+	.string "So, you are good…$"
 
 MtMoon_B2F_Text_Grunt3PostBattle::
 	.string "If you find a fossil, give it to me\n"

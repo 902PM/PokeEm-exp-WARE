@@ -79,7 +79,7 @@ CeruleanCity_House1_Text_BadgesHaveAmazingSecrets::
 	.string "did you know?$"
 
 CeruleanCity_House1_Text_DescribeWhichBadge::
-	.string "Now then...\p"
+	.string "Now then…\p"
 	.string "Which of the eight BADGES should\n"
 	.string "I describe?$"
 

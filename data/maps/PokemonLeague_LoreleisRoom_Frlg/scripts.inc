@@ -117,7 +117,7 @@ PokemonLeague_LoreleisRoom_Text_RematchIntro::
 	.string "Are you ready?{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_Defeat::
-	.string "...Things shouldn't be this way!$"
+	.string "…Things shouldn't be this way!$"
 
 PokemonLeague_LoreleisRoom_Text_PostBattle::
 	.string "You're better than I thought.\n"

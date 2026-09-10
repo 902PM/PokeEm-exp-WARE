@@ -53,7 +53,7 @@ Route11_Text_DillonIntro::
 	.string "But, I think I can win.$"
 
 Route11_Text_DillonDefeat::
-	.string "My POKEMON couldn't win...\n"
+	.string "My POKEMON couldn't win…\n"
 	.string "Haven't they grown enough?$"
 
 Route11_Text_DillonPostBattle::
@@ -71,10 +71,10 @@ Route11_Text_DirkPostBattle::
 	.string "You were just lucky, that's all.$"
 
 Route11_Text_DarianIntro::
-	.string "I have never won before...$"
+	.string "I have never won before…$"
 
 Route11_Text_DarianDefeat::
-	.string "I saw this coming...$"
+	.string "I saw this coming…$"
 
 Route11_Text_DarianPostBattle::
 	.string "I was unlucky, as always.$"
@@ -112,7 +112,7 @@ Route11_Text_DaveDefeat::
 	.string "Thank you, and good-bye!$"
 
 Route11_Text_DavePostBattle::
-	.string "Tch...\n"
+	.string "Tch…\n"
 	.string "I better go find stronger ones!$"
 
 Route11_Text_DiglettsCave::

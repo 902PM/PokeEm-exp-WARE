@@ -10,16 +10,16 @@ ThreeIsland_BondBridge_EventScript_BondBridgeSign::
 	end
 
 ThreeIsland_BondBridge_Text_NikkiIntro::
-	.string "The salty tang of the sea...\n"
+	.string "The salty tang of the sea…\n"
 	.string "It tickles my heart.$"
 
 ThreeIsland_BondBridge_Text_NikkiDefeat::
-	.string "...Sniff, sniff...\n"
-	.string "Something smells unpleasant...$"
+	.string "…Sniff, sniff…\n"
+	.string "Something smells unpleasant…$"
 
 ThreeIsland_BondBridge_Text_NikkiPostBattle::
 	.string "Perhaps that reek is your sweaty\n"
-	.string "POKEMON's body odor...$"
+	.string "POKeMONs body odor…$"
 
 ThreeIsland_BondBridge_Text_VioletIntro::
 	.string "Where are you off to in such\n"
@@ -74,7 +74,7 @@ ThreeIsland_BondBridge_Text_JoyIntro::
 	.string "favorite POKEMON is!$"
 
 ThreeIsland_BondBridge_Text_JoyDefeat::
-	.string "JOY: Ohh...\n"
+	.string "JOY: Ohh…\n"
 	.string "MEG!$"
 
 ThreeIsland_BondBridge_Text_JoyPostBattle::
@@ -91,7 +91,7 @@ ThreeIsland_BondBridge_Text_MegIntro::
 	.string "POKEMON.$"
 
 ThreeIsland_BondBridge_Text_MegDefeat::
-	.string "MEG: Ohh...\n"
+	.string "MEG: Ohh…\n"
 	.string "JOY!$"
 
 ThreeIsland_BondBridge_Text_MegPostBattle::

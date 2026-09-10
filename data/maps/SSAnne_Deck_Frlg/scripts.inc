@@ -32,9 +32,9 @@ SSAnne_Deck_Text_ScrubbingDecksHardWork::
 	.string "Scrubbing decks is hard work!$"
 
 SSAnne_Deck_Text_FeelSeasick::
-	.string "Urf... I feel ill...\p"
+	.string "Urf… I feel ill…\p"
 	.string "I got seasick, so I stepped out to\n"
-	.string "get some air...$"
+	.string "get some air…$"
 
 SSAnne_Deck_Text_EdmondIntro::
 	.string "Hey, matey!\p"

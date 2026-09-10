@@ -35,8 +35,8 @@ Route8_Text_GlennDefeat::
 	.string "It's not logical!$"
 
 Route8_Text_GlennPostBattle::
-	.string "Go with GRIMER first...and...\n"
-	.string "...and...then...$"
+	.string "Go with GRIMER first…and…\n"
+	.string "…and…then…$"
 
 Route8_Text_PaigeIntro::
 	.string "I like NIDORAN, so I collect them!$"
@@ -120,8 +120,8 @@ Route8_Text_EliIntro::
 	.string "Did you know?$"
 
 Route8_Text_EliDefeat::
-	.string "ELI: But...\n"
-	.string "We used our twin power...$"
+	.string "ELI: But…\n"
+	.string "We used our twin power…$"
 
 Route8_Text_EliPostBattle::
 	.string "ELI: I caught my POKEMON with\n"
@@ -136,7 +136,7 @@ Route8_Text_AnneIntro::
 	.string "power!$"
 
 Route8_Text_AnneDefeat::
-	.string "ANNE: Our twin power...$"
+	.string "ANNE: Our twin power…$"
 
 Route8_Text_AnnePostBattle::
 	.string "ANNE: I'm raising POKEMON with\n"

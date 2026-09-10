@@ -104,7 +104,7 @@ ViridianCity_School_Text_ReadBlackboardCarefully::
 
 ViridianCity_School_Text_NotebookFirstPage::
 	.string "Let's check out the notebook.\p"
-	.string "First page...\p"
+	.string "First page…\p"
 	.string "POKe BALLS are used to catch\n"
 	.string "POKEMON.\p"
 	.string "Up to six POKEMON can be carried\n"
@@ -113,14 +113,14 @@ ViridianCity_School_Text_NotebookFirstPage::
 	.string "with POKEMON are called TRAINERS.$"
 
 ViridianCity_School_Text_NotebookSecondPage::
-	.string "Second page...\p"
+	.string "Second page…\p"
 	.string "A healthy POKEMON may be hard to\n"
 	.string "catch, so weaken it first.\p"
 	.string "Poison, burn, or cause another\n"
 	.string "status problem to weaken it.$"
 
 ViridianCity_School_Text_NotebookThirdPage::
-	.string "Third page...\p"
+	.string "Third page…\p"
 	.string "POKEMON TRAINERS seek others to\n"
 	.string "engage in POKEMON battles.\p"
 	.string "To TRAINERS, the taste of victory\n"
@@ -129,12 +129,12 @@ ViridianCity_School_Text_NotebookThirdPage::
 	.string "POKEMON GYMS everywhere.$"
 
 ViridianCity_School_Text_NotebookFourthPage::
-	.string "Fourth page...\p"
+	.string "Fourth page…\p"
 	.string "The ultimate goal for all POKEMON\n"
 	.string "TRAINERS is simple.\p"
 	.string "It is to defeat the top eight\n"
 	.string "POKEMON GYM LEADERS.\p"
-	.string "Do so to earn the right to face...\p"
+	.string "Do so to earn the right to face…\p"
 	.string "The ELITE FOUR of the POKEMON\n"
 	.string "LEAGUE!$"
 

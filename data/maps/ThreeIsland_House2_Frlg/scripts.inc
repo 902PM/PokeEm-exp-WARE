@@ -14,9 +14,9 @@ ThreeIsland_House2_EventScript_Rocker::
 	end
 
 ThreeIsland_House2_Text_CantMakeThisSpoonBend::
-	.string "Urrrrrrrrgggghhhh...\n"
+	.string "Urrrrrrrrgggghhhh…\n"
 	.string "Kwaaaaah!\p"
-	.string "...It's useless! I can't make this\n"
+	.string "…It's useless! I can't make this\n"
 	.string "spoon bend with my mind.\p"
 	.string "Maybe I really don't have any\n"
 	.string "psychic powers.$"

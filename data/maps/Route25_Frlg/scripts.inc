@@ -38,7 +38,7 @@ Route25_Text_FlintIntro::
 	.string "I've got a girlfriend!$"
 
 Route25_Text_FlintDefeat::
-	.string "Aww, darn...$"
+	.string "Aww, darn…$"
 
 Route25_Text_FlintPostBattle::
 	.string "Oh, well.\n"
@@ -49,14 +49,14 @@ Route25_Text_KelseyIntro::
 	.string "My boyfriend is cool!$"
 
 Route25_Text_KelseyDefeat::
-	.string "My conditioning isn't the best...$"
+	.string "My conditioning isn't the best…$"
 
 Route25_Text_KelseyPostBattle::
 	.string "I wish my boyfriend was as good\n"
 	.string "as you.$"
 
 Route25_Text_ChadIntro::
-	.string "I had this feeling...\n"
+	.string "I had this feeling…\n"
 	.string "I knew I had to battle you!$"
 
 Route25_Text_ChadDefeat::
@@ -125,6 +125,6 @@ Route25_Text_MistyHighHopesAboutThisPlace::
 
 Route25_Text_AreYouHereAlone::
 	.string "Hello, are you here alone?\p"
-	.string "If you're out at CERULEAN's cape...\n"
+	.string "If you're out at CERULEAN's cape…\n"
 	.string "Well, it should be as a couple.$"
 
