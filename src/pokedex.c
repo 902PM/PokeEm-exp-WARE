@@ -3789,7 +3789,8 @@ void Task_LoadSizeScreen(u8 taskId)
         {
             u8 string[64];
 
-        StringExpandPlaceholders(string, gText_SizeComparedTo);
+            StringCopy(gStringVar1, GetSpeciesName(NationalPokedexNumToSpeciesForm(sPokedexListItem->dexNum)));
+            StringExpandPlaceholders(string, gText_SizeComparedTo);
             PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
             gMain.state++;
         }

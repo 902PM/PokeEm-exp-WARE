@@ -3730,7 +3730,7 @@ void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
 {
     u32 srcID = 1;
     u32 value = 0;
-    u8 nickname[POKEMON_NAME_BUFFER_SIZE];
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
     u16 hword;
 
     *dst = EOS;

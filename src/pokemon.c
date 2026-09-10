@@ -968,7 +968,7 @@ void SetBoxMonPerfectIVs(struct BoxPokemon *mon, u32 numPerfect)
 
 void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32 personality, struct OriginalTrainerId trainerId)
 {
-    u8 speciesName[POKEMON_NAME_BUFFER_SIZE];
+    u8 speciesName[POKEMON_NAME_LENGTH + 1];
     u32 value;
     u16 checksum;
     bool32 isShiny;

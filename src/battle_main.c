@@ -139,8 +139,8 @@ EWRAM_DATA u16 gBattle_WIN0V = 0;
 EWRAM_DATA u16 gBattle_WIN1H = 0;
 EWRAM_DATA u16 gBattle_WIN1V = 0;
 EWRAM_DATA u8 gDisplayedStringBattle[425] = {0}; // Increased in size to fit Juan's defeat text (SootopolisCity_Gym_1F_Text_JuanDefeat)
-EWRAM_DATA u8 gBattleTextBuff1[TEXT_BUFF_ARRAY_COUNT + 13] = {0};
-EWRAM_DATA u8 gBattleTextBuff2[TEXT_BUFF_ARRAY_COUNT + 13] = {0};
+EWRAM_DATA u8 gBattleTextBuff1[TEXT_BUFF_ARRAY_COUNT] = {0};
+EWRAM_DATA u8 gBattleTextBuff2[TEXT_BUFF_ARRAY_COUNT] = {0};
 EWRAM_DATA u8 gBattleTextBuff3[TEXT_BUFF_ARRAY_COUNT + 13] = {0};   // expanded for stupidly long z move names
 EWRAM_DATA u32 gBattleTypeFlags = 0;
 EWRAM_DATA u8 gBattleEnvironment = 0;
@@ -2363,7 +2363,7 @@ static void AskRecordBattle(void)
 
 static void TryCorrectShedinjaLanguage(struct Pokemon *mon)
 {
-    u8 nickname[POKEMON_NAME_BUFFER_SIZE];
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
     enum Language language = LANGUAGE_JAPANESE;
 
     if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA
@@ -2777,14 +2777,6 @@ static void BattleStartClearSetData(void)
     memset(&gSideTimers, 0, sizeof(gSideTimers));
     memset(&gBattleResults, 0, sizeof(gBattleResults));
     ClearSetBScriptingStruct();
-
-    // Battle text buffers must be initialized with EOS, not 0.
-    // 0 is a valid character code in Pokémon text encoding, so zero-filled
-    // unused buffers can be read past their end until EOS is found.
-    memset(gBattleTextBuff1, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
-    memset(gBattleTextBuff2, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
-    memset(gBattleTextBuff3, EOS, BATTLE_TEXT_BUFF_ARRAY_COUNT);
-    memset(gDisplayedStringBattle, EOS, sizeof(gDisplayedStringBattle));
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
