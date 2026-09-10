@@ -4,262 +4,261 @@
 @       このセクションがスキップされないようにする必要があります。
 Underwater_SealedChamber_Braille_GoUpHere:
 	brailleformat 4, 6, 26, 13, 7, 9
-	.braille "GO UP HERE.$"
+	.braille "ここで あがれ$"
 
 SealedChamber_OuterRoom_Braille_ABC:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "ABC$"
+	.braille "あいうえお$"
 
 SealedChamber_OuterRoom_Braille_GHI:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "GHI$"
+	.braille "さしすせそ$"
 
 SealedChamber_OuterRoom_Braille_MNO:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "MNO$"
+	.braille "なにぬねの$"
 
 SealedChamber_OuterRoom_Braille_TUV:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "TUV$"
+	.braille "まみむめも$"
 
 SealedChamber_OuterRoom_Braille_DEF:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "DEF$"
+	.braille "かきくけこ$"
 
 SealedChamber_OuterRoom_Braille_JKL:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "JKL$"
+	.braille "たちつてと$"
 
 SealedChamber_OuterRoom_Braille_PQRS:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "PQRS$"
+	.braille "はひふへほ$"
 
 SealedChamber_OuterRoom_Braille_Period:
 	brailleformat 9, 6, 19, 13, 12, 9
-	.braille ".$"
+	.braille "や ゆ よ$"
 
 SealedChamber_OuterRoom_Braille_WXYZ:
 	brailleformat 7, 6, 21, 13, 10, 9
-	.braille "WXYZ$"
+	.braille "らりるれろ$"
 
 SealedChamber_OuterRoom_Braille_Comma:
 	brailleformat 9, 6, 19, 13, 12, 9
-	.braille ",$"
+	.braille "わ を ん$"
 
 SealedChamber_OuterRoom_Braille_DigHere:
 	brailleformat 7, 4, 23, 15, 10, 7
-	.braille "DIG HERE.$"
+	.braille "ここで\nあなをほる$"
 
 SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth:
 	brailleformat 0, 0, 29, 19, 3, 3
-	.braille "FIRST COMES\n"
-	.braille "WAILORD.\n"
-	.braille "LAST COMES\n"
-	.braille "RELICANTH.$"
+	.braille "さいしょに ほえるおー\n"
+	.braille "さいごに じーらんす\n"
+	.braille "そして すべてが\n"
+	.braille "ひらかれる$"
 
 SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived:
 	brailleformat 2, 0, 26, 19, 5, 3
-	.braille "IN THIS\n"
-	.braille "CAVE WE\n"
-	.braille "HAVE\n"
-	.braille "LIVED.$"
+	.braille "わたしたちわ\n"
+	.braille "この あなで\n"
+	.braille "くらし せいかつ し\n"
+	.braille "そして いきて きた$"
 
 SealedChamber_InnerRoom_Braille_WeOweAllToThePokemon:
 	brailleformat 7, 2, 23, 17, 10, 5
-	.braille "WE OWE ALL\n"
-	.braille "TO THE\n"
-	.braille "POKEMON.$"
+	.braille "すべてわ\n"
+	.braille "ぽけもんの\n"
+	.braille "おかげだ$"
 
 SealedChamber_InnerRoom_Braille_ButWeSealedThePokemonAway:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "BUT, WE\n"
-	.braille "SEALED THE\n"
-	.braille "POKEMON\n"
-	.braille "AWAY.$"
+	.braille "だが\n"
+	.braille "わたしたちわ\n"
+	.braille "あの ぽけもんを\n"
+	.braille "とじこめた$"
 
 SealedChamber_InnerRoom_Braille_WeFearedIt:
 	brailleformat 5, 6, 25, 13, 8, 9
-	.braille "WE FEARED IT.$"
+	.braille "こわかったのだ$"
 
 SealedChamber_InnerRoom_Braille_ThoseWithCourageHope:
 	brailleformat 6, 0, 24, 19, 9, 3
-	.braille "THOSE WITH\n"
-	.braille "COURAGE,\n"
-	.braille "THOSE WITH\n"
-	.braille "HOPE.$"
+	.braille "ゆーき ある\n"
+	.braille "ものよ\n"
+	.braille "きぼーに\n"
+	.braille "みちた ものよ$"
 
 SealedChamber_InnerRoom_Braille_OpenDoorEternalPokemonWaits:
 	brailleformat 3, 2, 27, 17, 6, 5
-	.braille "OPEN A DOOR.\n"
-	.braille "AN ETERNAL\n"
-	.braille "POKEMON\n"
-	.braille "WAITS.$"
+	.braille "とびらを あけよ\n"
+	.braille "そこに えいえんの\n"
+	.braille "ぽけもんが いる$"
 
 DesertRuins_Braille_UseRockSmash:
 	brailleformat 1, 0, 27, 19, 4, 3
-	.braille "LEFT, LEFT,\n"
-	.braille "DOWN, DOWN.\n"
-	.braille "THEN, USE\n"
-	.braille "ROCK SMASH.$"
+	.braille "ひだり ひだり\n"
+	.braille "した した\n"
+	.braille "そこで\n"
+	.braille "いわくだきを つかえ$"
 
 IslandCave_Braille_RunLapAroundWall:
 	brailleformat 5, 0, 25, 19, 8, 3
-	.braille "STAY CLOSE\n"
-	.braille "TO THE WALL.\n"
-	.braille "RUN AROUND\n"
-	.braille "ONE LAP.$"
+	.braille "かべから\n"
+	.braille "はなれず\n"
+	.braille "ここを\n"
+	.braille "ひとまわりせよ$"
 
 AncientTomb_Braille_ShineInTheMiddle:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "THOSE WHO\n"
-	.braille "INHERIT OUR\n"
-	.braille "WILL, SHINE\n"
-	.braille "IN THE MIDDLE.$"
+	.braille "われわれの いしを\n"
+	.braille "つぎし ものよ\n"
+	.braille "まんなかで\n"
+	.braille "ひかりかがやけ$"
 
 @ FRLG
 Braille_Text_Up::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "UP$"
+	.braille "うえ$"
 
 Braille_Text_Down::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "DOWN$"
+	.braille "した$"
 
 Braille_Text_Right::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "RIGHT$"
+	.braille "みぎ$"
 
 Braille_Text_Left::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "LEFT$"
+	.braille "ひだり$"
 
 Braille_Text_Cut::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "CUT$"
+	.braille "いあいぎり$"
 
 Braille_Text_ABC::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "ABC$"
+	.braille "あいうえお$"
 
 Braille_Text_GHI::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "GHI$"
+	.braille "さしすせそ$"
 
 Braille_Text_MNO::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "MNO$"
+	.braille "なにぬねの$"
 
 Braille_Text_TUV::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "TUV$"
+	.braille "まみむめも$"
 
 Braille_Text_DEF::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "DEF$"
+	.braille "かきくけこ$"
 
 Braille_Text_JKL::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "JKL$"
+	.braille "たちつてと$"
 
 Braille_Text_PQRS::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "PQRS$"
+	.braille "はひふへほ$"
 
 Braille_Text_WXYZ::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "WXYZ$"
+	.braille "らりるれろ$"
 
 Braille_Text_Period::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille ".$"
+	.braille "や ゆ よ$"
 
 Braille_Text_Comma::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille ",$"
+	.braille "わ を ん$"
 
 Braille_Text_Everything::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "EVERYTHING$"
+	.braille "ものごと にわ$"
 
 Braille_Text_HasMeaning1::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "HAS MEANING$"
+	.braille "いみが ある$"
 
 Braille_Text_Existence::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "EXISTENCE$"
+	.braille "そんざい にわ$"
 
 Braille_Text_HasMeaning2::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "HAS MEANING$"
+	.braille "いみが ある$"
 
 Braille_Text_BeingAlive::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "BEING ALIVE$"
+	.braille "いきる ことにわ$"
 
 Braille_Text_HasMeaning3::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "HAS MEANING$"
+	.braille "いみが ある$"
 
 Braille_Text_HaveDreams::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "HAVE DREAMS$"
+	.braille "ゆめを もて$"
 
 Braille_Text_UsePower::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "USE POWER.$"
+	.braille "ちからを つかえ$"
 
 Braille_Text_LetTheTwo::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "LET THE TWO$"
+	.braille "ひかり かがやく$"
 
 Braille_Text_Glittering::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "GLITTERING$"
+	.braille "ふたつの いし$"
 
 Braille_Text_Stones::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "STONES$"
+	.braille "ひとつわ あかく$"
 
 Braille_Text_OneInRed::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "ONE IN RED$"
+	.braille "ひとつは あおく$"
 
 Braille_Text_OneInBlue::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "ONE IN BLUE$"
+	.braille "ふたつの ちからで$"
 
 Braille_Text_ConnectThe::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "CONNECT THE$"
+	.braille "かこが つながり$"
 
 Braille_Text_Past::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "PAST.$"
+	.braille "ひかり かがやく$"
 
 Braille_Text_TwoFriends::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "TWO FRIENDS$"
+	.braille "そして$"
 
 Braille_Text_Sharing::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "SHARING$"
+	.braille "あたらしい せかいが$"
 
 Braille_Text_PowerOpen::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "POWER OPEN$"
+	.braille "みえてくる$"
 
 Braille_Text_AWindowTo::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "A WINDOW TO$"
+	.braille "つぎの せかいを$"
 
 Braille_Text_ANewWorld::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "A NEW WORLD$"
+	.braille "つくるのわ あなただ$"
 
 Braille_Text_ThatGlows::
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "THAT GLOWS.$"
+	.braille "もー はじまっている$"
 
 Braille_Text_TheNext::
 	brailleformat 3, 0, 25, 19, 6, 3

@@ -328,85 +328,206 @@ void AsmFile::VerifyStringLength(int length)
 
 int AsmFile::ReadBraille(unsigned char* s)
 {
-    static std::map<char, unsigned char> encoding =
-    {
-        { 'A', BRAILLE_CHAR_A },
-        { 'B', BRAILLE_CHAR_B },
-        { 'C', BRAILLE_CHAR_C },
-        { 'D', BRAILLE_CHAR_D },
-        { 'E', BRAILLE_CHAR_E },
-        { 'F', BRAILLE_CHAR_F },
-        { 'G', BRAILLE_CHAR_G },
-        { 'H', BRAILLE_CHAR_H },
-        { 'I', BRAILLE_CHAR_I },
-        { 'J', BRAILLE_CHAR_J },
-        { 'K', BRAILLE_CHAR_K },
-        { 'L', BRAILLE_CHAR_L },
-        { 'M', BRAILLE_CHAR_M },
-        { 'N', BRAILLE_CHAR_N },
-        { 'O', BRAILLE_CHAR_O },
-        { 'P', BRAILLE_CHAR_P },
-        { 'Q', BRAILLE_CHAR_Q },
-        { 'R', BRAILLE_CHAR_R },
-        { 'S', BRAILLE_CHAR_S },
-        { 'T', BRAILLE_CHAR_T },
-        { 'U', BRAILLE_CHAR_U },
-        { 'V', BRAILLE_CHAR_V },
-        { 'W', BRAILLE_CHAR_W },
-        { 'X', BRAILLE_CHAR_X },
-        { 'Y', BRAILLE_CHAR_Y },
-        { 'Z', BRAILLE_CHAR_Z },
-        { 'a', BRAILLE_CHAR_A },
-        { 'b', BRAILLE_CHAR_B },
-        { 'c', BRAILLE_CHAR_C },
-        { 'd', BRAILLE_CHAR_D },
-        { 'e', BRAILLE_CHAR_E },
-        { 'f', BRAILLE_CHAR_F },
-        { 'g', BRAILLE_CHAR_G },
-        { 'h', BRAILLE_CHAR_H },
-        { 'i', BRAILLE_CHAR_I },
-        { 'j', BRAILLE_CHAR_J },
-        { 'k', BRAILLE_CHAR_K },
-        { 'l', BRAILLE_CHAR_L },
-        { 'm', BRAILLE_CHAR_M },
-        { 'n', BRAILLE_CHAR_N },
-        { 'o', BRAILLE_CHAR_O },
-        { 'p', BRAILLE_CHAR_P },
-        { 'q', BRAILLE_CHAR_Q },
-        { 'r', BRAILLE_CHAR_R },
-        { 's', BRAILLE_CHAR_S },
-        { 't', BRAILLE_CHAR_T },
-        { 'u', BRAILLE_CHAR_U },
-        { 'v', BRAILLE_CHAR_V },
-        { 'w', BRAILLE_CHAR_W },
-        { 'x', BRAILLE_CHAR_X },
-        { 'y', BRAILLE_CHAR_Y },
-        { 'z', BRAILLE_CHAR_Z },
-        { '0', BRAILLE_CHAR_0 },
-        { '1', BRAILLE_CHAR_1 },
-        { '2', BRAILLE_CHAR_2 },
-        { '3', BRAILLE_CHAR_3 },
-        { '4', BRAILLE_CHAR_4 },
-        { '5', BRAILLE_CHAR_5 },
-        { '6', BRAILLE_CHAR_6 },
-        { '7', BRAILLE_CHAR_7 },
-        { '8', BRAILLE_CHAR_8 },
-        { '9', BRAILLE_CHAR_9 },
-        { ' ', BRAILLE_CHAR_SPACE },
-        { ',', BRAILLE_CHAR_COMMA },
-        { '.', BRAILLE_CHAR_PERIOD },
-        { '?', BRAILLE_CHAR_QUESTION_MARK },
-        { '!', BRAILLE_CHAR_EXCL_MARK },
-        { ':', BRAILLE_CHAR_COLON },
-        { ';', BRAILLE_CHAR_SEMICOLON },
-        { '-', BRAILLE_CHAR_HYPHEN },
-        { '/', BRAILLE_CHAR_SLASH },
-        { '(', BRAILLE_CHAR_PAREN },
-        { ')', BRAILLE_CHAR_PAREN },
-        { '\'', BRAILLE_CHAR_APOSTROPHE },
-        { '#', BRAILLE_CHAR_NUMBER },
-        { '$', EOS },
-    };
+	static std::map<std::string, std::string> encoding =
+	{
+		{ "あ", "\x01" },
+		{ "い", "\x05" },
+		{ "う", "\x03" },
+		{ "え", "\x07" },
+		{ "お", "\x06" },
+		{ "か", "\x21" },
+		{ "き", "\x25" },
+		{ "く", "\x23" },
+		{ "け", "\x27" },
+		{ "こ", "\x26" },
+		{ "さ", "\x29" },
+		{ "し", "\x2D" },
+		{ "す", "\x2B" },
+		{ "せ", "\x2F" },
+		{ "そ", "\x2E" },
+		{ "た", "\x19" },
+		{ "ち", "\x1D" },
+		{ "つ", "\x1B" },
+		{ "て", "\x1F" },
+		{ "と", "\x1E" },
+		{ "な", "\x11" },
+		{ "に", "\x15" },
+		{ "ぬ", "\x13" },
+		{ "ね", "\x17" },
+		{ "の", "\x16" },
+		{ "は", "\x31" },
+		{ "ひ", "\x35" },
+		{ "ふ", "\x33" },
+		{ "へ", "\x37" },
+		{ "ほ", "\x36" },
+		{ "ま", "\x39" },
+		{ "み", "\x3D" },
+		{ "む", "\x3B" },
+		{ "め", "\x3F" },
+		{ "も", "\x3E" },
+		{ "や", "\x12" },
+		{ "ゆ", "\x32" },
+		{ "よ", "\x1A" },
+		{ "ら", "\x09" },
+		{ "り", "\x0D" },
+		{ "る", "\x0B" },
+		{ "れ", "\x0F" },
+		{ "ろ", "\x0E" },
+		{ "わ", "\x10" },
+		{ "ゐ", "\x14" },
+		{ "ゑ", "\x1C" },
+		{ "を", "\x18" },
+		{ "ん", "\x38" },
+		{ "ぁ", "\x01" },
+		{ "ぃ", "\x05" },
+		{ "ぅ", "\x03" },
+		{ "ぇ", "\x07" },
+		{ "ぉ", "\x06" },
+		{ "ゃ", "\x21" },
+		{ "ゅ", "\x23" },
+		{ "ょ", "\x26" },
+		{ "が", "\x21\x08" },
+		{ "ぎ", "\x25\x08" },
+		{ "ぐ", "\x23\x08" },
+		{ "げ", "\x27\x08" },
+		{ "ご", "\x26\x08" },
+		{ "ざ", "\x29\x08" },
+		{ "じ", "\x2D\x08" },
+		{ "ず", "\x2B\x08" },
+		{ "ぜ", "\x2F\x08" },
+		{ "ぞ", "\x2E\x08" },
+		{ "だ", "\x19\x08" },
+		{ "ぢ", "\x1D\x08" },
+		{ "づ", "\x1B\x08" },
+		{ "で", "\x1F\x08" },
+		{ "ど", "\x1E\x08" },
+		{ "ば", "\x31\x08" },
+		{ "び", "\x35\x08" },
+		{ "ぶ", "\x33\x08" },
+		{ "べ", "\x37\x08" },
+		{ "ぼ", "\x36\x08" },
+		{ "ぱ", "\x31\x22" },
+		{ "ぴ", "\x35\x22" },
+		{ "ぷ", "\x33\x22" },
+		{ "ぺ", "\x37\x22" },
+		{ "ぽ", "\x36\x22" },
+		{ "っ", "\x04" },
+		{ "ー", "\x0C" },
+
+		{ "きゃ", "\x02\x21" },
+		{ "きゅ", "\x02\x23" },
+		{ "きょ", "\x02\x26" },
+		{ "ぎゃ", "\x0A\x21" },
+		{ "ぎゅ", "\x0A\x23" },
+		{ "ぎょ", "\x0A\x26" },
+		{ "しゃ", "\x02\x29" },
+		{ "しゅ", "\x02\x2B" },
+		{ "しょ", "\x02\x2E" },
+		{ "じゃ", "\x0A\x29" },
+		{ "じゅ", "\x0A\x2B" },
+		{ "じょ", "\x0A\x2E" },
+		{ "ちゃ", "\x02\x19" },
+		{ "ちゅ", "\x02\x1B" },
+		{ "ちょ", "\x02\x1E" },
+		{ "ぢゃ", "\x0A\x19" },
+		{ "ぢゅ", "\x0A\x1B" },
+		{ "ぢょ", "\x0A\x1E" },
+		{ "にゃ", "\x02\x11" },
+		{ "にゅ", "\x02\x13" },
+		{ "にょ", "\x02\x16" },
+		{ "ひゃ", "\x02\x31" },
+		{ "ひゅ", "\x02\x33" },
+		{ "ひょ", "\x02\x36" },
+		{ "びゃ", "\x0A\x31" },
+		{ "びゅ", "\x0A\x33" },
+		{ "びょ", "\x0A\x36" },
+		{ "ぴゃ", "\x22\x31" },
+		{ "ぴゅ", "\x22\x33" },
+		{ "ぴょ", "\x22\x36" },
+		{ "みゃ", "\x02\x39" },
+		{ "みゅ", "\x02\x3B" },
+		{ "みょ", "\x02\x3E" },
+		{ "りゃ", "\x02\x09" },
+		{ "りゅ", "\x02\x0B" },
+		{ "りょ", "\x02\x0E" },
+
+		{ "A", { BRAILLE_CHAR_A } },
+		{ "B", { BRAILLE_CHAR_B } },
+		{ "C", { BRAILLE_CHAR_C } },
+		{ "D", { BRAILLE_CHAR_D } },
+		{ "E", { BRAILLE_CHAR_E } },
+		{ "F", { BRAILLE_CHAR_F } },
+		{ "G", { BRAILLE_CHAR_G } },
+		{ "H", { BRAILLE_CHAR_H } },
+		{ "I", { BRAILLE_CHAR_I } },
+		{ "J", { BRAILLE_CHAR_J } },
+		{ "K", { BRAILLE_CHAR_K } },
+		{ "L", { BRAILLE_CHAR_L } },
+		{ "M", { BRAILLE_CHAR_M } },
+		{ "N", { BRAILLE_CHAR_N } },
+		{ "O", { BRAILLE_CHAR_O } },
+		{ "P", { BRAILLE_CHAR_P } },
+		{ "Q", { BRAILLE_CHAR_Q } },
+		{ "R", { BRAILLE_CHAR_R } },
+		{ "S", { BRAILLE_CHAR_S } },
+		{ "T", { BRAILLE_CHAR_T } },
+		{ "U", { BRAILLE_CHAR_U } },
+		{ "V", { BRAILLE_CHAR_V } },
+		{ "W", { BRAILLE_CHAR_W } },
+		{ "X", { BRAILLE_CHAR_X } },
+		{ "Y", { BRAILLE_CHAR_Y } },
+		{ "Z", { BRAILLE_CHAR_Z } },
+		{ "a", { BRAILLE_CHAR_A } },
+		{ "b", { BRAILLE_CHAR_B } },
+		{ "c", { BRAILLE_CHAR_C } },
+		{ "d", { BRAILLE_CHAR_D } },
+		{ "e", { BRAILLE_CHAR_E } },
+		{ "f", { BRAILLE_CHAR_F } },
+		{ "g", { BRAILLE_CHAR_G } },
+		{ "h", { BRAILLE_CHAR_H } },
+		{ "i", { BRAILLE_CHAR_I } },
+		{ "j", { BRAILLE_CHAR_J } },
+		{ "k", { BRAILLE_CHAR_K } },
+		{ "l", { BRAILLE_CHAR_L } },
+		{ "m", { BRAILLE_CHAR_M } },
+		{ "n", { BRAILLE_CHAR_N } },
+		{ "o", { BRAILLE_CHAR_O } },
+		{ "p", { BRAILLE_CHAR_P } },
+		{ "q", { BRAILLE_CHAR_Q } },
+		{ "r", { BRAILLE_CHAR_R } },
+		{ "s", { BRAILLE_CHAR_S } },
+		{ "t", { BRAILLE_CHAR_T } },
+		{ "u", { BRAILLE_CHAR_U } },
+		{ "v", { BRAILLE_CHAR_V } },
+		{ "w", { BRAILLE_CHAR_W } },
+		{ "x", { BRAILLE_CHAR_X } },
+		{ "y", { BRAILLE_CHAR_Y } },
+		{ "z", { BRAILLE_CHAR_Z } },
+		{ "0", { BRAILLE_CHAR_0 } },
+		{ "1", { BRAILLE_CHAR_1 } },
+		{ "2", { BRAILLE_CHAR_2 } },
+		{ "3", { BRAILLE_CHAR_3 } },
+		{ "4", { BRAILLE_CHAR_4 } },
+		{ "5", { BRAILLE_CHAR_5 } },
+		{ "6", { BRAILLE_CHAR_6 } },
+		{ "7", { BRAILLE_CHAR_7 } },
+		{ "8", { BRAILLE_CHAR_8 } },
+		{ "9", { BRAILLE_CHAR_9 } },
+		{ " ", { BRAILLE_CHAR_SPACE } },
+		{ ",", { BRAILLE_CHAR_COMMA } },
+		{ ".", { BRAILLE_CHAR_PERIOD } },
+		{ "?", { BRAILLE_CHAR_QUESTION_MARK } },
+		{ "!", { BRAILLE_CHAR_EXCL_MARK } },
+		{ ":", { BRAILLE_CHAR_COLON } },
+		{ ";", { BRAILLE_CHAR_SEMICOLON } },
+		{ "-", { BRAILLE_CHAR_HYPHEN } },
+		{ "/", { BRAILLE_CHAR_SLASH } },
+		{ "(", { BRAILLE_CHAR_PAREN } },
+		{ ")", { BRAILLE_CHAR_PAREN } },
+		{ "'", { BRAILLE_CHAR_APOSTROPHE } },
+		{ "#", { BRAILLE_CHAR_NUMBER } },
+		{ "$", std::string(1, EOS) },
+	};
 
     SkipWhitespace();
 
@@ -426,36 +547,62 @@ int AsmFile::ReadBraille(unsigned char* s)
             s[length++] = CHAR_NEWLINE;
             m_pos += 2;
         }
-        else
-        {
-            char c = m_buffer[m_pos];
+		else
+		{
+            // 点字日本対応させるための修正。
+			std::string matched;
+			const std::string *output = nullptr;
 
-            if (encoding.count(c) == 0)
-            {
-                if (IsAsciiPrintable(c))
-                    RaiseError("character '%c' not valid in braille string", m_buffer[m_pos]);
-                else
-                    RaiseError("character '\\x%02X' not valid in braille string", m_buffer[m_pos]);
-            }
+			for (const auto& entry : encoding)
+			{
+				size_t entryLength = entry.first.length();
 
-            if (!inNumber && c >= '0' && c <= '9' )
-            {
-                // Output number indicator at start of a number
-                inNumber = true;
-                VerifyStringLength(length);
-                s[length++] = BRAILLE_CHAR_NUMBER;
-            }
-            else if (inNumber && encoding[c] == BRAILLE_CHAR_SPACE)
-            {
-                // Number ends at a space.
-                // Non-number characters encountered before a space will simply be output as is.
-                inNumber = false;
-            }
+				if (entryLength <= static_cast<size_t>(m_size - m_pos)
+				 && entryLength > matched.length()
+				 && entry.first.compare(0, entryLength, &m_buffer[m_pos], entryLength) == 0)
+				{
+					matched = entry.first;
+					output = &entry.second;
+				}
+			}
 
-            VerifyStringLength(length);
-            s[length++] = encoding[c];
-            m_pos++;
-        }
+			if (output == nullptr)
+			{
+				char c = m_buffer[m_pos];
+
+				if (IsAsciiPrintable(c))
+					RaiseError("character '%c' not valid in braille string", c);
+				else
+					RaiseError("character '\\x%02X' not valid in braille string", c);
+			}
+
+			if (!inNumber
+			 && matched.length() == 1
+			 && matched[0] >= '0'
+			 && matched[0] <= '9')
+			{
+				// Output number indicator at start of a number
+				inNumber = true;
+				VerifyStringLength(length);
+				s[length++] = BRAILLE_CHAR_NUMBER;
+			}
+			else if (inNumber
+				 && *output == std::string(1, BRAILLE_CHAR_SPACE))
+			{
+				// Number ends at a space.
+				// Non-number characters encountered before a space will simply be output as is.
+				inNumber = false;
+			}
+
+			for (unsigned char braille : *output)
+			{
+				VerifyStringLength(length);
+				s[length++] = braille;
+			}
+
+			m_pos += matched.length();
+		}
+
     }
 
     m_pos++; // Go past the right quote.
