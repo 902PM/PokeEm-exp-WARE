@@ -1750,7 +1750,10 @@ static void MoveSelectionDisplayPPNumber(enum BattlerId battler)
 
     SetPPNumbersPaletteInMoveSelection(battler);
     moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-    txtPtr = ConvertIntToDecimalStringN(gDisplayedStringBattle, moveInfo->currentPP[gMoveSelectionCursor[battler]], STR_CONV_MODE_RIGHT_ALIGN, 2);
+    txtPtr = gDisplayedStringBattle;
+    *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;
+    *(txtPtr)++ = EXT_CTRL_CODE_ENG;
+    txtPtr = ConvertIntToDecimalStringN(txtPtr, moveInfo->currentPP[gMoveSelectionCursor[battler]], STR_CONV_MODE_RIGHT_ALIGN, 2);
     *(txtPtr)++ = CHAR_SLASH;
     ConvertIntToDecimalStringN(txtPtr, moveInfo->maxPP[gMoveSelectionCursor[battler]], STR_CONV_MODE_RIGHT_ALIGN, 2);
 
@@ -1829,9 +1832,9 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     u8 cat_desc[] = _("{JPN}ぶんるい");
     u8 pwr_desc[] = _("{JPN}いりょく");
     u8 acc_desc[] = _("{JPN}めいちゅう");
-    u8 cat_start[] = _("{CLEAR_TO 3}");
-    u8 pwr_start[] = _("{CLEAR_TO 56}");
-    u8 acc_start[] = _("{CLEAR_TO 108}");
+    u8 cat_start[] = _("{FONT_NARROW}{CLEAR_TO 3}"); // 説明文は全て一括で同じ場所に入っているので、FONT指定可能。
+    u8 pwr_start[] = _("{CLEAR_TO 45}");
+    u8 acc_start[] = _("{CLEAR_TO 89}");
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
     if (pwr < 2)
@@ -1856,7 +1859,7 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
 
     if (gCategoryIconSpriteId == 0xFF)
-        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
+        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 46, 64, 1);
 
     StartSpriteAnim(&gSprites[gCategoryIconSpriteId], cat);
 

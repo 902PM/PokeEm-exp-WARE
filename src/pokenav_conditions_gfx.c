@@ -30,7 +30,7 @@ static const u32 sConditionGraphData_Gfx[] = INCGFX_U32("graphics/pokenav/condit
 static const u32 sConditionGraphData_Tilemap[] = INCGFX_U32("graphics/pokenav/condition/graph_data.bin", ".smolTM");
 static const u16 sMonMarkings_Pal[] = INCGFX_U16("graphics/pokenav/condition/mon_markings.pal", ".gbapal");
 
-static const u8 gText_Number2[] = _("No. ");
+static const u8 gText_Number2[] = _("ばんめ");
 
 static const struct BgTemplate sMenuBgTemplates[3] =
 {
@@ -592,10 +592,9 @@ static bool32 UpdateConditionGraphMenuWindows(u8 mode, u16 bufferIndex, bool8 wi
             text[i++] = TEXT_COLOR_BLUE;
             text[i++] = TEXT_COLOR_LIGHT_BLUE;
             text[i++] = TEXT_COLOR_TRANSPARENT;
-            StringCopy(&text[i], gText_Number2);
-            AddTextPrinterParameterized(menu->listIndexWindowId, FONT_NORMAL, text, 4, 1, 0, NULL);
             ConvertIntToDecimalStringN(&text[i], GetConditionMonDataBuffer(), STR_CONV_MODE_RIGHT_ALIGN, 4);
-            AddTextPrinterParameterized(menu->listIndexWindowId, FONT_NORMAL, text, 28, 1, 0, NULL);
+            StringAppend(&text[i], gText_Number2);
+            AddTextPrinterParameterized(menu->listIndexWindowId, FONT_NORMAL, text, 0, 1, 0, NULL);
         }
         break;
     case 3:

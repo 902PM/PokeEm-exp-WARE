@@ -39,8 +39,8 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
             24, 11, 40, 13, // Nickname
             32, 20, 32,  8, // Level
             64, 20,  8,  8, // Gender
-            38, 37, 24,  8, // HP
-            53, 37, 24,  8, // Max HP
+            16, 36, 24,  8, // HP
+            40, 36, 24,  8, // Max HP
             24, 35, 48,  3  // HP bar
         },
         12, 34, 64, 16      // Description text (e.g. NO USE)
@@ -50,11 +50,11 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
         BlitBitmapToPartyWindow_RightColumn,
         {
              // See above comment
-             22,  3, 40, 13, // Nickname
-             30, 12, 32,  8, // Level
-             62, 12,  8,  8, // Gender
-            102, 12, 24,  8, // HP
-            117, 12, 24,  8, // Max HP
+             30,  3, 40, 13, // Nickname
+             30, 11, 32,  8, // Level
+             62, 11,  8,  8, // Gender
+             78, 11, 24,  8, // HP
+            102, 11, 24,  8, // Max HP
              88, 10, 48,  3  // HP bar
         },
         77, 4, 64, 16        // Description text

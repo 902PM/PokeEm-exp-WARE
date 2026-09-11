@@ -7054,19 +7054,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("{JPN}じゅうでん"),
         .description = COMPOUND_STRING(
-    #if B_CHARGE >= GEN_9
         #if B_CHARGE_SPDEF_RAISE >= GEN_5
             "{JPN}つぎに だす でんきの いりょくを\nあげる じぶんの とくぼうも あがる"),
         #else
             "{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
         #endif
-    #else
-        #if B_CHARGE_SPDEF_RAISE >= GEN_5
-            "{JPN}つぎに だす でんきの いりょくを\nあげる じぶんの とくぼうも あがる"),
-        #else
-            "{JPN}つぎのターンに だす でんきタイプの\nわざの いりょくを あげる"),
-        #endif
-    #endif
         .effect = EFFECT_CHARGE,
         .power = 0,
         .type = TYPE_ELECTRIC,

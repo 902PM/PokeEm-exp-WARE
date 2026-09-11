@@ -284,7 +284,7 @@ static const struct ListMenuTemplate sItemListMenu =
     .lettersSpacing = 0,
     .itemVerticalPadding = 0,
     .scrollMultiple = LIST_NO_MULTIPLE_SCROLL,
-    .fontId = FONT_NARROW,
+    .fontId = FONT_NORMAL,
     .cursorKind = CURSOR_BLACK_ARROW
 };
 
@@ -945,7 +945,7 @@ static void GetItemNameFromPocket(u8 *dest, enum Item itemId)
     {
     case POCKET_TM_HM:
         end = StringCopy(gStringVar2, GetMoveName(ItemIdToBattleMoveId(itemId)));
-        PrependFontIdToFit(gStringVar2, end, FONT_NARROW, NUM_TECHNICAL_MACHINES >= 100 ? 60 : 65);
+        PrependFontIdToFit(gStringVar2, end, FONT_NORMAL, NUM_TECHNICAL_MACHINES >= 100 ? 60 : 65);
         if (GetItemTMHMIndex(itemId) > NUM_TECHNICAL_MACHINES)
         {
             // Get HM number
@@ -962,12 +962,12 @@ static void GetItemNameFromPocket(u8 *dest, enum Item itemId)
     case POCKET_BERRIES:
         ConvertIntToDecimalStringN(gStringVar1, ItemIdToBerryType(itemId), STR_CONV_MODE_LEADING_ZEROS, 2);
         end = CopyItemName(itemId, gStringVar2);
-        PrependFontIdToFit(gStringVar2, end, FONT_NARROW, 61);
+        PrependFontIdToFit(gStringVar2, end, FONT_NORMAL, 61);
         StringExpandPlaceholders(dest, gText_NumberItem_TMBerry);
         break;
     default:
         end = CopyItemName(itemId, dest);
-        PrependFontIdToFit(dest, end, FONT_NARROW, 88);
+        PrependFontIdToFit(dest, end, FONT_NORMAL, 88);
         break;
     }
 }
@@ -1015,11 +1015,11 @@ static void BagMenu_ItemPrintCallback(u8 windowId, u32 itemIndex, u8 y)
 
         if (gBagPosition.pocket != POCKET_KEY_ITEMS && GetItemImportance(itemSlot.itemId) == FALSE)
         {
-            // Print item quantity
+            // アイテムの数(3桁)を表示
             ConvertIntToDecimalStringN(gStringVar1, itemSlot.quantity, STR_CONV_MODE_RIGHT_ALIGN, MAX_ITEM_DIGITS);
             StringExpandPlaceholders(gStringVar4, gText_xVar1);
-            offset = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 119);
-            BagMenu_Print(windowId, FONT_NARROW, gStringVar4, offset, y, 0, 0, TEXT_SKIP_DRAW, COLORID_NORMAL);
+            offset = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 119);
+            BagMenu_Print(windowId, FONT_NORMAL, gStringVar4, offset, y, 0, 0, TEXT_SKIP_DRAW, COLORID_NORMAL);
         }
         else
         {
@@ -1297,7 +1297,7 @@ static void Task_BagMenu_HandleInput(u8 taskId)
             {
                 if ((gBagMenu->numItemStacks[gBagPosition.pocket] - 1) <= 1) //can't sort with 0 or 1 item in bag
                 {
-static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません！");
+static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません!");
                     PlaySE(SE_FAILURE);
                     DisplayItemMessage(taskId, 1, sText_NothingToSort, HandleErrorMessage);
                     break;
@@ -1759,13 +1759,13 @@ static void OpenContextMenu(u8 taskId)
 
 static void PrintContextMenuItems(u8 windowId)
 {
-    PrintMenuActionTexts(windowId, FONT_NARROW, 8, 1, 0, 16, gBagMenu->contextMenuNumItems, sItemMenuActions, gBagMenu->contextMenuItemsPtr);
+    PrintMenuActionTexts(windowId, FONT_NORMAL, 8, 1, 0, 16, gBagMenu->contextMenuNumItems, sItemMenuActions, gBagMenu->contextMenuItemsPtr);
     InitMenuInUpperLeftCornerNormal(windowId, gBagMenu->contextMenuNumItems, 0);
 }
 
 static void PrintContextMenuItemGrid(u8 windowId, u8 columns, u8 rows)
 {
-    PrintMenuActionGrid(windowId, FONT_NARROW, 8, 1, 56, columns, rows, sItemMenuActions, gBagMenu->contextMenuItemsPtr);
+    PrintMenuActionGrid(windowId, FONT_NORMAL, 8, 1, 56, columns, rows, sItemMenuActions, gBagMenu->contextMenuItemsPtr);
     InitMenuActionGrid(windowId, 56, columns, rows, 0);
 }
 

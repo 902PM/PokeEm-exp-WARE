@@ -259,10 +259,10 @@ static const u8 sText_WasMade[] = _("{JPN} ができた!");
 static const u8 *const sBlenderOpponentsNames[] =
 {
     [BLENDER_MISTER] = COMPOUND_STRING("{JPN}おじさん"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("{JPN} おとこのこ"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("{JPN}おとこのこ"),
     [BLENDER_LASSIE] = COMPOUND_STRING("{JPN}おんなのこ"),
     [BLENDER_MASTER] = COMPOUND_STRING("{JPN}めいじん"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("{JPN} おにいさん"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("{JPN}おにいさん"),
     [BLENDER_MISS]   = COMPOUND_STRING("{JPN}おばさん"),
 };
 
@@ -274,7 +274,7 @@ static const u8 sText_HasNoBerriesToPut[] = _("{JPN}は きのみブレンダー
 static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("{JPN}は ポロックケースが\nいっぱいの ようです\p");
 static const u8 sText_BlendingResults[] = _("{JPN}まぜたけっか");
 static const u8 sText_SpaceBerry[] = _("{JPN}のみ");
-static const u8 sText_Time[] = _("{JPN}じかん:");
+static const u8 sText_Time[] = _("{JPN}じかん");
 static const u8 sText_Min[] = _("{JPN}ふん");
 static const u8 sText_Sec[] = _("{JPN}びょう");
 static const u8 sText_MaximumSpeed[] = _("{JPN}さいこうそくど");
@@ -1220,8 +1220,7 @@ static void InitLocalPlayers(u8 opponentsNum)
     case 1:
         gInGameOpponentsNo = 1;
         sBerryBlender->numPlayers = 2;
-    StringCopy(gLinkPlayers[0].name, COMPOUND_STRING("{JPN}"));
-    StringAppend(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
+    StringCopy(gLinkPlayers[0].name, gSaveBlock2Ptr->playerName);
 
         if (!FlagGet(FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER))
             StringCopy(gLinkPlayers[1].name, sBlenderOpponentsNames[BLENDER_MASTER]);
@@ -3494,7 +3493,8 @@ static bool8 PrintBlendingResults(void)
                 Blender_AddTextPrinter(WIN_RESULTS, sBerryBlender->stringVar, 0x54, yPos, TEXT_SKIP_DRAW, 3);
             }
 
-            Blender_AddTextPrinter(WIN_RESULTS, sText_MaximumSpeed, 0, 0x51, TEXT_SKIP_DRAW, 3);
+            Blender_AddTextPrinter(WIN_RESULTS, sText_MaximumSpeed, 8, 0x51, TEXT_SKIP_DRAW, 3);
+
             ConvertIntToDecimalStringN(sBerryBlender->stringVar, sBerryBlender->maxRPM / 100, STR_CONV_MODE_RIGHT_ALIGN, 3);
             StringAppend(sBerryBlender->stringVar, sText_Dot);
 
@@ -3502,21 +3502,19 @@ static bool8 PrintBlendingResults(void)
             StringAppend(sBerryBlender->stringVar, text);
             StringAppend(sBerryBlender->stringVar, sText_RPM);
 
-            xPos = GetStringRightAlignXOffset(FONT_NORMAL, sBerryBlender->stringVar, 0xA8);
-            Blender_AddTextPrinter(WIN_RESULTS, sBerryBlender->stringVar, xPos, 0x51, TEXT_SKIP_DRAW, 3);
-            Blender_AddTextPrinter(WIN_RESULTS, sText_Time, 0, 0x61, TEXT_SKIP_DRAW, 3);
+            Blender_AddTextPrinter(WIN_RESULTS, sBerryBlender->stringVar, 0x4A, 0x51, TEXT_SKIP_DRAW, 3);
+
+            Blender_AddTextPrinter(WIN_RESULTS, sText_Time, 8, 0x61, TEXT_SKIP_DRAW, 3);
 
             seconds = (sBerryBlender->gameFrameTime / 60) % 60;
             minutes = (sBerryBlender->gameFrameTime / (60 * 60));
-
             ConvertIntToDecimalStringN(sBerryBlender->stringVar, minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
             txtPtr = StringAppend(sBerryBlender->stringVar, sText_Min);
 
             ConvertIntToDecimalStringN(txtPtr, seconds, STR_CONV_MODE_LEADING_ZEROS, 2);
             StringAppend(sBerryBlender->stringVar, sText_Sec);
 
-            xPos = GetStringRightAlignXOffset(FONT_NORMAL, sBerryBlender->stringVar, 0xA8);
-            Blender_AddTextPrinter(WIN_RESULTS, sBerryBlender->stringVar, xPos, 0x61, TEXT_SKIP_DRAW, 3);
+            Blender_AddTextPrinter(WIN_RESULTS, sBerryBlender->stringVar, 0x4A, 0x61, TEXT_SKIP_DRAW, 3);
 
             sBerryBlender->framesToWait = 0;
             sBerryBlender->mainState++;

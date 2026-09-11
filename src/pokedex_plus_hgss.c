@@ -58,14 +58,14 @@
 static const u8 sText_TenDashes[] = _("-----");
 ALIGNED(4) static const u8 sExpandedPlaceholder_PokedexDescription[] = _("");
 
-static const u8 sText_Stats_Buttons[] = _("{JPN}{A_BUTTON}きりかえ   {DPAD_UPDOWN}わざ");
-static const u8 sText_Stats_Buttons_Decapped[] = _("{JPN}{A_BUTTON}きりかえ   {DPAD_UPDOWN}わざ");
-static const u8 sText_Stats_HP[] = _("{JPN}HP");
-static const u8 sText_Stats_Attack[] = _("{JPN}こうげき");
-static const u8 sText_Stats_Defense[] = _("{JPN}ぼうぎょ");
-static const u8 sText_Stats_Speed[] = _("{JPN}すばやさ");
-static const u8 sText_Stats_SpAttack[] = _("{JPN}とくこう");
-static const u8 sText_Stats_SpDefense[] = _("{JPN}とくぼう");
+static const u8 sText_Stats_Buttons[] = _("{JPN}{A_BUTTON}きりかえ  {DPAD_UPDOWN}わざ");
+static const u8 sText_Stats_Buttons_Decapped[] = _("{JPN}{A_BUTTON}きりかえ  {DPAD_UPDOWN}わざ");
+static const u8 sText_Stats_HP[] = _("{ENG}HP");
+static const u8 sText_Stats_Attack[] = _("{ENG}ATK");
+static const u8 sText_Stats_Defense[] = _("{ENG}DEF");
+static const u8 sText_Stats_Speed[] = _("{ENG}SPD");
+static const u8 sText_Stats_SpAttack[] = _("{ENG}SpA");
+static const u8 sText_Stats_SpDefense[] = _("{ENG}SpD");
 static const u8 sText_Stats_EV_Plus1[] = _("{UP_ARROW_2}");
 static const u8 sText_Stats_EV_Plus2[] = _("{UP_ARROW_2}{UP_ARROW_2}");
 static const u8 sText_Stats_EV_Plus3[] = _("{UP_ARROW_2}{UP_ARROW_2}{UP_ARROW_2}");
@@ -80,46 +80,46 @@ static const u8 sText_Stats_Gender_75[] = _("♀ 3/1 ♂");     //_("♀ 75 / 25
 static const u8 sText_Stats_Gender_87_5[] = _("♀ 7/1 ♂");
 static const u8 sText_Stats_Gender_100[] = _("♀");
 static const u8 sText_Stats_CatchRate[] = _("{JPN}ほかくりつ:");
-static const u8 sText_Stats_CatchRate_Legend[] = _("{JPN}3ー10");
-static const u8 sText_Stats_CatchRate_VeryHard[] = _("{JPN}15ー70");
-static const u8 sText_Stats_CatchRate_Difficult[] = _("{JPN}75ー100");
-static const u8 sText_Stats_CatchRate_Medium[] = _("{JPN}120ー150");
-static const u8 sText_Stats_CatchRate_Relaxed[] = _("{JPN}155ー200");
-static const u8 sText_Stats_CatchRate_Easy[] = _("{JPN}205ー255");
+static const u8 sText_Stats_CatchRate_Legend[] = _("{ENG}3ー10");
+static const u8 sText_Stats_CatchRate_VeryHard[] = _("{ENG}15ー70");
+static const u8 sText_Stats_CatchRate_Difficult[] = _("{ENG}75ー100");
+static const u8 sText_Stats_CatchRate_Medium[] = _("{ENG}120ー150");
+static const u8 sText_Stats_CatchRate_Relaxed[] = _("{ENG}155ー200");
+static const u8 sText_Stats_CatchRate_Easy[] = _("{ENG}205ー255");
 static const u8 sText_Stats_ExpYield[] = _("{JPN}きそけいけんち:");
 static const u8 sText_Stats_EggCycles[] = _("{JPN}ふかほすう:");
 static const u8 sText_Stats_EggCycles_VeryFast[] = _("{ENG}{EMOJI_BOLT}{EMOJI_DIZZYEGG}");
 static const u8 sText_Stats_EggCycles_Fast[] = _("{ENG}{EMOJI_DIZZYEGG}");
 static const u8 sText_Stats_EggCycles_Normal[] = _("{ENG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}");
 static const u8 sText_Stats_EggCycles_Slow[] = _("{ENG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}");
-static const u8 sText_Stats_Growthrate[] = _("{JPN}Expタイプ:");
+static const u8 sText_Stats_Growthrate[] = _("{ENG}Exp{JPN}タイプ:");
 static const u8 sText_Stats_Friendship[] = _("{JPN}しょきなつきど:");
 static const u8 sText_Stats_Friendship_BigAnger[] = _("{ENG}{EMOJI_BIGANGER}");
 static const u8 sText_Stats_Friendship_Neutral[] = _("{ENG}{EMOJI_NEUTRAL}");
 static const u8 sText_Stats_Friendship_Happy[] = _("{ENG}{EMOJI_HAPPY}");
 static const u8 sText_Stats_Friendship_BigSmile[] = _("{ENG}{EMOJI_BIGSMILE}");
-static const u8 sText_Stats_MEDIUM_FAST[] = _("{JPN}100まん");
-static const u8 sText_Stats_ERRATIC[] = _("{JPN}60まん");
-static const u8 sText_Stats_FLUCTUATING[] = _("{JPN}164まん");
-static const u8 sText_Stats_MEDIUM_SLOW[] = _("{JPN}105まん");
-static const u8 sText_Stats_FAST[] = _("{JPN}80まん");
-static const u8 sText_Stats_SLOW[] = _("{JPN}125まん");
-static const u8 sText_Stats_ContestHeart[] = _("H");
-static const u8 sText_Stats_Minus[] = _("?");
+static const u8 sText_Stats_MEDIUM_FAST[] = _("100{JPN}まん");
+static const u8 sText_Stats_ERRATIC[] = _("60{JPN}まん");
+static const u8 sText_Stats_FLUCTUATING[] = _("164{JPN}まん");
+static const u8 sText_Stats_MEDIUM_SLOW[] = _("105{JPN}まん");
+static const u8 sText_Stats_FAST[] = _("80{JPN}まん");
+static const u8 sText_Stats_SLOW[] = _("125{JPN}まん");
+static const u8 sText_Stats_ContestHeart[] = _("{ENG}H");
+static const u8 sText_Stats_Minus[] = _("{ENG}ー");
 static const u8 sText_Stats_eggGroup[] = _("{JPN}タマゴグループ1:");
 static const u8 sText_Stats_eggGroup_Groups[] = _("{STR_VAR_1}/{STR_VAR_2}");
 static const u8 sText_Stats_eggGroup_MONSTER[] = _("{JPN}かいじゅう");
-static const u8 sText_Stats_eggGroup_WATER_1[] = _("{JPN}すいちゅう {CIRCLE_1}");
+static const u8 sText_Stats_eggGroup_WATER_1[] = _("{JPN}すいちゅう{ENG}1");
 static const u8 sText_Stats_eggGroup_BUG[] = _("{JPN}むし");
 static const u8 sText_Stats_eggGroup_FLYING[] = _("{JPN}ひこう");
 static const u8 sText_Stats_eggGroup_FIELD[] = _("{JPN}りくじょう");
 static const u8 sText_Stats_eggGroup_FAIRY[] = _("{JPN}ようせい");
 static const u8 sText_Stats_eggGroup_GRASS[] = _("{JPN}しょくぶつ");
 static const u8 sText_Stats_eggGroup_HUMAN_LIKE[] = _("{JPN}ひとがた");
-static const u8 sText_Stats_eggGroup_WATER_3[] = _("{JPN}すいちゅう {CIRCLE_3}");
+static const u8 sText_Stats_eggGroup_WATER_3[] = _("{JPN}すいちゅう{ENG}3");
 static const u8 sText_Stats_eggGroup_MINERAL[] = _("{JPN}こうぶつ");
 static const u8 sText_Stats_eggGroup_AMORPHOUS[] = _("{JPN}ふていけい");
-static const u8 sText_Stats_eggGroup_WATER_2[] = _("{JPN}すいちゅう {CIRCLE_2}");
+static const u8 sText_Stats_eggGroup_WATER_2[] = _("{JPN}すいちゅう{ENG}2");
 static const u8 sText_Stats_eggGroup_DITTO[] = _("{JPN}メタモン");
 static const u8 sText_Stats_eggGroup_DRAGON[] = _("{JPN}ドラゴン");
 static const u8 sText_Stats_eggGroup_NO_EGGS_DISCOVERED[] = _("???");
@@ -129,8 +129,8 @@ static const u8 sText_Dex_OWN[] = _("{JPN}つかまえた");
 
 static const u8 sText_EVO_Buttons[] = _("{JPN}{DPAD_UPDOWN}しんか  {A_BUTTON}みる");
 static const u8 sText_EVO_Buttons_Decapped[] = _("{JPN}{DPAD_UPDOWN}しんか  {A_BUTTON}みる");
-static const u8 sText_EVO_Buttons_PE[] = _("{JPN}{DPAD_UPDOWN}しんか  {A_BUTTON}みる  {START_BUTTON}フォルム");
-static const u8 sText_EVO_Buttons_Decapped_PE[] = _("{JPN}{DPAD_UPDOWN}しんか  {A_BUTTON}みる  {START_BUTTON}フォルム");
+static const u8 sText_EVO_Buttons_PE[] = _("{JPN}{DPAD_UPDOWN}しんか {A_BUTTON}みる {START_BUTTON}フォルム");
+static const u8 sText_EVO_Buttons_Decapped_PE[] = _("{JPN}{DPAD_UPDOWN}しんか {A_BUTTON}みる {START_BUTTON}フォルム");
 static const u8 sText_EVO_Name[] = _("{STR_VAR_3}:");
 static const u8 sText_EVO_PreEvo[] = _("{JPN}{STR_VAR_2}から しんか");
 static const u8 sText_EVO_PreEvo_PE_Mega[] = _("{JPN}{STR_VAR_2}で メガシンカ");
@@ -154,7 +154,7 @@ static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{JPN}{A_BUTTON}フォル�
 static const u8 sText_FORMS_Buttons_Submenu_PE[] = _("{JPN}{DPAD_NONE}フォルム {A_BUTTON}みる {START_BUTTON}しんか");
 static const u8 sText_FORMS_Buttons_Submenu_Decapped_PE[] = _("{JPN}{DPAD_NONE}フォルム {A_BUTTON}みる {START_BUTTON}しんか");
 static const u8 sText_FORMS_NONE[] = _("{JPN}{STR_VAR_1}:フォルム なし");
-static const u8 sText_PlusSymbol[] = _("+");
+static const u8 sText_PlusSymbol[] = _("{PLUS}");
 
 // static .rodata graphics
 
@@ -757,13 +757,13 @@ bool32 TryCreateMonListEntry_HGSS(u8 position, u16 b, u16 ignored)
                 {
                     CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, ignored);
                     CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, i * 2, ignored);
-                    CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, i * 2);
+                    CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 6, i * 2);
                 }
                 else
                 {
                     CreateMonDexNum(entryNum, MON_LIST_X+1, i * 2, ignored);
                     CreateCaughtBall(FALSE, MON_LIST_X, i * 2, ignored);
-                    CreateMonName(0, MON_LIST_X + 5, i * 2);
+                    CreateMonName(0, MON_LIST_X + 6, i * 2);
                 }
             }
             entryNum++;
@@ -782,13 +782,13 @@ bool32 TryCreateMonListEntry_HGSS(u8 position, u16 b, u16 ignored)
             {
                 CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, ignored);
                 CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, sPokedexView->listVOffset * 2, ignored);
-                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, sPokedexView->listVOffset * 2);
+                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 6, sPokedexView->listVOffset * 2);
             }
             else
             {
                 CreateMonDexNum(entryNum, MON_LIST_X+1, sPokedexView->listVOffset * 2, ignored);
                 CreateCaughtBall(FALSE, MON_LIST_X, sPokedexView->listVOffset * 2, ignored);
-                CreateMonName(0, MON_LIST_X + 5, sPokedexView->listVOffset * 2);
+                CreateMonName(0, MON_LIST_X + 6, sPokedexView->listVOffset * 2);
             }
         }
         break;
@@ -806,13 +806,13 @@ bool32 TryCreateMonListEntry_HGSS(u8 position, u16 b, u16 ignored)
             {
                 CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, ignored);
                 CreateCaughtBall(sPokedexView->pokedexList[entryNum].owned, MON_LIST_X, vOffset * 2, ignored);
-                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 5, vOffset * 2);
+                CreateMonName(sPokedexView->pokedexList[entryNum].dexNum, MON_LIST_X + 6, vOffset * 2);
             }
             else
             {
                 CreateMonDexNum(entryNum, MON_LIST_X+1, vOffset * 2, ignored);
                 CreateCaughtBall(FALSE, MON_LIST_X, vOffset * 2, ignored);
-                CreateMonName(0, MON_LIST_X + 5, vOffset * 2);
+                CreateMonName(0, MON_LIST_X + 6, vOffset * 2);
             }
         }
         break;
@@ -2382,7 +2382,7 @@ static void PrintStatsScreen_Moves_Bottom(u8 taskId)
             StringCopy(gStringVar1, gText_ThreeDashes);
         else
             ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_BOTTOM, gStringVar1, moves_x + 45, moves_y);
+        PrintStatsScreenTextSmall(WIN_STATS_MOVES_BOTTOM, gStringVar1, moves_x + 42, moves_y);
         //Physical/Special/Status Category
         DestroyCategoryIcon();
         ShowCategoryIcon(GetMoveCategory(move));
@@ -2392,7 +2392,7 @@ static void PrintStatsScreen_Moves_Bottom(u8 taskId)
             StringCopy(gStringVar1, gText_ThreeDashes);
         else
             ConvertIntToDecimalStringN(gStringVar1, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_BOTTOM, gStringVar1,  moves_x + 114, moves_y);
+        PrintStatsScreenTextSmall(WIN_STATS_MOVES_BOTTOM, gStringVar1,  moves_x + 106, moves_y);
     }
     else //Appeal + Jam
     {
@@ -2529,29 +2529,29 @@ static void PrintStatsScreen_Left(u8 taskId)
     {
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_HP, base_x, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseHP, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row - 8, base_y + base_y_offset*base_i);
 
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_Speed, base_x+base_x_second_row, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseSpeed, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset - 8, base_y + base_y_offset*base_i);
 
         base_i++;
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_Attack, base_x, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseAttack, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row - 8, base_y + base_y_offset*base_i);
 
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_SpAttack, base_x+base_x_second_row, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseSpAttack, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset - 8, base_y + base_y_offset*base_i);
 
         base_i++;
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_Defense, base_x, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseDefense, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_first_row - 8, base_y + base_y_offset*base_i);
 
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_SpDefense, base_x+base_x_second_row, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(strBase, sPokedexView->sPokemonStats.baseSpDefense, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strBase, base_x+base_x_offset - 8, base_y + base_y_offset*base_i);
         base_i++;
     }
     else //EV increases
@@ -2697,17 +2697,17 @@ static void PrintStatsScreen_Left(u8 taskId)
         //Catch rate
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate, base_x, base_y + base_y_offset*base_i);
         if (catchRate <= 10)
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Legend, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Legend, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         else if (catchRate <= 70)
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_VeryHard, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_VeryHard, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         else if (catchRate <= 100)
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Difficult, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Difficult, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         else if (catchRate <= 150)
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Medium, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Medium, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         else if (catchRate <= 200)
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Relaxed, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Relaxed, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         else
-            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Easy, base_x + x_offset_column, base_y + base_y_offset*base_i);
+            PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_CatchRate_Easy, base_x + x_offset_column + 4, base_y + base_y_offset*base_i);
         base_i++;
 
         //Growth rate
@@ -2743,7 +2743,7 @@ static void PrintStatsScreen_Left(u8 taskId)
         //Exp Yield
         PrintStatsScreenTextSmall(WIN_STATS_LEFT, sText_Stats_ExpYield, base_x, base_y + base_y_offset*base_i);
         ConvertIntToDecimalStringN(gStringVar1, sPokedexView->sPokemonStats.expYield, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, gStringVar1, base_x + base_x_offset, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, gStringVar1, base_x + base_x_offset - 8, base_y + base_y_offset*base_i);
         base_i++;
 
         //Friendship
@@ -2770,7 +2770,7 @@ static void PrintStatsScreen_Left(u8 taskId)
             break;
         }
         align_x = GetStringRightAlignXOffset(0, strEV, total_x);
-        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strEV, align_x, base_y + base_y_offset*base_i);
+        PrintStatsScreenTextSmall(WIN_STATS_LEFT, strEV, align_x -2, base_y + base_y_offset*base_i);
         base_i++;
 
         //Egg cycles
@@ -2785,22 +2785,22 @@ static void PrintStatsScreen_Left(u8 taskId)
             if (sPokedexView->sPokemonStats.eggCycles <= 10)
             {
                 StringCopy(strEV, sText_Stats_EggCycles_VeryFast);
-                align_x = 76;
+                align_x = 60;
             }
             else if (sPokedexView->sPokemonStats.eggCycles <= 20)
             {
                 StringCopy(strEV, sText_Stats_EggCycles_Fast);
-                align_x = 85;
+                align_x = 69;
             }
             else if (sPokedexView->sPokemonStats.eggCycles <= 30)
             {
                 StringCopy(strEV, sText_Stats_EggCycles_Normal);
-                align_x = 76;
+                align_x = 60;
             }
             else
             {
                 StringCopy(strEV, sText_Stats_EggCycles_Slow);
-                align_x = 67;
+                align_x = 51;
             }
             PrintStatsScreenTextSmall(WIN_STATS_LEFT, strEV, align_x, base_y + base_y_offset*base_i);
         }
@@ -3937,7 +3937,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
         if (isAlcremie)
             fontId = FONT_SMALL_NARROWER;
         else
-            fontId = GetFontIdToFit(gStringVar4, FONT_SMALL, 0, maxScreenWidth);
+            fontId = GetFontIdToFit(gStringVar4, FONT_NARROW, 0, maxScreenWidth);
 
         u32 fontHeight = GetFontAttribute(fontId, FONTATTR_MAX_LETTER_HEIGHT);
 
@@ -4494,6 +4494,7 @@ bool32 TryLoadSizeScreen_HGSS(u8 taskId)
     {
         u8 string[64];
 
+        StringCopy(gStringVar1, GetSpeciesName(NationalPokedexNumToSpeciesForm(sPokedexListItem->dexNum)));
         StringExpandPlaceholders(string, gText_SizeComparedTo);
         PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, 0xF0), 0x79);
         gMain.state++;

@@ -79,19 +79,19 @@
 #define PSS_LABEL_WINDOW_MOVES_APPEAL_JAM 15
 #define PSS_LABEL_WINDOW_PROMPT_RELEARN 16
 
-// Above/below the Pokémon's portrait (left)
+// Above/below the Pokemon's portrait (left)
 #define PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER 17
 #define PSS_LABEL_WINDOW_PORTRAIT_NICKNAME 18 // The upper name
 #define PSS_LABEL_WINDOW_PORTRAIT_SPECIES 19 // The lower name
 #define PSS_LABEL_WINDOW_END 20
 
-// Dynamic fields for the Pokémon Info page
+// Dynamic fields for the Pokemon Info page
 #define PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER 0
 #define PSS_DATA_WINDOW_INFO_ID 1
 #define PSS_DATA_WINDOW_INFO_ABILITY 2
 #define PSS_DATA_WINDOW_INFO_MEMO 3
 
-// Dynamic fields for the Pokémon Skills page
+// Dynamic fields for the Pokemon Skills page
 #define PSS_DATA_WINDOW_SKILLS_HELD_ITEM 0
 #define PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT 1
 #define PSS_DATA_WINDOW_SKILLS_STATS_LEFT 2 // HP, Attack, Defense
@@ -176,7 +176,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
     u8 currPageIndex;
     u8 minPageIndex;
     u8 maxPageIndex;
-    bool8 lockMonFlag; // This is used to prevent the player from changing Pokémon in the move deleter select, etc, but it is not needed because the input is handled differently there
+    bool8 lockMonFlag; // This is used to prevent the player from changing Pokemon in the move deleter select, etc, but it is not needed because the input is handled differently there
     u16 newMove;
     u8 firstMoveIndex;
     u8 secondMoveIndex;
@@ -185,7 +185,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
     bool8 hasRelearnableMoves;
     u8 windowIds[8];
     u8 spriteIds[SPRITE_ARR_ID_COUNT];
-    s16 switchCounter; // Used for various switch statement cases that decompress/load graphics or Pokémon data
+    s16 switchCounter; // Used for various switch statement cases that decompress/load graphics or Pokemon data
     u8 unk_filler4[6];
     u8 categoryIconSpriteId;
 } *sMonSummaryScreen = NULL;
@@ -691,9 +691,9 @@ static const struct WindowTemplate sPageSkillsTemplate[] =
     },
     [PSS_DATA_WINDOW_EXP] = {
         .bg = 0,
-        .tilemapLeft = 24,
+        .tilemapLeft = 21,
         .tilemapTop = 14,
-        .width = 6,
+        .width = 8,
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 561,
@@ -771,10 +771,10 @@ static const u8 sText_Relearn[] = _("{JPN}{START_BUTTON} おもいだす"); // f
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
-static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
-static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
-static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
-static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
+static const u8 sStatsLeftColumnLayout[] = _("{ENG}{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
+static const u8 sStatsLeftIVEVColumnLayout[] = _("{ENG}{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
+static const u8 sStatsRightColumnLayout[] = _("{ENG}{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
+static const u8 sMovesPPLayout[] = _("{ENG}{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 
 #define TAG_MOVE_SELECTOR 30000
 #define TAG_MON_STATUS 30001
@@ -3131,7 +3131,7 @@ static void DrawContestMoveHearts(enum Move move)
     }
 }
 
-static void LimitEggSummaryPageDisplay(void) // If the Pokémon is an egg, limit the number of pages displayed to 1
+static void LimitEggSummaryPageDisplay(void) // If the Pokemon is an egg, limit the number of pages displayed to 1
 {
     if (sMonSummaryScreen->summary.isEgg)
         ChangeBgX(3, 0x10000, BG_COORD_SET);
@@ -3198,12 +3198,12 @@ static void PrintNotEggInfo(void)
         StringAppend(gStringVar1, gStringVar2);
         if (!IsMonShiny(mon))
         {
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 1);
+            PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 1, FONT_NARROW);
             SetMonPicBackgroundPalette(FALSE);
         }
         else
         {
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 7);
+            PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 7, FONT_NARROW);
             SetMonPicBackgroundPalette(TRUE);
         }
         PutWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER);
@@ -3534,7 +3534,7 @@ static void PrintMonAbilityName(void)
 static void PrintMonAbilityDescription(void)
 {
     enum Ability ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
-    PrintTextOnWindowWithFont(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0, FONT_SMALL);
+    PrintTextOnWindowWithFont(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0, FONT_NARROW);
 }
 
 static void BufferMonTrainerMemo(void)
@@ -3594,8 +3594,6 @@ static void PrintMonTrainerMemo(void)
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
 }
 
-static const u8 sText_NatureSuffixNa[] = _("な");
-
 static bool32 SummaryNatureUsesPlainSuffix(u8 nature)
 {
     switch (nature)
@@ -3617,7 +3615,7 @@ static void BufferNatureString(void)
     if (SummaryNatureUsesPlainSuffix(sumStruct->summary.nature))
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
     else
-        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, sText_NatureSuffixNa);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, COMPOUND_STRING("な"));
 
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gStringVar3);
 }
@@ -3978,10 +3976,13 @@ static void PrintExpPointsNextLevel(void)
     u8 windowId = AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_EXP);
     int x;
     u32 expToNextLevel;
+    u8 *ptr = gStringVar1;
 
     PrintTextOnWindow(windowId, COMPOUND_STRING("{JPN}あと"), 0, 17, 0, 0);
-    ConvertIntToDecimalStringN(gStringVar1, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
-    x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 42) + 2;
+    *(ptr)++ = EXT_CTRL_CODE_BEGIN;
+    *(ptr)++ = EXT_CTRL_CODE_ENG;
+    ConvertIntToDecimalStringN(ptr, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
+    x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 64);
     PrintTextOnWindow(windowId, gStringVar1, x, 1, 0, 0);
 
     if (sum->level < MAX_LEVEL)
@@ -3989,8 +3990,10 @@ static void PrintExpPointsNextLevel(void)
     else
         expToNextLevel = 0;
 
-    ConvertIntToDecimalStringN(gStringVar1, expToNextLevel, STR_CONV_MODE_RIGHT_ALIGN, 6);
-    x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 42) + 2;
+    *(ptr)++ = EXT_CTRL_CODE_BEGIN;
+    *(ptr)++ = EXT_CTRL_CODE_ENG;
+    ConvertIntToDecimalStringN(ptr, expToNextLevel, STR_CONV_MODE_RIGHT_ALIGN, 6);
+    x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 64);
     PrintTextOnWindow(windowId, gStringVar1, x, 17, 0, 0);
 }
 
@@ -4113,7 +4116,7 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
             text = gStringVar1;
         }
 
-        PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0);
+        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0, FONT_NARROW);
 
         u32 accuracy = GetMoveAccuracy(moveIndex);
         if (accuracy == 0)
@@ -4126,7 +4129,7 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
             text = gStringVar1;
         }
 
-        PrintTextOnWindow(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 17, 0, 0);
+        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 17, 0, 0, FONT_NARROW);
     }
 }
 
@@ -4303,7 +4306,7 @@ static void SetSpriteInvisibility(u8 spriteArrayId, bool8 invisible)
 
 static void HidePageSpecificSprites(void)
 {
-    // Keeps Pokémon, caught ball and status sprites visible.
+    // Keeps Pokemon, caught ball and status sprites visible.
     u8 i;
 
     for (i = SPRITE_ARR_ID_TYPE; i < ARRAY_COUNT(sMonSummaryScreen->spriteIds); i++)
@@ -4605,7 +4608,7 @@ static bool32 UNUSED IsMonAnimationFinished(void)
         return TRUE;
 }
 
-static void StopPokemonAnimations(void)  // A subtle effect, this function stops Pokémon animations when leaving the PSS
+static void StopPokemonAnimations(void)  // A subtle effect, this function stops Pokemon animations when leaving the PSS
 {
     u16 i;
     u16 paletteIndex;
