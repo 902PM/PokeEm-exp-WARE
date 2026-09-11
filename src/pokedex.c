@@ -677,7 +677,7 @@ const struct WindowTemplate sPokemonList_WindowTemplate[] =
     DUMMY_WIN_TEMPLATE
 };
 
-static const u8 sText_No0000[] = _("{NO}0000");
+static const u8 sText_No0000[] = _("{ENG}{NO}0000");
 static const u8 sText_No000[] = _("{NO}000");
 const u8 sCaughtBall_Gfx[] = INCGFX_U8("graphics/pokedex/caught_ball.png", ".4bpp");
 static const u8 sText_TenDashes[] = _("-----");
@@ -2332,10 +2332,10 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
 
 void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 unused)
 {
-    u8 text[7];
-    u16 dexNum, offset = 2;
+    u8 text[9];
+    u16 dexNum, offset = 4;
     if (POKEDEX_PLUS_HGSS)
-        offset = 0;
+        offset = 2;
 
     dexNum = sPokedexView->pokedexList[entryNum].dexNum;
     if (sPokedexView->dexMode == DEX_MODE_HOENN)
@@ -2357,7 +2357,7 @@ void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 unused)
             text[i] = CHAR_HYPHEN;
     }
 
-    PrintMonDexNum(0, FONT_NORMAL, text, left, top);
+    PrintMonDexNum(0, FONT_NARROW, text, left, top);
 }
 
 void CreateCaughtBall(bool16 owned, u8 x, u8 y, u16 unused)
@@ -3789,7 +3789,8 @@ void Task_LoadSizeScreen(u8 taskId)
         {
             u8 string[64];
 
-        StringExpandPlaceholders(string, gText_SizeComparedTo);
+            StringCopy(gStringVar1, GetSpeciesName(NationalPokedexNumToSpeciesForm(sPokedexListItem->dexNum)));
+            StringExpandPlaceholders(string, gText_SizeComparedTo);
             PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
             gMain.state++;
         }

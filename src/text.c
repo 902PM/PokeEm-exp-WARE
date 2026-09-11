@@ -473,6 +473,7 @@ bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, voi
 
     struct TextPrinter sTempTextPrinter = {0};
 
+    sTempTextPrinter.japanese = TRUE;
     sTempTextPrinter.active = TRUE;
     sTempTextPrinter.state = RENDER_STATE_HANDLE_CHAR;
     sTempTextPrinter.printerTemplate = *printerTemplate;
@@ -1331,7 +1332,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
     u16 currChar;
     s32 width;
     s32 widthHelper;
-    textPrinter->japanese = TRUE;
 
     switch (textPrinter->state)
     {
@@ -2243,18 +2243,18 @@ static u32 GetGlyphWidth_Small(u16 glyphId, bool32 isJapanese)
     else
         return gFontSmallLatinGlyphWidths[glyphId];
 }
-
+// ここのJPのglyphsを編集すると、戦闘画面の技や”タイプ”に影響を及ぼす。(たぶんどこからしらでこのFONTを指定しているだろうが、わからない。)
 static void DecompressGlyph_Narrow(u16 glyphId, bool32 isJapanese)
 {
     const u16 *glyphs;
 
     if (isJapanese == TRUE)
     {
-        glyphs = gFontNormalJapaneseGlyphs + (0x100 * (glyphId >> 0x4)) + (0x8 * (glyphId % 0x10));
+        glyphs = gFontNormalJapaneseGlyphs + (0x100 * (glyphId >> 0x4)) + (0x8 * (glyphId & 0xF));
         DecompressGlyphTile(glyphs, gCurGlyph.gfxBufferTop);
         DecompressGlyphTile(glyphs + 0x80, gCurGlyph.gfxBufferBottom);
-        gCurGlyph.width = 8;
-        gCurGlyph.height = 15;
+        gCurGlyph.width = 7;
+        gCurGlyph.height = 12;
     }
     else
     {
@@ -2281,7 +2281,7 @@ static void DecompressGlyph_Narrow(u16 glyphId, bool32 isJapanese)
 static u32 GetGlyphWidth_Narrow(u16 glyphId, bool32 isJapanese)
 {
     if (isJapanese == TRUE)
-        return 8;
+        return 7;
     else
         return gFontNarrowLatinGlyphWidths[glyphId];
 }
@@ -2295,7 +2295,7 @@ static void DecompressGlyph_SmallNarrow(u16 glyphId, bool32 isJapanese)
         glyphs = gFontSmallJapaneseGlyphs + (0x100 * (glyphId >> 0x4)) + (0x8 * (glyphId & 0xF));
         DecompressGlyphTile(glyphs, gCurGlyph.gfxBufferTop);
         DecompressGlyphTile(glyphs + 0x80, gCurGlyph.gfxBufferBottom);
-        gCurGlyph.width = 8;
+        gCurGlyph.width = 7;
         gCurGlyph.height = 12;
     }
     else
@@ -2323,7 +2323,7 @@ static void DecompressGlyph_SmallNarrow(u16 glyphId, bool32 isJapanese)
 static u32 GetGlyphWidth_SmallNarrow(u16 glyphId, bool32 isJapanese)
 {
     if (isJapanese == TRUE)
-        return 8;
+        return 7;
     else
         return gFontSmallNarrowLatinGlyphWidths[glyphId];
 }
@@ -2476,7 +2476,7 @@ static void DecompressGlyph_SmallNarrower(u16 glyphId, bool32 isJapanese)
         glyphs = gFontSmallJapaneseGlyphs + (0x100 * (glyphId >> 0x4)) + (0x8 * (glyphId % 0x10));
         DecompressGlyphTile(glyphs, gCurGlyph.gfxBufferTop);
         DecompressGlyphTile(glyphs + 0x80, gCurGlyph.gfxBufferBottom);
-        gCurGlyph.width = 8;
+        gCurGlyph.width = 7;
         gCurGlyph.height = 15;
     }
     else
@@ -2504,7 +2504,7 @@ static void DecompressGlyph_SmallNarrower(u16 glyphId, bool32 isJapanese)
 static u32 GetGlyphWidth_SmallNarrower(u16 glyphId, bool32 isJapanese)
 {
     if (isJapanese == TRUE)
-        return 8;
+        return 7;
     else
         return gFontSmallNarrowerLatinGlyphWidths[glyphId];
 }
