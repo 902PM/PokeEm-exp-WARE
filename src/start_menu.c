@@ -187,7 +187,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
     .baseBlock = 0x8
 };
 
-static const u8 sText_MenuDebug[] = _("{JPN}デバッグ");
+static const u8 sText_MenuDebug[] = _("デバッグ");
 
 static const struct MenuAction sStartMenuItems[] =
 {
@@ -1430,7 +1430,7 @@ static void ShowSaveInfoWindow(void)
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingBadges, 0, yOffset, TEXT_SKIP_DRAW, NULL);
     BufferSaveMenuText(SAVE_MENU_BADGES, gStringVar4, color);
     xOffset = 72;
-    StringAppend(gStringVar4, COMPOUND_STRING("{JPN}こ"));
+    StringAppend(gStringVar4, COMPOUND_STRING("こ"));
     AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
 
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
@@ -1440,7 +1440,7 @@ static void ShowSaveInfoWindow(void)
         AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gText_SavingPokedex, 0, yOffset, TEXT_SKIP_DRAW, NULL);
         BufferSaveMenuText(SAVE_MENU_CAUGHT, gStringVar4, color);
         xOffset = 72;
-        StringAppend(gStringVar4, COMPOUND_STRING("{JPN}ひき"));
+        StringAppend(gStringVar4, COMPOUND_STRING("ひき"));
         AddTextPrinterParameterized(sSaveInfoWindowId, FONT_NORMAL, gStringVar4, xOffset, yOffset, TEXT_SKIP_DRAW, NULL);
     }
 

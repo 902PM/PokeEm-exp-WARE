@@ -35,15 +35,15 @@ static int BerryFix_TrySetScene(int);
 static void BerryFix_SetScene(int);
 static void BerryFix_HideScene(void);
 
-static const u8 sText_BerryProgramUpdate[] = _("{JPN}きのみもんだい しゅうり プログラム");
-static const u8 sText_RubySapphire[] = _("{JPN}ルビー・サファイア");
-static const u8 sText_Emerald[] = _("{JPN}エメラルド");
-static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("{JPN}ポケットモンスター ルビー・サファイアの\nきのみもんだいの しゅうりを はじめます\n\n{COLOR RED}{SHADOW LIGHT_RED}Aボタンを おしてください");
-static const u8 sText_EnsureGBAConnectionMatches[] = _("{JPN}ゲームボーイアドバンスが このように\nつながっているのを かくにんしてください\n{COLOR RED}{SHADOW LIGHT_RED}あってる▶Aボタン\nちがう ▶でんげんをきって やりなおし");
-static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("{JPN}STARTボタンとSELECTボタンを おしながら\nルビー・サファイアのでんげんをいれてください\nそのご うえのような がめんになるのを\nかくにんしてください");
-static const u8 sText_TransmittingPleaseWait[] = _("{JPN}つうしんを しています\nしょうしょう おまちください\n\n{COLOR RED}{SHADOW LIGHT_RED} ケーブルを ぬきさし しないでください");
-static const u8 sText_PleaseFollowInstructionsOnScreen[] = _("{JPN}ルビー・サファイアの がめんに\nしたがって ください");
-static const u8 sText_TransmissionFailureTryAgain[] = _("{JPN}つうしんに しっぱいしました\n{COLOR RED}{SHADOW LIGHT_RED}もういちど やりなおして ください");
+static const u8 sText_BerryProgramUpdate[] = _("きのみもんだい しゅうり プログラム");
+static const u8 sText_RubySapphire[] = _("ルビー・サファイア");
+static const u8 sText_Emerald[] = _("エメラルド");
+static const u8 sText_BerryProgramWillBeUpdatedPressA[] = _("ポケットモンスター ルビー・サファイアの\nきのみもんだいの しゅうりを はじめます\n\n{COLOR RED}{SHADOW LIGHT_RED}Aボタンを おしてください");
+static const u8 sText_EnsureGBAConnectionMatches[] = _("ゲームボーイアドバンスが このように\nつながっているのを かくにんしてください\n{COLOR RED}{SHADOW LIGHT_RED}あってる▶Aボタン\nちがう ▶でんげんをきって やりなおし");
+static const u8 sText_TurnOffPowerHoldingStartSelect[] = _("STARTボタンとSELECTボタンを おしながら\nルビー・サファイアのでんげんをいれてください\nそのご うえのような がめんになるのを\nかくにんしてください");
+static const u8 sText_TransmittingPleaseWait[] = _("つうしんを しています\nしょうしょう おまちください\n\n{COLOR RED}{SHADOW LIGHT_RED} ケーブルを ぬきさし しないでください");
+static const u8 sText_PleaseFollowInstructionsOnScreen[] = _("ルビー・サファイアの がめんに\nしたがって ください");
+static const u8 sText_TransmissionFailureTryAgain[] = _("つうしんに しっぱいしました\n{COLOR RED}{SHADOW LIGHT_RED}もういちど やりなおして ください");
 
 static const struct BgTemplate sBerryFixBgTemplates[] = {
     {

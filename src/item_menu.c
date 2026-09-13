@@ -216,11 +216,11 @@ static void ConfirmSell(u8);
 static void CancelSell(u8);
 static void Task_FadeAndCloseBagMenuIfMulch(u8 taskId);
 
-static const u8 sText_Var1CantBeHeldHere[] = _("{JPN}ここでは {STR_VAR_1}を\nもたせることは できません!");
-static const u8 sText_DepositHowManyVar1[] = _("{JPN}{STR_VAR_1} を\nいくつ あずけますか?");
-static const u8 sText_DepositedVar2Var1s[] = _("{JPN}{STR_VAR_1} を\n{STR_VAR_2}コ あずけました");
-static const u8 sText_NoRoomForItems[] = _("{JPN}これいじょう\nあずけられません!");
-static const u8 sText_CantStoreImportantItems[] = _("{JPN}たいせつな どうぐは\nパソコンに \nいれられません!");
+static const u8 sText_Var1CantBeHeldHere[] = _("ここでは {STR_VAR_1}を\nもたせることは できません!");
+static const u8 sText_DepositHowManyVar1[] = _("{STR_VAR_1} を\nいくつ あずけますか?");
+static const u8 sText_DepositedVar2Var1s[] = _("{STR_VAR_1} を\n{STR_VAR_2}コ あずけました");
+static const u8 sText_NoRoomForItems[] = _("これいじょう\nあずけられません!");
+static const u8 sText_CantStoreImportantItems[] = _("たいせつな どうぐは\nパソコンに \nいれられません!");
 
 static void Task_LoadBagSortOptions(u8 taskId);
 static void ItemMenu_SortByName(u8 taskId);
@@ -288,7 +288,7 @@ static const struct ListMenuTemplate sItemListMenu =
     .cursorKind = CURSOR_BLACK_ARROW
 };
 
-static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません!");
+static const u8 sText_NothingToSort[] = _("ならべかえる ものが ありません!");
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,                {ItemMenu_UseOutOfBattle}},
     [ACTION_TOSS]              = {gMenuText_Toss,               {ItemMenu_Toss}},
@@ -296,18 +296,18 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_GIVE]              = {gMenuText_Give,               {ItemMenu_Give}},
     [ACTION_CANCEL]            = {gText_Cancel2,                {ItemMenu_Cancel}},
     [ACTION_BATTLE_USE]        = {gMenuText_Use,                {ItemMenu_UseInBattle}},
-    [ACTION_CHECK]             = {COMPOUND_STRING("{JPN}みる"),      {ItemMenu_UseOutOfBattle}},
-    [ACTION_WALK]              = {COMPOUND_STRING("{JPN}おりる"), {ItemMenu_UseOutOfBattle}},
-    [ACTION_DESELECT]          = {COMPOUND_STRING("{JPN}かいじょ"), {ItemMenu_Register}},
-    [ACTION_CHECK_TAG]         = {COMPOUND_STRING("{JPN}タグをみる"), {ItemMenu_CheckTag}},
+    [ACTION_CHECK]             = {COMPOUND_STRING("みる"),      {ItemMenu_UseOutOfBattle}},
+    [ACTION_WALK]              = {COMPOUND_STRING("おりる"), {ItemMenu_UseOutOfBattle}},
+    [ACTION_DESELECT]          = {COMPOUND_STRING("かいじょ"), {ItemMenu_Register}},
+    [ACTION_CHECK_TAG]         = {COMPOUND_STRING("タグをみる"), {ItemMenu_CheckTag}},
     [ACTION_CONFIRM]           = {gMenuText_Confirm,            {Task_FadeAndCloseBagMenu}},
-    [ACTION_SHOW]              = {COMPOUND_STRING("{JPN}みせる"),    {ItemMenu_Show}},
+    [ACTION_SHOW]              = {COMPOUND_STRING("みせる"),    {ItemMenu_Show}},
     [ACTION_GIVE_FAVOR_LADY]   = {gMenuText_Give2,              {ItemMenu_GiveFavorLady}},
     [ACTION_CONFIRM_QUIZ_LADY] = {gMenuText_Confirm,            {ItemMenu_ConfirmQuizLady}},
-    [ACTION_BY_NAME]           = {COMPOUND_STRING("{JPN}なまえ"),    {ItemMenu_SortByName}},
-    [ACTION_BY_TYPE]           = {COMPOUND_STRING("{JPN}しゅるい"),  {ItemMenu_SortByType}},
-    [ACTION_BY_AMOUNT]         = {COMPOUND_STRING("{JPN}かず"),      {ItemMenu_SortByAmount}},
-    [ACTION_BY_INDEX]          = {COMPOUND_STRING("{JPN}ばんごう"),    {ItemMenu_SortByIndex}},
+    [ACTION_BY_NAME]           = {COMPOUND_STRING("なまえ"),    {ItemMenu_SortByName}},
+    [ACTION_BY_TYPE]           = {COMPOUND_STRING("しゅるい"),  {ItemMenu_SortByType}},
+    [ACTION_BY_AMOUNT]         = {COMPOUND_STRING("かず"),      {ItemMenu_SortByAmount}},
+    [ACTION_BY_INDEX]          = {COMPOUND_STRING("ばんごう"),    {ItemMenu_SortByIndex}},
     [ACTION_DUMMY]             = {gText_EmptyString2, {NULL}}
 };
 
@@ -1297,7 +1297,7 @@ static void Task_BagMenu_HandleInput(u8 taskId)
             {
                 if ((gBagMenu->numItemStacks[gBagPosition.pocket] - 1) <= 1) //can't sort with 0 or 1 item in bag
                 {
-static const u8 sText_NothingToSort[] = _("{JPN}ならべかえる ものが ありません!");
+static const u8 sText_NothingToSort[] = _("ならべかえる ものが ありません!");
                     PlaySE(SE_FAILURE);
                     DisplayItemMessage(taskId, 1, sText_NothingToSort, HandleErrorMessage);
                     break;
@@ -2738,14 +2738,14 @@ static void PrintTMHMMoveData(enum Item itemId)
     }
 }
 
-static const u8 sText_SortItemsHow[] = _("{JPN}どう ならべかえますか?");
-static const u8 sText_ItemsSorted[] = _("{JPN}{STR_VAR_1}で ならべかえました!");
+static const u8 sText_SortItemsHow[] = _("どう ならべかえますか?");
+static const u8 sText_ItemsSorted[] = _("{STR_VAR_1}で ならべかえました!");
 static const u8 *const sSortTypeStrings[] =
 {
-    [SORT_ALPHABETICALLY] = COMPOUND_STRING("{JPN}なまえ"),
-    [SORT_BY_TYPE] = COMPOUND_STRING("{JPN}しゅるい"),
-    [SORT_BY_AMOUNT] = COMPOUND_STRING("{JPN}かず"),
-    [SORT_BY_INDEX] = COMPOUND_STRING("{JPN}ならび")
+    [SORT_ALPHABETICALLY] = COMPOUND_STRING("なまえ"),
+    [SORT_BY_TYPE] = COMPOUND_STRING("しゅるい"),
+    [SORT_BY_AMOUNT] = COMPOUND_STRING("かず"),
+    [SORT_BY_INDEX] = COMPOUND_STRING("ならび")
 };
 
 static const u8 sBagMenuSortItems[] =

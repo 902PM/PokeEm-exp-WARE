@@ -61,10 +61,10 @@ static void UpdateStairsMovement(s16, s16, s16*, s16*, s16*);
 static void Task_StairWarp(u8);
 static void ForceStairsMovement(u32, s16*, s16*);
 
-static const u8 sText_PlayerScurriedToCenter[] = _("{JPN}{PLAYER}は\nつかれて うごけなくなった ひんしの\nポケモンたちを かばいながら\nいそいで ポケモンセンターに\nもどるのであった!\p");
-static const u8 sText_PlayerScurriedBackHome[] = _("{JPN}{PLAYER}は\nつかれて うごけなくなったひんしの\nポケモンたちを かばいながら\nいそいで じたくに\nもどるのであった!\p");
-static const u8 sText_PlayerRegroupCenter[] = _("{JPN}{PLAYER}は\nせんりゃくを ねりなおし\nたいせいを たてなおすために\nいそいで ポケモンセンターに\nもどるのであった!\p");
-static const u8 sText_PlayerRegroupHome[] = _("{JPN}{PLAYER}は\nせんりゃくを ねりなおし\nたいせいを たてなおすために\nいそいで じたくに\nもどるのであった!\p");
+static const u8 sText_PlayerScurriedToCenter[] = _("{PLAYER}は\nつかれて うごけなくなった ひんしの\nポケモンたちを かばいながら\nいそいで ポケモンセンターに\nもどるのであった!\p");
+static const u8 sText_PlayerScurriedBackHome[] = _("{PLAYER}は\nつかれて うごけなくなったひんしの\nポケモンたちを かばいながら\nいそいで じたくに\nもどるのであった!\p");
+static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER}は\nせんりゃくを ねりなおし\nたいせいを たてなおすために\nいそいで ポケモンセンターに\nもどるのであった!\p");
+static const u8 sText_PlayerRegroupHome[] = _("{PLAYER}は\nせんりゃくを ねりなおし\nたいせいを たてなおすために\nいそいで じたくに\nもどるのであった!\p");
 
 // data[0] is used universally by tasks in this file as a state for switches
 #define tState       data[0]

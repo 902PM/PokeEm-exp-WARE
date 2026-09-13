@@ -767,7 +767,7 @@ static const TaskFunc sTextPrinterTasks[] =
     [PSS_PAGE_CONTEST_MOVES] = Task_PrintContestMoves
 };
 
-static const u8 sText_Relearn[] = _("{JPN}{START_BUTTON} おもいだす"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
+static const u8 sText_Relearn[] = _("{START_BUTTON} おもいだす"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
@@ -3978,7 +3978,7 @@ static void PrintExpPointsNextLevel(void)
     u32 expToNextLevel;
     u8 *ptr = gStringVar1;
 
-    PrintTextOnWindow(windowId, COMPOUND_STRING("{JPN}あと"), 0, 17, 0, 0);
+    PrintTextOnWindow(windowId, COMPOUND_STRING("あと"), 0, 17, 0, 0);
     *(ptr)++ = EXT_CTRL_CODE_BEGIN;
     *(ptr)++ = EXT_CTRL_CODE_ENG;
     ConvertIntToDecimalStringN(ptr, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
@@ -4801,10 +4801,10 @@ static inline bool32 ShouldShowIvEvPrompt(void)
 static inline void ShowUtilityPrompt(s16 mode)
 {
     const u8* promptText = NULL;
-    const u8* gText_SkillPageIvs = COMPOUND_STRING("{JPN}こたい");
-    const u8* gText_SkillPageEvs = COMPOUND_STRING("{JPN}きそ");
-    const u8* gText_SkillPageStats = COMPOUND_STRING("{JPN}のうりょく");
-    const u8* gText_Rename = COMPOUND_STRING("{JPN}なまえ");
+    const u8* gText_SkillPageIvs = COMPOUND_STRING("こたい");
+    const u8* gText_SkillPageEvs = COMPOUND_STRING("きそ");
+    const u8* gText_SkillPageStats = COMPOUND_STRING("のうりょく");
+    const u8* gText_Rename = COMPOUND_STRING("なまえ");
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {

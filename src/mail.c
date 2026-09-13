@@ -653,7 +653,7 @@ static void BufferMailText(void)
     }
 
     // Buffer the signature
-    ptr = StringCopy(sMailRead->playerName, COMPOUND_STRING("{JPN}"));
+    ptr = StringCopy(sMailRead->playerName, COMPOUND_STRING(""));
     StringAppend(ptr, sMailRead->mail->playerName);
     if (!sMailRead->international)
     {

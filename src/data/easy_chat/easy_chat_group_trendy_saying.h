@@ -1,7 +1,7 @@
 const struct EasyChatWordInfo gEasyChatGroup_TrendySaying[] = {
     [EC_INDEX(EC_WORD_KTHX_BYE)] =
     {
-        .text = COMPOUND_STRING("{JPN}4649"),
+        .text = COMPOUND_STRING("4649"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_1_HIT_KO_EXCL),
         .enabled = TRUE,
     },

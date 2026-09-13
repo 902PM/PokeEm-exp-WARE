@@ -108,7 +108,7 @@ static const u32 sPokenavDeviceBgTilemap[] = INCGFX_U32("graphics/pokenav/device
 static const u16 sMatchCallBlueLightPal[] = INCGFX_U16("graphics/pokenav/blue_light.png", ".gbapal");
 static const u32 sMatchCallBlueLightTiles[] = INCGFX_U32("graphics/pokenav/blue_light.png", ".4bpp.smol");
 
-static const u8 gText_NoRibbonWinners[] = _("{JPN}リボンを もっている ポケモンが いません");
+static const u8 gText_NoRibbonWinners[] = _("リボンを もっている ポケモンが いません");
 
 static const struct BgTemplate sPokenavMainMenuBgTemplates[] = {
     {
@@ -269,20 +269,20 @@ static const struct WindowTemplate sOptionDescWindowTemplate =
 
 static const u8 *const sPageDescriptions[] =
 {
-    [POKENAV_MENUITEM_MAP]                     = COMPOUND_STRING("{JPN}ホウエンちほうの マップを みます"),
-    [POKENAV_MENUITEM_CONDITION]               = COMPOUND_STRING("{JPN}ポケモンを くわしく しらべます"),
-    [POKENAV_MENUITEM_MATCH_CALL]              = COMPOUND_STRING("{JPN}とうろくした ひとを よびだします"),
-    [POKENAV_MENUITEM_RIBBONS]                 = COMPOUND_STRING("{JPN}てにいれた きねんリボンを みます"),
-    [POKENAV_MENUITEM_SWITCH_OFF]              = COMPOUND_STRING("{JPN}ポケナビを しまいます"),
-    [POKENAV_MENUITEM_CONDITION_PARTY]         = COMPOUND_STRING("{JPN}てもちポケモンを くわしく しらべます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH]        = COMPOUND_STRING("{JPN}すべてのポケモンを くわしく しらべます"),
-    [POKENAV_MENUITEM_CONDITION_CANCEL]        = COMPOUND_STRING("{JPN}ポケナビの メニューに もどります"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_COOL]   = COMPOUND_STRING("{JPN}かっこいい ポケモンを みつけます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_BEAUTY] = COMPOUND_STRING("{JPN}うつくしい ポケモンを みつけます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_CUTE]   = COMPOUND_STRING("{JPN}かわいい ポケモンを みつけます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_SMART]  = COMPOUND_STRING("{JPN}かしこい ポケモンを みつけます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_TOUGH]  = COMPOUND_STRING("{JPN}たくましい ポケモンを みつけます"),
-    [POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL] = COMPOUND_STRING("{JPN}コンディションの メニューに もどります")
+    [POKENAV_MENUITEM_MAP]                     = COMPOUND_STRING("ホウエンちほうの マップを みます"),
+    [POKENAV_MENUITEM_CONDITION]               = COMPOUND_STRING("ポケモンを くわしく しらべます"),
+    [POKENAV_MENUITEM_MATCH_CALL]              = COMPOUND_STRING("とうろくした ひとを よびだします"),
+    [POKENAV_MENUITEM_RIBBONS]                 = COMPOUND_STRING("てにいれた きねんリボンを みます"),
+    [POKENAV_MENUITEM_SWITCH_OFF]              = COMPOUND_STRING("ポケナビを しまいます"),
+    [POKENAV_MENUITEM_CONDITION_PARTY]         = COMPOUND_STRING("てもちポケモンを くわしく しらべます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH]        = COMPOUND_STRING("すべてのポケモンを くわしく しらべます"),
+    [POKENAV_MENUITEM_CONDITION_CANCEL]        = COMPOUND_STRING("ポケナビの メニューに もどります"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_COOL]   = COMPOUND_STRING("かっこいい ポケモンを みつけます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_BEAUTY] = COMPOUND_STRING("うつくしい ポケモンを みつけます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_CUTE]   = COMPOUND_STRING("かわいい ポケモンを みつけます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_SMART]  = COMPOUND_STRING("かしこい ポケモンを みつけます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_TOUGH]  = COMPOUND_STRING("たくましい ポケモンを みつけます"),
+    [POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL] = COMPOUND_STRING("コンディションの メニューに もどります")
 };
 
 static const u8 sOptionDescTextColors[]  = {TEXT_COLOR_GREEN, TEXT_COLOR_BLUE, TEXT_COLOR_LIGHT_GREEN};

@@ -2588,7 +2588,7 @@ static void PrintBattlerOnAbilityPopUp(enum BattlerId battler, u8 spriteId1, u8 
     else
         GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
 
-    StringAppend(gStringVar1, COMPOUND_STRING("{JPN}の"));
+    StringAppend(gStringVar1, COMPOUND_STRING("の"));
 
     u32 x;
     u32 y = 0;

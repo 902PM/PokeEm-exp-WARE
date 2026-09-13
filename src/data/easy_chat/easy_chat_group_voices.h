@@ -1,43 +1,43 @@
 const struct EasyChatWordInfo gEasyChatGroup_Voices[] = {
     [EC_INDEX(EC_WORD_EXCL)] =
     {
-        .text = COMPOUND_STRING("{JPN}!"),
+        .text = COMPOUND_STRING("!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCL_EXCL)] =
     {
-        .text = COMPOUND_STRING("{JPN}!!"),
+        .text = COMPOUND_STRING("!!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_QUES_EXCL)] =
     {
-        .text = COMPOUND_STRING("{JPN}!?"),
+        .text = COMPOUND_STRING("!?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DASH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_QUES)] =
     {
-        .text = COMPOUND_STRING("{JPN}?"),
+        .text = COMPOUND_STRING("?"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DASH_DASH_DASH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS)] =
     {
-        .text = COMPOUND_STRING("{JPN}…"),
+        .text = COMPOUND_STRING("…"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS_EXCL)] =
     {
-        .text = COMPOUND_STRING("{JPN}…!"),
+        .text = COMPOUND_STRING("…!"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS)] =
     {
-        .text = COMPOUND_STRING("{JPN}………"),
+        .text = COMPOUND_STRING("………"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS),
         .enabled = TRUE,
     },
