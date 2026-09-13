@@ -315,14 +315,14 @@ static const u8 sRegionMapSectionId_To_PopUpThemeIdMapping_BW[] =
     [MAPSEC_TRAINER_HILL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_BW_DEFAULT,
 };
 
-static const u8 sText_PyramidFloor1[] = _("{JPN}ピラミッド1だんめ");
-static const u8 sText_PyramidFloor2[] = _("{JPN}ピラミッド2だんめ");
-static const u8 sText_PyramidFloor3[] = _("{JPN}ピラミッド3だんめ");
-static const u8 sText_PyramidFloor4[] = _("{JPN}ピラミッド4だんめ");
-static const u8 sText_PyramidFloor5[] = _("{JPN}ピラミッド5だんめ");
-static const u8 sText_PyramidFloor6[] = _("{JPN}ピラミッド6だんめ");
-static const u8 sText_PyramidFloor7[] = _("{JPN}ピラミッド7だんめ");
-static const u8 sText_Pyramid[] = _("{JPN}ピラミッド");
+static const u8 sText_PyramidFloor1[] = _("ピラミッド1だんめ");
+static const u8 sText_PyramidFloor2[] = _("ピラミッド2だんめ");
+static const u8 sText_PyramidFloor3[] = _("ピラミッド3だんめ");
+static const u8 sText_PyramidFloor4[] = _("ピラミッド4だんめ");
+static const u8 sText_PyramidFloor5[] = _("ピラミッド5だんめ");
+static const u8 sText_PyramidFloor6[] = _("ピラミッド6だんめ");
+static const u8 sText_PyramidFloor7[] = _("ピラミッド7だんめ");
+static const u8 sText_Pyramid[] = _("ピラミッド");
 
 static const u8 *const sBattlePyramid_MapHeaderStrings[FRONTIER_STAGES_PER_CHALLENGE + 1] =
 {

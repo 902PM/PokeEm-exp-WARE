@@ -156,11 +156,11 @@ static void SpriteCB_SelectionIconCancel(struct Sprite *);
 static void SpriteCB_MonPic(struct Sprite *);
 static void SpriteCB_Condition(struct Sprite *);
 
-static const u8 sText_GetsAPokeBlockQuestion[] = _("{JPN}に ポロックを あげますか?");
-static const u8 sText_WasEnhanced[] = _("{JPN}に みがきが かかった!");
-static const u8 sText_NothingChanged[] = _("{JPN}なにも かわらなかった!");
-static const u8 sText_WontEatAnymore[] = _("{JPN}もう これいじょう たべない みたい…");
-static const u8 sText_NatureSlash[] = _("{JPN}せいかく/");
+static const u8 sText_GetsAPokeBlockQuestion[] = _("に ポロックを あげますか?");
+static const u8 sText_WasEnhanced[] = _("に みがきが かかった!");
+static const u8 sText_NothingChanged[] = _("なにも かわらなかった!");
+static const u8 sText_WontEatAnymore[] = _("もう これいじょう たべない みたい…");
+static const u8 sText_NatureSlash[] = _("せいかく/");
 
 extern const u16 gConditionGraphData_Pal[];
 extern const u16 gConditionText_Pal[];

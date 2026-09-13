@@ -172,21 +172,21 @@ static u16 SampleResortGorgeousReward(void);
 static void Task_ShakeScreen(u8 taskId);
 static void Task_EndScreenShake(u8 taskId);
 
-static const u8 sText_BigGuy[] = _("{JPN}おにいちゃん");
-static const u8 sText_BigGirl[] = _("{JPN}おねえちゃん");
-static const u8 sText_Son[] = _("{JPN}むすこ");
-static const u8 sText_Daughter[] = _("{JPN}むすめ");
-static const u8 sText_99TimesPlus[] = _("{JPN}99かい いじょう");
-static const u8 sText_1MinutePlus[] = _("{JPN}1ぷん いじょう");
-static const u8 sText_SpaceSeconds[] = _("{JPN}びょう");
-static const u8 sText_SpaceTimes[] = _("{JPN}かい");
+static const u8 sText_BigGuy[] = _("おにいちゃん");
+static const u8 sText_BigGirl[] = _("おねえちゃん");
+static const u8 sText_Son[] = _("むすこ");
+static const u8 sText_Daughter[] = _("むすめ");
+static const u8 sText_99TimesPlus[] = _("99かい いじょう");
+static const u8 sText_1MinutePlus[] = _("1ぷん いじょう");
+static const u8 sText_SpaceSeconds[] = _("びょう");
+static const u8 sText_SpaceTimes[] = _("かい");
 
-static const u8 sText_Wallace[] = _("{JPN}ミクリ");
-static const u8 sText_Steven[] = _("{JPN}ダイゴ");
-static const u8 sText_Brawly[] = _("{JPN}トウキ");
-static const u8 sText_Winona[] = _("{JPN}ナギ");
-static const u8 sText_Phoebe[] = _("{JPN}フヨウ");
-static const u8 sText_Glacia[] = _("{JPN}プリム");
+static const u8 sText_Wallace[] = _("ミクリ");
+static const u8 sText_Steven[] = _("ダイゴ");
+static const u8 sText_Brawly[] = _("トウキ");
+static const u8 sText_Winona[] = _("ナギ");
+static const u8 sText_Phoebe[] = _("フヨウ");
+static const u8 sText_Glacia[] = _("プリム");
 
 void Special_ShowDiploma(void)
 {
@@ -2511,89 +2511,89 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_GLASS_WORKSHOP_VENDOR] =
     {
-        COMPOUND_STRING("{JPN}あおいビードロ"),
-        COMPOUND_STRING("{JPN}きいろビードロ"),
-        COMPOUND_STRING("{JPN}あかいビードロ"),
-        COMPOUND_STRING("{JPN}しろいビードロ"),
-        COMPOUND_STRING("{JPN}くろいビードロ"),
-        COMPOUND_STRING("{JPN}きれいなイス"),
-        COMPOUND_STRING("{JPN}きれいなつくえ"),
+        COMPOUND_STRING("あおいビードロ"),
+        COMPOUND_STRING("きいろビードロ"),
+        COMPOUND_STRING("あかいビードロ"),
+        COMPOUND_STRING("しろいビードロ"),
+        COMPOUND_STRING("くろいビードロ"),
+        COMPOUND_STRING("きれいなイス"),
+        COMPOUND_STRING("きれいなつくえ"),
         gText_Exit
     },
     [SCROLL_MULTI_POKEMON_FAN_CLUB_RATER] =
     {
-        COMPOUND_STRING("{JPN}  0てん"),
-        COMPOUND_STRING("{JPN} 10てん"),
-        COMPOUND_STRING("{JPN} 20てん"),
-        COMPOUND_STRING("{JPN} 30てん"),
-        COMPOUND_STRING("{JPN} 40てん"),
-        COMPOUND_STRING("{JPN} 50てん"),
-        COMPOUND_STRING("{JPN} 60てん"),
-        COMPOUND_STRING("{JPN} 70てん"),
-        COMPOUND_STRING("{JPN} 80てん"),
-        COMPOUND_STRING("{JPN} 90てん"),
-        COMPOUND_STRING("{JPN}100てん"),
-        COMPOUND_STRING("{JPN}  ?")
+        COMPOUND_STRING("  0てん"),
+        COMPOUND_STRING(" 10てん"),
+        COMPOUND_STRING(" 20てん"),
+        COMPOUND_STRING(" 30てん"),
+        COMPOUND_STRING(" 40てん"),
+        COMPOUND_STRING(" 50てん"),
+        COMPOUND_STRING(" 60てん"),
+        COMPOUND_STRING(" 70てん"),
+        COMPOUND_STRING(" 80てん"),
+        COMPOUND_STRING(" 90てん"),
+        COMPOUND_STRING("100てん"),
+        COMPOUND_STRING("  ?")
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1] =
     {
-        COMPOUND_STRING("{JPN}キッスポスター   16BP"),
-        COMPOUND_STRING("{JPN}キッスクッション  32BP"),
-        COMPOUND_STRING("{JPN}ムチュールドール  32BP"),
-        COMPOUND_STRING("{JPN}トゲピードール   48BP"),
-        COMPOUND_STRING("{JPN}ニャースドール   48BP"),
-        COMPOUND_STRING("{JPN}ピッピドール    48BP"),
-        COMPOUND_STRING("{JPN}メタモンドール   48BP"),
-        COMPOUND_STRING("{JPN}ヒノアラシドール  80BP"),
-        COMPOUND_STRING("{JPN}チコリータドール  80BP"),
-        COMPOUND_STRING("{JPN}ワニノコドール   80BP"),
+        COMPOUND_STRING("キッスポスター   16BP"),
+        COMPOUND_STRING("キッスクッション  32BP"),
+        COMPOUND_STRING("ムチュールドール  32BP"),
+        COMPOUND_STRING("トゲピードール   48BP"),
+        COMPOUND_STRING("ニャースドール   48BP"),
+        COMPOUND_STRING("ピッピドール    48BP"),
+        COMPOUND_STRING("メタモンドール   48BP"),
+        COMPOUND_STRING("ヒノアラシドール  80BP"),
+        COMPOUND_STRING("チコリータドール  80BP"),
+        COMPOUND_STRING("ワニノコドール   80BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =
     {
-        COMPOUND_STRING("{JPN}ラプラスドール  128BP"),
-        COMPOUND_STRING("{JPN}カビゴンドール  128BP"),
-        COMPOUND_STRING("{JPN}フシギバナドール 256BP"),
-        COMPOUND_STRING("{JPN}リザードンドール 256BP"),
-        COMPOUND_STRING("{JPN}カメックスドール 256BP"),
+        COMPOUND_STRING("ラプラスドール  128BP"),
+        COMPOUND_STRING("カビゴンドール  128BP"),
+        COMPOUND_STRING("フシギバナドール 256BP"),
+        COMPOUND_STRING("リザードンドール 256BP"),
+        COMPOUND_STRING("カメックスドール 256BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR] =
     {
-        COMPOUND_STRING("{JPN}タウリン       1BP"),
-        COMPOUND_STRING("{JPN}リゾチウム      1BP"),
-        COMPOUND_STRING("{JPN}ブロムヘキシン    1BP"),
-        COMPOUND_STRING("{JPN}キトサン       1BP"),
-        COMPOUND_STRING("{JPN}インドメタシン    1BP"),
-        COMPOUND_STRING("{JPN}マックスアップ    1BP"),
+        COMPOUND_STRING("タウリン       1BP"),
+        COMPOUND_STRING("リゾチウム      1BP"),
+        COMPOUND_STRING("ブロムヘキシン    1BP"),
+        COMPOUND_STRING("キトサン       1BP"),
+        COMPOUND_STRING("インドメタシン    1BP"),
+        COMPOUND_STRING("マックスアップ    1BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR] =
     {
-        COMPOUND_STRING("{JPN}たべのこし     48BP"),
-        COMPOUND_STRING("{JPN}しろいハーブ    48BP"),
-        COMPOUND_STRING("{JPN}せんせいのツメ   48BP"),
-        COMPOUND_STRING("{JPN}メンタルハーブ   48BP"),
-        COMPOUND_STRING("{JPN}ひかりのこな    64BP"),
-        COMPOUND_STRING("{JPN}こだわりハチマキ  64BP"),
-        COMPOUND_STRING("{JPN}おうじゃのしるし  64BP"),
-        COMPOUND_STRING("{JPN}きあいのハチマキ  64BP"),
-        COMPOUND_STRING("{JPN}ピントレンズ    64BP"),
+        COMPOUND_STRING("たべのこし     48BP"),
+        COMPOUND_STRING("しろいハーブ    48BP"),
+        COMPOUND_STRING("せんせいのツメ   48BP"),
+        COMPOUND_STRING("メンタルハーブ   48BP"),
+        COMPOUND_STRING("ひかりのこな    64BP"),
+        COMPOUND_STRING("こだわりハチマキ  64BP"),
+        COMPOUND_STRING("おうじゃのしるし  64BP"),
+        COMPOUND_STRING("きあいのハチマキ  64BP"),
+        COMPOUND_STRING("ピントレンズ    64BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BERRY_POWDER_VENDOR] =
     {
-        COMPOUND_STRING("{JPN}ちからのこな  {FONT_SMALL}  50"),
-        COMPOUND_STRING("{JPN}ちからのねっこ {FONT_SMALL}  80"),
-        COMPOUND_STRING("{JPN}ばんのうごな  {FONT_SMALL}  50"),
-        COMPOUND_STRING("{JPN}ふっかつそう  {FONT_SMALL} 300"),
-        COMPOUND_STRING("{JPN}タウリン    {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}ブロムヘキシン {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}インドメタシン {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}リゾチウム   {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}キトサン    {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}マックスアップ {FONT_SMALL}1000"),
-        COMPOUND_STRING("{JPN}ポイントアップ {FONT_SMALL}3000"),
+        COMPOUND_STRING("ちからのこな  {FONT_SMALL}  50"),
+        COMPOUND_STRING("ちからのねっこ {FONT_SMALL}  80"),
+        COMPOUND_STRING("ばんのうごな  {FONT_SMALL}  50"),
+        COMPOUND_STRING("ふっかつそう  {FONT_SMALL} 300"),
+        COMPOUND_STRING("タウリン    {FONT_SMALL}1000"),
+        COMPOUND_STRING("ブロムヘキシン {FONT_SMALL}1000"),
+        COMPOUND_STRING("インドメタシン {FONT_SMALL}1000"),
+        COMPOUND_STRING("リゾチウム   {FONT_SMALL}1000"),
+        COMPOUND_STRING("キトサン    {FONT_SMALL}1000"),
+        COMPOUND_STRING("マックスアップ {FONT_SMALL}1000"),
+        COMPOUND_STRING("ポイントアップ {FONT_SMALL}3000"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_RECEPTIONIST] =
@@ -2611,30 +2611,30 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_1] =
     {
-        COMPOUND_STRING("{JPN}タマゴうみ    16BP"),
-        COMPOUND_STRING("{JPN}ちきゅうなげ   24BP"),
-        COMPOUND_STRING("{JPN}ゆめくい     24BP"),
-        COMPOUND_STRING("{JPN}メガトンパンチ  24BP"),
-        COMPOUND_STRING("{JPN}メガトンキック  48BP"),
-        COMPOUND_STRING("{JPN}のしかかり    48BP"),
-        COMPOUND_STRING("{JPN}いわなだれ    48BP"),
-        COMPOUND_STRING("{JPN}カウンター    48BP"),
-        COMPOUND_STRING("{JPN}でんじは     48BP"),
-        COMPOUND_STRING("{JPN}つるぎのまい   48BP"),
+        COMPOUND_STRING("タマゴうみ    16BP"),
+        COMPOUND_STRING("ちきゅうなげ   24BP"),
+        COMPOUND_STRING("ゆめくい     24BP"),
+        COMPOUND_STRING("メガトンパンチ  24BP"),
+        COMPOUND_STRING("メガトンキック  48BP"),
+        COMPOUND_STRING("のしかかり    48BP"),
+        COMPOUND_STRING("いわなだれ    48BP"),
+        COMPOUND_STRING("カウンター    48BP"),
+        COMPOUND_STRING("でんじは     48BP"),
+        COMPOUND_STRING("つるぎのまい   48BP"),
         gText_Exit
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_2] =
     {
-        COMPOUND_STRING("{JPN}まるくなる    16BP"),
-        COMPOUND_STRING("{JPN}いびき      24BP"),
-        COMPOUND_STRING("{JPN}どろかけ     24BP"),
-        COMPOUND_STRING("{JPN}スピードスター  24BP"),
-        COMPOUND_STRING("{JPN}こごえるかぜ   24BP"),
-        COMPOUND_STRING("{JPN}こらえる     48BP"),
-        COMPOUND_STRING("{JPN}じこあんじ    48BP"),
-        COMPOUND_STRING("{JPN}れいとうパンチ  48BP"),
-        COMPOUND_STRING("{JPN}かみなりパンチ  48BP"),
-        COMPOUND_STRING("{JPN}ほのおのパンチ  48BP"),
+        COMPOUND_STRING("まるくなる    16BP"),
+        COMPOUND_STRING("いびき      24BP"),
+        COMPOUND_STRING("どろかけ     24BP"),
+        COMPOUND_STRING("スピードスター  24BP"),
+        COMPOUND_STRING("こごえるかぜ   24BP"),
+        COMPOUND_STRING("こらえる     48BP"),
+        COMPOUND_STRING("じこあんじ    48BP"),
+        COMPOUND_STRING("れいとうパンチ  48BP"),
+        COMPOUND_STRING("かみなりパンチ  48BP"),
+        COMPOUND_STRING("ほのおのパンチ  48BP"),
         gText_Exit
     },
     [SCROLL_MULTI_SS_TIDAL_DESTINATION] =
@@ -5323,7 +5323,7 @@ static void Task_ElevatorShake(u8 taskId)
     }
 }
 
-static const u8 sText_NowOn[] = _("{JPN}いま");
+static const u8 sText_NowOn[] = _("いま");
 
 void DrawElevatorCurrentFloorWindow(void)
 {

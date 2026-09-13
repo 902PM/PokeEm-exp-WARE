@@ -256,25 +256,25 @@ static const u32 sBirchSpeechShadowGfx[] = INCGFX_U32("graphics/birch_speech/sha
 static const u32 sBirchSpeechBgMap[] = INCGFX_U32("graphics/birch_speech/map.bin", ".smolTM");
 static const u16 sBirchSpeechBgGradientPal[] = INCGFX_U16("graphics/birch_speech/bg2.pal", ".gbapal");
 
-static const u8 gText_SaveFileCorrupted[] = _("{JPN}レポートが せいかくに かかれていないので\nそのまえのレポートを よみます!");
-static const u8 gText_SaveFileErased[] = _("{JPN}レポートの ないようが きえてしまった!");
-static const u8 gJPText_No1MSubCircuit[] = _("{JPN}1Mサブきばんが ささっていません!");
-static const u8 gText_BatteryRunDry[] = _("{JPN}でんちぎれの ために\nとけいが うごかなくなりました\pとけいに かんけいする できごとは おきませんが\nゲームを つづけて あそぶことは できます");
+static const u8 gText_SaveFileCorrupted[] = _("レポートが せいかくに かかれていないので\nそのまえのレポートを よみます!");
+static const u8 gText_SaveFileErased[] = _("レポートの ないようが きえてしまった!");
+static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません!");
+static const u8 gText_BatteryRunDry[] = _("でんちぎれの ために\nとけいが うごかなくなりました\pとけいに かんけいする できごとは おきませんが\nゲームを つづけて あそぶことは できます");
 
-static const u8 gText_MainMenuNewGame[] = _("{JPN}さいしょから はじめる");
-static const u8 gText_MainMenuContinue[] = _("{JPN}つづきから はじめる");
-static const u8 gText_MainMenuOption[] = _("{JPN}せっていを かえる");
-static const u8 gText_MainMenuMysteryGift[] = _("{JPN}ふしぎな おくりもの");
-static const u8 gText_MainMenuMysteryGift2[] = _("{JPN}ふしぎな もらいもの");
-static const u8 gText_MainMenuMysteryEvents[] = _("{JPN}ふしぎな できごと");
-static const u8 gText_WirelessNotConnected[] = _("{JPN}ワイヤレスアダプタ が\nつながっていません");
-static const u8 gText_MysteryGiftCantUse[] = _("{JPN}ワイヤレスアダプタ を さしたまま\nふしぎなもらいもの は できません");
-static const u8 gText_MysteryEventsCantUse[] = _("{JPN}ワイヤレスアダプタ を さしたまま\nふしぎなできごと は できません");
+static const u8 gText_MainMenuNewGame[] = _("さいしょから はじめる");
+static const u8 gText_MainMenuContinue[] = _("つづきから はじめる");
+static const u8 gText_MainMenuOption[] = _("せっていを かえる");
+static const u8 gText_MainMenuMysteryGift[] = _("ふしぎな おくりもの");
+static const u8 gText_MainMenuMysteryGift2[] = _("ふしぎな もらいもの");
+static const u8 gText_MainMenuMysteryEvents[] = _("ふしぎな できごと");
+static const u8 gText_WirelessNotConnected[] = _("ワイヤレスアダプタ が\nつながっていません");
+static const u8 gText_MysteryGiftCantUse[] = _("ワイヤレスアダプタ を さしたまま\nふしぎなもらいもの は できません");
+static const u8 gText_MysteryEventsCantUse[] = _("ワイヤレスアダプタ を さしたまま\nふしぎなできごと は できません");
 
-static const u8 gText_ContinueMenuPlayer[] = _("{JPN}しゅじんこう");
-static const u8 gText_ContinueMenuTime[] = _("{JPN}プレイじかん");
-static const u8 gText_ContinueMenuPokedex[] = _("{JPN}ポケモンずかん");
-static const u8 gText_ContinueMenuBadges[] = _("{JPN}もっているバッジ");
+static const u8 gText_ContinueMenuPlayer[] = _("しゅじんこう");
+static const u8 gText_ContinueMenuTime[] = _("プレイじかん");
+static const u8 gText_ContinueMenuPokedex[] = _("ポケモンずかん");
+static const u8 gText_ContinueMenuBadges[] = _("もっているバッジ");
 
 #define MENU_LEFT 2
 #define MENU_TOP_WIN0 1
@@ -478,49 +478,49 @@ static const struct MenuAction sMenuActions_Gender[] = {
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("{JPN}イツオ"),
-    COMPOUND_STRING("{JPN}ギョク"),
-    COMPOUND_STRING("{JPN}ケイ"),
-    COMPOUND_STRING("{JPN}シュウサク"),
-    COMPOUND_STRING("{JPN}セイゴ"),
-    COMPOUND_STRING("{JPN}ダイサク"),
-    COMPOUND_STRING("{JPN}タカヒト"),
-    COMPOUND_STRING("{JPN}タツヤ"),
-    COMPOUND_STRING("{JPN}ダニエル"),
-    COMPOUND_STRING("{JPN}テルキ"),
-    COMPOUND_STRING("{JPN}トム"),
-    COMPOUND_STRING("{JPN}トモヤ"),
-    COMPOUND_STRING("{JPN}ヒトシ"),
-    COMPOUND_STRING("{JPN}ヒロアキ"),
-    COMPOUND_STRING("{JPN}ユキヒコ"),
-    COMPOUND_STRING("{JPN}ラルド"),
-    COMPOUND_STRING("{JPN}リクヤ"),
-    COMPOUND_STRING("{JPN}リチャード"),
-    COMPOUND_STRING("{JPN}リュウ"),
-    COMPOUND_STRING("{JPN}リョウタ")
+    COMPOUND_STRING("イツオ"),
+    COMPOUND_STRING("ギョク"),
+    COMPOUND_STRING("ケイ"),
+    COMPOUND_STRING("シュウサク"),
+    COMPOUND_STRING("セイゴ"),
+    COMPOUND_STRING("ダイサク"),
+    COMPOUND_STRING("タカヒト"),
+    COMPOUND_STRING("タツヤ"),
+    COMPOUND_STRING("ダニエル"),
+    COMPOUND_STRING("テルキ"),
+    COMPOUND_STRING("トム"),
+    COMPOUND_STRING("トモヤ"),
+    COMPOUND_STRING("ヒトシ"),
+    COMPOUND_STRING("ヒロアキ"),
+    COMPOUND_STRING("ユキヒコ"),
+    COMPOUND_STRING("ラルド"),
+    COMPOUND_STRING("リクヤ"),
+    COMPOUND_STRING("リチャード"),
+    COMPOUND_STRING("リュウ"),
+    COMPOUND_STRING("リョウタ")
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("{JPN}アイコ"),
-    COMPOUND_STRING("{JPN}アヤナ"),
-    COMPOUND_STRING("{JPN}アン"),
-    COMPOUND_STRING("{JPN}エミィ"),
-    COMPOUND_STRING("{JPN}カオリ"),
-    COMPOUND_STRING("{JPN}カレン"),
-    COMPOUND_STRING("{JPN}キョウコ"),
-    COMPOUND_STRING("{JPN}サエ"),
-    COMPOUND_STRING("{JPN}スイ"),
-    COMPOUND_STRING("{JPN}ジュリ"),
-    COMPOUND_STRING("{JPN}チエミ"),
-    COMPOUND_STRING("{JPN}チヨコ"),
-    COMPOUND_STRING("{JPN}テルコ"),
-    COMPOUND_STRING("{JPN}ナナエ"),
-    COMPOUND_STRING("{JPN}ヒナ"),
-    COMPOUND_STRING("{JPN}マキコ"),
-    COMPOUND_STRING("{JPN}ミサコ"),
-    COMPOUND_STRING("{JPN}ムツミ"),
-    COMPOUND_STRING("{JPN}モニカ"),
-    COMPOUND_STRING("{JPN}ユウメ")
+    COMPOUND_STRING("アイコ"),
+    COMPOUND_STRING("アヤナ"),
+    COMPOUND_STRING("アン"),
+    COMPOUND_STRING("エミィ"),
+    COMPOUND_STRING("カオリ"),
+    COMPOUND_STRING("カレン"),
+    COMPOUND_STRING("キョウコ"),
+    COMPOUND_STRING("サエ"),
+    COMPOUND_STRING("スイ"),
+    COMPOUND_STRING("ジュリ"),
+    COMPOUND_STRING("チエミ"),
+    COMPOUND_STRING("チヨコ"),
+    COMPOUND_STRING("テルコ"),
+    COMPOUND_STRING("ナナエ"),
+    COMPOUND_STRING("ヒナ"),
+    COMPOUND_STRING("マキコ"),
+    COMPOUND_STRING("ミサコ"),
+    COMPOUND_STRING("ムツミ"),
+    COMPOUND_STRING("モニカ"),
+    COMPOUND_STRING("ユウメ")
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -2288,7 +2288,7 @@ static void MainMenu_FormatSavegamePokedex(void)
         StringExpandPlaceholders(gStringVar4, gText_ContinueMenuPokedex);
         AddTextPrinterParameterized3(2, FONT_NORMAL, 0, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
         ConvertIntToDecimalStringN(str, dexCount, STR_CONV_MODE_LEFT_ALIGN, 4);
-	StringAppend(str, COMPOUND_STRING("{JPN}ひき"));
+	StringAppend(str, COMPOUND_STRING("ひき"));
         AddTextPrinterParameterized3(2, FONT_NORMAL, 70, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
     }
 }
@@ -2307,7 +2307,7 @@ static void MainMenu_FormatSavegameBadges(void)
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
     AddTextPrinterParameterized3(2, FONT_NORMAL, 0x6C, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
     ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
-    StringAppend(str, COMPOUND_STRING("{JPN}こ"));
+    StringAppend(str, COMPOUND_STRING("こ"));
     AddTextPrinterParameterized3(2, FONT_NORMAL, 185, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
 }
 

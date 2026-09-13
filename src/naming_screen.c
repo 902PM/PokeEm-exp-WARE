@@ -213,7 +213,7 @@ static const u8 *const sTransferredToPCMessages[] =
 };
 
 
-static const u8 sText_RivalsName[] = _("{JPN}ライバル の なまえは?");
+static const u8 sText_RivalsName[] = _("ライバル の なまえは?");
 static const u8 sText_AlphabetUpperLower[] = _("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!");
 
 static const struct BgTemplate sBgTemplates[] =
@@ -410,7 +410,7 @@ static void VBlankCB_NamingScreen(void);
 static void NamingScreen_ShowBgs(void);
 static bool8 IsWideLetter(u8);
 
-static const u8 sText_MoveOkBack[] = _("{DPAD_NONE} {JPN}いどう  {R_BUTTON} へんかん {A_BUTTON} けってい  {B_BUTTON} もどる");
+static const u8 sText_MoveOkBack[] = _("{DPAD_NONE} いどう  {R_BUTTON} へんかん {A_BUTTON} けってい  {B_BUTTON} もどる");
 
 void DoNamingScreen(u8 templateNum, u8 *destBuffer, u16 monSpeciesOrPlayerGender, u16 monGender, u32 monPersonality, MainCallback returnCallback)
 {
@@ -2346,7 +2346,7 @@ static const struct NamingScreenTemplate sPlayerNamingScreenTemplate =
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
-    .title = COMPOUND_STRING("{JPN}あなた の なまえは?"),
+    .title = COMPOUND_STRING("あなた の なまえは?"),
 };
 
 static const struct NamingScreenTemplate sPCBoxNamingTemplate =
@@ -2357,7 +2357,7 @@ static const struct NamingScreenTemplate sPCBoxNamingTemplate =
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_HIRAGANA,
     .unused = 19,
-    .title = COMPOUND_STRING("{JPN}ボックス の なまえは?"),
+    .title = COMPOUND_STRING("ボックス の なまえは?"),
 };
 
 static const struct NamingScreenTemplate sMonNamingScreenTemplate =
@@ -2368,7 +2368,7 @@ static const struct NamingScreenTemplate sMonNamingScreenTemplate =
     .addGenderIcon = TRUE,
     .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
-    .title = COMPOUND_STRING("{JPN}{STR_VAR_1} の ニックネームは?"),
+    .title = COMPOUND_STRING("{STR_VAR_1} の ニックネームは?"),
 };
 
 static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
@@ -2379,7 +2379,7 @@ static const struct NamingScreenTemplate sWaldaWordsScreenTemplate =
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_HIRAGANA,
     .unused = 11,
-    .title = COMPOUND_STRING("{JPN}おじさんに ことばを おしえよう"),
+    .title = COMPOUND_STRING("おじさんに ことばを おしえよう"),
 };
 
 static const struct NamingScreenTemplate sCodeScreenTemplate =
@@ -2390,7 +2390,7 @@ static const struct NamingScreenTemplate sCodeScreenTemplate =
     .addGenderIcon = FALSE,
     .initialPage = KBPAGE_HIRAGANA,
     .unused = 35,
-    .title = COMPOUND_STRING("{JPN}コードを いれよう"),
+    .title = COMPOUND_STRING("コードを いれよう"),
 };
 
 static const struct NamingScreenTemplate sRivalNamingScreenTemplate =

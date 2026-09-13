@@ -124,10 +124,10 @@ static const u16 sListWindow_Pal[] = INCGFX_U16("graphics/pokenav/match_call/lis
 static const u16 sPokeball_Pal[] = INCGFX_U16("graphics/pokenav/match_call/pokeball.pal", ".gbapal");
 static const u32 sPokeball_Gfx[] = INCGFX_U32("graphics/pokenav/match_call/pokeball.png", ".4bpp.smol");
 
-static const u8 gText_NumberRegistered[] = _("{JPN}とうろく にんずう");
-static const u8 gText_NumberOfBattles[] = _("{JPN}たいせん かいすう");
-static const u8 gText_TrainerCloseBy[] = _("{JPN}ちかくに いるみたいだから\nちょくせつ あって はなそう!");
-static const u8 gText_Unknown[] = _("{JPN}ふめい");
+static const u8 gText_NumberRegistered[] = _("とうろく にんずう");
+static const u8 gText_NumberOfBattles[] = _("たいせん かいすう");
+static const u8 gText_TrainerCloseBy[] = _("ちかくに いるみたいだから\nちょくせつ あって はなそう!");
+static const u8 gText_Unknown[] = _("ふめい");
 
 static const struct BgTemplate sMatchCallBgTemplates[3] =
 {
@@ -204,13 +204,13 @@ static const struct WindowTemplate sMatchCallInfoBoxWindowTemplate =
 
 static const u8 *const sMatchCallOptionTexts[MATCH_CALL_OPTION_COUNT] =
 {
-    [MATCH_CALL_OPTION_CALL]   = COMPOUND_STRING("{JPN}よびだし"),
-    [MATCH_CALL_OPTION_CHECK]  = COMPOUND_STRING("{JPN}しょうさい"),
-    [MATCH_CALL_OPTION_CANCEL] = COMPOUND_STRING("{JPN}やめる")
+    [MATCH_CALL_OPTION_CALL]   = COMPOUND_STRING("よびだし"),
+    [MATCH_CALL_OPTION_CHECK]  = COMPOUND_STRING("しょうさい"),
+    [MATCH_CALL_OPTION_CANCEL] = COMPOUND_STRING("やめる")
 };
 
 // The series of 5 dots that appear when someone is called with Match Call
-static const u8 sText_CallingDots[] = _("{JPN}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・\p");
+static const u8 sText_CallingDots[] = _("・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・{PAUSE 4}・\p");
 
 static const struct WindowTemplate sCallMsgBoxWindowTemplate =
 {

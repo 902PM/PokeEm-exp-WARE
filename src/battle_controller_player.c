@@ -1766,9 +1766,9 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     }
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[] = _("{JPN}ぶんるい");
-    u8 pwr_desc[] = _("{JPN}いりょく");
-    u8 acc_desc[] = _("{JPN}めいちゅう");
+    u8 cat_desc[] = _("ぶんるい");
+    u8 pwr_desc[] = _("いりょく");
+    u8 acc_desc[] = _("めいちゅう");
     u8 cat_start[] = _("{FONT_NARROW}{CLEAR_TO 3}"); // 説明文は全て一括で同じ場所に入っているので、FONT指定可能。
     u8 pwr_start[] = _("{CLEAR_TO 45}");
     u8 acc_start[] = _("{CLEAR_TO 89}");
@@ -1987,8 +1987,8 @@ static void HandleChooseActionAfterDma3(enum BattlerId battler)
         {
             if (DEBUG_AI_DELAY_TIMER)
             {
-                static const u8 sFramesText[] = _("{JPN}しこう フレーム\n");
-                static const u8 sCyclesText[] = _("{JPN}サイクル");
+                static const u8 sFramesText[] = _("しこう フレーム\n");
+                static const u8 sCyclesText[] = _("サイクル");
                 ConvertIntToDecimalStringN(gDisplayedStringBattle, gBattleStruct->aiDelayFrames, STR_CONV_MODE_RIGHT_ALIGN, 3);
                 u8* end = StringAppend(gDisplayedStringBattle, sFramesText);
                 ConvertIntToDecimalStringN(end, gBattleStruct->aiDelayCycles, STR_CONV_MODE_RIGHT_ALIGN, 8);
@@ -2023,7 +2023,7 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     enum BattlerId partner = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
     if (B_SHOW_PARTNER_TARGET && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && IsBattlerAlive(partner))
     {
-        StringCopy(gStringVar1, COMPOUND_STRING("{JPN}なかまの わざ\n"));
+        StringCopy(gStringVar1, COMPOUND_STRING("なかまの わざ\n"));
         enum Move move = GetBattlerChosenMove(partner);
         StringAppend(gStringVar1, GetMoveName(move));
         enum MoveTarget moveTarget = GetBattlerMoveSelectionTargetType(partner, move);

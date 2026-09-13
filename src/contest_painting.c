@@ -42,7 +42,7 @@ static void PrintContestPaintingCaption(u8, u8);
 static void VBlankCB_ContestPainting(void);
 static void _InitContestMonPixels(u8 *spriteGfx, u16 *palette, u16 (*destPixels)[64][64]);
 
-const u8 gContestHallPaintingCaption[] = _("{JPN}{STR_VAR_1}\n{STR_VAR_2} {JPN}の {STR_VAR_3}");
+const u8 gContestHallPaintingCaption[] = _("{STR_VAR_1}\n{STR_VAR_2} の {STR_VAR_3}");
 
 static const u16 sPictureFramePalettes[]          = INCGFX_U16("graphics/picture_frame/bg.pal", ".gbapal");
 static const u32 sPictureFrameTiles_HallLobby[]   = INCGFX_U32("graphics/picture_frame/lobby.png", ".4bpp.smol", "-num_tiles 86 -Wnum_tiles");
@@ -50,20 +50,20 @@ static const u32 sPictureFrameTilemap_HallLobby[] = INCGFX_U32("graphics/picture
 
 static const u8 *const sContestCategoryNames_Unused[] =
 {
-    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("{JPN}かっこよさ"),
-    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{JPN}うつくしさ"),
-    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("{JPN}かわいさ"),
-    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("{JPN}かしこさ"),
-    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("{JPN}たくましさ"),
+    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("かっこよさ"),
+    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("うつくしさ"),
+    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("かわいさ"),
+    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("かしこさ"),
+    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("たくましさ"),
 };
 
 static const u8 *const sContestRankNames[] =
 {
-    [CONTEST_RANK_NORMAL] = COMPOUND_STRING("{JPN}ノーマルランク"),
-    [CONTEST_RANK_SUPER]  = COMPOUND_STRING("{JPN}スーパーランク"),
-    [CONTEST_RANK_HYPER]  = COMPOUND_STRING("{JPN}ハイパーランク"),
-    [CONTEST_RANK_MASTER] = COMPOUND_STRING("{JPN}マスターランク"),
-    [CONTEST_RANK_LINK]   = COMPOUND_STRING("{JPN}つうしん"),
+    [CONTEST_RANK_NORMAL] = COMPOUND_STRING("ノーマルランク"),
+    [CONTEST_RANK_SUPER]  = COMPOUND_STRING("スーパーランク"),
+    [CONTEST_RANK_HYPER]  = COMPOUND_STRING("ハイパーランク"),
+    [CONTEST_RANK_MASTER] = COMPOUND_STRING("マスターランク"),
+    [CONTEST_RANK_LINK]   = COMPOUND_STRING("つうしん"),
 };
 
 static const struct BgTemplate sBgTemplates[] =
@@ -92,21 +92,21 @@ static const struct WindowTemplate sWindowTemplate =
 
 static const u8 *const sMuseumCaptions[NUM_PAINTING_CAPTIONS * CONTEST_CATEGORIES_COUNT] =
 {
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("{JPN}スーパー クール\nノンストップ {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("{JPN}グッドルッキン ポケモン {STR_VAR_1}"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("{JPN}マーベラス ワンダフル\nグレート {STR_VAR_1}"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{JPN}こんせいき さいごの ビーナス\nビューティー {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{JPN}{STR_VAR_1} クンの マブシイ\nキラキラ スマイル"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{JPN}ポケモンセンター の\nスーパー アイドル {STR_VAR_1}"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("{JPN}ラブリー スウィート {STR_VAR_1} ちゃん"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("{JPN}プリティー {STR_VAR_1}たんの\nおすまし ショット"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("{JPN}こっち むいて!\nキュート ポケモン {STR_VAR_1} ちゃん"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("{JPN}かしこさ マエストロ\nワイズ ポケモン {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("{JPN}えらばれた ポケモン…\nポケモンの なかの ポケモン {STR_VAR_1}"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("{JPN}エクセレント {STR_VAR_1} の\nゆうがな ひととき"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("{JPN}パワフル マッスル\nハッスル {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("{JPN}ストロング ストロンガー\nストロンゲスト {STR_VAR_1}"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("{JPN}タフネス マイティー\nハイパーポケモン {STR_VAR_1}!"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("スーパー クール\nノンストップ {STR_VAR_1}"),
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("グッドルッキン ポケモン {STR_VAR_1}"),
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("マーベラス ワンダフル\nグレート {STR_VAR_1}"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("こんせいき さいごの ビーナス\nビューティー {STR_VAR_1}"),
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{STR_VAR_1} クンの マブシイ\nキラキラ スマイル"),
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("ポケモンセンター の\nスーパー アイドル {STR_VAR_1}"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("ラブリー スウィート {STR_VAR_1} ちゃん"),
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("プリティー {STR_VAR_1}たんの\nおすまし ショット"),
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("こっち むいて!\nキュート ポケモン {STR_VAR_1} ちゃん"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("かしこさ マエストロ\nワイズ ポケモン {STR_VAR_1}"),
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("えらばれた ポケモン…\nポケモンの なかの ポケモン {STR_VAR_1}"),
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("エクセレント {STR_VAR_1} の\nゆうがな ひととき"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("パワフル マッスル\nハッスル {STR_VAR_1}"),
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("ストロング ストロンガー\nストロンゲスト {STR_VAR_1}"),
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("タフネス マイティー\nハイパーポケモン {STR_VAR_1}!"),
 };
 
 static const struct OamData sContestPaintingMonOamData =
