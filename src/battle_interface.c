@@ -886,10 +886,12 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     }
     else
     {
-        text[0] = CHAR_EXTRA_SYMBOL;
-        text[1] = CHAR_LV_2;
+        text[0] = EXT_CTRL_CODE_BEGIN;
+        text[1] = EXT_CTRL_CODE_ENG;
+        text[2] = CHAR_EXTRA_SYMBOL;
+        text[3] = CHAR_LV_2;
 
-        ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        ConvertIntToDecimalStringN(text + 4, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
         UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
     }
 
