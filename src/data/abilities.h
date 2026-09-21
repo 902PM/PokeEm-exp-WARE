@@ -2472,4 +2472,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("とびだすハバネロ"),
         .description = COMPOUND_STRING("ダメージを うけたとき やけど させる"),
     },
+
+    [ABILITY_AURA_GUARD] =
+    {
+        .name = _("はどうのぼうご"),
+        .description = COMPOUND_STRING("みじっそう"),
+    },
 };
