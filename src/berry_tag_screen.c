@@ -176,7 +176,7 @@ static void HandleBagCursorPositionChange(s8 toMove);
 
 static const u8 sText_SizeSlash[] = _("おおきさ");
 static const u8 sText_FirmSlash[] = _("かたさ");
-static const u8 sText_Var1DotVar2[] = _("{STR_VAR_1}.{STR_VAR_2}");
+static const u8 sText_Var1DotVar2[] = _("{STR_VAR_1}.{STR_VAR_2}cm");
 static const u8 sText_NumberVar1Var2[] = _("{NO}{STR_VAR_1} {STR_VAR_2}");
 static const u8 sText_BerryTag[] = _("きのみのタグ");
 static const u8 sText_ThreeMarks[] = _("???");
@@ -424,15 +424,12 @@ static void PrintBerrySize(void)
     AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_SizeSlash, 0, 1, TEXT_SKIP_DRAW, NULL);
     if (berryInfo->size != 0)
     {
-        u32 inches, fraction;
+        u32 integer, fraction;
 
-        inches = 1000 * berryInfo->size / 254;
-        if (inches % 10 > 4)
-            inches += 10;
-        fraction = (inches % 100) / 10;
-        inches /= 100;
+        integer = berryInfo->size / 10;
+        fraction = berryInfo->size % 10;
 
-        ConvertIntToDecimalStringN(gStringVar1, inches, STR_CONV_MODE_LEFT_ALIGN, 2);
+        ConvertIntToDecimalStringN(gStringVar1, integer, STR_CONV_MODE_LEFT_ALIGN, 2);
         ConvertIntToDecimalStringN(gStringVar2, fraction, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringExpandPlaceholders(gStringVar4, sText_Var1DotVar2);
         AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, gStringVar4, 0x28, 1, 0, NULL);
