@@ -1105,7 +1105,7 @@
 #define PHRASE_COOL_LATIOS          4
 #define PHRASE_SUPER_HUSTLE         5
 
-#define EC_NUM_ALPHABET_GROUPS 27 // 26 (1 for each letter) + 1 (Others)
+#define EC_NUM_ALPHABET_GROUPS 45 // 44 (1 for each letter) + 1 (Others)
 
 #define EC_MAX_WORDS_IN_GROUP 270 // The closest is words by letter S, at 262
 
