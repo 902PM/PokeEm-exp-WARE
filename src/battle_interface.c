@@ -880,7 +880,9 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     // 有効なインジケーターを伴うギミックを持つポケモンの場合、Lvの文字を表示しない。
     if (GetIndicatorPalTag(battler) != TAG_NONE)
     {
-        ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        text[0] = EXT_CTRL_CODE_BEGIN;
+        text[1] = EXT_CTRL_CODE_ENG;
+        ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
         UpdateIndicatorLevelData(healthboxSpriteId, lvl);
         UpdateIndicatorVisibilityAndType(healthboxSpriteId, FALSE);
     }

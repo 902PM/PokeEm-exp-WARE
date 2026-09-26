@@ -5034,7 +5034,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 7,
         .weight = 685,
         .description = COMPOUND_STRING(
-            "いんきな せいしつ。 ヒスイのちの みずに\nがんゆうする てつが ひふのねんまくに さようし\nきんぞくのからへ へんようさせたと こうさつす。"),
+            "いんきな せいしつ。 ヒスイのちの みずに\nがんゆうする てつが ひふのねんえきに さようし\nきんぞくのからへ へんようさせたと こうさつす。"),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,

@@ -339,7 +339,7 @@ enum {
 #define NUM_WORD_SELECT_ROWS 4
 #define NUM_BUTTON_ROWS      3
 
-#define NUM_ALPHABET_COLUMNS    7
+#define NUM_ALPHABET_COLUMNS    14
 #define NUM_GROUP_NAME_COLUMNS  2
 #define NUM_WORD_SELECT_COLUMNS 2
 
@@ -686,10 +686,10 @@ static const struct EasyChatScreenTemplate sEasyChatScreenTemplates[] = {
 // 0 is 'Others', 1-26 are the letters A-Z
 // This array maps the group IDs to the alphabet keyboard
 static const u8 sAlphabetGroupIdMap[NUM_ALPHABET_ROWS][NUM_ALPHABET_COLUMNS] = {
-    { 1,  2,  3,  4,  5,  6,  0},
-    { 7,  8,  9, 10, 11, 12,  0},
-    {13, 14, 15, 16, 17, 18, 19},
-    {20, 21, 22, 23, 24, 25, 26},
+    { 1,  2,  3,  4,  5, 21, 22, 23, 24, 25, 36, 37, 38, 44},
+    { 6,  7,  8,  9, 10, 26, 27, 28, 29, 30, 0},
+    {11, 12, 13, 14, 15, 31, 32, 33, 34, 35},
+    {16, 17, 18, 19, 20, 39, 40, 41, 42, 43},
 };
 
 static const u16 sMysteryEventPhrase[NUM_QUESTIONNAIRE_WORDS] = {
@@ -947,7 +947,8 @@ static const struct CompressedSpriteSheet sCompressedSpriteSheets[] = {
     },
 };
 
-static const u8 sAlphabetKeyboardColumnOffsets[NUM_ALPHABET_COLUMNS] = {0, 12, 24, 56, 68, 80, 92};
+static const u8 sAlphabetKeyboardColumnOffsets[NUM_ALPHABET_COLUMNS] = 
+{0, 8, 16, 24, 32, 48, 56, 64, 72, 80, 96, 104, 112, 128};
 
 static const struct OamData sOamData_TriangleCursor = {
     .y = 0,
@@ -2188,7 +2189,7 @@ static int SelectKeyboardGroup(void)
     if (numWords == 0)
         return ECFUNC_NONE;
 
-    sEasyChatScreen->wordSelectLastRow = (numWords - 1) / 2;
+    sEasyChatScreen->wordSelectLastRow = (numWords - 1) / 3;
     sEasyChatScreen->wordSelectScrollOffset = 0;
     sEasyChatScreen->wordSelectColumn = 0;
     sEasyChatScreen->wordSelectRow = 0;
@@ -2529,7 +2530,7 @@ static u16 MoveWordSelectCursor(u32 input)
         ReduceToValidWordSelectColumn();
         return ECFUNC_UPDATE_WORD_SELECT_CURSOR;
     case INPUT_RIGHT:
-        if (sEasyChatScreen->wordSelectColumn < 1)
+        if (sEasyChatScreen->wordSelectColumn < 2)
         {
             sEasyChatScreen->wordSelectColumn++;
             if (IsSelectedWordIndexInvalid())
@@ -2600,8 +2601,13 @@ static u8 GetLastAlphabetColumn(u8 row)
     default:
         return NUM_ALPHABET_COLUMNS - 1;
     case 1:
-        return NUM_ALPHABET_COLUMNS - 2; // At 6 letters, only the 2nd row (index 1) has less than the max columns
+        return NUM_ALPHABET_COLUMNS - 4; // At 6 letters, only the 2nd row (index 1) has less than the max columns
                                          // The 3rd and 4th row have 7 letters, the 1st row has 6 letters and 'Others'
+    case 2:
+        return NUM_ALPHABET_COLUMNS - 5;
+    case 3:
+        return NUM_ALPHABET_COLUMNS - 5;
+
     }
 }
 
@@ -3154,7 +3160,7 @@ static bool8 UpdateMainCursor(void)
     {
         if (*ecWord == EC_EMPTY_WORD)
         {
-            stringWidth = 72;
+            stringWidth = 44;
         }
         else
         {
@@ -4058,7 +4064,7 @@ static void PrintCurrentPhrase(void)
                 if (!isQuizQuestion)
                 {
                     str = WriteColorChangeControlCode(str, 0, 4);
-                    for (k = 0; k < 12; k++)
+                    for (k = 0; k < 5; k++)
                     {
                         *str = CHAR_HYPHEN;
                         str++;
@@ -4304,16 +4310,16 @@ static void PrintWordSelectText(u8 scrollOffset, u8 numRows)
     y++;
     for (i = 0; i < numRows; i++)
     {
-        for (j = 0; j < 2; j++)
+        for (j = 0; j < 3; j++)
         {
             easyChatWord = GetWordFromSelectedGroup(wordIndex++);
             if (easyChatWord != EC_EMPTY_WORD)
             {
                 CopyEasyChatWordPadded(sScreenControl->wordSelectPrintBuffer, easyChatWord, 0);
                 if (!DummyWordCheck(easyChatWord))
-                    PrintEasyChatText(WIN_INPUT_SELECT, FONT_NORMAL, sScreenControl->wordSelectPrintBuffer, (j * 13 + 3) * 8, y, TEXT_SKIP_DRAW, NULL);
+                    PrintEasyChatText(WIN_INPUT_SELECT, FONT_NORMAL, sScreenControl->wordSelectPrintBuffer, (j * 9 + 2) * 8, y, TEXT_SKIP_DRAW, NULL);
                 else // Never reached
-                    PrintEasyChatTextWithColors(WIN_INPUT_SELECT, FONT_NORMAL, sScreenControl->wordSelectPrintBuffer, (j * 13 + 3) * 8, y, TEXT_SKIP_DRAW, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_RED, TEXT_COLOR_LIGHT_GRAY);
+                    PrintEasyChatTextWithColors(WIN_INPUT_SELECT, FONT_NORMAL, sScreenControl->wordSelectPrintBuffer, (j * 9 + 2) * 8, y, TEXT_SKIP_DRAW, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_RED, TEXT_COLOR_LIGHT_GRAY);
             }
         }
 
@@ -4716,11 +4722,11 @@ static void SetRectangleCursorPos_AlphabetMode(s8 column, s8 row)
     if (column != -1)
     {
         y = row * 16 + 96;
-        x = 32;
-        if (column == NUM_ALPHABET_COLUMNS - 1 && row == 0)
+        x = 21;
+        if (column == NUM_ALPHABET_COLUMNS - 4 && row == 1)
         {
             // Cursor is on 'Others'
-            x = 158;
+            x = 133;
             anim = RECTCURSOR_ANIM_ON_OTHERS;
         }
         else
@@ -4777,8 +4783,8 @@ static void UpdateWordSelectCursorPos(void)
     s8 column, row, x, y;
 
     GetWordSelectColAndRow(&column, &row);
-    x = column * 13;
-    x = x * 8 + 28;
+    x = column * 9;
+    x = x * 8 + 16;
     y = row * 16 + 96;
     SetWordSelectCursorPos(x, y);
 }
