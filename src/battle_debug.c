@@ -1506,15 +1506,17 @@ static void PrintSecondaryEntries(struct BattleDebugMenu *data)
             txtPtr[0] = CHAR_SPACE;
             if (gBattleMons[data->battlerId].statStages[STAT_ATK + i] >= DEFAULT_STAT_STAGE)
             {
-                txtPtr[1] = CHAR_PLUS_2;
-                txtPtr[2] = CHAR_0 + (gBattleMons[data->battlerId].statStages[STAT_ATK + i] - DEFAULT_STAT_STAGE);
+                txtPtr[1] = CHAR_EXTRA_SYMBOL;
+                txtPtr[2] = 0xDC;
+                txtPtr[3] = CHAR_0 + (gBattleMons[data->battlerId].statStages[STAT_ATK + i] - DEFAULT_STAT_STAGE);
+                txtPtr[4] = EOS;
             }
             else
             {
                 txtPtr[1] = CHAR_HYPHEN;
                 txtPtr[2] = CHAR_6 - (gBattleMons[data->battlerId].statStages[STAT_ATK + i]);
+                txtPtr[3] = EOS;
             }
-            txtPtr[3] = EOS;
 
             PadString(text, text);
             printer.currentY = printer.y = (i * yMultiplier) + sSecondaryListTemplate.upText_Y;
