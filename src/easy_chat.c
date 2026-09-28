@@ -340,8 +340,8 @@ enum {
 #define NUM_BUTTON_ROWS      3
 
 #define NUM_ALPHABET_COLUMNS    14
-#define NUM_GROUP_NAME_COLUMNS  2
-#define NUM_WORD_SELECT_COLUMNS 2
+#define NUM_GROUP_NAME_COLUMNS  3
+#define NUM_WORD_SELECT_COLUMNS 3
 
 enum {
     FRAMEID_GENERAL_2x2,
@@ -1190,7 +1190,7 @@ static const struct SpriteTemplate sSpriteTemplate_ScrollIndicator =
 };
 
 static const u8 sFooterOptionXOffsets[NUM_FOOTER_TYPES][4] = {
-    [FOOTER_NORMAL] = {16, 111, 196,   0},
+    [FOOTER_NORMAL] = {16,  72, 112,   0},
     [FOOTER_QUIZ]   = {16,  78, 130, 160},
     [FOOTER_ANSWER] = {16,  80, 134, 170},
 };
@@ -1651,7 +1651,7 @@ static bool8 InitEasyChatScreenStruct(u8 type, u16 *words, u8 displayedPersonTyp
         sEasyChatScreen->savedPhrase = sEasyChatScreen->currentPhrase;
     }
 
-    sEasyChatScreen->keyboardLastRow = (GetNumUnlockedEasyChatGroups() - 1) / 2 + 1;
+    sEasyChatScreen->keyboardLastRow = (GetNumUnlockedEasyChatGroups() - 1) / 3 + 1;
     return TRUE;
 }
 
@@ -2376,7 +2376,7 @@ static int MoveKeyboardCursor_GroupNames(u32 input)
 
         return ECFUNC_UPDATE_KEYBOARD_CURSOR;
     case INPUT_RIGHT:
-        if (sEasyChatScreen->keyboardColumn < 1)
+        if (sEasyChatScreen->keyboardColumn < 2)
         {
             sEasyChatScreen->keyboardColumn++;
             if (IsSelectedKeyboardIndexInvalid())
@@ -2471,7 +2471,7 @@ static void SetKeyboardCursorToLastColumn(void)
 {
     if (!sEasyChatScreen->inAlphabetMode)
     {
-        sEasyChatScreen->keyboardColumn = 1;
+        sEasyChatScreen->keyboardColumn = 2;
         ReduceToValidKeyboardColumn();
     }
     else
@@ -4225,7 +4225,7 @@ static void PrintKeyboardGroupNames(void)
     y = 97;
     while (1)
     {
-        for (x = 0; x < 2; x++)
+        for (x = 0; x < 3; x++)
         {
             u8 groupId = GetUnlockedEasyChatGroupId(i++);
             if (groupId == EC_NUM_GROUPS)
@@ -4234,7 +4234,7 @@ static void PrintKeyboardGroupNames(void)
                 return;
             }
 
-            PrintEasyChatText(WIN_INPUT_SELECT, FONT_NORMAL, GetEasyChatWordGroupName(groupId), x * 84 + 10, y, TEXT_SKIP_DRAW, NULL);
+            PrintEasyChatText(WIN_INPUT_SELECT, FONT_NORMAL, GetEasyChatWordGroupName(groupId), x * 56 + 10, y, TEXT_SKIP_DRAW, NULL);
         }
 
         y += 16;
@@ -4694,11 +4694,11 @@ static void SetRectangleCursorPos_GroupMode(s8 column, s8 row)
     {
         // In group name window
         StartSpriteAnim(sScreenControl->rectangleCursorSpriteRight, RECTCURSOR_ANIM_ON_GROUP);
-        sScreenControl->rectangleCursorSpriteRight->x = column * 84 + 58;
+        sScreenControl->rectangleCursorSpriteRight->x = column * 56 + 38;
         sScreenControl->rectangleCursorSpriteRight->y = row * 16 + 96;
 
         StartSpriteAnim(sScreenControl->rectangleCursorSpriteLeft, RECTCURSOR_ANIM_ON_GROUP);
-        sScreenControl->rectangleCursorSpriteLeft->x = column * 84 + 58;
+        sScreenControl->rectangleCursorSpriteLeft->x = column * 56 + 38;
         sScreenControl->rectangleCursorSpriteLeft->y = row * 16 + 96;
     }
     else
@@ -4726,7 +4726,7 @@ static void SetRectangleCursorPos_AlphabetMode(s8 column, s8 row)
         if (column == NUM_ALPHABET_COLUMNS - 4 && row == 1)
         {
             // Cursor is on 'Others'
-            x = 133;
+            x = 125;
             anim = RECTCURSOR_ANIM_ON_OTHERS;
         }
         else
