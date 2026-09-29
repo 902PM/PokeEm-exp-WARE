@@ -3,11 +3,11 @@
 
 // ひらがな
 #define CHAR_SPACE                 0x00
-#define CHAR_HIRA_A		           0x01
-#define CHAR_HIRA_I		           0x02
-#define CHAR_HIRA_U		           0x03
-#define CHAR_HIRA_E		           0x04
-#define CHAR_HIRA_O		           0x05
+#define CHAR_HIRA_A                0x01
+#define CHAR_HIRA_I                0x02
+#define CHAR_HIRA_U                0x03
+#define CHAR_HIRA_E                0x04
+#define CHAR_HIRA_O                0x05
 #define CHAR_HIRA_KA		       0x06
 #define CHAR_HIRA_KI		       0x07
 #define CHAR_HIRA_KU		       0x08
@@ -49,14 +49,14 @@
 #define CHAR_HIRA_WA		       0x2C
 #define CHAR_HIRA_WO		       0x2D
 #define CHAR_HIRA_N 		       0x2E
-#define CHAR_HIRA_SMALL_A		   0x2F
-#define CHAR_HIRA_SMALL_I		   0x30
-#define CHAR_HIRA_SMALL_U          0x31
-#define CHAR_HIRA_SMALL_E          0x32
-#define CHAR_HIRA_SMALL_O          0x33
-#define CHAR_HIRA_SMALL_YA         0x34
-#define CHAR_HIRA_SMALL_YU         0x35
-#define CHAR_HIRA_SMALL_YO         0x36
+#define CHAR_HIRA_SMALL_A	       0x2F
+#define CHAR_HIRA_SMALL_I	       0x30
+#define CHAR_HIRA_SMALL_U	       0x31
+#define CHAR_HIRA_SMALL_E	       0x32
+#define CHAR_HIRA_SMALL_O	       0x33
+#define CHAR_HIRA_SMALL_YA	       0x34
+#define CHAR_HIRA_SMALL_YU	       0x35
+#define CHAR_HIRA_SMALL_YO	       0x36
 #define CHAR_HIRA_GA		       0x37
 #define CHAR_HIRA_GI		       0x38
 #define CHAR_HIRA_GU		       0x39
@@ -85,11 +85,11 @@
 #define CHAR_HIRA_SMALL_TU	       0x50
 
 // カタカナ
-#define CHAR_KANA_A		           0x51
-#define CHAR_KANA_I		           0x52
-#define CHAR_KANA_U		           0x53
-#define CHAR_KANA_E		           0x54
-#define CHAR_KANA_O		           0x55
+#define CHAR_KANA_A                0x51
+#define CHAR_KANA_I                0x52
+#define CHAR_KANA_U                0x53
+#define CHAR_KANA_E                0x54
+#define CHAR_KANA_O                0x55
 #define CHAR_KANA_KA		       0x56
 #define CHAR_KANA_KI		       0x57
 #define CHAR_KANA_KU		       0x58
@@ -131,14 +131,14 @@
 #define CHAR_KANA_WA		       0x7C
 #define CHAR_KANA_WO		       0x7D
 #define CHAR_KANA_N 		       0x7E
-#define CHAR_KANA_SMALL_A		   0x7F
-#define CHAR_KANA_SMALL_I		   0x80
-#define CHAR_KANA_SMALL_U          0x81
-#define CHAR_KANA_SMALL_E          0x82
-#define CHAR_KANA_SMALL_O          0x83
-#define CHAR_KANA_SMALL_YA         0x84
-#define CHAR_KANA_SMALL_YU         0x85
-#define CHAR_KANA_SMALL_YO         0x86
+#define CHAR_KANA_SMALL_A	       0x7F
+#define CHAR_KANA_SMALL_I	       0x80
+#define CHAR_KANA_SMALL_U	       0x81
+#define CHAR_KANA_SMALL_E	       0x82
+#define CHAR_KANA_SMALL_O	       0x83
+#define CHAR_KANA_SMALL_YA	       0x84
+#define CHAR_KANA_SMALL_YU	       0x85
+#define CHAR_KANA_SMALL_YO	       0x86
 #define CHAR_KANA_GA		       0x87
 #define CHAR_KANA_GI		       0x88
 #define CHAR_KANA_GU		       0x89
