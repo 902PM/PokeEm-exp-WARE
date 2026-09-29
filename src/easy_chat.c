@@ -1190,7 +1190,7 @@ static const struct SpriteTemplate sSpriteTemplate_ScrollIndicator =
 };
 
 static const u8 sFooterOptionXOffsets[NUM_FOOTER_TYPES][4] = {
-    [FOOTER_NORMAL] = {16,  72, 112,   0},
+    [FOOTER_NORMAL] = {16,  72, 128,   0},
     [FOOTER_QUIZ]   = {16,  78, 130, 160},
     [FOOTER_ANSWER] = {16,  80, 134, 170},
 };
