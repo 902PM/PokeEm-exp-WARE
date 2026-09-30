@@ -7743,7 +7743,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_DEWGONG] = {
         .species = SPECIES_DEWGONG,
-        .moves = {MOVE_SHEER_COLD, MOVE_ICE_BEAM, MOVE_ICE_SHARD, MOVE_SCALD},
+        .moves = {MOVE_SCALD, MOVE_ICE_BEAM, MOVE_ALLURING_VOICE, MOVE_SHEER_COLD},
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 6, 252, 0),
         .nature = NATURE_MODEST,

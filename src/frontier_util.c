@@ -51,9 +51,11 @@ struct FrontierBrainMon
     u8 fixedIV;
     u8 nature;
     u8 isShiny;
-    enum Ability ability;
+    u8 abilityNum;
     u8 ball;
     u8 gender;
+    u8 gigantamaxFactor;
+    u8 dynamaxLevel;
     u8 teraType;
     u8 evs[NUM_STATS];
     enum Move moves[MAX_MON_MOVES];
@@ -236,35 +238,37 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_ALAKAZAM,
-                .heldItem = ITEM_EXPERT_BELT,
+                .heldItem = ITEM_ALAKAZITE,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_TIMID,
-                .ability = ABILITY_SYNCHRONIZE,
+                .abilityNum = 0,
                 .ball = BALL_LUXURY,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {6, 0, 0, 252, 252, 0},
-                .moves = {MOVE_PSYCHIC, MOVE_ENERGY_BALL, MOVE_TAUNT, MOVE_FOCUS_BLAST},
+                .moves = {MOVE_PSYCHIC, MOVE_ENERGY_BALL, MOVE_SHADOW_BALL, MOVE_FOCUS_BLAST},
             },
             {
                 .species = SPECIES_ENTEI,
                 .heldItem = ITEM_ASSAULT_VEST,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_INNER_FOCUS,
+                .abilityNum = 2,
                 .ball = BALL_HEAVY,
                 .evs = {68, 252, 6, 140, 0, 44},
                 .moves = {MOVE_SACRED_FIRE, MOVE_IRON_HEAD, MOVE_TRAILBLAZE, MOVE_EXTREME_SPEED},
             },
             {
                 .species = SPECIES_SNORLAX,
-                .heldItem = ITEM_SNORLIUM_Z,
+                .heldItem = ITEM_FIGY_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_THICK_FAT,
+                .abilityNum = 2,
                 .ball = BALL_HEAVY,
-                .gender = 0,
-                .evs = {252, 252, 0, 6, 0, 0},
-                .moves = {MOVE_GIGA_IMPACT, MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM},
+                .gender = MON_MALE,
+                .gigantamaxFactor = TRUE,
+                .dynamaxLevel = 10,
+                .evs = {180, 252, 0, 76, 0, 0},
+                .moves = {MOVE_DARKEST_LARIAT, MOVE_FIRE_PUNCH, MOVE_FACADE, MOVE_BELLY_DRUM},
             },
         },
         // Gold Symbol.
@@ -274,8 +278,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LIFE_ORB,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_TIMID,
-                .ability = ABILITY_INNER_FOCUS,
+                .abilityNum = 2,
                 .ball = BALL_FAST,
+                .dynamaxLevel = 10,
                 .evs = {6, 0, 0, 252, 252, 0},
                 .moves = {MOVE_THUNDER, MOVE_CALM_MIND, MOVE_SCALD, MOVE_SHADOW_BALL},
             },
@@ -284,7 +289,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LATIOSITE,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_TIMID,
-                .ability = ABILITY_LEVITATE,
+                .abilityNum = 0,
                 .ball = BALL_BEAST,
                 .evs = {6, 0, 0, 252, 252, 0},
                 .moves = {MOVE_LUSTER_PURGE, MOVE_DRACO_METEOR, MOVE_SURF, MOVE_FLIP_TURN},
@@ -294,9 +299,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_SNORLIUM_Z,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_THICK_FAT,
+                .abilityNum = 1,
                 .ball = BALL_HEAVY,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {252, 252, 0, 6, 0, 0},
                 .moves = {MOVE_GIGA_IMPACT, MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM},
             },
@@ -308,12 +313,12 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_SWAMPERT,
-                .heldItem = ITEM_RINDO_BERRY,
+                .heldItem = ITEM_SWAMPERTITE,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_TORRENT,
+                .abilityNum = 0,
                 .ball = BALL_LURE,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {252, 252, 0, 6, 0, 0},
                 .moves = {MOVE_WAVE_CRASH, MOVE_EARTHQUAKE, MOVE_ICE_PUNCH, MOVE_FLIP_TURN},
             },
@@ -322,9 +327,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LIFE_ORB,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_INTIMIDATE,
+                .abilityNum = 0,
                 .ball = BALL_BEAST,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {114, 144, 0, 252, 0, 0},
                 .moves = {MOVE_DUAL_WINGBEAT, MOVE_EARTHQUAKE, MOVE_OUTRAGE, MOVE_DRAGON_DANCE},
             },
@@ -333,9 +338,10 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_WEAKNESS_POLICY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_TIMID,
-                .ability = ABILITY_SOLAR_POWER,
+                .abilityNum = 2,
                 .ball = BALL_BEAST,
-	        .gender = 0,
+                .gender = MON_MALE,
+                .dynamaxLevel = 10,
                 .evs = {6, 0, 0, 252, 252, 0},
                 .moves = {MOVE_FIRE_BLAST, MOVE_DRAGON_PULSE, MOVE_AIR_SLASH, MOVE_SOLAR_BEAM},
             },
@@ -344,12 +350,13 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_SWAMPERT,
-                .heldItem = ITEM_RINDO_BERRY,
+                .heldItem = ITEM_WEAKNESS_POLICY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_TORRENT,
+                .abilityNum = 0,
                 .ball = BALL_LURE,
-                .gender = 0,
+                .gender = MON_MALE,
+                .dynamaxLevel = 10,
                 .evs = {252, 252, 0, 6, 0, 0},
                 .moves = {MOVE_WAVE_CRASH, MOVE_EARTHQUAKE, MOVE_ICE_PUNCH, MOVE_FLIP_TURN},
             },
@@ -358,7 +365,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_METAGROSSITE,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_CLEAR_BODY,
+                .abilityNum = 0,
                 .ball = BALL_HEAVY,
                 .evs = {114, 144, 0, 252, 0, 0},
                 .moves = {MOVE_BULLET_PUNCH, MOVE_IRON_HEAD, MOVE_PSYCHIC_FANGS, MOVE_ICE_PUNCH},
@@ -368,7 +375,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_KEE_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
-                .ability = ABILITY_LEVITATE,
+                .abilityNum = 0,
                 .ball = BALL_LOVE,
                 .teraType = TYPE_STEEL,
                 .evs = {252, 0, 252, 0, 0, 6},
@@ -385,9 +392,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_FLYING_GEM,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_INFILTRATOR,
+                .abilityNum = 2,
                 .ball = BALL_FRIEND,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_ACROBATICS, MOVE_CROSS_POISON, MOVE_LEECH_LIFE, MOVE_U_TURN},
             },
@@ -396,9 +403,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_QUICK_CLAW,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_TRUANT,
+                .abilityNum = 0,
                 .ball = BALL_PREMIER,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_SKILL_SWAP, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM},
             },
@@ -407,9 +414,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_THROAT_SPRAY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
-                .ability = ABILITY_HYDRATION,
+                .abilityNum = 2,
                 .ball = BALL_DIVE,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .teraType = TYPE_GROUND,
                 .evs = {252, 0, 0, 6, 252, 0},
                 .moves = {MOVE_SPARKLING_ARIA, MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_SHEER_COLD},
@@ -422,9 +429,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_CHOICE_SCARF,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_ROCK_HEAD,
+                .abilityNum = 2,
                 .ball = BALL_HEAVY,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_HEAD_SMASH, MOVE_WILD_CHARGE, MOVE_FLARE_BLITZ, MOVE_CLOSE_COMBAT},
             },
@@ -433,9 +440,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_QUICK_CLAW,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_TRUANT,
+                .abilityNum = 0,
                 .ball = BALL_PREMIER,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_SKILL_SWAP, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_HAMMER_ARM},
             },
@@ -444,7 +451,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LEFTOVERS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_CALM,
-                .ability = ABILITY_PRESSURE,
+                .abilityNum = 0,
                 .ball = BALL_DIVE,
                 .teraType = TYPE_FAIRY,
                 .evs = {252, 0, 92, 28, 6, 132},
@@ -461,9 +468,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_FLAME_ORB,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_GUTS,
+                .abilityNum = 1,
                 .ball = BALL_NET,
-                .gender = 0,
+                .gender = MON_MALE,
                 .teraType = TYPE_FIRE,
                 .evs = {252, 252, 0, 6, 0, 0},
                 .moves = {MOVE_MEGAHORN, MOVE_EARTHQUAKE, MOVE_STONE_EDGE, MOVE_CLOSE_COMBAT},
@@ -473,19 +480,20 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LEFTOVERS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
-                .ability = ABILITY_INNER_FOCUS,
+                .abilityNum = 2,
                 .ball = BALL_MOON,
-                .gender = 0,
+                .gender = MON_MALE,
                 .evs = {252, 0, 6, 0, 0, 252},
-                .moves = {MOVE_SKILL_SWAP, MOVE_TOXIC, MOVE_FOUL_PLAY, MOVE_MOONLIGHT},
+                .moves = {MOVE_FOUL_PLAY, MOVE_TOXIC, MOVE_TAUNT, MOVE_MOONLIGHT},
             },
             {
                 .species = SPECIES_SHEDINJA,
                 .heldItem = ITEM_SAFETY_GOGGLES,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
+                .abilityNum = 0,
                 .ball = BALL_DUSK,
-                .ability = ABILITY_WONDER_GUARD,
+                .teraType = TYPE_GHOST,
                 .evs = {0, 252, 6, 252, 0, 0},
                 .moves = {MOVE_SWORDS_DANCE, MOVE_SHADOW_CLAW, MOVE_SHADOW_SNEAK, MOVE_X_SCISSOR},
             },
@@ -497,9 +505,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_UTILITY_UMBRELLA,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_CALM,
-                .ability = ABILITY_SYNCHRONIZE,
+                .abilityNum = 0,
                 .ball = BALL_DUSK,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {252, 0, 0, 6, 0, 252},
                 .moves = {MOVE_MOONLIGHT, MOVE_SNARL, MOVE_FOUL_PLAY, MOVE_YAWN},
             },
@@ -510,7 +518,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .nature = NATURE_TIMID,
                 .isShiny = TRUE,
                 .ball = BALL_DUSK,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {6, 0, 0, 252, 252, 0},
                 .moves = {MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DARK_PULSE, MOVE_SUCKER_PUNCH},
             },
@@ -520,9 +528,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
                 .isShiny = TRUE,
-                .ability = ABILITY_TECHNICIAN,
+                .abilityNum = 2,
                 .ball = BALL_MOON,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_MACH_PUNCH, MOVE_BULLET_SEED, MOVE_POUNCE, MOVE_SPORE},
             },
@@ -594,9 +602,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_CHOICE_SCARF,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_INFILTRATOR,
+                .abilityNum = 2,
                 .ball = BALL_SAFARI,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {252, 6, 0, 252, 0, 0},
                 .moves = {MOVE_SWITCHEROO, MOVE_FINAL_GAMBIT, MOVE_GLARE, MOVE_CRUNCH},
             },
@@ -605,9 +613,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_CHESTO_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
-                .ability = ABILITY_CONTRARY,
+                .abilityNum = 2,
                 .ball = BALL_NET,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .teraType = TYPE_WATER,
                 .evs = {252, 28, 0, 0, 0, 228},
                 .moves = {MOVE_POWER_SPLIT, MOVE_SHELL_SMASH, MOVE_REST, MOVE_INFESTATION},
@@ -617,9 +625,9 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LEFTOVERS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
-                .ability = ABILITY_COMPETITIVE,
+                .abilityNum = 1,
                 .ball = BALL_LOVE,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {252, 0, 252, 6, 0, 0},
                 .moves = {MOVE_SCALD, MOVE_ICY_WIND, MOVE_FLIP_TURN, MOVE_RECOVER},
             },
@@ -628,23 +636,24 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_SEVIPER,
-                .heldItem = ITEM_CHOICE_SCARF,
+                .heldItem = ITEM_LIFE_ORB,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_INFILTRATOR,
+                .abilityNum = 2,
                 .ball = BALL_SAFARI,
-                .gender = 1,
-                .evs = {252, 6, 0, 252, 0, 0},
-                .moves = {MOVE_SWITCHEROO, MOVE_FINAL_GAMBIT, MOVE_GLARE, MOVE_CRUNCH},
+                .gender = MON_FEMALE,
+                .dynamaxLevel = 10,
+                .evs = {6, 252, 0, 252, 0, 0},
+                .moves = {MOVE_GUNK_SHOT, MOVE_EARTHQUAKE, MOVE_PSYCHIC_FANGS, MOVE_CRUNCH},
             },
             {
                 .species = SPECIES_STEELIX,
                 .heldItem = ITEM_STEELIXITE,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
-                .ability = ABILITY_STURDY,
+                .abilityNum = 1,
                 .ball = BALL_HEAVY,
-                .gender = 1,
+                .gender = MON_FEMALE,
                 .evs = {252, 6, 0, 0, 0, 252},
                 .moves = {MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM, MOVE_IRON_DEFENSE, MOVE_BODY_PRESS},
             },
@@ -653,9 +662,10 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_FOCUS_SASH,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
-                .ability = ABILITY_MOXIE,
+                .abilityNum = 2,
                 .ball = BALL_DIVE,
-                .gender = 1,
+                .gender = MON_FEMALE,
+                .teraType = TYPE_WATER,
                 .evs = {6, 252, 0, 252, 0, 0},
                 .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_EARTHQUAKE, MOVE_DRAGON_DANCE},
             },
@@ -670,18 +680,18 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_LIGHT_BALL,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_STURDY,
+                .abilityNum = 2,
                 .ball = BALL_HEAVY,
                 .teraType = TYPE_NORMAL,
                 .evs = {252, 0, 0, 252, 0, 6},
-                .moves = {MOVE_FLING, MOVE_STEALTH_ROCK, MOVE_EXPLOSION, MOVE_ROCK_TOMB},
+                .moves = {MOVE_FLING, MOVE_STEALTH_ROCK, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB},
             },
             {
                 .species = SPECIES_REGISTEEL,
                 .heldItem = ITEM_LEFTOVERS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_IMPISH,
-                .ability = ABILITY_CLEAR_BODY,
+                .abilityNum = 0,
                 .ball = BALL_HEAVY,
                 .teraType = TYPE_GHOST,
                 .evs = {252, 252, 0, 0, 0, 6},
@@ -692,7 +702,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_CHESTO_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
-                .ability = ABILITY_CLEAR_BODY,
+                .abilityNum = 0,
                 .ball = BALL_DIVE,
                 .teraType = TYPE_ELECTRIC,
                 .evs = {252, 0, 0, 6, 252, 0},
@@ -706,7 +716,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_KEE_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
-                .ability = ABILITY_COMPETITIVE,
+                .abilityNum = 0,
                 .ball = BALL_DUSK,
                 .evs = {252, 0, 116, 36, 6, 100},
                 .moves = {MOVE_RECOVER, MOVE_FREEZING_GLARE, MOVE_AIR_SLASH, MOVE_CALM_MIND},
@@ -716,7 +726,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_FOCUS_SASH,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
-                .ability = ABILITY_DEFIANT,
+                .abilityNum = 0,
                 .ball = BALL_FAST,
                 .evs = {12, 228, 6, 252, 0, 12},
                 .moves = {MOVE_THUNDEROUS_KICK, MOVE_DUAL_WINGBEAT, MOVE_COUNTER, MOVE_TAUNT},
@@ -726,7 +736,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .heldItem = ITEM_WEAKNESS_POLICY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
-                .ability = ABILITY_BERSERK,
+                .abilityNum = 0,
                 .ball = BALL_DUSK,
                 .evs = {6, 0, 0, 252, 252, 0},
                 .moves = {MOVE_FIERY_WRATH, MOVE_HURRICANE, MOVE_TAUNT, MOVE_NASTY_PLOT},
@@ -868,8 +878,9 @@ static const u8 *const sHallFacilityToRecordsText[] =
     [RANKING_HALL_TOWER_LINK]    = gText_FrontierFacilityWinStreak,
 };
 
-// Trainer ID ranges for possible frontier trainers to encounter on particular challenges
-// Trainers are scaled by difficulty, so higher trainer IDs have better teams
+// 周回で遭遇するフロンティアトレーナーのID範囲
+// これらは難易度に応じて設定されているため、IDが高いほど、強いパーティを繰り出します。
+// なお、根本からFrontierTrainerMonsを弄っている場合は、この限りではありません。
 static const u16 sFrontierTrainerIdRanges[][2] =
 {
     {FRONTIER_TRAINER_BRADY,   FRONTIER_TRAINER_JILL},   //   0 -  99
@@ -2720,8 +2731,10 @@ void CreateFrontierBrainPokemon(void)
                   sFrontierBrainsMons[facility][symbol][i].fixedIV);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_HELD_ITEM, &sFrontierBrainsMons[facility][symbol][i].heldItem);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_IS_SHINY, &sFrontierBrainsMons[facility][symbol][i].isShiny);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_GIGANTAMAX_FACTOR, &sFrontierBrainsMons[facility][symbol][i].gigantamaxFactor);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_DYNAMAX_LEVEL, &sFrontierBrainsMons[facility][symbol][i].dynamaxLevel);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_TERA_TYPE, &sFrontierBrainsMons[facility][symbol][i].teraType);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_ABILITY_NUM, &sFrontierBrainsMons[facility][symbol][i].ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_ABILITY_NUM, &sFrontierBrainsMons[facility][symbol][i].abilityNum);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_POKEBALL, &sFrontierBrainsMons[facility][symbol][i].ball);
         for (j = 0; j < NUM_STATS; j++)
             SetMonData(&gParties[B_TRAINER_OPPONENT_A][monPartyId], MON_DATA_HP_EV + j, &sFrontierBrainsMons[facility][symbol][i].evs[j]);
@@ -2784,12 +2797,12 @@ u8 GetFrontierBrainMonisShiny(u8 monId)
     return sFrontierBrainsMons[facility][symbol][monId].isShiny;
 }
 
-enum Ability GetFrontierBrainMonAbility(u8 monId)
+u8 GetFrontierBrainMonAbility(u8 monId)
 {
     s32 facility = VarGet(VAR_FRONTIER_FACILITY);
     s32 symbol = GetFronterBrainSymbol();
 
-    return sFrontierBrainsMons[facility][symbol][monId].ability;
+    return sFrontierBrainsMons[facility][symbol][monId].abilityNum;
 }
 
 u8 GetFrontierBrainMonBall(u8 monId)
@@ -2798,6 +2811,22 @@ u8 GetFrontierBrainMonBall(u8 monId)
     s32 symbol = GetFronterBrainSymbol();
 
     return sFrontierBrainsMons[facility][symbol][monId].ball;
+}
+
+u8 GetFrontierBrainMongigantamaxFactor(u8 monId)
+{
+    s32 facility = VarGet(VAR_FRONTIER_FACILITY);
+    s32 symbol = GetFronterBrainSymbol();
+
+    return sFrontierBrainsMons[facility][symbol][monId].gigantamaxFactor;
+}
+
+u8 GetFrontierBrainMondynamaxLevel(u8 monId)
+{
+    s32 facility = VarGet(VAR_FRONTIER_FACILITY);
+    s32 symbol = GetFronterBrainSymbol();
+
+    return sFrontierBrainsMons[facility][symbol][monId].dynamaxLevel;
 }
 
 u8 GetFrontierBrainMonteraType(u8 monId)

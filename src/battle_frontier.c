@@ -199,6 +199,91 @@ void FillFrontierTrainersParties(u8 monsCount)
     FillTrainerParty(TRAINER_BATTLE_PARAM.opponentB, B_TRAINER_OPPONENT_B, monsCount);
 }
 
+static const enum Species sDuplicateSpecies[] =
+{
+    //リージョンフォーム
+    [SPECIES_RATICATE_ALOLA] = SPECIES_RATICATE,
+    [SPECIES_RAICHU_ALOLA] = SPECIES_RAICHU,
+    [SPECIES_SANDSLASH_ALOLA] = SPECIES_SANDSLASH,
+    [SPECIES_NINETALES_ALOLA] = SPECIES_NINETALES,
+    [SPECIES_PERSIAN_ALOLA] = SPECIES_PERSIAN,
+    [SPECIES_GOLEM_ALOLA] = SPECIES_GOLEM,
+    [SPECIES_MUK_ALOLA] = SPECIES_MUK,
+    [SPECIES_EXEGGUTOR_ALOLA] = SPECIES_EXEGGUTOR,
+    [SPECIES_MAROWAK_ALOLA] = SPECIES_MAROWAK,
+    [SPECIES_SLOWBRO_GALAR] = SPECIES_SLOWBRO,
+    [SPECIES_RAPIDASH_GALAR] = SPECIES_RAPIDASH,
+    [SPECIES_WEEZING_GALAR] = SPECIES_WEEZING,
+    [SPECIES_MR_MIME_GALAR] = SPECIES_MR_MIME,
+    [SPECIES_ARTICUNO_GALAR] = SPECIES_ARTICUNO,
+    [SPECIES_ZAPDOS_GALAR] = SPECIES_ZAPDOS,
+    [SPECIES_MOLTRES_GALAR] = SPECIES_MOLTRES,
+    [SPECIES_SLOWKING_GALAR] = SPECIES_SLOWKING,
+    [SPECIES_CORSOLA_GALAR] = SPECIES_CORSOLA,
+    [SPECIES_LINOONE_GALAR] = SPECIES_LINOONE,
+    [SPECIES_STUNFISK_GALAR] = SPECIES_STUNFISK,
+    [SPECIES_DARMANITAN_GALAR_STANDARD] = SPECIES_DARMANITAN_STANDARD,
+    [SPECIES_ARCANINE_HISUI] = SPECIES_ARCANINE,
+    [SPECIES_ELECTRODE_HISUI] = SPECIES_ELECTRODE,
+    [SPECIES_TYPHLOSION_HISUI] = SPECIES_TYPHLOSION,
+    [SPECIES_SAMUROTT_HISUI] = SPECIES_SAMUROTT,
+    [SPECIES_LILLIGANT_HISUI] = SPECIES_LILLIGANT,
+    [SPECIES_ZOROARK_HISUI] = SPECIES_ZOROARK,
+    [SPECIES_BRAVIARY_HISUI] = SPECIES_BRAVIARY,
+    [SPECIES_AVALUGG_HISUI] = SPECIES_AVALUGG,
+    [SPECIES_GOODRA_HISUI] = SPECIES_GOODRA,
+    [SPECIES_DECIDUEYE_HISUI] = SPECIES_DECIDUEYE,
+    [SPECIES_TAUROS_PALDEA_BLAZE] = SPECIES_TAUROS,
+    [SPECIES_TAUROS_PALDEA_AQUA] = SPECIES_TAUROS,
+    //分岐進化
+    [SPECIES_SNEASLER] = SPECIES_WEAVILE,
+    [SPECIES_PERRSERKER] = SPECIES_PERSIAN,
+    //フォルムチェンジ
+    [SPECIES_ROTOM_HEAT] = SPECIES_ROTOM,
+    [SPECIES_ROTOM_FROST] = SPECIES_ROTOM,
+    [SPECIES_ROTOM_WASH] = SPECIES_ROTOM,
+    [SPECIES_ROTOM_FAN] = SPECIES_ROTOM,
+    [SPECIES_ROTOM_MOW] = SPECIES_ROTOM,
+    [SPECIES_TORNADUS_THERIAN] = SPECIES_TORNADUS_INCARNATE,
+    [SPECIES_THUNDURUS_THERIAN] = SPECIES_THUNDURUS_INCARNATE,
+    [SPECIES_LANDORUS_THERIAN] = SPECIES_LANDORUS_INCARNATE,
+    [SPECIES_ENAMORUS_THERIAN] = SPECIES_ENAMORUS_INCARNATE,
+    //オス・メスで別個体
+    [SPECIES_MEOWSTIC_F] = SPECIES_MEOWSTIC_M,
+    [SPECIES_INDEEDEE_F] = SPECIES_INDEEDEE_M,
+    [SPECIES_BASCULEGION_F] = SPECIES_BASCULEGION_M,
+    [SPECIES_OINKOLOGNE_F] = SPECIES_OINKOLOGNE_M,
+    //その他の同種
+    [SPECIES_URSALUNA_BLOODMOON] = SPECIES_URSALUNA,
+};
+
+static enum Species GetDuplicateSpecies(enum Species species)
+{
+    if (sDuplicateSpecies[species] != SPECIES_NONE)
+        return sDuplicateSpecies[species];
+
+    return species;
+}
+
+static bool8 IsMegaStone(u32 item)
+{
+    if (item >= ITEM_VENUSAURITE && item <= ITEM_DIANCITE)
+        return TRUE;
+
+    if (item >= ITEM_CLEFABLITE && item <= ITEM_FALINKSITE)
+        return TRUE;
+
+    if (item >= ITEM_HEATRANITE && item <= ITEM_GLIMMORANITE)
+        return TRUE;
+
+    return FALSE;
+}
+
+static bool8 IsZCrystal(u32 item)
+{
+    return item >= ITEM_NORMALIUM_Z && item <= ITEM_ULTRANECROZIUM_Z;
+}
+
 static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCount)
 {
     s32 i, j;
@@ -252,6 +337,7 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
     // 通常のバトルフロンティアのトレーナー。
     // 3匹のポケモンが選出されるまで、ランダムにトレーナーのパーティを埋める。
     // トレーナーのパーティ内で、ポケモンの種類や持たせている道具が重複することはない。
+    // また3匹選出できないほど、個体数が少ない場合、無限ループする可能性がある。（ある）
     for (bfMonCount = 0; monSet[bfMonCount] != 0xFFFF; bfMonCount++)
         ;
     i = 0;
@@ -265,20 +351,30 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
         if ((level == FRONTIER_MAX_LEVEL_50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
             continue;
 
-        // このポケモン種が重複していないことを確認する。
+        // ポケモンの種族が重複していないかチェック。
+        // ただし、これはあくまでもSPECIES_XXXXでしか見ていないので（値でしか見ていない）内部IDが違うリージョンフォーム等は重複する。
+        // リージョンフォーム等の同じ名前のポケモンも除外する。
         for (j = 0; j < i; j++)
         {
-            if (GetMonData(&gParties[trainer][j], MON_DATA_SPECIES) == gFacilityTrainerMons[monId].species)
+            if (GetDuplicateSpecies(GetMonData(&gParties[trainer][j], MON_DATA_SPECIES))
+                == GetDuplicateSpecies(gFacilityTrainerMons[monId].species))
                 break;
         }
         if (j != i)
             continue;
 
-        // このポケモンの持ち物が重複していないことを確認する。
+        // ポケモンの持ち物の重複チェック。
+        // メガストーンや、Zクリスタルも１匹でも持っていれば、全て重複扱いにし、パーティ構築に無駄がないようにする。
         for (j = 0; j < i; j++)
         {
             if (GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) != ITEM_NONE
              && GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) == gFacilityTrainerMons[monId].heldItem)
+                break;
+            else if (IsMegaStone(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM))
+                    && IsMegaStone(gFacilityTrainerMons[monId].heldItem))
+                break;
+            else if (IsZCrystal(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM))
+                    && IsZCrystal(gFacilityTrainerMons[monId].heldItem))
                 break;
         }
         if (j != i)
