@@ -332,10 +332,10 @@
 #define B_ICE_WEATHER_SNOW              2
 
 #define B_ABILITY_WEATHER               GEN_5      // 第6世代以降、特性によって発生する天候は5ターンの間持続します。それ以前は、戦闘が終了するか、技や別の天候特性によって天候が変化するまで持続していました。
-#define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // 第4世代以降、砂嵐の天候によって Sp が倍増します。いわタイプのポケモンの防御力が1.5倍になる。
-#define B_SANDSTORM_SOLAR_BEAM          GEN_LATEST // 第3世代以降、砂嵐によってソーラー ビームの出力が低下します。
-#define B_OVERWORLD_FOG                 GEN_4      // 第8世代以降、フィールド上の「霧」は戦闘中に「ミストフィールド」を発生させます。一方、第4世代に限っては、フィールド上の「霧」は戦闘中に「霧」という特殊な天候状態を発生させます。
-#define B_OVERWORLD_SNOW                GEN_8      // 第9世代以降、フィールド上の天候が「雪」の場合、戦闘では「あられ」ではなく「ゆき」が発生します。
+#define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // 第4世代以降、砂嵐によっていわタイプのとくぼうが1.5倍になります。
+#define B_SANDSTORM_SOLAR_BEAM          GEN_LATEST // 第3世代以降、砂嵐によってソーラー系のダメージが0.5倍になります。
+#define B_OVERWORLD_FOG                 GEN_3      // 第8世代以降、フィールド上の霧は戦闘中に「ミストフィールド」を発生させます。一方、第4世代に限っては、フィールド上の霧は戦闘中に霧という特殊な天候状態を発生させます。
+#define B_OVERWORLD_SNOW                GEN_8      // 第9世代以降、フィールド上の天候が雪の場合、戦闘では「あられ」ではなく「ゆき」が発生します。
 #define B_SNOW_WARNING                  GEN_8      // 第9世代以降、「ゆきふらし」は「あられ」の代わりに「ゆき」を降らせるようになります。
 #define B_PREFERRED_ICE_WEATHER         B_ICE_WEATHER_BOTH // 「あられ」状態と「ゆき」状態を共存させます。
 #define B_OVERWORLD_WEATHER_OVERRIDE    GEN_8      // 第9世代以降、フィールド上の天候は上書きできません。
@@ -343,7 +343,7 @@
 // ◯◯フィールド設定
 #define B_TERRAIN_BG_CHANGE         TRUE       // TRUEの場合、地形変化の技は、その効果が切れるまでデフォルトの戦闘背景を永続的に変更します。
 #define B_THUNDERSTORM_TERRAIN      TRUE       // TRUEの場合、オーバーワールドの雷雨は第8世代と同様に、雨とエレキフィールドを発生させます。
-#define B_TERRAIN_TYPE_BOOST        GEN_7 // 第8世代では、ダメージの補正は50%ではなく30%になります。（◯◯フィールド）
+#define B_TERRAIN_TYPE_BOOST        GEN_7      // 第8世代では、ダメージの補正は50%ではなく30%になります。（◯◯フィールド）
 #define B_SECRET_POWER_EFFECT       GEN_LATEST // 「ひみつのちから」の効果は、地形や世代によって変化します。`SetMoveEffect` 内の `MOVE_EFFECT_SECRET_POWER` の処理を​​参照してください。
 #define B_SECRET_POWER_ANIMATION    GEN_LATEST // 「ひみつのちから」の演出は、地形や世代によって変化します。
 #define B_NATURE_POWER_MOVES        GEN_LATEST // 「しぜんのちから」は、地形や世代によって繰り出す技が異なります。gBattleEnvironmentInfo を参照してください。
@@ -371,8 +371,8 @@
 
 // 捕獲設定
 #define B_SEMI_INVULNERABLE_CATCH       GEN_3      // 第4世代以降では、半無敵状態（「あなをほる」や「そらをとぶ」など）にあるポケモンに対してボールを投げることはできません。
-#define B_CATCHING_CHARM_BOOST          100        // ゆれないおまもりを所持している場合、クリティカルキャッチの発生率がX%上昇します。
-#define B_INCAPACITATED_CATCH_BONUS     GEN_LATEST // 第5世代以降では、ポケモンが「ねむり」または「こおり」状態の際の捕獲率ボーナスは2.5倍ですが、第4世代以前では2倍にとどまります。
+#define B_CATCHING_CHARM_BOOST          100        // ゆれないおまもりを所持している場合、捕獲クリティカルの発生率がX%上昇します。
+#define B_INCAPACITATED_CATCH_BONUS     GEN_LATEST // 第5世代以降では、ポケモンが「ねむり」または「こおり」状態の際の捕獲率ボーナスは2.5倍ですが、第4世代以前では2倍です。
 #define B_LOW_LEVEL_CATCH_BONUS         GEN_8      // 第8世代では、レベル20未満のポケモンを捕まえる際に捕獲率へのボーナスが加算されます。一方、第9世代では、このボーナスはレベル13未満のポケモンにのみ適用されます。
 #define B_MISSING_BADGE_CATCH_MALUS     GEN_3      // 第9世代では、現在の捕獲レベルより5レベル上のモンを捕獲しようとすると、獲得したジムバッジの数に基づいて捕獲率にペナルティが追加されます。
 #define B_CRITICAL_CAPTURE              TRUE       // TRUEの場合、捕獲クリティカルが有効になります。
@@ -390,16 +390,16 @@
 // その他設定２
 #define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // 第4世代以降のマルチバトルでは、プレイヤーとパートナーの双方が戦えるポケモンをすべて失った時点でバトルが終了します。
 #define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // 第6世代以降、戦闘後に進化条件を満たしたポケモンは、たとえプレイヤーが敗北しても進化します。
-#define B_AFFECTION_MECHANICS           TRUE       // 第6世代以降、バトル中に様々な効果を発動させる「なかよし度」というステータスが存在しますが、ピカブイ以降では、代わりに「なつき度」が使用されるようになりました。
+#define B_AFFECTION_MECHANICS           TRUE       // 第6世代以降、バトル中に様々な効果を発動させる「なかよし度」というステータスが存在しますが、ピカブイ以降では、「なつき度」に吸収されました。
 #define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // 第7世代以降、トレーナーはそのトレーナーのクラスに応じて特定の種類のボールを使用します。
-#define B_TRAINER_MON_RANDOM_ABILITY    TRUE       // これをTRUEに設定すると、トレーナーのポケモンにランダムな合法的な特性が生成されます。
+#define B_TRAINER_MON_RANDOM_ABILITY    TRUE       // これをTRUEに設定すると、トレーナーのポケモンにランダムな合法的な特性が生成されます。（設定していない場合のみ）
 #define B_OBEDIENCE_MECHANICS           GEN_3      // レジェアル（ここでは第8世代以降）においても、交換したポケモンに対して「言うことを聞かなくなる」制限が適用されますが、その判定基準は現在のレベルではなく、入手時のレベルに基づいています。
 #define B_USE_FROSTBITE                 FALSE      // レジェアルでは、こおり状態の代わりにしもやけ状態が採用されています。このフラグを有効にすると、同様の挙動になります。技ごとにこおりにするかしもやけにするかを選択することも可能です。「フリーズドライ」、「ひみつのちから」、「トライアタック」の挙動はこの設定に依存します。
 #define B_TOXIC_REVERSAL                GEN_LATEST // 第5世代以降、戦闘終了時にもうどくが通常のどくに変化します。
 #define B_TRY_CATCH_TRAINER_BALL        GEN_LATEST // 第4世代以降、トレーナーのポケモンを捕まえようとしても、モンスターボールは消費されません。
 #define B_SLEEP_CLAUSE                  FALSE      // B_FLAG_SLEEP_CLAUSEの設定にかかわらず、常にSleep Clauseを有効にします。モジュール性を高めるためにこれを使用してください。
 #define B_PARTNER_MONS_MARKED_SEEN      TRUE       // TRUEの場合、ダブルバトルのパートナーがまだ遭遇したことのないポケモンを繰り出すと、そのポケモンは図鑑に「見つけたポケモン」として記録されます。
-#define B_MULTI_HALF_TEAMS              FALSE      // TRUEの場合、戦闘で片側に2人のトレーナーがいる場合、トレーナーはそれぞれ3匹のポケモンに制限されます。 FALSE の場合、「trainers.party」の「Multi Party: Half」を使用して戦闘ごとの上限を設定できます。
+#define B_MULTI_HALF_TEAMS              FALSE      // TRUEの場合、いわゆるタッグバトルの場合、トレーナーはそれぞれポケモンは3匹に制限されます。 FALSE の場合、「trainers.party」の「Multi Party: Half」を使用して戦闘ごとの上限を設定できます。
 #define B_TERA_ORB_ALWAYS_CHARGED       TRUE       // TRUEの場合、B_FLAG_TERA_ORB_CHARGEDの状態にかかわらず、テラスタルオーブが常にチャージされた状態になります。モジュール性を高めるために使用してください。
 
 #define NUM_BEEPS_GEN_LATEST            4                    // 4回繰り返す（HP赤の点滅音）

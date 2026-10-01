@@ -71,6 +71,7 @@
 #define GEN_CHAMPIONS GEN_9 + 1
 #define GEN_COUNT GEN_CHAMPIONS + 1
 // GEN_LATESTの値を別の世代に変更すると、それを使用しているすべてのデフォルト設定が一括して変更されます。
+// 現在：9世代(Not CAHMPIONS)
 #define GEN_LATEST GEN_9
 
 // General settings

@@ -3,16 +3,16 @@
 
 // 動きの設定
 #define OW_RUNNING_INDOORS          GEN_LATEST  // 第4世代以降、プレイヤーは屋内で走ることができます。
-#define SLOW_MOVEMENT_ON_STAIRS     FALSE       // 有効にすると、FRLGと同様に、階段を上り下りする際のプレイヤーの移動速度が遅くなります。
+#define SLOW_MOVEMENT_ON_STAIRS     FALSE       // TRUEにすると、FRLGと同様に、階段を上り下りする際のプレイヤーの移動速度が遅くなります。
 
 // その他設定
 #define OW_POISON_DAMAGE                GEN_LATEST // 第4世代では、フィールド上で『どく』状態によってポケモンがひんしになることはなくなりました。第5世代以降は、ダメージを受けることさえなくなっています。
 #define OW_DOUBLE_APPROACH_WITH_ONE_MON FALSE      // この機能を有効にすると、手持ちに対象のポケモンが1匹しかいなくても、同時に2人のトレーナーに見つかる可能性があります。
 #define OW_HIDE_REPEAT_MAP_POPUP        FALSE      // これを有効にすると、直前と同じ「マップセクションID」を持つマップに入った際、マップのポップアップは表示されなくなります。
 #define OW_WHITEOUT_CUTSCENE            GEN_3 // 第4世代以降、全滅（ホワイトアウト）時に追加のメッセージが表示され、回復役のNPCを伴うイベントスクリプトのカットシーンが再生されます（この変更はFRLGにも存在しましたが、簡略化のため、GEN_3に設定した場合はRSEの挙動となります）。
-#define OW_DEFOG_FIELD_MOVE             FALSE      // 有効にすると、DPPtと同様に『きりばらい』をフィールドで使用できます。
-#define OW_ROCK_CLIMB_FIELD_MOVE        FALSE      // 有効にすると、DPPtと同様に『ロッククライム』をフィールドで使用できます。
-#define OW_CHOOSE_FROM_PC_AND_PARTY     TRUE       // 有効にすると、技を教えてくれるNPCや交換を求めてくるトレーナーとのやり取りにおいて、手持ちのポケモンだけでなく、ボックス内のポケモンも選べるようになります。
+#define OW_DEFOG_FIELD_MOVE             FALSE      // TRUEにすると、DPPtと同様に『きりばらい』をフィールドで使用できます。
+#define OW_ROCK_CLIMB_FIELD_MOVE        FALSE      // TRUEにすると、DPPtと同様に『ロッククライム』をフィールドで使用できます。
+#define OW_CHOOSE_FROM_PC_AND_PARTY     TRUE       // TRUEにすると、技を教えてくれるNPCや交換を求めてくるトレーナーとのやり取りにおいて、手持ちのポケモンだけでなく、ボックス内のポケモンも選べるようになります。
 
 // アイテム入手時の説明（ポップアップ）
 #define OW_ITEM_DESCRIPTIONS_OFF        0   // 説明を一切表示しない
@@ -32,19 +32,19 @@
 #define OW_PC_RELEASE_ITEM          GEN_LATEST // 第8世代以降、持ち物を持った状態で逃がされたポケモンは、その持ち物をバッグに戻します。
 
 // きのみ設定
-#define OW_BERRY_MUTATIONS             FALSE      // 有効にすると、きのみの苗は隣に植えられたベリーの影響を受けて突然変異することがあります。
+#define OW_BERRY_MUTATIONS             FALSE      // TRUEにすると、きのみの苗は隣に植えられたベリーの影響を受けて突然変異することがあります。
 #define OW_BERRY_MUTATION_CHANCE       25         // 突然変異が発生する確率（%）を決定します。
-#define OW_BERRY_MOISTURE              FALSE      // 有効にすると、きのみへの水やりは、生育段階ごとに一度行うのではなく、土壌を湿った状態に保つ形で行われます。
+#define OW_BERRY_MOISTURE              FALSE      // TRUEにすると、きのみへの水やりは、生育段階ごとに一度行うのではなく、土壌を湿った状態に保つ形で行われます。
 #define OW_BERRY_ALWAYS_WATERABLE      FALSE      // OW_BERRY_MOISTUREが有効な場合、プレイヤーは土に継続して水をまくことができます（乾燥した土では、第4世代と同様にきのみの収穫量が減少します）。無効な場合、水やりは土が乾燥している時にのみ可能となり、水やりを行うと収穫量が増加します（第6世代と同様の仕様です）。
-#define OW_BERRY_MULCH_USAGE           FALSE      // 有効にすると、マルチを土壌に使用して肥料として活用できます。無効の場合、使用不可とみなされます。なお、水分に関する効果は「OW_BERRY_MOISTURE」が有効な場合にのみ機能しますのでご注意ください。
-#define OW_BERRY_WEEDS                 FALSE      // 有効にすると、プレイヤーが手入れを必要とするきのみの木に雑草が生えるようになります。「OW_BERRY_MOISTURE」が設定されていない場合、除草によるボーナスは端数が切り捨てられます。
-#define OW_BERRY_PESTS                 FALSE      // 有効にすると、プレイヤーが世話をする必要のある木の実の植物に害虫が近づく可能性があります。OW_BERRY_MOISTUREが設定されていない場合、害虫によるボーナスは切り捨てられます。
+#define OW_BERRY_MULCH_USAGE           FALSE      // TRUEにすると、こやしを使用できます。FALSEの場合、使用不可になります。(原作ではホウエン地方では使用できません。)なお、水分に関する効果は「OW_BERRY_MOISTURE」がTRUE時のみ機能します。
+#define OW_BERRY_WEEDS                 FALSE      // TRUEにすると、プレイヤーが手入れを必要とするきのみの木に雑草が生えるようになります。「OW_BERRY_MOISTURE」が設定されていない場合、除草によるボーナスは端数が切り捨てられます。
+#define OW_BERRY_PESTS                 FALSE      // TRUEにすると、プレイヤーが世話をする必要のある木の実の植物に害虫が近づく可能性があります。OW_BERRY_MOISTUREが設定されていない場合、害虫によるボーナスは切り捨てられます。
 #define OW_BERRY_SIX_STAGES            FALSE      // 『XY』では、きのみの成長段階は4段階ではなく6段階になっています。この設定は、木が収穫可能になるまでの時間には影響しません。「OW_BERRY_MOISTURE」が有効でない場合、追加された2つの段階は、水やり判定においては「BERRY_STAGE_TALLER」として扱われます。
 
 #define OW_BERRY_GROWTH_RATE           GEN_3      // 各きのみの木が成長するまでの時間を設定するプリセット。
 #define OW_BERRY_YIELD_RATE            GEN_3      // 各きのみの木が収穫できるの数を設定するプリセット。
 #define OW_BERRY_DRAIN_RATE            GEN_6_ORAS // OW_BERRY_MOISTUREが有効な場合、この設定は土壌が乾燥する速度を決定します。GEN_4ではきのみの種類に応じた乾燥速度が適用され、GEN_6_XYでは24時間（特定の「こやし」を使用している場合は4時間）で乾燥し、GEN_6_ORASでは4時間で乾燥します。これら以外の値は無効です。
-#define OW_BERRY_IMMORTAL              FALSE      // 有効にすると、きのみが実った後、プレイヤーが収穫するまでその木は消滅しなくなります。
+#define OW_BERRY_IMMORTAL              FALSE      // TRUEにすると、きのみが実った後、プレイヤーが収穫するまでその木は消滅しなくなります。
 #define OW_BERRY_COLORS                GEN_6_ORAS // GEN_6_XY または GEN_6_ORASに設定した場合、カゴ、ウイ、ブリー、モコシ、シーヤ、ベリブ、リュガ、カイス、タポル、ノワキ、カシブ、ナモ、​​サン、アッキ、ウタン、ロゼル、チイラ、ナゾ、タラプの実の色は、指定されたゲームでの色になります。それ以外の値は不正なものとして扱われます。
 
 // オーバーワールドのポケモン
@@ -53,7 +53,7 @@
 #define OW_LARGE_OW_SUPPORT            TRUE       // TRUEに設定すると、OWコードにわずかなオーバーヘッドが追加され、大きなサイズ（48x48、64x64）のOWが橋の下などで正しく表示されるようになります。
 #define OW_PKMN_OBJECTS_SHARE_PALETTES FALSE      // [WIP!! すべてのパレットがこれに対応するよう調整されているわけではありません!!]] TRUEの場合、フォロワーのパレットはバトルスプライトから取得されます。
 #define OW_GFX_COMPRESS                TRUE       // 圧縮されたフィールド上のグラフィック（OWグラフィック）への対応を追加しました（ポケモンの連れ歩きグラフィックも圧縮されます）。
-                                                  // 重要：グラフィックは、継続的な展開（デコンプレッション）処理を避けるためにVRAMへ読み込まれます。より多くのVRAMが必要な場合や、フィールド上のポケモンを一度に多数表示させたい場合は、この設定を無効にしてください。
+                                                  // 重要：グラフィックは、継続的な展開処理を避けるためにVRAMへ読み込まれます。より多くのVRAMが必要な場合や、フィールド上のポケモンを一度に多数表示させたい場合は、この設定を無効にしてください。
                                                   // 圧縮されたグラフィックは、2の累乗ではないサイズのスプライトとは互換性がありません。sizes:
                                                   // (圧縮グラフィックに48x48のスプライトやテーブルは使用しないでください)
                                                   // 16x32、32x32、64x64などは問題ありません
@@ -92,16 +92,16 @@
 
 // 時間
 #define OW_TIMES_OF_DAY                 GEN_8        // 世代によって、時間帯が切り替わるタイミングが異なります。
-#define OW_USE_FAKE_RTC                 FALSE        // TRUEの場合、ゲーム内時計の秒数は60 playTimeVBlanks（60フレーム）ごとに1秒進みます。
+#define OW_USE_FAKE_RTC                 FALSE        // TRUEの場合、ゲーム内時計の秒数は60フレームごとに1秒進みます。
 #define OW_ALTERED_TIME_RATIO           GEN_LATEST   // GEN_8_PLAでは、RTCの1秒に対してゲーム内の時間が60秒進みます。GEN_9では20秒です。TIME_DEBUGは1:1（リアルタイム同期）で、デバッグ用です。OW_USE_FAKE_RTCがFALSEの場合、この設定は無効です。
 #define OW_TIME_OF_DAY_ENCOUNTERS       TRUE        // TRUEの場合、時間帯に応じて異なるエンカウントテーブルを定義・使用できるようになります。
-#define OW_TIME_OF_DAY_DISABLE_FALLBACK FALSE       // TRUEの場合、特定のマップと時間帯のエンカウントテーブルが空だと、バニラ（標準）のマップ・時間帯のテーブルを参照する代わりに、そのエリアではエンカウントが発生しなくなります。
-#define OW_TIME_OF_DAY_FALLBACK         TIME_MORNING // エンカウントテーブルがフォールバック（代替参照）する時間帯。OW_TIMES_OF_DAYをGEN_3に設定する場合、ここをTIME_DAYに変更しないとエンカウントが発生しません！
+#define OW_TIME_OF_DAY_DISABLE_FALLBACK FALSE       // TRUEの場合、特定のマップと時間帯でエンカウントテーブルが設定されていない場合、通常のマップ・時間帯のテーブルを参照する代わりに、そのエリアではエンカウントが発生しなくなります。
+#define OW_TIME_OF_DAY_FALLBACK         TIME_MORNING // エンカウントテーブルが代替参照する時間帯。OW_TIMES_OF_DAYをGEN_3に設定する場合、ここをTIME_DAYに変更しないとエンカウントが発生しません！
 
 // 明かり
 #define OW_SHADOW_INTENSITY             4       // 0から16の範囲で指定。0は完全透明、16は黒色。
 #define OW_OBJECT_SUBPRIORITY           148     // 値が大きいほど、他のスプライトより奥（背面）に描画されます。影はオブジェクトイベントより奥に配置されるべきです。
-#define OW_ENABLE_DNS                   TRUE    // TRUEに設定すると、時間帯に応じてオーバーワールド（フィールド）の色調が変化します。＝夜になると暗くなるってこと。
+#define OW_ENABLE_DNS                   TRUE    // TRUEに設定すると、時間帯に応じてフィールドの色が変化します。＝夜になると暗くなるってこと。
 
 // オブジェクトの影
 #define OW_OBJECT_VANILLA_SHADOWS      TRUE    // FALSEの場合、オーバーワールド上のすべてのオブジェクトに影が表示されます。警告：これにより、各オブジェクトは1つではなく2つのスプライトを使用することになります。TRUEの場合、オブジェクトの影はジャンプ中のみ表示されます。
@@ -111,8 +111,8 @@
 // 例: `FLAG_UNUSED_0x264` に置き換えると、そのフラグを使って機能を切り替えられるようになります。
 #define OW_FLAG_PAUSE_TIME          0  // このフラグがセットされ、かつ OW_USE_FAKE_RTC が有効な場合、ゲーム内時計の秒数は進まなくなります。
 #define OW_FLAG_NO_TRAINER_SEE      FLAG_EXPANSION_TRAINER_SEE_DISABLED  // このフラグがセットされていると、トレーナーは話しかけられない限りプレイヤーとバトルしません。
-#define OW_FLAG_NO_COLLISION        FLAG_EXPANSION_COLLISION_DISABLED    // このフラグがセットされていると、プレイヤーは衝突判定（コリジョン）のあるタイル上を歩けるようになります。主にデバッグ用です。
-#define OW_FLAG_POKE_RIDER          FLAG_EXPANSION_POKE_RIDER      // このフラグがセットされていると、ポケナビの地方マップや「タウンマップ」（重要アイテム）から、飛行可能な街や場所で「R」ボタンを押すことで「そらをとぶ」を使用できるようになります。
+#define OW_FLAG_NO_COLLISION        FLAG_EXPANSION_COLLISION_DISABLED    // このフラグがセットされていると、プレイヤーは当たり判定のあるタイル上を歩けるようになります。主にデバッグ用です。
+#define OW_FLAG_POKE_RIDER          FLAG_EXPANSION_POKE_RIDER      // このフラグがセットされていると、ポケナビのマップやタウンマップ(アイテム)から、飛行可能な街や場所で「R」ボタンを押すことで「そらをとぶ」を使用できるようになります。
 
 #define BATTLE_PYRAMID_RANDOM_ENCOUNTERS    FALSE    // TRUEに設定すると、バトルピラミッドのポケモンは `src/data/battle_frontier/battle_pyramid_level_50_wild_mons.h`（または `open_level_wild_mons.h`）にハードコードされたものではなく、そのラウンドの挑戦内容に基づいてランダムに生成されるようになります。
 
@@ -140,7 +140,7 @@
 
 // ポケモンセンター
 #define OW_IGNORE_EGGS_ON_HEAL           GEN_LATEST         // 第4世代以降、ポケモンセンターのジョーイさんは、回復マシンでタマゴを回復させません。
-#define OW_UNION_DISABLE_CHECK           TRUE              // TRUEの場合、ユニオンルームで待機しているトレーナーがいても、ジョーイさんはプレイヤーにそのことを知らせません。これにより、ポケモンセンターの読み込みが速くなります。
+#define OW_UNION_DISABLE_CHECK           TRUE               // TRUEの場合、ユニオンルームで待機しているトレーナーがいても、ジョーイさんはプレイヤーにそのことを知らせません。これにより、ポケモンセンターの読み込みが速くなります。
 #define OW_FLAG_MOVE_UNION_ROOM_CHECK    0                  // このフラグが設定されている場合、プレイヤーがポケモンセンターに入った時ではなく、ポケモンを回復させる時のみ、プレイヤーがユニオンルームにいるかどうかがチェックされます。これにより、ポケモンセンターの読み込みが高速化します。なお、OW_UNION_DISABLE_CHECKがTRUEの場合、このフラグは無視されます。
 
 // Berry Blender

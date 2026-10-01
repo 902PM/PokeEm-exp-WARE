@@ -4,14 +4,14 @@
 // アイテム設定
 #define I_SHINY_CHARM_ADDITIONAL_ROLLS  2           // 「ひかるおまもり」を所持している場合の、色違い抽選の追加回数です。0に設定すると、「ひかるおまもり」の効果が無効になります。
 #define I_KEY_FOSSILS                   GEN_LATEST  // 第4世代以降、第3世代の化石はすべて通常のアイテムになりました。
-#define I_KEY_ESCAPE_ROPE               GEN_3  // 第8世代では、「あなぬけのヒモ」が「たいせつなもの」に変更されました。これにより、フレンドリィショップ等で無料入手できるようになる点にご注意ください。
-#define I_HEALTH_RECOVERY               GEN_3  // 第7世代以降、一部の回復アイテムのHP回復量が以前とは異なります。
-#define I_SITRUS_BERRY_HEAL             GEN_LATEST  // 第4世代以降、オボンのみの効果は、HPを30回復するものから最大HPの25%を回復するものに変更されました。
+#define I_KEY_ESCAPE_ROPE               GEN_3       // 第8世代では、「あなぬけのヒモ」が「たいせつなもの」に変更されました。これにより、フレンドリィショップ等で無料入手できるようになる点にご注意ください。
+#define I_HEALTH_RECOVERY               GEN_3       // 第7世代以降、一部の回復アイテムのHP回復量が以前とは異なります。
+#define I_SITRUS_BERRY_HEAL             GEN_LATEST  // 第4世代以降、オボンのみの効果は、HPを30回復から最大HPの25%を回復に変更されました。
 #define I_VITAMIN_EV_CAP                GEN_LATEST  // 第8世代以降、ドーピングアイテムは100以上振れるようになりました。
 #define I_BERRY_EV_JUMP                 GEN_LATEST  // 第4世代に限り、努力値を下げるきのみは、努力値が100を超えている場合、その値を100まで下げます。
 #define I_GRISEOUS_ORB_FORM_CHANGE      GEN_LATEST  // 第9世代以降、はっきんだまを持たせてもギラティナのフォルムは変化しなくなりました。
 #define I_GEM_BOOST_POWER               GEN_5        // 第6世代以降、「ジュエル」による威力上昇幅が50%から30%に引き下げられました。
-#define I_USE_EVO_HELD_ITEMS_FROM_BAG   TRUE        // TRUEの場合、『Pokémon LEGENDS アルセウス』と同様に、「するどいツメ」や「エレキブースター」などのアイテムをバッグから使用してポケモンを進化させることができます。
+#define I_USE_EVO_HELD_ITEMS_FROM_BAG   TRUE        // TRUEの場合、レジェアルと同様に、「するどいツメ」や「エレキブースター」などのアイテムをバッグから使用してポケモンを進化させることができます。
 #define I_TYPE_BOOST_POWER              GEN_LATEST  // 第4世代以降、「もくたん」などのタイプ強化アイテムによる補正倍率が1.1倍から1.2倍に引き上げられました。「うしおのおこう」については、1.05倍から1.2倍に変更されました。
 #define I_SELL_VALUE_FRACTION           GEN_8        // 第9世代以降では、アイテムの売却額は本来の価格の1/2ではなく1/4になります。
 #define I_PRICE                         GEN_LATEST  // 世代によって価格が変動したアイテムがあります。
