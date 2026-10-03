@@ -10768,7 +10768,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("わざマシン34"),
         .price = 3000,
-        .description = COMPOUND_STRING("ぜったいに よけられない\nすばやさで てきに\nでんげきを あびせる."),
+        .description = COMPOUND_STRING("ぜったいに よけられない\nすばやさで てきに\nでんげきを あびせる"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11609,7 +11609,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("ひかるおまもり"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("もっていると いろちがいの\nポケモンと であいやすくなる"),
+        .description = COMPOUND_STRING("もっていると\nいろちがいの ポケモンと\nであいやすくなる"),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
