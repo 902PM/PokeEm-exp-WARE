@@ -29,6 +29,7 @@ static const struct BgTemplate sPartyMenuBgTemplates[] =
     },
 };
 
+// ここが、実際の名前やレベルの表示位置。src/party_menu.cではイジれないので注意。
 static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
 {
     [PARTY_BOX_LEFT_COLUMN] =
@@ -50,9 +51,9 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
         BlitBitmapToPartyWindow_RightColumn,
         {
              // See above comment
-             30,  3, 40, 13, // Nickname
-             30, 11, 32,  8, // Level
-             62, 11,  8,  8, // Gender
+             24,  3, 40, 13, // Nickname
+             32, 11, 32,  8, // Level
+             64, 11,  8,  8, // Gender
              78, 11, 24,  8, // HP
             102, 11, 24,  8, // Max HP
              88, 10, 48,  3  // HP bar

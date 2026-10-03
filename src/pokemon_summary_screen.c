@@ -3193,17 +3193,18 @@ static void PrintNotEggInfo(void)
     if (dexNum != 0xFFFF)
     {
         u8 digitCount = (NATIONAL_DEX_COUNT > 999 && IsNationalPokedexEnabled()) ? 4 : 3;
-        StringCopy(gStringVar1, &gText_NumberClear01[0]);
+        StringCopy(gStringVar1, COMPOUND_STRING("{ENG}"));
+        StringAppend(gStringVar1, &gText_NumberClear01[0]);
         ConvertIntToDecimalStringN(gStringVar2, dexNum, STR_CONV_MODE_LEADING_ZEROS, digitCount);
         StringAppend(gStringVar1, gStringVar2);
         if (!IsMonShiny(mon))
         {
-            PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 1, FONT_NARROW);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 1);
             SetMonPicBackgroundPalette(FALSE);
         }
         else
         {
-            PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 7, FONT_NARROW);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, gStringVar1, 0, 1, 0, 7);
             SetMonPicBackgroundPalette(TRUE);
         }
         PutWindowTilemap(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER);
@@ -4112,11 +4113,12 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
         }
         else
         {
-            ConvertIntToDecimalStringN(gStringVar1, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            StringCopy(gStringVar1, COMPOUND_STRING("{ENG}"));
+            ConvertIntToDecimalStringN(gStringVar1 + 2, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
 
-        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 1, 0, 0, FONT_NARROW);
+        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 50, 1, 0, 0, FONT_NORMAL);
 
         u32 accuracy = GetMoveAccuracy(moveIndex);
         if (accuracy == 0)
@@ -4125,11 +4127,12 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
         }
         else
         {
-            ConvertIntToDecimalStringN(gStringVar1, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
+            StringCopy(gStringVar1, COMPOUND_STRING("{ENG}"));
+            ConvertIntToDecimalStringN(gStringVar1 + 2 , accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
             text = gStringVar1;
         }
 
-        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 53, 17, 0, 0, FONT_NARROW);
+        PrintTextOnWindowWithFont(PSS_LABEL_WINDOW_MOVES_POWER_ACC, text, 50, 17, 0, 0, FONT_NORMAL);
     }
 }
 
