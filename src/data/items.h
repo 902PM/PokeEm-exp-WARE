@@ -1756,7 +1756,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("ダイマックスアメ"),
         .pluralName = ITEM_PLURAL_NAME("ダイマックスアメ"),
-        .price = 0,
+        .price = 10000,
         .description = COMPOUND_STRING("あたえると ダイマックス\nレベルが 1あがる"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
@@ -10768,7 +10768,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("わざマシン34"),
         .price = 3000,
-        .description = COMPOUND_STRING("ぜったいに よけられない\nすばやさで てきに\nでんげきを あびせる."),
+        .description = COMPOUND_STRING("ぜったいに よけられない\nすばやさで てきに\nでんげきを あびせる"),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11609,7 +11609,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("ひかるおまもり"),
         .price = 0,
         .importance = 1,
-        .description = COMPOUND_STRING("もっていると いろちがいの\nポケモンと であいやすくなる"),
+        .description = COMPOUND_STRING("もっていると\nいろちがいの ポケモンと\nであいやすくなる"),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -13564,6 +13564,20 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_OMNI_RING] =
+    {
+        .name = ITEM_NAME("ゼンブイリング"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING("ポケモンの ひめた\nかのうせいを ひきだす\nための デバイス"),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_MegaRing,
+        .iconPalette = gItemIconPalette_MegaRing,
+    },
+
 };
 
 #undef ITEM_NAME

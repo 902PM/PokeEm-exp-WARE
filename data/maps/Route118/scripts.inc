@@ -101,7 +101,7 @@ Route118_EventScript_StevenTrigger::
 	end
 
 Route118_EventScript_Is_Treecko::
-	giveitem ITEM_MEGA_RING
+	giveitem ITEM_OMNI_RING
 	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
 	giveitem ITEM_SCEPTILITE
 	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Treecko_FULL
@@ -115,7 +115,7 @@ Route118_EventScript_Is_Treecko_FULL::
 	end
 
 Route118_EventScript_Is_Torchic::
-	giveitem ITEM_MEGA_RING
+	giveitem ITEM_OMNI_RING
 	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
 	giveitem ITEM_BLAZIKENITE
 	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Torchic_FULL
@@ -129,7 +129,7 @@ Route118_EventScript_Is_Torchic_FULL::
 	end
 
 Route118_EventScript_Is_Mudkip::
-	giveitem ITEM_MEGA_RING
+	giveitem ITEM_OMNI_RING
 	msgbox Route118_Text_StevenQuestions_2, MSGBOX_DEFAULT
 	giveitem ITEM_SWAMPERTITE
 	goto_if_eq VAR_RESULT, FALSE, Route118_EventScript_Is_Mudkip_FULL

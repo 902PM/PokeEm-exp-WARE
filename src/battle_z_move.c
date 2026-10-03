@@ -118,7 +118,7 @@ bool32 CanUseZMove(enum BattlerId battler)
     // Check if Player has Z-Power Ring.
     if (!TESTING && (position == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
-        && !CheckBagHasItem(ITEM_Z_POWER_RING, 1))
+        && (!CheckBagHasItem(ITEM_Z_POWER_RING, 1) && !CheckBagHasItem(ITEM_OMNI_RING, 1)))
         return FALSE;
 
     // Add '| BATTLE_TYPE_FRONTIER' to below if issues occur
