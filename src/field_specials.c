@@ -4596,6 +4596,12 @@ void SetHiddenNature(void)
     CalculateMonStats(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004]);
 }
 
+void SetTerasType(void)
+{
+    u32 terasType = gSpecialVar_Result;
+    SetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_TERA_TYPE, &terasType);
+}
+
 void SetAbility(void)
 {
     enum Ability ability = gSpecialVar_Result;

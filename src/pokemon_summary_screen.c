@@ -4104,7 +4104,7 @@ static void PrintMovePowerAndAccuracy(enum Move moveIndex)
     const u8 *text;
     if (moveIndex != MOVE_NONE)
     {
-        FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 53, 0, 19, 32);
+        FillWindowPixelRect(PSS_LABEL_WINDOW_MOVES_POWER_ACC, PIXEL_FILL(0), 50, 0, 22, 32);
 
         u32 power = GetMovePower(moveIndex);
         if (power < 2)

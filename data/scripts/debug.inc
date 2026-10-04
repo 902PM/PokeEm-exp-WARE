@@ -297,10 +297,10 @@ DebugScript_HatchAnEgg_CantForceHatch::
 	end
 
 DebugScript_Text_EmptyParty::
-	.string "{JPN}ポケモンも タマゴも いません!$"
+	.string "ポケモンも タマゴも いません!$"
 
 DebugScript_HatchAnEgg_Text_NotAnEgg::
-	.string "{JPN}それは タマゴじゃ ないよ$"
+	.string "それは タマゴじゃ ないよ$"
 
 DebugScript_ZeroDaycareMons::
 	msgbox DebugText_DaycareNoPokemon, MSGBOX_DEFAULT
@@ -318,13 +318,13 @@ DebugScript_DaycareMonsNotCompatible::
 	end
 
 DebugText_DaycareNoPokemon:
-	.string "{JPN}そだてやに ポケモンが いません$"
+	.string "そだてやに ポケモンが いません$"
 
 DebugText_DaycareOnePokemon:
-	.string "{JPN}そだてやの ポケモンが 1ひきだけです$"
+	.string "そだてやの ポケモンが 1ひきだけです$"
 
 DebugText_DaycarePokemonNotCompatible:
-	.string "{JPN}あずけられている ポケモンでは\nタマゴが できません!$"
+	.string "あずけられている ポケモンでは\nタマゴが できません!$"
 
 Debug_ShowExpansionVersion::
 	callnative BufferExpansionVersion
@@ -341,7 +341,7 @@ Debug_Follower_NPC_Not_Enabled::
 	end
 
 Debug_Enable_To_Use_Follower_NPCs:
-	.string "{JPN}この きのうは つかえません!\n{ENG}include/config/follower_npc.h\l{JPN}で たいおうする フラグを せっていしてください$"
+	.string "この きのうは つかえません!\n{ENG}include/config/follower_npc.h\l{JPN}で たいおうする フラグを せっていしてください$"
 
 Debug_Follower_NPC_Event_Script::
 	lock
@@ -462,7 +462,7 @@ Debug_EventScript_SetHiddenNature::
 	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
 	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
 	special SetHiddenNature
