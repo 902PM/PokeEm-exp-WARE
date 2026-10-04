@@ -92,7 +92,7 @@ static const u8 sText_Stats_EggCycles_VeryFast[] = _("{ENG}{EMOJI_BOLT}{EMOJI_DI
 static const u8 sText_Stats_EggCycles_Fast[] = _("{ENG}{EMOJI_DIZZYEGG}");
 static const u8 sText_Stats_EggCycles_Normal[] = _("{ENG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}");
 static const u8 sText_Stats_EggCycles_Slow[] = _("{ENG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}{EMOJI_DIZZYEGG}");
-static const u8 sText_Stats_Growthrate[] = _("{ENG}Expタイプ:");
+static const u8 sText_Stats_Growthrate[] = _("{ENG}Exp{JPN}タイプ:");
 static const u8 sText_Stats_Friendship[] = _("しょきなつきど:");
 static const u8 sText_Stats_Friendship_BigAnger[] = _("{ENG}{EMOJI_BIGANGER}");
 static const u8 sText_Stats_Friendship_Neutral[] = _("{ENG}{EMOJI_NEUTRAL}");
@@ -2119,8 +2119,8 @@ static void Task_HandleStatsScreenInput(u8 taskId)
         FillWindowPixelBuffer(WIN_STATS_MOVES_DESCRIPTION, PIXEL_FILL(0));
         PrintStatsScreen_Moves_Description(taskId);
 
-        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 50, 0, 20, 16);
-        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 120, 0, 20, 16);
+        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 50, 0, 24, 16);
+        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 114, 0, 24, 16);
         PrintStatsScreen_Moves_Bottom(taskId);
     }
     if (JOY_REPEAT(DPAD_DOWN) && sPokedexView->moveSelected < sPokedexView->movesTotal -1 )
@@ -2134,8 +2134,8 @@ static void Task_HandleStatsScreenInput(u8 taskId)
         FillWindowPixelBuffer(WIN_STATS_MOVES_DESCRIPTION, PIXEL_FILL(0));
         PrintStatsScreen_Moves_Description(taskId);
 
-        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 50, 0, 20, 16);
-        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 120, 0, 20, 16);
+        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 50, 0, 24, 16);
+        FillWindowPixelRect(WIN_STATS_MOVES_BOTTOM, PIXEL_FILL(0), 114, 0, 24, 16);
         PrintStatsScreen_Moves_Bottom(taskId);
     }
 

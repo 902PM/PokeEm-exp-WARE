@@ -14829,6 +14829,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("グラスフィールド"),
         .description = COMPOUND_STRING("5ターンのあいだ あしもとを\nグラスフィールドにする"),
+        .effect = EFFECT_TERRAIN,
         .power = 0,
         .type = TYPE_GRASS,
         .accuracy = 0,
@@ -14853,6 +14854,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("ミストフィールド"),
         .description = COMPOUND_STRING("5ターンのあいだ あしもとを\nミストフィールドにする"),
+        .effect = EFFECT_TERRAIN,
         .power = 0,
         .type = TYPE_FAIRY,
         .accuracy = 0,
@@ -15448,6 +15450,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("エレキフィールド"),
         .description = COMPOUND_STRING("5ターンのあいだ あしもとを\nエレキフィールドにする"),
+        .effect = EFFECT_TERRAIN,
         .power = 0,
         .type = TYPE_ELECTRIC,
         .accuracy = 0,
@@ -16365,6 +16368,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("サイコフィールド"),
         .description = COMPOUND_STRING("5ターンのあいだ あしもとを\nサイコフィールドにする"),
+        .effect = EFFECT_TERRAIN,
         .power = 0,
         .type = TYPE_PSYCHIC,
         .accuracy = 0,

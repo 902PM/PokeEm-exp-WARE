@@ -462,7 +462,7 @@ Debug_EventScript_SetHiddenNature::
 	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
 	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
 	special SetHiddenNature
