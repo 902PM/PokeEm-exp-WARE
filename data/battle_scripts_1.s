@@ -985,6 +985,7 @@ BattleScript_FinalGambit::
 	return
 
 BattleScript_TryHitSwitchTarget::
+	jumpifbattletype BATTLE_TYPE_ARENA, BattleScript_MoveSwitchEnd
 	forcerandomswitch BattleScript_HitSwitchTargetForceRandomSwitchFailed
 	return
 

@@ -925,7 +925,10 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         }
         else
         {
-            targetSpecies = GetMonData(monAtk, MON_DATA_SPECIES);
+            if (gBattleStruct->illusion[battlerDef].state == ILLUSION_ON)
+                targetSpecies = GetIllusionMonSpecies(battlerDef);
+            else
+                targetSpecies = GetMonData(monAtk, MON_DATA_SPECIES);
         }
         gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
 

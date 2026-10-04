@@ -4613,7 +4613,8 @@ static bool32 TryRedCard(enum BattlerId battlerAtk, enum BattlerId redCardBattle
     gEffectBattler = battlerAtk;
     if (gBattleStruct->battlerState[battlerAtk].commanderSpecies != SPECIES_NONE
      || GetBattlerAbility(battlerAtk) == ABILITY_GUARD_DOG
-     || GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+     || GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX
+     || (gBattleTypeFlags & BATTLE_TYPE_ARENA))
         BattleScriptCall(BattleScript_RedCardActivationNoSwitch);
     else
         BattleScriptCall(BattleScript_RedCardActivates);
@@ -4629,7 +4630,8 @@ static bool32 TryEjectButton(enum BattlerId battlerAtk, u32 ejectButtonBattler, 
      || IsBattlerInvolvedInSkyDrop(ejectButtonBattler)
      || IsPursuitTargetSet()
      || gBattleStruct->battlerState[ejectButtonBattler].commanderSpecies != SPECIES_NONE
-     || !CanBattlerSwitch(ejectButtonBattler))
+     || !CanBattlerSwitch(ejectButtonBattler)
+     || (gBattleTypeFlags & BATTLE_TYPE_ARENA))
         return FALSE;
 
     gBattleScripting.battler = ejectButtonBattler;
@@ -5002,7 +5004,8 @@ static inline bool32 TryEjectPack(enum BattlerId battlerAtk, enum BattlerId ejec
      || gBattleMons[ejectPackBattler].volatiles.semiInvulnerable == STATE_COMMANDER
      || gBattleStruct->battlerState[ejectPackBattler].commanderSpecies != SPECIES_NONE
      || !CanBattlerSwitch(ejectPackBattler)
-     || (GetMoveEffect(gCurrentMove) == EFFECT_PARTING_SHOT && CanBattlerSwitch(battlerAtk)))
+     || (GetMoveEffect(gCurrentMove) == EFFECT_PARTING_SHOT && CanBattlerSwitch(battlerAtk))
+     || (gBattleTypeFlags & BATTLE_TYPE_ARENA))
         return FALSE;
 
     gBattleScripting.battler = ejectPackBattler;
