@@ -69,17 +69,17 @@ static const struct GMaxMove sGMaxMoveTable[] =
     {SPECIES_URSHIFU_RAPID_STRIKE_GMAX,       TYPE_WATER,      MOVE_G_MAX_RAPID_FLOW},
 };
 
-// Returns whether a battler can Dynamax.
+// トレーナーがダイマックス可能か確認する。
 bool32 CanDynamax(enum BattlerId battler)
 {
     enum Species species = GetBattlerVisualSpecies(battler);
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
 
-    // Prevents Zigzagoon from dynamaxing in vanilla.
+    // 最初のジグザグマ戦でダイマックスするのを防ぐ。
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
         return FALSE;
 
-    // Check if Player has a Dynamax Band.
+    // ダイマックスBを持っているか確認する。
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT)))
     {
@@ -89,25 +89,29 @@ bool32 CanDynamax(enum BattlerId battler)
             return FALSE;
     }
 
-    // Check if species isn't allowed to Dynamax.
+    // ダイマックスできない種族かどうかを確認。
     if (GET_BASE_SPECIES_ID(species) == SPECIES_ZACIAN
         || GET_BASE_SPECIES_ID(species) == SPECIES_ZAMAZENTA
-        || GET_BASE_SPECIES_ID(species) == SPECIES_ETERNATUS)
+        || GET_BASE_SPECIES_ID(species) == SPECIES_ETERNATUS
+        || species == SPECIES_KYOGRE_PRIMAL
+        || species == SPECIES_GROUDON_PRIMAL
+        || species == SPECIES_RAYQUAZA_MEGA
+        || species == SPECIES_NECROZMA_ULTRA)
         return FALSE;
 
-    // Check if Trainer has already Dynamaxed.
+    // ダイマックスを既に使用しているかを確認。
     if (HasTrainerUsedGimmick(battler, GIMMICK_DYNAMAX))
         return FALSE;
 
-    // Check if AI battler is intended to Dynamaxed.
+    // AIがダイマックスを行う意図があるか確認。
     if (!ShouldTrainerBattlerUseGimmick(battler, GIMMICK_DYNAMAX))
         return FALSE;
 
-    // Check if battler has another gimmick active.
+    // 既に別のギミックが有効になっているか確認。
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
-    // Check if battler is holding a Z-Crystal or Mega Stone.
+    // ポケモンがZクリスタルまたはメガストーンを持っているか確認。
     if (!TESTING && (holdEffect == HOLD_EFFECT_Z_CRYSTAL || holdEffect == HOLD_EFFECT_MEGA_STONE))  // tests make this check already
         return FALSE;
 
@@ -202,6 +206,7 @@ void UndoDynamax(enum BattlerId battler)
 
     // Makes sure there are no Dynamax flags set, including on switch / faint.
     SetActiveGimmick(battler, GIMMICK_NONE);
+    SetUsedGimmick(battler, USED_GIMMICK);
 
     // Undo form change if needed.
     if (IsGigantamaxed(battler))

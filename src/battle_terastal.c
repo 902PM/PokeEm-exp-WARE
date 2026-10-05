@@ -65,7 +65,7 @@ bool32 IsTeraOrbCharged(void)
     return FlagGet(B_FLAG_TERA_ORB_CHARGED);
 }
 
-// トレーナーがテラスタル可能かどうかを返す。
+// トレーナーがテラスタル可能かどうか確認。
 bool32 CanTerastallize(enum BattlerId battler)
 {
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
@@ -73,7 +73,7 @@ bool32 CanTerastallize(enum BattlerId battler)
     if (gBattleMons[battler].volatiles.transformed && GET_BASE_SPECIES_ID(gBattleMons[battler].species) == SPECIES_TERAPAGOS)
         return FALSE;
 
-    // 素の状態において、最初のジグザグマがテラスタルするのを防ぎます。
+    // 最初のジグザグマ戦でテラスタルするのを防ぐ。
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
         return FALSE;
 
@@ -98,15 +98,18 @@ bool32 CanTerastallize(enum BattlerId battler)
     if (!ShouldTrainerBattlerUseGimmick(battler, GIMMICK_TERA))
         return FALSE;
 
-    // ポケモンが別のギミックが有効になっているか確認。
+    // 別のギミックが有効になっているか確認。
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
-    // ポケモンがZクリスタルまたはメガストーンを持っているか確認。
+    // Zクリスタルまたはメガストーンを持っているか確認。
     if (!TESTING && (holdEffect == HOLD_EFFECT_Z_CRYSTAL || holdEffect == HOLD_EFFECT_MEGA_STONE)) // tests make this check already
         return FALSE;
 
-    // チェックに合格
+    if (HasUsedGimmick(battler, USED_GIMMICK))
+    return FALSE;
+
+    // チェック通過
     return TRUE;
 }
 

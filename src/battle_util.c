@@ -8558,39 +8558,39 @@ bool32 CanMegaEvolve(enum BattlerId battler)
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
     enum BattlerPosition position = GetBattlerPosition(battler);
 
-    // Check if Player has a Mega Ring.
+    // メガリングを持っているかの確認。
     if (!TESTING
         && (position == B_POSITION_PLAYER_LEFT || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
         && !CheckBagHasItem(ITEM_MEGA_RING, 1))
         return FALSE;
 
-    // Check if Trainer has already Mega Evolved.
+    // メガシンカを既にしているかを確認。
     if (HasTrainerUsedGimmick(battler, GIMMICK_MEGA))
         return FALSE;
 
-    // Check if battler has another gimmick active.
+    // 既に別のギミックが有効になっているか確認。
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
-    // Check if battler is currently held by Sky Drop.
+    // フリーフォール状態かどうか確認。
     if (gBattleMons[battler].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET)
         return FALSE;
 
-    // Check if battler is holding a Z-Crystal.
+    // Zクリスタルを持っているかを確認。
     if (holdEffect == HOLD_EFFECT_Z_CRYSTAL)
         return FALSE;
 
     enum Ability ability = GetBattlerAbility(battler);
 
-    // Check if there is an entry in the form change table for regular Mega Evolution and battler is holding Mega Stone.
+    // form_change_tableに通常のメガシンカの項目があり、かつメガストーンを持っているかを確認。
     if (GetBattleFormChangeTargetSpecies(battler, FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM, ability) != gBattleMons[battler].species)
         return TRUE;
 
-    // Check if there is an entry in the form change table for Wish Mega Evolution.
+    // Wish Mega Evolutionがform_change_tableにあるか確認。
     if (GetBattleFormChangeTargetSpecies(battler, FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE, ability) != gBattleMons[battler].species)
         return TRUE;
 
-    // No checks passed, the mon CAN'T mega evolve.
+    // 上記の2つのチェックを通過してないため、FALSE
     return FALSE;
 }
 
@@ -8599,31 +8599,31 @@ bool32 CanUltraBurst(enum BattlerId battler)
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
     enum BattlerPosition position = GetBattlerPosition(battler);
 
-    // Check if Player has a Z-Ring
+    // Zリングを持っているか。
     if (!TESTING && (position == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
         && !CheckBagHasItem(ITEM_Z_POWER_RING, 1))
         return FALSE;
 
-    // Check if Trainer has already Ultra Bursted.
+    // 既にウルトラバーストしているかどうか。
     if (HasTrainerUsedGimmick(battler, GIMMICK_ULTRA_BURST))
         return FALSE;
 
-    // Check if battler has another gimmick active.
+    // 別のギミックが有効になっているか確認。
     if (GetActiveGimmick(battler) != GIMMICK_NONE)
         return FALSE;
 
-    // Check if mon is currently held by Sky Drop
+    // フリーフォール状態にあるか確認。
     if (gBattleMons[battler].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET)
         return FALSE;
 
     enum Ability ability = GetBattlerAbility(battler);
 
-    // Check if there is an entry in the form change table for Ultra Burst and battler is holding a Z-Crystal.
+    // ウルトラバーストがform_change_tableに項目としてあり、ウルトラネクロズマZ(HOLD_EFFECT_Z_CRYSTAL)を持たせているか確認。
     if (GetBattleFormChangeTargetSpecies(battler, FORM_CHANGE_BATTLE_ULTRA_BURST, ability) != gBattleMons[battler].species && holdEffect == HOLD_EFFECT_Z_CRYSTAL)
         return TRUE;
 
-    // No checks passed, the mon CAN'T ultra burst.
+    // 上記を通過していないため、FALSE
     return FALSE;
 }
 

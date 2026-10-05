@@ -56,6 +56,11 @@ void SetActiveGimmick(enum BattlerId battler, enum Gimmick gimmick)
     gBattleStruct->gimmick.activeGimmick[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]] = gimmick;
 }
 
+void SetUsedGimmick(enum BattlerId battler, enum UsedGimmick gimmick)
+{
+    gBattleStruct->gimmick.usedGimmick[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]] = gimmick;
+}
+
 // 戦闘参加者が現在有効なギミックを持っている場合、それを返す。
 enum Gimmick GetActiveGimmick(enum BattlerId battler)
 {
@@ -96,6 +101,11 @@ bool32 HasTrainerUsedGimmick(enum BattlerId battler, enum Gimmick gimmick)
     }
 
     return gBattleStruct->gimmick.activated[battler][gimmick];
+}
+
+bool32 HasUsedGimmick(enum BattlerId battler, enum UsedGimmick gimmick)
+{
+    return gBattleStruct->gimmick.usedGimmick[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]] == gimmick;
 }
 
 // マルチバトルでのチェックを含め、トレーナーが使用するギミックを設定。
