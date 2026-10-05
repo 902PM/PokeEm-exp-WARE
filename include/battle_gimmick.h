@@ -14,6 +14,12 @@ enum Gimmick
     GIMMICKS_COUNT,
 };
 
+enum UsedGimmick
+{
+    UNUSED_GIMMICK = 0x00,
+    USED_GIMMICK   = 0x80,
+};
+
 struct GimmickInfo
 {
     const struct SpritePalette *triggerPal;        // trigger gfx data
@@ -31,9 +37,11 @@ void AssignUsableGimmicks(void);
 bool32 CanActivateGimmick(enum BattlerId battler, enum Gimmick gimmick);
 bool32 IsGimmickSelected(enum BattlerId battler, enum Gimmick gimmick);
 void SetActiveGimmick(enum BattlerId battler, enum Gimmick gimmick);
+void SetUsedGimmick(enum BattlerId battler, enum UsedGimmick gimmick);
 enum Gimmick GetActiveGimmick(enum BattlerId battler);
 bool32 ShouldTrainerBattlerUseGimmick(enum BattlerId battler, enum Gimmick gimmick);
 bool32 HasTrainerUsedGimmick(enum BattlerId battler, enum Gimmick gimmick);
+bool32 HasUsedGimmick(enum BattlerId battler, enum UsedGimmick gimmick);
 void SetGimmickAsActivated(enum BattlerId battler, enum Gimmick gimmick);
 
 void ChangeGimmickTriggerSprite(u32 spriteId, u32 animId);

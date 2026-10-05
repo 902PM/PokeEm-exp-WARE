@@ -11,6 +11,7 @@
 #include "battle_transition.h"
 #include "event_data.h"
 #include "frontier_util.h"
+#include "item.h"
 #include "overworld.h"
 #include "script.h"
 #include "string_util.h"
@@ -265,25 +266,6 @@ static enum Species GetDuplicateSpecies(enum Species species)
     return species;
 }
 
-static bool8 IsMegaStone(u32 item)
-{
-    if (item >= ITEM_VENUSAURITE && item <= ITEM_DIANCITE)
-        return TRUE;
-
-    if (item >= ITEM_CLEFABLITE && item <= ITEM_FALINKSITE)
-        return TRUE;
-
-    if (item >= ITEM_HEATRANITE && item <= ITEM_GLIMMORANITE)
-        return TRUE;
-
-    return FALSE;
-}
-
-static bool8 IsZCrystal(u32 item)
-{
-    return item >= ITEM_NORMALIUM_Z && item <= ITEM_ULTRANECROZIUM_Z;
-}
-
 static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCount)
 {
     s32 i, j;
@@ -370,11 +352,11 @@ static void FillTrainerParty(u16 trainerId, enum BattleTrainer trainer, u8 monCo
             if (GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) != ITEM_NONE
              && GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM) == gFacilityTrainerMons[monId].heldItem)
                 break;
-            else if (IsMegaStone(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM))
-                    && IsMegaStone(gFacilityTrainerMons[monId].heldItem))
+            else if (GetItemHoldEffect(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM)) == HOLD_EFFECT_MEGA_STONE
+            && GetItemHoldEffect(gFacilityTrainerMons[monId].heldItem) == HOLD_EFFECT_MEGA_STONE)
                 break;
-            else if (IsZCrystal(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM))
-                    && IsZCrystal(gFacilityTrainerMons[monId].heldItem))
+            else if (GetItemHoldEffect(GetMonData(&gParties[trainer][j], MON_DATA_HELD_ITEM)) == HOLD_EFFECT_Z_CRYSTAL
+            && GetItemHoldEffect(gFacilityTrainerMons[monId].heldItem) == HOLD_EFFECT_Z_CRYSTAL)
                 break;
         }
         if (j != i)
