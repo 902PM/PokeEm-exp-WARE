@@ -3963,13 +3963,24 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     RecordItemEffectBattle(gBattlerAttacker, HOLD_EFFECT_ABILITY_SHIELD);
                     break;
                 }
-
-                RemoveAbilityFlags(gBattlerAttacker);
-                gLastUsedAbility = gBattleMons[gBattlerAttacker].ability;
-                gBattleMons[gBattlerAttacker].ability = gBattleMons[gBattlerAttacker].volatiles.overwrittenAbility = gBattleMons[gBattlerTarget].ability;
-                BattleScriptCall(BattleScript_MummyActivates);
-                effect++;
-                break;
+                if (gBattleMons[gBattlerAttacker].ability == ABILITY_MUMMY)
+                {
+                    RemoveAbilityFlags(gBattlerAttacker);
+                    gLastUsedAbility = gBattleMons[gBattlerAttacker].ability;
+                    gBattleMons[gBattlerAttacker].ability = gBattleMons[gBattlerAttacker].volatiles.overwrittenAbility = gBattleMons[gBattlerTarget].ability;
+                    BattleScriptCall(BattleScript_MummyActivates);
+                    effect++;
+                    break;  
+                }
+                else
+                {
+                    RemoveAbilityFlags(gBattlerAttacker);
+                    gLastUsedAbility = gBattleMons[gBattlerAttacker].ability;
+                    gBattleMons[gBattlerAttacker].ability = gBattleMons[gBattlerAttacker].volatiles.overwrittenAbility = gBattleMons[gBattlerTarget].ability;
+                    BattleScriptCall(BattleScript_MummyActivates_Alt);
+                    effect++;
+                    break;
+                }
             }
             break;
         case ABILITY_WANDERING_SPIRIT:

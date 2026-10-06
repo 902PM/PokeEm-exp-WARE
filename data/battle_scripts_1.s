@@ -5026,6 +5026,22 @@ BattleScript_MummyActivates::
 	tryendneutralizinggas BS_ATTACKER
 	return
 
+BattleScript_MummyActivates_Alt::
+	setbyte sFIXED_ABILITY_POPUP, TRUE
+	call BattleScript_AbilityPopUpTarget
+	copybyte gBattlerAbility, gBattlerAttacker
+	copyhword sABILITY_OVERWRITE, gLastUsedAbility
+	call BattleScript_AbilityPopUpOverwriteThenNormal
+	recordability BS_TARGET
+	recordability BS_ATTACKER
+	printstring STRINGID_ABILITYLINGERINGAROMA
+	waitmessage B_WAIT_TIME_LONG
+	trytoclearprimalweather
+	call BattleScript_TryRevertWeatherform
+	flushtextbox
+	tryendneutralizinggas BS_ATTACKER
+	return
+
 BattleScript_WanderingSpiritActivates::
 	saveattacker
 	savetarget

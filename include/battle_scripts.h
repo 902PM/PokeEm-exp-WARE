@@ -264,6 +264,7 @@ extern const u8 BattleScript_StickyWebOnSwitchIn[];
 extern const u8 BattleScript_SolarPowerActivates[];
 extern const u8 BattleScript_CursedBodyActivates[];
 extern const u8 BattleScript_MummyActivates[];
+extern const u8 BattleScript_MummyActivates_Alt[];
 extern const u8 BattleScript_RemoveTerrain[];
 extern const u8 BattleScript_PickupActivates[];
 extern const u8 BattleScript_HarvestActivates[];
