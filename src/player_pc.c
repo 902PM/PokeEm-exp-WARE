@@ -226,10 +226,6 @@ static const u16 sNewGamePCItems[][2] =
     { ITEM_PROTEIN, 900 },
     { ITEM_CALCIUM, 900 },
     { ITEM_CARBOS, 900 },
-    { ITEM_ADAMANT_MINT, 90 },
-    { ITEM_MODEST_MINT, 90 },
-    { ITEM_ABILITY_CAPSULE, 90 },
-    { ITEM_ABILITY_PATCH, 90 },
     { ITEM_NONE, 0 }
 };
 
