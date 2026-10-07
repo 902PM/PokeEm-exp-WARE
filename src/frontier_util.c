@@ -617,7 +617,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .ball = BALL_NET,
                 .gender = MON_FEMALE,
                 .teraType = TYPE_WATER,
-                .evs = {252, 28, 0, 0, 0, 228},
+                .evs = {252, 0, 28, 0, 0, 228},
                 .moves = {MOVE_POWER_SPLIT, MOVE_SHELL_SMASH, MOVE_REST, MOVE_INFESTATION},
             },
             {
@@ -694,7 +694,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .abilityNum = 0,
                 .ball = BALL_HEAVY,
                 .teraType = TYPE_GHOST,
-                .evs = {252, 252, 0, 0, 0, 6},
+                .evs = {252, 0, 252, 0, 0, 6},
                 .moves = {MOVE_IRON_HEAD, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE, MOVE_AMNESIA},
             },
             {
