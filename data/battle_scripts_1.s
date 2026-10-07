@@ -985,6 +985,7 @@ BattleScript_FinalGambit::
 	return
 
 BattleScript_TryHitSwitchTarget::
+	jumpifbattletype BATTLE_TYPE_ARENA, BattleScript_MoveSwitchEnd
 	forcerandomswitch BattleScript_HitSwitchTargetForceRandomSwitchFailed
 	return
 
@@ -4240,7 +4241,7 @@ BattleScript_DoSelfConfusionDmg::
 	waitstate
 	tryselfconfusiondmgformchange
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER, ASSURANCE_IGNORE
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	resultmessage
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
