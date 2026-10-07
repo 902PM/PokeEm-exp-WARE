@@ -63,7 +63,7 @@ u32 GeneratePersonalityForGender(u32 gender, u32 species)
 
 const u8 sModuloLUT[25] = {0, 21, 17, 13, 9, 5, 1, 22, 18, 14, 10, 6, 2, 23, 19, 15, 11, 7, 3, 24, 20, 16, 12, 8, 4};
 
-// 現在ここの元プログラムは、負の補正をかけてしまうことで、負の方向へオーバーフローし、性格が負の値になる。しかし、受け取りはu32なので性格がズレる。
+// 現在ここの元プログラムは、負になることを想定しなく、アンダーフローし、性格が負の値になる。しかし、受け取りはu32なので性格がズレる。
 void ModifyPersonalityForNature(u32 *personality, s32 newNature)
 {
     s32 nature = GetNatureFromPersonality(*personality);

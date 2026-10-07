@@ -1129,6 +1129,7 @@ static void Cmd_attackanimation(void)
     if (isAnimDisabled
         && effect != EFFECT_TRANSFORM
         && effect != EFFECT_SUBSTITUTE
+        && effect != EFFECT_SHED_TAIL
         && effect != EFFECT_ALLY_SWITCH
         // In a wild double battle gotta use the teleport animation if two wild Pokémon are alive.
         && !(GetMoveEffect(gCurrentMove) == EFFECT_TELEPORT && WILD_DOUBLE_BATTLE && !IsOnPlayerSide(gBattlerAttacker) && IsBattlerAlive(GetPartnerBattler(gBattlerAttacker))))

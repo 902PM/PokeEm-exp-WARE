@@ -1423,7 +1423,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST,
         .ability = ABILITY_UNBURDEN,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-        .ev = TRAINER_PARTY_EVS(6, 252, 0, 252, 0, 0),
+        .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DUSK,
     },
@@ -4952,7 +4952,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 6, 0, 0),
         .gender = TRAINER_MON_FEMALE,
         .ball = BALL_DUSK,
-        .isShiny = TRUE,
     },
     [FRONTIER_MON_ANNIHILAPE] = {
         .species = SPECIES_ANNIHILAPE,
@@ -5681,7 +5680,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_SAMUROTT_1] = {
         .species = SPECIES_SAMUROTT_HISUI,
-        .moves = {MOVE_CEASELESS_EDGE, MOVE_SACRED_SWORD, MOVE_SACRED_SWORD, MOVE_SUCKER_PUNCH},
+        .moves = {MOVE_CEASELESS_EDGE, MOVE_SACRED_SWORD, MOVE_RAZOR_SHELL, MOVE_SUCKER_PUNCH},
         .heldItem = ITEM_FOCUS_SASH,
         .nature = NATURE_ADAMANT,
         .ability = ABILITY_SHARPNESS,
