@@ -2933,6 +2933,7 @@ static enum CancelerResult CancelerSkipFrame(struct BattleCalcValues *cv)
     return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
 }
 
+    //ここのみがわりの処理の順番を変えたことで、防御側がみがわりしてないのに、メッセージを表示することがなくなった。
 static enum CancelerResult CancelerHealthBarUpdate(struct BattleCalcValues *cv)
 {
     for (enum BattlerId battlerDef = 0; battlerDef < gBattlersCount; battlerDef++)

@@ -1464,14 +1464,15 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
         }
     }
 
+    // ここの処理がgCurrentMoveだと『-』表示になる。setcantselectscriptの第2引数とMOVE_MAX_GUARD。
     if (zMoveBypassCheck
      && gBattleMons[battler].volatiles.tauntTimer != 0
      && IsBattleMoveStatus(move)
      && (GetConfig(B_TAUNT_ME_FIRST) < GEN_5 || moveEffect != EFFECT_ME_FIRST))
     {
         if ((GetActiveGimmick(battler) == GIMMICK_DYNAMAX))
-            gCurrentMove = MOVE_MAX_GUARD;
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveTauntInPalace, BattleScript_SelectingNotAllowedMoveTaunt))
+            move = MOVE_MAX_GUARD;
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveTauntInPalace, BattleScript_SelectingNotAllowedMoveTaunt))
             limitations++;
     }
 
