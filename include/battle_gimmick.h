@@ -16,8 +16,8 @@ enum Gimmick
 
 enum UsedGimmick
 {
-    UNUSED_GIMMICK = 0x00,
-    USED_GIMMICK   = 0x80,
+    UNUSED_GIMMICK,
+    USED_GIMMICK,
 };
 
 struct GimmickInfo
