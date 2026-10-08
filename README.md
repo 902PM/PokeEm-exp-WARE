@@ -87,8 +87,8 @@ EXPの内容
 
 - Frontier_Monsの状況。  
   
- 総数883、使用792、未使用 57  
- うち、Dyna:40、Tera:149、Z:38、Mega:26  
+ 総数883、使用798、未使用 55  
+ うち、Dyna:40、Tera:152、Z:38、Mega:80ぐらい  
 
 # About `pokeemerald-expansion`
 
@@ -107,7 +107,7 @@ EXPの内容
 If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's pokeemerald-expansion 1.17.0 https://github.com/rh-hideout/pokeemerald-expansion/
+Based off RHH's pokeemerald-expansion 1.17.1 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!
