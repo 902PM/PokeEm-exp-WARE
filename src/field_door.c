@@ -743,7 +743,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
         .tiles = sDoorAnimTiles_BattleFrontierSliding,
         .palettes = sDoorAnimPalettes_BattleFrontier
     },
-        {
+    {
         .metatileNum = METATILE_BattleFrontierOutsideEast_Door,
         .tileset = &gTileset_BattleFrontierOutsideEast,
         .sound = DOOR_SOUND_NORMAL,
