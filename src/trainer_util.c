@@ -220,7 +220,7 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
         data = trainerMon->gigantamaxFactor;
         SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &data);
     }
-    if (trainerMon->shouldTerastal)
+    if (trainerMon->teraType)
     {
         data = trainerMon->teraType;
         SetMonData(mon, MON_DATA_TERA_TYPE, &data);
