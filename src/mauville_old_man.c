@@ -751,8 +751,8 @@ void SanitizeMauvilleOldManForRuby(union OldMan *oldMan)
         struct MauvilleOldManTrader *trader = &oldMan->trader;
         for (i = 0; i < NUM_TRADER_ITEMS; i++)
         {
-            if (trader->language[i] == LANGUAGE_JAPANESE)
-                ConvertInternationalString(trader->playerNames[i], LANGUAGE_JAPANESE);
+            if (trader->language[i] != LANGUAGE_JAPANESE)
+                ConvertInternationalString(trader->playerNames[i], LANGUAGE_ENGLISH);
         }
         break;
     }
@@ -898,7 +898,7 @@ void SanitizeReceivedRubyOldMan(union OldMan *oldMan, enum GameVersion version, 
         {
             for (i = 0; i < NUM_TRADER_ITEMS; i++)
             {
-                if (trader->language[i] == LANGUAGE_JAPANESE)
+                if (trader->language[i] != LANGUAGE_JAPANESE)
                 {
                     StripExtCtrlCodes(trader->playerNames[i]);
                 }

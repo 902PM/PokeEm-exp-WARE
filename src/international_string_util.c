@@ -147,7 +147,7 @@ void PadNameString(u8 *dest, u8 padChar)
 void ConvertInternationalPlayerName(u8 *str)
 {
     if (StringLength(str) < PLAYER_NAME_LENGTH - 1)
-        ConvertInternationalString(str, LANGUAGE_JAPANESE);
+        ConvertInternationalString(str, LANGUAGE_ENGLISH);
     else
         StripExtCtrlCodes(str);
 }
@@ -157,7 +157,7 @@ void ConvertInternationalPlayerNameStripChar(u8 *str, u8 removeChar)
     u8 *buffer;
     if (StringLength(str) < PLAYER_NAME_LENGTH - 1)
     {
-        ConvertInternationalString(str, LANGUAGE_JAPANESE);
+        ConvertInternationalString(str, LANGUAGE_ENGLISH);
     }
     else if (removeChar == EXT_CTRL_CODE_BEGIN)
     {
@@ -206,8 +206,10 @@ enum Language GetNicknameLanguage(u8 *str)
 {
     if (str[0] == EXT_CTRL_CODE_BEGIN && str[1] == EXT_CTRL_CODE_JPN)
         return LANGUAGE_JAPANESE;
-    else
+    else if  (str[0] == EXT_CTRL_CODE_BEGIN && str[1] == EXT_CTRL_CODE_ENG)
         return LANGUAGE_ENGLISH;
+    else
+        return LANGUAGE_JAPANESE;
 }
 
 // Used by Pokénav's Match Call to erase the previous trainer's flavor text when switching between their info pages.
