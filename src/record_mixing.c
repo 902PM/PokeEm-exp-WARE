@@ -673,8 +673,8 @@ static void ReceiveBattleTowerData(void *records, size_t recordSize, u8 multipla
         for (i = 0; i < MAX_FRONTIER_PARTY_SIZE; i++)
         {
             btPokemon = &battleTowerRecord->party[i];
-            if (btPokemon->species != SPECIES_NONE && IsStringJapanese(btPokemon->nickname))
-                ConvertInternationalString(btPokemon->nickname, LANGUAGE_JAPANESE);
+            if (btPokemon->species != SPECIES_NONE && !(IsStringJapanese(btPokemon->nickname)))
+                ConvertInternationalString(btPokemon->nickname, LANGUAGE_ENGLISH);
         }
         CalcEmeraldBattleTowerChecksum(battleTowerRecord);
     }

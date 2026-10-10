@@ -76,17 +76,17 @@ void FillPartnerParty(u16 trainerId)
             struct EmeraldBattleTowerRecord *record = &gSaveBlock2Ptr->frontier.towerRecords[trainerId];
             struct BattleTowerPokemon monData = record->party[gSaveBlock2Ptr->frontier.trainerIds[18 + i]];
             StringCopy(trainerName, record->name);
-            if (record->language == LANGUAGE_JAPANESE)
+            if (record->language != LANGUAGE_JAPANESE)
             {
-                if (monData.nickname[0] != EXT_CTRL_CODE_BEGIN || monData.nickname[1] != EXT_CTRL_CODE_JPN)
+                if (monData.nickname[0] != EXT_CTRL_CODE_BEGIN || monData.nickname[1] != EXT_CTRL_CODE_ENG)
                 {
                     monData.nickname[6] = EOS;
-                    ConvertInternationalString(monData.nickname, LANGUAGE_JAPANESE);
+                    ConvertInternationalString(monData.nickname, LANGUAGE_ENGLISH);
                 }
             }
             else
             {
-                if (monData.nickname[0] == EXT_CTRL_CODE_BEGIN && monData.nickname[1] == EXT_CTRL_CODE_JPN)
+                if (monData.nickname[0] == EXT_CTRL_CODE_BEGIN && monData.nickname[1] == EXT_CTRL_CODE_ENG)
                     trainerName[5] = EOS;
             }
             CreateBattleTowerMon_HandleLevel(&gParties[B_TRAINER_PARTNER][i], &monData, TRUE);

@@ -6097,7 +6097,7 @@ static void StripMonNameForLinkContest(u8 *monName, enum Language language)
     u8 chr;
 
     StripExtCtrlCodes(monName);
-    if (language == LANGUAGE_JAPANESE)
+    if (language != LANGUAGE_JAPANESE)
     {
         monName[5] = EOS;
         monName[POKEMON_NAME_LENGTH] = EXT_CTRL_CODE_BEGIN;
@@ -6114,13 +6114,13 @@ void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, enum Langu
 {
     u8 *name = mon->nickname;
 
-    if (language == LANGUAGE_JAPANESE)
+    if (language != LANGUAGE_JAPANESE)
     {
         ConvertInternationalString(name, GetMonNicknameLanguage(name));
     }
     else if (name[POKEMON_NAME_LENGTH] == EXT_CTRL_CODE_BEGIN)
     {
-        ConvertInternationalString(name, LANGUAGE_JAPANESE);
+        ConvertInternationalString(name, LANGUAGE_ENGLISH);
     }
     else
     {
@@ -6129,7 +6129,7 @@ void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, enum Langu
     }
 
     name = mon->trainerName;
-    if (language == LANGUAGE_JAPANESE)
+    if (language != LANGUAGE_JAPANESE)
     {
         name[7] = EOS;
         name[6] = name[4];
@@ -6137,7 +6137,7 @@ void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, enum Langu
         name[4] = name[2];
         name[3] = name[1];
         name[2] = mon->trainerName[0];
-        name[1] = EXT_CTRL_CODE_JPN;
+        name[1] = EXT_CTRL_CODE_ENG;
         name[0] = EXT_CTRL_CODE_BEGIN;
     }
     else
