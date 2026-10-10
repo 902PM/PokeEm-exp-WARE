@@ -2055,6 +2055,7 @@ static void SetMonIconTransparency(void)
     SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(7, 11));
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_BG_ALL_ON | DISPCNT_OBJ_1D_MAP);
 }
+
 static void SetPokeStorageTask(TaskFunc newFunc)
 {
     gTasks[sStorage->taskId].func = newFunc;

@@ -4926,7 +4926,7 @@ AI: Smart Trainer / Ace Pokemon
 Starting Status: Electric Terrain
 Mugshot: Purple
 
-Voltorb (M) @ Electric Seed
+Voltorb @ Electric Seed
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 Ball: Fast
@@ -4946,7 +4946,7 @@ Nature: Modest
 - Overheat
 - Quick Attack
 
-Magneton (M)
+Magneton
 Level: 22
 Ability: Sturdy
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -12154,7 +12154,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Hitmonlee (F)
+Hitmonlee
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Jump Kick
@@ -12162,7 +12162,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Mega Kick
 - Double Kick
 
-Hitmonchan (F)
+Hitmonchan
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Punch
@@ -14565,7 +14565,7 @@ Morelull (M)
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Bounsweet (M)
+Bounsweet
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 

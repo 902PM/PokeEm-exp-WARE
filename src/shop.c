@@ -219,7 +219,7 @@ static const struct ListMenuTemplate sShopBuyMenuListTemplate =
     .lettersSpacing = 0,
     .itemVerticalPadding = 0,
     .scrollMultiple = LIST_NO_MULTIPLE_SCROLL,
-    .fontId = FONT_NARROW,
+    .fontId = FONT_NORMAL,
     .cursorKind = CURSOR_BLACK_ARROW,
     .textNarrowWidth = 84,
 };
@@ -270,7 +270,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplates[] =
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 1,
-        .width = 10,
+        .width = 12,
         .height = 2,
         .paletteNum = 15,
         .baseBlock = 0x001E,
@@ -282,7 +282,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplates[] =
         .width = 15,
         .height = 16,
         .paletteNum = 15,
-        .baseBlock = 0x0032,
+        .baseBlock = 0x0036,
     },
     [WIN_ITEM_DESCRIPTION] = {
         .bg = 0,
@@ -291,7 +291,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplates[] =
         .width = 14,
         .height = 6,
         .paletteNum = 15,
-        .baseBlock = 0x0122,
+        .baseBlock = 0x0126,
     },
     [WIN_QUANTITY_IN_BAG] = {
         .bg = 0,
@@ -300,16 +300,16 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplates[] =
         .width = 12,
         .height = 2,
         .paletteNum = 15,
-        .baseBlock = 0x0176,
+        .baseBlock = 0x017A,
     },
     [WIN_QUANTITY_PRICE] = {
         .bg = 0,
         .tilemapLeft = 18,
         .tilemapTop = 11,
-        .width = 10,
+        .width = 11,
         .height = 2,
         .paletteNum = 15,
-        .baseBlock = 0x018E,
+        .baseBlock = 0x0192,
     },
     [WIN_MESSAGE] = {
         .bg = 0,
@@ -318,7 +318,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplates[] =
         .width = 27,
         .height = 4,
         .paletteNum = 15,
-        .baseBlock = 0x01A2,
+        .baseBlock = 0x01A8,
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -331,7 +331,7 @@ static const struct WindowTemplate sShopBuyMenuYesNoWindowTemplates =
     .width = 5,
     .height = 4,
     .paletteNum = 15,
-    .baseBlock = 0x020E,
+    .baseBlock = 0x0214,
 };
 
 static const u8 sShopBuyMenuTextColors[][3] =
@@ -661,8 +661,8 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
             StringCopy(gStringVar4, gText_SoldOut);
         else
             StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
-        x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
-        AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
+        x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 120);
+        AddTextPrinterParameterized4(windowId, FONT_NORMAL, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
     }
 }
 

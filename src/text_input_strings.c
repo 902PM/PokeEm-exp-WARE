@@ -30,7 +30,7 @@ const u8 gText_UnionRoomChatKeyboard_Z[] = _("Z    ");
 const u8 gText_UnionRoomChatKeyboard_01234Upper[] = _("01234");
 const u8 gText_UnionRoomChatKeyboard_56789Upper[] = _("56789");
 const u8 gText_UnionRoomChatKeyboard_PunctuationUpper[] = _(".!? ");
-const u8 gText_UnionRoomChatKeyboard_SymbolsUpper[] = _("-/&... ");
+const u8 gText_UnionRoomChatKeyboard_SymbolsUpper[] = _("-/&… ");
 const u8 gText_UnionRoomChatKeyboard_abcde[] = _("abcde");
 const u8 gText_UnionRoomChatKeyboard_fghij[] = _("fghij");
 const u8 gText_UnionRoomChatKeyboard_klmno[] = _("klmno");
@@ -40,7 +40,7 @@ const u8 gText_UnionRoomChatKeyboard_z[] = _("z    ");
 const u8 gText_UnionRoomChatKeyboard_01234Lower[] = _("01234");
 const u8 gText_UnionRoomChatKeyboard_56789Lower[] = _("56789");
 const u8 gText_UnionRoomChatKeyboard_PunctuationLower[] = _(".!? ");
-const u8 gText_UnionRoomChatKeyboard_SymbolsLower[] = _("-/&... ");
+const u8 gText_UnionRoomChatKeyboard_SymbolsLower[] = _("-/&… ");
 
 const u8 gText_EmptyTextInput1[] = _("");
 const u8 gText_EmptyTextInput2[] = _("");
