@@ -3736,7 +3736,7 @@ void ScriptShowItemDescription(struct ScriptContext *ctx)
     if (GetFlashLevel() > 0 || InBattlePyramid())
         handleFlash = TRUE;
 
-    if (headerType == 1) // berry
+    if (headerType == 1) // berry 日本語だと影響しそうなので、一旦更新していません。
         dst = gStringVar3;
     else
         dst = gStringVar1;
