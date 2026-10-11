@@ -4462,11 +4462,17 @@ s32 GetBattleMovePriority(enum BattlerId battler, enum Ability ability, enum Mov
     if (GetActiveGimmick(battler) == GIMMICK_Z_MOVE && !IsBattleMoveStatus(move))
         move = GetUsableZMove(battler, move);
 
-    priority = GetMovePriority(move);
-
     // Max Guard check
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX && GetMoveCategory(move) == DAMAGE_CATEGORY_STATUS)
+    {
         return GetMovePriority(MOVE_MAX_GUARD);
+    }
+    else if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
+    {
+        move = GetMaxMove(battler, move);
+    }
+
+    priority = GetMovePriority(move);
 
     if (gProtectStructs[battler].quash)
     {
