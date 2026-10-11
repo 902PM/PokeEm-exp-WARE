@@ -1585,7 +1585,7 @@ void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgClr, u8 fgClr, u8 s
             numDigits = 1;
 
         ConvertIntToDecimalStringN(text, stats[i], STR_CONV_MODE_LEFT_ALIGN, numDigits);
-        x = 6 * (4 - numDigits);
+        x = 8 * (3 - numDigits);
 
         AddTextPrinterParameterized3(windowId,
                                      FONT_NORMAL,
