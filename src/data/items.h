@@ -1301,7 +1301,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("とくせいカプセル"),
     #if I_PRICE >= GEN_9
-        .price = 100000,
+        .price = 10000,
     #elif I_PRICE >= GEN_7
         .price = 10000,
     #else
@@ -1321,7 +1321,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("とくせいパッチ"),
         .pluralName = ITEM_PLURAL_NAME("とくせいパッチ"),
-        .price = (I_PRICE >= GEN_9) ? 250000 : 20,
+        .price = (I_PRICE >= GEN_9) ? 25000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING("ポケモンに つかうと\nめずらしい とくせいに\nかえられる パッチ"),
         .pocket = POCKET_ITEMS,

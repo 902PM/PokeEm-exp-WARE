@@ -13,19 +13,19 @@ BattleFrontier_Mart_EventScript_Clerk::
 
 	.align 2
 BattleFrontier_Mart_Pokemart:
-	.2byte ITEM_DREAM_BALL
-	.2byte ITEM_DIVE_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
 	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_HEAL_BALL
 	.2byte ITEM_SPORT_BALL
-	.2byte ITEM_HEAVY_BALL
-	.2byte ITEM_FAST_BALL
-	.2byte ITEM_LOVE_BALL
-	.2byte ITEM_FRIEND_BALL
-	.2byte ITEM_MOON_BALL
-	.2byte ITEM_LURE_BALL
-	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_DREAM_BALL
+	.2byte ITEM_BEAST_BALL
 	pokemartlistend
 
 BattleFrontier_Mart_EventScript_OldMan::
