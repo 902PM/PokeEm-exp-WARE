@@ -2745,6 +2745,7 @@ static enum CancelerResult CancelerPreAnimActivations(struct BattleCalcValues *c
             }
 
             gBattleScripting.battler = battlerDef;
+            gLastUsedItem = gBattleMons[cv->battlerDef].item;
             BattleScriptCall(BattleScript_BerryReduceAnimation);
             return CANCELER_RESULT_RUN_SCRIPT;
         }
