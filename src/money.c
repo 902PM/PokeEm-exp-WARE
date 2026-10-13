@@ -129,7 +129,7 @@ void SubtractMoneyFromVar0x8005(void)
 
 void PrintMoneyAmountInMoneyBox(u8 windowId, int amount, u8 speed)
 {
-    PrintMoneyAmount(windowId, CalculateMoneyTextHorizontalPosition(amount), 1, amount, speed);
+    PrintMoneyAmount(windowId, CalculateMoneyTextHorizontalPosition(amount) + 6, 1, amount, speed);
 }
 
 static u32 CalculateLeadingSpacesForMoney(u32 numDigits)
@@ -172,7 +172,7 @@ void ChangeAmountInMoneyBox(int amount)
 
 u32 CalculateMoneyTextHorizontalPosition(u32 amount)
 {
-    return (CountDigits(amount) > 8) ? 26 : 18;
+    return (CountDigits(amount) > 8) ? 24 : 16;
 }
 
 void DrawMoneyBox(int amount, u8 x, u8 y)
