@@ -471,9 +471,9 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         data = TRUE;
         SetMonData(dst, MON_DATA_IS_SHINY, &data);
     }
-    if (trainerMon->shouldUseDynamax)
+    if (fmon->shouldUseDynamax)
     {
-        data = trainerMon->dynamaxLevel;
+        data = fmon->dynamaxLevel;
         SetMonData(dst, MON_DATA_DYNAMAX_LEVEL, &data);
     }
     else
