@@ -333,7 +333,8 @@ static void SetRentalsToOpponentParty(void)
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HELD_ITEM, &gFacilityTrainerMons[gFrontierTempParty[i]].heldItem);
     }
 }
-
+// 本家はここの間にCreateRentalMonというローカル関数を作っている。
+// なくても成立していて、必要性を感じないので、このままで。
 static void SetPlayerAndOpponentParties(void)
 {
     int i;

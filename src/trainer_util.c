@@ -40,7 +40,7 @@ static void CustomTrainerPartyAssignMoves(struct Pokemon *mon, const struct Trai
         SetMonData(mon, MON_DATA_PP1 + j, &pp);
     }
 }
-
+//本家はここの引数にu32 genderRngを追加。genderRngを使っている。
 u32 GeneratePersonalityForGender(u32 gender, u32 species)
 {
     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[species];
@@ -64,6 +64,7 @@ u32 GeneratePersonalityForGender(u32 gender, u32 species)
 const u8 sModuloLUT[25] = {0, 21, 17, 13, 9, 5, 1, 22, 18, 14, 10, 6, 2, 23, 19, 15, 11, 7, 3, 24, 20, 16, 12, 8, 4};
 
 // 現在ここの元プログラムは、負になることを想定しなく、アンダーフローし、性格が負の値になる。しかし、受け取りはu32なので性格がズレる。
+// これ関連のプログラムにアプデが入ったが、未だにアンダーフローすることに気づいていないっぽい？
 void ModifyPersonalityForNature(u32 *personality, s32 newNature)
 {
     s32 nature = GetNatureFromPersonality(*personality);
@@ -86,7 +87,7 @@ void ModifyPersonalityForNature(u32 *personality, s32 newNature)
 
     *personality += adjustment;
 }
-
+// 本家はグローバル化して、CreateFacilityMonで使用。ただし、使い方がこことは違い、FALSE時の戻り値がない……？？？？
 static bool32 SetCorrectAbilityNum(struct Pokemon *mon, enum Species species, enum Ability ability)
 {
     const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[species];
@@ -130,7 +131,7 @@ void MakePartnerGenerator(struct TrainerGenerator *trainerGen, const struct Trai
     trainerGen->otID = OTID_STRUCT_PRESET(otID);
     trainerGen->localRngState = LocalRandomSeed(otID);
 }
-
+// ここも本家が弄ってる。genderValueの初期値をLocalRandom32(&trainer->localRngState)にして、他にgenderValueを追加している。
 void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *trainerMon, struct TrainerGenerator *trainer)
 {
     u32 data;

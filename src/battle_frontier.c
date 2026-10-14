@@ -404,6 +404,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     u32 data;
     enum Ability ability;
 
+    //ここ本家が弄ってる。
     if (fmon->gender == TRAINER_MON_MALE)
     {
         personality = GeneratePersonalityForGender(MON_MALE, fmon->species) + 0x1000;
@@ -433,6 +434,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     SetMonData(dst, MON_DATA_HELD_ITEM, &fmon->heldItem);
 
     // try to set ability. Otherwise, random of non-hidden as per vanilla
+    // ここにSetCorrectAbilityNumを持ってきている。が、FALSE時に返り値がない？？？
     if (fmon->ability != ABILITY_NONE)
     {
         const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[fmon->species];
@@ -457,6 +459,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         SetMonData(dst, MON_DATA_SPEED_EV, &(fmon->ev[5]));
     }
 
+    // ここ本家が削除して、個体値をfrontiermons側で設定しても意味をなさないようになっている。
     if (fmon->iv)
         SetMonData(dst, MON_DATA_IVS, &(fmon->iv));
 
