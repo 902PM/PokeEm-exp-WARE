@@ -1231,7 +1231,6 @@ static void RestorePyramidPlayerParty(void)
                     if (l == MAX_MON_MOVES)
                         SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][j], MOVE_SKETCH, k);
                 }
-                SavePlayerPartyMon(partyIndex, &gParties[B_TRAINER_PLAYER][j]);
                 gSelectedOrderFromParty[j] = partyIndex + 1;
                 break;
             }

@@ -85,6 +85,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_RetireChallenge::
 BattleFrontier_BattleDomePreBattleRoom_EventScript_PauseChallenge::
 	message BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait
 	waitmessage
+	special LoadPlayerParty
 	dome_save CHALLENGE_STATUS_PAUSED
 	playse SE_SAVE
 	waitse
@@ -138,6 +139,7 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	fadescreen FADE_TO_BLACK
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
+	call_if_eq VAR_0x8004, FRONTIER_LVL_50, BattleFrontier_BattleDomePreBattleRoom_EventScript_SetMonLevel50
 	setvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
 	special ChoosePartyForBattleFrontier
 	frontier_resetsketch
@@ -161,6 +163,10 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	setvar VAR_TEMP_0, 0
 	waitstate
 	end
+
+BattleFrontier_BattleDomePreBattleRoom_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage::
 	frontier_get FRONTIER_DATA_BATTLE_NUM

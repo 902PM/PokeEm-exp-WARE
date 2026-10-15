@@ -41,12 +41,18 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_ResumeChallenge::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
 	special SavePlayerParty
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePikeThreePathRoom_EventScript_SetMonLevel50
 	msgbox BattleFrontier_BattlePikeThreePathRoom_Text_PleaseEnjoyChallenge, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	frontier_settrainers
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 99
 	end
+
+BattleFrontier_BattlePikeThreePathRoom_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_Attendant::
 	frontier_get FRONTIER_DATA_BATTLE_NUM  @ Room number
@@ -118,10 +124,10 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_AskContinueChallenge::
 	end
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_PauseChallenge::
+	special LoadPlayerParty
 	frontier_saveparty
 	message BattleFrontier_BattlePikeThreePathRoom_Text_SavingYourData
 	waitmessage
-	special LoadPlayerParty
 	pike_save CHALLENGE_STATUS_PAUSED
 	playse SE_SAVE
 	waitse

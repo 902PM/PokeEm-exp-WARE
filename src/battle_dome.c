@@ -5654,8 +5654,6 @@ static void ResetSketchedMoves(void)
             if (count == MAX_MON_MOVES)
                 SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][i], MOVE_SKETCH, moveSlot);
         }
-
-        SavePlayerPartyMon(playerMonId, &gParties[B_TRAINER_PLAYER][i]);
     }
 }
 

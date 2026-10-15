@@ -137,6 +137,7 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon::
 BattleFrontier_BattleTowerBattleRoom_EventScript_PauseChallenge::
 	message BattleFrontier_BattleTowerBattleRoom_Text_SavingPleaseWait
 	waitmessage
+	special LoadPlayerParty
 	tower_save CHALLENGE_STATUS_PAUSED
 	playse SE_SAVE
 	waitse

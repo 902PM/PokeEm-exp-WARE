@@ -2138,8 +2138,6 @@ static void AppendIfValid(enum Species species, enum Item heldItem, u16 hp, enum
         return;
     if (gSpeciesInfo[species].isFrontierBanned)
         return;
-    if (lvlMode == FRONTIER_LVL_50 && monLevel > FRONTIER_MAX_LEVEL_50)
-        return;
 
     for (i = 0; i < *count && speciesArray[i] != species; i++)
         ;
@@ -2403,7 +2401,6 @@ static void ResetSketchedMoves(void)
                 if (k == MAX_MON_MOVES)
                     SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][i], MOVE_SKETCH, j);
             }
-            SavePlayerPartyMon(gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1, &gParties[B_TRAINER_PLAYER][i]);
         }
     }
 }

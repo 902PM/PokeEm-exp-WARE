@@ -182,8 +182,14 @@ BattleFrontier_BattlePalaceLobby_EventScript_EnterChallenge::
 	call BattleFrontier_BattlePalaceLobby_EventScript_WalkToDoor
 	warp MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR, 8, 13
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePalaceLobby_EventScript_SetMonLevel50
 	waitstate
 	end
+
+BattleFrontier_BattlePalaceLobby_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePalaceLobby_EventScript_ExplainChallenge::
 	goto_if_eq VAR_FRONTIER_BATTLE_MODE, FRONTIER_MODE_DOUBLES, BattleFrontier_BattlePalaceLobby_EventScript_ExplainDoublesChallenge

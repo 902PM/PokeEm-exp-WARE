@@ -167,10 +167,16 @@ BattleFrontier_BattlePyramidLobby_EventScript_EnterChallenge::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	setvar VAR_RESULT, 0
 	special HealPlayerParty
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePyramidLobby_EventScript_SetMonLevel50
 	warp MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR, 1, 1
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	waitstate
 	end
+
+BattleFrontier_BattlePyramidLobby_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePyramidLobby_EventScript_ExplainChallenge::
 	msgbox BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid, MSGBOX_DEFAULT

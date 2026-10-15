@@ -23,6 +23,8 @@ BattleFrontier_BattlePyramidTop_EventScript_EndSetUpObjects::
 	end
 
 BattleFrontier_BattlePyramidTop_OnResume:
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePyramidTop_EventScript_SetMonLevel50
 	frontier_getbrainstatus
 	goto_if_eq VAR_RESULT, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattlePyramidTop_EventScript_CheckChallengeStatus
 	call BattleFrontier_EventScript_SetBrainObjectGfx
@@ -38,6 +40,10 @@ BattleFrontier_BattlePyramidTop_EventScript_CheckChallengeStatus::
 	goto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	goto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	end
+
+BattleFrontier_BattlePyramidTop_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePyramidTop_OnFrame:
 	map_script_2 VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0, BattleFrontier_BattlePyramidTop_EventScript_PlayPyramidMusic
@@ -55,6 +61,7 @@ BattleFrontier_BattlePyramidTop_EventScript_ShowMapName::
 	end
 
 BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge::
+	special LoadPlayerParty
 	pyramid_save CHALLENGE_STATUS_SAVING
 	special SavePlayerParty
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
@@ -66,6 +73,7 @@ BattleFrontier_BattlePyramidTop_EventScript_ReadyChallenge::
 BattleFrontier_BattlePyramidTop_EventScript_Attendant::
 	lock
 	faceplayer
+	frontier_get FRONTIER_DATA_LVL_MODE
 	goto_if_ne VAR_TEMP_D, 0, BattleFrontier_BattlePyramidTop_EventScript_StepForwardWhenReady
 	goto_if_ne VAR_TEMP_C, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattlePyramidTop_EventScript_BrandonHereMoveAside
 	msgbox BattleFrontier_BattlePyramidTop_Text_ReachedSummitUpYouGo, MSGBOX_DEFAULT

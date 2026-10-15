@@ -16,6 +16,8 @@ BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor::
 	applymovement LOCALID_PIKE_CORRIDOR_ATTENDANT, BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor
 	waitmovement 0
 	lockall
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePikeCorridor_EventScript_SetMonLevel50
 	msgbox BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun, MSGBOX_DEFAULT
 	closemessage
 	releaseall
@@ -26,6 +28,10 @@ BattleFrontier_BattlePikeCorridor_EventScript_EnterCorridor::
 	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM, 6, 10
 	waitstate
 	end
+
+BattleFrontier_BattlePikeCorridor_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePikeCorridor_OnWarp:
 	map_script_2 VAR_TEMP_1, 0, BattleFrontier_BattlePikeCorridor_EventScript_TurnPlayerNorth

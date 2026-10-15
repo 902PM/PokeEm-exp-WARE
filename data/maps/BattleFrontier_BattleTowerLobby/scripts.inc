@@ -602,6 +602,8 @@ BattleFrontier_BattleTowerLobby_EventScript_EnterElevator::
 	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_PARTY_ORDER
 	call BattleFrontier_BattleTowerLobby_EventScript_GetPartySize
 	special CallFrontierUtilFunc
+	call BattleFrontier_EventScript_GetLvlMode
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleTowerLobby_EventScript_SetMonLevel50
 	setvar VAR_RESULT, 0
 BattleFrontier_BattleTowerLobby_EventScript_WaitForLinkOpponentLoad::
 	tower_loadlinkopponents
@@ -613,6 +615,10 @@ BattleFrontier_BattleTowerLobby_EventScript_WaitForLinkOpponentLoad::
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
 	waitstate
 	end
+
+BattleFrontier_BattleTowerLobby_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattleTowerLobby_EventScript_ShowYouToBattleRoom::
 	call BattleFrontier_BattleTowerLobby_EventScript_BufferModeText

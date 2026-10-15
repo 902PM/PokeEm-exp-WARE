@@ -183,6 +183,8 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_AskRetireChallenge::
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_ContinueChallenge::
 	closemessage
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleArenaBattleRoom_EventScript_SetMonLevel50
 	applymovement LOCALID_ARENA_BATTLE_PLAYER, BattleFrontier_BattleArenaBattleRoom_Movement_WalkInPlaceRight
 	applymovement LOCALID_ARENA_BATTLE_ATTENDANT, BattleFrontier_BattleArenaBattleRoom_Movement_WalkInPlaceRight
 	waitmovement 0
@@ -193,6 +195,10 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_ReturnToLobbyWon::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
 	warp MAP_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY, 7, 8
 	waitstate
+
+BattleFrontier_BattleArenaBattleRoom_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_ReadyFor2ndOpponent::
 	message BattleFrontier_BattleArenaBattleRoom_Text_ReadyFor2ndOpponent
@@ -227,6 +233,7 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_ReadyFor7thOpponent::
 BattleFrontier_BattleArenaBattleRoom_EventScript_PauseChallenge::
 	message BattleFrontier_BattleArenaBattleRoom_Text_SavingPleaseWait
 	waitmessage
+	special LoadPlayerParty
 	arena_save CHALLENGE_STATUS_PAUSED
 	playse SE_SAVE
 	waitse

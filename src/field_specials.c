@@ -4614,6 +4614,43 @@ void DaisyMassageServices(void)
     VarSet(VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0);
 }
 
+void SetFrontierPartyLevel(void)
+{
+    int i;
+    u32 Frontierexp;
+    u8 FrontierLevel = FRONTIER_MAX_LEVEL_50;
+
+    for (i = 0; i < MAX_FRONTIER_PARTY_SIZE; i++)
+    {
+       enum Species species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES);
+       Frontierexp = gExperienceTables[gSpeciesInfo[species].growthRate][FrontierLevel];
+
+
+       SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_EXP, &Frontierexp);
+       CalculateMonStats(&gParties[B_TRAINER_PLAYER][i]);
+    }
+}
+
+void RestoreFrontierPartyLevel(void)
+{
+    u8 i;
+    struct Pokemon *PreMon;
+    u32 Frontierexp;
+
+    for (i = 0; i < MAX_FRONTIER_PARTY_SIZE; i++)
+    {
+        u16 monId = gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1;
+        if (monId < PARTY_SIZE)
+        {
+            PreMon = GetSavedPlayerPartyMon(gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1);
+            Frontierexp = GetMonData(PreMon, MON_DATA_EXP);
+
+            SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_EXP, &Frontierexp);
+            CalculateMonStats(&gParties[B_TRAINER_PLAYER][i]);
+        }
+    }
+}
+
 u8 GetLeadMonFriendship(void)
 {
     struct Pokemon * pokemon = &gParties[B_TRAINER_PLAYER][GetLeadMonIndex()];

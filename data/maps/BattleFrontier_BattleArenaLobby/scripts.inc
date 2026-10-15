@@ -167,8 +167,14 @@ BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	call_if_eq VAR_RESULT, FRONTIER_LVL_OPEN, BattleFrontier_BattleArenaLobby_EventScript_WalkToDoorLvOpen
 	warp MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR, 9, 13
 	setvar VAR_TEMP_CHALLENGE_STATUS, 0
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleArenaLobby_EventScript_SetMonLevel50
 	waitstate
 	end
+
+BattleFrontier_BattleArenaLobby_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattleArenaLobby_EventScript_ExplainChallenge::
 	msgbox BattleFrontier_BattleArenaLobby_Text_ExplainChallenge, MSGBOX_DEFAULT
