@@ -8666,7 +8666,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
     #endif
         .holdEffect = HOLD_EFFECT_FOCUS_SASH,
-        .description = COMPOUND_STRING("もたせると HPが\nまんたんのとき いちげきでは\nたおされなくなる"),
+        .description = COMPOUND_STRING("もたせると\nHPが まんたんのとき\nいちげきでは たおされなくなる"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
