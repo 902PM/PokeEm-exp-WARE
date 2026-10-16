@@ -60,6 +60,7 @@ BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination::
 
 BattleFrontier_OutsideWest_EventScript_BoardFerry::
 	closemessage
+	hidefollower 0
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
