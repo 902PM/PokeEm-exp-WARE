@@ -187,6 +187,8 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskRetireChallenge::
 	case MULTI_B_PRESSED, BattleFrontier_BattleTowerMultiBattleRoom_EventScript_AskReadyForOpponents
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallenge::
+	call BattleFrontier_EventScript_GetLvlMode
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattleTowerLobby_EventScript_SetMonLevel50
 	closemessage
 	clearflag FLAG_TEMP_2
 	applymovement LOCALID_TOWER_MULTI_BATTLE_PLAYER, BattleFrontier_BattleTowerMultiBattleRoom_Movement_FaceBattle
@@ -197,6 +199,10 @@ BattleFrontier_BattleTowerMultiBattleRoom_EventScript_ContinueChallenge::
 	waitmovement 0
 	goto BattleFrontier_BattleTowerMultiBattleRoom_EventScript_OpponentsEnter
 	end
+
+BattleFrontier_BattleTowerMultiBattleRoom_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattleTowerMultiBattleRoom_EventScript_WarpToLobbyWon::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
