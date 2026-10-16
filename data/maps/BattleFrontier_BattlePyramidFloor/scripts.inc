@@ -54,13 +54,7 @@ BattleFrontier_BattlePyramidFloor_OnResume:
 	setvar VAR_TEMP_D, 1
 BattleFrontier_BattlePyramidFloor_EventScript_ResetParty::
 	pyramid_resetparty
-	frontier_get FRONTIER_DATA_LVL_MODE
-	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePyramid_EventScript_SetMonLevel50
 	end
-
-BattleFrontier_BattlePyramid_EventScript_SetMonLevel50::
-	special SetFrontierPartyLevel
-	return
 
 BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
@@ -74,14 +68,19 @@ BattleFrontier_BattlePyramid_EventScript_WarpToLobby::
 	end
 
 BattleFrontier_BattlePyramidFloor_EventScript_ReadyChallenge::
-	special LoadPlayerParty
 	pyramid_save CHALLENGE_STATUS_SAVING
 	special SavePlayerParty
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
+	frontier_get FRONTIER_DATA_LVL_MODE
+	call_if_eq VAR_RESULT, FRONTIER_LVL_50, BattleFrontier_BattlePyramidFloor_EventScript_SetMonLevel50
 	pyramid_settrainers
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	setvar VAR_TEMP_F, 1
 	end
+
+BattleFrontier_BattlePyramidFloor_EventScript_SetMonLevel50::
+	special SetFrontierPartyLevel
+	return
 
 BattleFrontier_BattlePyramidFloor_OnTransition:
 	call BattleFrontier_BattlePyramidFloor_EventScript_SetLightRadius

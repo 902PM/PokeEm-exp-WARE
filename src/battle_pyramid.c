@@ -1664,10 +1664,32 @@ bool8 InBattlePyramid(void)
         || gMapHeader.mapLayoutId == LAYOUT_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP;
 }
 
+void RestorePyramidPartyLevel(void)
+{
+    u8 i;
+    struct Pokemon *PreMon;
+    u32 Frontierexp;
+
+    for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+    {
+        u16 monId = gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1;
+        if (monId < PARTY_SIZE)
+        {
+            PreMon = GetSavedPlayerPartyMon(gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1);
+            Frontierexp = GetMonData(PreMon, MON_DATA_EXP);
+
+            SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_EXP, &Frontierexp);
+            CalculateMonStats(&gParties[B_TRAINER_PLAYER][i]);
+            SavePlayerPartyMon(i, &gParties[B_TRAINER_PLAYER][i]);
+        }
+    }
+}
+
 void PausePyramidChallenge(void)
 {
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
     {
+        RestorePyramidPartyLevel();
         RestorePyramidPlayerParty();
         gSaveBlock2Ptr->frontier.challengeStatus = CHALLENGE_STATUS_PAUSED;
         VarSet(VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0);
