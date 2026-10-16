@@ -242,6 +242,7 @@ LilycoveCity_Harbor_EventScript_OldSeaMapFirstTime::
 	call_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_BrineyFacePlayerEast
 	msgbox EventTicket_Text_BrineyLetsSail, MSGBOX_DEFAULT
 	closemessage
+	hidefollower 0
 	call_if_eq VAR_FACING, DIR_NORTH, LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorNorth
 	call_if_eq VAR_FACING, DIR_EAST, LilycoveCity_Harbor_EventScript_BoardFerryWithBrineyAndSailorEast
 	setvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL
@@ -324,6 +325,7 @@ LilycoveCity_Harbor_EventScript_GetEventTicketSailor::
 	return
 
 LilycoveCity_Harbor_EventScript_BoardFerryWithSailor::
+	hidefollower 0
 	applymovement LOCALID_LILYCOVE_HARBOR_FERRY_SAILOR, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 30
@@ -384,6 +386,7 @@ LilycoveCity_Harbor_EventScript_FerryDestinationChangeMind::
 LilycoveCity_Harbor_EventScript_BoardFerry::
 	msgbox LilycoveCity_Harbor_Text_PleaseBoard, MSGBOX_DEFAULT
 	closemessage
+	hidefollower 0
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 30
