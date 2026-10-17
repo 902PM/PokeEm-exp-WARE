@@ -36,13 +36,13 @@ MysticTicket_Obtained:
 	end
 
 sText_MysticTicketForYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの チケットが\lおくられて きました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの チケットが\lおくられて きました$"
 
 sText_MysticTicketUseAtPort:
-	.string "{JPN}ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
 
 sText_MysticTicketThankYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
 
 sText_MysticTicketBagFull:
-	.string "{JPN}しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"
+	.string "しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"

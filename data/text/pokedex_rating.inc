@@ -1,77 +1,77 @@
 gBirchDexRatingText_AreYouCurious::
-	.string "{JPN}オダマキ『おお {PLAYER}{KUN}!\pポケモンずかんの ようすを\nみせて くれるのかい?$"
+	.string "オダマキ『おお {PLAYER}{KUN}!\pポケモンずかんの ようすを\nみせて くれるのかい?$"
 
 gBirchDexRatingText_Cancel::
-	.string "{JPN}うん? みせるほど\nポケモンを つかまえて いないのか$"
+	.string "うん? みせるほど\nポケモンを つかまえて いないのか$"
 
 gBirchDexRatingText_SoYouveSeenAndCaught::
-	.string "{JPN}ふむふむ……\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} か……$"
+	.string "ふむふむ……\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} か……$"
 
 gBirchDexRatingText_LessThan10::
-	.string "{JPN}もっと くさむらに はいって\nポケモンを さがしてみると いいな!$"
+	.string "もっと くさむらに はいって\nポケモンを さがしてみると いいな!$"
 
 gBirchDexRatingText_LessThan20::
-	.string "{JPN}ちょうしが でてきた みたいだね\nでも これからが たいへん なんだぞ!$"
+	.string "ちょうしが でてきた みたいだね\nでも これからが たいへん なんだぞ!$"
 
 gBirchDexRatingText_LessThan30::
-	.string "{JPN}きまった ばしょでしか みつからない\nポケモンは しつこく さがすしか ないぞ!$"
+	.string "きまった ばしょでしか みつからない\nポケモンは しつこく さがすしか ないぞ!$"
 
 gBirchDexRatingText_LessThan40::
-	.string "{JPN}ボリュームは まだまだ だけど\nすこしは ポケモンずかん らしく なったぞ$"
+	.string "ボリュームは まだまだ だけど\nすこしは ポケモンずかん らしく なったぞ$"
 
 gBirchDexRatingText_LessThan50::
-	.string "{JPN}なかなか いい かんじ だな!\nこの ちょうしで がんばって くれよ$"
+	.string "なかなか いい かんじ だな!\nこの ちょうしで がんばって くれよ$"
 
 gBirchDexRatingText_LessThan60::
-	.string "{JPN}つりざおは つかって いるかな?\nうみにも ポケモンは たくさん いるからな$"
+	.string "つりざおは つかって いるかな?\nうみにも ポケモンは たくさん いるからな$"
 
 gBirchDexRatingText_LessThan70::
-	.string "{JPN}ポケモンを つかまえる だけでなく\nしんか させるのは どうだい?$"
+	.string "ポケモンを つかまえる だけでなく\nしんか させるのは どうだい?$"
 
 gBirchDexRatingText_LessThan80::
-	.string "{JPN}すばらしい ポケモンずかんに なりそうだ\nそんな よかんが して たまらないね!$"
+	.string "すばらしい ポケモンずかんに なりそうだ\nそんな よかんが して たまらないね!$"
 
 gBirchDexRatingText_LessThan90::
-	.string "{JPN}ここまで あつめるとは……\nきみの さいのうは たいした ものだよ!$"
+	.string "ここまで あつめるとは……\nきみの さいのうは たいした ものだよ!$"
 
 gBirchDexRatingText_LessThan100::
-	.string "{JPN}サファリゾーンには いったかい?\nあそこでしか つかまえられない\lポケモンも いるって はなし だぞ!$"
+	.string "サファリゾーンには いったかい?\nあそこでしか つかまえられない\lポケモンも いるって はなし だぞ!$"
 
 gBirchDexRatingText_LessThan110::
-	.string "{JPN}とうとう 100しゅるい こえたのか!\nポケモンずかん として みごとな もんだね!$"
+	.string "とうとう 100しゅるい こえたのか!\nポケモンずかん として みごとな もんだね!$"
 
 gBirchDexRatingText_LessThan120::
-	.string "{JPN}……そういえば いわくだきを つかうことで\nみつかる ポケモンも いたっけ$"
+	.string "……そういえば いわくだきを つかうことで\nみつかる ポケモンも いたっけ$"
 
 gBirchDexRatingText_LessThan130::
-	.string "{JPN}ポケモンこうかん すれば\nもっと あつまるかも しれないな$"
+	.string "ポケモンこうかん すれば\nもっと あつまるかも しれないな$"
 
 gBirchDexRatingText_LessThan140::
-	.string "{JPN}なんでも なついていると\nしんか する ポケモンも いるそうだよ!$"
+	.string "なんでも なついていると\nしんか する ポケモンも いるそうだよ!$"
 
 gBirchDexRatingText_LessThan150::
-	.string "{JPN}ホウエンちほう には こんなにも\nおおくの ポケモンが いたのか……$"
+	.string "ホウエンちほう には こんなにも\nおおくの ポケモンが いたのか……$"
 
 gBirchDexRatingText_LessThan160::
-	.string "{JPN}ときどき たいりょうはっせい する\nポケモンが いるらしい\lその チャンスを のがさないようにな!$"
+	.string "ときどき たいりょうはっせい する\nポケモンが いるらしい\lその チャンスを のがさないようにな!$"
 
 gBirchDexRatingText_LessThan170::
-	.string "{JPN}きみの ずかんを みれば\nホウエンちほうの ポケモンの\lすべてが わかるようだ!$"
+	.string "きみの ずかんを みれば\nホウエンちほうの ポケモンの\lすべてが わかるようだ!$"
 
 gBirchDexRatingText_LessThan180::
-	.string "{JPN}きみは ポケモンはかせ としても\nゆうしゅう なんだな$"
+	.string "きみは ポケモンはかせ としても\nゆうしゅう なんだな$"
 
 gBirchDexRatingText_LessThan190::
-	.string "{JPN}ここまで ずかんが できたら\nもはや プロフェッショナル だぞ!$"
+	.string "ここまで ずかんが できたら\nもはや プロフェッショナル だぞ!$"
 
 gBirchDexRatingText_LessThan200::
-	.string "{JPN}いよいよ かんせいに ちかづいた!\nそんな よかんが してきたよ!$"
+	.string "いよいよ かんせいに ちかづいた!\nそんな よかんが してきたよ!$"
 
 gBirchDexRatingText_DexCompleted::
-	.string "{JPN}おめでとう!!\nポケモンずかんの かんせい だよ!!$"
+	.string "おめでとう!!\nポケモンずかんの かんせい だよ!!$"
 
 gBirchDexRatingText_OnANationwideBasis::
-	.string "{JPN}ふむふむ ぜんこくてき には……\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} だね$"
+	.string "ふむふむ ぜんこくてき には……\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} だね$"
 
 @ FRLG
 

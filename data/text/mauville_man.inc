@@ -1,54 +1,54 @@
 @ Only contains the text for the Mauville Man named Giddy. The rest is in scripts/mauville_man.inc
 GiddyText_SoPretty::
-	.string "{JPN} きれい だよねー$"
+	.string " きれい だよねー$"
 
 GiddyText_SoDarling::
-	.string "{JPN} かわいい よねー$"
+	.string " かわいい よねー$"
 
 GiddyText_SoRelaxed::
-	.string "{JPN} のんびり だよねー$"
+	.string " のんびり だよねー$"
 
 GiddyText_SoSunny::
-	.string "{JPN} ぽっかぽか だよねー$"
+	.string " ぽっかぽか だよねー$"
 
 GiddyText_SoDesirable::
-	.string "{JPN} あこがれる よねー$"
+	.string " あこがれる よねー$"
 
 GiddyText_SoExciting::
-	.string "{JPN} ドキドキ するよねー$"
+	.string " ドキドキ するよねー$"
 
 GiddyText_SoAmusing::
-	.string "{JPN} おもしろい よねー$"
+	.string " おもしろい よねー$"
 
 GiddyText_SoMagical::
-	.string "{JPN} ふしぎ だよねー$"
+	.string " ふしぎ だよねー$"
 
 GiddyText_Is::
-	.string "{JPN}って$"
+	.string "って$"
 
 GiddyText_DontYouAgree::
-	.string "\n{JPN}\nそう おもわない?$"
+	.string "\n\nそう おもわない?$"
 
 GiddyText_ISoWantToGoOnAVacation::
-	.string "{JPN}たびに でたいなー\nどこか いい ところ しらない?$"
+	.string "たびに でたいなー\nどこか いい ところ しらない?$"
 
 GiddyText_IBoughtCrayonsWith120Colors::
-	.string "{JPN}120しょくの クレヨン かったんだー\nいいでしょう?$"
+	.string "120しょくの クレヨン かったんだー\nいいでしょう?$"
 
 GiddyText_WouldntItBeNiceIfWeCouldFloat::
-	.string "{JPN}しゃぼんだまに のって とべるように\nならないかなー$"
+	.string "しゃぼんだまに のって とべるように\nならないかなー$"
 
 GiddyText_WhenYouWriteOnASandyBeach::
-	.string "{JPN}すなはまに かいた もじは\nすぐに きえちゃうのが かなしいよねー$"
+	.string "すなはまに かいた もじは\nすぐに きえちゃうのが かなしいよねー$"
 
 GiddyText_WhatsTheBottomOfTheSeaLike::
-	.string "{JPN}うみの そこって どうなってるのかなー\nいちどで いいから みて みたいなー$"
+	.string "うみの そこって どうなってるのかなー\nいちどで いいから みて みたいなー$"
 
 GiddyText_WhenYouSeeTheSettingSunDoesIt::
-	.string "{JPN}ゆうやけを みると\nウチに かえりたく ならない?$"
+	.string "ゆうやけを みると\nウチに かえりたく ならない?$"
 
 GiddyText_LyingBackInTheGreenGrass::
-	.string "{JPN}みどりの しばで ねころがると\nきもちいいよねー$"
+	.string "みどりの しばで ねころがると\nきもちいいよねー$"
 
 GiddyText_SecretBasesAreSoWonderful::
-	.string "{JPN}ひみつきち って いいよね!\nなんか わくわく してこない?$"
+	.string "ひみつきち って いいよね!\nなんか わくわく してこない?$"

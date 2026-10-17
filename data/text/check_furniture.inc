@@ -1,20 +1,20 @@
 Text_PictureBookShelf:
-	.string "{JPN}ポケモンえほんが そろってる!$"
+	.string "ポケモンえほんが そろってる!$"
 
 Text_BookShelf:
-	.string "{JPN}いろんな ほんが いっぱいだ!$"
+	.string "いろんな ほんが いっぱいだ!$"
 
 Text_PokemonCenterBookShelf:
-	.string "{JPN}ポケモンざっしが ならんでる!\p……「ポケモンのとも」\n……「ポケモン てちょう」\l……「かわいい ポケモン」$"
+	.string "ポケモンざっしが ならんでる!\p……「ポケモンのとも」\n……「ポケモン てちょう」\l……「かわいい ポケモン」$"
 
 Text_Vase:
-	.string "{JPN}たかそうな つぼが ある!\nのぞきこむと……\pなかは からっぽ だ!$"
+	.string "たかそうな つぼが ある!\nのぞきこむと……\pなかは からっぽ だ!$"
 
 Text_EmptyTrashCan:
-	.string "{JPN}なかは からっぽ だ!$"
+	.string "なかは からっぽ だ!$"
 
 Text_ShopShelf:
-	.string "{JPN}たくさんの ポケモン グッズが\nところせましと ならべられてる!$"
+	.string "たくさんの ポケモン グッズが\nところせましと ならべられてる!$"
 
 Text_Blueprint:
-	.string "{JPN}なにかの せっけいず……?\nみても チンプンカンプン!$"
+	.string "なにかの せっけいず……?\nみても チンプンカンプン!$"
