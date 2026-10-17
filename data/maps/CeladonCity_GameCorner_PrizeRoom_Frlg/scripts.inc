@@ -380,35 +380,31 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_Text_FancyThatPorygon::
-	.string "I sure do fancy that PORYGON!\n"
-	.string "But, it's hard to win at slots!$"
+	.string "うーん…! どうにか して\nあの ポリゴンが ほしいなあ!\pしかし スロット ゲームで\nかつ のは たいへんだ!$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_RakedItInToday::
-	.string "Gahaha! I raked it in today!\n"
-	.string "If only every day were like this…$"
+	.string "がはは! もうけた もうけた…!\nまいにち こんな だと いいわい$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired::
-	.string "A COIN CASE is required…$"
+	.string "コインケースを もっていない!$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes::
-	.string "We exchange your COINS for prizes.$"
+	.string "コインを\nけいひんと こうかんするよ$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize::
-	.string "Which prize would you like?$"
+	.string "なにと こうかんする?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_HereYouGo::
 	.string "はい どうぞ$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize::
-	.string "So, you want the {STR_VAR_1}?$"
+	.string "{STR_VAR_1}で\nいいんだね?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM::
-	.string "Okay, a TM of {STR_VAR_2}\n"
-	.string "is what you want?$"
+	.string "わざマシン「{STR_VAR_2}」で\nいいんだね?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_NeedMoreCoins::
-	.string "Sorry, you'll need more COINS\n"
-	.string "than that.$"
+	.string "おきゃくさん コイン たりないよ$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_OopsNotEnoughRoom::
 	.string "おきゃくさん もう もてないよ$"

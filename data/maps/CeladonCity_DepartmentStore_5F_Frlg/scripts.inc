@@ -59,25 +59,11 @@ CeladonCity_DepartmentStore_5F_Vitamins::
 	end
 
 CeladonCity_DepartmentStore_5F_Text_ExplainStatEnhancers::
-	.string "POKEMON stat enhancers can be\n"
-	.string "bought only here.\p"
-	.string "HP UP increases the base HP of a\n"
-	.string "POKEMON.\p"
-	.string "CALCIUM raises the base SP. ATK\n"
-	.string "stat of one POKEMON.\p"
-	.string "ZINC boosts the base SP. DEF stat\n"
-	.string "of one POKEMON.\p"
-	.string "CARBOS enhances the base SPEED\n"
-	.string "stat.$"
+	.string "ポケモンの のうりょくを あげる\nどうぐは ここでしか かえない\pマックスアップは\nたいりょくを アップ\pリゾチウムは\nとくしゅ こうげきを アップ\pキトサンは\nとくしゅ ぼうぎょを アップ\pインドメタシンは\nすばやさを アップ させるのだ$"
 
 CeladonCity_DepartmentStore_5F_Text_HereForStatEnhancers::
-	.string "I'm here for POKEMON stat\n"
-	.string "enhancers.\p"
-	.string "PROTEIN increases the base ATTACK\n"
-	.string "power.\p"
-	.string "IRON increases the base DEFENSE\n"
-	.string "stat.$"
+	.string "ポケモンの のうりょくを あげる\nアイテムを かいに きたんだ!\pタウリンは\nこうげき りょく アップ!\pブロムヘキシンは\nぼうぎょ りょく アップ だぜ!$"
 
 CeladonCity_DepartmentStore_5F_Text_Drugstore::
-	.string "5F: DRUGSTORE$"
+	.string "5かい…ドラッグ ストア$"
 
