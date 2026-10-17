@@ -28,14 +28,14 @@ Route116_TunnelersRestHouse_EventScript_TunnelOpened::
 	end
 
 Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
-	.string "{JPN}あの カナシダトンネル……\pはじめは たくさんの にんげんと\nさいしんの キカイで ほりすすんでいた\pだが そのまま ほりすすむと\nあたりの ポケモンに\lあくえいきょうを あたえる らしくてね\pで おれら どうしようもなく\nここで ぼんやりと しているわけさ$"
+	.string "あの カナシダトンネル……\pはじめは たくさんの にんげんと\nさいしんの キカイで ほりすすんでいた\pだが そのまま ほりすすむと\nあたりの ポケモンに\lあくえいきょうを あたえる らしくてね\pで おれら どうしようもなく\nここで ぼんやりと しているわけさ$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
-	.string "{JPN}どうしても シダケに いきたい\nやつが じぶんの ちから だけで\lトンネルを ほっているよ\pにんげんの ちからで すこしずつ ほれば\nポケモンを おどろかせなくて すむし\lまわりの しぜんにも わるい えいきょうを\lあたえないで すむって いってな$"
+	.string "どうしても シダケに いきたい\nやつが じぶんの ちから だけで\lトンネルを ほっているよ\pにんげんの ちからで すこしずつ ほれば\nポケモンを おどろかせなくて すむし\lまわりの しぜんにも わるい えいきょうを\lあたえないで すむって いってな$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "{JPN}トンネルを つかわずに ここから\nシダケに いくなら うみを わたり\lムロから カイナ そして\lキンセツを とおって いくしか ないな!$"
+	.string "トンネルを つかわずに ここから\nシダケに いくなら うみを わたり\lムロから カイナ そして\lキンセツを とおって いくしか ないな!$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "{JPN}なんでも シダケ までの\nトンネルが つうじた らしいぞ!\pねがい つづければ\nいつかは かなう って ことなんだな!$"
+	.string "なんでも シダケ までの\nトンネルが つうじた らしいぞ!\pねがい つづければ\nいつかは かなう って ことなんだな!$"
 

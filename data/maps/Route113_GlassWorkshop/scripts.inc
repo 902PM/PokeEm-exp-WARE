@@ -292,47 +292,47 @@ Route113_GlassWorkshop_EventScript_NinjaBoy::
 	end
 
 Route113_GlassWorkshop_Text_GoCollectAshWithThis:
-	.string "{JPN}この あたりは\nかざんばい だらけ ペコペコ!\pわたし すごいよ ペコペコ\pかざんばいを ガラスに してね\nそれで どうぐ つくるよ ペコペコ!\pきみも これで\nかざんばいを あつめなさい ペコペコ!$"
+	.string "この あたりは\nかざんばい だらけ ペコペコ!\pわたし すごいよ ペコペコ\pかざんばいを ガラスに してね\nそれで どうぐ つくるよ ペコペコ!\pきみも これで\nかざんばいを あつめなさい ペコペコ!$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack:
-	.string "{JPN}その ふくろを もって\nはいの つもった ところを あるくと\lあら ふしぎ!\pふくろの なかに かざんばいが\nどんどん たまっていくよ ペコペコ!\pかざんばいが たまったと おもったら\nわたしの ところに きなさい ペコペコ!$"
+	.string "その ふくろを もって\nはいの つもった ところを あるくと\lあら ふしぎ!\pふくろの なかに かざんばいが\nどんどん たまっていくよ ペコペコ!\pかざんばいが たまったと おもったら\nわたしの ところに きなさい ペコペコ!$"
 
 Route113_GlassWorkshop_Text_LetsSeeCollectedAshes:
-	.string "{JPN}かざんばい あるのかね ペコペコ!\nどれどれ みせてごらん ペコポコ!$"
+	.string "かざんばい あるのかね ペコペコ!\nどれどれ みせてごらん ペコポコ!$"
 
 Route113_GlassWorkshop_Text_NotEnoughAshNeedX:
-	.string "{JPN}うーん……\nかざんばいが すくないよ ペコペコ!\lガラスのどうぐ できないよ ペコペコ!\pあと {STR_VAR_1}ほ あるけば\nあおいビードロ つくれるよ ペコペコ!$"
+	.string "うーん……\nかざんばいが すくないよ ペコペコ!\lガラスのどうぐ できないよ ペコペコ!\pあと {STR_VAR_1}ほ あるけば\nあおいビードロ つくれるよ ペコペコ!$"
 
 Route113_GlassWorkshop_Text_WhichGlassItemWoudYouLike:
-	.string "{JPN}おほっ\nかざんばい あつまってるよ ペコペコ!\lガラスのどうぐ つくるよ ペコペコ!\pどれが いいかね ペコペコ$"
+	.string "おほっ\nかざんばい あつまってるよ ペコペコ!\lガラスのどうぐ つくるよ ペコペコ!\pどれが いいかね ペコペコ$"
 
 Route113_GlassWorkshop_Text_IsThatTheItemForYou:
-	.string "{JPN}{STR_VAR_1} だね ペコペコ!\nほんとうに それで いいんだね? ペコペコ$"
+	.string "{STR_VAR_1} だね ペコペコ!\nほんとうに それで いいんだね? ペコペコ$"
 
 Route113_GlassWorkshop_Text_WhichWouldYouLike:
-	.string "{JPN}どれが いいかね ペコペコ$"
+	.string "どれが いいかね ペコペコ$"
 
 Route113_GlassWorkshop_Text_IllMakeItemForYou:
-	.string "{JPN}{STR_VAR_1} だね ペコペコ!\pよしっ! どうぐを つくるよ ペコペコ!\nちょっと まってなさいよ ペコペコ$"
+	.string "{STR_VAR_1} だね ペコペコ!\pよしっ! どうぐを つくるよ ペコペコ!\nちょっと まってなさいよ ペコペコ$"
 
 Route113_GlassWorkshop_Text_NotEnoughAshToMakeItem:
-	.string "{JPN}{STR_VAR_1} だね ペコペコ!\pだけど それを つくるには\nかざんばいが たりないよ ペコペコ!\pかざんばいの つもっている ところを\nあと {STR_VAR_2}ほ あるかないと ペコペコ!\pどれが いいかね ペコペコ$"
+	.string "{STR_VAR_1} だね ペコペコ!\pだけど それを つくるには\nかざんばいが たりないよ ペコペコ!\pかざんばいの つもっている ところを\nあと {STR_VAR_2}ほ あるかないと ペコペコ!\pどれが いいかね ペコペコ$"
 
 Route113_GlassWorkshop_Text_AllThatAshButDontWantAnything:
-	.string "{JPN}せっかく かざんばいを あつめたのに\nほしい ものは ないのかね ペコペコ……$"
+	.string "せっかく かざんばいを あつめたのに\nほしい ものは ないのかね ペコペコ……$"
 
 Route113_GlassWorkshop_Text_IveFinishedGlassItem:
-	.string "{JPN}おお {STR_VAR_1} できたよ\nもって いきなさいよ ペコペコ$"
+	.string "おお {STR_VAR_1} できたよ\nもって いきなさいよ ペコペコ$"
 
 Route113_GlassWorkshop_Text_NoRoomInBag:
-	.string "{JPN}あら?\nそれいじょう もてないよ ペコペコ\pあずかって おくから\nこんど きなさい ペコペコ$"
+	.string "あら?\nそれいじょう もてないよ ペコペコ\pあずかって おくから\nこんど きなさい ペコペコ$"
 
 Route113_GlassWorkshop_Text_NoRoomInPC:
-	.string "{JPN}あら?\nパソコン いっぱい なのか ペコペコ\pあずかって おくから\nこんど きなさい ペコペコ$"
+	.string "あら?\nパソコン いっぱい なのか ペコペコ\pあずかって おくから\nこんど きなさい ペコペコ$"
 
 Route113_GlassWorkshop_Text_HaventGotYourSootSack:
-	.string "{JPN}あら?\nはいぶくろ もっていないのか ペコペコ\pもちあるかないと\nかざんばい たまらないよ ペコペコ$"
+	.string "あら?\nはいぶくろ もっていないのか ペコペコ\pもちあるかないと\nかざんばい たまらないよ ペコペコ$"
 
 Route113_GlassWorkshop_Text_FunToBlowGlassFlute:
-	.string "{JPN}おやかたが はなすのに あわせて\nビードロ ふくと たのしか!\pペコペコ! ペコポコ!$"
+	.string "おやかたが はなすのに あわせて\nビードロ ふくと たのしか!\pペコペコ! ペコポコ!$"
 

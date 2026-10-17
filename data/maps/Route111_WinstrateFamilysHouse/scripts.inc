@@ -57,20 +57,20 @@ Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection::
 	end
 
 Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
-	.string "{JPN}きみほど ポケモンを じょうずに\nつかいこなす トレーナーは はじめてだ!\pだが きみよりも\nわたしの むすこの ほうが つよいぞ!\pなんたって ポケモン リーグへ\nちょうせんに いった ぐらい だからな!$"
+	.string "きみほど ポケモンを じょうずに\nつかいこなす トレーナーは はじめてだ!\pだが きみよりも\nわたしの むすこの ほうが つよいぞ!\pなんたって ポケモン リーグへ\nちょうせんに いった ぐらい だからな!$"
 
 Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
-	.string "{JPN}この きょうせいギプスを つかって\nわたしたち かぞくは\lポケモンを きたえて います!\pわたしたち かぞく ぜんいんに かった\nあなたには ひつようない かもしれませんが\lぜひ うけとって くださいな!$"
+	.string "この きょうせいギプスを つかって\nわたしたち かぞくは\lポケモンを きたえて います!\pわたしたち かぞく ぜんいんに かった\nあなたには ひつようない かもしれませんが\lぜひ うけとって くださいな!$"
 
 Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles:
-	.string "{JPN}わたしたちは ポケモンでの しょうぶに\nじょうねつを そそいで います!$"
+	.string "わたしたちは ポケモンでの しょうぶに\nじょうねつを そそいで います!$"
 
 Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers:
-	.string "{JPN}パパより ママが つよくて\pママより あたしが つよくて\pあたしより おばあちゃんが つよくて\pでも おばあちゃんより つよかったのが\nあたしの あにき なの!$"
+	.string "パパより ママが つよくて\pママより あたしが つよくて\pあたしより おばあちゃんが つよくて\pでも おばあちゃんより つよかったのが\nあたしの あにき なの!$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrong:
-	.string "{JPN}あんたが いくら つよくても\nわしの まごに あったら\lかてなくて なきだすこと じゃろう……\pわしら かぞくが しってる トレーナーの\nだれよりも つよかった からのう!\pまごの やつも いまごろは\nポケモンリーグの チャンピオンに\lちょうせん しているの じゃろうか?\pそれとも わしの まご じゃから\nもう チャンピオン かもな…… ウヒヒ!$"
+	.string "あんたが いくら つよくても\nわしの まごに あったら\lかてなくて なきだすこと じゃろう……\pわしら かぞくが しってる トレーナーの\nだれよりも つよかった からのう!\pまごの やつも いまごろは\nポケモンリーグの チャンピオンに\lちょうせん しているの じゃろうか?\pそれとも わしの まご じゃから\nもう チャンピオン かもな…… ウヒヒ!$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
-	.string "{JPN}まごの やつも いまごろは\nポケモンリーグの チャンピオンに\lちょうせん しているの じゃろうか?\pそれとも わしの まご じゃから\nもう チャンピオン かもな…… ウヒヒ!$"
+	.string "まごの やつも いまごろは\nポケモンリーグの チャンピオンに\lちょうせん しているの じゃろうか?\pそれとも わしの まご じゃから\nもう チャンピオン かもな…… ウヒヒ!$"
 

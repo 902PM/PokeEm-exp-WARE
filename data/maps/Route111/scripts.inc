@@ -562,92 +562,92 @@ Route111_EventScript_TrainerHillSign::
 	end
 
 Route111_Text_BattleOurFamily:
-	.string "{JPN}きみ! たびの とちゅう だろうけれど\pどうだ? ここは ひとつ\nわたしたち かぞく 4にんと\lポケモン しょうぶを してみないか?$"
+	.string "きみ! たびの とちゅう だろうけれど\pどうだ? ここは ひとつ\nわたしたち かぞく 4にんと\lポケモン しょうぶを してみないか?$"
 
 Route111_Text_IsThatSo:
-	.string "{JPN}あっそ!\nきが むいたら また おいで!$"
+	.string "あっそ!\nきが むいたら また おいで!$"
 
 Route111_Text_VictorIntro:
-	.string "{JPN}いい どきょうだ! きにいったぞ!$"
+	.string "いい どきょうだ! きにいったぞ!$"
 
 Route111_Text_VictorDefeat:
-	.string "{JPN}たはーっ!\nおもっていたより つよいんだね きみは!$"
+	.string "たはーっ!\nおもっていたより つよいんだね きみは!$"
 
 Route111_Text_VictorPostBattle:
-	.string "{JPN}おーい!\nなかなか つよい トレーナーが いたぞー!$"
+	.string "おーい!\nなかなか つよい トレーナーが いたぞー!$"
 
 Route111_Text_VictoriaIntro:
-	.string "{JPN}あれま! いがいに わかいのね!\pうちの しゅじんに かってしまう とは\nなんと すごうでの トレーナー なの!\pじゃあ こんどは わたしと しょうぶよ!$"
+	.string "あれま! いがいに わかいのね!\pうちの しゅじんに かってしまう とは\nなんと すごうでの トレーナー なの!\pじゃあ こんどは わたしと しょうぶよ!$"
 
 Route111_Text_VictoriaDefeat:
-	.string "{JPN}んまーっ!\nあなたって なんて つよいのかしら!$"
+	.string "んまーっ!\nあなたって なんて つよいのかしら!$"
 
 Route111_Text_VictoriaPostBattle:
-	.string "{JPN}つよいわよー!\nこのひと すっごく つよいわよー!$"
+	.string "つよいわよー!\nこのひと すっごく つよいわよー!$"
 
 Route111_Text_ViviIntro:
-	.string "{JPN}ママより つよいなんて すごーい!\pでも あたし だって つよいんだから!\nほんと なんだってば!$"
+	.string "ママより つよいなんて すごーい!\pでも あたし だって つよいんだから!\nほんと なんだってば!$"
 
 Route111_Text_ViviDefeat:
-	.string "{JPN}えっ もしかして まけちゃった……$"
+	.string "えっ もしかして まけちゃった……$"
 
 Route111_Text_ViviPostBattle:
-	.string "{JPN}くやしい……\p…… ぐっすん! おばあちゃーん!!$"
+	.string "くやしい……\p…… ぐっすん! おばあちゃーん!!$"
 
 Route111_Text_VickyIntro:
-	.string "{JPN}こらーっ!\nわしの かわいい まごに なにすんじゃ!\pこうなったら わしが おまえさんを\nメタメタに してやるから かくごせぇ!$"
+	.string "こらーっ!\nわしの かわいい まごに なにすんじゃ!\pこうなったら わしが おまえさんを\nメタメタに してやるから かくごせぇ!$"
 
 Route111_Text_VickyDefeat:
-	.string "{JPN}フガッ! つよいのう……\nまごの いうことは ほんとう じゃった$"
+	.string "フガッ! つよいのう……\nまごの いうことは ほんとう じゃった$"
 
 Route111_Text_VickyPostBattle:
-	.string "{JPN}あんた…… いそぎのたびで ないのなら\nうちに よっていって おくれ……$"
+	.string "あんた…… いそぎのたびで ないのなら\nうちに よっていって おくれ……$"
 
 Route111_Text_ToughToKeepWinningUpTheRanks:
-	.string "{JPN}もっと ポケモン きたえないと\nかちぬくのは きびしそうだ\pいままでの ジムリーダーより\nはるかに つよいと きくからな\lポケモンリーグにいる してんのうは!$"
+	.string "もっと ポケモン きたえないと\nかちぬくのは きびしそうだ\pいままでの ジムリーダーより\nはるかに つよいと きくからな\lポケモンリーグにいる してんのうは!$"
 
 Route111_Text_WinstrateFamilyDestroyedMe:
-	.string "{JPN}カチヌキいっかに いどんだけれど\n4にん つづけての ポケモンしょうぶは\lきびしいよな…… ボロまけ したよ$"
+	.string "カチヌキいっかに いどんだけれど\n4にん つづけての ポケモンしょうぶは\lきびしいよな…… ボロまけ したよ$"
 
 Route111_Text_RouteSignMauville:
-	.string "{JPN}ここは 111ばん どうろ\n{DOWN_ARROW} キンセツシティ$"
+	.string "ここは 111ばん どうろ\n{DOWN_ARROW} キンセツシティ$"
 
 Route111_Text_WinstrateHouseSign:
-	.string "{JPN}われら かぞくの こころは ひとつ\n「カチヌキ ファミリーの いえ」$"
+	.string "われら かぞくの こころは ひとつ\n「カチヌキ ファミリーの いえ」$"
 
 Route111_Text_RouteSign112:
-	.string "{JPN}ここは 111ばん どうろ\n{LEFT_ARROW} 112ばん どうろ$"
+	.string "ここは 111ばん どうろ\n{LEFT_ARROW} 112ばん どうろ$"
 
 Route111_Text_RouteSign113:
-	.string "{JPN}ここは 111ばん どうろ\n{LEFT_ARROW} 113ばん どうろ$"
+	.string "ここは 111ばん どうろ\n{LEFT_ARROW} 113ばん どうろ$"
 
 Route111_Text_OldLadysRestStopSign:
-	.string "{JPN}「ケンコーばあさんの いえ」\nつかれたと おもうなら よってらっしゃい!$"
+	.string "「ケンコーばあさんの いえ」\nつかれたと おもうなら よってらっしゃい!$"
 
 Route111_Text_TrainerTipsSpAtkSpDef:
-	.string "{JPN}おとくな けいじばん!!\pポケモンの つよさを あらわす ことばで\nとくこう とは\lとくしゅ こうげきりょく のこと!\pとくぼう とは\nとくしゅ ぼうぎょりょく のこと です!$"
+	.string "おとくな けいじばん!!\pポケモンの つよさを あらわす ことばで\nとくこう とは\lとくしゅ こうげきりょく のこと!\pとくぼう とは\nとくしゅ ぼうぎょりょく のこと です!$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
-	.string "{JPN}この あたりに すなで できた\nとうが たっている はず なんだが\pどうしたわけか\nみえるときと みえないときが あるのだ\pだから わたしは それを\nげんえいのとう と よんでいる……$"
+	.string "この あたりに すなで できた\nとうが たっている はず なんだが\pどうしたわけか\nみえるときと みえないときが あるのだ\pだから わたしは それを\nげんえいのとう と よんでいる……$"
 
 Route111_Text_MirageTowerClearlyVisible:
-	.string "{JPN}みえるぞ! すなのとう が!\nげんえい と よばれた すなのとうが\nはっきりと みえる!\pしかし そのすがたは はかなくて\nいまにも くずれて しまいそうだ……\pうーん はいって みたいが\nこわくて ゆうきが でん!$"
+	.string "みえるぞ! すなのとう が!\nげんえい と よばれた すなのとうが\nはっきりと みえる!\pしかし そのすがたは はかなくて\nいまにも くずれて しまいそうだ……\pうーん はいって みたいが\nこわくて ゆうきが でん!$"
 
 Route111_Text_ThatWasShockingSandRainedDown:
-	.string "{JPN}はー びっくりした……\pいきなり すなが そらから\nバラバラと ふって きたんじゃ\pで なかは どうじゃった?\nやはり すなの オバケ とか でたか?$"
+	.string "はー びっくりした……\pいきなり すなが そらから\nバラバラと ふって きたんじゃ\pで なかは どうじゃった?\nやはり すなの オバケ とか でたか?$"
 
 Route111_Text_MirageTowerHasntBeenSeenSince:
-	.string "{JPN}あれから\nすなのとう は みえなく なった\pやはり げんえいのとう だったのか……$"
+	.string "あれから\nすなのとう は みえなく なった\pやはり げんえいのとう だったのか……$"
 
 Route111_Text_ClawFossilDisappeared:
-	.string "{JPN}ツメのかせきは\nすなに もぐって しまった……$"
+	.string "ツメのかせきは\nすなに もぐって しまった……$"
 
 Route111_Text_RootFossilDisappeared:
-	.string "{JPN}ねっこのかせきは\nすなに もぐって しまった……$"
+	.string "ねっこのかせきは\nすなに もぐって しまった……$"
 
 Route111_Text_MauvilleUncleToldMeToTakeRockSmash:
-	.string "{JPN}しまった!\p111ばんどうろに いくなら\nいわくだきを もっていけ って\lキンセツの おじさんに いわれてたんだ!\pおじさん? サイクルショップの\nむかいがわの いえに すんでるよ$"
+	.string "しまった!\p111ばんどうろに いくなら\nいわくだきを もっていけ って\lキンセツの おじさんに いわれてたんだ!\pおじさん? サイクルショップの\nむかいがわの いえに すんでるよ$"
 
 Route111_Text_TrainerHillSign:
-	.string "{JPN}{RIGHT_ARROW} トレーナーヒル いりぐち\nかけあがれ! あつき トレーナーたち!$"
+	.string "{RIGHT_ARROW} トレーナーヒル いりぐち\nかけあがれ! あつき トレーナーたち!$"
 
