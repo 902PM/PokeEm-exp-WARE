@@ -324,22 +324,22 @@ VerdanturfTown_BattleTentLobby_EventScript_ExitRules::
 	end
 
 VerdanturfTown_BattleTentLobby_Text_MonsReluctantToUseDislikedMoves:
-	.string "{JPN}どんなに つよい ポケモンも\nきらいな わざは できるだけ\lつかいたく ない みたい\pたとえば おとなしい せいかくの\nポケモンは あいてを いため つけたり\lするのは すきじゃ ない だろうね\pきっと じぶんの ちからを はっき できない\nとき って きらいな わざを むりに\lだそう として しっぱい してるんだよ$"
+	.string "どんなに つよい ポケモンも\nきらいな わざは できるだけ\lつかいたく ない みたい\pたとえば おとなしい せいかくの\nポケモンは あいてを いため つけたり\lするのは すきじゃ ない だろうね\pきっと じぶんの ちからを はっき できない\nとき って きらいな わざを むりに\lだそう として しっぱい してるんだよ$"
 
 VerdanturfTown_BattleTentLobby_Text_GentleMonsScaryIfAngry:
-	.string "{JPN}でもでも ぼくの おねえちゃん って\nふだんは とっても おとなしい けど\lおこると すっごーーーく こわーーーいよ!\pだから おとなしい ポケモン だって\nおこったら きっと こわーーーいよ!!$"
+	.string "でもでも ぼくの おねえちゃん って\nふだんは とっても おとなしい けど\lおこると すっごーーーく こわーーーいよ!\pだから おとなしい ポケモン だって\nおこったら きっと こわーーーいよ!!$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionRunsDeep:
-	.string "{JPN}あたしの ポケモンへの きもち……\nそれは まさに メロメロなのよ……\pあら へんなところ みられちゃった\pまあ いいわ\nあなたの ポケモンに\lこの わざマシンは いかが?$"
+	.string "あたしの ポケモンへの きもち……\nそれは まさに メロメロなのよ……\pあら へんなところ みられちゃった\pまあ いいわ\nあなたの ポケモンに\lこの わざマシンは いかが?$"
 
 VerdanturfTown_BattleTentLobby_Text_AttractionMutual:
-	.string "{JPN}ポケモンの あたしへの きもちも……\nやっぱり メロメロに ちがいないわ!\pだって あたしの おもう とおりに\nたたかって くれるもの!$"
+	.string "ポケモンの あたしへの きもちも……\nやっぱり メロメロに ちがいないわ!\pだって あたしの おもう とおりに\nたたかって くれるもの!$"
 
 VerdanturfTown_BattleTentLobby_Text_TaughtWhatKindsOfMoves:
-	.string "{JPN}きみの ポケモンには\nどんなわざを もたせて いるんだい?\pやっぱり じぶんを かいふくしたり\nぼうぎょを あげたり するわざが あると\lゆうり だと おもうんだよ$"
+	.string "きみの ポケモンには\nどんなわざを もたせて いるんだい?\pやっぱり じぶんを かいふくしたり\nぼうぎょを あげたり するわざが あると\lゆうり だと おもうんだよ$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottCanMeetToughTrainers:
-	.string "{JPN}エニシダ『これは これは\n{PLAYER}{KUN} あえると おもってたよ!\pバトルテント って いうのはさ!\nどんな ルール だって\lどんな たたかいかた だって\lかんけいなく つよい トレーナーと\lであえる ばしょだと おもうよ!\p{PLAYER}{KUN}も めいっぱい\nがんばってよ!$"
+	.string "エニシダ『これは これは\n{PLAYER}{KUN} あえると おもってたよ!\pバトルテント って いうのはさ!\nどんな ルール だって\lどんな たたかいかた だって\lかんけいなく つよい トレーナーと\lであえる ばしょだと おもうよ!\p{PLAYER}{KUN}も めいっぱい\nがんばってよ!$"
 
 VerdanturfTown_BattleTentLobby_Text_ScottVisitRegularly:
-	.string "{JPN}エニシダ『どんな ときにも つよい\nトレーナーに あいたくって\lわたしは ここに かよって いるんだよね$"
+	.string "エニシダ『どんな ときにも つよい\nトレーナーに あいたくって\lわたしは ここに かよって いるんだよね$"
