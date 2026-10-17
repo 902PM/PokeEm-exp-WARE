@@ -79,19 +79,19 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated_Rematch::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "{JPN}アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!$"
+	.string "アハハ!\pアタシ してんのうの フヨウ\pおくりびやまで しゅぎょう するうちに\nゴーストタイプの ポケモンと きもちを\lかよわせる ことが できるように なったの\pそう アタシと ポケモンの きずな\nとっても つよいんだ!\pそんな アタシの ポケモンたちに\nダメージを あたえる ことが できるか\lためして ごらんよ!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
-	.string "{JPN}あーあ\nまけちゃった$"
+	.string "あーあ\nまけちゃった$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
-	.string "{JPN}あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ$"
+	.string "あなたと ポケモンとの あいだにも\nたしかな きずなが あったのね\pそれが わからなかった\nアタシが まけたのは とうぜん\pウン あなたたちの きずなが\nどこまで つうじるか みてみたいな\lつぎの へやに すすみなよ$"
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech_Rematch:
-	.string "{JPN}アハハ!\pまってたよ!\pこんどの アタシは ひとあじ ちがう\nかくご きめて かかって きてね!$"
+	.string "アハハ!\pまってたよ!\pこんどの アタシは ひとあじ ちがう\nかくご きめて かかって きてね!$"
 
 EverGrandeCity_PhoebesRoom_Text_Defeat_Rematch:
-	.string "{JPN}さすがね!$"
+	.string "さすがね!$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech_Rematch:
-	.string "{JPN}うーん ざんねん\nまた まけたか……\pだけど ちからを\nあわせて たたかったから\pアタシと ポケモンたちは\nきずなを もっと もっと\lふかめることが できた\pまた しょうぶ できること\nたのしみに してるよ!$"
+	.string "うーん ざんねん\nまた まけたか……\pだけど ちからを\nあわせて たたかったから\pアタシと ポケモンたちは\nきずなを もっと もっと\lふかめることが できた\pまた しょうぶ できること\nたのしみに してるよ!$"

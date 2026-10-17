@@ -85,19 +85,19 @@ EverGrandeCity_SidneysRoom_EventScript_Defeated_Rematch::
 	end
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech:
-	.string "{JPN}ようこそ チャレンジャー!\nおれは してんのうの カゲツ\pうーん いい かお してるな\nなかなか たのしませて くれそうだぞ!\lいいぞ! いい かんじだぞ!\pよーし! おれと おまえ とで\nポケモン リーグでしか できない\lたたかいを たのしむと しようぜ!!$"
+	.string "ようこそ チャレンジャー!\nおれは してんのうの カゲツ\pうーん いい かお してるな\nなかなか たのしませて くれそうだぞ!\lいいぞ! いい かんじだぞ!\pよーし! おれと おまえ とで\nポケモン リーグでしか できない\lたたかいを たのしむと しようぜ!!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat:
-	.string "{JPN}おやおや まけちまったよ\nまっ たのしんだから いいんだけどよ$"
+	.string "おやおや まけちまったよ\nまっ たのしんだから いいんだけどよ$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
-	.string "{JPN}まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!$"
+	.string "まけた おれから ひとこと\pおまえなら もっと さきに すすめるぜ\nさあ つぎの へやに いって\lたたかいを たのしんで きなよ!$"
 
 EverGrandeCity_SidneysRoom_Text_IntroSpeech_Rematch:
-	.string "{JPN}よっ! まってたぜ!\pいまの オマエ だったら\nオレらも ホンキが だせる からな!\pへへっ……\pたのしい しょうぶに なりそうだな!\nさいこうの たたかい はじめようぜ!$"
+	.string "よっ! まってたぜ!\pいまの オマエ だったら\nオレらも ホンキが だせる からな!\pへへっ……\pたのしい しょうぶに なりそうだな!\nさいこうの たたかい はじめようぜ!$"
 
 EverGrandeCity_SidneysRoom_Text_Defeat_Rematch:
-	.string "{JPN}やれやれ また まけちまったか$"
+	.string "やれやれ また まけちまったか$"
 
 EverGrandeCity_SidneysRoom_Text_PostBattleSpeech_Rematch:
-	.string "{JPN}へっ…… やっぱり\nさいこうだぜ オマエ……\pさあ はやく つぎに いけよ\nほかの ヤツらも まってるぜ$"
+	.string "へっ…… やっぱり\nさいこうだぜ オマエ……\pさあ はやく つぎに いけよ\nほかの ヤツらも まってるぜ$"

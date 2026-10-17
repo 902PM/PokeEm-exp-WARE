@@ -283,178 +283,178 @@ DewfordTown_Gym_EventScript_GymStatue::
 	end
 
 DewfordTown_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\n"
-	.string "{JPN}チャンピオンを めざす {PLAYER}!!\p"
-	.string "{JPN}ムロタウン ジムの リーダー トウキは\n"
-	.string "{JPN}かくとうタイプ ポケモンの つかいてだ!\p"
-	.string "{JPN}ノーマルタイプで むかうと\n"
-	.string "{JPN}きびしぃー いちげきを くらうから\l"
-	.string "{JPN}きを つけたほうが いいぞ!\p"
-	.string "{JPN}しかも! この ジムの なかは\n"
-	.string "{JPN}うみのそこ みたいに くらいんだ!\p"
-	.string "{JPN}でも! トレーナーを ひとり たおすごとに\n"
-	.string "{JPN}だんだん あかるく なって いくぞ!\p"
-	.string "{JPN}じゃ きばってこォー!!$"
+	.string "げんき しとぉや!!\n"
+	.string "チャンピオンを めざす {PLAYER}!!\p"
+	.string "ムロタウン ジムの リーダー トウキは\n"
+	.string "かくとうタイプ ポケモンの つかいてだ!\p"
+	.string "ノーマルタイプで むかうと\n"
+	.string "きびしぃー いちげきを くらうから\l"
+	.string "きを つけたほうが いいぞ!\p"
+	.string "しかも! この ジムの なかは\n"
+	.string "うみのそこ みたいに くらいんだ!\p"
+	.string "でも! トレーナーを ひとり たおすごとに\n"
+	.string "だんだん あかるく なって いくぞ!\p"
+	.string "じゃ きばってこォー!!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}うおォ! ずいぶん あかるく なったな!\p"
-	.string "{JPN}きみの みらいも あかるいぞ!$"
+	.string "うおォ! ずいぶん あかるく なったな!\p"
+	.string "きみの みらいも あかるいぞ!$"
 
 DewfordTown_Gym_Text_TakaoIntro:
-	.string "{JPN}ちから こそ せいぎっ!\n"
-	.string "{JPN}ドリャーッ!!$"
+	.string "ちから こそ せいぎっ!\n"
+	.string "ドリャーッ!!$"
 
 DewfordTown_Gym_Text_TakaoDefeat:
-	.string "{JPN}ちからぶそく だった……!$"
+	.string "ちからぶそく だった……!$"
 
 DewfordTown_Gym_Text_TakaoPostBattle:
-	.string "{JPN}じゅう よく ごうを せいす!\n"
-	.string "{JPN}みごとな たたかいぶり だった!$"
+	.string "じゅう よく ごうを せいす!\n"
+	.string "みごとな たたかいぶり だった!$"
 
 DewfordTown_Gym_Text_JocelynIntro:
-	.string "{JPN}トウキさまと たたかうまでも ないわ!\n"
-	.string "{JPN}わたしが たおして あげる!$"
+	.string "トウキさまと たたかうまでも ないわ!\n"
+	.string "わたしが たおして あげる!$"
 
 DewfordTown_Gym_Text_JocelynDefeat:
-	.string "{JPN}まさか……\n"
-	.string "{JPN}こんなに かんたんに やられるなんて$"
+	.string "まさか……\n"
+	.string "こんなに かんたんに やられるなんて$"
 
 DewfordTown_Gym_Text_JocelynPostBattle:
-	.string "{JPN}この まけを むだに しないため\n"
-	.string "{JPN}もっと とっくん する!\p"
-	.string "{JPN}そして いつかは ジムリーダーに……\p"
-	.string "{JPN}いえ ポケモンリーグの\n"
-	.string "{JPN}チャンピオンに なるわよ!$"
+	.string "この まけを むだに しないため\n"
+	.string "もっと とっくん する!\p"
+	.string "そして いつかは ジムリーダーに……\p"
+	.string "いえ ポケモンリーグの\n"
+	.string "チャンピオンに なるわよ!$"
 
 DewfordTown_Gym_Text_LauraIntro:
-	.string "{JPN}あたしを あまく みない ことね!\n"
-	.string "{JPN}ないても しらないわよ!$"
+	.string "あたしを あまく みない ことね!\n"
+	.string "ないても しらないわよ!$"
 
 DewfordTown_Gym_Text_LauraDefeat:
-	.string "{JPN}わぁーーーん!\n"
-	.string "{JPN}まけたーーーっ!$"
+	.string "わぁーーーん!\n"
+	.string "まけたーーーっ!$"
 
 DewfordTown_Gym_Text_LauraPostBattle:
-	.string "{JPN}くらやみの なかで たたかうことで\n"
-	.string "{JPN}こころを きたえるの\p"
-	.string "{JPN}でも まっくら だから\n"
-	.string "{JPN}トウキさまの おかおを みられない……$"
+	.string "くらやみの なかで たたかうことで\n"
+	.string "こころを きたえるの\p"
+	.string "でも まっくら だから\n"
+	.string "トウキさまの おかおを みられない……$"
 
 DewfordTown_Gym_Text_LilithIntro:
-	.string "{JPN}うふふ……!\n"
-	.string "{JPN}くらくて まよっているの かな?$"
+	.string "うふふ……!\n"
+	.string "くらくて まよっているの かな?$"
 
 DewfordTown_Gym_Text_LilithDefeat:
-	.string "{JPN}なによ もう\n"
-	.string "{JPN}しらない!$"
+	.string "なによ もう\n"
+	.string "しらない!$"
 
 DewfordTown_Gym_Text_LilithPostBattle:
-	.string "{JPN}あなた なんて このまま まよって\n"
-	.string "{JPN}いりぐちに もどっちゃえば いーのよ!$"
+	.string "あなた なんて このまま まよって\n"
+	.string "いりぐちに もどっちゃえば いーのよ!$"
 
 DewfordTown_Gym_Text_BrendenIntro:
-	.string "{JPN}うみの おとこの いじを\n"
-	.string "{JPN}みせつけて やるぜぃ!$"
+	.string "うみの おとこの いじを\n"
+	.string "みせつけて やるぜぃ!$"
 
 DewfordTown_Gym_Text_BrendenDefeat:
-	.string "{JPN}どうしたぃ!\n"
-	.string "{JPN}おれと した ことが……$"
+	.string "どうしたぃ!\n"
+	.string "おれと した ことが……$"
 
 DewfordTown_Gym_Text_BrendenPostBattle:
-	.string "{JPN}おう! あんたなら\n"
-	.string "{JPN}ジムリーダーに いどむに ふさわしいぜぃ!$"
+	.string "おう! あんたなら\n"
+	.string "ジムリーダーに いどむに ふさわしいぜぃ!$"
 
 DewfordTown_Gym_Text_CristianIntro:
-	.string "{JPN}ここを とおる なら\n"
-	.string "{JPN}この わしを たおしてから じゃ!$"
+	.string "ここを とおる なら\n"
+	.string "この わしを たおしてから じゃ!$"
 
 DewfordTown_Gym_Text_CristianDefeat:
-	.string "{JPN}むうーん!\n"
-	.string "{JPN}すごく つよい……!$"
+	.string "むうーん!\n"
+	.string "すごく つよい……!$"
 
 DewfordTown_Gym_Text_CristianPostBattle:
-	.string "{JPN}わしの まけじゃ!\n"
-	.string "{JPN}がんばって バッジ とってこいよ!$"
+	.string "わしの まけじゃ!\n"
+	.string "がんばって バッジ とってこいよ!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "{JPN}ボクは ムロ ポケモンジム\n"
-	.string "{JPN}リーダーの トウキ!\p"
-	.string "{JPN}この あたりの\n"
-	.string "{JPN}はげしい なみに もまれ……\p"
-	.string "{JPN}くらい どうくつで\n"
-	.string "{JPN}しゅぎょう して いるのさ!\p"
-	.string "{JPN}ボクに ちょうせん しよう という\n"
-	.string "{JPN}キミの じつりょく……\l"
-	.string "{JPN}どれほどの ものか みせて もらうよ!$"
+	.string "ボクは ムロ ポケモンジム\n"
+	.string "リーダーの トウキ!\p"
+	.string "この あたりの\n"
+	.string "はげしい なみに もまれ……\p"
+	.string "くらい どうくつで\n"
+	.string "しゅぎょう して いるのさ!\p"
+	.string "ボクに ちょうせん しよう という\n"
+	.string "キミの じつりょく……\l"
+	.string "どれほどの ものか みせて もらうよ!$"
 
 DewfordTown_Gym_Text_BrawlyDefeat:
-	.string "{JPN}ううーん よそう していたより\n"
-	.string "{JPN}キミは ビッグウェーブ!\p"
-	.string "{JPN}わかった!\n"
-	.string "{JPN}この バッジを もっていきな!$"
+	.string "ううーん よそう していたより\n"
+	.string "キミは ビッグウェーブ!\p"
+	.string "わかった!\n"
+	.string "この バッジを もっていきな!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
-	.string "{JPN}{PLAYER}は トウキから\n"
-	.string "{JPN}ナックルバッジを もらった!$"
+	.string "{PLAYER}は トウキから\n"
+	.string "ナックルバッジを もらった!$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "{JPN}ナックルバッジには\n"
-	.string "{JPN}レベル30までの ポケモンなら\l"
-	.string "{JPN}ひとから もらった ポケモンでも\l"
-	.string "{JPN}すなおに する こうかが ある!\p"
-	.string "{JPN}それに たたかって いなくても\n"
-	.string "{JPN}ひでんわざの フラッシュを つかえる!\p"
-	.string "{JPN}この わざマシン\n"
-	.string "{JPN}よかったら つかいな!$"
+	.string "ナックルバッジには\n"
+	.string "レベル30までの ポケモンなら\l"
+	.string "ひとから もらった ポケモンでも\l"
+	.string "すなおに する こうかが ある!\p"
+	.string "それに たたかって いなくても\n"
+	.string "ひでんわざの フラッシュを つかえる!\p"
+	.string "この わざマシン\n"
+	.string "よかったら つかいな!$"
 
 DewfordTown_Gym_Text_ExplainBulkUp:
-	.string "{JPN}その わざマシン08 には\n"
-	.string "{JPN}ビルドアップが はいっている!\p"
-	.string "{JPN}こうげきりょくと ぼうぎょりょくを\n"
-	.string "{JPN}あげる わざ なのさ!\p"
-	.string "{JPN}…… …… ……$"
+	.string "その わざマシン08 には\n"
+	.string "ビルドアップが はいっている!\p"
+	.string "こうげきりょくと ぼうぎょりょくを\n"
+	.string "あげる わざ なのさ!\p"
+	.string "…… …… ……$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "{JPN}ジムリーダー トウキを\n"
-	.string "{JPN}ポケナビに とうろく した!$"
+	.string "ジムリーダー トウキを\n"
+	.string "ポケナビに とうろく した!$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
-	.string "{JPN}キミの さいのうは\n"
-	.string "{JPN}いつのひか おおきな なみと なって\p"
-	.string "{JPN}ポケモン トレーナーたちの あいだに\n"
-	.string "{JPN}おどろきの あらしを まきおこすだろう!$"
+	.string "キミの さいのうは\n"
+	.string "いつのひか おおきな なみと なって\p"
+	.string "ポケモン トレーナーたちの あいだに\n"
+	.string "おどろきの あらしを まきおこすだろう!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "{JPN}ムロタウン ポケモンジム$"
+	.string "ムロタウン ポケモンジム$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "{JPN}ムロタウン ポケモンジム\p"
-	.string "{JPN}トウキ にんてい トレーナー!\n"
-	.string "{JPN}{PLAYER}$"
+	.string "ムロタウン ポケモンジム\p"
+	.string "トウキ にんてい トレーナー!\n"
+	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
-	.string "{JPN}トウキ『なみというのは いちど ひいても\n"
-	.string "{JPN}いつか かならず はまべに もどってくる\p"
-	.string "{JPN}キミほどの ビッグウェーブだ\n"
-	.string "{JPN}きっと また くると おもっていたよ!\p"
-	.string "{JPN}さあ どれほど たかさを ましたのか\n"
-	.string "{JPN}ボクに みせてくれ!$"
+	.string "トウキ『なみというのは いちど ひいても\n"
+	.string "いつか かならず はまべに もどってくる\p"
+	.string "キミほどの ビッグウェーブだ\n"
+	.string "きっと また くると おもっていたよ!\p"
+	.string "さあ どれほど たかさを ましたのか\n"
+	.string "ボクに みせてくれ!$"
 
 DewfordTown_Gym_Text_BrawlyRematchDefeat:
-	.string "{JPN}わーおっ!\n"
-	.string "{JPN}キミに のみこまれそうだ!$"
+	.string "わーおっ!\n"
+	.string "キミに のみこまれそうだ!$"
 
 DewfordTown_Gym_Text_BrawlyPostRematch:
-	.string "{JPN}トウキ『やっぱり ポケモン しょうぶは\n"
-	.string "{JPN}そこが みえないほど ふかく ひろい!\l"
-	.string "{JPN}まるで ホウエンの うみの ようだね!$"
+	.string "トウキ『やっぱり ポケモン しょうぶは\n"
+	.string "そこが みえないほど ふかく ひろい!\l"
+	.string "まるで ホウエンの うみの ようだね!$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
-	.string "{JPN}トウキ『なみというのは いちど ひいても\n"
-	.string "{JPN}いつか かならず はまべに もどってくる\p"
-	.string "{JPN}キミほどの ビッグウェーブだ\n"
-	.string "{JPN}きっと また くると おもっていたよ!\p"
-	.string "{JPN}……あれ? たたかえる ポケモンを\n"
-	.string "{JPN}1ひきしか もっていないんだね\p"
-	.string "{JPN}すまないけど 2ひき いじょうの\n"
-	.string "{JPN}ポケモンを もって また きてくれよ$"
+	.string "トウキ『なみというのは いちど ひいても\n"
+	.string "いつか かならず はまべに もどってくる\p"
+	.string "キミほどの ビッグウェーブだ\n"
+	.string "きっと また くると おもっていたよ!\p"
+	.string "……あれ? たたかえる ポケモンを\n"
+	.string "1ひきしか もっていないんだね\p"
+	.string "すまないけど 2ひき いじょうの\n"
+	.string "ポケモンを もって また きてくれよ$"

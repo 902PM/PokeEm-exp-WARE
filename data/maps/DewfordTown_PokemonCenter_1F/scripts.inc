@@ -25,7 +25,7 @@ DewfordTown_PokemonCenter_1F_EventScript_Man::
 	end
 
 DewfordTown_PokemonCenter_1F_Text_StoneCavern:
-	.string "{JPN}まちの はずれの いしのどうくつ には\nめずらしい いしが あるって きいたわ$"
+	.string "まちの はずれの いしのどうくつ には\nめずらしい いしが あるって きいたわ$"
 
 DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM:
-	.string "{JPN}つかれて たたかうことの できない\nポケモンだって ひでんと いわれる\lわざは つかうことが できるよ!$"
+	.string "つかれて たたかうことの できない\nポケモンだって ひでんと いわれる\lわざは つかうことが できるよ!$"
