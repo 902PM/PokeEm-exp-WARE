@@ -21,10 +21,10 @@ CeladonCity_Hotel_Text_ThisHotelIsForPeople::
 	.string "はあ ポケモン…?\nああ…! ここは\lひとが とまる りょかん ですじゃ\pあいにく へや いっぱい でな$"
 
 CeladonCity_Hotel_Text_OnVacationWithBrotherAndBoyfriend::
-	.string "あたし! おとうと と かれし\n3にんで りょこうに きたの!\pタマムシ シティって\nとても きれいな　まち　なのね$"
+	.string "あたし! おとうと と かれし\n3にんで りょこうに きたの!\pタマムシ シティって\nとても きれいな まち なのね$"
 
 CeladonCity_Hotel_Text_WhyDidSheBringBrother::
-	.string "なんで…? かのじょと\zふたり きりの りょこうの はずが!$"
+	.string "なんで…? かのじょと\nふたり きりの りょこうの はずが!$"
 
 CeladonCity_Hotel_Text_SisBroughtMeOnVacation::
 	.string "わーい! りょこう だぞー!\nおねえちゃん だいすき!$"

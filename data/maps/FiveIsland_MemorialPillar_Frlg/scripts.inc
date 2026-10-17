@@ -82,101 +82,65 @@ FiveIsland_MemorialPillar_EventScript_MemorialLemonadeAlreadyPlaced::
 	end
 
 FiveIsland_MemorialPillar_Text_MiloIntro::
-	.string "I'm the eldest of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds...\n"
-	.string "It has to be the beak.$"
+	.string "おれ とりきょうだい ちょうなん!\pトリは やっぱり\nあの クチバシが いいんだよなあ$"
 
 FiveIsland_MemorialPillar_Text_MiloDefeat::
-	.string "Oh, so sharp!$"
+	.string "うーん するどいっ!$"
 
 FiveIsland_MemorialPillar_Text_MiloPostBattle::
-	.string "You can fly to FOUR ISLAND from\n"
-	.string "here.$"
+	.string "ここから だと\n4のしまに とんで いけるぞ$"
 
 FiveIsland_MemorialPillar_Text_ChazIntro::
-	.string "I'm the middle kid of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds...\n"
-	.string "It has to be the wings.$"
+	.string "おれ とりきょうだい じなん!\pトリは やっぱり\nあの つばさが いいんだよなあ$"
 
 FiveIsland_MemorialPillar_Text_ChazDefeat::
-	.string "Flap, flap!$"
+	.string "ばさ ばさっ!$"
 
 FiveIsland_MemorialPillar_Text_ChazPostBattle::
-	.string "There was a really somber guy\n"
-	.string "over that way.$"
+	.string "むこうに\nくらい おとこが いたぞ$"
 
 FiveIsland_MemorialPillar_Text_HaroldIntro::
-	.string "I'm the youngest of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds...\n"
-	.string "It has to be the down.$"
+	.string "おれ とりきょうだい すえっこ!\pトリは やっぱり\nあの うもうが いいんだよなあ$"
 
 FiveIsland_MemorialPillar_Text_HaroldDefeat::
-	.string "Down is so comfy...\n"
-	.string "It makes me drowsy...$"
+	.string "うもう ふわふわ…\nねむーい$"
 
 FiveIsland_MemorialPillar_Text_HaroldPostBattle::
-	.string "It fills me with happiness when\n"
-	.string "bird POKEMON beg playfully...$"
+	.string "とりポケモンに あまえ られると\nしあわせ…$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrub::
-	.string "Scrub, scrub...$"
+	.string "よいしょ よいしょ$"
 
 FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
-	.string "Hello...\n"
-	.string "Your POKEMON look healthy...$"
+	.string "こんにちは…\nきみの ポケモン げんきそうだね$"
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
-	.string "This is where I buried my ONIX...\n"
-	.string "It was named TECTONIX...$"
+	.string "これは ボクの イワークの…\nイワキチの おはか なんだ$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering::
-	.string "Here lies TECTONIX is engraved\n"
-	.string "on a boulder.\p"
-	.string "There is a LEMONADE placed as an\n"
-	.string "offering in front of the grave.$"
+	.string "『イワキチ ここに ねむる』と\nほってある\pおはかの まえには\nミックスオレが おいてある$"
 
 FiveIsland_MemorialPillar_Text_LeaveAnotherLemonadeOffering::
-	.string "Would you like to leave another\n"
-	.string "LEMONADE as an offering?$"
+	.string "ミックスオレを もうひとつ\nおそなえして あげますか?$"
 
 FiveIsland_MemorialPillar_Text_PlacedCanOfLemonade::
-	.string "{PLAYER} placed a can of LEMONADE\n"
-	.string "in front of the grave.$"
+	.string "{PLAYER}は おはかに\nミックスオレを おそなえした$"
 
 FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
-	.string "Th-thank you...\p"
-	.string "That was my TECTONIX's favorite\n"
-	.string "drink...\p"
-	.string "I don't even know you, but your\n"
-	.string "act of kindness...\p"
-	.string "It's uplifted me a little.\p"
-	.string "Can you please take this as my\n"
-	.string "thanks?$"
+	.string "あ… ありがとう……\pそれ イワキチが だいすきな\nのみもの だったんだ\pみずしらずの きみに\nやさしく して もらって\lすこし げんきが でたよ\pおれいに これを もらってください$"
 
 FiveIsland_MemorialPillar_Text_BeGoodToYourMonsToo::
-	.string "Please be good to your POKEMON,\n"
-	.string "too.$"
+	.string "きみも ポケモンを\nだいじに して あげてね$"
 
 FiveIsland_MemorialPillar_Text_DontHaveRoomForIt::
-	.string "If you don't have room for it,\n"
-	.string "I'll hold it for you till next time.$"
+	.string "いっぱい なら\nつぎに あった ときまで\lとって おくね$"
 
 FiveIsland_MemorialPillar_Text_StillHaveThingAsMyThanks::
-	.string "Oh, it's you from that time...\p"
-	.string "I still have that thing I wanted\n"
-	.string "you to have as my thanks.$"
+	.string "あ このまえの…\pこの おれい\nうけとって ください$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrubTectonix::
-	.string "Scrub, scrub...\p"
-	.string "... ... ...\n"
-	.string "TECTONIX...$"
+	.string "よいしょ よいしょ\p………\nイワキチ……$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonix::
-	.string "Boulders and rocks are neatly piled\n"
-	.string "up as a cairn.\p"
-	.string "Here lies TECTONIX is engraved\n"
-	.string "on a boulder.$"
+	.string "ていねいに いしが つまれている\p『イワキチ ここに ねむる』と\nほってある$"
 
