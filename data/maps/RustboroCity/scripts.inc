@@ -1013,146 +1013,146 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "{JPN}デボン コーポレーション……\nながいから みんな デボンって よぶけど\pあの かいしゃ では いろいろと\nべんりな ものを つくってるんだ!$"
+	.string "デボン コーポレーション……\nながいから みんな デボンって よぶけど\pあの かいしゃ では いろいろと\nべんりな ものを つくってるんだ!$"
 
 RustboroCity_Text_SneakyLookingManWentAroundCorner:
-	.string "{JPN}ん? あやしい おとこ?\pそういえば にんそうの わるい おとこが\nそこの かどを まがっていったよ$"
+	.string "ん? あやしい おとこ?\pそういえば にんそうの わるい おとこが\nそこの かどを まがっていったよ$"
 
 RustboroCity_Text_HaveYouChallengedGym:
-	.string "{JPN}ポケモンジムに ちょうせん したかい?\pあの キラリと かがやく\nジムバッジを もつと トレーナーとしての\lじかくが めばえて くるんだな!$"
+	.string "ポケモンジムに ちょうせん したかい?\pあの キラリと かがやく\nジムバッジを もつと トレーナーとしての\lじかくが めばえて くるんだな!$"
 
 RustboroCity_Text_HeyThatsRustborosGymBadge:
-	.string "{JPN}おっ! カナズミの ジムバッジ!\pいくつか ある バッジの なかで\nカナズミの やつが いちばん かっこいいな!$"
+	.string "おっ! カナズミの ジムバッジ!\pいくつか ある バッジの なかで\nカナズミの やつが いちばん かっこいいな!$"
 
 RustboroCity_Text_YoureNewAroundHere:
-	.string "{JPN}おや? きみは だれだい?\nこの あたりでは みかけない かお だね\pトレーナーズ スクールの てんこうせい?$"
+	.string "おや? きみは だれだい?\nこの あたりでは みかけない かお だね\pトレーナーズ スクールの てんこうせい?$"
 
 RustboroCity_Text_GymLeaderIsntEasyWithFire:
-	.string "{JPN}ジムリーダーに ちょうせん したけど……\pあたしの ほのおタイプの ポケモンじゃ\nちょっと かつのは たいへんそう……\pだって ほのおタイプ って\nいわタイプに あいしょうが わるいもの……$"
+	.string "ジムリーダーに ちょうせん したけど……\pあたしの ほのおタイプの ポケモンじゃ\nちょっと かつのは たいへんそう……\pだって ほのおタイプ って\nいわタイプに あいしょうが わるいもの……$"
 
 RustboroCity_Text_MrBrineyWalksInTheTunnel:
-	.string "{JPN}はまべの こやに すんでいる\nふなのりの ハギろうじん\lときどき トンネルに さんぽに いくんだよ$"
+	.string "はまべの こやに すんでいる\nふなのりの ハギろうじん\lときどき トンネルに さんぽに いくんだよ$"
 
 RustboroCity_Text_MrBrineyLovesPeeko:
-	.string "{JPN}はまべの こやに すんでいる\nふなのりの ハギろうじん\lピーコちゃんの ために カイナに いって\lかいもの するんだってさ\pほんとうに ピーコちゃんが すきなんだな!\nあの じいさん$"
+	.string "はまべの こやに すんでいる\nふなのりの ハギろうじん\lピーコちゃんの ために カイナに いって\lかいもの するんだってさ\pほんとうに ピーコちゃんが すきなんだな!\nあの じいさん$"
 
 RustboroCity_Text_WowYouHavePokemon:
-	.string "{JPN}あなたも ポケモンを つれてるのね\pあたしも おおきくなったら\nポケモンと どこかに いくんだ!$"
+	.string "あなたも ポケモンを つれてるのね\pあたしも おおきくなったら\nポケモンと どこかに いくんだ!$"
 
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool:
-	.string "{JPN}ぽけもん とれーなーず すくーる かぁ!\pここに にゅうがく すれば\nめずらしい ポケモンでも かんたんに\lつかまえられるように なるのかな?$"
+	.string "ぽけもん とれーなーず すくーる かぁ!\pここに にゅうがく すれば\nめずらしい ポケモンでも かんたんに\lつかまえられるように なるのかな?$"
 
 RustboroCity_Text_PokemonCanChangeLookFromExp:
-	.string "{JPN}ポケモンって たたかいの けいけんを\nつんでいくと すがたかたち が\lかわっちゃうことが あるんだよ!$"
+	.string "ポケモンって たたかいの けいけんを\nつんでいくと すがたかたち が\lかわっちゃうことが あるんだよ!$"
 
 RustboroCity_Text_PokemonChangeShape:
-	.string "{JPN}ポケモンの すがたが かわっちゃうの?\nいきなり かわると ビックリしちゃう!$"
+	.string "ポケモンの すがたが かわっちゃうの?\nいきなり かわると ビックリしちゃう!$"
 
 RustboroCity_Text_TradePokemonGrowFast:
-	.string "{JPN}ひとと こうかんした ポケモンは\nそだつのが はやい!\p……でも ジムバッジを もっていないと\nいうことを きいて くれないんだ$"
+	.string "ひとと こうかんした ポケモンは\nそだつのが はやい!\p……でも ジムバッジを もっていないと\nいうことを きいて くれないんだ$"
 
 RustboroCity_Text_OutOfTheWay:
-	.string "{JPN}どけー! どけどけー!!$"
+	.string "どけー! どけどけー!!$"
 
 RustboroCity_Text_WaitDontTakeMyGoods:
-	.string "{JPN}まってぇー!\pその にもつを かえしてぇぇぇー!!$"
+	.string "まってぇー!\pその にもつを かえしてぇぇぇー!!$"
 
 RustboroCity_Text_HelpMeIWasRobbed:
-	.string "{JPN}ああ きみは!\pトウカのもりで たすけてくれた\nすてきな トレーナーじゃ ないですか!\pおねがいです!\pアクアだんに うばわれた\nデボンのにもつ とりかえして ください!\pあれが ないと……\nわたし とても こまるんです$"
+	.string "ああ きみは!\pトウカのもりで たすけてくれた\nすてきな トレーナーじゃ ないですか!\pおねがいです!\pアクアだんに うばわれた\nデボンのにもつ とりかえして ください!\pあれが ないと……\nわたし とても こまるんです$"
 
 RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel:
-	.string "{JPN}さっきの あやしい やつは\nむこうの トンネルの ほうに\lにげていったと おもうのですよ$"
+	.string "さっきの あやしい やつは\nむこうの トンネルの ほうに\lにげていったと おもうのですよ$"
 
 RustboroCity_Text_YouGotItThankYou:
-	.string "{JPN}ああ! どうでした\nデボンのにもつ は……?\pそうですか!\nとりかえして くれたのですか!\pきみは ほんとうに\nすごい トレーナー ですね!\p……そうだ! おれいに\nこれを あげちゃおう!$"
+	.string "ああ! どうでした\nデボンのにもつ は……?\pそうですか!\nとりかえして くれたのですか!\pきみは ほんとうに\nすごい トレーナー ですね!\p……そうだ! おれいに\nこれを あげちゃおう!$"
 
 RustboroCity_Text_YoureLoadedWithItems:
-	.string "{JPN}どうぐ いっぱいで\nあげられないね$"
+	.string "どうぐ いっぱいで\nあげられないね$"
 
 RustboroCity_Text_PleaseComeWithMe:
-	.string "{JPN}きみ! きみ!\nわたしに ついてきて ください!$"
+	.string "きみ! きみ!\nわたしに ついてきて ください!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "{JPN}ハルカ『あっ {PLAYER}{KUN}!\pポケナビに エントリーコールを\nつけて もらったのね!\pじゃあ あたしたち\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!\p…… …… ……$"
+	.string "ハルカ『あっ {PLAYER}{KUN}!\pポケナビに エントリーコールを\nつけて もらったのね!\pじゃあ あたしたち\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!\p…… …… ……$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "{JPN}ハルカを\nポケナビに とうろく した!$"
+	.string "ハルカを\nポケナビに とうろく した!$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "{JPN}ハルカ『そういえば トウカのもりで\nハギろうじんと すれちがったわ\pたぶん…… はまべの こやに\nもどるところ だったんじゃ ないかな!\pえーと…… それより {PLAYER}{KUN}の\nポケモンずかんの ちょうしは どう?\pあたしは かなり いい かんじ!\nどう? ちょっと しょうぶ してみる?$"
+	.string "ハルカ『そういえば トウカのもりで\nハギろうじんと すれちがったわ\pたぶん…… はまべの こやに\nもどるところ だったんじゃ ないかな!\pえーと…… それより {PLAYER}{KUN}の\nポケモンずかんの ちょうしは どう?\pあたしは かなり いい かんじ!\nどう? ちょっと しょうぶ してみる?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "{JPN}ハルカ『えー なんでよー\nあんまり ポケモン つかまえたり\lそだてたり してないのかな?\pそれじゃあ トレーナーとして\nまだまだ ね!$"
+	.string "ハルカ『えー なんでよー\nあんまり ポケモン つかまえたり\lそだてたり してないのかな?\pそれじゃあ トレーナーとして\nまだまだ ね!$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "{JPN}ハルカ『どう? あたしと ここで\nちょっと しょうぶ してみる?$"
+	.string "ハルカ『どう? あたしと ここで\nちょっと しょうぶ してみる?$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "{JPN}ハルカ『トレーナーに なった ばかりの\n{PLAYER}{KUN}には まけないよ!$"
+	.string "ハルカ『トレーナーに なった ばかりの\n{PLAYER}{KUN}には まけないよ!$"
 
 RustboroCity_Text_MayDefeat:
-	.string "{JPN}うわあ……\nもう こんなに つよいなんて……$"
+	.string "うわあ……\nもう こんなに つよいなんて……$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "{JPN}ハルカ『そういえば さっき すれちがった\nハギろうじん なんだけどね\p{PLAYER}{KUN}は ひっこして きたばかりで\nしらないかも しれないけど\lむかしは すっごい ふなのり だったのよ!$"
+	.string "ハルカ『そういえば さっき すれちがった\nハギろうじん なんだけどね\p{PLAYER}{KUN}は ひっこして きたばかりで\nしらないかも しれないけど\lむかしは すっごい ふなのり だったのよ!$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "{JPN}ユウキ『おっ {PLAYER}!\pポケナビに エントリーコールを\nつけて もらったんだな!\pじゃあ オレたち\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!\p…… …… ……$"
+	.string "ユウキ『おっ {PLAYER}!\pポケナビに エントリーコールを\nつけて もらったんだな!\pじゃあ オレたち\nおたがいに よびだせる ように\lなまえを とうろく しておこうよ!\p…… …… ……$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "{JPN}ユウキを\nポケナビに とうろく した!$"
+	.string "ユウキを\nポケナビに とうろく した!$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "{JPN}ユウキ『そういえば {PLAYER}\pさっき トウカのもりで\nハギろうじんと すれちがったよ\pたぶん…… はまべの こやに\nもどるところ だったんじゃ ないかな!\pえーと…… それより {PLAYER}の\nポケモンずかんは どう?\lちょっとは ページ うまったか?\pオレは すごいよ!\nどうだ ポケモン しょうぶで\lそのせいかを ためして やろうか?$"
+	.string "ユウキ『そういえば {PLAYER}\pさっき トウカのもりで\nハギろうじんと すれちがったよ\pたぶん…… はまべの こやに\nもどるところ だったんじゃ ないかな!\pえーと…… それより {PLAYER}の\nポケモンずかんは どう?\lちょっとは ページ うまったか?\pオレは すごいよ!\nどうだ ポケモン しょうぶで\lそのせいかを ためして やろうか?$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "{JPN}ユウキ『なんだよ\nもってる ポケモンに じしんが ないのか?$"
+	.string "ユウキ『なんだよ\nもってる ポケモンに じしんが ないのか?$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "{JPN}ユウキ『どうだい オレと ここで\nしょうぶ してみるか?$"
+	.string "ユウキ『どうだい オレと ここで\nしょうぶ してみるか?$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "{JPN}ユウキ『トレーナーに なりたて だって\nてかげんは しないからな!$"
+	.string "ユウキ『トレーナーに なりたて だって\nてかげんは しないからな!$"
 
 RustboroCity_Text_BrendanDefeat:
-	.string "{JPN}へえ……\nなかなか やるじゃないか$"
+	.string "へえ……\nなかなか やるじゃないか$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "{JPN}ユウキ『そういえば さっき すれちがった\nハギろうじん だけどな\p{PLAYER}は ひっこして きたばかりで\nしらないかも しれないけど\lむかしは すごい ふなのり だったんだ!$"
+	.string "ユウキ『そういえば さっき すれちがった\nハギろうじん だけどな\p{PLAYER}は ひっこして きたばかりで\nしらないかも しれないけど\lむかしは すごい ふなのり だったんだ!$"
 
 RustboroCity_Text_TunnelNearingCompletion:
-	.string "{JPN}「べんりな トンネル かんせい まぢか!」\p……と かんばんに かかれているが\nその うえに あかい ペンキで\lおおきな バッテンが つけられている$"
+	.string "「べんりな トンネル かんせい まぢか!」\p……と かんばんに かかれているが\nその うえに あかい ペンキで\lおおきな バッテンが つけられている$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "{JPN}「デボン コーポレーション」\pみなさんの せいかつの ために\nなんでも つくっています!$"
+	.string "「デボン コーポレーション」\pみなさんの せいかつの ために\nなんでも つくっています!$"
 
 RustboroCity_Text_GymSign:
-	.string "{JPN}カナズミ シティ ポケモンジム\nリーダー ツツジ\lいわに ときめく ゆうとうせい!$"
+	.string "カナズミ シティ ポケモンジム\nリーダー ツツジ\lいわに ときめく ゆうとうせい!$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "{JPN}「デボン コーポレーション ぶんしつ」\pかんけいしゃ いがいの たちいりは\nどうぞ ごえんりょ ください!$"
+	.string "「デボン コーポレーション ぶんしつ」\pかんけいしゃ いがいの たちいりは\nどうぞ ごえんりょ ください!$"
 
 RustboroCity_Text_CitySign:
-	.string "{JPN}ここは カナズミ シティ\pしぜんと かがくの ゆうごうを\nついきゅうする まち$"
+	.string "ここは カナズミ シティ\pしぜんと かがくの ゆうごうを\nついきゅうする まち$"
 
 RustboroCity_Text_TrainersSchoolSign:
-	.string "{JPN}「ポケモン トレーナーズ スクール」\nポケモンのことなら なんでも おしえます!$"
+	.string "「ポケモン トレーナーズ スクール」\nポケモンのことなら なんでも おしえます!$"
 
 RustboroCity_Text_CuttersHouse:
-	.string "{JPN}「いあいぎりオヤジの いえ」$"
+	.string "「いあいぎりオヤジの いえ」$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
-	.string "{JPN}いま ポケナビの ついかきのうを\nかいはつ していたのですが……\pうまく いきましたよ!\p{PLAYER}さん!\pしゃちょうに いただいた そのポケナビ\nちょっと かしてくださいね!$"
+	.string "いま ポケナビの ついかきのうを\nかいはつ していたのですが……\pうまく いきましたよ!\p{PLAYER}さん!\pしゃちょうに いただいた そのポケナビ\nちょっと かしてくださいね!$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
-	.string "{JPN}はい! {PLAYER}さんの ポケナビに\nエントリーコール という きのうを\lついか しました!\pポケナビに とうろく されていれば\nとおく はなれた ところの ひとと\lエントリーコールを つうじて\lかいわが できて しまうんです!\p{PLAYER}さんの ポケナビには\nうちの ツワブキ しゃちょうの なまえが\lとうろく してある はずです\pためしに ちょっと しゃちょうを\nよびだして みてください!$"
+	.string "はい! {PLAYER}さんの ポケナビに\nエントリーコール という きのうを\lついか しました!\pポケナビに とうろく されていれば\nとおく はなれた ところの ひとと\lエントリーコールを つうじて\lかいわが できて しまうんです!\p{PLAYER}さんの ポケナビには\nうちの ツワブキ しゃちょうの なまえが\lとうろく してある はずです\pためしに ちょっと しゃちょうを\nよびだして みてください!$"
 
 RustboroCity_Text_PleaseSelectPokenav:
-	.string "{JPN}ポケナビを えらんで ください!$"
+	.string "ポケナビを えらんで ください!$"
 
 RustboroCity_Text_IdBetterGetBackToWork:
-	.string "{JPN}……では わたしは しごとに もどります\p{PLAYER}さん おきをつけて!$"
+	.string "……では わたしは しごとに もどります\p{PLAYER}さん おきをつけて!$"
 
 RustboroCity_Text_YouCanHave2On2Battle:
-	.string "{JPN}きみ しってる?\nふたりづれの トレーナーとじゃ なくても\l2たい2の しょうぶが できるんだ!\p2ひき いじょう ポケモンを もってるとき\nふたりの トレーナーと めが あえば\lしょうぶを どうじに いどんで くるよ!\pたった ひとりで ふたりを あいてに\nかてたら カッコいいよねー!$"
+	.string "きみ しってる?\nふたりづれの トレーナーとじゃ なくても\l2たい2の しょうぶが できるんだ!\p2ひき いじょう ポケモンを もってるとき\nふたりの トレーナーと めが あえば\lしょうぶを どうじに いどんで くるよ!\pたった ひとりで ふたりを あいてに\nかてたら カッコいいよねー!$"
 

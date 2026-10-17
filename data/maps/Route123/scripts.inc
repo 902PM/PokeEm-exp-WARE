@@ -171,20 +171,20 @@ Route123_EventScript_RematchFernando::
 	end
 
 Route123_Text_LoveGrassMonsHaveAny:
-	.string "{JPN}あたし くさタイプの ポケモン\nだいすき なの!\pあなたは くさタイプの ポケモン\nもって いないの……?$"
+	.string "あたし くさタイプの ポケモン\nだいすき なの!\pあなたは くさタイプの ポケモン\nもって いないの……?$"
 
 Route123_Text_YouLikeGrassMonsTooHaveThis:
-	.string "{JPN}あら!?\pあなたも くさタイプの ポケモンが\nだいすき なのね!\pうれしいから これ あげちゃう!\nともだちの しるし よ!$"
+	.string "あら!?\pあなたも くさタイプの ポケモンが\nだいすき なのね!\pうれしいから これ あげちゃう!\nともだちの しるし よ!$"
 
 Route123_Text_CheckTreesWithMyGrassMon:
-	.string "{JPN}くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね$"
+	.string "くさポケモンと いっしょに\nきの ようすを みてまわってるの\lいってみれば きの おいしゃさんね$"
 
 Route123_Text_RouteSign:
-	.string "{JPN}{RIGHT_ARROW} 123ばん どうろ\n{LEFT_ARROW} 118ばん どうろ$"
+	.string "{RIGHT_ARROW} 123ばん どうろ\n{LEFT_ARROW} 118ばん どうろ$"
 
 Route123_Text_RouteSignMtPyre:
-	.string "{JPN}{UP_ARROW}…… おくりびやま\nこころ よわきもの ちかよる べからず$"
+	.string "{UP_ARROW}…… おくりびやま\nこころ よわきもの ちかよる べからず$"
 
 Route123_Text_BerryMastersHouse:
-	.string "{JPN}「きのみ めいじんの いえ」$"
+	.string "「きのみ めいじんの いえ」$"
 

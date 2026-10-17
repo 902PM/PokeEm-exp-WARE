@@ -294,38 +294,38 @@ Route118_EventScript_Deandre::
 	end
 
 Route118_Text_StevenQuestions:
-	.string "{JPN}ダイゴ『やあ {PLAYER}{KUN}!\pムロタウンの どうくつで あった\nダイゴだよ!\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな?\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる?\pボクが きにする ことじゃない けどね\pそうだ! はなしを きいてもらった\nおれいに これをあげよう!$"
+	.string "ダイゴ『やあ {PLAYER}{KUN}!\pムロタウンの どうくつで あった\nダイゴだよ!\pあれから きみは どれだけ\nたくさんの ポケモンに であったかな?\pこの ひろい せかいには\nさまざまな ポケモンが いるんだ\pすきな タイプの ポケモン ばかりを\nそだてるのも いいだろう\pあるいは いろんな タイプの ポケモンを\nそだてるのも たのしい だろう……\pきみは ポケモン トレーナーとして\nどう かんがえてる?\pボクが きにする ことじゃない けどね\pそうだ! はなしを きいてもらった\nおれいに これをあげよう!$"
 
 Route118_Text_StevenQuestions_2:
-	.string "{JPN}そして\nこれも もらって くれ!$"
+	.string "そして\nこれも もらって くれ!$"
 
 Route118_Text_Steven_Gohome:
-	.string "{JPN}じゃあ\nまた あえると いいね$"
+	.string "じゃあ\nまた あえると いいね$"
 
 Route118_Text_ItemFull:
-	.string "{JPN}もちものが いっぱい なので\nパソコンに てんそう された!$"
+	.string "もちものが いっぱい なので\nパソコンに てんそう された!$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
-	.string "{JPN}うむ!\nいいつりざおは ほんとうに いいよ!\pきみも そう おもうでしょ?$"
+	.string "うむ!\nいいつりざおは ほんとうに いいよ!\pきみも そう おもうでしょ?$"
 
 Route118_Text_IdenticalMindsTakeThis:
-	.string "{JPN}うむ!\nきみとは きが あうよ!\pうむ!\nいいつりざおを あげよう!$"
+	.string "うむ!\nきみとは きが あうよ!\pうむ!\nいいつりざおを あげよう!$"
 
 Route118_Text_TryYourLuckFishing:
-	.string "{JPN}みずの ある ところなら\nどこでも つりを すると いいよ!$"
+	.string "みずの ある ところなら\nどこでも つりを すると いいよ!$"
 
 Route118_Text_DontYouLikeToFish:
-	.string "{JPN}つりは きらい かい?$"
+	.string "つりは きらい かい?$"
 
 Route118_Text_TryCatchingMonWithGoodRod:
-	.string "{JPN}いいつりざおで\nいろんな ポケモンを つると いいよ!$"
+	.string "いいつりざおで\nいろんな ポケモンを つると いいよ!$"
 
 Route118_Text_CanCrossRiversWithSurf:
-	.string "{JPN}ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの!\pポケモンって たのもしーい!$"
+	.string "ふねを もって いなくても\nなみのりを おぼえた ポケモンが いれば\lうみや かわを わたって いけちゃうの!\pポケモンって たのもしーい!$"
 
 Route118_Text_RouteSignMauville:
-	.string "{JPN}ここは 118ばん どうろ\n{LEFT_ARROW} キンセツシティ$"
+	.string "ここは 118ばん どうろ\n{LEFT_ARROW} キンセツシティ$"
 
 Route118_Text_RouteSign119:
-	.string "{JPN}ここは 118ばん どうろ\n{UP_ARROW} 119ばん どうろ$"
+	.string "ここは 118ばん どうろ\n{UP_ARROW} 119ばん どうろ$"
 
