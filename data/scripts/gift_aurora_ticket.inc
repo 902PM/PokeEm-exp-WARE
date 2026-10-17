@@ -35,13 +35,13 @@ AuroraTicket_Obtained:
 	end
 
 sText_AuroraTicketForYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの チケットが\lおくられて きました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの チケットが\lおくられて きました$"
 
 sText_AuroraTicketUseAtPort:
-	.string "{JPN}ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
 
 sText_AuroraTicketThankYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
 
 sText_AuroraTicketBagFull:
-	.string "{JPN}しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"
+	.string "しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"

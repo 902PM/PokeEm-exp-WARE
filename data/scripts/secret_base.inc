@@ -1,20 +1,20 @@
 SecretBase_Text_TreeCanBeClimbed:
-	.string "{JPN}ツルを おとせば うえに のぼれそう$"
+	.string "ツルを おとせば うえに のぼれそう$"
 
 SecretBase_Text_TreeUseSecretPower:
-	.string "{JPN}ツルを おとせば うえに のぼれそう\pひみつのちからを つかいますか?$"
+	.string "ツルを おとせば うえに のぼれそう\pひみつのちからを つかいますか?$"
 
 SecretBase_Text_VineDroppedDown:
-	.string "{JPN}ふといツルが おちてきた!$"
+	.string "ふといツルが おちてきた!$"
 
 SecretBase_Text_ClumpOfGrass:
-	.string "{JPN}くさのかたまりを どければ\nなかへ はいれそう$"
+	.string "くさのかたまりを どければ\nなかへ はいれそう$"
 
 SecretBase_Text_ClumpUseSecretPower:
-	.string "{JPN}くさのかたまりを どければ\nなかへ はいれそう\pひみつのちからを つかいますか?$"
+	.string "くさのかたまりを どければ\nなかへ はいれそう\pひみつのちからを つかいますか?$"
 
 SecretBase_Text_DiscoveredSmallEntrance:
-	.string "{JPN}ちいさな いりぐちを はっけん!$"
+	.string "ちいさな いりぐちを はっけん!$"
 
 	.include "data/text/secret_base_trainers.inc"
 
@@ -665,46 +665,46 @@ SecretBase_EventScript_CushionInteract::
 	end
 
 SecretBase_Text_AllDecorationsWillBeReturned:
-	.string "{JPN}ひみつきちの グッズは すべて\nパソコンに もどります\pそれでも よろしいですか?$"
+	.string "ひみつきちの グッズは すべて\nパソコンに もどります\pそれでも よろしいですか?$"
 
 SecretBase_Text_WantToRegisterSecretBase:
-	.string "{JPN}{STR_VAR_1}の ひみつきちを\nとうろく しますか?$"
+	.string "{STR_VAR_1}の ひみつきちを\nとうろく しますか?$"
 
 SecretBase_Text_AlreadyRegisteredDelete:
-	.string "{JPN}すでに とうろくされています\nとうろくを かいじょ しますか?$"
+	.string "すでに とうろくされています\nとうろくを かいじょ しますか?$"
 
 SecretBase_Text_TooManyBasesDeleteSome:
-	.string "{JPN}とうろく できる かずは\n10かしょ まで です\pどれか かいじょ すれば\nとうろく できます$"
+	.string "とうろく できる かずは\n10かしょ まで です\pどれか かいじょ すれば\nとうろく できます$"
 
 SecretBase_Text_RegistrationCompleted:
-	.string "{JPN}とうろく しました!$"
+	.string "とうろく しました!$"
 
 SecretBase_Text_DataUnregistered:
-	.string "{JPN}とうろくを かいじょ しました!$"
+	.string "とうろくを かいじょ しました!$"
 
 SecretBase_Text_BootUpPC:
-	.string "{JPN}{PLAYER}は\nパソコンの スイッチを いれた$"
+	.string "{PLAYER}は\nパソコンの スイッチを いれた$"
 
 SecretBase_Text_WhatWouldYouLikeToDo:
-	.string "{JPN}なにを しますか?$"
+	.string "なにを しますか?$"
 
 SecretBase_Text_RegistryInfo:
-	.string "{JPN}とうろくした ひみつきちは\nあいてが ひっこしを しないかぎり\lなくなる ことは ありません\pとうろく リストから さくじょすると\nほかの ひみつきちに\lかわることが あります\pとうろくは 10かしょ まで できます$"
+	.string "とうろくした ひみつきちは\nあいてが ひっこしを しないかぎり\lなくなる ことは ありません\pとうろく リストから さくじょすると\nほかの ひみつきちに\lかわることが あります\pとうろくは 10かしょ まで できます$"
 
 SecretBase_Text_BattleTowerShield:
-	.string "{JPN}バトルタワーで {STR_VAR_1}にん かちぬいた\nきねんの {STR_VAR_2}の たて$"
+	.string "バトルタワーで {STR_VAR_1}にん かちぬいた\nきねんの {STR_VAR_2}の たて$"
 
 SecretBase_Text_ToyTV:
-	.string "{JPN}ほんもの そっくりの オモチャのテレビ\nしらない ひとが みたら まちがうかも!?$"
+	.string "ほんもの そっくりの オモチャのテレビ\nしらない ひとが みたら まちがうかも!?$"
 
 SecretBase_Text_SeedotTV:
-	.string "{JPN}タネボー みたいな オモチャのテレビ\nなんだか ころがりだしそう!?$"
+	.string "タネボー みたいな オモチャのテレビ\nなんだか ころがりだしそう!?$"
 
 SecretBase_Text_SkittyTV:
-	.string "{JPN}エネコ みたいな オモチャのテレビ\nなんだか あるきだしそう!?$"
+	.string "エネコ みたいな オモチャのテレビ\nなんだか あるきだしそう!?$"
 
 SecretBase_Text_WouldYouLikeToMoveBases:
-	.string "{JPN}ひみつきちは ひとつしか つくれません!\p{STR_VAR_1} にある\nひみつきちを ひっこし しますか?$"
+	.string "ひみつきちは ひとつしか つくれません!\p{STR_VAR_1} にある\nひみつきちを ひっこし しますか?$"
 
 SecretBase_Text_MovingCompletedUseSecretPower:
-	.string "{JPN}ひっこし かんりょう!\pひみつのちからを つかいますか?$"
+	.string "ひっこし かんりょう!\pひみつのちからを つかいますか?$"

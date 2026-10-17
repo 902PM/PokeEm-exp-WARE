@@ -44,13 +44,13 @@ EventScript_CancelCut::
 	end
 
 Text_WantToCut:
-	.string "{JPN}……このきは なんだか\nきれそうだ!\pいあいぎりで きりますか?$"
+	.string "……このきは なんだか\nきれそうだ!\pいあいぎりで きりますか?$"
 
 Text_MonUsedFieldMove:
-	.string "{JPN}{STR_VAR_1} は\n{STR_VAR_2}を つかった!$"
+	.string "{STR_VAR_1} は\n{STR_VAR_2}を つかった!$"
 
 Text_CantCut:
-	.string "{JPN}このきは なんだか\nきれそうだ!$"
+	.string "このきは なんだか\nきれそうだ!$"
 
 @ Use rock smash from party menu
 EventScript_UseRockSmash::
@@ -211,10 +211,10 @@ EventScript_CancelSmash::
 	end
 
 Text_WantToSmash:
-	.string "{JPN}ポケモンの わざで こわせそうだ!\n……いわくだきを つかいますか?$"
+	.string "ポケモンの わざで こわせそうだ!\n……いわくだきを つかいますか?$"
 
 Text_CantSmash:
-	.string "{JPN}かたそうな いわ だけど……\nポケモンの わざで こわせるかも?$"
+	.string "かたそうな いわ だけど……\nポケモンの わざで こわせるかも?$"
 
 EventScript_StrengthBoulder::
 	lockall
@@ -259,16 +259,16 @@ EventScript_CancelStrength::
 	end
 
 Text_WantToStrength:
-	.string "{JPN}おおきな いわ だけど……\nポケモンの わざで おせるかも?\pかいりきを つかいますか?$"
+	.string "おおきな いわ だけど……\nポケモンの わざで おせるかも?\pかいりきを つかいますか?$"
 
 Text_MonUsedStrength:
-	.string "{JPN}{STR_VAR_1} は\nかいりきを はっきした!\p{STR_VAR_1}の かいりきの おかげで\nいわを おせるように なった!$"
+	.string "{STR_VAR_1} は\nかいりきを はっきした!\p{STR_VAR_1}の かいりきの おかげで\nいわを おせるように なった!$"
 
 Text_CantStrength:
-	.string "{JPN}おおきな いわ だけど……\nポケモンの わざで おせるかも?$"
+	.string "おおきな いわ だけど……\nポケモンの わざで おせるかも?$"
 
 Text_StrengthActivated:
-	.string "{JPN}かいりきの おかげで\nいわを おして うごかせる!$"
+	.string "かいりきの おかげで\nいわを おして うごかせる!$"
 
 EventScript_UseWaterfall::
 	lockall
@@ -295,13 +295,13 @@ EventScript_EndWaterfall::
 	end
 
 Text_CantWaterfall:
-	.string "{JPN}みずが ながれおちている!$"
+	.string "みずが ながれおちている!$"
 
 Text_WantToWaterfall:
-	.string "{JPN}おおきな たきだ!\n……たきのぼりを つかいますか?$"
+	.string "おおきな たきだ!\n……たきのぼりを つかいますか?$"
 
 Text_MonUsedWaterfall:
-	.string "{JPN}{STR_VAR_1} は たきのぼりを つかった!$"
+	.string "{STR_VAR_1} は たきのぼりを つかった!$"
 
 EventScript_UseDive::
 	lockall
@@ -387,26 +387,26 @@ EventScript_UseCutGrass::
 	goto EventScript_CutGrassCommon
 
 Text_CantDive:
-	.string "{JPN}ふかい うみだ!\nポケモンの わざで もぐれるかも?$"
+	.string "ふかい うみだ!\nポケモンの わざで もぐれるかも?$"
 
 Text_WantToDive:
-	.string "{JPN}ふかい うみだ!\nダイビングを つかいますか?$"
+	.string "ふかい うみだ!\nダイビングを つかいますか?$"
 
 Text_MonUsedDive:
-	.string "{JPN}{STR_VAR_1} は ダイビングを つかった!$"
+	.string "{STR_VAR_1} は ダイビングを つかった!$"
 
 Text_CantSurface:
-	.string "{JPN}うえから ひかりが さしこんでいる!\nポケモンの わざで ふじょうできるかも?$"
+	.string "うえから ひかりが さしこんでいる!\nポケモンの わざで ふじょうできるかも?$"
 
 Text_WantToSurface:
-	.string "{JPN}うえから ひかりが さしこんでいる!\nダイビングを つかいますか?$"
+	.string "うえから ひかりが さしこんでいる!\nダイビングを つかいますか?$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN
 	end
 
 Text_FailSweetScent:
-	.string "{JPN}ここには\nなにも いないようだ……$"
+	.string "ここには\nなにも いないようだ……$"
 
 EventScript_UseDefog::
 	lockall

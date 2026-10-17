@@ -35,13 +35,13 @@ OldSeaMap_Obtained:
 	end
 
 sText_MysteryGiftOldSeaMapForYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの かいずが\lおくられて きました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございます!\l{PLAYER}さま ですね\pあなたさま あてに\nこの かいずが\lおくられて きました$"
 
 sText_MysteryGiftOldSeaMapUseAtPort:
-	.string "{JPN}ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
+	.string "ミナモシティの ふなつきば で\nつかえる ようですね\pぜひ ごりよう してみては\nいかがでしょうか?$"
 
 sText_MysteryGiftOldSeaMapThankYou:
-	.string "{JPN}ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
+	.string "ふしぎなおくりもの を ごりよう\nいただき ありがとう ございました$"
 
 sText_MysteryGiftOldSeaMapBagFull:
-	.string "{JPN}しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"
+	.string "しかし {PLAYER}さま!\nたいせつなものが いっぱい です\pパソコンに あずけてから\nまた きてください$"

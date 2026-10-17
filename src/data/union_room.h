@@ -1,24 +1,24 @@
 ALIGNED(4) static const u8 sText_EmptyString[] = _("");
 ALIGNED(4) static const u8 sText_Colon[] = _(":");
 ALIGNED(4) static const u8 sText_ID[] = _("{ID}");
-ALIGNED(4) static const u8 sText_PleaseStartOver[] = _("{JPN} もういちど さいしょから\nてつづきを やりなおして ください");
-ALIGNED(4) static const u8 sText_WirelessSearchCanceled[] = _("{JPN} ジョイスポットの けんさくを\nちゅうししました");
-ALIGNED(4) static const u8 sText_AwaitingCommunucation2[] = _("{JPN}ともだちからの れんらくを\nまっています"); // Unused
-ALIGNED(4) static const u8 sText_AwaitingCommunication[] = _("{JPN}   {STR_VAR_1}!\nともだちからの れんらくを まっています");
-ALIGNED(4) static const u8 sText_AwaitingLinkPressStart[] = _("{JPN}   {STR_VAR_1}! れんらくまち!\nにんずうが そろったら STARTボタン");
-ALIGNED(4) static const u8 sJPText_SingleBattle[] = _("{JPN}   シングルバトルを かいさいする");
-ALIGNED(4) static const u8 sJPText_DoubleBattle[] = _("{JPN}ダブルバトルを かいさいする");
-ALIGNED(4) static const u8 sJPText_MultiBattle[] = _("{JPN} マルチバトルを かいさいする");
-ALIGNED(4) static const u8 sJPText_TradePokemon[] = _("{JPN} ポケモンこうかんを かいさいする");
-ALIGNED(4) static const u8 sJPText_Chat[] = _("{JPN}   チャットを かいさいする");
-ALIGNED(4) static const u8 sJPText_DistWonderCard[] = _("{JPN}   ふしぎなカードをくばる");
-ALIGNED(4) static const u8 sJPText_DistWonderNews[] = _("{JPN}ふしぎなニュースをくばる");
-ALIGNED(4) static const u8 sJPText_DistMysteryEvent[] = _("{JPN}   ふしぎなできごとを かいさいする"); // Unused
-ALIGNED(4) static const u8 sJPText_HoldPokemonJump[] = _("{JPN}   なわとびを かいさいする");
-ALIGNED(4) static const u8 sJPText_HoldBerryCrush[] = _("{JPN}   きのみマッシャーを かいさいする");
-ALIGNED(4) static const u8 sJPText_HoldBerryPicking[] = _("{JPN}   きのみどりを かいさいする");
-ALIGNED(4) static const u8 sJPText_HoldSpinTrade[] = _("{JPN}  ぐるぐるこうかんを かいさいする");
-ALIGNED(4) static const u8 sJPText_HoldSpinShop[] = _("{JPN}   ぐるぐるショップを かいさいする");
+ALIGNED(4) static const u8 sText_PleaseStartOver[] = _(" もういちど さいしょから\nてつづきを やりなおして ください");
+ALIGNED(4) static const u8 sText_WirelessSearchCanceled[] = _(" ジョイスポットの けんさくを\nちゅうししました");
+ALIGNED(4) static const u8 sText_AwaitingCommunucation2[] = _("ともだちからの れんらくを\nまっています"); // Unused
+ALIGNED(4) static const u8 sText_AwaitingCommunication[] = _("   {STR_VAR_1}!\nともだちからの れんらくを まっています");
+ALIGNED(4) static const u8 sText_AwaitingLinkPressStart[] = _("   {STR_VAR_1}! れんらくまち!\nにんずうが そろったら STARTボタン");
+ALIGNED(4) static const u8 sJPText_SingleBattle[] = _("   シングルバトルを かいさいする");
+ALIGNED(4) static const u8 sJPText_DoubleBattle[] = _("ダブルバトルを かいさいする");
+ALIGNED(4) static const u8 sJPText_MultiBattle[] = _(" マルチバトルを かいさいする");
+ALIGNED(4) static const u8 sJPText_TradePokemon[] = _(" ポケモンこうかんを かいさいする");
+ALIGNED(4) static const u8 sJPText_Chat[] = _("   チャットを かいさいする");
+ALIGNED(4) static const u8 sJPText_DistWonderCard[] = _("   ふしぎなカードをくばる");
+ALIGNED(4) static const u8 sJPText_DistWonderNews[] = _("ふしぎなニュースをくばる");
+ALIGNED(4) static const u8 sJPText_DistMysteryEvent[] = _("   ふしぎなできごとを かいさいする"); // Unused
+ALIGNED(4) static const u8 sJPText_HoldPokemonJump[] = _("   なわとびを かいさいする");
+ALIGNED(4) static const u8 sJPText_HoldBerryCrush[] = _("   きのみマッシャーを かいさいする");
+ALIGNED(4) static const u8 sJPText_HoldBerryPicking[] = _("   きのみどりを かいさいする");
+ALIGNED(4) static const u8 sJPText_HoldSpinTrade[] = _("  ぐるぐるこうかんを かいさいする");
+ALIGNED(4) static const u8 sJPText_HoldSpinShop[] = _("   ぐるぐるショップを かいさいする");
 
 // Unused
 static const u8 *const sJPLinkGroupActionTexts[] = {
@@ -38,14 +38,14 @@ static const u8 *const sJPLinkGroupActionTexts[] = {
     sJPText_HoldSpinShop
 };
 
-static const u8 sText_1PlayerNeeded[] = _("{JPN}あと1にん\nひつよう");
-static const u8 sText_2PlayersNeeded[] = _("{JPN}あと2にん\nひつよう");
-static const u8 sText_3PlayersNeeded[] = _("{JPN}あと3にん\nひつよう");
-static const u8 sText_4PlayersNeeded[] = _("{JPN}あと4にん\nひつよう");
-static const u8 sText_2PlayerMode[] = _("{JPN}2にん\nプレイ");
-static const u8 sText_3PlayerMode[] = _("{JPN}3にん\nプレイ");
-static const u8 sText_4PlayerMode[] = _("{JPN}4にん\nプレイ");
-static const u8 sText_5PlayerMode[] = _("{JPN}5にん\nプレイ");
+static const u8 sText_1PlayerNeeded[] = _("あと1にん\nひつよう");
+static const u8 sText_2PlayersNeeded[] = _("あと2にん\nひつよう");
+static const u8 sText_3PlayersNeeded[] = _("あと3にん\nひつよう");
+static const u8 sText_4PlayersNeeded[] = _("あと4にん\nひつよう");
+static const u8 sText_2PlayerMode[] = _("2にん\nプレイ");
+static const u8 sText_3PlayerMode[] = _("3にん\nプレイ");
+static const u8 sText_4PlayerMode[] = _("4にん\nプレイ");
+static const u8 sText_5PlayerMode[] = _("5にん\nプレイ");
 
 static const u8 *const sPlayersNeededOrModeTexts[][5] = {
     // 2 players required
@@ -85,38 +85,38 @@ static const u8 *const sPlayersNeededOrModeTexts[][5] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_BButtonCancel[] = _("{JPN}{B_BUTTON}やめる");
-ALIGNED(4) static const u8 sJPText_SearchingForParticipants[] = _("{JPN}  ため\nさんかしゃ ぼしゅうちゅう です!"); // Unused, may have been cut off
-ALIGNED(4) static const u8 sText_PlayerContactedYouForXAccept[] = _("{JPN}   {STR_VAR_2}から れんらくあり!\n{STR_VAR_1}を しますか?");
-ALIGNED(4) static const u8 sText_PlayerContactedYouShareX[] = _("{JPN} {STR_VAR_2}から れんらくあり!\n{STR_VAR_1}を くばりますか?");
-ALIGNED(4) static const u8 sText_PlayerContactedYouAddToMembers[] = _("{JPN}   {STR_VAR_2}から れんらくあり!\nメンバーに しますか?");
-ALIGNED(4) static const u8 sText_AreTheseMembersOK[] = _("{JPN}   {STR_VAR_1}!\nこの メンバーで よろしいですか?");
-ALIGNED(4) static const u8 sText_CancelModeWithTheseMembers[] = _("{JPN}  この メンバーで {STR_VAR_1}を\nするのは やめますか?");
-ALIGNED(4) static const u8 sText_AnOKWasSentToPlayer[] = _("{JPN}   {STR_VAR_1}に OKの\nへんじを だしました");
-ALIGNED(4) static const u8 sText_OtherTrainerUnavailableNow[] = _("{JPN} あいての\nつごうが わるいみたい…\p");
-ALIGNED(4) static const u8 sText_CantTransmitTrainerTooFar[] = _("{JPN} まだ とおくの かたとは\nつうしんは できません\p");
-ALIGNED(4) static const u8 sText_TrainersNotReadyYet[] = _("{JPN}  あいての じゅんびが\nできていません\p");
+ALIGNED(4) static const u8 sText_BButtonCancel[] = _("{B_BUTTON}やめる");
+ALIGNED(4) static const u8 sJPText_SearchingForParticipants[] = _("  ため\nさんかしゃ ぼしゅうちゅう です!"); // Unused, may have been cut off
+ALIGNED(4) static const u8 sText_PlayerContactedYouForXAccept[] = _("   {STR_VAR_2}から れんらくあり!\n{STR_VAR_1}を しますか?");
+ALIGNED(4) static const u8 sText_PlayerContactedYouShareX[] = _(" {STR_VAR_2}から れんらくあり!\n{STR_VAR_1}を くばりますか?");
+ALIGNED(4) static const u8 sText_PlayerContactedYouAddToMembers[] = _("   {STR_VAR_2}から れんらくあり!\nメンバーに しますか?");
+ALIGNED(4) static const u8 sText_AreTheseMembersOK[] = _("   {STR_VAR_1}!\nこの メンバーで よろしいですか?");
+ALIGNED(4) static const u8 sText_CancelModeWithTheseMembers[] = _("  この メンバーで {STR_VAR_1}を\nするのは やめますか?");
+ALIGNED(4) static const u8 sText_AnOKWasSentToPlayer[] = _("   {STR_VAR_1}に OKの\nへんじを だしました");
+ALIGNED(4) static const u8 sText_OtherTrainerUnavailableNow[] = _(" あいての\nつごうが わるいみたい…\p");
+ALIGNED(4) static const u8 sText_CantTransmitTrainerTooFar[] = _(" まだ とおくの かたとは\nつうしんは できません\p");
+ALIGNED(4) static const u8 sText_TrainersNotReadyYet[] = _("  あいての じゅんびが\nできていません\p");
 
 static const u8 *const sCantTransmitToTrainerTexts[] = {
     [UR_TRADE_PLAYER_NOT_READY - 1]  = sText_CantTransmitTrainerTooFar,
     [UR_TRADE_PARTNER_NOT_READY - 1] = sText_TrainersNotReadyYet
 };
 
-ALIGNED(4) static const u8 sText_ModeWithTheseMembersWillBeCanceled[] = _("{JPN}この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}");
-ALIGNED(4) static const u8 sText_MemberNoLongerAvailable[] = _("{JPN}  つごうが わるくなってしまった\nメンバーが います\p");
+ALIGNED(4) static const u8 sText_ModeWithTheseMembersWillBeCanceled[] = _("この メンバーで {STR_VAR_1}を\nするのは やめます{PAUSE 60}");
+ALIGNED(4) static const u8 sText_MemberNoLongerAvailable[] = _("  つごうが わるくなってしまった\nメンバーが います\p");
 
 static const u8 *const sPlayerUnavailableTexts[] = {
     sText_OtherTrainerUnavailableNow,
     sText_MemberNoLongerAvailable
 };
 
-ALIGNED(4) static const u8 sText_TrainerAppearsUnavailable[] = _("{JPN}つごうが わるいみたい…\p");
-ALIGNED(4) static const u8 sText_PlayerSentBackOK[] =    _("{JPN}  {STR_VAR_1}から OKとの\nへんじが ありました!");
-ALIGNED(4) static const u8 sText_PlayerOKdRegistration[] = _("{JPN}  {STR_VAR_1}から メンバー とうろく\nOKとの れんらくが きました!");
-ALIGNED(4) static const u8 sText_PlayerRepliedNo[] = _("{JPN}{STR_VAR_1}から NGとの\nへんじが きてしまいました…\p");
-ALIGNED(4) static const u8 sText_AwaitingOtherMembers[] = _("{JPN}  {STR_VAR_1}!\nほかの メンバーを まっています!");
-ALIGNED(4) static const u8 sText_QuitBeingMember[] = _("{JPN}  メンバーから ぬけますか?");
-ALIGNED(4) static const u8 sText_StoppedBeingMember[] = _("{JPN}  メンバーから ぬけました\p");
+ALIGNED(4) static const u8 sText_TrainerAppearsUnavailable[] = _("つごうが わるいみたい…\p");
+ALIGNED(4) static const u8 sText_PlayerSentBackOK[] =    _("  {STR_VAR_1}から OKとの\nへんじが ありました!");
+ALIGNED(4) static const u8 sText_PlayerOKdRegistration[] = _("  {STR_VAR_1}から メンバー とうろく\nOKとの れんらくが きました!");
+ALIGNED(4) static const u8 sText_PlayerRepliedNo[] = _("{STR_VAR_1}から NGとの\nへんじが きてしまいました…\p");
+ALIGNED(4) static const u8 sText_AwaitingOtherMembers[] = _("  {STR_VAR_1}!\nほかの メンバーを まっています!");
+ALIGNED(4) static const u8 sText_QuitBeingMember[] = _("  メンバーから ぬけますか?");
+ALIGNED(4) static const u8 sText_StoppedBeingMember[] = _("  メンバーから ぬけました\p");
 
 static const u8 *const sPlayerDisconnectedTexts[] = {
     [RFU_STATUS_OK]                  = NULL,
@@ -131,10 +131,10 @@ static const u8 *const sPlayerDisconnectedTexts[] = {
     [RFU_STATUS_LEAVE_GROUP]         = sText_StoppedBeingMember
 };
 
-ALIGNED(4) static const u8 sText_WirelessLinkEstablished[] = _("{JPN}ジョイスポットとの せつぞくに\nせいこう しました!");
-ALIGNED(4) static const u8 sText_WirelessLinkDropped[] = _("{JPN} ジョイスポットから せつぞくを\nせつだん されました…");
-ALIGNED(4) static const u8 sText_LinkWithFriendDropped[] = _("{JPN}おともだちとの つうしんが\nせつだん されました…");
-ALIGNED(4) static const u8 sText_PlayerRepliedNo2[] = _("{JPN}  {STR_VAR_1}から NGとの\nへんじが きてしまいました…");
+ALIGNED(4) static const u8 sText_WirelessLinkEstablished[] = _("ジョイスポットとの せつぞくに\nせいこう しました!");
+ALIGNED(4) static const u8 sText_WirelessLinkDropped[] = _(" ジョイスポットから せつぞくを\nせつだん されました…");
+ALIGNED(4) static const u8 sText_LinkWithFriendDropped[] = _("おともだちとの つうしんが\nせつだん されました…");
+ALIGNED(4) static const u8 sText_PlayerRepliedNo2[] = _("  {STR_VAR_1}から NGとの\nへんじが きてしまいました…");
 
 static const u8 *const sLinkDroppedTexts[] = {
     [RFU_STATUS_OK]                  = NULL,
@@ -149,8 +149,8 @@ static const u8 *const sLinkDroppedTexts[] = {
     [RFU_STATUS_LEAVE_GROUP]         = NULL
 };
 
-ALIGNED(4) static const u8 sText_DoYouWantXMode[] = _("{JPN}{STR_VAR_2}を したいのかい?");
-ALIGNED(4) static const u8 sText_DoYouWantXMode2[] = _("{JPN}{STR_VAR_2}で いいかしら?");
+ALIGNED(4) static const u8 sText_DoYouWantXMode[] = _("{STR_VAR_2}を したいのかい?");
+ALIGNED(4) static const u8 sText_DoYouWantXMode2[] = _("{STR_VAR_2}で いいかしら?");
 
 // Unused
 static const u8 *const sDoYouWantModeTexts[] = {
@@ -158,11 +158,11 @@ static const u8 *const sDoYouWantModeTexts[] = {
     sText_DoYouWantXMode2
 };
 
-ALIGNED(4) static const u8 sText_CommunicatingPleaseWait[] = _("{JPN}はなしかけています…\nしょうしょう おまちください"); // Unused
-ALIGNED(4) static const u8 sText_AwaitingPlayersResponseAboutTrade[] = _("{JPN}  {STR_VAR_1}からの こうかんの\nへんじを まっています…");
-ALIGNED(4) static const u8 sText_Communicating[] = _("{JPN}   はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
-ALIGNED(4) static const u8 sText_CommunicatingWithPlayer[] = _("{JPN} {STR_VAR_1}に はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
-ALIGNED(4) static const u8 sText_PleaseWaitAWhile[] = _("{JPN} しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
+ALIGNED(4) static const u8 sText_CommunicatingPleaseWait[] = _("はなしかけています…\nしょうしょう おまちください"); // Unused
+ALIGNED(4) static const u8 sText_AwaitingPlayersResponseAboutTrade[] = _("  {STR_VAR_1}からの こうかんの\nへんじを まっています…");
+ALIGNED(4) static const u8 sText_Communicating[] = _("   はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
+ALIGNED(4) static const u8 sText_CommunicatingWithPlayer[] = _(" {STR_VAR_1}に はなしかけています{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
+ALIGNED(4) static const u8 sText_PleaseWaitAWhile[] = _(" しょうしょうおまちください{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・\n{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・{PAUSE 15}・");
 
 static const u8 *const sCommunicatingWaitTexts[] = {
     sText_Communicating,
@@ -170,10 +170,10 @@ static const u8 *const sCommunicatingWaitTexts[] = {
     sText_PleaseWaitAWhile
 };
 
-ALIGNED(4) static const u8 sText_HiDoSomethingMale[] = _("{JPN}やあ!\nなにか するかい?");
-ALIGNED(4) static const u8 sText_HiDoSomethingFemale[] = _("{JPN}  こんにちは!\nなにか する?");
-ALIGNED(4) static const u8 sText_HiDoSomethingAgainMale[] = _("{JPN} {STR_VAR_1}「やあ また あったね!\nこんどは なにをする?");
-ALIGNED(4) static const u8 sText_HiDoSomethingAgainFemale[] = _("{JPN} {STR_VAR_1}「あ! {PLAYER}\nこんにちは! また なにかする?");
+ALIGNED(4) static const u8 sText_HiDoSomethingMale[] = _("やあ!\nなにか するかい?");
+ALIGNED(4) static const u8 sText_HiDoSomethingFemale[] = _("  こんにちは!\nなにか する?");
+ALIGNED(4) static const u8 sText_HiDoSomethingAgainMale[] = _(" {STR_VAR_1}「やあ また あったね!\nこんどは なにをする?");
+ALIGNED(4) static const u8 sText_HiDoSomethingAgainFemale[] = _(" {STR_VAR_1}「あ! {PLAYER}\nこんにちは! また なにかする?");
 
 static const u8 *const sHiDoSomethingTexts[][GENDER_COUNT] = {
     {
@@ -185,10 +185,10 @@ static const u8 *const sHiDoSomethingTexts[][GENDER_COUNT] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_DoSomethingMale[] = _("{JPN}なにか するかい?");
-ALIGNED(4) static const u8 sText_DoSomethingFemale[] = _("{JPN}  なにか する?");
-ALIGNED(4) static const u8 sText_DoSomethingAgainMale[] = _("{JPN}{STR_VAR_1}「こんどは なにをする?");
-ALIGNED(4) static const u8 sText_DoSomethingAgainFemale[] = _("{JPN} {STR_VAR_1}「また なにかする?"); // Unused
+ALIGNED(4) static const u8 sText_DoSomethingMale[] = _("なにか するかい?");
+ALIGNED(4) static const u8 sText_DoSomethingFemale[] = _("  なにか する?");
+ALIGNED(4) static const u8 sText_DoSomethingAgainMale[] = _("{STR_VAR_1}「こんどは なにをする?");
+ALIGNED(4) static const u8 sText_DoSomethingAgainFemale[] = _(" {STR_VAR_1}「また なにかする?"); // Unused
 
 // Unused
 static const u8 *const sDoSomethingTexts[][GENDER_COUNT] = {
@@ -201,31 +201,31 @@ static const u8 *const sDoSomethingTexts[][GENDER_COUNT] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_SomebodyHasContactedYou[] = _("{JPN}だれかが\nはなしかけて きました{PAUSE 60}");
-ALIGNED(4) static const u8 sText_PlayerHasContactedYou[] = _("{JPN}{STR_VAR_1}が\nはなしかけて きました{PAUSE 60}");
+ALIGNED(4) static const u8 sText_SomebodyHasContactedYou[] = _("だれかが\nはなしかけて きました{PAUSE 60}");
+ALIGNED(4) static const u8 sText_PlayerHasContactedYou[] = _("{STR_VAR_1}が\nはなしかけて きました{PAUSE 60}");
 
 static const u8 *const sPlayerContactedYouTexts[] = {
     sText_SomebodyHasContactedYou,
     sText_PlayerHasContactedYou
 };
 
-ALIGNED(4) static const u8 sText_AwaitingResponseFromTrainer[] = _("{JPN}あいての へんじを\nまっています");
-ALIGNED(4) static const u8 sText_AwaitingResponseFromPlayer[] = _("{JPN}   {STR_VAR_1}の へんじを\nまっています");
+ALIGNED(4) static const u8 sText_AwaitingResponseFromTrainer[] = _("あいての へんじを\nまっています");
+ALIGNED(4) static const u8 sText_AwaitingResponseFromPlayer[] = _("   {STR_VAR_1}の へんじを\nまっています");
 
 static const u8 *const sAwaitingResponseTexts[] = {
     sText_AwaitingResponseFromTrainer,
     sText_AwaitingResponseFromPlayer
 };
 
-ALIGNED(4) static const u8 sText_ShowTrainerCard[] = _("{JPN}あいてが トレーナーカードを\nみせて きました\pこちらも トレーナーカードを\nみせますか?");
-ALIGNED(4) static const u8 sText_BattleChallenge[] = _("{JPN}  あいてが たいせんを\nもうしこんで きました\pたいせん しますか?");
-ALIGNED(4) static const u8 sText_ChatInvitation[] = _("{JPN}  あいてが チャット に\nさそって きました\pいっしょに チャット\nしますか?");
-ALIGNED(4) static const u8 sText_OfferToTradeMon[] = _("{JPN} とうろく していた\nLV{DYNAMIC 0} の {DYNAMIC 1} と\pLV{DYNAMIC 2}の {DYNAMIC 3} の\nこうかん もうしこみが きています\pこうかん しますか?");
-ALIGNED(4) static const u8 sText_OfferToTradeEgg[] = _("{JPN}   とうろく していた タマゴの\nこうかん もうしこみが きています\lこうかん しますか?");
-ALIGNED(4) static const u8 sText_ChatDropped[] = _("{JPN}かいわが きれました\p");
-ALIGNED(4) static const u8 sText_OfferDeclined1[] = _("{JPN}もうしこみを\nことわり ました\p");
-ALIGNED(4) static const u8 sText_OfferDeclined2[] = _("{JPN}   おさそいを\nことわり ました\p");
-ALIGNED(4) static const u8 sText_ChatEnded[] = _("{JPN}かいわを きりました\p");
+ALIGNED(4) static const u8 sText_ShowTrainerCard[] = _("あいてが トレーナーカードを\nみせて きました\pこちらも トレーナーカードを\nみせますか?");
+ALIGNED(4) static const u8 sText_BattleChallenge[] = _("  あいてが たいせんを\nもうしこんで きました\pたいせん しますか?");
+ALIGNED(4) static const u8 sText_ChatInvitation[] = _("  あいてが チャット に\nさそって きました\pいっしょに チャット\nしますか?");
+ALIGNED(4) static const u8 sText_OfferToTradeMon[] = _(" とうろく していた\nLV{DYNAMIC 0} の {DYNAMIC 1} と\pLV{DYNAMIC 2}の {DYNAMIC 3} の\nこうかん もうしこみが きています\pこうかん しますか?");
+ALIGNED(4) static const u8 sText_OfferToTradeEgg[] = _("   とうろく していた タマゴの\nこうかん もうしこみが きています\lこうかん しますか?");
+ALIGNED(4) static const u8 sText_ChatDropped[] = _("かいわが きれました\p");
+ALIGNED(4) static const u8 sText_OfferDeclined1[] = _("もうしこみを\nことわり ました\p");
+ALIGNED(4) static const u8 sText_OfferDeclined2[] = _("   おさそいを\nことわり ました\p");
+ALIGNED(4) static const u8 sText_ChatEnded[] = _("かいわを きりました\p");
 
 // Unused
 static const u8 *const sInvitationTexts[] = {
@@ -235,10 +235,10 @@ static const u8 *const sInvitationTexts[] = {
     sText_OfferToTradeMon
 };
 
-ALIGNED(4) static const u8 sText_JoinChatMale[] = _("{JPN}お! いま おれたち\nチャットちゅう なんだ!\lよかったら いっしょに はいるかい?");
-ALIGNED(4) static const u8 sText_PlayerJoinChatMale[] = _("{JPN} {STR_VAR_1}「お! {PLAYER}\nいま チャットちゅう なんだ!\lよかったら いっしょに はいるかい?");
-ALIGNED(4) static const u8 sText_JoinChatFemale[] = _("{JPN}あ! いまね わたしたち\nチャット してるんだ\lよかったら いっしょに しない?");
-ALIGNED(4) static const u8 sText_PlayerJoinChatFemale[] = _("{JPN}   {STR_VAR_1}「あ! {PLAYER}\nいまね チャット してるんだ\lよかったら いっしょに しない?");
+ALIGNED(4) static const u8 sText_JoinChatMale[] = _("お! いま おれたち\nチャットちゅう なんだ!\lよかったら いっしょに はいるかい?");
+ALIGNED(4) static const u8 sText_PlayerJoinChatMale[] = _(" {STR_VAR_1}「お! {PLAYER}\nいま チャットちゅう なんだ!\lよかったら いっしょに はいるかい?");
+ALIGNED(4) static const u8 sText_JoinChatFemale[] = _("あ! いまね わたしたち\nチャット してるんだ\lよかったら いっしょに しない?");
+ALIGNED(4) static const u8 sText_PlayerJoinChatFemale[] = _("   {STR_VAR_1}「あ! {PLAYER}\nいまね チャット してるんだ\lよかったら いっしょに しない?");
 
 static const u8 *const sJoinChatTexts[][GENDER_COUNT] = {
     {
@@ -250,13 +250,13 @@ static const u8 *const sJoinChatTexts[][GENDER_COUNT] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_TrainerAppearsBusy[] = _("{JPN}……\nいまは とりこみちゅうの ようだ\p");
-ALIGNED(4) static const u8 sText_WaitForBattleMale[] = _("{JPN}   たいせんだね!\nよーし ちょっと まってて!");
-ALIGNED(4) static const u8 sText_WaitForChatMale[] = _("{JPN} チャットだね!\nわかった ちょっと まってて!");
-ALIGNED(4) static const u8 sText_ShowTrainerCardMale[] = _("{JPN}わかった! じゃあ あいさつがわりに\nトレーナーカードを みせてあげるよ");
-ALIGNED(4) static const u8 sText_WaitForBattleFemale[] = _("{JPN}   たいせんね!\nよーし ちょっと まってて!");
-ALIGNED(4) static const u8 sText_WaitForChatFemale[] = _("{JPN}  チャットね!\nわかったわ ちょっと まってて!");
-ALIGNED(4) static const u8 sText_ShowTrainerCardFemale[] = _("{JPN}じゃあ あいさつの かわりに\nトレーナーカードを みせてあげるね");
+ALIGNED(4) static const u8 sText_TrainerAppearsBusy[] = _("……\nいまは とりこみちゅうの ようだ\p");
+ALIGNED(4) static const u8 sText_WaitForBattleMale[] = _("   たいせんだね!\nよーし ちょっと まってて!");
+ALIGNED(4) static const u8 sText_WaitForChatMale[] = _(" チャットだね!\nわかった ちょっと まってて!");
+ALIGNED(4) static const u8 sText_ShowTrainerCardMale[] = _("わかった! じゃあ あいさつがわりに\nトレーナーカードを みせてあげるよ");
+ALIGNED(4) static const u8 sText_WaitForBattleFemale[] = _("   たいせんね!\nよーし ちょっと まってて!");
+ALIGNED(4) static const u8 sText_WaitForChatFemale[] = _("  チャットね!\nわかったわ ちょっと まってて!");
+ALIGNED(4) static const u8 sText_ShowTrainerCardFemale[] = _("じゃあ あいさつの かわりに\nトレーナーカードを みせてあげるね");
 
 static const u8 *const sText_WaitOrShowCardTexts[GENDER_COUNT][4] = {
     {
@@ -272,14 +272,14 @@ static const u8 *const sText_WaitOrShowCardTexts[GENDER_COUNT][4] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_WaitForChatMale2[] = _("{JPN}チャットだね!\nわかった ちょっと まってて!"); // Unused
-ALIGNED(4) static const u8 sText_DoneWaitingBattleMale[] = _("{JPN}またせたね!\nそれじゃあ たいせん しようか!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_DoneWaitingChatMale[] = _("{JPN} よし! じゃあ いっしょに\nチャット しようぜ!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_DoneWaitingBattleFemale[] = _("{JPN}おまたせ!\nそれじゃあ はじめましょう!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_DoneWaitingChatFemale[] = _("{JPN}おまたせ! じゃあ いっしょに\nチャット しましょう!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_TradeWillBeStarted[] = _("{JPN} こうかんを\nかいし します{PAUSE 60}");
-ALIGNED(4) static const u8 sText_BattleWillBeStarted[] = _("{JPN}   たいせんを\nかいし します!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_EnteringChat[] = _("{JPN}  チャットを\nかいし します!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_WaitForChatMale2[] = _("チャットだね!\nわかった ちょっと まってて!"); // Unused
+ALIGNED(4) static const u8 sText_DoneWaitingBattleMale[] = _("またせたね!\nそれじゃあ たいせん しようか!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_DoneWaitingChatMale[] = _(" よし! じゃあ いっしょに\nチャット しようぜ!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_DoneWaitingBattleFemale[] = _("おまたせ!\nそれじゃあ はじめましょう!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_DoneWaitingChatFemale[] = _("おまたせ! じゃあ いっしょに\nチャット しましょう!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_TradeWillBeStarted[] = _(" こうかんを\nかいし します{PAUSE 60}");
+ALIGNED(4) static const u8 sText_BattleWillBeStarted[] = _("   たいせんを\nかいし します!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_EnteringChat[] = _("  チャットを\nかいし します!{PAUSE 60}");
 
 static const u8 *const sStartActivityTexts[][GENDER_COUNT][3] = {
     {
@@ -305,36 +305,36 @@ static const u8 *const sStartActivityTexts[][GENDER_COUNT][3] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_BattleDeclinedMale[] = _("{JPN}ごめん! ちょっと ポケモンの\nちょうしが わるい みたいなんだ\lまた こんど たいせん しよう\p");
-ALIGNED(4) static const u8 sText_BattleDeclinedFemale[] = _("{JPN}  ごめんなさい!\nちょっと ポケモンの ちょうしが\lわるい みたいなの……\pまた こんど\nたいせん しようね!\p");
+ALIGNED(4) static const u8 sText_BattleDeclinedMale[] = _("ごめん! ちょっと ポケモンの\nちょうしが わるい みたいなんだ\lまた こんど たいせん しよう\p");
+ALIGNED(4) static const u8 sText_BattleDeclinedFemale[] = _("  ごめんなさい!\nちょっと ポケモンの ちょうしが\lわるい みたいなの……\pまた こんど\nたいせん しようね!\p");
 
 static const u8 *const sBattleDeclinedTexts[GENDER_COUNT] = {
     sText_BattleDeclinedMale,
     sText_BattleDeclinedFemale
 };
 
-ALIGNED(4) static const u8 sText_ShowTrainerCardDeclinedMale[] = _("{JPN}あれ!? トレーナーカードが\nみあたらない なあ\lごめん! またこんどね\p");
-ALIGNED(4) static const u8 sText_ShowTrainerCardDeclinedFemale[] = _("{JPN}  あれ!? トレーナーカード\nどこ いったかな?……\lごめん! またこんどね\p");
+ALIGNED(4) static const u8 sText_ShowTrainerCardDeclinedMale[] = _("あれ!? トレーナーカードが\nみあたらない なあ\lごめん! またこんどね\p");
+ALIGNED(4) static const u8 sText_ShowTrainerCardDeclinedFemale[] = _("  あれ!? トレーナーカード\nどこ いったかな?……\lごめん! またこんどね\p");
 
 static const u8 *const sShowTrainerCardDeclinedTexts[GENDER_COUNT] = {
     sText_ShowTrainerCardDeclinedMale,
     sText_ShowTrainerCardDeclinedFemale
 };
 
-ALIGNED(4) static const u8 sText_IfYouWantToDoSomethingMale[] = _("{JPN}なにか したくなったら\nまた こえを かけてくれよ\p");
-ALIGNED(4) static const u8 sText_IfYouWantToDoSomethingFemale[] = _("{JPN} なにか したくなったら\nまた こえを かけてね!\p");
+ALIGNED(4) static const u8 sText_IfYouWantToDoSomethingMale[] = _("なにか したくなったら\nまた こえを かけてくれよ\p");
+ALIGNED(4) static const u8 sText_IfYouWantToDoSomethingFemale[] = _(" なにか したくなったら\nまた こえを かけてね!\p");
 
 static const u8 *const sIfYouWantToDoSomethingTexts[GENDER_COUNT] = {
     sText_IfYouWantToDoSomethingMale,
     sText_IfYouWantToDoSomethingFemale
 };
 
-ALIGNED(4) static const u8 sText_TrainerBattleBusy[] = _("{JPN}あ! ごめん\nほかに ようじが あるから\lまたこんどね\p");
-ALIGNED(4) static const u8 sText_NeedTwoMonsOfLevel30OrLower1[] = _("{JPN}   たいせんを するためには\nレベル30より ひくい ポケモンが\l2ひき ひつよう だよ\p");
-ALIGNED(4) static const u8 sText_NeedTwoMonsOfLevel30OrLower2[] = _("{JPN}たいせんを するためには\nレベル30 よりひくい ポケモンが\l2ひき ひつようです\p");
+ALIGNED(4) static const u8 sText_TrainerBattleBusy[] = _("あ! ごめん\nほかに ようじが あるから\lまたこんどね\p");
+ALIGNED(4) static const u8 sText_NeedTwoMonsOfLevel30OrLower1[] = _("   たいせんを するためには\nレベル30より ひくい ポケモンが\l2ひき ひつよう だよ\p");
+ALIGNED(4) static const u8 sText_NeedTwoMonsOfLevel30OrLower2[] = _("たいせんを するためには\nレベル30 よりひくい ポケモンが\l2ひき ひつようです\p");
 
-ALIGNED(4) static const u8 sText_DeclineChatMale[] = _("{JPN} そうか\nまた いつでも おいでよ!\p");
-ALIGNED(4) static const u8 stext_DeclineChatFemale[] = _("{JPN} そう……\nまた いつでも きてね!\p");
+ALIGNED(4) static const u8 sText_DeclineChatMale[] = _(" そうか\nまた いつでも おいでよ!\p");
+ALIGNED(4) static const u8 stext_DeclineChatFemale[] = _(" そう……\nまた いつでも きてね!\p");
 
 // Response from partner when player declines chat
 static const u8 *const sDeclineChatTexts[GENDER_COUNT] = {
@@ -342,8 +342,8 @@ static const u8 *const sDeclineChatTexts[GENDER_COUNT] = {
     stext_DeclineChatFemale
 };
 
-ALIGNED(4) static const u8 sText_ChatDeclinedMale[] = _("{JPN}あっ ごめん!\nやっぱり いま つごうがわるいんだ\lまた こんど チャット しような\p");
-ALIGNED(4) static const u8 sText_ChatDeclinedFemale[] = _("{JPN}ごめん!\nやっぱり いま つごうが わるいの\lまた こんど チャット しようね\p");
+ALIGNED(4) static const u8 sText_ChatDeclinedMale[] = _("あっ ごめん!\nやっぱり いま つごうがわるいんだ\lまた こんど チャット しような\p");
+ALIGNED(4) static const u8 sText_ChatDeclinedFemale[] = _("ごめん!\nやっぱり いま つごうが わるいの\lまた こんど チャット しようね\p");
 
 // Response from partner when they decline chat
 static const u8 *const sChatDeclinedTexts[GENDER_COUNT] = {
@@ -351,14 +351,14 @@ static const u8 *const sChatDeclinedTexts[GENDER_COUNT] = {
     sText_ChatDeclinedFemale
 };
 
-ALIGNED(4) static const u8 sText_YoureToughMale[] = _("{JPN}おー!\nなかなか てごわいな!\p");
-ALIGNED(4) static const u8 sText_UsedGoodMoveMale[] = _("{JPN}   ここで そんな わざを\nだして くるなんて やるな!\p");
-ALIGNED(4) static const u8 sText_BattleSurpriseMale[] = _("{JPN}さすがだ!\nそんな たたかいかたも あるのか!\p");
-ALIGNED(4) static const u8 sText_SwitchedMonsMale[] = _("{JPN}   この ポケモンを\nこんな ばめんで だしてくるとは!\p");
-ALIGNED(4) static const u8 sText_YoureToughFemale[] = _("{JPN}その ポケモン\nすごくよく そだてられてるね!\p");
-ALIGNED(4) static const u8 sText_UsedGoodMoveFemale[] = _("{JPN}   そうよ!\nそこで このわざよ!!\p");
-ALIGNED(4) static const u8 sText_BattleSurpriseFemale[] = _("{JPN}  すごい!\nそんな たたかいかたも あるのね!\p");
-ALIGNED(4) static const u8 sText_SwitchedMonsFemale[] = _("{JPN}ポケモン いれかえの タイミングが\nぜつみょうね!\p");
+ALIGNED(4) static const u8 sText_YoureToughMale[] = _("おー!\nなかなか てごわいな!\p");
+ALIGNED(4) static const u8 sText_UsedGoodMoveMale[] = _("   ここで そんな わざを\nだして くるなんて やるな!\p");
+ALIGNED(4) static const u8 sText_BattleSurpriseMale[] = _("さすがだ!\nそんな たたかいかたも あるのか!\p");
+ALIGNED(4) static const u8 sText_SwitchedMonsMale[] = _("   この ポケモンを\nこんな ばめんで だしてくるとは!\p");
+ALIGNED(4) static const u8 sText_YoureToughFemale[] = _("その ポケモン\nすごくよく そだてられてるね!\p");
+ALIGNED(4) static const u8 sText_UsedGoodMoveFemale[] = _("   そうよ!\nそこで このわざよ!!\p");
+ALIGNED(4) static const u8 sText_BattleSurpriseFemale[] = _("  すごい!\nそんな たたかいかたも あるのね!\p");
+ALIGNED(4) static const u8 sText_SwitchedMonsFemale[] = _("ポケモン いれかえの タイミングが\nぜつみょうね!\p");
 
 static const u8 *const sBattleReactionTexts[GENDER_COUNT][4] = {
     {
@@ -375,14 +375,14 @@ static const u8 *const sBattleReactionTexts[GENDER_COUNT][4] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_LearnedSomethingMale[] = _("{JPN}なるほど!\nへー ふむふむ\p");
-ALIGNED(4) static const u8 sText_ThatsFunnyMale[] = _("{JPN} また へんなこと いって\nあんまり わらわせるなよ!\p");
-ALIGNED(4) static const u8 sText_RandomChatMale1[] = _("{JPN}へー\nそんなことが あったんだ\p");
-ALIGNED(4) static const u8 sText_RandomChatMale2[] = _("{JPN}   ……ふんふん なに?\nと いうことは こういうことか?\p");
-ALIGNED(4) static const u8 sText_LearnedSomethingFemale[] = _("{JPN}   ……え?\nそんなこと しらなかったわ!\p");
-ALIGNED(4) static const u8 sText_ThatsFunnyFemale[] = _("{JPN}   あはは!\nなにそれ!\p");
-ALIGNED(4) static const u8 sText_RandomChatFemale1[] = _("{JPN}あっ そうそう!\nそのことよ!\p");
-ALIGNED(4) static const u8 sText_RandomChatFemale2[] = _("{JPN}   つまりね……\nうん! それそれ!\p");
+ALIGNED(4) static const u8 sText_LearnedSomethingMale[] = _("なるほど!\nへー ふむふむ\p");
+ALIGNED(4) static const u8 sText_ThatsFunnyMale[] = _(" また へんなこと いって\nあんまり わらわせるなよ!\p");
+ALIGNED(4) static const u8 sText_RandomChatMale1[] = _("へー\nそんなことが あったんだ\p");
+ALIGNED(4) static const u8 sText_RandomChatMale2[] = _("   ……ふんふん なに?\nと いうことは こういうことか?\p");
+ALIGNED(4) static const u8 sText_LearnedSomethingFemale[] = _("   ……え?\nそんなこと しらなかったわ!\p");
+ALIGNED(4) static const u8 sText_ThatsFunnyFemale[] = _("   あはは!\nなにそれ!\p");
+ALIGNED(4) static const u8 sText_RandomChatFemale1[] = _("あっ そうそう!\nそのことよ!\p");
+ALIGNED(4) static const u8 sText_RandomChatFemale2[] = _("   つまりね……\nうん! それそれ!\p");
 
 static const u8 *const sChatReactionTexts[GENDER_COUNT][4] = {
     {
@@ -399,10 +399,10 @@ static const u8 *const sChatReactionTexts[GENDER_COUNT][4] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_ShowedTrainerCardMale1[] = _("{JPN}いま あいさつがわりに\nトレーナーカードを みせてるんだ\p");
-ALIGNED(4) static const u8 sText_ShowedTrainerCardMale2[] = _("{JPN}  これからも\nよろしく!\p");
-ALIGNED(4) static const u8 sText_ShowedTrainerCardFemale1[] = _("{JPN}   いま あいさつの かわりに\nトレーナーカードを みせあってるの\p");
-ALIGNED(4) static const u8 sText_ShowedTrainerCardFemale2[] = _("{JPN}   これからも\nよろしくね!\p");
+ALIGNED(4) static const u8 sText_ShowedTrainerCardMale1[] = _("いま あいさつがわりに\nトレーナーカードを みせてるんだ\p");
+ALIGNED(4) static const u8 sText_ShowedTrainerCardMale2[] = _("  これからも\nよろしく!\p");
+ALIGNED(4) static const u8 sText_ShowedTrainerCardFemale1[] = _("   いま あいさつの かわりに\nトレーナーカードを みせあってるの\p");
+ALIGNED(4) static const u8 sText_ShowedTrainerCardFemale2[] = _("   これからも\nよろしくね!\p");
 
 static const u8 *const sTrainerCardReactionTexts[GENDER_COUNT][2] = {
     {
@@ -415,10 +415,10 @@ static const u8 *const sTrainerCardReactionTexts[GENDER_COUNT][2] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_MaleTraded1[] = _("{JPN}やった!\nこのポケモン ほしかったんだ!\p");
-ALIGNED(4) static const u8 sText_MaleTraded2[] = _("{JPN}  さがしてた ポケモンを\nやっと こうかんして もらったよ\p\n");
-ALIGNED(4) static const u8 sText_FemaleTraded1[] = _("{JPN} いまね ポケモンの\nこうかんを してるの!\p");
-ALIGNED(4) static const u8 sText_FemaleTraded2[] = _("{JPN} ほしい ポケモンが\nやっと こうかんして もらえたわ!\p");
+ALIGNED(4) static const u8 sText_MaleTraded1[] = _("やった!\nこのポケモン ほしかったんだ!\p");
+ALIGNED(4) static const u8 sText_MaleTraded2[] = _("  さがしてた ポケモンを\nやっと こうかんして もらったよ\p\n");
+ALIGNED(4) static const u8 sText_FemaleTraded1[] = _(" いまね ポケモンの\nこうかんを してるの!\p");
+ALIGNED(4) static const u8 sText_FemaleTraded2[] = _(" ほしい ポケモンが\nやっと こうかんして もらえたわ!\p");
 
 static const u8 *const sTradeReactionTexts[GENDER_COUNT][4] = {
     {
@@ -431,28 +431,28 @@ static const u8 *const sTradeReactionTexts[GENDER_COUNT][4] = {
     }
 };
 
-ALIGNED(4) static const u8 sText_XCheckedTradingBoard[] = _("{JPN}{STR_VAR_1}は\nこうかんけいじばんを みた!\p");
-ALIGNED(4) static const u8 sText_RegisterMonAtTradingBoard[] = _("{JPN}いらっしゃいませ\nここでは こうかんけいじばん に\pごじぶんの ポケモンを とうろく\nすることが できます\pとうろく しますか?");
-ALIGNED(4) static const u8 sText_TradingBoardInfo[] = _("{JPN}   この こうかんけいじばん に\nポケモンを とうろく しておくと\pけいじばんを みた トレーナーが\nその とうろくされた ポケモンと\pてもちの ポケモンを\nこうかん することが できます\pぜひポケモンを とうろくして\nいろいろな トレーナー との\lこうかんを たのしんで ください\pとうろく しますか?");
-ALIGNED(4) static const u8 sText_ThankYouForRegistering[] = _("{JPN} こうかんけいじばん の とうろくが\nかんりょう しました\pごりよう ありがとう\nございました!\p"); // unused
-ALIGNED(4) static const u8 sText_NobodyHasRegistered[] = _("{JPN}   けいじばんに だれも ポケモンを\nとうろく していません\p\n"); // unused
-ALIGNED(4) static const u8 sText_ChooseRequestedMonType[] = _("{JPN} ほしい ポケモンの タイプを\nえらんで ください\n");
-ALIGNED(4) static const u8 sText_WhichMonWillYouOffer[] = _("{JPN}  こうかんに だす ポケモンを\nてもちから えらんで ください\p");
-ALIGNED(4) static const u8 sText_RegistrationCanceled[] = _("{JPN}とうろくを ちゅうし しました\p");
-ALIGNED(4) static const u8 sText_RegistrationCompleted[] = _("{JPN}   とうろくが かんりょう しました!\p");
-ALIGNED(4) static const u8 sText_TradeCanceled[] = _("{JPN} こうかんを キャンセルしました\p");
-ALIGNED(4) static const u8 sText_CancelRegistrationOfMon[] = _("{JPN}   とうろく されている {STR_VAR_1}\nレベル{STR_VAR_2}を かいじょ しますか?");
-ALIGNED(4) static const u8 sText_CancelRegistrationOfEgg[] = _("{JPN}とうろく されている タマゴを\nかいじょ しますか?");
-ALIGNED(4) static const u8 sText_RegistrationCanceled2[] = _("{JPN} とうろくを かいじょ しました\p");
-ALIGNED(4) static const u8 sText_TradeTrainersWillBeListed[] = _("{JPN}   こうかんを きぼうしているひとを\nひょうじします"); // unused
-ALIGNED(4) static const u8 sText_ChooseTrainerToTradeWith2[] = _("{JPN}   こうかん したい トレーナーを\nえらんで ください"); // unused
-ALIGNED(4) static const u8 sText_AskTrainerToMakeTrade[] = _("{JPN}  {STR_VAR_1}に こうかんを\nもうしこみ ますか?");
-ALIGNED(4) static const u8 sText_AwaitingResponseFromTrainer2[] = _("{JPN}   ……\nあいての へんじを まっています"); // unused
-ALIGNED(4) static const u8 sText_NotRegisteredAMonForTrade[] = _("{JPN}あなたが こうかんにだす\nポケモンが とうろくされていません\p"); // unused
-ALIGNED(4) static const u8 sText_DontHaveTypeTrainerWants[] = _("{JPN}てもちに\n{STR_VAR_1}の ほしがっている\l{STR_VAR_2}ポケモンが ありません\p");
-ALIGNED(4) static const u8 sText_DontHaveEggTrainerWants[] = _("{JPN}{STR_VAR_1}の ほしがっている\nタマゴを もっていません\p");
-ALIGNED(4) static const u8 sText_PlayerCantTradeForYourMon[] = _("{JPN}  いまは {STR_VAR_1}は あなたの\nポケモンと こうかんできません\p");
-ALIGNED(4) static const u8 sText_CantTradeForPartnersMon[] = _("{JPN}  {STR_VAR_1}の ポケモンとは\nいまは こうかんできません\p");
+ALIGNED(4) static const u8 sText_XCheckedTradingBoard[] = _("{STR_VAR_1}は\nこうかんけいじばんを みた!\p");
+ALIGNED(4) static const u8 sText_RegisterMonAtTradingBoard[] = _("いらっしゃいませ\nここでは こうかんけいじばん に\pごじぶんの ポケモンを とうろく\nすることが できます\pとうろく しますか?");
+ALIGNED(4) static const u8 sText_TradingBoardInfo[] = _("   この こうかんけいじばん に\nポケモンを とうろく しておくと\pけいじばんを みた トレーナーが\nその とうろくされた ポケモンと\pてもちの ポケモンを\nこうかん することが できます\pぜひポケモンを とうろくして\nいろいろな トレーナー との\lこうかんを たのしんで ください\pとうろく しますか?");
+ALIGNED(4) static const u8 sText_ThankYouForRegistering[] = _(" こうかんけいじばん の とうろくが\nかんりょう しました\pごりよう ありがとう\nございました!\p"); // unused
+ALIGNED(4) static const u8 sText_NobodyHasRegistered[] = _("   けいじばんに だれも ポケモンを\nとうろく していません\p\n"); // unused
+ALIGNED(4) static const u8 sText_ChooseRequestedMonType[] = _(" ほしい ポケモンの タイプを\nえらんで ください\n");
+ALIGNED(4) static const u8 sText_WhichMonWillYouOffer[] = _("  こうかんに だす ポケモンを\nてもちから えらんで ください\p");
+ALIGNED(4) static const u8 sText_RegistrationCanceled[] = _("とうろくを ちゅうし しました\p");
+ALIGNED(4) static const u8 sText_RegistrationCompleted[] = _("   とうろくが かんりょう しました!\p");
+ALIGNED(4) static const u8 sText_TradeCanceled[] = _(" こうかんを キャンセルしました\p");
+ALIGNED(4) static const u8 sText_CancelRegistrationOfMon[] = _("   とうろく されている {STR_VAR_1}\nレベル{STR_VAR_2}を かいじょ しますか?");
+ALIGNED(4) static const u8 sText_CancelRegistrationOfEgg[] = _("とうろく されている タマゴを\nかいじょ しますか?");
+ALIGNED(4) static const u8 sText_RegistrationCanceled2[] = _(" とうろくを かいじょ しました\p");
+ALIGNED(4) static const u8 sText_TradeTrainersWillBeListed[] = _("   こうかんを きぼうしているひとを\nひょうじします"); // unused
+ALIGNED(4) static const u8 sText_ChooseTrainerToTradeWith2[] = _("   こうかん したい トレーナーを\nえらんで ください"); // unused
+ALIGNED(4) static const u8 sText_AskTrainerToMakeTrade[] = _("  {STR_VAR_1}に こうかんを\nもうしこみ ますか?");
+ALIGNED(4) static const u8 sText_AwaitingResponseFromTrainer2[] = _("   ……\nあいての へんじを まっています"); // unused
+ALIGNED(4) static const u8 sText_NotRegisteredAMonForTrade[] = _("あなたが こうかんにだす\nポケモンが とうろくされていません\p"); // unused
+ALIGNED(4) static const u8 sText_DontHaveTypeTrainerWants[] = _("てもちに\n{STR_VAR_1}の ほしがっている\l{STR_VAR_2}ポケモンが ありません\p");
+ALIGNED(4) static const u8 sText_DontHaveEggTrainerWants[] = _("{STR_VAR_1}の ほしがっている\nタマゴを もっていません\p");
+ALIGNED(4) static const u8 sText_PlayerCantTradeForYourMon[] = _("  いまは {STR_VAR_1}は あなたの\nポケモンと こうかんできません\p");
+ALIGNED(4) static const u8 sText_CantTradeForPartnersMon[] = _("  {STR_VAR_1}の ポケモンとは\nいまは こうかんできません\p");
 
 // Unused
 static const u8 *const sCantTradeMonTexts[] = {
@@ -460,28 +460,28 @@ static const u8 *const sCantTradeMonTexts[] = {
     sText_CantTradeForPartnersMon
 };
 
-ALIGNED(4) static const u8 sText_TradeOfferRejected[] = _("{JPN}こうかんを\nことわられ ました\p");
-ALIGNED(4) static const u8 sText_EggTrade[] = _("{JPN}   タマゴのこうかん");
-ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("{JPN}   {DPAD_UPDOWN}えらぶ:{A_BUTTON}さんかする:{B_BUTTON}やめる");
-ALIGNED(4) static const u8 sText_ChooseTrainer[] = _("{JPN}ともだちを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseTrainerSingleBattle[] = _("{JPN} シングルバトルをする ともだちを\nえらんでください");
-ALIGNED(4) static const u8 sText_ChooseTrainerDoubleBattle[] = _("{JPN}  ダブルバトルをする ともだちを\nえらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderMultiBattle[] = _("{JPN}   マルチバトル!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseTrainerToTradeWith[] = _("{JPN} ポケモンの こうかんをする\nともだちを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseTrainerToShareWonderCards[] = _("{JPN}   ふしぎなカードを くばっている\nともだちを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseTrainerToShareWonderNews[] = _("{JPN} ふしぎなニュースを くばっている\nともだちを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderPokemonJump[] = _("{JPN}ミニポケモンでジャンプ!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBerryCrush[] = _("{JPN}きのみクラッシュ!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBerryPicking[] = _("{JPN}   ドードリオのきのみどり!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBerryBlender[] = _("{JPN}きのみブレンダー!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderRecordCorner[] = _("{JPN}   レコードコーナー!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderCoolContest[] = _("{JPN}   かっこよさコンテスト!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBeautyContest[] = _("{JPN} うつくしさコンテスト!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderCuteContest[] = _("{JPN} かわいさコンテスト!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderSmartContest[] = _("{JPN}  かしこさコンテスト!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderToughContest[] = _("{JPN}  たくましさコンテスト!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBattleTowerLv50[] = _("{JPN} バトルタワー レベル50!\nリーダーを えらんでください");
-ALIGNED(4) static const u8 sText_ChooseLeaderBattleTowerOpenLv[] = _("{JPN}   バトルタワー オープンレベル!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_TradeOfferRejected[] = _("こうかんを\nことわられ ました\p");
+ALIGNED(4) static const u8 sText_EggTrade[] = _("   タマゴのこうかん");
+ALIGNED(4) static const u8 sText_ChooseJoinCancel[] = _("   {DPAD_UPDOWN}えらぶ:{A_BUTTON}さんかする:{B_BUTTON}やめる");
+ALIGNED(4) static const u8 sText_ChooseTrainer[] = _("ともだちを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseTrainerSingleBattle[] = _(" シングルバトルをする ともだちを\nえらんでください");
+ALIGNED(4) static const u8 sText_ChooseTrainerDoubleBattle[] = _("  ダブルバトルをする ともだちを\nえらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderMultiBattle[] = _("   マルチバトル!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseTrainerToTradeWith[] = _(" ポケモンの こうかんをする\nともだちを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseTrainerToShareWonderCards[] = _("   ふしぎなカードを くばっている\nともだちを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseTrainerToShareWonderNews[] = _(" ふしぎなニュースを くばっている\nともだちを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderPokemonJump[] = _("ミニポケモンでジャンプ!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBerryCrush[] = _("きのみクラッシュ!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBerryPicking[] = _("   ドードリオのきのみどり!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBerryBlender[] = _("きのみブレンダー!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderRecordCorner[] = _("   レコードコーナー!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderCoolContest[] = _("   かっこよさコンテスト!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBeautyContest[] = _(" うつくしさコンテスト!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderCuteContest[] = _(" かわいさコンテスト!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderSmartContest[] = _("  かしこさコンテスト!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderToughContest[] = _("  たくましさコンテスト!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBattleTowerLv50[] = _(" バトルタワー レベル50!\nリーダーを えらんでください");
+ALIGNED(4) static const u8 sText_ChooseLeaderBattleTowerOpenLv[] = _("   バトルタワー オープンレベル!\nリーダーを えらんでください");
 
 static const u8 *const sChooseTrainerTexts[NUM_LINK_GROUP_TYPES] =
 {
@@ -509,53 +509,53 @@ static const u8 *const sChooseTrainerTexts[NUM_LINK_GROUP_TYPES] =
     [LINK_GROUP_BATTLE_TOWER_OPEN] = sText_ChooseLeaderBattleTowerOpenLv
 };
 
-ALIGNED(4) static const u8 sText_SearchingForWirelessSystemWait[] = _("{JPN}ジョイスポットを さがしています\nしばらく おまちください");
-ALIGNED(4) static const u8 sText_MustHaveTwoMonsForDoubleBattle[] = _("{JPN}  ダブルバトルでは 2ひき いじょうの\nポケモンが ひつようです\p"); // Unused
-ALIGNED(4) static const u8 sText_AwaitingPlayersResponse[] = _("{JPN}   {STR_VAR_1}からの\nへんじを まっています");
-ALIGNED(4) static const u8 sText_PlayerHasBeenAskedToRegisterYouPleaseWait[] = _("{JPN}  {STR_VAR_1}に メンバー とうろくを\nおねがいしています! おまちください");
-ALIGNED(4) static const u8 sText_AwaitingResponseFromWirelessSystem[] = _("{JPN}  ジョイスポットからの\nへんじを まっています");
-ALIGNED(4) static const u8 sText_PleaseWaitForOtherTrainersToGather[] = _("{JPN} ほかの さんかしゃが そろうまで\nしょうしょう おまちください"); // Unused
-ALIGNED(4) static const u8 sText_NoCardsSharedRightNow[] = _("{JPN}ただいま カードの はいふは\nおこなわれて いないようです…");
-ALIGNED(4) static const u8 sText_NoNewsSharedRightNow[] = _("{JPN} ただいま ニュースの はいふは\nおこなわれて いないようです…");
+ALIGNED(4) static const u8 sText_SearchingForWirelessSystemWait[] = _("ジョイスポットを さがしています\nしばらく おまちください");
+ALIGNED(4) static const u8 sText_MustHaveTwoMonsForDoubleBattle[] = _("  ダブルバトルでは 2ひき いじょうの\nポケモンが ひつようです\p"); // Unused
+ALIGNED(4) static const u8 sText_AwaitingPlayersResponse[] = _("   {STR_VAR_1}からの\nへんじを まっています");
+ALIGNED(4) static const u8 sText_PlayerHasBeenAskedToRegisterYouPleaseWait[] = _("  {STR_VAR_1}に メンバー とうろくを\nおねがいしています! おまちください");
+ALIGNED(4) static const u8 sText_AwaitingResponseFromWirelessSystem[] = _("  ジョイスポットからの\nへんじを まっています");
+ALIGNED(4) static const u8 sText_PleaseWaitForOtherTrainersToGather[] = _(" ほかの さんかしゃが そろうまで\nしょうしょう おまちください"); // Unused
+ALIGNED(4) static const u8 sText_NoCardsSharedRightNow[] = _("ただいま カードの はいふは\nおこなわれて いないようです…");
+ALIGNED(4) static const u8 sText_NoNewsSharedRightNow[] = _(" ただいま ニュースの はいふは\nおこなわれて いないようです…");
 
 static const u8 *const sNoWonderSharedTexts[] = {
     sText_NoCardsSharedRightNow,
     sText_NoNewsSharedRightNow
 };
 
-ALIGNED(4) static const u8 sText_Battle[] = _("{JPN}たいせん");
-ALIGNED(4) static const u8 sText_Chat2[] = _("{JPN}   チャット");
-ALIGNED(4) static const u8 sText_Greetings[] = _("{JPN}   あいさつ");
-ALIGNED(4) static const u8 sText_Exit[] = _("{JPN}   やめる");
-ALIGNED(4) static const u8 sText_Exit2[] = _("{JPN}とじる");
-ALIGNED(4) static const u8 sText_Info[] = _("{JPN}せつめいをきく");
-ALIGNED(4) static const u8 sText_NameWantedOfferLv[] = _("{JPN}なまえ    ほしいタイプ あげるポケモン  レベル");
-ALIGNED(4) static const u8 sText_SingleBattle[] = _("{JPN} シングルバトル");
-ALIGNED(4) static const u8 sText_DoubleBattle[] = _("{JPN}ダブルバトル");
-ALIGNED(4) static const u8 sText_MultiBattle[] = _("{JPN} マルチバトル");
-ALIGNED(4) static const u8 sText_PokemonTrades[] = _("{JPN} ポケモンこうかん");
-ALIGNED(4) static const u8 sText_Chat[] = _("{JPN}   チャット");
-ALIGNED(4) static const u8 sText_Cards[] = _("{JPN}   カード");
-ALIGNED(4) static const u8 sText_WonderCards[] = _("{JPN}ふしぎなカード");
-ALIGNED(4) static const u8 sText_WonderNews[] = _("{JPN}ふしぎなニュース");
-ALIGNED(4) static const u8 sText_PokemonJump[] = _("{JPN}   ポケモンジャンプ");
-ALIGNED(4) static const u8 sText_BerryCrush[] = _("{JPN}   きのみクラッシュ");
-ALIGNED(4) static const u8 sText_BerryPicking[] = _("{JPN}   きのみどり");
-ALIGNED(4) static const u8 sText_Search[] = _("{JPN}  サーチ");
-ALIGNED(4) static const u8 sText_BerryBlender[] = _("{JPN}きのみブレンダー");
-ALIGNED(4) static const u8 sText_RecordCorner[] = _("{JPN}   レコードコーナー");
-ALIGNED(4) static const u8 sText_CoolContest[] = _("{JPN}   かっこよさコンテスト");
-ALIGNED(4) static const u8 sText_BeautyContest[] = _("{JPN} うつくしさコンテスト");
-ALIGNED(4) static const u8 sText_CuteContest[] = _("{JPN} かわいさコンテスト");
-ALIGNED(4) static const u8 sText_SmartContest[] = _("{JPN}  かしこさコンテスト");
-ALIGNED(4) static const u8 sText_ToughContest[] = _("{JPN}  たくましさコンテスト");
-ALIGNED(4) static const u8 sText_BattleTowerLv50[] = _("{JPN} バトルタワー レベル50");
-ALIGNED(4) static const u8 sText_BattleTowerOpenLv[] = _("{JPN}   バトルタワー オープンレベル");
-ALIGNED(4) static const u8 sText_ItsNormalCard[] = _("{JPN}ノーマルカードだ!");
-ALIGNED(4) static const u8 sText_ItsBronzeCard[] = _("{JPN}  ブロンズカードだ!");
-ALIGNED(4) static const u8 sText_ItsCopperCard[] = _("{JPN}  カッパーカードだ!");
-ALIGNED(4) static const u8 sText_ItsSilverCard[] = _("{JPN}  シルバーカードだ!");
-ALIGNED(4) static const u8 sText_ItsGoldCard[] = _("{JPN}  ゴールドカードだ!");
+ALIGNED(4) static const u8 sText_Battle[] = _("たいせん");
+ALIGNED(4) static const u8 sText_Chat2[] = _("   チャット");
+ALIGNED(4) static const u8 sText_Greetings[] = _("   あいさつ");
+ALIGNED(4) static const u8 sText_Exit[] = _("   やめる");
+ALIGNED(4) static const u8 sText_Exit2[] = _("とじる");
+ALIGNED(4) static const u8 sText_Info[] = _("せつめいをきく");
+ALIGNED(4) static const u8 sText_NameWantedOfferLv[] = _("なまえ    ほしいタイプ あげるポケモン  レベル");
+ALIGNED(4) static const u8 sText_SingleBattle[] = _(" シングルバトル");
+ALIGNED(4) static const u8 sText_DoubleBattle[] = _("ダブルバトル");
+ALIGNED(4) static const u8 sText_MultiBattle[] = _(" マルチバトル");
+ALIGNED(4) static const u8 sText_PokemonTrades[] = _(" ポケモンこうかん");
+ALIGNED(4) static const u8 sText_Chat[] = _("   チャット");
+ALIGNED(4) static const u8 sText_Cards[] = _("   カード");
+ALIGNED(4) static const u8 sText_WonderCards[] = _("ふしぎなカード");
+ALIGNED(4) static const u8 sText_WonderNews[] = _("ふしぎなニュース");
+ALIGNED(4) static const u8 sText_PokemonJump[] = _("   ポケモンジャンプ");
+ALIGNED(4) static const u8 sText_BerryCrush[] = _("   きのみクラッシュ");
+ALIGNED(4) static const u8 sText_BerryPicking[] = _("   きのみどり");
+ALIGNED(4) static const u8 sText_Search[] = _("  サーチ");
+ALIGNED(4) static const u8 sText_BerryBlender[] = _("きのみブレンダー");
+ALIGNED(4) static const u8 sText_RecordCorner[] = _("   レコードコーナー");
+ALIGNED(4) static const u8 sText_CoolContest[] = _("   かっこよさコンテスト");
+ALIGNED(4) static const u8 sText_BeautyContest[] = _(" うつくしさコンテスト");
+ALIGNED(4) static const u8 sText_CuteContest[] = _(" かわいさコンテスト");
+ALIGNED(4) static const u8 sText_SmartContest[] = _("  かしこさコンテスト");
+ALIGNED(4) static const u8 sText_ToughContest[] = _("  たくましさコンテスト");
+ALIGNED(4) static const u8 sText_BattleTowerLv50[] = _(" バトルタワー レベル50");
+ALIGNED(4) static const u8 sText_BattleTowerOpenLv[] = _("   バトルタワー オープンレベル");
+ALIGNED(4) static const u8 sText_ItsNormalCard[] = _("ノーマルカードだ!");
+ALIGNED(4) static const u8 sText_ItsBronzeCard[] = _("  ブロンズカードだ!");
+ALIGNED(4) static const u8 sText_ItsCopperCard[] = _("  カッパーカードだ!");
+ALIGNED(4) static const u8 sText_ItsSilverCard[] = _("  シルバーカードだ!");
+ALIGNED(4) static const u8 sText_ItsGoldCard[] = _("  ゴールドカードだ!");
 
 static const u8 *const sCardColorTexts[] = {
     sText_ItsNormalCard,
@@ -565,17 +565,17 @@ static const u8 *const sCardColorTexts[] = {
     sText_ItsGoldCard
 };
 
-ALIGNED(4) static const u8 sText_TrainerCardInfoPage1[] = _("{JPN}{DYNAMIC 0} の {DYNAMIC 1}の\nトレーナーカードを みせてもらった\l{DYNAMIC 2}\pポケモンずかん {DYNAMIC 3}\nプレイ じかん {DYNAMIC 4}:{DYNAMIC 5}\p");
-ALIGNED(4) static const u8 sText_TrainerCardInfoPage2[] = _("{JPN} たいせん かち{DYNAMIC 0}まけ{DYNAMIC 2}\nこうかん {DYNAMIC 3}かい\p「{DYNAMIC 4} {DYNAMIC 5}\n {DYNAMIC 6} {DYNAMIC 7}\p");
-ALIGNED(4) static const u8 sText_GladToMeetYouMale[] = _("{JPN}{DYNAMIC 1}「これからも よろしく!{PAUSE 60}");
-ALIGNED(4) static const u8 sText_GladToMeetYouFemale[] = _("{JPN}{DYNAMIC 1}「これからも よろしくね!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_TrainerCardInfoPage1[] = _("{DYNAMIC 0} の {DYNAMIC 1}の\nトレーナーカードを みせてもらった\l{DYNAMIC 2}\pポケモンずかん {DYNAMIC 3}\nプレイ じかん {DYNAMIC 4}:{DYNAMIC 5}\p");
+ALIGNED(4) static const u8 sText_TrainerCardInfoPage2[] = _(" たいせん かち{DYNAMIC 0}まけ{DYNAMIC 2}\nこうかん {DYNAMIC 3}かい\p「{DYNAMIC 4} {DYNAMIC 5}\n {DYNAMIC 6} {DYNAMIC 7}\p");
+ALIGNED(4) static const u8 sText_GladToMeetYouMale[] = _("{DYNAMIC 1}「これからも よろしく!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_GladToMeetYouFemale[] = _("{DYNAMIC 1}「これからも よろしくね!{PAUSE 60}");
 
 static const u8 *const sGladToMeetYouTexts[GENDER_COUNT] = {
     sText_GladToMeetYouMale,
     sText_GladToMeetYouFemale
 };
 
-ALIGNED(4) static const u8 sText_FinishedCheckingPlayersTrainerCard[] = _("{JPN}{DYNAMIC 1}の トレーナーカードを\nみおわった!{PAUSE 60}");
+ALIGNED(4) static const u8 sText_FinishedCheckingPlayersTrainerCard[] = _("{DYNAMIC 1}の トレーナーカードを\nみおわった!{PAUSE 60}");
 
 static const u8 *const sLinkGroupActivityNameTexts[] = {
     [ACTIVITY_NONE]              = sText_EmptyString,
