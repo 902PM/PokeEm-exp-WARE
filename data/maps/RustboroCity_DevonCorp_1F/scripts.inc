@@ -79,33 +79,33 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "{JPN}いらっしゃいませ!\nデボン コーポレーション です!\pみなさまの せいかつに やくだつ\nどうぐや くすりを おつくりしてます!$"
+	.string "いらっしゃいませ!\nデボン コーポレーション です!\pみなさまの せいかつに やくだつ\nどうぐや くすりを おつくりしてます!$"
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
-	.string "{JPN}ドジな けんきゅういんが\nにもつを とられちゃって……$"
+	.string "ドジな けんきゅういんが\nにもつを とられちゃって……$"
 
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct:
-	.string "{JPN}おっ! ランニングシューズ!\pじぶんたちの かいしゃの しょうひんを\nじっさいに つかっている ひとを みると\lすごく うれしくなるよね!$"
+	.string "おっ! ランニングシューズ!\pじぶんたちの かいしゃの しょうひんを\nじっさいに つかっている ひとを みると\lすごく うれしくなるよね!$"
 
 RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright:
-	.string "{JPN}たしかに あの にもつは\nだいじな もの だけど\lほかの ひとが ぬすんでいっても\lつかえないと おもうんだよね\pぼくの すいりでは あの どろぼう……\nたんなる マヌケ なんじゃないかな?$"
+	.string "たしかに あの にもつは\nだいじな もの だけど\lほかの ひとが ぬすんでいっても\lつかえないと おもうんだよね\pぼくの すいりでは あの どろぼう……\nたんなる マヌケ なんじゃないかな?$"
 
 RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered:
-	.string "{JPN}どうやら デボンのにもつは\nもどってきた らしいね$"
+	.string "どうやら デボンのにもつは\nもどってきた らしいね$"
 
 RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter:
-	.string "{JPN}おっと かんけいしゃ いがいの かたは\nここから さきには はいれませんよ!$"
+	.string "おっと かんけいしゃ いがいの かたは\nここから さきには はいれませんよ!$"
 
 RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed:
-	.string "{JPN}どろぼうに にもつを うばわれるなんて\nなんて ドジなんだろう……$"
+	.string "どろぼうに にもつを うばわれるなんて\nなんて ドジなんだろう……$"
 
 RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere:
-	.string "{JPN}やあ!\nきみなら いつでも だいかんげい だよ!$"
+	.string "やあ!\nきみなら いつでも だいかんげい だよ!$"
 
 RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
-	.string "{JPN}いしや きんぞくの サンプルが\nガラスケースの なかに ならんでいる!\pパネルに せつめいが かいてあるから\nよんでみよう……\p「デボン コーポレーションは もともと\n やまから いしを きりだしたり\p さてつから てつざいを つくるために\n せつりつ された かいしゃ です」\p「やがて デボン コーポレーションは\n ざいりょう だけに とどまらず\p さまざまな こうぎょう せいひんも\n つくるように なったのです」$"
+	.string "いしや きんぞくの サンプルが\nガラスケースの なかに ならんでいる!\pパネルに せつめいが かいてあるから\nよんでみよう……\p「デボン コーポレーションは もともと\n やまから いしを きりだしたり\p さてつから てつざいを つくるために\n せつりつ された かいしゃ です」\p「やがて デボン コーポレーションは\n ざいりょう だけに とどまらず\p さまざまな こうぎょう せいひんも\n つくるように なったのです」$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
-	.string "{JPN}いろんな どうぐの しさくひんが\nガラスケースの なかに ならんでいる!\pパネルに せつめいが かいてあるから\nよんでみよう……\p「げんざい デボン コーポレーションでは\n こうぎょう せいひんの ほかにも\l にちようひんや くすりなど\p ひとびとの くらしに やくだつ ものを\n かいはつ しています」\p「また げんざいでは モンスターボールや\n ポケナビなどの トレーナーようひんも\l てがけるように なりました」$"
+	.string "いろんな どうぐの しさくひんが\nガラスケースの なかに ならんでいる!\pパネルに せつめいが かいてあるから\nよんでみよう……\p「げんざい デボン コーポレーションでは\n こうぎょう せいひんの ほかにも\l にちようひんや くすりなど\p ひとびとの くらしに やくだつ ものを\n かいはつ しています」\p「また げんざいでは モンスターボールや\n ポケナビなどの トレーナーようひんも\l てがけるように なりました」$"
 
 

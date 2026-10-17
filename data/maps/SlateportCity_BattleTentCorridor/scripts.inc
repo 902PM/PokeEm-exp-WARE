@@ -154,61 +154,61 @@ SlateportCity_BattleTentCorridor_Movement_AttendantExit:
 @ Leftover text from when this was a Contest Hall in R/S
 @ Unused
 SlateportCity_ContestHall_Text_AdviceForContests:
-	.string "{JPN}コンテストの ナイスな じょうほう\nおしえて やるよ!\pある わざの つぎに\nとくていの わざで アピールすると\lすごく めだつ ときが あるんだ!\pうまくやれば かなり\nゆうりな アピールが できるよ!\pただ じゃまされちゃう ときも あるけどね$"
+	.string "コンテストの ナイスな じょうほう\nおしえて やるよ!\pある わざの つぎに\nとくていの わざで アピールすると\lすごく めだつ ときが あるんだ!\pうまくやれば かなり\nゆうりな アピールが できるよ!\pただ じゃまされちゃう ときも あるけどね$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyPapaIsContestJudge:
-	.string "{JPN}ぼくの おとうさん コンテストの\nしんさいんを やって いるんだ!\pぼくは おおきく なったら\nコンテストの しんさいん と\lジムリーダーと どっちに なろうかな?$"
+	.string "ぼくの おとうさん コンテストの\nしんさいんを やって いるんだ!\pぼくは おおきく なったら\nコンテストの しんさいん と\lジムリーダーと どっちに なろうかな?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ImLikeMajorlyCheesed:
-	.string "{JPN}どうして おれの ポケモンが\nゆうしょう できなかったのか\lちぃっとも わからねえ からよぉ\lしんさいんに もんく いったけどよぉ\pちぃっとも あいて してくれねぇのさ\nくやしいったら ありゃ しねぇぜ!\pおい おまえ!\nだまって これを うけとれよぉ!$"
+	.string "どうして おれの ポケモンが\nゆうしょう できなかったのか\lちぃっとも わからねえ からよぉ\lしんさいんに もんく いったけどよぉ\pちぃっとも あいて してくれねぇのさ\nくやしいったら ありゃ しねぇぜ!\pおい おまえ!\nだまって これを うけとれよぉ!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ExplainTorment:
-	.string "{JPN}わざマシン41は いちゃもん!\pあいてによぉ おなじ わざを つづけて\nださせねえように する わざ なんだよぉ!\pいっとくけどなぁ\nおれは いちゃもん つけてねぇぞ!$"
+	.string "わざマシン41は いちゃもん!\pあいてによぉ おなじ わざを つづけて\nださせねえように する わざ なんだよぉ!\pいっとくけどなぁ\nおれは いちゃもん つけてねぇぞ!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MCStepUpTakePartInContest:
-	.string "{JPN}しかい『あら! なかなか すてきな\nポケモンを つれて いますね!\pぜひ! コンテストに\nでて みて くださーい!\pきっと いいセン いきますよ!\nわたしの みる めは たしかですよ!$"
+	.string "しかい『あら! なかなか すてきな\nポケモンを つれて いますね!\pぜひ! コンテストに\nでて みて くださーい!\pきっと いいセン いきますよ!\nわたしの みる めは たしかですよ!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:
-	.string "{JPN}しんさいん『やあ こんにちは!\nきみも トレーナーの ようだね!\pだったら ポケモンコンテストに\nでない ては ないよ!\pコンテストパスを シダケタウンで もらって\nいますぐ エントリーだ!$"
+	.string "しんさいん『やあ こんにちは!\nきみも トレーナーの ようだね!\pだったら ポケモンコンテストに\nでない ては ないよ!\pコンテストパスを シダケタウンで もらって\nいますぐ エントリーだ!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_ItsAppealTime:
-	.string "{JPN}これから いよいよ アピールタイム!\nどの わざから みせようかな?$"
+	.string "これから いよいよ アピールタイム!\nどの わざから みせようかな?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_DidntPayAttentionToAppeal:
-	.string "{JPN}オレの ポケモンの アピール\nあんまり みて もらえなかった……\pフッ…… あの しんさいん\nみる めが ないな!$"
+	.string "オレの ポケモンの アピール\nあんまり みて もらえなかった……\pフッ…… あの しんさいん\nみる めが ないな!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_RewardWithSageAdvice:
-	.string "{JPN}おっ! こんな ところまで あがってきて\nキミ けんきゅう ねっしんだね!\lじゃあ いいこと おしえて あげるよ\pだした わざが まわりに うけると\nかいじょうが エキサイト してくる!\pいちばん エキサイト したとき\nアピールしてた ポケモンには……\pいいことが あるかもな!$"
+	.string "おっ! こんな ところまで あがってきて\nキミ けんきゅう ねっしんだね!\lじゃあ いいこと おしえて あげるよ\pだした わざが まわりに うけると\nかいじょうが エキサイト してくる!\pいちばん エキサイト したとき\nアピールしてた ポケモンには……\pいいことが あるかもな!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MoreFreakedOutThanMon:
-	.string "{JPN}だ だめだぁ! ポケモンより\nじぶんの ほうが きんちょう してる!\lブルブル…… ドキドキ…$"
+	.string "だ だめだぁ! ポケモンより\nじぶんの ほうが きんちょう してる!\lブルブル…… ドキドキ…$"
 
 @ Unused
 SlateportCity_ContestHall_Text_BattleAndContestAlike:
-	.string "{JPN}ポケモンしょうぶも コンテストも\nちがう ようで にて いるよね!\pだいじに そだてた ポケモンを\nしんらいして がんばる ところがさ!$"
+	.string "ポケモンしょうぶも コンテストも\nちがう ようで にて いるよね!\pだいじに そだてた ポケモンを\nしんらいして がんばる ところがさ!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MonLooksOnTopOfGame:
-	.string "{JPN}あの ポケモン ちょうし よさそうだろ!\p2じしんさで ちょうしが よくなった\nポケモンは あまり きんちょうしないで\lアピール できる ように なるみたいだな$"
+	.string "あの ポケモン ちょうし よさそうだろ!\p2じしんさで ちょうしが よくなった\nポケモンは あまり きんちょうしないで\lアピール できる ように なるみたいだな$"
 
 @ Unused
 SlateportCity_ContestHall_Text_MyMonBetterThanThatLot:
-	.string "{JPN}なんだあー このぐらい なら\nおれの ポケモンの ほうが\lだんぜん うえ だね!$"
+	.string "なんだあー このぐらい なら\nおれの ポケモンの ほうが\lだんぜん うえ だね!$"
 
 @ Unused
 SlateportCity_ContestHall_Text_GetUrgeToMoveWithMon:
-	.string "{JPN}げんきな アピールを みていると\nいっしょに からだを\lうごかしたく なって こないか?$"
+	.string "げんきな アピールを みていると\nいっしょに からだを\lうごかしたく なって こないか?$"
 
 @ Unused
 SlateportCity_ContestHall_Text_HyperRankStage:
-	.string "{JPN}ポケモン コンテスト\nハイパーランク ステージ!$"
+	.string "ポケモン コンテスト\nハイパーランク ステージ!$"
 

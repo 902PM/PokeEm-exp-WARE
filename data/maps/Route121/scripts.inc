@@ -169,14 +169,14 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
-	.string "{JPN}よし!\nおれたちも おくりびやまに むかうぞ!$"
+	.string "よし!\nおれたちも おくりびやまに むかうぞ!$"
 
 Route121_Text_AheadLoomsMtPyre:
-	.string "{JPN}このさきに あるのは おくりびやま……\pじゅみょうを おえた ポケモンたちの\nたましいが まつられる ところ……$"
+	.string "このさきに あるのは おくりびやま……\pじゅみょうを おえた ポケモンたちの\nたましいが まつられる ところ……$"
 
 Route121_Text_MtPyrePierSign:
-	.string "{JPN}おくりびやま さんばし\p……ながい あいだ つかわれて いないのか\nもじが きえそうに なっている$"
+	.string "おくりびやま さんばし\p……ながい あいだ つかわれて いないのか\nもじが きえそうに なっている$"
 
 Route121_Text_SafariZoneSign:
-	.string "{JPN}めずらしい ポケモン たくさん!\n「サファリゾーン」$"
+	.string "めずらしい ポケモン たくさん!\n「サファリゾーン」$"
 

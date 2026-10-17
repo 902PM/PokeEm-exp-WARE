@@ -178,5 +178,5 @@ SkyPillar_Top_Movement_CameraPanDown:
 	step_end
 
 SkyPillar_Top_Text_RayquazaFlewOff:
-	.string "{JPN}めを さました レックウザは\nどこかへ とんで いって しまった……$"
+	.string "めを さました レックウザは\nどこかへ とんで いって しまった……$"
 

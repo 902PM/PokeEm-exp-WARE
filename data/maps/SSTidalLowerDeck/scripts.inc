@@ -12,20 +12,20 @@ SSTidalLowerDeck_EventScript_Leonard::
 	end
 
 SSTidalLowerDeck_Text_PhillipIntro:
-	.string "{JPN}こんなに でっかい ところ\nそうじ してるのも あきたぞ!\lちょいと しょうぶ しようや!$"
+	.string "こんなに でっかい ところ\nそうじ してるのも あきたぞ!\lちょいと しょうぶ しようや!$"
 
 SSTidalLowerDeck_Text_PhillipDefeat:
-	.string "{JPN}おとうと まけちまったよ!$"
+	.string "おとうと まけちまったよ!$"
 
 SSTidalLowerDeck_Text_PhillipPostBattle:
-	.string "{JPN}おれたち おそうじ ブラザーズ!\pあにきが せんざい ぶちまけてー\nおとうと せっせと みがくのさー$"
+	.string "おれたち おそうじ ブラザーズ!\pあにきが せんざい ぶちまけてー\nおとうと せっせと みがくのさー$"
 
 SSTidalLowerDeck_Text_LeonardIntro:
-	.string "{JPN}こんなに ひろいから\nふなぞこで ポケモンしょうぶ しても\lだいじょうぶ だろ?$"
+	.string "こんなに ひろいから\nふなぞこで ポケモンしょうぶ しても\lだいじょうぶ だろ?$"
 
 SSTidalLowerDeck_Text_LeonardDefeat:
-	.string "{JPN}あにき まけちまったよ!$"
+	.string "あにき まけちまったよ!$"
 
 SSTidalLowerDeck_Text_LeonardPostBattle:
-	.string "{JPN}おれたち おそうじ ブラザーズ!\pあにきが せんざい ぶちまけてー\nおとうと せっせと みがくのさー$"
+	.string "おれたち おそうじ ブラザーズ!\pあにきが せんざい ぶちまけてー\nおとうと せっせと みがくのさー$"
 
