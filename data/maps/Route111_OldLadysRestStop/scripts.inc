@@ -29,14 +29,14 @@ Route111_OldLadysRestStop_EventScript_DeclineRest::
 	end
 
 Route111_OldLadysRestStop_Text_RestUpHere:
-	.string "{JPN}あらあら あなたの ポケモン\nつかれてるんじゃ ないかえ?\pよかったら やすんで おいき!\nそうだ それがいい! そうしなさい!$"
+	.string "あらあら あなたの ポケモン\nつかれてるんじゃ ないかえ?\pよかったら やすんで おいき!\nそうだ それがいい! そうしなさい!$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
-	.string "{JPN}そうそう\nここで ゆっくり して おいき!$"
+	.string "そうそう\nここで ゆっくり して おいき!$"
 
 Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest:
-	.string "{JPN}あらあら\nまだ つかれてるんじゃ ないかえ?\pもういちど やすんで おいき!\nそうだ それがいい! そうしなさい!$"
+	.string "あらあら\nまだ つかれてるんじゃ ないかえ?\pもういちど やすんで おいき!\nそうだ それがいい! そうしなさい!$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy:
-	.string "{JPN}そうかね……\nほんとうに だいじょうぶ かえ?\lえんりょ しなくたって いいんだよ$"
+	.string "そうかね……\nほんとうに だいじょうぶ かえ?\lえんりょ しなくたって いいんだよ$"
 

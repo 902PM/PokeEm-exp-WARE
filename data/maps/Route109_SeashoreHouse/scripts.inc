@@ -102,53 +102,53 @@ Route109_SeashoreHouse_EventScript_TrainersNotCompleted::
 	end
 
 Route109_SeashoreHouse_Text_SeashoreHouseIntro:
-	.string "{JPN}わし うみのいえ の オヤジ!\nひとよんで うみサン!\pとにかく あつい ポケモンしょうぶを\nみることが だいすき なんだよねー!\pキミもねー あつーい ハートで\nここに いる トレーナーぜんいんに\lかてたら いいものを あげるよー$"
+	.string "わし うみのいえ の オヤジ!\nひとよんで うみサン!\pとにかく あつい ポケモンしょうぶを\nみることが だいすき なんだよねー!\pキミもねー あつーい ハートで\nここに いる トレーナーぜんいんに\lかてたら いいものを あげるよー$"
 
 Route109_SeashoreHouse_Text_ShowMeSomeHotMatches:
-	.string "{JPN}あつーい しょうぶ みせてくれー!\pそのためだけに わし\nこの うみのいえを やってるんだねー!$"
+	.string "あつーい しょうぶ みせてくれー!\pそのためだけに わし\nこの うみのいえを やってるんだねー!$"
 
 Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles:
-	.string "{JPN}きみ すごいねー!\nあつい ポケモンしょうぶ だったー\lわし だいまんぞく だよー!\pこれは あつい しょうぶを みせてくれた\nきみへの おれい だよー\pサイコソーダ はんダース もっていきなよー$"
+	.string "きみ すごいねー!\nあつい ポケモンしょうぶ だったー\lわし だいまんぞく だよー!\pこれは あつい しょうぶを みせてくれた\nきみへの おれい だよー\pサイコソーダ はんダース もっていきなよー$"
 
 Route109_SeashoreHouse_Text_BagFull:
-	.string "{JPN}と おもったけど バッグ いっぱいかー\nじゃあ あずかっておくよー$"
+	.string "と おもったけど バッグ いっぱいかー\nじゃあ あずかっておくよー$"
 
 Route109_SeashoreHouse_Text_WantToBuySodaPop:
-	.string "{JPN}ポケモンも だいすき サイコソーダ\nいっぽん 300えん だよー\lかって いきなよー!$"
+	.string "ポケモンも だいすき サイコソーダ\nいっぽん 300えん だよー\lかって いきなよー!$"
 
 Route109_SeashoreHouse_Text_HereYouGo:
-	.string "{JPN}はいよー$"
+	.string "はいよー$"
 
 Route109_SeashoreHouse_Text_NotEnoughMoney:
-	.string "{JPN}おかねが ないよー$"
+	.string "おかねが ないよー$"
 
 Route109_SeashoreHouse_Text_ThatsTooBad:
-	.string "{JPN}それは ざんねん だねー$"
+	.string "それは ざんねん だねー$"
 
 Route109_SeashoreHouse_Text_DwayneIntro:
-	.string "{JPN}この うみのいえで いちばん\nあつい ポケモンしょうぶが できるのは\lこの オレさま だぜ!!$"
+	.string "この うみのいえで いちばん\nあつい ポケモンしょうぶが できるのは\lこの オレさま だぜ!!$"
 
 Route109_SeashoreHouse_Text_DwayneDefeated:
-	.string "{JPN}たしかに あつい しょうぶ だった\nまけて なっとく って かんじ だぜ!$"
+	.string "たしかに あつい しょうぶ だった\nまけて なっとく って かんじ だぜ!$"
 
 Route109_SeashoreHouse_Text_DwaynePostBattle:
-	.string "{JPN}オレは カイナに くるたびに\nここで あつい しょうぶと\lつめたい サイコソーダを たのしむんだ!$"
+	.string "オレは カイナに くるたびに\nここで あつい しょうぶと\lつめたい サイコソーダを たのしむんだ!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro:
-	.string "{JPN}たいくつな しょうぶ なんて ムダ!\pもえあがるような しょうぶ こそ\nトレーナーと ポケモンを きたえるのよ!$"
+	.string "たいくつな しょうぶ なんて ムダ!\pもえあがるような しょうぶ こそ\nトレーナーと ポケモンを きたえるのよ!$"
 
 Route109_SeashoreHouse_Text_JohannaDefeated:
-	.string "{JPN}あつい じゃない!$"
+	.string "あつい じゃない!$"
 
 Route109_SeashoreHouse_Text_JohannaPostBattle:
-	.string "{JPN}あーあ のどが かわいちゃった\nサイコソーダ のもうかな?$"
+	.string "あーあ のどが かわいちゃった\nサイコソーダ のもうかな?$"
 
 Route109_SeashoreHouse_Text_SimonIntro:
-	.string "{JPN}ぼくの ポケモンの すごいところ\nみせちゃうけど なかないでよ!$"
+	.string "ぼくの ポケモンの すごいところ\nみせちゃうけど なかないでよ!$"
 
 Route109_SeashoreHouse_Text_SimonDefeated:
-	.string "{JPN}……まけたけど なかないぞ$"
+	.string "……まけたけど なかないぞ$"
 
 Route109_SeashoreHouse_Text_SimonPostBattle:
-	.string "{JPN}ポケモンが ぼくを のせて\nみずの うえを すすむ わざを つかえたら\lうきわも いらなくなるのに$"
+	.string "ポケモンが ぼくを のせて\nみずの うえを すすむ わざを つかえたら\lうきわも いらなくなるのに$"
 
