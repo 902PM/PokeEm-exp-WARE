@@ -246,10 +246,10 @@ NewMauville_Inside_EventScript_DefeatedVoltorb3::
 	end
 
 NewMauville_Inside_Text_GeneratorRadiatingHeat:
-	.string "{JPN}はつでんそうちに ちかづいた だけで\nねっきが つたわってくる!\pはやく とめたほうが よさそうだ$"
+	.string "はつでんそうちに ちかづいた だけで\nねっきが つたわってくる!\pはやく とめたほうが よさそうだ$"
 
 NewMauville_Inside_Text_GeneratorQuietedDown:
-	.string "{JPN}はつでんそうちは しずかに なった$"
+	.string "はつでんそうちは しずかに なった$"
 
 NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
-	.string "{JPN}{PLAYER}は\nスイッチを ふんだ!\p……ポチッとな!\p…… …… ……\n…… …… ……\pはつでんそうち は\nとまった ようだ$"
+	.string "{PLAYER}は\nスイッチを ふんだ!\p……ポチッとな!\p…… …… ……\n…… …… ……\pはつでんそうち は\nとまった ようだ$"

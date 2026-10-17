@@ -39,31 +39,31 @@ RS_MysteryEventsHouse_EventScript_Door::
 	end
 
 RS_MysteryEventsHouse_Text_OldManGreeting:
-	.string "{JPN}わしも わかいころは\nポケモン トレーナーとして\lせかいじゅうを たび していたのじゃ\pジジイとなった いまでは\nわかい トレーナーの しょうぶを みるのが\lゆいいつの たのしみ じゃ$"
+	.string "わしも わかいころは\nポケモン トレーナーとして\lせかいじゅうを たび していたのじゃ\pジジイとなった いまでは\nわかい トレーナーの しょうぶを みるのが\lゆいいつの たのしみ じゃ$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
-	.string "{JPN}とびらには かぎが かかって いるようだ!$"
+	.string "とびらには かぎが かかって いるようだ!$"
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
-	.string "{JPN}いまは {STR_VAR_1} という トレーナーが\nわしの いえに きておる!\p{STR_VAR_1}と しょうぶ してみたいのじゃな?$"
+	.string "いまは {STR_VAR_1} という トレーナーが\nわしの いえに きておる!\p{STR_VAR_1}と しょうぶ してみたいのじゃな?$"
 
 RS_MysteryEventsHouse_Text_YouWontBattle:
-	.string "{JPN}しょうぶ せんのか……\nしょうぶを みられなくて ガッカリ……$"
+	.string "しょうぶ せんのか……\nしょうぶを みられなくて ガッカリ……$"
 
 RS_MysteryEventsHouse_Text_KeepItToA3On3:
-	.string "{JPN}おお そうか そうか!\pじゃが この いえは\nあんまり がんじょう じゃないから\pせめて 3たい3の\nしょうぶに して くれんかのう?$"
+	.string "おお そうか そうか!\pじゃが この いえは\nあんまり がんじょう じゃないから\pせめて 3たい3の\nしょうぶに して くれんかのう?$"
 
 RS_MysteryEventsHouse_Text_SaveYourProgress:
-	.string "{JPN}じゃあ しょうぶの まえに\nレポートを かいて おいたほうが よいぞ$"
+	.string "じゃあ しょうぶの まえに\nレポートを かいて おいたほうが よいぞ$"
 
 RS_MysteryEventsHouse_Text_HopeToSeeAGoodMatch:
-	.string "{JPN}よい しょうぶを きたい しておるぞ!$"
+	.string "よい しょうぶを きたい しておるぞ!$"
 
 RS_MysteryEventsHouse_Text_BattleTie:
-	.string "{JPN}ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!$"
+	.string "ひきわけ じゃったか!\pおたがい いっぽも ゆずらぬ\nすばらしい しょうぶ じゃったぞ!$"
 
 RS_MysteryEventsHouse_Text_BattleWon:
-	.string "{JPN}みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!$"
+	.string "みごと じゃったぞ!\pまるで わしの わかい ころを\nみている ようじゃわい!$"
 
 RS_MysteryEventsHouse_Text_BattleLost:
-	.string "{JPN}ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう$"
+	.string "ざんねん じゃったのう\nじゃが よい しょうぶ じゃったぞ!\lつぎこそは かてると よいのう$"
