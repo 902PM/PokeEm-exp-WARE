@@ -72,74 +72,35 @@ CeruleanCity_House1_EventScript_StopDescribingBadges::
 	end
 
 CeruleanCity_House1_Text_BadgesHaveAmazingSecrets::
-	.string "Only skilled TRAINERS can collect\n"
-	.string "POKEMON BADGES.\p"
-	.string "I see you have at least one.\p"
-	.string "Those BADGES have amazing secrets,\n"
-	.string "did you know?$"
+	.string "うでが あがった\nポケモントレーナーだけが もらえる\lポケモン バッジ\pあなたも いくつか もってるね\pその バッジには\nすごい ひみつが あるのです$"
 
 CeruleanCity_House1_Text_DescribeWhichBadge::
-	.string "Now then…\p"
-	.string "Which of the eight BADGES should\n"
-	.string "I describe?$"
+	.string "では…\pポケモン バッジ 8つの ひみつ\nどれに ついて はなし ましょう?$"
 
 CeruleanCity_House1_Text_ComeVisitAnytime::
-	.string "Come visit me anytime you wish.$"
+	.string "はなしを ききたく なったら\nまた いらっしゃい$"
 
 CeruleanCity_House1_Text_AttackStatFlash::
-	.string "The ATTACK stat of all your\n"
-	.string "POKEMON increases a little bit.\p"
-	.string "It also lets you use the move\n"
-	.string "FLASH outside of battle.$"
+	.string "すべての\nポケモンの こうげき りょくが\lすこし たかく なります\pそれから フラッシュの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_ObeyLv30Cut::
-	.string "POKEMON up to Lv. 30 will obey\n"
-	.string "you.\p"
-	.string "That includes even outsiders you\n"
-	.string "obtain in trades.\p"
-	.string "POKEMON of higher levels will\n"
-	.string "be unruly in battle, however.\p"
-	.string "It also lets you use the move\n"
-	.string "CUT outside of battle.$"
+	.string "レベル30までの ポケモンは\nひとから もらった ポケモンでも\lおとなしく いうことを ききます\pそれいじょう レベルが たかいと\nうまく あつかえません\pそれから いあいぎりの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_SpeedStatFly::
-	.string "The SPEED stat of all your\n"
-	.string "POKEMON increases a little bit.\p"
-	.string "It also lets you use the move\n"
-	.string "FLY outside of battle.$"
+	.string "すべての\nポケモンの すばやさが\lすこし たかく なります\pそれから そらをとぶ わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_ObeyLv50Strength::
-	.string "POKEMON up to Lv. 50 will obey\n"
-	.string "you.\p"
-	.string "That includes even outsiders you\n"
-	.string "obtain in trades.\p"
-	.string "POKEMON of higher levels will\n"
-	.string "be unruly in battle, however.\p"
-	.string "It also lets you use the move\n"
-	.string "STRENGTH outside of battle.$"
+	.string "レベル50までの ポケモンは\nひとから もらった ポケモンでも\lおとなしく いうことを ききます\pそれいじょう レベルが たかいと\nうまく あつかえません\pそれから かいりきの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_DefenseStatSurf::
-	.string "The DEFENSE stat of all your\n"
-	.string "POKEMON increases a little bit.\p"
-	.string "It also lets you use the move\n"
-	.string "SURF outside of battle.$"
+	.string "すべての\nポケモンの ぼうぎょりょくが\lすこし たかく なります\pそれから なみのりの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_ObeyLv70RockSmash::
-	.string "POKEMON up to Lv. 70 will obey\n"
-	.string "you.\p"
-	.string "That includes even outsiders you\n"
-	.string "obtain in trades.\p"
-	.string "POKEMON of higher levels will\n"
-	.string "be unruly in battle, however.\p"
-	.string "It also lets you use the move\n"
-	.string "ROCK SMASH outside of battle.$"
+	.string "レベル70までの ポケモンは\nひとから もらった ポケモンでも\lおとなしく いうことを ききます\pそれいじょう レベルが たかいと\nうまく あつかえません\pそれから いわくだきの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_SpStatsWaterfall::
-	.string "The SP. ATK and SP. DEF stats of\n"
-	.string "all your POKEMON rise a little bit.\p"
-	.string "It also lets you use the move\n"
-	.string "WATERFALL outside of battle.$"
+	.string "すべての\nポケモンの とくこう とくぼうが\lすこし たかく なります\pそれから たきのぼりの わざは\nたたかって いない ときでも\lつかえるように なります$"
 
 CeruleanCity_House1_Text_AllMonsWillObeyYou::
-	.string "All POKEMON will obey you!$"
+	.string "すべての ポケモンは\nおとなしく いうことを ききます$"
 

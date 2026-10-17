@@ -35,29 +35,14 @@ CeruleanCity_PokemonCenter_1F_EventScript_Lass::
 	end
 
 CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons::
-	.string "That BILL!\p"
-	.string "I heard that he'll do whatever it\n"
-	.string "takes to get rare POKEMON.\p"
-	.string "He's not above doing all sorts\n"
-	.string "of things, I've heard.$"
+	.string "マサキの ヤツ!\pめずらしい ポケモンを\nてに いれる ためには…\pあんな ことも こんな ことも\nへいきで するって きいたよ!$"
 
 CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac::
-	.string "Have you heard about BILL?\p"
-	.string "Everyone calls him a POKeMANIAC!\p"
-	.string "I think people are just jealous of\n"
-	.string "BILL, though.\p"
-	.string "Who wouldn't want to boast about\n"
-	.string "their POKEMON?$"
+	.string "きみも\nマサキの うわさ きいてるか?\pみんなが あいつを\nポケモン マニアと よんでるよ!\pでも ものを あつめたり\nじまん したい きもちは\lだれでも ある!\pみんなも うらやましいんだな!$"
 
 CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons::
-	.string "BILL has lots of POKEMON!\n"
-	.string "He collects rare ones, too!$"
+	.string "マサキ にいちゃん\nポケモン いっぱい もってるよ!\pめずらしい ポケモンも\nあつめてるって$"
 
 CeruleanCity_PokemonCenter_1F_Text_TryTradingUpstairs::
-	.string "Why don't you go upstairs and try\n"
-	.string "trading POKEMON with your friends?\p"
-	.string "You could get a lot more variety\n"
-	.string "by trading.\p"
-	.string "The POKEMON you get in trades grow\n"
-	.string "quickly, too.$"
+	.string "おともだちと 2かいへ いって\nもってない ポケモン\lこうかんして もらったら\lたくさん あつまるわよ!\pひとから もらった ポケモンは\nはやく そだつしね!$"
 

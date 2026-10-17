@@ -465,150 +465,107 @@ CeladonCity_GameCorner_EventScript_UnusableSlotMachine3::
 	end
 
 CeladonCity_GameCorner_Text_CanExchangeCoinsNextDoor::
-	.string "Welcome!\p"
-	.string "You can exchange your COINS for\n"
-	.string "fabulous prizes next door.$"
+	.string "いらっしゃいませ!\pゲームで ためた コインは\nそとの こうかんじょで\lすきな けいひんと かえてね!$"
 
 CeladonCity_GameCorner_Text_WelcomeBuySomeCoins::
-	.string "Welcome to ROCKET GAME CORNER!\p"
-	.string "Do you need some game COINS?\n"
-	.string "Would you like to buy some?$"
+	.string "いらっしゃいませ!\nロケット ゲーム コーナーです\pゲームよう コイン ですね!\nなんまい かいますか?$"
 
 CeladonCity_GameCorner_Text_ComePlaySometime::
-	.string "No?\n"
-	.string "Please come play sometime!$"
+	.string "… いりませんか!\nそれでは また どうぞ!$"
 
 CeladonCity_GameCorner_Text_SorryDontHaveCoinCase::
-	.string "Oh, I'm sorry.\n"
-	.string "You don't have a COIN CASE.$"
+	.string "あれ? コインを いれる\nコインケースが ないよ!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsFull::
-	.string "Whoops!\n"
-	.string "Your COIN CASE is full.$"
+	.string "おっと…!\nそんなに コイン はいらないよ!$"
 
 CeladonCity_GameCorner_Text_CantAffordCoins::
-	.string "You can't afford the COINS.$"
+	.string "おかね たりないよ!$"
 
 CeladonCity_GameCorner_Text_HereAreYourCoins::
-	.string "Thank you.\n"
-	.string "Here are your COINS!$"
+	.string "はい! まいど あり!\nコインを どうぞ!$"
 
 CeladonCity_GameCorner_Text_RumoredTeamRocketRunsThisPlace::
-	.string "Keep this quiet.\p"
-	.string "It's rumored that this place is run\n"
-	.string "by TEAM ROCKET.$"
+	.string "… ここだけの はなし…\pこの ゲーム じょうは\nロケットだんの おみせ らしい…\lみんな うわさ しちょる…$"
 
 CeladonCity_GameCorner_Text_ThinkMachinesHaveDifferentOdds::
-	.string "I think these machines have\n"
-	.string "different odds.$"
+	.string "ばしょに よって よく でる\nスロットが あるようね$"
 
 CeladonCity_GameCorner_Text_DoYouWantToPlay::
-	.string "Kid, do you want to play?$"
+	.string "… なんだ\nゲーム やりたいのか?$"
 
 CeladonCity_GameCorner_Text_Received10CoinsFromMan::
-	.string "{PLAYER} received 10 COINS\n"
-	.string "from the man.$"
+	.string "{PLAYER}は おじさんから\nコイン 10まい もらった!$"
 
 CeladonCity_GameCorner_Text_DontNeedMyCoins::
-	.string "You don't need my COINS!$"
+	.string "やっぱり やるの やめた!$"
 
 CeladonCity_GameCorner_Text_WinsComeAndGo::
-	.string "Wins seem to come and go.\n"
-	.string "Nothing's a sure thing.$"
+	.string "かつ ときは かつんだけど\nまける ときは まけちゃうんだな$"
 
 CeladonCity_GameCorner_Text_WinOrLoseItsOnlyLuck::
-	.string "These slot games…\n"
-	.string "Win or lose, it's only by luck.$"
+	.string "スロット ゲームは たのしい!\nじかんが たつのを わすれるわ!$"
 
 CeladonCity_GameCorner_Text_GymGuyAdvice::
-	.string "Hey!\p"
-	.string "You have better things to do,\n"
-	.string "champ in the making!\p"
-	.string "CELADON GYM's LEADER is ERIKA.\p"
-	.string "She is a user of GRASS-type\n"
-	.string "POKEMON, and at one with nature.\p"
-	.string "She might appear docile because of\n"
-	.string "her flower arranging…\p"
-	.string "But she's not one to be taken\n"
-	.string "lightly!$"
+	.string "おお…!\pこんな ところで\nあぶら うってて いいのか!\lみらいの チャンピオン!\pタマムシの リーダー エリカは\nしぜんと こころを かよわす\lしょくぶつ ポケモンの つかいて!\pおはな なんか いけてる から\nおとなしそうに みえるが\lてごわい あいてに なるぞ!$"
 
 CeladonCity_GameCorner_Text_RareMonsForCoins::
-	.string "They offer rare POKEMON that can\n"
-	.string "be exchanged for your COINS.\p"
-	.string "But, I just can't seem to win!$"
+	.string "いい ポケモンが けいひんに\nあったからよー\pがんばってるんだが\nぜんぜん だめだ!$"
 
 CeladonCity_GameCorner_Text_SoEasyToGetHooked::
-	.string "Games are scary!\n"
-	.string "It's so easy to get hooked!$"
+	.string "ひょー… ゲームは こわい!\nちょっと いきぬきの つもりが\lむちゅうに なっちまう!$"
 
 CeladonCity_GameCorner_Text_WantSomeCoins::
-	.string "What's up?\n"
-	.string "Want some COINS?$"
+	.string "… なんだよ?\nコイン わけて やろうか?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy::
-	.string "{PLAYER} received 20 COINS\n"
-	.string "from the nice guy.$"
+	.string "{PLAYER}は おにいさんから\nコイン 20まい もらった!$"
 
 CeladonCity_GameCorner_Text_YouHaveLotsOfCoins::
-	.string "You have lots of COINS!$"
+	.string "いっぱい もってる じゃん$"
 
 CeladonCity_GameCorner_Text_NeedMoreCoinsForMonIWant::
-	.string "Darn! I need more COINS for the\n"
-	.string "POKEMON I want!$"
+	.string "くそ でないな!\nほしい けいひんが あるのに$"
 
 CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo::
-	.string "Hey, what? You're throwing me off!\n"
-	.string "Here are some COINS, so shoo!$"
+	.string "わ ちょっと!\n… てもとが くるう\lコイン あげるから\lあっち いってくれ$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromMan::
-	.string "{PLAYER} received 20 COINS\n"
-	.string "from the man.$"
+	.string "{PLAYER}は おじさんから\nコイン 20まい もらった!$"
 
 CeladonCity_GameCorner_Text_YouveGotPlentyCoins::
-	.string "You've got plenty of your own\n"
-	.string "COINS!$"
+	.string "コイン いっぱい あるじゃん$"
 
 CeladonCity_GameCorner_Text_WatchReelsClosely::
-	.string "The trick is to watch the reels\n"
-	.string "closely.$"
+	.string "スロットの えがらを よおく みて\nボタンを おすのが コツだよ$"
 
 CeladonCity_GameCorner_Text_GruntIntro::
-	.string "I'm guarding this poster!\n"
-	.string "Go away, or else!$"
+	.string "おれは\nこの ポスターを みはってるのだ\lじゃまを すると\lいたいめに あわせるぞ!$"
 
 CeladonCity_GameCorner_Text_GruntDefeat::
-	.string "Dang!$"
+	.string "ち ちくしょう!$"
 
 CeladonCity_GameCorner_Text_GruntPostBattle::
-	.string "The TEAM ROCKET HIDEOUT might\n"
-	.string "be discovered!\p"
-	.string "I better tell BOSS!$"
+	.string "このままでは ロケットだん\nアジトの そんざいが ばれちまう\lボスに れんらく しなくては!$"
 
 CeladonCity_GameCorner_Text_SwitchBehindPosterPushIt::
-	.string "Hey!\p"
-	.string "A switch behind the poster!?\n"
-	.string "Let's push it!$"
+	.string "あ!\pポスターの うらに\nひみつの スイッチを みつけた\lおしてみよう! …ポチッとな!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsRequired::
-	.string "A COIN CASE is required…$"
+	.string "コインケースを もっていない!$"
 
 CeladonCity_GameCorner_Text_DontHaveCoinCase::
-	.string "Oops!\n"
-	.string "Don't have the COIN CASE!$"
+	.string "しまった!\nコインケースを もっていない!$"
 
 CeladonCity_GameCorner_Text_SlotMachineWantToPlay::
-	.string "A slot machine!\n"
-	.string "Want to play?$"
+	.string "スロットマシーンが ある!\nあそびますか?$"
 
 CeladonCity_GameCorner_Text_OutOfOrder::
-	.string "OUT OF ORDER\n"
-	.string "This is broken.$"
+	.string "こしょう ちゅう!\n… ざんねん だけど こわれてる$"
 
 CeladonCity_GameCorner_Text_OutToLunch::
-	.string "OUT TO LUNCH\n"
-	.string "This is reserved.$"
+	.string "おしょくじ ちゅう!\n… の フダが かけてある!$"
 
 CeladonCity_GameCorner_Text_SomeonesKeys::
-	.string "Someone's keys!\n"
-	.string "They'll be back.$"
+	.string "カギが おいてある…\nきっと これは だれかの だいだ!$"
 

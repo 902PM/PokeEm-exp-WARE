@@ -51,44 +51,29 @@ CeladonCity_Condominiums_3F_EventScript_Computer3::
 	end
 
 CeladonCity_Condominiums_3F_Text_ImTheProgrammer::
-	.string "Me?\n"
-	.string "I'm the programmer!$"
+	.string "おれ? プログラマー だよ!$"
 
 CeladonCity_Condominiums_3F_Text_ImTheGraphicArtist::
-	.string "I'm the graphic artist!\n"
-	.string "I drew you!$"
+	.string "おれ グラフィッカー!\nおまえを かいたの おれさ!$"
 
 CeladonCity_Condominiums_3F_Text_IWroteTheStory::
-	.string "I wrote the story!\n"
-	.string "Isn't ERIKA cute?\p"
-	.string "I like MISTY a lot, too!\n"
-	.string "Oh, and SABRINA, I like her!$"
+	.string "ぼく シナリオ かいた!\nあの… エリカ かわいい でしょ\pカスミも いいよね!\pナツメも いいよね!$"
 
 CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex::
-	.string "Is that right?\p"
-	.string "I'm the game designer!\p"
-	.string "Filling up your POKeDEX is tough,\n"
-	.string "but don't quit!\p"
-	.string "When you finish, come tell me!$"
+	.string "そーですかー!\pぼくは ゲーム デザイナー\pポケモンずかん ぜんぶ あつめるの\nたいへん だけど がんばって!\lもし ぜんぶ あつめたら\pおしえてね!$"
 
 CeladonCity_Condominiums_3F_Text_CompletedPokedexCongratulations::
-	.string "Wow! Excellent!\n"
-	.string "You completed your POKeDEX!\l"
-	.string "Congratulations!\l"
-	.string "…$"
+	.string "わあ すごい!\nポケモンずかん ぜんぶの ページ\lとうとう あつめたんだね!\lおめでとう!\l……$"
 
 CeladonCity_Condominiums_3F_Text_ItsTheGameProgram::
-	.string "It's the game program! Messing with\n"
-	.string "it could bug out the game!$"
+	.string "ゲームの プログラムだ!\nこれ かえたら バグる かも$"
 
 CeladonCity_Condominiums_3F_Text_SomeonesPlayingGame::
-	.string "Someone's playing a game instead of\n"
-	.string "working!$"
+	.string "パソコンで しごと ちゅう…\nと おもったら ゲーム だった!$"
 
 CeladonCity_Condominiums_3F_Text_ItsScriptBetterNotLookAtEnding::
-	.string "It's the script!\n"
-	.string "Better not look at the ending!$"
+	.string "… ポケモンの シナリオだ!\nこれは エンディングだ!\lいまは みないで おこう…!$"
 
 CeladonCity_Condominiums_3F_Text_GameFreakDevelopmentRoom::
-	.string "GAME FREAK Development Room$"
+	.string "ゲームフリーク かいはつ しつ$"
 
