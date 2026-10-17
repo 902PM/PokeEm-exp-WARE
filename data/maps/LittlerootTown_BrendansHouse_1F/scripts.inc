@@ -284,88 +284,88 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "{JPN}ママ『ほら {PLAYER}!\nおうちの なかも すてき でしょ!$"
+	.string "ママ『ほら {PLAYER}!\nおうちの なかも すてき でしょ!$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "{JPN}おうちの かたづけは\nひっこしやさんの ポケモンが\lてつだって くれるから らくちんね!\p{PLAYER}も 2かいに ある\nじぶんの おへやに いってごらん!\pパパが ひっこしの おいわいに\nかってくれた とけいが あるから\lじかんを あわせて おきなさいよ$"
+	.string "おうちの かたづけは\nひっこしやさんの ポケモンが\lてつだって くれるから らくちんね!\p{PLAYER}も 2かいに ある\nじぶんの おへやに いってごらん!\pパパが ひっこしの おいわいに\nかってくれた とけいが あるから\lじかんを あわせて おきなさいよ$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
-	.string "{JPN}ママ『{PLAYER}\pじぶんの へやを みてこないの?$"
+	.string "ママ『{PLAYER}\pじぶんの へやを みてこないの?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "{JPN}ママ『{PLAYER}\pおへやの とけい あわせてきて$"
+	.string "ママ『{PLAYER}\pおへやの とけい あわせてきて$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
-	.string "{JPN}ママ『……あ! {PLAYER}! {PLAYER}!\nはやく こっちに いらっしゃい!$"
+	.string "ママ『……あ! {PLAYER}! {PLAYER}!\nはやく こっちに いらっしゃい!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
-	.string "{JPN}ママ『トウカの ジムが うつってるわ\nパパが でるかもよ!!$"
+	.string "ママ『トウカの ジムが うつってるわ\nパパが でるかもよ!!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
-	.string "{JPN}ママ『あらら…… おわっちゃった\pパパが でてたみたい だったのに ざんねんね$"
+	.string "ママ『あらら…… おわっちゃった\pパパが でてたみたい だったのに ざんねんね$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
-	.string "{JPN}……あ そうそう! このまち には\nオダマキはかせ っていう\lパパの おともだちが いるの\pはかせの いえは おとなり だから\nきちんと あいさつ してくると いいわ!$"
+	.string "……あ そうそう! このまち には\nオダマキはかせ っていう\lパパの おともだちが いるの\pはかせの いえは おとなり だから\nきちんと あいさつ してくると いいわ!$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "{JPN}ママ『いってらっしゃい!$"
+	.string "ママ『いってらっしゃい!$"
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
-	.string "{JPN}ママ『オダマキはかせ には あえたの?$"
+	.string "ママ『オダマキはかせ には あえたの?$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "{JPN}ママ『どう? {PLAYER}\nすこし つかれたんじゃ ないかしら?\pおうちで やすんでいくと いいわ$"
+	.string "ママ『どう? {PLAYER}\nすこし つかれたんじゃ ないかしら?\pおうちで やすんでいくと いいわ$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "{JPN}ママ『じゃあ きをつけてね!$"
+	.string "ママ『じゃあ きをつけてね!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "{JPN}ママ『あら\nその バッジ パパから もらったの!?\pじゃあ ママも これ あげようかな$"
+	.string "ママ『あら\nその バッジ パパから もらったの!?\pじゃあ ママも これ あげようかな$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
-	.string "{JPN}あんまり むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!$"
+	.string "あんまり むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "{JPN}ママ『なあに それ? ポケナビ?\nデボンの ひとから いただいたの?\pじゃあ ママの ことも\nとうろくして もらっちゃおうかな!\p…… …… ……$"
+	.string "ママ『なあに それ? ポケナビ?\nデボンの ひとから いただいたの?\pじゃあ ママの ことも\nとうろくして もらっちゃおうかな!\p…… …… ……$"
 
 PlayersHouse_1F_Text_RegisteredMom:
-	.string "{JPN}ママを\nポケナビに とうろく した!$"
+	.string "ママを\nポケナビに とうろく した!$"
 
 PlayersHouse_1F_Text_Vigoroth1:
-	.string "{JPN}ふぎーっ$"
+	.string "ふぎーっ$"
 
 PlayersHouse_1F_Text_Vigoroth2:
-	.string "{JPN}ふごっ ふご ふご……$"
+	.string "ふごっ ふご ふご……$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
-	.string "{JPN}インタビュアー『…… いじょう\nトウカジムの まえ からでした!$"
+	.string "インタビュアー『…… いじょう\nトウカジムの まえ からでした!$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
-	.string "{JPN}テレビで えいがを やってる!\pおとなと こどもが ふたり ならんで\nおおきな ピアノの うえで おどってる!\pもう いかなきゃ!$"
+	.string "テレビで えいがを やってる!\pおとなと こどもが ふたり ならんで\nおおきな ピアノの うえで おどってる!\pもう いかなきゃ!$"
 
 PlayersHouse_1F_Text_RunningShoesManual:
-	.string "{JPN}ランニングシューズの\nせつめいしょが ある!\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」$"
+	.string "ランニングシューズの\nせつめいしょが ある!\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
-	.string "{JPN}パパ『ん?\n{PLAYER}じゃ ないか!\pひさしぶりに かおを みたが\nどこか たくましくなった……\lそんな かんじ だな\p……おっと そうだった\nハギさん という ひとから\lおまえあてに なにか とどいていたぞ!$"
+	.string "パパ『ん?\n{PLAYER}じゃ ないか!\pひさしぶりに かおを みたが\nどこか たくましくなった……\lそんな かんじ だな\p……おっと そうだった\nハギさん という ひとから\lおまえあてに なにか とどいていたぞ!$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
-	.string "{JPN}パパ『ふねのチケットか……\pふねに のるなら カイナか ミナモに\nふねのりばが あったよな$"
+	.string "パパ『ふねのチケットか……\pふねに のるなら カイナか ミナモに\nふねのりばが あったよな$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
-	.string "{JPN}では わたしは\nトウカの ジムに もどるよ\pママ\nいえのこと たのんだよ$"
+	.string "では わたしは\nトウカの ジムに もどるよ\pママ\nいえのこと たのんだよ$"
 
 PlayersHouse_1F_Text_DadShouldStayLonger:
-	.string "{JPN}ママ『パパったら\nひさしぶりに かえって きたのに\lポケモンの はなし ばっかり!\pもっと ゆっくり すれば いいのにね!$"
+	.string "ママ『パパったら\nひさしぶりに かえって きたのに\lポケモンの はなし ばっかり!\pもっと ゆっくり すれば いいのにね!$"
 
 PlayersHouse_1F_Text_IsThatABreakingStory:
-	.string "{JPN}ママ『なにかの ニュース かしら?$"
+	.string "ママ『なにかの ニュース かしら?$"
 
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
-	.string "{JPN}りんじ ニュース です\pホウエンちほうの かくちで\n……いろの ポケモンが とんでいた\lという じょうほうが よせられています\pいまのところ しょうたいは\nわかって いない ようです……\pでは ひきつづき\nえいがを おたのしみ ください$"
+	.string "りんじ ニュース です\pホウエンちほうの かくちで\n……いろの ポケモンが とんでいた\lという じょうほうが よせられています\pいまのところ しょうたいは\nわかって いない ようです……\pでは ひきつづき\nえいがを おたのしみ ください$"
 
 PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "{JPN}ママ『ねえ ねえ {PLAYER}\nいまの ニュース\lなにいろの ポケモンって いってたの?$"
+	.string "ママ『ねえ ねえ {PLAYER}\nいまの ニュース\lなにいろの ポケモンって いってたの?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "{JPN}ママ『へえー まだまだ\nしられていない ポケモンは いるのねえ$"
+	.string "ママ『へえー まだまだ\nしられていない ポケモンは いるのねえ$"

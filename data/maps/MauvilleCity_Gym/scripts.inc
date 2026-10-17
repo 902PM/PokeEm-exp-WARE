@@ -257,94 +257,94 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "{JPN}げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pキンセツシティの ジムリーダー テッセンは\nでんきタイプ ポケモンの つかいてだ!\pみずタイプの ポケモンで むかうと\nビリビリ しびれさせられるぞ!\pしかも スイッチで あけたり する\nけったいな とびらを\lジムに つくって しまったんだ!\pきばってこー な!$"
+	.string "げんき しとぉや!!\nチャンピオンを めざす {PLAYER}!!\pキンセツシティの ジムリーダー テッセンは\nでんきタイプ ポケモンの つかいてだ!\pみずタイプの ポケモンで むかうと\nビリビリ しびれさせられるぞ!\pしかも スイッチで あけたり する\nけったいな とびらを\lジムに つくって しまったんだ!\pきばってこー な!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "{JPN}こりゃ びっくり たまげたッ!\nきみの おかげで とびらは ひらかれた!$"
+	.string "こりゃ びっくり たまげたッ!\nきみの おかげで とびらは ひらかれた!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "{JPN}しびれる オレの ハートが\nきみの やぼうを ふんさい するっ!$"
+	.string "しびれる オレの ハートが\nきみの やぼうを ふんさい するっ!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "{JPN}しびれる たたかい だったぜ……$"
+	.string "しびれる たたかい だったぜ……$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "{JPN}ポケモンも ロックも ハートが すべて\nいぇーい!$"
+	.string "ポケモンも ロックも ハートが すべて\nいぇーい!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "{JPN}テッセンさんに きたえられた この オレが\nそう かんたんに まける はずがねえ!$"
+	.string "テッセンさんに きたえられた この オレが\nそう かんたんに まける はずがねえ!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "{JPN}キュ キュイィィィン……$"
+	.string "キュ キュイィィィン……$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "{JPN}このジムの リーダー テッセンさんは\nきみの おやじが うまれる まえから\lポケモンと たたかってきた つわものさ!$"
+	.string "このジムの リーダー テッセンさんは\nきみの おやじが うまれる まえから\lポケモンと たたかってきた つわものさ!$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "{JPN}この ポケモンジムは\nしかけが あって たのしいな!$"
+	.string "この ポケモンジムは\nしかけが あって たのしいな!$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "{JPN}まけると たのしくないよ$"
+	.string "まけると たのしくないよ$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "{JPN}テッセンさんは スイッチを つかった\nしかけを つくるのが しゅみ なんだって!$"
+	.string "テッセンさんは スイッチを つかった\nしかけを つくるのが しゅみ なんだって!$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "{JPN}あたしの みりょくと\nポケモンの わざで しびれさせちゃう!$"
+	.string "あたしの みりょくと\nポケモンの わざで しびれさせちゃう!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "{JPN}あなたの つよさに しびれたわ!$"
+	.string "あなたの つよさに しびれたわ!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "{JPN}この キンセツシティは\nテッセンさんが つくったって はなし\pあなたや わたしが\nうまれる まえからの トレーナーだもの\lきっと いろんな ことを しってるわ$"
+	.string "この キンセツシティは\nテッセンさんが つくったって はなし\pあなたや わたしが\nうまれる まえからの トレーナーだもの\lきっと いろんな ことを しってるわ$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "{JPN}ぼく ひかるもの だーいすき なんだ!$"
+	.string "ぼく ひかるもの だーいすき なんだ!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "{JPN}ああ…\nめのまえが チカ チカ$"
+	.string "ああ…\nめのまえが チカ チカ$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "{JPN}キンセツジムも テッセンさんの おデコも\nピカピカ ひかってて うれしいな!$"
+	.string "キンセツジムも テッセンさんの おデコも\nピカピカ ひかってて うれしいな!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "{JPN}まちを かいぞうする けいかくは\nあきらめた わし じゃが\pいまは このジムの とびらの しかけを\nつくることに うちこんで おるのじゃ!\p……あれ? おまえさん\nなんで わしの まえに いるんじゃ?\pなにー! とびらの しかけを\nくぐりぬけて きたと いうのかっ!\pわっはははは! こりゃ おもしろい!\pならば この キンセツ ポケモン ジムの\nリーダー テッセンが\lポケモンで しびれさせて やるぞい!$"
+	.string "まちを かいぞうする けいかくは\nあきらめた わし じゃが\pいまは このジムの とびらの しかけを\nつくることに うちこんで おるのじゃ!\p……あれ? おまえさん\nなんで わしの まえに いるんじゃ?\pなにー! とびらの しかけを\nくぐりぬけて きたと いうのかっ!\pわっはははは! こりゃ おもしろい!\pならば この キンセツ ポケモン ジムの\nリーダー テッセンが\lポケモンで しびれさせて やるぞい!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "{JPN}わっはははは! わしの まけじゃ!\nおまえさんには しびれた わい\lこの バッジ もっていくが いいぞ!$"
+	.string "わっはははは! わしの まけじゃ!\nおまえさんには しびれた わい\lこの バッジ もっていくが いいぞ!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{JPN}{PLAYER}は テッセンから\nダイナモバッジを もらった!$"
+	.string "{PLAYER}は テッセンから\nダイナモバッジを もらった!$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "{JPN}ダイナモバッジを もっておると\nひでんの いわくだきが\lつかえるように なるんじゃ!\pそれに おまえさんの ポケモン\nいっそう すばやく なるぞい!\pうむ……\nこれも もっていくが いいぞ!$"
+	.string "ダイナモバッジを もっておると\nひでんの いわくだきが\lつかえるように なるんじゃ!\pそれに おまえさんの ポケモン\nいっそう すばやく なるぞい!\pうむ……\nこれも もっていくが いいぞ!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "{JPN}その わざマシン34 には\nでんげきは が はいっておる!\pかならず めいちゅう する\nたのもしい わざ なんじゃよ!\p…… …… ……$"
+	.string "その わざマシン34 には\nでんげきは が はいっておる!\pかならず めいちゅう する\nたのもしい わざ なんじゃよ!\p…… …… ……$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "{JPN}ジムリーダー テッセンを\nポケナビに とうろく した!$"
+	.string "ジムリーダー テッセンを\nポケナビに とうろく した!$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "{JPN}みどころの ある わかものの しゅつげん\nじつに たのもしい ことじゃ!$"
+	.string "みどころの ある わかものの しゅつげん\nじつに たのもしい ことじゃ!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "{JPN}わっはははは!\nわかものよ もっともっと がんばるんじゃ!$"
+	.string "わっはははは!\nわかものよ もっともっと がんばるんじゃ!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "{JPN}キンセツシティ ポケモンジム$"
+	.string "キンセツシティ ポケモンジム$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "{JPN}キンセツシティ ポケモンジム\pテッセン にんてい トレーナー!\n{PLAYER}$"
+	.string "キンセツシティ ポケモンジム\pテッセン にんてい トレーナー!\n{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "{JPN}テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\pひばな バチバチ いわせて やるから\nかくご するんじゃぞ!$"
+	.string "テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\pひばな バチバチ いわせて やるから\nかくご するんじゃぞ!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
-	.string "{JPN}ふぅ バッテリーぎれ じゃ……$"
+	.string "ふぅ バッテリーぎれ じゃ……$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "{JPN}テッセン『わしゃ じゅうでんの しなおしだ\pたいせいを たてなおしたら\nまた きみの ちょうせんを うけるから\lしばらく してから きておくれ……$"
+	.string "テッセン『わしゃ じゅうでんの しなおしだ\pたいせいを たてなおしたら\nまた きみの ちょうせんを うけるから\lしばらく してから きておくれ……$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "{JPN}テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\p……ありゃ? たたかえる ポケモンを\n1ひきしか もっておらん ようだな\pすまんが 2ひき いじょうの\nポケモンを もって きておくれ!$"
+	.string "テッセン『おーっと あらわれたな!\nわかっとる! わしと ポケモンの\lしょうぶを したいんじゃろう!?\pわっはははは!\p……ありゃ? たたかえる ポケモンを\n1ひきしか もっておらん ようだな\pすまんが 2ひき いじょうの\nポケモンを もって きておくれ!$"

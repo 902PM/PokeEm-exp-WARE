@@ -905,56 +905,56 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "{JPN}ママ『{PLAYER} おつかれさま!\pながいあいだ トラックに ゆられて\nたいへん だったでしょ?\pここが ミシロタウンよ!\pどう? これが わたしたちの\nあたらしい おうち!\pちょっと こふうな かんじで\nすみやすそうな ところ でしょ?\pこんどは {PLAYER}の おへやも あるのよ!\nさあ なかに はいりましょ!$"
+	.string "ママ『{PLAYER} おつかれさま!\pながいあいだ トラックに ゆられて\nたいへん だったでしょ?\pここが ミシロタウンよ!\pどう? これが わたしたちの\nあたらしい おうち!\pちょっと こふうな かんじで\nすみやすそうな ところ でしょ?\pこんどは {PLAYER}の おへやも あるのよ!\nさあ なかに はいりましょ!$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "{JPN}ママ『まって {PLAYER}!$"
+	.string "ママ『まって {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "{JPN}ママ『{PLAYER}! {PLAYER}!\nオダマキはかせに あいさつ した?\pあら! かわいい ポケモン!\nオダマキはかせ に いただいたのね\pやっぱり パパの こども なのね……\nポケモンと いっしょに いるのが\lさまに なっているわよ!\pほらっ! ぼうけんに でるなら\nランニングシューズを はくと いいわ!\pいろんな ところ\nはしれるように なるわよ!$"
+	.string "ママ『{PLAYER}! {PLAYER}!\nオダマキはかせに あいさつ した?\pあら! かわいい ポケモン!\nオダマキはかせ に いただいたのね\pやっぱり パパの こども なのね……\nポケモンと いっしょに いるのが\lさまに なっているわよ!\pほらっ! ぼうけんに でるなら\nランニングシューズを はくと いいわ!\pいろんな ところ\nはしれるように なるわよ!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{JPN}{PLAYER}は ランニングシューズに\nはきかえた!$"
+	.string "{PLAYER}は ランニングシューズに\nはきかえた!$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "{JPN}ママ『{PLAYER}!\nこれが せつめいしょ よ\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」$"
+	.string "ママ『{PLAYER}!\nこれが せつめいしょ よ\p「ランニングシューズは\n Bボタンを おすことで いままでよりも\l はやく はしれるように なります!\p ランニングシューズを はいて\n おもいっきり そとを はしろう!」$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "{JPN}…… …… ……\n…… …… ……\pあなたが じぶんの ポケモンを\nもつように なった だなんて……\lパパが しったら おおよろこび するわよ!\p……でも むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!$"
+	.string "…… …… ……\n…… …… ……\pあなたが じぶんの ポケモンを\nもつように なった だなんて……\lパパが しったら おおよろこび するわよ!\p……でも むりは しないでね\nなにか あれば かえって くればいいから\pじゃあ がんばってね!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "{JPN}パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!$"
+	.string "パソコンを つかえば\nどうぐや ポケモンが ほぞん できるんだ!\pかがくの ちからって しびれるーっ!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "{JPN}ずーっと けんきゅうしつに こもって\nしらべものを しているかと おもえば\lとつぜん のやまに とびだしていく……\pオダマキはかせって いったい\nいつ うちに かえっているんだろう?$"
+	.string "ずーっと けんきゅうしつに こもって\nしらべものを しているかと おもえば\lとつぜん のやまに とびだしていく……\pオダマキはかせって いったい\nいつ うちに かえっているんだろう?$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "{JPN}あの あの あのね!\pここから さきの どうろ\nくさむらに はいると\lやせいの ポケモンが でてくるの!$"
+	.string "あの あの あのね!\pここから さきの どうろ\nくさむらに はいると\lやせいの ポケモンが でてくるの!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "{JPN}じぶんの ポケモンを もってないと\nあぶないの!$"
+	.string "じぶんの ポケモンを もってないと\nあぶないの!$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "{JPN}ねえ ねえ!\pいま まちの そとから\nこわーい ポケモンの こえが きこえたよ!\pなにが おこってるのか みにいきたいけど\nわたし ポケモン もってないし……\p{STR_VAR_1}\nわたしの かわりに みてきて くれる?$"
+	.string "ねえ ねえ!\pいま まちの そとから\nこわーい ポケモンの こえが きこえたよ!\pなにが おこってるのか みにいきたいけど\nわたし ポケモン もってないし……\p{STR_VAR_1}\nわたしの かわりに みてきて くれる?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "{JPN}{STR_VAR_1}の おかげで\nはかせ たすかった! よかったー$"
+	.string "{STR_VAR_1}の おかげで\nはかせ たすかった! よかったー$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "{JPN}ポケモンを つかまえに いくの?\nがんばってね!$"
+	.string "ポケモンを つかまえに いくの?\nがんばってね!$"
 
 LittlerootTown_Text_TownSign:
-	.string "{JPN}ここは ミシロ タウン\nどんな いろにも そまらない まち$"
+	.string "ここは ミシロ タウン\nどんな いろにも そまらない まち$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "{JPN}「オダマキ ポケモン けんきゅうじょ」$"
+	.string "「オダマキ ポケモン けんきゅうじょ」$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "{JPN}「{PLAYER}の いえ」$"
+	.string "「{PLAYER}の いえ」$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "{JPN}「オダマキ はかせの いえ」$"
+	.string "「オダマキ はかせの いえ」$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "{JPN}オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで$"
+	.string "オダマキ『いやー {PLAYER}{KUN}!\nそれにしても みごと だったね\pさいしょに きみを みたときから\nただもの ではないと おもったけど\lまさか これほど とはねえ\pそうそう!\nきみに あげた ポケモンずかん\lまだ もってるよね?\pちょっと はなしが あるから\nいっしょに けんきゅうじょまで おいで$"
 

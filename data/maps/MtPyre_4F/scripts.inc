@@ -9,11 +9,11 @@ MtPyre_5F_EventScript_Atsushi::
 	end
 
 MtPyre_5F_Text_AtsushiIntro:
-	.string "{JPN}おししょうさま……\nいまの わたしの じつりょく\lみていて ください!$"
+	.string "おししょうさま……\nいまの わたしの じつりょく\lみていて ください!$"
 
 MtPyre_5F_Text_AtsushiDefeat:
-	.string "{JPN}おししょうさま……\nすんません……$"
+	.string "おししょうさま……\nすんません……$"
 
 MtPyre_5F_Text_AtsushiPostBattle:
-	.string "{JPN}もっと つよくならないと\nここに ねむる おししょうさまも\lあんしん できないよな……$"
+	.string "もっと つよくならないと\nここに ねむる おししょうさまも\lあんしん できないよな……$"
 

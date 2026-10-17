@@ -538,34 +538,34 @@ LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast:
 	step_end
 
 LilycoveCity_Harbor_Text_FerryUnavailable:
-	.string "{JPN}えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……$"
+	.string "えっ? ふね ですか?\pもうしわけ ございません げんざい\nれんらくせんは ないんです……$"
 
 LilycoveCity_Harbor_Text_MayISeeYourTicket:
-	.string "{JPN}れんらくせんを ごりよう ですね!\nチケットは おもち でしょうか?$"
+	.string "れんらくせんを ごりよう ですね!\nチケットは おもち でしょうか?$"
 
 LilycoveCity_Harbor_Text_NoTicket:
-	.string "{JPN}{PLAYER}は\nチケットを もっていない!\p……もうしわけ ありません!\pふねに のれるのは\nチケットの ある かた だけです$"
+	.string "{PLAYER}は\nチケットを もっていない!\p……もうしわけ ありません!\pふねに のれるのは\nチケットの ある かた だけです$"
 
 LilycoveCity_Harbor_Text_FlashTicketWhereTo:
-	.string "{JPN}{PLAYER}は\nふねのチケットを みせた!\pはい! けっこう です!\pいきさきは どちら でしょう?$"
+	.string "{PLAYER}は\nふねのチケットを みせた!\pはい! けっこう です!\pいきさきは どちら でしょう?$"
 
 LilycoveCity_Harbor_Text_SailAnotherTime:
-	.string "{JPN}また ごりよう ください!$"
+	.string "また ごりよう ください!$"
 
 LilycoveCity_Harbor_Text_SlateportItIs:
-	.string "{JPN}カイナシティ ですね!$"
+	.string "カイナシティ ですね!$"
 
 LilycoveCity_Harbor_Text_BattleFrontierItIs:
-	.string "{JPN}バトルフロンティア ですね!$"
+	.string "バトルフロンティア ですね!$"
 
 LilycoveCity_Harbor_Text_PleaseBoard:
-	.string "{JPN}れんらくせんに のって おまちください$"
+	.string "れんらくせんに のって おまちください$"
 
 LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo:
-	.string "{JPN}いきさきは どちら でしょう?$"
+	.string "いきさきは どちら でしょう?$"
 
 LilycoveCity_Harbor_Text_SailorFerryUnavailable:
-	.string "{JPN}れんらくせんが かんせい しないと\nふなのり というものは ヒマだぜ……\pカイナの ぞうせんじょの れんちゅう\nしゃかりきに がんばって くれよな$"
+	.string "れんらくせんが かんせい しないと\nふなのり というものは ヒマだぜ……\pカイナの ぞうせんじょの れんちゅう\nしゃかりきに がんばって くれよな$"
 
 LilycoveCity_Harbor_Text_SailorFerryAvailable:
-	.string "{JPN}やっと れんらくせん タイドリップごうが\nうんこう するように なったんだ!\pカイナの ぞうせんじょの みんな\nたいへん だったろうな\lこれからは おれが いそがしくなるぞ!$"
+	.string "やっと れんらくせん タイドリップごうが\nうんこう するように なったんだ!\pカイナの ぞうせんじょの みんな\nたいへん だったろうな\lこれからは おれが いそがしくなるぞ!$"

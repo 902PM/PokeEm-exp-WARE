@@ -67,29 +67,29 @@ LilycoveCity_MoveDeletersHouse_EventScript_LastMonWithSurf::
 	end
 
 LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove:
-	.string "{JPN}えーと……\nそうじゃ わし わすれじいさん\pポケモンの わざを\nわすれさせる ことが できるんじゃ!\pわざを わすれ させるかね?$"
+	.string "えーと……\nそうじゃ わし わすれじいさん\pポケモンの わざを\nわすれさせる ことが できるんじゃ!\pわざを わすれ させるかね?$"
 
 LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget:
-	.string "{JPN}どの ポケモンに するんじゃ?$"
+	.string "どの ポケモンに するんじゃ?$"
 
 LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten:
-	.string "{JPN}どの わざを\nわすれ させるんじゃ?$"
+	.string "どの わざを\nわすれ させるんじゃ?$"
 
 LilycoveCity_MoveDeletersHouse_Text_MonOnlyKnowsOneMove:
-	.string "{JPN}{STR_VAR_1}は わざを 1つしか\nもってない ようじゃ……$"
+	.string "{STR_VAR_1}は わざを 1つしか\nもってない ようじゃ……$"
 
 LilycoveCity_MoveDeletersHouse_Text_MonsMoveShouldBeForgotten:
-	.string "{JPN}むむ!\n{STR_VAR_1}の {STR_VAR_2}じゃな?$"
+	.string "むむ!\n{STR_VAR_1}の {STR_VAR_2}じゃな?$"
 
 LilycoveCity_MoveDeletersHouse_Text_MonHasForgottenMove:
-	.string "{JPN}だいせいこう じゃ!\p{STR_VAR_1}は {STR_VAR_2}を\nわすれた ようじゃ!$"
+	.string "だいせいこう じゃ!\p{STR_VAR_1}は {STR_VAR_2}を\nわすれた ようじゃ!$"
 
 LilycoveCity_MoveDeletersHouse_Text_ComeAgain:
-	.string "{JPN}わすれさせたい わざが あったら\nまた くるのじゃぞ!$"
+	.string "わすれさせたい わざが あったら\nまた くるのじゃぞ!$"
 
 LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves:
-	.string "{JPN}なぬ!? タマゴは\nわざを おぼえていない ようじゃが……?$"
+	.string "なぬ!? タマゴは\nわざを おぼえていない ようじゃが……?$"
 
 LilycoveCity_MoveDeletersHouse_Text_CantForgetSurf:
-	.string "{JPN}むむ!\p{STR_VAR_1}は なみのりを\nわすれたくない ようじゃ!$"
+	.string "むむ!\p{STR_VAR_1}は なみのりを\nわすれたくない ようじゃ!$"
 
