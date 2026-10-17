@@ -42,47 +42,47 @@ BattleFrontier_Lounge5_EventScript_LittleBoy::
 	end
 
 BattleFrontier_Lounge5_Text_NatureGirlGreeting::
-	.string "{JPN}へへ! あたち ポケモンの\nきもち わかるの!\pね! ポケモン みちて! みちて!$"
+	.string "へへ! あたち ポケモンの\nきもち わかるの!\pね! ポケモン みちて! みちて!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlNoneShown::
-	.string "{JPN}ぷー! けち!!$"
+	.string "ぷー! けち!!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlAttackHighAttackLow::
-	.string "{JPN}ふんふん……\pこのこ たたかうの ちゅき! って!\nいっぱい いたいいたい でも\lたたかうよ! って!$"
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nいっぱい いたいいたい でも\lたたかうよ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlAttackHighDefenseLow::
-	.string "{JPN}ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!$"
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlAttackHighSupportLow::
-	.string "{JPN}ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!$"
+	.string "ふんふん……\pこのこ たたかうの ちゅき! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighAttackLow::
-	.string "{JPN}ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!$"
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighDefenseLow::
-	.string "{JPN}ふんふん……\pこのこ じぶん だいじ! って!\nいっぱい いたいいたい でも\lじぶん だいじ! って!$"
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nいっぱい いたいいたい でも\lじぶん だいじ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlDefenseHighSupportLow::
-	.string "{JPN}ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!$"
+	.string "ふんふん……\pこのこ じぶん だいじ! って!\nでも あんまし いたいいたい だと\lずるいの するよ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlSupportHighAttackLow::
-	.string "{JPN}ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!$"
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lちかえし してやる! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlSupportHighDefenseLow::
-	.string "{JPN}ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!$"
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nでも あんまし いたいいたい だと\lじぶんが ちんぱい なるよ! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlSupportHighSupportLow::
-	.string "{JPN}ふんふん……\pこのこ ずるいの ちゅき! って!\nいっぱい いたいいたい でも\lずるいのが いい! って!$"
+	.string "ふんふん……\pこのこ ずるいの ちゅき! って!\nいっぱい いたいいたい でも\lずるいのが いい! って!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlEgg::
-	.string "{JPN}たまごは ねんね してる から\nおはなち できない よぉ!$"
+	.string "たまごは ねんね してる から\nおはなち できない よぉ!$"
 
 BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon::
-	.string "{JPN}ポケモンの きもちが わかるとは\nあの おじょうちゃん なかなか\lシャレた ことを もうしますな!$"
+	.string "ポケモンの きもちが わかるとは\nあの おじょうちゃん なかなか\lシャレた ことを もうしますな!$"
 
 BattleFrontier_Lounge5_Text_GirlSayingSomethingProfound::
-	.string "{JPN}じぶん あのこが すごく だいじなことを\nいっている きが するで あります!$"
+	.string "じぶん あのこが すごく だいじなことを\nいっている きが するで あります!$"
 
 BattleFrontier_Lounge5_Text_GirlPlaysAtRedHouseALot::
-	.string "{JPN}ぼく ちってるぜ!\pあのこ あかい おうちで\nよく あそんでる!$"
+	.string "ぼく ちってるぜ!\pあのこ あかい おうちで\nよく あそんでる!$"
 

@@ -444,49 +444,49 @@ BattleFrontier_BattleTowerMultiBattleRoom_Movement_WalkInPlaceLeft:
 	step_end
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor2ndOpponentSet:
-	.string "{JPN}つぎは 2くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 2くみめの あいてです\nじゅんびは いいですか?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor3rdOpponentSet:
-	.string "{JPN}つぎは 3くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 3くみめの あいてです\nじゅんびは いいですか?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor4thOpponentSet:
-	.string "{JPN}つぎは 4くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 4くみめの あいてです\nじゅんびは いいですか?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor5thOpponentSet:
-	.string "{JPN}つぎは 5くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 5くみめの あいてです\nじゅんびは いいですか?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor6thOpponentSet:
-	.string "{JPN}つぎは 6くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 6くみめの あいてです\nじゅんびは いいですか?$"
 
 BattleFrontier_BattleTowerMultiBattleRoom_Text_ReadyFor7thOpponentSet:
-	.string "{JPN}つぎは 7くみめの あいてです\nじゅんびは いいですか?$"
+	.string "つぎは 7くみめの あいてです\nじゅんびは いいですか?$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_2ndOpponentSetNext:
-	.string "{JPN}つぎは 2くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 2くみめの あいてです\nがんばって ください!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_3rdOpponentSetNext:
-	.string "{JPN}つぎは 3くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 3くみめの あいてです\nがんばって ください!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_4thOpponentSetNext:
-	.string "{JPN}つぎは 4くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 4くみめの あいてです\nがんばって ください!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_5thOpponentSetNext:
-	.string "{JPN}つぎは 5くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 5くみめの あいてです\nがんばって ください!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_6thOpponentSetNext:
-	.string "{JPN}つぎは 6くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 6くみめの あいてです\nがんばって ください!$"
 
 @ Unused
 BattleFrontier_BattleTowerMultiBattleRoom_Text_7thOpponentSetNext:
-	.string "{JPN}つぎは 7くみめの あいてです\nがんばって ください!$"
+	.string "つぎは 7くみめの あいてです\nがんばって ください!$"
 
 gText_LinkStandby3::
-	.string "{JPN}つうしん たいきちゅう……$"
+	.string "つうしん たいきちゅう……$"
 
 gText_YourPartnerHasRetired::
-	.string "{JPN}パートナーが リタイアされました\pバトルルームの ちょうせんを\nちゅうし いたします$"
+	.string "パートナーが リタイアされました\pバトルルームの ちょうせんを\nちゅうし いたします$"

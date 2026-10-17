@@ -61,5 +61,5 @@ BattleFrontier_BattlePikeCorridor_Movement_AttendantEnterCorridor:
 	step_end
 
 BattleFrontier_BattlePikeCorridor_Text_YourChallengeHasBegun:
-	.string "{JPN}…… バトルゲーム スタートです!$"
+	.string "…… バトルゲーム スタートです!$"
 
