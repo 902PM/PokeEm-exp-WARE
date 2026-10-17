@@ -64,63 +64,35 @@ FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
 	end
 
 FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons::
-	.string "You travel all over the place,\n"
-	.string "don't you?\p"
-	.string "You're not driving your POKEMON\n"
-	.string "too harshly, are you?\p"
-	.string "Let me take a look.\n"
-	.string "… … …   … … …$"
+	.string "きみは いろいろな ところを\nたび して まわって\lポケモンに むちゃは\lさせて ないんだろうね…?\pちょっと みせて ごらん\n……… ………$"
 
 FiveIsland_WaterLabyrinth_Text_HmmISeeIsee::
-	.string "Ah, hmm…\n"
-	.string "I see, I see…$"
+	.string "ほほう\nなるほど なるほど……$"
 
 FiveIsland_WaterLabyrinth_Text_TreatMonRightHaveThis::
-	.string "Oh, impressive.\n"
-	.string "You treat your POKEMON right.\p"
-	.string "I think you can be entrusted with\n"
-	.string "this.\p"
-	.string "Please, I'd like you to have this.$"
+	.string "おお\nとても ポケモンを\lたいせつに して いるんだね\pきみになら これを\nあずけられると おもう\lどうか もらってくれ$"
 
 FiveIsland_WaterLabyrinth_Text_ReceivedEggFromMan::
-	.string "{PLAYER} received an EGG\n"
-	.string "from the man!$"
+	.string "{PLAYER}は おじさんに\nタマゴを もらった!$"
 
 FiveIsland_WaterLabyrinth_Text_DontHaveSpaceInYourParty::
-	.string "…Unfortunately, you don't have\n"
-	.string "space for this in your party.\p"
-	.string "You'd better come back for it\n"
-	.string "another time.$"
+	.string "とは いっても\nてもちが いっぱいの ようだね\pまた こんど おいで$"
 
 @ Unused
 FiveIsland_WaterLabyrinth_Text_YouveComeBackForTheEgg::
-	.string "やあ\n"
-	.string "タマゴを もらいに\l"
-	.string "きて くれたんだね$"
+	.string "やあ\nタマゴを もらいに\lきて くれたんだね$"
 
 FiveIsland_WaterLabyrinth_Text_GladIMetSomeoneLikeYou::
-	.string "I received that EGG while I was\n"
-	.string "traveling.\p"
-	.string "I'm glad I met someone like you.$"
+	.string "わたしの たびの とちゅうで\nてにいれた タマゴだ\pキミの ような ひとに\nであえて よかったよ$"
 
 FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy::
-	.string "Oh, hello.\n"
-	.string "That's a cute {STR_VAR_2}.\p"
-	.string "Seeing it reminds me of a sweet \n"
-	.string "little girl I met while traveling.\p"
-	.string "She was gently grooming POKEMON…\n"
-	.string "She was a little angel.\p"
-	.string "That little girl's name…\n"
-	.string "I think it was DAISY.$"
+	.string "おや かわいい {STR_VAR_2}だね\nかわいい ポケモンを みると\lたびで であった\lやさしい しょうじょを おもいだす\pポケモンに それは やさしく\nけづくろいを して あげていた\lあの しょうじょは…\lたしか ナナミと いったか…$"
 
 FiveIsland_WaterLabyrinth_Text_AlizeIntro::
-	.string "This is an excellent environment\n"
-	.string "for raising POKEMON.$"
+	.string "ポケモンを そだてるのに\nとても よい かんきょうだわ$"
 
 FiveIsland_WaterLabyrinth_Text_AlizeDefeat::
-	.string "Your POKEMON are growing up\n"
-	.string "admirably well!$"
+	.string "あなたの ポケモン\nよく そだって いるわ!$"
 
 FiveIsland_WaterLabyrinth_Text_AlizePostBattle::
-	.string "You know, I think you have the\n"
-	.string "talent to be a good BREEDER.$"
+	.string "あなた ブリーダーと しての\nさいのうも あるんじゃない?$"

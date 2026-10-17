@@ -40,5 +40,5 @@ CeruleanCity_House3_EventScript_AlreadyTraded::
 	end
 
 CeruleanCity_House3_Text_PleaseTradeWithMyHusband::
-	.string "うちの じいさま\nポケモンの こうかんに こってるの\pあなた\nポケモン ずかん あつめてるなら\pこうかんの　あいて\nして あげて くれるかしら$"
+	.string "うちの じいさま\nポケモンの こうかんに こってるの\pあなた\nポケモン ずかん あつめてるなら\pこうかんの あいて\nして あげて くれるかしら$"
 
