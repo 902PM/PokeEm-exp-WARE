@@ -42,17 +42,17 @@ FallarborTown_BattleTentCorridor_Movement_AttendantEnterDoor:
 @ Leftover text from when this was a Contest Hall in R/S
 @ Unused
 FallarborTown_ContestHall_Text_DoAllRightInPreliminary:
-	.string "{JPN}1じ しんさでは いいセン いくけど\nなぜか アピールで かてないんだ……\pじぶんの ポケモンばっかり みてると\nかてないって ことかなあ$"
+	.string "1じ しんさでは いいセン いくけど\nなぜか アピールで かてないんだ……\pじぶんの ポケモンばっかり みてると\nかてないって ことかなあ$"
 
 @ Unused
 FallarborTown_ContestHall_Text_MonAllTheseRibbons:
-	.string "{JPN}みて! わたしの ポケモン\nこんなに リボンが いっぱい!\pあなたの ポケモンは リボン もらった?\nもらって いれば ポケナビで みられるわよ!$"
+	.string "みて! わたしの ポケモン\nこんなに リボンが いっぱい!\pあなたの ポケモンは リボン もらった?\nもらって いれば ポケナビで みられるわよ!$"
 
 @ Unused
 FallarborTown_ContestHall_Text_CantWinEverywhere:
-	.string "{JPN}ジムリーダーにも かてない……\pコンテストでも かてない……\pあっちのまち こっちのまちを\nいったり きたり だよ……$"
+	.string "ジムリーダーにも かてない……\pコンテストでも かてない……\pあっちのまち こっちのまちを\nいったり きたり だよ……$"
 
 @ Unused
 FallarborTown_ContestHall_Text_SuperRankStage:
-	.string "{JPN}ポケモン コンテスト\nスーパーランク ステージ!$"
+	.string "ポケモン コンテスト\nスーパーランク ステージ!$"
 
