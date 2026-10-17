@@ -27,16 +27,16 @@ BattleFrontier_Lounge6_EventScript_TradeCompleted::
 	end
 
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
-	.string "{JPN}わたしの この ポケモン\n{STR_VAR_2}って いうんですよ しってます?\lなかなか かわいくて イイかんじ ですよー\pこのコ だったら わたし\nむねをはって こうかんに だせます!\pどうです?\nわたしの この {STR_VAR_2}\l{STR_VAR_1}と こうかん しません?$"
+	.string "わたしの この ポケモン\n{STR_VAR_2}って いうんですよ しってます?\lなかなか かわいくて イイかんじ ですよー\pこのコ だったら わたし\nむねをはって こうかんに だせます!\pどうです?\nわたしの この {STR_VAR_2}\l{STR_VAR_1}と こうかん しません?$"
 
 BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt:
-	.string "{JPN}わー かわいい ですねー……!\nどうも ありがとう\lたいせつに しますよ!\pあっ {STR_VAR_2}も\nよろしく おねがい します!$"
+	.string "わー かわいい ですねー……!\nどうも ありがとう\lたいせつに しますよ!\pあっ {STR_VAR_2}も\nよろしく おねがい します!$"
 
 BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon:
-	.string "{JPN}あ ゴメンなさい!\nわたし {STR_VAR_1} いがいとは\lこうかん するつもり ないんでー$"
+	.string "あ ゴメンなさい!\nわたし {STR_VAR_1} いがいとは\lこうかん するつもり ないんでー$"
 
 BattleFrontier_Lounge6_Text_WellThatsFineToo:
-	.string "{JPN}あ やめますか!\nべつに いいですよ\lまた こんど きてくださいー$"
+	.string "あ やめますか!\nべつに いいですよ\lまた こんど きてくださいー$"
 
 BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
-	.string "{JPN}うふふ!\nエネコが おもってたより ずっと\lかわいくて ほんと うれしいですー$"
+	.string "うふふ!\nエネコが おもってたより ずっと\lかわいくて ほんと うれしいですー$"

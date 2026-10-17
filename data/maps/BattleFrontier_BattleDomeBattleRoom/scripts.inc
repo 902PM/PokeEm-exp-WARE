@@ -924,141 +924,141 @@ BattleFrontier_BattleDomeBattleRoom_Movement_RefereeExit:
 	step_end
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome:
-	.string "{JPN}{PLAYER}さんの\nにゅうじょう です!$"
+	.string "{PLAYER}さんの\nにゅうじょう です!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer:
-	.string "{JPN}{STR_VAR_1}せん!\p{PLAYER}さん VS\n{STR_VAR_2}さん\pただいま より はじめます!$"
+	.string "{STR_VAR_1}せん!\p{PLAYER}さん VS\n{STR_VAR_2}さん\pただいま より はじめます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsWinner:
-	.string "{JPN}{PLAYER}さんの かちです\nおめでとう ございます!$"
+	.string "{PLAYER}さんの かちです\nおめでとう ございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner:
-	.string "{JPN}{STR_VAR_2}さんの かちです\nおめでとう ございます!$"
+	.string "{STR_VAR_2}さんの かちです\nおめでとう ございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ:
-	.string "{JPN}バトルトーナメント レベル50\nゆうしょうは {PLAYER}さん です!\lおめでとう ございます!$"
+	.string "バトルトーナメント レベル50\nゆうしょうは {PLAYER}さん です!\lおめでとう ございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp:
-	.string "{JPN}バトルトーナメント オープンレベル\nゆうしょうは {PLAYER}さん!\lおめでとう ございます!$"
+	.string "バトルトーナメント オープンレベル\nゆうしょうは {PLAYER}さん!\lおめでとう ございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait:
-	.string "{JPN}たいへんな ことに なりました!\pダブルノックアウトの ばあい\nバトルトーナメントの ルールに のっとり\lはんていと なります\pしばらく おまちください……!$"
+	.string "たいへんな ことに なりました!\pダブルノックアウトの ばあい\nバトルトーナメントの ルールに のっとり\lはんていと なります\pしばらく おまちください……!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer:
-	.string "{JPN}しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\l{STR_VAR_1}さん です!\lおめでとうございます!$"
+	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\l{STR_VAR_1}さん です!\lおめでとうございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerPlayer:
-	.string "{JPN}しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\l{PLAYER}さん です!\lおめでとうございます!$"
+	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\l{PLAYER}さん です!\lおめでとうございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope:
-	.string "{JPN}きたいの おおがた しんじん!\p$"
+	.string "きたいの おおがた しんじん!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RisingStar:
-	.string "{JPN}さらなる うえを めざして!\p$"
+	.string "さらなる うえを めざして!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship:
-	.string "{JPN}いっきに ゆうしょうまで\nのぼりつめて しまうのでしょうか!?\p$"
+	.string "いっきに ゆうしょうまで\nのぼりつめて しまうのでしょうか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanAchieveChampionFirstTry:
-	.string "{JPN}はつしゅつじょう はつゆうしょうの\nいぎょう たっせい なるか!?\p$"
+	.string "はつしゅつじょう はつゆうしょうの\nいぎょう たっせい なるか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanLossBeAvenged:
-	.string "{JPN}ぜんかいの リベンジなるか!?\p$"
+	.string "ぜんかいの リベンジなるか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_OnFireForChampionship:
-	.string "{JPN}はじめての ゆうしょうへ むけて\nもえています!\p$"
+	.string "はじめての ゆうしょうへ むけて\nもえています!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WinHereAdvancesToFinal:
-	.string "{JPN}この しあいに かてば\nいよいよ けっしょうせん です!\p$"
+	.string "この しあいに かてば\nいよいよ けっしょうせん です!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillLongHeldDreamComeTrue:
-	.string "{JPN}ひがんの はつゆうしょう なるか!?\p$"
+	.string "ひがんの はつゆうしょう なるか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion:
-	.string "{JPN}むてきの チャンピオン!\p$"
+	.string "むてきの チャンピオン!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanAnyoneHopeToBeatTrainer:
-	.string "{JPN}この ひとに かてる トレーナーは\nはたして いるのでしょうか!?\p$"
+	.string "この ひとに かてる トレーナーは\nはたして いるのでしょうか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_DoBattlesExistSolelyForTrainer:
-	.string "{JPN}この ひとの ために\nこの たいかいは あるのでしょうか!?\p$"
+	.string "この ひとの ために\nこの たいかいは あるのでしょうか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle:
-	.string "{JPN}はたして れんぱ なるか!?\p$"
+	.string "はたして れんぱ なるか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned:
-	.string "{JPN}かえってきました!\nもと チャンピオン!\p$"
+	.string "かえってきました!\nもと チャンピオン!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned:
-	.string "{JPN}あの つよさが もどってきました!\p$"
+	.string "あの つよさが もどってきました!\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals:
-	.string "{JPN}けっしょうに すすむのは\nやっぱり この ひと なんでしょうか!?\p$"
+	.string "けっしょうに すすむのは\nやっぱり この ひと なんでしょうか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillFormerChampRegainGlory:
-	.string "{JPN}みごとに ふっかつ ゆうしょう なるか!?\p$"
+	.string "みごとに ふっかつ ゆうしょう なるか!?\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster:
-	.string "{JPN}おうじゃの ふうかく ただよう!$"
+	.string "おうじゃの ふうかく ただよう!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker:
-	.string "{JPN}そして…… {PLAYER}さんの\nきろくを はばむ トレーナーは……\pそう…… そのなは!!\nバトルドームの コミッショナーに して!!\lわれらが ドームスーパースター!!\lヒース だぁーーーーーー!$"
+	.string "そして…… {PLAYER}さんの\nきろくを はばむ トレーナーは……\pそう…… そのなは!!\nバトルドームの コミッショナーに して!!\lわれらが ドームスーパースター!!\lヒース だぁーーーーーー!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_SpectatorTuckerChant:
-	.string "{JPN}かんきゃく『ヒースっ!! ヒースっ!!\nヒースっ!! ヒースっ!! ヒースっ!!$"
+	.string "かんきゃく『ヒースっ!! ヒースっ!!\nヒースっ!! ヒースっ!! ヒースっ!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro:
-	.string "{JPN}ヒース『アッハッハッ!!\pきこえるっ? この だいかんせい!\nわたしたちの しあいを まえに\lみんな ウズウズ してるよっ!!\pアッハッハッ!!\pキミは わたしと たたかえる\nこうふんと きんちょうで\lピクピク ビクビク してるねっ!!\pでも だいじょうぶっ!!\pバトルドームの いちばんぼしっ!!\nドームスーパースター ヒースの かがやきで\lきみを てらして あげる からっ!!$"
+	.string "ヒース『アッハッハッ!!\pきこえるっ? この だいかんせい!\nわたしたちの しあいを まえに\lみんな ウズウズ してるよっ!!\pアッハッハッ!!\pキミは わたしと たたかえる\nこうふんと きんちょうで\lピクピク ビクビク してるねっ!!\pでも だいじょうぶっ!!\pバトルドームの いちばんぼしっ!!\nドームスーパースター ヒースの かがやきで\lきみを てらして あげる からっ!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LetsSeeYourStrategy:
-	.string "{JPN}キミの せんりゃく! みせて ごらんっ!$"
+	.string "キミの せんりゃく! みせて ごらんっ!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_IncredibleVictorIsPlayer:
-	.string "{JPN}なんとーーー! なんとーーーっ!\nたたかいに かったのは\l{PLAYER}さんだぁーーー!$"
+	.string "なんとーーー! なんとーーーっ!\nたたかいに かったのは\l{PLAYER}さんだぁーーー!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WinnerIsTucker:
-	.string "{JPN}ドームスーパースター!!\nヒースの しょうりです!\pおめでとうーーーー! ヒース!!$"
+	.string "ドームスーパースター!!\nヒースの しょうりです!\pおめでとうーーーー! ヒース!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass:
-	.string "{JPN}ヒース『きまり だからねっ!\nキミの フロンティアパスを かしてっ!!$"
+	.string "ヒース『きまり だからねっ!\nキミの フロンティアパスを かしてっ!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol:
-	.string "{JPN}フロンティアパスに\nタクティクスシンボルが きざまれた!$"
+	.string "フロンティアパスに\nタクティクスシンボルが きざまれた!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime:
-	.string "{JPN}…… …… ……\pわたしは キミを ごかい してたよ\nつぎは こうは いかない からね……$"
+	.string "…… …… ……\pわたしは キミを ごかい してたよ\nつぎは こうは いかない からね……$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_CanWinStreakBeStretched:
-	.string "{JPN}どこまで かちつづける つもり なのか?\nかんろく じゅうぶん!$"
+	.string "どこまで かちつづける つもり なのか?\nかんろく じゅうぶん!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker:
-	.string "{JPN}…… そして みなさーーーーん!!\pついに! ついに あのトレーナーが\nかえって きたぞーーー!\pそう…… その トレーナーの なはーーー\nわれらが ドームスーパースターーーー!!\lヒース だぁーーーーーー!$"
+	.string "…… そして みなさーーーーん!!\pついに! ついに あのトレーナーが\nかえって きたぞーーー!\pそう…… その トレーナーの なはーーー\nわれらが ドームスーパースターーーー!!\lヒース だぁーーーーーー!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro:
-	.string "{JPN}ヒース『われるような かんせい……\nむせかえる ような ねっき……\lやっぱり ここは すばらしいよ……\p…… わたしは ドームスーパースター……\nみんなの きたいと あこがれの ほし……\lながれ きえさる ことなど できない……\pもっと ひかりっ! もっと かがやいてっ!\nここに やってくる すべての ひとびとを\lてらさなければ いけないっ!!$"
+	.string "ヒース『われるような かんせい……\nむせかえる ような ねっき……\lやっぱり ここは すばらしいよ……\p…… わたしは ドームスーパースター……\nみんなの きたいと あこがれの ほし……\lながれ きえさる ことなど できない……\pもっと ひかりっ! もっと かがやいてっ!\nここに やってくる すべての ひとびとを\lてらさなければ いけないっ!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_UnleashAllPowerIPossess:
-	.string "{JPN}さあっ! わたしの すべてっ!\nここに ひろう するよっ!!$"
+	.string "さあっ! わたしの すべてっ!\nここに ひろう するよっ!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed:
-	.string "{JPN}ヒース『ほーんと ステキっ! キミはっ!!\pすべてを だしきった わたしが\nかなわない なんて はじめてっ!!\pさあっ! キミの フロンティアパスを!!$"
+	.string "ヒース『ほーんと ステキっ! キミはっ!!\pすべてを だしきった わたしが\nかなわない なんて はじめてっ!!\pさあっ! キミの フロンティアパスを!!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine:
-	.string "{JPN}タクティクスシンボルが\nきんいろに かがやいた!$"
+	.string "タクティクスシンボルが\nきんいろに かがやいた!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter:
-	.string "{JPN}つよく! なにより かわいい キミっ!!\pキミには わたしの ような\nスーパースターに なれる\lかのうせいを かんじるよっ!\lまた あえるときを たのしみに しようっ!!$"
+	.string "つよく! なにより かわいい キミっ!!\pキミには わたしの ような\nスーパースターに なれる\lかのうせいを かんじるよっ!\lまた あえるときを たのしみに しようっ!!$"
 
 @ Unused
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ2:
-	.string "{JPN}バトルトーナメント レベル50\nゆうしょうは {PLAYER}さん です!\lおめでとう ございます!$"
+	.string "バトルトーナメント レベル50\nゆうしょうは {PLAYER}さん です!\lおめでとう ございます!$"
 
 @ Unused
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp2:
-	.string "{JPN}バトルトーナメント オープンレベル\nゆうしょうは {PLAYER}さん!\lおめでとう ございます!$"
+	.string "バトルトーナメント オープンレベル\nゆうしょうは {PLAYER}さん!\lおめでとう ございます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker:
-	.string "{JPN}けっしょうせん!\p{PLAYER}さん VS\nドームスーパースター ヒース\pただいま より はじめます!$"
+	.string "けっしょうせん!\p{PLAYER}さん VS\nドームスーパースター ヒース\pただいま より はじめます!$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker:
-	.string "{JPN}しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!$"
+	.string "しんぱんいん より\nはんていの けっかが でました!\pしょうしゃは\nなんと! なんと! なんと!\lわれらの スーパースター! ヒース です!\pおめでとう! そして ありがとう!!\nわれらの ドームスーパースター ヒース!!$"

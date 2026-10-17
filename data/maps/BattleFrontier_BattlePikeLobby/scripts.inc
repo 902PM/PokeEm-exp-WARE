@@ -272,89 +272,89 @@ BattleFrontier_BattlePike_EventScript_CloseCurtain::
 	return
 
 BattleFrontier_BattlePikeLobby_Text_WelcomeToBattlePike:
-	.string "{JPN}トレーナーの うんを ためす ばしょ……\nバトルチューブへ ようこそ……\pバトルゲームへの ごあんないは\nこちらで ございます……$"
+	.string "トレーナーの うんを ためす ばしょ……\nバトルチューブへ ようこそ……\pバトルゲームへの ごあんないは\nこちらで ございます……$"
 
 BattleFrontier_BattlePikeLobby_Text_TakeChallenge:
-	.string "{JPN}バトルゲームに\nちょうせん されますか……?$"
+	.string "バトルゲームに\nちょうせん されますか……?$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainBattlePike:
-	.string "{JPN}こちらでは バトルゲームと いう\nもよおしを かいさいして おります\pバトルゲームの ルールは かんたん……\p3つの みちを えらびながら\nバトルチューブの いちばん おくに ある\lゴールの へやを めざして\lすすんで いく だけで よいのです\p…… ただし えらんだ みちの さきで\nなにが おこるかは おきゃくさまの\lうん しだい ですが……\pもしも ゴールに つくことが できたなら\nバトルポイントを さしあげましょう\pなお ゲームの ちょうせんを\nちゅうだんしたい ばあいは\lおおべやに たいき している スタッフに\lおもうしつけ ください……\pレポートを かかないと\nゲームの さいかいが できません……\pくれぐれも ごちゅうい ください……$"
+	.string "こちらでは バトルゲームと いう\nもよおしを かいさいして おります\pバトルゲームの ルールは かんたん……\p3つの みちを えらびながら\nバトルチューブの いちばん おくに ある\lゴールの へやを めざして\lすすんで いく だけで よいのです\p…… ただし えらんだ みちの さきで\nなにが おこるかは おきゃくさまの\lうん しだい ですが……\pもしも ゴールに つくことが できたなら\nバトルポイントを さしあげましょう\pなお ゲームの ちょうせんを\nちゅうだんしたい ばあいは\lおおべやに たいき している スタッフに\lおもうしつけ ください……\pレポートを かかないと\nゲームの さいかいが できません……\pくれぐれも ごちゅうい ください……$"
 
 BattleFrontier_BattlePikeLobby_Text_LookForwardToSeeingYou:
-	.string "{JPN}では またの きかいを\nおまちして おります……$"
+	.string "では またの きかいを\nおまちして おります……$"
 
 BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode:
-	.string "{JPN}レベル50と オープンレベルの ゲーム\nどちらに ちょうせん しますか?$"
+	.string "レベル50と オープンレベルの ゲーム\nどちらに ちょうせん しますか?$"
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
-	.string "{JPN}…… おきゃくさま\pバトルゲームに さんかできる\nポケモンが 3ひき おりません……\pさんかには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき ごようい ください\pまた もたせる どうぐも すべて\nちがうもので なければ いけません……\pなお タマゴ{STR_VAR_1}さんか させる ことは できません$"
+	.string "…… おきゃくさま\pバトルゲームに さんかできる\nポケモンが 3ひき おりません……\pさんかには レベルが 50いかで\nすべて ちがう しゅるいの ポケモンを\l3ひき ごようい ください\pまた もたせる どうぐも すべて\nちがうもので なければ いけません……\pなお タマゴ{STR_VAR_1}さんか させる ことは できません$"
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsEnd:
-	.string "{JPN}じゅんびが ととのいましたら\nまた おこしください……$"
+	.string "じゅんびが ととのいましたら\nまた おこしください……$"
 
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "{JPN}…… おきゃくさま\pバトルゲームに さんかできる\nポケモンが 3ひき おりません……\pさんかには すべて ちがう しゅるいの\nポケモンを 3ひき ごようい ください\pまた もたせる どうぐも すべて\nちがうもので なければ いけません……\pなお タマゴ{STR_VAR_1}さんか させる ことは できません$"
+	.string "…… おきゃくさま\pバトルゲームに さんかできる\nポケモンが 3ひき おりません……\pさんかには すべて ちがう しゅるいの\nポケモンを 3ひき ごようい ください\pまた もたせる どうぐも すべて\nちがうもので なければ いけません……\pなお タマゴ{STR_VAR_1}さんか させる ことは できません$"
 
 BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons:
-	.string "{JPN}それでは ゲームに ちょうせんする\nポケモンを 3ひき おえらび ください……$"
+	.string "それでは ゲームに ちょうせんする\nポケモンを 3ひき おえらび ください……$"
 
 BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge:
-	.string "{JPN}バトルゲームを かいしする まえに\nレポートを かきます…… よろしいですか?$"
+	.string "バトルゲームを かいしする まえに\nレポートを かきます…… よろしいですか?$"
 
 BattleFrontier_BattlePikeLobby_Text_StepThisWay:
-	.string "{JPN}では こちらに どうぞ……$"
+	.string "では こちらに どうぞ……$"
 
 BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults:
-	.string "{JPN}ゲーム しゅうりょう ですね……\pせいせきを レポートに かきましょう……\nしょうしょう おまちください……$"
+	.string "ゲーム しゅうりょう ですね……\pせいせきを レポートに かきましょう……\nしょうしょう おまちください……$"
 
 BattleFrontier_BattlePikeLobby_Text_PossessLuckInAbundance:
-	.string "{JPN}ゲーム クリア ですね……\pおきゃくさま…… なかなかの うんを\nおもちの ようですね……$"
+	.string "ゲーム クリア ですね……\pおきゃくさま…… なかなかの うんを\nおもちの ようですね……$"
 
 BattleFrontier_BattlePikeLobby_Text_ShallRecordResults:
-	.string "{JPN}せいせきを レポートに かきましょう……\nしばらく おまちください……$"
+	.string "せいせきを レポートに かきましょう……\nしばらく おまちください……$"
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints2:
-	.string "{JPN}ゲーム クリアを きねんして\nバトルポイントを しんてい します……\pどうぞ おおさめ ください……$"
+	.string "ゲーム クリアを きねんして\nバトルポイントを しんてい します……\pどうぞ おおさめ ください……$"
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_ReachedBattlePointLimit:
-	.string "{JPN}ポイントが いっぱいの ようですね……\pポイントを せいりしてから\nまた おこしください……$"
+	.string "ポイントが いっぱいの ようですね……\pポイントを せいりしてから\nまた おこしください……$"
 
 BattleFrontier_BattlePikeLobby_Text_FailedToSaveBeforeQuitting:
-	.string "{JPN}おきゃくさま……\pぜんかい きちんと レポートを かかずに\nしゅうりょう されましたね……\pもうしわけ ありませんが ちょうせんは\nむこうと させて いただきます……$"
+	.string "おきゃくさま……\pぜんかい きちんと レポートを かかずに\nしゅうりょう されましたね……\pもうしわけ ありませんが ちょうせんは\nむこうと させて いただきます……$"
 
 BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen:
-	.string "{JPN}…… おめでとう ございます……\nチューブクイーンに しょうりし\lゲームを クリア されましたね……$"
+	.string "…… おめでとう ございます……\nチューブクイーンに しょうりし\lゲームを クリア されましたね……$"
 
 BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints:
-	.string "{JPN}おきゃくさまの つよき うんを たたえ\nバトルポイントを さしあげます……$"
+	.string "おきゃくさまの つよき うんを たたえ\nバトルポイントを さしあげます……$"
 
 BattleFrontier_BattlePikeLobby_Text_OneRoomAwayFromGoal:
-	.string "{JPN}んんー! ちくしょー!!\nあと 1へやで ゴールだったのによー!\pおまえ! ここでは どくや こおりには\nちゅうい したほうが いいぞ!$"
+	.string "んんー! ちくしょー!!\nあと 1へやで ゴールだったのによー!\pおまえ! ここでは どくや こおりには\nちゅうい したほうが いいぞ!$"
 
 BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer:
-	.string "{JPN}あたし 10かいは クリアしたけど\nいっかいも トレーナーと\lたたかった こと ないんだよぅ!$"
+	.string "あたし 10かいは クリアしたけど\nいっかいも トレーナーと\lたたかった こと ないんだよぅ!$"
 
 BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere:
-	.string "{JPN}ねえ! ねえ!\pここって ポケモンの とくせいが\nかつやく すると おもわない?$"
+	.string "ねえ! ねえ!\pここって ポケモンの とくせいが\nかつやく すると おもわない?$"
 
 @ Unused
 BattleFrontier_BattlePikeLobby_Text_TrainersWhicheverPathIChoose:
-	.string "{JPN}なんだよ ここ! いみ わかんないよー!\pなんかい チャレンジ しても\nどの みち えらんでも\lトレーナーしか でてこない じゃないかー!$"
+	.string "なんだよ ここ! いみ わかんないよー!\pなんかい チャレンジ しても\nどの みち えらんでも\lトレーナーしか でてこない じゃないかー!$"
 
 BattleFrontier_BattlePikeLobby_Text_RulesAreListed:
-	.string "{JPN}バトルゲームの ルールが かかれている!$"
+	.string "バトルゲームの ルールが かかれている!$"
 
 BattleFrontier_BattlePikeLobby_Text_ReadWhichHeading:
-	.string "{JPN}どの せつめいを よみますか?$"
+	.string "どの せつめいを よみますか?$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules:
-	.string "{JPN}バトルゲームの あいだは\nバッグと ポケナビの しようは\lきんし されています$"
+	.string "バトルゲームの あいだは\nバッグと ポケナビの しようは\lきんし されています$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules:
-	.string "{JPN}バトルゲームでは\nポケモンに もたせた きのみや ハーブは\lいちどしか こうかを はっき しません$"
+	.string "バトルゲームでは\nポケモンに もたせた きのみや ハーブは\lいちどしか こうかを はっき しません$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:
-	.string "{JPN}バトルゲームの あいだは\nちょうせんする ときに きめた\lポケモンの じゅんばんを\lいれかえる ことは できません$"
+	.string "バトルゲームの あいだは\nちょうせんする ときに きめた\lポケモンの じゅんばんを\lいれかえる ことは できません$"
 

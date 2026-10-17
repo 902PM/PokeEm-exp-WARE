@@ -198,124 +198,124 @@ BattleFrontier_Lounge3_EventScript_FaceOriginalDirection::
 	end
 
 BattleFrontier_Lounge3_Text_CantYouSeeWereBusyHere::
-	.string "{JPN}…… なんだぁ?\pおれたちゃ いま いそがしいの!\nまた こんどに してくれや!$"
+	.string "…… なんだぁ?\pおれたちゃ いま いそがしいの!\nまた こんどに してくれや!$"
 
 BattleFrontier_Lounge3_Text_YouLookToughExplainGambling::
-	.string "{JPN}…… ん?\nあんた つよそうだねぇ……\pへっへ…… ……\nちょっと ィイはなしが\lあるから きいてけよ!\pじつは おれたち グループはな\nバトルフロンティアの なかで\lちょっとした ゲームを してんのよ……\pルールは かんたん だぜー\nまずは まいかい どこかの しせつを\lひとつ えらぶ!\pつぎに そこに ちょうせん してる\nトレーナーの だれか ひとりを えらんで\lじぶんの バトルポイントを かけるのよ!\pんで いちばん いい せいせきを\nだした トレーナーに かけてた やつが\lバトルポイントを ひとりじめ すんの!\pなあっ? かんたん だろ?\nんで……$"
+	.string "…… ん?\nあんた つよそうだねぇ……\pへっへ…… ……\nちょっと ィイはなしが\lあるから きいてけよ!\pじつは おれたち グループはな\nバトルフロンティアの なかで\lちょっとした ゲームを してんのよ……\pルールは かんたん だぜー\nまずは まいかい どこかの しせつを\lひとつ えらぶ!\pつぎに そこに ちょうせん してる\nトレーナーの だれか ひとりを えらんで\lじぶんの バトルポイントを かけるのよ!\pんで いちばん いい せいせきを\nだした トレーナーに かけてた やつが\lバトルポイントを ひとりじめ すんの!\pなあっ? かんたん だろ?\nんで……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle::
-	.string "{JPN}ちょうど いまは よぉ\nバトルタワーの シングル バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルタワーの シングル バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble::
-	.string "{JPN}ちょうど いまは よぉ\nバトルタワーの ダブル バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルタワーの ダブル バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti::
-	.string "{JPN}ちょうど いまは よぉ\nバトルタワーの マルチ バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルタワーの マルチ バトルルームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle::
-	.string "{JPN}ちょうど いまは よぉ\nバトルドームで やってる\lシングル バトルトーナメントに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルドームで やってる\lシングル バトルトーナメントに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble::
-	.string "{JPN}ちょうど いまは よぉ\nバトルドームで やってる\lダブル バトルトーナメントに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルドームで やってる\lダブル バトルトーナメントに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle::
-	.string "{JPN}ちょうど いまは よぉ\nバトルファクトリーで やってる\lバトルトレード シングルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルファクトリーで やってる\lバトルトレード シングルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble::
-	.string "{JPN}ちょうど いまは よぉ\nバトルファクトリーで やってる\lバトルトレード ダブルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルファクトリーで やってる\lバトルトレード ダブルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle::
-	.string "{JPN}ちょうど いまは よぉ\nバトルパレスの\lシングル バトルホールに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルパレスの\lシングル バトルホールに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble::
-	.string "{JPN}ちょうど いまは よぉ\nバトルパレスの\lダブル バトルホールに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルパレスの\lダブル バトルホールに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattleArena::
-	.string "{JPN}ちょうど いまは よぉ\nバトルアリーナで やってる\lかちぬきチームバトルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルアリーナで やってる\lかちぬきチームバトルに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePike::
-	.string "{JPN}ちょうど いまは よぉ\nバトルチューブで やってる\lバトルゲームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルチューブで やってる\lバトルゲームに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_ChallengeBattlePyramid::
-	.string "{JPN}ちょうど いまは よぉ\nバトルピラミッドで やってる\lバトルアドベンチャーに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
+	.string "ちょうど いまは よぉ\nバトルピラミッドで やってる\lバトルアドベンチャーに\lちょうせんする トレーナーを\lさがしてん だけどよ……\pピンとくる トレーナーが いなくてなぁ……\nなぁ……$"
 
 BattleFrontier_Lounge3_Text_HowAboutEnteringEventForMe::
-	.string "{JPN}あんたにも もうけさせて やるからよぅー\nサクっと ちょうせん してきて くんねぇ?$"
+	.string "あんたにも もうけさせて やるからよぅー\nサクっと ちょうせん してきて くんねぇ?$"
 
 BattleFrontier_Lounge3_Text_SpotMeSomeBattlePoints::
-	.string "{JPN}じゃあよ…… あんたの\nバトルポイント ちょーっとで いいから\lおれに あずけて くんねぇ?\pちゃーんと おれいは するからよ!$"
+	.string "じゃあよ…… あんたの\nバトルポイント ちょーっとで いいから\lおれに あずけて くんねぇ?\pちゃーんと おれいは するからよ!$"
 
 BattleFrontier_Lounge3_Text_HowMuchCanYouSpot::
-	.string "{JPN}ィイね! ィイね!\nで? で? で? いくら かして くれます?$"
+	.string "ィイね! ィイね!\nで? で? で? いくら かして くれます?$"
 
 BattleFrontier_Lounge3_Text_YouDontHaveEnoughPoints::
-	.string "{JPN}いやいやいやー!!\pバトルポイントが たらない じゃない!\nつまんない じょうだん やめましょうや!$"
+	.string "いやいやいやー!!\pバトルポイントが たらない じゃない!\nつまんない じょうだん やめましょうや!$"
 
 BattleFrontier_Lounge3_Text_ThanksOffYouGo::
-	.string "{JPN}へっへっへっ…… あんがとよ!\nそんじゃー$"
+	.string "へっへっへっ…… あんがとよ!\nそんじゃー$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerSingle::
-	.string "{JPN}サクサクッと\nバトルタワーの シングル バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと\nバトルタワーの シングル バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerDouble::
-	.string "{JPN}サクサクッと\nバトルタワーの ダブル バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと\nバトルタワーの ダブル バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleTowerMulti::
-	.string "{JPN}サクサクッと\nバトルタワーの マルチ バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと\nバトルタワーの マルチ バトルルームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleDomeSingle::
-	.string "{JPN}サクサクッと バトルドームの\nシングル バトルトーナメントに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルドームの\nシングル バトルトーナメントに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleDomeDouble::
-	.string "{JPN}サクサクッと バトルドームの\nダブル バトルトーナメントに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルドームの\nダブル バトルトーナメントに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleFactorySingle::
-	.string "{JPN}サクサクッと バトルファクトリーの\nバトルトレード シングルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルファクトリーの\nバトルトレード シングルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble::
-	.string "{JPN}サクサクッと バトルファクトリーの\nバトルトレード ダブルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルファクトリーの\nバトルトレード ダブルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle::
-	.string "{JPN}サクサクッと バトルパレスの\nシングル バトルホールに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルパレスの\nシングル バトルホールに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble::
-	.string "{JPN}サクサクッと バトルパレスの\nダブル バトルホールに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルパレスの\nダブル バトルホールに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattleArena::
-	.string "{JPN}サクサクッと バトルアリーナの\nかちぬきチームバトルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルアリーナの\nかちぬきチームバトルに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePike::
-	.string "{JPN}サクサクッと バトルチューブの\nバトルゲームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルチューブの\nバトルゲームに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_GetToBattlePyramid::
-	.string "{JPN}サクサクッと バトルピラミッドの\nバトルアドベンチャーに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
+	.string "サクサクッと バトルピラミッドの\nバトルアドベンチャーに\lいってきて ちょーだいっ!\pがんばれ よぉー!\nまちがえんな よぉー!\lおれと あんたの みらいの ためだかんな!$"
 
 BattleFrontier_Lounge3_Text_NiceTryCantReturnPoints::
-	.string "{JPN}あぁ あんた…… ごくろう さん……\pわりーけど バトルポイントは\nかえせねぇよ……\p…… まぁ おたがい つぎの きかいに\nがんばり ましょうや……$"
+	.string "あぁ あんた…… ごくろう さん……\pわりーけど バトルポイントは\nかえせねぇよ……\p…… まぁ おたがい つぎの きかいに\nがんばり ましょうや……$"
 
 BattleFrontier_Lounge3_Text_HelloChampHeresYourPoints::
-	.string "{JPN}ぃよおっ!! せんせい!!\pさすが! さすが ですねぇー!!\nわたくし おおもうけで ございますよぉ!\pバトルポイント おかえし しますよっ!\nしっかり のしつけて さしあげますよぉ!$"
+	.string "ぃよおっ!! せんせい!!\pさすが! さすが ですねぇー!!\nわたくし おおもうけで ございますよぉ!\pバトルポイント おかえし しますよっ!\nしっかり のしつけて さしあげますよぉ!$"
 
 BattleFrontier_Lounge3_Text_ObtainedBattlePoints::
-	.string "{JPN}{PLAYER}は バトルポイントを\n{STR_VAR_1}BP てにいれた!$"
+	.string "{PLAYER}は バトルポイントを\n{STR_VAR_1}BP てにいれた!$"
 
 BattleFrontier_Lounge3_Text_ThinkOfMeForAnotherChallenge::
-	.string "{JPN}また なんか あったら\nよろしく たのみますよっ!!$"
+	.string "また なんか あったら\nよろしく たのみますよっ!!$"
 
 BattleFrontier_Lounge3_Text_NotInterested::
-	.string "{JPN}そりゃ ないぜー!\nせちがれぇ おこさま だなぁ!!$"
+	.string "そりゃ ないぜー!\nせちがれぇ おこさま だなぁ!!$"
 
 BattleFrontier_Lounge3_Text_Oh::
-	.string "{JPN}おっ……$"
+	.string "おっ……$"
 
 BattleFrontier_Lounge3_Text_BackedWrongTrainer::
-	.string "{JPN}まーたー はーずーれー?\pあたし ふつうに\nたたかった ほうが いいの かなぁー$"
+	.string "まーたー はーずーれー?\pあたし ふつうに\nたたかった ほうが いいの かなぁー$"
 
 BattleFrontier_Lounge3_Text_TrainerGoodButRattled::
-	.string "{JPN}あの トレーナー…… つよいけど\nバトルドームだと すごく きんちょう\lしちゃうん だよなぁ……$"
+	.string "あの トレーナー…… つよいけど\nバトルドームだと すごく きんちょう\lしちゃうん だよなぁ……$"
 
 BattleFrontier_Lounge3_Text_KnowWinnerWhenISeeOne::
-	.string "{JPN}うふふっ!\nボロもうけ! ボロもうけなのよ!$"
+	.string "うふふっ!\nボロもうけ! ボロもうけなのよ!$"
 
 BattleFrontier_Lounge3_Text_ShouldBeTakingChallenges::
-	.string "{JPN}あいつら トレーナーの くせに\nちょうせんも しないで\lなに してるん だろうな?$"
+	.string "あいつら トレーナーの くせに\nちょうせんも しないで\lなに してるん だろうな?$"
