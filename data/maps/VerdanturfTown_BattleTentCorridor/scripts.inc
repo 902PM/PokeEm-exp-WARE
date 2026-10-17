@@ -43,17 +43,17 @@ VerdanturfTown_BattleTentCorridor_Movement_AttendantEnterDoor:
 @ Leftover text from when this was a Contest Hall in R/S
 @ Unused
 VerdanturfTown_ContestHall_Text_WhichContestYouEntering:
-	.string "{JPN}きみ なにコンテストに でるの?\nひとつ アドバイス してあげるよ!\pたとえば かわいさコンテスト でも\n1じしんさで かわいさ だけが\lみられてる わけじゃ ないみたいなんだ\pそだてかたを くふう したほうが いいよ!$"
+	.string "きみ なにコンテストに でるの?\nひとつ アドバイス してあげるよ!\pたとえば かわいさコンテスト でも\n1じしんさで かわいさ だけが\lみられてる わけじゃ ないみたいなんだ\pそだてかたを くふう したほうが いいよ!$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_RaisedMonToBeCute:
-	.string "{JPN}ポケモンが かわいく なるように\nそだてて いたんだけど\pコンテストって かわいらしさも\nきそう ことが できるのね!\pだいじに そだてて よかった……$"
+	.string "ポケモンが かわいく なるように\nそだてて いたんだけど\pコンテストって かわいらしさも\nきそう ことが できるのね!\pだいじに そだてて よかった……$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_MyMonRules:
-	.string "{JPN}おれの ポケモン……\pそりゃあ もう かっこよくて\nたくましくて うつくしくて\lかわいくて かしこいんだけど さ\pこうなったら ぜんぶの コンテストで\nかたっぱし から ゆうしょう ねらうか!$"
+	.string "おれの ポケモン……\pそりゃあ もう かっこよくて\nたくましくて うつくしくて\lかわいくて かしこいんだけど さ\pこうなったら ぜんぶの コンテストで\nかたっぱし から ゆうしょう ねらうか!$"
 
 @ Unused
 VerdanturfTown_ContestHall_Text_NormalRankStage:
-	.string "{JPN}ポケモン コンテスト\nノーマルランク ステージ!$"
+	.string "ポケモン コンテスト\nノーマルランク ステージ!$"
 
