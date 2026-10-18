@@ -19,7 +19,7 @@ SevenIsland_EventScript_Scientist::
 	end
 
 Text_SwordsDanceTeach::
-	.string "あまり ひとが こない\nこの ばしょで しゅぎょう すると\lどんどん つよく なっていく\lそんな きが する!\pどんどん つよく なる…\pそう そんな わざ\nつるぎのまい… おぼえて みるか？$"
+	.string "あまり ひとが こない\nこの ばしょで しゅぎょう すると\lどんどん つよく なっていく\lそんな きが する!\pどんどん つよく なる…\pそう そんな わざ\nつるぎのまい… おぼえて みるか?$"
 
 Text_SwordsDanceDeclined::
 	.string "ふむ\nそれも いいだろう$"

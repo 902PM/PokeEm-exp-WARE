@@ -133,96 +133,53 @@ SilphCo_11F_EventScript_Grunt2::
 	end
 
 SilphCo_11F_Text_ThanksForSavingMeDearBoy::
-	.string "PRESIDENT: Oh, dear boy!\n"
-	.string "Thank you for saving SILPH.\p"
-	.string "I will never forget you saved us in\n"
-	.string "our moment of peril.\p"
-	.string "I have to thank you in some way.\p"
-	.string "Because I am rich, I can give you\n"
-	.string "anything.\p"
-	.string "Here, maybe this will do.$"
+	.string "しゃちょう『おお しょうねんよ!\nたすけて くれて ありがとう!\pわたしは\nピンチを すくって くれた\pきみのことを このさき\nけして わすれない だろう!\pおお! そうだ\nおれいを さしあげなくては!\pわたしは\nふとっぱらで ある からして\pほれ\nこーんな ものでは いかがかな?$"
 
 SilphCo_11F_Text_ThanksForSavingMeDearGirl::
-	.string "PRESIDENT: Oh, dear girl!\n"
-	.string "Thank you for saving SILPH.\p"
-	.string "I will never forget you saved us in\n"
-	.string "our moment of peril.\p"
-	.string "I have to thank you in some way.\p"
-	.string "Because I am rich, I can give you\n"
-	.string "anything.\p"
-	.string "Here, maybe this will do.$"
+	.string "しゃちょう『おお しょうじょよ!\nたすけて くれて ありがとう!\pわたしは\nピンチを すくって くれた\pきみのことを このさき\nけして わすれない だろう!\pおお! そうだ\nおれいを さしあげなくては!\pわたしは\nふとっぱらで ある からして\pほれ\nこーんな ものでは いかがかな?$"
 
 SilphCo_11F_Text_ObtainedMasterBallFromPresident::
-	.string "{PLAYER} obtained a MASTER BALL\n"
-	.string "from the PRESIDENT!$"
+	.string "{PLAYER}は しゃちょうから\nマスターボールを もらった!$"
 
 SilphCo_11F_Text_ThatsOurSecretPrototype::
-	.string "PRESIDENT: You can't buy that\n"
-	.string "anywhere.\p"
-	.string "It's our secret prototype MASTER\n"
-	.string "BALL.\p"
-	.string "It will catch any POKEMON without\n"
-	.string "fail!\p"
-	.string "You should be quiet about using it,\n"
-	.string "though.$"
+	.string "しゃちょう『それは…\nどこで かうことも できない\pひみつの\nしさくひん マスターボール!\pなげれば かならず\nポケモンを つかまえられる!\pこっそりと…\n… …\lつかって みて くれたまえ$"
 
 SilphCo_11F_Text_YouHaveNoRoomForThis::
-	.string "You have no room for this.$"
+	.string "もちものが いっぱいだぞ$"
 
 SilphCo_11F_Text_ThanksForRescuingUs::
-	.string "SECRETARY: Thank you for rescuing\n"
-	.string "all of us.\p"
-	.string "We, from the PRESIDENT down,\n"
-	.string "are indebted to you.$"
+	.string "ひしょ『このたびは たすけて\nいただいて ありがとう ございます\pしゃちょう ともども\nかんしゃの きもちで いっぱいです$"
 
 SilphCo_11F_Text_GiovanniIntro::
-	.string "Ah, {PLAYER}!\n"
-	.string "So we meet again!\p"
-	.string "The PRESIDENT and I are discussing\n"
-	.string "a vital business proposition.\p"
-	.string "Keep your nose out of grown-up\n"
-	.string "matters…\p"
-	.string "Or, experience a world of pain!$"
+	.string "おお {PLAYER}か?\nまた あったな!\pおれは いま シルフの しゃちょうと\nしごとの はなしを してるんだ\pおとなの せかいに\nくちを はさまないで もらいたい\pどうしても というなら\nいたいめに あって もらうぞ!$"
 
 SilphCo_11F_Text_GiovanniDefeat::
-	.string "Arrgh!!\n"
-	.string "I lost again!?$"
+	.string "はぐ!\nこの おれが まける なんて!$"
 
 SilphCo_11F_Text_GiovanniPostBattle::
-	.string "Blast it all!\n"
-	.string "You ruined our plans for SILPH!\p"
-	.string "But, TEAM ROCKET will never fall!\p"
-	.string "{PLAYER}! Never forget that all\n"
-	.string "POKEMON exist for TEAM ROCKET!\p"
-	.string "I must go, but I shall return!$"
+	.string "くそー …しょうが ない!\nシルフは ひとまず あきらめよう!\pしかし \nわが ロケットだんは ふめつだ!\p{PLAYER}! すべての ポケモンは\nロケットだんの ために\lそんざい するのだ!\lそのことを わすれるなよ!\pでは…!\nおれは たいさん しよう!$"
 
 SilphCo_11F_Text_Grunt2Intro::
-	.string "Stop right there!\n"
-	.string "Don't you move!$"
+	.string "こらこら まて!\nすすんでは いかん というのに$"
 
 SilphCo_11F_Text_Grunt2Defeat::
-	.string "Don't…\n"
-	.string "Please!$"
+	.string "ううーん だめだ$"
 
 SilphCo_11F_Text_Grunt2PostBattle::
-	.string "So, you want to see my BOSS?$"
+	.string "そうか\nボスに あおうって いうのかい$"
 
 SilphCo_11F_Text_Grunt1Intro::
-	.string "Halt! Do you have an appointment\n"
-	.string "with my BOSS?$"
+	.string "なんだ おまえは\nボスに なんの ようだ!$"
 
 SilphCo_11F_Text_Grunt1Defeat::
-	.string "Gaah!\n"
-	.string "Demolished!$"
+	.string "だあー! やられた$"
 
 SilphCo_11F_Text_Grunt1PostBattle::
-	.string "Watch your step…\n"
-	.string "My BOSS likes his POKEMON tough!$"
+	.string "いって おくが ボスは つよいぞ\nくれぐれも きを つけな$"
 
 SilphCo_11F_Text_MonitorHasMonsOnIt::
-	.string "The monitor has POKEMON on it!$"
+	.string "モニター がめんに\nポケモンが うつってる!$"
 
 SilphCo_11F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "11F$"
+	.string "シルフ カンパニー ほんしゃ\n11かい$"
 
