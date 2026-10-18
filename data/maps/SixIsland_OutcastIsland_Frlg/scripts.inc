@@ -7,87 +7,62 @@ SixIsland_OutcastIsland_EventScript_Rocket::
 	end
 
 SixIsland_OutcastIsland_Text_RocketIntro::
-	.string "There're no rare POKEMON around\n"
-	.string "these parts! Not a one!\p"
-	.string "That burns me up, man.\n"
-	.string "I'll take it out on you!$"
+	.string "ぜんぜん めずらしい ポケモン\nなんて いねえし!\pむかつくぜ\nやつあたり でも するか!$"
 
 SixIsland_OutcastIsland_Text_RocketDefeat::
-	.string "…Huh?$"
+	.string "あら…?$"
 
 SixIsland_OutcastIsland_Text_RocketPostBattle::
-	.string "So listen, you haven't seen any\n"
-	.string "rare POKEMON, have you?$"
+	.string "なー おまえ\nめずらしい ポケモン みなかった?$"
 
 SixIsland_OutcastIsland_Text_TylorIntro::
-	.string "I'm having no luck at all.\n"
-	.string "A battle'd be a change of pace!$"
+	.string "どうも ツイて ないなあ\nきばらし でも するか!$"
 
 SixIsland_OutcastIsland_Text_TylorDefeat::
-	.string "Nope, no luck at all…$"
+	.string "また ツキを のがした…$"
 
 SixIsland_OutcastIsland_Text_TylorPostBattle::
-	.string "I can't very well go home without\n"
-	.string "catching something, though.$"
+	.string "なんか つれる までは\nはずかしくて いえに かえれん$"
 
 SixIsland_OutcastIsland_Text_MymoIntro::
-	.string "Gasp… Gasp…\p"
-	.string "I swam here from SIX ISLE PORT\n"
-	.string "in one go.$"
+	.string "はー はー\p6のしまの みなと から\nいっきに およいで きたぜ…!$"
 
 SixIsland_OutcastIsland_Text_MymoDefeat::
-	.string "Gasp…\n"
-	.string "Gasp…$"
+	.string "ぜー はー$"
 
 SixIsland_OutcastIsland_Text_MymoPostBattle::
-	.string "I'm only at the halfway point…\n"
-	.string "I'm beat…$"
+	.string "まだ おりかえし ちてん…\nづ が れ た …$"
 
 SixIsland_OutcastIsland_Text_NicoleIntro::
-	.string "It's not so easy sending POKEMON\n"
-	.string "out while swimming, you know?$"
+	.string "およぎ ながら\nポケモンを だすのって\lけっこう むずかしいん だから!$"
 
 SixIsland_OutcastIsland_Text_NicoleDefeat::
-	.string "I didn't lose to you at swimming.\n"
-	.string "This doesn't bother me.$"
+	.string "およぎで まけたんじゃ ないから\nくやしくないわ$"
 
 SixIsland_OutcastIsland_Text_NicolePostBattle::
-	.string "Are you headed for the island up\n"
-	.string "past here?\p"
-	.string "I didn't see anything interesting\n"
-	.string "there.$"
+	.string "この さきの\nしまへ いくの?\lなんにも なかったわよ$"
 
 SixIsland_OutcastIsland_Text_AvaIntro::
-	.string "AVA: Let's have a two-on-two\n"
-	.string "marine battle!$"
+	.string "ミカ『2たい 2で\nうみの しょうぶ しましょ!$"
 
 SixIsland_OutcastIsland_Text_AvaDefeat::
-	.string "AVA: Oh, you're amazing!\n"
-	.string "Even better, you're on your own!$"
+	.string "ミカ『ひとり なのに\nすごいわね!$"
 
 SixIsland_OutcastIsland_Text_AvaPostBattle::
-	.string "AVA: You know, I do prefer the\n"
-	.string "sea over any pool.$"
+	.string "ミカ『やっぱり\nプール より うみが いいわ!$"
 
 SixIsland_OutcastIsland_Text_AvaNotEnoughMons::
-	.string "AVA: You're challenging us to\n"
-	.string "a battle?\p"
-	.string "You'll need at least two POKEMON\n"
-	.string "if you want to do that.$"
+	.string "ミカ『わたしたちと しょうぶ?\nポケモン 2ひき いないと\lできないわよ$"
 
 SixIsland_OutcastIsland_Text_GebIntro::
-	.string "GEB: Big Sister, help!\n"
-	.string "Please battle with me!$"
+	.string "マサ『ねえさんと ボクと\nいっしょに たたかって!$"
 
 SixIsland_OutcastIsland_Text_GebDefeat::
-	.string "GEB: Wow, Big Sister, this person's\n"
-	.string "really good!$"
+	.string "マサ『わー\nこの ひと すごいね ねえさん!$"
 
 SixIsland_OutcastIsland_Text_GebPostBattle::
-	.string "GEB: I'm hanging onto my sister\n"
-	.string "because I can't touch the bottom.$"
+	.string "マサ『あしが つかない から\nねえさんに つかまって るんだ$"
 
 SixIsland_OutcastIsland_Text_GebNotEnoughMons::
-	.string "GEB: Please battle against me and\n"
-	.string "my sister!\p"
-	.string "…Oh, you don't have two POKEMON?$"
+	.string "マサ『ねえさんと ボクと\nいっしょに たたかって!\l…え ポケモン 2ひき いないの?$"
+

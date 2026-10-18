@@ -36,22 +36,14 @@ SaffronCity_PokemonCenter_1F_EventScript_YoungsterRocketsGone::
 	end
 
 SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::
-	.string "POKEMON growth rates differ from\n"
-	.string "species to species.$"
+	.string "ポケモンは しゅるいに よって\nせいちょうする テンポが\lちがう らしいわ$"
 
 SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::
-	.string "SILPH CO. is widely known to all.\p"
-	.string "It's a victim of its own fame - it\n"
-	.string "attracted TEAM ROCKET.$"
+	.string "だれもが みんな しってる\nシルフ カンパニー だが\lゆうめい だと それだけ\lねらわれる きけんも あるのだ$"
 
 SaffronCity_PokemonCenter_1F_Text_GreatIfEliteFourCameBeatRockets::
-	.string "Sigh…\n"
-	.string "Wouldn't this be great?\p"
-	.string "If the ELITE FOUR came and\n"
-	.string "stomped TEAM ROCKET?$"
+	.string "あーあ…\nポケモン してんのうが きて\lロケットだんを やっつけて\lくれると いいな$"
 
 SaffronCity_PokemonCenter_1F_Text_TeamRocketTookOff::
-	.string "TEAM ROCKET took off!\n"
-	.string "We can go out safely again!\l"
-	.string "That's great!$"
+	.string "ロケットだん にげてったね!\nこれからは そと あるいても\lちっとも こわくない!\lよかったね!$"
 

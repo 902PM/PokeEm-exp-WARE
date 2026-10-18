@@ -78,38 +78,11 @@ SixIsland_PokemonCenter_1F_EventScript_OldMan::
 	end
 
 SixIsland_PokemonCenter_1F_Text_SomethingHiddenOnThisIsland::
-	.string "For ten years, I've searched for\n"
-	.string "RUINS.\p"
-	.string "No, make that twenty years.\p"
-	.string "I get this feeling that there's\n"
-	.string "something hidden on this island.$"
+	.string "いせきを さがして 10ねん\nいや いせきを さがして 20ねん\pこの しまには なにかが\nあるという よかんが するぞ!$"
 
 SixIsland_PokemonCenter_1F_Text_SomeMonsEvolveByTradingWithHeldItem::
-	.string "You know of POKEMON that evolve\n"
-	.string "only upon trading, yes?\p"
-	.string "But did you know that there are\n"
-	.string "still others?\p"
-	.string "Some POKEMON evolve only when\n"
-	.string "traded while holding specific items.$"
+	.string "つうしん こうかん するだけで\nしんか する ポケモンは\lしっている だろう\pだが なにかを もたせて\nつうしん こうかん すると\lしんか する ポケモンが\lいるのは ごぞんじ かな?$"
 
 SixIsland_PokemonCenter_1F_Text_RivalImpossibleToGetAllMonsAroundHere::
-	.string "{RIVAL}: Hey, {PLAYER}!\n"
-	.string "How's your POKeDEX filling up?\p"
-	.string "It looks like it's impossible to get\n"
-	.string "all the POKEMON by hanging around\l"
-	.string "just these parts.\p"
-	.string "know about somewhere far away…\p"
-	.string "… … …  … … …  … … …\p"
-	.string "Maybe there are POKEMON we don't\n"
-	.string "Well, if I can't do it, there's no\n"
-	.string "way for you to get it done.\p"
-	.string "I'm not going to get all desperate\n"
-	.string "over this.\p"
-	.string "I'll keep collecting POKEMON at my\n"
-	.string "own pace while I train them.\p"
-	.string "That's what I'll do.\n"
-	.string "So there's no point staying here.\l"
-	.string "I may as well leave for home.\p"
-	.string "That's that, then!\n"
-	.string "Smell ya later!$"
+	.string "{RIVAL}『あ {PLAYER}…!\nずかん どのくらい あつまった?\pこのへんを うろうろ\nしてる だけじゃ\lぜんぶの ポケモン なんて\lむり かもな!\pもっと とおい ところに\nおれたちの しらない ポケモンが\lいたと したら……\p……… ……… ………\pまっ おれが ダメなら\nおまえも ダメだろーな!\pおれは ポケモンを きたえながら\nあせらず のんびりと\lあつめる ことに するぜ!\pそうと きまれば こんなとこ\nいつまでも いらんねーぜ\lいちど かえると するか!\pじゃあな バイビー!$"
 

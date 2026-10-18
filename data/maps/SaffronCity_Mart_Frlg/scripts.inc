@@ -32,12 +32,8 @@ SaffronCity_Mart_Items::
 	end
 
 SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper::
-	.string "MAX REPEL keeps weaker POKEMON\n"
-	.string "from appearing.\p"
-	.string "MAX REPEL stays effective longer\n"
-	.string "than SUPER REPEL.$"
+	.string "ゴールドスプレーは\nよわい ポケモンを よせ つけない\lシルバースプレー より\lながもち するって$"
 
 SaffronCity_Mart_Text_ReviveIsCostly::
-	.string "REVIVE is costly, but it revives\n"
-	.string "fainted POKEMON!$"
+	.string "げんきのかけら たかい けど\nせんとうふのうの ポケモンが\lげんきに なるの すごいわ!$"
 

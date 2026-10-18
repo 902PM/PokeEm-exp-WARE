@@ -2,54 +2,38 @@ SevenIsland_TanobyRuins_Frlg_MapScripts::
 	.byte 0
 
 SevenIsland_TanobyRuins_Text_BrandonIntro::
-	.string "Do you know anything about this\n"
-	.string "stone chamber?$"
+	.string "この せきしつに ついて\nなにか しらないか?$"
 
 SevenIsland_TanobyRuins_Text_BrandonDefeat::
-	.string "That was uncalled for.\n"
-	.string "You didn't have to be so rough.$"
+	.string "ひどいなア\nそんな らんぼうに しなくても…$"
 
 SevenIsland_TanobyRuins_Text_BrandonPostBattle::
-	.string "The TANOBY RUINS date back at\n"
-	.string "least 1,500 years.\p"
-	.string "But it's a baffling mystery as to\n"
-	.string "why it was built in the first place.$"
+	.string "アスカナいせきは\nすくなくとも つくられてから\l1500ねんは たってるが…\pなんのために つくられたかは\nまったく わかって いないんだ$"
 
 SevenIsland_TanobyRuins_Text_BenjaminIntro::
-	.string "A mystic POKEMON is said to sleep\n"
-	.string "inside here.$"
+	.string "この なかに\nふしぎな ポケモンが\lねむっている らしいんだが…$"
 
 SevenIsland_TanobyRuins_Text_BenjaminDefeat::
-	.string "I'm not much good in battle.$"
+	.string "しょうぶは にがてだ$"
 
 SevenIsland_TanobyRuins_Text_BenjaminPostBattle::
-	.string "I hear there are other ruins like\n"
-	.string "the one here.\p"
-	.string "Might they be the resting places\n"
-	.string "of other mystic POKEMON?$"
+	.string "おなじような いせきが\nどこか ほかにも あるという\pそこにも ふしぎな ポケモンは\nねむっている のか?$"
 
 SevenIsland_TanobyRuins_Text_EdnaIntro::
-	.string "CLIFFORD is teaching me how to\n"
-	.string "paint.$"
+	.string "ブラウン せんせいに\nえを おしえて もらってるの$"
 
 SevenIsland_TanobyRuins_Text_EdnaDefeat::
-	.string "We might get in trouble for being\n"
-	.string "noisy here.$"
+	.string "こんな ところで さわいで\nおこられちゃう かな?$"
 
 SevenIsland_TanobyRuins_Text_EdnaPostBattle::
-	.string "I said that I wanted to paint an\n"
-	.string "old building.\p"
-	.string "So CLIFFORD brought me here.$"
+	.string "むかしの たてものが かきたい\nって いったら\lせんせいが つれてきて くれたの$"
 
 SevenIsland_TanobyRuins_Text_CliffordIntro::
-	.string "Today, in addition to our lesson,\n"
-	.string "we came to see the chamber.$"
+	.string "きょうは おしえごと いっしょに\nせきしつを みに きました$"
 
 SevenIsland_TanobyRuins_Text_CliffordDefeat::
-	.string "My, how extraordinary.$"
+	.string "たいした もの ですな$"
 
 SevenIsland_TanobyRuins_Text_CliffordPostBattle::
-	.string "Ah, so you are studying POKEMON\n"
-	.string "on your own…\p"
-	.string "Yes, you certainly are quite the\n"
-	.string "extraordinary person, indeed.$"
+	.string "あなたは ひとりで\nポケモンの おべんきょうを…\lますます たいした かただ!$"
+
