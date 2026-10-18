@@ -1299,359 +1299,183 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	end
 
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
-	.string "{RIVAL}: What, it's only {PLAYER}?\n"
-	.string "Gramps isn't around.$"
+	.string "{RIVAL}『なんだー {PLAYER}か!\nオーキドの じいさんなら いねーよ$"
 
 PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
-	.string "{RIVAL}: Gramps!\n"
-	.string "I'm fed up with waiting!$"
+	.string "{RIVAL}『じいさん!\nまちくたびれたぞー!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe::
-	.string "{RIVAL}: Hey! Gramps! No fair!\n"
-	.string "What about me?$"
+	.string "{RIVAL}『あッ! ずるい!\nじいさん! おれにも くれよお!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer::
-	.string "{RIVAL}: Heh, I don't need to be\n"
-	.string "greedy like you. I'm mature!\p"
-	.string "Go ahead and choose, {PLAYER}!$"
+	.string "{RIVAL}『へへーんだ! おれは\nおとな だから がっつかないのさ\p{PLAYER}から さきに\nえらばせて やるぜ!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen::
-	.string "{RIVAL}: I'll take this one, then!$"
+	.string "{RIVAL}『じゃ おれは これ!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak::
-	.string "{RIVAL} received the {STR_VAR_1}\n"
-	.string "from PROF. OAK!$"
+	.string "{RIVAL}は オーキドから\n{STR_VAR_1}を もらった!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
-	.string "{RIVAL}: My POKEMON looks a lot\n"
-	.string "tougher than yours.$"
+	.string "{RIVAL}『おれの えらんだ\nポケモンの ほうが つよそうだぜ$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
-	.string "{RIVAL}: Wait, {PLAYER}!\n"
-	.string "Let's check out our POKEMON!\p"
-	.string "Come on, I'll take you on!$"
+	.string "{RIVAL}『まてよ! {PLAYER}!\nせっかく じーさんに\lポケモン もらったんだぜ!\p… ちょっと\nおれの あいて してみろ!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-	.string "WHAT?\n"
-	.string "Unbelievable!\l"
-	.string "I picked the wrong POKEMON!$"
+	.string "えー そんな バカな!\nおまえの ポケモンに\lすりゃあ よかった!$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
-	.string "{RIVAL}: Yeah!\n"
-	.string "Am I great or what?$"
+	.string "{RIVAL}『やりー!\nおれって てんさい?$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon::
-	.string "{RIVAL}: Okay! I'll make my\n"
-	.string "POKEMON battle to toughen it up!\p"
-	.string "{PLAYER}! Gramps!\n"
-	.string "Smell you later!$"
+	.string "{RIVAL}『よーし!\nほかの ポケモンと たたかわせて\lもっと もっと つよくするぜ!\p{PLAYER}! じいさん!\nそんじゃ あばよ!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGramps::
-	.string "{RIVAL}: Gramps!$"
+	.string "{RIVAL}『じいさん!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor::
-	.string "{RIVAL}: I almost forgot!\n"
-	.string "What did you call me for?$"
+	.string "{RIVAL}『すっかり わすれてた!\nおれに なんか よーじ だって?$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
-	.string "{RIVAL}: All right, Gramps!\n"
-	.string "Leave it all to me!$"
+	.string "{RIVAL}『よーし! じいさん!\nぜんぶ おれに まかせなー!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
-	.string "{PLAYER}, I hate to say it, but you\n"
-	.string "won't be necessary for this.\p"
-	.string "I know! I'll borrow a TOWN MAP\n"
-	.string "from my sis!\p"
-	.string "I'll tell her not to lend you one,\n"
-	.string "{PLAYER}! Hahaha!\p"
-	.string "Don't bother coming around to\n"
-	.string "my place after this!$"
+	.string "{PLAYER}!\nざんねんだが おまえの でばんは\lまったく ねーぜ!\pそうだ! うちの ねえちゃん から\nタウンマップを かりて いこう!\p{PLAYER} には かさない ように\nねえちゃんに いって おくから\lおれんちへ きても むだ だからな!$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
-	.string "OAK: {RIVAL}?\n"
-	.string "Let me think…\p"
-	.string "Oh, that's right, I told you to\n"
-	.string "come! Just wait!\p"
-	.string "Here, {PLAYER}.\p"
-	.string "There are three POKEMON here.\p"
-	.string "Haha!\p"
-	.string "The POKEMON are held inside\n"
-	.string "these POKe BALLS.\p"
-	.string "When I was young, I was a serious\n"
-	.string "POKEMON TRAINER.\p"
-	.string "But now, in my old age, I have\n"
-	.string "only these three left.\p"
-	.string "You can have one.\n"
-	.string "Go on, choose!$"
+	.string "オーキド『{RIVAL}か?\n… … …\pおお そうか\nわしが よんだのじゃった!\lちょっと まって おれ!\pほれ {PLAYER}!\pそこに 3びき\nポケモンが いる じゃろう!\pほっほ!\pモンスターボールの なかに\nポケモンが いれて あるんじゃ\pむかしは わしも バリバリの\nポケモン トレーナーとして\lならした もの!\pおいぼれた いまは ポケモンも\n3びき しか のこっとらんが\lおまえに 1ぴき やろう!\l… さあ えらべ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
-	.string "OAK: Be patient, {RIVAL}.\n"
-	.string "You can have one, too!$"
+	.string "オーキド『まー!\nあわてるな {RIVAL}!\lおまえも すきなものを とれ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
-	.string "OAK: Now, {PLAYER}.\p"
-	.string "Inside those three POKe BALLS are\n"
-	.string "POKEMON.\p"
-	.string "Which one will you choose for\n"
-	.string "yourself?$"
+	.string "オーキド『さあ {PLAYER}\nそこの 3つの\lモンスターボールの なかに\lポケモンが はいって いるぞ!\pどの ポケモンに する?$"
 
 PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet::
-	.string "OAK: Hey!\n"
-	.string "Don't go away yet!$"
+	.string "オーキド『こら どこへいく!\nもどってこんか!$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
-	.string "Ah! CHARMANDER is your choice.\n"
-	.string "You should raise it patiently.\p"
-	.string "So, {PLAYER}, you're claiming the\n"
-	.string "FIRE POKEMON CHARMANDER?$"
+	.string "ほう! ヒトカゲが いいか!\nじっくり そだてると いいぞ!\p{PLAYER}は ほのおのポケモン\nヒトカゲに するんじゃな?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
-	.string "Hm! SQUIRTLE is your choice.\n"
-	.string "It's one worth raising.\p"
-	.string "So, {PLAYER}, you've decided on the\n"
-	.string "WATER POKEMON SQUIRTLE?$"
+	.string "ふむ ゼニガメが いいか!\nそだてがいの ある ポケモンじゃ!\p{PLAYER}は みずのポケモン\nゼニガメに きめるのじゃな?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
-	.string "I see! BULBASAUR is your choice.\n"
-	.string "It's very easy to raise.\p"
-	.string "So, {PLAYER}, you want to go with\n"
-	.string "the GRASS POKEMON BULBASAUR?$"
+	.string "そうか! フシギダネが いいか!\nこいつは とても そだてやすいぞ!\p{PLAYER}は しょくぶつポケモン\nフシギダネが いいんじゃな?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
-	.string "This POKEMON is really quite\n"
-	.string "energetic!$"
+	.string "この ポケモンは\nほんとに げんきが いいぞ!$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak::
-	.string "{PLAYER} received the {STR_VAR_1}\n"
-	.string "from PROF. OAK!$"
+	.string "{PLAYER}は オーキドから\n{STR_VAR_1}を もらった!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon::
-	.string "OAK: If a wild POKEMON appears,\n"
-	.string "your POKEMON can battle it.\p"
-	.string "With it at your side, you should be\n"
-	.string "able to reach the next town.$"
+	.string "オーキド『そうじゃ!\nやせいの ポケモンが でて きても\pそいつを たたかわせて いけば\nとなりまちへ いける!$"
 
 PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow::
-	.string "OAK: {PLAYER}, raise your young\n"
-	.string "POKEMON by making it battle.\p"
-	.string "It has to battle for it to grow.$"
+	.string "オーキド『{PLAYER}も\nまけずに ポケモンを\lたたかわせて そだてると いいぞ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
-	.string "OAK: Oh, {PLAYER}!\n"
-	.string "How is my old POKEMON?\p"
-	.string "Well, it seems to be growing more\n"
-	.string "attached to you.\p"
-	.string "You must be talented as a POKEMON\n"
-	.string "TRAINER.\p"
-	.string "What's that?\n"
-	.string "You have something for me?$"
+	.string "オーキド『おお! {PLAYER}\pどーだい?\nわしの やったポケモンは…ほう\pだいぶ\nなついた みたいだな?\pおまえ ポケモントレーナーの\nさいのうが あるな!\p…え わしに わたす ものが?$"
 
 PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
-	.string "{PLAYER} delivered OAK'S PARCEL.$"
+	.string "{PLAYER}は オーキド はかせに\nおとどけものを わたした!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
-	.string "Ah! \n"
-	.string "It's the custom POKe BALL!\p"
-	.string "I had it on order.\n"
-	.string "Thank you!$"
+	.string "おお! これは\nわしが ちゅうもん してた\pとくちゅうの モンスターボールじゃ\nどうも ありがとよ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo::
-	.string "OAK: Oh, right!\n"
-	.string "I have a request for you two.$"
+	.string "オーキド『おお そうじゃ!\nおまえたちに たのみが あるんじゃ$"
 
 PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk::
-	.string "On the desk there is my invention,\n"
-	.string "the POKeDEX!\p"
-	.string "It automatically records data on\n"
-	.string "POKEMON you've seen or caught.\p"
-	.string "It's a high-tech encyclopedia!$"
+	.string "つくえの うえに あるのは\nわしが つくった ポケモンずかん!\pみつけた ポケモンの データが\nじどうてきに かきこまれて\lページが ふえて いく という\pたいへん ハイテクな\nずかん なのじゃ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou::
-	.string "OAK: {PLAYER} and {RIVAL}.\n"
-	.string "Take these with you.$"
+	.string "オーキド『{PLAYER} {RIVAL}\nこれを おまえたちに あずける!$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak::
-	.string "{PLAYER} received the POKeDEX\n"
-	.string "from PROF. OAK.$"
+	.string "{PLAYER}は オーキドから\nポケモンずかんを もらった!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese::
-	.string "OAK: You can't get detailed data\n"
-	.string "on POKEMON by just seeing them.\p"
-	.string "You must catch them to obtain\n"
-	.string "complete data.\p"
-	.string "So, here are some tools for\n"
-	.string "catching wild POKEMON.$"
+	.string "オーキド『ポケモンを\nただ みつけただけ では\lくわしい データを\lてに いれる ことは できん!\pかならず\nつかまえなければ ならんのだ!\lほれ そのために…\lひつような どうぐを わたそう!$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls::
-	.string "{PLAYER} received five POKe BALLS.$"
+	.string "{PLAYER}は 5こ\nモンスターボールを もらった!$"
 
 PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
-	.string "When a wild POKEMON appears,\n"
-	.string "it's fair game.\p"
-	.string "Just throw a POKe BALL at it and\n"
-	.string "try to catch it!\p"
-	.string "This won't always work, however.\p"
-	.string "A healthy POKEMON can escape.\n"
-	.string "You have to be lucky!$"
+	.string "やせいの ポケモンが\nとびだして きたら チャンス!\pモンスターボールを\nポイ!と なげれば\lポケモンを つかまえ られる!\pただし… うまく とれるか\nどうかは わからんぞ!\pげんきな ポケモンは にげやすいし\nうんも あるからな!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
-	.string "To make a complete guide on all\n"
-	.string "the POKEMON in the world...\p"
-	.string "That was my dream!\p"
-	.string "But, I'm too old.\n"
-	.string "I can't get the job done.\p"
-	.string "So, I want you two to fulfill my\n"
-	.string "dream for me.\p"
-	.string "Get moving, you two.\p"
-	.string "This is a great undertaking in\n"
-	.string "POKEMON history!$"
+	.string "この せかいの すべての\nポケモンを きろくした\lかんぺきな ずかんを つくること!\pそれが わしの ゆめ だった!\pしかし わしも もう ジジイ!\nそこまで ムリは できん!\pそこで おまえ たちには\nわしの かわりに\lゆめを はたして ほしいのじゃ!\pさあ ふたりとも\nさっそく しゅっぱつ してくれい!\pこれは ポケモンの れきしに のこる\nいだいな しごとじゃー!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
-	.string "POKEMON around the world wait for\n"
-	.string "you, {PLAYER}!$"
+	.string "せかい じゅうに すんでいる\nポケモンたちが\l{PLAYER}を まって おるぞー!$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
-	.string "Ah, {PLAYER}!\n"
-	.string "How is your POKeDEX shaping up?\p"
-	.string "{RIVAL} has already caught some\n"
-	.string "POKEMON and added to the data.\p"
-	.string "So, {PLAYER}, let's have a look at\n"
-	.string "your POKeDEX.\p"
-	.string "...What's the matter?\n"
-	.string "You've added no new data at all.\p"
-	.string "I'll give you these, so do try a\n"
-	.string "little harder.$"
+	.string "おぉ {PLAYER}!\nずかんの ちょうしは どうかな?\p{RIVAL}は すでに\nポケモンを つかまえて ずかんの\lページを ふやしている そうじゃ!\p{PLAYER}の ずかんは …… ……\pうーむ どうしたんじゃ?\nぜんぜん ページが ふえとらんぞ?\lこれも わたして おくから\lもっと もっと がんばって くれ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime::
-	.string "OAK: Come see me sometime.\p"
-	.string "After all, I want to know how your\n"
-	.string "POKeDEX is coming along.$"
+	.string "オーキド『ときどきは\nわしの とこに かおを だせ!\pポケモンずかんの ページが\nきに なるんでな!$"
 
 PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia::
-	.string "It's like an encyclopedia, but the\n"
-	.string "pages are blank.$"
+	.string "ずかん みたいな ものが ある!\nなかは しろいページ ばっかりだ!$"
 
 PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls::
-	.string "Those are POKe BALLS.\n"
-	.string "They contain POKEMON!$"
+	.string "モンスターボールだ\nなかに ポケモンが はいってるぞ!$"
 
 PalletTown_ProfessorOaksLab_Text_OaksLastMon::
-	.string "That's PROF. OAK's last POKEMON.$"
+	.string "オーキドはかせの ポケモン\nさいごの いっぴきだ…!$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
-	.string "Press START to open the MENU!$"
+	.string "スタート ボタンを プシュ!\nおすと メニューが ひらくなり$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-	.string "The SAVE option is on the MENU.\n"
-	.string "Use it regularly.$"
+	.string "セーブするには ポケモン レポート\nこまめに かくと いいなり$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
-	.string "All POKEMON types have strong and\n"
-	.string "weak points against others.$"
+	.string "ポケモンは タイプに よって\nとくいな タイプ\lにがてな タイプが いるなり$"
 
 PalletTown_ProfessorOaksLab_Text_EmailMessage::
-	.string "There's an e-mail message here.\p"
-	.string "...\p"
-	.string "Finally!\n"
-	.string "The ultimate TRAINERS of the\l"
-	.string "POKEMON LEAGUE are ready to\l"
-	.string "take on all comers!\p"
-	.string "Bring your best POKEMON and see\n"
-	.string "how you rate as a TRAINER!\p"
-	.string "POKEMON LEAGUE HQ\n"
-	.string "INDIGO PLATEAU\p"
-	.string "PROF. OAK, please visit us!\n"
-	.string "…$"
+	.string "パソコンを みると\nなんと でんしメールが きていた!\p…… …… ……\pポケモンを つよく そだてて\nたたかう ポケモン トレーナー!\lここに さいきょうの\lトレーナーが あつまり ました\pばしょは セキエイ こうげんの\nポケモン リーグ ほんぶ です!\pオーキドはかせも\nいちど ごらん ください\l…… ポケモン リーグ より\l…… …… ……$"
 
 PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
-	.string "I study POKEMON as PROF. OAK's\n"
-	.string "AIDE.$"
+	.string "わたしも はかせの じょしゅ として\nポケモンを けんきゅう してます$"
 
 PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
-	.string "Hi, {PLAYER}. I bet you've become\n"
-	.string "good friends with your POKEMON.\p"
-	.string "By the way, did you know about\n"
-	.string "DAISY?\p"
-	.string "If you show DAISY your POKEMON,\n"
-	.string "she can tell how much it likes you.\p"
-	.string "Occasionally, she will even groom\n"
-	.string "a POKEMON for you.\p"
-	.string "This is a secret, so please don't\n"
-	.string "tell anyone.$"
+	.string "{PLAYER}{KUN}と ポケモン\nなかよく なった でしょうね!\pところで… しってます?\nナナミさんに ポケモンを みせると\lどのぐらい なかよしか\lみぬいて おしえて くれるんです\pたまに ポケモンの おていれも\nして くれるんですよ\pみんなには ヒミツですよ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
-	.string "PROF. OAK is going to have his own\n"
-	.string "radio show soon.\p"
-	.string "The program will be called PROF.\n"
-	.string "OAK's POKEMON SEMINAR.$"
+	.string "オーキドはかせ\nこんどから ラジオに でるんです\pオーキドはかせの ポケモンこうざ\nっていう ばんぐみ なんですよ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
-	.string "PROF. OAK may not look like much,\n"
-	.string "but he's the authority on POKEMON.\p"
-	.string "Many POKEMON TRAINERS hold him in\n"
-	.string "high regard.$"
+	.string "ああ みえても オーキドはかせは\nポケモンの オーソリティなの!\pはかせを そんけいする\nポケモントレーナーも おおいわよ!$"
 
 PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer::
-	.string "Ah, now this is excellent!\p"
-	.string "{PLAYER}, I have another important\n"
-	.string "favor to ask of you.\p"
-	.string "I need you to listen closely.$"
+	.string "おお これなら いい!\pじつは…… {PLAYER}に\nおねがいが あるんじゃ\pしっかり きいてくれ$"
 
 PalletTown_ProfessorOaksLab_Text_OakSightingsOfRareMons::
-	.string "Recently, there have been sightings\n"
-	.string "of many rare POKEMON species.\p"
-	.string "I'm talking about POKEMON that\n"
-	.string "have never been seen in KANTO.\p"
-	.string "I would love to go see things for\n"
-	.string "myself, but I'm much too old.\p"
-	.string "Since I can't do it, {PLAYER}, I'd\n"
-	.string "like you to go in my place.$"
+	.string "ここ さいきん\nカントーでは みたことも ない\lめずらしい ポケモンが\lつぎつぎ みつかって おるのじゃ!\pぜひ みに いきたいが\nやっぱり わしは ジジイ\lむりは できん!\pそこで {PLAYER}!\nわしの かわりに いって くれんか!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything::
-	.string "{RIVAL}: Hey, I heard that!\p"
-	.string "Gramps, what's with favoring\n"
-	.string "{PLAYER} over me all the time?\p"
-	.string "I went and collected more POKEMON,\n"
-	.string "and faster, too.\p"
-	.string "You should just let me handle\n"
-	.string "everything.$"
+	.string "{RIVAL}『きいたぞ!\pじいさん なんか\n{PLAYER}だけ ひいき してねー?\lおれの ほうが はやく\lいっぱい ポケモン あつめたのに!\pぜんぶ おれに まかせれば\nいーんだって!$"
 
 PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes::
-	.string "OAK: I know, I know.\n"
-	.string "Of course I need your help, too.\p"
-	.string "Now, I need to see both your\n"
-	.string "POKeDEXES.$"
+	.string "オーキド『わかっとる わかっとる\nもちろん おまえにも たのむぞ!\pさあ おまえたちの\nポケモンずかんを かしなさい$"
 
 PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits::
-	.string "PROF. OAK took both POKeDEX\n"
-	.string "units.$"
+	.string "ふたりは ポケモンずかんを\nオーキドはかせに あずけた!$"
 
 PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData::
-	.string "… … …  … … …\p"
-	.string "… … …  … … …\p"
-	.string "…And that's done!\p"
-	.string "Now these units can record data on\n"
-	.string "a lot more POKEMON.$"
+	.string "……… ………\p……… ………\p…これで よしッ!\nとうろくできる ポケモンが\lぐっと ふえた!$"
 
 PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded::
-	.string "{PLAYER}'s POKeDEX was upgraded!$"
+	.string "{PLAYER}は ずかんを\nパワーアップして もらった!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex::
-	.string "Now, {PLAYER} and {RIVAL}!\p"
-	.string "This time, you really must work\n"
-	.string "towards filling your POKeDEXES.\p"
-	.string "I urge you to make them the best\n"
-	.string "and the most complete of all time!\p"
-	.string "Truly, this is a monumentally great\n"
-	.string "undertaking in POKEMON history!$"
+	.string "さあ\n{PLAYER} {RIVAL}!\pこれで こんどこそ\nほんとうに ほんとうに\lものすごくて すてきで\lかんぺきな ポケモンずかんを\lかんせい させるのじゃーッ!\pこれこそ しんの\nポケモンの れきしに のこる\lいだいな しごとじゃー!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
-	.string "{RIVAL}: Gramps, calm down.\n"
-	.string "Don't get so excited.\p"
-	.string "I'll get the POKeDEX completed,\n"
-	.string "don't you worry about a thing.\p"
-	.string "I think I'll try looking around\n"
-	.string "ONE ISLAND first…\p"
-	.string "Anyways, I'm outta here!$"
+	.string "{RIVAL}『じいさん\nあんまり こうふん すんなって\pこんどこそ おれが\nちゃんと かんせいさせて やるぜ!\pまずは 1のしまに いって\nあのへんを さがそうかなー\lじゃ おさき!$"
 

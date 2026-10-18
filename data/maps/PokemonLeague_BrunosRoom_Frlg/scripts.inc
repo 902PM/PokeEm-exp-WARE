@@ -113,36 +113,14 @@ PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown::
 	return
 
 PokemonLeague_BrunosRoom_Text_Intro::
-	.string "I am BRUNO of the ELITE FOUR!\p"
-	.string "Through rigorous training, people\n"
-	.string "and POKEMON can become stronger\l"
-	.string "without limit.\p"
-	.string "I've lived and trained with my\n"
-	.string "fighting POKEMON!\l"
-	.string "And that will never change!\p"
-	.string "{PLAYER}!\p"
-	.string "We will grind you down with our\n"
-	.string "superior power!\p"
-	.string "Hoo hah!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+	.string "おれは してんのうの シバ!\pひとも ポケモンも\nたたかい きたえれば\lどこまでも つよくなる!\pおれは そんな きたえ ぬかれた\nかくとうポケモン たちと\lともに いきてきた!\lそして これからもな!\p{PLAYER}と いったな!\pおれたちの スーパー パワーを\nうけて みるが いい!\pウー! ハーッ!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_BrunosRoom_Text_RematchIntro::
-	.string "I am BRUNO of the ELITE FOUR!\p"
-	.string "Through rigorous training, people\n"
-	.string "and POKEMON can become stronger\l"
-	.string "without limit.\p"
-	.string "I've lived and trained with my\n"
-	.string "fighting POKEMON!\l"
-	.string "And that will never change!\p"
-	.string "{PLAYER}!\p"
-	.string "We will grind you down with our\n"
-	.string "superior power!\p"
-	.string "Hoo hah!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+	.string "おれは してんのうの シバ!\pひとも ポケモンも\nたたかい きたえれば\lどこまでも つよくなる!\pおれは そんな きたえ ぬかれた\nかくとうポケモン たちと\lともに いきてきた!\lそして これからもな!\p{PLAYER}よ…!\pおれたちの スーパー パワーを\nうけて みるが いい!\pウー! ハーッ!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_BrunosRoom_Text_Defeat::
-	.string "Why?\n"
-	.string "How could I lose?$"
+	.string "どうした ことだ!\n… おれが まけるとは!$"
 
 PokemonLeague_BrunosRoom_Text_PostBattle::
-	.string "My job is done.\n"
-	.string "Go face your next challenge.$"
+	.string "まけちまったら\nおれの でばんは おわりだ!\lくそッ! つぎに いって くれ!$"
 

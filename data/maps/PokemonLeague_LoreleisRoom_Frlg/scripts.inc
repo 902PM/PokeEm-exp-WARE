@@ -93,35 +93,14 @@ PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 	end
 
 PokemonLeague_LoreleisRoom_Text_Intro::
-	.string "Welcome to the POKEMON LEAGUE.\p"
-	.string "I am LORELEI of the ELITE FOUR.\p"
-	.string "No one can best me when it comes\n"
-	.string "to icy POKEMON.\p"
-	.string "Freezing moves are powerful.\p"
-	.string "Your POKEMON will be at my mercy\n"
-	.string "when they are frozen solid.\p"
-	.string "Hahaha!\n"
-	.string "Are you ready?{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+	.string "ポケモン リーグへ ようこそ!\pわたしが してんのうの カンナ!\pこおり ポケモン つかわせたら\nみぎに でる ものは いないわ\pあいてを こおらせるって\nとっても きょうりょくよ!\pだって こおっちゃったら\nあんたの ポケモン\lぜんぜん うごけ ないんだから\p… あははッ!\nじゃ かくごは いいかしら!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_RematchIntro::
-	.string "Welcome to the POKEMON LEAGUE.\p"
-	.string "I, LORELEI of the ELITE FOUR,\n"
-	.string "have returned!\p"
-	.string "You know how it goes.\n"
-	.string "No one can best me when it comes\l"
-	.string "to icy POKEMON.\p"
-	.string "Freezing moves are powerful.\p"
-	.string "Your POKEMON will be at my mercy\n"
-	.string "when they are frozen solid.\p"
-	.string "Hahaha!\n"
-	.string "Are you ready?{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+	.string "ポケモン リーグへ ようこそ!\pしてんのうの カンナ\nかえって きたわ…!\pわかってる でしょ\nこおり ポケモン つかわせたら\lみぎに でる ものは いないわ\pあいてを こおらせるって\nとっても きょうりょくよ!\pだって こおっちゃったら\nあんたの ポケモン\lぜんぜん うごけ ないんだから\p… あははッ!\nじゃ かくごは いいかしら!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_Defeat::
-	.string "…Things shouldn't be this way!$"
+	.string "… なんて ことなの!$"
 
 PokemonLeague_LoreleisRoom_Text_PostBattle::
-	.string "You're better than I thought.\n"
-	.string "Go on ahead.\p"
-	.string "You only got a taste of the\n"
-	.string "POKEMON LEAGUE's power.$"
+	.string "すこしは できる みたいね!\nわかった…!\lつぎの へやに すすむと いいわ!\pポケモン リーグ しんの パワーは\nまだまだ…!\lこんな ものじゃ ないわよ!$"
 

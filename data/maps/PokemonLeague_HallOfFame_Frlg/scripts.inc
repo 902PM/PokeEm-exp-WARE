@@ -54,17 +54,5 @@ PokemonLeague_HallOfFame_Movement_EnterRoom::
 	step_end
 
 PokemonLeague_HallOfFame_Text_OakCongratulations::
-	.string "OAK: Er-hem!\n"
-	.string "Congratulations, {PLAYER}!\p"
-	.string "This floor is the POKEMON HALL OF\n"
-	.string "FAME.\p"
-	.string "POKEMON LEAGUE CHAMPIONS are\n"
-	.string "honored for their exploits here.\p"
-	.string "Their POKEMON are also recorded in\n"
-	.string "the HALL OF FAME.\p"
-	.string "{PLAYER}!\p"
-	.string "You have worked hard to become\n"
-	.string "the new LEAGUE CHAMPION.\p"
-	.string "Congratulations, {PLAYER}, you and\n"
-	.string "your POKEMON are HALL OF FAMERS!$"
+	.string "オーキド『…… おほんッ!\nおめでとう! {PLAYER}!\pここは……\nれきだいの ポケモン リーグ\lトレーナーの もとで……\pかつやく した ポケモン たちを\nえいえんに きろく して\lたたえる フロア である!\pポケモン トレーナーは ここに\nきろく される よろこびを\lでんどういり と よんで いる!\p{PLAYER}! おまえは\nはげしい たたかいの すえ\lリーグ チャンピオンと なった!\pここに {PLAYER}の なまえと\nポケモン たちを きろく しよう!$"
 

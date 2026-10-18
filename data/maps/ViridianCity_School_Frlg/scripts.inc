@@ -94,95 +94,47 @@ ViridianCity_School_EventScript_ExitBlackboard::
 	end
 
 ViridianCity_School_Text_TryingToMemorizeNotes::
-	.string "Whew! I'm trying to memorize all my\n"
-	.string "notes.$"
+	.string "ふー\nノートの なかの こと\lわたし ぜんぶ おぼえるの$"
 
 ViridianCity_School_Text_ReadBlackboardCarefully::
-	.string "Okay!\p"
-	.string "Be sure to read what's on the\n"
-	.string "blackboard carefully!$"
+	.string "はい!\pこくばんに かかれてる こと\nちゃんと みて!$"
 
 ViridianCity_School_Text_NotebookFirstPage::
-	.string "Let's check out the notebook.\p"
-	.string "First page…\p"
-	.string "POKe BALLS are used to catch\n"
-	.string "POKEMON.\p"
-	.string "Up to six POKEMON can be carried\n"
-	.string "in your party.\p"
-	.string "People who raise and battle\n"
-	.string "with POKEMON are called TRAINERS.$"
+	.string "ノートを のぞいた!\p1ページめ …\pポケモンは\nモンスターボールで つかまえて\l6つまで もち あるける\pポケモンを そだてて たたかわせる\nひとを ポケモン トレーナーという$"
 
 ViridianCity_School_Text_NotebookSecondPage::
-	.string "Second page…\p"
-	.string "A healthy POKEMON may be hard to\n"
-	.string "catch, so weaken it first.\p"
-	.string "Poison, burn, or cause another\n"
-	.string "status problem to weaken it.$"
+	.string "2ページめ …\pポケモンを つかまえる ときは\nまず よわらせてから!\lどくや やけどで\pよわらせても いいよ!\nげんきだと うまく とれないかも$"
 
 ViridianCity_School_Text_NotebookThirdPage::
-	.string "Third page…\p"
-	.string "POKEMON TRAINERS seek others to\n"
-	.string "engage in POKEMON battles.\p"
-	.string "To TRAINERS, the taste of victory\n"
-	.string "is sweet, indeed.\p"
-	.string "Battles are constantly waged at\n"
-	.string "POKEMON GYMS everywhere.$"
+	.string "3ページめ …\pポケモンどうしを たたかわせ\nかつことは トレーナーに とって\lさいこうの よろこび である!\pかくちの ポケモン ジムでは\nいつも はげしい\lたたかいが くりひろげられてる!$"
 
 ViridianCity_School_Text_NotebookFourthPage::
-	.string "Fourth page…\p"
-	.string "The ultimate goal for all POKEMON\n"
-	.string "TRAINERS is simple.\p"
-	.string "It is to defeat the top eight\n"
-	.string "POKEMON GYM LEADERS.\p"
-	.string "Do so to earn the right to face…\p"
-	.string "The ELITE FOUR of the POKEMON\n"
-	.string "LEAGUE!$"
+	.string "4ページめ …\pポケモントレーナーの もくひょうは\nかくちの ジムに いる\pつよい トレーナー\n8にんしゅうを たおすこと!\pさらに ポケモンリーグ ほんぶには\n… もうれつに つよい!\pしてんのうが くんりん してる!$"
 
 ViridianCity_School_Text_TurnThePage::
-	.string "Turn the page?$"
+	.string "つぎのページ あけちゃおうか?$"
 
 ViridianCity_School_Text_HeyDontLookAtMyNotes::
-	.string "GIRL: Hey!\n"
-	.string "Don't look at my notes!$"
+	.string "おんなのこ『あー!\nノート みちゃ だめ!$"
 
 ViridianCity_School_Text_BlackboardListsStatusProblems::
-	.string "The blackboard lists POKEMON\n"
-	.string "STATUS problems during battles.$"
+	.string "こくばんに\nポケモンが たたかってる とき\lおこる たいちょうの\lへんかに ついて かかれてる$"
 
 ViridianCity_School_Text_ReadWhichTopic::
-	.string "Which topic do you want to read?$"
+	.string "どの こうもくを みますか?$"
 
 ViridianCity_School_Text_ExplainSleep::
-	.string "A POKEMON can't attack if it's\n"
-	.string "asleep.\p"
-	.string "POKEMON will stay asleep even\n"
-	.string "after battles.\p"
-	.string "Use AWAKENING to awaken one\n"
-	.string "from sleep.$"
+	.string "ねてしまうと その あいだは\nこうげき できません!\pたたかい おわっても ねたまま\nねむけざましで めが さめます$"
 
 ViridianCity_School_Text_ExplainBurn::
-	.string "A burn reduces ATTACK power.\n"
-	.string "It also causes ongoing HP loss.\p"
-	.string "A burn remains after a battle.\n"
-	.string "Use BURN HEAL to cure a burn.$"
+	.string "やけどは たいりょくが へって\nこうげきりょくが\lさがって しまいます!\pたたかい おわっても\nやけどは のこります\lまた やけどなおしで なおります$"
 
 ViridianCity_School_Text_ExplainPoison::
-	.string "When poisoned, a POKEMON's health\n"
-	.string "steadily drops.\p"
-	.string "Poison lingers after battles.\n"
-	.string "Use an ANTIDOTE to cure poison!$"
+	.string "どくを くらうと\nたいりょくが へって いきます\pたたかい おわっても\nどくは のこりますが\lどくけしで きえます!$"
 
 ViridianCity_School_Text_ExplainFreeze::
-	.string "A frozen POKEMON becomes\n"
-	.string "helplessly immobile.\p"
-	.string "It stays frozen even after the\n"
-	.string "battle ends.\p"
-	.string "Use ICE HEAL to thaw out the\n"
-	.string "suffering POKEMON.$"
+	.string "こおって しまうと\nまったく うごけなく なります!\pたたかい おわっても こおってます\nこおりなおしで とかさないと\lポケモンが かわいそう$"
 
 ViridianCity_School_Text_ExplainParalysis::
-	.string "Paralysis reduces SPEED and may\n"
-	.string "prevent the POKEMON from moving.\p"
-	.string "Paralysis remains after battles.\n"
-	.string "Use PARLYZ HEAL for treatment.$"
+	.string "まひすると わざが\nときどき でなく なり\lすばやさも さがって しまいます!\pたたかい おわっても\nまひは のこります\lまた まひなおしで なおります$"
 
