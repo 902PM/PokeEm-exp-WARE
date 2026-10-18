@@ -12,28 +12,20 @@ SSAnne_B1F_Room1_EventScript_Phillip::
 	end
 
 SSAnne_B1F_Room1_Text_PhillipIntro::
-	.string "Matey, you're walking the plank if\n"
-	.string "you lose!$"
+	.string "うっしゃー!\nまけたら うみ に おとすぞー!$"
 
 SSAnne_B1F_Room1_Text_PhillipDefeat::
-	.string "Argh!\n"
-	.string "Beaten by a kid!$"
+	.string "くー やられた!$"
 
 SSAnne_B1F_Room1_Text_PhillipPostBattle::
-	.string "When we're out at sea, jellyfish\n"
-	.string "POKEMON sometimes drift by.$"
+	.string "うみに でてると\nたまーに クラゲ ポケモンが\lながれて くるぜ$"
 
 SSAnne_B1F_Room1_Text_BarnyIntro::
-	.string "Hello, stranger!\p"
-	.string "I can't tell if you're from the seas\n"
-	.string "or mountains, but stop and chat.\p"
-	.string "All my POKEMON are from the sea.$"
+	.string "うみのもの とも やまのもの とも\nわからない しんいり さん!\pわたしが もってるのは\nうみのもの ばかり です!$"
 
 SSAnne_B1F_Room1_Text_BarnyDefeat::
-	.string "Darn!\n"
-	.string "I let that one get away!$"
+	.string "ちっ!\nつり のがしたよ$"
 
 SSAnne_B1F_Room1_Text_BarnyPostBattle::
-	.string "I was going to make you my\n"
-	.string "assistant, too!$"
+	.string "あなた まかしたら つりびとの\nつきびとに しようと おもってた$"
 

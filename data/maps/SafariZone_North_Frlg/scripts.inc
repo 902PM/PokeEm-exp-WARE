@@ -22,23 +22,17 @@ SafariZone_North_EventScript_TrainerTips3::
 	end
 
 SafariZone_North_Text_RestHouse::
-	.string "REST HOUSE$"
+	.string "きゅうけい ハウス … いこい$"
 
 SafariZone_North_Text_SecretHouseStillAhead::
-	.string "TRAINER TIPS\p"
-	.string "The SECRET HOUSE is still ahead.$"
+	.string "… おとくな けいじばん!\pトレジャー ハウスは\nまだ さきだ! がんばろう!$"
 
 SafariZone_North_Text_Area2::
-	.string "AREA 2$"
+	.string "ここは だい2 エリア$"
 
 SafariZone_North_Text_ZigzagThroughTallGrass::
-	.string "TRAINER TIPS\p"
-	.string "POKEMON hide in tall grass.\p"
-	.string "Zigzag through grassy areas to\n"
-	.string "flush them out.$"
+	.string "… おとくな けいじばん!\pポケモンは くさむらの なかに\nこのんで かくれる!\pなかなか みつからない ときは\nくさむらを ジグザグに あるこう!$"
 
 SafariZone_North_Text_WinFreeHMFindSecretHouse::
-	.string "TRAINER TIPS\p"
-	.string "Win a free HM for finding the\n"
-	.string "SECRET HOUSE.$"
+	.string "… おとくな けいじばん!\pトレジャー ハウスを みつけると\nひでんマシンが もらえるぞ!$"
 

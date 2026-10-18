@@ -10,10 +10,8 @@ SafariZone_Center_RestHouse_EventScript_Scientist::
 	end
 
 SafariZone_Center_Text_WhereDidErikGo::
-	.string "SARA: Where did my boyfriend,\n"
-	.string "ERIK, go?$"
+	.string "アツコ『ポケモンとりに いこうって\nいった のに…コージ どこなのよ!$"
 
 SafariZone_Center_Text_CatchingMonsAsGifts::
-	.string "I'm catching POKEMON to take home\n"
-	.string "as gifts.$"
+	.string "よーし! ポケモン とり まくって\nおみやげに しようっと!$"
 

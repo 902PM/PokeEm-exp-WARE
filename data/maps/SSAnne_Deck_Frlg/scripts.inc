@@ -24,37 +24,29 @@ SSAnne_Deck_EventScript_Trevor::
 	end
 
 SSAnne_Deck_Text_ShipDepartingSoon::
-	.string "The party's over.\n"
-	.string "The ship will be departing soon.$"
+	.string "パーティも そろそろ おわるし\nふねの しゅっぱつの じかん だな$"
 
 SSAnne_Deck_Text_ScrubbingDecksHardWork::
-	.string "Whew!\n"
-	.string "Scrubbing decks is hard work!$"
+	.string "まったく!\nデッキ そうじは らくじゃねえぜ$"
 
 SSAnne_Deck_Text_FeelSeasick::
-	.string "Urf… I feel ill…\p"
-	.string "I got seasick, so I stepped out to\n"
-	.string "get some air…$"
+	.string "うう… きもち わるい!\p… ふなよい したので\nかぜに あたってるんです…$"
 
 SSAnne_Deck_Text_EdmondIntro::
-	.string "Hey, matey!\p"
-	.string "Let's do a little jig!$"
+	.string "おうおう!\pふなのりの おれと しょうぶだ!$"
 
 SSAnne_Deck_Text_EdmondDefeat::
-	.string "You're impressive!$"
+	.string "つよいな\nびっくり したぜ$"
 
 SSAnne_Deck_Text_EdmondPostBattle::
-	.string "How many kinds of POKEMON do you\n"
-	.string "think there are in this big world?$"
+	.string "なあ! この せかいに\nポケモンは ぜんぶで どのくらい\lしゅるいが あると おもうか?$"
 
 SSAnne_Deck_Text_TrevorIntro::
-	.string "Ahoy, there!\n"
-	.string "Are you seasick?$"
+	.string "おい あんた!\nのってて ふなよい しないか?$"
 
 SSAnne_Deck_Text_TrevorDefeat::
-	.string "I was just careless!$"
+	.string "ゆだん したか$"
 
 SSAnne_Deck_Text_TrevorPostBattle::
-	.string "My pa said there are 100 kinds of\n"
-	.string "POKEMON. I think there are more.$"
+	.string "おれの おやじは ポケモンは\n151しゅるい いると いってたが\lおれは それ いじょう だと おもう$"
 

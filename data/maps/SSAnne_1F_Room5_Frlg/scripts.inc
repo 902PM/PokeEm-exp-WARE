@@ -7,14 +7,11 @@ SSAnne_1F_Room5_EventScript_Arthur::
 	end
 
 SSAnne_1F_Room5_Text_ArthurIntro::
-	.string "You insolent pup!\n"
-	.string "How dare you barge in!$"
+	.string "む きみは? だまって はいって\nしつれいな こどもだ!$"
 
 SSAnne_1F_Room5_Text_ArthurDefeat::
-	.string "Humph! You rude child!\n"
-	.string "You have no sense of courtesy!$"
+	.string "ふん!\nれいぎを しらんよ きみは$"
 
 SSAnne_1F_Room5_Text_ArthurPostBattle::
-	.string "I wish to be left alone!\n"
-	.string "Get out!$"
+	.string "わたしは ひとりで いたいんだ\nでて いって くれ!$"
 
