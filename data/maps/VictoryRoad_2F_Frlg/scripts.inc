@@ -77,60 +77,63 @@ VictoryRoad_2F_EventScript_Vincent::
 	end
 
 VictoryRoad_2F_Text_DawsonIntro::
-	.string "If you can get through here,\n"
-	.string "you can go meet the ELITE FOUR.$"
+	.string "ここを ぶじに ぬければ\nしてんのうに あえるぞ!$"
 
 VictoryRoad_2F_Text_DawsonDefeat::
-	.string "No!\n"
-	.string "Unbelievable!$"
+	.string "… ありー!$"
 
 VictoryRoad_2F_Text_DawsonPostBattle::
-	.string "I can beat you when it comes to\n"
-	.string "knowledge about POKEMON!$"
+	.string "ポケモンの ちしき だったら\nぼくは まけないと おもうぞ!$"
 
 VictoryRoad_2F_Text_DaisukeIntro::
-	.string "This here is VICTORY ROAD.\n"
-	.string "It's the final test for TRAINERS!$"
+	.string "ここがッ!\nトレーナー さいごの しれん!\lチャンピオン ロード だあ!$"
 
 VictoryRoad_2F_Text_DaisukeDefeat::
-	.string "Atcho!$"
+	.string "チェストー!$"
 
 VictoryRoad_2F_Text_DaisukePostBattle::
-	.string "If you get stuck, try moving some\n"
-	.string "boulders around.$"
+	.string "ここも いたる ところに\nしかけが ある! こまったときは\lいわを おして みろ!$"
 
 VictoryRoad_2F_Text_NelsonIntro::
-	.string "Ah, so you wish to challenge the\n"
-	.string "ELITE FOUR?$"
+	.string "ここに きた から には\nしてんのうに いどむ つもりだな!$"
 
 VictoryRoad_2F_Text_NelsonDefeat::
-	.string "You got me!$"
+	.string "… できるッ!$"
 
 VictoryRoad_2F_Text_NelsonPostBattle::
-	.string "{RIVAL} also came through here.$"
+	.string "そうだ! {RIVAL}も\nここを ぬけてったぜ!$"
 
 VictoryRoad_2F_Text_VincentIntro::
-	.string "Come on!\n"
-	.string "I'll whip you!$"
+	.string "ピシッ ピシーッ!\nムチが しなるぜーッ!$"
 
 VictoryRoad_2F_Text_VincentDefeat::
-	.string "I got whipped!$"
+	.string "ひゅーッ!$"
 
 VictoryRoad_2F_Text_VincentPostBattle::
-	.string "You earned the right to be on\n"
-	.string "VICTORY ROAD…$"
+	.string "さすが チャンピオン ロードに\nくる だけの ことは あるな…!$"
 
 VictoryRoad_2F_Text_GregoryIntro::
-	.string "Is VICTORY ROAD too tough?$"
+	.string "どうだ!\nチャンピオン ロードは きついか?$"
 
 VictoryRoad_2F_Text_GregoryDefeat::
-	.string "Well done!$"
+	.string "よし ごうかくだ!$"
 
 VictoryRoad_2F_Text_GregoryPostBattle::
-	.string "Many TRAINERS give up their\n"
-	.string "challenge here and go home.$"
+	.string "ここで へばって\nひきかえす やつも おおいぜ!$"
 
 @ Unused, old text for Moltres
 VictoryRoad_2F_Text_Gyaoo::
 	.string "ギヤーオ!$"
+
+Text_DoubleEdgeTeach::
+	.string "きみは すてみで\nこの チャンピオンロードを\lぬけて きたのだな!\pがんばりを みとめて\nすてみタックルを おしえよう!\pどうだ おしえて ほしいか?$"
+
+Text_DoubleEdgeDeclined::
+	.string "きみには いつでも おしえよう\nまた くるがいい$"
+
+Text_DoubleEdgeWhichMon::
+	.string "どの ポケモンに\nおしえさせて みるか?$"
+
+Text_DoubleEdgeTaught::
+	.string "ポケモンリーグでも その いきだ!\nすてみで ぶつかって いけ!$"
 

@@ -17,48 +17,39 @@ PokemonMansion_2F_EventScript_Statue::
 	end
 
 PokemonMansion_2F_EventScript_DiaryJuly5th::
-	msgbox PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle, MSGBOX_SIGN
+	msgbox PokemonMansion_2F_Text_NewMonDiscoveredInGuyanaJungle, MSGBOX_SIGN
 	end
 
 PokemonMansion_2F_EventScript_DiaryJuly10th::
-	msgbox PokemonMansion_1F_Text_ChristenedDiscoveredMonMew, MSGBOX_SIGN
+	msgbox PokemonMansion_2F_Text_ChristenedDiscoveredMonMew, MSGBOX_SIGN
 	end
 
 PokemonMansion_2F_EventScript_Arnie::
-	trainerbattle_single TRAINER_BURGLAR_ARNIE, PokemonMansion_1F_Text_ArnieIntro, PokemonMansion_1F_Text_ArnieDefeat
-	msgbox PokemonMansion_1F_Text_ArniePostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_BURGLAR_ARNIE, PokemonMansion_2F_Text_ArnieIntro, PokemonMansion_2F_Text_ArnieDefeat
+	msgbox PokemonMansion_2F_Text_ArniePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 PokemonMansion_Text_PressSecretSwitch::
-	.string "A secret switch!\p"
-	.string "Press it?$"
+	.string "ひみつの スイッチが ある!\pおして みますか?$"
 
 PokemonMansion_Text_WhoWouldnt::
-	.string "Who wouldn't?$"
+	.string "おしてみよう! …ポチッとな$"
 
 PokemonMansion_Text_NotQuiteYet::
-	.string "Not quite yet!$"
+	.string "おすのは あきらめた$"
 
-PokemonMansion_1F_Text_ArnieIntro::
-	.string "I can't get out!\n"
-	.string "This old place is one big puzzle.$"
+PokemonMansion_2F_Text_ArnieIntro::
+	.string "この やしき しかけが してあって\nなかなか すすめませんぜ!$"
 
-PokemonMansion_1F_Text_ArnieDefeat::
-	.string "Oh, no!\n"
-	.string "My bag of loot!$"
+PokemonMansion_2F_Text_ArnieDefeat::
+	.string "わーッ!\nふろしきの なかみが$"
 
-PokemonMansion_1F_Text_ArniePostBattle::
-	.string "The switches here open and close\n"
-	.string "alternating sets of doors.$"
+PokemonMansion_2F_Text_ArniePostBattle::
+	.string "ひみつの スイッチを おすと\nふたつの とびらが\lたがい ちがいに ひらくんでさ$"
 
-PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle::
-	.string "Diary: July 5\n"
-	.string "Guyana, South America\p"
-	.string "A new POKEMON was discovered deep\n"
-	.string "in the jungle.$"
+PokemonMansion_2F_Text_NewMonDiscoveredInGuyanaJungle::
+	.string "にっき 7がつ5か\nここは みなみアメリカの ギアナ\pジャングルの おくちで\nしんしゅの ポケモンを はっけん$"
 
-PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
-	.string "Diary: July 10\n"
-	.string "We christened the newly discovered\l"
-	.string "POKEMON, MEW.$"
+PokemonMansion_2F_Text_ChristenedDiscoveredMonMew::
+	.string "にっき 7がつ10か\nしんはっけんの ポケモンを\lわたしは ミュウと なづけた$"
 

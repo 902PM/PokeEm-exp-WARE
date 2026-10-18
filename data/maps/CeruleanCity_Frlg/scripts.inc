@@ -363,6 +363,9 @@ CeruleanCity_Text_RivalIntro::
 CeruleanCity_Text_RivalDefeat::
 	.string "なんだよー!\nムキに なっちゃって!\l… わかった わかった!$"
 
+CeruleanCity_Text_RivalVictory::
+	.string "なんたって!\nおれは てんさい だからよ!$"
+
 CeruleanCity_Text_RivalPostBattle::
 	.string "{RIVAL}『へへーんッ!\pおれ マサキの うちに いって\nめずらしい ポケモン たくさん\lみせて もらっちゃった もんね!\pおかげで ポケモン ずかんの\nページが ふえたぜ!\pなにしろ マサキは ゆうめいな\nポケモン マニア だからな!\pパソコン つうしんの\nポケモン あずかり システム!\lあれも マサキが つくったんだぜ\pおまえも つかってるんなら\nいちど おれいに いけば?\pおっと みちくさ くってる\nばあい じゃ ないぜ!\l… じゃな バイビー!$"
 

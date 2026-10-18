@@ -44,46 +44,20 @@ VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker::
 	end
 
 VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::
-	.string "Even if they are the same level,\n"
-	.string "POKEMON can have very different\l"
-	.string "stats and abilities.\p"
-	.string "A POKEMON raised by a TRAINER is\n"
-	.string "stronger than one in the wild.$"
+	.string "おなじ レベルの ポケモンでも\nつよさは まちまち らしい\pそれに ひとが そだてた\nポケモンの ほうが\lやせい より つよい らしい$"
 
 VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
-	.string "My POKEMON was poisoned!\n"
-	.string "It fainted while we were walking!$"
+	.string "おれの ポケモン\nどく くらったまま あるいてたら\lちから つき おったで!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
-	.string "It is true that a higher-level\n"
-	.string "POKeMON will be more powerful…\p"
-	.string "But, all POKEMON will have weak\n"
-	.string "points against specific types.\p"
-	.string "So, there appears to be no\n"
-	.string "universally strong POKEMON.$"
+	.string "たしかに レベルの たかい\nポケモンは つよい けど…\pポケモンの タイプに よって\nにがてな あいてが ある みたい\pぜったいに つよい ポケモンは\nなかなか いない みたいだ$"
 
 VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::
-	.string "The urge to battle with someone\n"
-	.string "you've tangled with before…\p"
-	.string "Have you ever had that urge?\n"
-	.string "I'm sure you have.\p"
-	.string "I wanted to battle certain people\n"
-	.string "again over and over, too.\p"
-	.string "So, I've been giving these away.\n"
-	.string "Please, take one!$"
+	.string "いちど たたかった トレーナーと\nまた しょうぶ してみたい!\p…なんて おもうこと ない?\nあるわよね?\pわたし いろんな トレーナーと\nなんども たたかい たくて\lこれ くばってるのよ\pもらって もらって!$"
 
 VermilionCity_PokemonCenter_1F_Text_UseDeviceForRematches::
-	.string "Use that device and you'll find\n"
-	.string "TRAINERS looking for a rematch.\p"
-	.string "You have to charge its battery to\n"
-	.string "use it, though.$"
+	.string "それを つかうと\nもういちど しょうぶ したい\lトレーナーが みつかるの!\pじゅうでん して つかってね!$"
 
 VermilionCity_PokemonCenter_1F_Text_ExplainVSSeeker::
-	.string "How do you use the VS SEEKER?\n"
-	.string "There's nothing to it.\p"
-	.string "Use it like beep-beep-beep, and\n"
-	.string "TRAINERS around you will notice.\p"
-	.string "If any TRAINER wants a rematch,\n"
-	.string "it will let you know immediately.\p"
-	.string "Charge its battery and use it\n"
-	.string "while you're on a road.$"
+	.string "え バトルサーチャーの つかいかた?\nかんたんよ!\pピピピ!と つかえば\nそばの トレーナーに つたわるの\pもういちど しょうぶ したい\nトレーナーが いれば\lすぐに おしえて くれるわ!\pじゅうでん して\nどうろで つかってね!$"
+

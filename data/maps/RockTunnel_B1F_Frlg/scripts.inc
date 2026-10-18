@@ -42,97 +42,86 @@ RockTunnel_B1F_EventScript_Winston::
 	end
 
 RockTunnel_B1F_Text_SofiaIntro::
-	.string "Do you know how you can avoid\n"
-	.string "getting lost in the mountains?\p"
-	.string "You can bend twigs as trail\n"
-	.string "markers.$"
+	.string "やまで まよわない ためには\nめじるしの こえだを\lおって あるくと いいのよ!$"
 
 RockTunnel_B1F_Text_SofiaDefeat::
-	.string "Ohhh!\n"
-	.string "I did my best!$"
+	.string "やーん…!\nがんばったのに$"
 
 RockTunnel_B1F_Text_SofiaPostBattle::
-	.string "I want to go home!$"
+	.string "まけちゃったし\nきょうは おうちに かえろう$"
 
 RockTunnel_B1F_Text_DudleyIntro::
-	.string "Hahaha!\n"
-	.string "Can you beat my power?$"
+	.string "はははーッ!\nおれの パワーに かてるか!$"
 
 RockTunnel_B1F_Text_DudleyDefeat::
-	.string "Oops!\n"
-	.string "Outmuscled!$"
+	.string "おっとっと!\nパワー まけ したか!$"
 
 RockTunnel_B1F_Text_DudleyPostBattle::
-	.string "I go for power because I hate\n"
-	.string "thinking.$"
+	.string "パワーに こだわるのは\nかんがえながら たたかうのが\lにがて だからだ!$"
 
 RockTunnel_B1F_Text_CooperIntro::
-	.string "You have a POKeDEX?\n"
-	.string "I want one, too.$"
+	.string "ポケモン ずかん つくってる?\nくそう! ぼくも やりたい!$"
 
 RockTunnel_B1F_Text_CooperDefeat::
-	.string "Shoot!\n"
-	.string "I am so jealous!$"
+	.string "ああ もう! くやしい$"
 
 RockTunnel_B1F_Text_CooperPostBattle::
-	.string "When you finish your POKeDEX,\n"
-	.string "can I have it?$"
+	.string "… だからさ\nポケモン ずかん かんせい したら\lぼくに くれない?$"
 
 RockTunnel_B1F_Text_SteveIntro::
-	.string "Um… Do you know about POKEMON\n"
-	.string "cosplay?$"
+	.string "あの…\nポケモン コスプレ しってます?$"
 
 RockTunnel_B1F_Text_SteveDefeat::
-	.string "Well, that's that.$"
+	.string "しょうが ない ですね$"
 
 RockTunnel_B1F_Text_StevePostBattle::
-	.string "POKEMON cosplay is dressing up as\n"
-	.string "POKEMON for fun.\p"
-	.string "CLEFAIRY is a favorite.$"
+	.string "コスプレって いうのは\nピッピの きぐるみ とか つくって\lポケモンに なりきるんです$"
 
 RockTunnel_B1F_Text_AllenIntro::
-	.string "My POKEMON techniques will leave\n"
-	.string "you crying!$"
+	.string "おれの\nポケモン テクニックで\lひーひー いわせるぜ!$"
 
 RockTunnel_B1F_Text_AllenDefeat::
-	.string "I give!\n"
-	.string "You're a better technician!$"
+	.string "まいった!\nおまえの ほうが テクニシャンだ$"
 
 RockTunnel_B1F_Text_AllenPostBattle::
-	.string "In mountains, you'll often find\n"
-	.string "ROCK-type POKEMON.$"
+	.string "そうだな…\nやまの ポケモン には\lいわ タイプが おおいぞ$"
 
 RockTunnel_B1F_Text_MarthaIntro::
-	.string "I don't often come here, but I will\n"
-	.string "battle you.$"
+	.string "たたかっても いいけど…\nこの あたりには\lあまり きた こと ないの$"
 
 RockTunnel_B1F_Text_MarthaDefeat::
-	.string "Oh!\n"
-	.string "I lost!$"
+	.string "まけちゃった$"
 
 RockTunnel_B1F_Text_MarthaPostBattle::
-	.string "I like tiny POKEMON.\n"
-	.string "Big ones are too scary!$"
+	.string "ちっちゃい ポケモンが すき\nおっきいのは こわい から いや$"
 
 RockTunnel_B1F_Text_EricIntro::
-	.string "Hit me with your best shot!$"
+	.string "よしッ\nどーんと ぶつかって こい!$"
 
 RockTunnel_B1F_Text_EricDefeat::
-	.string "Fired away!$"
+	.string "どーんと!\nこっちが やられた!$"
 
 RockTunnel_B1F_Text_EricPostBattle::
-	.string "I'll raise my POKEMON to beat\n"
-	.string "yours, kid.$"
+	.string "おれも おまえに まけない\nポケモンを そだてて おくぜ!$"
 
 RockTunnel_B1F_Text_WinstonIntro::
-	.string "I draw illustrations of POKEMON\n"
-	.string "when I'm home.$"
+	.string "いえに いる ときは\nポケモンの イラスト とか かいてる$"
 
 RockTunnel_B1F_Text_WinstonDefeat::
-	.string "Whew…\n"
-	.string "I'm exhausted…$"
+	.string "ああ…\nぼく くたびれた$"
 
 RockTunnel_B1F_Text_WinstonPostBattle::
-	.string "I'm an artist, not a fighter.\n"
-	.string "I'll go home to draw.$"
+	.string "ぼくは たたかうの むいて ないな\nかえって イラスト でも かいてよう$"
+
+Text_RockSlideTeach::
+	.string "こんな いわやまに いたら\nいわが うえから\lゴロゴロ おちてきて ギャー!\pって なったら こわいな…\pきみは へいき そうな\nかお してるね\lいわなだれ… つかって みる?$"
+
+Text_RockSlideDeclined::
+	.string "やっぱ こわいの?$"
+
+Text_RockSlideWhichMon::
+	.string "どの ポケモンに\nいわなだれを おしえたら いい?$"
+
+Text_RockSlideTaught::
+	.string "この トンネルで\nつかったら こわいかも…$"
 
