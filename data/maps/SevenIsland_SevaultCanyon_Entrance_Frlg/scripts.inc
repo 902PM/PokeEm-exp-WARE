@@ -6,95 +6,65 @@ SevenIsland_SevaultCanyon_Entrance_EventScript_RouteSign::
 	end
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahIntro::
-	.string "Kyahaha!\n"
-	.string "I'll flick you away effortlessly!$"
+	.string "キャハハ\nかるく ひとひねり してやるわ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahDefeat::
-	.string "Tch!\n"
-	.string "Too strong for me!$"
+	.string "ちッ! つよいわね!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahPostBattle::
-	.string "What's that?\n"
-	.string "I don't act the way I look?\p"
-	.string "Heh, that's a part of my strategy!$"
+	.string "え? わたしの みかけと\nせいかくが ちがうって…?\pフッ それも ひとつの\nさくせん って もんよ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonIntro::
-	.string "Howdy!\n"
-	.string "Are you a member of my fan club?$"
+	.string "やあ!\nぼくの ファンクラブの ひとかな?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonDefeat::
-	.string "Oh, so you're not a fan…\p"
-	.string "Well, I can change that.\n"
-	.string "Let me sing for you!$"
+	.string "ぼくの ファンじゃ\nなかった のか…\pまあいい いっきょく きいてくれ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonPostBattle::
-	.string "Lalalah…\n"
-	.string "My POKEMON, I send them out,\l"
-	.string "all the girls scream and shout!$"
+	.string "ララ…\nぼーくが ポケモン くりだせばー\lあのコも このコも くぎづけさー$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasIntro::
-	.string "This island is too spread out…\n"
-	.string "It's not easy patrolling the place.$"
+	.string "この しま ひろすぎる…\nパトロールも たいへん だよ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasDefeat::
-	.string "Uh-huh…$"
+	.string "ははあ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasPostBattle::
-	.string "TRAINERS like you from cities,\n"
-	.string "they sure are tough.\p"
-	.string "You'll be headed for the TOWER,\n"
-	.string "won't you?$"
+	.string "やっぱり とかいの\nトレーナーは つよいな!\lタワーにも いくんだろ?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineIntro::
-	.string "I punish people who abuse\n"
-	.string "POKEMON!$"
+	.string "ポケモンに らんぼう する\nひとは ゆるさないわよ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineDefeat::
-	.string "You don't seem to be a problem\n"
-	.string "TRAINER.$"
+	.string "あなた なら\nもんだい ないわね$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelinePostBattle::
-	.string "If you treat your POKEMON with\n"
-	.string "kindness, they'll understand.$"
+	.string "ポケモンに やさしく すると\nかならず わかって もらえるのよ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveIntro::
-	.string "EVE: I'll team up with JON and\n"
-	.string "battle together.$"
+	.string "ユウ『タカと いっしょに\nがんばって みよっかな?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveDefeat::
-	.string "EVE: Me and JON, we lost.\n"
-	.string "Ehehe.$"
+	.string "ユウ『タカと いっしょに\nまけちゃった… えへへ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EvePostBattle::
-	.string "EVE: I'm going to work harder with\n"
-	.string "JON.$"
+	.string "ユウ『タカと いっしょに\nもっと がんばるわ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveNotEnoughMons::
-	.string "EVE: I want to team up with JON\n"
-	.string "when I battle you.\p"
-	.string "Come back with two POKEMON, okay?$"
+	.string "ユウ『タカと いっしょに\nしょうぶ したいの!\lポケモン 2ひき つれてきてね$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonIntro::
-	.string "JON: When I'm with EVE, it feels\n"
-	.string "like we could never lose.$"
+	.string "タカ『ユウと いっしょなら\nまける きが しないのさ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonDefeat::
-	.string "JON: When I'm with EVE,\n"
-	.string "it doesn't feel like I've lost!$"
+	.string "タカ『ユウと いっしょなら\nまけた きが しないのさ!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonPostBattle::
-	.string "JON: When I'm with EVE, I feel\n"
-	.string "giddy whether I win or lose.\p"
-	.string "It's magical!$"
+	.string "タカ『ユウと いっしょなら\nかっても まけても\lしあわせ だなんて ふしぎだな$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonNotEnoughMons::
-	.string "JON: If it's with EVE, I'll be\n"
-	.string "happy to battle with you.\p"
-	.string "So, I'd like to make it a\n"
-	.string "two-on-two battle, if I may.$"
+	.string "タカ『ユウと いっしょなら\nしょうぶ しても いいけど…\l2たい2で やろうよ$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_RouteSign::
-	.string "SEVAULT CANYON ENTRANCE\p"
-	.string "TRAINERS are asked to refrain from\n"
-	.string "damaging plants in the CANYON.$"
+	.string "しっぽうけいこく いりぐち\pけいこくで しゅぎょう する\nトレーナーの かたは\lくさきを だいじに してください!$"
 

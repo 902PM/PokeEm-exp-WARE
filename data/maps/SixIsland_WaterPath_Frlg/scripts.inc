@@ -10,104 +10,77 @@ SixIsland_WaterPath_EventScript_RouteSign::
 	end
 
 SixIsland_WaterPath_Text_RoseIntro::
-	.string "I let a pleasant breeze lead me\n"
-	.string "all the way here.$"
+	.string "すてきな かぜに さそわれて\nこんな ところまで きてしまったわ$"
 
 SixIsland_WaterPath_Text_RoseDefeat::
-	.string "Giggle… You're so cute when you're\n"
-	.string "determined.$"
+	.string "うふふ\nがんばってる おかおが すてきよ$"
 
 SixIsland_WaterPath_Text_RosePostBattle::
-	.string "I want to go to the woods over\n"
-	.string "there, but…\p"
-	.string "There are lots of BUG POKeMON.\n"
-	.string "They scare me a little.$"
+	.string "むこうの はやしの ほうも\nいって みたいけど…\lむしポケモンが たくさん いて\lすこし こわいの$"
 
 SixIsland_WaterPath_Text_EdwardIntro::
-	.string "I'm practicing in secret so no one\n"
-	.string "can see me.$"
+	.string "こっそり だれにも みつからず\nれんしゅう してるんだ!$"
 
 SixIsland_WaterPath_Text_EdwardDefeat::
-	.string "Nobody saw me losing, right?$"
+	.string "まけた ところ…\nだれにも みられて ないよな?$"
 
 SixIsland_WaterPath_Text_EdwardPostBattle::
-	.string "As a performer, I don't want people\n"
-	.string "to know about the effort I put in.$"
+	.string "やっぱさ! どりょくは\nひとに みせたく ないじゃん$"
 
 SixIsland_WaterPath_Text_SamirIntro::
-	.string "What, you're suggesting that you're\n"
-	.string "sick of seeing SWIMMERS like me?\p"
-	.string "Aww, don't be hatin'!$"
+	.string "かいパンやろうは\nもう みあきたって?\lそんな こと いうなよお $"
 
 SixIsland_WaterPath_Text_SamirDefeat::
-	.string "Oh, no, no, no.$"
+	.string "あららん$"
 
 SixIsland_WaterPath_Text_SamirPostBattle::
-	.string "I couldn't lift the stigma of being\n"
-	.string "a SWIMMER…$"
+	.string "かいパンやろうの\nおめい へんじょう ならず…$"
 
 SixIsland_WaterPath_Text_DeniseIntro::
-	.string "My boyfriend's always busy, so I\n"
-	.string "come swimming by myself.$"
+	.string "わたしの かれ\nいつも いそがしい から\lひとりで およぎに きてるんだ!$"
 
 SixIsland_WaterPath_Text_DeniseDefeat::
-	.string "Awww, I knew this would happen!$"
+	.string "あーあ!\nやっぱりね$"
 
 SixIsland_WaterPath_Text_DenisePostBattle::
-	.string "When I can't be with my boyfriend,\n"
-	.string "I spend time with the POKEMON he\l"
-	.string "gave me.$"
+	.string "かれに あえない ときには\nかれから もらった ポケモンと\lいっしょに いるの$"
 
 SixIsland_WaterPath_Text_EarlIntro::
-	.string "Tell me, where are the mountains\n"
-	.string "around these parts?$"
+	.string "やまは どこだ やまは?$"
 
 SixIsland_WaterPath_Text_EarlDefeat::
-	.string "I lost my way while I was busy\n"
-	.string "battling!$"
+	.string "しょうぶ してたら\nまた みちを わすれた!$"
 
 SixIsland_WaterPath_Text_EarlPostBattle::
-	.string "Aren't there any mountains around\n"
-	.string "these parts?$"
+	.string "このへんに\nやまは ないのかしら?$"
 
 SixIsland_WaterPath_Text_MiuIntro::
-	.string "MIU: Hello, POKEMON!\n"
-	.string "It's time to play!$"
+	.string "ミウ『ポケモンさん\nでばん だよー!$"
 
 SixIsland_WaterPath_Text_MiuDefeat::
-	.string "MIU: Oh, no!\n"
-	.string "Mommy!$"
+	.string "ミウ『やだー ママーっ$"
 
 SixIsland_WaterPath_Text_MiuPostBattle::
-	.string "MIU: It makes me all sad inside\n"
-	.string "when we lose…$"
+	.string "ミウ『まけると\nかなしく なるよ$"
 
 SixIsland_WaterPath_Text_MiuNotEnoughMons::
-	.string "MIU: MIA and I are TWINS.\n"
-	.string "We want to battle together.$"
+	.string "ミウ『ミウとミオは ふたご なの\nポケモンも いっしょに やりたいの$"
 
 SixIsland_WaterPath_Text_MiaIntro::
-	.string "MIA: Hello, POKEMON!\n"
-	.string "It's time to battle!$"
+	.string "ミオ『ポケモンさん\nしょうぶの じかん だよー!$"
 
 SixIsland_WaterPath_Text_MiaDefeat::
-	.string "MIA: You're mean!\n"
-	.string "You're bad for winning!$"
+	.string "ミオ『かったら ダメなのー!$"
 
 SixIsland_WaterPath_Text_MiaPostBattle::
-	.string "MIA: Ohh…\n"
-	.string "I'm sorry, my POKEMON…$"
+	.string "ミオ『うう\nごめんね ポケモンさん$"
 
 SixIsland_WaterPath_Text_MiaNotEnoughMons::
-	.string "MIA: Oh, you only have one\n"
-	.string "POKEMON?\p"
-	.string "Don't you feel lonesome?$"
+	.string "ミオ『トレーナーさんの\nポケモンさんは 1ぴき だけなの?\lさみしく ない?$"
 
 SixIsland_WaterPath_Text_WantedUltimateHorn::
-	.string "Wanted!\n"
-	.string "The Ultimate Horn!$"
+	.string "もとむ!\nさいこうの 1ぽんヅノ!$"
 
 SixIsland_WaterPath_Text_RouteSign::
-	.string "WATER PATH\n"
-	.string "Leads to RUIN VALLEY$"
+	.string "ここから みずのさんぽみち\nおよがずに あるけば いせきのたに$"
 

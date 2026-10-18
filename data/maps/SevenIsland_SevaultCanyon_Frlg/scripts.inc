@@ -6,132 +6,86 @@ SevenIsland_SevaultCanyon_EventScript_RouteSign::
 	end
 
 SevenIsland_SevaultCanyon_Text_CyndyIntro::
-	.string "My conditioning's in top form!$"
+	.string "コンディション なら\nぜっこうちょうよ!$"
 
 SevenIsland_SevaultCanyon_Text_CyndyDefeat::
-	.string "Huh?\n"
-	.string "Something's not right…$"
+	.string "あれ?\nおっかしーなー$"
 
 SevenIsland_SevaultCanyon_Text_CyndyPostBattle::
-	.string "The way I am now, I may have to\n"
-	.string "hold off on TRAINER TOWER…$"
+	.string "こんなんじゃ\nトレーナータワーは おあずけかなあ$"
 
 SevenIsland_SevaultCanyon_Text_EvanIntro::
-	.string "It doesn't matter if you happen to\n"
-	.string "have the strongest POKeMON…\p"
-	.string "It doesn't mean a thing if you don't\n"
-	.string "know how to use them properly!$"
+	.string "どんなに つよい ポケモンを\nてに いれても\lうまく あつかえなきゃ\lぜんぜん いみ ないぜ!$"
 
 SevenIsland_SevaultCanyon_Text_EvanDefeat::
-	.string "You're a master at this.$"
+	.string "すごうでだなあ$"
 
 SevenIsland_SevaultCanyon_Text_EvanPostBattle::
-	.string "You see them every so often,\n"
-	.string "TRAINERS with awesome POKEMON\l"
-	.string "who have no idea what to do.\p"
-	.string "Before training POKEMON, TRAINERS\n"
-	.string "themselves need to grow up.$"
+	.string "たまに いるのさ\nもってる ポケモンだけ つよくて\lトレーナーは さっぱりって やつ\pポケモンを そだてる まえに\nじぶんが せいちょう しないとな$"
 
 SevenIsland_SevaultCanyon_Text_JacksonIntro::
-	.string "I work to protect the environment.\n"
-	.string "In turn, nature protects me!$"
+	.string "ぼくは しぜんを まもるけど\nしぜんに まもられても いるんだ!$"
 
 SevenIsland_SevaultCanyon_Text_JacksonDefeat::
-	.string "Whoa! You're tough!\n"
-	.string "How about protecting me?$"
+	.string "うお つよいな!\nきみに まもって ほしい!$"
 
 SevenIsland_SevaultCanyon_Text_JacksonPostBattle::
-	.string "From far out among the stars, our\n"
-	.string "planet is just a drop of water.\p"
-	.string "But we want to protect that drop\n"
-	.string "of water for everyone.$"
+	.string "とおい うちゅうから みたら\nこの ほし なんて\lただの 1てきの みず だけど…\pみんなで その 1てきを\nたいせつに まもりたいんだ$"
 
 SevenIsland_SevaultCanyon_Text_KatelynIntro::
-	.string "Those shoes you have are pretty\n"
-	.string "snazzy.$"
+	.string "かっこいい じゃない\nその シューズ!$"
 
 SevenIsland_SevaultCanyon_Text_KatelynDefeat::
-	.string "You're hot stuff in spite of your\n"
-	.string "cute looks.$"
+	.string "かわいい みかけに しては\nやるわねえ$"
 
 SevenIsland_SevaultCanyon_Text_KatelynPostBattle::
-	.string "Your mom bought those snazzy\n"
-	.string "RUNNING SHOES for you?\p"
-	.string "She must adore you.$"
+	.string "へえ その ランニングシューズ\nママから もらったの?\lあなたのこと かわいがって るんだ$"
 
 SevenIsland_SevaultCanyon_Text_LeroyIntro::
-	.string "You look strong.\n"
-	.string "Let me battle you, please!$"
+	.string "つよそうだね\nぜひ おてあわせを!$"
 
 SevenIsland_SevaultCanyon_Text_LeroyDefeat::
-	.string "I knew it!\n"
-	.string "You're as tough as I thought!$"
+	.string "おもった とおりの ひとだ!$"
 
 SevenIsland_SevaultCanyon_Text_LeroyPostBattle::
-	.string "The way you battle has given me\n"
-	.string "a lot of useful data.\p"
-	.string "Thanks so much!$"
+	.string "きみの たたかい かた\nたいへん さんこうに なったよ\lどうも ありがとう!$"
 
 SevenIsland_SevaultCanyon_Text_MichelleIntro::
-	.string "I was given the best possible\n"
-	.string "education to become this strong.\p"
-	.string "I don't want to lose to anyone!$"
+	.string "さいこうの きょういくを うけて\nここまで つよく なったわ!\pだれにも まけたく ない!$"
 
 SevenIsland_SevaultCanyon_Text_MichelleDefeat::
-	.string "Thank you. I feel like I've been\n"
-	.string "set free by losing to you.$"
+	.string "ありがと\nまけて なんだか スッキリした$"
 
 SevenIsland_SevaultCanyon_Text_MichellePostBattle::
-	.string "For some reason, I get furious\n"
-	.string "over the slightest thing.\p"
-	.string "I'll calm myself by breathing\n"
-	.string "deeply.$"
+	.string "わたし すぐ あたまに\nちが のぼっちゃう のよ\pしんこきゅう しよ…\nすー はー$"
 
 SevenIsland_SevaultCanyon_Text_LexIntro::
-	.string "LEX: My darling NYA, together\n"
-	.string "we could win!$"
+	.string "リキ『ユキさん\nぼくたち なら かてますよ!$"
 
 SevenIsland_SevaultCanyon_Text_LexDefeat::
-	.string "LEX: I seem to have been too\n"
-	.string "careless…$"
+	.string "リキ『ゆだん したようです…$"
 
 SevenIsland_SevaultCanyon_Text_LexPostBattle::
-	.string "LEX: I think it was a good\n"
-	.string "experience for NYA.\p"
-	.string "You have my gratitude.$"
+	.string "リキ『ユキさんに いい けいけんを\nさせて あげられました\lありがとう!$"
 
 SevenIsland_SevaultCanyon_Text_LexNotEnoughMons::
-	.string "LEX: May I ask you to battle the\n"
-	.string "both of us at the same time?$"
+	.string "リキ『ふたり いっしょに\nたたかって いただけませんか?$"
 
 SevenIsland_SevaultCanyon_Text_NyaIntro::
-	.string "NYA: I'll do my best so I won't\n"
-	.string "drag down my mentor, LEX!$"
+	.string "ユキ『リキせんぱいの\nあしを ひっぱらない ように\lぜんりょくを つくします!$"
 
 SevenIsland_SevaultCanyon_Text_NyaDefeat::
-	.string "NYA: Oh, no…\n"
-	.string "I'm so sorry, I…$"
+	.string "ユキ『せんぱい\nごめんなさい わたし…!$"
 
 SevenIsland_SevaultCanyon_Text_NyaPostBattle::
-	.string "NYA: I think I'm going to need\n"
-	.string "much more seasoning and tutoring\l"
-	.string "under LEX…\p"
-	.string "…So, LEX, please, may I stay with\n"
-	.string "you like this?$"
+	.string "ユキ『やっぱり わたし\nせんぱいの ごしどうが\lとうぶん ひつよう みたいです\p…だから\nずっと いっしょに いてください!$"
 
 SevenIsland_SevaultCanyon_Text_NyaNotEnoughMons::
-	.string "NYA: I'm sorry, but may we battle\n"
-	.string "in two-on-two style?$"
+	.string "ユキ『あの すみませんが\n2たい2の しょうぶを\lしょうぶ おねがい できませんか?$"
 
 SevenIsland_SevaultCanyon_Text_RouteSign::
-	.string "SEVAULT CANYON\n"
-	.string "TANOBY RUINS AHEAD$"
+	.string "ここは しっぽうけいこく\nこのさき アスカナいせき$"
 
 SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
-	.string "Training by oneself is certainly\n"
-	.string "not a bad thing.\p"
-	.string "But it's also not bad to aim for\n"
-	.string "the top with a partner.\p"
-	.string "Even BRUNO…\n"
-	.string "He trained with a fellow by the\l"
-	.string "name of BRAWLY before.$"
+	.string "ひとりで がんばるのも いいが\nなかまと ともに\lうえを めざすのも わるくない\pシバも…\nトウキという トレーナーと\lとっくん していた ことがあるぞ$"
+
