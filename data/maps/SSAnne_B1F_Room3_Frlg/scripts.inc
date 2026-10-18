@@ -7,13 +7,11 @@ SSAnne_B1F_Room3_EventScript_Dylan::
 	end
 
 SSAnne_B1F_Room3_Text_DylanIntro::
-	.string "I like feisty kids like you!$"
+	.string "こういう げんきな こども\nおれは すきだぜ!\n$"
 
 SSAnne_B1F_Room3_Text_DylanDefeat::
-	.string "Argh!\n"
-	.string "Lost it!$"
+	.string "ええい!\nまけたぜ!$"
 
 SSAnne_B1F_Room3_Text_DylanPostBattle::
-	.string "Sea POKEMON live in deep water.\n"
-	.string "You'll need a ROD to fish them up!$"
+	.string "うみの ポケモンは\nふかい ところに いるから\lつりざおで つり あげるんだ!$"
 

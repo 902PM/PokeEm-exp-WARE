@@ -18,7 +18,7 @@ CinnabarIsland_PokemonLab_ResearchRoom_EventScript_AmberPipe::
 	end
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_EeveeCanEvolveIntroThreeMons::
-	.string "そう! イーブイは\n8しゅるい いじょうの ポケモンに\lしんか する かのうせいが ある!$"
+	.string "そう! イーブイは\n3しゅるいの ポケモンに\lしんか する かのうせいが ある!$"
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail::
 	.string "パソコンに\nでんしメールが とどいてる!\p… … …\pでんせつの とりポケモンは\n3しゅるい… ファイヤー\lサンダー フリーザー…\lしかし どこに いるのか\lまだ わかって ません\pこんど ハナダ どうくつに\nちょうさに いきます\l… まずは ほうこく まで\lポケモン ちょうさ たい\p… … …$"

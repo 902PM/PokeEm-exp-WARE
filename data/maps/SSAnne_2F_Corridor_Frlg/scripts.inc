@@ -169,39 +169,17 @@ SSAnne_2F_Corridor_EventScript_Sailor::
 	end
 
 SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner::
-	.string "This ship, she is a luxury liner for\n"
-	.string "TRAINERS of the world!\p"
-	.string "At every port, we hold parties with\n"
-	.string "invited TRAINERS.$"
+	.string "この ふねは せかい かくちの\nポケモン トレーナーが のってる\lあこがれの ごうか きゃくせん!\pみなとに つくたびに\nしょうたい された トレーナーと\lこうりゅう パーティを してます$"
 
 SSAnne_2F_Corridor_Text_RivalIntro::
-	.string "{RIVAL}: Bonjour!\n"
-	.string "{PLAYER}!\p"
-	.string "Imagine seeing you here!\n"
-	.string "{PLAYER}, were you really invited?\p"
-	.string "So how's your POKeDEX coming?\p"
-	.string "I already caught 40 kinds, pal.\n"
-	.string "Different kinds are everywhere.\p"
-	.string "Crawl around in grassy areas, and\n"
-	.string "look hard for them.$"
+	.string "{RIVAL}『ボン ジュール!\n{PLAYER}!\pおやおや! こんな ところで\nあう とは…!\p{PLAYER}…\nしょうたい されてたっけ?\pそれで ポケモン ずかんの\nデータは あつまったか!\pおれ なんか\nもう 40しゅるい つかまえたぜ!\pみち いっぽん ちがう だけで\nとれる ポケモンも ちがうぜ!\pちゃんと くさむら はいって\nさがして みろ!$"
 
 SSAnne_2F_Corridor_Text_RivalDefeat::
-	.string "Humph!\p"
-	.string "At least you're raising your\n"
-	.string "POKEMON!$"
+	.string "ふん…!\pとにかく… ポケモンは\nそこそこ そだててる ようだな!$"
 
 SSAnne_2F_Corridor_Text_RivalVictory::
-	.string "{PLAYER}..!\n"
-	.string "ふなよい してるのか!\p"
-	.string "もっと からだ\n"
-	.string "きたえた ほうが いいぜ!$"
+	.string "{PLAYER}…!\nふなよい してるのか!\pもっと からだ\nきたえた ほうが いいぜ!$"
 
 SSAnne_2F_Corridor_Text_RivalPostBattle::
-	.string "{RIVAL}: I heard there was a CUT\n"
-	.string "master on board.\p"
-	.string "But he was just a seasick old man!\p"
-	.string "CUT itself is really useful.\n"
-	.string "Yup, it'll be handy.\p"
-	.string "You should go see him, too.\n"
-	.string "Smell ya!$"
+	.string "{RIVAL}『いあいぎりの めいじんが\nふねに のってるって いう からよ\pあって みたら\nこれが ただの ふなよい おやじ!\pでも この わざが\nまた つかえるんだよなー!\pおまえも あって みると いいぜ!\nじゃー あばよ!$"
 

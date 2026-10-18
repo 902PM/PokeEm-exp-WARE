@@ -14,14 +14,11 @@ SafariZone_East_RestHouse_EventScript_BaldingMan::
 	end
 
 SafariZone_East_Text_HowManyDidYouCatch::
-	.string "How many did you catch?\n"
-	.string "I'm bushed from the effort!$"
+	.string "おたく なんびき つかまえた?\nぼくは つかまえに つかまえて\lつかれて しまったよ$"
 
 SafariZone_East_Text_CaughtChanseyAllWorthwhile::
-	.string "I caught a CHANSEY!\p"
-	.string "That makes this all worthwhile.$"
+	.string "ラッキーを つかまえたぜ!\pこれで\nじゅーぶん もとは とった!$"
 
 SafariZone_East_Text_TiredFromAllTheFun::
-	.string "Whew!\n"
-	.string "I'm tired from all the fun!$"
+	.string "はあ…!\nはしゃぎ すぎて つかれちゃった$"
 
