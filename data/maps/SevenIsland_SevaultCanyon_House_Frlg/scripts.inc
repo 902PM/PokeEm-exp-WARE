@@ -81,7 +81,7 @@ SevenIsland_SevaultCanyon_House_EventScript_Chansey::
 	end
 
 SevenIsland_SevaultCanyon_House_Text_ChanseyDanceJoinIn::
-	.string "おどって　おどって\nラッキーダンス!\pはい　おどって　おどって!$"
+	.string "おどって おどって\nラッキーダンス!\pはい おどって おどって!$"
 
 SevenIsland_SevaultCanyon_House_Text_WouldYouLikeToDance::
 	.string "おどりますか?$"
@@ -90,11 +90,11 @@ SevenIsland_SevaultCanyon_House_Text_ComeOnDance::
 	.string "おどれよ!$"
 
 SevenIsland_SevaultCanyon_House_Text_DancedChanseyDance::
-	.string "{PLAYER}は\nラッキーダンスを　おどった!$"
+	.string "{PLAYER}は\nラッキーダンスを おどった!$"
 
 SevenIsland_SevaultCanyon_House_Text_YoureAllChipperNow::
-	.string "あっはっはっはっは\pはい　げんきに　なったね\nラッキー!$"
+	.string "あっはっはっはっは\pはい げんきに なったね\nラッキー!$"
 
 SevenIsland_SevaultCanyon_House_Text_Chansey::
-	.string "ラッキー『ラッき!　ラッき!$"
+	.string "ラッキー『ラッき! ラッき!$"
 

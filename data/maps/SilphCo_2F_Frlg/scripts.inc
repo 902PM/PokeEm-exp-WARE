@@ -36,76 +36,53 @@ SilphCo_2F_EventScript_Grunt2::
 	end
 
 SilphCo_2F_Text_ConnorIntro::
-	.string "Help!\n"
-	.string "I'm a SILPH employee.$"
+	.string "た たすけて!\nわたしは シルフ しゃいん です$"
 
 SilphCo_2F_Text_ConnorDefeat::
-	.string "How did you know\n"
-	.string "I was a ROCKET?$"
+	.string "く! ばれたか$"
 
 SilphCo_2F_Text_ConnorPostBattle::
-	.string "I work for both SILPH and TEAM\n"
-	.string "ROCKET.$"
+	.string "わたしは シルフの しゃいん\nであると どうじに\lロケットだんいん でも あるのさ$"
 
 SilphCo_2F_Text_JerryIntro::
-	.string "It's off-limits here!\n"
-	.string "Go home!$"
+	.string "ここは たちいり きんしだ\nかえりなさい!$"
 
 SilphCo_2F_Text_JerryDefeat::
-	.string "You're good.$"
+	.string "なかなか…$"
 
 SilphCo_2F_Text_JerryPostBattle::
-	.string "Can you solve the maze in here?\n"
-	.string "It's not easy, I tell you!$"
+	.string "ビルの なかは ふくざつだぞ\nきみに こうりゃく できるかな?$"
 
 SilphCo_2F_Text_Grunt1Intro::
-	.string "No kids are allowed in here!$"
+	.string "ここは こどもの\nくる ところ じゃない!$"
 
 SilphCo_2F_Text_Grunt1Defeat::
-	.string "Tough!$"
+	.string "つよい!$"
 
 SilphCo_2F_Text_Grunt1PostBattle::
-	.string "Diamond-shaped tiles are teleport\n"
-	.string "blocks.\p"
-	.string "They're transporters for this\n"
-	.string "high-tech building.$"
+	.string "ひしがた デザインの ゆかは\nテレポート ブロックだ!\pハイテクな ビルの なかでの\nいどう しゅだんだぜ$"
 
 SilphCo_2F_Text_Grunt2Intro::
-	.string "Hey, kid!\n"
-	.string "What are you wandering here for?$"
+	.string "そこの こども!\nうろうろ するんじゃない!$"
 
 SilphCo_2F_Text_Grunt2Defeat::
-	.string "I goofed!$"
+	.string "ぐ! しくじった$"
 
 SilphCo_2F_Text_Grunt2PostBattle::
-	.string "SILPH CO. will be associated with\n"
-	.string "TEAM ROCKET!$"
+	.string "ロケットだんは\nシルフ カンパニーと\lていけい するのだ!$"
 
 Text_ThunderWaveTeach::
-	.string "Eeek!\n"
-	.string "No! Stop! Help!\p"
-	.string "Oh, you're not with TEAM ROCKET.\n"
-	.string "I'm sorry, I thought…\p"
-	.string "Will you forgive me if I teach\n"
-	.string "you the THUNDER WAVE technique?$"
+	.string "きゃあ!\nだめよ たすけてー!\p… あら?\nロケットだん じゃない\lごめんなさい\lあたし てっきり…\pでんじはの わざを\nおしえたげる から ゆるしてね$"
 
 Text_ThunderWaveDeclined::
-	.string "Oh…\n"
-	.string "But THUNDER WAVE is convenient…$"
+	.string "でんじは って べんり なのに$"
 
 Text_ThunderWaveWhichMon::
-	.string "Which POKEMON should I teach\n"
-	.string "THUNDER WAVE?$"
+	.string "どの ポケモンに\nでんじはを おぼえさせるの?$"
 
 Text_ThunderWaveTaught::
-	.string "THUNDER WAVE causes paralysis in\n"
-	.string "the target POKEMON.\p"
-	.string "A paralyzed POKEMON may be unable\n"
-	.string "to move in battle.\p"
-	.string "It's an ELECTRIC-type move, so it\n"
-	.string "won't work on some POKEMON.$"
+	.string "でんじはを つかうと\nあいての ポケモンは まひして\lわざが でにくく なるわ!\pでんきタイプの わざ だから\nきかない あいても いるわよ$"
 
 SilphCo_2F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "2F$"
+	.string "シルフ カンパニー ほんしゃ\n2かい$"
 

@@ -58,83 +58,59 @@ SilphCo_5F_EventScript_Dalton::
 	end
 
 SilphCo_5F_Text_RocketsInUproarAboutIntruder::
-	.string "TEAM ROCKET is in an uproar over\n"
-	.string "some intruder.\p"
-	.string "That's you, right?$"
+	.string "だれか ビルに しのび こんだと\nロケットだんが さわいでる\l… きみの こと らしいね$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
-	.string "TEAM ROCKET took off!\n"
-	.string "You're our hero! Thank you!$"
+	.string "ロケットだんは にげたよ!\nきみが おっぱらったのかい\l… ありがとう!$"
 
 SilphCo_5F_Text_Grunt1Intro::
-	.string "I heard a kid was wandering\n"
-	.string "around.$"
+	.string "こどもが うろついてると\nさっき れんらくが あったぜ!$"
 
 SilphCo_5F_Text_Grunt1Defeat::
-	.string "Boom!$"
+	.string "ばったり…$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
-	.string "It's not smart to pick a fight with\n"
-	.string "TEAM ROCKET!$"
+	.string "ロケットだんに\nたてつかない ほうが\lみのため だぜ$"
 
 SilphCo_5F_Text_BeauIntro::
-	.string "We study POKe BALL technology on\n"
-	.string "this floor.$"
+	.string "この フロアは\nモンスターボールの\lけんきゅう セクションだ!$"
 
 SilphCo_5F_Text_BeauDefeat::
-	.string "Dang!\n"
-	.string "Blast it!$"
+	.string "ちくしょう!$"
 
 SilphCo_5F_Text_BeauPostBattle::
-	.string "We worked on the ultimate POKe\n"
-	.string "BALL which would catch anything.$"
+	.string "ここでは…\nでんせつの ポケモンさえ とれる\lきゅうきょくの モンスターボールを\lけんきゅう してたのだ$"
 
 SilphCo_5F_Text_DaltonIntro::
-	.string "Whaaat?\p"
-	.string "There shouldn't be any children\n"
-	.string "here!$"
+	.string "おかしいな?\nこどもが はいって これる\lわけが ないんだが$"
 
 SilphCo_5F_Text_DaltonDefeat::
-	.string "Oh, goodness!$"
+	.string "こりゃ いかん$"
 
 SilphCo_5F_Text_DaltonPostBattle::
-	.string "You're only on 5F.\n"
-	.string "It's a long way to my BOSS!$"
+	.string "ここは 5かい…\nボスの いる ところ まで\lまだまだ あるぜ!$"
 
 SilphCo_5F_Text_Grunt2Intro::
-	.string "Show TEAM ROCKET a little respect!$"
+	.string "ロケットだん あいてに\nなめた まねして くれるぜ$"
 
 SilphCo_5F_Text_Grunt2Defeat::
-	.string "Cough…\n"
-	.string "Cough…$"
+	.string "ふん たまたまだ!$"
 
 SilphCo_5F_Text_Grunt2PostBattle::
-	.string "Which reminds me.\p"
-	.string "KOFFING evolves into WEEZING!$"
+	.string "たまたま… おもいだした!\pタマタマは\nナッシーに しんか するぞ$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-	.string "It's a POKEMON REPORT!\p"
-	.string "POKEMON LAB created PORYGON,\n"
-	.string "the first virtual-reality POKEMON.$"
+	.string "… ポケモン レポートだ!\pポケモン けんきゅうじょ では\nじんこうの ポケモン\lポリゴンを つくる ことに\lせいこう した… …$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-	.string "It's a POKEMON REPORT!\p"
-	.string "Over 350 POKEMON techniques have\n"
-	.string "been confirmed.$"
+	.string "… ポケモン レポートだ!\pポケモンが つかう わざは\nげんざい わかって いるだけで\l350しゅるい いじょうある$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-	.string "It's a POKEMON REPORT!\p"
-	.string "Some POKEMON have been confirmed\n"
-	.string "to evolve when they are traded.$"
+	.string "… ポケモン レポートだ!\pつうしん こうかん すると\nしんかする ポケモンが\lいることが かくにん された$"
 
 SilphCo_5F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "5F$"
+	.string "シルフ カンパニー ほんしゃ\n5かい$"
 
 SilphCo_5F_Text_RocketBossLookingForStrongMons::
-	.string "Those thugs that took over our\n"
-	.string "building…\p"
-	.string "Their BOSS said he was looking for\n"
-	.string "strong POKEMON.\p"
-	.string "I hope our PRESIDENT managed to\n"
-	.string "avoid trouble…$"
+	.string "この ビルに のりこんできた\nやつらの ボスは\lめずらしい つよい ポケモンを\lもとめて いるって いってた\pしゃちょうに ひがいが\nなければ いいのだが…$"
+
