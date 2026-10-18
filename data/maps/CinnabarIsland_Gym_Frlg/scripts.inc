@@ -716,7 +716,7 @@ CinnabarIsland_Gym_Text_BlaineDefeat::
 	.string "わしは もえつきた!\pおまえに こそ!\nクリムゾン バッジは ふさわしい!$"
 
 CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
-	.string "この わざを みんなは\nだいもんじやき と よんでるが\lそりゃ まちがいだ!\pほんば きょうと では\nだいもんじ とか おくりび と\lよんで いるのだ!$"
+	.string "この わざを みんなは\nだいもんじやき と よんでるが\lそりゃ まちがいだ!\pほんば エンジュ では\nだいもんじ とか おくりび と\lよんで いるのだ!$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
 	.string "うおーす!\pこの クリムゾン バッジは\nもってる だけで\pポケモンの とくしゅ のうりょくを\nたかめる こうかが ある!\pそれから!\nこの わざマシンを うけとれい!$"
@@ -782,7 +782,7 @@ CinnabarIsland_Gym_Text_DustyDefeat::
 	.string "あー あつかった$"
 
 CinnabarIsland_Gym_Text_DustyPostBattle::
-	.string "ギャロップ キュウコン あたりが\nほのお タイプで にんきが あるよ$"
+	.string "ウインディ キュウコン あたりが\nほのお タイプで にんきが あるよ$"
 
 CinnabarIsland_Gym_Text_ZacIntro::
 	.string "ほのおの じゃくてんは\nエイチ ツー オー と いわれてる$"

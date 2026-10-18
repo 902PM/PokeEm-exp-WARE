@@ -106,64 +106,30 @@ OneIsland_EventScript_PokemonNetCenterSign::
 	end
 
 OneIsland_Text_BillLetsGoSeeCelio::
-	.string "BILL: Here we are!\n"
-	.string "This is ONE ISLAND.\p"
-	.string "There are several islands around\n"
-	.string "here, and this is one of them.\p"
-	.string "My friend CELIO sent the boat to\n"
-	.string "fetch me here.\p"
-	.string "He's in charge of the island's PC\n"
-	.string "network by his lonesome.\p"
-	.string "...Why am I telling you this now?\n"
-	.string "Let's just go see CELIO!$"
+	.string "マサキ『ここが 1のしまや!\pこのへんには いくつか\nしまが あるんやけど\lまあ そのなかの ひとつや\pきょう ふねを よこしたのは\nしまの パソコンつうしんを\lひとりで かんりしとる\lニシキ っちゅう やつや!\p…ここで いってても しゃーない\nまずは ニシキに あいに いこか!$"
 
 Text_WhereDoYouWantToSail::
-	.string "Ahoy, there!\n"
-	.string "Where do you want to sail?$"
+	.string "おつかれさん!\nどこに いきたいんだ?$"
 
 OneIsland_Text_LuckyToHaveCelioHere::
-	.string "Here we are on an island smack in\n"
-	.string "the middle of nowhere.\p"
-	.string "We're lucky to have an upstanding\n"
-	.string "young man like CELIO here.\p"
-	.string "My granddaughter was in a tizzy\n"
-	.string "over CELIO's friend.\p"
-	.string "Something about a famous\n"
-	.string "POKeMANIAC?\p"
-	.string "I'm not sure what that means, but\n"
-	.string "CELIO is quite the man!$"
+	.string "こんな いなかの しまにも\nニシキくん という\lまじめな わかものが いるんじゃ!\pなにか… ポケモンマニア という\nえらい ひとと しりあいだとか\lマゴが さわいで おった\pわしには よう わからんが\nニシキくんは えらい!$"
 
 OneIsland_Text_HavePCLinkageWithKanto::
-	.string "My granddaughter was in a tizzy\n"
-	.string "over a new breakthrough.\p"
-	.string "She said we now have PC linkage\n"
-	.string "with people in KANTO.\p"
-	.string "I'm not sure what that means, but\n"
-	.string "CELIO is quite the man!$"
+	.string "なにか… カントーの ひととも\nパソコンが つながるとか いって\lマゴが さわいで おった\pわしには よう わからんが\nニシキくんは えらい!$"
 
 OneIsland_Text_HavePCLinkageWithHoenn::
-	.string "My granddaughter was in a tizzy\n"
-	.string "over a new breakthrough.\p"
-	.string "She said we finally have PC linkage\n"
-	.string "with people in HOENN.\p"
-	.string "I'm not sure what that means, but\n"
-	.string "CELIO is quite the man.\p"
-	.string "He would make a fine husband for\n"
-	.string "my granddaughter!$"
+	.string "なにか… ついに\nホウエンちほうの ひとと\lパソコンが つながった とか\lマゴが さわいで おった\pわしには よう わからんが\nニシキくんは えらい!\lマゴの おむこに ほしいほどじゃ$"
 
 OneIsland_Text_IslandSign::
-	.string "ONE ISLAND\n"
-	.string "Friends Gather at Knot Island$"
+	.string "ここは 1のしま\nごえんが あつまる むすびじま$"
 
 OneIsland_Text_PokemonNetCenterSign::
-	.string "Expanding the POKEMON World!\n"
-	.string "POKEMON NET CENTER$"
+	.string "ひろがる ポケモン ワールド!\nポケモンネットワークセンター$"
 
 @ Unused
 OneIsland_Text_ReturnToCinnabar::
 	.string "グレンタウンに もどりますか?$"
 
 OneIsland_Text_IsntWarmClimateHereGreat::
-	.string "Hi, sight-seeing, are you?\n"
-	.string "Isn't the warm climate here great?$"
+	.string "やあ かんこう かい?\nここいらは あったかくて いいだろ$"
 

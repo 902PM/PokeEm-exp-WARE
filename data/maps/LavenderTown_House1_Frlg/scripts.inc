@@ -25,18 +25,11 @@ LavenderTown_House1_EventScript_Cubone::
 	end
 
 LavenderTown_House1_Text_Cubone::
-	.string "CUBONE: Kyarugoo!$"
+	.string "カラカラ『きゃるぐうーっ$"
 
 LavenderTown_House1_Text_RocketsKilledCubonesMother::
-	.string "Those horrible ROCKETS!\n"
-	.string "They deserve no mercy!\p"
-	.string "That poor CUBONE's mother…\p"
-	.string "It was killed trying to escape from\n"
-	.string "TEAM ROCKET.$"
+	.string "わたし…!\nロケットだんを ゆるさないわ!\pあそこに いる カラカラの\nおかあさんが…\pロケットだんに つかまって\nにげる とちゅう\lころされ ちゃったの$"
 
 LavenderTown_House1_Text_GhostOfPokemonTowerIsGone::
-	.string "The ghost of POKEMON TOWER is\n"
-	.string "gone!\p"
-	.string "Someone must have soothed its\n"
-	.string "restless spirit!$"
+	.string "ポケモン タワーの\nゆうれい でなく なったって!\pだれかが まよえる たましいを\nしずめて くれたのね$"
 
