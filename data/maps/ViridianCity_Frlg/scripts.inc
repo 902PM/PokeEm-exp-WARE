@@ -228,132 +228,81 @@ ViridianCity_EventScript_DoTutorialBattle::
 	faceplayer
 	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
-	giveitem ITEM_TEACHY_TV
+	giveitem ITEM_POKEMON_BOX_LINK
 	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	return
 
 ViridianCity_Text_CanCarryMonsAnywhere::
-	.string "Those POKe BALLS at your waist!\n"
-	.string "You have POKEMON, don't you?\p"
-	.string "It's great that you can carry and\n"
-	.string "use POKEMON anytime, anywhere.$"
+	.string "きみが こしに つけてる\nその モンスターボールは…!\lまさしく ポケモンだね!\pいつでも ポケモンの だしいれが\nじゆうに できる なんて\lべんりな よのなかだね$"
 
 ViridianCity_Text_GymClosedWonderWhoLeaderIs::
-	.string "This POKEMON GYM is always closed.\p"
-	.string "I wonder who the LEADER is?$"
+	.string "いつ きても\nこの ポケモン ジムは しまっとる\pいったい どんな ヤツが\nリーダーを しとるんじゃろか?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-	.string "VIRIDIAN GYM's LEADER returned!$"
+	.string "トキワ ジムの リーダーが\nかえって きたぞ!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
-	.string "You want to know about the two\n"
-	.string "kinds of caterpillar POKEMON?$"
+	.string "いもむし ポケモンには\n2しゅるい いるって しらない?$"
 
 ViridianCity_Text_OhOkayThen::
-	.string "Oh, okay then!$"
+	.string "それなら いいんだ!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-	.string "CATERPIE has no poison,\n"
-	.string "but WEEDLE does.\p"
-	.string "Watch that your POKEMON aren't\n"
-	.string "stabbed by WEEDLE's POISON STING.$"
+	.string "キャタピーは どくが ないけど\nビードルには どくが あるよ\pポケモンが さされないように\nきを つけようね$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
-	.string "Oh, Grandpa!\n"
-	.string "Don't be so mean!\p"
-	.string "I'm so sorry.\n"
-	.string "He hasn't had his coffee yet.$"
+	.string "あらら じいちゃん!\nこんな ところで ねちゃって\lしょーが ないわね!\lよいが さめるまで まつしかないわ$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
-	.string "I go shopping in PEWTER CITY\n"
-	.string "occasionally.\p"
-	.string "I have to take the winding trail in\n"
-	.string "VIRIDIAN FOREST when I go.$"
+	.string "ときどき ニビシティまで\nおかいものに いきますけど\pトキワのもり って\nみちが まがり くねってるのよ$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
-	.string "I absolutely forbid you from\n"
-	.string "going through here!\p"
-	.string "This is private property!$"
+	.string "ういーっ! ひっく… まちやがれ!\nわしの はなしを きけ!\p… こら!\nいくな! と いっとろーが!$"
 
 ViridianCity_Text_ShowYouHowToCatchMons::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "Hm?\n"
-	.string "What is that red box you have?\p"
-	.string "Ah, so you're working on your\n"
-	.string "POKeDEX.\p"
-	.string "Then let me give you a word of\n"
-	.string "advice.\p"
-	.string "Whenever you catch a POKEMON,\n"
-	.string "the POKeDEX automatically updates\l"
-	.string "its data.\p"
-	.string "…You don't know how to catch\n"
-	.string "a POKEMON?\p"
-	.string "I suppose I had better show you\n"
-	.string "then!$"
+	.string "うーん…\nよっぱらってた みたいじゃ!\pおや?\nその あかい はこは なんじゃ?\pほっほう!\nポケモンずかん つくっとるか\lなら わしから アドバイスじゃ!\pポケモンを つかまえて しらべれば\nじどうてきに ページが\lふえて いくんじゃよ!\pなんじゃー\nつかまえかたを しらんのか!\pでは… わしが\nおてほんを みせて やるかな!$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
-	.string "There! Now tell me, that was\n"
-	.string "educational, was it not?\p"
-	.string "And here, take this, too.$"
+	.string "どうじゃ!\nすこしは やくに たったじゃろう?\pあとは これを もっていけ$"
 
 ViridianCity_Text_WatchThatToLearnBasics::
-	.string "If there's something you don't\n"
-	.string "understand, watch that.\p"
-	.string "It will teach you about the basics\n"
-	.string "of being a POKEMON TRAINER.$"
+	.string "それを つかえば\nどこからでも ポケモンボックスに\lアクセス できるように なるぞ!$"
 
 ViridianCity_Text_WeakenMonsFirstToCatch::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "But I made it too strong.\n"
-	.string "It gave me a headache…\p"
-	.string "Incidentally, are you filling your\n"
-	.string "POKeDEX?\p"
-	.string "At first, focus on weakening the\n"
-	.string "POKEMON before trying to catch it.$"
+	.string "うーん…\nよっぱらってた みたいじゃ!\pあたまが いたい…\pときに…\nポケモンずかんは うまっとるかな?\pはじめの うちは\nポケモンを よわらせてから\lとるのが コツじゃぞ!$"
 
 ViridianCity_Text_HowsTeachyTVHelping::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "But I made it too strong.\n"
-	.string "It gave me a headache…\p"
-	.string "Incidentally, is my old TEACHY TV\n"
-	.string "helping you?$"
+	.string "うーん…\nよっぱらってた みたいじゃ!\pあたまが いたい…\pときに…\nポケモンボックスは やくにたっとる?$"
 
 ViridianCity_Text_MyGrandsonOnTheShow::
-	.string "Wahaha!\n"
-	.string "It's my grandson on the show!\p"
-	.string "Since he's the one doing the\n"
-	.string "teaching, you're bound to learn.$"
+	.string "わっはっは!\nそうじゃろ! そうじゃろ!?$"
 
 ViridianCity_Text_TooBusyForTeachyTV::
-	.string "Hm… You're too busy to not even\n"
-	.string "have the time for TEACHY TV…\p"
-	.string "Time is money, and neither should\n"
-	.string "be ill spent…$"
+	.string "ふむ… いちど べんりボタンに\nとうろく してみると よいぞ!$"
 
 ViridianCity_Text_CitySign::
-	.string "VIRIDIAN CITY \n"
-	.string "The Eternally Green Paradise$"
+	.string "ここは トキワシティ\nトキワは みどり えいえんのいろ$"
 
 ViridianCity_Text_CatchMonsForEasierBattles::
-	.string "TRAINER TIPS\p"
-	.string "Catch POKEMON and expand your\n"
-	.string "collection.\p"
-	.string "The more you have, the easier it\n"
-	.string "is to battle.$"
+	.string "… おとくな けいじばん!\pとにかく ポケモンを つかまえて\nドンドン ふやそう!\lトレーナーとの しょうぶも\lたくさん もってると ゆうり!$"
 
 ViridianCity_Text_MovesLimitedByPP::
-	.string "TRAINER TIPS\p"
-	.string "The battle moves of POKEMON are\n"
-	.string "limited by their POWER POINTS, PP.\p"
-	.string "To replenish PP, rest your tired\n"
-	.string "POKEMON at a POKEMON CENTER.$"
+	.string "… おとくな けいじばん!\pポケモンには たいりょくの ほか\nわざを くりだす げんきの もと\lパワーポイントが あります\pわざ ごとの パワーポイントが\nなくなった ときも\lポケモンセンターで やすませて!$"
 
 ViridianCity_Text_GymSign::
-	.string "VIRIDIAN CITY POKEMON GYM$"
+	.string "トキワ ポケモンジム$"
 
 ViridianCity_Text_GymDoorsAreLocked::
-	.string "VIRIDIAN GYM's doors are locked…$"
+	.string "トキワ ジムのドアには\nカギが かかって いた…!$"
 
+Text_DreamEaterTeach::
+	.string "ふあー!\nひなたぼっこ してて\lねむって しまった!\p… へんな ゆめを みた\nスリープが ゆめを くっていた!\pしかも… なぜか\nゆめの くいかたが\lわかって しまった\pうーん\nきみが わるい!\lきみの ポケモンに おしえて\lわすれさせて くれ!$"
+
+Text_DreamEaterDeclined::
+	.string "… ぐー…$"
+
+Text_DreamEaterWhichMon::
+	.string "どの ポケモンが\nゆめくいを おぼえたいん だい…?$"
+
+Text_DreamEaterTaught::
+	.string "もう……\nたべら…… れな…… い……\l…… ぐー……$"

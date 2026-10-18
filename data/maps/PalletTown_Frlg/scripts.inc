@@ -449,100 +449,63 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	end
 
 PalletTown_Text_OakDontGoOut::
-	.string "OAK: Hey! Wait!\n"
-	.string "Don't go out!$"
+	.string "オーキド『おーい!\nまてー! まつんじゃあ!$"
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
-	.string "OAK: It's unsafe!\n"
-	.string "Wild POKEMON live in tall grass!\p"
-	.string "You need your own POKEMON for\n"
-	.string "your protection.\p"
-	.string "I know!\n"
-	.string "Here, come with me!$"
+	.string "オーキド『あぶない とこだった!\nくさむらでは\lやせいの ポケモンが とびだす!\pこちらも ポケモンを\nもって いれば\lたたかえるのだが…\lそうじゃ!\p… ちょっと\nわしに ついて きなさい!$"
 
 PalletTown_Text_RaisingMonsToo::
-	.string "I'm raising POKEMON, too.\p"
-	.string "When they get strong, they can\n"
-	.string "protect me.$"
+	.string "わたしも\nポケモンを そだててるの!\pつよく なれば\nガードマンの かわりに なるしね$"
 
 PalletTown_Text_CanStoreItemsAndMonsInPC::
-	.string "Technology is incredible!\p"
-	.string "You can now store and recall items\n"
-	.string "and POKEMON as data via PC.$"
+	.string "かがくの ちからって すげー!\pいまは ネットワークで\nどうぐや ポケモンを\lデータにして おくれるんだと$"
 
 PalletTown_Text_OakPokemonResearchLab::
-	.string "OAK POKEMON RESEARCH LAB$"
+	.string "ここは オーキド はかせの\nポケモン けんきゅうじょ$"
 
 PalletTown_Text_PlayersHouse::
-	.string "{PLAYER}'s house$"
+	.string "ここは {PLAYER} のいえ$"
 
 PalletTown_Text_RivalsHouse::
-	.string "{RIVAL}'s house$"
+	.string "ここは {RIVAL} のいえ$"
 
 PalletTown_Text_TownSign::
-	.string "PALLET TOWN\n"
-	.string "Shades of your journey await!$"
+	.string "ここは マサラ タウン\nマサラは まっしろ はじまりのいろ$"
 
 PalletTown_Text_OakLetMeSeePokedex::
-	.string "OAK: Ah, {PLAYER}!\n"
-	.string "You're back, are you?\p"
-	.string "How much have you filled in your\n"
-	.string "POKeDEX?\p"
-	.string "May I see it?\p"
-	.string "Let's see...$"
+	.string "オーキド『おお {PLAYER}!\nかえって きて おったのか\pポケモンずかんは\nどのくらい あつまったのか\lみせて くれんか?\pどれどれ……$"
 
 PalletTown_Text_CaughtXPuttingInHonestEffort::
-	.string "You've caught {STR_VAR_2}...\p"
-	.string "Hm, it looks as if you're putting\n"
-	.string "in an honest effort.\p"
-	.string "When you manage to fill it some\n"
-	.string "more, come show me, please.$"
+	.string "つかまえたかず {STR_VAR_2}…\pうん なかなか\nがんばって おるよう じゃな!\pもっと たくさん うまったら\nぜひ わしに みせにきてくれ!$"
 
 PalletTown_Text_CaughtXImpressiveFollowMe::
-	.string "You've caught... {STR_VAR_2}!?\n"
-	.string "Now, this is impressive!\p"
-	.string "There's something I wanted to ask\n"
-	.string "of you, {PLAYER}.\p"
-	.string "Come.\n"
-	.string "Follow me.$"
+	.string "つかまえたかず {STR_VAR_2}…\nおお これなら いい!\pじつは…… {PLAYER}に\nおねがいが あるんじゃ\lちょっと ついて きてくれ!$"
 
 PalletTown_Text_OakYouEnjoyingTraveling::
-	.string "OAK: Ah, {PLAYER}!\n"
-	.string "You seem to be enjoying traveling.\p"
-	.string "Knowing you, {PLAYER}, I can easily\n"
-	.string "imagine you going out to even more\l"
-	.string "exotic locales.\p"
-	.string "Good for you, good for you.\n"
-	.string "Hohoho.$"
+	.string "オーキド『おお {PLAYER}!\nたびを たのしんで おるようじゃな\p{PLAYER}の ことじゃ\nもっと いろいろな ところに\lでかけて いくんじゃろう\pよきかな よきかな……\nほっほっほ$"
 
 @ For the NPC in Pallet Town that talks about the Trainer Tips sign
 PalletTown_Text_HmmIsThatRight::
-	.string "Hmm...\n"
-	.string "Is that right...$"
+	.string "ふーん…\nそうなんだぁ$"
 
 PalletTown_Text_OhLookLook::
-	.string "Oh!\n"
-	.string "Look, look!$"
+	.string "あ! みてみて!$"
 
 PalletTown_Text_ReadItReadIt::
-	.string "Read it, read it!$"
+	.string "よんで よんで!$"
 
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
-	.string "TRAINER TIPS\p"
-	.string "Press START to open the MENU!$"
+	.string "… おとくな けいじばん!\pスタート ボタンを おすと\nメニューが ひらきます!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
-	.string "Signs are useful, aren't they?$"
+	.string "かんばんって ためになるね!$"
 
 PalletTown_Text_LookCopiedTrainerTipsSign::
-	.string "Look, look!\p"
-	.string "I copied what it said on one of\n"
-	.string "those TRAINER TIPS signs!$"
+	.string "みてみて!\pおとくな けいじばんに\nかいて あったこと\lまねして かいて みたの!$"
 
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
-	.string "TRAINER TIPS!\p"
-	.string "Press START to open the MENU!$"
+	.string "… おとくな けいじばん!\pスタート ボタンを おすと\nメニューが ひらきます!$"
 
 
