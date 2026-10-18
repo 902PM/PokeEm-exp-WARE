@@ -17,41 +17,37 @@ PokemonMansion_3F_EventScript_Statue::
 	end
 
 PokemonMansion_3F_EventScript_DiaryFeb6th::
-	msgbox PokemonMansion_1F_Text_MewGaveBirthToMewtwo, MSGBOX_SIGN
+	msgbox PokemonMansion_3F_Text_MewGaveBirthToMewtwo, MSGBOX_SIGN
 	end
 
 PokemonMansion_3F_EventScript_Simon::
-	trainerbattle_single TRAINER_BURGLAR_SIMON, PokemonMansion_1F_Text_SimonIntro, PokemonMansion_1F_Text_SimonDefeat
-	msgbox PokemonMansion_1F_Text_SimonPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_BURGLAR_SIMON, PokemonMansion_3F_Text_SimonIntro, PokemonMansion_3F_Text_SimonDefeat
+	msgbox PokemonMansion_3F_Text_SimonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 PokemonMansion_3F_EventScript_Braydon::
-	trainerbattle_single TRAINER_SCIENTIST_BRAYDON, PokemonMansion_1F_Text_BraydonIntro, PokemonMansion_1F_Text_BraydonDefeat
-	msgbox PokemonMansion_1F_Text_BraydonPostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_SCIENTIST_BRAYDON, PokemonMansion_3F_Text_BraydonIntro, PokemonMansion_3F_Text_BraydonDefeat
+	msgbox PokemonMansion_3F_Text_BraydonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-PokemonMansion_1F_Text_SimonIntro::
-	.string "This place is, like, huge!$"
+PokemonMansion_3F_Text_SimonIntro::
+	.string "それに しても\nでっけー やしき だねえ!$"
 
-PokemonMansion_1F_Text_SimonDefeat::
-	.string "Ayah!$"
+PokemonMansion_3F_Text_SimonDefeat::
+	.string "どろどろ ぼーん!$"
 
-PokemonMansion_1F_Text_SimonPostBattle::
-	.string "I wonder where my partner went.$"
+PokemonMansion_3F_Text_SimonPostBattle::
+	.string "… あいぼうが いたんだ\nどこ いったんだろ?$"
 
-PokemonMansion_1F_Text_BraydonIntro::
-	.string "My mentor once lived here.$"
+PokemonMansion_3F_Text_BraydonIntro::
+	.string "ここは かつて\nわたしの せんせいが すんでいた$"
 
-PokemonMansion_1F_Text_BraydonDefeat::
-	.string "Whew!\n"
-	.string "Overwhelming!$"
+PokemonMansion_3F_Text_BraydonDefeat::
+	.string "なんと つよい$"
 
-PokemonMansion_1F_Text_BraydonPostBattle::
-	.string "So, you're stuck?\n"
-	.string "Try jumping off over there!$"
+PokemonMansion_3F_Text_BraydonPostBattle::
+	.string "いきたい ばしょに いけなくて\nこまってるのか… そこから\lおもいきって とびおりて みろ!$"
 
-PokemonMansion_1F_Text_MewGaveBirthToMewtwo::
-	.string "Diary: Feb. 6\n"
-	.string "MEW gave birth.\p"
-	.string "We named the newborn MEWTWO.$"
+PokemonMansion_3F_Text_MewGaveBirthToMewtwo::
+	.string "にっき 2がつ6か\nミュウが こどもを うむ\pうまれた ばかりの ジュニアを\nミュウツーと よぶことに…$"
 

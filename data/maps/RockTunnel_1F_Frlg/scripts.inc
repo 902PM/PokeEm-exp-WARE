@@ -46,85 +46,68 @@ RockTunnel_1F_EventScript_Dana::
 	end
 
 RockTunnel_1F_Text_LennyIntro::
-	.string "This tunnel goes a long way, kid!$"
+	.string "この ながーい\nトンネルを ぬける つもりか!$"
 
 RockTunnel_1F_Text_LennyDefeat::
-	.string "Doh!\n"
-	.string "You win!$"
+	.string "おいらの まけだ$"
 
 RockTunnel_1F_Text_LennyPostBattle::
-	.string "Watch for ONIX.\n"
-	.string "They appear only occasionally.\p"
-	.string "High-level ones can put the\n"
-	.string "squeeze on you!$"
+	.string "たまに でる イワークは\nレベルが たかいと しめつけてくる\lきを つけなよ$"
 
 RockTunnel_1F_Text_OliverIntro::
-	.string "Hmm.\n"
-	.string "Maybe I'm lost in here…$"
+	.string "えーと\nみちに まよったかな?$"
 
 RockTunnel_1F_Text_OliverDefeat::
-	.string "Ease up!\n"
-	.string "What am I doing?\l"
-	.string "Which way is out?$"
+	.string "たたかってる\nばあいじゃ なかった\lでぐちは どっち だっけ?$"
 
 RockTunnel_1F_Text_OliverPostBattle::
-	.string "That sleeping POKEMON on ROUTE 12\n"
-	.string "forced me to take this detour.$"
+	.string "12ばん どうろに\nポケモンが ねてたろ?\lおれも こまって まわりみちだ$"
 
 RockTunnel_1F_Text_LucasIntro::
-	.string "Outsiders like you need to show me\n"
-	.string "some respect!$"
+	.string "おれは\nやまに すんで ながい\lよそものに でかい つらは させん$"
 
 RockTunnel_1F_Text_LucasDefeat::
-	.string "I give!$"
+	.string "やるなあ$"
 
 RockTunnel_1F_Text_LucasPostBattle::
-	.string "You're talented enough to hike!$"
+	.string "おまえ みこみが ある\nやまおとこに ならんか?$"
 
 RockTunnel_1F_Text_AshtonIntro::
-	.string "POKEMON fight!\n"
-	.string "Ready, go!$"
+	.string "ポケモン ファイトー!\nレディー ゴー!$"
 
 RockTunnel_1F_Text_AshtonDefeat::
-	.string "Game over!$"
+	.string "やぶれたのか$"
 
 RockTunnel_1F_Text_AshtonPostBattle::
-	.string "Oh well, I'll get a ZUBAT as I go!$"
+	.string "ズバットでも\nとって かえろうかな…$"
 
 RockTunnel_1F_Text_LeahIntro::
-	.string "Eek!\p"
-	.string "Don't try anything funny in the\n"
-	.string "dark!$"
+	.string "きゃ びっくり!\nうすぐらい からって\lそんなに ちかづかないで!$"
 
 RockTunnel_1F_Text_LeahDefeat::
-	.string "It was too dark…$"
+	.string "… くらくて\nよく みえないんだもん$"
 
 RockTunnel_1F_Text_LeahPostBattle::
-	.string "I saw a MACHOP in this tunnel.$"
+	.string "トンネルにも ポケモン いるのね\nさっき ワンリキーが いたわ$"
 
 RockTunnel_1F_Text_DanaIntro::
-	.string "I came this far looking for wild\n"
-	.string "POKEMON.$"
+	.string "ポケモン さがしに きて\nこんな とこまで きちゃった!$"
 
 RockTunnel_1F_Text_DanaDefeat::
-	.string "I'm out of POKEMON!$"
+	.string "もう ポケモン ないわ$"
 
 RockTunnel_1F_Text_DanaPostBattle::
-	.string "You looked cute and harmless.\n"
-	.string "Was I ever wrong!$"
+	.string "かわいい かお して\nけっこう つよい じゃない$"
 
 RockTunnel_1F_Text_ArianaIntro::
-	.string "You have POKEMON!\n"
-	.string "Let's start!$"
+	.string "あ それは ポケモン!\nさっそく はじめましょ!$"
 
 RockTunnel_1F_Text_ArianaDefeat::
-	.string "You play hard!$"
+	.string "でなおして くるわ$"
 
 RockTunnel_1F_Text_ArianaPostBattle::
-	.string "Whew!\n"
-	.string "I'm all sweaty now.$"
+	.string "エキサイト して\nあせ かいちゃったわ$"
 
 RockTunnel_1F_Text_RouteSign::
-	.string "ROCK TUNNEL\n"
-	.string "CERULEAN CITY - LAVENDER TOWN$"
+	.string "ここは イワヤマ トンネル\nハナダ シティ … シオン タウン$"
 

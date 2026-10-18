@@ -231,52 +231,32 @@ PokemonTower_7F_Movement_Grunt3ExitLeft::
 	step_end
 
 PokemonTower_7F_Text_Grunt1Intro::
-	.string "What do you want?\n"
-	.string "Why are you here?$"
+	.string "む! なんだ おまえは?\nなにしに ここへ きた?$"
 
 PokemonTower_7F_Text_Grunt1Defeat::
-	.string "I give up!$"
+	.string "ま まいった!$"
 
 PokemonTower_7F_Text_Grunt1PostBattle::
-	.string "I'm not going to forget this!$"
+	.string "お! おぼえて やがれ!$"
 
 PokemonTower_7F_Text_Grunt2Intro::
-	.string "This old guy marched right up to\n"
-	.string "our HIDEOUT.\p"
-	.string "Then, he starts ranting about how\n"
-	.string "TEAM ROCKET's abusing POKEMON.\p"
-	.string "So, we're just talking it over as\n"
-	.string "adults.$"
+	.string "この じいさん\nロケットだん アジトに くるなり\pポケモンを いじめたり\nころしたり するなって うるさくて\pここで おとなの はなし あいを\nしてた ところだ!$"
 
 PokemonTower_7F_Text_Grunt2Defeat::
-	.string "Please!\n"
-	.string "No more!$"
+	.string "かんべん してくれ…$"
 
 PokemonTower_7F_Text_Grunt2PostBattle::
-	.string "POKEMON are only good for making\n"
-	.string "money. Why not use them?\p"
-	.string "You stay out of our business!$"
+	.string "ポケモンなんて\nしょうばい どうぐに すぎない!\pおれたちの\nじゃま するんじゃ ないぜ!$"
 
 PokemonTower_7F_Text_Grunt3Intro::
-	.string "You're not saving anyone, kid!$"
+	.string "おれたちを たおさなきゃ\nじいさんは たすけられないぜ!$"
 
 PokemonTower_7F_Text_Grunt3Defeat::
-	.string "Don't fight us ROCKETS!$"
+	.string "ロケットだんに\nはむかう とはな!$"
 
 PokemonTower_7F_Text_Grunt3PostBattle::
-	.string "You're not getting away with this!$"
+	.string "くそー…!\nこのままで すむと おもうなよ!$"
 
 PokemonTower_7F_Text_MrFujiThankYouFollowMe::
-	.string "MR. FUJI: Heh?\n"
-	.string "You came to save me?\p"
-	.string "Thank you. But, I came here of my\n"
-	.string "own free will.\p"
-	.string "I came to calm the spirit of\n"
-	.string "CUBONE's mother.\p"
-	.string "I think MAROWAK's spirit has\n"
-	.string "finally left us.\p"
-	.string "I must thank you for your kind\n"
-	.string "concern.\p"
-	.string "Follow me to my home, POKEMON\n"
-	.string "HOUSE, at the foot of this tower.$"
+	.string "フジ『え… わたしを\nたすけに きたんですか?\p… どうも ありがとう\nでも… わたしは…\pカラカラの おかあさん ガラガラの\nたましいを なぐさめる ために\lすすんで ここまで きたのです\p…ああ どうやら ガラガラも\nてんごくへ むかった ようですね\pせっかく ここまで きてくれた\nきみにも おれいを しなきゃね!\pでは これから\nいっしょに うちへ いきましょう\pポケモンハウスは\nこの タワーの ふもとです!$"
 

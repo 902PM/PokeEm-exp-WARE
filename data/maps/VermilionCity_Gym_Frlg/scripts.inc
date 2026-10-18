@@ -286,136 +286,74 @@ VermilionCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 VermilionCity_Gym_Text_LtSurgeIntro::
-	.string "Hey, kid! What do you think you're\n"
-	.string "doing here?\p"
-	.string "You won't live long in combat!\n"
-	.string "Not with your puny power!\p"
-	.string "I tell you, kid, electric POKEMON\n"
-	.string "saved me during the war!\p"
-	.string "They zapped my enemies into\n"
-	.string "paralysis!\p"
-	.string "The same as I'll do to you!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+	.string "ヘーイ!\nプア リトル キッド!\pユーの ハンパな パワーでは\nせんじょうじゃ いき のこれないネ\pミーは せんそうで\nエレクトリック ポケモン つかって\lいき のびたネ!\pみんな ビリビリ シビレて\nうごけナーイ!\pユーも おなじ みち たどる\nちがい ナーイ!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_LtSurgePostBattle::
-	.string "A little word of advice, kid!\p"
-	.string "Electricity is sure powerful!\p"
-	.string "But, it's useless against GROUND-\n"
-	.string "type POKEMON!$"
+	.string "ヘイ!\nそれから ユーに アドバイス!\pエレクトリック パワー\nビリビリ つよいネー!\pでも じめん タイプには\nパワー すいとられて しまって\lぜんぜん きかないヨー!$"
 
 VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
-	.string "The THUNDERBADGE cranks up your\n"
-	.string "POKEMON's SPEED!\p"
-	.string "It also lets your POKEMON FLY\n"
-	.string "lightning-quick anytime, kid!\p"
-	.string "You're special, kid!\n"
-	.string "Take this!$"
+	.string "オレンジ バッジ もってる だけで\nユーの ポケモン スピード アップ\pアーンド! そらをとぶ わざは\nファイト ない ときも\lつかえる ように なるヨ!\pユーは スペシャル!\nこれは ミーの きもちネ!$"
 
 VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
-	.string "{PLAYER} received TM34\n"
-	.string "from LT. SURGE.$"
+	.string "{PLAYER}は マチスから\nわざマシン34を もらった!$"
 
 VermilionCity_Gym_Text_ExplainTM34::
-	.string "TM34 contains SHOCK WAVE!\p"
-	.string "Teach it to an ELECTRIC POKEMON!$"
+	.string "わざマシン34は\nでんき ビリビリ でんげきは\pエレクトリック ポケモンに\nおしえて くだサーイ!$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::
-	.string "Yo, kid, make room in your BAG!$"
+	.string "フル オブ ユア リュック!\nあなた もてませーん!$"
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
-	.string "Now that's a shocker!\p"
-	.string "You're the real deal, kid!\p"
-	.string "Fine, then, take the THUNDERBADGE!$"
+	.string "オー ノー!\pユーの つよさ トゥルース!\nつまり ほんもの ネー!\pオッケー!\nオレンジ バッジ やるヨ!$"
 
 VermilionCity_Gym_Text_TuckerIntro::
-	.string "When I was in the Army, LT. SURGE\n"
-	.string "was my strict CO.\p"
-	.string "He was a hard taskmaster.$"
+	.string "ぐんたいに いた ころは\nマチス しょうさに\lビシ!ビシ! きたえられたぜ!$"
 
 VermilionCity_Gym_Text_TuckerDefeat::
-	.string "Stop!\n"
-	.string "You're very good!$"
+	.string "うむ!\nなかなかの うでまえだ$"
 
 VermilionCity_Gym_Text_TuckerPostBattle::
-	.string "It's not easy opening that door.\p"
-	.string "LT. SURGE was always famous for\n"
-	.string "his cautious nature in the Army.$"
+	.string "へやが あかないのか?\pマチス の ようじん ぶかさは\nぐんたいでも ゆうめい だったぜ!$"
 
 VermilionCity_Gym_Text_BailyIntro::
-	.string "I'm a lightweight, but I'm good\n"
-	.string "with electricity!\p"
-	.string "That's why I joined this GYM.$"
+	.string "おれは たいりょく ないけど\nでんきの あつかいを かわれて\lここに きたのだ!$"
 
 VermilionCity_Gym_Text_BailyDefeat::
-	.string "Fried!$"
+	.string "ひゅー! しびれた!$"
 
 VermilionCity_Gym_Text_BailyPostBattle::
-	.string "Okay, I'll talk!\p"
-	.string "LT. SURGE said he hid door\n"
-	.string "switches inside something.$"
+	.string "わかった いうよー!\pマチスは へやの スイッチを\nなにかの…\lそこに かくしたと いってたな$"
 
 VermilionCity_Gym_Text_DwayneIntro::
-	.string "This is no place for kids!\n"
-	.string "Not even if you're good!$"
+	.string "いくら ポケモン うまい からって\nここは こどもが\lくる ところ じゃないぜ!$"
 
 VermilionCity_Gym_Text_DwayneDefeat::
-	.string "Wow!\n"
-	.string "Surprised me!$"
+	.string "ほー おどろきだ!$"
 
 VermilionCity_Gym_Text_DwaynePostBattle::
-	.string "LT. SURGE installed the traps in\n"
-	.string "the GYM himself.\p"
-	.string "He set up double locks everywhere.\n"
-	.string "Let me give you a hint.\p"
-	.string "When you open the first lock, the\n"
-	.string "second lock is right next to it.$"
+	.string "マチス しょうさは\nじぶんで トラップを つくって\lへやを 2じゅう ロック してるぜ\l… ヒントを あげよう!\pだい1 ロックを はずしたら\nだい2 ロックは すぐ そばだ\lふたつの ロックは\lとなりあわせに あるぜ$"
 
 VermilionCity_Gym_Text_GymGuyAdvice::
-	.string "Yo!\n"
-	.string "Champ in the making!\p"
-	.string "LT. SURGE has a nickname.\p"
-	.string "People refer to him as the\n"
-	.string "Lightning American!\p"
-	.string "He's an expert on electric\n"
-	.string "POKEMON.\p"
-	.string "BIRD/WATER-type POKEMON match\n"
-	.string "poorly against the ELECTRIC type.\p"
-	.string "Beware of paralysis, too.\p"
-	.string "LT. SURGE is very cautious.\p"
-	.string "He's locked himself in, so it won't\n"
-	.string "be easy getting to him.$"
+	.string "おーす!\nみらいの チャンピオン!\pマチス しょうさの あだなは\nイナズマ アメリカン!\pでんき ポケモン つかわせたら\nアメリカ ナンバー1 らしいぜ!\pひこう タイプ みず タイプは\nあいしょうが わるいぜ!\pマヒ させられないよう\nきを つけな!\pそれと マチスは ようじん ぶかい!\nかれの へやは ロック されて\lかんたんには はいれないぜ!$"
 
 VermilionCity_Gym_Text_GymGuyPostVictory::
-	.string "Whew!\n"
-	.string "That match was electric!$"
+	.string "ふー こくさい じあいに\nきんちょー したぜ$"
 
 VermilionCity_Gym_Text_GymStatue::
-	.string "VERMILION POKEMON GYM\n"
-	.string "LEADER: LT. SURGE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}$"
+	.string "クチバ ポケモン ジム\nマチス にんてい トレーナー!\l{RIVAL}$"
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
-	.string "VERMILION POKEMON GYM\n"
-	.string "LEADER: LT. SURGE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}, {PLAYER}$"
+	.string "クチバ ポケモン ジム\nマチス にんてい トレーナー!\l{RIVAL} {PLAYER}$"
 
 VermilionCity_Gym_Text_NopeOnlyTrashHere::
-	.string "Nope!\n"
-	.string "There's only trash here.$"
+	.string "ガサゴソ…!\nなかは ゴミ ばっかり!$"
 
 VermilionCity_Gym_Text_SwitchUnderTrashFirstLockOpened::
-	.string "Hey! There's a switch under the\n"
-	.string "trash! Turn it on!\p"
-	.string "The first electric lock opened!$"
+	.string "ガサゴソ…!\nおっと! ゴミばこの そこに\lスイッチが あった!\lおして みよう! … ポチッとな\pでんどうドアの\nだい1 ロックが はずれた!$"
 
 VermilionCity_Gym_Text_SecondLockOpened::
-	.string "The second electric lock opened!\n"
-	.string "The motorized door opened!$"
+	.string "ガサゴソ…!\nおっと! ゴミばこの そこに\lまた スイッチが あった!\lおして みよう! … ポチッとな$"
 
 VermilionCity_Gym_Text_OnlyTrashLocksWereReset::
-	.string "Nope!\n"
-	.string "There's only trash here.\p"
-	.string "Hey!\n"
-	.string "The electric locks were reset!$"
+	.string "でんどうドアの\nだい2 ロックが はずれた!\pおおきな でんどうドアが\nかんぜんに ひらいた!$"
 

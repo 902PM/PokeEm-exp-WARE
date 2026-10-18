@@ -121,58 +121,38 @@ RocketHideout_B4F_EventScript_RemoveBarrier::
 	return
 
 RocketHideout_B4F_Text_GiovanniIntro::
-	.string "So! I must say, I am impressed you\n"
-	.string "got here.\p"
-	.string "TEAM ROCKET captures POKEMON from\n"
-	.string "around the world.\p"
-	.string "They're important tools for keeping\n"
-	.string "our criminal enterprise going.\p"
-	.string "I am the leader, GIOVANNI!\p"
-	.string "For your insolence, you will feel a\n"
-	.string "world of pain!$"
+	.string "うほほうッ!\nこんな ところ まで よくきた\pせかい じゅうの ポケモンを\nわるだくみに つかい まくって\lかねもうけ する ロケットだん!\pわたしが\nその リーダー サカキだ!\pわたしに はむかう なら\nいたい めに あって もらう!$"
 
 RocketHideout_B4F_Text_GiovanniDefeat::
-	.string "WHAT!\n"
-	.string "This can't be!$"
+	.string "ぐ ぐーッ!\nそんな ばかなーッ!$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::
-	.string "I see that you raise POKEMON with\n"
-	.string "utmost care.\p"
-	.string "A child like you would never\n"
-	.string "understand what I hope to achieve.\p"
-	.string "I shall step aside this time!\p"
-	.string "I hope we meet again…$"
+	.string "… きみは とても だいじに\nポケモンを そだてて いるな\pそんな こどもに\nわたしの かんがえは\lとても りかい できないだろう\p …!\nここは いちど みを ひこう!\pきみとは また どこかで\nたたかいたい ものだ…!$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
-	.string "I know you!\n"
-	.string "You ruined our plans at MT. MOON!$"
+	.string "あーッ おまえ!\nオツキミやまで カセキ さがしの\lじゃま した やつだ!$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
-	.string "Burned again!$"
+	.string "くやしいが やられた!$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-	.string "Do you have something against TEAM\n"
-	.string "ROCKET?$"
+	.string "ロケットだんの\nじゃま ばかり しやがって…!$"
 
 RocketHideout_B4F_Text_Grunt3Intro::
-	.string "How can you not see the beauty of\n"
-	.string "our evil?$"
+	.string "ロケットだんの あくじの\nすばらしさが わからん こどもめ!$"
 
 RocketHideout_B4F_Text_Grunt3Defeat::
-	.string "Ayaya!$"
+	.string "あぎゃぎゃ!$"
 
 RocketHideout_B4F_Text_Grunt3PostBattle::
-	.string "BOSS!\n"
-	.string "I'm sorry I failed you!$"
+	.string "ボス…!\nちから および ません でした$"
 
 RocketHideout_B4F_Text_Grunt1Intro::
-	.string "The elevator doesn't work?\n"
-	.string "Who has the LIFT KEY?$"
+	.string "はははーッ!\nエレベータが つかえないって?\lカギは だれが もってるのかなー?$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::
-	.string "No!$"
+	.string "そんな…!$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle::
-	.string "Oh, no!\n"
-	.string "I dropped the LIFT KEY!$"
+	.string "しまった…!\nせっかく かくして おいた\lエレベータの カギが…!$"
 

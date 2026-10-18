@@ -264,133 +264,80 @@ VermilionCity_EventScript_HarborSign::
 	end
 
 VermilionCity_Text_GrimerMultipliesInSludge::
-	.string "We're careful about pollution here.\p"
-	.string "We've heard GRIMER multiplies in\n"
-	.string "toxic sludge.$"
+	.string "わたし スポーツの あとは\nあせで ベトベター!\p…しってる? ベトベターって\nうみの ヘドロから うまれたの$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-	.string "Did you see the S.S. ANNE moored\n"
-	.string "in the harbor?$"
+	.string "みたかね! いま みなとに\nサント・アンヌごう という\lふねが きとるぞ!$"
 
 VermilionCity_Text_SSAnneHasDepartedForYear::
-	.string "So, the S.S. ANNE has departed?\p"
-	.string "She'll be back in VERMILION about\n"
-	.string "this time next year.$"
+	.string "おお! サント・アンヌごう\nしゅっぱつ して いったか!\pつぎに クチバに くる のは\nらいねんの いまごろ じゃな…$"
 
 VermilionCity_Text_BuildingOnThisLand::
-	.string "I'm putting up a building on this\n"
-	.string "plot of land. I own it all.\p"
-	.string "My POKEMON is tamping the land\n"
-	.string "to lay the foundation.$"
+	.string "わし じぬし!\nこの しかくの ばしょ\lぜーんぶ わしの とち!\pここに ビル たてようと おもって\nポケモンに じならし させとる!$"
 
 VermilionCity_Text_Machop::
-	.string "MACHOP: Guoh! Gogogoh!$"
+	.string "ワンリキー『ごおーっ ごごごー$"
 
 VermilionCity_Text_MachopStompingLandFlat::
-	.string "A MACHOP is stomping the land flat.$"
+	.string "ワンリキーは うなりながら\nじめんを ならしている!$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
-	.string "The S.S. ANNE is a famous luxury\n"
-	.string "cruise ship.\p"
-	.string "It visits VERMILION once a year.$"
+	.string "サント・アンヌごうは\nゆうめいな ごうか きゃくせん!\p1ねんに 1ど だけ\nクチバこう に とまるんだ!$"
 
 VermilionCity_Text_CitySign::
-	.string "VERMILION CITY\n"
-	.string "The Port of Exquisite Sunsets$"
+	.string "ここは クチバ シティ\nクチバは オレンジ ゆうやけのいろ$"
 
 VermilionCity_Text_SnorlaxBlockingRoute12::
-	.string "NOTICE!\p"
-	.string "ROUTE 12 may be blocked off by a\n"
-	.string "sleeping POKEMON.\p"
-	.string "Detour through ROCK TUNNEL to\n"
-	.string "LAVENDER TOWN.\p"
-	.string "VERMILION POLICE$"
+	.string "… おしらせの チラシだ!\pさいきん… 12ばん どうろに\nいねむり ポケモンが しゅつぼつ\lとおれない ことが あります!\pそういう とき シオン タウンへ\nいく かたは イワヤマトンネルを\lとおって ください!\p… クチバ けいさつ より$"
 
 VermilionCity_Text_PokemonFanClubSign::
-	.string "POKEMON FAN CLUB\n"
-	.string "All POKEMON fans welcome!$"
+	.string "こちら ポケモン だいすき クラブ\nポケモンずき だれでも かんげい!$"
 
 VermilionCity_Text_GymSign::
-	.string "VERMILION CITY POKEMON GYM\n"
-	.string "LEADER: LT. SURGE\l"
-	.string "The Lightning American!$"
+	.string "クチバ シティ ポケモン ジム\nリーダー マチス\lイナズマ アメリカン!$"
 
 VermilionCity_Text_VermilionHarbor::
-	.string "VERMILION HARBOR$"
+	.string "クチバ みなと いりぐち$"
 
 VermilionCity_Text_WelcomeToTheSSAnne::
-	.string "Welcome to the S.S. ANNE!$"
+	.string "ようこそ サント・アンヌ ごうへ!$"
 
 VermilionCity_Text_DoYouHaveATicket::
-	.string "Welcome to the S.S. ANNE!\p"
-	.string "Excuse me, do you have a ticket?$"
+	.string "ようこそ サント・アンヌ ごうへ!\pちょっと まって!\nおきゃくさん チケットは?$"
 
 VermilionCity_Text_FlashedSSTicket::
-	.string "{FONT_NORMAL}{PLAYER} flashed the S.S. TICKET!\p"
-	.string "{FONT_MALE}Great!\n"
-	.string "Welcome to the S.S. ANNE!$"
+	.string "{FONT_NORMAL}{PLAYER}は せんいんに\nふねのチケットを みせた!\p{FONT_MALE}はい! けっこう です!\nようこそ サント・アンヌ ごうへ!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
-	.string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"
-	.string "S.S. TICKET.\p"
-	.string "{FONT_MALE}Sorry!\p"
-	.string "You need a ticket to get aboard.$"
+	.string "{FONT_NORMAL}{PLAYER}は せんいんに\nチケットを みせようとした…\lチケットが… ない…!\p{FONT_MALE}…もうしわけ ありません!\pはいれる のは\nチケットの ある かた だけです$"
 
 VermilionCity_Text_TheShipSetSail::
-	.string "The ship set sail.$"
+	.string "ふねは しゅっこうしました$"
 
 VermilionCity_Text_BoardSeagallopTriPass::
-	.string "Ah, you have a TRI-PASS.\p"
-	.string "Would you like to board\n"
-	.string "a SEAGALLOP ferry?$"
+	.string "トライパスを おもち なのですね!\nせんようせん シーギャロップに\lおのりに なりますか?$"
 
 VermilionCity_Text_Seagallop7Departing::
-	.string "Okay, everything's in order.\p"
-	.string "SEAGALLOP HI-SPEED 7 will be\n"
-	.string "departing immediately.$"
+	.string "では どうぞ!\nシーギャロップ ハイスピード7は\lすぐに しゅっこう しますよ!$"
 
 VermilionCity_Text_BoardSeagallopRainbowPass::
-	.string "Ah, you have a RAINBOW PASS.\p"
-	.string "Would you like to board\n"
-	.string "a SEAGALLOP ferry?$"
+	.string "レインボーパスを おもち ですね!\nせんようせん シーギャロップに\lおのりに なりますか?$"
 
 VermilionCity_Text_OhMysticTicketTakeYouToNavelRock::
-	.string "Oh! That's a MYSTICTICKET!\n"
-	.string "Now that is rare.\p"
-	.string "We'll be happy to take you to\n"
-	.string "NAVEL ROCK anytime.$"
+	.string "それは しんぴのチケット…!\nわかりました\pあなたを へそのいわへ\nいつでも おつれ しましょう!$"
 
 VermilionCity_Text_OhAuroraTicketTakeYouToBirthIsland::
-	.string "Oh! That's an AURORATICKET!\n"
-	.string "Now that is rare.\p"
-	.string "We'll be happy to take you to\n"
-	.string "BIRTH ISLAND anytime.$"
+	.string "それは オーロラチケット…!\nわかりました\pあなたを たんじょうのしまへ\nいつでも おつれ しましょう!$"
 
 VermilionCity_Text_BoardSeagallopFerry::
-	.string "Would you like to board\n"
-	.string "a SEAGALLOP ferry?$"
+	.string "せんようせん シーギャロップに\nおのりに なりますか?$"
 
 VermilionCity_Text_Seagallop10Departing::
-	.string "Okay, everything's in order for you\n"
-	.string "to board a special ferry.\p"
-	.string "SEAGALLOP HI-SPEED 10 will be\n"
-	.string "departing immediately.$"
+	.string "では どうぞ!\pとくべつ せんようせん\nシーギャロップ ハイスピード10\lはっしん します!$"
 
 VermilionCity_Text_Seagallop12Departing::
-	.string "Okay, everything's in order for you\n"
-	.string "to board a special ferry.\p"
-	.string "SEAGALLOP HI-SPEED 12 will be\n"
-	.string "departing immediately.$"
+	.string "では どうぞ!\pとくべつ せんようせん\nシーギャロップ ハイスピード12\lはっしん します!$"
 
 VermilionCity_Text_Route2AideHasPackageForYou::
-	.string "Oh, hello, {PLAYER}!\n"
-	.string "How are you doing?\p"
-	.string "It's me, one of PROF. OAK's AIDES.\p"
-	.string "Did you meet the other AIDE?\p"
-	.string "He had a package from PROF. OAK\n"
-	.string "for you, {PLAYER}.\p"
-	.string "He said he'd look for you around\n"
-	.string "ROUTE 2, {PLAYER}.\p"
-	.string "If you're in the ROUTE 2 area,\n"
-	.string "please look for him.$"
+	.string "あ {PLAYER}{KUN}!\nげんきに やってますか?\lぼくですよ\lオーキドはかせの じょしゅ です!\pほかの じょしゅには あいました?\nはかせから {PLAYER}{KUN}への\lおくりものを もって\lでかけた はずなんだけど…\p2ばんどうろ あたりで\n{PLAYER}{KUN}を さがす って\lいってたから そのへんかな?\pもし 2ばんどうろに いったら\nさがして みてよ!$"
 
