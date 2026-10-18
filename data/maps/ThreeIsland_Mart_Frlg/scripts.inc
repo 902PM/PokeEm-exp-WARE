@@ -36,19 +36,11 @@ ThreeIsland_Mart_EventScript_Youngster::
 	end
 
 ThreeIsland_Mart_Text_TrueThatCeldadonDeptStoreBigger::
-	.string "Is it true?\p"
-	.string "CELADON DEPT. STORE is several\n"
-	.string "times bigger than this shop?$"
+	.string "タマムシデパートって\nこのおみせの なんばいも\lおおきい って ホント?$"
 
 ThreeIsland_Mart_Text_PeopleHealWithBerriesFromForest::
-	.string "I sometimes buy medicine here.\p"
-	.string "But a lot of people heal POKEMON\n"
-	.string "with BERRIES from BERRY FOREST.\p"
-	.string "After all, BERRIES are free and\n"
-	.string "they never run out.$"
+	.string "ここで クスリを\nかう ことも あるけど\lきのみのもりで ひろった きのみで\lポケモン なおすひとが おおいよ\pタダだし なんどでも\nひろえるもん$"
 
 ThreeIsland_Mart_Text_BikersWereAboutToTrashMart::
-	.string "Those BIKERS were about to trash\n"
-	.string "this POKEMON MART.\p"
-	.string "Am I glad they decided to leave!$"
+	.string "ぼうそうぞくに おみせを\nあらされ かけて いたんだ\lいなくなって くれて よかった!$"
 

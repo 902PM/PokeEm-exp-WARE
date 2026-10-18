@@ -46,94 +46,71 @@ MtMoon_1F_EventScript_Robby::
 	end
 
 MtMoon_1F_Text_MarcosIntro::
-	.string "WHOA!\n"
-	.string "You shocked me!\l"
-	.string "…Oh, you're just a kid!$"
+	.string "うわーッ!\nびっくり した!\l… なんだ こどもか$"
 
 MtMoon_1F_Text_MarcosDefeat::
-	.string "Wow!\n"
-	.string "Shocked again!$"
+	.string "おどろいた!$"
 
 MtMoon_1F_Text_MarcosPostBattle::
-	.string "Kids like you shouldn't be\n"
-	.string "wandering around here in the dark.$"
+	.string "こどもが\nこんな くらい ところを\lウロウロ しちゃ いかん なあ$"
 
 MtMoon_1F_Text_JoshIntro::
-	.string "Did you come to explore the cave,\n"
-	.string "too?$"
+	.string "きみも\nどうくつ たんけんに きたのかい$"
 
 MtMoon_1F_Text_JoshDefeat::
-	.string "Losing stinks!\n"
-	.string "It's so uncool.$"
+	.string "… まける なんて\nカッコ わるい$"
 
 MtMoon_1F_Text_JoshPostBattle::
-	.string "I came all the way down here to\n"
-	.string "show off to girls.$"
+	.string "おんなのこに\nイイ とこ みせようと\lこんな とこ まで きちゃった$"
 
 MtMoon_1F_Text_MiriamIntro::
-	.string "Wow! It's way bigger in here than\n"
-	.string "I thought!$"
+	.string "わあーッ!\nどうくつの なかって\lいがいと ひろいのねー!$"
 
 MtMoon_1F_Text_MiriamDefeat::
-	.string "Oh!\n"
-	.string "I lost it!$"
+	.string "あ… まけてる!$"
 
 MtMoon_1F_Text_MiriamPostBattle::
-	.string "How do you get out of here?\n"
-	.string "It's so big, I may get lost.$"
+	.string "こんなに ひろいと\nどっちが でぐちか まよっちゃう$"
 
 MtMoon_1F_Text_JovanIntro::
-	.string "What!\n"
-	.string "Don't sneak up on me!$"
+	.string "うわッ! なんだ?\nきゅうに こえを かけるな!$"
 
 MtMoon_1F_Text_JovanDefeat::
-	.string "My POKEMON won't do!$"
+	.string "…\nこんな ポケモン では ダメか$"
 
 MtMoon_1F_Text_JovanPostBattle::
-	.string "I have to find stronger POKEMON.\n"
-	.string "Where might they be?$"
+	.string "えーと…! どこかに\nつよい ポケモン いないか… な$"
 
 MtMoon_1F_Text_IrisIntro::
-	.string "What?\n"
-	.string "I'm waiting for my friends to find\l"
-	.string "me here.$"
+	.string "なによー!\nどうくつで はぐれた ともだちを\lここで まってるのよ$"
 
 MtMoon_1F_Text_IrisDefeat::
-	.string "I lost?$"
+	.string "わたし まけたの?$"
 
 MtMoon_1F_Text_IrisPostBattle::
-	.string "I came because I heard there are\n"
-	.string "some very rare fossils here.$"
+	.string "この どうくつに\nすごい カセキが\lあるって きいて きたの$"
 
 MtMoon_1F_Text_KentIntro::
-	.string "Suspicious men are in the cave.\n"
-	.string "What about you?$"
+	.string "あやしい やつが\nどうくつを うろついてるんだ\lきみは…?$"
 
 MtMoon_1F_Text_KentDefeat::
-	.string "You got me!$"
+	.string "やられた!$"
 
 MtMoon_1F_Text_KentPostBattle::
-	.string "I saw them!\n"
-	.string "I'm sure they're from TEAM ROCKET!$"
+	.string "ぼくが みた やつ!\nまちがい ない!\lあいつ ロケットだん だぜ!$"
 
 MtMoon_1F_Text_RobbyIntro::
-	.string "You need to go through this cave\n"
-	.string "to get to CERULEAN CITY.$"
+	.string "ハナダ シティに いくには\nどうくつを\lぬけないと だめだよ!$"
 
 MtMoon_1F_Text_RobbyDefeat::
-	.string "I lost.$"
+	.string "ぼくの まけだ$"
 
 MtMoon_1F_Text_RobbyPostBattle::
-	.string "ZUBAT is tough!\n"
-	.string "But if you can catch one, you'll\l"
-	.string "be able to count on it.$"
+	.string "ズバットは てごわい!\nでも つかまえられれば\lたよりに なる ポケモンだよ$"
 
 MtMoon_1F_Text_ZubatIsABloodsucker::
-	.string "Beware!\n"
-	.string "ZUBAT is a bloodsucker!$"
+	.string "ズバットの\nきゅうけつ こうげきに ちゅうい!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
-	.string "Hi, I'm excavating for fossils here\n"
-	.string "under MT. MOON.\p"
-	.string "Sometimes, BROCK of PEWTER GYM\n"
-	.string "lends me a hand.$"
+	.string "おじさんは オツキミやまの かせきを\nはっくつ してるんだよ!\pニビジムの タケシくんが\nてつだってくれる ことも あるよ$"
+

@@ -116,49 +116,32 @@ TwoIsland_House_EventScript_SetHasBothMushrooms::
 	return
 
 TwoIsland_House_Text_TeachMonMoveForMushroom::
-	.string "I'm the POKEMON MOVE MANIAC.\p"
-	.string "I know every single move that\n"
-	.string "POKEMON learn growing up.\p"
-	.string "I'm also a mushroom maniac.\p"
-	.string "Bring me two TINYMUSHROOMS,\n"
-	.string "or one BIG MUSHROOM.\p"
-	.string "If you do that for me, I'll teach\n"
-	.string "a move to one POKEMON.$"
+	.string "ぼく ポケモン わざマニア!\pポケモンが せいちょう して\nおぼえる わざを\lすべて しっているのさ!\pそして キノコマニアでも ある!\pちいさなキノコを 2こか\nおおきなキノコを 1こ くれたら\lきみの ポケモンに\lわざを おしえて あげるよ!$"
 
 TwoIsland_House_Text_WantMeToTeachMove::
-	.string "Sniff, sniff…\n"
-	.string "Hm! You smell of MUSHROOMS!\p"
-	.string "Do you want me to teach a move\n"
-	.string "to a POKEMON of yours?$"
+	.string "くんくん…\nむ キノコを もってるね!\pわざを おしえて ほしいのかい?$"
 
 TwoIsland_House_Text_TutorWhichMon::
-	.string "Which POKEMON needs tutoring?$"
+	.string "どの ポケモンに するんだい?$"
 
 TwoIsland_House_Text_TeachWhichMove::
-	.string "Which move should I teach?$"
+	.string "どの わざに するんだい?$"
 
 TwoIsland_House_Text_NoMoveICanTeachThatMon::
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have a\n"
-	.string "move I can teach that POKEMON.$"
+	.string "ごめんね……\pぼくが その ポケモンに\nおしえられる わざは ないみたい$"
 
 TwoIsland_House_Text_IllNeedMushroomOrTwo::
-	.string "Then, I'll need a MUSHROOM or two.\n"
-	.string "What are you going to give me?$"
+	.string "じゃあ キノコ ちょうだいね!\nどっちの キノコを くれるんだい?$"
 
 TwoIsland_House_Text_HandedOverTwoTinyMushrooms::
-	.string "{PLAYER} handed over two\n"
-	.string "TINYMUSHROOMS in exchange.$"
+	.string "{PLAYER}は おれいに\nちいさなキノコを 2こ あげた!$"
 
 TwoIsland_House_Text_HandedOverOneBigMushroom::
-	.string "{PLAYER} handed over one\n"
-	.string "BIG MUSHROOM in exchange.$"
+	.string "{PLAYER}は おれいに\nおおきなキノコを 1こ あげた!$"
 
 TwoIsland_House_Text_NeedMushroomOrTwoToLearnMove::
-	.string "If your POKEMON need to learn a\n"
-	.string "move, I need a MUSHROOM or two.$"
+	.string "おぼえさせたい わざが あったら\nキノコを もってきてね!$"
 
 TwoIsland_House_Text_CantTeachAnEgg::
-	.string "Hunh? There isn't a single move\n"
-	.string "that I can teach an EGG.$"
+	.string "えっ?\nタマゴは おしえ られないよ$"
 
