@@ -49,16 +49,16 @@ static void PrintOakText_ForPetesSake(enum BattlerId battler);
 static void PrintOakTextWithMainBgDarkened(enum BattlerId battler, const u8 *text, u8 delay);
 static void HandleInputChooseAction(enum BattlerId battler);
 
-static const u8 sText_ForPetesSake[] = _("OAK: Oh, for Pete's sake…\nSo pushy, as always.\p{B_PLAYER_NAME}.\pYou've never had a POKeMON battle\nbefore, have you?\pA POKeMON battle is when TRAINERS\npit their POKeMON against each\lother.\p");
-static const u8 sText_HowDissapointing[] = _("OAK: Hm…\nHow disappointing…\pIf you win, you earn prize money,\nand your POKeMON grow.\pBut if you lose, {B_PLAYER_NAME}, you end\nup paying prize money…\pHowever, since you had no warning\nthis time, I'll pay for you.\pBut things won't be this way once\nyou step outside these doors.\pThat's why you must strengthen your\nPOKeMON by battling wild POKeMON.\p");
-static const u8 sText_InflictingDamageIsKey[] = _("OAK: Inflicting damage on the foe\nis the key to any battle.\p");
-static const u8 sText_KeepAnEyeOnHP[] = _("OAK: Keep your eyes on your\nPOKeMON's HP.\pIt will faint if the HP drops to\n0.\p");
-static const u8 sText_LoweringStats[] = _("OAK: Lowering the foe's stats\nwill put you at an advantage.\p");
-static const u8 sText_OakNoRunningFromATrainer[] = _("OAK: No! There's no running away\nfrom a TRAINER POKeMON battle!\p");
-static const u8 sText_TheTrainerThat[] = _("The TRAINER that makes the other\nTRAINER's POKeMON faint by lowering\ltheir HP to 0, wins.\p");
-static const u8 sText_TryBattling[] = _("But rather than talking about it,\nyou'll learn more from experience.\pTry battling and see for yourself.\p");
-static const u8 sText_WinEarnsPrizeMoney[] = _("OAK: Hm! Excellent!\pIf you win, you earn prize money,\nand your POKeMON will grow!\pBattle other TRAINERS and make\nyour POKeMON strong!\p");
-static const u8 gText_WhatWillOldManDo[] = _("What will the\nold man do?");
+static const u8 sText_ForPetesSake[] = _("オーキド『やれやれ…\nまったく しょうがない ヤツじゃのう\p{B_PLAYER_NAME}!\pポケモンしょうぶは\nはじめて じゃろう?\pポケモンしょうぶとは\nポケモントレーナーが ポケモンたちを\lたたかわせることを いう…\p");
+static const u8 sText_TheTrainerThat[] = _("あいて ポケモンの HPを\n0にした トレーナーが かちとなる\p");
+static const u8 sText_TryBattling[] = _("まぁ はなしを きくよりは\nたいけん しながら まなんだ ほうが\lおぼえるのも はやいじゃろう…\pさぁ たたかって みなさい\p");
+static const u8 sText_InflictingDamageIsKey[] = _("オーキド『あいてに ダメージを\nあたえるのは しょうぶの きほんじゃ!\p");
+static const u8 sText_LoweringStats[] = _("オーキド『のうりょくを さげさせれば\nしょうぶも ゆうりに なるじゃろう\p");
+static const u8 sText_KeepAnEyeOnHP[] = _("オーキド『HPは つねに チェック!\n0になれば まけて しまうからのう…\p");
+static const u8 sText_OakNoRunningFromATrainer[] = _("オーキド『こら! ポケモンしょうぶで\nにげだそうと するとは なにごとじゃ!\p");
+static const u8 sText_WinEarnsPrizeMoney[] = _("オーキド『うむ! みごとじゃ!\pかつと しょうきんが もらえ\nポケモンも つよく なっていく!\pおおくの トレーナーと しょうぶして\nポケモンを きたえて いくことじゃ!\p");
+static const u8 sText_HowDissapointing[] = _("オーキド『ふむ… ざんねんじゃ…\pかつと しょうきんが もらえ\nポケモンも つよく なるのじゃが…\pまけて しまうと {B_PLAYER_NAME}が\nしょうきんを わたす ことになる…\pまぁ いきなり だったからのう…\nこんかいは わしが だしておこう\pそとに でたら こうは いかんから\nやせいの ポケモンと たたかって\lポケモンを きたえて いくのじゃぞ…\p");
+static const u8 gText_WhatWillOldManDo[] = _("おじいさんは どうする?");
 
 static void (*const sOakOldManBufferCommands[CONTROLLER_CMDS_COUNT])(enum BattlerId battler) =
 {
