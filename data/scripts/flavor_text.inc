@@ -130,7 +130,7 @@ Text_DishesPlatesNeatlyLinedUp::
 	.string "いろんな しょっきが\nきれいに ならんでいる!$"
 
 Text_Kitchen::
-	.string "いい においがする! なにか\zりょうりを つくったあと みたい!$"
+	.string "いい においがする! なにか\nりょうりを つくったあと みたい!$"
 
 Text_Dresser::
 	.string "きれいな タンスだ!\nいろんな ものが はいりそう!$"

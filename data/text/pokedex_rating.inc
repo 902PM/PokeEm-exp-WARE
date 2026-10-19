@@ -76,122 +76,74 @@ gBirchDexRatingText_OnANationwideBasis::
 @ FRLG
 
 PokedexRating_Text_HowIsPokedexComingAlong::
-	.string "OAK: Good to see you!\n"
-	.string "How is your POKeDEX coming along?\p"
-	.string "Here, let me take a look.$"
+	.string "オーキド『よく きた!\nポケモンずかんの\lちょうしは どうかな?\lどれ… ちょっと\lみて あげようか!$"
 
 PokedexRating_Text_SeenXOwnedY::
-	.string "The amount of progress you've made\n"
-	.string "on your POKeDEX is:\p"
-	.string "{STR_VAR_1} POKeMON seen and\n"
-	.string "{STR_VAR_2} POKeMON owned.\p"
-	.string "{FONT_NORMAL}PROF. OAK's rating:$"
+	.string "… … ポケモンずかんの\nげんざいの かんせいど は…\pみつけた ポケモン {STR_VAR_1}!\nつかまえた ポケモン {STR_VAR_2}!\p{FONT_NORMAL}オーキドはかせの ひょうか…$"
 
 PokedexRating_Text_LessThan10::
-	.string "You still have lots to do.\p"
-	.string "Go into every patch of grass you\n"
-	.string "see and look for POKeMON!$"
+	.string "まだまだ… これからだ\nあちこちの くさむらに はいって\lポケモンを つかまえるのじゃ!$"
 
 PokedexRating_Text_LessThan20::
-	.string "It looks as if you're getting on\n"
-	.string "the right track!\p"
-	.string "I've given one of my AIDES a FLASH\n"
-	.string "HM. Make sure you go get it!$"
+	.string "どうにか ちょうしが でてきたな!\nじょしゅに フラッシュを\lもたせたぞ! もらって くれい!$"
 
 PokedexRating_Text_LessThan30::
-	.string "Your POKeDEX could use a bit more\n"
-	.string "volume still!\p"
-	.string "Try to catch other species of\n"
-	.string "POKeMON!$"
+	.string "ポケモンずかんに しては まだ\nボリュームが たりん! いろいろな\lしゅるいの ポケモンを とるのじゃ!$"
 
 PokedexRating_Text_LessThan40::
-	.string "Good, it's apparent that you're\n"
-	.string "trying hard!\p"
-	.string "I've given one of my AIDES an\n"
-	.string "ITEMFINDER. Be sure to collect it!$"
+	.string "ふむ… がんばってるな!\nじょしゅに ダウジングマシンを\lもたせたぞ! もらって くれい!$"
 
 PokedexRating_Text_LessThan50::
-	.string "Your POKeDEX is coming along quite\n"
-	.string "well!\p"
-	.string "I've given one of my AIDES an\n"
-	.string "AMULET COIN. Be sure to get it!$"
+	.string "いい できばえ じゃないか!\nじょしゅに おまもりこばんを\lもたせたぞ! もらって くれい!$"
 
 PokedexRating_Text_LessThan60::
-	.string "Ah, you've finally topped 50\n"
-	.string "species!\p"
-	.string "I've given one of my AIDES an EXP.\n"
-	.string "SHARE. Be sure to go get it!$"
+	.string "ついに 50しゅるいを こえたか!\nじょしゅに がくしゅうそうちを\lもたせたぞ! もらって くれい!$"
 
 PokedexRating_Text_LessThan70::
-	.string "Hoho! This is turning into quite the\n"
-	.string "respectable POKeDEX!$"
+	.string "ほっほう! … こりゃ いい\nポケモンずかんに なって きとる!$"
 
 PokedexRating_Text_LessThan80::
-	.string "Very good!\p"
-	.string "I think you'll collect even more\n"
-	.string "POKeMON by going fishing!$"
+	.string "ぜっこうちょう! うみで ポケモン\nつれば もっと あつまり そうじゃ!$"
 
 PokedexRating_Text_LessThan90::
-	.string "Wonderful! Let me guess… You\n"
-	.string "like to collect things, don't you?$"
+	.string "ワンダフル! もしかして きみは\nものを あつめるの すきなのか…?$"
 
 PokedexRating_Text_LessThan100::
-	.string "I'm impressed!\n"
-	.string "It must have been difficult to do!$"
+	.string "いやはや… こりゃ すごい!\nあつめるのは たいへん だったろ!$"
 
 PokedexRating_Text_LessThan110::
-	.string "You've finally hit 100 species!\n"
-	.string "I can't believe how good you are!$"
+	.string "とうとう 100しゅるい こえたか!\n… しんじられない うでまえじゃ!$"
 
 PokedexRating_Text_LessThan120::
-	.string "You even have the evolved forms\n"
-	.string "of POKeMON! Super!$"
+	.string "ポケモンの しんか けいたいも\nはいって きとる… すばらしい!$"
 
 PokedexRating_Text_LessThan130::
-	.string "Excellent! Trade with friends to\n"
-	.string "get some more!$"
+	.string "エクセレント! ともだちと こうかん\nすると もっと あつまる かもしれん$"
 
 PokedexRating_Text_LessThan140::
-	.string "Outstanding!\n"
-	.string "You've become a real pro at this!$"
+	.string "ここまで ずかんが できたら\nもはや プロフェッショナル じゃ!$"
 
 PokedexRating_Text_LessThan150::
-	.string "I have nothing left to say!\n"
-	.string "You're the POKeMON PROFESSOR now!$"
+	.string "わしゃ もう いうことは ない!\nきみが ポケモンはかせ じゃ!$"
 
 PokedexRating_Text_Complete::
-	.string "Your POKeDEX is entirely complete!\n"
-	.string "Congratulations!!$"
+	.string "ついに パーフェクトな ずかんの\nかんせいじゃ! … おめでとう!$"
 
 PokedexRating_Text_NationalDexSeenXOwnedY::
-	.string "And your NATIONAL POKeDEX is:\p"
-	.string "{STR_VAR_1} POKeMON seen and\n"
-	.string "{STR_VAR_2} POKeMON owned.$"
+	.string "そして ぜんこくずかんは…\pみつけた ポケモン {STR_VAR_1}\nつかまえた ポケモン {STR_VAR_2} じゃ$"
 
 PokedexRating_Text_LookForwardToFilledNationalDex::
-	.string "I'll be looking forward to seeing\n"
-	.string "you fill the NATIONAL POKeDEX!$"
+	.string "ぜんこくずかんの かんせいを\nたのしみに して おるぞー!$"
 
 PokedexRating_Text_YouveCompletedDex::
-	.string "Finally…\p"
-	.string "You've finally completed the\n"
-	.string "POKeDEX!\p"
-	.string "It's magnificent!\n"
-	.string "Truly, this is a fantastic feat!$"
+	.string "ついに…\nほんとうに ほんとうに\lものすごくて すてきで\lかんぺきな ポケモンずかんを\lかんせい させたの じゃな…!$"
 
 PokedexRating_Text_Wroooaaarrr::
-	.string "Wroooooooaaaaaarrrr!$"
+	.string "おおおおおーッ!$"
 
 PokedexRating_Text_ThankYouMadeDreamReality::
-	.string "Thank you, {PLAYER}!\n"
-	.string "Sincerely, thank you!\l"
-	.string "You've made my dream a reality!$"
+	.string "ありがとう {PLAYER}\nほんとうに ありがとう!\lわしの ゆめが かなった!$"
 
 PokedexRating_Text_LoveSeeingYourPokedex::
-	.string "OAK: Ah, welcome!\p"
-	.string "Tell me, how is your POKeDEX\n"
-	.string "coming along?\p"
-	.string "Wahaha!\p"
-	.string "Actually, I know how it is, but I\n"
-	.string "love seeing it anyway!\p"
-	.string "Let's see…$"
+	.string "オーキド『よく きた!\nポケモンずかんの\lちょうしは どうかな?\pわはは…! ほんとうは\nもう わかって おるのじゃが\lなんどでも たしかめたいんじゃ!\pどれどれ…$"
+

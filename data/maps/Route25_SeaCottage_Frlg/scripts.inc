@@ -296,110 +296,47 @@ Route25_SeaCottage_Movement_BillExitTeleporter::
 	step_end
 
 Route25_SeaCottage_Text_ImBillHelpMeOutPal::
-	.string "Hiya! I'm a POKEMON…\n"
-	.string "…No I'm not!\p"
-	.string "Call me BILL!\n"
-	.string "I'm a true-blue POKeMANIAC!\p"
-	.string "Hey!\n"
-	.string "What's with that skeptical look?\p"
-	.string "I'm not joshing you, pal.\p"
-	.string "I screwed up an experiment and got\n"
-	.string "combined with a POKEMON!\p"
-	.string "So, how about it?\n"
-	.string "Help me out here!$"
+	.string "こんちわ!\nぼく ポケモン…!\l… ちゃうわい!\pわいは マサキ!\nひと よんで ポケモンマニアや!\lあッ なんや そのめは?\lあんさん しんよう してへんな\pホントやで!\nじっけんに しっぱい して\lポケモンと くっついて もうたんや\pなッ!\nたすけて くれへん?$"
 
 Route25_SeaCottage_Text_ImBillHelpMeOutLady::
-	.string "Hiya! I'm a POKEMON…\n"
-	.string "…No I'm not!\p"
-	.string "Call me BILL!\n"
-	.string "I'm a true-blue POKeMANIAC!\p"
-	.string "Hey!\n"
-	.string "What's with that skeptical look?\p"
-	.string "I'm not joshing you, lady.\p"
-	.string "I screwed up an experiment and got\n"
-	.string "combined with a POKEMON!\p"
-	.string "So, how about it?\n"
-	.string "Help me out here!$"
+	.string "こんちわ!\nぼく ポケモン…!\l… ちゃうわい!\pわいは マサキ!\nひと よんで ポケモンマニアや!\lあッ なんや そのめは?\lねえさん しんよう してへんな\pホントやで!\nじっけんに しっぱい して\lポケモンと くっついて もうたんや\pなッ!\nたすけて くれへん?$"
 
 Route25_SeaCottage_Text_RunCellSeparationOnPC::
-	.string "Wait till I get inside the\n"
-	.string "TELEPORTER.\p"
-	.string "When I do, go to my PC and run\n"
-	.string "the Cell Separation System.$"
+	.string "わいが\nてんそう マシンに はいるさかい\lぶんり プログラムを たのむで!\lそうや そこの パソコンや!$"
 
 Route25_SeaCottage_Text_NoPleaseChief::
-	.string "No!?\n"
-	.string "Now don't be so cold!\p"
-	.string "Come on, you gotta help a guy in\n"
-	.string "deep, deep trouble!\p"
-	.string "What do you say, chief?\n"
-	.string "Please?\l"
-	.string "Okay?\l"
-	.string "All right!$"
+	.string "そんなあ…\nつめたい こと いわんといて\lよッ… いろおとこ!\lにくいねーッ\lだいとうりょう!\lほな! オッケー やな!\lきまりや!$"
 
 Route25_SeaCottage_Text_NoPleaseBeautiful::
-	.string "No!?\n"
-	.string "Now don't be so cold!\p"
-	.string "Come on, you gotta help a guy in\n"
-	.string "deep, deep trouble!\p"
-	.string "What do you say, beautiful?\n"
-	.string "Please?\l"
-	.string "Okay?\l"
-	.string "All right!$"
+	.string "そんなあ…\nつめたい こと いわんといて\lよッ… いいおんな!\lにくいねーッ\lミス カントー!\lほな! オッケー やな!\lきまりや!$"
 
 Route25_SeaCottage_Text_ThanksBudTakeThis::
-	.string "BILL: Yeehah!\n"
-	.string "Thanks, bud! I owe you one!\p"
-	.string "So, did you come to see my\n"
-	.string "POKEMON collection?\p"
-	.string "You didn't?\n"
-	.string "That's a bummer.\p"
-	.string "I've got to thank you…\n"
-	.string "Oh, here, maybe this'll do.$"
+	.string "マサキ『やあー!\nおおきに おおきに たすかったわ!\pで… あんさん!\nわての ポケモン コレクション\lみに きたの ちゃうんか?\lなんや おもろないなー\lああ そや!\pおれい っちゅーのも\nなんやけど… これ やるわ!$"
 
 Route25_SeaCottage_Text_ThanksLadyTakeThis::
-	.string "BILL: Yeehah!\n"
-	.string "Thanks, lady! I owe you one!\p"
-	.string "So, did you come to see my\n"
-	.string "POKEMON collection?\p"
-	.string "You didn't?\n"
-	.string "That's a bummer.\p"
-	.string "I've got to thank you…\n"
-	.string "Oh, here, maybe this'll do.$"
+	.string "マサキ『やあー!\nおおきに おおきに たすかったわ!\pで… ねえさん!\nわての ポケモン コレクション\lみに きたの ちゃうんか?\lなんや おもろないなー\lああ そや!\pおれい っちゅーのも\nなんやけど… これ やるわ!$"
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::
-	.string "{PLAYER} received an S.S. TICKET\n"
-	.string "from BILL.$"
+	.string "{PLAYER}は マサキから\nふねのチケットを もらった!$"
 
 Route25_SeaCottage_Text_YouveGotTooMuchStuff::
-	.string "You've got too much stuff!$"
+	.string "にもつ いっぱいで もてへんよ$"
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
-	.string "That cruise ship S.S. ANNE is in\n"
-	.string "VERMILION CITY.\p"
-	.string "I hear there are lots of TRAINERS\n"
-	.string "on board, too.\p"
-	.string "They invited me to their party, but\n"
-	.string "I can't stand fancy do's.\p"
-	.string "Why don't you go instead of me?\n"
-	.string "Go on and have a good time.$"
+	.string "いま クチバの みなとに\nサント・アンヌごうが きとんのや\lポケモン トレーナーも\lぎょうさん くる らしいで\pチケット もろたのは ええんやけど\nパーティとか すきや ないからな\lかわりに いって あそんでえな$"
 
 Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
-	.string "BILL: Feel like checking out some\n"
-	.string "of my rare POKEMON on my PC?\p"
-	.string "Go on, check out my PC.$"
+	.string "マサキ『そや!\pわての ポケモン コレクション\nちびっと だけ みせたろか?\lわての パソコン みてみぃ$"
 
 Route25_SeaCottage_Text_TeleporterIsDisplayed::
-	.string "TELEPORTER is displayed on the PC\n"
-	.string "monitor.$"
+	.string "パソコンの がめんに\nてんそうマシンと でてます!$"
 
 Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator::
-	.string "{PLAYER} initiated the TELEPORTER's\n"
-	.string "Cell Separator.$"
+	.string "{PLAYER}は てんそうマシンの\nぶんり プログラムを きどう した!$"
 
 Route25_SeaCottage_Text_BillsFavoriteMonList::
-	.string "BILL's favorite POKEMON list!$"
+	.string "マサキくんの\nおきにいり ポケモン リスト!$"
 
 Route25_SeaCottage_Text_SeeWhichMon::
-	.string "Which POKEMON do you want to see?$"
+	.string "どれを みせて もらい ますか?$"
 

@@ -1,130 +1,92 @@
 @ Same as Hoenn's day-care text, used by the Four Island Day-Care. Unused text translated in Emerald
 
 DayCare_Text_ImDaycareManSpeakToMyWife::
-	.string "I'm the DAY-CARE MAN.\p"
-	.string "I help take care of the precious\n"
-	.string "POKeMON of TRAINERS.\p"
-	.string "If you'd like me to raise your\n"
-	.string "POKeMON, have a word with my wife.$"
+	.string "わしは そだてや じいさんじゃ\pみんなの だいじな ポケモンの\nめんどうを みて おるのじゃよ\pなにか そだてて ほしければ\nばあさんに たのんで おくれ$"
 
 DayCare_Text_DoYouWantEgg::
-	.string "Ah, it's you!\p"
-	.string "We were raising your POKeMON, and\n"
-	.string "my goodness, were we surprised!\p"
-	.string "Your POKeMON had an EGG!\p"
-	.string "We don't know how it got there,\n"
-	.string "but your POKeMON had it.\p"
-	.string "You do want it, yes?$"
+	.string "おお! あんたか\pあずかっていた ポケモンを\nそだてていたら……なんと!\pポケモンが タマゴを\nもって おったんじゃ!\pどこから もってきたか わからんが\nあんたの ポケモンが\lもってたんじゃ\pやっぱり ほしいじゃろ?$"
 
 DayCare_Text_YourMonIsDoingFine::
-	.string "Ah, it's you! Good to see you.\n"
-	.string "Your {STR_VAR_1}'s doing fine.$"
+	.string "おお あんたか! よくきたな\n{STR_VAR_1}は げんきじゃぞ$"
 
 DayCare_Text_IllKeepIt::
-	.string "Well then, I'll keep it.\n"
-	.string "Thanks!$"
+	.string "それじゃ わしが もらおう\nありがとよ$"
 
 DayCare_Text_YouHaveNoRoomForIt::
-	.string "You have no room for it…\n"
-	.string "Come back when you've made room.$"
+	.string "てもちが いっぱいの ようじゃな…\nてもちを せいり してから\lまた きなさい$"
 
 DayCare_Text_ReceivedEgg::
-	.string "{PLAYER} received the EGG from\n"
-	.string "the DAY-CARE MAN.$"
+	.string "{PLAYER}は そだてや じいさんから\nタマゴを もらった!$"
 
 DayCare_Text_TakeGoodCareOfIt::
-	.string "Take good care of it.$"
+	.string "だいじに そだてなさいよ!$"
 
 DayCare_Text_SeeWifeIfYouWantToPickUpMon::
-	.string "ポケモンを ひきとりたい ときは\n"
-	.string "ばあさんに いって おくれ$"
+	.string "ポケモンを ひきとりたい ときは\nばさんに いって おくれ$"
 
 DayCare_Text_YourMonsAreDoingFine::
-	.string "Ah, it's you! Your {STR_VAR_1} and\n"
-	.string "{STR_VAR_2} are doing fine.$"
+	.string "おお あんたか! よくきたな\n{STR_VAR_1}も {STR_VAR_2}も\lとっても げんきじゃぞ$"
 
 DayCare_Text_IWillKeepDoYouWantIt::
-	.string "I really will keep it.\n"
-	.string "You do want this, yes?$"
+	.string "わしが もらって しまうぞ\nほんとうは ほしいんじゃろ?$"
 
 DayCare_Text_WouldYouLikeUsToRaiseMon::
-	.string "I'm the DAY-CARE LADY.\p"
-	.string "We can raise POKeMON for you.\p"
-	.string "Would you like us to raise one?$"
+	.string "わしは そだてや ばあさんじゃ\pおまえさんの かわりに ポケモンを\nそだてて あげるよ\pなにか そだてて ほしいのかい?$"
 
 DayCare_Text_WhichMonShouldWeRaise::
-	.string "Which POKeMON should we raise for\n"
-	.string "you?$"
+	.string "どのこを そだてて みるかね?$"
 
 DayCare_Text_WellRaiseYourMon::
-	.string "Fine, we'll raise your {STR_VAR_1}\n"
-	.string "for a while.\p"
-	.string "Come back for it later.$"
+	.string "それでは {STR_VAR_1}を\nしばらく あずかるぞ\pてきとうに じかんが\nたったら またきなさい$"
 
 DayCare_Text_WeCanRaiseOneMore::
-	.string "We can raise two of your POKeMON.\p"
-	.string "Would you like us to raise one\n"
-	.string "more POKeMON for you?$"
+	.string "2ひき までなら あずかれるけど\nもう 1ぴき そだてて みるかい?$"
 
 DayCare_Text_HusbandWasLookingForYou::
-	.string "My husband was looking for you.$"
+	.string "じいさんが あんたを\nさがして おったぞ$"
 
 DayCare_Text_FineThenComeAgain::
-	.string "Oh, fine, then.\n"
-	.string "Come again.$"
+	.string "そうかい\nそれじゃ また きておくれ$"
 
 DayCare_Text_NotEnoughMoney::
-	.string "You don't have enough money…$"
+	.string "おかねが たりない ようじゃのう…$"
 
 DayCare_Text_TakeOtherOneBackToo::
-	.string "Will you take back the other one,\n"
-	.string "too?$"
+	.string "もう 1ぴきも ひきとるかい?$"
 
 DayCare_Text_ComeAgain::
-	.string "Fine.\n"
-	.string "Come again.$"
+	.string "それじゃ また きておくれ$"
 
 DayCare_Text_GoodToSeeYou::
-	.string "Ah, it's you!\n"
-	.string "Good to see you.\p"
-	.string "Your POKeMON can only be doing\n"
-	.string "good!$"
+	.string "おお あんたか! よくきたな\nおまえさんの ポケモンは\lげんき じゃぞ$"
 
 DayCare_Text_YourMonHasGrownXLevels::
-	.string "By level, your {STR_VAR_1} has\n"
-	.string "grown by {STR_VAR_2}.$"
+	.string "{STR_VAR_1}は レベルで いうと\n{STR_VAR_2}くらい そだって おるぞ$"
 
 DayCare_Text_YourPartyIsFull::
-	.string "Your POKeMON party is full.\n"
-	.string "Make room, then come see me.$"
+	.string "てもちの ポケモンが いっぱいじゃ!\nてもちを せいり したら\lまた きなさい$"
 
 DayCare_Text_TakeBackWhichMon::
 	.string "どっちの ポケモンを ひきとるかい?$"
 
 DayCare_Text_ItWillCostX::
-	.string "If you want your {STR_VAR_1} back,\n"
-	.string "it will cost {STR_VAR_2} yen.$"
+	.string "{STR_VAR_1}を ひきとるなら\nりょうきんは {STR_VAR_2}円 だよ$"
 
 DayCare_Text_HeresYourMon::
-	.string "Perfect!\n"
-	.string "Here's your POKeMON.$"
+	.string "はいよ たしかに!\nじゃあ つれて おかえり!$"
 
 DayCare_Text_TookBackMon::
-	.string "{PLAYER} took back {STR_VAR_1} from\n"
-	.string "the DAY-CARE LADY.$"
+	.string "{PLAYER}は そだてや ばあさんから\n{STR_VAR_1}を ひきとった!$"
 
 DayCare_Text_YouHaveJustOneMon::
-	.string "Oh? But you have just one\n"
-	.string "POKeMON.\p"
-	.string "Come back another time.$"
+	.string "おや? ポケモンが\n1ぴき しか いないようだな\pまた きなさいよ$"
 
 DayCare_Text_TakeYourMonBack::
-	.string "Will you take your POKeMON back?$"
+	.string "ポケモンを ひきとるかい?$"
 
 DayCare_Text_WhatWillYouBattleWith::
-	.string "If you leave me that POKeMON,\n"
-	.string "what will you battle with?\p"
-	.string "Come back another time.$"
+	.string "その ポケモンを あずけると\nたたかえなく なるぞ\pまた きなさいよ$"
 
 DayCare_Text_Huh::
-	.string "Huh?$"
+	.string "おや…?$"
+
