@@ -114,18 +114,14 @@ Route16_NorthEntrance_1F_EventScript_OldMan::
 	end
 
 Route16_NorthEntrance_1F_Text_NoPedestriansOnCyclingRoad::
-	.string "No pedestrians are allowed on\n"
-	.string "CYCLING ROAD!$"
+	.string "サイクリング ロードは\nあるいて すすむと キケンです!\lじてんしゃに のって きてね$"
 
 Route16_NorthEntrance_1F_Text_CyclingRoadIsDownhillCourse::
-	.string "CYCLING ROAD is a downhill course\n"
-	.string "by the sea. It's a great ride.$"
+	.string "サイクリング ロードは\nうみを いく さかみち!\lかけおりると きもち いいよ!$"
 
 Route16_NorthEntrance_1F_Text_ExcuseMeWaitUp::
-	.string "Excuse me!\n"
-	.string "Wait up, please!$"
+	.string "ちょっと きみ きみ!$"
 
 Route16_NorthEntrance_1F_Text_HowdYouGetInGoodEffort::
-	.string "How'd you get in?\n"
-	.string "Good effort!$"
+	.string "こんな とこ よく きた!\nごくろうな こっちゃ!$"
 

@@ -43,10 +43,15 @@ Route10_PokemonCenter_1F_EventScript_Aide::
 	goto_if_lt VAR_0x8006, REQUIRED_OWNED_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route10_PokemonCenter_1F_Text_GreatHereYouGo
 	checkitemspace ITEM_EVERSTONE
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
+	goto_if_eq VAR_RESULT, FALSE, Route10_PokemonCenter_1F_EventScript_NoRoomForItem
 	giveitem_msg Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide, ITEM_EVERSTONE
 	setflag FLAG_GOT_EVERSTONE_FROM_OAKS_AIDE
 	msgbox Route10_PokemonCenter_1F_Text_ExplainEverstone
+	release
+	end
+
+Route10_PokemonCenter_1F_EventScript_NoRoomForItem::
+	msgbox Route10_PokemonCenter_1F_Text_NoRoomForItem
 	release
 	end
 
@@ -61,50 +66,26 @@ Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo::
 	return
 
 Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers::
-	.string "The types of POKEMON match up\n"
-	.string "differently with each other.\p"
-	.string "Every type is stronger than some\n"
-	.string "types and weaker than others.$"
+	.string "ポケモンは タイプに よって\nゆうりに たたかえる あいてと\lにがてな あいてが いるのだ$"
 
 Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
-	.string "A NUGGET is totally useless.\n"
-	.string "So I sold it for 5000 yen.$"
+	.string "つかいみち ないから きんのたまを\nうったら 5000円で うれた!$"
 
 Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
-	.string "I heard that ghosts haunt\n"
-	.string "LAVENDER TOWN.$"
+	.string "シオン タウンで\nゆうれい ポケモンが でるって\lみんな さわいでるよ$"
 
 Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
-	.string "Oh… {PLAYER}!\n"
-	.string "I've been looking for you!\p"
-	.string "It's me, one of the ever-present\n"
-	.string "AIDES to PROF. OAK.\p"
-	.string "If your POKeDEX has complete data\n"
-	.string "on twenty species, I'm supposed to\l"
-	.string "give you a reward from PROF. OAK.\p"
-	.string "He entrusted me with this\n"
-	.string "EVERSTONE.\p"
-	.string "So, {PLAYER}, let me ask you.\p"
-	.string "Have you gathered data on at least\n"
-	.string "twenty kinds of POKEMON?$"
+	.string "あ… {PLAYER}{KUN}\nさがして いたんですよ!\lぼく まいど おなじみ\lオーキドはかせの じょしゅです!\pポケモンずかんが 20しゅるい\nあつまってる ようなら\lはかせから かわらずのいしを\lわたすように いわれて います!\p{PLAYER}{KUN} どうですか?\nつかまえた ポケモンは\l20しゅるい より おおい かな?$"
 
 Route10_PokemonCenter_1F_Text_GreatHereYouGo::
-	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of POKEMON!\p"
-	.string "Congratulations!\n"
-	.string "Here you go!$"
+	.string "… … なるほど!\nつかまえた ポケモンは…\l{STR_VAR_3}しゅるい ですね!\nおめでとう!\pそれでは\nこれを おわたし します!$"
 
 Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide::
-	.string "{PLAYER} received the EVERSTONE\n"
-	.string "from the AIDE.$"
+	.string "{PLAYER}は じょしゅ から\nかわらずのいしを もらった!$"
 
 Route10_PokemonCenter_1F_Text_ExplainEverstone::
-	.string "Making POKEMON evolve certainly\n"
-	.string "can add to the POKeDEX.\p"
-	.string "However, at times, you may not\n"
-	.string "want a certain POKEMON to evolve.\p"
-	.string "In that case, give the EVERSTONE\n"
-	.string "to that POKEMON.\p"
-	.string "It will prevent evolution according\n"
-	.string "to the PROFESSOR.$"
+	.string "ポケモンを しんか させても\nずかんは ふえる けど…\pどうしても しんか させたくない\nポケモンが いたときは\lこれを ポケモンに もたせれば\lしんか しないんだって\lはかせが いって いました$"
+
+Route10_PokemonCenter_1F_Text_NoRoomForItem::
+	.string "{PLAYER}{KUN}の バッグ\nいっぱい みたい だね$"
 

@@ -35,30 +35,17 @@ Route1_EventScript_RouteSign::
 	end
 
 Route1_Text_WorkAtPokeMartTakeSample::
-	.string "Hi!\n"
-	.string "I work at a POKEMON MART.\p"
-	.string "It's part of a convenient chain\n"
-	.string "selling all sorts of items.\p"
-	.string "Please, visit us in VIRIDIAN CITY.\p"
-	.string "I know, I'll give you a sample.\n"
-	.string "Here you go!$"
+	.string "わたし フレンドリィ ショップの\nてんいん です\pべんりな どうぐや ですから\nトキワ シティで\lぜひ よって くださいね!\pそうだ!\nみほんを さしあげましょう\l… どうぞ!$"
 
 Route1_Text_ComeSeeUsIfYouNeedPokeBalls::
-	.string "Please come see us if you need\n"
-	.string "POKe BALLS for catching POKEMON.$"
+	.string "ポケモンを つかまえる\nモンスターボール かう ときも\lショップへ いらして ください!$"
 
 Route1_Text_PutPotionAway::
-	.string "{PLAYER} put the POTION away in\n"
-	.string "the BAG's ITEMS POCKET.$"
+	.string "{PLAYER}は キズぐすりを バッグの\nどうぐポケットに しまった!$"
 
 Route1_Text_CanJumpFromLedges::
-	.string "See those ledges along the road?\p"
-	.string "It's a bit scary, but you can jump\n"
-	.string "from them.\p"
-	.string "You can get back to PALLET TOWN\n"
-	.string "quicker that way.$"
+	.string "みちに だんさが あるだろ!\pとび おりるのは\nちょっと こわいけど…\pマサラ タウンに かえる ときは\nはやく かえれて いいよ$"
 
 Route1_Text_RouteSign::
-	.string "ROUTE 1\n"
-	.string "PALLET TOWN - VIRIDIAN CITY$"
+	.string "ここは 1ばん どうろ\nマサラ タウン … トキワ シティ$"
 

@@ -17,7 +17,7 @@ Route2_EastBuilding_EventScript_Aide::
 	goto_if_lt VAR_0x8006, REQUIRED_SEEN_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route2_EastBuilding_Text_GreatHereYouGo
 	checkitemspace ITEM_HM05
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
+	goto_if_eq VAR_RESULT, FALSE, Route10_PokemonCenter_1F_EventScript_NoRoomForItem
 	giveitem_msg Route2_EastBuilding_Text_ReceivedHM05FromAide, ITEM_HM05
 	setflag FLAG_GOT_HM05
 	msgbox Route2_EastBuilding_Text_ExplainHM05
@@ -39,34 +39,17 @@ Route2_EastBuilding_EventScript_Rocker::
 	end
 
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
-	.string "Hi! Remember me?\n"
-	.string "I'm one of PROF. OAK's AIDES.\p"
-	.string "If your POKeDEX has complete data\n"
-	.string "on ten species, I'm supposed to\l"
-	.string "give you a reward.\p"
-	.string "PROF. OAK entrusted me with\n"
-	.string "HM05 for you.\p"
-	.string "So, {PLAYER}, let me ask you.\p"
-	.string "Have you gathered data on at least\n"
-	.string "ten kinds of POKEMON?$"
+	.string "ぼく おぼえてます?\nほら…!\lオーキド はかせの じょしゅ です\pポケモンずかんが 10しゅるい\nあつまってる ようなら\lひでんマシン05を わたす よう\lはかせに いわれ ました\p…… それでは さっそく\n{PLAYER}{KUN}!\lつかまえた ポケモンは\l10しゅるい より おおい かな?$"
 
 Route2_EastBuilding_Text_GreatHereYouGo::
-	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of POKEMON!\p"
-	.string "Congratulations!\n"
-	.string "Here you go!$"
+	.string "… … なるほど!\nつかまえた ポケモンは…\l{STR_VAR_3}しゅるい ですね!\nおめでとう!\pそれでは\nこれを おわたし します!$"
 
 Route2_EastBuilding_Text_ReceivedHM05FromAide::
-	.string "{PLAYER} received HM05\n"
-	.string "from the AIDE.$"
+	.string "{PLAYER}は じょしゅ から\nひでんマシン05を もらった!$"
 
 Route2_EastBuilding_Text_ExplainHM05::
-	.string "HM05 contains the hidden move\n"
-	.string "FLASH.\p"
-	.string "FLASH lights up even the darkest\n"
-	.string "of caves and dungeons.$"
+	.string "ひでんの フラッシュで\nどんなに くらいばしょでも\lバッチリ あかるく なります$"
 
 Route2_EastBuilding_Text_CanGetThroughRockTunnel::
-	.string "Once a POKEMON learns FLASH, you\n"
-	.string "can get through ROCK TUNNEL.$"
+	.string "ポケモンが\nフラッシュを おぼえたら\lイワヤマトンネルが とおれるね$"
 
