@@ -6,158 +6,119 @@ Route14_EventScript_RouteSign::
 	end
 
 Route14_Text_CarterIntro::
-	.string "You need to use TMs to teach good\n"
-	.string "moves to POKEMON.$"
+	.string "つよい ポケモンに するなら\nやっぱり わざマシンで\lいい わざを おしえないとね!$"
 
 Route14_Text_CarterDefeat::
-	.string "Not good enough quite yet.$"
+	.string "まだまだって かんじだ$"
 
 Route14_Text_CarterPostBattle::
-	.string "You have some HMs, right? POKEMON\n"
-	.string "can't forget those moves easily.$"
+	.string "きみ ひでんマシンも もってるね\nあれで おぼえた わざは\lポケモンは 2どと わすれないよ$"
 
 Route14_Text_MitchIntro::
-	.string "My bird POKEMON should be ready\n"
-	.string "for battle.$"
+	.string "ぼくの とり ポケモン\nそろそろ…\lたたかわせて みようか!$"
 
 Route14_Text_MitchDefeat::
-	.string "Not ready yet!$"
+	.string "まだ はやかった$"
 
 Route14_Text_MitchPostBattle::
-	.string "My bird POKEMON need to learn\n"
-	.string "better moves.$"
+	.string "もっと つよい わざ\nおしえて から たたかわせよう$"
 
 Route14_Text_BeckIntro::
-	.string "They have TMs on sale at the\n"
-	.string "CELADON DEPT. STORE.\p"
-	.string "TMs aren't really rare, but not\n"
-	.string "many people have HMs.$"
+	.string "わざマシンは\nタマムシ デパート でも かえる!\lでも ひでんマシン もってる\lひとは すくないね$"
 
 Route14_Text_BeckDefeat::
-	.string "Aww, bummer!$"
+	.string "もう ダサダサ$"
 
 Route14_Text_BeckPostBattle::
-	.string "Try teaching POKEMON a move that's\n"
-	.string "the same type as it.\p"
-	.string "That apparently boosts the power\n"
-	.string "of the move.$"
+	.string "ポケモンの タイプと おなじ\nタイプの わざを おしえると\lわざの いりょくが\lおおきくなる らしいよ$"
 
 Route14_Text_MarlonIntro::
-	.string "Have you taught your bird POKEMON\n"
-	.string "how to FLY?\p"
-	.string "You'll be able to soar with it into\n"
-	.string "the sky!$"
+	.string "きみの とり ポケモンは\nきみを のせて そらを とぶ\lわざは おぼえたかい?$"
 
 Route14_Text_MarlonDefeat::
-	.string "Shot down in flames!$"
+	.string "ぼろまけ!$"
 
 Route14_Text_MarlonPostBattle::
-	.string "Bird POKEMON are my one true love.\n"
-	.string "I don't want to raise anything else.$"
+	.string "ぼくらは とりポケモンが\nだいすき だから…\lそれしか そだてたく ないよ$"
 
 Route14_Text_DonaldIntro::
-	.string "Have you heard the legend of the\n"
-	.string "winged mirages?$"
+	.string "まぼろしの つばさ という\nはなし きいた こと ある?$"
 
 Route14_Text_DonaldDefeat::
-	.string "Why?\n"
-	.string "Why'd I lose?$"
+	.string "どうして まけたかな$"
 
 Route14_Text_DonaldPostBattle::
-	.string "Well, the winged mirages are the\n"
-	.string "legendary bird POKEMON.\p"
-	.string "There are three of them: ARTICUNO,\n"
-	.string "ZAPDOS, and MOLTRES.$"
+	.string "でんせつに でてくる\nとり ポケモンの ことで\lフリーザー サンダー ファイヤーの\l3しゅるい いる!$"
 
 Route14_Text_BennyIntro::
-	.string "I'm not into it, but okay.\n"
-	.string "Let's go!$"
+	.string "きが のらない けど…\nしょうが ない! やるか!$"
 
 Route14_Text_BennyDefeat::
-	.string "I knew it!$"
+	.string "ああ… やっぱりな$"
 
 Route14_Text_BennyPostBattle::
-	.string "Winning, losing… It's insignificant\n"
-	.string "under this huge sky.$"
+	.string "そらの ひろさに くらべたら\nかち まけ なんて\lどうって こと ないのさ!$"
 
 Route14_Text_LukasIntro::
-	.string "C'mon, c'mon.\n"
-	.string "Let's go, let's go, let's go!$"
+	.string "おれ おれは せっかちだ!\nはやく はやく はやく しろ!$"
 
 Route14_Text_LukasDefeat::
-	.string "Arrg!\n"
-	.string "Lost! Get lost!$"
+	.string "まけた まけた\nおわりだ じゃあな$"
 
 Route14_Text_LukasPostBattle::
-	.string "What, what, what?\n"
-	.string "What do you want still?$"
+	.string "なんだ なんだ なんだ!\nまだ ようじが ある ある のか!$"
 
 Route14_Text_IsaacIntro::
-	.string "I need to burn some time.\n"
-	.string "Shut up and battle.$"
+	.string "ちょうど いいぜ!\nつべこべ いわずに あいて しな$"
 
 Route14_Text_IsaacDefeat::
-	.string "What?\n"
-	.string "You!?$"
+	.string "なんだ こらあ!$"
 
 Route14_Text_IsaacPostBattle::
-	.string "Raising POKEMON is a drag, man.$"
+	.string "どうも ちまちまと\nそだてる のは にがてだぜ!$"
 
 Route14_Text_GeraldIntro::
-	.string "We ride out here because of the\n"
-	.string "wide-open spaces.$"
+	.string "この あたりは\nたてものが すくねえ から\lよく はしりに くるぜ!$"
 
 Route14_Text_GeraldDefeat::
-	.string "Wipeout!$"
+	.string "おっと こけちまった!$"
 
 Route14_Text_GeraldPostBattle::
-	.string "It's cool you made your POKEMON so\n"
-	.string "strong.\p"
-	.string "Might is right!\n"
-	.string "And you know it!$"
+	.string "よく そこまで そだてたな!\nなんにしても…\pつよいって ことは\nたいした もんだぜ!$"
 
 Route14_Text_MalikIntro::
-	.string "POKEMON battle?\n"
-	.string "Cool! Rumble!$"
+	.string "ポケモン たいけつか!\nおもしろい! つきあうぜ!$"
 
 Route14_Text_MalikDefeat::
-	.string "Blown away!$"
+	.string "なっとく いかねえ$"
 
 Route14_Text_MalikPostBattle::
-	.string "You know who'd win, you and me\n"
-	.string "one-on-one!$"
+	.string "おれと おまえの\nちょくせつ たいけつ だったら\lおれが かつぜ!$"
 
 Route14_Text_RouteSign::
-	.string "ROUTE 14\n"
-	.string "West to FUCHSIA CITY$"
+	.string "ここは 14ばん どうろ\nにし … セキチク シティ$"
 
 Route14_Text_KiriIntro::
-	.string "KIRI: JAN, let's try really,\n"
-	.string "really hard together.$"
+	.string "キリ『エナちゃん\nがんばろうね$"
 
 Route14_Text_KiriDefeat::
-	.string "KIRI: Whimper…\n"
-	.string "We lost, didn't we?$"
+	.string "キリ『くすん\nまけちゃったね$"
 
 Route14_Text_KiriPostBattle::
-	.string "KIRI: Did we lose because of me?$"
+	.string "キリ『わたしの せいで\nまけちゃったのかな$"
 
 Route14_Text_KiriNotEnoughMons::
-	.string "KIRI: We can battle if you have\n"
-	.string "two POKEMON.$"
+	.string "キリ『ポケモンさん 2ひき いれば\nいっしょに たたかえるよ$"
 
 Route14_Text_JanIntro::
-	.string "JAN: KIRI, here we go!\n"
-	.string "We have to try hard!$"
+	.string "エナ『キリ いくよ!\nがんばろ!$"
 
 Route14_Text_JanDefeat::
-	.string "JAN: Eeeeh!\n"
-	.string "No fair!$"
+	.string "エナ『もー くやしー!$"
 
 Route14_Text_JanPostBattle::
-	.string "JAN: KIRI, don't cry!\n"
-	.string "We'll just try harder next time.$"
+	.string "エナ『キリ なかないの!\nまた がんばれば いいでしょ$"
 
 Route14_Text_JanNotEnoughMons::
-	.string "JAN: You want to battle?\n"
-	.string "You don't have enough POKEMON.$"
+	.string "エナ『しょうぶ するの?\nでも ポケモン たりないよ!$"
+

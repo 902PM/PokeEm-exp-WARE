@@ -35,23 +35,17 @@ Route16_House_EventScript_Fearow::
 	end
 
 Route16_House_Text_FoundMySecretRetreat::
-	.string "Oh, dear.\n"
-	.string "You've found my secret retreat.\p"
-	.string "Please don't tell anyone I'm here.\n"
-	.string "I'll make it up to you with this!$"
+	.string "あらま…!\nみつかっちゃったわね!\pわたしの こと\nだれにも いわないで\lこれ あげる から\l… おねがいよ$"
 
 Route16_House_Text_ReceivedHM02FromGirl::
-	.string "{PLAYER} received HM02\n"
-	.string "from the girl.$"
+	.string "{PLAYER}は おんなのこから\nひでんマシン02を もらった!$"
 
 Route16_House_Text_ExplainHM02::
-	.string "HM02 is FLY.\n"
-	.string "It's a wonderfully convenient move.\p"
-	.string "Please, put it to good use.$"
+	.string "ひでんマシン02は そらをとぶ!\nとても べんりな\lすばらしい わざ なの!\pだいじに つかってね!$"
 
 Route16_House_Text_DontHaveAnyRoomForThis::
-	.string "You don't have any room for this.$"
+	.string "あなた にもつ いっぱいよ$"
 
 Route16_House_Text_Fearow::
-	.string "FEAROW: Kyueen!$"
+	.string "オニドリル『キュイン!$"
 

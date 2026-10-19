@@ -67,7 +67,7 @@ Route11_EastEntrance_2F_EventScript_Aide::
 	goto_if_lt VAR_0x8006, REQUIRED_CAUGHT_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route11_EastEntrance_2F_Text_GreatHereYouGo
 	checkitemspace ITEM_ITEMFINDER
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
+	goto_if_eq VAR_RESULT, FALSE, Route10_PokemonCenter_1F_EventScript_NoRoomForItem
 	giveitem_msg Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide, ITEM_ITEMFINDER
 	setflag FLAG_GOT_ITEMFINDER
 	msgbox Route11_EastEntrance_2F_Text_ExplainItemfinder
@@ -85,54 +85,23 @@ Route11_EastEntrance_2F_EventScript_GetAideRequestInfo::
 	return
 
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
-	.string "Hi! Remember me?\n"
-	.string "I'm one of PROF. OAK's AIDES.\p"
-	.string "If your POKeDEX has complete data\n"
-	.string "on {STR_VAR_1} species, I'm supposed to\l"
-	.string "give you a reward.\p"
-	.string "PROF. OAK entrusted me with the\n"
-	.string "{STR_VAR_2} for you.\p"
-	.string "So, {PLAYER}, let me ask you.\p"
-	.string "Have you gathered data on at least\n"
-	.string "{STR_VAR_1} kinds of POKEMON?$"
+	.string "ぼく おぼえてます?\nほら…!\lオーキド はかせの じょしゅ です\pポケモンずかんが {STR_VAR_1}しゅるい\nあつまってる ようなら\l{STR_VAR_2}を わたす よう\lはかせに いわれ ました\p…… それでは さっそく\n{PLAYER}{KUN}!\lつかまえた ポケモンは\l{STR_VAR_1}しゅるい より おおい かな?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
-	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of POKEMON!\p"
-	.string "Congratulations!\n"
-	.string "Here you go!$"
+	.string "… … なるほど!\nつかまえた ポケモンは…\l{STR_VAR_3}しゅるい ですね!\nおめでとう!\pそれでは\nこれを おわたし します!$"
 
 Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
-	.string "{PLAYER} received the {STR_VAR_2}\n"
-	.string "from the AIDE.$"
+	.string "{PLAYER}は じょしゅ から\n{STR_VAR_2}を もらった!$"
 
 Route11_EastEntrance_2F_Text_ExplainItemfinder::
-	.string "There are items on the ground that\n"
-	.string "may be hidden from view.\p"
-	.string "Use the ITEMFINDER to detect any\n"
-	.string "hidden items close to you.\p"
-	.string "The machine is a bit limited.\n"
-	.string "It can't pinpoint item locations.\p"
-	.string "What it does is show the direction\n"
-	.string "where the item is.\p"
-	.string "Use it to get your bearings, then\n"
-	.string "search the suspect area by hand.$"
+	.string "めに みえて なくても\nべんりな どうぐが\lあちこちに おちて います!\pダウジング マシンで\nちかくに なにか おちてるか\lどうかが わかります!\pくわしい ばしょは\nマシンでも わかりません!\pマシンがしめす ほうこうに\nどうぐは おちて いますから\lその しるしを たよりに\lちかくを さがして みて ください$"
 
 Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "A big POKEMON is asleep on a road!$"
+	.string "ぼうえんきょうを のぞいた!\pどうろに ポケモンが ねてる!$"
 
 Route11_EastEntrance_2F_Text_WhatABreathtakingView::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "What a breathtaking view!$"
+	.string "ぼうえんきょうを のぞいた!\pすばらしい けしきだ!$"
 
 Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "To get to LAVENDER TOWN from\n"
-	.string "CERULEAN CITY…\p"
-	.string "ROCK TUNNEL appears to be a good\n"
-	.string "route to take.$"
+	.string "ぼうえんきょうを のぞいた!\pシオン タウンに いく には…\nハナダ シティ から\lイワヤマを ぬければ よさそう…$"
 

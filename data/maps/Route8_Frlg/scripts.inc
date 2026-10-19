@@ -6,164 +6,128 @@ Route8_EventScript_UndergroundPathSign::
 	end
 
 Route8_Text_AidanIntro::
-	.string "You look good at POKEMON, but how\n"
-	.string "is your chemistry grade?$"
+	.string "きみ ポケモン つよそう だけど\nりかは とくい なのかい?$"
 
 Route8_Text_AidanDefeat::
-	.string "Ow!\n"
-	.string "Meltdown!$"
+	.string "がーん! ばったり$"
 
 Route8_Text_AidanPostBattle::
-	.string "I am better at school than this!$"
+	.string "ぼくは やっぱり\nべんきょうの ほうが あってる$"
 
 Route8_Text_StanIntro::
-	.string "All right!\n"
-	.string "Let's play a game!$"
+	.string "よっしゃ!\nたたかって うんだめし するか$"
 
 Route8_Text_StanDefeat::
-	.string "Drat!\n"
-	.string "Came up short!$"
+	.string "… きょうは\nしょうぶ うん わるし!$"
 
 Route8_Text_StanPostBattle::
-	.string "Things didn't work today.$"
+	.string "どうも きょうは ついてねえ\nじっと してよう$"
 
 Route8_Text_GlennIntro::
-	.string "You should be informed.\n"
-	.string "You need strategy to win at this!$"
+	.string "あのね\nたたかい には せんりゃくが\lひつよう なんだ$"
 
 Route8_Text_GlennDefeat::
-	.string "It's not logical!$"
+	.string "りかい できない!$"
 
 Route8_Text_GlennPostBattle::
-	.string "Go with GRIMER first…and…\n"
-	.string "…and…then…$"
+	.string "はじめに ベトベター だして…\nいいや ほかので いっきに…\l… うーん ブツ ブツ…$"
 
 Route8_Text_PaigeIntro::
-	.string "I like NIDORAN, so I collect them!$"
+	.string "あたし ニドラン すき だから\nたくさん あつめてるの$"
 
 Route8_Text_PaigeDefeat::
-	.string "Why?\n"
-	.string "Why??$"
+	.string "なんで なんでー$"
 
 Route8_Text_PaigePostBattle::
-	.string "When POKEMON grow up, they get\n"
-	.string "ugly! They shouldn't evolve.$"
+	.string "ポケモンって そだって くると\nかわいく なくなって きちゃう\lしんか しないほうが かわいいわ!$"
 
 Route8_Text_LeslieIntro::
-	.string "School is fun, but so are POKEMON.$"
+	.string "べんきょうも いいけど…\nポケモンも いいね$"
 
 Route8_Text_LeslieDefeat::
-	.string "You made it clear to me that\n"
-	.string "I should stick with school.$"
+	.string "… わかった\nぼくには べんきょう しか ない$"
 
 Route8_Text_LesliePostBattle::
-	.string "I was planning on getting some\n"
-	.string "fresh air for a change, but...\p"
-	.string "We're stuck here because of the\n"
-	.string "gates at SAFFRON.$"
+	.string "たまには そとの くうき すいに\nいこうと おもったのに\lヤマブキの ゲートの せいで\lみんな ここで あしどめだ$"
 
 Route8_Text_AndreaIntro::
-	.string "MEOWTH is so cute, meow, meow,\n"
-	.string "meow!$"
+	.string "ニャース って\nちょー かわいーの!\lにゃー にゃー にゃー!$"
 
 Route8_Text_AndreaDefeat::
-	.string "Meeeeyow!$"
+	.string "そんにゃー!$"
 
 Route8_Text_AndreaPostBattle::
-	.string "I think PIDGEY and RATTATA are\n"
-	.string "cute, too!$"
+	.string "やーん!\nポッポも コラッタも かわいー\lあたし まよっちゃう!$"
 
 Route8_Text_MeganIntro::
-	.string "We must look silly standing here\n"
-	.string "like this.$"
+	.string "こうして ならんでると\nはないち もんめ してる みたい$"
 
 Route8_Text_MeganDefeat::
-	.string "Look what you did to my poor, cute\n"
-	.string "POKEMON!$"
+	.string "ひどーい!\nみんな かわいい ポケモン なのに$"
 
 Route8_Text_MeganPostBattle::
-	.string "SAFFRON's gatekeeper won't let us\n"
-	.string "go through.\p"
-	.string "I know he's doing his job, but I\n"
-	.string "think he's mean.$"
+	.string "ヤマブキ シティの けいびいん\nゲート とおらせて くれないの\lまじめ だけど… いじわるね$"
 
 Route8_Text_RichIntro::
-	.string "I'm a rambling, gaming dude!$"
+	.string "おれは いまどき\nさすらいの ギャンブラー!$"
 
 Route8_Text_RichDefeat::
-	.string "Missed the big chance!$"
+	.string "…!\nここ いちばんを のがす とは!$"
 
 Route8_Text_RichPostBattle::
-	.string "Playing games and POKEMON are like\n"
-	.string "eating peanuts! I just can't stop!$"
+	.string "ギャンブルも ポケモンも\nしょうぶには かわりない!\lはじめたら やめられ ないのさ$"
 
 Route8_Text_JuliaIntro::
-	.string "What's a cute, round, and fluffy\n"
-	.string "POKEMON?$"
+	.string "まるくって ふわふわで\nぬいぐるみ みたいな ポケモン!\l… なーんだ?$"
 
 Route8_Text_JuliaDefeat::
-	.string "Stop!\p"
-	.string "Don't be so mean to my CLEFAIRY!$"
+	.string "やめてー!\pわたしの ピッピに\nらんぼう しないでよう!$"
 
 Route8_Text_JuliaPostBattle::
-	.string "I read that CLEFAIRY evolves when\n"
-	.string "it's exposed to a MOON STONE.\p"
-	.string "I read that in a POKEMON JOURNAL.\n"
-	.string "I wonder if it's true?$"
+	.string "つきのいしで ピッピが なんかに\nしんか するって\lポケモン ジャーナルで よんだの\l… ほんと かしら?$"
 
 Route8_Text_UndergroundPathSign::
-	.string "UNDERGROUND PATH\n"
-	.string "CELADON CITY - LAVENDER TOWN$"
+	.string "ここから ちかつうろ\nタマムシ … シオン$"
 
 Route8_Text_EliIntro::
-	.string "ELI: Twin power is fantastic.\n"
-	.string "Did you know?$"
+	.string "リナ『ふたごパワーは\nすごいんだよー$"
 
 Route8_Text_EliDefeat::
-	.string "ELI: But…\n"
-	.string "We used our twin power…$"
+	.string "リナ『ふたごパワー なのに…$"
 
 Route8_Text_EliPostBattle::
-	.string "ELI: I caught my POKEMON with\n"
-	.string "ANNE!$"
+	.string "リナ『カナと いっしょに\nポケモン とったんだ!$"
 
 Route8_Text_EliNotEnoughMons::
-	.string "ELI: We can't battle if you don't\n"
-	.string "have two POKEMON.$"
+	.string "リナ『ポケモンが 2ひき いないと\nしょうぶ できないよー$"
 
 Route8_Text_AnneIntro::
-	.string "ANNE: We'll shock you with our twin\n"
-	.string "power!$"
+	.string "カナ『ふたごパワーで\nびっくり させるよ!$"
 
 Route8_Text_AnneDefeat::
-	.string "ANNE: Our twin power…$"
+	.string "カナ『ふたごパワー なのに…$"
 
 Route8_Text_AnnePostBattle::
-	.string "ANNE: I'm raising POKEMON with\n"
-	.string "ELI.$"
+	.string "カナ『リナと いっしょに\nポケモン そだててるんだ!$"
 
 Route8_Text_AnneNotEnoughMons::
-	.string "ANNE: Hi, hi! Let's battle!\n"
-	.string "But bring two POKEMON.$"
+	.string "カナ『ねえねえ しょうぶ しようよ!\nポケモン 2ひき つれてきて!$"
 
 Route8_Text_RicardoIntro::
-	.string "My bike's acting up, man.$"
+	.string "なんか バイクの\nちょうしが わるいぜ$"
 
 Route8_Text_RicardoDefeat::
-	.string "Aww, man.\n"
-	.string "I'm not into this.$"
+	.string "あー うぜえ$"
 
 Route8_Text_RicardoPostBattle::
-	.string "I got grass caught up in my\n"
-	.string "spokes, man.$"
+	.string "タイヤに くさが\nからまっちまったんだ$"
 
 Route8_Text_JarenIntro::
-	.string "Clear the way, or I'll run you\n"
-	.string "down!$"
+	.string "ひかれたく なかったら\nそこ どきやがれ!$"
 
 Route8_Text_JarenDefeat::
-	.string "You for real, kid?$"
+	.string "マジかよ$"
 
 Route8_Text_JarenPostBattle::
-	.string "Don't think you're all special and\n"
-	.string "all just because of this.$"
+	.string "その ていどで\nかった きに なんなよな$"
+

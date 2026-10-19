@@ -9,24 +9,9 @@ Route11_EastEntrance_1F_EventScript_BottomGuard::
 	msgbox Route11_EastEntrance_1F_Text_RockTunnelToReachLavender, MSGBOX_NPC
 	end
 
-@ Unclear where this is originally from
-Route11_EastEntrance_1F_Text_BagIsFull::
-	.string "{PLAYER}{KUN}の バッグ\n"
-	.string "いっぱい みたい だね$"
-
 Route11_EastEntrance_1F_Text_ManInLavenderRatesNames::
-	.string "Don't you think it's hard to think\n"
-	.string "up good names for POKEMON?\p"
-	.string "Especially if you've caught a\n"
-	.string "whole bunch?\p"
-	.string "In LAVENDER TOWN, there's a man\n"
-	.string "who rates POKEMON nicknames.\p"
-	.string "He can even help you rename your\n"
-	.string "POKEMON, too.$"
+	.string "ポケモンを たくさん とると\nなまえを つけて あげるのに\lくろう しちゃう でしょ!\pこの さきの シオン タウンに\nポケモンの なまえを\lうらなって くれる ひとが いるよ\pポケモンに もっと いい なまえを\nつけ なおす ことも できるよ$"
 
 Route11_EastEntrance_1F_Text_RockTunnelToReachLavender::
-	.string "If you're aiming to reach LAVENDER\n"
-	.string "TOWN, take ROCK TUNNEL.\p"
-	.string "You can get to ROCK TUNNEL from\n"
-	.string "CERULEAN CITY.$"
+	.string "シオンタウンへ むかうなら\nイワヤマトンネルを ぬけるといいよ\pハナダシティから なら\nイワヤマトンネルに いけるよ$"
 

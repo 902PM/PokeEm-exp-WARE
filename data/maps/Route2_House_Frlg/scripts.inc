@@ -40,8 +40,5 @@ Route2_House_EventScript_AlreadyTraded::
 	end
 
 Route2_House_Text_FaintedMonsCanUseFieldMoves::
-	.string "A fainted POKEMON just has no\n"
-	.string "energy left to battle.\p"
-	.string "It can still use moves like CUT\n"
-	.string "outside of battle.$"
+	.string "ポケモンの ひんし じょうたいは\nたたかう げんきが ない だけで\pいあいぎり などの わざは\nいつもの ように つかえる!$"
 

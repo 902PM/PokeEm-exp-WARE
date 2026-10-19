@@ -17,88 +17,65 @@ Route10_EventScript_PowerPlantSign::
 	end
 
 Route10_Text_MarkIntro::
-	.string "Wow, you came all the way here?\n"
-	.string "Maybe you're a POKeMANIAC, too?\l"
-	.string "Want to see my collection?$"
+	.string "こんな とこ まで くる とは\nきみも マニア? … じゃ\lぼくの コレクション みる?$"
 
 Route10_Text_MarkDefeat::
-	.string "Humph.\n"
-	.string "I'm not angry!$"
+	.string "へーん…!\nくやしく ないよ!$"
 
 Route10_Text_MarkPostBattle::
-	.string "I have more rare POKEMON at home!$"
+	.string "うちに かえれば もっと\nめずらしい ポケモン あるもん$"
 
 Route10_Text_ClarkIntro::
-	.string "Ha-hahah-ah-ha!$"
+	.string "はーッ はっはッ!$"
 
 Route10_Text_ClarkDefeat::
-	.string "Ha-haha!\n"
-	.string "Not laughing!\l"
-	.string "Ha-hay fever! Haha-ha-choo!$"
+	.string "はッ!\nはーッ ははッ…! じつは…\lわらい キノコ たべて しまってな$"
 
 Route10_Text_ClarkPostBattle::
-	.string "Haha-ha-choo!\n"
-	.string "Ha-choo!\l"
-	.string "Snort! Snivel!$"
+	.string "はっはッ!\nはーッ はっ はッ!\l… はァ はァ…$"
 
 Route10_Text_HermanIntro::
-	.string "Hi, kid!\n"
-	.string "Want to see my POKEMON?$"
+	.string "ねー ねー!\nおたく ぼくの ポケモン みる?$"
 
 Route10_Text_HermanDefeat::
-	.string "Oh, no!\n"
-	.string "My POKEMON!$"
+	.string "ああー!\nだいじな ポケモン ちゃんが!$"
 
 Route10_Text_HermanPostBattle::
-	.string "I don't like you.\n"
-	.string "I don't like anyone better than me!$"
+	.string "… ぼく より\nつよい ヤツは キライ だもん$"
 
 Route10_Text_HeidiIntro::
-	.string "I've been out at a POKEMON GYM\n"
-	.string "a few times.\p"
-	.string "…But I always lose.$"
+	.string "わたしも たまに\nポケモン ジムに いくの!\l… … まけちゃう けどね$"
 
 Route10_Text_HeidiDefeat::
-	.string "Ohh!\n"
-	.string "After all my training!$"
+	.string "もお…!\nとっくん したのに$"
 
 Route10_Text_HeidiPostBattle::
-	.string "I noticed some POKeMANIACS\n"
-	.string "prowling around.\p"
-	.string "Can you imagine? Them?\n"
-	.string "Up here in the mountains?$"
+	.string "ねえ…!\nこんな やま みちに\lマニアが いる のよ… みた?$"
 
 Route10_Text_TrentIntro::
-	.string "Ah!\n"
-	.string "This mountain air is delicious!$"
+	.string "すーはー すーはー!\nやまの くうきは うまいッ!$"
 
 Route10_Text_TrentDefeat::
-	.string "That cleared my head!$"
+	.string "すーはーッ!\nあー まけたわい!$"
 
 Route10_Text_TrentPostBattle::
-	.string "I feel bloated on mountain air!$"
+	.string "やまの くうき\nすい すぎて はらが ふくれた!$"
 
 Route10_Text_CarolIntro::
-	.string "I'm feeling a bit faint.\n"
-	.string "I haven't hiked in some time.$"
+	.string "はァ…!\nやまみち ひさしぶりに あるいて\lひんけつ ぎみ なの$"
 
 Route10_Text_CarolDefeat::
-	.string "I'm too tired.\n"
-	.string "I wasn't up for it.$"
+	.string "… … たいちょうが\nわるいから しかた ないわ$"
 
 Route10_Text_CarolPostBattle::
-	.string "The POKEMON here in the mountains\n"
-	.string "are so chunky…\p"
-	.string "I wish there were pink POKEMON\n"
-	.string "with a floral pattern!$"
+	.string "やまの ポケモンって\nごついの ばっかり…\lピンクの はながらの\lポケモンが いれば いいのに$"
 
 Route10_Text_RockTunnelDetourToLavender::
-	.string "ROCK TUNNEL\n"
-	.string "Detour to LAVENDER TOWN$"
+	.string "ここは イワヤマ トンネル\nシオン タウンへの まわりみち$"
 
 Route10_Text_RockTunnel::
-	.string "ROCK TUNNEL$"
+	.string "ここは イワヤマ トンネル$"
 
 Route10_Text_PowerPlant::
-	.string "POWER PLANT$"
+	.string "ここは むじん はつでんしょ$"
 

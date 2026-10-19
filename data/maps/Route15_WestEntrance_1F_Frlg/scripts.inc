@@ -6,7 +6,5 @@ Route15_WestEntrance_1F_EventScript_Guard::
 	end
 
 Route15_WestEntrance_1F_Text_OaksAideCameByHere::
-	.string "Are you the kid who's working on\n"
-	.string "a POKeDEX?\p"
-	.string "PROF. OAK's AIDE came by here.$"
+	.string "ポケモンずかん\nつくってる こ って きみ?\pオーキドはかせの じょしゅの\nかたが きてたよ$"
 
