@@ -1,60 +1,44 @@
 Trade_Text_LookingForMonWannaTradeForMon::
-	.string "I'm looking for the POKeMON\n"
-	.string "{STR_VAR_1}!\p"
-	.string "Wanna trade one for my\n"
-	.string "{STR_VAR_2}?$"
+	.string "おれ {STR_VAR_1} さがしてるんだ!\pきみ もってたら {STR_VAR_2}と\nこうかんしようぜ?$"
 
 Trade_Text_AwwOhWell::
-	.string "Awww!\n"
-	.string "Oh, well…$"
+	.string "そんなー\n…まっ いっか$"
 
 Trade_Text_WhatThatsNoMon::
-	.string "What?\n"
-	.string "That's no {STR_VAR_1}!$"
+	.string "…なんだ\n{STR_VAR_1}じゃ ないじゃん$"
 
 Trade_Text_HeyThanks::
-	.string "Hey, thanks!$"
+	.string "サンキュー$"
 
 Trade_Text_IsntMyOldMonGreat::
-	.string "Isn't my old {STR_VAR_2} great?$"
+	.string "おれの やった\n{STR_VAR_2} イイだろ?$"
 
 Trade_Text_DoYouHaveMonWouldYouTradeForMon::
-	.string "Hello, there! Do you happen to\n"
-	.string "have a {STR_VAR_1}?\p"
-	.string "Would you agree to a trade for\n"
-	.string "my {STR_VAR_2}?$"
+	.string "これこれ\nきみ {STR_VAR_1} もっとる?\pわしの {STR_VAR_2}と\nこうかん しないか?$"
 
 Trade_Text_WellIfYouDontWantTo::
-	.string "Well, if you don't want to…$"
+	.string "まー ムリに とは いわんが$"
 
 Trade_Text_ThisIsntMon::
-	.string "Hmmm?\n"
-	.string "This isn't a {STR_VAR_1}.\p"
-	.string "Think of me if you get one.$"
+	.string "…む?\n{STR_VAR_1} では ないじゃないか\pてに いれた ときは\nよろしく たのむよ$"
 
 Trade_Text_Thanks::
-	.string "Thanks!$"
+	.string "ありがとよ$"
 
 Trade_Text_HasTradedMonGrownStronger::
-	.string "The {STR_VAR_2} that I traded you,\n"
-	.string "has it grown stronger?$"
+	.string "こうかんした {STR_VAR_2}\nつよくなったかい?$"
 
 Trade_Text_DoYouHaveMonWantToTradeForMon::
-	.string "Hi!\n"
-	.string "Do you have a {STR_VAR_1}?\p"
-	.string "Want to trade it for my\n"
-	.string "{STR_VAR_2}?$"
+	.string "ねー きみ\n{STR_VAR_1} もってる?\pわたしの {STR_VAR_2}と\nとりかえて くれない?$"
 
 Trade_Text_ThatsTooBad::
-	.string "That's too bad.$"
+	.string "イヤなら しょーがないな$"
 
 Trade_Text_ThisIsNoMon::
-	.string "…This is no {STR_VAR_1}.\p"
-	.string "If you get one, trade it with me.$"
+	.string "…… これ\n{STR_VAR_1}じゃ ないわー\pてに いれたら\nぜったい とりかえてよねっ!$"
 
 Trade_Text_ThanksYoureAPal::
-	.string "Thanks, you're a pal!$"
+	.string "ありがとね$"
 
 Trade_Text_HowIsMyOldMon::
-	.string "How is my old {STR_VAR_2}?\n"
-	.string "My {STR_VAR_1} is doing great!$"
+	.string "{STR_VAR_2} げんき?\nわたしの {STR_VAR_1}は げんきよ$"
