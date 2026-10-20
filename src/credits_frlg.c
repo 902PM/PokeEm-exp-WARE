@@ -346,8 +346,8 @@ static const struct WindowTemplate sWindowTemplates_Pikachu[] = {
 
 
 
-ALIGNED(4) const u8 gString_PokemonFireRed_Staff[] = _("Pokémon FireRed Version\nStaff");
-ALIGNED(4) const u8 gString_PokemonLeafGreen_Staff[] = _("Pokémon LeafGreen Version\nStaff");
+ALIGNED(4) const u8 gString_PokemonFireRed_Staff[] = _("Pokemon FireRed Version\nStaff");
+ALIGNED(4) const u8 gString_PokemonLeafGreen_Staff[] = _("Pokemon LeafGreen Version\nStaff");
 ALIGNED(4) const u8 gCreditsString_Director[] = _("\n\nDirector\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Junichi_Masuda[] = _("\n\n\nJunichi Masuda\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Art_Director_Battle_Director[] = _("\nArt Director\n\nBattle Director\n\n\n");
@@ -376,13 +376,13 @@ ALIGNED(4) const u8 gCreditsString_Script_Designer_Map_Designer[] = _("\nScript 
 ALIGNED(4) const u8 gCreditsString_Satoshi_Nohara_Shigeru_Ohmori[] = _("\n\nSatoshi Nohara\n\nShigeru Ohmori\n\n");
 ALIGNED(4) const u8 gCreditsString_Parametric_Designers[] = _("\nParametric Designers\n\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Koji_Nishino_Tetsuji_Ohta_Shigeki_Morimoto[] = _("\n\nKoji Nishino\nTetsuji Ohta\nShigeki Morimoto\n\n");
-ALIGNED(4) const u8 gCreditsString_POKeDEX_Text[] = _("\n\nPOKéDEX Text\n\n\n\n");
+ALIGNED(4) const u8 gCreditsString_POKeDEX_Text[] = _("\n\nPOKeDEX Text\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Kenji_Matsushima[] = _("\n\n\nKenji Matsushima\n\n\n");
-ALIGNED(4) const u8 gCreditsString_POKeMON_Designers[] = _("POKéMON Designers\n\n\n\n\n\n");
+ALIGNED(4) const u8 gCreditsString_POKeMON_Designers[] = _("POKeMON Designers\n\n\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Ken_Sugimori_Motofumi_Fujiwara_Shigeki_Morimoto_Hironobu_Yoshida[] = _("\nKen Sugimori\nMotofumi Fujiwara\nShigeki Morimoto\nHironobu Yoshida\n\n");
-ALIGNED(4) const u8 gCreditsString_POKeMON_Designers_2[] = _("POKéMON Designers\n\n\n\n\n\n");
+ALIGNED(4) const u8 gCreditsString_POKeMON_Designers_2[] = _("POKeMON Designers\n\n\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Satoshi_Ohta_Asuka_Iwashita_Takao_Unno_Kanako_Eo_Aimi_Tomita[] = _("\nSatoshi Ohta\nAsuka Iwashita\nTakao Unno\nKanako Eo\nAimi Tomita\n");
-ALIGNED(4) const u8 gCreditsString_POKeMON_Designers_3[] = _("POKéMON Designers\n\n\n\n\n\n");
+ALIGNED(4) const u8 gCreditsString_POKeMON_Designers_3[] = _("POKeMON Designers\n\n\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Atsuko_Nishida_Muneo_Saito_Rena_Yoshikawa_Jun_Okutani[] = _("\nAtsuko Nishida\nMuneo Saito\nRena Yoshikawa\nJun Okutani\n\n");
 ALIGNED(4) const u8 gCreditsString_Supporting_Programmers[] = _("Supporting Programmers\n\n\n\n");
 ALIGNED(4) const u8 gCreditsString_Teruyuki_Yoshioka_Takao_Nakano_Satoshi_Mitsuhara_Daisuke_Hoshino[] = _("\nTeruyuki Yoshioka\nTakao Nakano\n\nSatoshi Mitsuhara\nDaisuke Hoshino\n");

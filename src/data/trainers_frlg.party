@@ -99,7 +99,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_8 ===
 Name: ダミー
-Class: Cooltrainer M
+Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Serious
@@ -112,7 +112,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_9 ===
 Name: ダミー
-Class: Cooltrainer F
+Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Serious
@@ -502,7 +502,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_39 ===
 Name: ダミー
-Class: CYCLING TRIATHLETE
+Class: TRIATHLETE
 Pic: CYCLING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -515,7 +515,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_40 ===
 Name: ダミー
-Class: CYCLING TRIATHLETE
+Class: TRIATHLETE
 Pic: CYCLING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -528,7 +528,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_41 ===
 Name: ダミー
-Class: RUNNING TRIATHLETE
+Class: TRIATHLETE
 Pic: RUNNING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -541,7 +541,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_42 ===
 Name: ダミー
-Class: RUNNING TRIATHLETE
+Class: TRIATHLETE
 Pic: RUNNING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -554,7 +554,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_43 ===
 Name: ダミー
-Class: SWIMMING_TRIATHLETE
+Class: TRIATHLETE
 Pic: SWIMMING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -567,7 +567,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_44 ===
 Name: ダミー
-Class: SWIMMING_TRIATHLETE
+Class: TRIATHLETE
 Pic: SWIMMING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -827,7 +827,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_64 ===
 Name: ダミー
-Class: POKEMON BREEDER
+Class: PKMN BREEDER
 Pic: POKEMON BREEDER M
 Gender: Male
 Music: Serious
@@ -840,7 +840,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_65 ===
 Name: ダミー
-Class: POKEMON BREEDER
+Class: PKMN BREEDER
 Pic: POKEMON BREEDER F
 Gender: Female
 Music: Cute
@@ -853,7 +853,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_66 ===
 Name: ダミー
-Class: POKEMON RANGER
+Class: PKMN RANGER
 Pic: POKEMON RANGER M
 Gender: Male
 Music: Serious
@@ -866,7 +866,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUMMY_67 ===
 Name: ダミー
-Class: POKEMON RANGER
+Class: PKMN RANGER
 Pic: POKEMON RANGER F
 Gender: Female
 Music: Serious
@@ -2669,7 +2669,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smog
 - Self Destruct
 
-=== TRAINER_SUPER_DUMMY_1 ===
+=== TRAINER_SUPER_NERD_DUMMY_1 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -2681,7 +2681,7 @@ Ekans
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SUPER_DUMMY_2 ===
+=== TRAINER_SUPER_NERD_DUMMY_2 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -2693,7 +2693,7 @@ Ekans
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_SUPER_DUMMY_3 ===
+=== TRAINER_SUPER_NERD_DUMMY_3 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -10176,18 +10176,6 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_DUMMY_7 ===
-Name: ダミー
-Class: Bug Catcher Frlg
-Pic: Bug Catcher Frlg
-Gender: Male
-Music: Serious
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_BUG_CATCHER_DUMMY_8 ===
 Name: ダミー
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
