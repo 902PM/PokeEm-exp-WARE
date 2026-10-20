@@ -99,7 +99,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_8 ===
 Name: ダミー
-Class: Cooltrainer M
+Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Serious
@@ -112,7 +112,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_9 ===
 Name: ダミー
-Class: Cooltrainer F
+Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Serious
@@ -502,7 +502,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_39 ===
 Name: ダミー
-Class: CYCLING TRIATHLETE
+Class: TRIATHLETE
 Pic: CYCLING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -515,7 +515,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_40 ===
 Name: ダミー
-Class: CYCLING TRIATHLETE
+Class: TRIATHLETE
 Pic: CYCLING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -528,7 +528,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_41 ===
 Name: ダミー
-Class: RUNNING TRIATHLETE
+Class: TRIATHLETE
 Pic: RUNNING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -541,7 +541,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_42 ===
 Name: ダミー
-Class: RUNNING TRIATHLETE
+Class: TRIATHLETE
 Pic: RUNNING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -554,7 +554,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_43 ===
 Name: ダミー
-Class: SWIMMING_TRIATHLETE
+Class: TRIATHLETE
 Pic: SWIMMING TRIATHLETE M
 Gender: Male
 Music: Serious
@@ -567,7 +567,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_44 ===
 Name: ダミー
-Class: SWIMMING_TRIATHLETE
+Class: TRIATHLETE
 Pic: SWIMMING TRIATHLETE F
 Gender: Female
 Music: Cute
@@ -827,7 +827,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_64 ===
 Name: ダミー
-Class: POKEMON BREEDER
+Class: PKMN BREEDER
 Pic: POKEMON BREEDER M
 Gender: Male
 Music: Serious
@@ -840,7 +840,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_65 ===
 Name: ダミー
-Class: POKEMON BREEDER
+Class: PKMN BREEDER
 Pic: POKEMON BREEDER F
 Gender: Female
 Music: Cute
@@ -853,7 +853,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_66 ===
 Name: ダミー
-Class: POKEMON RANGER
+Class: PKMN RANGER
 Pic: POKEMON RANGER M
 Gender: Male
 Music: Serious
@@ -866,7 +866,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUMMY_67 ===
 Name: ダミー
-Class: POKEMON RANGER
+Class: PKMN RANGER
 Pic: POKEMON RANGER F
 Gender: Female
 Music: Serious
@@ -1261,7 +1261,7 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Zigzagoon-Galar
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1790,11 +1790,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Meowth-Alola
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Nidoran F
+Ponyta-Galar
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1807,11 +1807,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
+Rattata-Alola
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pikachu
+Wooper-Paldea
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1908,11 +1908,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bellsprout
+Rowlet
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Weepinbell
+Sprigatito
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1925,11 +1925,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
+Eldegoss
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Gloom
+Floragato
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -2061,11 +2061,11 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
+Wattrel
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pikachu
+Luxio
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -2392,11 +2392,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bulbasaur
+Cherrim
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ivysaur
+Roserade
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -2669,7 +2669,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Smog
 - Self Destruct
 
-=== TRAINER_SUPER_DUMMY_1 ===
+=== TRAINER_SUPER_NERD_DUMMY_1 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -2681,7 +2681,7 @@ Ekans
 Level: 5
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_SUPER_DUMMY_2 ===
+=== TRAINER_SUPER_NERD_DUMMY_2 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -2693,7 +2693,7 @@ Ekans
 Level: 5
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_SUPER_DUMMY_3 ===
+=== TRAINER_SUPER_NERD_DUMMY_3 ===
 Name: ダミー
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
@@ -3693,7 +3693,7 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
+Charjabug
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -3971,13 +3971,16 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Horsea
+Clauncher
 Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
 
-Shellder
+Chewtle
 Level: 16
+Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bite
 
 === TRAINER_SWIMMER_MALE_RICHARD ===
 Name: ハルキ
@@ -4542,19 +4545,19 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
+Shiinotic
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
+Lurantis
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Oddish
+Swadloon
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
+Maractus
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -4567,11 +4570,11 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Bellsprout
+Lilligant
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
+Whimsicott
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -4584,7 +4587,7 @@ Music: Cute
 Double Battle: No
 AI: Check Bad Move
 
-Exeggcute
+Steenee
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -6283,17 +6286,38 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Onix
+Excadrill (M)
 Level: 25
+Nature: Adamant
+Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Earthquake
+- Iron Head
+- Rock Tomb
+- Aerial Ace
 
-Rhyhorn
+Rhyhorn (M)
 Level: 24
+Nature: Adamant
+Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Stone Edge
+- Earthquake
+- Hammer Arm
+- Supercell Slam
 
-Kangaskhan
+Kangaskhan (F) @ Kangaskhanite
 Level: 29
+Nature: Adamant
+Ability: Scrappy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Double-Edge
+- Power-Up Punch
+- Stone Edge
+- Sucker Punch
 
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: サカキ
@@ -6304,21 +6328,49 @@ Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
 
-Nidorino
+Excadrill (M) @ Sitrus Berry
 Level: 37
+Nature: Adamant
+Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Earthquake
+- Iron Head
+- Rock Tomb
+- Aerial Ace
 
-Kangaskhan
+Kangaskhan (F) @ Kangaskhanite
 Level: 35
+Nature: Adamant
+Ability: Scrappy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Double-Edge
+- Power-Up Punch
+- Stone Edge
+- Sucker Punch
 
-Rhyhorn
+Rhydon (M) @ Eviolite
 Level: 37
+Nature: Adamant
+Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Stone Edge
+- Earthquake
+- Hammer Arm
+- Supercell Slam
 
-Nidoqueen
+Nidoqueen (F) @ Life Orb
 Level: 41
+Nature: Modest
+Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Heavy
+- Earth Power
+- Ice Beam
+- Sludge Bomb
+- Flamethrower
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: サカキ
@@ -6330,44 +6382,64 @@ Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Rhyhorn
+Hippowdon (M) @ Leftovers
 Level: 45
+Nature: Bold
+Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Rock Blast
-- Scary Face
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Heavy
 - Earthquake
+- Whirlwind
+- Stealth Rock
+- Slack Off
 
-Dugtrio
+Excadrill (M) @ Expert Belt
 Level: 42
+Nature: Adamant
+Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slash
-- Sand Tomb
-- Mud Slap
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Heavy
 - Earthquake
+- Iron Head
+- Rock Tomb
+- Aerial Ace
 
-Nidoqueen
+Nidoqueen (F) @ Life Orb
 Level: 44
+Nature: Modest
+Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Body Slam
-- Double Kick
-- Poison Sting
-- Earthquake
+EVs: 252 HP / 252 SpA / 6 Spe
+Ball: Heavy
+- Earth Power
+- Ice Beam
+- Sludge Bomb
+- Flamethrower
 
-Nidoking
+Ursaluna (M) @ Flame Orb
 Level: 45
+Nature: Adamant
+Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thrash
-- Double Kick
-- Poison Sting
-- Earthquake
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Heavy
+- Headlong Rush
+- Stone Edge
+- Play Rough
+- Supercell Slam
 
-Rhyhorn
+Rhyperior (M) @ Punching Glove
 Level: 50
+Nature: Adamant
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Rock Blast
-- Scary Face
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Heavy
+- Hammer Arm
+- Heat Crash
+- Supercell Slam
 - Earthquake
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
@@ -7738,7 +7810,7 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Bellsprout
+Floragato
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wrap
@@ -7746,7 +7818,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Poison Powder
 - Growth
 
-Oddish
+Thwackey
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Poison Powder
@@ -7754,7 +7826,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Absorb
 - Sweet Scent
 
-Weepinbell
+Dartrix
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Vine Whip
@@ -7762,7 +7834,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Poison Powder
 - Growth
 
-Gloom
+Servine
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Absorb
@@ -8136,48 +8208,79 @@ Gender: Female
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Dewgong
+Ninetales-Alola (F) @ Leftovers
 Level: 52
+Nature: Modest
+Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Luxury
+- Blizzard
+- Moonblast 
+- Psyshock
+- Ice Shard
 
-Cloyster
+Cloyster (F) @ Assault Vest
 Level: 51
+Nature: Jolly
+Ability: Skill Link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spikes
-- Protect
-- Hail
-- Dive
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Dive
+- Icicle Spear
+- Rock Blast
+- Razor Shell
+- Ice Shard
 
-Slowbro
+Slowbro (F) @ Slowbronite
 Level: 52
+Nature: Bold
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+Ball: Dive
+- Chilling Water
 - Ice Beam
-- Surf
 - Amnesia
-- Yawn
+- Slack Off
 
-Jynx
+Jynx (F) @ Life Orb
 Level: 54
+Nature: Timid
+Ability: Dry Skin
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Punch
-- Double Slap
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Luxury
+- Blizzard
+- Psychic
 - Lovely Kiss
-- Attract
+- Grass Knot
 
-Lapras @ Sitrus Berry
+Weavile (F) @ Dark Gem
 Level: 54
+Nature: Adamant
+Ability: Pickpocket
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Confuse Ray
-- Ice Beam
-- Surf
-- Body Slam
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Fake Out
+- Knock Off
+- Ice Punch
+- Low Kick
+
+Lapras (F) @ Weakness Policy
+Level: 54
+Nature: Modest
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+- Blizzard
+- Freeze-Dry
+- Sparkling Aria
+- Aurora Veil
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: シバ
@@ -8187,48 +8290,79 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
-Onix
+Gallade (M) @ Scope Lens
 Level: 51
+Nature: Adamant
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Psycho Cut
+- Leaf Blade
+- Aqua Cutter
+- Sacred Sword
 
-Hitmonchan
+Conkeldurr (M) @ Punching Glove
 Level: 53
+Nature: Adamant
+Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Luxury
+- Drain Punch
+- Ice Punch
+- Thunder Punch
+- Power-Up Punch
 
-Hitmonlee
+Quaquaval (M) @ Assault Vest
 Level: 53
+Nature: Adamant
+Ability: Moxie
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Close Combat
+- Liquidation
+- Ice Spinner
+- Flip Turn
 
-Onix
-Level: 54
+Kommo-o (M) @ Weakness Policy
+Level: 66
+Nature: Timid
+Ability: Bulletproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Edge
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Luxury
+- Focus Blast
+- Flamethrower
+- Clanging Scales
+- Flash Cannon
+
+Lucario (M) @ Lucarionite
+Level: 66
+Nature: Adamant
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Close Combat
+- Iron Head
+- Ice Punch
 - Earthquake
-- Iron Tail
-- Sand Tomb
 
-Machamp @ Sitrus Berry
+Machamp (M) @ Choice Band
 Level: 56
+Nature: Adamant
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+EVs: 252 HP / 252 Atk / 6 Spe
+- Dynamic Punch
+- Earthquake
+- Stone Edge
+- Darkest Lariat
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: キクコ
@@ -8238,48 +8372,80 @@ Gender: Female
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Pink
 
-Gengar
+Froslass (F) @ Focus Sash
 Level: 54
+Nature: Timid
+Ability: Cursed Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
-
-Golbat
-Level: 54
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
-
-Haunter
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
-
-Arbok
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
-
-Gengar @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Beast
 - Shadow Ball
+- Psychic
+- Thunderbolt
+- Ice Beam
+
+Houndstone (F) @ Leftovers
+Level: 54
+Nature: Adamant
+Ability: Fluffy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Beast
+- Psychic Fangs
+- Body Press
+- Last Respects
+- Crunch
+
+Decidueye (F) @ Muscle Band
+Level: 53
+Nature: Jolly
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Dusk
+- Spirit Shackle
+- Leaf Blade
+- Aerial Ace
+- U-turn
+
+Mismagius (F) @ Expert Belt
+Level: 56
+Nature: Timid
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
+- Shadow Ball
+- Psychic
+- Thunderbolt
+- Dark Pulse
+
+Chandelure (F) @ Chandelurite
+Level: 56
+Nature: Timid
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
+- Shadow Ball
+- Fire Blast
+- Energy Ball
+- Psychic
+
+Gengar (F) @ Black Sludge
+Level: 58
+Nature: Timid
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
+- Shadow Ball
+- Psychic
+- Thunderbolt
 - Sludge Bomb
-- Hypnosis
-- Nightmare
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: ワタル
@@ -8289,48 +8455,80 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
-Gyarados
+Gyarados (M) @ Wacan Berry
 Level: 56
+Nature: Adamant
+Ability: Moxie
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Rage
-- Twister
-- Bite
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
+- Waterfall
+- Earthquake
+- Ice Fang
+- Crunch
 
-Dragonair
+Garchomp (M) @ Expert Belt
 Level: 54
+Nature: Jolly
+Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Safeguard
-- Dragon Rage
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
 - Outrage
+- Earthquake
+- Stone Edge
+- Iron Head
 
-Dragonair
+Kingdra (M) @ Mystic Water
 Level: 54
+Nature: Adamant
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Safeguard
-- Thunder Wave
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
+- Wave Crash
+- Scale Shot
 - Outrage
+- Flip Turn
 
-Aerodactyl
+Charizard (M) @ Wise Glasses
 Level: 58
+Nature: Timid
+Ability: Solar Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Beast
+- Fire Blast
+- Air Slash
+- Focus Blast
+- Dragon Pulse
 
-Dragonite @ Sitrus Berry
-Level: 60
+Aerodactyl (M) @ Aerodactylite
+Level: 58
+Nature: Jolly
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
+- Stone Edge
+- Earthquake
+- Dual Wingbeat
+- Fire Fang
+
+Dragonite (M) @ Weakness Policy
+Level: 60
+Nature: Modest
+Ability: Multiscale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Beast
+- Draco Meteor
+- Fire Blast
+- Extreme Speed
+- Thunderbolt
 
 === TRAINER_LEADER_BROCK ===
 Name: タケシ
@@ -8339,18 +8537,25 @@ Pic: Leader Brock Frlg
 Gender: Male
 Music: Serious
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Geodude
+Geodude (M)
 Level: 12
+Nature: Adamant
+Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Defense Curl
+Ball: Heavy
+- Bulldoze
+- Rock Tomb
 
-Onix
+Onix (M) @ Figy Berry
 Level: 14
+Nature: Adamant
+Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
+Tera Type: TYPE_GROUND
+Ball: Heavy
+- Bulldoze
 - Bind
 - Rock Tomb
 
@@ -8362,23 +8567,28 @@ Gender: Female
 Music: Cute
 Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Staryu
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Harden
-- Recover
-- Water Pulse
+AI: Smart Trainer / Ace Pokemon
 
 Starmie
 Level: 21
+Nature: Modest
+Ability: Natural Cure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swift
-- Recover
-- Rapid Spin
+Ball: Dive
 - Water Pulse
+- Psybeam
+- Ice Beam
+
+Lapras (F) @ Weakness Policy
+Level: 24
+Nature: Modest
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Dynamax Level: 3
+Ball: Dive
+- Water Pulse
+- Icy Wind
+- Ice Shard
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: マチス
@@ -8388,31 +8598,40 @@ Gender: Male
 Music: Serious
 Items: Super Potion / Full Heal
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Voltorb
+Electrode
 Level: 21
+Nature: Modest
+Ability: Aftermath
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sonic Boom
-- Tackle
-- Screech
+Ball: Fast
 - Shock Wave
+- Swift
+- Gyro Ball
+- Eerie Impulse
 
-Pikachu
-Level: 18
+Graveler (M) @ Sitrus Berry
+Level: 22
+Nature: Adamant
+Ability: Galvanize
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
+Ball: Fast
+- Double-Edge
+- Rollout
+- Defense Curl
+- Fire Punch
 
-Raichu
+Raichu (M) @ Raichunite Y
 Level: 24
+Nature: Modest
+Ability: Static
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Thunder Wave
-- Double Team
+Ball: Fast
 - Shock Wave
+- Grass Knot
+- Surf
+- Quick Attack
 
 === TRAINER_LEADER_ERIKA ===
 Name: エリカ
@@ -8422,31 +8641,41 @@ Gender: Female
 Music: Cute
 Items: Hyper Potion / Full Heal
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Victreebel
+Victreebel (F)
 Level: 29
+Nature: Adamant
+Ability: Chlorophyll
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stun Spore
-- Acid
-- Poison Powder
-- Giga Drain
+Ball: Friend
+- Leaf Blade
+- Leech Life
+- Sucker Punch
+- Knock Off
 
-Tangela
+Tangrowth (F) @ Light Ball
 Level: 24
+Nature: Adamant
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Poison Powder
-- Constrict
-- Ingrain
-- Giga Drain
+Ball: Friend
+- Power Whip
+- Brick Break
+- Fling
+- Earthquake
 
-Vileplume
+Vileplume (F) @ Lum Berry
 Level: 29
+Nature: Modest
+Ability: Effect Spore
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Friend
+Tera Type: TYPE_GRASS
+- Petal Dance
+- Sludge Wave
+- Moonblast
 - Sleep Powder
-- Acid
-- Stun Spore
-- Giga Drain
 
 === TRAINER_LEADER_KOGA ===
 Name: キョウ
@@ -8456,38 +8685,50 @@ Gender: Male
 Music: Serious
 Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Koffing
+Overqwil (M) @ Black Sludge
 Level: 37
+Nature: Adamant
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Self Destruct
-- Sludge
-- Smokescreen
+Ball: Nest
+- Barb Barrage
+- Liquidation
+- Throat Chop
 - Toxic
 
-Muk
+Muk (M) @ Black Sludge
 Level: 39
+Nature: Adamant
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Minimize
-- Sludge
-- Acid Armor
+Ball: Nest
+- Gunk Shot
+- Fire Punch
+- Drain Punch
 - Toxic
 
-Koffing
+Sneasler (M)
 Level: 37
+Nature: Adamant
+Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Self Destruct
-- Sludge
-- Smokescreen
+Ball: Nest
+- Acrobatics
+- Dire Claw
+- Close Combat
 - Toxic
 
-Weezing
+Weezing (M) @ Black Sludge
 Level: 43
+Nature: Modest
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Sludge
-- Smokescreen
+Ball: Nest
+- Sludge Wave
+- Fire Blast
+- Thunderbolt
 - Toxic
 
 === TRAINER_LEADER_BLAINE ===
@@ -8498,39 +8739,51 @@ Gender: Male
 Music: Serious
 Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Growlithe
+Ninetales (M) 
 Level: 42
+Nature: Modest
+Ability: Drought
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Take Down
+Ball: Level
 - Fire Blast
+- Solar Beam
+- Psyshock
+- Foul Play
 
-Ponyta
+Incineroar (M) @ Incinium Z
 Level: 40
+Nature: Adamant
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Ball: Level
+- Darkest Lariat
+- Flare Blitz
+- Trailblaze
+- Aerial Ace
 
-Rapidash
+Magmortar (M) 
 Level: 42
+Nature: Modest
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stomp
-- Bounce
-- Fire Spin
+Ball: Level
 - Fire Blast
+- Solar Beam
+- Focus Blast
+- Psychic
 
-Arcanine
+Arcanine (M) @ Sitrus Berry
 Level: 47
+Nature: Modest
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Ball: Level
+- Flare Blitz
+- Head Smash
+- Psychic Fangs
+- Extreme Speed
 
 === TRAINER_LEADER_SABRINA ===
 Name: ナツメ
@@ -8540,38 +8793,50 @@ Gender: Female
 Music: Cute
 Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 
-Kadabra
+Espathra (F) @ Mirror Herb
 Level: 38
+Nature: Modest
+Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psybeam
-- Reflect
-- Future Sight
-- Calm Mind
-
-Mr Mime
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Barrier
-- Psybeam
+Ball: Luxury
+- Lumina Crash
+- Shadow Ball
+- Energy Ball
 - Baton Pass
+
+Gothitelle (F) @ Leftovers
+Level: 39
+Nature: Modest
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Luxury
+- Psychic
+- Thunderbolt
+- Dark Pulse
 - Calm Mind
 
-Venomoth
-Level: 38
+Delphox (F)
+Level: 40
+Nature: Modest
+Ability: Magician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psybeam
-- Gust
-- Leech Life
-- Supersonic
-
-Alakazam
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Luxury
+- Mystical Fire
 - Psychic
-- Recover
-- Future Sight
+- Grass Knot
+- Shadow Ball
+
+Alakazam (F) @ Alakazite
+Level: 43
+Nature: Modest
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Luxury
+- Psychic
+- Focus Blast
+- Energy Ball
 - Calm Mind
 
 === TRAINER_GENTLEMAN_THOMAS ===
@@ -8587,7 +8852,7 @@ Growlithe
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Growlithe
+Growlithe-Hisui
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8600,11 +8865,11 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Vulpix-Alola
 Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Nidoran F
+Sandshrew-Alola
 Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -8617,8 +8882,9 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
+Zebstrika
 Level: 23
+Ability: Motor Drive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_NORTON ===
@@ -9950,7 +10216,7 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu
+Raichu-Alola
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -9963,11 +10229,11 @@ Music: Serious
 Double Battle: No
 AI: Check Bad Move
 
-Growlithe
+Growlithe-Hisui
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ponyta
+Ponyta-Galar
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -10176,18 +10442,6 @@ Level: 5
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_DUMMY_7 ===
-Name: ダミー
-Class: Bug Catcher Frlg
-Pic: Bug Catcher Frlg
-Gender: Male
-Music: Serious
-AI: Check Bad Move
-
-Ekans
-Level: 5
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_BUG_CATCHER_DUMMY_8 ===
 Name: ダミー
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
@@ -14957,48 +15211,83 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Dewgong
+Ninetales-Alola (F) @ Assault Vest
 Level: 64
+Nature: Modest
+Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Signal Beam
-- Double Team
-
-Cloyster
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Supersonic
-- Rain Dance
-
-Piloswine
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Luxury
 - Blizzard
-- Earthquake
-- Double Edge
-- Rock Slide
+- Moonblast 
+- Psyshock
+- Ice Shard
 
-Jynx
-Level: 66
+Cloyster (F) @ Choice Scarf
+Level: 63
+Nature: Jolly
+Ability: Skill Link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Dive
+- Icicle Spear
+- Rock Blast
+- Razor Shell
+- Ice Shard
+
+Aurorus (F) @ Never-Melt Ice
+Level: 63
+Nature: Modest
+Ability: Refrigerate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+Ball: Luxury
+- Hyper Beam
+- Thunderbolt
+- Earth Power
+- Ancient Power
+
+Weavile (F) @ Focus Sash
+Level: 64
+Nature: Adamant
+Ability: Pickpocket
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Fake Out
+- Throat Chop
+- Icicle Crash
+- Low Kick
+
+Jynx (F) @ Expert Belt
+Level: 66
+Nature: Timid
+Ability: Dry Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Tera Type: TYPE_PSYCHIC
+Ball: Luxury
+- Blizzard
 - Psychic
 - Lovely Kiss
-- Attract
+- Grass Knot
 
-Lapras @ Cheri Berry
+Lapras (F) @ Weakness Policy
 Level: 66
+Nature: Modest
+Ability: Hydration
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Psychic
-- Thunder
+EVs: 252 HP / 252 SpA / 6 Spe
+Dynamax Level: 10
+Gigantamax: Yes
+Ball: Dive
+- Blizzard
+- Freeze-Dry
+- Sparkling Aria
+- Aurora Veil
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: シバ
@@ -15008,48 +15297,82 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
-Steelix
+Gallade (M) @ Expert Belt
 Level: 65
+Nature: Adamant
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Psycho Cut
+- Leaf Blade
+- Aqua Cutter
+- Sacred Sword
+
+Conkeldurr (M) @ Flame Orb
+Level: 65
+Nature: Adamant
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Luxury
+- Drain Punch
+- Ice Punch
+- Stone Edge
 - Earthquake
-- Iron Tail
-- Crunch
-- Rock Tomb
 
-Hitmonchan
+Hawlucha (M) @ Hawluchanite
 Level: 65
+Nature: Jolly
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Slide
-- Counter
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Close Combat
+- Brave Bird
+- Stone Edge
+- U-turn
 
-Hitmonlee
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Kick
-- Foresight
-- Earthquake
-- Rock Slide
-
-Steelix
+Kommo-o (M) @ Weakness Policy
 Level: 66
+Nature: Timid
+Ability: Bulletproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Iron Tail
-- Crunch
-- Dragon Breath
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Luxury
+- Focus Blast
+- Flamethrower
+- Clanging Scales
+- Flash Cannon
 
-Machamp @ Persim Berry
-Level: 68
+Lucario (M) @ Focus Sash
+Level: 66
+Nature: Adamant
+Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Luxury
+- Close Combat
+- Iron Head
+- Ice Punch
 - Earthquake
-- Brick Break
-- Rock Slide
+
+Machamp (M) @ Life Orb
+Level: 68
+Nature: Adamant
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Dynamax Level: 10
+Gigantamax: Yes
+Ball: Luxury
+- Dynamic Punch
+- Earthquake
+- Stone Edge
+- Darkest Lariat
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
 Name: キクコ
@@ -15059,44 +15382,77 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Pink
 
-Gengar
+Mimikyu (F) @ Life Orb
 Level: 66
+Nature: Adamant
+Ability: Disguise
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Confuse Ray
-- Hypnosis
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Dusk
+- Shadow Claw
+- Play Rough
+- Drain Punch
+- Shadow Sneak
 
-Crobat
+Decidueye (F) @ Leftovers
 Level: 66
+Nature: Jolly
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Air Cutter
-- Shadow Ball
-- Confuse Ray
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Dusk
+- Spirit Shackle
+- Leaf Blade
+- Aerial Ace
+- U-turn
 
-Misdreavus
+Mismagius (F) @ Expert Belt
 Level: 65
+Nature: Timid
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
 - Shadow Ball
 - Psychic
 - Thunderbolt
-- Attract
+- Dark Pulse
 
-Arbok
+Basculegion (F) @ Sitrus Berry
 Level: 68
+Nature: Modest
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Earthquake
-- Giga Drain
-- Double Team
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
+- Shadow Ball
+- Ice Beam
+- Muddy Water
+- Substitute
 
-Gengar @ Chesto Berry
-Level: 70
+Chandelure (F) @ Choice Specs
+Level: 68
+Nature: Modest
+Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Tera Type: TYPE_FLYING
+Ball: Dusk
+- Shadow Ball
+- Fire Blast
+- Energy Ball
+- Psychic
+
+Gengar (F) @ Gengarite
+Level: 70
+Nature: Modest
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dusk
 - Shadow Ball
 - Psychic
 - Thunderbolt
@@ -15110,48 +15466,81 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
-Gyarados
+Gyarados (M) @ Assault Vest
 Level: 68
+Nature: Adamant
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
+- Waterfall
 - Earthquake
-- Thunder Wave
+- Ice Fang
+- Stone Edge
 
-Dragonite
+Haxorus (M) @ Choice Scarf
 Level: 66
+Nature: Adamant
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Earthquake
-- Dragon Claw
-- Flamethrower
-
-Kingdra
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
-- Surf
-- Ice Beam
-
-Aerodactyl
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Ancient Power
-- Aerial Ace
-- Earthquake
-
-Dragonite @ Persim Berry
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
 - Outrage
+- Earthquake
+- Poison Jab
+- Stone Edge
+
+Charizard (M) @ Wise Glasses
+Level: 66
+Nature: Timid
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Beast
+- Fire Blast
+- Air Slash
+- Focus Blast
+- Dragon Pulse
+
+Salamence (M) @ Lum Berry
+Level: 68
+Nature: Adamant
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Ball: Beast
+- Outrage
+- Dual Wingbeat
+- Earthquake
+- Dragon Dance
+
+Garchomp (M) @ Life Orb
+Level: 70
+Nature: Jolly
+Ability: Rough Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Tera Type: TYPE_STEEL
+Ball: Beast
+- Outrage
+- Earthquake
+- Poison Jab
+- Stone Edge
+
+Dragonite (M) @ Dragoninite
+Level: 72
+Nature: Modest
+Ability: Multiscale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Beast
+- Draco Meteor
+- Fire Blast
+- Air Slash
 - Thunderbolt
-- Ice Beam
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: みてい
@@ -15161,7 +15550,7 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Yellow
 
 Heracross
@@ -15220,7 +15609,7 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Yellow
 
 Heracross
@@ -15279,7 +15668,7 @@ Gender: Male
 Music: Serious
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Yellow
 
 Heracross

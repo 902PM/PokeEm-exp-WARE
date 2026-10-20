@@ -2132,6 +2132,7 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
                 fprintf(f, "            .teraType = ");
                 fprint_constant(f, "TYPE", pokemon->tera_type);
                 fprintf(f, ",\n");
+                fprintf(f, "            .shouldTerastal = TRUE,\n");
             }
 
             if (pokemon->tags_line)

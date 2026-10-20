@@ -9583,7 +9583,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: ホムラ
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Magma Admin M
 Gender: Male
 Music: Magma
 Double Battle: No
@@ -11172,7 +11172,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_TABITHA_MT_CHIMNEY ===
 Name: ホムラ
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Magma Admin M
 Gender: Male
 Music: Magma
 Double Battle: No
@@ -14150,7 +14150,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: ホムラ
 Class: Magma Admin
-Pic: Magma Admin
+Pic: Magma Admin M
 Gender: Male
 Music: Magma
 Double Battle: No

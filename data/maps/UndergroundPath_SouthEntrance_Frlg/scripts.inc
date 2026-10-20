@@ -5,6 +5,6 @@ UndergroundPath_SouthEntrance_EventScript_Woman::
 	msgbox UndergroundPath_SouthEntrance_Text_PeopleLoseThingsInTheDarkness, MSGBOX_NPC
 	end
 
-UndergroundPath_EastEntrance_Text_DoYouGoToCeladonDeptStore::
+UndergroundPath_SouthEntrance_Text_PeopleLoseThingsInTheDarkness::
 	.string "ちかつうろは うすぐらいから\nおとしもの おおいんですって$"
 

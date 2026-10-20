@@ -753,7 +753,7 @@
 // 撃破フラグはバニラでは0x7E6までですが、次のシステムフラグが0x800なので、
 // 0x7E7～0x7FFまでの25名分さらに追加で使用が可能です。
 
-#define TRAINERS_COUNT_FRLG                      742
+#define TRAINERS_COUNT_FRLG                      743
 #define MAX_TRAINERS_COUNT_FRLG                  768
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_FRLG_H
