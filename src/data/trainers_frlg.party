@@ -6,8 +6,1139 @@ Gender: Male
 Music: Serious
 Double Battle: No
 
+=== TRAINER_DUMMY_1 ===
+Name: ダミー
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_2 ===
+Name: ダミー
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_3 ===
+Name: ダミー
+Class: Team Aqua
+Pic: Aqua Grunt F
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_4 ===
+Name: ダミー
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_5 ===
+Name: ダミー
+Class: Interviewer
+Pic: Interviewer
+Gender: Male
+Music: Serious
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_6 ===
+Name: ダミー
+Class: Tuber F
+Pic: Tuber F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_7 ===
+Name: ダミー
+Class: Tuber M
+Pic: Tuber M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_8 ===
+Name: ダミー
+Class: Cooltrainer M
+Pic: Cooltrainer M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_9 ===
+Name: ダミー
+Class: Cooltrainer F
+Pic: Cooltrainer F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_10 ===
+Name: ダミー
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_11 ===
+Name: ダミー
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_12 ===
+Name: ダミー
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_13 ===
+Name: ダミー
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_14 ===
+Name: ダミー
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_15 ===
+Name: ダミー
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Serious
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_16 ===
+Name: ダミー
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_17 ===
+Name: ダミー
+Class: Guitarist
+Pic: Guitarist
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_18 ===
+Name: ダミー
+Class: Kindler
+Pic: Kindler
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_19 ===
+Name: ダミー
+Class: Camper
+Pic: Camper
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_20 ===
+Name: ダミー
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_21 ===
+Name: ダミー
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_22 ===
+Name: ダミー
+Class: Psychic
+Pic: Psychic F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_23 ===
+Name: ダミー
+Class: GENTLEMAN
+Pic: GENTLEMAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_24 ===
+Name: カゲツ
+Class: Elite Four
+Pic: ELITE FOUR SIDNEY
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_25 ===
+Name: フヨウ
+Class: Elite Four
+Pic: ELITE FOUR PHOEBE
+Gender: Female
+Music: Serious
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_26 ===
+Name: ツツジ
+Class: Leader
+Pic: LEADER ROXANNE
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_27 ===
+Name: トウキ
+Class: Leader
+Pic: LEADER BRAWLY
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_28 ===
+Name: フウとラン
+Class: Leader
+Pic: LEADER TATE AND LIZA
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_29 ===
+Name: ダミー
+Class: SCHOOL KID
+Pic: SCHOOL KID M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_30 ===
+Name: ダミー
+Class: SCHOOL KID
+Pic: SCHOOL KID F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_31 ===
+Name: ダミー
+Class: Sr and Jr
+Pic: Sr and Jr
+Gender: Female
+Music: Cute
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_32 ===
+Name: ダミー
+Class: POKEFAN
+Pic: POKEFAN M
+Gender: Male
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_33 ===
+Name: ダミー
+Class: POKEFAN
+Pic: POKEFAN F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_34 ===
+Name: ダミー
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_35 ===
+Name: ダミー
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_36 ===
+Name: ダミー
+Class: YOUNGSTER
+Pic: YOUNGSTER
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_37 ===
+Name: ダイゴ
+Class: Champion
+Pic: STEVEN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_38 ===
+Name: ダミー
+Class: FISHERMAN
+Pic: FISHERMAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_39 ===
+Name: ダミー
+Class: CYCLING TRIATHLETE
+Pic: CYCLING TRIATHLETE M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_40 ===
+Name: ダミー
+Class: CYCLING TRIATHLETE
+Pic: CYCLING TRIATHLETE F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_41 ===
+Name: ダミー
+Class: RUNNING TRIATHLETE
+Pic: RUNNING TRIATHLETE M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_42 ===
+Name: ダミー
+Class: RUNNING TRIATHLETE
+Pic: RUNNING TRIATHLETE F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_43 ===
+Name: ダミー
+Class: SWIMMING_TRIATHLETE
+Pic: SWIMMING TRIATHLETE M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_44 ===
+Name: ダミー
+Class: SWIMMING_TRIATHLETE
+Pic: SWIMMING TRIATHLETE F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_45 ===
+Name: ダミー
+Class: DRAGON TAMER
+Pic: DRAGON TAMER
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_46 ===
+Name: ダミー
+Class: BIRD KEEPER
+Pic: BIRD KEEPER
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_47 ===
+Name: ダミー
+Class: NINJA BOY
+Pic: NINJA BOY
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_48 ===
+Name: ダミー
+Class: BATTLE GIRL
+Pic: BATTLE GIRL
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_49 ===
+Name: ダミー
+Class: PARASOL LADY
+Pic: PARASOL LADY
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_50 ===
+Name: ダミー
+Class: SWIMMER F
+Pic: SWIMMER F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_51 ===
+Name: ダミー
+Class: PICNICKER
+Pic: PICNICKER
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_52 ===
+Name: ダミー
+Class: TWINS
+Pic: TWINS
+Gender: Female
+Music: Cute
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_53 ===
+Name: ダミー
+Class: SAILOR
+Pic: SAILOR
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_54 ===
+Name: ダミー
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_55 ===
+Name: ダミー
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_56 ===
+Name: ダミー
+Class: COLLECTOR
+Pic: COLLECTOR
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_57 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: WALLY
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_58 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS BRENDAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_59 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS BRENDAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_60 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS BRENDAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_61 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS MAY
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_62 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS MAY
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_63 ===
+Name: ダミー
+Class: PKMN TRAINER 1
+Pic: RS MAY
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_64 ===
+Name: ダミー
+Class: POKEMON BREEDER
+Pic: POKEMON BREEDER M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_65 ===
+Name: ダミー
+Class: POKEMON BREEDER
+Pic: POKEMON BREEDER F
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_66 ===
+Name: ダミー
+Class: POKEMON RANGER
+Pic: POKEMON RANGER M
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_67 ===
+Name: ダミー
+Class: POKEMON RANGER
+Pic: POKEMON RANGER F
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_68 ===
+Name: ダミー
+Class: MAGMA LEADER
+Pic: MAGMA LEADER MAXIE
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_69 ===
+Name: ダミー
+Class: Team Magma
+Pic: MAGMA GRUNT M
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_70 ===
+Name: ダミー
+Class: Team Magma
+Pic: MAGMA GRUNT F
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_71 ===
+Name: ダミー
+Class: LASS
+Pic: LASS
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_72 ===
+Name: ダミー
+Class: BUG CATCHER
+Pic: BUG CATCHER
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_73 ===
+Name: ダミー
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_74 ===
+Name: ダミー
+Class: YOUNG COUPLE
+Pic: YOUNG COUPLE
+Gender: Male
+Music: Cute
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_75 ===
+Name: ダミー
+Class: OLD COUPLE
+Pic: OLD COUPLE
+Gender: Male
+Music: Serious
+Double Battle: Yes
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_76 ===
+Name: ダミー
+Class: SIS AND BRO
+Pic: SIS AND BRO
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_77 ===
+Name: ウシオ
+Class: AQUA ADMIN
+Pic: AQUA ADMIN M
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_78 ===
+Name: イズミ
+Class: AQUA ADMIN
+Pic: AQUA ADMIN F
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_79 ===
+Name: ホムラ
+Class: MAGMA ADMIN
+Pic: MAGMA ADMIN M
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_80 ===
+Name: カガリ
+Class: MAGMA ADMIN
+Pic: MAGMA ADMIN F
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_81 ===
+Name: テッセン
+Class: Leader
+Pic: LEADER WATTSON
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_82 ===
+Name: アスナ
+Class: Leader
+Pic: LEADER FLANNERY
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_83 ===
+Name: センリ
+Class: Leader
+Pic: LEADER NORMAN
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_84 ===
+Name: ナギ
+Class: Leader
+Pic: LEADER WINONA
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_85 ===
+Name: ミクリ
+Class: Leader
+Pic: Champion WALLACE
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_86 ===
+Name: プリム
+Class: Elite Four
+Pic: ELITE FOUR GLACIA
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_DUMMY_87 ===
+Name: ゲンジ
+Class: Elite Four
+Pic: ELITE FOUR DRAKE
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_YOUNGSTER_BEN ===
-Name: BEN
+Name: ヒロト
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -24,7 +1155,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_CALVIN ===
-Name: CALVIN
+Name: カズキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -37,7 +1168,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_JOSH ===
-Name: JOSH
+Name: タロウ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -58,7 +1189,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_TIMMY ===
-Name: TIMMY
+Name: シンゴ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -75,7 +1206,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_JOEY ===
-Name: JOEY
+Name: タケオ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -92,7 +1223,7 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_DAN ===
-Name: DAN
+Name: アツシ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -105,7 +1236,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_CHAD ===
-Name: CHAD
+Name: カツユキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -122,7 +1253,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_TYLER ===
-Name: TYLER
+Name: マサノブ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -135,7 +1266,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_EDDIE ===
-Name: EDDIE
+Name: ヤスユキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -148,7 +1279,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_DILLON ===
-Name: DILLON
+Name: ヨシト
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -165,7 +1296,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_YASU ===
-Name: YASU
+Name: ヒロノブ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -186,7 +1317,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_DAVE ===
-Name: DAVE
+Name: シンタ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -203,7 +1334,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_BEN_2 ===
-Name: BEN
+Name: ヒロト
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -220,7 +1351,7 @@ Level: 17
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_BUG_CATCHER_RICK ===
-Name: RICK
+Name: シンイチ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -237,7 +1368,7 @@ Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_DOUG ===
-Name: DOUG
+Name: オサム
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -258,7 +1389,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_SAMMY ===
-Name: SAMMY
+Name: タツヒロ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -271,7 +1402,7 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_COLTON ===
-Name: COLTON
+Name: ヒサシ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -292,7 +1423,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_GREG ===
-Name: GREG
+Name: ヒロユキ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -317,7 +1448,7 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_JAMES ===
-Name: JAMES
+Name: ミキヤ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -334,7 +1465,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_KENT ===
-Name: KENT
+Name: トモミチ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -351,7 +1482,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_ROBBY ===
-Name: ROBBY
+Name: ノリオ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -372,7 +1503,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_CALE ===
-Name: CALE
+Name: ケンスケ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -397,7 +1528,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_KEIGO ===
-Name: KEIGO
+Name: テツジ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -418,7 +1549,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_ELIJAH ===
-Name: ELIJAH
+Name: ノブユキ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -430,8 +1561,20 @@ Butterfree
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_BUG_CATCHER_DUMMY_1 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BUG_CATCHER_BRENT ===
-Name: BRENT
+Name: ヨウイチ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -448,7 +1591,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_CONNER ===
-Name: CONNER
+Name: ヒロミチ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -469,10 +1612,10 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_JANICE ===
-Name: JANICE
+Name: エリ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -486,10 +1629,10 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_SALLY ===
-Name: SALLY
+Name: ミナ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -503,10 +1646,10 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_ROBIN ===
-Name: ROBIN
+Name: シホ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -516,10 +1659,10 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_CRISSY ===
-Name: CRISSY
+Name: メイ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -537,10 +1680,10 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_MIRIAM ===
-Name: MIRIAM
+Name: ルリ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -554,10 +1697,10 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_IRIS ===
-Name: IRIS
+Name: ナホ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -567,10 +1710,10 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_RELI ===
-Name: RELI
+Name: アミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -584,10 +1727,10 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_ALI ===
-Name: ALI
+Name: サヤ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -604,11 +1747,24 @@ Bellsprout
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LASS_HALEY ===
-Name: HALEY
+=== TRAINER_LASS_DUMMY ===
+Name: ダミー
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
+Music: Cute
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LASS_HALEY ===
+Name: マキ
+Class: Lass Frlg
+Pic: Lass Frlg
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -626,10 +1782,10 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_ANN ===
-Name: ANN
+Name: カヤ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -643,10 +1799,10 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_DAWN ===
-Name: DAWN
+Name: ユカ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -660,10 +1816,10 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_PAIGE ===
-Name: PAIGE
+Name: マイ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -677,10 +1833,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_ANDREA ===
-Name: ANDREA
+Name: ミキ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -698,10 +1854,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_MEGAN ===
-Name: MEGAN
+Name: マミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -727,10 +1883,10 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_JULIA ===
-Name: JULIA
+Name: マユ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -744,10 +1900,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_KAY ===
-Name: KAY
+Name: アコ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -761,10 +1917,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_LISA ===
-Name: LISA
+Name: ユミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -778,7 +1934,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_EDMOND ===
-Name: EDMOND
+Name: カツヤ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -795,7 +1951,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_TREVOR ===
-Name: TREVOR
+Name: サンジ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -812,7 +1968,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_LEONARD ===
-Name: LEONARD
+Name: ダイキ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -825,7 +1981,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DUNCAN ===
-Name: DUNCAN
+Name: ヒデフミ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -846,7 +2002,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_HUEY ===
-Name: HUEY
+Name: タツロウ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -863,7 +2019,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DYLAN ===
-Name: DYLAN
+Name: ツヨシ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -884,7 +2040,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_PHILLIP ===
-Name: PHILLIP
+Name: ユウサク
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -897,7 +2053,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SAILOR_DWAYNE ===
-Name: DWAYNE
+Name: タツヒコ
 Class: Sailor Frlg
 Pic: Sailor Frlg
 Gender: Male
@@ -914,7 +2070,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_LIAM ===
-Name: LIAM
+Name: トシカズ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -936,7 +2092,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sand Attack
 
 === TRAINER_CAMPER_SHANE ===
-Name: SHANE
+Name: トモヒロ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -953,7 +2109,7 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_ETHAN ===
-Name: ETHAN
+Name: ヨシハル
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -966,7 +2122,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_RICKY ===
-Name: RICKY
+Name: ユウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -979,7 +2135,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_JEFF ===
-Name: JEFF
+Name: コウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -995,8 +2151,20 @@ Raticate
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_CAMPER_DUMMY ===
+Name: ダミー
+Class: Camper Frlg
+Pic: Camper Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_CAMPER_CHRIS ===
-Name: CHRIS
+Name: マサシ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -1013,7 +2181,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_DREW ===
-Name: DREW
+Name: ノリヒロ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -1038,10 +2206,10 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_DIANA ===
-Name: DIANA
+Name: コズエ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1051,10 +2219,10 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_NANCY ===
-Name: NANCY
+Name: サツキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1068,10 +2236,10 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_ISABELLE ===
-Name: ISABELLE
+Name: ナズナ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1089,10 +2257,10 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_KELSEY ===
-Name: KELSEY
+Name: ミサ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1106,10 +2274,10 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_ALICIA ===
-Name: ALICIA
+Name: エミカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1131,10 +2299,10 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_CAITLIN ===
-Name: CAITLIN
+Name: サチエ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1144,10 +2312,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_HEIDI ===
-Name: HEIDI
+Name: チカコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1161,10 +2329,10 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_CAROL ===
-Name: CAROL
+Name: ヒロコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1178,10 +2346,10 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_SOFIA ===
-Name: SOFIA
+Name: ミノリ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1199,10 +2367,10 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_MARTHA ===
-Name: MARTHA
+Name: トモコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1216,10 +2384,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_TINA ===
-Name: TINA
+Name: アサエ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1233,10 +2401,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_HANNAH ===
-Name: HANNAH
+Name: アスカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -1262,7 +2430,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_POKEMANIAC_MARK ===
-Name: MARK
+Name: モトフミ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1279,7 +2447,7 @@ Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_HERMAN ===
-Name: HERMAN
+Name: ダイスケ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1296,7 +2464,7 @@ Level: 20
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_COOPER ===
-Name: COOPER
+Name: キヨハル
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1317,7 +2485,7 @@ Level: 20
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_STEVE ===
-Name: STEVE
+Name: トシオ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1334,7 +2502,7 @@ Level: 22
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_WINSTON ===
-Name: WINSTON
+Name: ミツグ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1347,7 +2515,7 @@ Level: 25
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_DAWSON ===
-Name: DAWSON
+Name: ノゾム
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1368,7 +2536,7 @@ Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_POKEMANIAC_ASHTON ===
-Name: ASHTON
+Name: サチオ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -1385,7 +2553,7 @@ Level: 23
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_SUPER_NERD_JOVAN ===
-Name: JOVAN
+Name: キミタカ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1402,7 +2570,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_MIGUEL ===
-Name: MIGUEL
+Name: ミツハル
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1423,7 +2591,7 @@ Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_AIDAN ===
-Name: AIDAN
+Name: イクオ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1464,7 +2632,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_SUPER_NERD_GLENN ===
-Name: GLENN
+Name: スギオ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1485,7 +2653,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_LESLIE ===
-Name: LESLIE
+Name: スエオ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1501,8 +2669,44 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smog
 - Self Destruct
 
+=== TRAINER_SUPER_DUMMY_1 ===
+Name: ダミー
+Class: Super Nerd Frlg
+Pic: Super Nerd Frlg
+Gender: Male
+Music: Dangerous
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SUPER_DUMMY_2 ===
+Name: ダミー
+Class: Super Nerd Frlg
+Pic: Super Nerd Frlg
+Gender: Male
+Music: Dangerous
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SUPER_DUMMY_3 ===
+Name: ダミー
+Class: Super Nerd Frlg
+Pic: Super Nerd Frlg
+Gender: Male
+Music: Dangerous
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_SUPER_NERD_ERIK ===
-Name: ERIK
+Name: ハジメ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1523,7 +2727,7 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_AVERY ===
-Name: AVERY
+Name: サダハル
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1548,7 +2752,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_DEREK ===
-Name: DEREK
+Name: ヨシアキ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1561,7 +2765,7 @@ Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUPER_NERD_ZAC ===
-Name: ZAC
+Name: ノブヒロ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -1578,7 +2782,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_MARCOS ===
-Name: MARCOS
+Name: カツト
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1599,7 +2803,7 @@ Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_FRANKLIN ===
-Name: FRANKLIN
+Name: シゲオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1616,7 +2820,7 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_NOB ===
-Name: NOB
+Name: ゴロウ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1641,7 +2845,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_WAYNE ===
-Name: WAYNE
+Name: コウサク
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1654,7 +2858,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_ALAN ===
-Name: ALAN
+Name: マサノリ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1679,7 +2883,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Screech
 
 === TRAINER_HIKER_BRICE ===
-Name: BRICE
+Name: ハルノブ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1700,7 +2904,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_CLARK ===
-Name: CLARK
+Name: カズノリ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1725,7 +2929,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Screech
 
 === TRAINER_HIKER_TRENT ===
-Name: TRENT
+Name: ケンサク
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1742,7 +2946,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_DUDLEY ===
-Name: DUDLEY
+Name: トクオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1775,7 +2979,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 
 === TRAINER_HIKER_ALLEN ===
-Name: ALLEN
+Name: イサム
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1792,7 +2996,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 
 === TRAINER_HIKER_ERIC ===
-Name: ERIC
+Name: ダイチ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1809,7 +3013,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_LENNY ===
-Name: LENNY
+Name: カツヒト
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1834,7 +3038,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_OLIVER ===
-Name: OLIVER
+Name: コダマ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1855,7 +3059,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_LUCAS ===
-Name: LUCAS
+Name: サブロウ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -1880,7 +3084,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Defense Curl
 
 === TRAINER_BIKER_JARED ===
-Name: JARED
+Name: エイジ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -1913,7 +3117,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_MALIK ===
-Name: MALIK
+Name: トキヤ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -1938,7 +3142,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Disable
 
 === TRAINER_BIKER_ERNEST ===
-Name: ERNEST
+Name: ジロウ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -1987,7 +3191,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pound
 
 === TRAINER_BIKER_ALEX ===
-Name: ALEX
+Name: マサツグ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2020,7 +3224,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_LAO ===
-Name: LAO
+Name: キンジ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2044,8 +3248,21 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Smog
 - Tackle
 
+=== TRAINER_BIKER_DUMMY_1 ===
+Name: ダミー
+Class: Biker Frlg
+Pic: Biker Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BIKER_HIDEO ===
-Name: HIDEO
+Name: カツハル
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2058,7 +3275,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIKER_RUBEN ===
-Name: RUBEN
+Name: ジュン
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2091,7 +3308,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_BILLY ===
-Name: BILLY
+Name: ケイタ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2104,7 +3321,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIKER_NIKOLAS ===
-Name: NIKOLAS
+Name: ショウジ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2129,7 +3346,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Charge
 
 === TRAINER_BIKER_JAXON ===
-Name: JAXON
+Name: トモアキ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2154,7 +3371,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Disable
 
 === TRAINER_BIKER_WILLIAM ===
-Name: WILLIAM
+Name: テツヤ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2203,7 +3420,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_LUKAS ===
-Name: LUKAS
+Name: キョウスケ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2244,7 +3461,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_ISAAC ===
-Name: ISAAC
+Name: セイジ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2277,7 +3494,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_GERALD ===
-Name: GERALD
+Name: タクロウ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -2301,8 +3518,59 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Disable
 
+=== TRAINER_BURGLAR_DUMMY_1 ===
+Name: ダミー
+Class: Burglar Frlg
+Pic: Burglar Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Vulpix
+Level: 29
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BURGLAR_DUMMY_2 ===
+Name: ダミー
+Class: Burglar Frlg
+Pic: Burglar Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Growlithe
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BURGLAR_DUMMY_3 ===
+Name: ダミー
+Class: Burglar Frlg
+Pic: Burglar Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Vulpix
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Charmander
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ponyta
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BURGLAR_QUINN ===
-Name: QUINN
+Name: ミノブ
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2323,7 +3591,7 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BURGLAR_RAMON ===
-Name: RAMON
+Name: ジンパチ
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2336,7 +3604,7 @@ Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BURGLAR_DUSTY ===
-Name: DUSTY
+Name: ノブオ
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2353,7 +3621,24 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BURGLAR_ARNIE ===
-Name: ARNIE
+Name: トヨジ
+Class: Burglar Frlg
+Pic: Burglar Frlg
+Gender: Male
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Charmander
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Charmeleon
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BURGLAR_DUMMY_4 ===
+Name: ダミー
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2370,7 +3655,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BURGLAR_SIMON ===
-Name: SIMON
+Name: ヤスノブ
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2383,7 +3668,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BURGLAR_LEWIS ===
-Name: LEWIS
+Name: エイタ
 Class: Burglar Frlg
 Pic: Burglar Frlg
 Gender: Male
@@ -2400,7 +3685,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ENGINEER_BAILY ===
-Name: BAILY
+Name: フミオ
 Class: Engineer Frlg
 Pic: Engineer Frlg
 Gender: Male
@@ -2417,7 +3702,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ENGINEER_BRAXTON ===
-Name: BRAXTON
+Name: ヨシオ
 Class: Engineer Frlg
 Pic: Engineer Frlg
 Gender: Male
@@ -2430,7 +3715,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ENGINEER_BERNIE ===
-Name: BERNIE
+Name: ノブヒコ
 Class: Engineer Frlg
 Pic: Engineer Frlg
 Gender: Male
@@ -2451,7 +3736,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_DALE ===
-Name: DALE
+Name: タカフミ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2472,7 +3757,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_BARNY ===
-Name: BARNY
+Name: カズヒコ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2493,7 +3778,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_NED ===
-Name: NED
+Name: トモカズ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2514,7 +3799,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_CHIP ===
-Name: CHIP
+Name: ケイイチ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2531,7 +3816,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_HANK ===
-Name: HANK
+Name: カズホ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2544,7 +3829,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_ELLIOT ===
-Name: ELLIOT
+Name: アキヒコ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2569,7 +3854,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_RONALD ===
-Name: RONALD
+Name: カズオ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2594,7 +3879,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_CLAUDE ===
-Name: CLAUDE
+Name: ヒデユキ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2611,7 +3896,7 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_WADE ===
-Name: WADE
+Name: イサオ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2644,7 +3929,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_NOLAN ===
-Name: NOLAN
+Name: タカノリ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2661,7 +3946,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_ANDREW ===
-Name: ANDREW
+Name: カツノリ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -2678,7 +3963,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_LUIS ===
-Name: LUIS
+Name: ヨウヘイ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2695,7 +3980,7 @@ Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_RICHARD ===
-Name: RICHARD
+Name: ハルキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2712,7 +3997,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_REECE ===
-Name: REECE
+Name: ヒトキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2733,7 +4018,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_MATTHEW ===
-Name: MATTHEW
+Name: クニヒコ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2750,7 +4035,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_DOUGLAS ===
-Name: DOUGLAS
+Name: タツオ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2775,7 +4060,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_DAVID ===
-Name: DAVID
+Name: ケンイチ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2796,7 +4081,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_TONY ===
-Name: TONY
+Name: エイイチ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2813,7 +4098,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_AXLE ===
-Name: AXLE
+Name: タモツ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2842,7 +4127,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_BARRY ===
-Name: BARRY
+Name: ガクジ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2859,7 +4144,7 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_DEAN ===
-Name: DEAN
+Name: レツジ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2872,7 +4157,7 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_DARRIN ===
-Name: DARRIN
+Name: テルユキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2897,7 +4182,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_SPENCER ===
-Name: SPENCER
+Name: トシヒロ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2914,7 +4199,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_JACK ===
-Name: JACK
+Name: ヒデノリ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2927,7 +4212,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_JEROME ===
-Name: JEROME
+Name: モリオ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2944,7 +4229,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_ROLAND ===
-Name: ROLAND
+Name: マサトシ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -2965,7 +4250,7 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_KOJI ===
-Name: KOJI
+Name: テツロウ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -2986,7 +4271,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_LUKE ===
-Name: LUKE
+Name: テル
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3003,7 +4288,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_CAMRON ===
-Name: CAMRON
+Name: クニオ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3020,7 +4305,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_RAUL ===
-Name: RAUL
+Name: ジョウ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3037,7 +4322,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_ISAIAH ===
-Name: ISAIAH
+Name: エイスケ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3054,7 +4339,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_ZEEK ===
-Name: ZEEK
+Name: タツキ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3067,7 +4352,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_JAMAL ===
-Name: JAMAL
+Name: チカラ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3092,7 +4377,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_COREY ===
-Name: COREY
+Name: センゴ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3109,7 +4394,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CUE_BALL_CHASE ===
-Name: CHASE
+Name: ショウゴ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -3130,7 +4415,7 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_HUGO ===
-Name: HUGO
+Name: カンジ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3147,7 +4432,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_JASPER ===
-Name: JASPER
+Name: モキチ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3164,7 +4449,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_DIRK ===
-Name: DIRK
+Name: ヨリト
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3181,7 +4466,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_DARIAN ===
-Name: DARIAN
+Name: ケンキチ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3198,7 +4483,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_STAN ===
-Name: STAN
+Name: ケイシ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3218,8 +4503,21 @@ Poliwhirl
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_GAMER_DUMMY ===
+Name: ダミー
+Class: Gamer Frlg
+Pic: Gamer Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_GAMER_RICH ===
-Name: RICH
+Name: ソウキ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -3236,10 +4534,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_BRIDGET ===
-Name: BRIDGET
+Name: セイコ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3261,10 +4559,10 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_TAMIA ===
-Name: TAMIA
+Name: レイコ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3278,10 +4576,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_LORI ===
-Name: LORI
+Name: ヒトミ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3291,10 +4589,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_LOLA ===
-Name: LOLA
+Name: アユミ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3312,10 +4610,10 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_SHEILA ===
-Name: SHEILA
+Name: クニミ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3329,10 +4627,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_TIFFANY ===
-Name: TIFFANY
+Name: ハルコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3342,10 +4640,10 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_NORA ===
-Name: NORA
+Name: リリカ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3363,10 +4661,10 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_MELISSA ===
-Name: MELISSA
+Name: メグミ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3380,10 +4678,10 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_GRACE ===
-Name: GRACE
+Name: アキエ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3397,10 +4695,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_OLIVIA ===
-Name: OLIVIA
+Name: ナオコ
 Class: Beauty Frlg
 Pic: Beauty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3414,10 +4712,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BEAUTY_LAUREN ===
-Name: LAUREN
+Name: コトエ
 Class: Beauty Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3435,10 +4733,10 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_ANYA ===
-Name: ANYA
+Name: ナオミ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3464,10 +4762,10 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_ALICE ===
-Name: ALICE
+Name: エツコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3481,10 +4779,10 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_CONNIE ===
-Name: CONNIE
+Name: マユコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3502,10 +4800,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_SHIRLEY ===
-Name: SHIRLEY
+Name: アサミ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -3523,7 +4821,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PSYCHIC_JOHAN ===
-Name: JOHAN
+Name: カズヤ
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -3548,7 +4846,7 @@ Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_TYRON ===
-Name: TYRON
+Name: イサミ
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -3565,7 +4863,7 @@ Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_CAMERON ===
-Name: CAMERON
+Name: カオル
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -3586,7 +4884,7 @@ Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_PSYCHIC_PRESTON ===
-Name: PRESTON
+Name: ヒロム
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -3599,7 +4897,7 @@ Level: 38
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ROCKER_RANDALL ===
-Name: RANDALL
+Name: トシキ
 Class: Rocker Frlg
 Pic: Rocker Frlg
 Gender: Male
@@ -3620,7 +4918,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROCKER_LUCA ===
-Name: LUCA
+Name: アヤキ
 Class: Rocker Frlg
 Pic: Rocker Frlg
 Gender: Male
@@ -3637,7 +4935,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_DALTON ===
-Name: DALTON
+Name: テリー
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3654,7 +4952,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_NELSON ===
-Name: NELSON
+Name: ナミオ
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3679,7 +4977,7 @@ Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_KIRK ===
-Name: KIRK
+Name: ジョージ
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3704,7 +5002,7 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_SHAWN ===
-Name: SHAWN
+Name: マイク
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3721,7 +5019,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_GREGORY ===
-Name: GREGORY
+Name: コリン
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3738,7 +5036,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Encore
 
 === TRAINER_JUGGLER_EDWARD ===
-Name: EDWARD
+Name: アキト
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3779,7 +5077,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Encore
 
 === TRAINER_JUGGLER_KAYDEN ===
-Name: KAYDEN
+Name: レン
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3792,7 +5090,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_NATE ===
-Name: NATE
+Name: トニー
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -3809,7 +5107,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TAMER_PHIL ===
-Name: PHIL
+Name: シュンペイ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3826,7 +5124,7 @@ Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_EDGAR ===
-Name: EDGAR
+Name: コウキ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3847,7 +5145,7 @@ Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_JASON ===
-Name: JASON
+Name: ヒロ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3860,7 +5158,7 @@ Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_COLE ===
-Name: COLE
+Name: アキラ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3877,7 +5175,7 @@ Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_VINCENT ===
-Name: VINCENT
+Name: ユウト
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3894,7 +5192,7 @@ Level: 44
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_TAMER_JOHN ===
-Name: JOHN
+Name: ゲン
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -3919,7 +5217,7 @@ Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_BIRD_KEEPER_SEBASTIAN ===
-Name: SEBASTIAN
+Name: ケイスケ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -3936,7 +5234,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_PERRY ===
-Name: PERRY
+Name: キヨヒコ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -3965,7 +5263,7 @@ Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_ROBERT ===
-Name: ROBERT
+Name: ツバサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -3990,7 +5288,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_DONALD ===
-Name: DONALD
+Name: イクミ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4003,7 +5301,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_BENNY ===
-Name: BENNY
+Name: アキマサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4020,7 +5318,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_EDWIN ===
-Name: EDWIN
+Name: モトキ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4045,7 +5343,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_CHESTER ===
-Name: CHESTER
+Name: タイシ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4066,7 +5364,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_WILTON ===
-Name: WILTON
+Name: ユウスケ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4083,7 +5381,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_RAMIRO ===
-Name: RAMIRO
+Name: ハルト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4096,7 +5394,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_JACOB ===
-Name: JACOB
+Name: ススム
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4121,7 +5419,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_ROGER ===
-Name: ROGER
+Name: トモヒコ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4142,7 +5440,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_REED ===
-Name: REED
+Name: アキオ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4167,7 +5465,7 @@ Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_KEITH ===
-Name: KEITH
+Name: キミオ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4184,7 +5482,7 @@ Level: 39
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_CARTER ===
-Name: CARTER
+Name: タカヒロ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4205,7 +5503,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_MITCH ===
-Name: MITCH
+Name: ツカサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4230,7 +5528,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_BECK ===
-Name: BECK
+Name: トシアキ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4247,7 +5545,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_MARLON ===
-Name: MARLON
+Name: アサト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -4268,7 +5566,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BLACK_BELT_KOICHI ===
-Name: KOICHI
+Name: タケノリ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4285,7 +5583,7 @@ Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_MIKE ===
-Name: MIKE
+Name: ノボル
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4306,7 +5604,7 @@ Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_HIDEKI ===
-Name: HIDEKI
+Name: タイキ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4323,7 +5621,7 @@ Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_AARON ===
-Name: AARON
+Name: タツマ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4336,7 +5634,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_HITOSHI ===
-Name: HITOSHI
+Name: イワオ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4357,7 +5655,7 @@ Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_ATSUSHI ===
-Name: ATSUSHI
+Name: テツヒサ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4374,7 +5672,7 @@ Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_KIYO ===
-Name: KIYO
+Name: タクマ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4387,7 +5685,7 @@ Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_TAKASHI ===
-Name: TAKASHI
+Name: シロウ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4408,7 +5706,7 @@ Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_DAISUKE ===
-Name: DAISUKE
+Name: タダシ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -4429,7 +5727,7 @@ Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4444,7 +5742,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 
 === TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4459,7 +5757,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 === TRAINER_RIVAL_OAKS_LAB_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4474,7 +5772,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Growl
 
 === TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4495,7 +5793,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Tail Whip
 
 === TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4516,7 +5814,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Growl
 
 === TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4537,7 +5835,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Growl
 
 === TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4574,7 +5872,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Gun
 
 === TRAINER_RIVAL_CERULEAN_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4611,7 +5909,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Seed
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
 Gender: Male
@@ -4648,7 +5946,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Scratch
 
 === TRAINER_SCIENTIST_TED ===
-Name: TED
+Name: ノブヒサ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4665,7 +5963,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_CONNOR ===
-Name: CONNOR
+Name: ユヅル
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4706,7 +6004,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_SCIENTIST_JERRY ===
-Name: JERRY
+Name: ヒデオ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4727,7 +6025,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_JOSE ===
-Name: JOSE
+Name: トモノリ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4752,7 +6050,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_SCIENTIST_RODNEY ===
-Name: RODNEY
+Name: マサヒロ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4765,7 +6063,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_BEAU ===
-Name: BEAU
+Name: カズユキ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4806,7 +6104,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Supersonic
 
 === TRAINER_SCIENTIST_TAYLOR ===
-Name: TAYLOR
+Name: ソウスケ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4855,7 +6153,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Self Destruct
 
 === TRAINER_SCIENTIST_JOSHUA ===
-Name: JOSHUA
+Name: シュウイチ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4872,7 +6170,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_PARKER ===
-Name: PARKER
+Name: ヒデキ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4889,7 +6187,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_ED ===
-Name: ED
+Name: スグル
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4922,7 +6220,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Supersonic
 
 === TRAINER_SCIENTIST_TRAVIS ===
-Name: TRAVIS
+Name: ヨシヤ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4939,7 +6237,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_BRAYDON ===
-Name: BRAYDON
+Name: アオバ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4960,7 +6258,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SCIENTIST_IVAN ===
-Name: IVAN
+Name: ヨシタカ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4977,7 +6275,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BOSS_GIOVANNI ===
-Name: GIOVANNI
+Name: サカキ
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -4998,7 +6296,7 @@ Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_BOSS_GIOVANNI_2 ===
-Name: GIOVANNI
+Name: サカキ
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5023,7 +6321,7 @@ Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_LEADER_GIOVANNI ===
-Name: GIOVANNI
+Name: サカキ
 Class: Leader Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5073,7 +6371,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Earthquake
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5090,7 +6388,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_2 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5111,7 +6409,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_3 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5128,7 +6426,7 @@ Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_4 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5145,7 +6443,7 @@ Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_5 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5162,7 +6460,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5179,7 +6477,7 @@ Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_7 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5196,7 +6494,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_8 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5213,7 +6511,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_9 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5230,7 +6528,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5261,7 +6559,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Gas
 
 === TRAINER_TEAM_ROCKET_GRUNT_11 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5286,7 +6584,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_12 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5311,7 +6609,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Gas
 
 === TRAINER_TEAM_ROCKET_GRUNT_13 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5359,7 +6657,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_TEAM_ROCKET_GRUNT_14 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5380,7 +6678,7 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5397,7 +6695,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5418,7 +6716,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_17 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5439,7 +6737,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_18 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5456,7 +6754,7 @@ Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_19 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5477,7 +6775,7 @@ Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_20 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5494,7 +6792,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_21 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5519,7 +6817,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_22 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5536,7 +6834,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_23 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5553,7 +6851,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5582,7 +6880,7 @@ Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5603,7 +6901,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5620,7 +6918,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5641,7 +6939,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5654,7 +6952,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5667,7 +6965,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5684,7 +6982,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5705,7 +7003,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5746,7 +7044,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Supersonic
 
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5763,7 +7061,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5780,7 +7078,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5805,7 +7103,7 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5826,7 +7124,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5847,7 +7145,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5868,7 +7166,7 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5881,7 +7179,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5910,7 +7208,7 @@ Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5931,7 +7229,7 @@ Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COOLTRAINER_SAMUEL ===
-Name: SAMUEL
+Name: タクヤ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -5981,7 +7279,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Energy
 
 === TRAINER_COOLTRAINER_GEORGE ===
-Name: GEORGE
+Name: カズマ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6031,7 +7329,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Take Down
 
 === TRAINER_COOLTRAINER_COLBY ===
-Name: COLBY
+Name: シュウ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6081,7 +7379,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rain Dance
 
 === TRAINER_COOLTRAINER_PAUL ===
-Name: PAUL
+Name: カツトシ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6131,7 +7429,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Disable
 
 === TRAINER_COOLTRAINER_ROLANDO ===
-Name: ROLANDO
+Name: アサオ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6181,7 +7479,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Scary Face
 
 === TRAINER_COOLTRAINER_GILBERT ===
-Name: GILBERT
+Name: ゴウ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6231,7 +7529,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tail Whip
 
 === TRAINER_COOLTRAINER_OWEN ===
-Name: OWEN
+Name: カケル
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6281,7 +7579,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tail Whip
 
 === TRAINER_COOLTRAINER_BERKE ===
-Name: BERKE
+Name: ナオキ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6331,7 +7629,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Protect
 
 === TRAINER_COOLTRAINER_YUJI ===
-Name: YUJI
+Name: カズシ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6381,7 +7679,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Growl
 
 === TRAINER_COOLTRAINER_WARREN ===
-Name: WARREN
+Name: レイジ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -6431,10 +7729,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Kick
 
 === TRAINER_COOLTRAINER_MARY ===
-Name: MARY
+Name: アヤカ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Super Potion
 Double Battle: No
@@ -6481,10 +7779,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Seed
 
 === TRAINER_COOLTRAINER_CAROLINE ===
-Name: CAROLINE
+Name: コトミ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Hyper Potion
 Double Battle: No
@@ -6531,10 +7829,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Powder
 
 === TRAINER_COOLTRAINER_ALEXA ===
-Name: ALEXA
+Name: サヤカ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore
 Double Battle: No
@@ -6581,10 +7879,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Minimize
 
 === TRAINER_COOLTRAINER_SHANNON ===
-Name: SHANNON
+Name: エリコ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore
 Double Battle: No
@@ -6631,10 +7929,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Life
 
 === TRAINER_COOLTRAINER_NAOMI ===
-Name: NAOMI
+Name: カナコ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Hyper Potion
 Double Battle: No
@@ -6681,10 +7979,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fire Spin
 
 === TRAINER_COOLTRAINER_BROOKE ===
-Name: BROOKE
+Name: マリア
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore
 Double Battle: No
@@ -6731,10 +8029,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Powder
 
 === TRAINER_COOLTRAINER_AUSTINA ===
-Name: AUSTINA
+Name: ヒロミ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore
 Double Battle: No
@@ -6781,10 +8079,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Peck
 
 === TRAINER_COOLTRAINER_JULIE ===
-Name: JULIE
+Name: ヒヅキ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Hyper Potion
 Double Battle: No
@@ -6831,10 +8129,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Team
 
 === TRAINER_ELITE_FOUR_LORELEI ===
-Name: LORELEI
+Name: カンナ
 Class: Elite Four Frlg
 Pic: Elite Four Lorelei Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
@@ -6882,7 +8180,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Body Slam
 
 === TRAINER_ELITE_FOUR_BRUNO ===
-Name: BRUNO
+Name: シバ
 Class: Elite Four Frlg
 Pic: Elite Four Bruno Frlg
 Gender: Male
@@ -6933,10 +8231,10 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Rock Tomb
 
 === TRAINER_ELITE_FOUR_AGATHA ===
-Name: AGATHA
+Name: キクコ
 Class: Elite Four Frlg
 Pic: Elite Four Agatha Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Items: Full Restore / Full Restore
 Double Battle: No
@@ -6984,7 +8282,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Nightmare
 
 === TRAINER_ELITE_FOUR_LANCE ===
-Name: LANCE
+Name: ワタル
 Class: Elite Four Frlg
 Pic: Elite Four Lance Frlg
 Gender: Male
@@ -7035,7 +8333,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Wing Attack
 
 === TRAINER_LEADER_BROCK ===
-Name: BROCK
+Name: タケシ
 Class: Leader Frlg
 Pic: Leader Brock Frlg
 Gender: Male
@@ -7057,10 +8355,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Tomb
 
 === TRAINER_LEADER_MISTY ===
-Name: MISTY
+Name: カスミ
 Class: Leader Frlg
 Pic: Leader Misty Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Super Potion
 Double Battle: No
@@ -7083,7 +8381,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
 
 === TRAINER_LEADER_LT_SURGE ===
-Name: LT. SURGE
+Name: マチス
 Class: Leader Frlg
 Pic: Leader Lt Surge Frlg
 Gender: Male
@@ -7117,10 +8415,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shock Wave
 
 === TRAINER_LEADER_ERIKA ===
-Name: ERIKA
+Name: エリカ
 Class: Leader Frlg
 Pic: Leader Erika Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Hyper Potion / Full Heal
 Double Battle: No
@@ -7151,7 +8449,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Giga Drain
 
 === TRAINER_LEADER_KOGA ===
-Name: KOGA
+Name: キョウ
 Class: Leader Frlg
 Pic: Leader Koga Frlg
 Gender: Male
@@ -7193,7 +8491,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Toxic
 
 === TRAINER_LEADER_BLAINE ===
-Name: BLAINE
+Name: カツラ
 Class: Leader Frlg
 Pic: Leader Blaine Frlg
 Gender: Male
@@ -7235,10 +8533,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fire Blast
 
 === TRAINER_LEADER_SABRINA ===
-Name: SABRINA
+Name: ナツメ
 Class: Leader Frlg
 Pic: Leader Sabrina Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
@@ -7277,7 +8575,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Calm Mind
 
 === TRAINER_GENTLEMAN_THOMAS ===
-Name: THOMAS
+Name: スコット
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7294,7 +8592,7 @@ Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_ARTHUR ===
-Name: ARTHUR
+Name: ケント
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7311,7 +8609,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_TUCKER ===
-Name: TUCKER
+Name: オルソン
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7324,7 +8622,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_NORTON ===
-Name: NORTON
+Name: ユーリ
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7337,7 +8635,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_WALTER ===
-Name: WALTER
+Name: ロバート
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7354,7 +8652,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7379,7 +8677,7 @@ Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7404,7 +8702,7 @@ Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7429,7 +8727,7 @@ Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7458,7 +8756,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7487,7 +8785,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7516,7 +8814,7 @@ Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7545,7 +8843,7 @@ Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7574,7 +8872,7 @@ Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7603,7 +8901,7 @@ Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7660,7 +8958,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Rapid Spin
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7717,7 +9015,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Synthesis
 
 === TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Rival Late Frlg
 Pic: Rival Late Frlg
 Gender: Male
@@ -7774,7 +9072,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Scary Face
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -7833,7 +9131,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -7892,7 +9190,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Growth
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -7951,10 +9249,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Spin
 
 === TRAINER_CHANNELER_PATRICIA ===
-Name: PATRICIA
+Name: コトネ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -7964,10 +9262,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_CARLY ===
-Name: CARLY
+Name: トミコ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -7977,10 +9275,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_HOPE ===
-Name: HOPE
+Name: アイリ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -7990,10 +9288,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_PAULA ===
-Name: PAULA
+Name: ヒイナ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8003,10 +9301,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_LAUREL ===
-Name: LAUREL
+Name: ソノコ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8020,10 +9318,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_JODY ===
-Name: JODY
+Name: サオリ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8033,10 +9331,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_TAMMY ===
-Name: TAMMY
+Name: ミコト
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8046,10 +9344,10 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_RUTH ===
-Name: RUTH
+Name: ヒトエ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8059,10 +9357,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_KARINA ===
-Name: KARINA
+Name: カヨコ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8072,10 +9370,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_JANAE ===
-Name: JANAE
+Name: シズル
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8085,10 +9383,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_ANGELICA ===
-Name: ANGELICA
+Name: ウキエ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8106,10 +9404,10 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_EMILIA ===
-Name: EMILIA
+Name: サワコ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8119,10 +9417,122 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_JENNIFER ===
-Name: JENNIFER
+Name: ヤエコ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_1 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 23
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_2 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_3 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_4 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_5 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Haunter
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_6 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastly
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastly
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_7 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
+Music: Dangerous
+Double Battle: No
+AI: Check Bad Move
+
+Gastly
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CHANNELER_DUMMY_8 ===
+Name: ダミー
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8132,10 +9542,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_AMANDA ===
-Name: AMANDA
+Name: フミカ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8149,10 +9559,10 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_STACY ===
-Name: STACY
+Name: キリエ
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8162,10 +9572,10 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANNELER_TASHA ===
-Name: TASHA
+Name: ホタル
 Class: Channeler Frlg
 Pic: Channeler Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8183,7 +9593,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_JEREMY ===
-Name: JEREMY
+Name: ナルオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -8200,10 +9610,10 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_ALMA ===
-Name: ALMA
+Name: ワカバ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8221,10 +9631,10 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_SUSIE ===
-Name: SUSIE
+Name: ミサキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8250,10 +9660,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_VALERIE ===
-Name: VALERIE
+Name: ホノカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8267,10 +9677,10 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_GWEN ===
-Name: GWEN
+Name: ノゾミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8292,7 +9702,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIKER_VIRGIL ===
-Name: VIRGIL
+Name: ユウヤ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -8325,7 +9735,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_CAMPER_FLINT ===
-Name: FLINT
+Name: テルオ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -8342,10 +9752,10 @@ Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_MISSY ===
-Name: MISSY
+Name: クミコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8359,10 +9769,10 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_IRENE ===
-Name: IRENE
+Name: ミズキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8380,10 +9790,10 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_DANA ===
-Name: DANA
+Name: ミユキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8401,10 +9811,10 @@ Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_ARIANA ===
-Name: ARIANA
+Name: カナミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8426,10 +9836,10 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_LEAH ===
-Name: LEAH
+Name: エミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8443,7 +9853,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_JUSTIN ===
-Name: JUSTIN
+Name: マサミチ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -8460,10 +9870,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_YAZMIN ===
-Name: YAZMIN
+Name: ユイカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8481,10 +9891,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_KINDRA ===
-Name: KINDRA
+Name: サチコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8502,10 +9912,10 @@ Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_BECKY ===
-Name: BECKY
+Name: アイミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8519,10 +9929,10 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_CELIA ===
-Name: CELIA
+Name: アキコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8532,7 +9942,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_BROOKS ===
-Name: BROOKS
+Name: スミス
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -8545,7 +9955,7 @@ Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GENTLEMAN_LAMAR ===
-Name: LAMAR
+Name: パーカー
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -8562,10 +9972,10 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE ===
-Name: ELI & ANNE
+Name: リナとカナ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -8579,7 +9989,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COOL_COUPLE_RAY_TYRA ===
-Name: RAY & TYRA
+Name: シンとカヨ
 Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
@@ -8604,7 +10014,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Sting
 
 === TRAINER_YOUNG_COUPLE_GIA_JES ===
-Name: GIA & JES
+Name: アユとシゲ
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
@@ -8621,10 +10031,10 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_KIRI_JAN ===
-Name: KIRI & JAN
+Name: キリとエナ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -8638,7 +10048,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA ===
-Name: RON & MYA
+Name: テツとチカ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -8655,7 +10065,7 @@ Level: 29
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_YOUNG_COUPLE_LEA_JED ===
-Name: LEA & JED
+Name: カホとジン
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
@@ -8672,7 +10082,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_LIA_LUC ===
-Name: LIA & LUC
+Name: マナとコウ
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -8689,7 +10099,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN ===
-Name: LIL & IAN
+Name: チサとカツ
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -8705,8 +10115,92 @@ Starmie
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_BUG_CATCHER_DUMMY_2 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_3 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_4 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_5 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_6 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_7 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUG_CATCHER_DUMMY_8 ===
+Name: ダミー
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Serious
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_YOUNGSTER_BEN_3 ===
-Name: BEN
+Name: ヒロト
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8723,7 +10217,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNGSTER_BEN_4 ===
-Name: BEN
+Name: ヒロト
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8740,7 +10234,7 @@ Level: 48
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_YOUNGSTER_CHAD_2 ===
-Name: CHAD
+Name: カツユキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8757,10 +10251,10 @@ Level: 20
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_LASS_RELI_2 ===
-Name: RELI
+Name: アミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8774,10 +10268,10 @@ Level: 20
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_LASS_RELI_3 ===
-Name: RELI
+Name: アミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8791,7 +10285,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNGSTER_TIMMY_2 ===
-Name: TIMMY
+Name: シンゴ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8812,7 +10306,7 @@ Level: 19
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_YOUNGSTER_TIMMY_3 ===
-Name: TIMMY
+Name: シンゴ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8833,7 +10327,7 @@ Level: 27
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNGSTER_TIMMY_4 ===
-Name: TIMMY
+Name: シンゴ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8854,7 +10348,7 @@ Level: 52
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_YOUNGSTER_CHAD_3 ===
-Name: CHAD
+Name: カツユキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8871,10 +10365,10 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_LASS_JANICE_2 ===
-Name: JANICE
+Name: エリ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8888,10 +10382,10 @@ Level: 20
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_LASS_JANICE_3 ===
-Name: JANICE
+Name: エリ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -8905,7 +10399,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNGSTER_CHAD_4 ===
-Name: CHAD
+Name: カツユキ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -8922,7 +10416,7 @@ Level: 48
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_HIKER_FRANKLIN_2 ===
-Name: FRANKLIN
+Name: シゲオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -8939,7 +10433,7 @@ Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_PKMN_PROF_PROF_OAK ===
-Name: PROF. OAK
+Name: オーキド
 Class: Pkmn Prof Frlg
 Pic: Professor Oak Frlg
 Gender: Male
@@ -8951,11 +10445,63 @@ Ekans
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_PLAYER_BRENDAN ===
+Name: ユウキ
+Class: Player Frlg
+Pic: RS Brendan
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLAYER_MAY ===
+Name: ハルカ
+Class: Player Frlg
+Pic: RS May
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLAYER_RED ===
+Name: レッド
+Class: Player Frlg
+Pic: RED
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLAYER_LEAF ===
+Name: リーフ
+Class: Player Frlg
+Pic: LEAF
+Gender: Female
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_TEAM_ROCKET_GRUNT_42 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -8969,10 +10515,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PSYCHIC_JACLYN ===
-Name: JACLYN
+Name: マリコ
 Class: Psychic Frlg
 Pic: Psychic F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -9002,10 +10548,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Reflect
 
 === TRAINER_CRUSH_GIRL_SHARON ===
-Name: SHARON
+Name: サイカ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -9019,10 +10565,10 @@ Level: 37
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_TUBER_AMIRA ===
-Name: AMIRA
+Name: モモエ
 Class: Tuber Frlg
 Pic: Tuber F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9040,7 +10586,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PKMN_BREEDER_ALIZE ===
-Name: ALIZE
+Name: トシエ
 Class: Pkmn Breeder Frlg
 Pic: Pokemon Breeder Frlg
 Gender: Male
@@ -9061,7 +10607,7 @@ Level: 48
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_PKMN_RANGER_NICOLAS ===
-Name: NICOLAS
+Name: タケル
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
@@ -9087,7 +10633,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stun Spore
 
 === TRAINER_PKMN_RANGER_MADELINE ===
-Name: MADELINE
+Name: マドカ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
@@ -9113,10 +10659,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stun Spore
 
 === TRAINER_AROMA_LADY_NIKKI ===
-Name: NIKKI
+Name: シズエ
 Class: Aroma Lady Frlg
 Pic: Aroma Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9130,7 +10676,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_STANLY ===
-Name: STANLY
+Name: トキオ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -9151,10 +10697,10 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LADY_JACKI ===
-Name: JACKI
+Name: シホミ
 Class: Lady Frlg
 Pic: Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Full Restore
 Double Battle: No
@@ -9169,10 +10715,10 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PAINTER_DAISY ===
-Name: DAISY
+Name: ミドリ
 Class: Painter Frlg
 Pic: Painter Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9186,7 +10732,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Mega Punch
 
 === TRAINER_BIKER_GOON ===
-Name: GOON
+Name: こぶん
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -9211,7 +10757,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 
 === TRAINER_BIKER_GOON_2 ===
-Name: GOON
+Name: こぶん
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -9228,7 +10774,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 
 === TRAINER_BIKER_GOON_3 ===
-Name: GOON
+Name: こぶん
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -9240,8 +10786,21 @@ Grimer
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_BIKER_DUMMY_2 ===
+Name: ダミー
+Class: Biker Frlg
+Pic: Biker Frlg
+Gender: Male
+Music: Serious
+Double Battle: No
+AI: Check Bad Move
+
+Ekans
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_BUG_CATCHER_ANTHONY ===
-Name: ANTHONY
+Name: シュンスケ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -9258,7 +10817,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_CHARLIE ===
-Name: CHARLIE
+Name: マナブ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -9279,10 +10838,10 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE_2 ===
-Name: ELI & ANNE
+Name: リナとカナ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -9296,7 +10855,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNGSTER_JOHNSON ===
-Name: JOHNSON
+Name: ユウリ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -9317,7 +10876,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIKER_RICARDO ===
-Name: RICARDO
+Name: ヤスキ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -9350,7 +10909,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pound
 
 === TRAINER_BIKER_JAREN ===
-Name: JAREN
+Name: リョウ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -9367,7 +10926,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_43 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9384,7 +10943,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_44 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9409,7 +10968,7 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_45 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9430,7 +10989,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_46 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9451,7 +11010,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_47 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9472,7 +11031,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_48 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9489,10 +11048,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_ADMIN ===
-Name: ADMIN
+Name: かんぶ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Items: Hyper Potion
 Double Battle: No
@@ -9523,7 +11082,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Stun Spore
 
 === TRAINER_TEAM_ROCKET_ADMIN_2 ===
-Name: ADMIN
+Name: かんぶ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9557,7 +11116,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shadow Ball
 
 === TRAINER_SCIENTIST_GIDEON ===
-Name: GIDEON
+Name: スミオ
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -9606,10 +11165,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 
 === TRAINER_SWIMMER_FEMALE_AMARA ===
-Name: AMARA
+Name: アキナ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9627,10 +11186,10 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_MARIA ===
-Name: MARIA
+Name: サエコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9644,10 +11203,10 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_ABIGAIL ===
-Name: ABIGAIL
+Name: ショウコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9665,7 +11224,7 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_FINN ===
-Name: FINN
+Name: ソウタ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -9678,7 +11237,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_GARRETT ===
-Name: GARRETT
+Name: トモユキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -9699,7 +11258,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_TOMMY ===
-Name: TOMMY
+Name: カツオ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -9728,10 +11287,10 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CRUSH_GIRL_TANYA ===
-Name: TANYA
+Name: ケイコ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -9745,7 +11304,7 @@ Level: 38
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_BLACK_BELT_SHEA ===
-Name: SHEA
+Name: カツミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -9762,7 +11321,7 @@ Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BLACK_BELT_HUGH ===
-Name: HUGH
+Name: タクミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -9779,7 +11338,7 @@ Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CAMPER_BRYCE ===
-Name: BRYCE
+Name: ノリユキ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -9800,10 +11359,10 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_CLAIRE ===
-Name: CLAIRE
+Name: コウメ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9825,7 +11384,7 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA ===
-Name: MIK & KIA
+Name: カズとサチ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -9842,10 +11401,10 @@ Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_AROMA_LADY_VIOLET ===
-Name: VIOLET
+Name: チヅル
 Class: Aroma Lady Frlg
 Pic: Aroma Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9863,10 +11422,10 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TUBER_ALEXIS ===
-Name: ALEXIS
+Name: ナナコ
 Class: Tuber Frlg
 Pic: Tuber F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9888,10 +11447,10 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_JOY_MEG ===
-Name: JOY & MEG
+Name: ユイとリコ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -9905,10 +11464,10 @@ Level: 37
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_TISHA ===
-Name: TISHA
+Name: ユカリ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9918,10 +11477,10 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PAINTER_CELINA ===
-Name: CELINA
+Name: ワカコ
 Class: Painter Frlg
 Pic: Painter Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9935,10 +11494,10 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Bounce
 
 === TRAINER_PAINTER_RAYNA ===
-Name: RAYNA
+Name: フジコ
 Class: Painter Frlg
 Pic: Painter Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -9952,10 +11511,10 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Self Destruct
 
 === TRAINER_LADY_GILLIAN ===
-Name: GILLIAN
+Name: ユキノ
 Class: Lady Frlg
 Pic: Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Full Restore
 Double Battle: No
@@ -9974,7 +11533,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_DESTIN ===
-Name: DESTIN
+Name: タケフミ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -9991,7 +11550,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_TOBY ===
-Name: TOBY
+Name: ナツオ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -10012,7 +11571,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_49 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10033,7 +11592,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_50 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10058,10 +11617,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Self Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_51 ===
-Name: GRUNT
+Name: したっぱ
 Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
-Gender: Male
+Gender: Female
 Music: Dangerous
 Double Battle: No
 AI: Check Bad Move
@@ -10079,7 +11638,7 @@ Level: 48
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_BIRD_KEEPER_MILO ===
-Name: MILO
+Name: ショウヘイ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -10096,7 +11655,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_CHAZ ===
-Name: CHAZ
+Name: ハルアキ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -10113,7 +11672,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BIRD_KEEPER_HAROLD ===
-Name: HAROLD
+Name: スミト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -10130,7 +11689,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FISHERMAN_TYLOR ===
-Name: TYLOR
+Name: ノブハル
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -10147,7 +11706,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_MYMO ===
-Name: MYMO
+Name: マサル
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -10164,10 +11723,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_NICOLE ===
-Name: NICOLE
+Name: ミズホ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -10177,7 +11736,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_AVA_GEB ===
-Name: AVA & GEB
+Name: ミカとマサ
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -10194,10 +11753,10 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AROMA_LADY_ROSE ===
-Name: ROSE
+Name: ヤヨイ
 Class: Aroma Lady Frlg
 Pic: Aroma Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -10211,7 +11770,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_MALE_SAMIR ===
-Name: SAMIR
+Name: テルアキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -10224,10 +11783,10 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SWIMMER_FEMALE_DENISE ===
-Name: DENISE
+Name: マサミ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -10241,10 +11800,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_MIU_MIA ===
-Name: MIU & MIA
+Name: ミウとミオ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -10258,7 +11817,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_EARL ===
-Name: EARL
+Name: トラオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -10275,7 +11834,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_FOSTER ===
-Name: FOSTER
+Name: アキヒト
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -10288,7 +11847,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_LARRY ===
-Name: LARRY
+Name: キヨフミ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -10305,7 +11864,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HIKER_DARYL ===
-Name: DARYL
+Name: ヒダカ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -10318,7 +11877,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_POKEMANIAC_HECTOR ===
-Name: HECTOR
+Name: トシノブ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -10335,7 +11894,7 @@ Level: 49
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_PSYCHIC_DARIO ===
-Name: DARIO
+Name: レイ
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -10352,10 +11911,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Agility
 
 === TRAINER_PSYCHIC_RODETTE ===
-Name: RODETTE
+Name: マヤ
 Class: Psychic Frlg
 Pic: Psychic F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -10385,10 +11944,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Future Sight
 
 === TRAINER_AROMA_LADY_MIAH ===
-Name: MIAH
+Name: ヒナコ
 Class: Aroma Lady Frlg
 Pic: Aroma Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -10402,7 +11961,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNG_COUPLE_EVE_JON ===
-Name: EVE & JON
+Name: ユウとタカ
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
@@ -10419,7 +11978,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JUGGLER_MASON ===
-Name: MASON
+Name: トーマ
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -10460,10 +12019,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Explosion
 
 === TRAINER_CRUSH_GIRL_CYNDY ===
-Name: CYNDY
+Name: ユリカ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -10481,10 +12040,10 @@ Level: 48
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CRUSH_GIRL_JOCELYN ===
-Name: JOCELYN
+Name: シノブ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -10498,7 +12057,7 @@ Level: 38
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_TAMER_EVAN ===
-Name: EVAN
+Name: ノブアキ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -10519,7 +12078,7 @@ Level: 49
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_POKEMANIAC_MARK_2 ===
-Name: MARK
+Name: モトフミ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -10536,7 +12095,7 @@ Level: 33
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_PKMN_RANGER_LOGAN ===
-Name: LOGAN
+Name: ショウタ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
@@ -10562,7 +12121,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Hypnosis
 
 === TRAINER_PKMN_RANGER_JACKSON ===
-Name: JACKSON
+Name: マモル
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
@@ -10596,7 +12155,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Stomp
 
 === TRAINER_PKMN_RANGER_BETH ===
-Name: BETH
+Name: ノリカ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
@@ -10618,7 +12177,7 @@ Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PKMN_RANGER_KATELYN ===
-Name: KATELYN
+Name: ナツミ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
@@ -10636,7 +12195,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Soft Boiled
 
 === TRAINER_COOLTRAINER_LEROY ===
-Name: LEROY
+Name: マコト
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -10686,7 +12245,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rest
 
 === TRAINER_COOLTRAINER_MICHELLE ===
-Name: MICHELLE
+Name: カズミ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
@@ -10736,7 +12295,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Odor Sleuth
 
 === TRAINER_COOL_COUPLE_LEX_NYA ===
-Name: LEX & NYA
+Name: リキとユキ
 Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
@@ -10762,7 +12321,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Swagger
 
 === TRAINER_RUIN_MANIAC_BRANDON ===
-Name: BRANDON
+Name: ミキオ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -10775,7 +12334,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_BENJAMIN ===
-Name: BENJAMIN
+Name: ヒデアキ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -10808,10 +12367,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Self Destruct
 
 === TRAINER_PAINTER_EDNA ===
-Name: EDNA
+Name: リリコ
 Class: Painter Frlg
 Pic: Painter Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -10825,7 +12384,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Quick Attack
 
 === TRAINER_GENTLEMAN_CLIFFORD ===
-Name: CLIFFORD
+Name: ブラウン
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -10842,10 +12401,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LADY_SELPHY ===
-Name: SELPHY
+Name: アキホ
 Class: Lady Frlg
 Pic: Lady Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Items: Full Restore
 Double Battle: No
@@ -10868,7 +12427,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Taunt
 
 === TRAINER_RUIN_MANIAC_LAWSON ===
-Name: LAWSON
+Name: モリアキ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -10889,10 +12448,10 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PSYCHIC_LAURA ===
-Name: LAURA
+Name: ミサト
 Class: Psychic Frlg
 Pic: Psychic F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -10910,7 +12469,7 @@ Level: 49
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_PKMN_BREEDER_BETHANY ===
-Name: BETHANY
+Name: テイコ
 Class: Pkmn Breeder Frlg
 Pic: Pokemon Breeder Frlg
 Gender: Male
@@ -10923,7 +12482,7 @@ Level: 50
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_PKMN_BREEDER_ALLISON ===
-Name: ALLISON
+Name: チサト
 Class: Pkmn Breeder Frlg
 Pic: Pokemon Breeder Frlg
 Gender: Male
@@ -10944,7 +12503,7 @@ Level: 48
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_BUG_CATCHER_GARRET ===
-Name: GARRET
+Name: ショウイチ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -10957,7 +12516,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_JONAH ===
-Name: JONAH
+Name: ヨシノリ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -10982,7 +12541,7 @@ Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUG_CATCHER_VANCE ===
-Name: VANCE
+Name: アキヒロ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -10999,7 +12558,7 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_NASH ===
-Name: NASH
+Name: カズトシ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -11020,7 +12579,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNGSTER_CORDELL ===
-Name: CORDELL
+Name: クニハル
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -11037,10 +12596,10 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_DALIA ===
-Name: DALIA
+Name: ミホ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11062,10 +12621,10 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LASS_JOANA ===
-Name: JOANA
+Name: マコ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11075,7 +12634,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CAMPER_RILEY ===
-Name: RILEY
+Name: タダヒロ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11092,10 +12651,10 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_MARCY ===
-Name: MARCY
+Name: トウコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11113,7 +12672,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RUIN_MANIAC_LAYTON ===
-Name: LAYTON
+Name: フミアキ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -11134,10 +12693,10 @@ Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PICNICKER_KELSEY_2 ===
-Name: KELSEY
+Name: ミサ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11151,10 +12710,10 @@ Level: 21
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_PICNICKER_KELSEY_3 ===
-Name: KELSEY
+Name: ミサ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11168,10 +12727,10 @@ Level: 29
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_PICNICKER_KELSEY_4 ===
-Name: KELSEY
+Name: ミサ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11185,7 +12744,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_CAMPER_RICKY_2 ===
-Name: RICKY
+Name: ユウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11198,7 +12757,7 @@ Level: 22
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_CAMPER_RICKY_3 ===
-Name: RICKY
+Name: ユウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11211,7 +12770,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_CAMPER_RICKY_4 ===
-Name: RICKY
+Name: ユウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11224,7 +12783,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_CAMPER_JEFF_2 ===
-Name: JEFF
+Name: コウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11241,7 +12800,7 @@ Level: 21
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_CAMPER_JEFF_3 ===
-Name: JEFF
+Name: コウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11258,7 +12817,7 @@ Level: 29
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_CAMPER_JEFF_4 ===
-Name: JEFF
+Name: コウタ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11275,10 +12834,10 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PICNICKER_ISABELLE_2 ===
-Name: ISABELLE
+Name: ナズナ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11296,10 +12855,10 @@ Level: 18
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_PICNICKER_ISABELLE_3 ===
-Name: ISABELLE
+Name: ナズナ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11317,10 +12876,10 @@ Level: 26
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_PICNICKER_ISABELLE_4 ===
-Name: ISABELLE
+Name: ナズナ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11338,7 +12897,7 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_YOUNGSTER_YASU_2 ===
-Name: YASU
+Name: ヒロノブ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -11359,7 +12918,7 @@ Level: 22
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_YOUNGSTER_YASU_3 ===
-Name: YASU
+Name: ヒロノブ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -11380,7 +12939,7 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ENGINEER_BERNIE_2 ===
-Name: BERNIE
+Name: ノブヒコ
 Class: Engineer Frlg
 Pic: Engineer Frlg
 Gender: Male
@@ -11401,7 +12960,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_GAMER_DARIAN_2 ===
-Name: DARIAN
+Name: ケンキチ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -11418,7 +12977,7 @@ Level: 29
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_CAMPER_CHRIS_2 ===
-Name: CHRIS
+Name: マサシ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11435,7 +12994,7 @@ Level: 24
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CAMPER_CHRIS_3 ===
-Name: CHRIS
+Name: マサシ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11452,7 +13011,7 @@ Level: 29
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_CAMPER_CHRIS_4 ===
-Name: CHRIS
+Name: マサシ
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -11469,10 +13028,10 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PICNICKER_ALICIA_2 ===
-Name: ALICIA
+Name: エミカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11482,10 +13041,10 @@ Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_PICNICKER_ALICIA_3 ===
-Name: ALICIA
+Name: エミカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11495,10 +13054,10 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_PICNICKER_ALICIA_4 ===
-Name: ALICIA
+Name: エミカ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11508,7 +13067,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_HIKER_JEREMY_2 ===
-Name: JEREMY
+Name: ナルオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -11525,7 +13084,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_POKEMANIAC_MARK_3 ===
-Name: MARK
+Name: モトフミ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -11542,7 +13101,7 @@ Level: 54
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_POKEMANIAC_HERMAN_2 ===
-Name: HERMAN
+Name: ダイスケ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -11559,7 +13118,7 @@ Level: 29
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_POKEMANIAC_HERMAN_3 ===
-Name: HERMAN
+Name: ダイスケ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -11576,7 +13135,7 @@ Level: 54
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_HIKER_TRENT_2 ===
-Name: TRENT
+Name: ケンサク
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -11593,10 +13152,10 @@ Level: 31
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_LASS_MEGAN_2 ===
-Name: MEGAN
+Name: マミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11622,10 +13181,10 @@ Level: 22
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LASS_MEGAN_3 ===
-Name: MEGAN
+Name: マミ
 Class: Lass Frlg
 Pic: Lass Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11651,7 +13210,7 @@ Level: 48
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SUPER_NERD_GLENN_2 ===
-Name: GLENN
+Name: スギオ
 Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
@@ -11672,7 +13231,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_GAMER_RICH_2 ===
-Name: RICH
+Name: ソウキ
 Class: Gamer Frlg
 Pic: Gamer Frlg
 Gender: Male
@@ -11689,7 +13248,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIKER_JAREN_2 ===
-Name: JAREN
+Name: リョウ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -11706,7 +13265,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_FISHERMAN_ELLIOT_2 ===
-Name: ELLIOT
+Name: アキヒコ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -11731,7 +13290,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_ROCKER_LUCA_2 ===
-Name: LUCA
+Name: アヤキ
 Class: Rocker Frlg
 Pic: Rocker Frlg
 Gender: Male
@@ -11748,7 +13307,7 @@ Level: 33
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BEAUTY_SHEILA_2 ===
-Name: SHEILA
+Name: クニミ
 Class: Beauty Frlg
 Pic: Beauty Frlg
 Gender: Male
@@ -11765,7 +13324,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIRD_KEEPER_ROBERT_2 ===
-Name: ROBERT
+Name: ツバサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -11790,7 +13349,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIRD_KEEPER_ROBERT_3 ===
-Name: ROBERT
+Name: ツバサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -11815,10 +13374,10 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PICNICKER_SUSIE_2 ===
-Name: SUSIE
+Name: ミサキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11844,10 +13403,10 @@ Level: 27
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_PICNICKER_SUSIE_3 ===
-Name: SUSIE
+Name: ミサキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11873,10 +13432,10 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PICNICKER_SUSIE_4 ===
-Name: SUSIE
+Name: ミサキ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -11902,7 +13461,7 @@ Level: 52
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BIKER_LUKAS_2 ===
-Name: LUKAS
+Name: キョウスケ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -11927,7 +13486,7 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIRD_KEEPER_BENNY_2 ===
-Name: BENNY
+Name: アキマサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -11944,7 +13503,7 @@ Level: 32
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIRD_KEEPER_BENNY_3 ===
-Name: BENNY
+Name: アキマサ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -11961,7 +13520,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIRD_KEEPER_MARLON_2 ===
-Name: MARLON
+Name: アサト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -11982,7 +13541,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIRD_KEEPER_MARLON_3 ===
-Name: MARLON
+Name: アサト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12003,7 +13562,7 @@ Level: 48
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BEAUTY_GRACE_2 ===
-Name: GRACE
+Name: アキエ
 Class: Beauty Frlg
 Pic: Beauty Frlg
 Gender: Male
@@ -12020,7 +13579,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIRD_KEEPER_CHESTER_2 ===
-Name: CHESTER
+Name: タイシ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12041,7 +13600,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIRD_KEEPER_CHESTER_3 ===
-Name: CHESTER
+Name: タイシ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12062,10 +13621,10 @@ Level: 48
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PICNICKER_BECKY_2 ===
-Name: BECKY
+Name: アイミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12079,10 +13638,10 @@ Level: 32
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_PICNICKER_BECKY_3 ===
-Name: BECKY
+Name: アイミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12096,10 +13655,10 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PICNICKER_BECKY_4 ===
-Name: BECKY
+Name: アイミ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12113,7 +13672,7 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_2 ===
-Name: RON & MYA
+Name: テツとチカ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -12130,7 +13689,7 @@ Level: 33
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_3 ===
-Name: RON & MYA
+Name: テツとチカ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -12147,7 +13706,7 @@ Level: 51
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_4 ===
-Name: RON & MYA
+Name: テツとチカ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -12164,7 +13723,7 @@ Level: 56
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_BIKER_RUBEN_2 ===
-Name: RUBEN
+Name: ジュン
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -12185,7 +13744,7 @@ Level: 48
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_CUE_BALL_CAMRON_2 ===
-Name: CAMRON
+Name: クニオ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -12202,7 +13761,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIKER_JAXON_2 ===
-Name: JAXON
+Name: トモアキ
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -12219,7 +13778,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_CUE_BALL_ISAIAH_2 ===
-Name: ISAIAH
+Name: エイスケ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -12236,7 +13795,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_CUE_BALL_COREY_2 ===
-Name: COREY
+Name: センゴ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
@@ -12253,7 +13812,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_BIRD_KEEPER_JACOB_2 ===
-Name: JACOB
+Name: ススム
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12278,7 +13837,7 @@ Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BIRD_KEEPER_JACOB_3 ===
-Name: JACOB
+Name: ススム
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12303,10 +13862,10 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SWIMMER_FEMALE_ALICE_2 ===
-Name: ALICE
+Name: エツコ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12320,7 +13879,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SWIMMER_MALE_DARRIN_2 ===
-Name: DARRIN
+Name: テルユキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -12345,10 +13904,10 @@ Level: 52
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PICNICKER_MISSY_2 ===
-Name: MISSY
+Name: クミコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12362,10 +13921,10 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PICNICKER_MISSY_3 ===
-Name: MISSY
+Name: クミコ
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12379,7 +13938,7 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_FISHERMAN_WADE_2 ===
-Name: WADE
+Name: イサオ
 Class: Fisherman Frlg
 Pic: Fisherman Frlg
 Gender: Male
@@ -12412,7 +13971,7 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SWIMMER_MALE_JACK_2 ===
-Name: JACK
+Name: ヒデノリ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -12425,7 +13984,7 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_2 ===
-Name: LIL & IAN
+Name: チサとカツ
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -12442,7 +14001,7 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_3 ===
-Name: LIL & IAN
+Name: チサとカツ
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -12459,7 +14018,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_SWIMMER_MALE_FINN_2 ===
-Name: FINN
+Name: ソウタ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -12472,10 +14031,10 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_CRUSH_GIRL_SHARON_2 ===
-Name: SHARON
+Name: サイカ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12489,10 +14048,10 @@ Level: 50
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_GIRL_SHARON_3 ===
-Name: SHARON
+Name: サイカ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12506,10 +14065,10 @@ Level: 55
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_CRUSH_GIRL_TANYA_2 ===
-Name: TANYA
+Name: ケイコ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12523,10 +14082,10 @@ Level: 50
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_GIRL_TANYA_3 ===
-Name: TANYA
+Name: ケイコ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12540,7 +14099,7 @@ Level: 55
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_BLACK_BELT_SHEA_2 ===
-Name: SHEA
+Name: カツミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -12557,7 +14116,7 @@ Level: 50
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_BLACK_BELT_SHEA_3 ===
-Name: SHEA
+Name: カツミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -12574,7 +14133,7 @@ Level: 55
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
 === TRAINER_BLACK_BELT_HUGH_2 ===
-Name: HUGH
+Name: タクミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -12591,7 +14150,7 @@ Level: 50
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 
 === TRAINER_BLACK_BELT_HUGH_3 ===
-Name: HUGH
+Name: タクミ
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -12608,7 +14167,7 @@ Level: 55
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA_2 ===
-Name: MIK & KIA
+Name: カズとサチ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -12625,7 +14184,7 @@ Level: 51
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA_3 ===
-Name: MIK & KIA
+Name: カズとサチ
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -12642,10 +14201,10 @@ Level: 56
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_TUBER_AMIRA_2 ===
-Name: AMIRA
+Name: モモエ
 Class: Tuber Frlg
 Pic: Tuber F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12663,10 +14222,10 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_TWINS_JOY_MEG_2 ===
-Name: JOY & MEG
+Name: ユイとリコ
 Class: Twins Frlg
 Pic: Twins Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: Yes
 AI: Check Bad Move
@@ -12680,10 +14239,10 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_PAINTER_RAYNA_2 ===
-Name: RAYNA
+Name: フジコ
 Class: Painter Frlg
 Pic: Painter Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12697,7 +14256,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Self Destruct
 
 === TRAINER_YOUNGSTER_DESTIN_2 ===
-Name: DESTIN
+Name: タケフミ
 Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
@@ -12714,7 +14273,7 @@ Level: 53
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PKMN_BREEDER_ALIZE_2 ===
-Name: ALIZE
+Name: トシエ
 Class: Pkmn Breeder Frlg
 Pic: Pokemon Breeder Frlg
 Gender: Male
@@ -12735,7 +14294,7 @@ Level: 53
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_YOUNG_COUPLE_GIA_JES_2 ===
-Name: GIA & JES
+Name: アユとシゲ
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
@@ -12752,7 +14311,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNG_COUPLE_GIA_JES_3 ===
-Name: GIA & JES
+Name: アユとシゲ
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
@@ -12769,7 +14328,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BIRD_KEEPER_MILO_2 ===
-Name: MILO
+Name: ショウヘイ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12786,7 +14345,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BIRD_KEEPER_CHAZ_2 ===
-Name: CHAZ
+Name: ハルアキ
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12803,7 +14362,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BIRD_KEEPER_HAROLD_2 ===
-Name: HAROLD
+Name: スミト
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -12820,10 +14379,10 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_SWIMMER_FEMALE_NICOLE_2 ===
-Name: NICOLE
+Name: ミズホ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -12833,10 +14392,10 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PSYCHIC_JACLYN_2 ===
-Name: JACLYN
+Name: マリコ
 Class: Psychic Frlg
 Pic: Psychic F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12866,7 +14425,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Reflect
 
 === TRAINER_SWIMMER_MALE_SAMIR_2 ===
-Name: SAMIR
+Name: テルアキ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -12879,7 +14438,7 @@ Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_HIKER_EARL_2 ===
-Name: EARL
+Name: トラオ
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -12896,7 +14455,7 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_RUIN_MANIAC_LARRY_2 ===
-Name: LARRY
+Name: キヨフミ
 Class: Ruin Maniac Frlg
 Pic: Ruin Maniac Frlg
 Gender: Male
@@ -12913,7 +14472,7 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_POKEMANIAC_HECTOR_2 ===
-Name: HECTOR
+Name: トシノブ
 Class: Pokemaniac Frlg
 Pic: Pokemaniac Frlg
 Gender: Male
@@ -12930,7 +14489,7 @@ Level: 55
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_PSYCHIC_DARIO_2 ===
-Name: DARIO
+Name: レイ
 Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
@@ -12947,10 +14506,10 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Agility
 
 === TRAINER_PSYCHIC_RODETTE_2 ===
-Name: RODETTE
+Name: マヤ
 Class: Psychic Frlg
 Pic: Psychic F Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -12980,7 +14539,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Future Sight
 
 === TRAINER_JUGGLER_MASON_2 ===
-Name: MASON
+Name: トーマ
 Class: Juggler Frlg
 Pic: Juggler Frlg
 Gender: Male
@@ -13005,7 +14564,7 @@ Level: 52
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_PKMN_RANGER_NICOLAS_2 ===
-Name: NICOLAS
+Name: タケル
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
@@ -13031,7 +14590,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Slam
 
 === TRAINER_PKMN_RANGER_MADELINE_2 ===
-Name: MADELINE
+Name: マドカ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
@@ -13057,10 +14616,10 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Stun Spore
 
 === TRAINER_CRUSH_GIRL_CYNDY_2 ===
-Name: CYNDY
+Name: ユリカ
 Class: Crush Girl Frlg
 Pic: Crush Girl Frlg
-Gender: Male
+Gender: Female
 Music: Serious
 Double Battle: No
 AI: Check Bad Move
@@ -13078,7 +14637,7 @@ Level: 54
 IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_TAMER_EVAN_2 ===
-Name: EVAN
+Name: ノブアキ
 Class: Tamer Frlg
 Pic: Tamer Frlg
 Gender: Male
@@ -13099,7 +14658,7 @@ Level: 55
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
 === TRAINER_PKMN_RANGER_JACKSON_2 ===
-Name: JACKSON
+Name: マモル
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
@@ -13133,7 +14692,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Stomp
 
 === TRAINER_PKMN_RANGER_KATELYN_2 ===
-Name: KATELYN
+Name: ナツミ
 Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
@@ -13151,7 +14710,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Soft Boiled
 
 === TRAINER_COOLTRAINER_LEROY_2 ===
-Name: LEROY
+Name: マコト
 Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
@@ -13201,7 +14760,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Rest
 
 === TRAINER_COOLTRAINER_MICHELLE_2 ===
-Name: MICHELLE
+Name: カズミ
 Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
@@ -13251,7 +14810,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Odor Sleuth
 
 === TRAINER_COOL_COUPLE_LEX_NYA_2 ===
-Name: LEX & NYA
+Name: リキとユキ
 Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
@@ -13277,7 +14836,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Swagger
 
 === TRAINER_BUG_CATCHER_COLTON_2 ===
-Name: COLTON
+Name: ヒサシ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -13298,7 +14857,7 @@ Level: 19
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_BUG_CATCHER_COLTON_3 ===
-Name: COLTON
+Name: ヒサシ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -13319,7 +14878,7 @@ Level: 27
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_BUG_CATCHER_COLTON_4 ===
-Name: COLTON
+Name: ヒサシ
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
@@ -13340,7 +14899,7 @@ Level: 51
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_SWIMMER_MALE_MATTHEW_2 ===
-Name: MATTHEW
+Name: クニヒコ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -13357,7 +14916,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SWIMMER_MALE_TONY_2 ===
-Name: TONY
+Name: エイイチ
 Class: Swimmer M Frlg
 Pic: Swimmer M Frlg
 Gender: Male
@@ -13374,10 +14933,10 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SWIMMER_FEMALE_MELISSA_2 ===
-Name: MELISSA
+Name: メグミ
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Cute
 Double Battle: No
 AI: Check Bad Move
@@ -13391,7 +14950,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ELITE_FOUR_LORELEI_2 ===
-Name: LORELEI
+Name: カンナ
 Class: Elite Four Frlg
 Pic: Elite Four Lorelei Frlg
 Gender: Male
@@ -13442,7 +15001,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
-Name: BRUNO
+Name: シバ
 Class: Elite Four Frlg
 Pic: Elite Four Bruno Frlg
 Gender: Male
@@ -13493,7 +15052,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
-Name: AGATHA
+Name: キクコ
 Class: Elite Four Frlg
 Pic: Elite Four Agatha Frlg
 Gender: Male
@@ -13544,7 +15103,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sludge Bomb
 
 === TRAINER_ELITE_FOUR_LANCE_2 ===
-Name: LANCE
+Name: ワタル
 Class: Elite Four Frlg
 Pic: Elite Four Lance Frlg
 Gender: Male
@@ -13595,7 +15154,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Beam
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -13654,7 +15213,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rain Dance
 
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -13713,7 +15272,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
 
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
-Name: TERRY
+Name: みてい
 Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
@@ -13772,7 +15331,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 === TRAINER_CUE_BALL_PAXTON ===
-Name: PAXTON
+Name: ゴウゾウ
 Class: Cue Ball Frlg
 Pic: Cue Ball Frlg
 Gender: Male
