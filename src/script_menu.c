@@ -1152,9 +1152,11 @@ int DisplayTextAndGetWidth(const u8 *str, int prevWidth)
     return width;
 }
 
+// 現在MAX_MULTICHOICE_WIDTH = 28、真ならMAX_MULTICHOICE_WIDTH、偽なら(((width + 9) / 8) + 1)
+// 多方面に影響でそうだが、ここの+1が文字の最後に空白を作ってしまうので、削除。原作は空白いりません。
 int ConvertPixelWidthToTileWidth(int width)
 {
-    return (((width + 9) / 8) + 1) > MAX_MULTICHOICE_WIDTH ? MAX_MULTICHOICE_WIDTH : (((width + 9) / 8) + 1);
+    return (((width + 9) / 8)) > MAX_MULTICHOICE_WIDTH ? MAX_MULTICHOICE_WIDTH : (((width + 9) / 8));
 }
 
 int ScriptMenu_AdjustLeftCoordFromWidth(int left, int width)

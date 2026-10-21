@@ -2642,16 +2642,16 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_2] =
     {
-        COMPOUND_STRING("ドレインパンチ    8BP"),
-        COMPOUND_STRING("れいとうパンチ    8BP"),
-        COMPOUND_STRING("かみなりパンチ    8BP"),
-        COMPOUND_STRING("ほのおのパンチ    8BP"),
-        COMPOUND_STRING("グロウパンチ     8BP"),
-        COMPOUND_STRING("ダブルチョップ   12BP"),
-        COMPOUND_STRING("ダブルウイング   12BP"),
-        COMPOUND_STRING("だいちのちから   12BP"),
-        COMPOUND_STRING("ハイパーボイス   12BP"),
-        COMPOUND_STRING("げきりん      16BP"),
+        COMPOUND_STRING("ドレインパンチ   8BP"),
+        COMPOUND_STRING("れいとうパンチ   8BP"),
+        COMPOUND_STRING("かみなりパンチ   8BP"),
+        COMPOUND_STRING("ほのおのパンチ   8BP"),
+        COMPOUND_STRING("グロウパンチ    8BP"),
+        COMPOUND_STRING("ダブルチョップ  12BP"),
+        COMPOUND_STRING("ダブルウイング  12BP"),
+        COMPOUND_STRING("だいちのちから  12BP"),
+        COMPOUND_STRING("ハイパーボイス  12BP"),
+        COMPOUND_STRING("げきりん     16BP"),
         gText_Exit
     },
     [SCROLL_MULTI_SS_TIDAL_DESTINATION] =

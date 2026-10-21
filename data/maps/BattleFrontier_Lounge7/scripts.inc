@@ -341,10 +341,10 @@ BattleFrontier_Lounge7_Text_SoftboiledDesc::
 	.string "あいてが きのみを\nもっているとき たべて\nそのこうかを うけられる$"
 
 BattleFrontier_Lounge7_Text_SeismicTossDesc::
-	.string "じめんに おりて\nたいりょくの\nはんぶんだけ かいふくする$"
+	.string "じめんに おりて\nたいりょくの\nはんぶんだけ かいふく$"
 
 BattleFrontier_Lounge7_Text_DreamEaterDesc::
-	.string "あつくにえたぎる みずを\nはっしゃ\nやけどに することがある$"
+	.string "あつくにえたぎる\nみずを はっしゃ\nやけどに することがある$"
 
 BattleFrontier_Lounge7_Text_MegaPunchDesc::
 	.string "はがねのような あたまで\nこうげき てきを\nひるませることがある$"
@@ -356,7 +356,7 @@ BattleFrontier_Lounge7_Text_BodySlamDesc::
 	.string "こうげき したあと\nものすごい スピードで\nもどってきて いれかわる$"
 
 BattleFrontier_Lounge7_Text_RockSlideDesc::
-	.string "てきのどうぐを あやつって\nこうげき どうぐを\nもっていないとしっぱいする$"
+	.string "てきのどうぐを あやつっ\nてこうげき どうぐを\nもっていないと しっぱい$"
 
 BattleFrontier_Lounge7_Text_CounterDesc::
 	.string "てんくうから いんせきを\nおとすが とくこうが\nがくっと さがってしまう$"
@@ -368,10 +368,10 @@ BattleFrontier_Lounge7_Text_SwordsDanceDesc::
 	.string "たたかいの おどりで\nこうげきを グーンと\nあげる$"
 
 BattleFrontier_Lounge7_Text_DefenseCurlDesc::
-	.string "こぶしから てきのちからを\nすいとる ダメージの\nはんぶんの HPをかいふく$"
+	.string "こぶしから てきのちからを\nすいとる ダメージの\nはんぶん かいふく$"
 
 BattleFrontier_Lounge7_Text_SnoreDesc::
-	.string "くりかえし うつことで\nこぶしを かたくし\nじぶんの こうげきをあげる$"
+	.string "くりかえし うつことで\nこぶしを かたくし\nこうげきを あげる$"
 
 BattleFrontier_Lounge7_Text_MudSlapDesc::
 	.string "からだの かたいぶぶんで\nたたいて 2かい\nれんぞくで こうげきする$"
@@ -380,13 +380,13 @@ BattleFrontier_Lounge7_Text_SwiftDesc::
 	.string "つばさを あいてに\nぶつけて 2かい\nれんぞくで こうげきする$"
 
 BattleFrontier_Lounge7_Text_IcyWindDesc::
-	.string "てきへ だいちのちからを\nほうしゅつ てきの\nとくぼうをさげることがある$"
+	.string "てきへ だいちのちからを\nほうしゅつ てきの\nとくぼうをさげる ことも$"
 
 BattleFrontier_Lounge7_Text_EndureDesc::
 	.string "おおごえの しんどうで\nてきに ダメージを\nあたえる$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
-	.string "2ー3ターンのあいだ\nあばれつづける あばれた\nあとは こんらんしてしまう$"
+	.string "2ー3ターンのあいだ\nあばれつづける あばれた\nあとは こんらんする$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
 	.string "つめたい パンチで\nてきを こおらせる\nことが ある$"
