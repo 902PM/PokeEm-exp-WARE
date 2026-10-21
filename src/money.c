@@ -179,7 +179,7 @@ void DrawMoneyBox(int amount, u8 x, u8 y)
 {
     struct WindowTemplate template;
 
-    SetWindowTemplateFields(&template, 0, x + 1, y + 1, 10, 2, 15, 8);
+    SetWindowTemplateFields(&template, 0, x + 1, y + 1, 12, 2, 15, 8);
     sMoneyBoxWindowId = AddWindow(&template);
     FillWindowPixelBuffer(sMoneyBoxWindowId, PIXEL_FILL(0));
     PutWindowTilemap(sMoneyBoxWindowId);
