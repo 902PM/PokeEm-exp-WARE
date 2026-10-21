@@ -852,7 +852,7 @@ Route110_Text_IsabelPostBattle:
 	.string "しょうぶ させるよりも\nだいすきクラブで じまんして こようかしら$"
 
 Route110_Text_IsabelRegister:
-	.string "わたしの じまんは こんなんじゃ\nおわりませんわ!\lなんかいも つきあって もらいますわよ$"
+	.string "わたしの じまんは こんなんじゃ\nおわりませんわ!\lなんかいも つきあって もらいますわよ!$"
 
 Route110_Text_IsabelRematchIntro:
 	.string "おほほ! だいじな ポケモンなら\nなんどだって じまん しますわ!$"
