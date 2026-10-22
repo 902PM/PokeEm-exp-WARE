@@ -34,7 +34,7 @@
       "x": 42,
       "y": 51,
       "elevation": 0,
-      "item": "ITEM_CARBOS",
+      "item": "ITEM_DRAGONIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS"
     },
     {
@@ -42,7 +42,7 @@
       "x": 14,
       "y": 40,
       "elevation": 0,
-      "item": "ITEM_GREEN_SHARD",
+      "item": "ITEM_DARKINIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD"
     },
     {
@@ -50,7 +50,7 @@
       "x": 66,
       "y": 34,
       "elevation": 3,
-      "item": "ITEM_PEARL",
+      "item": "ITEM_STEELIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL"
     },
     {
@@ -58,7 +58,7 @@
       "x": 64,
       "y": 54,
       "elevation": 3,
-      "item": "ITEM_BIG_PEARL",
+      "item": "ITEM_FAIRIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL"
     },
     {
@@ -74,7 +74,7 @@
       "x": 42,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_PEARL_STRING",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CALCIUM"
     },
     {
@@ -82,7 +82,7 @@
       "x": 45,
       "y": 36,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_COMET_SHARD",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_2"
     }
   ]

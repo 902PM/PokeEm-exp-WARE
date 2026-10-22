@@ -47,7 +47,7 @@
       "x": 30,
       "y": 17,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_FIGHTINIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE"
     },
     {
@@ -55,7 +55,7 @@
       "x": 41,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_ULTRA_BALL",
+      "item": "ITEM_POISONIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL"
     },
     {
@@ -63,7 +63,7 @@
       "x": 63,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_STARDUST",
+      "item": "ITEM_GROUNDIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST"
     },
     {
@@ -71,7 +71,7 @@
       "x": 10,
       "y": 36,
       "elevation": 3,
-      "item": "ITEM_PEARL",
+      "item": "ITEM_FLYINIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL"
     },
     {
@@ -79,7 +79,7 @@
       "x": 11,
       "y": 39,
       "elevation": 3,
-      "item": "ITEM_IRON",
+      "item": "ITEM_PSYCHIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
     },
     {
@@ -87,7 +87,7 @@
       "x": 12,
       "y": 35,
       "elevation": 3,
-      "item": "ITEM_YELLOW_SHARD",
+      "item": "ITEM_BUGINIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD"
     },
     {
@@ -95,7 +95,7 @@
       "x": 65,
       "y": 60,
       "elevation": 3,
-      "item": "ITEM_BIG_PEARL",
+      "item": "ITEM_ROCKIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL"
     },
     {
@@ -103,7 +103,7 @@
       "x": 9,
       "y": 77,
       "elevation": 3,
-      "item": "ITEM_BLUE_SHARD",
+      "item": "ITEM_GHOSTIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
     }
   ]

@@ -54,7 +54,7 @@
       "x": 12,
       "y": 42,
       "elevation": 3,
-      "item": "ITEM_STAR_PIECE",
+      "item": "ITEM_ELECTRIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE"
     },
     {
@@ -62,7 +62,7 @@
       "x": 50,
       "y": 36,
       "elevation": 3,
-      "item": "ITEM_HP_UP",
+      "item": "ITEM_GRASSIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP"
     },
     {
@@ -70,7 +70,7 @@
       "x": 34,
       "y": 72,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_ICIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE"
     },
     {

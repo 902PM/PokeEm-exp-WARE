@@ -5091,6 +5091,12 @@ u16 GetBattleBGM(void)
         case SPECIES_REGIELEKI:
         case SPECIES_REGIDRAGO:
             return MUS_VS_REGI;
+        case SPECIES_MEW:
+            return MUS_VS_MEW;
+        case SPECIES_MEWTWO:
+            return MUS_RG_VS_MEWTWO;
+        case SPECIES_DEOXYS:
+            return MUS_RG_VS_DEOXYS;
         default:
             return MUS_RG_VS_LEGEND;
         }
@@ -5129,6 +5135,8 @@ u16 GetBattleBGM(void)
                 return MUS_VS_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("ダイゴ")))
+                return MUS_VS_CHAMPION;
             return MUS_VS_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;

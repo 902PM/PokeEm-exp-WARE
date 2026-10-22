@@ -443,7 +443,7 @@
       "x": 66,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_ETHER",
+      "item": "ITEM_NORMAL_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_ETHER"
     },
     {
@@ -459,7 +459,7 @@
       "x": 73,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_NUGGET",
+      "item": "ITEM_PSYCHIC_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_NUGGET"
     }
   ]

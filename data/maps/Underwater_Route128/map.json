@@ -42,7 +42,7 @@
       "x": 38,
       "y": 19,
       "elevation": 3,
-      "item": "ITEM_PROTEIN",
+      "item": "ITEM_FIRIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN"
     },
     {
@@ -50,7 +50,7 @@
       "x": 69,
       "y": 18,
       "elevation": 3,
-      "item": "ITEM_PEARL",
+      "item": "ITEM_WATERIUM_Z",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL"
     }
   ]

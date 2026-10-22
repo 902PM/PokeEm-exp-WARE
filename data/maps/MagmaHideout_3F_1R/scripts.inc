@@ -21,11 +21,10 @@ MagmaHideout_3F_1R_Text_Grunt9PostBattle:
 	.string "こんな マグマだらけの かざんの なかで\nフードを かぶってる オレたち へん?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "アタシたちは リーダーが めざしている\nすばらしい もくてきを\lじつげん するために あつまったの!\pアクアだん だろうが\nとおりすがりの おこさま だろうが\lじゃまを するなら ゆるさないわ!$"
+	.string "ウフフ……!\pアタシたちは リーダーが めざしている\nすばらしい もくてきを\lじつげん するために あつまったの……\pそれを じゃまを しようとする\nおろかものは ぜったい ゆるさない!$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "ひえー あなどれない ひと!$"
+	.string "ウフフ…… あなどれない ひと……$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "いい? ただしいのは マグマだんよ!\nアクアだんの いうことなんか\lうそ ばっかりだから しんじちゃ ダメよ!$"
-
+	.string "ウフフ…… せいぜい あがいて みれば?\nさいごに わらうのは……\lアタシたち マグマだん なんだから……$"

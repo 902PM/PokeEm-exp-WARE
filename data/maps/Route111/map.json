@@ -362,7 +362,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
+      "trainer_sight_or_berry_tree_id": "ITEM_RARE_BONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_111_STARDUST"
     },
@@ -375,7 +375,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_RELIC_GOLD",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_111_HP_UP"
     },
@@ -1068,7 +1068,7 @@
       "x": 26,
       "y": 70,
       "elevation": 0,
-      "item": "ITEM_STARDUST",
+      "item": "ITEM_SAIL_FOSSIL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
     },
     {
@@ -1105,7 +1105,7 @@
       "x": 19,
       "y": 55,
       "elevation": 0,
-      "item": "ITEM_PROTEIN",
+      "item": "ITEM_JAW_FOSSIL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN"
     },
     {

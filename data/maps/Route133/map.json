@@ -74,7 +74,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_BIG_PEARL",
+      "trainer_sight_or_berry_tree_id": "ITEM_PEARL_STRING",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_133_BIG_PEARL"
     },
@@ -87,7 +87,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_STAR_PIECE",
+      "trainer_sight_or_berry_tree_id": "ITEM_COMET_SHARD",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_133_STAR_PIECE"
     },
@@ -152,7 +152,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MAX_REVIVE",
+      "trainer_sight_or_berry_tree_id": "ITEM_GOLD_BOTTLE_CAP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_133_MAX_REVIVE"
     }

@@ -35,7 +35,7 @@ ShoalCave_LowTideLowerRoom_EventScript_BlackBelt::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_FOCUS_BAND, ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand
 	msgbox ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus, MSGBOX_DEFAULT
-	giveitem ITEM_FOCUS_BAND
+	giveitem ITEM_FOCUS_SASH
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FOCUS_BAND
 	release
@@ -47,7 +47,7 @@ ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
 	end
 
 ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
-	.string "このあたりは からだが ひえきって\nしゅぎょう するのも ままならぬ……\pだが きあいが あれば だいじょうぶッ!\pおぬしも この きあいのハチマキで\nさむさに たえてみせるのだッ!$"
+	.string "このあたりは からだが ひえきって\nしゅぎょう するのも ままならぬ……\pだが きあいが あれば だいじょうぶッ!\pおぬしも この きあいのタスキで\nさむさに たえてみせるのだッ!$"
 
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
 	.string "なにごとも きあい なのだーッ!!$"
