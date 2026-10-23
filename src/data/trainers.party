@@ -795,15 +795,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Breloom (F)
-Level: 34
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Gloom (F)
-Level: 34
+Bellossom (F)
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Roserade (F)
-Level: 34
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DUSTY_1 ===
@@ -877,10 +877,10 @@ AI: Check Bad Move
 Sandslash (M)
 Level: 27
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
+- Earthquake
 - Slash
-- Sand Attack
-- Poison Sting
+- Stone Edge
+- Stealth Rock
 
 === TRAINER_DUSTY_3 ===
 Name: ノブオ
@@ -893,11 +893,11 @@ AI: Check Bad Move
 
 Sandslash (M)
 Level: 30
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Earthquake
 - Slash
-- Sand Attack
-- Poison Sting
+- Stone Edge
+- Stealth Rock
 
 === TRAINER_DUSTY_4 ===
 Name: ノブオ
@@ -908,13 +908,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash (M)
+Sandslash-Alola (M)
 Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Dig
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Icicle Crash
 - Slash
-- Sand Attack
-- Poison Sting
+- Iron Head
+- Amnesia
 
 === TRAINER_DUSTY_5 ===
 Name: ノブオ
@@ -925,13 +925,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash (M)
+Sandslash-Alola (M)
 Level: 36
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Dig
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Icicle Crash
 - Slash
-- Sand Attack
-- Poison Sting
+- Iron Head
+- Amnesia
 
 === TRAINER_GABBY_AND_TY_1 ===
 Name: マリとダイ
@@ -1097,10 +1097,12 @@ AI: Check Bad Move
 
 Marill (F)
 Level: 26
+Ability: Huge Power
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Marill (F)
 Level: 26
+Ability: Huge Power
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_LOLA_3 ===
@@ -1114,10 +1116,12 @@ AI: Check Bad Move
 
 Marill (F)
 Level: 29
+Ability: Huge Power
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Marill (F)
 Level: 29
+Ability: Huge Power
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_LOLA_4 ===
@@ -1131,10 +1135,12 @@ AI: Check Bad Move
 
 Marill (F)
 Level: 32
+Ability: Huge Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Marill (F)
 Level: 32
+Ability: Huge Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LOLA_5 ===
@@ -1148,10 +1154,12 @@ AI: Check Bad Move
 
 Azumarill (F)
 Level: 35
+Ability: Huge Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Azumarill (F)
 Level: 35
+Ability: Huge Power
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_RICKY_1 ===
@@ -1571,15 +1579,15 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Electrike (M)
+Manectric (M) @ Manectite
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Wailmer (M)
+Wailmer (M) @ Waterium Z
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Makuhita (M)
+Hariyama (M) @ Sitrus Berry
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1593,15 +1601,15 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Manectric (M)
+Manectric (M) @ Manectite
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Wailmer (M)
+Wailord (M) @ Waterium Z
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Makuhita (M)
+Hariyama (M) @ Sitrus Berry
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1615,16 +1623,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Manectric (M)
-Level: 32
+Manectric (M) @ Manectite
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Wailmer (M)
-Level: 32
+Wailord (M) @ Waterium Z
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Makuhita (M)
-Level: 32
+Hariyama (M) @ Sitrus Berry
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_WILTON_5 ===
@@ -1637,16 +1645,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Manectric (M)
-Level: 35
+Manectric (M) @ Manectite
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Wailmer (M)
-Level: 35
+Wailord (M) @ Waterium Z
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Hariyama (M)
-Level: 35
+Hariyama (M) @ Sitrus Berry
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_WARREN ===
@@ -1786,7 +1794,7 @@ Wingull (F)
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Numel (F)
+Prinplup (F)
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1929,17 +1937,24 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Wingull (F)
+Pelipper (F)
 Level: 26
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Surf
 
-Numel (F)
+Empoleon (F) @ Air Balloon
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Flash Cannon
 
 Roserade (F)
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Weather Ball
 
 === TRAINER_BROOKE_3 ===
 Name: マリア
@@ -1951,17 +1966,24 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper (F)
+Pelipper (F) @ Wacan Berry
 Level: 29
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Surf
 
-Numel (F)
+Empoleon (F) @ Air Balloon
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Flash Cannon
 
 Roserade (F)
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Weather Ball
 
 === TRAINER_BROOKE_4 ===
 Name: マリア
@@ -1973,17 +1995,27 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper (F)
-Level: 32
+Pelipper (F) @ Wacan Berry
+Level: 36
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Surf
+- Ice Beam
 
-Numel (F)
-Level: 32
+Empoleon (F) @ Air Balloon
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Ice Beam
+- Flash Cannon
 
-Roserade (F)
-Level: 32
+Roserade (F) @ Black Sludge
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Weather Ball
+- Shadow Ball
 
 === TRAINER_BROOKE_5 ===
 Name: マリア
@@ -1996,16 +2028,27 @@ Double Battle: No
 AI: Basic Trainer
 
 Pelipper (F)
-Level: 34
+Level: 45
+Ability: Drizzle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Surf
+- Ice Beam
 
-Camerupt (F)
-Level: 34
+Empoleon (F) @ Air Balloon
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Ice Beam
+- Flash Cannon
 
-Roserade (F)
-Level: 34
+Roserade (F) @ Black Sludge
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Weather Ball
+- Sludge Bomb
+- Shadow Ball
 
 === TRAINER_PATRICIA ===
 Name: コトネ
@@ -2097,9 +2140,11 @@ Sableye (F)
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Spoink (F)
+Gengar (F)
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Shadow Ball
+- Sludge Bomb
 
 === TRAINER_VALERIE_3 ===
 Name: ホノカ
@@ -2110,9 +2155,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Spoink (F)
+Gengar (F) @ Black Sludge
 Level: 35
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Shadow Ball
+- Sludge Bomb
 
 Sableye (F)
 Level: 35
@@ -2127,12 +2174,15 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Spoink (F)
+Gengar (F) @ Black Sludge
 Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Sludge Bomb
 
 Sableye (F)
 Level: 40
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_VALERIE_5 ===
@@ -2145,16 +2195,23 @@ Double Battle: No
 AI: Check Bad Move
 
 Dusknoir (F)
-Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Phantom Force
+- Thunder Punch
+- Ice Punch
+- Leech Life
 
 Sableye (F)
-Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Level: 48
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Grumpig (F)
-Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Gengar (F) @ Black Sludge
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Sludge Bomb
 
 === TRAINER_CINDY_1 ===
 Name: レイカ
@@ -2691,7 +2748,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aron (M)
+Tyrunt (M)
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -2747,7 +2804,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lairon (M)
+Tyrunt (M)
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2760,11 +2817,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lairon (M)
+Tyrantrum (M)
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Rhyhorn (M)
+Rhydon (M)
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -2777,12 +2834,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lairon (M)
-Level: 32
+Tyrantrum (M)
+Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rhyhorn (M)
-Level: 32
+Rhyperior (M)
+Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_STEVE_5 ===
@@ -2794,12 +2851,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aggron (M)
-Level: 35
+Tyrantrum (M)
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rhydon (M)
-Level: 35
+Rhyperior (M)
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LUIS ===
@@ -3200,12 +3257,12 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
-Level: 34
+Starmie
+Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Sharpedo (M)
-Level: 36
+Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TONY_5 ===
@@ -3217,12 +3274,13 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Starmie
-Level: 37
+Starmie @ Starminite
+Level: 47
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Sharpedo (M)
-Level: 39
+Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAKAO ===
@@ -3320,11 +3378,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop (M)
+Machamp (M)
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -3337,15 +3395,15 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop (M)
+Machamp (M)
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -3358,15 +3416,15 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machamp (M)
+Machamp (M) @ Black Belt
 Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Machamp (M)
+Machamp (M) @ Black Belt
 Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Machamp (M)
+Machamp (M) @ Black Belt
 Level: 33
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -3518,7 +3576,7 @@ Magnemite
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Whismur (M)
+Toxel (M)
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3535,7 +3593,7 @@ Magneton
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Whismur (M)
+Toxel (M)
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3556,8 +3614,10 @@ Magneton
 Level: 28
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Loudred (M)
+Toxtricity (M)
 Level: 28
+Nature: Hasty
+Ability: Technician
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Magnezone
@@ -3574,15 +3634,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Magneton
-Level: 31
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Loudred (M)
-Level: 31
+Toxtricity (M)
+Level: 35
+Nature: Hasty
+Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magnezone
-Level: 31
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DALTON_5 ===
@@ -3595,15 +3657,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnezone
-Level: 34
+Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Exploud (M)
-Level: 34
+Toxtricity (M)
+Level: 44
+Nature: Hasty
+Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magnezone
-Level: 34
+Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_COLE ===
@@ -3688,7 +3752,7 @@ Slugma (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Wingull (M)
+Wooper (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3705,7 +3769,7 @@ Slugma (M)
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Wingull (M)
+Quagsire (M)
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3719,11 +3783,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Slugma (M)
-Level: 29
+Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Pelipper (M)
-Level: 29
+Quagsire (M)
+Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_BERNIE_4 ===
@@ -3735,12 +3799,12 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma (M)
-Level: 32
+Magcargo (M)
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pelipper (M)
-Level: 32
+Quagsire (M)
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BERNIE_5 ===
@@ -3753,11 +3817,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Magcargo (M)
-Level: 35
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pelipper (M)
-Level: 35
+Quagsire (M)
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DREW ===
@@ -4096,43 +4160,18 @@ Double Battle: No
 AI: Check Bad Move
 
 Masquerain (M)
-Level: 34
+Level: 36
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Masquerain (M)
-Level: 34
+Dustox (M)
+Level: 36
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Masquerain (M)
-Level: 34
+Beautifly (M)
+Level: 36
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JEFFREY_4 ===
-Name: ミキオ
-Class: Bug Maniac
-Pic: Bug Maniac
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Check Bad Move
-
-Masquerain (M)
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Wurmple (M)
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Masquerain (M)
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Masquerain (M)
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_JEFFREY_5 ===
 Name: ミキオ
 Class: Bug Maniac
 Pic: Bug Maniac
@@ -4149,16 +4188,41 @@ Dustox (M)
 Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Masquerain (M)
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Masquerain (M) @ Silver Powder
+Araquanid (M)
 Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Beautifly (M)
 Level: 38
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_JEFFREY_5 ===
+Name: ミキオ
+Class: Bug Maniac
+Pic: Bug Maniac
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Check Bad Move
+
+Venomoth (M)
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Dustox (M)
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Araquanid (M)
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Butterfree (M) @ Silver Powder
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Beautifly (M)
+Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_EDWARD ===
@@ -4261,7 +4325,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Solrock
+Alakazam (M)
 Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -4274,11 +4338,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (M)
+Alakazam (M)
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Solrock
+Raichu-Alola (M)
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4291,11 +4355,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (M)
+Alakazam (M)
 Level: 38
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Solrock
+Raichu-Alola (M)
 Level: 38
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -4308,11 +4372,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (M)
+Alakazam (M) @ Alakazite
 Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Solrock
+Raichu-Alola (M)
 Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -4325,9 +4389,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Solrock
+Raichu-Alola (M) @ Aloraichium Z
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunderbolt
+- Psychic
 
 Alakazam (M)
 Level: 45
@@ -4433,11 +4499,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (F)
+Alakazam (F)
 Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Lunatone
+Hattrem
 Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -4450,11 +4516,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (F)
+Alakazam (F)
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Lunatone
+Hatterene (F)
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -4467,12 +4533,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (F)
-Level: 37
+Alakazam (F)
+Level: 38
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Lunatone
-Level: 37
+Hatterene (F)
+Level: 38
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JACKI_4 ===
@@ -4484,12 +4550,12 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Kadabra (F)
-Level: 40
+Alakazam (F) @ Alakazite
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Lunatone
-Level: 40
+Hatterene (F)
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_JACKI_5 ===
@@ -4501,12 +4567,14 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Lunatone
-Level: 43
+Hatterene (F)
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Dynamax Level: 5
+Gigantamax: Yes
 
 Alakazam (F)
-Level: 43
+Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_WALTER_1 ===
@@ -5104,6 +5172,7 @@ Level: 26
 Nature: Modest
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 6 HP / 127 SpA / 127 Spe
+Tera Type: TYPE_FIRE
 Ball: Level
 - Eruption
 - Solar Beam
@@ -5130,13 +5199,13 @@ EVs: 6 HP / 127 Atk / 127 Spe
 Ball: Premier
 - Superpower
 
-Vigoroth (M)
+Vigoroth (M) @ Razor Fang
 Level: 27
 Nature: Adamant
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 6 HP / 127 Atk / 127 Spe
 Ball: Premier
-- Thrash
+- Fling
 - Play Rough
 - Throat Chop
 - Ice Punch
@@ -5146,10 +5215,11 @@ Level: 29
 Nature: Adamant
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 EVs: 6 HP / 127 Atk / 127 Spe
+Dynamax Level: 5
 Ball: Premier
 - Slash
-- Belly Drum
-- Tail Slap
+- Stomping Tantrum
+- Shadow Claw
 - Throat Chop
 
 Slaking (M) @ Sitrus Berry
@@ -5407,11 +5477,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts (M)
+Gallade (M)
 Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Meditite (M)
+Medicham (M)
 Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -5424,11 +5494,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia (M)
+Gallade (M)
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Meditite (M)
+Medicham (M)
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5441,7 +5511,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia (M)
+Gallade (M)
 Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5458,17 +5528,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Kirlia (M)
+Gallade (M)
 Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Banette (M)
 Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Medicham (M)
 Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_KAREN_1 ===
 Name: ハツネ
@@ -5562,11 +5632,11 @@ AI: Check Bad Move
 
 Breloom (F)
 Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Exploud (F)
 Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_KATE_AND_JOY ===
 Name: マナとユイ
@@ -9382,7 +9452,7 @@ Tentacruel (M)
 Level: 44
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 44
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -9395,7 +9465,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop (M)
+Machamp (M)
 Level: 43
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -9403,7 +9473,7 @@ Pelipper (M)
 Level: 43
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 43
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -9441,7 +9511,7 @@ Tentacool (M)
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -9462,7 +9532,7 @@ Tentacool (M)
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -9483,7 +9553,7 @@ Tentacool (M)
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -9500,7 +9570,7 @@ Pelipper (M)
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -12110,7 +12180,7 @@ Rhyhorn (M)
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Graveler (M)
+Golem (M)
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -12127,15 +12197,15 @@ Marowak (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Graveler (M)
+Golem (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rhyhorn (M)
+Rhydon (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Graveler (M)
+Golem (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -12148,20 +12218,20 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Marowak (M)
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Graveler (M)
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Rhyhorn (M)
-Level: 33
+Marowak-Alola (M)
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Golem (M)
-Level: 33
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Rhyperior (M)
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Golem (M)
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_DEZ_AND_LUKE ===
@@ -17941,7 +18011,7 @@ Pelipper (M)
 Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke (M)
+Machamp (M)
 Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -18354,15 +18424,15 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Machop (M)
+Machamp (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Numel (M)
+Camerupt (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Graveler (M)
+Golem (M)
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -18375,16 +18445,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Machoke (M)
-Level: 33
+Machamp (M)
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Camerupt (M)
-Level: 33
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Golem (M)
-Level: 33
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GABRIELLE_2 ===
@@ -19058,30 +19128,30 @@ Ball: Dive
 - Iron Head
 - Flip Turn
 
-Ludicolo (F) @ Grassium Z
+Ludicolo (F) @ Life Orb
 Level: 77
+Nature: Modest
 Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Dive
+Dynamax Level: 10
+- Giga Drain
+- Hydro Pump
+- Hidden Power
+- Surf
+
+Primarina (F) @ Primarium Z
+Level: 77
+Nature: Modest
+Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 6 HP / 252 SpA / 252 Spe
 Ball: Dive
-Nature: Modest
-- Giga Drain
-- Hydro Pump
+- Sparkling Aria
+- Moonblast
 - Ice Beam
-- Chilling Water
-
-Wailord (F) @ Chesto Berry
-Level: 77
-Nature: Modest
-Ability: Oblivious
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 252 SpA / 6 Spe
-Dynamax Level: 10
-Ball: Dive
-- Water Spout
-- Surf
-- Ice Beam
-- Rest
+- Flip Turn
 
 Gyarados (F) @ Gyaradosite
 Level: 77
