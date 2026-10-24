@@ -2853,7 +2853,7 @@ static const struct DebugSelection sToggleFlagSelection = {
 static void DebugSelectionStep_PrepareVarDisplay(u32 varId)
 {
     u8 *end;
-    end = StringCopy(gStringVar1, COMPOUND_STRING("へんすう: 0x"));
+    end = StringCopy(gStringVar1, COMPOUND_STRING("へんすう:0x{ENG}"));
     ConvertIntToHexStringN(end, varId, STR_CONV_MODE_LEFT_ALIGN, 4);
     end = StringCopy(gStringVar2, COMPOUND_STRING("あたい: "));
     ConvertIntToDecimalStringN(end, VarGet(varId), STR_CONV_MODE_LEADING_ZEROS, 5);

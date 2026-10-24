@@ -5099,6 +5099,17 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_CHAMPION:
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
+        case TRAINER_CLASS_RIVAL:
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), COMPOUND_STRING("ダイゴ")))
+                {
+                    PlayBGM(MUS_VICTORY_LEAGUE);
+                    break;
+                }
+            else
+                {
+                    PlayBGM(MUS_VICTORY_TRAINER);
+                    break;
+                }
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
