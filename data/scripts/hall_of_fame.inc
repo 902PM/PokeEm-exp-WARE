@@ -30,6 +30,13 @@ EverGrandeCity_HallOfFame_EventScript_ResetDefeatedEventLegendaries::
 	clearflag FLAG_DEFEATED_DEOXYS
 	clearflag FLAG_DEFEATED_LUGIA
 	clearflag FLAG_DEFEATED_HO_OH
+	clearflag FLAG_DEFEATED_MOLTRES
+	clearflag FLAG_DEFEATED_ZAPDOS
+	clearflag FLAG_DEFEATED_ARTICUNO
+	clearflag FLAG_DEFEATED_HEATRAN
+	clearflag FLAG_DEFEATED_MOLTRES_GALAR
+	clearflag FLAG_DEFEATED_ZAPDOS_GALAR
+	clearflag FLAG_DEFEATED_ARTICUNO_GALAR
 	return
 
 EverGrandeCity_HallOfFame_EventScript_SetDesertUnderpassCommentReady::

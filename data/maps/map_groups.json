@@ -437,6 +437,9 @@
     "SealedChamber_OuterRoom",
     "SealedChamber_InnerRoom",
     "ScorchedSlab",
+    "ScorchedSlab_B1F",
+    "ScorchedSlab_B2F",
+    "ScorchedSlab_B3F",
     "AquaHideout_UnusedRubyMap1",
     "AquaHideout_UnusedRubyMap2",
     "AquaHideout_UnusedRubyMap3",
@@ -470,6 +473,7 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
+    "AlteringCave_B1F",
     "MeteorFalls_StevensCave"
   ],
   "gMapGroup_IndoorDynamic": [
@@ -627,7 +631,7 @@
     "TrainerHill_Elevator"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
-    "Route104_Prototype",
+    "Mystery_Zone",
     "Route104_PrototypePrettyPetalFlowerShop"
   ],
   "gMapGroup_IndoorRoute109": [

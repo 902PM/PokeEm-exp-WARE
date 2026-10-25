@@ -51,29 +51,29 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
+#define FLAG_ITEM_SCORCHED_SLAB_B1F_ITEM        0x20
+#define FLAG_ITEM_SCORCHED_SLAB_B2F_ITEM        0x21
+#define FLAG_CAUGHT_MOLTRES                     0x22
+#define FLAG_DEFEATED_MOLTRES                   0x23
+#define FLAG_MOLTRES_FLEW_AWAY                  0x24
+#define FLAG_CAUGHT_ZAPDOS                      0x25
+#define FLAG_DEFEATED_ZAPDOS                    0x26
+#define FLAG_ZAPDOS_FLEW_AWAY                   0x27
+#define FLAG_CAUGHT_ARTICUNO                    0x28
+#define FLAG_DEFEATED_ARTICUNO                  0x29
+#define FLAG_ARTICUNO_FLEW_AWAY                 0x2A
+#define FLAG_CAUGHT_HEATRAN                     0x2B
+#define FLAG_DEFEATED_HEATRAN                   0x2C
+#define FLAG_HEATRAN_FLEW_AWAY                  0x2D
+#define FLAG_CAUGHT_MOLTRES_GALAR               0x2E
+#define FLAG_DEFEATED_MOLTRES_GALAR             0x2F
+#define FLAG_MOLTRES_GALAR_FLEW_AWAY            0x30
+#define FLAG_CAUGHT_ZAPDOS_GALAR                0x31
+#define FLAG_DEFEATED_ZAPDOS_GALAR              0x32
+#define FLAG_ZAPDOS_GALAR_FLEW_AWAY             0x33
+#define FLAG_CAUGHT_ARTICUNO_GALAR              0x34
+#define FLAG_DEFEATED_ARTICUNO_GALAR            0x35
+#define FLAG_ARTICUNO_GALAR_FLEW_AWAY           0x36
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
@@ -663,10 +663,10 @@
 #define FLAG_HIDDEN_ITEM_NAVEL_ROCK_TOP_SACRED_ASH           (FLAG_HIDDEN_ITEMS_START + 0x6D)
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
+#define FLAG_HIDDEN_ITEM_SCORCHED_SLAB_B1F                   (FLAG_HIDDEN_ITEMS_START + 0x70)
+#define FLAG_HIDDEN_ITEM_SCORCHED_SLAB_B2F_1                 (FLAG_HIDDEN_ITEMS_START + 0x71)
+#define FLAG_HIDDEN_ITEM_SCORCHED_SLAB_B2F_2                 (FLAG_HIDDEN_ITEMS_START + 0x72)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
@@ -756,30 +756,30 @@
 // Expansion feature test flags.
 // これらは本家にないフラグです。消さないでください。
 // menu toggles easier to identify.
-#define FLAG_EXPANSION_INVERSE_BATTLE                 FLAG_UNUSED_0x264
-#define FLAG_EXPANSION_AI_VS_AI_BATTLE                FLAG_UNUSED_0x265
-#define FLAG_EXPANSION_DYNAMAX_BATTLE                 FLAG_UNUSED_0x266
-#define FLAG_EXPANSION_TERA_ORB_CHARGED               FLAG_UNUSED_0x267
-#define FLAG_EXPANSION_TERA_ORB_NO_COST               FLAG_UNUSED_0x268
-#define FLAG_EXPANSION_SLEEP_CLAUSE                   FLAG_UNUSED_0x269
-#define FLAG_EXPANSION_NO_WHITEOUT                    FLAG_UNUSED_0x26A
-#define FLAG_EXPANSION_EXP_SHARE                      FLAG_UNUSED_0x26B
-#define FLAG_EXPANSION_FORCE_SHINY                    FLAG_UNUSED_0x26C
-#define FLAG_EXPANSION_FORCE_NO_SHINY                 FLAG_UNUSED_0x26D
-#define FLAG_EXPANSION_FOLLOWERS_DISABLED             FLAG_UNUSED_0x26E
-#define FLAG_EXPANSION_FOLLOWER_HEAL_AFTER_BATTLE     FLAG_UNUSED_0x26F
-#define FLAG_EXPANSION_FOLLOWER_PARTNER_WILD_BATTLES  FLAG_UNUSED_0x270
-#define FLAG_EXPANSION_DEXNAV_SEARCHING               FLAG_UNUSED_0x271
-#define FLAG_EXPANSION_DEXNAV_GET                     FLAG_UNUSED_0x272
-#define FLAG_EXPANSION_DEXNAV_DETECTOR_MODE           FLAG_UNUSED_0x273
-#define FLAG_EXPANSION_VS_SEEKER_CHARGING             FLAG_UNUSED_0x274
-#define FLAG_EXPANSION_ORAS_DOWSING                   FLAG_UNUSED_0x275
-#define FLAG_EXPANSION_SUMMARY_SCREEN_IV_EV_INFO      FLAG_UNUSED_0x276
-#define FLAG_EXPANSION_EGG_MOVE_RELEARNER             FLAG_UNUSED_0x277
-#define FLAG_EXPANSION_TUTOR_MOVE_RELEARNER           FLAG_UNUSED_0x278
-#define FLAG_EXPANSION_NO_TRAINER_SEE                 FLAG_UNUSED_0x279
-#define FLAG_EXPANSION_NO_COLLISION                   FLAG_UNUSED_0x27A
-#define FLAG_EXPANSION_POKE_RIDER                     FLAG_UNUSED_0x27B
+#define FLAG_EXPANSION_INVERSE_BATTLE                 FLAG_UNUSED_0x2A4
+#define FLAG_EXPANSION_AI_VS_AI_BATTLE                FLAG_UNUSED_0x2A5
+#define FLAG_EXPANSION_DYNAMAX_BATTLE                 FLAG_UNUSED_0x2A6
+#define FLAG_EXPANSION_TERA_ORB_CHARGED               FLAG_UNUSED_0x2A7
+#define FLAG_EXPANSION_TERA_ORB_NO_COST               FLAG_UNUSED_0x2A8
+#define FLAG_EXPANSION_SLEEP_CLAUSE                   FLAG_UNUSED_0x2A9
+#define FLAG_EXPANSION_NO_WHITEOUT                    FLAG_UNUSED_0x2AA
+#define FLAG_EXPANSION_EXP_SHARE                      FLAG_UNUSED_0x2AB
+#define FLAG_EXPANSION_FORCE_SHINY                    FLAG_UNUSED_0x2AC
+#define FLAG_EXPANSION_FORCE_NO_SHINY                 FLAG_UNUSED_0x2AD
+#define FLAG_EXPANSION_FOLLOWERS_DISABLED             FLAG_UNUSED_0x2AE
+#define FLAG_EXPANSION_FOLLOWER_HEAL_AFTER_BATTLE     FLAG_UNUSED_0x2AF
+#define FLAG_EXPANSION_FOLLOWER_PARTNER_WILD_BATTLES  FLAG_UNUSED_0x2B0
+#define FLAG_EXPANSION_DEXNAV_SEARCHING               FLAG_UNUSED_0x2B1
+#define FLAG_EXPANSION_DEXNAV_GET                     FLAG_UNUSED_0x2B2
+#define FLAG_EXPANSION_DEXNAV_DETECTOR_MODE           FLAG_UNUSED_0x2B3
+#define FLAG_EXPANSION_VS_SEEKER_CHARGING             FLAG_UNUSED_0x2B4
+#define FLAG_EXPANSION_ORAS_DOWSING                   FLAG_UNUSED_0x2B5
+#define FLAG_EXPANSION_SUMMARY_SCREEN_IV_EV_INFO      FLAG_UNUSED_0x2B6
+#define FLAG_EXPANSION_EGG_MOVE_RELEARNER             FLAG_UNUSED_0x2B7
+#define FLAG_EXPANSION_TUTOR_MOVE_RELEARNER           FLAG_UNUSED_0x2B8
+#define FLAG_EXPANSION_NO_TRAINER_SEE                 FLAG_UNUSED_0x2B9
+#define FLAG_EXPANSION_NO_COLLISION                   FLAG_UNUSED_0x2BA
+#define FLAG_EXPANSION_POKE_RIDER                     FLAG_UNUSED_0x2BB
 
 // こっちも本家にないよー
 #define FLAG_EXPANSION_DEXNAV_DISPLAY                 FLAG_EXPANSION_DEXNAV_GET

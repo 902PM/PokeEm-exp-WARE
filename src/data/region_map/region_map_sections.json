@@ -1620,6 +1620,10 @@
       "name": "へそのいわ"
     },
     {
+      "id": "MAPSEC_MYSTERY_ZONE",
+      "name": "なぞのばしょ"
+    },
+    {
       "id": "MAPSEC_TRAINER_HILL",
       "name": "トレーナーヒル",
       "x": 8,

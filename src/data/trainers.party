@@ -2275,20 +2275,90 @@ Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CINDY_2 ===
-Name: レイカ
-Class: Lady
-Pic: Lady
+Name: リーフ
+Class: Rival
+Pic: Leaf
 Gender: Female
 Music: Female
 Items: Full Restore
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Ace Pokemon
 
-Zigzagoon (F) @ Big Nugget
-Level: 11
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Tail Whip
+Pikachu (F) @ Pikanium Z
+Level: 100
+Nature: Timid
+Ability: Static
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Love
+- Thunderbolt
+- Quick Attack
+- Surf
+- Nuzzle
+
+Lapras (F) @ Weakness Policy
+Level: 100
+Nature: Modest
+Ability: Shell Armor
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+Gigantamax: Yes
+Dynamax Level: 10
+Ball: Love
+- Blizzard
+- Freeze-Dry
+- Surf
+- Aurora Veil
+
+Snorlax (F) @ Leftovers
+Level: 100
+Nature: Adamant
+Ability: Thick Fat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
+Ball: Love
+Happiness: 255
+- Return
+- Earthquake
+- Ice Punch
+- Crunch
+
+Charizard (F) @ Charizardite Y
+Level: 100
+Nature: Modest
+Ability: Solar Power
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Ball: Love
+- Fire Blast
+- Solar Beam
+- Air Slash
+- Dragon Pulse
+
+Venusaur (F) @ Black Sludge
+Level: 100
+Nature: Modest
+Ability: Chlorophyll
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+Tera Type: TYPE_FIRE
+Ball: Love
+- Giga Drain
+- Sludge Bomb
+- Earth Power
+- Tera Blast
+
+Blastoise (F) @ Life Orb
+Level: 100
+Nature: Modest
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 6 Spe
+Ball: Love
+- Hydro Pump
+- Ice Beam
+- Fake Out
+- Aura Sphere
 
 === TRAINER_BRIANNA ===
 Name: シオリ

@@ -17,7 +17,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 7,
+      "x": 5,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -36,6 +36,13 @@
       "elevation": 1,
       "dest_map": "MAP_ROUTE120",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SCORCHED_SLAB_B1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
