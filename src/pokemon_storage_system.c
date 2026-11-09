@@ -2649,6 +2649,10 @@ static void Task_OnSelectedMon(u8 taskId)
             {
                 sStorage->state = 4;
             }
+            else if (IsAFusedMon(sStorage->displayMonSpecies))
+            {
+                sStorage->state = 7;
+            }
             else
             {
                 PlaySE(SE_SELECT);
@@ -2728,6 +2732,11 @@ static void Task_OnSelectedMon(u8 taskId)
             ClearBottomWindow();
             SetPokeStorageTask(Task_PokeStorageMain);
         }
+        break;
+    case 7:
+        PlaySE(SE_FAILURE);
+        PrintMessage(MSG_CANT_RELEASE_FUSED_MON);
+        sStorage->state = 6;
         break;
     }
 }
