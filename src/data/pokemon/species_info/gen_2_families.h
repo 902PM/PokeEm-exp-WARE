@@ -4638,6 +4638,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 86 : 108,
         .evYield_Defense = 1,
+        .itemCommon = ITEM_RAZOR_FANG,
+        .itemRare = ITEM_RAZOR_FANG,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5372,7 +5374,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 86 : 132,
         .evYield_Speed = 1,
-        .itemRare = ITEM_QUICK_CLAW,
+        .itemCommon = ITEM_RAZOR_CLAW,
+        .itemRare = ITEM_RAZOR_CLAW,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
@@ -5541,7 +5544,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 60,
         .expYield = 86,
         .evYield_Speed = 1,
-        .itemRare = ITEM_QUICK_CLAW,
+        .itemCommon = ITEM_RAZOR_CLAW,
+        .itemRare = ITEM_RAZOR_CLAW,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
@@ -5685,7 +5689,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 124,
         .evYield_Attack = 1,
-        .itemRare = ITEM_HONEY,
+        .itemCommon = ITEM_PEAT_BLOCK,
+        .itemRare = ITEM_PEAT_BLOCK,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -6927,6 +6932,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 25,
         .expYield = 163,
         .evYield_Defense = 2,
+        .itemCommon = ITEM_METAL_COAT,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
@@ -7475,7 +7481,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sStantlerTeachableLearnset,
         .eggMoveLearnset = sStantlerEggMoveLearnset,
     #if P_GEN_8_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WYRDEER, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_PSYSHIELD_BASH, 20})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WYRDEER, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_PSYSHIELD_BASH, 20})}
+                        ,{EVO_LEVEL, 0, SPECIES_WYRDEER, CONDITIONS({IF_KNOWS_MOVE, MOVE_PSYSHIELD_BASH})}
+                        ),
     #endif
     },
 

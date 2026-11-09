@@ -6568,6 +6568,7 @@ static const struct LevelUpMove sDonphanLevelUpLearnset[] = {
 
 #if P_FAMILY_STANTLER
 static const struct LevelUpMove sStantlerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PSYSHIELD_BASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_ASTONISH),

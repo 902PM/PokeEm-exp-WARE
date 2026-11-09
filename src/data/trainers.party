@@ -246,11 +246,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Luxray (M)
-Level: 29
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Leavanny (M)
-Level: 29
+Torterra (M)
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ALBERTO ===
@@ -608,6 +608,7 @@ Music: Aqua
 Items: Super Potion / Super Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
+Mugshot: Blue
 
 Mightyena (M)
 Level: 42
@@ -657,7 +658,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Cherubi (F)
+Bulbasaur (F)
 Level: 14
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -1358,7 +1359,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Astonish
 - Water Pulse
 
-Magneton (M)
+Magneton
 Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunderbolt
@@ -1487,6 +1488,9 @@ Corviknight (M)
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Dynamax Level: 5
+- Drill Peck
+- Steel Wing
+- Body Press
 
 Mawile (M)
 Level: 42
@@ -1922,6 +1926,10 @@ Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Dynamax Level: 5
 Gigantamax: Yes
+- Alluring Voice
+- Giga Drain
+- Psychic
+- Recover
 
 Volcarona (F)
 Level: 42
@@ -2123,7 +2131,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Polteageist (F)
+Dreepy
 Level: 32
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -2981,7 +2989,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Piplup (M)
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -2989,7 +2997,7 @@ Wingull (M)
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Tentacool (M)
+Froakie (M)
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -3041,7 +3049,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Frillish (M)
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3161,7 +3169,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Cramorant (M)
+Marshtomp (M)
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3174,7 +3182,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Grapploct (M)
+Prinplup (M)
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3237,8 +3245,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Seismitoad (M)
-Level: 34
+Swampert (M)
+Level: 36
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_JACK ===
@@ -3267,7 +3275,7 @@ Drednaw (M)
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Cramorant (M)
+Frogadier (M)
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3284,11 +3292,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Bruxish (M)
+Skrelp (M)
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Dhelmise (M)
+Clauncher (M)
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -3375,7 +3383,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Falinks (M)
+Falinks
 Level: 42
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -3610,11 +3618,11 @@ AI: Check Bad Move
 
 Bellibolt (M)
 Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Toxtricity (M)
+Electabuzz (M)
 Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FERNANDO_1 ===
 Name: ジョー
@@ -3966,11 +3974,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandygast (M)
+Diglett (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Bramblin (M)
+Impidimp (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -4535,7 +4543,7 @@ Wobbuffet (F)
 Level: 26
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Malamar (F)
+Farigiraf (F)
 Level: 26
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -4642,6 +4650,10 @@ Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Dynamax Level: 5
 Gigantamax: Yes
+- Psychic
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
 
 Alakazam (F)
 Level: 45
@@ -6690,7 +6702,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Shellder
 Level: 5
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -6698,7 +6710,7 @@ Tentacool
 Level: 10
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Magikarp
+Horsea
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -6774,7 +6786,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Qwilfish-Hisui (M)
 Level: 11
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6825,7 +6837,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Arrokuda (M)
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -6842,7 +6854,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Clauncher (M)
 Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -6872,7 +6884,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Gyarados (M)
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6901,7 +6913,7 @@ Carvanha (M)
 Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Tentacool (M)
+Gyarados (M)
 Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -8764,7 +8776,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc (F)
+Finneon (F)
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -8837,7 +8849,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Luvdisc (F)
+Mantyke (F)
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -8943,11 +8955,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Finneon (F)
+Luvdisc (F)
 Level: 43
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Mantyke (F)
+Luvdisc (F)
 Level: 43
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -9505,7 +9517,7 @@ Machop (M)
 Level: 11
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Tentacool (M)
+Poliwhirl (M)
 Level: 11
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -9577,7 +9589,7 @@ Wingull (M)
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Tentacool (M)
+Poliwhirl (M)
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -9598,7 +9610,7 @@ Pelipper (M)
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Tentacool (M)
+Poliwrath (M)
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -9619,7 +9631,7 @@ Pelipper (M)
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Tentacool (M)
+Poliwrath (M)
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -11863,7 +11875,7 @@ Grubbin (M)
 Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Scatterbug (M)
+Kricketot (M)
 Level: 3
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -12088,11 +12100,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Naclstack (M)
+Hippopotas (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Turtonator (M)
+Naclstack (M)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -12126,7 +12138,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Klawf (M)
+Larvitar (M)
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -12143,7 +12155,7 @@ Sudowoodo (M)
 Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Baltoy (M)
+Baltoy
 Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13381,7 +13393,7 @@ Wailmer (M)
 Level: 30
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Tentacool (M)
+Cloyster (M)
 Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13492,11 +13504,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Gastrodon (M)
 Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Tentacool (M)
+Veluza (M)
 Level: 31
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13879,11 +13891,11 @@ Music: Swimmer
 Double Battle: Yes
 AI: Check Bad Move
 
-Goldeen (F)
+Jellicent (F)
 Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Tentacool (M)
+Jellicent (M)
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14098,7 +14110,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Tandemaus
+Sprigatito (F)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14124,11 +14136,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Swirlix (F)
+Scorbunny (F)
 Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Spritzee (F)
+Charmander (F)
 Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14195,6 +14207,8 @@ AI: Check Bad Move
 Togedemaru (F)
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Nuzzle
+- Volt Switch
 
 Stufful (F)
 Level: 18
@@ -14597,7 +14611,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool (M)
+Barboach (M)
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14644,7 +14658,7 @@ Trumbeak (M)
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Squawkabilly (M)
+Rufflet (M)
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14900,11 +14914,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Binacle (M)
+Nacli (M)
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Binacle (M)
+Rockruff (M)
 Level: 8
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
