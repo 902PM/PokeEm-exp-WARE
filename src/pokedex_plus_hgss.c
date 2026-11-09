@@ -3937,14 +3937,14 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
         if (isAlcremie)
             fontId = FONT_SMALL_NARROWER;
         else
-            fontId = GetFontIdToFit(gStringVar4, FONT_NARROW, 0, maxScreenWidth);
+            fontId = GetFontIdToFit(gStringVar4, FONT_SMALL, 0, maxScreenWidth);
 
         u32 fontHeight = GetFontAttribute(fontId, FONTATTR_MAX_LETTER_HEIGHT);
 
         StringAppend(gStringVar4, COMPOUND_STRING(""));
         BreakStringAutomatic(gStringVar4, maxScreenWidth, MAX_EVO_METHOD_LINES, fontId, HIDE_SCROLL_PROMPT);
 
-        PrintInfoScreenTextSmall(gStringVar4, fontId, base_x_offset, base_y + base_y_offset*(*depth_i) + numLines); //Print actual instructions
+        PrintInfoScreenTextSmall(gStringVar4, fontId, base_x_offset + 13, base_y + base_y_offset*(*depth_i) + numLines); //Print actual instructions
         (*depth_i)++;
 
         numLines = CountLineBreaks(gStringVar4) * fontHeight;
