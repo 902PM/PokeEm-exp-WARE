@@ -2474,6 +2474,16 @@ void ShowScrollableMultichoice(void)
         task->tKeepOpenAfterSelect = FALSE;
         task->tTaskId = taskId;
         break;
+    case SCROLL_MULTI_FOSSILS:
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
+        task->tNumItems = 12;
+        task->tLeft = 1;
+        task->tTop = 1;
+        task->tWidth = 15;
+        task->tHeight = 12;
+        task->tKeepOpenAfterSelect = FALSE;
+        task->tTaskId = taskId;
+        break;
     case SCROLL_MULTI_BADGES:
         task->tMaxItemsOnScreen = 4;
         task->tNumItems = 9;
@@ -2672,6 +2682,21 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_PokemonMoves,
         gText_Underpowered,
         gText_WhenInDanger,
+        gText_Exit
+    },
+    [SCROLL_MULTI_FOSSILS] =
+    {
+        COMPOUND_STRING("かいのカセキ"),
+        COMPOUND_STRING("こうらのカセキ"),
+        COMPOUND_STRING("ひみつのコハク"),
+        COMPOUND_STRING("ツメのカセキ"),
+        COMPOUND_STRING("ねっこのカセキ"),
+        COMPOUND_STRING("ずがいのカセキ"),
+        COMPOUND_STRING("たてのカセキ"),
+        COMPOUND_STRING("ふたのカセキ"),
+        COMPOUND_STRING("はねのカセキ"),
+        COMPOUND_STRING("アゴのカセキ"),
+        COMPOUND_STRING("ヒレのカセキ"),
         gText_Exit
     },
     [SCROLL_MULTI_BADGES] =
