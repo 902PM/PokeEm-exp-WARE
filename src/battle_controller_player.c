@@ -928,6 +928,8 @@ void HandleInputChooseMove(enum BattlerId battler)
     else if (JOY_NEW(R_BUTTON))
     {
         if (gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_NONE
+            && gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_DYNAMAX
+            && gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_TERA
             && !HasTrainerUsedGimmick(battler, gBattleStruct->gimmick.usableGimmick[battler]) 
             && !(gBattleStruct->gimmick.usableGimmick[battler] == GIMMICK_Z_MOVE && GetUsableZMove(battler, moveInfo->moves[gMoveSelectionCursor[battler]]) == MOVE_NONE))
         {
